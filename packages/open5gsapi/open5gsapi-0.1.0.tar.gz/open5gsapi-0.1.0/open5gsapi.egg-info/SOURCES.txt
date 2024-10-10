@@ -1,0 +1,7 @@
+README.md
+setup.py
+open5gsapi.egg-info/PKG-INFO
+open5gsapi.egg-info/SOURCES.txt
+open5gsapi.egg-info/dependency_links.txt
+open5gsapi.egg-info/requires.txt
+open5gsapi.egg-info/top_level.txt
