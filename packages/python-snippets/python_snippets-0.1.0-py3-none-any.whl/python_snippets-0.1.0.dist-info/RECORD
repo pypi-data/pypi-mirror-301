@@ -1,0 +1,10 @@
+snippets/__init__.py,sha256=pTO4BwCosAGJL3gwwVCEZvaUqAlUIhgXyNkbpoxs9R8,561
+snippets/decorators.py,sha256=cmo9Bv8MkjA_qiMYIgkqFp144BPaRShaSAtPlHVg0Ew,8094
+snippets/evaluate.py,sha256=jI9Jg0H9aHWS-jOpUrf5v-RHxz4b-oo1_nAY9NpOJxE,2936
+snippets/logs.py,sha256=whcE0xDM7xewk_xTn7bU2zyhOstWkOLXPAxNqqovtlg,6358
+snippets/mixin.py,sha256=pt8bbSMV3W5oLLqR58hka0oPprRceN5aWnriqYTPqWA,554
+snippets/perf.py,sha256=ZqrwmfW7CNrpmhDDRqJ8m39c_wwTKInLs4Zhqy8EW64,1867
+snippets/utils.py,sha256=qprE5riauIO3y3LhUWkTHQwNkCG8R2xln0tAst1R9DY,15244
+python_snippets-0.1.0.dist-info/METADATA,sha256=fQRIlfxbncSzOlcRNZO-rJu23MytinurnEiEAIERf74,609
+python_snippets-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+python_snippets-0.1.0.dist-info/RECORD,,

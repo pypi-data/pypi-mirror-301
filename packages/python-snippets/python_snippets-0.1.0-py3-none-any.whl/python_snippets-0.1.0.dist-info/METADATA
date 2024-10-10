@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: python-snippets
+Version: 0.1.0
+Summary: useful python snippets for jerry
+Author-email: jerry <jerrychen1990@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: cachetools
+Requires-Dist: click
+Requires-Dist: loguru
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# snippets
+
+useful snippets in python
+
+## Quick Install
+
+```shell
+pip install -U snippets
+```
