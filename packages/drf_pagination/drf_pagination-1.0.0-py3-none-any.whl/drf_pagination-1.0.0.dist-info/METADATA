@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: drf_pagination
+Version: 1.0.0
+Summary: Django REST framework additional pagination
+License: MIT
+Author: cosmo
+Author-email: xxiaocai@163.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: djangorestframework (==3.6.2)
+Description-Content-Type: text/markdown
+
+# drf-paginations
+Other paginations based on Django REST framework
+
+
+![PyPI - Version](https://img.shields.io/pypi/v/drf-patinations)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/drf-patinations)
+
+* **Author**: [xcai](https://github.com/xcai/drf-patinations)
+* **Version**: 1.0.0
+* **License**: MIT
+
+**drf-paginations** is a collections of paginations for Django REST framework. includes: LimitOffsetPaginationForDataTable...    
+
+**drf-paginations** 增加适配前端[Datatable](https://datatables.net/)表格组件的limitoffset分页器，例如LimitOffsetPaginationForDataTable
+
+
+## Documentation
+
+* Install drf-paginations from PyPI（安装）:
+```
+        pip install drf-paginations
+```
+* Import the pagination class into your project（使用）:
+```
+from drf_pagination.pagination import LimitOffsetPaginationForDataTable
+from rest_framework.generics import ListAPIView
+
+
+class MyStoryListAPIView(ListAPIView):
+    ...
+    pagination_class = LimitOffsetPaginationForDataTable
+
+```
+* Response format data（接口返回数据格式，适配Datatable）:
+```json
+{
+    "draw": 1,
+    "recordsTotal": 100,
+    "recordsFiltered": 10,
+    "data": [
+      {...},
+      {...}
+]}
+```
+
+
