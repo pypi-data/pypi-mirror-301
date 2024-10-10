@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+givecolor/__init__.py
+givecolor/color.py
+givecolor/print_color.py
+givecolor.egg-info/PKG-INFO
+givecolor.egg-info/SOURCES.txt
+givecolor.egg-info/dependency_links.txt
+givecolor.egg-info/top_level.txt
