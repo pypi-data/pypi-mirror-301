@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+streaming_dvae/__init__.py
+streaming_dvae/decoder.py
+streaming_dvae/dvae.py
+streaming_dvae/gfsq.py
+streaming_dvae/streaming_dvae.py
+streaming_dvae.egg-info/PKG-INFO
+streaming_dvae.egg-info/SOURCES.txt
+streaming_dvae.egg-info/dependency_links.txt
+streaming_dvae.egg-info/requires.txt
+streaming_dvae.egg-info/top_level.txt
