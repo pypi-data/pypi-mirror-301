@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: simpletestok
+Version: 0.1.0
+Summary: Package used to ping stuff
+Home-page: https://github.com/yourusername/your_project
+Author: Maxton Bernal
+Author-email: MaxtonBernal@proton.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# simpletestok
+
+A simple Python package that wraps the `whoami` system command and returns the current user.
+
+## Installation
+
+You can install this package via pip:
+
+```bash
+pip install simpletestok
+
+
