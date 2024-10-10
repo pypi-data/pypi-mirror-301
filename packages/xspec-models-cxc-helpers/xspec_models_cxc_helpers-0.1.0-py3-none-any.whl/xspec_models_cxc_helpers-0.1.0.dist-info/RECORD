@@ -1,0 +1,10 @@
+xspec_models_cxc_helpers/__init__.py,sha256=fvzRw4ykvEWqcI4s8IAeHZ-n36H28Mz89S7S1nT2tLw,20617
+xspec_models_cxc_helpers/data/xspec.h,sha256=3iTn8AlWhtFxNsw3Z2Ts13cCOyL9EfUeOuQdt8heffE,438
+xspec_models_cxc_helpers/data/xsudmget.cxx,sha256=rh-uKe_G_kRFtRG5ZDyC3OA6aFsShX05IMm8ih5Ax_8,25035
+xspec_models_cxc_helpers/data/xsudmget64.cxx,sha256=qAxdptuN-DV_MonwsCNUWkI8hOJI37eU4dpLCJV0dUM,25697
+xspec_models_cxc_helpers/tests/test_utils.py,sha256=3tnsrCXCCi09hfGLIVSTEMty7eETuZR3CInoALK7MZM,6568
+xspec_models_cxc_helpers-0.1.0.dist-info/LICENSE,sha256=EqxQR_KvBSLwZ5ixWJ_8RZm8KckflU14dOAyBjTnd8A,35122
+xspec_models_cxc_helpers-0.1.0.dist-info/METADATA,sha256=gRxBycS6QnvAbK1IYWkn5lJzUungmFUS-sLpymbrLS4,41980
+xspec_models_cxc_helpers-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+xspec_models_cxc_helpers-0.1.0.dist-info/top_level.txt,sha256=6bf2x3k9wk1EbGl2phNEkwIXujEZbhjeoirMiz_H6Zk,25
+xspec_models_cxc_helpers-0.1.0.dist-info/RECORD,,
