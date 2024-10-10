@@ -1,0 +1,7 @@
+setup.py
+mumupatcher/__init__.py
+mumupatcher/mumupatcher.py
+mumupatcher.egg-info/PKG-INFO
+mumupatcher.egg-info/SOURCES.txt
+mumupatcher.egg-info/dependency_links.txt
+mumupatcher.egg-info/top_level.txt
