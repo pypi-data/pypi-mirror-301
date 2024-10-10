@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rikabplotlib
+Version: 0.0.1
+Summary: Plotting Library for Rikab
+Home-page: https://github.com/rikab/rikabplotlib
+Author: Rikab Gambhir
+Author-email: Rikab Gambhir <rikab@mit.edu>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: numpy
+
+plotting setup

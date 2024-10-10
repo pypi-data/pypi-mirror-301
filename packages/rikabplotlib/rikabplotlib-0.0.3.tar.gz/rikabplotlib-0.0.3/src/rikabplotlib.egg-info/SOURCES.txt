@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rikabplotlib.egg-info/PKG-INFO
+src/rikabplotlib.egg-info/SOURCES.txt
+src/rikabplotlib.egg-info/dependency_links.txt
+src/rikabplotlib.egg-info/not-zip-safe
+src/rikabplotlib.egg-info/requires.txt
+src/rikabplotlib.egg-info/top_level.txt
