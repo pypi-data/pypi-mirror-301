@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "flyio",
+  "server": "https://api.github.com/lukeshay"
+}
