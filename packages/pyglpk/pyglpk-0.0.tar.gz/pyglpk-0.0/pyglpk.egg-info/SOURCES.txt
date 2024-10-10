@@ -1,0 +1,9 @@
+README
+setup.cfg
+setup.py
+pyglpk.egg-info/PKG-INFO
+pyglpk.egg-info/SOURCES.txt
+pyglpk.egg-info/dependency_links.txt
+pyglpk.egg-info/not-zip-safe
+pyglpk.egg-info/requires.txt
+pyglpk.egg-info/top_level.txt
