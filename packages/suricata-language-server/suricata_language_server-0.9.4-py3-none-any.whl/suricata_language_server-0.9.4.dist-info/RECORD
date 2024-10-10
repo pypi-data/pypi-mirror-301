@@ -1,0 +1,14 @@
+suricatals/__init__.py,sha256=VULGRjKdHfCYQPIKbK_zxNxpuhd-3K3fmLkKwWLiEus,3634
+suricatals/jsonrpc.py,sha256=d51EIeuNYGxOR3bAEPIN7ywZe_viuHYawMp-Htc9T00,8996
+suricatals/langserver.py,sha256=i23bpZR29TbFMRmQandb36EeVE6VL0fbxVDZhPW_fHU,18287
+suricatals/lsp_helpers.py,sha256=2uyxFvhpzm0wgXytbHk30s3IjeJgdKCj_6s1pf7DOL0,2812
+suricatals/parse_signatures.py,sha256=1dZKyfr-VARse8L29adRRi0EAKJPidMn5AU7Y_qfNkY,16235
+suricatals/tests_rules.py,sha256=CgGuO4gUOkyDpt45qW2UQKtijySnH9VVwOkAs8A0D78,36164
+suricatals/unit_tests.py,sha256=BLxf0Nyp9RrVeTw35J0ThiBewGOaaG8TAmP6WAa3WPU,2522
+suricata_language_server-0.9.4.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+suricata_language_server-0.9.4.dist-info/METADATA,sha256=psFNyLUyfZa8NjkuthKxDsA4sjmPIonwHQrSHSbgr34,8786
+suricata_language_server-0.9.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+suricata_language_server-0.9.4.dist-info/entry_points.txt,sha256=d4_ZoT-_VZwA1ZUauUgWG22UvOyxvFs1PQvgHOuTYTo,70
+suricata_language_server-0.9.4.dist-info/top_level.txt,sha256=n3RV9GvlXvxntPYl8Dddb97Pa8WHfpzgAxpeYgUAAnE,11
+suricata_language_server-0.9.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+suricata_language_server-0.9.4.dist-info/RECORD,,
