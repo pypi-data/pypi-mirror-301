@@ -1,0 +1,7 @@
+sqlinjection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlinjection/errors.py,sha256=AXRNHwjfafGtVvnBqlYybLjc_b9IyQAaaTACNDsSnD4,692
+sqlinjection/sql_injection.py,sha256=mNVdE-fYS3bGA3jqD2Q6w4cR3ScVZ_dN22kHVKsTkI4,3491
+sqlinjection-0.0.6.dist-info/METADATA,sha256=YDtRyKb9ooof3FfO834JZjau70fP52ff0OUecoFAZaU,1136
+sqlinjection-0.0.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sqlinjection-0.0.6.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+sqlinjection-0.0.6.dist-info/RECORD,,
