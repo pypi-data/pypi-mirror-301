@@ -1,0 +1,2 @@
+[console_scripts]
+ocbc_dbs_statement_parser = ocbc_dbs_statement_parser.cli:cli
