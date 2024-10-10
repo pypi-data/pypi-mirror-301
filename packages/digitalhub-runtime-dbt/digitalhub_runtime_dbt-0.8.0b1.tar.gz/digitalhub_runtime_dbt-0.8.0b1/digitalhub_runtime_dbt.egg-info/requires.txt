@@ -1,0 +1,7 @@
+digitalhub<0.9,>=0.8.0b
+digitalhub-core[full]<0.9,>=0.8.0b
+digitalhub-data[pandas]<0.9,>=0.8.0b
+
+[local]
+dbt-postgres<1.9
+dbt-adapters==1.1.1
