@@ -1,0 +1,14 @@
+gpiozero
+rpi.gpio
+smbus3
+spidev
+numpy
+pillow
+inputimeout
+
+[dev]
+pytest
+flake8
+ipython
+build
+twine

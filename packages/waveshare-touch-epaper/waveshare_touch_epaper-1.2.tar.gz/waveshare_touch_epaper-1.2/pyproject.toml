@@ -1,0 +1,41 @@
+[build-system]
+requires = ['setuptools>=61.0', 'wheel']
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waveshare_touch_epaper"
+version = "1.2"
+authors = [
+    {name="Imam Usmani"},
+]
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+description = "module to control waveshare touch epaper displays"
+dependencies = [
+	'gpiozero',
+	'rpi.gpio',
+	'smbus3',
+	'spidev',
+	'numpy',
+	'pillow',
+	'inputimeout',
+]
+
+[project.optional-dependencies]
+dev = [
+	'pytest',
+	'flake8',
+	'ipython',
+	'build',
+	'twine',
+]
+
+[project.urls]
+"Source Code" = "https://github.com/ImamAzim/waveshare-touch-epaper"
+"Documentation" = "https://github.com/ImamAzim/waveshare-touch-epaper"
