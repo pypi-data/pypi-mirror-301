@@ -1,0 +1,9 @@
+README.md
+setup.py
+Gowtham_STT/__init__.py
+Gowtham_STT/main.py
+Gowtham_STT.egg-info/PKG-INFO
+Gowtham_STT.egg-info/SOURCES.txt
+Gowtham_STT.egg-info/dependency_links.txt
+Gowtham_STT.egg-info/requires.txt
+Gowtham_STT.egg-info/top_level.txt
