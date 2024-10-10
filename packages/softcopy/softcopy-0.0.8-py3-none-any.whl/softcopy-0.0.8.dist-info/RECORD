@@ -1,0 +1,15 @@
+softcopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+softcopy/copier.py,sha256=8ogyjJOH17f0BP98U8E8xHij3Clan2Qft0TVZ-8akq0,619
+softcopy/main.py,sha256=WikuVp19SbTRyZ3Zu0x0BNuEF5h7Riyx2wbZR7KwZCY,3321
+softcopy/ome_zarr_copier.py,sha256=yXsliTa7qRDWESlqhi-Z80IP8AxUf72krkHF7yaJea0,2774
+softcopy/packed_name.py,sha256=5hu6_6viRw4Z1zDaOpJwT0ypsYryWbWqdIOI3NthvdU,3926
+softcopy/slow_write.py,sha256=1debkmTfLLLKvzL6bfP82HMUeXJsWxImHmt_PHa6G7M,8540
+softcopy/to_ome.py,sha256=-DgQ5bpKsyJWW6PfaQl-jGOLv9w3MWiICIZkz3Y-3xA,15573
+softcopy/zarr_copier.py,sha256=sJ_i8-qK9OV0CZCveF76fJN9DQDPtVmumhVcJzQdXfE,18873
+softcopy/zarr_utils.py,sha256=FBWpbEMk34J3y8iOQTd6Sz_PHvUFwNFH5bqznU7W8Cg,1865
+softcopy-0.0.8.dist-info/LICENSE,sha256=gz1qGJ3FHq5dmmXT_4ArDD9w7TgRg1DPzHc3OT8ZSEg,1067
+softcopy-0.0.8.dist-info/METADATA,sha256=Fhc9jiO2yBpffL4R2vzw4B3lf1P-5rbLOIcbs-3MzoA,3784
+softcopy-0.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+softcopy-0.0.8.dist-info/entry_points.txt,sha256=NR9tXdHQdTdBuoqNorLwbKr8Z0gGRiY_5gMsSRkMNEw,48
+softcopy-0.0.8.dist-info/top_level.txt,sha256=y5aJI3cuVAQsYX0Fih-UHxZeYMAZmRmxLHwLPy18SUc,9
+softcopy-0.0.8.dist-info/RECORD,,
