@@ -1,0 +1,5 @@
+setup.py
+Zcan.egg-info/PKG-INFO
+Zcan.egg-info/SOURCES.txt
+Zcan.egg-info/dependency_links.txt
+Zcan.egg-info/top_level.txt
