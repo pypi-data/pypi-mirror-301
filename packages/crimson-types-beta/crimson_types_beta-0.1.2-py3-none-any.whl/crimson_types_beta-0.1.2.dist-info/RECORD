@@ -1,0 +1,9 @@
+crimson/types_beta/__init__.py,sha256=y_AKGYWpgpws0w6NnqTh2X5J2z4K2ANEC_Oy9q_4r-I,26
+crimson/types_beta/addon/annotated.py,sha256=0JSMy3YFuZO2S-tmYBMRb3OUSQyqx9ZkBM9ttkK8bJg,172
+crimson/types_beta/addon/intelli_type.py,sha256=LehB0wwYpmPSQ8kE_C88Je_sSVO3JC0GiS8nfEvqY5M,474
+crimson/types_beta/control/number.py,sha256=SfQDQIuWSKfaks95Ouc4mzgCOg_3V34v_0Hx7iNdFaA,876
+crimson/types_beta/torch/transformer/basic.py,sha256=AJwXixYqzpClmUj1Kxpx4ChuMkChp3_xzmae7RUzrwM,1372
+crimson_types_beta-0.1.2.dist-info/METADATA,sha256=ra1a2sqQPGutzswMLmK-Wbtxzcn0MFMocfCEBj1QnLo,890
+crimson_types_beta-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+crimson_types_beta-0.1.2.dist-info/top_level.txt,sha256=UjHBjSiQhr7eEWh0dB9e3WZ617y7vLEywXhGYfnzbw8,8
+crimson_types_beta-0.1.2.dist-info/RECORD,,
