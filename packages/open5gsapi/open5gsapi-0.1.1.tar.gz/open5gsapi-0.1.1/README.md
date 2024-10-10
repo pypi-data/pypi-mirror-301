@@ -1,0 +1,36 @@
+# Open5GS API
+
+This package provides a Python API for interacting with Open5GS components.
+
+## Installation
+
+```bash
+pip install open5gsapi
+```
+
+## Usage
+
+```python
+from open5gsapi import open5gs, ConfigurationError, CommunicationError
+
+# Configure network parameters
+ambr = open5gs.ambr(value=10000000, unit=1)  # 10 Mbps
+qos = open5gs.qos(index=5)
+arp = open5gs.arp(priority_level=1, pre_emption_vulnerability=1, pre_emption_capability=2)
+
+# Update configuration
+open5gs.update_config(ambr=ambr, qos=qos, arp=arp)
+
+# Get UE and UPF API URLs
+UE_API_URL = open5gs.ue(8080, "send")
+UPF_API_URL = open5gs.upf(8081, "receive", "sensor")
+
+# Send data
+data = {"sensor_id": 1, "temperature": 25.5, "humidity": 60}
+response = open5gs.send_data(UE_API_URL, data)
+print(response)
+
+# Receive data
+received_data = open5gs.receive_data(UPF_API_URL)
+print(received_data)
+```
