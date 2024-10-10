@@ -1,0 +1,6 @@
+requests
+pandas
+pyspark
+boto3
+ydata-profiling
+xurpas_data_quality
