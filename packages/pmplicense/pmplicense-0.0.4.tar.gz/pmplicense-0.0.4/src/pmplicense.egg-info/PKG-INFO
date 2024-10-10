@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pmplicense
+Version: 0.0.4
+Summary: PMP license tool
+Author-email: Pimp My Package <in@pimpmypackage.com>
+Project-URL: Homepage, https://pimpmypackage.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# PMP License Tool
+
+A package for installing and checking PMP licenses.

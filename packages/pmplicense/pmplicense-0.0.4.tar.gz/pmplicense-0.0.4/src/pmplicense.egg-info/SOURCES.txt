@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/pmplicense/__init__.py
+src/pmplicense/cli.py
+src/pmplicense/constants.py
+src/pmplicense.egg-info/PKG-INFO
+src/pmplicense.egg-info/SOURCES.txt
+src/pmplicense.egg-info/dependency_links.txt
+src/pmplicense.egg-info/entry_points.txt
+src/pmplicense.egg-info/top_level.txt
+tests/test_check_license.py

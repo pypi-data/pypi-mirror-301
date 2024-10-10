@@ -1,0 +1,2 @@
+[console_scripts]
+pmp = pmplicense.cli:main
