@@ -1,0 +1,29 @@
+[project]
+name = "python-snippets"
+version = "0.1.0"
+description = "useful python snippets for jerry"
+requires-python = ">=3.10"
+dependencies = [
+    "tqdm",
+    "pydantic",
+    "numpy",
+    "pandas",
+    "requests",
+    "loguru",
+    "openpyxl",
+    "click",
+    "cachetools",
+]
+authors = [{ name = "jerry", email = "jerrychen1990@gmail.com" }]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+npt-cli-hello = "npt.core:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
