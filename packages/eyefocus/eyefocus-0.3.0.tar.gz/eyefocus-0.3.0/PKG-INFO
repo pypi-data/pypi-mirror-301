@@ -1,0 +1,138 @@
+Metadata-Version: 2.3
+Name: eyefocus
+Version: 0.3.0
+Summary: Stay focused!
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: huggingface-hub[hf-transfer]>=0.24.7
+Requires-Dist: llama-cpp-python==0.2.90
+Requires-Dist: mss>=9.0.2
+Requires-Dist: notify-py>=0.3.43
+Requires-Dist: pre-commit>=3.8.0
+Requires-Dist: timm>=1.0.9
+Requires-Dist: typer>=0.12.5
+Provides-Extra: fe
+Requires-Dist: modal>=0.64.145; extra == 'fe'
+Provides-Extra: ft
+Requires-Dist: accelerate>=0.34.2; extra == 'ft'
+Requires-Dist: bitsandbytes>=0.44.0; extra == 'ft'
+Requires-Dist: datasets>=3.0.0; extra == 'ft'
+Requires-Dist: modal>=0.64.128; extra == 'ft'
+Requires-Dist: python-dotenv>=1.0.1; extra == 'ft'
+Requires-Dist: sentencepiece>=0.2.0; extra == 'ft'
+Requires-Dist: term-image>=0.7.2; extra == 'ft'
+Requires-Dist: transformers>=4.45.1; extra == 'ft'
+Requires-Dist: wandb>=0.18.1; extra == 'ft'
+Provides-Extra: gpu
+Requires-Dist: flash-attn>=2.6.3; extra == 'gpu'
+Description-Content-Type: text/markdown
+
+# eyefocus
+
+**Stay focused!**
+
+Built with:
+
+- uv for project management.
+- PyTorch for model training.
+- Modal for model infra.
+- FastHTML for the frontend.
+- Ruff for linting and formatting.
+
+## Set Up
+
+Set up the environment:
+
+```bash
+uv sync --all-extras --dev
+uv run pre-commit install
+```
+
+Optionally, set up Modal:
+
+```bash
+modal setup
+```
+
+## Repository Structure
+
+```bash
+.
+├── frontend            # landing page.
+├── ft                  # classifier training.
+├── src                 # pypi package.
+```
+
+## Development
+
+### PyPI
+
+Run locally:
+
+```bash
+uv run eyefocus -vv
+```
+
+Build the package:
+
+```bash
+uvx --from build pyproject-build --installer uv
+```
+
+Upload the package:
+
+```bash
+uvx twine upload dist/*
+```
+
+Test the uploaded package:
+
+```bash
+uv run --with eyefocus --no-project -- eyefocus -vv
+```
+
+### Frontend
+
+Run the app:
+
+```bash
+modal serve frontend/app.py
+```
+
+Deploy on Modal:
+
+```bash
+modal deploy frontend/app.py
+```
+
+### Training
+
+Optionally, manually collect screenshots:
+
+```bash
+uv run ft/collect.py
+```
+
+Run ETL on HF dataset (or collected screenshots if available):
+
+```bash
+uv run ft/etl.py
+```
+
+or
+
+```bash
+uv run modal run ft/etl.py
+```
+
+Train the model:
+
+```bash
+uv run torchrun --standalone --nproc_per_node=<n-gpus> ft/train.py
+```
+
+or
+
+```bash
+uv run modal run ft/train_modal.py
+```
