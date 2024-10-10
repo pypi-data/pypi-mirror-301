@@ -1,0 +1,2 @@
+[console_scripts]
+genpass = genpass.core:main
