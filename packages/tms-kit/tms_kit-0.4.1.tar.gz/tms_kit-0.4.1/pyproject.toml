@@ -1,0 +1,79 @@
+[project]
+name = "tms-kit"
+version = "0.4.1"
+description = "Toolkit for running toy models of superposition experiments"
+authors = [
+    { name = "Daniel Tan", email = "dtch1997@users.noreply.github.com" },
+]
+dependencies = [
+    "torch>=2.4.1",
+    "numpy>=2.1.1",
+    "jaxtyping>=0.2.34",
+    "tqdm>=4.66.5",
+    "einops>=0.8.0",
+    "plotly>=5.24.1",
+    "pandas>=2.2.3",
+    "matplotlib>=3.9.2",
+    "torchmetrics>=1.4.2",
+    "rich>=13.9.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "sphinx>=8.0.2",
+    "ruff>=0.6.9",
+    "pytest>=8.3.3",
+    "furo>=2024.8.6",
+]
+tutorials = [
+    "kaleido==0.2.1",
+    "rich>=13.9.2",
+    "simple-parsing>=0.1.6",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.ruff]
+line-length = 88
+exclude = [
+    "third_party",
+    ".venv",
+    "experiments",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+]
+ignore = [
+    "F841",
+    "E501",
+    "E741",
+    "I001",
+    "E731",
+    "F722",
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.semantic_release]
+version_variables = [
+    "tms_kit/__init__.py:__version__",
+    "pyproject.toml:version",
+]
+branch = "main"
