@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+arnold_bhadauria.egg-info/PKG-INFO
+arnold_bhadauria.egg-info/SOURCES.txt
+arnold_bhadauria.egg-info/dependency_links.txt
+arnold_bhadauria.egg-info/top_level.txt
