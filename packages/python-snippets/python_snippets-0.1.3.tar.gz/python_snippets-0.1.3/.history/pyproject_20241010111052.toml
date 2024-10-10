@@ -1,0 +1,25 @@
+[project]
+name = "python-snippets"
+version = "0.1.0"
+description = "useful python snippets "
+requires-python = ">=3.8"
+dependencies = [
+  "Django==4.1.2",
+  ]
+authors = [
+    { name="LeXing Jiang", email="1721900707@qq.com" },
+    { name="neeky", email="neeky@live.com" }
+  ]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+  ]
+
+[project.scripts]
+npt-cli-hello = "npt.core:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
