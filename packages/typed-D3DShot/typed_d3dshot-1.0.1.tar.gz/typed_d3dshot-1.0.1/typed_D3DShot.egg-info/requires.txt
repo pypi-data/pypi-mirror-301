@@ -1,0 +1,16 @@
+comtypes>=1.1.7
+
+[PIL]
+pillow>=9.1.0
+
+[dev]
+ruff~=0.6.9
+mypy==1.11.*
+pyright==1.1.384
+
+[numpy]
+numpy>=1.21.0
+
+[torch]
+torch>=2.0.0
+typed-D3DShot[numpy]
