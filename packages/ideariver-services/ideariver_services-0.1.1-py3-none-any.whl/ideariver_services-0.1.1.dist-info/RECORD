@@ -1,0 +1,10 @@
+ideariver_services_python/__init__.py,sha256=vgQ7z1LgPsXUogiIzxOm_oroX7hVci_SrmFbipBmeXU,602
+ideariver_services_python/plugin_loader.py,sha256=PD9M-gVHClC591eow6i-9KPpnWa-55nIWD3H6obacFE,7031
+ideariver_services_python/plugin_rabbitmq_adapter.py,sha256=hpdf82oTMEu-dv2tq-GzMaOH7YsjT9lYqLlG3DXVTgU,1431
+ideariver_services_python/plugin_tester.py,sha256=RDCbsP3jJTZzR8kNjMELx5BmkHv2wQDPhCHnFI4in28,3026
+ideariver_services_python/validate_inputs.py,sha256=A9M-TWE1Jawe9m8EJP5SklL0Req7QWaHn0pLia5PXyI,1459
+ideariver_services-0.1.1.dist-info/LICENSE,sha256=99nRZZlw51_3IHkSHaKp7wI7N0amgqip2ad0vZkjDBs,1087
+ideariver_services-0.1.1.dist-info/METADATA,sha256=Z7GNGu2C1H9cvsR0vnNVz8QZzIk8oDLtdZ0qdHcm8uU,387
+ideariver_services-0.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+ideariver_services-0.1.1.dist-info/top_level.txt,sha256=Be7How7DFVosgXpzrdioXzqQS8srY9ETo1m3pJYArd0,26
+ideariver_services-0.1.1.dist-info/RECORD,,
