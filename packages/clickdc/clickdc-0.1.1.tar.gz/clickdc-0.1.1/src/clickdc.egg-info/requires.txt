@@ -1,0 +1,7 @@
+typing_extensions
+click
+
+[test]
+pytest
+pydantic
+pyright[nodejs]
