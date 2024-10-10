@@ -1,0 +1,2 @@
+[console_scripts]
+courtrss = courtrss.rss_feed:main

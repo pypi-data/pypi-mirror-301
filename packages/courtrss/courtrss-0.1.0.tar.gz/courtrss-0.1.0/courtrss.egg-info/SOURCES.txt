@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+courtrss/__init__.py
+courtrss/rss_feed.py
+courtrss.egg-info/PKG-INFO
+courtrss.egg-info/SOURCES.txt
+courtrss.egg-info/dependency_links.txt
+courtrss.egg-info/entry_points.txt
+courtrss.egg-info/requires.txt
+courtrss.egg-info/top_level.txt
