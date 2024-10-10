@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "titus-cli"
+version = "0.1.0"
+description = "CLI for the Titus CSS toolkit; it generates the base CSS files."
+authors = ["Lucas Sorribes <lucas@luxor.dev>"]
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.scripts]
+titus = "titus_cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.12.5"
+rich = "^13.9.2"
+pyinquirer = "^1.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
