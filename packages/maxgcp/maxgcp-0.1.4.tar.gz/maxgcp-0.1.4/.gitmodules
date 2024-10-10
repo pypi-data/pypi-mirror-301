@@ -1,0 +1,10 @@
+[submodule "vendor/indirect-gwas"]
+	path = vendor/indirect-gwas
+	url = https://github.com/tatonetti-lab/indirect-gwas
+[submodule "vendor/ldsc"]
+	path = vendor/ldsc
+	url = https://github.com/zietzm/ldsc
+	branch = py3
+[submodule "vendor/pymbend"]
+	path = vendor/pymbend
+	url = https://github.com/zietzm/pymbend
