@@ -1,0 +1,7 @@
+setup.py
+hahahasillyxd/__init__.py
+hahahasillyxd/hahahasillyxd.py
+hahahasillyxd.egg-info/PKG-INFO
+hahahasillyxd.egg-info/SOURCES.txt
+hahahasillyxd.egg-info/dependency_links.txt
+hahahasillyxd.egg-info/top_level.txt
