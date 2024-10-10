@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pypg_stream_consumer"
+version = "0.0.6"
+description = "Python PG replica stream consumer"
+authors = ["Vitaliy Krasnov <krasnov.v.i@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+psycopg2-binary = "^2.9.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 120
+exclude = [".venv", "./tasks"]
+select = ["ALL"]

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pypg_stream_consumer
+Version: 0.0.6
+Summary: Python PG replica stream consumer
+Author: Vitaliy Krasnov
+Author-email: krasnov.v.i@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Description-Content-Type: text/markdown
+
+
