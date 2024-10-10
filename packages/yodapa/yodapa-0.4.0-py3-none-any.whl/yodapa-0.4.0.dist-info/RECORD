@@ -1,0 +1,13 @@
+yodapa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/config.py,sha256=ZZ7ZoIbKXDq98vZJc3ikr7MvDrSrLwTj3QfcpsYJaxs,1559
+yodapa/plugin_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/plugin_manager/decorator.py,sha256=9v_RN_7WwiYqx2gpC5wblfxNTIlpGDWDc6keHzyyFkk,840
+yodapa/plugin_manager/plugin.py,sha256=4_83VqyIWBcJEQ7A9Gv6-ox--zKur_r8-EejHfSXAmA,3764
+yodapa/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/plugins/ai_command_generator.py,sha256=HadkHxRpRYFv7CB_FtCtf7DEBQHVk8R4GYqXXSOmD4s,4321
+yodapa/plugins/bye_plugin.py,sha256=_9VHKF4sUsdyvbF4Vmk4vJwHHwxRmKPfIiBui5_Dt-s,378
+yodapa/plugins/hi_plugin.py,sha256=86P3oL8BNhw_aE6PiT5YRT1kieV_JLyatq5dOFmkiLo,509
+yodapa-0.4.0.dist-info/METADATA,sha256=L18hM6T7Zim5acsu3GQ7gAxP1aVP0gu7VVX0Dq1dfds,4373
+yodapa-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+yodapa-0.4.0.dist-info/entry_points.txt,sha256=_WMkY45huEznxk-RlOpA-s9PKfB-wjffoCgwugT8AvI,37
+yodapa-0.4.0.dist-info/RECORD,,
