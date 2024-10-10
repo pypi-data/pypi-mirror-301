@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+tqdm
+dash
+dash-bootstrap-components
+waitress
+tomli
+i18nice[YAML]
+
+[lint]
+black
+flake8
+isort
+docformatter
