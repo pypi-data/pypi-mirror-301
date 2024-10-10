@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: myPackageA
+Version: 0.1
+Summary: just a test
+Home-page: https://github.com/1Catherine137/myPackageA
+Author: Catherine
+Author-email: 3350249641@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
