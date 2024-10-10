@@ -1,0 +1,9 @@
+numpy>=1.25.0
+
+[dev]
+dbscan1d[test]
+
+[test]
+pytest
+pytest-cov
+scikit-learn
