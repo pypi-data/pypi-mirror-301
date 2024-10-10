@@ -1,0 +1,9 @@
+setup.py
+Tranferencia_Calor/__init__.py
+Tranferencia_Calor/fluidos.py
+Tranferencia_Calor/funcionesItercambiador.py
+Transferencia_Calor.egg-info/PKG-INFO
+Transferencia_Calor.egg-info/SOURCES.txt
+Transferencia_Calor.egg-info/dependency_links.txt
+Transferencia_Calor.egg-info/requires.txt
+Transferencia_Calor.egg-info/top_level.txt
