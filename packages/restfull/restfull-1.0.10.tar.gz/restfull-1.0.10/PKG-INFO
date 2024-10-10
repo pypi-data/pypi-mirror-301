@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: restfull
+Version: 1.0.10
+Summary: Python REST API Frontend
+Keywords: utilities,rest,api
+Author: Michael Minichino
+Author-email: info@unix.us.com
+Requires-Python: >=3.8,<4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.9.3)
+Requires-Dist: attrs (>=23.1.0)
+Requires-Dist: certifi (>=2023.5.7)
+Requires-Dist: python-certifi-win32 (>=1.6.1)
+Requires-Dist: pytoolbase (>=1.0.1)
+Requires-Dist: requests (>=2.31.0)
+Project-URL: Homepage, https://github.com/mminichino/restfull
+Description-Content-Type: text/markdown
+
+# restfull 1.0.10
+
+## Installing
+```
+$ pip install restfull
+```
+
+# Usage Examples
+
+Basic API GET:
+```
+auth = BasicAuth("username", "password")
+rest = RestAPI(auth, "example.com")
+endpoint = "/api/users/1"
+data = rest.get(endpoint).validate().as_json().record()
+assert data.get("data", {}).get("id") == 1
+```
+
+Get record with paged API (specifically getting page 2)
+```
+auth = BasicAuth("username", "password")
+rest = RestAPI(auth, "example.com")
+endpoint = "/api/users"
+data = rest.get_by_page(endpoint, page=2).validate().as_json("data").list_item(2)
+assert data.get("id") == 9
+```
+
+Get all records from paged API (assumes records are in an array assigned to the "data" key):
+```
+auth = BasicAuth("username", "password")
+rest = RestAPI(auth, "example.com")
+endpoint = "/api/users"
+data = rest.get_paged(endpoint).validate().json_list()
+assert data.size == 12
+```
+
