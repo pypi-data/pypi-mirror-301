@@ -1,0 +1,23 @@
+openapi: "3.0.3"
+info:
+  title: CV Basic
+  version: "1.0"
+servers:
+  - url: https://api.server.test/v1
+paths:
+  /computer-vision/classification:
+    post:
+      summary: CV classification statistics from single experiment
+      description: Post information from a single computer vision experiment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: array
+                  items:
+                    type: object
+                    properties:
