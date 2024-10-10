@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: carnitas
+Version: 0.0.1
+Summary: Audio processing suite for Long Lab at UCLA.
+Author: Maxwell Xu
+Author-email: <maxwellxu@g.ucla.edu>
+Keywords: python,audio
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pydub
+Requires-Dist: boxsdk

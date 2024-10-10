@@ -1,0 +1,8 @@
+setup.py
+carnitas/__init__.py
+carnitas/carnitas.py
+carnitas.egg-info/PKG-INFO
+carnitas.egg-info/SOURCES.txt
+carnitas.egg-info/dependency_links.txt
+carnitas.egg-info/requires.txt
+carnitas.egg-info/top_level.txt
