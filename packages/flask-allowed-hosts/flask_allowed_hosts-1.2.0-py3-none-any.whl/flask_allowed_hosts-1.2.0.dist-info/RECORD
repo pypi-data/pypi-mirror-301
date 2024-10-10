@@ -1,0 +1,11 @@
+flask_allowed_hosts/__init__.py,sha256=D5W6Z1OQ3q6ReguHv9lnMT3WldKyd0Jd-mLcZRg50sE,220
+flask_allowed_hosts/allowed_hosts.py,sha256=FztRHhJujNbfpDwrKc696BGhWt62EuIkX1ht-ul2GkI,2879
+flask_allowed_hosts/helpers.py,sha256=sKjBL5TWDT615TECHJwfh-ZkjfSWmZ9yCjKGwyLDHvw,1574
+flask_allowed_hosts/logger.py,sha256=hGlyaqXTA1AB4fwufebuImtm4kOSvMEKjFVMHWsix-E,940
+flask_allowed_hosts/permission_manager.py,sha256=AvH0iff0iX5EEQkU7eayKKbiW82OTPi5FpXxIRwOmhg,2648
+flask_allowed_hosts/validators.py,sha256=4Q1WJMdvax0rAeh1v3bszGt-yFtH_miDr2-9sehSkm4,1077
+flask_allowed_hosts-1.2.0.dist-info/LICENSE.md,sha256=Er8Q5LmfJrOiXYOMMbGHW2AA0jTiD3h0biwpiiN8mQI,1090
+flask_allowed_hosts-1.2.0.dist-info/METADATA,sha256=tNHZ7b43KrCgqsK5JMs61OLRmnkvpeILZSHJs5ENSN4,5505
+flask_allowed_hosts-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+flask_allowed_hosts-1.2.0.dist-info/top_level.txt,sha256=0ZyVPhcy8k1XuYSEoTH-9u3u5SNkU1Sy8bGf89igfTM,20
+flask_allowed_hosts-1.2.0.dist-info/RECORD,,
