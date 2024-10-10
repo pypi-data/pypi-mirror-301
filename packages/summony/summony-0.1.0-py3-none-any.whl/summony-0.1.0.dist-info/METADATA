@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: summony
+Version: 0.1.0
+Summary: Interfaces for simultaneously chatting with multiple LLMs.
+Requires-Python: >=3.8
+Requires-Dist: dataclasses-json>=0.6.7
+Requires-Dist: ipywidgets>=8.1.5
+Requires-Dist: python-dotenv>=1.0.1
+Provides-Extra: anthropic
+Requires-Dist: anthropic>=0.36.0; extra == 'anthropic'
+Provides-Extra: google
+Requires-Dist: google-generativeai>=0.8.3; extra == 'google'
+Provides-Extra: groq
+Requires-Dist: groq>=0.11.0; extra == 'groq'
+Provides-Extra: ollama
+Requires-Dist: ollama>=0.3.3; extra == 'ollama'
+Provides-Extra: openai
+Requires-Dist: openai>=1.51.2; extra == 'openai'
+Description-Content-Type: text/markdown
+
+# 🍋😛 SUMMONy aka s6
+
+...summoning ∂emons and stuff - beware?
+
+```sh
+#python -m ipykernel install --user --name
+uv run ipython kernel install --user --name=s6-ub
+
+uv run --with jupyter jupyter lab
+```
+
