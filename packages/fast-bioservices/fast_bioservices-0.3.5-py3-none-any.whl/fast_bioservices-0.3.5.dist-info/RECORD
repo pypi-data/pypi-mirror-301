@@ -1,0 +1,17 @@
+fast_bioservices/__init__.py,sha256=s2wtrw4wTp7KoHxWkzPoMLXFx_jNnnSKVgBk67JV5Cw,323
+fast_bioservices/base.py,sha256=kN8hgSfeL92YxV7Yy9609pDdOMLBEiK1Vae5sYpItyo,176
+fast_bioservices/fast_http.py,sha256=SX0stGKFaPvOPWCJubR8aakujpX_RWQb0nfED23HcUQ,5551
+fast_bioservices/settings.py,sha256=2otEuEsq2VseJEGfwtfiuCOgmLscw2PSURywheqSPQY,408
+fast_bioservices/utils.py,sha256=C2SNc_vhcZWBDUf9vrJ-XA6UuDoMBUvqu7Nzm-BKWJA,693
+fast_bioservices/bigg/__init__.py,sha256=18zJTYyPJw0dZBWbiPPEORvRG3jPmmthGHSOqm5D_-k,64
+fast_bioservices/bigg/bigg.py,sha256=lgqTJyaSMrP7z4wsWGffz1u5Y7KNVnbBCl99s3JcMUc,6396
+fast_bioservices/biodbnet/__init__.py,sha256=_dy0ykHBwUS2r5L-phHqFu3QoohD2iOecR1vb7CvXgE,173
+fast_bioservices/biodbnet/biodbnet.py,sha256=E1ocML2WyKs-GhrILlJFoEsfST7y63o0vG-oi9zwi-8,14177
+fast_bioservices/biodbnet/nodes.py,sha256=im8DG28jnXt-ze7jfeHQFTxpIRoUcHly1GS9r2mhCGQ,11507
+fast_bioservices/ensembl/__init__.py,sha256=BfzlEJOG9cGAK94dO10NluWNgGXbWB_CKCfeyCEc_5M,329
+fast_bioservices/ensembl/comparative_genomics.py,sha256=ZKJZgFFMP_SNx8ed-z7OKkCjE_MoA-PalnYqZCgfMU0,4426
+fast_bioservices/ensembl/cross_references.py,sha256=zNv3wkxm7xXIr0vMQ8vVBrHNNlsv9mY-w7iQs5wUfJg,3518
+fast_bioservices/ensembl/ensembl.py,sha256=OjEYrI_3Ns2WCl_hVylUP6-EkRMALZ6472B8lMpUjdw,2592
+fast_bioservices-0.3.5.dist-info/METADATA,sha256=-c64SUOm51ihuJplrsqMiWwWbrOsOa427q-vWZsDhi0,1229
+fast_bioservices-0.3.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+fast_bioservices-0.3.5.dist-info/RECORD,,
