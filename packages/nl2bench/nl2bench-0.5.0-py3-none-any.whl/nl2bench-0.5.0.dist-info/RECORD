@@ -1,0 +1,14 @@
+_nl2bench_antlr4_liblogic/logicLexer.py,sha256=FACRCqN5-ZmAyqKq557jWQWTNxI9Kwwj5aap8xjv6XE,2557
+_nl2bench_antlr4_liblogic/logicListener.py,sha256=cvnKwBTFuh7btbgduk8b1zMhGDBHQf3SqrKvVZyvc-4,588
+_nl2bench_antlr4_liblogic/logicParser.py,sha256=gSksTjhb-37xgXhwnZA8oWuH-gNJmNvfuu_7XZhemj8,10526
+_nl2bench_antlr4_liblogic/logicVisitor.py,sha256=L6jDunLP2tIYCO9a5NLo7xAgZdAdl1yFUbkN9L5u-Ws,503
+nl2bench/__init__.py,sha256=C0fA0I3bUoErbJQ2e2N1THKlXis-eedwv0-60CdnRHY,673
+nl2bench/__main__.py,sha256=Nfd-OEltFB9yLiEJfOgI0LYCIoOHzZbsTFDuSVQPhbM,1457
+nl2bench/cell.py,sha256=6uu4xv7qhi-Y_YjdZd--5NhtHtDjGT4UnkNrMc-Z0Hw,4183
+nl2bench/lib_fn_parser.py,sha256=JDKiUosJujEQhBVVGUpuyU6NbVrZ98VqYdkQt4_Cmlc,2078
+nl2bench/nl2bench.py,sha256=DrCBVWP7ENAQgX4zI2XaqDJ6CXPmykdu0ZBLjKA67nU,4098
+nl2bench/nl_parser.py,sha256=TjqdozG4qS2opCbl95PfnCvsN6m-sUM4b2now-p5bpM,4795
+nl2bench-0.5.0.dist-info/METADATA,sha256=CC7jQjJbdrn_TCye6Bx76uV139K5el9M9e7emxYBznw,6096
+nl2bench-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nl2bench-0.5.0.dist-info/entry_points.txt,sha256=-0gWurYB8auCqhfmeQUNQlOzPPej_WVZI-hkVesrRTk,50
+nl2bench-0.5.0.dist-info/RECORD,,
