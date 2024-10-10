@@ -1,0 +1,16 @@
+PyResilient/__init__.py,sha256=3il9Fw0hbnwiwXuvKoeX9wKU9rGOfqnZsqBFcJGYSSs,620
+PyResilient/fallback.py,sha256=8FmIaFBHxwWcPrlKN92uScz3WIxrt6JeDrPec4REFb4,1121
+PyResilient/retry.py,sha256=-sj-31V8t0EQ7VlqJ80E4uam8NgO89WhkE_Bc5qQtG8,1654
+PyResilient/timeout.py,sha256=EsZSXIlw4J2kETO9TtU5jQJhHUJ_Y_5qSR6QRxo_icY,1071
+PyResilient/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyResilient/handlers/base_handler.py,sha256=ejEFf_rq3wBtBo2cAYA55MnSSSvyVUEeMyPsnNhdJKI,159
+PyResilient/handlers/fallback_handler.py,sha256=0m5GaD-Y0ixQNueJossuVFQl36aT-XgekS3weiaG3kI,2151
+PyResilient/handlers/timeout_handler.py,sha256=eh-WhnUkT-vznmj-k59MRU4rGfZVdt-PKsj5X7teGSY,2180
+PyResilient/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyResilient/strategies/fallback_strategies.py,sha256=XURYxBg6LmZfNFSDrPXDzgWSrIx5m6t6QUi5T7zifrU,4520
+PyResilient/strategies/timeout_strategies.py,sha256=xfqth1Z0g0Um8nFDrbbOHTknbMpx5hgXO2KicAGVQPg,1820
+PyResilient-0.0.3.dist-info/LICENSE,sha256=K5tdFXGRT4-tt7I48IwSAZNaqMNzctYKyK25sj6G7Bw,1162
+PyResilient-0.0.3.dist-info/METADATA,sha256=_s1R6HVEhnVYIm4N2r1xz5JNOJ-gjGu9CmPrmRGSl_U,4206
+PyResilient-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+PyResilient-0.0.3.dist-info/top_level.txt,sha256=3PknB37sEjj-mA6Kc5SU4OxjRgVKwDjAoCJ4H0HkTpY,12
+PyResilient-0.0.3.dist-info/RECORD,,
