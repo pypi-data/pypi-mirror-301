@@ -1,0 +1,12 @@
+README.md
+setup.py
+my_calculator_jyy.egg-info/PKG-INFO
+my_calculator_jyy.egg-info/SOURCES.txt
+my_calculator_jyy.egg-info/dependency_links.txt
+my_calculator_jyy.egg-info/top_level.txt
+tests/test_advanced_operations.py
+tests/test_basic_operations.py
+tests/test_complex_numbers.py
+tests/test_logarithms.py
+tests/test_statistics.py
+tests/test_trigonometry.py
