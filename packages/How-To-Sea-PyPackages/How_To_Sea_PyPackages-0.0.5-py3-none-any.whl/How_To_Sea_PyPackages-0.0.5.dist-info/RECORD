@@ -1,0 +1,11 @@
+how_to_sea_auth_grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+how_to_sea_auth_grpc/client.py,sha256=ggCpYv_EUBk0OjuyqQD-NBYtE7KVko5OZfnp97zPUa8,1911
+how_to_sea_auth_grpc/server.py,sha256=1PldVMPviae4wxreQVizYY1hZ0fF6B9SVVn0BpE4a4Q,1633
+how_to_sea_auth_grpc/utils.py,sha256=MOOfzGwnX9cv7BzXam3poc-XhF7rosS5X9mU7Lpjvfw,109
+how_to_sea_auth_grpc/__internal__/AuthTokenValidation_pb2.py,sha256=i4SW2HcLhQgR3dTNHU0kwnI-NUzabgKBGcNFSEfZDd8,1628
+how_to_sea_auth_grpc/__internal__/AuthTokenValidation_pb2.pyi,sha256=i_wMxQrNjb1twOZ992rCBgNKdHffrVBC8kSUUSl03lo,559
+how_to_sea_auth_grpc/__internal__/AuthTokenValidation_pb2_grpc.py,sha256=tGAc3bpvwRsI_BiVYY_vqjL-FCTIYhzIZ_yI5gkemtc,3356
+How_To_Sea_PyPackages-0.0.5.dist-info/METADATA,sha256=p8yrtT_RlNwh5BUWz1_M8GQQ9M7NWAI3pOdWKWJcgII,676
+How_To_Sea_PyPackages-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+How_To_Sea_PyPackages-0.0.5.dist-info/top_level.txt,sha256=e-NVFk5Qf3awOAjz0RY2sjdY-cxRZ-QYcolB-W0ZksE,21
+How_To_Sea_PyPackages-0.0.5.dist-info/RECORD,,
