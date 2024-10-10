@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: keyslib
+Version: 0.0.1
+Summary: a library and cli for key bindings
+Home-page: https://github.com/adammillerio/keyslib
+Download-URL: https://github.com/adammillerio/keyslib/archive/v0.0.1.tar.gz
+Author: Adam Miller
+Author-email: miller@adammiller.io
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: python-dotenv
+Requires-Dist: invoke
+Requires-Dist: pyre-extensions
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pyre-check; extra == "dev"
+Requires-Dist: testslide; extra == "dev"

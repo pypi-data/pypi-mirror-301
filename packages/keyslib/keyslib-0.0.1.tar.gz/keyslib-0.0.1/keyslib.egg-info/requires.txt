@@ -1,0 +1,9 @@
+click
+python-dotenv
+invoke
+pyre-extensions
+
+[dev]
+ruff
+pyre-check
+testslide
