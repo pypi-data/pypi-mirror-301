@@ -1,0 +1,3 @@
+[console_scripts]
+fluidattacks-core-test=fluidattacks_core.testing.cli:main
+
