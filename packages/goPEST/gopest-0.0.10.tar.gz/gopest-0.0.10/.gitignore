@@ -1,0 +1,6 @@
+src/gopest/_version.py
+*.pyc
+build/
+dist/
+*.egg-info/
+tmp/
