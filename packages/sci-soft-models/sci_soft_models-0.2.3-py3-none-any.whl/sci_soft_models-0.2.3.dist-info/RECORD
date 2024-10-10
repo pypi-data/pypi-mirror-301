@@ -1,0 +1,15 @@
+sci_soft_models/__init__.py,sha256=meGQN7v4Mgxz6_JdDEQTIAhV16LxdLjeMfkEza1FfCM,295
+sci_soft_models/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sci_soft_models/types.py,sha256=_QfMpsu4NQe0s20ArodfvKZw6cvXCyYAzC4Awyww2fQ,271
+sci_soft_models/dev_author_em/__init__.py,sha256=xaLFQJS-Uq2WGDsY1_6DWEpfsBngARvQMgApgCICq48,376
+sci_soft_models/dev_author_em/constants.py,sha256=ShudxDF_IrV_dtPOnkw_mfUgTbHAd916wCV44UIdLfI,335
+sci_soft_models/dev_author_em/exp.py,sha256=E74cIKQpHL2ArBqhwRVpcRajGFNi2wysg2btGChx9_M,16702
+sci_soft_models/dev_author_em/main.py,sha256=86KtKX1NK8HILv6NS9bjx9sBDA6K93NCRQhLDgJYLfg,4473
+sci_soft_models/dev_author_em/training.py,sha256=AK33bVG4RG7_uOFr5l6xs4HhOnYMMizputR83zbLVNI,9400
+sci_soft_models/dev_author_em/data/__init__.py,sha256=rQ2Gu42-lWwGgR083v_uBY_0o-dAc21ClNo9IUe9R14,3490
+sci_soft_models/tests/test_dev_author_em.py,sha256=V56aA3JeMB_oX2oCCi4BACXAKl9WFe0pMErr0DEgy2M,2029
+sci_soft_models-0.2.3.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+sci_soft_models-0.2.3.dist-info/METADATA,sha256=4Oi5RYKlIH5eDVYEBBzwnPg1hhIyaWbRs1h4oRsDLTA,3590
+sci_soft_models-0.2.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sci_soft_models-0.2.3.dist-info/top_level.txt,sha256=XovDTojZnNH3Bny6YGQLzetcvXoY7h8339lrtfoONZk,16
+sci_soft_models-0.2.3.dist-info/RECORD,,
