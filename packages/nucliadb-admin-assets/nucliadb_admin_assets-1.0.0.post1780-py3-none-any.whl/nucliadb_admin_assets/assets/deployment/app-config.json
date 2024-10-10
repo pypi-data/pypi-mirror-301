@@ -1,0 +1,13 @@
+{
+  "version": "77b320cb54d2da4cf1515fd7b507f972bdc8f1a1",
+  "production": true,
+  "backend": {
+    "app": "nucliadb-admin",
+    "apiPath": "/api",
+    "oauth": "https://nuclia.cloud",
+    "siteKey": "",
+    "sentry_environment": "prod",
+    "sentry_url": "https://76bfd6392db6450a8f3174877b9bac9d@o393980.ingest.sentry.io/5425081",
+    "sentry_backend": "https://nuclia.cloud/api"
+  }
+}
