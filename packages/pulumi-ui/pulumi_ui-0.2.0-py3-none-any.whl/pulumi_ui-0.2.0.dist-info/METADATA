@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: pulumi-ui
+Version: 0.2.0
+Summary: UI for visualizing self-hosted Pulumi state.
+Author-email: Eric Riddoch <some-email@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi-slim
+Requires-Dist: pydantic-settings
+Requires-Dist: uvicorn[standard]
+Requires-Dist: typer
+Requires-Dist: boto3
+Requires-Dist: cloudpathlib[azure,gs,s3]
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: pulumi-ui[release,static-code-qa,test]; extra == "dev"
+Provides-Extra: release
+Requires-Dist: build; extra == "release"
+Requires-Dist: twine; extra == "release"
+Provides-Extra: static-code-qa
+Requires-Dist: pre-commit; extra == "static-code-qa"
+Requires-Dist: pylint; extra == "static-code-qa"
+Requires-Dist: black; extra == "static-code-qa"
+Requires-Dist: isort; extra == "static-code-qa"
+Requires-Dist: flake8; extra == "static-code-qa"
+Requires-Dist: flake8-docstrings; extra == "static-code-qa"
+Requires-Dist: Flake8-pyproject; extra == "static-code-qa"
+Requires-Dist: radon; extra == "static-code-qa"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+
+<p align="center">
+    <img src="https://github.com/mlops-club/pulumi-ui/blob/main/docs/pulumi-ui-logo.png?raw=true" width="200px">
+    <h3 align="center">pulumi-ui</h3>
+</p>
+
+<p align="center">
+  A UI to visualize Pulumi stacks in a <a href="https://www.pulumi.com/docs/concepts/state/">self-hosted state backend</a>.
+</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge&logo=apache" alt="Apache 2.0 License">
+  </a>
+  <!-- <a href="https://gitpod.io/#https://github.com/mlops-club/pyprojen">
+    <img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?style=for-the-badge&logo=gitpod" alt="Gitpod ready-to-code">
+  </a> -->
+  <a href="https://www.pulumi.com/docs/">
+    <img src="https://img.shields.io/badge/Pulumi-8A3391?style=for-the-badge&logo=pulumi" alt="Pulumi Docs">
+  </a>
+  <a href="https://github.com/mlops-club/pyprojen/commits/main">
+    <img src="https://img.shields.io/github/commit-activity/w/mlops-club/pulumi-ui?style=for-the-badge&logo=github" alt="Commit activity">
+  </a>
+  
+</p>
+
+<br/>
+
+## Overview
+
+**TL;DR** The goal of this project is to make free self-hosting Pulumi at scale more viable for teams that do not need all of Pulumi Cloud's features.
+
+The philosophical scope of this project includes tools, guides, or any resources that can help teams get the most **advanced, production-level experience** possible when self-hosting Pulumi--and to make this **simple**.
+
+![alt text](https://github.com/mlops-club/pulumi-ui/blob/main/docs/ui-preview.png?raw=true)
+
+## Quick start
+
+### Launch the UI
+
+Launch the UI using your Pulumi state backend. 
+
+These examples assume your state is located in `~/.pulumi` which is the default location used when you run `pulumi login --local`.
+
+With `pip`
+
+```bash
+pip install pulumi-ui
+pulumi-ui up --state-uri file://~
+```
+
+With `uvx`
+
+```bash
+uvx pulumi-ui up --state-uri file://~
+```
+
+With `pipx`
+
+```bash
+pipx run pulumi-ui up --state-uri file://~
+```
+
+With `uv`
+
+```bash
+uv add pulumi-ui
+pulumi-ui up --state-uri file://~
+```
+
+### Use a remote state backend
+
+#### AWS S3 Bucket
+
+`pulumi-ui` can pick up credentials from the environment, e.g. AWS profiles, IAM roles, etc.
+
+Assuming you normally run `pulumi login s3://my-pulumi-state-bucket` to connect to your state backend, then run:
+
+```bash
+AWS_PROFILE=xxx pulumi-ui up --state-uri s3://my-pulumi-state-bucket
+```
+
+#### Google Cloud Storage
+
+Assuming you normally run `pulumi login gs://my-pulumi-state-bucket` to connect to your state backend, then run:
+
+```bash
+GOOGLE_APPLICATION_CREDENTIALS=xxx pulumi-ui up --state-uri gs://my-pulumi-state-bucket
+```
+
+#### Azure Blob Storage
+
+Assuming you normally run `pulumi login az://my-pulumi-state-account/my-pulumi-state-container` to connect to your state backend, then run:
+
+```bash
+AZURE_STORAGE_CONNECTION_STRING=xxx pulumi-ui up --state-uri az://my-pulumi-state-account/my-pulumi-state-container
+```
+
+## Why does this project exist?
+
+Pulumi is a great IaC tool. 
+
+It's open source. It uses *real code* unlike Terraform and CloudFormation. It can deploy resources across multiple clouds, unlike AWS CDK.
+
+However, coming from "free" IaC tools like CloudFormation and AWS CDK, Pulumi Cloud's pricing of $1.10/resource/mo for teams larger than 10 people can be a tough pill to swallow.
+
+We support the company behind Pulumi. Pulumi leads the way in IaC innovation, and it takes money to do that. 
+
+We hope for this project to increase the size and passion of the Pulumi community, bringing them more contributors and customers.
+
+If engineers can use this tool to find initial success self-hosting Pulumi, they will be better equipped to get approval from their procurement departments to buy Pulumi Cloud. Sometimes that initial win requires more than 10 collaborators, more than 200 resources, more than a few-week "POC period", etc.
+
+## Contributing
+
+We would LOVE to have you contribute! 
+
+Guides, docs, examples, tests, features, hype, IaC to help folks deploy this themselves. All of it.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
