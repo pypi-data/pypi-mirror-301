@@ -1,0 +1,201 @@
+# Reference: 
+# https://github.com/mapbox/mbtiles-spec/blob/master/1.3/spec.md
+# https://github.com/mapbox/tippecanoe/blob/master/main.cpp#L2033
+
+import sqlite3
+import os, sys
+import logging
+from io import BytesIO
+import gzip
+import zlib
+from vtiles.utils.geopreocessing import check_vector, determine_tileformat, get_zoom_levels,get_bounds_center
+from vtiles.utils.mapbox_vector_tile import decode
+from concurrent.futures import ProcessPoolExecutor, as_completed
+from tqdm import tqdm
+from vtiles.utils.geopreocessing import fix_wkt
+import json
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+def decode_tile_data(tile_data):   
+    decoded_tile = None
+    if tile_data[:2] == b'\x1f\x8b':  # GZip compressed
+        tile_data = gzip.decompress(tile_data)
+    elif tile_data[:2] in (b'\x78\x9c', b'\x78\x01', b'\x78\xda'):  # Zlib compressed
+        tile_data = zlib.decompress(tile_data)
+    decoded_tile = decode(tile_data)    
+    return decoded_tile
+
+def extract_layer_fields(layer_data):
+    """Extract field types from layer data."""
+    fields = {}
+    for feature in layer_data['features']:
+        for key, value in feature['properties'].items():
+            if key not in fields:  # Only add if not already present
+                fields[key] = type(value).__name__  # Store the type of each field
+    return fields
+
+def decode_tile_batch(tile_batch):
+    """Decode a batch of tiles and extract layer information."""
+    layers = {}
+    
+    for tile_data_tuple in tile_batch:
+        tile_data = tile_data_tuple[0]  # Extract tile data from the tuple
+        decoded_tile = decode_tile_data(tile_data)
+        # Iterate over the layers in the decoded tile
+        for layer_name, layer_data in decoded_tile.items():
+            if layer_name not in layers:
+                layers[layer_name] = extract_layer_fields(layer_data)
+
+    return layers  
+
+def merge_layer_dicts(layers_accumulated, new_layers):
+    """Merge two dictionaries of layers."""
+    for name, layer in new_layers.items():
+        if name not in layers_accumulated:
+            layers_accumulated[name] = layer
+        else:
+            layers_accumulated[name].update(layer)
+
+def get_layers_from_all_tiles_parallel(mbtiles_file, batch_size=10000, workers=4):
+    """Extract layer information from all tiles in the MBTiles file."""
+    conn = sqlite3.connect(mbtiles_file)
+    cursor = conn.cursor()
+
+    # Query the total number of tiles to set up progress tracking
+    cursor.execute("SELECT COUNT(*) FROM tiles")
+    total_tiles = cursor.fetchone()[0]
+
+    layers = {}
+    offset = 0
+
+    with tqdm(total=total_tiles, desc="Processing tiles") as pbar:
+        with ProcessPoolExecutor(max_workers=workers) as executor:
+            futures = []
+            # Process tiles in parallel batches
+            while offset < total_tiles:
+                cursor.execute("""
+                    SELECT tile_data
+                    FROM tiles
+                    LIMIT ? OFFSET ?
+                """, (batch_size, offset))
+                tile_batch = cursor.fetchall()
+                # Submit a batch for parallel decoding
+                futures.append(executor.submit(decode_tile_batch, tile_batch))
+                
+                # Update offset for the next batch
+                offset += batch_size
+            
+            # As tasks complete, update progress and collect layer names
+            for future in as_completed(futures):
+                new_layers = future.result()  # This should return a dictionary
+                merge_layer_dicts(layers, new_layers)
+                pbar.update(batch_size)
+
+    cursor.close()
+    conn.close()
+    
+    # Format the layers into a JSON-compatible structure
+    json_output = {
+        "vector_layers": []
+    }
+    
+    for layer_name, fields in layers.items():
+        json_output["vector_layers"].append({
+            "id": layer_name,
+            "fields": fields
+        })
+    return json_output
+
+def fix_vectormetadata(input_mbtiles, compression_type, desc):
+    conn = sqlite3.connect(input_mbtiles)       
+    cursor = conn.cursor()
+    cursor.execute('CREATE TABLE IF NOT EXISTS metadata (name TEXT, value TEXT);')
+    cursor.execute('create unique index IF NOT EXISTS name on metadata (name);')    
+
+    # Update name and description
+    name = os.path.basename(input_mbtiles)
+    cursor.execute("INSERT OR IGNORE INTO metadata (name, value) VALUES (?, ?)", ('name', name))
+    
+    cursor.execute("INSERT OR IGNORE INTO metadata (name, value) VALUES (?, ?)", ('description', desc))
+
+    # Update format to pbf 
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('format', 'pbf'))
+   
+    # Update compression
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('compression', compression_type))
+    
+    # Update min zoom, max zoom
+    min_zoom, max_zoom = get_zoom_levels(input_mbtiles)
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('minzoom', min_zoom))
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('maxzoom', max_zoom))
+
+    # Update bounds and center
+    bounds, center = get_bounds_center(input_mbtiles)
+    if bounds:
+        cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('bounds', bounds))
+    if center:
+        cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('center', center))
+    
+    # update json
+    batch_size=10000
+    workers=4
+    layers_json = get_layers_from_all_tiles_parallel(input_mbtiles,batch_size,workers)
+    layers_json_str = json.dumps(layers_json)
+    if layers_json_str:
+        cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('json', layers_json_str))
+
+    conn.commit()
+    conn.close() 
+
+    logger.info(f'Fix metadata for {name} done!')
+
+def fix_rastermetadata(input_mbtiles, format,desc):
+    conn = sqlite3.connect(input_mbtiles)       
+    cursor = conn.cursor()
+    cursor.execute('CREATE TABLE IF NOT EXISTS metadata (name TEXT, value TEXT);')
+    cursor.execute('create unique index IF NOT EXISTS name on metadata (name);')    
+
+    # Update name and description
+    name = os.path.basename(input_mbtiles)
+    cursor.execute("INSERT OR IGNORE INTO metadata (name, value) VALUES (?, ?)", ('name', name))
+    cursor.execute("INSERT OR IGNORE INTO metadata (name, value) VALUES (?, ?)", ('description', desc))
+   
+    # Update format to raster
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('format',format))
+
+  
+    # Update min zoom, max zoom
+    min_zoom, max_zoom = get_zoom_levels(input_mbtiles)
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('minzoom', min_zoom))
+    cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('maxzoom', max_zoom))
+
+    # Update bounds and center
+    bounds, center = get_bounds_center(input_mbtiles)
+    if bounds:
+        cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('bounds', bounds))
+    if center:
+        cursor.execute("INSERT OR REPLACE INTO metadata (name, value) VALUES (?, ?)", ('center', center))
+    conn.commit()
+    conn.close() 
+
+def main():
+    if len(sys.argv) != 2:
+      logger.error("Please provide the MBTiles input filename.")
+      sys.exit(1)
+    input_mbtiles = sys.argv[1]
+    
+    if (os.path.exists(input_mbtiles)):
+        is_vector, compression_type = check_vector(input_mbtiles) 
+        tile_format = determine_tileformat(input_mbtiles)
+        desc = 'Update metadata by vtiles.mbtiles.mbtilesfixmeta' 
+        if is_vector:
+            fix_vectormetadata(input_mbtiles, compression_type,desc)   
+        else:
+            fix_rastermetadata(input_mbtiles, tile_format,desc)        
+    else: 
+        logger.error ('MBTiles file does not exist!. Please recheck and input a correct file path.')
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
