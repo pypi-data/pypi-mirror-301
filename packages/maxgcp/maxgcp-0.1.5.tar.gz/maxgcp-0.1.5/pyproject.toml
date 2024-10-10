@@ -1,0 +1,52 @@
+[project]
+name = "maxgcp"
+version = "0.1.5"
+description = "Optimized phenotype definitions boost GWAS power"
+authors = [
+    {name = "zietzm", email = "michael.zietz@gmail.com"}
+]
+dependencies = [
+    "numpy>=1.26.4",
+    "pandas>=2.2.2",
+    "scipy>=1.13.0",
+    "typer>=0.12.4",
+    "rich>=13.7.1",
+    "polars>=1.5.0",
+    "igwas>=0.1.0",
+    "pymbend>=0.1.0",
+    "bitarray>=2.9.2",
+    "pyzstd>=0.16.1",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+Repository = "https://github.com/tatonetti-lab/maxgcp"
+
+[project.scripts]
+maxgcp = "maxgcp.cli.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/maxgcp"]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.2",
+    "pytest>=8.3.2",
+]
