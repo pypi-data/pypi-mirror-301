@@ -1,0 +1,4 @@
+import platform
+ff = "hello.txt"
+print(platform.system())
+print(ff[:-3] + "")
