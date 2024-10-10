@@ -1,0 +1,7 @@
+trulens/providers/bedrock/__init__.py,sha256=pCgHmZqNM4CofD42Zr60OpJVBDgL8G-taKncUI5yj7Y,846
+trulens/providers/bedrock/endpoint.py,sha256=43C3d7tta6e4oLaI3IYpLO-3iPogIHWdj_dX01IT4MU,8237
+trulens/providers/bedrock/provider.py,sha256=n2clFrYlzIdgINXnDMqDm0yOxkkYeXuveD2v1KgUm9g,9887
+trulens/providers/bedrock/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trulens_providers_bedrock-1.1.0.dist-info/METADATA,sha256=ULTPxe86ghWRAXdGk-ZHVBnoxbGtKZYg13xoLXsUoOw,1048
+trulens_providers_bedrock-1.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+trulens_providers_bedrock-1.1.0.dist-info/RECORD,,
