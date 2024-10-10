@@ -1,0 +1,6 @@
+pyproject.toml
+oqd/__init__.py
+oqd_trical.egg-info/PKG-INFO
+oqd_trical.egg-info/SOURCES.txt
+oqd_trical.egg-info/dependency_links.txt
+oqd_trical.egg-info/top_level.txt
