@@ -1,0 +1,14 @@
+setup.py
+qcclient/__init__.py
+qcclient/client.py
+qcclient/config.py
+qcclient/job.py
+qcclient/configs/opt.json
+qcclient/configs/pysisyphus_tsopt.yaml
+qcclient/configs/rclone.conf
+qcclient/configs/sp.json
+qcclient_ISTCP2024.egg-info/PKG-INFO
+qcclient_ISTCP2024.egg-info/SOURCES.txt
+qcclient_ISTCP2024.egg-info/dependency_links.txt
+qcclient_ISTCP2024.egg-info/requires.txt
+qcclient_ISTCP2024.egg-info/top_level.txt

@@ -1,0 +1,42 @@
+[{
+    "description": "Optimizing geometries of a batch of molecules with the same spin and charge",
+    "driver_name": "opt_driver",
+    "input_dir": "./",
+    "output_dir": "./",
+    "molecules": [
+        "h2o.xyz",
+        "h2o.xyz",
+        "h2o.xyz",
+        "h2o.xyz",
+        "h2o.xyz"
+    ],
+    "molecules_comments": "List of molecule names in the input folder, such as h2o.xyz. \n Optimize all the molecules by default.",
+    "spin": 0,
+    "spin_comments": "Spin for each molecule. If spin is null, multiplicity will be guessed based on the neutral molecule.",
+    "charge": null,
+    "charge_comments": "Total charge of each molecule. If both spin and charge are null, neutral molecule is assumed.",
+    "constraints": [],
+    "constraints_comments": "List of Constraints. Must be consistent with the list of molecules. See https://geometric.readthedocs.io/en/latest/constraints.html#input-format",
+    "basis": "def2-tzvpp",
+    "basis_comments": "Basis set, see https://www.basissetexchange.org/",
+    "xc": "b3lyp",
+    "xc_comments": "Exchange correlation functional such as b3lyp, pbe, tpss, hf, b3lyp-d3bj.",
+    "verbose": 4,
+    "verbose_comments": "Print level for PySCF. 0: None, 4: INFO, 6: DEBUG.",
+    "with_solvent": false,
+    "with_solvent_comments": "Use implicit solvent or not.",
+    "solvent": {
+        "eps": 78.3553,
+        "eps_comments": "Dielectric constant.",
+        "method": "CPCM",
+        "method_comments": "Method for implicit solvent model, such as CPCM, IEFPCM, COSMO, SS(V)PE."
+    },
+    "with_gpu": true,
+    "with_gpu_comments": "Use GPU or not.",
+    "with_df": true,
+    "with_df_comments": "Use density fitting/RI or not.",
+    "maxsteps": 50,
+    "maxsteps_comments": "Max number of iterations for geometry optimization.",
+    "convergence_set": "GAU",
+    "convergence_set_comments": "Convergence criteria for geometry optimization. See geometric.readthedocs.io/en/latest/how-it-works.html#convergence-criteria"
+}]
