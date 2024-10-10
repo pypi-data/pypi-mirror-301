@@ -1,0 +1,8 @@
+highlighter/__init__.py,sha256=TBVTF7N-iee_x3A_hsGgcD4E5mvyVL9lelS8f_OFNCE,11545
+highlighter/__main__.py,sha256=gv59URcfzrBtVW-rMOgkmTeqAii5MxO-AwOANnUoTYM,24
+highlighter/analysis.py,sha256=shXj4LkkyrWucSThYjJJQtgg8QeSsOKHSZKcs0Yi6mc,15555
+highlighter/generator.py,sha256=znHXNU9HgP0w31zuycmviFIr85mb69Id7RIgwuU0y-M,1172
+vod_highlighter-0.2.0.dist-info/entry_points.txt,sha256=ixApk4k1bvGle9SXeWO7AcoRkTemPaux1mP_2tvUIyU,51
+vod_highlighter-0.2.0.dist-info/METADATA,sha256=DS5OR-lKKty75T2e3KAmEzUeT2IEvSPTeXHynwhBDx0,1981
+vod_highlighter-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vod_highlighter-0.2.0.dist-info/RECORD,,
