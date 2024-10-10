@@ -1,0 +1,17 @@
+txdpy/__init__.py,sha256=W7ijDi6kQ3poW79PE_TxBI4HmKU58wfyHcWLxC1zGTQ,3343
+txdpy/bk_179.py,sha256=_OP0Z1flX8wCjjAXS2r53ZQU9q1EJgr1wdGnjg0r1bc,29209
+txdpy/excel数据或mysql操作.py,sha256=WbVRDl36eJ3dCFEMmHfkSTzKA1xXRTsyfWS5KaImMVA,33365
+txdpy/列表操作.py,sha256=Upyr5Av8QfEuyyFCWLZ_H_NOKjkZS9WswFHuwpjuIlo,1111
+txdpy/字符串工具.py,sha256=h4fPWNdwKvZshq0TI5TXwA0qaDb_pjV-qUW5SeYNNwA,2766
+txdpy/字符串类型的判断和提取.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txdpy/数据库操作.py,sha256=UHBkLBhzTxzdiLDjbVGwPEfmNEUBGE97hnBZoSDzHD4,6213
+txdpy/文本括号及引号不匹配检查.py,sha256=3W8AEGfx78WBUwnjHV_J09iuO9F5tmPwXnCQQuUZF0E,5308
+txdpy/文本模糊搜索.py,sha256=JfAGzQACAPjOkSYahcEZj0sgnZ9Ah1gyBkE-1LBGlHk,650
+txdpy/爬虫辅助功能.py,sha256=6P8xchNz49j2xVlZLkKUVD_csqRxnwy13hac4t1z-hM,5882
+txdpy/百度ai接口使用.py,sha256=p5SNXEMWMM7xoyfgWZ_85yZ5O_8ekgngZXEckeL_MrA,3546
+txdpy/省市区名称的提取或判断.py,sha256=IPmUpWRQUw_42ZljlFtxAxpqG__bECRfiO-QdhTmb1M,2459
+txdpy/读取pdf.py,sha256=2_yMqvjtpydyxLl-DnK8pPewtGDfy-Wi0INE6aTT6Z4,6443
+txdpy-9.2.2.dist-info/METADATA,sha256=3fT0E1N5cXELEIH5sSnHMv7zbqF2RIhGpnmmC_VdN48,362
+txdpy-9.2.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+txdpy-9.2.2.dist-info/top_level.txt,sha256=vMfH5nh7suvVKVE9rZ_O6QVfCHM3aAN_elTkoYiH7G8,6
+txdpy-9.2.2.dist-info/RECORD,,
