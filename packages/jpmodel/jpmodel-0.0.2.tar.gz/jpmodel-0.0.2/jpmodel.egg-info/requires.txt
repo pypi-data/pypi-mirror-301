@@ -1,0 +1,7 @@
+tqdm
+numpy
+pandas
+scikit-learn
+rdkit
+torch
+torch_geometric
