@@ -1,0 +1,5 @@
+click
+cryptography
+python-dotenv
+openai
+rich
