@@ -1,0 +1,1382 @@
+{
+    "BillsOfMaterials": {
+      "BOMName": [
+        {
+          "ProductionPolicies": "BOMName"
+        },
+        {
+          "UserDefinedVariables": "BOMName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "BOMName"
+        },
+        {
+          "ProductionConstraints": "BOMName"
+        },
+        {
+          "ProductionCountConstraints": "BOMName"
+        }
+      ]
+    },
+    "BusinessCalendars": {
+      "CalendarName": [
+        {
+          "WorkCenters": "OperatingCalendar"
+        },
+        {
+          "Facilities": "OperatingCalendar"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "OperatingCalendar"
+        },
+        {
+          "FacilitiesMultiTimePeriod": "OperatingCalendar"
+        },
+        {
+          "WorkResources": "OperatingCalendar"
+        }
+      ],
+      "ScheduleName": [
+        {
+          "WorkCentersMultiTimePeriod": "OperatingSchedule"
+        }
+      ]
+    },
+    "BusinessHours": {
+      "CalendarName": [
+        {
+          "WorkCentersMultiTimePeriod": "OperatingCalendar"
+        }
+      ],
+      "ScheduleName": [
+        {
+          "WorkCenters": "OperatingSchedule"
+        },
+        {
+          "Facilities": "OperatingSchedule"
+        },
+        {
+          "Customers": "OperatingSchedule"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "OperatingSchedule"
+        },
+        {
+          "FacilitiesMultiTimePeriod": "OperatingSchedule"
+        },
+        {
+          "WorkResources": "OperatingSchedule"
+        },
+        {
+          "TransportationAssets": "OperatingSchedule"
+        }
+      ]
+    },
+    "ChangeoverTimes": {
+      "ChangeoverName": [
+        {
+          "WorkCentersMultiTimePeriod": "ChangeoverName"
+        },
+        {
+          "WorkCenters": "ChangeoverName"
+        }
+      ]
+    },
+    "Customers": {
+      "CustomerName": [
+        {
+          "CustomerTransitConstraints": "CustomerName"
+        },
+        {
+          "CustomerOrders": "CustomerName"
+        },
+        {
+          "TransitMatrix": "OriginName"
+        },
+        {
+          "TransportationLaneQueueDetails": "DestinationName"
+        },
+        {
+          "FlowConstraints": "DestinationName"
+        },
+        {
+          "OrderedProductSubstitution": "OrderCreationLocation"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "CustomerName"
+        },
+        {
+          "CustomerOrderProfiles": "CustomerName"
+        },
+        {
+          "CustomerDemand": "CustomerName"
+        },
+        {
+          "TransportationPolicies": "DestinationName"
+        },
+        {
+          "CustomerDemandOriginConstraints": "CustomerName"
+        },
+        {
+          "TransportationRates": "RouteDestinationName"
+        },
+        {
+          "FlowCountConstraints": "DestinationName"
+        },
+        {
+          "RelationshipConstraints": "Entity1"
+        },
+        {
+          "AdvancedQueueingDetails": "TargetLocation"
+        },
+        {
+          "UserDefinedVariables": "DestinationName"
+        },
+        {
+          "TransportationStopRates": "SiteName"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "DestinationName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "LoadBalancingDemand": "CustomerName"
+        },
+        {
+          "Shipments": "DestinationName"
+        },
+        {
+          "FixedRoutesDefinitions": "SiteName"
+        },
+        {
+          "CustomersMultiTimePeriod": "CustomerName"
+        },
+        {
+          "CustomerFulfillmentPolicies": "CustomerName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "DestinationName"
+        }
+      ]
+    },
+    "Facilities": {
+      "FacilityName": [
+        {
+          "InventoryPoliciesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "ReplenishmentOrders": "FacilityName"
+        },
+        {
+          "CustomerTransitConstraints": "SourceName"
+        },
+        {
+          "CustomerOrders": "SourceName"
+        },
+        {
+          "TransitMatrix": "OriginName"
+        },
+        {
+          "WorkCenterCountConstraints": "FacilityName"
+        },
+        {
+          "ReplenishmentPolicies": "FacilityName"
+        },
+        {
+          "TransportationLaneQueueDetails": "OriginName"
+        },
+        {
+          "WorkCenterQueueDetails": "FacilityName"
+        },
+        {
+          "WarehousingPolicies": "FacilityName"
+        },
+        {
+          "FlowConstraints": "OriginName"
+        },
+        {
+          "OrderedProductSubstitution": "SourceLocation"
+        },
+        {
+          "ReplenishmentPoliciesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "SourceName"
+        },
+        {
+          "ProcurementOrderProfiles": "FacilityName"
+        },
+        {
+          "InventoryPolicies": "FacilityName"
+        },
+        {
+          "TransportationPolicies": "OriginName"
+        },
+        {
+          "ProductionPolicies": "FacilityName"
+        },
+        {
+          "WorkCentersMultiTimePeriod": "FacilityName"
+        },
+        {
+          "CustomerDemandOriginConstraints": "ProductOriginLocation"
+        },
+        {
+          "FlowCountConstraints": "OriginName"
+        },
+        {
+          "AdvancedQueueingDetails": "FacilityName"
+        },
+        {
+          "UserDefinedVariables": "FacilityName"
+        },
+        {
+          "TransportationStopRates": "SiteName"
+        },
+        {
+          "FacilityDemand": "FacilityName"
+        },
+        {
+          "OrderFulfillmentPolicies": "FacilityName"
+        },
+        {
+          "ProductionOrders": "FacilityName"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "OriginName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProcurementPolicies": "FacilityName"
+        },
+        {
+          "ProductionOrderProfiles": "FacilityName"
+        },
+        {
+          "ReplenishmentOrderProfiles": "FacilityName"
+        },
+        {
+          "ProcurementOrders": "FacilityName"
+        },
+        {
+          "InventoryConstraints": "FacilityName"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "ProcurementPoliciesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "ProductionConstraints": "FacilityName"
+        },
+        {
+          "TransportationAssetsMultiTimePeriod": "DomicileLocation"
+        },
+        {
+          "WorkCenters": "FacilityName"
+        },
+        {
+          "WarehousingPoliciesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "LoadBalancingDemand": "SourceName"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "Shipments": "SourceName"
+        },
+        {
+          "FacilityCountConstraints": "FacilityName"
+        },
+        {
+          "ProductionCountConstraints": "FacilityName"
+        },
+        {
+          "FacilitiesMultiTimePeriod": "FacilityName"
+        },
+        {
+          "FixedRoutesDefinitions": "SiteName"
+        },
+        {
+          "WorkResources": "FacilityName"
+        },
+        {
+          "TransportationAssets": "DomicileLocation"
+        },
+        {
+          "TransportationDrivers": "DomicileLocation"
+        },
+        {
+          "InventoryCountConstraints": "FacilityName"
+        },
+        {
+          "CustomerFulfillmentPolicies": "SourceName"
+        },
+        {
+          "ProductionQueueDetails": "FacilityName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "OriginName"
+        }
+      ]
+    },
+    "FixedRoutes": {
+      "FixedRouteName": [
+        {
+          "FixedRoutesDefinitions": "FixedRouteName"
+        }
+      ]
+    },
+    "LoadBalancingSchedules": {
+      "LoadBalancingScheduleName": [
+        {
+          "LoadBalancingDemand": "LoadBalancingScheduleName"
+        }
+      ]
+    },
+    "Organizations": {
+      "OrganizationName": [
+        {
+          "Facilities": "Organization"
+        }
+      ]
+    },
+    "Periods": {
+      "PeriodName": [
+        {
+          "InventoryPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "CustomerTransitConstraints": "PeriodName"
+        },
+        {
+          "WorkCenterCountConstraints": "PeriodName"
+        },
+        {
+          "FlowConstraints": "PeriodName"
+        },
+        {
+          "ProcessesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "ReplenishmentPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "CustomerDemand": "PeriodName"
+        },
+        {
+          "WorkCentersMultiTimePeriod": "PeriodName"
+        },
+        {
+          "CustomerDemandOriginConstraints": "PeriodName"
+        },
+        {
+          "FlowCountConstraints": "PeriodName"
+        },
+        {
+          "UserDefinedVariables": "PeriodName"
+        },
+        {
+          "FacilityDemand": "PeriodName"
+        },
+        {
+          "TransportationModesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "SuppliersMultiTimePeriod": "PeriodName"
+        },
+        {
+          "InventoryConstraints": "PeriodName"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "ProcurementPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "ProductionConstraints": "PeriodName"
+        },
+        {
+          "WarehousingPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "SupplierCapabilitiesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "FacilityCountConstraints": "PeriodName"
+        },
+        {
+          "ProductionCountConstraints": "PeriodName"
+        },
+        {
+          "FacilitiesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "InventoryCountConstraints": "PeriodName"
+        },
+        {
+          "CustomersMultiTimePeriod": "PeriodName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "PeriodName"
+        },
+        {
+          "ProductsMultiTimePeriod": "PeriodName"
+        }
+      ]
+    },
+    "Processes": {
+      "ProcessName": [
+        {
+          "WarehousingPolicies": "StockingProcessName"
+        },
+        {
+          "ProcessesMultiTimePeriod": "ProcessName"
+        },
+        {
+          "TransportationPolicies": "LoadProcessName"
+        },
+        {
+          "ProductionPolicies": "ProcessName"
+        },
+        {
+          "UserDefinedVariables": "ProcessName"
+        },
+        {
+          "ProductionOrders": "ProcessName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "ProcessName"
+        },
+        {
+          "ProductionConstraints": "ProcessName"
+        },
+        {
+          "WarehousingPoliciesMultiTimePeriod": "StockingProcessName"
+        },
+        {
+          "ProductionCountConstraints": "ProcessName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "LoadProcessName"
+        }
+      ]
+    },
+    "ProductionWheelDetails": {
+      "ProductionWheelName": [
+        {
+          "WorkCenterQueueDetails": "QueueingPriorityLogicValue"
+        },
+        {
+          "ProductionQueueDetails": "QueueingPriorityLogicValue"
+        }
+      ]
+    },
+    "Products": {
+      "ProductName": [
+        {
+          "Processes": "ComponentName"
+        },
+        {
+          "InventoryPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "ReplenishmentOrders": "ProductName"
+        },
+        {
+          "CustomerTransitConstraints": "ProductName"
+        },
+        {
+          "CustomerOrders": "ProductName"
+        },
+        {
+          "ProductUnitsOfMeasure": "ProductName"
+        },
+        {
+          "ReplenishmentPolicies": "ProductName"
+        },
+        {
+          "TransportationLaneQueueDetails": "ProductName"
+        },
+        {
+          "WarehousingPolicies": "ProductName"
+        },
+        {
+          "FlowConstraints": "ProductName"
+        },
+        {
+          "OrderedProductSubstitution": "OrderedProduct"
+        },
+        {
+          "ProcessesMultiTimePeriod": "ComponentName"
+        },
+        {
+          "ReplenishmentPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "SupplierCapabilities": "ProductName"
+        },
+        {
+          "OrderProfileProductSelection": "PrimaryProduct"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "CustomerOrderProfiles": "ProductName"
+        },
+        {
+          "ProcurementOrderProfiles": "ProductName"
+        },
+        {
+          "CustomerDemand": "ProductName"
+        },
+        {
+          "InventoryPolicies": "ProductName"
+        },
+        {
+          "TransportationPolicies": "ProductName"
+        },
+        {
+          "ProductionPolicies": "ProductName"
+        },
+        {
+          "CustomerDemandOriginConstraints": "ProductName"
+        },
+        {
+          "FlowCountConstraints": "ProductName"
+        },
+        {
+          "RelationshipConstraints": "Entity1"
+        },
+        {
+          "AdvancedQueueingDetails": "ProductName"
+        },
+        {
+          "UserDefinedVariables": "ProductName"
+        },
+        {
+          "FacilityDemand": "ProductName"
+        },
+        {
+          "ProductionOrders": "ProductName"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "ProductName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProcurementPolicies": "ProductName"
+        },
+        {
+          "ChangeoverTimes": "CurrentProduct"
+        },
+        {
+          "ProductionOrderProfiles": "ProductName"
+        },
+        {
+          "ReplenishmentOrderProfiles": "ProductName"
+        },
+        {
+          "ProcurementOrders": "ProductName"
+        },
+        {
+          "InventoryConstraints": "ProductName"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "ProcurementPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "ProductionConstraints": "ProductName"
+        },
+        {
+          "WarehousingPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "SupplierCapabilitiesMultiTimePeriod": "ProductName"
+        },
+        {
+          "LoadBalancingDemand": "ProductName"
+        },
+        {
+          "Shipments": "ProductName"
+        },
+        {
+          "ProductionCountConstraints": "ProductName"
+        },
+        {
+          "InventoryCountConstraints": "ProductName"
+        },
+        {
+          "ProductionWheelDetails": "ProductName"
+        },
+        {
+          "BillsOfMaterials": "ProductName"
+        },
+        {
+          "CustomerFulfillmentPolicies": "ProductName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "ProductName"
+        },
+        {
+          "ProductsMultiTimePeriod": "ProductName"
+        }
+      ]
+    },
+    "ReviewSchedules": {
+      "ReviewScheduleName": [
+        {
+          "InventoryPoliciesMultiTimePeriod": "ReviewPeriod"
+        },
+        {
+          "TransportationRoutePlanners": "ReviewPeriod"
+        },
+        {
+          "TransportationLaneQueueDetails": "ReviewPeriod"
+        },
+        {
+          "WorkCenterQueueDetails": "ReviewPeriod"
+        },
+        {
+          "InventoryPolicies": "ReviewPeriod"
+        },
+        {
+          "OrderFulfillmentPolicies": "ReviewPeriod"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "ReviewPeriod"
+        },
+        {
+          "FixedRoutes": "ReviewPeriod"
+        },
+        {
+          "ProductionQueueDetails": "ReviewPeriod"
+        }
+      ]
+    },
+    "RiskBandDefinitions": {
+      "BandName": [
+        {
+          "UtilizationRiskConfigurations": "ThroughputUtilizationRiskBand"
+        },
+        {
+          "SupplierRiskConfigurations": "ConcentrationRiskBand"
+        },
+        {
+          "CustomerRiskConfigurations": "ConcentrationRiskBand"
+        },
+        {
+          "GeographicRiskConfigurations": "BioLabDistanceRiskBand"
+        },
+        {
+          "FacilityRiskConfigurations": "ConcentrationRiskBand"
+        }
+      ],
+      "RiskBandName": [
+        {
+          "NetworkRiskConfigurations": "ProductStockingPointCountRiskBand"
+        }
+      ]
+    },
+    "RiskRatingConfigurations": {
+      "RiskProfileName": [
+        {
+          "UtilizationRiskConfigurations": "RiskProfileName"
+        },
+        {
+          "SupplierRiskConfigurations": "RiskProfileName"
+        },
+        {
+          "CustomerRiskConfigurations": "RiskProfileName"
+        },
+        {
+          "GeographicRiskConfigurations": "RiskProfileName"
+        },
+        {
+          "NetworkRiskConfigurations": "RiskProfileName"
+        },
+        {
+          "FacilityRiskConfigurations": "RiskProfileName"
+        },
+        {
+          "RiskSummaryConfigurations": "RiskProfileName"
+        }
+      ],
+      "RiskRatingName": [
+        {
+          "ModelSettings": "PrimaryRiskRating"
+        }
+      ]
+    },
+    "ScenarioItems": {
+      "ItemName": [
+        {
+          "ScenarioRules": "ItemName"
+        },
+        {
+          "ScenarioItemAssignments": "ItemName"
+        }
+      ]
+    },
+    "ScenarioRules": {
+      "RuleName": [
+        {
+          "ScenarioItemAssignments": "ItemName"
+        }
+      ]
+    },
+    "Scenarios": {
+      "ScenarioName": [
+        {
+          "ScenarioItemAssignments": "ScenarioName"
+        },
+        {
+          "SequentialObjectives": "UserDefinedObjectiveName"
+        }
+      ]
+    },
+    "Shipments": {
+      "ShipmentID": [
+        {
+          "RelationshipConstraints": "Entity1"
+        },
+        {
+          "Groups": "MemberName"
+        }
+      ]
+    },
+    "StepCosts": {
+      "StepCostName": [
+        {
+          "Processes": "UnitCost"
+        },
+        {
+          "InventoryPoliciesMultiTimePeriod": "UnitStorageCost"
+        },
+        {
+          "TransitMatrix": "AdditionalCost"
+        },
+        {
+          "UserDefinedCosts": "UnitCost"
+        },
+        {
+          "ReplenishmentPolicies": "UnitCost"
+        },
+        {
+          "WarehousingPolicies": "InboundHandlingCost"
+        },
+        {
+          "ProcessesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "ReplenishmentPoliciesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "SupplierCapabilities": "UnitCost"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "TransportationModes": "UnitCost"
+        },
+        {
+          "InventoryPolicies": "UnitStorageCost"
+        },
+        {
+          "TransportationPolicies": "UnitCost"
+        },
+        {
+          "ProductionPolicies": "UnitCost"
+        },
+        {
+          "WorkCentersMultiTimePeriod": "FixedOperatingCost"
+        },
+        {
+          "TransportationRates": "FixedCostPerRoute"
+        },
+        {
+          "TransportationStopRates": "FixedPickupCost"
+        },
+        {
+          "TransportationModesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "ProcurementPolicies": "UnitCost"
+        },
+        {
+          "ChangeoverTimes": "ChangeoverCost"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "ProcurementPoliciesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "TransportationAssetsMultiTimePeriod": "FixedCost"
+        },
+        {
+          "WorkCenters": "FixedOperatingCost"
+        },
+        {
+          "Facilities": "FixedStartupCost"
+        },
+        {
+          "WarehousingPoliciesMultiTimePeriod": "InboundHandlingCost"
+        },
+        {
+          "SupplierCapabilitiesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "FacilitiesMultiTimePeriod": "FixedStartupCost"
+        },
+        {
+          "WorkResources": "UnitCost"
+        },
+        {
+          "TransportationAssets": "FixedCost"
+        },
+        {
+          "CustomerFulfillmentPolicies": "UnitCost"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "UnitCost"
+        }
+      ]
+    },
+    "Suppliers": {
+      "SupplierName": [
+        {
+          "CustomerTransitConstraints": "SourceName"
+        },
+        {
+          "TransitMatrix": "OriginName"
+        },
+        {
+          "TransportationLaneQueueDetails": "OriginName"
+        },
+        {
+          "FlowConstraints": "OriginName"
+        },
+        {
+          "OrderedProductSubstitution": "SourceLocation"
+        },
+        {
+          "SupplierCapabilities": "SupplierName"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "SourceName"
+        },
+        {
+          "TransportationPolicies": "OriginName"
+        },
+        {
+          "CustomerDemandOriginConstraints": "ProductOriginLocation"
+        },
+        {
+          "FlowCountConstraints": "OriginName"
+        },
+        {
+          "AdvancedQueueingDetails": "TargetLocation"
+        },
+        {
+          "UserDefinedVariables": "OriginName"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "OriginName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProcurementPolicies": "SourceName"
+        },
+        {
+          "SuppliersMultiTimePeriod": "SupplierName"
+        },
+        {
+          "ProcurementOrders": "SourceName"
+        },
+        {
+          "ProcurementPoliciesMultiTimePeriod": "SourceName"
+        },
+        {
+          "SupplierCapabilitiesMultiTimePeriod": "SupplierName"
+        },
+        {
+          "LoadBalancingDemand": "SourceName"
+        },
+        {
+          "Shipments": "SourceName"
+        },
+        {
+          "CustomerFulfillmentPolicies": "SourceName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "OriginName"
+        }
+      ]
+    },
+    "TableFilters": {
+      "FilterName": [
+        {
+          "ScenarioItems": "NamedFilters"
+        }
+      ]
+    },
+    "TemplateRoutes": {
+      "TemplateRouteName": [
+        {
+          "Shipments": "TemplateRouteName"
+        }
+      ]
+    },
+    "TransportationAssets": {
+      "AssetName": [
+        {
+          "TransitMatrix": "AssetName"
+        },
+        {
+          "TransportationModes": "AssetName"
+        },
+        {
+          "RelationshipConstraints": "Entity1"
+        },
+        {
+          "TransportationModesMultiTimePeriod": "AssetName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "TemplateRoutes": "AssetName"
+        },
+        {
+          "TransportationDrivers": "AllowedAssets"
+        }
+      ]
+    },
+    "TransportationBandCosting": {
+      "RateName": [
+        {
+          "TransportationModes": "UnitCost"
+        },
+        {
+          "TransportationPolicies": "UnitCost"
+        },
+        {
+          "TransportationModesMultiTimePeriod": "UnitCost"
+        },
+        {
+          "TransportationAssetsMultiTimePeriod": "UnitCost"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "UnitCost"
+        }
+      ]
+    },
+    "TransportationModes": {
+      "ModeName": [
+        {
+          "ReplenishmentOrders": "ServiceMode"
+        },
+        {
+          "CustomerTransitConstraints": "ModeName"
+        },
+        {
+          "CustomerOrders": "ServiceMode"
+        },
+        {
+          "FlowConstraints": "ModeName"
+        },
+        {
+          "CustomerDemand": "ServiceMode"
+        },
+        {
+          "TransportationPolicies": "ModeName"
+        },
+        {
+          "FlowCountConstraints": "ModeName"
+        },
+        {
+          "UserDefinedVariables": "ModeName"
+        },
+        {
+          "FacilityDemand": "ServiceMode"
+        },
+        {
+          "TransportationModesMultiTimePeriod": "ModeName"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "ModeName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProcurementOrders": "ServiceMode"
+        },
+        {
+          "Shipments": "ServiceMode"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "ModeName"
+        }
+      ]
+    },
+    "TransportationRates": {
+      "TransportationRateName": [
+        {
+          "TransportationAssets": "TransportationRateName"
+        }
+      ]
+    },
+    "TransportationRoutePlanners": {
+      "RoutePlannerName": [
+        {
+          "TransportationPolicies": "RoutePlannerName"
+        },
+        {
+          "FixedRoutes": "RoutePlannerName"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "RoutePlannerName"
+        }
+      ]
+    },
+    "TransportationStopRates": {
+      "TransportationStopRateName": [
+        {
+          "TransportationAssets": "TransportationStopRateName"
+        }
+      ]
+    },
+    "UnitsOfMeasure": {
+      "Symbol": [
+        {
+          "Processes": "ComponentQuantityUOM"
+        },
+        {
+          "InventoryPoliciesMultiTimePeriod": "ReviewPeriodUOM"
+        },
+        {
+          "UserDefinedForecastsData": "ForecastedQuantityUOM"
+        },
+        {
+          "ReplenishmentOrders": "QuantityUOM"
+        },
+        {
+          "CustomerTransitConstraints": "TransitBandUOM"
+        },
+        {
+          "CustomerOrders": "QuantityUOM"
+        },
+        {
+          "TransitMatrix": "TransportDistanceUOM"
+        },
+        {
+          "ProductUnitsOfMeasure": "UOMSymbol"
+        },
+        {
+          "ReplenishmentPolicies": "UnitCostUOM"
+        },
+        {
+          "TransportationLaneQueueDetails": "TimeInQueueCostUOM"
+        },
+        {
+          "WorkCenterQueueDetails": "TimeInQueueCostUOM"
+        },
+        {
+          "Products": "UnitValueUOM"
+        },
+        {
+          "WarehousingPolicies": "InboundHandlingCostUOM"
+        },
+        {
+          "FlowConstraints": "ConstraintValueUOM"
+        },
+        {
+          "ProcessesMultiTimePeriod": "ComponentQuantityUOM"
+        },
+        {
+          "ReplenishmentPoliciesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "SupplierCapabilities": "UnitCostUOM"
+        },
+        {
+          "OrderProfileProductSelection": "OrderQuantityUOM"
+        },
+        {
+          "CustomerFulfillmentPoliciesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "TransportationModes": "UnitCostUOM"
+        },
+        {
+          "CustomerOrderProfiles": "QuantityUOM"
+        },
+        {
+          "ProcurementOrderProfiles": "QuantityUOM"
+        },
+        {
+          "CustomerDemand": "QuantityUOM"
+        },
+        {
+          "StepCosts": "ThroughputLevelUOM"
+        },
+        {
+          "InventoryPolicies": "ReviewPeriodUOM"
+        },
+        {
+          "Suppliers": "SupplierCapacityUOM"
+        },
+        {
+          "TransportationPolicies": "UnitCostUOM"
+        },
+        {
+          "ProductionPolicies": "UnitCostUOM"
+        },
+        {
+          "WorkCentersMultiTimePeriod": "MinimumThroughputUOM"
+        },
+        {
+          "CustomerDemandOriginConstraints": "QuantityUOM"
+        },
+        {
+          "TransportationRates": "DistanceCostUOM"
+        },
+        {
+          "AdvancedQueueingDetails": "TimeInQueueCostUOM"
+        },
+        {
+          "UserDefinedVariables": "UOM"
+        },
+        {
+          "TransportationStopRates": "UnitPickupCostUOM"
+        },
+        {
+          "FacilityDemand": "QuantityUOM"
+        },
+        {
+          "TransportationModesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "OrderFulfillmentPolicies": "TimeInQueueCostUOM"
+        },
+        {
+          "ProductionOrders": "QuantityUOM"
+        },
+        {
+          "TransportationLaneModeQueueDetails": "TimeInQueueCostUOM"
+        },
+        {
+          "TransportationBandCosting": "DistanceBandUOM"
+        },
+        {
+          "ProcurementPolicies": "UnitCostUOM"
+        },
+        {
+          "ModelSettings": "PrimaryQuantityUOM"
+        },
+        {
+          "ChangeoverTimes": "ChangeoverTimeUOM"
+        },
+        {
+          "ProductionOrderProfiles": "QuantityUOM"
+        },
+        {
+          "SuppliersMultiTimePeriod": "SupplierCapacityUOM"
+        },
+        {
+          "ReplenishmentOrderProfiles": "QuantityUOM"
+        },
+        {
+          "ProcurementOrders": "QuantityUOM"
+        },
+        {
+          "InventoryConstraints": "ConstraintValueUOM"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "ProcurementPoliciesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "ProductionConstraints": "ConstraintValueUOM"
+        },
+        {
+          "GreenfieldServiceBands": "ServiceBandDistanceUOM"
+        },
+        {
+          "TransportationAssetsMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "WorkCenters": "MinimumThroughputUOM"
+        },
+        {
+          "Facilities": "StorageCapacityUOM"
+        },
+        {
+          "WarehousingPoliciesMultiTimePeriod": "InboundHandlingCostUOM"
+        },
+        {
+          "SupplierCapabilitiesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "Customers": "BackorderTimeUOM"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "CapacityUOM"
+        },
+        {
+          "Shipments": "QuantityUOM"
+        },
+        {
+          "FacilitiesMultiTimePeriod": "StorageCapacityUOM"
+        },
+        {
+          "TransportationAssets": "MaxDistanceToFirstPickupUOM"
+        },
+        {
+          "ProductionWheelDetails": "DurationUoM"
+        },
+        {
+          "BillsOfMaterials": "QuantityUOM"
+        },
+        {
+          "CustomersMultiTimePeriod": "BackorderTimeUOM"
+        },
+        {
+          "CustomerFulfillmentPolicies": "UnitCostUOM"
+        },
+        {
+          "ProductionQueueDetails": "TimeInQueueCostUOM"
+        },
+        {
+          "TransportationPoliciesMultiTimePeriod": "UnitCostUOM"
+        },
+        {
+          "ProductsMultiTimePeriod": "UnitValueUOM"
+        }
+      ]
+    },
+    "UserDefinedConstraints": {
+      "ConstraintName": [
+        {
+          "SequentialObjectives": "UserDefinedObjectiveName"
+        }
+      ]
+    },
+    "UserDefinedCosts": {
+      "CostName": [
+        {
+          "SequentialObjectives": "UserDefinedObjectiveName"
+        }
+      ]
+    },
+    "UserDefinedForecasts": {
+      "ForecastName": [
+        {
+          "InventoryPoliciesMultiTimePeriod": "DOSUserDefinedForecastName"
+        },
+        {
+          "UserDefinedForecastsData": "ForecastName"
+        },
+        {
+          "InventoryPolicies": "DOSUserDefinedForecastName"
+        }
+      ]
+    },
+    "UserDefinedVariables": {
+      "VariableName": [
+        {
+          "UserDefinedCosts": "VariableName"
+        },
+        {
+          "UserDefinedConstraints": "VariableName"
+        },
+        {
+          "SequentialObjectives": "UserDefinedObjectiveName"
+        }
+      ]
+    },
+    "WorkCenters": {
+      "WorkCenterName": [
+        {
+          "Processes": "WorkCenterName"
+        },
+        {
+          "WorkCenterCountConstraints": "WorkCenterName"
+        },
+        {
+          "ProcessesMultiTimePeriod": "WorkCenterName"
+        },
+        {
+          "ProductionPolicies": "WorkCenterName"
+        },
+        {
+          "WorkCentersMultiTimePeriod": "WorkCenterName"
+        },
+        {
+          "UserDefinedVariables": "WorkCenterName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "ProductionPoliciesMultiTimePeriod": "WorkCenterName"
+        }
+      ]
+    },
+    "WorkResources": {
+      "WorkResourceName": [
+        {
+          "Processes": "WorkResourceName"
+        },
+        {
+          "ProcessesMultiTimePeriod": "WorkResourceName"
+        },
+        {
+          "Groups": "MemberName"
+        },
+        {
+          "WorkResourcesMultiTimePeriod": "WorkResourceName"
+        }
+      ]
+    }
+  }
