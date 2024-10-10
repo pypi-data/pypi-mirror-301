@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-signal-selector = napari_signal_selector:napari.yaml
