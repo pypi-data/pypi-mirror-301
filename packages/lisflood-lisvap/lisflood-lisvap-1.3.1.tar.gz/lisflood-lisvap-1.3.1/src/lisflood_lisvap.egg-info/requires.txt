@@ -1,0 +1,7 @@
+numpy>=1.15
+netCDF4
+python-dateutil
+future
+nine
+pathlib2
+pyproj
