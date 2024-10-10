@@ -1,0 +1,3 @@
+[console_scripts]
+api-check=chainup_api_check.main:app
+
