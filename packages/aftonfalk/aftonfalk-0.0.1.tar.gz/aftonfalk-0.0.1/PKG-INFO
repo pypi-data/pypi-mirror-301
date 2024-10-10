@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: aftonfalk
+Version: 0.0.1
+Summary: Create runs for data pipelines
+Author-email: Erik Bremstedt <erik.bremstedt@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pendulum==3.0.0
+Requires-Dist: pyodbc==5.1.0
+
+# Aftonfalk
+
+Aftonfalk is a module that makes it easier to interact with microsoft sql server. You can see it as an extension to pyodbc
+
+## How to install
+
+```sh
+pip install aftonfalk
+```
+
+## Example usage
+
+
+## Notes
