@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project]
+dynamic = ["dependencies"]
+name = "yw_etl_tap_sqlalchemy"
+requires-python = ">=3.10"
+version = '0.1.7'
+
+[tool.setuptools]
+packages = ["yw_etl_tap_sqlalchemy", "yw_etl_tap_sqlalchemy.tapstream"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[project.scripts]
+tap-sqlalchemy = "yw_etl_tap_sqlalchemy.main:main"
