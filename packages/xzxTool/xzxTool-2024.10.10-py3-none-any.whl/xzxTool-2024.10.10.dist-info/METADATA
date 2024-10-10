@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xzxTool
+Version: 2024.10.10
+Summary: simple usage
+Home-page: 
+Author: zhixin
+Author-email: 
+License: MIT Licence
+Platform: any
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+tools for personal usage
