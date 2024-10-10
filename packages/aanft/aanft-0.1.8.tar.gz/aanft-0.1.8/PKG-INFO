@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aanft
+Version: 0.1.8
+Summary: Fetching WAX AtomicAssets made easier
+Home-page: https://github.com/funkaclau
+Author: funkaclau
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: loguru
+Requires-Dist: typing_extensions
+Requires-Dist: typing
+Requires-Dist: aiofiles
