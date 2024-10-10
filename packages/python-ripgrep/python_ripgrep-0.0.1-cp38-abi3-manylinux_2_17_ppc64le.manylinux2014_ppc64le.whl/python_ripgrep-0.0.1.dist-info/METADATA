@@ -1,0 +1,6 @@
+Metadata-Version: 2.3
+Name: python-ripgrep
+Version: 0.0.1
+Summary: A Python wrapper for ripgrep
+Author-email: Josh Learn <josh@exponent.run>
+Requires-Python: >=3.8, <4.0
