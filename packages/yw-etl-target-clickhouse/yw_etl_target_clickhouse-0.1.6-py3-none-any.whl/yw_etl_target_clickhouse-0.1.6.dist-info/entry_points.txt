@@ -1,0 +1,2 @@
+[console_scripts]
+target-clickhouse = yw_etl_target_clickhouse.main:main
