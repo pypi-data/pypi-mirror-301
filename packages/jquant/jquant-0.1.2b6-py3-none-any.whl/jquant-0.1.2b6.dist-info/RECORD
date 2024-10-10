@@ -1,0 +1,12 @@
+jquant-0.1.2b6.dist-info/METADATA,sha256=lLR0RXEYj57NMhNux3xvLC38XvSYo5ijzHOmQFYiYFQ,487
+jquant-0.1.2b6.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+jquant-0.1.2b6.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+jquant/.DS_Store,sha256=rH8r-_jR7JSBAv1MFZ4SyTbRBlkgtteAObCxY5prMCA,6148
+jquant/__init__.py,sha256=2YKORDxlgQ9rsi12Z3TNsDMmDN_bE_CQBXmWCgoUXyI,815
+jquant/_typing.py,sha256=A4wjIlwOhOKEacrrA_ZRicD9owdtV9ghEYs7kzulPRM,1760
+jquant/aio.py,sha256=u67UIogAt-r2tUZWzWdL2vc88rd9ph6vXxtl4uio5NA,26918
+jquant/client.py,sha256=zvigRxrQcVa7KEkaW9RPJVXeoPTQFwwwr7959gRmJls,28152
+jquant/platform_pb2.py,sha256=qLcBeGU30zn_OXA-jSyhpJgIOa0Y75cYCLIGeCAH5UI,26118
+jquant/platform_pb2.pyi,sha256=cY66LoyLbqStk45SGKRZPTFrEGRQgkaJhVaDAxiQ6LU,36080
+jquant/platform_pb2_grpc.py,sha256=sOjWnokinrh_2muXGJGSZ1l1LY3EuTKUciSAqyEYh0w,28612
+jquant-0.1.2b6.dist-info/RECORD,,
