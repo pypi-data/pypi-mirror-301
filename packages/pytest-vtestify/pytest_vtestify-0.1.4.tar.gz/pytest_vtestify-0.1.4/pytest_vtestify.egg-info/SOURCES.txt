@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pytest_vtestify.egg-info/PKG-INFO
+pytest_vtestify.egg-info/SOURCES.txt
+pytest_vtestify.egg-info/dependency_links.txt
+pytest_vtestify.egg-info/entry_points.txt
+pytest_vtestify.egg-info/requires.txt
+pytest_vtestify.egg-info/top_level.txt
+visual_testify/__init__.py
+visual_testify/visual_assertion.py

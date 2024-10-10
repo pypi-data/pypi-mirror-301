@@ -1,0 +1,93 @@
+![pytest-vtestify](https://github.com/user-attachments/assets/a4d71178-342b-47f6-8cc6-f7a8ce2a9938)
+
+# pytest-vtestify
+
+`pytest-vtestify` is a pytest plugin designed for visual assertion and image comparison, utilizing Structural Similarity Index (SSIM). This package is perfect for validating UI changes or detecting regressions in web and software interfaces.
+
+## Features
+
+- Compare two images using SSIM.
+- Visualize the differences between images.
+- Automatically generate and save the diff image with bounding boxes.
+- Integrate seamlessly into pytest framework for automated testing workflows.
+
+## Installation
+
+To install the package, simply run:
+
+```bash
+pip install pytest-vtestify
+```
+
+##  Usage
+
+### Basic Usage
+
+You can integrate pytest-vtestify into your test suite by using the visual_assertion fixture. Below is an example of how to compare two images and generate a diff image.
+
+```python
+def test_visual_comparison(visual_assertion):
+    image1 = "path/to/expected_image.png"
+    image2 = "path/to/actual_image.png"
+    visual_assertion(image1, image2, threshold=0.95)
+```
+
+### Web Automation Testing with Selenium
+`pytest-vtestify` can also be used to perform visual regression testing in web automation projects, especially when working with dynamic web content. Here's an example using Selenium:
+
+1. Capture screenshots of the expected and actual web pages.
+2. Use visual_assertion to compare them.
+
+#### Example using Selenium:
+
+```python
+from selenium import webdriver
+
+def test_webpage_visual_comparison(visual_assertion):
+    driver = webdriver.Chrome()
+    
+    # Navigate to the webpage and capture a screenshot
+    driver.get('https://example.com')
+    driver.save_screenshot('actual_page.png')
+    
+    # Assume 'expected_page.png' is the expected screenshot
+    expected_image = 'path/to/expected_page.png'
+    actual_image = 'actual_page.png'
+    
+    # Compare screenshots
+    visual_assertion(expected_image, actual_image, threshold=0.98)
+    
+    driver.quit()
+```
+In this example:
+
+Selenium's `webdriver.Chrome()` is used to open a web page.
+The actual web page screenshot is compared to an expected screenshot using `pytest-vtestify`.
+The `threshold` value specifies how similar the images should be to pass the test.
+
+### Diff Image Output
+When the comparison fails, a diff image will be automatically generated and saved in `report/images/diff.png`. This diff image contains:
+
+- The expected image.
+- The actual image.
+- The diff image with bounding boxes highlighting the differences.
+
+### Folder Structure
+If the `report/images` folder doesn't exist, the plugin will create it during the test execution and place the diff image inside it.
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### **Instructions for Using pytest-vtestify with Selenium**
+
+In the example provided for web automation testing with Selenium:
+- Selenium takes a screenshot of a web page during a test.
+- You compare the screenshot to an "expected" image using the `visual_assertion` fixture from `pytest-vtestify`.
+- The `threshold` parameter determines how closely the two images should match.
+
+This approach is commonly used in visual regression testing for web automation, helping to catch unintended UI changes or regressions.
+
+more question find me on:
+- Instagram: [https://instagram.com/idejongkok](https://www.instagram.com/idejongkok/)
+- YouTube: [https://youtube.com/idejongkok](https://youtube.com/idejongkok)
+- Website: https://idejongkok.com
