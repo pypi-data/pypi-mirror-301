@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: How-To-Sea-PyPackages
+Version: 0.0.3
+Summary: A internal project to easily access the GRPC bindings for the How to Sea project
+Author-email: Jun Song <justin.warambourg@gmail.com>
+Project-URL: Homepage, https://github.com/early-riser18/HowToSea
+Project-URL: Issues, https://github.com/early-riser18/HowToSea/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## Python implementation
+You will need the following 
+```
+grpcio~=1.66
+grpcio-tools~=1.66
+```
+
+Generate the python bindings with
+```bash
+python -m grpc_tools.protoc -I./proto --python_out=./proto --pyi_out=./proto --grpc_python_out=./proto ./proto/<filename>.proto
+```
