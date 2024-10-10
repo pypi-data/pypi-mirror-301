@@ -1,0 +1,3 @@
+[console_scripts]
+matomo=matomo_cli.cli:cli
+
