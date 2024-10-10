@@ -1,0 +1,14 @@
+llmdk/__init__.py,sha256=H7uEYQ21FsQeTWErku3vuUrCRIF7T89jmUycZrifaM4,121
+llmdk/llmdk.py,sha256=x1pxGike6JdI226TZvCWA0TDy8yebPEGlyBOW0kJFik,2251
+llmdk/version.py,sha256=ESJS2phO54SMs2Jtm7HBUiNtm4oLxLLPKgocrZLI0u0,72
+llmdk/providers/anthropic.py,sha256=6k47ju7znCk9DeWfGcjHkZX3zwomaeKt2vc2VVTSp3s,1746
+llmdk/providers/groq.py,sha256=mn9EbdK_wKpqOexRVGeQRQK7CuZwDPdegQyWg5mgHbE,1064
+llmdk/providers/huggingface.py,sha256=hLzB13onKzP7dFXl2NO1O333VIKRk7BEHkXoHYZri6Q,1081
+llmdk/providers/interface.py,sha256=cOh3_YeJ-Qd9g4RuF8_-35LhctyGlLZu8hUlb0wyDF4,3040
+llmdk/providers/ollama.py,sha256=xmOJsn3JfS2uointoG7vt7UlHZom_6mCRKMbaHvF8Z0,1305
+llmdk/providers/openai.py,sha256=ziMZDUHAx9wmlkxS0kIon0c-tbP-QEwgLO1bCxQUSM4,1266
+llmdk-1.2410.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+llmdk-1.2410.3.dist-info/METADATA,sha256=ch7TDyrA_kq63U0NOxDELWp7Re5Xpk2KSmV8WVbpyOA,43885
+llmdk-1.2410.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+llmdk-1.2410.3.dist-info/top_level.txt,sha256=5Closae2Etk94Led6pgMALLrN1uzvSC7jDEoQZKjvvw,6
+llmdk-1.2410.3.dist-info/RECORD,,
