@@ -1,0 +1,116 @@
+{% extends "cyg_base.html" %}
+
+{% block cyg_style %}
+
+{% endblock %}
+
+{% block cyg_content %}
+<blockquote class="layui-elem-quote layui-text">
+PLC 模拟器
+</blockquote>
+<div class="layui-card layui-panel">
+    <div class="layui-card-header">
+    </div>
+    <div class="layui-card-body">
+        <form class="layui-form" action="" method="POST">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">plc ip</label>
+                <div class="layui-input-block">
+                    <input type="text" name="plc_ip" lay-verify="required" class="layui-input plc_ip" placeholder="" autocomplete="off" value="">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">标签名</label>
+                <div class="layui-input-block">
+                    <input type="text" name="tag_name" lay-verify="required" class="layui-input tag_name" placeholder="" autocomplete="off" value="">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">操作方式</label>
+                <div class="layui-input-block">
+                    <label>
+                        <select name="operation_type" lay-filter="operation_type" lay-verify="required" class="operation_type">
+                            <option value=""></option>
+                                <option value="read">读</option>
+                                <option value="write">写</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">写入值</label>
+                <div class="layui-input-block">
+                    <input type="text" name="write_value" class="layui-input write_value" placeholder="" autocomplete="off" value="">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">数据类型</label>
+                <div class="layui-input-block">
+                    <label>
+                        <select name="data_type" lay-filter="data_type" lay-verify="required" class="data_type">
+                            <option value=""></option>
+                                <option value="int">int</option>
+                                <option value="bool">bool</option>
+                                <option value="string">string</option>
+                                <option value="real">real</option>
+                                <option value="lreal">lreal</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">结果</label>
+                <div class="layui-input-block">
+                    <input type="text" name="operation_result" autocomplete="off" class="layui-input operation_result" value='{{operation_result}}' disabled>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button type="submit" class="layui-btn" lay-submit lay-filter="operation_submit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block cyg_script %}
+<script>
+    layui.use(['form', 'util'], function(){
+        let form = layui.form;
+        let layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(operation_submit)', function(data){
+            let field = data.field; // 获取表单字段值
+
+            fetch('/operation_submit', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    plc_ip: field.plc_ip, tag_name: field.tag_name,
+                    operation_type: field.operation_type, data_type: field.data_type,
+                    write_value: field.write_value
+                })
+            })
+            .then(response => {return response.json()})
+            .then(data => {
+                const result = data["value"]
+
+                let operation_result = document.querySelector('.operation_result');
+                operation_result.value = result
+            })
+            .catch(error => console.error('Error:', error));
+            return false // 阻止表单提交
+        })
+    })
+</script>
+{% endblock %}
+
