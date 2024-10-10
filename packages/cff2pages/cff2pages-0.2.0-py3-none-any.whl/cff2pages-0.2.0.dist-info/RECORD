@@ -1,0 +1,17 @@
+cff2pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cff2pages/cff2pages.py,sha256=NP72ky5HzMdBUQncK4HCGF2OvzIY9ludUt48GXdwDMU,5329
+cff2pages/resources/css/cff2pages.css,sha256=4ruVjkB1BjWlK-1tYiNOw_Ihjlb_mKtAXieB1iPNBuI,3243
+cff2pages/resources/img/github-logo.png,sha256=Nn1csq3GCUUc-RJyUO3-iTg3SF58d519y04xI09ZsAE,6393
+cff2pages/resources/img/gitlab-logo.png,sha256=sAws6gh9R0tMK81gwr3c8KnMtaJKjeumXL97tPcweG4,3659
+cff2pages/resources/img/orcid_16x16.webp,sha256=33SgMB8qAvp2nIZrexehpweDF7aCZbA4uACy7F6AbgY,166
+cff2pages/templates/authors_macro.html,sha256=7HuTEuwW-OLJvhVlUuOj2Qu9XF5LZbt1KPSeswB2IwQ,1303
+cff2pages/templates/base.html,sha256=QkD9fBMtKoomDiTNuaZexzJQrSvph20hjDp9qeZP-qc,1406
+cff2pages/templates/citation_macro.html,sha256=L4BZsTssAdzXvAUhSmIZfP4Y5wg_cVRrMLC7FE-XX6U,2567
+cff2pages/templates/identifiers_macro.html,sha256=mG4Hu1EnDu_3dSIoA6oH6gxIzC4DA94QEkw41Hw4o54,3446
+cff2pages/templates/keyword_macro.html,sha256=kTZaCKRALTB8E_Ifu5O0M5LGaJ8uWoz_zlfkiT8bZbE,1528
+cff2pages/templates/reference_macro.html,sha256=SnQYR68Z_yVqNhNL53EWmqQCEzsXLXP9zJMl6ERfFTw,4357
+cff2pages-0.2.0.dist-info/METADATA,sha256=jVc95mqCq5Hplklts4Xmca3yJUyt8ryX1bZXv-0Qcpo,4108
+cff2pages-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cff2pages-0.2.0.dist-info/entry_points.txt,sha256=OdG9PmPk7VnIivKpZEWbFZockMWp8qB4tNSwFEl5MyY,60
+cff2pages-0.2.0.dist-info/licenses/LICENSE,sha256=P73CtKV3tDtLGvmmBOC3jtFGvxBao-xZy-45T3Wf4gI,1081
+cff2pages-0.2.0.dist-info/RECORD,,
