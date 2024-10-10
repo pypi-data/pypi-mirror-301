@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pp-recordio
+Version: 0.1.0
+Summary: Post Perception's RecordIO facimile.
+Home-page: https://github.com/postperception/pp_recordio
+Author: Sam Liu
+Author-email: sam@postperception.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+PostPerception's facimile of Google's RecordIO library (no direct relation other than name). This is a binary format for storing sequences of arbitrary binary data, usually protocol buffers. It tolerates corruption of the underlying data and uses a CRC32 checksum to detect data corruptions. Supports Linux x86, Darwin x86, and Apple Silicon (Darwin amd64).
