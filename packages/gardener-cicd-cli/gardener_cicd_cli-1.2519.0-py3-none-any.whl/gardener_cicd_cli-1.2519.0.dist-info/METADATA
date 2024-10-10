@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gardener-cicd-cli
+Version: 1.2519.0
+Summary: Gardener CI/CD Command Line Interface
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gardener-cicd-libs ==1.2519.0
+
+Gardener CI/CD Command Line Interface
