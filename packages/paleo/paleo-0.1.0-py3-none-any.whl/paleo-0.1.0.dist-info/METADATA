@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: paleo
+Version: 0.1.0
+Summary: Python package for interfacing with CAVE edit histories
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: caveclient>=5.30.2
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: tqdm-joblib>=0.0.4
+Provides-Extra: jupyter
+Requires-Dist: ipywidgets>=8.1.5; extra == 'jupyter'
+Requires-Dist: jupyter>=1.1.1; extra == 'jupyter'
+Description-Content-Type: text/markdown
+
+# paleo
+
+Python package for interfacing with CAVE edit histories
