@@ -1,0 +1,23 @@
+RealtimeTTS/__init__.py,sha256=o-fpgYx3NBFJKghQaBFvmgZG5T1v9rN9k1iLXyZFMCU,1672
+RealtimeTTS/stream_player.py,sha256=89NX4deIYjGD7zQ0RuFSYv9g8W449yHITnbaUVrNuxA,10568
+RealtimeTTS/text_to_stream.py,sha256=sKED8JslPWyVeHshY0smkLpuBxNKbTMJ7j9eRwBvlsU,32355
+RealtimeTTS/threadsafe_generators.py,sha256=IseLpAkbqQHCu382UkTzpTj7A3Oc8mW4pdnN5J-tz8k,10179
+RealtimeTTS/engines/__init__.py,sha256=QXiWw9OUcDrrrynnBQJSTpYOMCEoKcl0u4hcGwRvyFE,1167
+RealtimeTTS/engines/azure_engine.py,sha256=_glwXBVGf0iWhfnWSpIrHNN8UQ1twcHjvloZnPqmw_A,11928
+RealtimeTTS/engines/base_engine.py,sha256=Dfk_t6O66s8Zry8zkSnmTkFhsTz7zC5ChOAeTHdJkCg,4474
+RealtimeTTS/engines/chinese.json,sha256=bEXXR6A1k4ZMJcjAqBp8yCYntLI_XrXbyj9270UVMU4,506471
+RealtimeTTS/engines/coqui_default_voice.json,sha256=xXCEb6Mpcc8jfh_ENQ9OEsNLVeMaVNY8-fChvIeDXj8,506653
+RealtimeTTS/engines/coqui_engine - Kopie (2).py,sha256=076So-iddUmUmibON5pFzfPiCyyUG8c0YndmHK9VCb0,38507
+RealtimeTTS/engines/coqui_engine - Kopie.py,sha256=kSUkbF7RwtlJYSRwGw5HODDu8DgcKqaS96oCD3yS5dQ,38745
+RealtimeTTS/engines/coqui_engine - pip ehandling.py,sha256=VKIa_lKJloUfuQzjwW77lvD97Ij8V20bsbSix_dqE-A,44530
+RealtimeTTS/engines/coqui_engine.py,sha256=77pXqp-mCCeqrsXTTlqUMC1Lp0LwQAnAPUwZs9UqoJU,39869
+RealtimeTTS/engines/elevenlabs_engine.py,sha256=npQPrC38JG5YxKdYbzWSLZ2VScbVR8Nv-7fQ2SP1XE0,10839
+RealtimeTTS/engines/female.json,sha256=4feCM6x3aZ64-vT15y0saX4xDXcNwq1Hgqx42k9HLvQ,505425
+RealtimeTTS/engines/gtts_engine.py,sha256=xVd_3ZOaFobE44n7Aji3SGbzW_-BX8F1vXtD2DK6VOs,4558
+RealtimeTTS/engines/male.json,sha256=xXCEb6Mpcc8jfh_ENQ9OEsNLVeMaVNY8-fChvIeDXj8,506653
+RealtimeTTS/engines/openai_engine.py,sha256=2SwS4lUSg-lAW3uw5fCex5dtpVq7ghDxetiTqm0ii_g,3477
+RealtimeTTS/engines/system_engine.py,sha256=YQqXqAhl5Sv_KGlPfd3P8O_xeeAaU51hetG5YtG1lJU,4834
+RealTimeTTS-0.4.7.dist-info/METADATA,sha256=tlA9wSmMh7-7novzxxaNen1t7NnLgifimnxBE5rrC-E,27968
+RealTimeTTS-0.4.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+RealTimeTTS-0.4.7.dist-info/top_level.txt,sha256=6mA-rM2q6RQ0F-BF8NsPDcyFvgPqG4pQqL6drgBYOz4,12
+RealTimeTTS-0.4.7.dist-info/RECORD,,
