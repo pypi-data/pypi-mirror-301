@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dpm_srg
+Version: 0.0.1
+Summary: Seeded Region Growing Segmentation
+Author: Digital Porous Media
+Author-email: Digital Porous Media <bcchang@utexas.edu>
+License: GNU Lesser General Public License v3 (LGPLv3)
+Project-URL: Homepage, https://github.com/DigitalPorousMedia
+Project-URL: Repository, https://github.com/DigitalPorousMedia/dpm_srg
+Project-URL: Issues, https://github.com/DigitalPorousMedia/dpm_srg/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+
