@@ -1,0 +1,7 @@
+libsumo/__init__.py,sha256=O4k6NInUbl4O8lT6ZtT-j73Nsx1kYsHDZjs_7XDgGGc,8881
+libsumo/_libsumo.pyd,sha256=z5jVpPdOUNIkYj1MrOD-tNLpWhZIE_pI3uljSmX9ymk,11640320
+libsumo/libsumo.py,sha256=7v1A7DcESf4B_by_DzcfGn7UbThlCRJkKYnRi2ZI3B4,341923
+libsumo-1.21.0.dist-info/METADATA,sha256=pmAaTQTr1bOfIp2ZZ2PM6cHko1DUV745nNtEtuk3Wgg,6282
+libsumo-1.21.0.dist-info/WHEEL,sha256=slqBGdqRnxanDn00BSYHhryEsWH_8CUurgRUvoMtK_Y,101
+libsumo-1.21.0.dist-info/top_level.txt,sha256=_X5iQyLbnmwzFVX4-uqN7rY5V6cvE3JKzzGZY7Ud8BY,8
+libsumo-1.21.0.dist-info/RECORD,,
