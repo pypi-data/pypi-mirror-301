@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: functag
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+Package with general decorators for annotating functions (and classes)
