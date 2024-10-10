@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ytbtimecodes
+Version: 0.5
+Summary: ytbtimecodes
+Home-page: https://github.com/andrewalevin/ytbtimecodes
+License: MIT
+Author: Andrew Levin
+Author-email: your.email@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
