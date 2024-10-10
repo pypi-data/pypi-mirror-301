@@ -1,0 +1,2 @@
+[console_scripts]
+bkmks = presentation.cli.__main__:main
