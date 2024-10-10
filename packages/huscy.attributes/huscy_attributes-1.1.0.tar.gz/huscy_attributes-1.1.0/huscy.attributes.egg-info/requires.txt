@@ -1,0 +1,9 @@
+huscy.pseudonyms
+jsonschema>=4.4
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog
