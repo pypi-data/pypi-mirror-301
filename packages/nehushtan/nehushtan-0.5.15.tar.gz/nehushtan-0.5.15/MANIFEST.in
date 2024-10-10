@@ -1,0 +1,8 @@
+include README.md
+prune test
+prune docs
+graft nehushtan
+
+exclude *.pyc
+exclude .DS_Store
+global-exclude *.pyc, __pycache__
