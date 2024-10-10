@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: structure-generator-by-xakepanonim
+Version: 0.1.0
+Summary: Библиотека для генерации описания структуры проекта в README.md
+Home-page: https://github.com/XakepAnonim/structure_generator
+Author: XakepAnonim
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Project Structure Generator
+
+Этот пакет позволяет автоматически создавать описание архитектуры проекта и сохранять его в `README.md`.
+
+## Установка
+
+Установите пакет через pip:
+```bash
+pip install structure-generator
