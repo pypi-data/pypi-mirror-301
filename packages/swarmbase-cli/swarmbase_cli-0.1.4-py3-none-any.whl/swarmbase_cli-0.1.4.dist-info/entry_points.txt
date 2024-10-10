@@ -1,0 +1,2 @@
+[console_scripts]
+swarm = cli:cli
