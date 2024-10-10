@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+streaming_vocos/__init__.py
+streaming_vocos/streaming_vocos.py
+streaming_vocos.egg-info/PKG-INFO
+streaming_vocos.egg-info/SOURCES.txt
+streaming_vocos.egg-info/dependency_links.txt
+streaming_vocos.egg-info/requires.txt
+streaming_vocos.egg-info/top_level.txt
