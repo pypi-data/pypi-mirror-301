@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gauss-linear
+Version: 0.1.0
+Summary: A simple command line tool to do linear algebra
+Home-page: https://github.com/22raor/gauss
+Author: Rishi Rao
+Author-email: rao068048@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: sympy>=1.10
