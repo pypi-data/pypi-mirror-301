@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dptools-stopwatch
+Version: 1.0.1
+Summary: Hack normal objects into external objects
+Author-email: deepfos-python-team <deepfos_py@deepfinance.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# What is this?
+
+一个轻量级，可以外置的计时器。
