@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/okntool/__init__.py
+src/okntool/indi_va_table_template.html
+src/okntool/oknserver_graph_plot_config.json
+src/okntool/okntool.py
+src/okntool/simpler_plot_config.json
+src/okntool/sum_va_table_template.html
+src/okntool.egg-info/PKG-INFO
+src/okntool.egg-info/SOURCES.txt
+src/okntool.egg-info/dependency_links.txt
+src/okntool.egg-info/entry_points.txt
+src/okntool.egg-info/requires.txt
+src/okntool.egg-info/top_level.txt
