@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: stockvip
+Version: 2.0.6
+Summary: Dữ liệu thị trường chứng khoán Việt Nam
+Home-page: https://stockvip.vn
+Author: stockvip.vn
+Author-email: support@stockvip.vn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas==2.1.2
+Requires-Dist: requests
+
+# Thư viện `stockvip` - Giải pháp phân tích và lấy dữ liệu chứng khoán Việt Nam
+
+**`stockvip`** là một **thư viện Python mạnh mẽ** dành cho các nhà đầu tư, nhà phân tích và các lập trình viên muốn **lấy dữ liệu chứng khoán** từ thị trường Việt Nam một cách nhanh chóng và dễ dàng. Thư viện cung cấp cách kết nối đơn giản, giúp người dùng **phân tích dữ liệu cổ phiếu, chỉ số chứng khoán, chứng quyền, phái sinh, trái phiếu** và nhiều loại tài sản tài chính khác từ các sàn giao dịch tại Việt Nam.
+
+## Các tính năng chính của `stockvip`
+
+- **Lấy dữ liệu lịch sử giao dịch** của **các mã cổ phiếu**, **chỉ số**, **chứng quyền**, **phái sinh**, **chỉ số tài chính**, **thông tin doanh nghiệp**, và **trái phiếu**.
+- **Cung cấp dữ liệu** về **giá cổ phiếu**, **khối lượng giao dịch**, **tự doanh**, **mua bán khối ngoại**, **báo cáo tài chính** và nhiều **chỉ số tài chính khác**.
+- **Đơn giản hóa kết nối** và **truy xuất dữ liệu tài chính** từ thị trường chứng khoán Việt Nam.
+- **Hỗ trợ tính toán các chỉ số phân tích kỹ thuật** để giúp người dùng có thể phân tích biểu đồ và xu hướng một cách chi tiết.
+- **Tích hợp các dữ liệu tài chính từ nhiều nguồn**, hỗ trợ người dùng ra quyết định đầu tư hiệu quả.
+
+## Hướng dẫn cài đặt `stockvip`
+
+Bạn có thể cài đặt thư viện **`stockvip`** một cách dễ dàng thông qua **pip**:
+
+```bash
+pip install stockvip
+```
+
+Sau khi cài đặt, bạn có thể bắt đầu sử dụng ngay các API mạnh mẽ của thư viện để lấy dữ liệu tài chính và phân tích thị trường chứng khoán Việt Nam.
+
+## Cập nhật và kênh thông tin
+
+Để nhận được thông tin cập nhật mới nhất về phiên bản của thư viện **stockvip** và những thay đổi quan trọng, vui lòng tham gia kênh **Telegram** của chúng tôi tại đây:
+
+[**Cập nhật phiên bản mới trên kênh Telegram**](https://t.me/stockvipvn)
+
+## Tài liệu chi tiết về stockvip
+
+Để xem hướng dẫn sử dụng chi tiết và tìm hiểu thêm về các tính năng của **stockvip**, hãy truy cập tài liệu chính thức tại:
+
+[**Tài liệu chi tiết trên Read the Docs**](https://stockvip.readthedocs.io/vi/latest/index.html)
+
+Tài liệu này cung cấp chi tiết về cách sử dụng các API, ví dụ minh họa, và các phương pháp để tối ưu hóa quá trình lấy dữ liệu và phân tích tài chính từ thị trường chứng khoán Việt Nam.
+
+---
+
+Cảm ơn bạn đã sử dụng **stockvip**! Hãy tham gia cùng cộng đồng và đón nhận các cập nhật mới nhất về thị trường chứng khoán Việt Nam.
