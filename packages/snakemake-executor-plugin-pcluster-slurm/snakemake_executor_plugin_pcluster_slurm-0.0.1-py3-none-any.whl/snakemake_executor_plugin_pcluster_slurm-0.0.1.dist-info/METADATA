@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: snakemake-executor-plugin-pcluster-slurm
+Version: 0.0.1
+Summary: A Snakemake executor plugin for submitting jobs to an AWS Parallel Cluster SLURM cluster.
+Home-page: https://github.com/Daylily-Informatics/snakemake-executor-plugin-pcluster-slurm
+License: MIT
+Keywords: snakemake,plugin,executor,cluster,slurm,pcluster,aws,parallel-compute,parallel-cluster
+Author: John Major
+Author-email: john@daylilyinformatics.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: snakemake-executor-plugin-slurm-jobstep (>=0.2.0,<0.3.0)
+Requires-Dist: snakemake-interface-common (>=1.13.0,<2.0.0)
+Requires-Dist: snakemake-interface-executor-plugins (>=9.1.1,<10.0.0)
+Requires-Dist: throttler (>=1.2.2,<2.0.0)
+Project-URL: Documentation, https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/pcluster-slurm.NOTWRITTENYET.html
+Project-URL: Repository, https://github.com/Daylily-Informatics/snakemake-executor-plugin-pcluster-slurm
+Description-Content-Type: text/markdown
+
+# Snakemake executor plugin: pcluster-slurm
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/snakemake/snakemake-executor-plugin-pcluster-slurm)
+
+For documentation, see the [Snakemake plugin catalog PLACEHOLDER for pcluster-slurm](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/pcluster-slurm.html).
