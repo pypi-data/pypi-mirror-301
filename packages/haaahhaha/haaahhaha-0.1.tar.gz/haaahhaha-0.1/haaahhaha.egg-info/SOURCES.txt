@@ -1,0 +1,7 @@
+setup.py
+haaahhaha/__init__.py
+haaahhaha/haaahhaha.py
+haaahhaha.egg-info/PKG-INFO
+haaahhaha.egg-info/SOURCES.txt
+haaahhaha.egg-info/dependency_links.txt
+haaahhaha.egg-info/top_level.txt
