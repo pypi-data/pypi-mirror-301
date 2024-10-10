@@ -1,0 +1,20 @@
+# poetry install didn't work because of pendulum (which is a dependency of prefect)
+# pip install prefect did work
+[tool.poetry]
+name        = "osbot_prefect"
+version     = "v0.2.8"
+description = "OWASP Security Bot - Prefect"
+authors     = ["Dinis Cruz <dinis.cruz@owasp.org>"]
+license     = "MIT"
+readme      = "README.md"
+homepage    = "https://github.com/owasp-sbot/OSBot-Prefect"
+repository  = "https://github.com/owasp-sbot/OSBot-Prefect"
+
+[tool.poetry.dependencies]
+python          = "^3.7"
+osbot-utils     = "*"
+
+
+[build-system]
+requires        = ["poetry-core>=1.0.0"]
+build-backend   = "poetry.core.masonry.api"
