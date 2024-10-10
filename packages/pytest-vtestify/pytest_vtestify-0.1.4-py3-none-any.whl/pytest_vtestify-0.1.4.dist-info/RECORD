@@ -1,0 +1,8 @@
+visual_testify/__init__.py,sha256=cIzXn32STPmmyjFBUB95KzZERsTFt_zmg6KtawEa5BU,47
+visual_testify/visual_assertion.py,sha256=SJgTBE8v6_GhoMLTHBdfBFptCbvaASIvAqPiK-ORLa8,3891
+pytest_vtestify-0.1.4.dist-info/LICENSE,sha256=9ucasebTDtB-NTtX1Qj0U3viCzPdc1KfluXOAH9gxKQ,493
+pytest_vtestify-0.1.4.dist-info/METADATA,sha256=KRBq4srBaNI-Fm7xaYCLkhL-xSvpLBkSHaYF1T6vJ7c,4395
+pytest_vtestify-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytest_vtestify-0.1.4.dist-info/entry_points.txt,sha256=nNztk6ddLlSfDFqFQocSC-eVE-wNApr23-pWT8K1-Bo,54
+pytest_vtestify-0.1.4.dist-info/top_level.txt,sha256=ujq-P3rFsZjfE_asc8qt5N3DjzQOI0z0xUGuGoeM8KU,15
+pytest_vtestify-0.1.4.dist-info/RECORD,,
