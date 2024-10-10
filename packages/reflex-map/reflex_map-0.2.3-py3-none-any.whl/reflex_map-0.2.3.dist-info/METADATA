@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: reflex-map
+Version: 0.2.3
+Summary: Reflex Map Component
+Author-email: Daniel Fink & Nathan Bryant <danfink@mit.edu>, Nathan Bryant <nathan@nathanbryant.dev>
+License: Apache-2.0
+Project-URL: homepage, https://reflex-map.reflex.run/
+Project-URL: source, https://github.com/daniel-fink/reflex-map
+Keywords: reflex,reflex-custom-component,map,maplibre,mapbox,maplibre-gl,mapbox-gl
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Reflex-Map
+
+A Custom Component for [Reflex](https://reflex.dev/) that wraps [React-Map-GL](https://visgl.github.io/react-map-gl/)
+
+## Installation
+
+```bash
+pip install reflex-map
+```
+
+## Development
+
+Install a [Poetry](https://python-poetry.org/) project from the root directory:
+
+```bash
+poetry install
+```
+
+To publish an update to the package, run the following command:
+
+```bash
+poetry run reflex component publish -r <PACKAGEINDEX> -t <PYPIKEY>
+```
+Where `<PACKAGEINDEX>` is the package index (either pypi or testpypi), and `<PYPIKEY>` is the account's API key.
+
+## Running the Demo
+
+Run the demo app from the `map_demo` directory:
+
+```bash 
+poetry run reflex run
+```
