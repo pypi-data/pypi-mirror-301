@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dpm_srm
+Version: 0.1.5
+Summary: Statistical Region Merging Segmentation
+Author: Digital Porous Media
+Author-email: Digital Porous Media <bcchang@utexas.edu>
+License: BSD License
+Project-URL: Homepage, https://github.com/DigitalPorousMedia
+Project-URL: Repository, https://github.com/DigitalPorousMedia/dpm_srm
+Project-URL: Issues, https://github.com/DigitalPorousMedia/dpm_srm/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+
