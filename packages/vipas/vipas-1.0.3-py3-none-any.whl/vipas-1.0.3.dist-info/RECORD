@@ -1,0 +1,13 @@
+vipas/__init__.py,sha256=vpVN8jP4WEnuILDDFvN7vZBjkgbBX_SiluFWsZ1-V6Y,725
+vipas/_rest.py,sha256=ANWhdzQX1Sh2n-mx0drUIWjGRxV4KOL13cchPpbAShA,27130
+vipas/config.py,sha256=-9Hjvqv9MaLzSR_Yd8mxjS7aoWGM4yVByUSVqLpEOv0,4082
+vipas/constant.py,sha256=L-vnEfFw7F8jrZgPSmcMIENiaNqmDp-wbmIn326H7EE,800
+vipas/error_suggestions.py,sha256=ZWfEBeGqRxSfb0Kz3VkQ_eLE7YC4RnSQ6xjzNo5nR3c,2698
+vipas/exceptions.py,sha256=EgTg8bsKWJCAgd5Uq9KrpJYI2fWgCeVUkOUpr_ciRx4,3832
+vipas/logger.py,sha256=rpWskXhf2eQCjzrWSh9xWL7yeCe17uFWo6MUhf0cm38,2443
+vipas/model.py,sha256=sc65M782M92dSQAg11a26TUghxKd_uAFAy3rKccxmUQ,18453
+vipas-1.0.3.dist-info/LICENSE,sha256=DOwG4OVfvD3FzuT8qbYH9my49OTbzzs8ATWU3RVnMuk,10173
+vipas-1.0.3.dist-info/METADATA,sha256=txWP5HpmJxAG1HsYu3FMreVmvzQ0A2ndTD9vpGBfRYw,28691
+vipas-1.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vipas-1.0.3.dist-info/top_level.txt,sha256=aaZmLTHbg9ak7lUZqTQrmelOE18EycmYvg-E3wG7Zh0,6
+vipas-1.0.3.dist-info/RECORD,,
