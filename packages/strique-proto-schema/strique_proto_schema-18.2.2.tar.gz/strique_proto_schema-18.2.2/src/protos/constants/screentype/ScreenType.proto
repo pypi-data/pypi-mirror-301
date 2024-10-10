@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package strique.constants;
+
+option java_outer_classname = "ScreenTypeProto";
+option java_package = "com.strique.constants.screentype";
+
+// Next Id : 4
+// Proto enum of screen types.
+enum ScreenType {
+  SCREEN_UNKWON = 0;
+  SMALL = 1;
+  MEDIUM = 2;
+  LARGE = 3;
+}
+
