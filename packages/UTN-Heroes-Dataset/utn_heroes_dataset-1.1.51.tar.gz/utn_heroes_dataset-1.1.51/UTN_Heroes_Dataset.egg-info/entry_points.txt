@@ -1,0 +1,2 @@
+[console_scripts]
+UTN_Heroes_Dataset = UTN_Heroes_Dataset.utn_funciones:saludo

@@ -1,0 +1,4 @@
+setuptools
+pygame
+terminaltexteffects
+tabulate
