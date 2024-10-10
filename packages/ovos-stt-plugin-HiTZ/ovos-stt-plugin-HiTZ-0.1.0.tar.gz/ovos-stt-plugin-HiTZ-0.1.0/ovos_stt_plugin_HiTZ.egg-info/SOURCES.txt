@@ -1,0 +1,11 @@
+README.md
+setup.py
+ovos_stt_plugin_HiTZ/__init__.py
+ovos_stt_plugin_HiTZ/version.py
+ovos_stt_plugin_HiTZ.egg-info/PKG-INFO
+ovos_stt_plugin_HiTZ.egg-info/SOURCES.txt
+ovos_stt_plugin_HiTZ.egg-info/dependency_links.txt
+ovos_stt_plugin_HiTZ.egg-info/entry_points.txt
+ovos_stt_plugin_HiTZ.egg-info/requires.txt
+ovos_stt_plugin_HiTZ.egg-info/top_level.txt
+ovos_stt_plugin_HiTZ.egg-info/zip-safe
