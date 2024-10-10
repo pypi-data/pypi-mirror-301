@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/instrumentcontrol/__init__.py
+src/instrumentcontrol/instrumentcontrol.py
+src/instrumentcontrol.egg-info/PKG-INFO
+src/instrumentcontrol.egg-info/SOURCES.txt
+src/instrumentcontrol.egg-info/dependency_links.txt
+src/instrumentcontrol.egg-info/top_level.txt
+test/test_instrumentcontrol.py
