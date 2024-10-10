@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: plsqlunwrap
+Version: 0.0.2
+Summary: A python utility package to unwrap Oracle wrapped objects.
+Author-email: Lucas Rodrigues <git@lucas.rs>
+License: Copyright 2023 Lucas Rodrigues
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the “Software”), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        of the Software, and to permit persons to whom the Software is furnished to do
+        so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        
+Project-URL: Homepage, https://github.com/plutaniano/plsqlunwrap
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PLSQL Unwrap
+
+A python utility package to unwrap Oracle wrapped objects.
+
+## Installation
+`pip install plsqlunwrap`
+
+## Example
+
+```python
+from plsqlunwrap import unwrap
+
+wrapped = """
+CREATE OR REPLACE  FUNCTION teste wrapped 
+a000000
+1
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+8
+3d 71
+m9n4KQ8rT+C9b7lU4HcO3pDzsUMwg8eZgcfLCNL+XhahYtGhXOfAsr2ym16lmYEywLIJpXSL
+wMAy/tKGCamhBKPHvpK+FkZTOQdTo4KmpqsCL3g=
+"""
+
+print(unwrap(wrapped))
+# FUNCTION teste RETURN NUMBER IS
+# BEGIN
+#   RETURN 1;
+# END TESTE;
+```
