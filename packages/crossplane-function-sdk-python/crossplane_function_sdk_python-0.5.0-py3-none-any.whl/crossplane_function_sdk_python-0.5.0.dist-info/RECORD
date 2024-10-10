@@ -1,0 +1,17 @@
+crossplane/function/__version__.py,sha256=EpOLy6RQc6F3rnJZbtuQ57CcZ6WoDo9E8EbbFaW0a8Y,704
+crossplane/function/logging.py,sha256=Zawqq36FBzjkVg4bJ3VGK12-so7N8yAMoSPrhdwpBSA,2503
+crossplane/function/resource.py,sha256=Nv_ARRqhMheoGAErKPsty5unyn3P2TOvHM-UVBM6RPY,4946
+crossplane/function/response.py,sha256=5TDz2vXcvH2cMuDojN1YFrr0Vsyvz1XCzNEBwxruFf4,2354
+crossplane/function/runtime.py,sha256=DoCLFildkwBgB-y-qlHcoSXStDRcJ426_V81C3QvVOE,4864
+crossplane/function/proto/v1/run_function.proto,sha256=83RIkEQWuMfXC5HPaPpJqXXDxYMR3VlG4xhmtutle5k,12032
+crossplane/function/proto/v1/run_function_pb2.py,sha256=DFKnyLgxtXMcwftED4BF6yU9D1Wd7vlKq-GSThbzwc0,10732
+crossplane/function/proto/v1/run_function_pb2.pyi,sha256=IYcl0F9Chx_jN6AP9FI0yZCqidpbiFCK0ANU6AlKfXY,10624
+crossplane/function/proto/v1/run_function_pb2_grpc.py,sha256=plSu4zbwx7I-0vRe0u4UKrRMQgP8m0o4zj7DD9FeBkk,4017
+crossplane/function/proto/v1beta1/run_function.proto,sha256=xep0DvulCjo8LUf-2fObjsxnDlRD-wCmjWeBV4gVonU,12155
+crossplane/function/proto/v1beta1/run_function_pb2.py,sha256=LmKTg848G5Ud8GI2AIK2jjLj19nnjthRsQwECZgE4ls,10907
+crossplane/function/proto/v1beta1/run_function_pb2.pyi,sha256=IYcl0F9Chx_jN6AP9FI0yZCqidpbiFCK0ANU6AlKfXY,10624
+crossplane/function/proto/v1beta1/run_function_pb2_grpc.py,sha256=Abx0c4U82vIsWyeIKwS1vfEshP74N6gjB-hx0DM1lFk,4082
+crossplane_function_sdk_python-0.5.0.dist-info/METADATA,sha256=te7cF_WoCSW0aLS5Vu5dBrwy62qaHD03psv3yXw3hME,3212
+crossplane_function_sdk_python-0.5.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+crossplane_function_sdk_python-0.5.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+crossplane_function_sdk_python-0.5.0.dist-info/RECORD,,
