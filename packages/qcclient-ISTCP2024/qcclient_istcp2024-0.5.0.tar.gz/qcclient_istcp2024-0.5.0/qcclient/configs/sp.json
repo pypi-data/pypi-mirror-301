@@ -1,0 +1,42 @@
+[{
+    "description": "Calculate single-point energy, gradient and Hessian for a batch of molecules with the same spin and charge",
+    "driver_name": "dft_driver",
+    "input_dir": "./",
+    "output_dir": "./",
+    "molecules": [
+        "h2o.xyz",
+        "h2o.xyz",
+        "h2o.xyz",
+        "h2o.xyz",
+        "h2o.xyz"
+    ],
+    "molecules_comments": "List of molecule names in the input folder, such as h2o.xyz \n Run over all molecules by default.",
+    "spin": 0,
+    "spin_comments": "Spin for each molecule. If spin is null, multiplicity will be guessed based on the neutral molecule.",
+    "charge": null,
+    "charge_comments": "Total charge of each molecule. If both spin and charge are null, neutral molecule is assumed.",
+    "basis": "def2-tzvpp",
+    "basis_comments": "Basis set, see https://www.basissetexchange.org/",
+    "xc": "b3lyp",
+    "xc_comments": "Exchange correlation functional such as b3lyp, pbe, tpss, hf, b3lyp-d3bj.",
+    "verbose": 4,
+    "verbose_comments": "Print level for PySCF. 0: None, 4: INFO, 6: DEBUG.",
+    "with_solvent": false,
+    "with_solvent_comments": "Use implicit solvent or not.",
+    "solvent": {
+        "eps": 78.3553,
+        "eps_comments": "Dielectric constant.",
+        "method": "CPCM",
+        "method_comments": "Method for implicit solvent model, such as CPCM, IEFPCM, COSMO."
+    },
+    "with_gpu": true,
+    "with_gpu_comments": "Use GPU or not.",
+    "with_df": true,
+    "with_df_comments": "Use density fitting/RI or not.",
+    "with_grad": true,
+    "with_grad_comments": "Calculate analytical gradient or not.",
+    "with_hess": true,
+    "with_hess_comments": "Calculate analytical Hessian or not.",
+    "save_density": true,
+    "save_density_comments": "Save electron density on grids or not."
+}]
