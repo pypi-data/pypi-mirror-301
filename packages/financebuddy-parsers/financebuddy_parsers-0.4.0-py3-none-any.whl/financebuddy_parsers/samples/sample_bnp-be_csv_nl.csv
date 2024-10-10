@@ -1,0 +1,4 @@
+﻿Volgnummer;Uitvoeringsdatum;Valutadatum;Bedrag;Valuta rekening;Rekeningnummer;Type verrichting;Tegenpartij;Naam van de tegenpartij;Mededeling;Details;Status;Reden van weigering
+1970-00003;01/01/1970;02/01/1970;-1000,00;EUR;BE00000000000001;foo;;;;foo;
+1970-00002;01/01/1970;02/01/1970;0,00;EUR;BE00000000000001;foo;BE00000000000002;ACME;foo;foo;foo;
+1970-00001;01/01/1970;02/01/1970;1000,00;EUR;BE00000000000001;foo;BE00000000000003;John Doe;foo;foo;Geaccepteerd;
