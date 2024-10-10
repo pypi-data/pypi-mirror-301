@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/binakeExcel/__init__.py
+src/binakeExcel.egg-info/PKG-INFO
+src/binakeExcel.egg-info/SOURCES.txt
+src/binakeExcel.egg-info/dependency_links.txt
+src/binakeExcel.egg-info/entry_points.txt
+src/binakeExcel.egg-info/requires.txt
+src/binakeExcel.egg-info/top_level.txt
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
+tests/test_simple.py
