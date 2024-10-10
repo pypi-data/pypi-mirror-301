@@ -1,0 +1,48 @@
+Metadata-Version: 2.3
+Name: fourier_comm_rs
+Version: 0.0.6
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: OS Independent
+Requires-Dist: cffi
+Summary: A Rust library for communication with Fourier Motors and Encoders
+Author-email: Yuxiang Gao <yuxiang.gao@fftai.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# fourier-comm
+
+## Run examples
+
+```bash
+cargo run --example comm
+```
+
+```bash
+cargo run --example simple_position_control
+```
+
+## Python Bindings
+
+```bash
+maturin develop --features python
+#
+maturin build --features python --release
+```
+
+### Example Usage
+
+```python
+from fourier_comm_rs import FourierMotorManager
+
+manager = FourierMotorManager([13, 14, 15])
+manager.wait_for_first_messages(3.0)
+
+manager.enable(13)
+print(manager.get_position(13))
+
+```
+
