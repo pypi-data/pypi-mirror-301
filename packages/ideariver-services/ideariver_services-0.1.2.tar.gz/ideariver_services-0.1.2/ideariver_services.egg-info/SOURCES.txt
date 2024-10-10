@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ideariver_services/__init__.py
+ideariver_services/plugin_loader.py
+ideariver_services/plugin_rabbitmq_adapter.py
+ideariver_services/plugin_tester.py
+ideariver_services/validate_inputs.py
+ideariver_services.egg-info/PKG-INFO
+ideariver_services.egg-info/SOURCES.txt
+ideariver_services.egg-info/dependency_links.txt
+ideariver_services.egg-info/top_level.txt
+tests/test_plugin_loader.py
+tests/test_plugin_rabbitmq_adapter.py
