@@ -1,0 +1,31 @@
+[tool.poetry]
+name        = "osbot_serverless_flows"
+version     = "v0.11.0"
+description = "OSBot Serverless Flows"
+authors     = ["Dinis Cruz <dinis.cruz@owasp.org>"]
+license     = "MIT"
+readme      = "README.md"
+homepage    = "https://github.com/owasp-sbot/OSBot-Serverless-Flows"
+repository  = "https://github.com/owasp-sbot/OSBot-Serverless-Flows"
+
+[tool.poetry.dependencies]
+python                   = "^3.11"
+osbot-utils              = "*"
+osbot-aws                = "*"
+osbot-fast-api           = "*"
+osbot-prefect            = "*"
+mangum                   = "*"
+requests                 = "*"
+httpx                    = "*"
+osbot_playwright         = "*"
+bs4                      = "*"
+pytest                   = "^8.3.3"
+coverage                 = "^7.6.1"
+oauth2client             = "*"
+osbot-gsuite             = "*"
+
+[build-system]
+requires        = ["poetry-core>=1.0.0"]
+build-backend   = "poetry.core.masonry.api"
+
+# poetry export -f requirements.txt --without-hashes > requirements.txt
