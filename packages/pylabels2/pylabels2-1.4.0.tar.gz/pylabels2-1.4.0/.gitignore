@@ -1,0 +1,11 @@
+dist/*
+build/*
+*.egg*
+*.pyc
+*.pyo
+*.swp
+*.pdf
+*.jpg
+__pycache__
+.idea/
+_version.py
