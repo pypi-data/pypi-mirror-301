@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "additionalProperties": false,
+	"title": "Transit Service Facility Selection",
+  "examples":[
+    {
+      "trip_properties": {
+        "route_id": ["1234"],
+        "bikes_allowed": "1"
+      },
+      "route_properties": {
+        "agency_id": ["2"]
+      },
+      "timespans": [["06:00:00", "09:00:00"]]
+    },
+    {
+      "trip_properties": {
+        "route_id": ["4321"]
+      },
+      "route_properties": {
+        "agency_id": ["1"]
+      },
+      "timespans": [
+        ["06:00:00", "09:00:00"],
+        ["15:00:00", "18:00:00"]
+      ]
+    },
+    {
+      "nodes": {
+        "model_node_id": [1,2,3],
+        "require":"all"
+      }
+    }
+  ],
+  "properties": {
+    "trip_properties":{"$ref":"select_trip_properties.json"},
+    "route_properties":{"$ref":"select_route_properties.json"},
+    "timespans":{"type":"array","items":{"$ref":"../../defs/timespan.json"},"minItems":1},
+    "nodes":{"$ref":"select_nodes.json"}
+  }
+}
