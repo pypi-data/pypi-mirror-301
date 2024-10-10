@@ -1,0 +1,5 @@
+__author__ = 'xcai'
+__copyright__ = 'Copyright (c) xcai'
+__description__ = 'A fake Django admin login screen to notify admins of attempted unauthorized access.'
+__version__ = '1.0.0'
+__license__ = 'MIT License'
