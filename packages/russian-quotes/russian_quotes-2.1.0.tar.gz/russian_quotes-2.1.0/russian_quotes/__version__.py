@@ -1,0 +1,8 @@
+__title__ = 'russian-quotes'
+__description__ = 'Get quotes of famous people in russian & english.'
+__url__ = 'https://github.com/liner-exe/russian_quotes'
+__version__ = '2.1.0'
+__author__ = 'liner-exe'
+__author_email__ = 'contact.liner999@gmail.com'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2023-present liner-exe'
