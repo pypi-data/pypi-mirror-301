@@ -1,0 +1,10 @@
+ugbio_single_cell/collect_statistics.py,sha256=T0EyREQn9bMqrUh0DHLOq-IJtS4e_XeZoUhp18_E4Jg,10195
+ugbio_single_cell/create_plots.py,sha256=8uvmK1GxuLiMkdiEBxiE8mtOYcO46OeXLXYvvoLaRXs,6164
+ugbio_single_cell/sc_qc_dataclasses.py,sha256=Bn115pB6XxSQtLzL2fM0X7YLZbW6bY4B4DUntT_WrNU,1790
+ugbio_single_cell/single_cell_qc_pipeline.py,sha256=F8Au19RDSZl4x8csDbcMk5lHhB2AUD2sgmfI411qzYw,8243
+ugbio_single_cell/reports/single_cell_qc_report.ipynb,sha256=DvnmYxxiXnlvLR_jZk0LAJbxCsUzq9kB_8CJvWBOc1I,278734
+ugbio_single_cell-1.2.0.dist-info/METADATA,sha256=SUYuJ_TZxn5U2fhy6XKBmi63_dXLXk89DjrDVXcJhAQ,639
+ugbio_single_cell-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ugbio_single_cell-1.2.0.dist-info/entry_points.txt,sha256=83doLNh1VXzAd6QJV42ytzhwJ50oNNpsxlMgIpd7Occ,106
+ugbio_single_cell-1.2.0.dist-info/top_level.txt,sha256=wwUNAey5C5CRuZlYaf6j_odGNTu0wg7sRA975T8O4J0,18
+ugbio_single_cell-1.2.0.dist-info/RECORD,,
