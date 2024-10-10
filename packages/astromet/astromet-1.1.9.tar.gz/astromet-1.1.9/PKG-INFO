@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: astromet
+Version: 1.1.9
+Summary: One and two body astrometry
+Home-page: https://github.com/zpenoyre/astromet.py
+Author: Zephyr Penoyre
+Author-email: zephyrpenoyre@gmail.com
+License: GNU GPLv3
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: scipy
+
+https://astrometpy.readthedocs.io/en/latest/index.html
