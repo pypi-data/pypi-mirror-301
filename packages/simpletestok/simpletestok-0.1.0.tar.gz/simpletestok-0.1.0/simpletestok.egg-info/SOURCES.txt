@@ -1,0 +1,9 @@
+README.md
+setup.py
+simpletestok/__init__.py
+simpletestok/main.py
+simpletestok/module1.py
+simpletestok.egg-info/PKG-INFO
+simpletestok.egg-info/SOURCES.txt
+simpletestok.egg-info/dependency_links.txt
+simpletestok.egg-info/top_level.txt
