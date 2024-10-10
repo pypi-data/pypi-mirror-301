@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: osbot_llms
+Version: 0.2.3
+Summary: OWASP Security Bot - LLM
+Home-page: https://github.com/owasp-sbot/OSBot-LLMs
+License: MIT
+Author: Dinis Cruz
+Author-email: dinis.cruz@owasp.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: osbot-utils
+Project-URL: Repository, https://github.com/owasp-sbot/OSBot-LLMs
+Description-Content-Type: text/markdown
+
+# OSBot-LLMs
