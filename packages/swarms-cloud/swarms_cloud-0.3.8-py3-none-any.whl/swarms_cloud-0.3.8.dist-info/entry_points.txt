@@ -1,0 +1,3 @@
+[console_scripts]
+swarms-cloud=swarms_cloud.cli.main:main
+
