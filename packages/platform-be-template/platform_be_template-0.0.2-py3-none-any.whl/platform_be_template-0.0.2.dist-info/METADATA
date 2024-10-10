@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: platform-be-template
+Version: 0.0.2
+Summary: This is basic pacakge for platform lab. backend project.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Taehyun Kim <fanpa9@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# This is sample package for testing
