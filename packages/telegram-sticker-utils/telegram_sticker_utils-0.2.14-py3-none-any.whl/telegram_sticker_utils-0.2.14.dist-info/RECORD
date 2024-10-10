@@ -1,0 +1,9 @@
+telegram_sticker_utils-0.2.14.dist-info/METADATA,sha256=KdLVcbPF_z0XFSpNeN6Yqgzs8iWxbkcmu3e-67DdjOE,2320
+telegram_sticker_utils-0.2.14.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+telegram_sticker_utils-0.2.14.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+telegram_sticker_utils-0.2.14.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+telegram_sticker_utils/__init__.py,sha256=K1h5rj1PGvya7uljz8kVulDZg1U_WRZDMxR8jYkq_PI,22457
+telegram_sticker_utils/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_sticker_utils/core/const.py,sha256=NkcN6jOKqyd0_ggAaUkFXcA-DPWmEzfWIj1YCbWs_Lo,1409
+telegram_sticker_utils/core/rules.json,sha256=Iu1PgEHd1SDopyoIpqkGWdqNdtcDdVmcFDYq8Q6POPc,9743
+telegram_sticker_utils-0.2.14.dist-info/RECORD,,
