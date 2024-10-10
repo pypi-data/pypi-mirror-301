@@ -1,0 +1,9 @@
+pathspec
+questionary
+
+[dev]
+ruff
+pyinstaller
+
+[test]
+pytest
