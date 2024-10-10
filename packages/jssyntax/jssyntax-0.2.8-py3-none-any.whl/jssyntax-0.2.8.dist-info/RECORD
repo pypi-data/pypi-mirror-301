@@ -1,0 +1,11 @@
+jssyntax/__init__.py,sha256=y2v1iywwJieKc1nMuzgl0nKSnd9tag5-zqQIW6jXvvQ,129
+jssyntax/list.py,sha256=uaG86kP5imwRBy9po0dzjVyfUvfmOUo13hzvLzPfTFo,7424
+jssyntax/map.py,sha256=1Zw5e6fDC50w51srKNTQtIo2GQZW1l4Kc3xmpklOVzI,4013
+jssyntax/pattern.py,sha256=i3CyVMXXuAr9WMvLnCfzubmMLlKeL7Ob0ln6s708xRY,1417
+jssyntax/set.py,sha256=WX94CsxUgQddBvUQCzDoWDzbeAco6zOec-jcHVleY2U,3145
+jssyntax/tools.py,sha256=n8IDxbqNOIftq4ryMxaJ22zB70uVGkwbcaFyZqDBf4M,1302
+jssyntax-0.2.8.dist-info/LICENSE,sha256=cS8RBDDdB_yx2YgUvXSc1Mm_RXYmrEZEbC2Bxwnou4k,1065
+jssyntax-0.2.8.dist-info/METADATA,sha256=udqjLpmOe0qYDuJ7WBcFC4UMTVaD6Sa1tmKy-tOarx8,4841
+jssyntax-0.2.8.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+jssyntax-0.2.8.dist-info/top_level.txt,sha256=WZ1T-iUFnUU3YOEhmoWBmJ8KOxuKBjightXmcC-mV3I,9
+jssyntax-0.2.8.dist-info/RECORD,,
