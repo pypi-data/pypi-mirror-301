@@ -1,0 +1,2 @@
+[console_scripts]
+mem679-snake = mem679_snake.main:main
