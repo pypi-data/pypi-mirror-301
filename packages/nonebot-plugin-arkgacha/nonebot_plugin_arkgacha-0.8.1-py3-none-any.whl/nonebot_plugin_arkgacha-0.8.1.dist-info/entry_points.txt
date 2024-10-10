@@ -1,0 +1,7 @@
+[console_scripts]
+
+[gui_scripts]
+
+[nb_scripts]
+arkgacha = nonebot_plugin_arkgacha.__main__:main
+
