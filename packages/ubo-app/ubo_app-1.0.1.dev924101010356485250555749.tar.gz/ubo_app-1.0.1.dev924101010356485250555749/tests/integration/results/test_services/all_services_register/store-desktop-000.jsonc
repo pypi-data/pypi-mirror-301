@@ -1,0 +1,1131 @@
+// store-desktop-000
+{
+  "_id": "e3e70682c2094cac629f6fbed82c07cd",
+  "_type": "RootState",
+  "audio": {
+    "_type": "AudioState",
+    "capture_volume": 0.5,
+    "is_capture_mute": false,
+    "is_playback_mute": false,
+    "playback_volume": 0.15
+  },
+  "camera": {
+    "_type": "CameraState",
+    "current": null,
+    "is_viewfinder_active": false,
+    "queue": []
+  },
+  "display": {
+    "_type": "DisplayState",
+    "is_paused": false
+  },
+  "docker": {
+    "_id": "baf3897a3e70f16a55485822de1b372a",
+    "_type": "DockerState",
+    "home_assistant": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "home_assistant",
+      "ports": [],
+      "status": "not_available"
+    },
+    "home_bridge": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "home_bridge",
+      "ports": [],
+      "status": "not_available"
+    },
+    "ngrok": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "ngrok",
+      "ports": [],
+      "status": "not_available"
+    },
+    "ollama": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "ollama",
+      "ports": [],
+      "status": "not_available"
+    },
+    "open_webui": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "open_webui",
+      "ports": [],
+      "status": "not_available"
+    },
+    "pi_hole": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "pi_hole",
+      "ports": [],
+      "status": "not_available"
+    },
+    "portainer": {
+      "_type": "ImageState",
+      "container_ip": null,
+      "docker_id": null,
+      "id": "portainer",
+      "ports": [],
+      "status": "not_available"
+    },
+    "service": {
+      "_type": "DockerServiceState",
+      "status": "running",
+      "usernames": {}
+    }
+  },
+  "input": null,
+  "ip": {
+    "_type": "IpState",
+    "interfaces": [
+      {
+        "_type": "IpNetworkInterface",
+        "ip_addresses": [
+          "192.168.1.1"
+        ],
+        "name": "eth0"
+      }
+    ],
+    "is_connected": true
+  },
+  "lightdm": {
+    "_type": "LightDMState",
+    "is_active": true,
+    "is_enabled": true,
+    "is_installed": true,
+    "is_installing": false
+  },
+  "main": {
+    "_type": "MainState",
+    "depth": 1,
+    "menu": {
+      "_type": "HeadlessMenu",
+      "items": [
+        {
+          "_type": "SubMenuItem",
+          "background_color": "#68B7FF",
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "icon": "󰍜",
+          "is_short": true,
+          "key": "main",
+          "label": "",
+          "opacity": null,
+          "progress": null,
+          "sub_menu": {
+            "_type": "HeadlessMenu",
+            "items": [
+              {
+                "_type": "SubMenuItem",
+                "background_color": "#68B7FF",
+                "color": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "icon": "󰀻",
+                "is_short": false,
+                "key": "home",
+                "label": "Apps",
+                "opacity": null,
+                "progress": null,
+                "sub_menu": {
+                  "_type": "HeadlessMenu",
+                  "items": [
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰟐",
+                      "is_short": false,
+                      "key": "docker:home_assistant",
+                      "label": "Home Assistant",
+                      "opacity": null,
+                      "progress": null
+                    },
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰘘",
+                      "is_short": false,
+                      "key": "docker:home_bridge",
+                      "label": "Home Bridge",
+                      "opacity": null,
+                      "progress": null
+                    },
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰛶",
+                      "is_short": false,
+                      "key": "docker:ngrok",
+                      "label": "Ngrok",
+                      "opacity": null,
+                      "progress": null
+                    },
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰳆",
+                      "is_short": false,
+                      "key": "docker:ollama",
+                      "label": "Ollama",
+                      "opacity": null,
+                      "progress": null
+                    },
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰾔",
+                      "is_short": false,
+                      "key": "docker:open_webui",
+                      "label": "Open WebUI",
+                      "opacity": null,
+                      "progress": null
+                    },
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰇖",
+                      "is_short": false,
+                      "key": "docker:pi_hole",
+                      "label": "Pi-hole",
+                      "opacity": null,
+                      "progress": null
+                    },
+                    {
+                      "_type": "ActionItem",
+                      "action": "<function:open_image_menu>",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "",
+                      "is_short": false,
+                      "key": "docker:portainer",
+                      "label": "Portainer",
+                      "opacity": null,
+                      "progress": null
+                    }
+                  ],
+                  "placeholder": "No apps",
+                  "title": "󰀻Docker Apps"
+                }
+              },
+              {
+                "_type": "SubMenuItem",
+                "background_color": "#68B7FF",
+                "color": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "icon": "",
+                "is_short": false,
+                "key": "settings",
+                "label": "Settings",
+                "opacity": null,
+                "progress": null,
+                "sub_menu": {
+                  "_type": "HeadlessMenu",
+                  "items": [
+                    {
+                      "_type": "SubMenuItem",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰛳",
+                      "is_short": false,
+                      "key": "Network",
+                      "label": "Network",
+                      "opacity": null,
+                      "progress": null,
+                      "sub_menu": {
+                        "_type": "HeadlessMenu",
+                        "items": [
+                          {
+                            "_type": "SubMenuItem",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󰖩",
+                            "is_short": false,
+                            "key": "wifi",
+                            "label": "WiFi",
+                            "opacity": null,
+                            "progress": null,
+                            "sub_menu": {
+                              "_type": "HeadlessMenu",
+                              "items": [
+                                {
+                                  "_type": "ApplicationItem",
+                                  "application": "services/030-wifi/pages/create_wireless_connection.py:CreateWirelessConnectionPage",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󱛃",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Add",
+                                  "opacity": null,
+                                  "progress": null
+                                },
+                                {
+                                  "_type": "ActionItem",
+                                  "action": "<function:list_connections>",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󱖫",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Select",
+                                  "opacity": null,
+                                  "progress": null
+                                }
+                              ],
+                              "placeholder": null,
+                              "title": "WiFi Settings"
+                            }
+                          },
+                          {
+                            "_type": "SubMenuItem",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󰩟",
+                            "is_short": false,
+                            "key": "ip",
+                            "label": "IP Addresses",
+                            "opacity": null,
+                            "progress": null,
+                            "sub_menu": {
+                              "_type": "HeadlessMenu",
+                              "items": [
+                                {
+                                  "_type": "SubMenuItem",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰈀",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "eth0",
+                                  "opacity": null,
+                                  "progress": null,
+                                  "sub_menu": {
+                                    "_type": "HeadlessMenu",
+                                    "items": [
+                                      {
+                                        "_type": "Item",
+                                        "background_color": "#68B7FF",
+                                        "color": [
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                        ],
+                                        "icon": "󰩠",
+                                        "is_short": false,
+                                        "key": null,
+                                        "label": "192.168.1.1",
+                                        "opacity": null,
+                                        "progress": null
+                                      }
+                                    ],
+                                    "placeholder": "No IP addresses",
+                                    "title": "󰩟eth0"
+                                  }
+                                }
+                              ],
+                              "placeholder": "No IP addresses",
+                              "title": "󰩟IP Addresses"
+                            }
+                          }
+                        ],
+                        "placeholder": "No settings in this category",
+                        "title": "󰛳Network"
+                      }
+                    },
+                    {
+                      "_type": "SubMenuItem",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰑔",
+                      "is_short": false,
+                      "key": "Remote",
+                      "label": "Remote",
+                      "opacity": null,
+                      "progress": null,
+                      "sub_menu": {
+                        "_type": "HeadlessMenu",
+                        "items": [
+                          {
+                            "_type": "ActionItem",
+                            "action": "<function:open_ssh_menu>",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "[color=#008000]󰪥[/color]",
+                            "is_short": false,
+                            "key": "ssh",
+                            "label": "SSH",
+                            "opacity": null,
+                            "progress": null
+                          },
+                          {
+                            "_type": "ActionItem",
+                            "action": "<function:generate_rpi_connect_menu>",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "",
+                            "is_short": false,
+                            "key": "rpi_connect",
+                            "label": "RPi Connect",
+                            "opacity": null,
+                            "progress": null
+                          },
+                          {
+                            "_type": "ActionItem",
+                            "action": "<function:generate_vscode_menu>",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󰨞",
+                            "is_short": false,
+                            "key": "vscode",
+                            "label": "VSCode",
+                            "opacity": null,
+                            "progress": null
+                          }
+                        ],
+                        "placeholder": "No settings in this category",
+                        "title": "󰑔Remote"
+                      }
+                    },
+                    {
+                      "_type": "SubMenuItem",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰕈",
+                      "is_short": false,
+                      "key": "OS",
+                      "label": "OS",
+                      "opacity": null,
+                      "progress": null,
+                      "sub_menu": {
+                        "_type": "HeadlessMenu",
+                        "items": [
+                          {
+                            "_type": "SubMenuItem",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󰡉",
+                            "is_short": false,
+                            "key": "users",
+                            "label": "Users",
+                            "opacity": null,
+                            "progress": null,
+                            "sub_menu": {
+                              "_type": "HeadlessMenu",
+                              "items": [
+                                {
+                                  "_type": "DispatchItem",
+                                  "action": "<function:<lambda>>",
+                                  "background_color": "#FFC107",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰀔",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Add",
+                                  "opacity": null,
+                                  "operation": {
+                                    "_type": "UsersCreateUserAction"
+                                  },
+                                  "progress": null
+                                },
+                                {
+                                  "_type": "SubMenuItem",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰀄",
+                                  "is_short": false,
+                                  "key": "<function:>",
+                                  "label": "<function:>",
+                                  "opacity": null,
+                                  "progress": null,
+                                  "sub_menu": {
+                                    "_type": "HeadlessMenu",
+                                    "items": [
+                                      {
+                                        "_type": "DispatchItem",
+                                        "action": "<function:<lambda>>",
+                                        "background_color": "#FFC107",
+                                        "color": [
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                        ],
+                                        "icon": "󰯄",
+                                        "is_short": false,
+                                        "key": null,
+                                        "label": "Reset Password",
+                                        "opacity": null,
+                                        "operation": {
+                                          "_type": "UsersResetPasswordAction",
+                                          "id": "<function:>"
+                                        },
+                                        "progress": null
+                                      },
+                                      {
+                                        "_type": "DispatchItem",
+                                        "action": "<function:<lambda>>",
+                                        "background_color": "#FF3F51",
+                                        "color": [
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                        ],
+                                        "icon": "󰀕",
+                                        "is_short": false,
+                                        "key": null,
+                                        "label": "Delete",
+                                        "opacity": null,
+                                        "operation": {
+                                          "_type": "UsersDeleteUserAction",
+                                          "id": "<function:>"
+                                        },
+                                        "progress": null
+                                      }
+                                    ],
+                                    "placeholder": null,
+                                    "title": "<function:>"
+                                  }
+                                }
+                              ],
+                              "placeholder": null,
+                              "title": "󰡉Users"
+                            }
+                          },
+                          {
+                            "_type": "ActionItem",
+                            "action": "<function:open_lightdm_menu>",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "[color=#008000]󰪥[/color]",
+                            "is_short": false,
+                            "key": "lightdm",
+                            "label": "Desktop",
+                            "opacity": null,
+                            "progress": null
+                          }
+                        ],
+                        "placeholder": "No settings in this category",
+                        "title": "󰕈OS"
+                      }
+                    },
+                    {
+                      "_type": "SubMenuItem",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰔊",
+                      "is_short": false,
+                      "key": "Speech",
+                      "label": "Speech",
+                      "opacity": null,
+                      "progress": null,
+                      "sub_menu": {
+                        "_type": "HeadlessMenu",
+                        "items": [
+                          {
+                            "_type": "SubMenuItem",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󰱑",
+                            "is_short": false,
+                            "key": "voice:engines",
+                            "label": "Voice Engine",
+                            "opacity": null,
+                            "progress": null,
+                            "sub_menu": {
+                              "_type": "HeadlessMenu",
+                              "items": [
+                                {
+                                  "_type": "ActionItem",
+                                  "action": "<function:_engine_selector>",
+                                  "background_color": "#03F7AE",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰱒",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Piper",
+                                  "opacity": null,
+                                  "progress": null
+                                },
+                                {
+                                  "_type": "ActionItem",
+                                  "action": "<function:_engine_selector>",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰄱",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Picovoice",
+                                  "opacity": null,
+                                  "progress": null
+                                }
+                              ],
+                              "placeholder": null,
+                              "title": "󰱑Voice Engine"
+                            }
+                          },
+                          {
+                            "_type": "SubMenuItem",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󰔊",
+                            "is_short": false,
+                            "key": "voice:settings",
+                            "label": "Picovoice Settings",
+                            "opacity": null,
+                            "progress": null,
+                            "sub_menu": {
+                              "_type": "HeadedMenu",
+                              "heading": "󰔊 Picovoice",
+                              "items": [
+                                {
+                                  "_type": "ActionItem",
+                                  "action": "<function:input_access_key>",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰐲",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Set Access Key",
+                                  "opacity": null,
+                                  "progress": null
+                                }
+                              ],
+                              "placeholder": null,
+                              "sub_heading": "Set the access key\nCurrent value: Fake",
+                              "title": "Picovoice Settings"
+                            }
+                          }
+                        ],
+                        "placeholder": "No settings in this category",
+                        "title": "󰔊Speech"
+                      }
+                    },
+                    {
+                      "_type": "SubMenuItem",
+                      "background_color": "#68B7FF",
+                      "color": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "icon": "󰡨",
+                      "is_short": false,
+                      "key": "Docker",
+                      "label": "Docker",
+                      "opacity": null,
+                      "progress": null,
+                      "sub_menu": {
+                        "_type": "HeadlessMenu",
+                        "items": [
+                          {
+                            "_type": "ActionItem",
+                            "action": "<function:setup_menu_action>",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "",
+                            "is_short": false,
+                            "key": "docker:service",
+                            "label": "Service",
+                            "opacity": null,
+                            "progress": null
+                          },
+                          {
+                            "_type": "SubMenuItem",
+                            "background_color": "#68B7FF",
+                            "color": [
+                              1,
+                              1,
+                              1,
+                              1
+                            ],
+                            "icon": "󱥉",
+                            "is_short": false,
+                            "key": "docker:registries",
+                            "label": "Registries",
+                            "opacity": null,
+                            "progress": null,
+                            "sub_menu": {
+                              "_type": "HeadedMenu",
+                              "heading": "󰡨 Docker",
+                              "items": [
+                                {
+                                  "_type": "ActionItem",
+                                  "action": "<function:input_credentials>",
+                                  "background_color": "#68B7FF",
+                                  "color": [
+                                    1,
+                                    1,
+                                    1,
+                                    1
+                                  ],
+                                  "icon": "󰌉",
+                                  "is_short": false,
+                                  "key": null,
+                                  "label": "Add Registry",
+                                  "opacity": null,
+                                  "progress": null
+                                }
+                              ],
+                              "placeholder": null,
+                              "sub_heading": "Log in to a registry:",
+                              "title": "󱥉Docker Registries"
+                            }
+                          }
+                        ],
+                        "placeholder": "No settings in this category",
+                        "title": "󰡨Docker"
+                      }
+                    }
+                  ],
+                  "placeholder": null,
+                  "title": "Settings"
+                }
+              },
+              {
+                "_type": "SubMenuItem",
+                "background_color": "#68B7FF",
+                "color": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "icon": "",
+                "is_short": false,
+                "key": "about",
+                "label": "About",
+                "opacity": null,
+                "progress": null,
+                "sub_menu": {
+                  "_type": "HeadedMenu",
+                  "heading": "Ubo v0.0.0",
+                  "items": [
+                    {
+                      "_type": "DispatchItem",
+                      "action": "<function:<lambda>>",
+                      "background_color": "#03F7AE",
+                      "color": "#000000",
+                      "icon": "󰄬",
+                      "is_short": false,
+                      "key": null,
+                      "label": "Already up to date!",
+                      "opacity": null,
+                      "operation": {
+                        "_type": "UpdateManagerSetStatusAction",
+                        "status": "checking"
+                      },
+                      "progress": null
+                    }
+                  ],
+                  "placeholder": null,
+                  "sub_heading": "Base image: [unknown]\n",
+                  "title": "About"
+                }
+              }
+            ],
+            "placeholder": null,
+            "title": "󰍜Main"
+          }
+        },
+        {
+          "_type": "SubMenuItem",
+          "background_color": "#68B7FF",
+          "color": "white",
+          "icon": "",
+          "is_short": true,
+          "key": "notifications",
+          "label": "",
+          "opacity": null,
+          "progress": null,
+          "sub_menu": {
+            "_type": "HeadlessMenu",
+            "items": [],
+            "placeholder": "No notifications",
+            "title": "Notifications (0)"
+          }
+        },
+        {
+          "_type": "SubMenuItem",
+          "background_color": "#68B7FF",
+          "color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "icon": "󰐥",
+          "is_short": true,
+          "key": "power",
+          "label": "",
+          "opacity": null,
+          "progress": null,
+          "sub_menu": {
+            "_type": "HeadlessMenu",
+            "items": [
+              {
+                "_type": "DispatchItem",
+                "action": "<function:<lambda>>",
+                "background_color": "#68B7FF",
+                "color": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "icon": "󰜉",
+                "is_short": false,
+                "key": null,
+                "label": "Reboot",
+                "opacity": null,
+                "operation": {
+                  "_type": "RebootAction"
+                },
+                "progress": null
+              },
+              {
+                "_type": "DispatchItem",
+                "action": "<function:<lambda>>",
+                "background_color": "#68B7FF",
+                "color": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "icon": "󰐥",
+                "is_short": false,
+                "key": null,
+                "label": "Power off",
+                "opacity": null,
+                "operation": {
+                  "_type": "PowerOffAction"
+                },
+                "progress": null
+              }
+            ],
+            "placeholder": null,
+            "title": "󰐥Power"
+          }
+        }
+      ],
+      "placeholder": null,
+      "title": "󰋜test-hostname.local"
+    },
+    "path": [],
+    "settings_items_priorities": {
+      "Desktop": 0,
+      "IP Addresses": 0,
+      "Picovoice Settings": 0,
+      "RPi Connect": null,
+      "Registries": null,
+      "SSH": 1,
+      "Service": 1,
+      "Users": 1,
+      "VSCode": null,
+      "Voice Engine": 1,
+      "WiFi": 2
+    }
+  },
+  "notifications": {
+    "_type": "NotificationsState",
+    "notifications": [],
+    "progress": null,
+    "unread_count": 0
+  },
+  "rgb_ring": {
+    "_type": "RgbRingState",
+    "is_busy": false,
+    "is_connected": true
+  },
+  "rpi_connect": {
+    "_type": "RPiConnectState",
+    "is_active": false,
+    "is_downloading": false,
+    "is_installed": null,
+    "is_signed_in": null,
+    "status": null
+  },
+  "sensors": {
+    "_type": "SensorsState",
+    "light": {
+      "_type": "SensorState",
+      "value": 0.0
+    },
+    "temperature": {
+      "_type": "SensorState",
+      "value": 0.0
+    }
+  },
+  "ssh": {
+    "_type": "SSHState",
+    "is_active": true,
+    "is_enabled": true
+  },
+  "status_icons": {
+    "_type": "StatusIconsState",
+    "icons": [
+      {
+        "_type": "IconState",
+        "color": "white",
+        "id": "audio:mic-state",
+        "priority": -20,
+        "symbol": "󰍭"
+      },
+      {
+        "_type": "IconState",
+        "color": "white",
+        "id": "ethernet:state",
+        "priority": -13,
+        "symbol": "󰈅"
+      },
+      {
+        "_type": "IconState",
+        "color": "white",
+        "id": "wifi:state",
+        "priority": -12,
+        "symbol": "󰈅"
+      },
+      {
+        "_type": "IconState",
+        "color": "white",
+        "id": "ip:internet-state",
+        "priority": -11,
+        "symbol": "󰖟"
+      }
+    ]
+  },
+  "update_manager": {
+    "_type": "UpdateManagerState",
+    "base_image_variant": "[unknown]",
+    "current_version": "0.0.0",
+    "is_update_service_active": false,
+    "latest_version": "0.0.0",
+    "serial_number": "<not-available>",
+    "update_status": "up_to_date"
+  },
+  "users": {
+    "_type": "UsersState",
+    "users": [
+      {
+        "_type": "UserState",
+        "id": "<function:>",
+        "is_removable": false
+      }
+    ]
+  },
+  "voice": {
+    "_type": "VoiceState",
+    "is_access_key_set": false,
+    "selected_engine": "piper"
+  },
+  "vscode": {
+    "_type": "VSCodeState",
+    "is_binary_installed": false,
+    "is_downloading": false,
+    "is_logged_in": false,
+    "is_pending": false,
+    "status": null
+  },
+  "web_ui": {
+    "_type": "WebUIState",
+    "active_inputs": []
+  },
+  "wifi": {
+    "_type": "WiFiState",
+    "connections": [
+      {
+        "_type": "WiFiConnection",
+        "hidden": false,
+        "password": null,
+        "signal_strength": "<function:>",
+        "ssid": "<function:>",
+        "state": "Unknown",
+        "type": null
+      }
+    ],
+    "current_connection": null,
+    "has_visited_onboarding": null,
+    "state": "Unknown"
+  }
+}
