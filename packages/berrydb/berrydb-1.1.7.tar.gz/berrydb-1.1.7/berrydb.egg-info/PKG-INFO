@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: berrydb
+Version: 1.1.7
+Summary: The database for unstructured data and AI apps
+Home-page: https://berrydb.io
+Author: BerryDB
+License: Proprietary
+Classifier: License :: Other/Proprietary License
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: langchain_community
+Requires-Dist: langchain_openai
+Requires-Dist: tiktoken
+Requires-Dist: faiss-cpu
+Requires-Dist: jq
+Requires-Dist: unstructured[pdf]
+Requires-Dist: label-studio-sdk==1.0.5
+
+# BerryDB
+
+## Connecting to your database
+
+```python
+
+from BerryDB import BerryDB
+
+berryDb = BerryDB.connect(api_key, database_name, bucket_name)
+
+databases = BerryDB.databases(api_key)
+
+```
