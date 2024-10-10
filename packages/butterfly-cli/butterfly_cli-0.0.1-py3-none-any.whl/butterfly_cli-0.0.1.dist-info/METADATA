@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: butterfly-cli
+Version: 0.0.1
+Summary: A security analysis tool using AI agents
+Home-page: https://github.com/saint0x/butterfly-cli
+Author: saint0x
+Author-email: saint0x@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: cryptography
+Requires-Dist: python-dotenv
+Requires-Dist: openai
+Requires-Dist: rich
+
+# Butterfly
+
+Butterfly is a powerful security analysis tool that uses AI agents to analyze your codebase for potential security issues, architectural flaws, performance bottlenecks, and more.
+
+## Installation
+
+You can install Butterfly using pip:
+
+```
+pip install butterfly-cli
+```
+
+## Configuration
+
+1. Create a `.env` file in the root directory of your project.
+2. Add your OpenAI API key to the `.env` file:
+   ```
+   OPENAI_API_KEY=your-api-key-here
+   ```
+
+## Usage
+
+Run Butterfly inside your codebase:
+
+```
+butterfly run
+```
+
+This command will initiate the analysis using various AI agents, each focusing on different aspects of your codebase.
+
+## Features
+
+- Architecture analysis
+- Performance optimization suggestions
+- Static code analysis
+- Code quality assessment
+- Dependency analysis
+- And more!
+
+## Disclaimer
+
+This tool uses AI to analyze code and provide suggestions. While it can be a valuable aid in identifying potential issues, it should not be solely relied upon for security audits. Always combine this tool's output with manual review and testing.
