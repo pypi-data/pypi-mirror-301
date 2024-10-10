@@ -1,0 +1,12 @@
+ugbio_ppmseq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ugbio_ppmseq/ppmSeq_consts.py,sha256=3yzT2SCEpqz8QbG2o7gms66dZeK-5ZqOxSIqa3i8jCE,658
+ugbio_ppmseq/ppmSeq_qc_analysis.py,sha256=rJwZZ0pjyD2eFMRc6pqixfNNWfJMqnNsrIoHusaNRBA,5200
+ugbio_ppmseq/ppmSeq_utils.py,sha256=W_Ik2GbBjYUZnakaxKDqtfcSXhCCufekygEbV-macko,82249
+ugbio_ppmseq/reports/ppmSeq_legacy_v5_illustration.png,sha256=8CbZlDR0OpF4HYsQWsIlOJHRSUq5QYH2ldV9FucTUeg,39154
+ugbio_ppmseq/reports/ppmSeq_qc_report.ipynb,sha256=1fnUQ-oDar4Hnveo-H2vf5kF51huNm74fzClmNqo_Y8,19951
+ugbio_ppmseq/reports/ppmSeq_v1_illustration.png,sha256=8KG3PVHQXhUJaB8ZKYZDg_M91SZQWcJqCP2dPn0dGzU,51991
+ugbio_ppmseq-1.2.0.dist-info/METADATA,sha256=PbFi6jYgTFVf6jqy7KZ6Hrh0KJq_nR_EMIAeT2idMfE,659
+ugbio_ppmseq-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ugbio_ppmseq-1.2.0.dist-info/entry_points.txt,sha256=2s_GNQdEGsvzUK-641Se0EKvaH4V6cy0a0qXIViD7eg,100
+ugbio_ppmseq-1.2.0.dist-info/top_level.txt,sha256=zFU7rDG1PO1V5rbxax7mdaeI_ETLbISKVmLcV210Lmk,13
+ugbio_ppmseq-1.2.0.dist-info/RECORD,,
