@@ -1,0 +1,10 @@
+authors:
+  - family-names: Pascual-Izarra
+    given-names: Carlos
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "Colorevo"
+license: GPL-3.0-or-later
+repository-code: "https://gitlab.com/c-p/colorevo"
+url: "https://gitlab.com/c-p/colorevo"
+abstract: "Analyze color evolution in ROIs of videos"

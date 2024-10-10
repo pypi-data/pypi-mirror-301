@@ -1,0 +1,9 @@
+click>=8.1.7
+h5py>=3.12.1
+numpy>=2.1.1
+opencv-python-headless>=4.10.0.84
+pyqt6>=6.7.1
+pyqtgraph>=0.13.7
+
+[test]
+pytest>=8.3.3

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools_scm[toml]>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+description = "Analyze color evolution in ROIs of videos"
+name = "colorevo"
+requires-python = ">=3.12"
+dynamic = ["version"]
+authors = [
+    { name = "Carlos Pascual-Izarra", email = "cpascual@users.sourceforge.net" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["colorevo"]
+
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Qt",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "click>=8.1.7",
+    "h5py>=3.12.1",
+    "numpy>=2.1.1",
+    "opencv-python-headless>=4.10.0.84",
+    "pyqt6>=6.7.1",
+    "pyqtgraph>=0.13.7",
+]
+
+
+[project.urls]
+Homepage = "https://gitlab.com/c-p/colorevo"
+Repository = "https://gitlab.com/c-p/colorevo"
+Issues = "https://gitlab.com/c-p/colorevo/issues"
+
+[project.scripts]
+colorevo = "colorevo.maingui:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8.3.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
