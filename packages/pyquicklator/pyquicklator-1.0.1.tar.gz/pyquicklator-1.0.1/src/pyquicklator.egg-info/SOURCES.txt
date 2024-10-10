@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pyquicklator/__init__.py
+src/pyquicklator/main.py
+src/pyquicklator/ui.py
+src/pyquicklator.egg-info/PKG-INFO
+src/pyquicklator.egg-info/SOURCES.txt
+src/pyquicklator.egg-info/dependency_links.txt
+src/pyquicklator.egg-info/entry_points.txt
+src/pyquicklator.egg-info/requires.txt
+src/pyquicklator.egg-info/top_level.txt
+src/pyquicklator/locales/ui_ru.qm
+src/pyquicklator/locales/ui_uk.qm
