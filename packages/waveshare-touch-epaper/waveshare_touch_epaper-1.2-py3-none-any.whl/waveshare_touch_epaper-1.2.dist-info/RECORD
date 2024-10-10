@@ -1,0 +1,8 @@
+waveshare_touch_epaper/__init__.py,sha256=W3aiNgjFYM9RZc9pydJG7mrSRhciyxD3GgLHdJ8U8Z8,192
+waveshare_touch_epaper/epaper_display.py,sha256=JmbOi0jyOtz81Swmm77D5N6kyzUavhSduZ3KrtVzUS4,13305
+waveshare_touch_epaper/touch_screen.py,sha256=5qEbyunWXcEJFJdVElcp3--8Y4dZAOZJwLtwKHB550I,13392
+waveshare_touch_epaper-1.2.dist-info/LICENSE,sha256=mJHoqPoh-bbbJydXghUizCvbvW2W40T9fUashvyrYaY,1065
+waveshare_touch_epaper-1.2.dist-info/METADATA,sha256=vyQyvDm6UYrCBKI_7LKIStgtYsH8fylKG9ipLYuElpY,7346
+waveshare_touch_epaper-1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+waveshare_touch_epaper-1.2.dist-info/top_level.txt,sha256=VqVaGG5j6SmVJWmQjzvyPm0np20LjNwosw4FP0PCqwY,23
+waveshare_touch_epaper-1.2.dist-info/RECORD,,
