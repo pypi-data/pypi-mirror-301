@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nbretina
+Version: 0.0.1
+Summary: Makes notebook markdown attached images display as retina (2x) images
+Home-page: https://github.com/AnswerDotAI/nbretina
+Author: Jeremy Howard
+Author-email: info@fast.ai
+License: Apache Software License 2.0
+Keywords: notebook
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+
+# nbretina
+
+Makes notebook markdown attached images display as retina (2x) images.

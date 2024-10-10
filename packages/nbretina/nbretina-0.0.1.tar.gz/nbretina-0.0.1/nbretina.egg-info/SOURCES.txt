@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+jupyter-config/nbretina.json
+nbretina.egg-info/PKG-INFO
+nbretina.egg-info/SOURCES.txt
+nbretina.egg-info/dependency_links.txt
+nbretina.egg-info/not-zip-safe
+nbretina.egg-info/requires.txt
+nbretina.egg-info/top_level.txt
+static/nbretina.js
