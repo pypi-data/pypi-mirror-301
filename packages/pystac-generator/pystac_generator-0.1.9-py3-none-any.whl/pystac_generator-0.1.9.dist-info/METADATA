@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: pystac-generator
+Version: 0.1.9
+Summary: A python package and CLI tool for generating STAC catalog from spatial data files
+Keywords: stac,generator,stac-generator
+Author-Email: Joseph Sclauzero <joseph.sclauzero@adelaide.edu.au>
+License: MIT
+Project-URL: Repository, https://github.com/JosephUoA/stac-generator
+Requires-Python: ==3.11.*
+Requires-Dist: pystac>=1.10.1
+Requires-Dist: shapely>=2.0.6
+Requires-Dist: jsonschema>=4.23.0
+Requires-Dist: rasterio>=1.4.1
+Requires-Dist: pyproj>=3.7.0
+Requires-Dist: folium>=0.17.0
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: pandera>=0.20.4
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: stac-pydantic>=3.1.2
+Requires-Dist: dask[dataframe]>=2024.9.1
+Description-Content-Type: text/markdown
+
+# stac-generator
+
+## Install Package
+
+```bash
+pip install pystac_generator
+```
+
+Note: stac-generator name is already used by someone else.
+
+## Run as CLI
+
+```bash
+stac_generator --help
+```
+
+## Run as python package
+
+```python
+from stac_generator.generator_factor import StacGeneratorFactory
+```
+
+## Run the current example
+
+Note that you will need to either clone the repository or download the [example](./example/) directory in the repository
+
+To run the example as CLI
+
+```bash
+stac_generator csv example/csv/source_config.csv --id point_data --to_local generated
+```
+
+To run the example as python module: see the [notebook](./demo_csv.ipynb)
+
+## Install pdm and all packages
+
+```bash
+make install
+```
+
+## Adding a new dependency
+
+```bash
+pdm add <package>
+```
+
+## Adding a new dependency under a dependency group:
+
+```bash
+pdm add -dG <group> <package>
+```
+
+## Remove a dependency
+
+```bash
+pdm remove <package>
+```
+
+## Serve docs locally
+
+```bash
+make docs
+```
+
+## Fixing CI
+
+Run the linter. This runs all methods in pre-commit - i.e. checking for exports, format the code, etc, followed by mypy. This has a one to one correspondence with validate-ci
+
+```bash
+make lint
+```
+
+Run tests. This runs all tests using pytest. This has a one to one correspondence with test-ci
+
+```bash
+make test
+```
