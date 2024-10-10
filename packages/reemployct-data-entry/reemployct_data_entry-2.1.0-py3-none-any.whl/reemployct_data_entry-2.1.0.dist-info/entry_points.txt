@@ -1,0 +1,3 @@
+[console_scripts]
+jobentry=reemployct_data_entry.entry:main
+
