@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lib_defender
+Version: 0.9.0
+Summary: Super Secret Stuff
+Author: D S
+Author-email: dustin.silveri+poc1@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
+
