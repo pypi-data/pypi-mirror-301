@@ -1,0 +1,12 @@
+shiboken6/Shiboken.abi3.so,sha256=ThD7M66bt9DDGohRapXw-27FV4kD50KdVKQvJkk1DB8,90256
+shiboken6/Shiboken.pyi,sha256=-BbSYQLogijgpwMuFaYadiKYu6wzX6pwO8o6CKHEtmY,1062
+shiboken6/__init__.py,sha256=oCKnsqk_Yv7dIggX5yGz4uiWsigHrbk9ERXcyXQ4NEo,667
+shiboken6/_config.py,sha256=ElaTxgIVH8w7mHJZ-Qjp1x4r0hH1B-f5bpHex1doSbg,223
+shiboken6/_git_shiboken_module_version.py,sha256=tf5HBaDPQ8SU8BWjzdRBXFyq-OsuWL6Z5ktaOr2KAwc,692
+shiboken6/libshiboken6.abi3.6.8.dylib,sha256=0DWB45fNRYdEIsMZAI4h-MY-Nh9ZZ8ZZVqnPOiM1FC4,988784
+shiboken6/py.typed,sha256=FU0rOhJVlG7EURp5Uv2wfPvgGm7px8bq5d-r1GDIM8E,33
+shiboken6/__pycache__/_config.cpython-39.pyc,sha256=90FtpCrqyADqWKOC20Vga4Bwm1wAwcUqFrfhgJYcPcU,415
+shiboken6-6.8.0.dist-info/METADATA,sha256=pAGr7Imo48kBAgQ7eEQMsImwBtmWEWfOSlr5WngFbfY,2461
+shiboken6-6.8.0.dist-info/WHEEL,sha256=o49Aft77UI64D3FE-xKZ6u7yJXFDXKRrdvJsJ7J8XsY,112
+shiboken6-6.8.0.dist-info/top_level.txt,sha256=_l8XHEOFzOmXURG6zBXSK6LXG8BEzHn9ABBSMFdV098,19
+shiboken6-6.8.0.dist-info/RECORD,,
