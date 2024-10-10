@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: l3d_rs_python
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: Python Module of the L3D (Luminaire 3D Format) parser and writer for Rust, specifically for the Rust/WASM target as such designed for JSON format
+Home-Page: https://github.com/holg/l3d_rs_python
+Author: Holger Trahe <trahe@mac.com>
+Author-email: Holger Trahe <trahe@mac.com>
+License: GPL-3.0-or-later
+Requires-Python: >=3.8
+Project-URL: Source Code, https://github.com/holg/l3d_rs_python
