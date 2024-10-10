@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nomad_camels_driver_ADALM1000
+Version: 0.1.0
+Summary: Instrument driver for ADALM1000 for NOMAD CAMELS
+Author-email: enter your name here! <contact@email.com>
+Project-URL: NOMAD Camels GitHub, https://github.com/FAU-LAP/NOMAD-CAMELS
+Project-URL: CAMELS Drivers GitHub, https://github.com/FAU-LAP/CAMELS_drivers
+Project-URL: NOMAD Camels Documentation, https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Requires-Python: >=3.9.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nomad-camels
+Requires-Dist: pysmu
+
+# NOMAD Camels driver for ADALM1000
+
+Driver for ADALM1000 written for the measurement software [NOMAD Camels](https://fau-lap.github.io/NOMAD-CAMELS/). 
+
+```{caution}
+Only works for Python < 3.10.9 !
+CAMELS is often installed using Python 3.11. You therefore might need to downgrade your Python version.
+```
+
+Also requires the `pysmu` package. Install via
+
+```bash
+pip install -i https://test.pypi.org/simple/ pysmu
+```
+
+## Documentation
+
+For more information and instruments visit the [documentation](https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html).
