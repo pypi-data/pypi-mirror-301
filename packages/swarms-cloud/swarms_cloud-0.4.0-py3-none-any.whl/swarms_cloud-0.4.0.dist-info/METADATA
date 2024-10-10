@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: swarms-cloud
+Version: 0.4.0
+Summary: Swarms Cloud - Pytorch
+Home-page: https://github.com/kyegomez/swarms-cloud
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: accelerate
+Requires-Dist: asyncio
+Requires-Dist: auto-gptq
+Requires-Dist: bitsandbytes
+Requires-Dist: diffusers
+Requires-Dist: einops
+Requires-Dist: fastapi (==0.112.2)
+Requires-Dist: hf_transfer
+Requires-Dist: huggingface-hub
+Requires-Dist: loguru
+Requires-Dist: optimum
+Requires-Dist: peft
+Requires-Dist: pydantic
+Requires-Dist: pytest
+Requires-Dist: rich
+Requires-Dist: shortuuid
+Requires-Dist: skypilot
+Requires-Dist: sse-starlette (==2.0.0)
+Requires-Dist: stripe
+Requires-Dist: supabase
+Requires-Dist: swarms
+Requires-Dist: tiktoken
+Requires-Dist: torch
+Requires-Dist: transformers (==4.44.0)
+Requires-Dist: transformers_stream_generator
+Requires-Dist: uvicorn
+Requires-Dist: whisperx
+Requires-Dist: xformers
+Project-URL: Documentation, https://github.com/kyegomez/swarms-cloud
+Project-URL: Repository, https://github.com/kyegomez/swarms-cloud
+Description-Content-Type: text/markdown
+
+
+# Swarms Cloud
+
+[![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/agora-999382051935506503) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@kyegomez3242) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kye-g-38759a207/) [![Follow on X.com](https://img.shields.io/badge/X.com-Follow-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/kyegomezb)
+
+Infrastructure for scalable, reliable, and economical Multi-Modal Model API serving and deployment. We're using terraform to orchestrate infrastructure, FastAPI to host the models. If you're into deploying models for millions of people, join our discord and help contribute.
+
+# Install
+```bash
+
+$ pip3 install -U swarms-cloud
+
+```
+
+# Stack
+- Backend: FastAPI
+- Skypilot for container management
+- Postresql for database
+- Docker for cluster management
+- Terraform
+
+# APIS
+- Agent API
+- Swarms Memory API
+- OES API
+- Swarms Multi-Agent API  
+  - Parallel API
+  - Sequential API
+  - Hiearchical API Etc
+  
+
+# License
+MIT
+
+## References
+- [Noam tweet](https://x.com/NoamShazeer/status/1803790708358410380)
+
