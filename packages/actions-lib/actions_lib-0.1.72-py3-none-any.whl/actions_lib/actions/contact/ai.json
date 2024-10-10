@@ -1,0 +1,89 @@
+[
+    {
+        "name": "add_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to be added."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "required": true,
+                "description": "The address of the contact to be added."
+            }
+        ],
+        "description": "Add a new contact with a specified name and address."
+    },
+    {
+        "name": "show_all_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 2,
+        "parameters": [
+        ],
+        "description": "Retrieve all contacts, sorted by the specified order."
+    },
+    {
+        "name": "show_contact_by_name",
+        "group": "contact",
+        "type": "backend",
+        "level": 2,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to retrieve."
+            }
+        ],
+        "description": "Retrieve a contact's details by their name."
+    },
+    {
+        "name": "edit_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to be edited."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "required": true,
+                "description": "The new address of the contact."
+            }
+        ],
+        "description": "Edit the details of an existing contact, including name and address."
+    },
+    {
+        "name": "delete_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to be deleted."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "required": true,
+                "description": "The address of the contact to be deleted."
+            }
+        ],
+        "description": "Delete an existing contact by specifying the name and address."
+    }
+]
