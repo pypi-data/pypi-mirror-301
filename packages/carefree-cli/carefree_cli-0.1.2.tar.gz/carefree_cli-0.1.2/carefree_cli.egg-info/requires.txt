@@ -1,0 +1,5 @@
+rich
+regex
+typer
+filelock
+pydantic

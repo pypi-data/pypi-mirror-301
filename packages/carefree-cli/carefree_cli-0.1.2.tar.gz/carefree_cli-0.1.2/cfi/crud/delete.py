@@ -1,0 +1,2 @@
+def delete() -> None:
+    pass
