@@ -1,0 +1,4 @@
+include pp_recordio_lib_*.so
+include pp_recordio_lib_*.dll
+include *.so
+include *.h
