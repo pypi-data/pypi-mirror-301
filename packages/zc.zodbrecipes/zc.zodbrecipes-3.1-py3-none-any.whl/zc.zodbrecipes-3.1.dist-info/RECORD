@@ -1,0 +1,10 @@
+zc.zodbrecipes-3.1-py3.11-nspkg.pth,sha256=i7g33RdQzJ33LZYHfQ_YmQhLOchcWGnBnib2zxQJCiY,519
+zc/zodbrecipes/__init__.py,sha256=IkGJL99iuVaa9TkodvPyGff-fgg8IoZaUeu0tVEbaq0,11483
+zc/zodbrecipes/tests.py,sha256=utaSd53SDwaj_VykkifY6mKmpAfzMcFBMwCJiodNSiE,2396
+zc/zodbrecipes/zeo.txt,sha256=ZNdlDGzyxw7f_62B77wbo7qRsRTvLPCnACMmdCwKS0c,22515
+zc.zodbrecipes-3.1.dist-info/METADATA,sha256=9L-4Xc8bxYMZ75rtwV6mDZXgbr1eav6K2dCBvwTeQHI,26966
+zc.zodbrecipes-3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zc.zodbrecipes-3.1.dist-info/entry_points.txt,sha256=0JcI67IM60J7hYVMyo6qMomup7GdQOFjScKXzL-Y9NI,52
+zc.zodbrecipes-3.1.dist-info/namespace_packages.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.zodbrecipes-3.1.dist-info/top_level.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.zodbrecipes-3.1.dist-info/RECORD,,
