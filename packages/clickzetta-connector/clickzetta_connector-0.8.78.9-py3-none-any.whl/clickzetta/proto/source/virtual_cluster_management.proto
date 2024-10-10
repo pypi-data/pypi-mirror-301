@@ -1,0 +1,269 @@
+syntax = "proto3";
+option java_package = "com.clickzetta.rm.proto";
+option java_outer_classname = "VirtualClusterManagementProtos";
+package com.clickzetta.rm;
+import "virtual_cluster.proto";
+
+// =============================== create =====================================
+message CreateVirtualClusterRequest {
+  optional VirtualClusterProperties properties = 1;
+  optional bool create_if_not_exists = 2;
+  optional RequestInfo request_info = 3;
+  optional bool is_suspended = 4; // create a suspended vc instead of starting it immediately
+}
+
+message CreateVirtualClusterResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+// =============================== update =====================================
+
+message AlteredVirtualClusterProperty {
+  optional string name = 1;
+  optional VClusterSize cluster_size = 2;
+  // VClusterType cluster_type = 3;
+  optional int32 auto_stop_latency_sec = 4;
+  optional bool auto_start_enabled = 5;
+  map<string, string> tags = 6;
+  repeated string unset_tags = 7;
+  optional string comment = 8;
+  optional int32 query_process_time_limit_sec = 10;
+  oneof resource_oneof {
+    AnalyticsProperties analytics_properties = 11;
+    GeneralProperties general_properties = 12;
+  }
+}
+
+message UpdateVirtualClustersRequest {
+  oneof filter {
+    int64 vc_id = 1;  // single update
+    //  Expression expression = 2;  // batch update
+  }
+  optional AlteredVirtualClusterProperty to_update_properties = 2;
+  optional bool if_exists = 3;
+  optional RequestInfo request_info = 4;
+}
+
+message UpdateVirtualClusterResponse {
+  oneof filter {
+    int64 vc_id = 1;
+  }
+  optional ResponseInfo response_info = 2;
+}
+
+message UpdateVirtualClustersResponse {
+  repeated UpdateVirtualClusterResponse responses = 1;
+}
+
+message StartVirtualClusterRequest {
+  optional int64 vc_id = 1;
+  optional bool if_exists = 2;
+  optional bool if_stopped = 3;
+  optional RequestInfo request_info = 4;
+}
+
+message StartVirtualClusterResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+message StopVirtualClusterRequest {
+  optional int64 vc_id = 1;
+  optional bool if_exists = 2;
+  optional bool force = 3;
+  optional RequestInfo request_info = 4;
+}
+
+message StopVirtualClusterResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+message ResizeVirtualClusterRequest {
+  optional int64 vc_id = 1;
+  optional VClusterSize cluster_size = 2;
+  optional bool if_exists = 3;
+  optional RequestInfo request_info = 4;
+}
+
+message ResizeVirtualClusterResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+// =============================== list/describe =====================================
+message VirtualClusterStateInfo {
+  optional VirtualClusterState state = 1;
+  optional VirtualClusterState pre_state = 2;
+  optional string error_msg = 3;
+  optional int32 replica_count = 4;
+  optional string state_info = 5; // state specific info string
+  // auto-scaling for General VC is not supported currently
+}
+
+message VirtualClusterJobInfo {
+  optional int32 jobs_running = 1;
+  optional int32 jobs_in_queue = 2;
+}
+
+message VirtualClusterStatus {
+  optional int64 vc_id = 1;
+  optional VirtualClusterProperties properties = 2;
+  optional VirtualClusterJobInfo job_info = 3;
+  optional VirtualClusterStateInfo state_info = 4;
+}
+
+message ListVirtualClusterFilter {
+  optional VClusterSize cluster_size = 1;
+  optional VirtualClusterState cluster_state = 2;
+}
+
+message ListVirtualClusterRequest {
+  optional int64 instance_id = 1;
+  optional string workspace_name = 2;
+  oneof filter {
+    string pattern = 3;
+    ListVirtualClusterFilter where = 4;
+  }
+  optional RequestInfo request_info = 5;
+  optional DisplayVirtualClusterPolicy display_policy = 6;
+}
+
+message ListVirtualClustersResponse {
+  repeated VirtualClusterStatus statuses = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+enum DisplayVirtualClusterPolicy {
+  DISPLAY_ALL = 0;
+  DISPLAY_CURRENT_VERSION = 1;
+  DISPLAY_TARGET_VERSION = 2;
+}
+
+message DescribeVirtualClusterRequest {
+  optional int64 instance_id = 1;
+  optional string workspace_name = 2;
+  optional string vc_name = 3;
+  optional RequestInfo request_info = 4;
+  optional DisplayVirtualClusterPolicy display_policy = 5;
+}
+
+message DescribeVirtualClusterResponse {
+  optional VirtualClusterStatus status = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+// =============================== drop =====================================
+message DeleteVirtualClusterRequest {
+  optional int64 vc_id = 1;
+  optional bool if_exists = 2;
+  optional bool force = 3;
+  optional RequestInfo request_info = 4;
+}
+
+message DeleteVirtualClusterResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+// =============================== cancel jobs =====================================
+message CancelAllJobsRequest {
+  optional int64 vc_id = 1;
+  optional bool if_exists = 2;
+  optional RequestInfo request_info = 3;
+}
+
+message CancelAllJobsResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+// =============================== terminate vc status change =====================================
+message TerminateVirtualClusterStatusChangeRequest {
+  optional int64 vc_id = 1;
+  optional RequestInfo request_info = 2;
+}
+
+message TerminateVirtualClusterStatusChangeResponse {
+  optional int64 vc_id = 1;
+  optional ResponseInfo response_info = 2;
+}
+
+enum UpgradeVirtualClusterPolicy {
+  UPGRADE_SWITCH = 0;
+}
+
+message UpgradeVirtualClusterRequest {
+  optional RequestInfo request_info = 1;
+  optional VClusterIdentifier vc_identifier = 2;
+  optional string target_version = 3;
+  optional UpgradeVirtualClusterPolicy policy = 4;
+}
+
+message UpgradeVirtualClusterResponse {
+  optional ResponseInfo response_info = 1;
+}
+
+message AbortUpgradeVirtualClusterRequest {
+  optional RequestInfo request_info = 1;
+  optional VClusterIdentifier vc_identifier = 2;
+}
+
+message AbortUpgradeVirtualClusterResponse {
+  optional ResponseInfo response_info = 1;
+}
+
+message GetVirtualClusterUpgradeStatusRequest {
+  optional RequestInfo request_info = 1;
+  optional VClusterIdentifier vc_identifier = 2;
+}
+
+enum UpgradeState {
+  UPGRADE_NONE = 0;
+  UPGRADE_SWITCHING = 1;
+  UPGRADE_DRAINING = 2;
+  UPGRADE_CANCELLING = 3;
+}
+
+message VirtualClusterUpgradeStatus {
+  optional UpgradeState upgrade_state = 1;
+  optional string target_version = 2;
+  optional string current_version = 3;
+  optional int64 target_vc_id = 4;
+  optional int64 current_vc_id = 5;
+}
+
+message GetVirtualClusterUpgradeStatusResponse {
+  optional ResponseInfo response_info = 1;
+  optional VirtualClusterUpgradeStatus upgrade_status = 2;
+}
+
+message FinishSwitchVirtualClusterRequest {
+  optional RequestInfo request_info = 1;
+  optional VClusterIdentifier vc_identifier = 2;
+}
+
+message FinishSwitchVirtualClusterResponse {
+  optional ResponseInfo response_info = 1;
+}
+
+// =============================== service =====================================
+service VirtualClusterManagerService {
+  rpc createVirtualCluster(CreateVirtualClusterRequest) returns (CreateVirtualClusterResponse);
+  rpc updateVirtualCluster(UpdateVirtualClustersRequest) returns (UpdateVirtualClusterResponse);
+  rpc startVirtualCluster(StartVirtualClusterRequest) returns (StartVirtualClusterResponse);
+  rpc stopVirtualCluster(StopVirtualClusterRequest) returns (StopVirtualClusterResponse);
+  rpc resizeVirtualCluster(ResizeVirtualClusterRequest) returns (ResizeVirtualClusterResponse);
+  rpc listVirtualCluster(ListVirtualClusterRequest) returns (ListVirtualClustersResponse);
+  rpc describeVirtualCluster(DescribeVirtualClusterRequest) returns (DescribeVirtualClusterResponse);
+  rpc deleteVirtualCluster(DeleteVirtualClusterRequest) returns (DeleteVirtualClusterResponse);
+  rpc cancelAllJobs(CancelAllJobsRequest) returns (CancelAllJobsResponse);
+  rpc terminateVirtualClusterStatusChange(TerminateVirtualClusterStatusChangeRequest)
+      returns (TerminateVirtualClusterStatusChangeResponse);
+  //upgrade apis
+  rpc upgradeVirtualCluster(UpgradeVirtualClusterRequest) returns (UpgradeVirtualClusterResponse);
+  rpc abortUpgradeVirtualCluster(AbortUpgradeVirtualClusterRequest) returns (AbortUpgradeVirtualClusterResponse);
+  rpc finishSwitchVirtualCluster(FinishSwitchVirtualClusterRequest) returns (FinishSwitchVirtualClusterResponse);
+  rpc getUpgradeStatus(GetVirtualClusterUpgradeStatusRequest) returns (GetVirtualClusterUpgradeStatusResponse);
+}

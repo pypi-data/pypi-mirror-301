@@ -1,0 +1,601 @@
+syntax = "proto3";
+
+package cz.proto.access;
+
+import "metadata_entity.proto";
+import "account.proto";
+import "object_identifier.proto";
+import "privilege.proto";
+import "property.proto";
+import "job_meta.proto";
+import "virtual_cluster.proto";
+import "virtual_cluster_management.proto";
+import "manifest.proto";
+import "table_common.proto";
+import "expression.proto";
+import "table_meta.proto";
+import "data_type.proto";
+
+message CreateEntity {
+  oneof mode {
+    bool replace = 1;
+    bool if_not_exists = 2;
+  }
+  Entity entity = 3;
+}
+
+message AlterEntity {
+  bool if_exists = 1;
+  ObjectIdentifier identifier = 2;
+  bool change_comment = 3;
+  Entity entity = 4;
+  oneof derived {
+    AlterRole role = 10;
+    AlterJob job = 11;
+    AlterVirtualCluster virtual_cluster = 12;
+    AlterVCluster vcluster = 13; // TODO(zhenyu.hou) - this is only for RM, remove later
+    AlterShare share = 14;
+    AlterConnection connection = 15;
+    AlterFunction function = 16;
+    AlterUser user = 17;
+    AlterTable table = 18;
+  }
+}
+
+enum ColumnMoveType {
+  FIRST = 0;
+  BEFORE = 1;
+  AFTER = 2;
+}
+
+message ColumnMove {
+  ColumnMoveType type = 1;
+  string column_name = 2;
+  optional string reference_column_name = 3;
+  repeated string ancestors = 4;
+}
+
+// Table changes are processed in the order of how they were added.
+// So update is supposed to fail if the move action to the new column
+// is pushed to the repeated field prior to the add-column action.
+message AlterTable {
+  repeated TableChange updates = 1; // strictly processed in order
+}
+
+message TableChange {
+  oneof update {
+    ColumnAdd column_add = 1; // added at the end of the schema by default
+    ColumnDrop column_drop = 3;
+    ColumnMove move = 2;
+    ColumnChange column_change = 4;
+    DataSourceAdd data_source_add = 5;
+    DataSourceDrop data_source_drop = 6;
+    DataSourceChange data_source_change = 7;
+  }
+}
+
+message DataSourceAdd {
+  repeated DataSourceInfo infos = 1;
+}
+
+message DataSourceChange {
+  uint32 data_source_id = 1;
+
+  oneof change {
+    Properties new_options = 10;
+    PropertyKeyList drop_options = 11;
+  }
+}
+
+message DataSourceDrop {
+  repeated uint32 data_source_ids = 1;
+}
+
+message StructField {
+  repeated string ancestors = 1;
+  StructTypeInfo.Field field = 2;
+}
+
+message ColumnAdd {
+  oneof add {
+    FieldSchema column = 1; // added at the end of the schema by default
+    StructField struct_field = 2;
+  }
+  bool if_not_exists = 11;
+}
+
+message ColumnDrop {
+  repeated string ancestors = 1;
+  string name = 2;
+  bool if_exists = 11;
+}
+
+message ColumnChange {
+  repeated string ancestors = 1;
+  string name = 2;
+  oneof change {
+    string new_name = 3;
+    DataType new_type = 4;
+    string new_comment = 5;
+  }
+}
+
+message AlterVirtualCluster {
+  oneof derived {
+    bool start = 1;
+    bool stop = 2;
+    bool abort_all_jobs = 3;
+    bool terminate = 6;
+  }
+  oneof options {
+    bool if_stopped = 4;
+    bool force = 5;
+  }
+}
+
+message AlterShare {
+  oneof derived {
+    bool public = 1;
+    bool add_instance = 2;
+    bool remove_instance = 3;
+  }
+
+  repeated string instances = 10;
+}
+
+message AlterConnectionAvailability {
+  bool enable = 1;
+}
+
+message AlterConnectionProperties {
+  bool set = 1;
+  repeated Property properties = 2;
+}
+
+message AlterConnection {
+  oneof derived {
+    bool enable = 1;
+    AlterConnectionAvailability availability = 2;
+    AlterConnectionProperties properties = 3;
+  }
+}
+
+message AlterFunction {
+  oneof derived {
+    string comment = 1;
+  }
+}
+
+message DropEntity {
+  ObjectIdentifier identifier = 1;
+  bool if_exists = 2;
+  int64 drop_time_ms = 3;
+  oneof derived {
+    DropTable table = 10;
+    DropView view = 11;
+    DropMaterializedView mv = 12;
+    DropSchema schema = 13;
+    DropCatalog catalog = 14;
+    DropUser user = 15;
+    DropRole role = 16;
+    DropVCluster virtual_cluster = 17;
+    DropShare share = 18;
+    DropFunction function = 19;
+    DropConnection connection = 20;
+    DropLocation location = 21;
+    DropStreamTable stream_table = 22;
+    DropIndex index = 23;
+    DropVolume volume = 24;
+  }
+}
+
+message DropTable {
+  bool purge = 1;
+}
+
+message DropStreamTable {}
+
+message DropSchema {
+  bool cascade = 1;
+}
+
+message DropShare {
+  bool cascade = 1;
+}
+
+message DropCatalog {
+  bool cascade = 1;
+}
+
+message DropView {
+}
+
+message DropMaterializedView {
+}
+
+message DropUser {
+  optional int64 user_id = 1;
+}
+
+message DropRole {
+}
+
+message DropVCluster {
+  int64 workspace_id = 1;
+  int64 vc_id = 2;
+  bool force = 3;
+}
+
+message DropFunction {
+}
+
+message DropConnection {
+}
+
+message DropLocation {
+}
+
+message DropIndex {
+}
+
+message DropVolume {
+}
+
+message UndropEntity {
+  ObjectIdentifier identifier = 1;
+}
+
+message AlterRole {
+  optional string comment = 2;
+  optional string alias = 3;
+  optional string new_name = 4;
+  repeated Property properties = 5;
+}
+
+message AlterJob {
+  JobHistory history = 2;
+  optional JobStatus status = 3;
+  optional int64 end_time = 4;
+  optional string result = 5;
+  JobSummaryLocation summary = 6;
+  optional bool cancel = 7;
+}
+
+message AlterVCluster {
+  optional int64 vc_id = 1;
+  optional int64 workspace_id = 2;
+  optional com.clickzetta.rm.VirtualClusterProperties properties = 3;
+  optional com.clickzetta.rm.VirtualClusterStateInfo state = 4;
+  repeated string unset_tags = 5;
+}
+
+message AlterUser {
+  optional int64 user_id = 1;
+  optional string default_vc = 2;
+  optional string default_schema = 3;
+}
+
+message TruncateEntity {
+  oneof derived {
+    TruncateTable table = 10;
+  }
+}
+
+message TruncateTable {
+  ObjectIdentifier identifier = 1;
+  Manifest manifest = 2;
+}
+
+enum ShowEntityType {
+  SHOW_ENTITY = 0;
+  SHOW_NAME = 1;
+  SHOW_ID = 2;
+  SHOW_ENTITIES_HISTORY = 3;
+}
+
+message ShowEntity {
+  optional int64 offset = 1;
+  optional int32 limit = 2;
+  ShowEntityType type = 3;
+
+  oneof derived {
+    ShowUser user = 10;
+    ShowRole role = 11;
+    ShowPrivilege privilege = 12;
+    ShowTable table = 13;
+    ShowSchema schema = 14;
+    ShowJob job = 15;
+    ShowVCluster vcluster = 16;
+    ShowWorkspace workspace = 17;
+    ShowFile file = 18;
+    ShowMV mv = 19;
+    ShowVirtualClusterSizeSpecs vcluster_spec = 20;
+    ShowShare share = 21;
+    ShowFunction function = 22;
+    ShowConnection connection = 23;
+    ShowUserRole user_role = 24;
+    ShowAccessType access_type = 25;
+    ShowStorageLocation storage_location = 26;
+    ShowIndex index = 27;
+    ShowVolume volume = 28;
+  }
+}
+
+message ShowVirtualClusterSizeSpecs {
+}
+
+message ShowWorkspace {
+  int64 instance_id = 1;
+}
+
+message ShowUser {
+  ObjectIdentifier workspace_id = 1;
+}
+
+message ShowRole {
+  ObjectIdentifier workspace_id = 1;
+}
+
+message ShowGroupPrivilege {
+  ObjectIdentifier identifier = 1;
+}
+
+message ShowUserPrivilege {
+  UserIdentifier identifier = 1;
+}
+
+message ShowObjectPrivilege {
+  ObjectIdentifier identifier = 1;
+  access.Subject subject = 2;
+}
+
+message ShowPrivilege {
+  oneof derived {
+    ShowUserPrivilege user = 10;
+    ShowGroupPrivilege group = 11;
+    ShowObjectPrivilege object = 12;
+  }
+}
+
+message ShowTable {
+  enum ListOrderby {
+    ORDER_BY_TABLE_NAME = 0;
+  }
+  ObjectIdentifier schema_id = 1;
+  optional int64 timestamp = 2;
+  optional TableType table_type = 3;
+  optional ListOrderby list_order_by = 4;
+  optional bool ascending = 5;
+  optional bool with_schema = 6;
+}
+
+message ShowMV {
+  optional string mv_type = 1;
+  oneof derived {
+    ObjectIdentifier table = 10;    // associated mvs of the table
+    ObjectIdentifierList batch_tables = 11;   // associated mvs of batch tables
+  }
+}
+
+message ShowSchema {
+  ObjectIdentifier workspace_id = 1;
+}
+
+message ShowJob {
+  ObjectIdentifier workspace_id = 1;
+}
+
+message ShowVClusterFilter {
+  oneof filter {
+    string pattern = 1;
+    com.clickzetta.rm.ListVirtualClusterFilter where = 2;
+  }
+}
+
+message ShowVCluster {
+  ObjectIdentifier workspace_id = 1;
+  optional ShowVClusterFilter filter = 3;
+}
+
+message ShowFile {
+
+  oneof derived {
+    ObjectIdentifier table = 10; // list all files for a table
+    TablePartitions table_partitions = 11;
+  }
+}
+
+message ShowStorageLocation {
+  ObjectIdentifier workspace_id = 1;
+}
+
+message ShowVolume {
+  ObjectIdentifier schema_id = 1;
+}
+
+message TablePartitions {
+  ObjectIdentifier table = 1;
+  repeated PartitionConstant partitions = 2; // multiple partitions in a single table
+}
+
+message PartitionConstant {
+  repeated PartitionFieldConstant partition_fields = 1; // multiple partition dimensions for a single partition (like 'ds' & 'hh' are two dimensions in one table partition)
+}
+
+message PartitionFieldConstant {
+  string field_name = 1;
+  ScalarExpression value = 2;
+}
+
+message ShowShare {
+  int64 instance_id = 1;
+}
+
+message ShowFunction {
+  ObjectIdentifier schema_id = 1;
+}
+
+message ShowConnection {
+  ObjectIdentifier workspace_id = 1;
+}
+
+message ShowUserRole {
+  ObjectIdentifier workspace_id = 1;
+  optional UserIdentifier user  = 2;
+  optional ObjectIdentifier role = 3;
+}
+
+message ShowAccessType {
+  optional string service = 1;
+  ObjectType entity_type = 2;
+}
+
+message ShowIndex {
+  ObjectIdentifier table_id = 1;
+}
+
+message GetEntity {
+  ObjectIdentifier identifier = 1;
+  oneof derived {
+    GetUser user = 10;
+    GetVirtualCluster vc = 11;
+    GetWorkspace workspace = 12;
+    GetTable table = 13;
+  }
+}
+
+message GetUser {
+  int64 user_id = 1;
+}
+
+message GetVirtualCluster {
+  int64 workspace_id = 1;
+  int64 vc_id = 2;
+}
+
+message GetWorkspace {
+  optional int64 workspace_id = 1;
+}
+
+message GetTable {
+  optional bool for_read = 2;
+}
+
+message GetEntityStats {
+  ObjectIdentifier identifier = 1;
+}
+
+message BatchGetEntityStats {
+  ObjectIdentifier parent = 1;
+  ObjectType entity_type = 2;
+  repeated string entity_name = 3;
+}
+
+message BatchGetEntity {
+  ObjectIdentifier parent = 1;
+  ObjectType entity_type = 2;
+  repeated string entity_name = 3;
+
+  oneof entity {
+    BatchGetUser user = 10;
+    BatchGetTable table = 11;
+  }
+}
+
+message BatchGetUser {
+  repeated int64 user_id = 1;
+}
+
+message BatchGetTable {
+  optional bool for_read = 1;
+}
+
+message DDL {
+  oneof command {
+    CreateEntity create_entity = 10;
+    DropEntity drop_entity = 11;
+    AlterEntity alter_entity = 12;
+    TruncateEntity truncate_entity = 13;
+    UndropEntity undrop_entity = 14;
+  }
+}
+
+message DCL {
+  oneof command {
+    access.GrantEntity grant = 10;
+    access.RevokeEntity revoke = 11;
+    access.CheckPrivileges check = 12;
+  }
+}
+
+message DQL {
+  oneof command {
+    ShowEntity show_entity = 10;
+    GetEntity get_entity = 11;
+    GetEntityStats get_entity_stats = 12;
+    BatchGetEntity batch_get_entity = 100;
+    BatchGetEntityStats batch_get_entity_stats = 101;
+  }
+}
+
+message AppendTable {
+  Manifest manifest = 1;
+}
+
+message AppendEntity {
+  ObjectIdentifier identifier = 1;
+
+  oneof derived {
+    AppendTable append_table = 10;
+  }
+}
+
+message RewriteTable {
+  Manifest manifest = 1;
+}
+
+message RewriteEntity {
+  ObjectIdentifier identifier = 1;
+
+  oneof derived {
+    RewriteTable rewrite_table = 10;
+  }
+}
+
+message OverwriteTable {
+  Manifest manifest = 1;
+}
+
+message OverwriteEntity {
+  ObjectIdentifier identifier = 1;
+
+  oneof derived {
+    OverwriteTable overwrite_table = 10;
+  }
+}
+
+message DML {
+  oneof command {
+    AppendEntity append_entity = 10;
+    OverwriteEntity overwrite_entity = 11;
+    RewriteEntity rewrite_entity = 12;
+  }
+}
+
+enum AccessType {
+  META = 0;
+  VC_MANAGER = 1;
+}
+
+// https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
+message AccessStatement {
+  optional UserIdentifier operator = 1;
+  AccessType type = 2;
+  oneof statement {
+    DDL ddl = 10; // Data Definition Language
+    DCL dcl = 11; // Data Control Language
+    DQL dql = 12; // Data Query Language
+    DML dml = 13; // Data Manipulation Language
+  }
+  bool in_transaction = 100; // if the statement already pending in transaction
+}

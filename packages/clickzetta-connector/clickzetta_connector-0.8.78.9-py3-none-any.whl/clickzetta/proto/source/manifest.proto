@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+option java_outer_classname = "ManifestProto";
+
+import "expression.proto";
+import "file_meta_data.proto";
+import "table_common.proto";
+import 'statistics.proto';
+import "virtual_value_info.proto";
+
+package cz.proto;
+
+// manifest will not contain both data and delta
+enum ManifestType {
+  DATA = 0;
+  DELTA = 1;
+}
+
+message Manifest {
+  enum ConcurrencyLevel {
+    FILE = 0; // file level concurrency check
+    TABLE = 1; // table level concurrency check
+  }
+//  ManifestType type = 1;
+
+  uint32 cluster_spec_id = 7;           // TableMeta.cluster_info_spec.spec_id
+  uint32 sort_order_spec_id = 8;        // TableMeta.sort_order_spec.spec_id
+  uint32 primary_key_spec_id = 9;       // TableMeta.primary_key_spec.spec_id
+
+  // contains snapshot id and other stats
+  StatsData stats = 10;
+
+  // The snapshot which current manifest's change is based on.
+  // Eg: one update SQL statement bases on snapshot x to read data and update something then commit.
+  // Snapshot x is the base_snapshot_id.
+  optional int64 base_snapshot_id = 14; // following concurrency_level determines how this snapshot id is used
+  optional ConcurrencyLevel concurrency_level = 21; // FILE by default if unset
+
+  repeated FileMetaData added_data_files = 15;
+  repeated FileMetaData deleted_data_files = 17;
+  repeated FileMetaData added_delta_files = 18;
+  repeated FileMetaData deleted_delta_files = 19;
+
+  repeated VirtualValueInfo deleted_partition = 5;
+
+  repeated MVSource source_tables = 20;
+
+  repeated TableStreamState stream_tables = 22;
+}
+
+message ManifestLayout {
+  // values of virtual columns touched in the manifest.
+  repeated VirtualValueInfo value_info = 1;
+
+  // the stats of changed partition
+  repeated StatsData stats = 2;
+
+  // data source list of changed slices
+  repeated int64 data_source_ids = 3;
+
+  // other organization info of manifest
+}

@@ -1,0 +1,431 @@
+syntax = "proto3";
+
+package cz.proto;
+
+option java_multiple_files = true;
+option java_outer_classname = "JobProto";
+
+import "statistics.proto";
+import "operator.proto";
+import "ddl.proto";
+import "time_range.proto";
+import "meter.proto";
+import "runtime_run_span_stats.proto";
+
+message Job {
+  map<string, string> settings = 1;
+  repeated access.AccessStatement statements = 2;
+  DML dml = 3;
+
+  message UserId {
+    int64 instance_id = 1;
+    repeated string ns = 2;
+    int64 id = 3;
+  }
+  UserId user_id = 4;
+}
+
+message DML {
+  repeated Stage stages = 1;
+  repeated RangeBoundary boundaries = 2;
+  repeated Pipe pipes = 3;
+  int32 plan_index = 4;
+  repeated Traits traits = 5;
+}
+
+message Stage {
+  string id = 1;
+  uint64 batchSize = 2;
+  repeated Operator operators = 3;
+  uint64 dop = 4;
+  uint64 cpu_core = 5;
+  uint64 memory_mb = 6;
+  bool enforced_dop = 7;
+  uint64 index = 8;
+}
+
+message Pipe {
+  string from = 1;
+  string from_op = 2;
+  string to = 3;
+  string to_op = 4;
+
+  ShuffleType shuffle_type  = 10;
+  uint64 start_fraction = 11;
+  bool merge_sort = 12;
+
+  bool can_split = 20;
+  bool can_merge = 21;
+  bool can_copy = 22;
+  uint64 re_optimize_threshold = 23;
+  bool virtual_edge = 24;
+}
+
+
+message RuntimeDriverStats {
+  string id = 1;  // may deprecate later
+  TimeRange time_range_us = 2;
+  repeated RuntimeRunSpanStats run_stats = 3;
+  uint64 pipeline_id = 4;
+  uint64 driver_sequence = 5;
+  uint64 block_timing_nanos = 6;
+  uint64 queue_timing_nanos = 7;
+  uint64 yield_count = 8;
+  uint64 block_count = 9;
+}
+
+message RuntimePipelineStats {
+  uint64 id = 1;
+  uint64 dop = 2;
+}
+
+message WorkerStats {
+  Timing timing = 1;
+  repeated OperatorStats operator_stats = 2;
+  TimeRange time_range_ms = 3;
+  uint64 peak_memory = 4;
+  repeated RuntimeDriverStats driver_stats = 5;
+  uint64 runner_id = 6;
+  repeated RuntimePipelineStats pipeline_stats = 7;
+}
+
+message LogicalPlan {
+  repeated Operator operators = 1;
+
+  repeated RangeBoundary boundaries = 5;
+  repeated Traits traits = 6;
+}
+
+message WorkerId {
+  string job_id = 1;
+  uint64 sub_job_id = 2;
+  string stage_id = 3;
+  uint64 id = 4;
+  uint64 backup_id = 5;
+  uint64 retry_id = 6;
+  uint64 ta_id = 7;
+  string dag_id = 8;
+}
+
+message WorkerDetail {
+  WorkerStats worker_stats = 1;
+  WorkerId worker_id = 2;
+}
+
+message DetailState{
+  enum State {
+    NEW = 0;
+    RUNNING = 1;
+    SUCCEEDED = 2;
+    FAILED = 3;
+    KILLED = 4;
+    ERROR = 5;
+  }
+}
+
+message TaskAttemptProgress {
+  TimeRange time_on_executor = 1;
+  TimeRange time_on_master = 2;
+  string executor_address = 3;
+  map<string, bytes> stats = 4;
+  string diagnostic = 5;
+  DetailState.State state = 6;
+  string attempt_id = 7;
+  int64 inited_time = 8;
+  TimeRange time_on_wait_resource = 9;
+}
+
+message TaskProgress {
+  string task_id = 1;
+  uint64 start_time = 2;
+  uint64 schedule_time = 3;
+  string diagnostic = 4;
+  repeated TaskAttemptProgress attempts = 5;
+  DetailState.State state = 6;
+  uint64 finish_time = 7;
+  uint32 attempt_count = 8;
+}
+
+message StageProgress {
+  uint64 failed = 1;
+  uint64 succeed = 2;
+  uint64 running = 3;
+  uint64 total = 4;
+  map<string, TaskProgress> task_progress = 5; // In verbose mode, internal use for debugging
+  uint64 init_time = 6;
+  uint64 start_time = 7;
+  uint64 finish_time = 8;
+  DetailState.State state = 9;
+  string diagnostic = 10;
+  bool deprecated = 11;
+}
+
+message ContinuousBatchInfo {
+  string snapshot_id = 1;
+  int64 batch_index = 2;
+  int64 wall_nanos = 3;
+  int64 lag = 4;
+}
+
+message ContinuousBatchStat {
+  int64 start_time = 1;
+  int64 finish_time = 2;
+  int64 input_rows = 3;
+  int64 output_rows = 4;
+  int64 lag = 5;
+  int64 wall_nanos = 6;
+  int64 batch_index = 7;
+}
+
+message ContinuousProgress {
+  int64 total_count = 1;
+  int64 succeeded_count = 2;
+  int64 running_count = 3;
+  int64 conflict_count = 4;
+  int64 ddl_error_count = 5;
+  int64 retry_succeeded_count = 6;
+  int64 batch_retried_count = 7;
+  int64 dag_rerun_count = 8;
+  int64 total_wall_nanos = 9;
+  ContinuousBatchInfo latest_commit_batch = 10;
+  ContinuousBatchInfo latest_running_batch = 11;
+  repeated ContinuousBatchStat batch_stats = 12;
+}
+
+message JobProgress {
+  map<string, StageProgress> stage_progress = 1;
+  optional ContinuousProgress continuous_progress = 2;
+}
+
+message InputOutputStats {
+  // table sink
+  int64 files_write_count = 1;
+  int64 output_row_count = 2;
+  int64 output_bytes = 3;
+  int64 output_io_time_elapsed_us = 4;
+  // table scan
+  int64 files_read_count = 5;
+  int64 input_row_count = 6;
+  int64 input_bytes = 7;
+  int64 input_cache_bytes = 8;
+  int64 input_disk_bytes = 9;
+  int64 input_io_time_elapsed_us = 10;
+  // shuffle
+  int64 spilling_bytes = 11;
+}
+
+message JobStats {
+  InputOutputStats input_output_stats = 1;
+}
+
+message TaskSummary {
+  uint64 task_id = 1;
+  uint64 backup_id = 2;
+  uint64 retry_id = 3;
+  int64 start_time = 4;
+  int64 end_time = 5;
+  int64 pending_time = 6;
+  int64 running_time = 7;
+  string executor = 8;
+  string diagnostic = 9;
+  InputOutputStats input_output_stats = 10;
+}
+
+message OperatorStatistics {
+  repeated uint64 records = 1;
+  uint64 max = 2;
+  uint64 min = 3;
+  uint64 sum = 4;
+  uint64 avg = 5;
+}
+
+message TableScanSummary {
+  message ParquetRowGroupStats {
+    int64 bloom_pruned_row_group = 1;
+    int64 stats_pruned_row_group = 2;
+    int64 dict_pruned_row_group = 3;
+    int64 request_row_group = 4;
+  }
+  message ParquetRowCountStats {
+    int64 parquet_read_row_cnt = 1;
+    int64 parquet_request_row_cnt = 2;
+  }
+  message ParquetPrunedSplitsStats {
+    int64 pruned_file_cnt = 1;
+    int64 bitmap_pruned_splits = 2;
+    int64 bloom_filter_pruned_splits = 3;
+  }
+  message TableScanSourceStats {
+    int64 short_circuit_bytes = 1;
+    float short_circuit_percentage = 2;
+    int64 rpc_bytes = 3;
+    float rpc_percentage = 4;
+    int64 object_storage_bytes = 5;
+    float object_storage_percentage = 6;
+  }
+  OperatorStatistics input_bytes = 1;
+  OperatorStatistics split_cnt = 2;
+  TableScanSourceStats table_scan_source_stats = 3;
+  ParquetRowGroupStats parquet_row_group_stats = 4;
+  ParquetRowCountStats parquet_row_count_stats = 5;
+  ParquetPrunedSplitsStats parquet_pruned_splits_stats = 6;
+}
+
+message TableSinkSummary {
+  OperatorStatistics compressed_output_bytes = 1;
+  int64 total_file_count = 2;
+}
+
+message CalcSummary {
+
+}
+
+message HashJoinSummary {
+
+}
+
+message MergeJoinSummary {
+
+}
+
+message HashAggregateSummary {
+
+}
+
+message MergeAggregateSummary {
+
+}
+
+message LocalSortSummary {
+  OperatorStatistics gen_run_wall_time_ns = 1;
+  OperatorStatistics gen_run_cpu_time_ns = 2;
+  OperatorStatistics merge_run_wall_time_ns = 3;
+  OperatorStatistics merge_run_cpu_time_ns = 4;
+}
+
+message MergeSortSummary {
+
+}
+
+message ValuesSummary {
+
+}
+
+message ExchangeSinkSummary {
+  OperatorStatistics compressed_shuffle_bytes = 1;
+  OperatorStatistics uncompressed_shuffle_bytes = 2;
+  OperatorStatistics submit_wall_time_ns = 3;
+  OperatorStatistics close_wall_time_ns = 4;
+}
+
+message ExchangeSourceSummary {
+  OperatorStatistics compressed_shuffle_bytes = 1;
+  OperatorStatistics uncompressed_shuffle_bytes = 2;
+  OperatorStatistics read_buffer_timing_wall_ns = 3;
+}
+
+message UnionAllSummary {
+
+}
+
+message BufferSummary {
+
+}
+
+message WindowSummary {
+
+}
+
+message ExpandSummary {
+
+}
+
+message LateralViewSummary {
+
+}
+
+message PartialWindowSummary {
+
+}
+
+message LocalExchangeSummary {
+
+}
+
+message OperatorSummary {
+  string op_id = 1;
+  InputOutputStats input_output_stats = 2;
+  OperatorStatistics wall_time_ns = 3;
+  OperatorStatistics row_count = 4;
+  oneof op_stats {
+    TableScanSummary table_scan_summary = 20;
+    TableSinkSummary table_sink_summary = 21;
+    CalcSummary calc_summary = 22;
+    HashJoinSummary hash_join_summary = 23;
+    MergeJoinSummary merge_join_summary = 24;
+    HashAggregateSummary hash_aggregate_summary = 25;
+    MergeAggregateSummary merge_aggregate_summary = 26;
+    LocalSortSummary local_sort_summary = 27;
+    MergeSortSummary merge_sort_summary = 28;
+    ValuesSummary values_summary = 29;
+    ExchangeSinkSummary exchange_sink_summary = 30;
+    ExchangeSourceSummary exchange_source_summary = 31;
+    UnionAllSummary union_all_summary = 32;
+    BufferSummary buffer_summary = 33;
+    WindowSummary window_summary = 34;
+    ExpandSummary expand_summary = 35;
+    LateralViewSummary lateral_view_summary = 36;
+    PartialWindowSummary partial_window_summary = 37;
+    LocalExchangeSummary local_exchange_summary = 38;
+  }
+}
+
+message StageSummary {
+  string stage_id = 1;
+  int64 start_time = 2;
+  int64 end_time = 3;
+  int64 pending_time = 4;
+  int64 running_time = 5;
+  InputOutputStats input_output_stats = 6;
+  map<uint64, TaskSummary> task_summary = 7;
+  map<string, OperatorSummary> operator_summary = 8;
+}
+
+message JobSummary {
+  JobStats stats = 1;
+  map<string, StageSummary> stage_summary = 2;
+  meter.Meter meter = 3;
+}
+
+// simplify SQL job dag for log-view & studio
+message SimplifyDagSubVertex {
+  string operator_id = 1; // TableScan0, Filter1, MergeSort2
+  repeated string parent_operator_id = 2; // N*M
+  string operator_digest = 3; // operator to String, eg: TableScan->(tableName), Filter->(c_key=1)
+  map<string, string> operator_attribute = 4;
+}
+
+message SimplifyDagVertex {
+  string stage_id = 1; // stg0, stg1
+  repeated string parent_stage = 2;
+  repeated SimplifyDagSubVertex operators = 3;
+  uint64 dop = 4;
+}
+
+message SimplifyDag {
+  repeated SimplifyDagVertex stages = 1;
+  repeated string input_tables = 2;
+  repeated string output_tables = 3;
+}
+
+message DAGProgress {
+  DetailState.State state = 1;
+  string job_id = 2;
+  int64 submit_time = 3;
+  int64 init_time = 4;
+  int64 start_time = 5;
+  int64 finish_time = 6;
+  string diagnostic = 7;
+  map<string, StageProgress> stage_progress = 8;
+  string running_mode = 9;
+}

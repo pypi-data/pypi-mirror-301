@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package cz.proto;
+
+message BitSet {
+  repeated uint64 bits = 1;
+}

@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+package cz.proto.tp;
+
+/// TxnManager Backend
+
+message TransactionRecord {
+  int32 state = 1; //
+};
+
+message XidWithState {
+  int64 xid = 1;
+  int32 state = 2;
+}
+
+message CompactedStates {
+  int64 offset = 1;
+  repeated int64 committed = 2;
+  repeated int64 aborted = 3;
+}
+
+message CommittedTable {
+  int64 table_id = 1;
+  int64 last_committed_xid = 2;
+}
+
+message DistributedTxnSnapshot {
+  int64 xid = 2;
+  int64 incremental_xid = 3;
+  int64 xmin = 4;
+  int64 xmax = 5;
+  CompactedStates compacted_states = 6;
+  repeated CommittedTable tables = 7;
+}
+
+message LeaderLease {
+  uint64 elected_time = 1;
+  uint64 last_refresh_time = 2;
+
+  // Leader should refresh "last_refresh_time" in every "refresh_interval_ms".
+  uint64 refresh_interval_ms = 3;
+
+  // If any follower found "last_refresh_time" was not changed in
+  // "expired_interval_ms", then it can safely try to elect.
+  uint64 expired_interval_ms = 4;
+
+  enum Status {
+    // Clients can safely connect to these status leader if the status is Ready.
+    Ready = 0;
+
+    // A process have already become leader but did not wanto to provide service
+    // temporary.
+    // Other follower should stop to try to become leader but monitor the
+    // last_refresh_time
+    Wait = 1;
+
+    // Current leader does not want to become leader now.
+    // Followers can start election now.
+    // Usually, when the leader is required to shut down or restart, it can set
+    // the status before.
+    Yield = 2;
+  };
+  Status status = 5;
+}
+
+message LeaderInfo {
+  string address = 1;
+  LeaderLease lease = 2;
+  optional string prev_leader_address = 3;
+  optional LeaderLease prev_leader_lease = 4;
+}

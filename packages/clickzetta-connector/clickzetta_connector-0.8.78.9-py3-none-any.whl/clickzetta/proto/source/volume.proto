@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+import 'object_identifier.proto';
+import 'storage_location.proto';
+
+package cz.proto;
+
+enum VolumeType {
+  VT_MANAGED = 0;
+  VT_EXTERNAL = 1;
+}
+
+message Volume {
+  VolumeType volume_type = 1;
+  string url = 2;
+  optional ObjectIdentifier connection = 3;
+
+  message MetaCollection {
+    bool enable = 1;
+    bool auto_refresh = 2;
+  }
+  MetaCollection meta_collection = 4;
+  bool recursive = 5;
+
+  ObjectIdentifier filemeta_table = 6;
+
+  LocationInfo location_info = 7;
+}
+
+message VolumeFileTransferRequest {
+  string command = 1;
+  repeated string local_paths = 2;
+  string volume = 3;  // to be deprecated
+  string volume_identifier = 7;
+  optional string subdirectory = 4;
+  optional string file = 5;
+  message Option {
+    string name = 1;
+    string value = 2;
+  }
+  repeated Option options = 6;
+}
+
+message VolumeFileTransferTicket {
+  repeated string presigned_urls = 1;
+}
+
+message VolumeFileTransferOutcome {
+  enum Status {
+    SUCCESS = 0;
+    FAILED = 1;
+    CONTINUE = 2;
+  }
+  Status status = 1;
+  string error = 2;
+  VolumeFileTransferRequest request = 3;
+  VolumeFileTransferTicket ticket = 4;
+  optional string next_marker = 5;
+}

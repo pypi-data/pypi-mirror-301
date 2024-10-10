@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+import 'object_identifier.proto';
+
+package cz.proto;
+
+// Contains settings specific for locations based on file system like systems
+// (file system, HDFS, S3, etc.), conceptually it is a subclass of StorageLocation,
+// and it shall always be used as embedded in StorageLocation
+message FileSystemLocation {
+  ObjectIdentifier file_format = 1;
+}
+
+// Contains settings specific for locations based on database systems (mysql, posgresql, etc.),
+// currently it's only a placeholder. Conceptually it is a subclass of StorageLocation and shall
+// always be used as embedded in StorageLocation
+message DatabaseLocation {
+}
+
+message LocationInfo {
+  oneof derived {
+    FileSystemLocation file_system = 20;
+    DatabaseLocation database = 21;
+  }
+}
+
+message StorageLocation {
+  bool external = 1;
+  string url = 2;
+  ObjectIdentifier connection = 3;
+
+  message MetaCollection {
+    bool enable = 1;
+    bool auto_refresh = 2;
+  }
+  MetaCollection meta_collection = 4;
+  bool recursive = 5;
+
+  ObjectIdentifier filemeta_table = 6;
+
+  LocationInfo location_info = 7;
+}

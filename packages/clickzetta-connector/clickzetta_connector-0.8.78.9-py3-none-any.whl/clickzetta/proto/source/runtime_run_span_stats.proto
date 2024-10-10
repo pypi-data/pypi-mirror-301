@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package cz.proto;
+
+import "time_range.proto";
+
+message RuntimeRunSpanStats {
+  TimeRange execute_time_us = 1;
+  uint64 runner_id = 2;
+}

@@ -1,0 +1,1010 @@
+syntax = "proto3";
+
+package cz.proto.coordinator;
+
+import "service_common.proto"; // for rpc common response
+import "table_common.proto"; // for result schema
+import "metadata_entity.proto";
+import 'object_identifier.proto';
+import 'file_system.proto'; // for FileSystemType
+import 'job_meta.proto';
+import 'job.proto';
+import 'encryption.proto';
+import 'property.proto';
+
+message JobID {
+  string id = 1;
+  string workspace = 2;
+  int64 instance_id = 3;
+}
+
+/* Coordinator Service API */
+message Account {
+  int64 user_id = 1;
+  string access_token = 2;
+}
+
+enum JobRequestMode {
+  UNKNOWN = 0;
+  HYBRID = 1; // polling for timeout, if not terminated, then fallback to async
+  ASYNC = 2; // purely async
+  SYNC = 3; // purely sync, only for debug/test
+}
+
+message ClientContextInfo {
+  repeated string config_statements = 1;
+  string context_json = 2;
+}
+
+enum EventCode {
+  DEFAULT_EVENT_CODE = 0;
+  CZ_JOB_PROFILING_COORDINATOR_CLIENT_SUBMIT = 90;
+  CZ_JOB_PROFILING_RECEIVE_SUBMIT = 100;
+  CZ_JOB_PROFILING_PRECHECK_START = 101;
+  CZ_JOB_PROFILING_PRECHECK_END = 102;
+  CZ_JOB_PROFILING_JOB_META_CREATED = 103;
+  CZ_JOB_PROFILING_COORDINATOR_QUEUE = 104;
+  CZ_JOB_PROFILING_COORDINATOR_PRE_RUN = 105;
+  CZ_JOB_PROFILING_COORDINATOR_RUN = 106;
+  CZ_JOB_PROFILING_PLAN_CREATED = 108;
+  CZ_JOB_PROFILING_WAIT_VC_RESUMING = 110;
+  CZ_JOB_PROFILING_WAIT_RESOURCE = 112;
+  CZ_JOB_PROFILING_GOT_FIRST_RESOURCE_START_RUN = 120;
+  CZ_JOB_PROFILING_DAG_COMPLETE = 130;
+  CZ_JOB_PROFILING_QUICK_ADHOC_FINISH = 135;
+  CZ_JOB_PROFILING_QUERY_SUCCEED = 140;
+  CZ_JOB_PROFILING_RUN_FINISH = 150;
+  CZ_JOB_PROFILING_START_PERSIST = 160;
+  CZ_JOB_PROFILING_SUMMARY_UPLOADED = 165;
+  CZ_JOB_PROFILING_RECYCLE = 166;
+  CZ_JOB_PROFILING_FINISHED = 170;
+}
+
+message JobDesc {
+  string virtual_cluster = 1; // optional, use default_vc if not set
+  JobType type = 2;
+  JobID job_id = 3;
+  string job_name = 4;
+  Account account = 5;
+  JobRequestMode request_mode = 6;
+  int32 hybrid_polling_timeout = 7;
+  map<string, string> job_config = 8;
+  oneof job {
+    SQLJob sql_job = 9;
+  }
+  uint64 job_timeout_ms = 15;
+  string user_agent = 30;
+  uint32 priority = 31;
+  string priority_string = 32;
+  ClientContextInfo client_context = 33;
+  string query_tag = 34;
+  optional string jdbc_domain = 35;
+  JobProfiling client_profiling = 36;
+}
+
+message JobStatus {
+  JobID job_id = 1;
+  string state = 2;
+  string message = 3;
+  int64 submit_time = 4;
+  int64 start_time = 5;
+  int64 end_time = 6;
+  int64 pending_time = 7;
+  int64 running_time = 8;
+  cz.proto.JobStatus status = 9;
+  repeated string execution_log = 10;
+  string error_code = 11;
+  JobProfiling job_profiling = 12;
+}
+
+message JobResultData {
+  repeated bytes data = 1;
+}
+
+message LocationFileInfo {
+  string file_path = 1;
+  int64  file_size = 2;
+}
+message JobResultLocation {
+  repeated string location = 1;
+  FileSystemType file_system = 2;
+  string sts_ak_id = 3;
+  string sts_ak_secret = 4;
+  string sts_token = 5;
+  string oss_endpoint = 6;
+  string oss_internal_endpoint = 7;
+
+  repeated LocationFileInfo location_files = 8;
+  string object_storage_region = 9;
+  repeated string presigned_urls = 10;
+}
+
+enum ResultFormat {
+  TEXT = 0;
+  CSV = 1;
+  JSON = 2;
+  PARQUET = 3;
+  HIVE_RESULT = 4;
+  ARROW = 5;
+
+  MYSQL_PROTOCOL = 7;
+  NONE = 127;
+}
+
+enum ResultType {
+  BUFFERED_STREAM = 0;
+  FILE_SYSTEM = 1;
+}
+
+message ResultStatistics {
+  // it may need table name for multi-insert
+  int64 deleted_rows = 1;
+  int64 inserted_rows = 2;
+  int64 copied_delta_rows = 3;
+
+  int64 added_file_count = 5;
+  int64 deleted_file_count = 6;
+  int64 added_delta_file_count = 7;
+  int64 copied_delta_file_count = 8;
+  optional ObjectIdentifier table = 9;
+}
+
+message JobResultSetMetadata {
+  int64 num_rows = 1;
+  ResultFormat format = 2;
+  ResultType type = 3;
+  repeated FieldSchema fields = 4; // schema for result
+  optional string time_zone = 5;
+}
+
+message JobResultSet {
+  JobResultSetMetadata metadata = 1;
+  JobResultData data = 2;
+  JobResultLocation location = 3;
+  repeated ResultStatistics stats = 4;
+}
+
+message SubmitJobRequest {
+  JobDesc job_desc = 1;
+}
+
+message SubmitJobResponse {
+  ResponseStatus resp_status = 1;
+  JobStatus status = 2;
+  JobResultSet result_set = 3; // for sync/hybrid requests, do not support paging
+}
+
+message ListJobsRequest {
+  enum ListOrderby {
+    ORDER_BY_START_TIME = 0;
+    ORDER_BY_RUNNING_TIME = 1;
+    ORDER_BY_JOB_PRIORITY = 2;
+    ORDER_BY_JOB_STATUS = 3;
+  }
+  Account account = 1;
+  string workspace = 2;
+  int64 instance_id = 3;
+  string virtual_cluster = 4;
+  string job_status = 5;
+  int64 min_start_time = 6;
+  int64 max_start_time = 7;
+  int64 max_size = 9;
+  bool list_in_meta = 10;
+  int64 offset = 11;
+  ListOrderby order_by = 12;
+  bool ascending = 13;
+  string priority_string = 14;
+  string job_id = 15;
+  int64 owner_id = 16;
+  int64 min_running_time_ms = 17;
+  int64 max_running_time_ms = 18;
+  string query_tag = 19;
+  string schema = 20;
+  optional int32 priority = 21;
+  optional int32 job_source = 22;
+  repeated int32 exclude_job_source = 23;
+  optional int32 job_sub_type = 24;
+  repeated int32 exclude_job_sub_type = 25;
+  bool detail = 28;
+  bool force = 29;
+  string user_agent = 30;
+}
+
+message ListJobsResponse {
+  ResponseStatus resp_status = 1;
+  message JobDetail {
+    JobStatus status = 1;
+    string job_name = 2;
+    uint64 owner_id = 3;
+    uint32 priority = 4;
+    string job_type = 5;
+    repeated string statement = 6;
+    uint64 input_bytes = 7;
+    uint64 rows_produced = 8;
+    string virtual_cluster = 9;
+    string priority_string = 10;
+    repeated JobHistory job_history = 12;
+    string virtual_cluster_type = 14;
+    string virtual_cluster_size = 15;
+    string query_tag = 16;
+    JobMetaLite.QueryLite query_lite = 17;
+    string schema = 18;
+    JobSource job_source = 19;
+    JobSubType job_sub_type = 20;
+    string query_md5 = 21;
+  }
+  repeated JobDetail job_details = 2;
+  int64 total_job_count = 3;
+  int64 current_ms = 4;
+}
+
+message CancelJobRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  bool force = 3; // TODO(LYF): make it better
+  string user_agent = 10;
+}
+
+message CancelJobResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message GetJobRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  string user_agent = 10;
+}
+
+message GetJobResponse {
+  ResponseStatus resp_status = 1;
+  JobDesc job_desc = 2;
+}
+
+message GetJobStatusRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  string user_agent = 10;
+}
+
+message GetJobStatusResponse {
+  ResponseStatus resp_status = 1;
+  JobStatus status = 2;
+}
+
+message GetJobResultRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  int32 offset = 3; // buffered result row offset
+  string user_agent = 10;
+  optional string jdbc_domain = 11;
+}
+
+message GetJobResultResponse {
+  ResponseStatus resp_status = 1;
+  JobStatus status = 2;
+  JobResultSet result_set = 3; // return result set after query terminated
+}
+
+message GetJobProfileRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  string user_agent = 10;
+}
+
+message GetJobProfileResponse {
+  ResponseStatus resp_status = 1;
+  JobDesc job_desc = 2;
+  JobStatus job_status = 3;
+  JobSummary job_summary = 4;
+  string job_client = 5;
+  JobProfiling job_profiling = 6;
+  string stats_download_url = 7;
+  string plan_download_url = 8;
+  repeated JobHistory job_histories = 9;
+  int64 current_ms = 10;
+  JobMetaLite job_meta_lite = 11;
+  string schema = 12;
+  string external_scheduled_info = 13;
+  JobSource job_source = 14;
+  JobSubType job_sub_type = 15;
+  string presigned_url = 16;
+}
+
+message GetJobSummaryRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  string user_agent = 10;
+}
+
+message GetJobSummaryResponse {
+  ResponseStatus resp_status = 1;
+  JobSummary job_summary = 2;
+  string presigned_url = 3;
+}
+
+message GetJobProgressRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  bool verbose = 3;
+  string user_agent = 10;
+}
+
+message GetJobProgressResponse {
+  ResponseStatus resp_status = 1;
+  JobProgress progress = 2;
+}
+
+message GetJobPlanRequest {
+  Account account = 1;
+  JobID job_id = 2;
+  string user_agent = 10;
+}
+
+message GetJobPlanResponse {
+  ResponseStatus resp_status = 1;
+  SimplifyDag job_plan = 2;
+}
+
+message JobRequest {
+  oneof request {
+    GetJobResultRequest get_result_request = 1;
+    GetJobSummaryRequest get_summary_request = 2;
+    GetJobPlanRequest get_plan_request = 3;
+    GetJobProfileRequest get_profile_request = 4;
+    GetJobProgressRequest get_progress_request = 5;
+  }
+  string user_agent = 30;
+}
+
+message InitializeInstanceRequest {
+  repeated CreateWorkspaceRequest create_workspace = 1;
+}
+
+message InitializeInstanceResponse {
+  ResponseStatus resp_status = 1;
+  repeated CreateWorkspaceResponse create_workspace = 2;
+}
+
+message CreateWorkspaceRequest {
+  Entity workspace = 1;
+  string user_agent = 10;
+}
+
+message CreateWorkspaceResponse {
+  ResponseStatus resp_status = 1;
+  int64 workspace_id = 2;
+}
+
+message UpdateWorkspaceRequest {
+  ObjectIdentifier identifier = 1;
+  Account account = 2;
+  string new_name = 3;
+  string new_comment = 4;
+  EncryptionConfig encryption_config = 5;
+  repeated Property properties = 6;
+  string user_agent = 10;
+}
+
+message UpdateWorkspaceResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message DeleteWorkspaceRequest {
+  ObjectIdentifier identifier = 1;
+  Account account = 2;
+  string user_agent = 10;
+}
+
+message DeleteWorkspaceResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message ListWorkspacesRequest {
+  int64 instance_id = 1;
+  Account account = 2;
+  string user_agent = 10;
+}
+
+message ListWorkspacesResponse {
+  ResponseStatus resp_status = 1;
+  repeated Entity workspaces = 2;
+}
+
+message GetWorkspaceRequest {
+  ObjectIdentifier identifier = 1;
+  Account account = 2;
+  string user_agent = 10;
+}
+
+message GetWorkspaceResponse {
+  ResponseStatus resp_status = 1;
+  Entity workspace = 2;
+}
+
+message WorkspaceRequest {
+  oneof request {
+    CreateWorkspaceRequest create_request = 1;
+    DeleteWorkspaceRequest delete_request = 2;
+    UpdateWorkspaceRequest update_request = 3;
+    ListWorkspacesRequest list_request = 4;
+    GetWorkspaceRequest get_request = 5;
+  }
+  string user_agent = 30;
+}
+
+message GetUserRequest {
+  Account account = 1;
+  int64 instance_id = 2;
+  string workspace = 3;
+  string user_agent = 10;
+}
+
+message GetUserResponse {
+  ResponseStatus resp_status = 1;
+  Entity user = 2;
+}
+
+message RefreshMetaCacheRequest {
+  ObjectModificationEventList events = 1;
+}
+
+message RefreshMetaCacheResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message SetFlightingRouteTableRequest {
+  Account account = 1;
+  repeated RouteItem route_items = 2;
+}
+
+message SetFlightingRouteTableResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message GetFlightingRouteTableRequest {
+  Account account = 1;
+  int64 instance_id = 2;
+  string workspace = 3;
+  string vc = 4;
+}
+
+message GetFlightingRouteTableResponse {
+  ResponseStatus resp_status = 1;
+  RouteItem route_item = 2;
+}
+
+message ListFlightingRouteTableRequest {
+  Account account = 1;
+  int64 instance_id = 2;
+  string workspace = 3;
+  string vc = 4;
+}
+
+message RouteItem {
+  string instance_name = 1;
+  int64 instance_id = 2;
+  string workspace = 3;
+  string vc = 4;
+  string target_release_version = 5;
+  map<string, int32> flow_bucket = 6;
+  int64 workspace_id = 7;
+  string upgrading_version = 8;
+  optional JobScheduleStrategy schedule_strategy = 9;
+  optional string coordinator_label = 10;
+  optional bool disable_label_fallback = 11;
+}
+
+message LabelItem {
+  string label_name = 1;
+  repeated string applied_version = 2;
+  int32 coordinator_count = 3;
+}
+
+message ServiceRoute {
+  repeated RouteItem route_items = 1;
+  int64 version = 2;
+  repeated LabelItem label_items = 3;
+}
+
+message ListFlightingRouteTableResponse {
+  ResponseStatus resp_status = 1;
+  repeated RouteItem route_items = 2;
+}
+
+message OpenTableRequest {
+  Account account = 1;
+  ObjectIdentifier table = 2;
+
+  message IcebergFormat {
+  }
+
+  oneof format {
+    IcebergFormat iceberg = 10;
+  }
+}
+
+message OpenTableResponse {
+  ResponseStatus resp_status = 1;
+
+  message IcebergFormat {
+    string metadata_location = 1;
+    map<string, string> properties = 2;
+  }
+  oneof format {
+    IcebergFormat iceberg = 10;
+  }
+}
+
+message NetworkPolicyRequest {
+  int64 instance_id = 1;
+  string workspace = 2;
+  string username = 3;
+  string ip = 4;
+}
+
+message NetworkPolicyResponse {
+  ResponseStatus resp_status = 1;
+  bool access = 2;
+}
+
+message JobMetaDump {
+  JobResultSet result = 1;
+  JobProfiling profiling = 2;
+  JobMeta.TableList inputTables = 3;
+  JobMeta.TableList outputTables = 4;
+  JobMeta.Content content = 5;
+  JobCost job_cost = 6;
+}
+
+message JobInfoDumpOnOom {
+  message JobInfo {
+    JobID job_id = 1;
+    cz.proto.JobStatus status = 2;
+    JobProfiling job_profiling = 3;
+    uint32 priority = 4;
+    string statement = 5;
+    string virtual_cluster_name = 6;
+    int64 virtual_cluster_id = 7;
+    string virtual_cluster_type = 8;
+    JobMeta.HistoryList job_history = 9;
+    string query_md5 = 10;
+  }
+  repeated JobInfo job_info = 1;
+}
+
+enum RescheduleJobType {
+  CONTINUOUS_JOB = 0;
+  GP_QUEUEING_JOB = 1;
+}
+
+message RescheduleJobItem {
+  JobID job_id = 1;
+  RescheduleJobType reschedule_job_type = 2;
+}
+
+message RescheduleJobsRequest {
+  repeated RescheduleJobItem job_id = 1;
+  string source_version = 2;
+  string target_version = 3;
+}
+
+message RescheduleJobsResponse {
+  ResponseStatus resp_status = 1;
+  map<string, string> details = 2;
+}
+
+service CoordinatorService {
+  /**
+   * Submit a batch of sql jobs
+   */
+  rpc SubmitJob(SubmitJobRequest) returns (SubmitJobResponse);
+
+  /**
+   * List current jobs
+   */
+  rpc ListJobs(ListJobsRequest) returns (ListJobsResponse);
+
+  /**
+   * Cancel job
+   */
+  rpc CancelJob(CancelJobRequest) returns (CancelJobResponse);
+
+  /**
+   * Get job description
+   */
+  rpc GetJob(GetJobRequest) returns (GetJobResponse);
+
+  /**
+   * Get job status
+   */
+  rpc GetJobStatus(GetJobStatusRequest) returns (GetJobStatusResponse);
+
+  /**
+   * Get job result set
+   */
+  rpc GetJobResult(GetJobResultRequest) returns (GetJobResultResponse);
+
+  /**
+   * Get job summary
+   */
+  rpc GetJobSummary(GetJobSummaryRequest) returns (GetJobSummaryResponse);
+
+  /**
+   * Get job profile
+   */
+  rpc GetJobProfile(GetJobProfileRequest) returns (GetJobProfileResponse);
+
+  /**
+   * Get job progress
+   */
+  rpc GetJobProgress(GetJobProgressRequest) returns (GetJobProgressResponse);
+
+  /**
+   * Get job plan(dag)
+   */
+  rpc GetJobPlan(GetJobPlanRequest) returns (GetJobPlanResponse);
+
+  /**
+   * Initialize instance
+   */
+  rpc InitializeInstance(InitializeInstanceRequest) returns (InitializeInstanceResponse);
+
+  /**
+   * Create workspace
+   */
+  rpc CreateWorkspace(CreateWorkspaceRequest) returns (CreateWorkspaceResponse);
+
+  /**
+   * Update workspace
+   */
+  rpc UpdateWorkspace(UpdateWorkspaceRequest) returns (UpdateWorkspaceResponse);
+
+  /**
+   * Delete workspace
+   */
+  rpc DeleteWorkspace(DeleteWorkspaceRequest) returns (DeleteWorkspaceResponse);
+
+  /**
+   * Get workspace
+   */
+  rpc GetWorkspace(GetWorkspaceRequest) returns (GetWorkspaceResponse);
+
+  /**
+   * List workspaces
+   */
+  rpc ListWorkspaces(ListWorkspacesRequest) returns (ListWorkspacesResponse);
+
+  /**
+   * Get user
+   */
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+
+  /**
+   * Set flighting route table
+   */
+  rpc SetFlightingRouteTable(SetFlightingRouteTableRequest) returns (SetFlightingRouteTableResponse);
+
+  /**
+   * Get flighting route table
+   */
+  rpc GetFlightingRouteTable(GetFlightingRouteTableRequest) returns (GetFlightingRouteTableResponse);
+
+  /**
+   * List flighting route table
+   */
+  rpc ListFlightingRouteTable(ListFlightingRouteTableRequest) returns (ListFlightingRouteTableResponse);
+
+  /**
+   * open table
+   */
+  rpc OpenTable(OpenTableRequest) returns (OpenTableResponse);
+
+  /**
+   * Check IP access
+   */
+  rpc NetworkPolicyAccess(NetworkPolicyRequest) returns (NetworkPolicyResponse);
+
+  /**
+   * Flush meta cache
+   */
+   rpc RefreshMetaCache(RefreshMetaCacheRequest) returns (RefreshMetaCacheResponse);
+
+  /**
+   * Reschedule jobs in vc
+   */
+   rpc RescheduleJobs(RescheduleJobsRequest) returns (RescheduleJobsResponse);
+}
+
+/* Coordinator Master API */
+
+message GetJobAddressRequest {
+  JobID job_id = 1;
+}
+
+message GetJobAddressResponse {
+  ResponseStatus resp_status = 1;
+  string address = 2;
+  int64 worker_version = 3;
+}
+
+message ProcessInfo {
+  int64 memory_mb = 1;
+  int32 execute_thread = 2;
+  int32 job_waiting = 3;
+  int32 job_running = 4;
+}
+
+message HystrixInfo {
+  int64 instance_id = 1;
+  optional string workspace = 2;
+  optional bool prohibit = 3;
+  string version = 4;
+}
+
+message RunningJobInfo {
+  JobID job_id = 1;
+  string virtual_cluster = 2;
+  string job_status = 3;
+  uint64 start_time = 4;
+  string priority_string = 5;
+  int64 owner_id = 6;
+  string query_tag = 7;
+  string schema = 8;
+  string job_type = 9;
+  uint32 priority = 10;
+
+  JobMetaLite.QueryLite query_lite = 21;
+}
+
+enum CoordinatorState {
+  STARTING = 0;
+  NORMAL = 1;
+  DRAINING = 2;
+  TERMINATING = 3;
+  DISCONNECTED = 4;
+  JUDGED_TO_DISCONNECT = 5;
+}
+
+message HeartBeat {
+  int64 worker_version = 1; // timestamp(us) when worker started
+  string worker_address = 2;
+  int64 hb_time = 3; // timestamp(us)
+  int64 sequence_num = 4;
+  repeated JobID job_ids = 5; // report current running job list for address cache
+  repeated JobID terminated_job_ids = 6; // report terminated job list for address cache
+  string release_version = 7; // worker release version: release1/release2/flighting1/flighting2
+  ProcessInfo process_info = 8;
+  int64 service_route_version = 9;
+  map<string, JobProfiling> job_profilings = 10;
+  repeated RunningJobInfo running_jobs = 11;
+  optional CoordinatorState state = 12;
+  int64 job_blackroom_version = 13;
+  string node_ip = 14;
+  string coordinator_label = 15;
+}
+
+message HeartBeatResponse {
+  ResponseStatus resp_status = 1;
+  bool refresh_cache = 2; // tell coordinator to refresh job cache
+  bool suicide = 3; // tell coordinator to suicide
+  int64 master_version = 4; // timestamp(us)
+  repeated HystrixInfo hystrix = 5; // hystrix info
+  repeated RouteItem route_items = 6;
+  int64 service_route_version = 7;
+  repeated RunningJobInfo running_jobs = 8;
+  int64 job_blackroom_version = 9;
+  repeated string criminal_job_md5 = 10;
+  string label = 11;
+}
+
+message ListWorkerRequest {
+  bool verbose = 1;
+  bool get_flighting_route_table = 2;
+  int64 service_route_version = 3;
+}
+
+message WorkDetail {
+  string worker_address = 1;
+  int64 worker_version = 2;
+  string worker_state = 3; // NORMAL/DISCONNECTED
+  int64 load_balance_score = 4;
+  HeartBeat status = 5; // return in verbose mode, latest heartbeat
+  string release_version = 6;
+  ProcessInfo process_info = 7;
+  string label = 8;
+}
+
+enum JobScheduleStrategy {
+  JOB_AFFINITY = 0;
+  JOB_AFFINITY_BASED_LOAD_BALANCE = 1;
+  JOB_AFFINITY_BASED_MEMORY = 2;
+  RANDOM = 10;
+}
+
+message ListWorkerResponse {
+  ResponseStatus resp_status = 1;
+  repeated WorkDetail worker = 2;
+  int64 load_score_hard_limit = 3;
+  repeated RouteItem route_items = 4;
+  JobScheduleStrategy job_schedule_strategy = 5;
+  int32 job_schedule_load_balance_scope = 6;
+  int64 service_route_version = 7;
+  int32 submit_busy_punish_ms = 8;
+  bool disable_label_scheduling = 9;
+}
+
+message SetServiceRouteRequest {
+  Account account = 1;
+  repeated RouteItem route_items = 2;
+  bool force = 3;
+  bool dedup = 4;
+  repeated LabelItem label_items = 5;
+}
+
+message SetServiceRouteResponse {
+  ResponseStatus resp_status = 1;
+  map<string, string> details = 2;
+}
+
+message SetLabelConfigRequest {
+  string label_name = 1;
+  int32 coordinator_count = 2;
+  string applied_version = 3;
+}
+
+message SetLabelConfigResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message ApplyAllLabelRequest {
+  string version = 1;
+}
+
+message ApplyAllLabelResponse {
+  ResponseStatus resp_status = 1;
+}
+
+message GetServiceRouteRequest {
+  Account account = 1;
+}
+
+message GetServiceRouteResponse {
+  ResponseStatus resp_status = 1;
+  repeated RouteItem route_items = 2;
+  int64 route_version = 3;
+  repeated LabelItem label_items = 4;
+}
+
+message UpgradeUnit {
+  int64 instance_id = 1;
+  string workspace = 2;
+  string vc = 3;
+  int64 workspace_id = 4;
+}
+
+enum UpgradeActionType {
+  START_UPGRADE = 0;
+  FINISH_UPGRADE = 1;
+  ABORT_UPGRADE = 2;
+}
+
+message HotUpgradeRequest {
+  repeated UpgradeUnit units = 1;
+  string source_version = 2;
+  string target_version = 3;
+  UpgradeActionType type = 4;
+}
+
+message HotUpgradeResponse {
+  ResponseStatus resp_status = 1;
+  map<string, string> details = 2;
+}
+
+message GetHotUpgradeStateRequest {
+  repeated UpgradeUnit units = 1;
+}
+
+message HotUpgradeState {
+  string upgrade_state = 1;
+  string target_version = 2;
+  string current_version = 3;
+  int64 target_vc_id = 4;
+  int64 current_vc_id = 5;
+}
+
+message HotUpgradeStateItem {
+  UpgradeUnit unit = 1;
+  HotUpgradeState state = 2;
+}
+
+message GetHotUpgradeStateResponse {
+  ResponseStatus resp_status = 1;
+  map<string, string> details = 2;
+}
+
+message ListMasterJobsRequest {
+  Account account = 1;
+  int64 instance_id = 2;
+  string workspace = 3;
+  string vc = 4;
+  string release_version = 10;
+}
+
+message RescheduleUnit {
+  int64 current_vc_id = 1;
+}
+
+message RescheduleVcJobsRequest {
+  repeated RescheduleUnit units = 1;
+  string source_version = 2;
+  string target_version = 3;
+  RescheduleJobType job_type = 4;
+}
+
+message RescheduleVcJobsResponse {
+  ResponseStatus resp_status = 1;
+  map<string, string> details = 2;
+}
+
+service CoordinatorMaster {
+  /**
+   * Get job coordinator address cache from master(may not equal with meta)
+   */
+  rpc GetJobAddress(GetJobAddressRequest) returns (GetJobAddressResponse);
+
+  /**
+   * Coordinator HB
+   */
+  rpc ReportHeartbeat(HeartBeat) returns (HeartBeatResponse);
+
+  /**
+   * List active coordinator
+   */
+  rpc ListWorker(ListWorkerRequest) returns (ListWorkerResponse);
+
+  /**
+   * Internal interface: List current jobs, ignore most parameters
+   */
+  rpc ListJobs(ListMasterJobsRequest) returns (ListJobsResponse);
+
+  /**
+   * Internal interface: force delete job when all coordinator crash
+   */
+  rpc DeleteJob(JobID) returns (ResponseStatus);
+
+  /**
+   * Start upgrade
+   */
+  rpc HotUpgrade(HotUpgradeRequest) returns (HotUpgradeResponse);
+
+  /**
+   * Get upgrade state
+   */
+  rpc GetHotUpgradeState(GetHotUpgradeStateRequest) returns (GetHotUpgradeStateResponse);
+
+  /**
+   * Set service route
+   */
+  rpc SetServiceRoute(SetServiceRouteRequest) returns (SetServiceRouteResponse);
+
+  /**
+   * Get service route
+   */
+  rpc GetServiceRoute(GetServiceRouteRequest) returns (GetServiceRouteResponse);
+
+  /**
+   * Reschedule queueing job to new version
+   */
+  rpc RescheduleVcJobs(RescheduleVcJobsRequest) returns (RescheduleVcJobsResponse);
+
+  /**
+   * Set label config
+   */
+  rpc SetLabelConfig(SetLabelConfigRequest) returns (SetLabelConfigResponse);
+
+  /**
+   * Apply all label config for version
+   */
+  rpc ApplyAllLabel(ApplyAllLabelRequest) returns (ApplyAllLabelResponse);
+}
+

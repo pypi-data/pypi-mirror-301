@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package cz.proto;
+
+message EncryptionConfig {
+  enum EncryptionType {
+    NONE_ENCRYPTION = 0;
+    DISABLE = 1;
+    FULL_MANAGED = 2;
+    BYOK_ALIYUN_KMS = 3;
+    BYOK_AES128_KEY = 4;
+  }
+
+  enum EncryptionAlgorithm {
+    NONE_ALGORITHM = 0;
+    AES256 = 1;
+    AES128 = 2;
+  }
+  EncryptionType encryption_type = 1;
+  EncryptionAlgorithm encryption_algorithm = 2;
+  string encryption_key_id = 3;
+  string byok_config = 4;
+}

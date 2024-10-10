@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package cz.proto.meter;
+
+message Meter {
+  int64 account_id = 1; // positive
+  int64 instance_id = 2; // positive
+  string sku_code = 3; // non-empty
+  int64 resource_id = 4; // positive
+  string resource_name = 11; // optional
+  int64 measurement_start = 5; // less equals to end time
+  int64 measurement_end = 6; // positive
+  repeated Measurement measurements = 7; // non-empty
+  map<string, string> resource_properties = 8; // optional
+  string idempotent = 9; // non-empty
+  bool is_obj_dropped = 10;
+}
+
+message Measurement {
+  string key = 1;
+  string unit = 2;
+  string value = 3;
+}
+
+message MeterEvent {
+  int64 account_id = 1; // positive
+  int64 instance_id = 2; //positive
+  string sku_code = 3; // non-empty
+  int64 resource_id = 4; // positive
+  string resource_name = 5; // optional
+  int64 event_timestamp_ms = 6; // positive
+  int32 event_type = 7; // optional
+  map<string, string> resource_properties = 8; // optional
+  string idempotent = 9; // non-empty
+  bool is_obj_dropped = 10;
+};

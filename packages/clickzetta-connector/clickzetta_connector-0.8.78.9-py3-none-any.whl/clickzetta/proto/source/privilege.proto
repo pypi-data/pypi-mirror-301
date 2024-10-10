@@ -1,0 +1,282 @@
+syntax = "proto3";
+
+package cz.proto.access;
+option java_multiple_files = true;
+
+import 'object_identifier.proto';
+import 'account.proto';
+import 'metadata_entity.proto';
+import 'table_common.proto';
+
+enum SystemRole {
+  SystemAdmin = 0;
+  UserAdmin = 1;
+  SecurityAdmin = 2;
+  AuditAdmin = 3;
+}
+
+enum ActionType {
+  AT_KNOWN = 0;
+  AT_ALL = 1;
+  AT_CREATE_ALL = 2;
+  AT_ALTER_ALL = 3;
+  AT_UPDATE_ALL = 4;
+  AT_SELECT_ALL = 5;
+  AT_DROP_ALL = 6;
+  AT_ALL_FIN = 7;
+
+  // role
+  AT_CREATE_ROLE = 100;
+  AT_ALTER_ROLE = 101;
+  AT_DROP_ROLE = 102;
+
+  // with grant option
+  AT_GRANT_PRIVILEGE = 200;
+  AT_REVOKE_PRIVILEGE = 201;
+  AT_SHOW_PRIVILEGE = 202;
+
+  // policy
+//  AT_CREATE_POLICY = 300;
+//  AT_ALTER_POLICY = 301;
+//  AT_DROP_POLICY = 302;
+//  AT_ENABLE_POLICY = 305;
+//  AT_DISABLE_POLICY = 306;
+
+  // virtual cluster
+  AT_CREATE_VCLUSTER = 400;
+  AT_ALTER_VCLUSTER = 401;
+  AT_DROP_VCLUSTER = 402;
+  AT_USE_VCLUSTER = 406;
+
+  // schema
+  AT_CREATE_SCHEMA = 500;
+  AT_ALTER_SCHEMA = 501;
+  AT_DROP_SCHEMA = 502;
+
+  // table
+  AT_CREATE_TABLE = 600;
+  AT_ALTER_TABLE = 601;
+  AT_DROP_TABLE = 602;
+  AT_SELECT_TABLE = 607;
+  AT_INSERT_TABLE = 608;
+  AT_TRUNCATE_TABLE = 610;
+  AT_UPDATE_TABLE = 611;
+  AT_DELETE_TABLE = 613;
+
+  // view
+  AT_CREATE_VIEW = 700;
+  AT_DROP_VIEW = 701;
+  AT_SELECT_VIEW = 703;
+  AT_ALTER_VIEW = 704;
+
+  // mv
+  AT_CREATE_MATERIALIZED_VIEW = 800;
+  AT_DROP_MATERIALIZED_VIEW = 801;
+  AT_SELECT_MATERIALIZED_VIEW = 802;
+  AT_ALTER_MATERIALIZED_VIEW = 804;
+
+  // function
+  AT_CREATE_FUNCTION = 900;
+  AT_DROP_FUNCTION = 901;
+  AT_USE_FUNCTION = 902;
+  AT_ALTER_FUNCTION = 903;
+
+  // datalake
+  AT_CREATE_DATALAKE = 1000;
+  AT_ALTER_DATALAKE = 1001;
+  AT_DROP_DATALAKE = 1002;
+
+  // schedule task
+  AT_CREATE_SCHEDULE_TASK = 1100;
+  AT_ALTER_SCHEDULE_TASK = 1101;
+  AT_DROP_SCHEDULE_TASK = 1102;
+  AT_CLONE_SCHEDULE_TASK = 1103;
+
+  //user
+  AT_CREATE_USER = 1200;
+  AT_DROP_USER = 1201;
+  AT_ALTER_USER = 1202;
+
+  AT_READ_AUDIT_LOG = 1300;
+  AT_DOWNLOAD_AUDIT_LOG = 1301;
+  AT_COPY_AUDIT_LOG = 1302;
+
+  // job
+  AT_ALTER_JOB = 1400;
+  AT_TERMINATE_JOB = 1401;
+
+  AT_READ_METADATA = 1500;
+
+  // share
+  AT_CREATE_SHARE = 1600;
+  AT_ALTER_SHARE = 1601;
+  AT_DROP_SHARE = 1602;
+
+  // connection
+  AT_CREATE_CONNECTION = 1700;
+  AT_ALTER_CONNECTION = 1701;
+  AT_DROP_CONNECTION = 1702;
+
+  // location
+  AT_CREATE_LOCATION = 1800;
+  AT_ALTER_LOCATION = 1801;
+  AT_DROP_LOCATION = 1802;
+  AT_USE_LOCATION = 1806;
+
+  // workspace
+  AT_CREATE_WORKSPACE = 1900;
+  AT_ALTER_WORKSPACE = 1901;
+  AT_DROP_WORKSPACE = 1902;
+
+
+  // stream table
+  AT_CREATE_TABLE_STREAM = 2000;
+  AT_DROP_TABLE_STREAM = 2001;
+  AT_SELECT_TABLE_STREAM = 2003;
+  AT_ALTER_TABLE_STREAM = 2004;
+
+  // index
+  AT_CREATE_INDEX = 2100;
+  AT_DROP_INDEX = 2101;
+}
+
+enum EffectType {
+  ALLOW = 0;
+  DENY = 1;
+}
+
+enum EffectMode {
+  DENY_OVERRIDE = 0;    // If there's no action of deny, the final effect is allow.
+  ALLOW_OVERRIDE = 1;   // If there's any action of allow, the final effect is allow.
+}
+
+message AccessToken {
+  int64 expire_time = 1;
+  int64 user_id = 2;
+  Policy access_policy = 10;
+}
+
+message CheckPrivileges {
+  UserIdentifier principal = 1;
+  string access_token = 2;
+  message Content {
+    EffectMode mode = 1;
+    repeated ActionType action = 2;
+    // true means that we check grant_action privileges for grant/revoke query
+    bool with_grant_option = 3;
+    ObjectIdentifier object = 4;
+    GrantedType.Type granted_type = 5;
+    ObjectType sub_object_type = 6;
+  }
+  repeated Content content = 4;
+}
+
+message Subject {
+  ObjectIdentifier identifier = 1;
+  oneof extended {
+    int64 user_id = 10;
+  }
+}
+
+message GrantEntity {
+  Subject subject = 1;
+  oneof derived {
+    GrantRole role = 10;
+    GrantPrivilege privilege = 11;
+  }
+}
+
+message GrantRole {
+  ObjectIdentifier identifier = 1;
+  int64 authorization_time_ms = 2;
+}
+
+message GrantPrivilege {
+  PrivilegeContent content = 1;
+}
+
+message RevokeEntity {
+  Subject subject = 1;
+  oneof derived {
+    RevokeRole role = 10;
+    RevokePrivilege privilege = 11;
+  }
+}
+
+message RevokeRole {
+  ObjectIdentifier identifier = 1;
+  int64 authorization_time_ms = 2;
+}
+
+message RevokePrivilege {
+  PrivilegeContent content = 1;
+}
+
+message PrivilegeContent {
+  repeated ActionType action = 1;
+  ObjectIdentifier object = 2;
+  GrantedType.Type granted_type = 3;
+
+  // for grant privileges:
+  //   true means grant specified privileges with a 'grant to others option'
+  //   false means only grant specified privileges
+  // for revoke privileges:
+  //   true means ONLY the grant option is revoked, not the privilege itself
+  //   false means both the privilege and the grant option are revoked
+  bool with_grant_option = 5;
+  ObjectType sub_object_type = 6;
+}
+
+message GrantedType {
+  enum Type {
+    PRIVILEGE = 0;
+    POLICY = 1;
+    ROLE = 2;
+    OBJECT_CREATOR = 3;
+    OBJECT_HIERARCHY = 4;
+  }
+}
+
+message PrivilegeAction {
+  oneof derived {
+    ActionType        action = 10;
+    string            policy_name = 11;
+    ObjectIdentifier  role = 12;
+  }
+}
+
+message PrivilegeCondition {
+  repeated string conditions = 1;
+}
+
+message Privilege {
+  GrantedType.Type    granted_type = 1;
+  PrivilegeAction     privilege = 2;
+  PrivilegeCondition  conditions = 3;
+  ObjectIdentifier    granted_on = 4;
+  ObjectIdentifier    grantee = 5;
+  ObjectIdentifier    grantor = 6;
+  bool                grant_option = 7;
+  int64               granted_time_ms = 8;
+  optional TableType  table_type = 9;
+  optional ObjectType sub_object_type = 10;
+}
+
+message PrivilegeList {
+  repeated Privilege privileges = 1;
+}
+
+message UserRole {
+  UserIdentifier   user = 1;
+  ObjectIdentifier role = 2;
+  ObjectIdentifier grantor = 3;
+  int64            granted_time_ms = 4;
+}
+
+message UserRoleList {
+  repeated UserRole user_roles = 1;
+}
+
+message AccessTypeList {
+  repeated string access_types = 1;
+}

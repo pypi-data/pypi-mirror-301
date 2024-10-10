@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "virtual_value_info.proto";
+
+package cz.proto;
+option java_package = "cz.proto";
+option java_multiple_files = true;
+
+
+message Partition {
+  VirtualValueInfo virtual_value_info = 1;
+  repeated string partition_keys = 2;
+}
