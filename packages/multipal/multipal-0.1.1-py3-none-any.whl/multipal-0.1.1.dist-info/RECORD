@@ -1,0 +1,8 @@
+master_worker_connection_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+master_worker_connection_manager/connection_manager.py,sha256=ay4uQWy38SQbfocyYzioaEegD2scH_Hm70poEafG1rU,14135
+master_worker_connection_manager/distributed_training.py,sha256=ScTeim9JmrTXFzjN0DKwj6hFaDxkcgnSWtYBgkjNFn4,9995
+master_worker_connection_manager/main.py,sha256=rZypavimiPrgBGi7Nmf1OzXaAkjYLMGuJ3Tk_as8kls,2229
+multipal-0.1.1.dist-info/METADATA,sha256=fwkfdjIT2GNMxZ5xE5eIhDHSBlK-AwrwlZHRQ-QMX5o,3316
+multipal-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+multipal-0.1.1.dist-info/top_level.txt,sha256=prTfPuw0o5VcT2Y6E0KsfO79fUvan_17E2eNFSct72M,33
+multipal-0.1.1.dist-info/RECORD,,
