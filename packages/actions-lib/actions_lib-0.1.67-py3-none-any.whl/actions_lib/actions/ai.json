@@ -1,0 +1,200 @@
+[
+    {
+        "name": "add_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to be added."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "required": true,
+                "description": "The address of the contact to be added."
+            }
+        ],
+        "description": "Add a new contact with a specified name and address."
+    },
+    {
+        "name": "show_all_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 2,
+        "parameters": [],
+        "description": "Retrieve all contacts, sorted by the specified order."
+    },
+    {
+        "name": "show_contact_by_name",
+        "group": "contact",
+        "type": "backend",
+        "level": 2,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to retrieve."
+            }
+        ],
+        "description": "Retrieve a contact's details by their name."
+    },
+    {
+        "name": "edit_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to be edited."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "required": true,
+                "description": "The new address of the contact."
+            }
+        ],
+        "description": "Edit the details of an existing contact, including name and address."
+    },
+    {
+        "name": "delete_contact",
+        "group": "contact",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "name",
+                "type": "string",
+                "required": true,
+                "description": "The name of the contact to be deleted."
+            },
+            {
+                "name": "address",
+                "type": "string",
+                "required": true,
+                "description": "The address of the contact to be deleted."
+            }
+        ],
+        "description": "Delete an existing contact by specifying the name and address."
+    },
+    {
+        "name": "transfer",
+        "group": "transfer",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "receiver",
+                "type": "string",
+                "required": true,
+                "description": "The destination address or contact name to which the crypto will be transferred. Either an address or a contact name is required, not both. If a contact name is provided, do not ask for an address."
+            },
+            {
+                "name": "amount",
+                "type": "float",
+                "required": true,
+                "description": "The amount of crypto to be transferred, must be a positive number, including decimals."
+            },
+            {
+                "name": "token",
+                "type": "enum",
+                "enum": [
+                    "USDC"
+                ],
+                "default": "USDC",
+                "required": false,
+                "description": "The type of token to be transferred. Options include USDC."
+            },
+            {
+                "name": "chain",
+                "type": "enum",
+                "enum": [
+                    "Base",
+                    "ETH"
+                ],
+                "default": "Base",
+                "required": false,
+                "description": "The blockchain network on which the transfer will occur. Options include Base, Ethereum."
+            }
+        ],
+        "description": "Performs a cryptocurrency transfer to the specified receiver, which can be either a contact name or a blockchain address. Only one of these is required. If a contact name is provided, the system will not prompt for an address. The transfer amount, token type (default: USDC), and blockchain network (Base, ETH) must also be specified."
+    },
+    {
+        "name": "authorize_token",
+        "group": "authorize",
+        "type": "backend",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "token",
+                "type": "enum",
+                "enum": [
+                    "USDC"
+                ],
+                "default": "USDC",
+                "description": "The type of token to be authorized. Currently, only USDC is supported."
+            },
+            {
+                "name": "amount",
+                "type": "float",
+                "force": true,
+                "description": "The amount of the token (e.g., USDC) that the user wants to authorize. This must be a positive number, and it represents the maximum amount allowed for the specific transaction."
+            }
+        ],
+        "description": "This function authorizes a specific token (e.g., USDC) and a specified amount of that token for further use. The user must specify both the token type and the amount to be authorized. Once authorized, the token can be used for transactions up to the specified amount."
+    },
+    {
+        "name": "show_authorized_tokens",
+        "group": "authorize",
+        "type": "backend",
+        "level": 1,
+        "parameters": [],
+        "description": "Sets the system's blockchain network to one of the specified chains: 'Base', 'ETH' (Ethereum). Use this function to switch the operational blockchain network based on your requirements."
+    },
+    {
+        "name": "switch_run_mode",
+        "group": "env",
+        "type": "setting",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "mode",
+                "type": "string",
+                "enum": [
+                    "auto",
+                    "manual"
+                ],
+                "required": true,
+                "description": "Specifies the run mode. 'auto' will enable automatic operation, while 'manual' allows for manual control."
+            }
+        ],
+        "description": "Switches the system's run mode between 'auto' for automatic operation and 'manual' for manual control. Use this function to toggle the current mode based on operational requirements."
+    },
+    {
+        "name": "switch_chain",
+        "group": "env",
+        "type": "setting",
+        "level": 1,
+        "parameters": [
+            {
+                "name": "chain",
+                "type": "string",
+                "enum": [
+                    "Base",
+                    "ETH"
+                ],
+                "required": true,
+                "description": "Specifies the blockchain network. 'Base' refers to the Base chain, 'ETH' to the Ethereum network."
+            }
+        ],
+        "description": "Sets the system's blockchain network to one of the specified chains: 'Base', 'ETH' (Ethereum). Use this function to switch the operational blockchain network based on your requirements."
+    }
+]
