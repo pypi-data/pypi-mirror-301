@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "forge_ml"
+version = "0.1.0"
+description = ""
+authors = ["Mithril Labs, Inc."]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11.dev0"
+litestar = "^2.12.1"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+pydantic = "^2.9.2"
+requests = "^2.32.3"
+numpy = "<2"
+huggingface-hub = "^0.25.2"
+typing-extensions = "^4.12.2"
+ruff = "^0.6.9"
+uvicorn = "^0.31.0"
+torch = "^2.4.1"
+safetensors = "^0.4.5"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^8.0.2"
+pydata-sphinx-theme = "^0.15.4"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 5.
+max-complexity = 5
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+# ignore = ["E203", "E266", "E501"]
+
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+# fixable = ["F401", "F841"]

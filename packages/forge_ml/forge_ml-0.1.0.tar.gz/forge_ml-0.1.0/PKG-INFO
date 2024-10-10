@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: forge_ml
+Version: 0.1.0
+Summary: 
+Author: Mithril Labs, Inc.
+Requires-Python: >=3.10,<3.11.dev0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: huggingface-hub (>=0.25.2,<0.26.0)
+Requires-Dist: litestar (>=2.12.1,<3.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: numpy (<2)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: ruff (>=0.6.9,<0.7.0)
+Requires-Dist: safetensors (>=0.4.5,<0.5.0)
+Requires-Dist: torch (>=2.4.1,<3.0.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Requires-Dist: uvicorn (>=0.31.0,<0.32.0)
+Description-Content-Type: text/markdown
+
+# Forge ML
+
+![Pipeline Status](https://github.com/mithril-labs/forge-ml/actions/workflows/pipeline.yaml/badge.svg)
+
+## Documentation
+
+To generate documentation run the make_docs.sh file from the root dir.
+
+To view API documentation visit either:
+
+- http://localhost:8000/schema/redoc
+  or
+- http://localhost:8000/schema/swagger#/
+
+while the server is running.
+
