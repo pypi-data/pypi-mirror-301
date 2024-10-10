@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PyResilient
+Version: 0.0.1
+Author-email: Bastián García <bastiang@uc.cl>
+Maintainer-email: Bastián García <bastiang@uc.cl>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+
