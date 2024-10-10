@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+duplicate_url_discarder_rules/__init__.py
+duplicate_url_discarder_rules/py.typed
+duplicate_url_discarder_rules.egg-info/PKG-INFO
+duplicate_url_discarder_rules.egg-info/SOURCES.txt
+duplicate_url_discarder_rules.egg-info/dependency_links.txt
+duplicate_url_discarder_rules.egg-info/top_level.txt
+duplicate_url_discarder_rules/normalizer/main.json
+duplicate_url_discarder_rules/queryRemoval/main.json
+duplicate_url_discarder_rules/queryRemoval/utm.json
+duplicate_url_discarder_rules/queryRemovalExcept/main.json
+duplicate_url_discarder_rules/subpathRemoval/main.json
+tests/test_rules.py
