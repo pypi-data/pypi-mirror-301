@@ -1,0 +1,3 @@
+[console_scripts]
+modsim=modsim.main:app
+
