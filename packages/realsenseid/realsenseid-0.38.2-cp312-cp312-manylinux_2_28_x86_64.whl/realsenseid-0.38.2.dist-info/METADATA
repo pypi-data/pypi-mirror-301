@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: realsenseid
+Version: 0.38.2
+Summary: RealSenseID(TM)
+Home-page: https://github.com/IntelRealSense/RealSenseID
+Download-URL: https://github.com/IntelRealSense/RealSenseID/releases
+Author: Intel(R) Corporation
+Author-email: "Intel(R) Corporation" <realsenseid@intel.com>
+License: OSI Approved :: Apache Software License
+Project-URL: Homepage, https://www.intelrealsense.com/facial-authentication/
+Project-URL: Documentation, https://github.com/IntelRealSense/RealSenseID/blob/master/Readme.md
+Project-URL: Repository, https://github.com/IntelRealSense/RealSenseID
+Project-URL: Issues, https://github.com/IntelRealSense/RealSenseID/issues
+Project-URL: Changelog, https://github.com/IntelRealSense/RealSenseID/releases
+Keywords: intel,realsense,realsenseid,facial-authentication
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: C++
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: RealsenseID/LICENSE
+License-File: RealsenseID/LicenseNotices/Intel Copyrights.pdf
+License-File: RealsenseID/LicenseNotices/TPP for Intel RealSense ID Vision Library Open Source.pdf
+License-File: RealsenseID/LicenseNotices/fw/OBL license for Intel RealSense ID Vision Library for Face Authentication (BAO 3.8.21) 1.pdf
+License-File: RealsenseID/LicenseNotices/fw/TPP for Intel RealSense ID Vision Library FW.pdf
+
+# Intel® RealSense™ ID Python SDK
+
+Intel RealSense ID is your trusted facial authentication on-device solution.
+
+Intel RealSense ID combines an active depth sensor with a specialized neural network designed to deliver an intuitive, secure and accurate facial authentication solution that adapts over time. This solution offers user privacy and is activated by user awareness. Built-in anti spoofing technology protects against attacks using photographs, videos or masks.
+
+Intel RealSense ID is a natural solution simplifying secure entry for everyone, everywhere. Supports children to tall adults and designed for Smart Locks, Access Control, PoS, ATMs, and Kiosks.
+
+Developer kits containing the necessary hardware to use this library are available for purchase at store.intelrealsense.com. See information about the Intel RealSense ID technology at https://www.intelrealsense.com/facial-authentication/
+
+For high-level architecture, see Intel RealSense ID F450 / F455 Architecture Diagram.
+
+Note: Device = Intel RealSense ID F450 / F455
+
+
+
+## Installation
+
+You should install the version that matches the firmware version currently running on the device. Please refer to the RealSenseID releases page:
+https://github.com/IntelRealSense/RealSenseID/releases 
+
+```
+pip install realsenseid==<version>
+```
+
+### Code samples
+
+For a full listing of samples, please refer to: https://github.com/IntelRealSense/RealSenseID/tree/master/samples/python
+
+Authentication:
+
+```python
+import rsid_py
+
+PORT='COM9'
+
+def on_result(result, user_id):
+    print('on_result', result)    
+    if result == rsid_py.AuthenticateStatus.Success:
+        print('Authenticated user:', user_id)
+
+def on_faces(faces, timestamp):    
+    print(f'detected {len(faces)} face(s)')
+    for f in faces:
+        print(f'\tface {f.x},{f.y} {f.w}x{f.h}')    
+
+if __name__ == '__main__':
+    with rsid_py.FaceAuthenticator(PORT) as f:
+        f.authenticate(on_faces=on_faces, on_result=on_result)
+```
+
+User Enrollment:
+
+```python
+import rsid_py
+
+PORT='COM9'
+
+def on_result(result):
+    print('on_result', result)    
+
+def on_progress(p):    
+    print(f'on_progress {p}')
+
+def on_hint(h):    
+    print(f'on_hint {h}')
+
+def on_faces(faces, timestamp):    
+    print(f'detected {len(faces)} face(s)')
+    for f in faces:
+        print(f'\tface {f.x},{f.y} {f.w}x{f.h}')    
+
+
+if __name__ == '__main__':
+    with rsid_py.FaceAuthenticator(PORT) as f:
+        user_id = input("User id to enroll: ")
+        f.enroll(user_id=user_id, on_hint=on_hint, on_progress=on_progress, on_faces=on_faces, on_result=on_result)
+
+        #display list of enrolled users
+        users = f.query_user_ids()
+        print('Users: ', users)
+```
+
+## Legal
+
+Copyright © 2018-2024 Intel Corporation
+
+> LEGAL NOTICE: Your use of this software and any required dependent software (the “Software Package”) is subject to the terms and conditions of the Apache 2.0 License for the Software Package, which may also include notices, disclaimers, or license terms for third party or open source software included in or with the Software Package, and your use indicates your acceptance of all such terms. Please refer to the “third-party-programs.txt” or other similarly-named text file included with the Software Package for additional details.
+
+> Intel is committed to the respect of human rights and avoiding complicity in human rights abuses, a policy reflected in the Intel Global Human Rights Principles. Accordingly, by accessing the Intel material on this platform you agree that you will not use the material in a product or application that causes or contributes to a violation of an internationally recognized human right.
+
+Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.
+
