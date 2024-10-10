@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aliasmate/__init__.py
+aliasmate/__main__.py
+aliasmate.egg-info/PKG-INFO
+aliasmate.egg-info/SOURCES.txt
+aliasmate.egg-info/dependency_links.txt
+aliasmate.egg-info/entry_points.txt
+aliasmate.egg-info/requires.txt
+aliasmate.egg-info/top_level.txt
