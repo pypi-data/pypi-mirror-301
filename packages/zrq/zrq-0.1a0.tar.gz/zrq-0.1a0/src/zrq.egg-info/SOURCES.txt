@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/zrq/__init__.py
+src/zrq.egg-info/PKG-INFO
+src/zrq.egg-info/SOURCES.txt
+src/zrq.egg-info/dependency_links.txt
+src/zrq.egg-info/not-zip-safe
+src/zrq.egg-info/top_level.txt
