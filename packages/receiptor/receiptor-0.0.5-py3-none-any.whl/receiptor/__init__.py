@@ -1,0 +1,1 @@
+from .receiptor import Receiptor
