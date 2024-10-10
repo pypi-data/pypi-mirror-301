@@ -1,0 +1,11 @@
+pyquicklator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyquicklator/main.py,sha256=gKJYc-eRXWy2_-4EwJ-N8I71FrBVOvieuZCXGOGawFM,19684
+pyquicklator/ui.py,sha256=XIL_AWpfl1SzVibjjH7FhU_ugeNUzjNGstKgTtE2PiY,77716
+pyquicklator/locales/ui_ru.qm,sha256=u988h_CNrVcLzeVSKKvWCubBlzN5-fx1Kb441mRJfic,6177
+pyquicklator/locales/ui_uk.qm,sha256=9mJu0uwTPQrSE6boeGGig-6wtksd6FnDMRSvgBP7RH8,6125
+pyquicklator-1.0.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+pyquicklator-1.0.0.dist-info/METADATA,sha256=sAtu0tpUZ4lotlWYBIHMdd8TkcBXQoXYZ6TyyP_ArqA,42931
+pyquicklator-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyquicklator-1.0.0.dist-info/entry_points.txt,sha256=0_4i3ZHhiEpkXEZTcV-eC30m7i2X_8oZT-K9Ciog1hw,52
+pyquicklator-1.0.0.dist-info/top_level.txt,sha256=M4kX1oRqcRQ0uCO16wXuwJ20gs-LY0aWBZbxnqwGT3M,13
+pyquicklator-1.0.0.dist-info/RECORD,,
