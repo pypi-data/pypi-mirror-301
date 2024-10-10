@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "betterpathlib"
+version = "0.1.0"
+description = "A Path library that is an extension to Python's built-in pathlib.Path."
+authors = ["Torstein Sørnes <t.soernes@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/tsoernes/betterpathlib"
+repository = "https://github.com/tsoernes/betterpathlib"
+documentation = "https://github.com/tsoernes/betterpathlib"
+keywords = ["pathlib", "path", "filesystem"]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+
+[tool.poetry.group.similarpaths]
+optional = true
+
+[tool.poetry.group.similarpaths.dependencies]
+thefuzz = "^0.22.1"
+
+[tool.poetry.group.download.dependencies]
+requests = "^2.32.3"
+
+[tool.poetry.group.download-progress.dependencies]
+tqdm = "^4.66.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
