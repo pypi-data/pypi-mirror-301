@@ -1,0 +1,5 @@
+[console_scripts]
+init_agent_manager=raider_backend.agent_manager:main
+init_ext_repo_agent=raider_backend.repo_agents.external_repo_agent:main
+launch_endpoint=raider_backend.launch:main
+
