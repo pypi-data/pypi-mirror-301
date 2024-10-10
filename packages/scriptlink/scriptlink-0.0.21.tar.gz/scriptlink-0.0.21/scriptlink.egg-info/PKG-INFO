@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scriptlink
+Version: 0.0.21
+Summary: scriptlink
+Author: Lopht
+Author-email: <bobjozeg@yahoo.com>
+Keywords: python,scriptlink
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+
+a simple interface to a set of c++ functions for manipulating screen images and simulating input
