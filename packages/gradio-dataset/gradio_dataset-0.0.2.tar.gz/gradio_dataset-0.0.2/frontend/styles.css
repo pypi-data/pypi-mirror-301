@@ -1,0 +1,214 @@
+  .wrap {
+    display: inline-block;
+    width: var(--size-full);
+    max-width: var(--size-full);
+    color: var(--body-text-color);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--size-2);
+    color: var(--block-label-text-color);
+    font-weight: var(--block-label-text-weight);
+    font-size: var(--block-label-text-size);
+    line-height: var(--line-sm);
+  }
+
+  svg {
+    margin-right: var(--size-1);
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+  }
+
+  .gallery-item {
+    border: 1px solid var(--border-color-primary);
+    border-radius: var(--button-large-radius);
+    overflow: hidden;
+  }
+
+  .gallery-item:hover {
+    border-color: var(--border-color-accent);
+    background: var(--table-row-focus);
+  }
+
+  .table-wrap {
+    border: 1px solid var(--border-color-primary);
+    border-radius: var(--table-radius);
+    width: var(--size-full);
+    table-layout: auto;
+    overflow-x: auto;
+    line-height: var(--line-sm);
+    color: var(--table-text-color);
+  }
+
+  table {
+    width: var(--size-full);
+  }
+
+  .tr-head {
+    box-shadow: var(--shadow-drop-lg);
+    border-bottom: 1px solid var(--border-color-primary);
+  }
+
+  .tr-head > * + * {
+    border-right-width: 0px;
+    border-left-width: 1px;
+    border-color: var(--border-color-primary);
+  }
+
+  th {
+    padding: var(--size-2);
+    white-space: nowrap;
+  }
+
+  .tr-body {
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color-primary);
+    background: var(--table-even-background-fill);
+  }
+
+  .tr-body:last-child {
+    border: none;
+  }
+
+  .tr-body:nth-child(odd) {
+    background: var(--table-odd-background-fill);
+  }
+
+  .tr-body:hover {
+    background: var(--table-row-focus);
+  }
+
+  .tr-body > * + * {
+    border-right-width: 0px;
+    border-left-width: 1px;
+    border-color: var(--border-color-primary);
+  }
+
+  .tr-body:hover > * + * {
+    border-color: var(--border-color-accent);
+  }
+
+  td {
+    padding: var(--size-2);
+    text-align: center;
+  }
+
+  .paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--size-2);
+    color: var(--block-label-text-color);
+    font-size: var(--text-sm);
+  }
+
+  button.current-page {
+    font-weight: var(--weight-bold);
+  }
+
+  .menu-cell {
+    position: relative;
+    width: 40px;
+    padding: var(--size-2);
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+  }
+
+  .menu-button:hover {
+    background: var(--color-accent-soft);
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  .menu-popup {
+    position: absolute;
+    right: 75%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--background-fill-primary);
+    border: 1px solid var(--border-color-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-drop-lg);
+    z-index: 1000;
+    min-width: 100px;
+    width: max-content;
+    padding: 6px 8px;
+  }
+
+  .menu-popup.last-item {
+    top: unset;
+    bottom: 0;
+    transform: unset;
+  }
+
+  .menu-item {
+    display: block;
+    width: 100%;
+    padding: var(--size-2) var(--size-4);
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+  }
+
+  .menu-item:hover {
+    background-image: linear-gradient(to right, #fff3eb, #fff3eb);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.4s;
+  }
+
+  .menu-item + .menu-item {
+    border-top: 1px solid var(--border-color-primary);
+  }
+
+  .sort-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: inherit;
+    color: inherit;
+    padding: 0;
+    width: 100%;
+    position: relative; /* Add this */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Add a wrapper for the header text */
+  .header-text {
+    text-align: center;
+  }
+
+  /* Style for the sort icon */
+  .sort-icon {
+    position: absolute; /* Add this */
+    right: 0; /* Add this */
+    top: 50%; /* Add this */
+    transform: translateY(-50%); /* Add this */
+    margin-left: 0.5em;
+  }
