@@ -1,0 +1,67 @@
+# Master-Worker Connection Manager Tutorial
+
+This tutorial will guide you through setting up and using the Master-Worker Connection Manager system.
+
+## Prerequisites
+
+- Python 3.x installed on all machines (master and workers)
+- Network connectivity between the master and worker machines
+
+## Setup
+
+1. Ensure all necessary files are in place:
+   - `connection_manager.py` (contains the MasterManager class)
+   - Any additional dependencies
+
+2. Install required Python packages:
+   ```
+   pip install socket threading sqlite3
+   ```
+
+## Usage
+
+### Starting the Master Server
+
+1. Create a Python script (e.g., `run_master.py`) with the following content:
+
+   ```python
+   from connection_manager import MasterManager
+
+   master = MasterManager()
+   master.start_master_server(ip_address='0.0.0.0', port=5000, authorized_workers=['192.168.1.100', '192.168.1.101'])
+   ```
+
+2. Run the master server:
+   ```
+   python run_master.py
+   ```
+
+   This will start the master server on all available network interfaces (0.0.0.0) on port 5000.
+
+### Connecting Workers
+
+1. Ensure workers have the necessary client-side code to connect to the master.
+
+2. Workers should send their local IP addresses to the master upon connection.
+
+3. Only authorized workers (as specified in `authorized_workers` list) will be allowed to connect.
+
+## Features
+
+- **Authorization**: The master server authorizes workers based on their IP addresses.
+- **Multi-threading**: The server can handle multiple worker connections simultaneously.
+- **SQLite Database**: Client IDs and specifications are stored in an SQLite database.
+
+## Troubleshooting
+
+- If connections fail, check firewall settings and ensure the correct IP addresses and ports are being used.
+- Verify that all workers' IP addresses are correctly listed in the `authorized_workers` list.
+
+## Extending the System
+
+To add more functionality:
+1. Modify the `MasterManager` class in `connection_manager.py`.
+2. Implement additional methods for task distribution, result collection, etc.
+3. Update the client-side code on workers to handle new features.
+
+For more detailed information, refer to the comments in the `connection_manager.py` file.
