@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+src/smartheattable/__init__.py
+src/smartheattable/__main__.py
+src/smartheattable/application.py
+src/smartheattable.egg-info/PKG-INFO
+src/smartheattable.egg-info/SOURCES.txt
+src/smartheattable.egg-info/dependency_links.txt
+src/smartheattable.egg-info/top_level.txt
+src/smartheattable/gui/__init__.py
+src/smartheattable/gui/ui_mainwindow.py
