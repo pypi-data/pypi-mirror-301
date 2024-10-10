@@ -1,0 +1,24 @@
+[package]
+name = "l3d_rs_python"
+version = "0.1.1"
+edition = "2021"
+authors = ["Holger Trahe <trahe@mac.com>"]
+documentation = "https://docs.rs/l3d-rs-python/"
+description = "Python Module of the L3D (Luminaire 3D Format) parser and writer for Rust, specifically for the Rust/WASM target as such designed for JSON format"
+repository = "https://github.com/holg/l3d_rs_python"
+homepage = "https://github.com/holg/l3d_rs_python"
+license = "GPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "l3d_rs_python"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.19.2", features = ["extension-module"]}
+l3d_rs = "0.1.0"
+
+[build-dependencies]
+version_check = {version = "0.9.5"}
+# used where logic has to be version/distribution specific, e.g. pypy
+pyo3-build-config = { version = "0.19.2" }
