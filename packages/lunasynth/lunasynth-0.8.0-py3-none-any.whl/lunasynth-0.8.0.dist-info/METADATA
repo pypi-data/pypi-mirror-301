@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: lunasynth
+Version: 0.8.0
+Summary: Generate synthetic lunar images using Blender
+License: Apache-2.0
+Author: Daniel Pastor
+Author-email: daniel.pastor.moreno@jpl.nasa.gov
+Requires-Python: ==3.11.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: argcomplete (>=3.3.0,<4.0.0)
+Requires-Dist: bpy (>=4.1.0,<5.0.0)
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: h5py (>=3.11.0,<4.0.0)
+Requires-Dist: humanize (>=4.9.0,<5.0.0)
+Requires-Dist: imageio (>=2.34.2,<3.0.0)
+Requires-Dist: ipykernel (>=6.29.4,<7.0.0)
+Requires-Dist: matplotlib (>=3.9.0,<4.0.0)
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.9.0.80,<5.0.0.0)
+Requires-Dist: opencv-python-headless (>=4.9.0.80,<5.0.0.0)
+Requires-Dist: openexr (>=3.2.4,<4.0.0)
+Requires-Dist: plotly (>=5.22.0,<6.0.0)
+Requires-Dist: pyarrow (>=16.1.0,<17.0.0)
+Requires-Dist: pyglet (<2)
+Requires-Dist: rasterio (>=1.3.10,<2.0.0)
+Requires-Dist: scipy (>=1.13.0,<2.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: trimesh (>=4.4.0,<5.0.0)
+Requires-Dist: types-pyyaml (>=6.0.12.20240917,<7.0.0.0)
+Description-Content-Type: text/markdown
+
+
+<h1 style="display: flex; align-items: center;">
+  <img width="80" height="80" src="docs/lunasynth_logo_transparent_background.png" alt="LuNaSynth logo" style="margin-right: 16px;">
+ 
+</h1>
+
+# Synthetic Generation of Lunar Terrain (LuNaSynth)
+
+This project has tools to generate images of lunar terrain for navegation testing.
+
+## Quick Start
+
+- If you are using a dataset generated with Lunasynth, go to [dataset generation tutorial](src/tutorials/render_dataset_tutorial.ipynb) "Using the dataset". You can take a look at the [dataset analysis](test/dataset_analysis.ipynb) for examples of how to use the data.
+- If you want to create renders, install the tools by following the instructions in [Install](#install-lunasynth-package) section, and run the [dataset generation tutorial](src/tutorials/render_dataset_tutorial.ipynb)
+- If you want to contribute to Lunasynth development, read the Development section
+
+
+## Overview 
+
+Lunasynth gets a base Digital Elevation Map (DEM) from the Moon, adds rocks and craters, and renders the terrain from different perspectives. 
+
+![](docs/images/moon_generation_detail.png)
+
+The objective of Lunasynth is to generate the detail from the maximum resolution of the input DEM (5mpix for the polar regions) up to the desired pixel size, which ranges from 1m to 1cm, depending on the application. 
+
+![](docs/lunasynth_structure.png)
+
+Overview of lunar terrain image generation
+- **Base Meshes**: The base meshes are the starting point for the terrain generation. They are used to create the terrain geometry.
+- **Rock Field Distribution**: The rock field distribution is used to place rocks on the terrain. The rocks are placed on the terrain based on the CFA distribution
+- **Crater Field Distribution**: Similar to rock field. For each crater, the mesh is modified based on the crater parametrization
+- **Render Case**: the configuration of the camera and sun position for each render
+
+## Install Lunasynth Package
+
+Current system dependencies are:
+- to use provided assets you need `git-lfs` (make sure to pull lfs objects with `git lfs pull` after cloning)
+- to execute `gdal_create.sh` you need `gdal` and `imagemagick`
+
+Execute `install_dependencies.sh` to install all system-wide dependencies. Currently only macos and debian-based distributions are supported.
+
+Python dependencies are declared in `pyproject.toml`. Install them using
+```bash
+[lunasynth]$ python3 -m pip install -e .
+```
+
+If you use poetry (reconmmended for development), install all dependencies on its own virtual environment
+```bash
+[lunasynth]$ poetry install
+```
+Once you install the dependencies, append `poetry run` to any command to use the dependencies installed in the virtual environment. Alternatively, you can activate the virtual environment with 
+```bash
+[lunasynth]$ poetry shell
+```
+
+Check that the installation was successful by running the tests
+```bash
+(lunasynth) [lunasynth]$ pytest
+```
+It should report that all tests passed.
+
+
+## Usage
+
+To generate a dataset of lunar terrain renderings, use `generate_enhanced_moon_terrain_dataset.py` with a configuration file. For example, to generate the nominal orthographic dataset, run
+```bash
+(lunasynth) [lunasynth]$ python3 src/lunasynth/cli/generate_enhanced_moon_terrain_dataset.py --dataset-config config/datasets/ortho_nominal.yaml 
+```
+Follow the instructions in the [dataset generation tutorial](src/tutorials/render_dataset_tutorial.ipynb) for more details on how to define the configuration file and use the dataset.
+
+Some steps are exposed as command line tools (CLI) scripts, see files in `src/lunasynth/cli/` for more details, and run them with `--help` to see the available options. Check tutorials in `src/tutorials/` for examples of how to use the tools.

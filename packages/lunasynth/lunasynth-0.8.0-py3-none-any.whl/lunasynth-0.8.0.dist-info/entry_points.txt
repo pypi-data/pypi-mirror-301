@@ -1,0 +1,5 @@
+[console_scripts]
+create_rock_field=lunasynth.cli.create_rock_field:main
+generate_dataset=lunasynth.cli.generate_enhanced_moon_terrain_dataset:main
+load_rocks=lunasynth.cli.load_rocks:main
+
