@@ -1,0 +1,2 @@
+recursive-include rlpp/resources *
+include rlpp/processor/template.txt
