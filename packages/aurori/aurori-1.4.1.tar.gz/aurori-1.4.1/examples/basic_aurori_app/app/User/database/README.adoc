@@ -1,0 +1,27 @@
+# General
+
+Place your models in this folder.
+
+The core loads all models imported in `__init__.py`.
+
+# Migrations
+
+You might use the alembic command lines to setup migration here.
+
+Run the command in the specific `database` folder
+
+## Create a new revision in `versions`:
+
+`alembic revision -m "name" --autogenerate --rev-id REV_ID`
+
+Please use the actual naming convention (without the message).
+
+`alembic revision --autogenerate --rev-id $((Get-Date).ToString('yyyy_MM_ddThh_mm_ss') + "_description")`
+
+## Upgrade to a new revision:
+
+`alembic upgrade REV_ID`
+
+## Stamp to an actual version (may be needed before upgrade or create a new revision):
+
+`alembic stamp --purge REV_ID`

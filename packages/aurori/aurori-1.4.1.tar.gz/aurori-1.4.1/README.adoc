@@ -1,0 +1,25 @@
+# aurori
+
+A flexible web framework based on FastApi.
+
+It is meant to be the backend for your React, Vue or Svelte application.
+
+It brings the convention over configuration approach (like in Django) to the FastApi world.
+
+It is focused to get you started with your development and guide you to evolve it to a medium sized projects.
+
+The key benefit aurori brings in:
+
+* Bring in a clean structure and allow to adapt
+** Separations of concerns by dividing features
+** Convention over configuration (just add your code in the corresponding folder)
+** Lightweight management layer with configuration options
+* All the features of FastApi to build beautiful REST APIs (OpenApi support, Model-Checking, Performance, ...)
+* Authentication with shared permission support
+* Database functionality with migration support by SqlAlchemy and Alembic
+* Background runner triggered by cron, user-request or on-startup by APScheduler
+* Server side menu building
+
+# dev
+
+pip install -e . --config-settings editable_mode=compat
