@@ -1,0 +1,8 @@
+igwas-0.1.0.dist-info/METADATA,sha256=-AoJp4MAoglVDDo861QEZc3v0OKbQ4mQfv6eQholBfg,3938
+igwas-0.1.0.dist-info/WHEEL,sha256=EIhSLQ9M9teIuaTrx2V6G3NQFhsKpYkGvsvJCaKboDA,104
+igwas-0.1.0.dist-info/licenses/LICENSE,sha256=K_ZAOwQN0G65mS3UE7aPI6u_rZw7Z9z0CLw0zCv3wfg,1070
+igwas/test_igwas.py,sha256=pZJRQE5UyKqMt9CXHHfE2WlvR3Neo_6rGZ4C1-LzkKw,6160
+igwas/__init__.py,sha256=N1dfHdZ6wk7krofGuXPbp1LEsmbxqizAYTI-cClAQSU,39
+igwas/igwas.py,sha256=Aal2Si2XFRXrFMtVy-DPoPvR1ot2V1lzCQ2LEBoebvY,4160
+igwas/_lowlevel.cpython-312-darwin.so,sha256=FkPSFXSYkbBEkZLLcp14QUkXdSltALb7qqmtkbWPM4k,3489200
+igwas-0.1.0.dist-info/RECORD,,
