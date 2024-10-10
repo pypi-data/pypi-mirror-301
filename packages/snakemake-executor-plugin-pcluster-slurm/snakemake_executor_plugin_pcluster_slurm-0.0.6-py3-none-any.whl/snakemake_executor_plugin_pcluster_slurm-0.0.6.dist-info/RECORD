@@ -1,0 +1,6 @@
+snakemake_executor_plugin_pcluster_slurm/__init__.py,sha256=wSiuXpcYF43AOaBiaala9vA3xLDmfT7LUVTa3FQVCxE,16197
+snakemake_executor_plugin_pcluster_slurm/utils.py,sha256=-AqEg1v7Jj6f0IEWrxcT0mW1yKnlQ2ecWQ3O5YMEFGE,443
+snakemake_executor_plugin_pcluster_slurm-0.0.6.dist-info/LICENSE,sha256=YVc4xTLWMqGfFL36120k7rzXtsT6e4RkJsh68VVn12s,1076
+snakemake_executor_plugin_pcluster_slurm-0.0.6.dist-info/METADATA,sha256=R0zDD0iav9ouHgMCrznOAY1VJi9Vi_cy21U54OfvGKo,3105
+snakemake_executor_plugin_pcluster_slurm-0.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+snakemake_executor_plugin_pcluster_slurm-0.0.6.dist-info/RECORD,,
