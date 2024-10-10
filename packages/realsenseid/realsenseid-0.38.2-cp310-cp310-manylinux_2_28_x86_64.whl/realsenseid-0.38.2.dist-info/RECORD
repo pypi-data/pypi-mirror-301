@@ -1,0 +1,13 @@
+librsid.so,sha256=tmcM8ZqhQin9BkfxLKclmm-lyTOi8w7gKCwxu3vT-y0,3543568
+rsid_py.cpython-310-x86_64-linux-gnu.so,sha256=hDcFpVJNfFedNTu0jZyzpbyt5vWsIhH327IbJzca_Hw,610664
+__init__.py,sha256=kM51UTPdNttjDq1airSs6aQITwyZ6xOrMoSxSfOXU5Y,113
+rsid_py.pyi,sha256=bMIpVnsxcYEtJmEzdVTm-g6buz3iHY2uaFHv-snIFuk,44399
+realsenseid-0.38.2.dist-info/TPP for Intel RealSense ID Vision Library Open Source.pdf,sha256=7Sh3vevsY-rLjjiNL1vNJ2FChku5hR1ux3gYfvCqTyg,280293
+realsenseid-0.38.2.dist-info/Intel Copyrights.pdf,sha256=eZEkUq-uI4sMRvcL2fb4sn5kNgbD20ifvRm4zukUHJI,74477
+realsenseid-0.38.2.dist-info/WHEEL,sha256=_OgzqJ6R2Sxa9x6ZYnTyOso7rTbg9J9OkQo8vJFwKaM,113
+realsenseid-0.38.2.dist-info/RECORD,,
+realsenseid-0.38.2.dist-info/METADATA,sha256=SNvKVCmeG-AvwgInrE6pw9MMyzHamZrKi9de2eyZ75E,5952
+realsenseid-0.38.2.dist-info/OBL license for Intel RealSense ID Vision Library for Face Authentication (BAO 3.8.21) 1.pdf,sha256=kHb52YzrsVUKJB_rp-iU6S-hFA4oQFOzb1GZ44BKceQ,44323
+realsenseid-0.38.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+realsenseid-0.38.2.dist-info/TPP for Intel RealSense ID Vision Library FW.pdf,sha256=ARE_7cFc3IFFvOLe1zyUbByorSJCgds-b30SCXuMN_I,140810
+realsenseid-0.38.2.dist-info/LICENSE,sha256=R3NPchKf3YqdrLSgYEgJMBZduAX4S83ISAzcljQUr7s,10222
