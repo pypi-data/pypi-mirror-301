@@ -1,0 +1,25 @@
+[project]
+description = "A tool to help you pick the optimal securities for Norbert's Gambit"
+
+[project.urls]
+Homepage = "https://github.com/dlenski/eNGame"
+
+[tool.poetry]
+name = "eNGame"
+version = "0.0.4"
+description = "A tool to help you pick the optimal securities for Norbert's Gambit"
+authors = [ "Daniel Lenski <dlenski@gmail.com>" ]
+license = "GPLv3 or later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "*"
+colored = "^2.0"
+
+[tool.poetry.scripts]
+engame = 'engame.__main__:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
