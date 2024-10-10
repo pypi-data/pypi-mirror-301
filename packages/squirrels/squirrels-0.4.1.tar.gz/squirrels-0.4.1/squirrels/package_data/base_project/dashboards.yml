@@ -1,0 +1,10 @@
+dashboards:
+  - name: dashboard_example
+    label: Dashboard Example
+    scope: public
+    parameters:
+      - start_date
+      - end_date
+      - category
+
+
