@@ -1,0 +1,22 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+.jp-litchi-toolbar {
+
+}
+
+.jp-litchi-toolbar span {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.jp-litchi-role-user-Cell .jp-InputPrompt {
+    background-color: lightcyan;
+}
+
+.jp-litchi-role-assistant-Cell .jp-InputPrompt {
+    background-color: lightgoldenrodyellow;
+}
