@@ -1,0 +1,3 @@
+[console_scripts]
+watch=proof_business_api.watch:main
+
