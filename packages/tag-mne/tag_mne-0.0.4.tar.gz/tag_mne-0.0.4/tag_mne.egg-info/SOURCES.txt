@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tag-mne/__init__.py
+tag-mne/main.py
+tag-mne/mne_utils.py
+tag-mne/utils.py
+tag_mne.egg-info/PKG-INFO
+tag_mne.egg-info/SOURCES.txt
+tag_mne.egg-info/dependency_links.txt
+tag_mne.egg-info/requires.txt
+tag_mne.egg-info/top_level.txt
