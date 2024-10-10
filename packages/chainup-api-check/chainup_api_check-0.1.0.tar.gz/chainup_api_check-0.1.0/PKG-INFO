@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chainup-api-check
+Version: 0.1.0
+Summary: ChainUp Cloud tools
+Author: zhangjiawei
+Author-email: zhangjiawei@xiaolian.link
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Requires-Dist: typer[all] (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "chainup-api-check"
+version = "0.1.0"
+description = "ChainUp Cloud tools"
+authors = ["zhangjiawei <zhangjiawei@xiaolian.link>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.12.5"}
+rich = "^13.9.2"
+requests = "^2.32.3"
+[tool.poetry.scripts]
+api-check = "chainup_api_check.main:app"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
