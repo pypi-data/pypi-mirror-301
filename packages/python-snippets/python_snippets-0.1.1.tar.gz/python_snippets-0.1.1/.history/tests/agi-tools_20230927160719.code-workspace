@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "../../agi-tools"
+    },
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../AIAssitant"
+    }
+  ],
+  "settings": {
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none"
+  }
+}

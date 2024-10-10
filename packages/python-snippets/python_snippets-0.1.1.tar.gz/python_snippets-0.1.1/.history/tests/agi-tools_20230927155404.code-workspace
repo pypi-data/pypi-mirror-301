@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../agi-tools"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none"
+  }
+}
