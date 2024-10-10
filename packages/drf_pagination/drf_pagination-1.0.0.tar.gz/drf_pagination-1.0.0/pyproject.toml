@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "drf_pagination"
+version = "1.0.0"
+description = "Django REST framework additional pagination"
+authors = ["cosmo <xxiaocai@163.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+djangorestframework = "3.6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
