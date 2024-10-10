@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yw_etl_target_clickhouse
+Version: 0.1.7
+Requires-Python: >=3.10
+Requires-Dist: singer-python==5.12.2
+Requires-Dist: requests~=2.28.1
+
