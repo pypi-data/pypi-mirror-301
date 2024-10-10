@@ -1,0 +1,12 @@
+duplicate_url_discarder_rules/__init__.py,sha256=h6xJ3sHgKfjBcm0y5VOuTxwOO5rm_vsswMBX5lIMYig,248
+duplicate_url_discarder_rules/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duplicate_url_discarder_rules/normalizer/main.json,sha256=ZEzLyhF8sdrBSUHHbXWYdB_E5pmkAMTGTPSCcJGP434,139
+duplicate_url_discarder_rules/queryRemoval/main.json,sha256=tYMxHb35c56QUP0hlkYQy521PKHYNDs-fZIm7VTsQuY,43067
+duplicate_url_discarder_rules/queryRemoval/utm.json,sha256=fmkRSqne-iSdscIcADNAK9L4keEGkkNhXkrgU5KbCp4,304
+duplicate_url_discarder_rules/queryRemovalExcept/main.json,sha256=yQA05-eVw0OnVHtHTPUBgZR1xHY6B3KEUetzAghI8e8,1189
+duplicate_url_discarder_rules/subpathRemoval/main.json,sha256=3_ibeIhOZ8SziUCQQ-lxCclMSP5DSAwv_BCjd1Xejfc,691
+duplicate_url_discarder_rules-2024.10.10.dist-info/LICENSE,sha256=kpjNvvmhbqZ-CA2Uue93PYS2wHTPhRiRgyDAWYHbMlo,1081
+duplicate_url_discarder_rules-2024.10.10.dist-info/METADATA,sha256=C2qsYzl8qLijf8pAIdPsw_HJhpNNdrVEAuCcCwLyF4w,3259
+duplicate_url_discarder_rules-2024.10.10.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+duplicate_url_discarder_rules-2024.10.10.dist-info/top_level.txt,sha256=UX6V1v9Cjlyqi_pmMYn49oFWgudMzfPIcYyH_aLAx-I,30
+duplicate_url_discarder_rules-2024.10.10.dist-info/RECORD,,
