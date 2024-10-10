@@ -1,0 +1,5 @@
+include CHANGELOG.md
+
+include src/xspec_models_cxc_helpers/data/xspec.h
+include src/xspec_models_cxc_helpers/data/xsudmget.cxx
+include src/xspec_models_cxc_helpers/data/xsudmget64.cxx

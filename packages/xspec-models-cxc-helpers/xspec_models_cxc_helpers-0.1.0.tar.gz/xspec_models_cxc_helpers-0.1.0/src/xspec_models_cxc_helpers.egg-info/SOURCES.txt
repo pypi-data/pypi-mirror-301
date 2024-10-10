@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/xspec_models_cxc_helpers/__init__.py
+src/xspec_models_cxc_helpers.egg-info/PKG-INFO
+src/xspec_models_cxc_helpers.egg-info/SOURCES.txt
+src/xspec_models_cxc_helpers.egg-info/dependency_links.txt
+src/xspec_models_cxc_helpers.egg-info/requires.txt
+src/xspec_models_cxc_helpers.egg-info/top_level.txt
+src/xspec_models_cxc_helpers/data/xspec.h
+src/xspec_models_cxc_helpers/data/xsudmget.cxx
+src/xspec_models_cxc_helpers/data/xsudmget64.cxx
+src/xspec_models_cxc_helpers/tests/test_utils.py
