@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vnpy_portfoliomanager/__init__.py
+vnpy_portfoliomanager/base.py
+vnpy_portfoliomanager/engine.py
+vnpy_portfoliomanager.egg-info/PKG-INFO
+vnpy_portfoliomanager.egg-info/SOURCES.txt
+vnpy_portfoliomanager.egg-info/dependency_links.txt
+vnpy_portfoliomanager.egg-info/not-zip-safe
+vnpy_portfoliomanager.egg-info/requires.txt
+vnpy_portfoliomanager.egg-info/top_level.txt
+vnpy_portfoliomanager/ui/__init__.py
+vnpy_portfoliomanager/ui/portfolio.ico
+vnpy_portfoliomanager/ui/widget.py
