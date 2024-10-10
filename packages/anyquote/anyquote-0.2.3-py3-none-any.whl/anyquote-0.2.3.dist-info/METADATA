@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: anyquote
+Version: 0.2.3
+Summary: 
+Author: hsn
+Author-email: hsn1919810@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: chromedriver-py (==127.0.6533.99)
+Requires-Dist: fonttools (>=4.53.1,<5.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: qrcode (>=7.4.2,<8.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: selenium (>=4.23.1,<5.0.0)
+Requires-Dist: twitter-api-client (>=0.10.22,<0.11.0)
+Description-Content-Type: text/markdown
+
+# AnyQuote
+
+a simple quote generator using python.
+
+# Usage
+
+```python
+from anyquote import quote
+
+print(quote(,)
+```
+
+# Installation
+
+```bash
+pip install anyquote
+```
+
+# License
+
+```text
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+We hope this program will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+```
+
