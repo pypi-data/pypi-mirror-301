@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: invisibl-aether-sdk
+Version: 0.1.0
+Summary: The Python SDK for Invisibl's Aether platform.
+Author: Invisibl Team
+Author-email: aether@invisibl.io
+Requires-Python: >=3.9.12,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyctcdecode (>=0.5.0,<0.6.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# aether-sdk
+Aether's user-facing package (SDK, CLI, etc.)
+
+## SDK Authentication
+There are two options for authentication. In order of precedence, they are:
+1. set the environment variables `AETHER_USER_ID` and `AETHER_API_KEY`; or
+2. run `Auth.setup()`.
+
+### Set the ENVs
+If these two environment variables are set, they are given preference over any profile set in the shared credentials file.
+
+### Run `Auth.setup()`
+This will create a shared credentials file in `~/.aether/credentials` (or at the path from the environment variable `AETHER_SHARED_CREDENTIALS_FILE`, if present). It will set up a profile with the name you provide, setting the API key and user ID there.
+
+If you set a profile with a name different from `default`, set the environment variable `AETHER_PROFILE` before running the SDK.
+
