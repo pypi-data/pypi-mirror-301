@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: IMDBee
+Version: 0.1.0
+Summary: A python module to retrieve data from IMDB
+Project-URL: Homepage, https://github.com/Amir-Hossein-ID/IMDBee
+Keywords: imdb,movie,series
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sgqlc>=16.4
+Requires-Dist: requests>=2.32.3
+Provides-Extra: async
+Requires-Dist: aiohttp>=3.9.5; extra == "async"
+
+# IMDBee
+a python module to retrieve data from imdb

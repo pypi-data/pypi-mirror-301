@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/IMDBee/__init__.py
+src/IMDBee/model.py
+src/IMDBee.egg-info/PKG-INFO
+src/IMDBee.egg-info/SOURCES.txt
+src/IMDBee.egg-info/dependency_links.txt
+src/IMDBee.egg-info/requires.txt
+src/IMDBee.egg-info/top_level.txt
