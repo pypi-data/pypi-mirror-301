@@ -1,0 +1,6 @@
+sqlparse
+pyyaml
+jinja2
+
+[test]
+pytest
