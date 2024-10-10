@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/reduce_binary/__init__.py
+src/reduce_binary/executable.py
+src/reduce_binary.egg-info/PKG-INFO
+src/reduce_binary.egg-info/SOURCES.txt
+src/reduce_binary.egg-info/dependency_links.txt
+src/reduce_binary.egg-info/top_level.txt
