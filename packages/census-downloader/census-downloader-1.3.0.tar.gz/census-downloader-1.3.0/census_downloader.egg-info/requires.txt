@@ -1,0 +1,5 @@
+us
+pandas
+openpyxl
+tqdm
+permacache
