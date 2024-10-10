@@ -1,0 +1,150 @@
+{% extends 'logui/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'logui/css/highlight.min.css' %}">
+    <script src="{% static 'logui/js/Client.js' %}"></script>
+    <script src="{% static 'logui/js/highlight.min.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            hljs.highlightAll();
+        })
+    </script>
+{% endblock %}
+{% block title %}{{ file_name }}{% endblock %}
+{% block main %}
+    <div class="fc maxw-1200px h-100 w-100 px-2 mx-auto">
+        <h1>{{ file_name }}</h1>
+
+        <div class="fr flex-wrap gap-2 my-2">
+            <a href="{% url 'logui:log_files' folder_name %}"
+               class="btn btn-secondary w-min py-0 fw-bold">
+                Back
+            </a>
+            <button id="refresh-btn" class="btn btn-primary w-min py-0 fw-bold">Refresh</button>
+            <a href="{% url 'logui:log_file_download' folder_name file_name %}"
+               class="btn btn-success w-min py-0 fw-bold" download>
+                Download
+            </a>
+            <div class="form-check ms-3">
+                <input class="form-check-input" type="checkbox" value="" id="auto-scroll-checkbox" checked>
+                <label class="form-check-label" for="auto-scroll-checkbox">
+                    Auto-scroll
+                </label>
+            </div>
+        </div>
+
+        <!-- Радио-кнопки для выбора интервала обновления -->
+        <div class="">
+            <label class="form-label me-3">Update Interval:</label>
+            <div class="fr flex-wrap gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="update-interval" value="100" id="interval-100ms">
+                    <label class="form-check-label" for="interval-100ms">100ms</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="update-interval" value="500" id="interval-500ms">
+                    <label class="form-check-label" for="interval-500ms">500ms</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="update-interval" value="1000" id="interval-1s"
+                           checked>
+                    <label class="form-check-label" for="interval-1s">1s</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="update-interval" value="2000" id="interval-2s">
+                    <label class="form-check-label" for="interval-2s">2s</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="update-interval" value="5000" id="interval-5s">
+                    <label class="form-check-label" for="interval-5s">5s</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="update-interval" value="0" id="interval-off">
+                    <label class="form-check-label" for="interval-off">Off</label>
+                </div>
+            </div>
+        </div>
+
+
+        <pre id="log-content" class="my-2 fc rounded-4"
+             style="filter: invert(1);">
+            <code id="log-code" class="rounded-4 py-0 overflow-y-auto no-scrollbar"
+                  style="text-wrap: balance;">
+                {{ log_content }}
+            </code>
+        </pre>
+    </div>
+
+    <script>
+        let updateInterval = 1000;  // Изначальный интервал 1с
+        let intervalId = null;  // Идентификатор таймера
+        let isFetching = false;  // Флаг для предотвращения запуска нового запроса до завершения предыдущего
+
+        // Прокрутка к концу содержимого
+        function scrollToBottom() {
+            const logCode = document.getElementById('log-code');
+            logCode.scrollTop = logCode.scrollHeight;
+        }
+
+        // Функция для обновления содержимого файла
+        async function fetchLogContent() {
+            // Проверяем, не идет ли уже запрос
+            if (isFetching) return;
+            isFetching = true;
+
+            const url = "{% url 'logui:api_log_file' folder_name file_name %}";
+            try {
+                const response = await Client.sendGet(url, {});
+                const codeBlock = document.getElementById('log-code');
+
+                // Вставляем обновленный контент в блок <code>
+                codeBlock.textContent = response.data.log_content;
+
+                // Обновляем подсветку синтаксиса только для этого блока
+                hljs.highlightElement(codeBlock);
+
+                // Если включен авто-скролл, прокручиваем вниз
+                const autoScrollEnabled = document.getElementById('auto-scroll-checkbox').checked;
+                if (autoScrollEnabled) {
+                    scrollToBottom();
+                }
+            } catch (error) {
+                console.error('Error fetching log content:', error);
+            } finally {
+                isFetching = false;  // Запрос завершен
+            }
+        }
+
+        // Устанавливаем интервал для обновления содержимого
+        function setUpdateInterval() {
+            if (intervalId) clearInterval(intervalId);  // Очищаем предыдущий таймер
+
+            if (updateInterval > 0) {
+                intervalId = setInterval(fetchLogContent, updateInterval);
+            }
+        }
+
+        // Слушаем выбор радиокнопок для изменения интервала обновления
+        document.querySelectorAll('input[name="update-interval"]').forEach((radio) => {
+            radio.addEventListener('change', function () {
+                updateInterval = parseInt(this.value);
+                if (updateInterval === 0) {
+                    clearInterval(intervalId);  // Останавливаем обновление, если выбрано "Off"
+                } else {
+                    setUpdateInterval();  // Устанавливаем новый интервал
+                }
+            });
+        });
+
+        // Прокручиваем вниз при первой загрузке
+        document.addEventListener('DOMContentLoaded', () => {
+            scrollToBottom();
+        });
+
+        // Обновляем содержимое при нажатии на кнопку "Refresh"
+        document.getElementById('refresh-btn').addEventListener('click', fetchLogContent);
+
+        // Изначально запускаем обновление с интервалом 1с
+        setUpdateInterval();
+    </script>
+{% endblock %}
