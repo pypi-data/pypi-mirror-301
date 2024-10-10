@@ -1,0 +1,2 @@
+[console_scripts]
+keys = keyslib.cli.cli:keys
