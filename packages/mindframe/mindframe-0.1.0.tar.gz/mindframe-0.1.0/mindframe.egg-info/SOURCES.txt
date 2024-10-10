@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mindframe/__init__.py
+mindframe/main.py
+mindframe.egg-info/PKG-INFO
+mindframe.egg-info/SOURCES.txt
+mindframe.egg-info/dependency_links.txt
+mindframe.egg-info/top_level.txt
