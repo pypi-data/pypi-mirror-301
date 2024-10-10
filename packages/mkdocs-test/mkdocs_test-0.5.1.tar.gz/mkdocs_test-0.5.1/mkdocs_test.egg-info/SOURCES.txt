@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+mkdocs_test/__init__.py
+mkdocs_test/common.py
+mkdocs_test/plugin.py
+mkdocs_test.egg-info/PKG-INFO
+mkdocs_test.egg-info/SOURCES.txt
+mkdocs_test.egg-info/dependency_links.txt
+mkdocs_test.egg-info/entry_points.txt
+mkdocs_test.egg-info/requires.txt
+mkdocs_test.egg-info/top_level.txt
+test/test_simple.py

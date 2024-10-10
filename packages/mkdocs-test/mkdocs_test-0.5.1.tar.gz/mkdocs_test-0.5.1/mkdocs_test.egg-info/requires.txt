@@ -1,0 +1,7 @@
+beautifulsoup4
+markdown
+pandas
+
+[test]
+pytest>=7.0
+toml-cli
