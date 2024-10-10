@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pp_recordio/__init__.py
+pp_recordio/pp_recordio.py
+pp_recordio/pp_recordio_lib.so
+pp_recordio/pp_recordio_lib_darwin_amd64.so
+pp_recordio/pp_recordio_lib_darwin_arm64.so
+pp_recordio/pp_recordio_lib_linux_amd64.so
+pp_recordio/pp_recordio_lib_linux_arm64.so
+pp_recordio/pp_recordio_test.py
+pp_recordio.egg-info/PKG-INFO
+pp_recordio.egg-info/SOURCES.txt
+pp_recordio.egg-info/dependency_links.txt
+pp_recordio.egg-info/top_level.txt
