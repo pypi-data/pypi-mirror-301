@@ -1,0 +1,2 @@
+[console_scripts]
+sql-antipattern-scanner = sql_antipattern_scanner.cli:main
