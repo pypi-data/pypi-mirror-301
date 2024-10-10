@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jpmodel
+Version: 0.0.1
+Home-page: 
+Author: jongseo_park
+Author-email: jongsaeu@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: rdkit
+Requires-Dist: torch
+Requires-Dist: torch_geometric
