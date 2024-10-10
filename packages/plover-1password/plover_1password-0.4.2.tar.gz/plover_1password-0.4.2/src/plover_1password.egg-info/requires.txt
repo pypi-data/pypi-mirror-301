@@ -1,0 +1,12 @@
+plover>=4.0.0.dev12
+onepassword-sdk>=0.1.2
+
+[test]
+coverage
+mypy
+onepassword-sdk
+pylint
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
