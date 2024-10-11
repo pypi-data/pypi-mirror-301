@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dqchecker
+Version: 0.0.1
+Summary: Airflow package to check data quality
+Home-page: https://github.com/folknik/dqchecker
+Author: Alexey Fadeev
+Author-email: Alexey Fadeev <fadeev1087@gmail.com>
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2-binary
+Requires-Dist: prometheus-client
+Requires-Dist: pyyaml
+
