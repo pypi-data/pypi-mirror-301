@@ -1,0 +1,4 @@
+ 
+# xinfer module
+
+::: xinfer.xinfer

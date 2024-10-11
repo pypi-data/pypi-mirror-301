@@ -1,0 +1,12 @@
+numpy
+rich
+requests
+
+[all]
+xinfer[extra]
+
+[extra]
+rich
+
+[transformers]
+transformers
