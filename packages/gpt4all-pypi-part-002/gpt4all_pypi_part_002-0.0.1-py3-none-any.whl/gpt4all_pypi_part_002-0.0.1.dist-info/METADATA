@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gpt4all-pypi-part-002
+Version: 0.0.1
+Summary: Package with binary files and subfolders
+Requires-Dist: gpt4all-pypi-part-001 ==0.0.1
+
