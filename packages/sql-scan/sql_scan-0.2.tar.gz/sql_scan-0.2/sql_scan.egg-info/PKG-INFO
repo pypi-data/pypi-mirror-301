@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sql-scan
+Version: 0.2
+Summary: SQL file processing package for extracting table names and WHERE conditions
+Author: Meghsham Jambhulkar
+Author-email: meghshamofficial@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: sqlparse

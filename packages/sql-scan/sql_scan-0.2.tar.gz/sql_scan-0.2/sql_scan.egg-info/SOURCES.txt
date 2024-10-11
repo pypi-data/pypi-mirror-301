@@ -1,0 +1,15 @@
+LICENSE
+pyproject.toml
+setup.py
+sql_scan/__init__.py
+sql_scan/file_writer.py
+sql_scan/formatter.py
+sql_scan/name_cleaner.py
+sql_scan/table_extractor.py
+sql_scan/where_extractor.py
+sql_scan.egg-info/PKG-INFO
+sql_scan.egg-info/SOURCES.txt
+sql_scan.egg-info/dependency_links.txt
+sql_scan.egg-info/entry_points.txt
+sql_scan.egg-info/requires.txt
+sql_scan.egg-info/top_level.txt
