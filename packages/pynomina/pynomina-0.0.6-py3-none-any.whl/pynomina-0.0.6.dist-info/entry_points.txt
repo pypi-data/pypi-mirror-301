@@ -1,0 +1,2 @@
+[console_scripts]
+nomina = nomina.nomina_cmd:main
