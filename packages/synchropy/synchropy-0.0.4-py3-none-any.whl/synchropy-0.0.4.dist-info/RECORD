@@ -1,0 +1,9 @@
+synchro/__init__.py,sha256=448irLtr3jn8Wt3ev-ld0y1PcHb_-pIeANMkJv7t7CE,81
+synchro/channel.py,sha256=mn4blY0RUY_HAbWyFRBy4wvJCNlDaI0o9-x8lXVn4Es,171
+synchro/fifo.py,sha256=M9EYPu9Odr_uBBoZ7D4B22Nt5nclLZEIMy0ZDRDRocQ,692
+synchro/threads.py,sha256=BcddJYZr3k4jl87NjPy0ex0jNbEIyOccnoewt2RqXBc,261
+synchropy-0.0.4.dist-info/LICENSE,sha256=tLe2OLzU0cSjRv8s391DLPWJPN2dCh3wquvZcF3IXnQ,11551
+synchropy-0.0.4.dist-info/METADATA,sha256=ZVvaGUEDhCUWdA5YSHRUX2jebejonJfHCll8YxO1vZk,14017
+synchropy-0.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+synchropy-0.0.4.dist-info/top_level.txt,sha256=Q-9w3zO1KpleFU9ZLxIWAyDBpr2kaGEvU-0v50K4lc0,8
+synchropy-0.0.4.dist-info/RECORD,,
