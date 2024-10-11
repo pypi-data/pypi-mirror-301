@@ -1,0 +1,48 @@
+New features
+============
+This is the first release of Brython 3.13, adapted to the changes introduced
+in Python 3.13.
+
+Implementation
+==============
+- implement PEP 696 : Type Defaults for Type Parameters
+- implement class attribute __firstlineno__
+
+Internal tools
+==============
+
+
+Bug fixes
+=========
+- fix bug with attribute "clear" of DOM nodes
+- fix bug when argument of a JS function is null
+
+Issues
+- #2489 : the function call of hasattr with an instance of HTMLNode as first
+  parameter does not behave as expected
+- #2493 : importing the http module raises an error
+- #2494 : bug in closure when reusing/masking variable names
+- #2495 : calling the closest method of an HTML element results in a strange
+  error
+
+Brython site
+============
+
+Github site
+===========
+
+
+Demos
+=====
+
+
+Standard distribution
+=====================
+- implement math.fma (copied from
+  https://gist.github.com/Yaffle/fb47de4c18b63147699e0b621f1031f7)
+- remove "dead batteries" nntplib.py and uu.py (PEP 594)
+- enable multiline editing in interpreter (3.13 feature)
+
+Documentation
+=============
+
