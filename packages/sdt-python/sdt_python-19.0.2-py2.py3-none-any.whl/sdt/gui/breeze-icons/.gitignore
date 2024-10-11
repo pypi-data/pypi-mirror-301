@@ -1,0 +1,12 @@
+# Compiled source #
+###################
+*.directory
+*.bak
+*thumbs.db
+dist
+node_modules
+.cmake/
+compile_commands.json
+build/
+xmlerrors
+/.clang-format
