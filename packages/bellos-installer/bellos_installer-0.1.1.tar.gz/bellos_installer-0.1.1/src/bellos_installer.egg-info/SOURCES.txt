@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+git_scripts/.gitignore
+src/.gitignore
+src/bellos_installer/__init__.py
+src/bellos_installer/bellos_installer.py
+src/bellos_installer.egg-info/PKG-INFO
+src/bellos_installer.egg-info/SOURCES.txt
+src/bellos_installer.egg-info/dependency_links.txt
+src/bellos_installer.egg-info/entry_points.txt
+src/bellos_installer.egg-info/requires.txt
+src/bellos_installer.egg-info/top_level.txt
