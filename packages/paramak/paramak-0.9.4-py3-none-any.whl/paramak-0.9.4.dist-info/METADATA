@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: paramak
+Version: 0.9.4
+Summary: Create 3D fusion reactor CAD models based on input parameters
+Author: The Paramak Development Team
+Project-URL: Homepage, https://github.com/fusion-energy/paramak
+Project-URL: Bug Tracker, https://github.com/fusion-energy/paramak/issues
+Project-URL: Documentation, https://paramak.readthedocs.io
+Keywords: python,geometry,reactor,model,cad,fusion,parametric,dagmc,openmc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cadquery
+Requires-Dist: numpy <=1.26.4
+Requires-Dist: mpmath
+Requires-Dist: sympy
+Requires-Dist: scipy
+Provides-Extra: docs
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: openmc-data-downloader ; extra == 'docs'
+Requires-Dist: sphinxcadquery ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme ; extra == 'docs'
+Requires-Dist: cadquery ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest >=5.4.3 ; extra == 'tests'
+Requires-Dist: pytest-cov >=2.12.1 ; extra == 'tests'
+Requires-Dist: dagmc-h5m-file-inspector >=0.5.0 ; extra == 'tests'
+Requires-Dist: openmc-data-downloader ; extra == 'tests'
+
+
+[![N|Python](https://www.python.org/static/community_logos/python-powered-w-100x40.png)](https://www.python.org)
+
+[![CI testing](https://github.com/fusion-energy/paramak/actions/workflows/ci.yml/badge.svg)](https://github.com/fusion-energy/paramak/actions/workflows/ci.yml)
+
+[![documentation release](https://github.com/fusion-energy/paramak/actions/workflows/documentation_update.yml/badge.svg)](https://github.com/fusion-energy/paramak/actions/workflows/documentation_update.yml)
+
+[![PyPI release](https://github.com/fusion-energy/paramak/actions/workflows/python-publish.yml/badge.svg)](https://github.com/fusion-energy/paramak/actions/workflows/python-publish.yml)
+
+
+# Paramak
+
+Paramak python package allows rapid production of 3D CAD models and neutronics
+models of fusion reactors.
+
+The purpose of Paramak is to provide geometry for parameter studies and therefore the models are created from parameters.
+
+Paramak produces [CadQuery](https://github.com/CadQuery/CadQuery) objects which can easily be saved to CAD files in several formats (STEP, STL, BRep) and also readily convertable to DAGMC h5m neutronics geometry using tools such as [Cad-to_DAGMC](https://github.com/fusion-energy/cad_to_dagmc).
+
+:point_right: Please see the [online documentation](https://fusion-energy.github.io/paramak) for installation, usage and API documentation.
