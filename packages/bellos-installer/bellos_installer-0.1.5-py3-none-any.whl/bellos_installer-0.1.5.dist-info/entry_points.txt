@@ -1,0 +1,2 @@
+[console_scripts]
+bellos_installer = bellos_installer.bellos_installer:main
