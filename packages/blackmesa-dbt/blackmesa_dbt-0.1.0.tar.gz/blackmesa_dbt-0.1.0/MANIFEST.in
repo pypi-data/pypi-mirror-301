@@ -1,0 +1,5 @@
+recursive-include blackmesa_dbt/models *
+recursive-include blackmesa_dbt/seeds *
+exclude blackmesa_dbt/seeds/cases.csv
+include blackmesa_dbt/dbt_project.yml
+include blackmesa_dbt/profiles.yml
