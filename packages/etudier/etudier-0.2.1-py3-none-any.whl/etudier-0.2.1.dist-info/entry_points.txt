@@ -1,0 +1,2 @@
+[console_scripts]
+etudier = etudier:main
