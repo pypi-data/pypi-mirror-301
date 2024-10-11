@@ -1,0 +1,8 @@
+mkdocs_exclude_notused/__init__.py,sha256=bgW0qHFGT-JgT_XGXwF_xAYMlhczVus7-iAfeFFMW5E,34
+mkdocs_exclude_notused/plugin.py,sha256=O-7mSeaXi9WmEIdJKPtMqKUzs1WJgsXyOOStIaYHqcs,1318
+mkdocs_exclude_notused-1.5.0.dist-info/LICENSE,sha256=6VOYgNzioJKeEBt7WV4IwYYDB8qPD7x_pf0tywhz7Ek,1067
+mkdocs_exclude_notused-1.5.0.dist-info/METADATA,sha256=qLruV_pBkfFIRP6vzv9rj9ISZ8YGEE588ltNUIaYow4,803
+mkdocs_exclude_notused-1.5.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mkdocs_exclude_notused-1.5.0.dist-info/entry_points.txt,sha256=taSB4Eq6sIH5vTzeJuGknwXiT7biuVOt5HLnmwj7WWc,80
+mkdocs_exclude_notused-1.5.0.dist-info/top_level.txt,sha256=oc36XQFf7Smr_67GL50VYsPnAm9oERV_tCWRLmXa-JY,23
+mkdocs_exclude_notused-1.5.0.dist-info/RECORD,,
