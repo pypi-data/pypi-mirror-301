@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: py-prompt-ai
+Version: 0.0.1
+Summary: An easy to use prompt manager for AI projects
+Home-page: https://github.com/InfrastructureSystem/py-prompt-ai
+Author: Evan Straub
+Author-email: estraub@infrastructure-system.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: jinja2>=3.0.0
