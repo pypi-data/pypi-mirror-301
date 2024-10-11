@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+smart_segment/__init__.py
+smart_segment/optimization.py
+smart_segment/segmentation.py
+smart_segment/utils.py
+smart_segment.egg-info/PKG-INFO
+smart_segment.egg-info/SOURCES.txt
+smart_segment.egg-info/dependency_links.txt
+smart_segment.egg-info/requires.txt
+smart_segment.egg-info/top_level.txt
+tests/__init__.py
+tests/test_optimization.py
+tests/test_segmentation.py
+tests/test_utils.py
