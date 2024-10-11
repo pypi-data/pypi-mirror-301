@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "liteai"
+version = "0.1.0"
+packages = [{include = "liteai"}]
+
+[tool.poetry.scripts]
+your_command = "your_package.module:function"

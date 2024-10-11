@@ -1,0 +1,58 @@
+[project]
+name = "liteai"
+version = "0.2.0"
+description = "lite ai client"
+requires-python = ">=3.10"
+dependencies = [
+"openai>=1.4.1",
+"zhipuai>=2.1.4.20230812",
+"pillow",
+"requests",
+"python-dotenv",
+"python-snippets",
+
+
+
+
+pillow
+requests
+python-dotenv
+python-snippets
+
+
+# llm api
+openai
+zhipuai
+dashscope
+volcengine-python-sdk[ark]
+
+# 聚合包
+litellm
+
+# 语音相关
+pydub
+# simpleaudio
+]
+authors = [{ name = "jerry", email = "jerrychen1990@gmail.com" }]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+[tool.hatch.build.targets.wheel]
+packages = ["snippets"]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 140 # 代码最大行宽
+select = [ # 选择的规则
+    "F",
+    "E",
+    "W",
+    "UP",
+]
+ignore = ["F401", "F405", "UP009", "F403", "F541"] # 忽略的规则

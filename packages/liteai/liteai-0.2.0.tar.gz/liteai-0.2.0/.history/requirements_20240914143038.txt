@@ -1,0 +1,24 @@
+# 基础包
+loguru
+pillow
+requests
+python-dotenv
+python-snippets
+
+
+# llm api
+openai
+zhipuai
+dashscope
+volcengine-python-sdk[ark]
+
+# 聚合包
+litellm
+
+# 语音相关
+pydub
+# simpleaudio
+
+
+
+

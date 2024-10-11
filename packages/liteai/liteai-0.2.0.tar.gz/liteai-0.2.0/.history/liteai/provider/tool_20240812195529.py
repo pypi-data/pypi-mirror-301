@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@Time    :   2024/08/12 19:54:53
+@Author  :   ChenHao
+@Description  :   工具类
+@Contact :   jerrychen1990@gmail.com
+'''
+
+
+from typing import Callable
+
+from liteai.core import ToolDesc
+
+
+class BaseTool(ToolDesc):
+    callable: Callable = Field(..., description="工具执行函数")
+
+    def execute(self, *args, **kwargs) -> Any:
+        return self.callable(*args, **kwargs)
