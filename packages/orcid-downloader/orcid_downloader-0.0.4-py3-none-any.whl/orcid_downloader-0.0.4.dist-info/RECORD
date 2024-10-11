@@ -1,0 +1,16 @@
+orcid_downloader/__init__.py,sha256=uJZSJKEGinUImxtsw7iCLcTwKehn_yOssp3PtqAitlo,70
+orcid_downloader/api.py,sha256=C_PBQVP4_3zKoif5t8sJ3JO6oOXsih1eB31tO6uDKCQ,39530
+orcid_downloader/lexical.py,sha256=INVmq6c5smp4_njHf04tM98XEfWWpGibXuL3tobP_uI,6524
+orcid_downloader/name_utils.py,sha256=Qe8kQVD7qrwgdRpWfEQrj2nqPLz0hCRD9YYXOP7YQnw,4578
+orcid_downloader/owl.py,sha256=g3ljyE-CJuRFyZyBJ0FjrveGnQmWcPs62LBbBkLc3kQ,4712
+orcid_downloader/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+orcid_downloader/ror.py,sha256=bQ40T0KVwiXfpPywZjxjiWdHVJclEFiAwMYUW7HcQ8g,1158
+orcid_downloader/sqldb.py,sha256=P4IWUSq5z0C1p6V9IbaPWUUloOcUSRbGvEmglaeekiE,7727
+orcid_downloader/standardize.py,sha256=u0JHFN_MmhbuoDLNiSMsbCAZbfLkLKBr_Qrp-Z-qbVU,21568
+orcid_downloader/version.py,sha256=JonDDEQLCI8V41h1pQag6ypg8b-YT4DtjIjI-Ph8zgo,989
+orcid_downloader/wikidata.py,sha256=7dEG4FQJ_8rkR-8YPrKag5zS7EjbmxFQtpETnPecmfw,2162
+orcid_downloader-0.0.4.dist-info/LICENSE,sha256=V2QvCSXVRoRifz9OL3vFmQVAgqxsi69rFIbEDBp73Do,1076
+orcid_downloader-0.0.4.dist-info/METADATA,sha256=GGkbstBsvUkWlLlvewz9IGvUOFT8nRnRDMVumn-QGrg,14617
+orcid_downloader-0.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+orcid_downloader-0.0.4.dist-info/top_level.txt,sha256=XVvaTUdZcOhL7aENFKbpAq3UORJFwGGem-Aia50Y_xs,17
+orcid_downloader-0.0.4.dist-info/RECORD,,
