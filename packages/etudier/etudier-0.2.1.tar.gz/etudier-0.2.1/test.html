@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+
+<!--
+
+This Google Scholar network visualization was generated with
+https://github.com/edsu/etudier using the following command:
+
+% etudier --pages 1 --output test https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7260188836062494273
+
+--> 
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+      }
+
+      text {
+        font-family: sans-serif;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script>
+      var graph = {
+  "nodes": [
+    {
+      "label": "Dissociating language and thought in large language models",
+      "id": "16937631969605886569",
+      "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(24)00027-5",
+      "title": "Dissociating language and thought in large language models",
+      "authors": "K Mahowald, AA Ivanova, IA Blank, N Kanwisher\u2026",
+      "year": "2024",
+      "cited_by": 335,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16937631969605886569&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Evaluating verifiability in generative search engines",
+      "id": "7260188836062494273",
+      "title": "Evaluating verifiability in generative search engines",
+      "cited_by": 160,
+      "modularity": 0
+    },
+    {
+      "label": "Using large language models in psychology",
+      "id": "9887723550900807200",
+      "url": "https://www.nature.com/articles/s44159-023-00241-5",
+      "title": "Using large language models in psychology",
+      "authors": "D Demszky, D Yang, DS Yeager, CJ Bryan\u2026",
+      "year": "2023",
+      "cited_by": 132,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9887723550900807200&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Symbols and grounding in large language models",
+      "id": "13617115593134659255",
+      "url": "https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2022.0041",
+      "title": "Symbols and grounding in large language models",
+      "authors": "E Pavlick",
+      "year": "2023",
+      "cited_by": 76,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13617115593134659255&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Sparks of artificial general intelligence: Early experiments with gpt-4",
+      "id": "8758279725124918951",
+      "url": "https://arxiv.org/abs/2303.12712",
+      "title": "Sparks of artificial general intelligence: Early experiments with gpt-4",
+      "authors": "S Bubeck, V Chandrasekaran, R Eldan\u2026",
+      "year": "2023",
+      "cited_by": 2873,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8758279725124918951&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Gpt-4 passes the bar exam",
+      "id": "15823019128814792922",
+      "url": "https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2023.0254",
+      "title": "Gpt-4 passes the bar exam",
+      "authors": "DM Katz, MJ Bommarito, S Gao\u2026",
+      "year": "2024",
+      "cited_by": 366,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15823019128814792922&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "A categorical archive of chatgpt failures",
+      "id": "12152905247193975990",
+      "url": "https://arxiv.org/abs/2302.03494",
+      "title": "A categorical archive of chatgpt failures",
+      "authors": "A Borji",
+      "year": "2023",
+      "cited_by": 458,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12152905247193975990&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Emergent analogical reasoning in large language models",
+      "id": "4012435051513089306",
+      "url": "https://www.nature.com/articles/s41562-023-01659-w",
+      "title": "Emergent analogical reasoning in large language models",
+      "authors": "T Webb, KJ Holyoak, H Lu",
+      "year": "2023",
+      "cited_by": 295,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4012435051513089306&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "The debate over understanding in AI's large language models",
+      "id": "8268872002641691216",
+      "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2215907120",
+      "title": "The debate over understanding in AI's large language models",
+      "authors": "M Mitchell, DC Krakauer",
+      "year": "2023",
+      "cited_by": 226,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8268872002641691216&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Llm+ p: Empowering large language models with optimal planning proficiency",
+      "id": "5844001081387208038",
+      "url": "https://arxiv.org/abs/2304.11477",
+      "title": "Llm+ p: Empowering large language models with optimal planning proficiency",
+      "authors": "B Liu, Y Jiang, X Zhang, Q Liu, S Zhang\u2026",
+      "year": "2023",
+      "cited_by": 274,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5844001081387208038&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Chatgpt beyond english: Towards a comprehensive evaluation of large language models in multilingual learning",
+      "id": "1839300589730483135",
+      "url": "https://arxiv.org/abs/2304.05613",
+      "title": "Chatgpt beyond english: Towards a comprehensive evaluation of large language models in multilingual learning",
+      "authors": "VD Lai, NT Ngo, APB Veyseh, H Man\u2026",
+      "year": "2023",
+      "cited_by": 186,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1839300589730483135&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Grounding large language models in interactive environments with online reinforcement learning",
+      "id": "830649740635169289",
+      "url": "https://proceedings.mlr.press/v202/carta23a.html",
+      "title": "Grounding large language models in interactive environments with online reinforcement learning",
+      "authors": "T Carta, C Romac, T Wolf, S Lamprier\u2026",
+      "year": "2023",
+      "cited_by": 116,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=830649740635169289&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 1
+    },
+    {
+      "label": "Opportunities and challenges for ChatGPT and large language models in biomedicine and health",
+      "id": "3718677179435127430",
+      "url": "https://academic.oup.com/bib/article-abstract/25/1/bbad493/7505071",
+      "title": "Opportunities and challenges for ChatGPT and large language models in biomedicine and health",
+      "authors": "S Tian, Q Jin, L Yeganova, PT Lai, Q Zhu\u2026",
+      "year": "2024",
+      "cited_by": 137,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3718677179435127430&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "The breakthrough of large language models release for medical applications: 1-year timeline and perspectives",
+      "id": "4182961117189114164",
+      "url": "https://link.springer.com/article/10.1007/s10916-024-02045-3",
+      "title": "The breakthrough of large language models release for medical applications: 1-year timeline and perspectives",
+      "authors": "M Cascella, F Semeraro, J Montomoli, V Bellini\u2026",
+      "year": "2024",
+      "cited_by": 36,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4182961117189114164&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Large language models in healthcare and medical domain: A review",
+      "id": "18151771043590239118",
+      "url": "https://www.mdpi.com/2227-9709/11/3/57",
+      "title": "Large language models in healthcare and medical domain: A review",
+      "authors": "ZA Nazi, W Peng",
+      "year": "2024",
+      "cited_by": 17,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18151771043590239118&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Genegpt: Augmenting large language models with domain tools for improved access to biomedical information",
+      "id": "15010696175911896134",
+      "url": "https://academic.oup.com/bioinformatics/article-abstract/40/2/btae075/7606338",
+      "title": "Genegpt: Augmenting large language models with domain tools for improved access to biomedical information",
+      "authors": "Q Jin, Y Yang, Q Chen, Z Lu",
+      "year": "2024",
+      "cited_by": 88,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15010696175911896134&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Improving large language models for clinical named entity recognition via prompt engineering",
+      "id": "9003410693487547568",
+      "url": "https://academic.oup.com/jamia/advance-article-abstract/doi/10.1093/jamia/ocad259/7590607",
+      "title": "Improving large language models for clinical named entity recognition via prompt engineering",
+      "authors": "Y Hu, Q Chen, J Du, X Peng, VK Keloth\u2026",
+      "year": "2024",
+      "cited_by": 57,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9003410693487547568&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Matching patients to clinical trials with large language models",
+      "id": "7235516420110993237",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10418514/",
+      "title": "Matching patients to clinical trials with large language models",
+      "authors": "Q Jin, Z Wang, CS Floudas, F Chen, C Gong\u2026",
+      "year": "2023",
+      "cited_by": 48,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7235516420110993237&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Taiyi: a bilingual fine-tuned large language model for diverse biomedical tasks",
+      "id": "7073830555641765587",
+      "url": "https://academic.oup.com/jamia/advance-article-abstract/doi/10.1093/jamia/ocae037/7616487",
+      "title": "Taiyi: a bilingual fine-tuned large language model for diverse biomedical tasks",
+      "authors": "L Luo, J Ning, Y Zhao, Z Wang, Z Ding\u2026",
+      "year": "2024",
+      "cited_by": 26,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7073830555641765587&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "PubMed and beyond: biomedical literature search in the age of artificial intelligence",
+      "id": "11660532880683595571",
+      "url": "https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(24)00023-9/fulltext",
+      "title": "PubMed and beyond: biomedical literature search in the age of artificial intelligence",
+      "authors": "Q Jin, R Leaman, Z Lu",
+      "year": "2024",
+      "cited_by": 19,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11660532880683595571&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Performance of chatgpt across different versions in medical licensing examinations worldwide: Systematic review and meta-analysis",
+      "id": "17658431127869875250",
+      "url": "https://www.jmir.org/2024/1/e60807/",
+      "title": "Performance of chatgpt across different versions in medical licensing examinations worldwide: Systematic review and meta-analysis",
+      "authors": "M Liu, T Okuhara, XY Chang, R Shirabe\u2026",
+      "year": "2024",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17658431127869875250&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge",
+      "id": "4591095664860373070",
+      "url": "https://academic.oup.com/nar/advance-article-abstract/doi/10.1093/nar/gkae235/7640526",
+      "title": "PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge",
+      "authors": "CH Wei, A Allot, PT Lai, R Leaman, S Tian\u2026",
+      "year": "2024",
+      "cited_by": 19,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4591095664860373070&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Uncover this tech term: foundation model",
+      "id": "11014023359417278121",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10550749/",
+      "title": "Uncover this tech term: foundation model",
+      "authors": "KH Jung",
+      "year": "2023",
+      "cited_by": 20,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11014023359417278121&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 2
+    },
+    {
+      "label": "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+      "id": "11955024365518501857",
+      "url": "https://arxiv.org/abs/2305.14251",
+      "title": "Factscore: Fine-grained atomic evaluation of factual precision in long form text generation",
+      "authors": "S Min, K Krishna, X Lyu, M Lewis, W Yih\u2026",
+      "year": "2023",
+      "cited_by": 306,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11955024365518501857&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "A survey on evaluation of large language models",
+      "id": "3625720365842685347",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3641289",
+      "title": "A survey on evaluation of large language models",
+      "authors": "Y Chang, X Wang, J Wang, Y Wu, L Yang\u2026",
+      "year": "2024",
+      "cited_by": 1300,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3625720365842685347&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Cognitive mirage: A review of hallucinations in large language models",
+      "id": "17076439280458156187",
+      "url": "https://arxiv.org/abs/2309.06794",
+      "title": "Cognitive mirage: A review of hallucinations in large language models",
+      "authors": "H Ye, T Liu, A Zhang, W Hua, W Jia",
+      "year": "2023",
+      "cited_by": 78,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17076439280458156187&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Siren's song in the AI ocean: a survey on hallucination in large language models",
+      "id": "1614807179983009071",
+      "url": "https://arxiv.org/abs/2309.01219",
+      "title": "Siren's song in the AI ocean: a survey on hallucination in large language models",
+      "authors": "Y Zhang, Y Li, L Cui, D Cai, L Liu, T Fu\u2026",
+      "year": "2023",
+      "cited_by": 607,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1614807179983009071&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+      "id": "13722137582486319378",
+      "url": "https://arxiv.org/abs/2303.08896",
+      "title": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+      "authors": "P Manakul, A Liusie, MJF Gales",
+      "year": "2023",
+      "cited_by": 435,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13722137582486319378&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+      "id": "17212297856420608352",
+      "url": "https://arxiv.org/abs/2311.05232",
+      "title": "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+      "authors": "L Huang, W Yu, W Ma, W Zhong, Z Feng\u2026",
+      "year": "2023",
+      "cited_by": 446,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17212297856420608352&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Chain-of-verification reduces hallucination in large language models",
+      "id": "5213298442364780829",
+      "url": "https://arxiv.org/abs/2309.11495",
+      "title": "Chain-of-verification reduces hallucination in large language models",
+      "authors": "S Dhuliawala, M Komeili, J Xu, R Raileanu, X Li\u2026",
+      "year": "2023",
+      "cited_by": 202,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5213298442364780829&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Aligning large language models with human: A survey",
+      "id": "2762352632434587623",
+      "url": "https://arxiv.org/abs/2307.12966",
+      "title": "Aligning large language models with human: A survey",
+      "authors": "Y Wang, W Zhong, L Li, F Mi, X Zeng, W Huang\u2026",
+      "year": "2023",
+      "cited_by": 210,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2762352632434587623&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Large language models: A survey",
+      "id": "2735466021227840922",
+      "url": "https://arxiv.org/abs/2402.06196",
+      "title": "Large language models: A survey",
+      "authors": "S Minaee, T Mikolov, N Nikzad, M Chenaghlu\u2026",
+      "year": "2024",
+      "cited_by": 235,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2735466021227840922&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Survey on factuality in large language models: Knowledge, retrieval and domain-specificity",
+      "id": "14854019000652979716",
+      "url": "https://arxiv.org/abs/2310.07521",
+      "title": "Survey on factuality in large language models: Knowledge, retrieval and domain-specificity",
+      "authors": "C Wang, X Liu, Y Yue, X Tang, T Zhang\u2026",
+      "year": "2023",
+      "cited_by": 129,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14854019000652979716&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Fine-grained human feedback gives better rewards for language model training",
+      "id": "5829217399111228605",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/b8c90b65739ae8417e61eadb521f63d5-Abstract-Conference.html",
+      "title": "Fine-grained human feedback gives better rewards for language model training",
+      "authors": "Z Wu, Y Hu, W Shi, N Dziri, A Suhr\u2026",
+      "year": "2024",
+      "cited_by": 54,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5829217399111228605&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Enabling large language models to generate text with citations",
+      "id": "14324932854487086731",
+      "url": "https://arxiv.org/abs/2305.14627",
+      "title": "Enabling large language models to generate text with citations",
+      "authors": "T Gao, H Yen, J Yu, D Chen",
+      "year": "2023",
+      "cited_by": 165,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14324932854487086731&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Combating misinformation in the age of llms: Opportunities and challenges",
+      "id": "10544112972634639410",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/aaai.12188",
+      "title": "Combating misinformation in the age of llms: Opportunities and challenges",
+      "authors": "C Chen, K Shu",
+      "year": "2023",
+      "cited_by": 77,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10544112972634639410&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Large language models for information retrieval: A survey",
+      "id": "13886427994278981669",
+      "url": "https://arxiv.org/abs/2308.07107",
+      "title": "Large language models for information retrieval: A survey",
+      "authors": "Y Zhu, H Yuan, S Wang, J Liu, W Liu, C Deng\u2026",
+      "year": "2023",
+      "cited_by": 189,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13886427994278981669&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Self-rag: Learning to retrieve, generate, and critique through self-reflection",
+      "id": "8898243279279799480",
+      "url": "https://arxiv.org/abs/2310.11511",
+      "title": "Self-rag: Learning to retrieve, generate, and critique through self-reflection",
+      "authors": "A Asai, Z Wu, Y Wang, A Sil, H Hajishirzi",
+      "year": "2023",
+      "cited_by": 236,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8898243279279799480&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Improving text embeddings with large language models",
+      "id": "15930016998314339614",
+      "url": "https://arxiv.org/abs/2401.00368",
+      "title": "Improving text embeddings with large language models",
+      "authors": "L Wang, N Yang, X Huang, L Yang\u2026",
+      "year": "2023",
+      "cited_by": 120,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15930016998314339614&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Automatic evaluation of attribution by large language models",
+      "id": "18178623228130928467",
+      "url": "https://arxiv.org/abs/2305.06311",
+      "title": "Automatic evaluation of attribution by large language models",
+      "authors": "X Yue, B Wang, Z Chen, K Zhang, Y Su\u2026",
+      "year": "2023",
+      "cited_by": 76,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18178623228130928467&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Adaptive chameleon or stubborn sloth: Revealing the behavior of large language models in knowledge conflicts",
+      "id": "10890282943822204487",
+      "url": "https://arxiv.org/abs/2305.13300",
+      "title": "Adaptive chameleon or stubborn sloth: Revealing the behavior of large language models in knowledge conflicts",
+      "authors": "J Xie, K Zhang, J Chen, R Lou, Y Su",
+      "year": "2023",
+      "cited_by": 66,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10890282943822204487&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Benchmarking large language models in retrieval-augmented generation",
+      "id": "3946244813554043217",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29728",
+      "title": "Benchmarking large language models in retrieval-augmented generation",
+      "authors": "J Chen, H Lin, X Han, L Sun",
+      "year": "2024",
+      "cited_by": 178,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3946244813554043217&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Retrieval-augmented generation for large language models: A survey",
+      "id": "9082880950785936523",
+      "url": "https://arxiv.org/abs/2312.10997",
+      "title": "Retrieval-augmented generation for large language models: A survey",
+      "authors": "Y Gao, Y Xiong, X Gao, K Jia, J Pan, Y Bi, Y Dai\u2026",
+      "year": "2023",
+      "cited_by": 625,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9082880950785936523&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "A comprehensive study of knowledge editing for large language models",
+      "id": "13305470411207019506",
+      "url": "https://arxiv.org/abs/2401.01286",
+      "title": "A comprehensive study of knowledge editing for large language models",
+      "authors": "N Zhang, Y Yao, B Tian, P Wang, S Deng\u2026",
+      "year": "2024",
+      "cited_by": 18,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13305470411207019506&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Large legal fictions: Profiling legal hallucinations in large language models",
+      "id": "3747114760917173301",
+      "url": "https://academic.oup.com/jla/article-abstract/16/1/64/7699227",
+      "title": "Large legal fictions: Profiling legal hallucinations in large language models",
+      "authors": "M Dahl, V Magesh, M Suzgun\u2026",
+      "year": "2024",
+      "cited_by": 45,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3747114760917173301&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Improving language models via plug-and-play retrieval feedback",
+      "id": "4008617626230499572",
+      "url": "https://arxiv.org/abs/2305.14002",
+      "title": "Improving language models via plug-and-play retrieval feedback",
+      "authors": "W Yu, Z Zhang, Z Liang, M Jiang\u2026",
+      "year": "2023",
+      "cited_by": 44,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4008617626230499572&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Retrieval-augmented generation for ai-generated content: A survey",
+      "id": "14452718092018481370",
+      "url": "https://arxiv.org/abs/2402.19473",
+      "title": "Retrieval-augmented generation for ai-generated content: A survey",
+      "authors": "P Zhao, H Zhang, Q Yu, Z Wang, Y Geng, F Fu\u2026",
+      "year": "2024",
+      "cited_by": 80,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14452718092018481370&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Ares: An automated evaluation framework for retrieval-augmented generation systems",
+      "id": "8307738739142450350",
+      "url": "https://arxiv.org/abs/2311.09476",
+      "title": "Ares: An automated evaluation framework for retrieval-augmented generation systems",
+      "authors": "J Saad-Falcon, O Khattab, C Potts\u2026",
+      "year": "2023",
+      "cited_by": 51,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8307738739142450350&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Crud-rag: A comprehensive chinese benchmark for retrieval-augmented generation of large language models",
+      "id": "15132728735043516149",
+      "url": "https://arxiv.org/abs/2401.17043",
+      "title": "Crud-rag: A comprehensive chinese benchmark for retrieval-augmented generation of large language models",
+      "authors": "Y Lyu, Z Li, S Niu, F Xiong, B Tang, W Wang\u2026",
+      "year": "2024",
+      "cited_by": 31,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15132728735043516149&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "A Survey of Mamba",
+      "id": "8988138336179158371",
+      "url": "https://arxiv.org/abs/2408.01129",
+      "title": "A Survey of Mamba",
+      "authors": "H Qu, L Ning, R An, W Fan, T Derr, X Xu\u2026",
+      "year": "2024",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8988138336179158371&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "NoMIRACL: Knowing When You Don't Know for Robust Multilingual Retrieval-Augmented Generation",
+      "id": "12688772212027279416",
+      "url": "https://arxiv.org/abs/2312.11361",
+      "title": "NoMIRACL: Knowing When You Don't Know for Robust Multilingual Retrieval-Augmented Generation",
+      "authors": "N Thakur, L Bonifacio, X Zhang, O Ogundepo\u2026",
+      "year": "2023",
+      "cited_by": 12,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12688772212027279416&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Leave no document behind: Benchmarking long-context llms with extended multi-doc qa",
+      "id": "888806300196541002",
+      "url": "https://arxiv.org/abs/2406.17419",
+      "title": "Leave no document behind: Benchmarking long-context llms with extended multi-doc qa",
+      "authors": "M Wang, L Chen, C Fu, S Liao, X Zhang, B Wu\u2026",
+      "year": "2024",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=888806300196541002&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 3
+    },
+    {
+      "label": "Ai transparency in the age of llms: A human-centered research roadmap",
+      "id": "9797160768031734077",
+      "url": "https://assets.pubpub.org/u7y5ridw/Liao%20&%20Wortman%20Vaughan%20(2024)_Just%20Accepted-21709226724512.pdf",
+      "title": "Ai transparency in the age of llms: A human-centered research roadmap",
+      "authors": "QV Liao, JW Vaughan",
+      "year": "2023",
+      "cited_by": 101,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9797160768031734077&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Knowledge editing for large language models: A survey",
+      "id": "7326234598760659447",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3698590",
+      "title": "Knowledge editing for large language models: A survey",
+      "authors": "S Wang, Y Zhu, H Liu, Z Zheng, C Chen, J Li",
+      "year": "2023",
+      "cited_by": 63,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7326234598760659447&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects",
+      "id": "9286063434044084759",
+      "url": "https://www.authorea.com/doi/full/10.36227/techrxiv.23589741.v6",
+      "title": "Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects",
+      "authors": "MU Hadi, Q Al Tashi, A Shah, R Qureshi\u2026",
+      "year": "2024",
+      "cited_by": 134,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9286063434044084759&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Trustllm: Trustworthiness in large language models",
+      "id": "13613213740114741930",
+      "url": "https://arxiv.org/abs/2401.05561",
+      "title": "Trustllm: Trustworthiness in large language models",
+      "authors": "L Sun, Y Huang, H Wang, S Wu, Q Zhang\u2026",
+      "year": "2024",
+      "cited_by": 149,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13613213740114741930&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "A survey on large language models: Applications, challenges, limitations, and practical usage",
+      "id": "8658636204379506457",
+      "url": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.23589741.v1",
+      "title": "A survey on large language models: Applications, challenges, limitations, and practical usage",
+      "authors": "MU Hadi, R Qureshi, A Shah, M Irfan, A Zafar\u2026",
+      "year": "2023",
+      "cited_by": 197,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8658636204379506457&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "The foundation model transparency index",
+      "id": "6897485371215453301",
+      "url": "https://arxiv.org/abs/2310.12941",
+      "title": "The foundation model transparency index",
+      "authors": "R Bommasani, K Klyman, S Longpre, S Kapoor\u2026",
+      "year": "2023",
+      "cited_by": 58,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6897485371215453301&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Large language models in radiology: fundamentals, applications, ethical considerations, risks, and future directions",
+      "id": "6873448619117884765",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10916534/",
+      "title": "Large language models in radiology: fundamentals, applications, ethical considerations, risks, and future directions",
+      "authors": "TA D'Antonoli, A Stanzione, C Bluethgen\u2026",
+      "year": "2024",
+      "cited_by": 47,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6873448619117884765&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Large language models for data annotation: A survey",
+      "id": "15951900166407975645",
+      "url": "https://arxiv.org/abs/2402.13446",
+      "title": "Large language models for data annotation: A survey",
+      "authors": "Z Tan, A Beigi, S Wang, R Guo, A Bhattacharjee\u2026",
+      "year": "2024",
+      "cited_by": 50,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15951900166407975645&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Uncertainty in natural language generation: From theory to applications",
+      "id": "5889990503748813277",
+      "url": "https://arxiv.org/abs/2307.15703",
+      "title": "Uncertainty in natural language generation: From theory to applications",
+      "authors": "J Baan, N Daheim, E Ilia, D Ulmer, HS Li\u2026",
+      "year": "2023",
+      "cited_by": 25,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5889990503748813277&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "\" I'm Not Sure, But...\": Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust",
+      "id": "8206410786207775091",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3630106.3658941",
+      "title": "\" I'm Not Sure, But...\": Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust",
+      "authors": "SSY Kim, QV Liao, M Vorvoreanu, S Ballard\u2026",
+      "year": "2024",
+      "cited_by": 16,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8206410786207775091&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 5
+    },
+    {
+      "label": "Wizardlm: Empowering large language models to follow complex instructions",
+      "id": "18163601980996053604",
+      "url": "https://arxiv.org/abs/2304.12244",
+      "title": "Wizardlm: Empowering large language models to follow complex instructions",
+      "authors": "C Xu, Q Sun, K Zheng, X Geng, P Zhao, J Feng\u2026",
+      "year": "2023",
+      "cited_by": 541,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18163601980996053604&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "A survey of large language models attribution",
+      "id": "4617685833576771407",
+      "url": "https://arxiv.org/abs/2311.03731",
+      "title": "A survey of large language models attribution",
+      "authors": "D Li, Z Sun, X Hu, Z Liu, Z Chen, B Hu, A Wu\u2026",
+      "year": "2023",
+      "cited_by": 15,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4617685833576771407&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+      "id": "11103416019159060709",
+      "url": "https://openreview.net/forum?id=CfXh93NDgH",
+      "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+      "authors": "C Xu, Q Sun, K Zheng, X Geng, P Zhao\u2026",
+      "year": "2024",
+      "cited_by": 52,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11103416019159060709&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Expertqa: Expert-curated questions and attributed answers",
+      "id": "2966788381753721864",
+      "url": "https://arxiv.org/abs/2309.07852",
+      "title": "Expertqa: Expert-curated questions and attributed answers",
+      "authors": "C Malaviya, S Lee, S Chen, E Sieber, M Yatskar\u2026",
+      "year": "2023",
+      "cited_by": 36,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2966788381753721864&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 0
+    },
+    {
+      "label": "Lm vs lm: Detecting factual errors via cross examination",
+      "id": "12134252796438680206",
+      "url": "https://arxiv.org/abs/2305.13281",
+      "title": "Lm vs lm: Detecting factual errors via cross examination",
+      "authors": "R Cohen, M Hamri, M Geva, A Globerson",
+      "year": "2023",
+      "cited_by": 68,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12134252796438680206&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Challenges and applications of large language models",
+      "id": "9658592038876097632",
+      "url": "https://arxiv.org/abs/2307.10169",
+      "title": "Challenges and applications of large language models",
+      "authors": "J Kaddour, J Harris, M Mozes, H Bradley\u2026",
+      "year": "2023",
+      "cited_by": 347,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9658592038876097632&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Communicative agents for software development",
+      "id": "168100539275365535",
+      "url": "https://openreview.net/pdf?id=yW0AZ5wPji",
+      "title": "Communicative agents for software development",
+      "authors": "C Qian, X Cong, C Yang, W Chen, Y Su\u2026",
+      "year": "2023",
+      "cited_by": 304,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=168100539275365535&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Factuality challenges in the era of large language models",
+      "id": "7169203285308212635",
+      "url": "https://arxiv.org/abs/2310.05189",
+      "title": "Factuality challenges in the era of large language models",
+      "authors": "I Augenstein, T Baldwin, M Cha, T Chakraborty\u2026",
+      "year": "2023",
+      "cited_by": 64,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7169203285308212635&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Chatdev: Communicative agents for software development",
+      "id": "12890097666801906958",
+      "url": "https://aclanthology.org/2024.acl-long.810/",
+      "title": "Chatdev: Communicative agents for software development",
+      "authors": "C Qian, W Liu, H Liu, N Chen, Y Dang, J Li\u2026",
+      "year": "2024",
+      "cited_by": 19,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12890097666801906958&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "How to catch an ai liar: Lie detection in black-box llms by asking unrelated questions",
+      "id": "4094771018704741638",
+      "url": "https://arxiv.org/abs/2309.15840",
+      "title": "How to catch an ai liar: Lie detection in black-box llms by asking unrelated questions",
+      "authors": "L Pacchiardi, AJ Chan, S Mindermann\u2026",
+      "year": "2023",
+      "cited_by": 31,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4094771018704741638&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "Chatgpt's one-year anniversary: are open-source large language models catching up?",
+      "id": "198795653708440327",
+      "url": "https://arxiv.org/abs/2311.16989",
+      "title": "Chatgpt's one-year anniversary: are open-source large language models catching up?",
+      "authors": "H Chen, F Jiao, X Li, C Qin, M Ravaut, R Zhao\u2026",
+      "year": "2023",
+      "cited_by": 34,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=198795653708440327&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 7
+    },
+    {
+      "label": "How large language models will disrupt data management",
+      "id": "17836999847955884253",
+      "url": "https://dl.acm.org/doi/abs/10.14778/3611479.3611527",
+      "title": "How large language models will disrupt data management",
+      "authors": "RC Fernandez, AJ Elmore, MJ Franklin\u2026",
+      "year": "2023",
+      "cited_by": 57,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17836999847955884253&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Table-gpt: Table-tuned gpt for diverse table tasks",
+      "id": "14504139471206275674",
+      "url": "https://arxiv.org/abs/2310.09263",
+      "title": "Table-gpt: Table-tuned gpt for diverse table tasks",
+      "authors": "P Li, Y He, D Yashar, W Cui, S Ge, H Zhang\u2026",
+      "year": "2023",
+      "cited_by": 37,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14504139471206275674&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Ai-assisted programming tasks using code embeddings and transformers",
+      "id": "759883558890200373",
+      "url": "https://www.mdpi.com/2079-9292/13/4/767",
+      "title": "Ai-assisted programming tasks using code embeddings and transformers",
+      "authors": "S Kotsiantis, V Verykios, M Tzagarakis",
+      "year": "2024",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=759883558890200373&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Automating research synthesis with domain-specific large language model fine-tuning",
+      "id": "16914360591890787539",
+      "url": "https://arxiv.org/abs/2404.08680",
+      "title": "Automating research synthesis with domain-specific large language model fine-tuning",
+      "authors": "T Susnjak, P Hwang, NH Reyes, ALC Barczak\u2026",
+      "year": "2024",
+      "cited_by": 12,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16914360591890787539&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "To prompt or not to prompt: Navigating the use of large language models for integrating and modeling heterogeneous data",
+      "id": "7610915515241466730",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169023X24000375",
+      "title": "To prompt or not to prompt: Navigating the use of large language models for integrating and modeling heterogeneous data",
+      "authors": "A Remadi, K El Hage, Y Hobeika, F Bugiotti",
+      "year": "2024",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7610915515241466730&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "SPADE: Synthesizing Data Quality Assertions for Large Language Model Pipelines",
+      "id": "5750793465707083691",
+      "url": "https://www.vldb.org/pvldb/vol17/p4173-shankar.pdf",
+      "title": "SPADE: Synthesizing Data Quality Assertions for Large Language Model Pipelines",
+      "authors": "S Shankar, H Li, P Asawa, M Hulsebos, Y Lin\u2026",
+      "year": "2024",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5750793465707083691&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Exploring the Potential of Large Language Models in Supply Chain Management: A Study Using Big Data",
+      "id": "16962010499393248071",
+      "url": "https://www.igi-global.com/article/exploring-the-potential-of-large-language-models-in-supply-chain-management/335125",
+      "title": "Exploring the Potential of Large Language Models in Supply Chain Management: A Study Using Big Data",
+      "authors": "SK Srivastava, S Routray, S Bag, S Gupta\u2026",
+      "year": "2024",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16962010499393248071&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Large language models (LLMs) on tabular data: Prediction, generation, and understanding-a survey",
+      "id": "16488573530778716403",
+      "url": "https://www.amazon.science/publications/large-language-models-llms-on-tabular-data-prediction-generation-and-understanding-a-survey",
+      "title": "Large language models (LLMs) on tabular data: Prediction, generation, and understanding-a survey",
+      "authors": "X Fang, W Xu, FA Tan, J Zhang, Z Hu, YJ Qi\u2026",
+      "year": "2024",
+      "cited_by": 26,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16488573530778716403&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "SchemaPile: A Large Collection of Relational Database Schemas",
+      "id": "2374789508913546123",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3654975",
+      "title": "SchemaPile: A Large Collection of Relational Database Schemas",
+      "authors": "T D\u00f6hmen, R Geacu, M Hulsebos\u2026",
+      "year": "2024",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2374789508913546123&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Spade: Synthesizing assertions for large language model pipelines",
+      "id": "16691348932743114000",
+      "url": "https://arxiv.org/abs/2401.03038",
+      "title": "Spade: Synthesizing assertions for large language model pipelines",
+      "authors": "S Shankar, H Li, P Asawa, M Hulsebos, Y Lin\u2026",
+      "year": "2024",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16691348932743114000&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 6
+    },
+    {
+      "label": "Right to be forgotten in the era of large language models: Implications, challenges, and solutions",
+      "id": "4070471740709775406",
+      "url": "https://link.springer.com/article/10.1007/s43681-024-00573-9",
+      "title": "Right to be forgotten in the era of large language models: Implications, challenges, and solutions",
+      "authors": "D Zhang, P Finckenberg-Broman, T Hoang, S Pan\u2026",
+      "year": "2024",
+      "cited_by": 42,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4070471740709775406&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Generative AI in medicine and healthcare: promises, opportunities and challenges",
+      "id": "390446844104818351",
+      "url": "https://www.mdpi.com/1999-5903/15/9/286",
+      "title": "Generative AI in medicine and healthcare: promises, opportunities and challenges",
+      "authors": "P Zhang, MN Kamel Boulos",
+      "year": "2023",
+      "cited_by": 108,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=390446844104818351&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Silo language models: Isolating legal risk in a nonparametric datastore",
+      "id": "6176496505010054931",
+      "url": "https://arxiv.org/abs/2308.04430",
+      "title": "Silo language models: Isolating legal risk in a nonparametric datastore",
+      "authors": "S Min, S Gururangan, E Wallace, W Shi\u2026",
+      "year": "2023",
+      "cited_by": 45,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6176496505010054931&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Rethinking machine unlearning for large language models",
+      "id": "4304626474434734765",
+      "url": "https://arxiv.org/abs/2402.08787",
+      "title": "Rethinking machine unlearning for large language models",
+      "authors": "S Liu, Y Yao, J Jia, S Casper, N Baracaldo\u2026",
+      "year": "2024",
+      "cited_by": 54,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4304626474434734765&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Who's Harry Potter? Approximate Unlearning in LLMs",
+      "id": "18434188012260418066",
+      "url": "https://arxiv.org/abs/2310.02238",
+      "title": "Who's Harry Potter? Approximate Unlearning in LLMs",
+      "authors": "R Eldan, M Russinovich",
+      "year": "2023",
+      "cited_by": 96,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18434188012260418066&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Can sensitive information be deleted from llms? objectives for defending against extraction attacks",
+      "id": "17466616399348737261",
+      "url": "https://arxiv.org/abs/2309.17410",
+      "title": "Can sensitive information be deleted from llms? objectives for defending against extraction attacks",
+      "authors": "V Patil, P Hase, M Bansal",
+      "year": "2023",
+      "cited_by": 38,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17466616399348737261&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Knowledge unlearning for llms: Tasks, methods, and challenges",
+      "id": "1209121450480925932",
+      "url": "https://arxiv.org/abs/2311.15766",
+      "title": "Knowledge unlearning for llms: Tasks, methods, and challenges",
+      "authors": "N Si, H Zhang, H Chang, W Zhang, D Qu\u2026",
+      "year": "2023",
+      "cited_by": 32,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1209121450480925932&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "On protecting the data privacy of large language models (llms): A survey",
+      "id": "14159729898008942744",
+      "url": "https://arxiv.org/abs/2403.05156",
+      "title": "On protecting the data privacy of large language models (llms): A survey",
+      "authors": "B Yan, K Li, M Xu, Y Dong, Y Zhang, Z Ren\u2026",
+      "year": "2024",
+      "cited_by": 27,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14159729898008942744&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Guardrail baselines for unlearning in llms",
+      "id": "1024732405647223939",
+      "url": "https://arxiv.org/abs/2403.03329",
+      "title": "Guardrail baselines for unlearning in llms",
+      "authors": "P Thaker, Y Maurya, V Smith",
+      "year": "2024",
+      "cited_by": 11,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1024732405647223939&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Mapping the individual, social and biospheric impacts of Foundation Models",
+      "id": "904680892872981578",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3630106.3658939",
+      "title": "Mapping the individual, social and biospheric impacts of Foundation Models",
+      "authors": "A Dom\u00ednguez Hern\u00e1ndez, S Krishna\u2026",
+      "year": "2024",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=904680892872981578&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    },
+    {
+      "label": "Towards comprehensive and efficient post safety alignment of large language models via safety patching",
+      "id": "9796898633794561162",
+      "url": "https://arxiv.org/abs/2405.13820",
+      "title": "Towards comprehensive and efficient post safety alignment of large language models via safety patching",
+      "authors": "W Zhao, Y Hu, Z Li, Y Deng, Y Zhao, B Qin\u2026",
+      "year": "2024",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9796898633794561162&as_sdt=20000005&sciodt=0,21&hl=en",
+      "modularity": 4
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 2,
+      "target": 0
+    },
+    {
+      "source": 3,
+      "target": 0
+    },
+    {
+      "source": 4,
+      "target": 0
+    },
+    {
+      "source": 5,
+      "target": 0
+    },
+    {
+      "source": 6,
+      "target": 0
+    },
+    {
+      "source": 7,
+      "target": 0
+    },
+    {
+      "source": 8,
+      "target": 0
+    },
+    {
+      "source": 9,
+      "target": 0
+    },
+    {
+      "source": 10,
+      "target": 0
+    },
+    {
+      "source": 11,
+      "target": 0
+    },
+    {
+      "source": 12,
+      "target": 1
+    },
+    {
+      "source": 13,
+      "target": 12
+    },
+    {
+      "source": 14,
+      "target": 12
+    },
+    {
+      "source": 15,
+      "target": 12
+    },
+    {
+      "source": 16,
+      "target": 12
+    },
+    {
+      "source": 17,
+      "target": 12
+    },
+    {
+      "source": 18,
+      "target": 12
+    },
+    {
+      "source": 19,
+      "target": 12
+    },
+    {
+      "source": 20,
+      "target": 12
+    },
+    {
+      "source": 21,
+      "target": 12
+    },
+    {
+      "source": 22,
+      "target": 12
+    },
+    {
+      "source": 23,
+      "target": 1
+    },
+    {
+      "source": 23,
+      "target": 34
+    },
+    {
+      "source": 23,
+      "target": 39
+    },
+    {
+      "source": 24,
+      "target": 23
+    },
+    {
+      "source": 25,
+      "target": 23
+    },
+    {
+      "source": 25,
+      "target": 34
+    },
+    {
+      "source": 25,
+      "target": 66
+    },
+    {
+      "source": 26,
+      "target": 23
+    },
+    {
+      "source": 26,
+      "target": 34
+    },
+    {
+      "source": 26,
+      "target": 39
+    },
+    {
+      "source": 26,
+      "target": 66
+    },
+    {
+      "source": 27,
+      "target": 23
+    },
+    {
+      "source": 28,
+      "target": 23
+    },
+    {
+      "source": 29,
+      "target": 23
+    },
+    {
+      "source": 29,
+      "target": 66
+    },
+    {
+      "source": 30,
+      "target": 23
+    },
+    {
+      "source": 31,
+      "target": 23
+    },
+    {
+      "source": 32,
+      "target": 23
+    },
+    {
+      "source": 32,
+      "target": 39
+    },
+    {
+      "source": 33,
+      "target": 23
+    },
+    {
+      "source": 33,
+      "target": 34
+    },
+    {
+      "source": 33,
+      "target": 39
+    },
+    {
+      "source": 34,
+      "target": 1
+    },
+    {
+      "source": 34,
+      "target": 39
+    },
+    {
+      "source": 35,
+      "target": 34
+    },
+    {
+      "source": 35,
+      "target": 52
+    },
+    {
+      "source": 35,
+      "target": 66
+    },
+    {
+      "source": 36,
+      "target": 34
+    },
+    {
+      "source": 37,
+      "target": 34
+    },
+    {
+      "source": 38,
+      "target": 34
+    },
+    {
+      "source": 39,
+      "target": 34
+    },
+    {
+      "source": 39,
+      "target": 1
+    },
+    {
+      "source": 40,
+      "target": 34
+    },
+    {
+      "source": 40,
+      "target": 39
+    },
+    {
+      "source": 41,
+      "target": 1
+    },
+    {
+      "source": 42,
+      "target": 41
+    },
+    {
+      "source": 43,
+      "target": 41
+    },
+    {
+      "source": 44,
+      "target": 41
+    },
+    {
+      "source": 45,
+      "target": 41
+    },
+    {
+      "source": 46,
+      "target": 41
+    },
+    {
+      "source": 47,
+      "target": 41
+    },
+    {
+      "source": 48,
+      "target": 41
+    },
+    {
+      "source": 49,
+      "target": 41
+    },
+    {
+      "source": 50,
+      "target": 41
+    },
+    {
+      "source": 51,
+      "target": 41
+    },
+    {
+      "source": 52,
+      "target": 1
+    },
+    {
+      "source": 53,
+      "target": 52
+    },
+    {
+      "source": 54,
+      "target": 52
+    },
+    {
+      "source": 54,
+      "target": 73
+    },
+    {
+      "source": 55,
+      "target": 52
+    },
+    {
+      "source": 56,
+      "target": 52
+    },
+    {
+      "source": 57,
+      "target": 52
+    },
+    {
+      "source": 58,
+      "target": 52
+    },
+    {
+      "source": 59,
+      "target": 52
+    },
+    {
+      "source": 60,
+      "target": 52
+    },
+    {
+      "source": 61,
+      "target": 52
+    },
+    {
+      "source": 62,
+      "target": 39
+    },
+    {
+      "source": 63,
+      "target": 39
+    },
+    {
+      "source": 64,
+      "target": 39
+    },
+    {
+      "source": 65,
+      "target": 39
+    },
+    {
+      "source": 66,
+      "target": 1
+    },
+    {
+      "source": 67,
+      "target": 66
+    },
+    {
+      "source": 68,
+      "target": 66
+    },
+    {
+      "source": 69,
+      "target": 66
+    },
+    {
+      "source": 70,
+      "target": 66
+    },
+    {
+      "source": 71,
+      "target": 66
+    },
+    {
+      "source": 72,
+      "target": 66
+    },
+    {
+      "source": 73,
+      "target": 1
+    },
+    {
+      "source": 74,
+      "target": 73
+    },
+    {
+      "source": 75,
+      "target": 73
+    },
+    {
+      "source": 76,
+      "target": 73
+    },
+    {
+      "source": 77,
+      "target": 73
+    },
+    {
+      "source": 78,
+      "target": 73
+    },
+    {
+      "source": 79,
+      "target": 73
+    },
+    {
+      "source": 80,
+      "target": 73
+    },
+    {
+      "source": 81,
+      "target": 73
+    },
+    {
+      "source": 82,
+      "target": 73
+    },
+    {
+      "source": 83,
+      "target": 1
+    },
+    {
+      "source": 84,
+      "target": 83
+    },
+    {
+      "source": 85,
+      "target": 83
+    },
+    {
+      "source": 86,
+      "target": 83
+    },
+    {
+      "source": 87,
+      "target": 83
+    },
+    {
+      "source": 88,
+      "target": 83
+    },
+    {
+      "source": 89,
+      "target": 83
+    },
+    {
+      "source": 90,
+      "target": 83
+    },
+    {
+      "source": 91,
+      "target": 83
+    },
+    {
+      "source": 92,
+      "target": 83
+    },
+    {
+      "source": 93,
+      "target": 83
+    }
+  ]
+};
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+
+      var focusNode = null;
+      var highlightNode = null;
+
+      var textCenter = false;
+      var outline = false;
+
+      var minScore = Math.min(...graph.nodes.map(n => n.modularity));
+      var maxScore = Math.max(...graph.nodes.map(n => n.modularity));
+
+      var color = d3.scale
+        .linear()
+        .domain([
+          minScore,
+          (minScore + maxScore) / 4,
+          (minScore + maxScore) / 2,
+          ((minScore + maxScore) * 3) / 4,
+          maxScore,
+        ])
+        .range(["lime", "yellow", "red", "deepskyblue"]);
+
+      var highlightColor = "blue";
+      var highlightTrans = 0.1;
+
+      const citedBy = graph.nodes
+        .map(n => n.cited_by)
+        .filter(n => n != null)
+
+      const maxCitedBy = Math.max(...citedBy)
+      const minCitedBy = Math.min(...citedBy)
+
+      var size = d3.scale
+        .pow()
+        .exponent(1)
+        .domain([minCitedBy, maxCitedBy])
+        .range([8, 24]);
+
+      var force = d3.layout
+        .force()
+        .linkDistance(h / (graph.nodes.length / 10))
+        .charge(-300)
+        .size([w, h]);
+
+      var defaultNodeColor = "#ccc";
+      var defaultLinkColor = "#888";
+      var nominalBaseNodeSize = 8;
+      var nominalTextSize = 10;
+      var maxTextSize = 24;
+      var nominalStroke = 1.5;
+      var maxStroke = 4.5;
+      var maxBaseNodeSize = 36;
+      var minZoom = 0.1;
+      var maxZoom = 7;
+      var svg = d3.select("body").append("svg");
+      var zoom = d3.behavior.zoom().scaleExtent([minZoom, maxZoom]);
+      var g = svg.append("g");
+      svg.style("cursor", "move");
+
+      var linkedByIndex = {};
+      graph.links.forEach(function (d) {
+        linkedByIndex[d.source + "," + d.target] = true;
+      });
+
+      function isConnected(a, b) {
+        return (
+          linkedByIndex[a.index + "," + b.index] ||
+          linkedByIndex[b.index + "," + a.index] ||
+          a.index == b.index
+        );
+      }
+
+      force.size([w, h]);
+
+      force
+        .nodes(graph.nodes)
+        .links(graph.links)
+        .start();
+
+      function getLine(data) {
+
+        const x1 = data.source.x;
+        const y1= data.source.y;
+        const x2 = data.target.x;
+        const y2 = data.target.y;
+
+        const r = size(data.target.cited_by) + 1;
+
+        const m = (y2 - y1) / (x2 - x1);
+        const b = y1 - m * x1;
+
+        const c = Math.sqrt(Math.pow((y2 - y1), 2) + Math.pow((x2 - x1), 2))
+        const a = y2 - y1
+        const cos = a / c
+
+        const a2 = cos * r
+        const b2 = Math.sqrt(Math.pow(r, 2) - Math.pow(a2, 2))
+
+        const x = x2 > x1 ? x2 - b2 : x2 + b2;
+        const y = y2 - a2;
+
+        const path = 'M ' + data.source.x + ',' + data.source.y + ' L ' + x + ',' + y;
+        return path;
+      }
+
+      var link = g
+        .selectAll(".link")
+        .data(graph.links)
+        .enter()
+        .append("svg:path")
+        .attr("d", getLine) 
+        .attr("stroke", defaultLinkColor)
+        .attr("fill", "red")
+        .style("stroke-width", nominalStroke)
+        .style("marker-end", "url(#end)")
+
+      var node = g
+        .selectAll(".node")
+        .data(graph.nodes)
+        .enter()
+        .append("g")
+        .attr("class", "node")
+        .call(force.drag);
+
+      var timeout = null;
+
+      node.on("dblclick", function (d) {
+        clearTimeout(timeout);
+
+        timeout = setTimeout(function () {
+          window.open(d.url, "_blank");
+          d3.event.stopPropagation();
+        }, 300);
+      });
+
+      var tocolor = "fill";
+      var towhite = "stroke";
+      if (outline) {
+        tocolor = "stroke";
+        towhite = "fill";
+      }
+
+      var circle = node
+        .append("path")
+        .attr(
+          "d",
+          d3.svg
+            .symbol()
+            .size(function (d) {
+              return (
+                Math.PI * Math.pow(size(d.cited_by) || nominalBaseNodeSize, 2)
+              );
+            })
+            .type(function (d) {
+              return d.type;
+            })
+        )
+        .style(tocolor, function (d) {
+          if (isNumber(d.modularity) && d.modularity >= 0) return color(d.modularity);
+          else return defaultNodeColor;
+        })
+        .style("stroke-width", nominalStroke)
+        .style(towhite, "white");
+
+      svg.append("svg:defs").selectAll("marker")
+	  .data(["end"])
+	.enter().append("svg:marker")
+	  .attr("id", String)
+	  .attr("viewBox", "0 -5 10 10")
+	  .attr("refX", 10)
+	  .attr("refY", 0)
+	  .attr("markerWidth", 6)
+	  .attr("markerHeight", 6)
+	  .attr("orient", "auto")
+          .style("fill", defaultLinkColor)
+	.append("svg:path")
+	  .attr("d", "M 0,-5 L 10,0 L 0,5")
+          .style("stroke", defaultLinkColor);
+
+      var text = g
+        .selectAll(".text")
+        .data(graph.nodes)
+        .enter()
+        .append("text")
+        .attr("dy", ".35em")
+        .style("font-size", nominalTextSize + "px");
+
+      node
+        .on("mouseover", function (d) {
+          setHighlight(d);
+        })
+        .on("mousedown", function (d) {
+          d3.event.stopPropagation();
+          focusNode = d;
+          setFocus(d);
+          if (highlightNode === null) setHighlight(d);
+        })
+        .on("mouseout", function (d) {
+          exitHighlight();
+        });
+
+      d3.select(window).on("mouseup", function () {
+        if (focusNode !== null) {
+          focusNode = null;
+          if (highlightTrans < 1) {
+            circle.style("opacity", 1);
+            text.style("opacity", 1);
+            link.style("opacity", 1);
+          }
+        }
+
+        if (highlightNode === null) exitHighlight();
+      });
+
+      function exitHighlight() {
+        highlightNode = null;
+        if (focusNode === null) {
+          svg.style("cursor", "move");
+          if (highlightColor != "white") {
+            circle.style(towhite, "white");
+            text.text('')
+            link.style("stroke", function (o) {
+              return isNumber(o.score) && o.score >= 0
+                ? color(o.score)
+                : defaultLinkColor;
+            });
+          }
+        }
+      }
+
+      function setFocus(d) {
+        if (highlightTrans < 1) {
+          circle.style("opacity", function (o) {
+            return isConnected(d, o) ? 1 : highlightTrans;
+          });
+
+          text.style("opacity", function (o) {
+            return isConnected(d, o) ? 1 : highlightTrans;
+          });
+
+          link.style("opacity", function (o) {
+            return o.source.index == d.index || o.target.index == d.index
+              ? 1
+              : highlightTrans;
+          });
+        }
+      }
+
+      function setHighlight(d) {
+        svg.style("cursor", "pointer");
+        if (focusNode !== null) d = focusNode;
+        highlightNode = d;
+
+        if (highlightColor != "white") {
+
+          circle.style(towhite, function (o) {
+            return isConnected(d, o) ? highlightColor : "white";
+          });
+          
+          text.attr("dx", function (d) {
+            return size(d.cited_by)
+          });
+
+          text.text(function (o) {
+            if (isConnected(d, o)) {
+              let title = o.title;
+              if (o.year) title = title + " (" + o.year + ")";
+              if (o.authors) title = title + " - " + o.authors;
+              return title
+            } else {
+              return ""
+            }
+          });
+
+        }
+      }
+
+      zoom.on("zoom", function () {
+        var stroke = nominalStroke;
+        if (nominalStroke * zoom.scale() > maxStroke)
+          stroke = maxStroke / zoom.scale();
+        link.style("stroke-width", stroke);
+        circle.style("stroke-width", stroke);
+
+        var baseRadius = nominalBaseNodeSize;
+        if (nominalBaseNodeSize * zoom.scale() > maxBaseNodeSize)
+          baseRadius = maxBaseNodeSize / zoom.scale();
+        circle.attr(
+          "d",
+          d3.svg
+            .symbol()
+            .size(function (d) {
+              return (
+                Math.PI *
+                Math.pow(
+                  (size(d.cited_by) * baseRadius) / nominalBaseNodeSize ||
+                    baseRadius,
+                  2
+                )
+              );
+            })
+        );
+
+        if (!textCenter)
+          text.attr("dx", function (d) {
+            return (
+              (size(d.cited_by) * baseRadius) / nominalBaseNodeSize ||
+              baseRadius
+            );
+          });
+
+        var textSize = nominalTextSize;
+        if (nominalTextSize * zoom.scale() > maxTextSize)
+          textSize = maxTextSize / zoom.scale();
+        text.style("font-size", textSize + "px");
+
+        g.attr(
+          "transform",
+          "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")"
+        );
+      });
+
+      svg.call(zoom);
+
+      resize();
+      d3.select(window).on("resize", resize);
+
+      force.on("tick", function () {
+        node.attr("transform", function (d) {
+          return "translate(" + d.x + "," + d.y + ")";
+        });
+        text.attr("transform", function (d) {
+          return "translate(" + d.x + "," + d.y + ")";
+        });
+
+        link.attr("d", getLine)
+
+        node
+          .attr("cx", function (d) {
+            return d.x;
+          })
+          .attr("cy", function (d) {
+            return d.y;
+          });
+      });
+
+      function resize() {
+        var width = window.innerWidth,
+          height = window.innerHeight;
+        svg.attr("width", width).attr("height", height);
+
+        force
+          .size([
+            force.size()[0] + (width - w) / zoom.scale(),
+            force.size()[1] + (height - h) / zoom.scale(),
+          ])
+          .resume();
+        w = width;
+        h = height;
+      }
+
+      function isNumber(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+      }
+
+    </script>
+  </body>
+</html>

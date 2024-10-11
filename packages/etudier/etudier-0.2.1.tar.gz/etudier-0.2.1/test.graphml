@@ -1,0 +1,1151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d8" for="node" attr.name="modularity" attr.type="long"/>
+<key id="d7" for="node" attr.name="cited_by_url" attr.type="string"/>
+<key id="d6" for="node" attr.name="cited_by" attr.type="long"/>
+<key id="d5" for="node" attr.name="year" attr.type="string"/>
+<key id="d4" for="node" attr.name="authors" attr.type="string"/>
+<key id="d3" for="node" attr.name="title" attr.type="string"/>
+<key id="d2" for="node" attr.name="url" attr.type="string"/>
+<key id="d1" for="node" attr.name="id" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="16937631969605886569">
+  <data key="d0">Dissociating language and thought in large language models</data>
+  <data key="d1">16937631969605886569</data>
+  <data key="d2">https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(24)00027-5</data>
+  <data key="d3">Dissociating language and thought in large language models</data>
+  <data key="d4">K Mahowald, AA Ivanova, IA Blank, N Kanwisher…</data>
+  <data key="d5">2024</data>
+  <data key="d6">335</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=16937631969605886569&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="7260188836062494273">
+  <data key="d0">Evaluating verifiability in generative search engines</data>
+  <data key="d1">7260188836062494273</data>
+  <data key="d3">Evaluating verifiability in generative search engines</data>
+  <data key="d6">160</data>
+  <data key="d8">0</data>
+</node>
+<node id="9887723550900807200">
+  <data key="d0">Using large language models in psychology</data>
+  <data key="d1">9887723550900807200</data>
+  <data key="d2">https://www.nature.com/articles/s44159-023-00241-5</data>
+  <data key="d3">Using large language models in psychology</data>
+  <data key="d4">D Demszky, D Yang, DS Yeager, CJ Bryan…</data>
+  <data key="d5">2023</data>
+  <data key="d6">132</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9887723550900807200&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="13617115593134659255">
+  <data key="d0">Symbols and grounding in large language models</data>
+  <data key="d1">13617115593134659255</data>
+  <data key="d2">https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2022.0041</data>
+  <data key="d3">Symbols and grounding in large language models</data>
+  <data key="d4">E Pavlick</data>
+  <data key="d5">2023</data>
+  <data key="d6">76</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=13617115593134659255&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="8758279725124918951">
+  <data key="d0">Sparks of artificial general intelligence: Early experiments with gpt-4</data>
+  <data key="d1">8758279725124918951</data>
+  <data key="d2">https://arxiv.org/abs/2303.12712</data>
+  <data key="d3">Sparks of artificial general intelligence: Early experiments with gpt-4</data>
+  <data key="d4">S Bubeck, V Chandrasekaran, R Eldan…</data>
+  <data key="d5">2023</data>
+  <data key="d6">2873</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8758279725124918951&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="15823019128814792922">
+  <data key="d0">Gpt-4 passes the bar exam</data>
+  <data key="d1">15823019128814792922</data>
+  <data key="d2">https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2023.0254</data>
+  <data key="d3">Gpt-4 passes the bar exam</data>
+  <data key="d4">DM Katz, MJ Bommarito, S Gao…</data>
+  <data key="d5">2024</data>
+  <data key="d6">366</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=15823019128814792922&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="12152905247193975990">
+  <data key="d0">A categorical archive of chatgpt failures</data>
+  <data key="d1">12152905247193975990</data>
+  <data key="d2">https://arxiv.org/abs/2302.03494</data>
+  <data key="d3">A categorical archive of chatgpt failures</data>
+  <data key="d4">A Borji</data>
+  <data key="d5">2023</data>
+  <data key="d6">458</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=12152905247193975990&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="4012435051513089306">
+  <data key="d0">Emergent analogical reasoning in large language models</data>
+  <data key="d1">4012435051513089306</data>
+  <data key="d2">https://www.nature.com/articles/s41562-023-01659-w</data>
+  <data key="d3">Emergent analogical reasoning in large language models</data>
+  <data key="d4">T Webb, KJ Holyoak, H Lu</data>
+  <data key="d5">2023</data>
+  <data key="d6">295</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4012435051513089306&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="8268872002641691216">
+  <data key="d0">The debate over understanding in AI's large language models</data>
+  <data key="d1">8268872002641691216</data>
+  <data key="d2">https://www.pnas.org/doi/abs/10.1073/pnas.2215907120</data>
+  <data key="d3">The debate over understanding in AI's large language models</data>
+  <data key="d4">M Mitchell, DC Krakauer</data>
+  <data key="d5">2023</data>
+  <data key="d6">226</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8268872002641691216&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="5844001081387208038">
+  <data key="d0">Llm+ p: Empowering large language models with optimal planning proficiency</data>
+  <data key="d1">5844001081387208038</data>
+  <data key="d2">https://arxiv.org/abs/2304.11477</data>
+  <data key="d3">Llm+ p: Empowering large language models with optimal planning proficiency</data>
+  <data key="d4">B Liu, Y Jiang, X Zhang, Q Liu, S Zhang…</data>
+  <data key="d5">2023</data>
+  <data key="d6">274</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=5844001081387208038&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="1839300589730483135">
+  <data key="d0">Chatgpt beyond english: Towards a comprehensive evaluation of large language models in multilingual learning</data>
+  <data key="d1">1839300589730483135</data>
+  <data key="d2">https://arxiv.org/abs/2304.05613</data>
+  <data key="d3">Chatgpt beyond english: Towards a comprehensive evaluation of large language models in multilingual learning</data>
+  <data key="d4">VD Lai, NT Ngo, APB Veyseh, H Man…</data>
+  <data key="d5">2023</data>
+  <data key="d6">186</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=1839300589730483135&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="830649740635169289">
+  <data key="d0">Grounding large language models in interactive environments with online reinforcement learning</data>
+  <data key="d1">830649740635169289</data>
+  <data key="d2">https://proceedings.mlr.press/v202/carta23a.html</data>
+  <data key="d3">Grounding large language models in interactive environments with online reinforcement learning</data>
+  <data key="d4">T Carta, C Romac, T Wolf, S Lamprier…</data>
+  <data key="d5">2023</data>
+  <data key="d6">116</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=830649740635169289&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">1</data>
+</node>
+<node id="3718677179435127430">
+  <data key="d0">Opportunities and challenges for ChatGPT and large language models in biomedicine and health</data>
+  <data key="d1">3718677179435127430</data>
+  <data key="d2">https://academic.oup.com/bib/article-abstract/25/1/bbad493/7505071</data>
+  <data key="d3">Opportunities and challenges for ChatGPT and large language models in biomedicine and health</data>
+  <data key="d4">S Tian, Q Jin, L Yeganova, PT Lai, Q Zhu…</data>
+  <data key="d5">2024</data>
+  <data key="d6">137</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=3718677179435127430&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="4182961117189114164">
+  <data key="d0">The breakthrough of large language models release for medical applications: 1-year timeline and perspectives</data>
+  <data key="d1">4182961117189114164</data>
+  <data key="d2">https://link.springer.com/article/10.1007/s10916-024-02045-3</data>
+  <data key="d3">The breakthrough of large language models release for medical applications: 1-year timeline and perspectives</data>
+  <data key="d4">M Cascella, F Semeraro, J Montomoli, V Bellini…</data>
+  <data key="d5">2024</data>
+  <data key="d6">36</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4182961117189114164&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="18151771043590239118">
+  <data key="d0">Large language models in healthcare and medical domain: A review</data>
+  <data key="d1">18151771043590239118</data>
+  <data key="d2">https://www.mdpi.com/2227-9709/11/3/57</data>
+  <data key="d3">Large language models in healthcare and medical domain: A review</data>
+  <data key="d4">ZA Nazi, W Peng</data>
+  <data key="d5">2024</data>
+  <data key="d6">17</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=18151771043590239118&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="15010696175911896134">
+  <data key="d0">Genegpt: Augmenting large language models with domain tools for improved access to biomedical information</data>
+  <data key="d1">15010696175911896134</data>
+  <data key="d2">https://academic.oup.com/bioinformatics/article-abstract/40/2/btae075/7606338</data>
+  <data key="d3">Genegpt: Augmenting large language models with domain tools for improved access to biomedical information</data>
+  <data key="d4">Q Jin, Y Yang, Q Chen, Z Lu</data>
+  <data key="d5">2024</data>
+  <data key="d6">88</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=15010696175911896134&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="9003410693487547568">
+  <data key="d0">Improving large language models for clinical named entity recognition via prompt engineering</data>
+  <data key="d1">9003410693487547568</data>
+  <data key="d2">https://academic.oup.com/jamia/advance-article-abstract/doi/10.1093/jamia/ocad259/7590607</data>
+  <data key="d3">Improving large language models for clinical named entity recognition via prompt engineering</data>
+  <data key="d4">Y Hu, Q Chen, J Du, X Peng, VK Keloth…</data>
+  <data key="d5">2024</data>
+  <data key="d6">57</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9003410693487547568&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="7235516420110993237">
+  <data key="d0">Matching patients to clinical trials with large language models</data>
+  <data key="d1">7235516420110993237</data>
+  <data key="d2">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10418514/</data>
+  <data key="d3">Matching patients to clinical trials with large language models</data>
+  <data key="d4">Q Jin, Z Wang, CS Floudas, F Chen, C Gong…</data>
+  <data key="d5">2023</data>
+  <data key="d6">48</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=7235516420110993237&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="7073830555641765587">
+  <data key="d0">Taiyi: a bilingual fine-tuned large language model for diverse biomedical tasks</data>
+  <data key="d1">7073830555641765587</data>
+  <data key="d2">https://academic.oup.com/jamia/advance-article-abstract/doi/10.1093/jamia/ocae037/7616487</data>
+  <data key="d3">Taiyi: a bilingual fine-tuned large language model for diverse biomedical tasks</data>
+  <data key="d4">L Luo, J Ning, Y Zhao, Z Wang, Z Ding…</data>
+  <data key="d5">2024</data>
+  <data key="d6">26</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=7073830555641765587&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="11660532880683595571">
+  <data key="d0">PubMed and beyond: biomedical literature search in the age of artificial intelligence</data>
+  <data key="d1">11660532880683595571</data>
+  <data key="d2">https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(24)00023-9/fulltext</data>
+  <data key="d3">PubMed and beyond: biomedical literature search in the age of artificial intelligence</data>
+  <data key="d4">Q Jin, R Leaman, Z Lu</data>
+  <data key="d5">2024</data>
+  <data key="d6">19</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=11660532880683595571&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="17658431127869875250">
+  <data key="d0">Performance of chatgpt across different versions in medical licensing examinations worldwide: Systematic review and meta-analysis</data>
+  <data key="d1">17658431127869875250</data>
+  <data key="d2">https://www.jmir.org/2024/1/e60807/</data>
+  <data key="d3">Performance of chatgpt across different versions in medical licensing examinations worldwide: Systematic review and meta-analysis</data>
+  <data key="d4">M Liu, T Okuhara, XY Chang, R Shirabe…</data>
+  <data key="d5">2024</data>
+  <data key="d6">4</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=17658431127869875250&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="4591095664860373070">
+  <data key="d0">PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge</data>
+  <data key="d1">4591095664860373070</data>
+  <data key="d2">https://academic.oup.com/nar/advance-article-abstract/doi/10.1093/nar/gkae235/7640526</data>
+  <data key="d3">PubTator 3.0: an AI-powered literature resource for unlocking biomedical knowledge</data>
+  <data key="d4">CH Wei, A Allot, PT Lai, R Leaman, S Tian…</data>
+  <data key="d5">2024</data>
+  <data key="d6">19</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4591095664860373070&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="11014023359417278121">
+  <data key="d0">Uncover this tech term: foundation model</data>
+  <data key="d1">11014023359417278121</data>
+  <data key="d2">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10550749/</data>
+  <data key="d3">Uncover this tech term: foundation model</data>
+  <data key="d4">KH Jung</data>
+  <data key="d5">2023</data>
+  <data key="d6">20</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=11014023359417278121&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">2</data>
+</node>
+<node id="11955024365518501857">
+  <data key="d0">Factscore: Fine-grained atomic evaluation of factual precision in long form text generation</data>
+  <data key="d1">11955024365518501857</data>
+  <data key="d2">https://arxiv.org/abs/2305.14251</data>
+  <data key="d3">Factscore: Fine-grained atomic evaluation of factual precision in long form text generation</data>
+  <data key="d4">S Min, K Krishna, X Lyu, M Lewis, W Yih…</data>
+  <data key="d5">2023</data>
+  <data key="d6">306</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=11955024365518501857&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="3625720365842685347">
+  <data key="d0">A survey on evaluation of large language models</data>
+  <data key="d1">3625720365842685347</data>
+  <data key="d2">https://dl.acm.org/doi/abs/10.1145/3641289</data>
+  <data key="d3">A survey on evaluation of large language models</data>
+  <data key="d4">Y Chang, X Wang, J Wang, Y Wu, L Yang…</data>
+  <data key="d5">2024</data>
+  <data key="d6">1300</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=3625720365842685347&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="17076439280458156187">
+  <data key="d0">Cognitive mirage: A review of hallucinations in large language models</data>
+  <data key="d1">17076439280458156187</data>
+  <data key="d2">https://arxiv.org/abs/2309.06794</data>
+  <data key="d3">Cognitive mirage: A review of hallucinations in large language models</data>
+  <data key="d4">H Ye, T Liu, A Zhang, W Hua, W Jia</data>
+  <data key="d5">2023</data>
+  <data key="d6">78</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=17076439280458156187&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="1614807179983009071">
+  <data key="d0">Siren's song in the AI ocean: a survey on hallucination in large language models</data>
+  <data key="d1">1614807179983009071</data>
+  <data key="d2">https://arxiv.org/abs/2309.01219</data>
+  <data key="d3">Siren's song in the AI ocean: a survey on hallucination in large language models</data>
+  <data key="d4">Y Zhang, Y Li, L Cui, D Cai, L Liu, T Fu…</data>
+  <data key="d5">2023</data>
+  <data key="d6">607</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=1614807179983009071&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="13722137582486319378">
+  <data key="d0">Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models</data>
+  <data key="d1">13722137582486319378</data>
+  <data key="d2">https://arxiv.org/abs/2303.08896</data>
+  <data key="d3">Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models</data>
+  <data key="d4">P Manakul, A Liusie, MJF Gales</data>
+  <data key="d5">2023</data>
+  <data key="d6">435</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=13722137582486319378&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="17212297856420608352">
+  <data key="d0">A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions</data>
+  <data key="d1">17212297856420608352</data>
+  <data key="d2">https://arxiv.org/abs/2311.05232</data>
+  <data key="d3">A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions</data>
+  <data key="d4">L Huang, W Yu, W Ma, W Zhong, Z Feng…</data>
+  <data key="d5">2023</data>
+  <data key="d6">446</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=17212297856420608352&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="5213298442364780829">
+  <data key="d0">Chain-of-verification reduces hallucination in large language models</data>
+  <data key="d1">5213298442364780829</data>
+  <data key="d2">https://arxiv.org/abs/2309.11495</data>
+  <data key="d3">Chain-of-verification reduces hallucination in large language models</data>
+  <data key="d4">S Dhuliawala, M Komeili, J Xu, R Raileanu, X Li…</data>
+  <data key="d5">2023</data>
+  <data key="d6">202</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=5213298442364780829&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="2762352632434587623">
+  <data key="d0">Aligning large language models with human: A survey</data>
+  <data key="d1">2762352632434587623</data>
+  <data key="d2">https://arxiv.org/abs/2307.12966</data>
+  <data key="d3">Aligning large language models with human: A survey</data>
+  <data key="d4">Y Wang, W Zhong, L Li, F Mi, X Zeng, W Huang…</data>
+  <data key="d5">2023</data>
+  <data key="d6">210</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=2762352632434587623&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="2735466021227840922">
+  <data key="d0">Large language models: A survey</data>
+  <data key="d1">2735466021227840922</data>
+  <data key="d2">https://arxiv.org/abs/2402.06196</data>
+  <data key="d3">Large language models: A survey</data>
+  <data key="d4">S Minaee, T Mikolov, N Nikzad, M Chenaghlu…</data>
+  <data key="d5">2024</data>
+  <data key="d6">235</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=2735466021227840922&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="14854019000652979716">
+  <data key="d0">Survey on factuality in large language models: Knowledge, retrieval and domain-specificity</data>
+  <data key="d1">14854019000652979716</data>
+  <data key="d2">https://arxiv.org/abs/2310.07521</data>
+  <data key="d3">Survey on factuality in large language models: Knowledge, retrieval and domain-specificity</data>
+  <data key="d4">C Wang, X Liu, Y Yue, X Tang, T Zhang…</data>
+  <data key="d5">2023</data>
+  <data key="d6">129</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=14854019000652979716&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="5829217399111228605">
+  <data key="d0">Fine-grained human feedback gives better rewards for language model training</data>
+  <data key="d1">5829217399111228605</data>
+  <data key="d2">https://proceedings.neurips.cc/paper_files/paper/2023/hash/b8c90b65739ae8417e61eadb521f63d5-Abstract-Conference.html</data>
+  <data key="d3">Fine-grained human feedback gives better rewards for language model training</data>
+  <data key="d4">Z Wu, Y Hu, W Shi, N Dziri, A Suhr…</data>
+  <data key="d5">2024</data>
+  <data key="d6">54</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=5829217399111228605&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="14324932854487086731">
+  <data key="d0">Enabling large language models to generate text with citations</data>
+  <data key="d1">14324932854487086731</data>
+  <data key="d2">https://arxiv.org/abs/2305.14627</data>
+  <data key="d3">Enabling large language models to generate text with citations</data>
+  <data key="d4">T Gao, H Yen, J Yu, D Chen</data>
+  <data key="d5">2023</data>
+  <data key="d6">165</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=14324932854487086731&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="10544112972634639410">
+  <data key="d0">Combating misinformation in the age of llms: Opportunities and challenges</data>
+  <data key="d1">10544112972634639410</data>
+  <data key="d2">https://onlinelibrary.wiley.com/doi/abs/10.1002/aaai.12188</data>
+  <data key="d3">Combating misinformation in the age of llms: Opportunities and challenges</data>
+  <data key="d4">C Chen, K Shu</data>
+  <data key="d5">2023</data>
+  <data key="d6">77</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=10544112972634639410&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="13886427994278981669">
+  <data key="d0">Large language models for information retrieval: A survey</data>
+  <data key="d1">13886427994278981669</data>
+  <data key="d2">https://arxiv.org/abs/2308.07107</data>
+  <data key="d3">Large language models for information retrieval: A survey</data>
+  <data key="d4">Y Zhu, H Yuan, S Wang, J Liu, W Liu, C Deng…</data>
+  <data key="d5">2023</data>
+  <data key="d6">189</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=13886427994278981669&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="8898243279279799480">
+  <data key="d0">Self-rag: Learning to retrieve, generate, and critique through self-reflection</data>
+  <data key="d1">8898243279279799480</data>
+  <data key="d2">https://arxiv.org/abs/2310.11511</data>
+  <data key="d3">Self-rag: Learning to retrieve, generate, and critique through self-reflection</data>
+  <data key="d4">A Asai, Z Wu, Y Wang, A Sil, H Hajishirzi</data>
+  <data key="d5">2023</data>
+  <data key="d6">236</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8898243279279799480&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="15930016998314339614">
+  <data key="d0">Improving text embeddings with large language models</data>
+  <data key="d1">15930016998314339614</data>
+  <data key="d2">https://arxiv.org/abs/2401.00368</data>
+  <data key="d3">Improving text embeddings with large language models</data>
+  <data key="d4">L Wang, N Yang, X Huang, L Yang…</data>
+  <data key="d5">2023</data>
+  <data key="d6">120</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=15930016998314339614&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="18178623228130928467">
+  <data key="d0">Automatic evaluation of attribution by large language models</data>
+  <data key="d1">18178623228130928467</data>
+  <data key="d2">https://arxiv.org/abs/2305.06311</data>
+  <data key="d3">Automatic evaluation of attribution by large language models</data>
+  <data key="d4">X Yue, B Wang, Z Chen, K Zhang, Y Su…</data>
+  <data key="d5">2023</data>
+  <data key="d6">76</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=18178623228130928467&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="10890282943822204487">
+  <data key="d0">Adaptive chameleon or stubborn sloth: Revealing the behavior of large language models in knowledge conflicts</data>
+  <data key="d1">10890282943822204487</data>
+  <data key="d2">https://arxiv.org/abs/2305.13300</data>
+  <data key="d3">Adaptive chameleon or stubborn sloth: Revealing the behavior of large language models in knowledge conflicts</data>
+  <data key="d4">J Xie, K Zhang, J Chen, R Lou, Y Su</data>
+  <data key="d5">2023</data>
+  <data key="d6">66</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=10890282943822204487&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="3946244813554043217">
+  <data key="d0">Benchmarking large language models in retrieval-augmented generation</data>
+  <data key="d1">3946244813554043217</data>
+  <data key="d2">https://ojs.aaai.org/index.php/AAAI/article/view/29728</data>
+  <data key="d3">Benchmarking large language models in retrieval-augmented generation</data>
+  <data key="d4">J Chen, H Lin, X Han, L Sun</data>
+  <data key="d5">2024</data>
+  <data key="d6">178</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=3946244813554043217&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="9082880950785936523">
+  <data key="d0">Retrieval-augmented generation for large language models: A survey</data>
+  <data key="d1">9082880950785936523</data>
+  <data key="d2">https://arxiv.org/abs/2312.10997</data>
+  <data key="d3">Retrieval-augmented generation for large language models: A survey</data>
+  <data key="d4">Y Gao, Y Xiong, X Gao, K Jia, J Pan, Y Bi, Y Dai…</data>
+  <data key="d5">2023</data>
+  <data key="d6">625</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9082880950785936523&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="13305470411207019506">
+  <data key="d0">A comprehensive study of knowledge editing for large language models</data>
+  <data key="d1">13305470411207019506</data>
+  <data key="d2">https://arxiv.org/abs/2401.01286</data>
+  <data key="d3">A comprehensive study of knowledge editing for large language models</data>
+  <data key="d4">N Zhang, Y Yao, B Tian, P Wang, S Deng…</data>
+  <data key="d5">2024</data>
+  <data key="d6">18</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=13305470411207019506&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="3747114760917173301">
+  <data key="d0">Large legal fictions: Profiling legal hallucinations in large language models</data>
+  <data key="d1">3747114760917173301</data>
+  <data key="d2">https://academic.oup.com/jla/article-abstract/16/1/64/7699227</data>
+  <data key="d3">Large legal fictions: Profiling legal hallucinations in large language models</data>
+  <data key="d4">M Dahl, V Magesh, M Suzgun…</data>
+  <data key="d5">2024</data>
+  <data key="d6">45</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=3747114760917173301&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="4008617626230499572">
+  <data key="d0">Improving language models via plug-and-play retrieval feedback</data>
+  <data key="d1">4008617626230499572</data>
+  <data key="d2">https://arxiv.org/abs/2305.14002</data>
+  <data key="d3">Improving language models via plug-and-play retrieval feedback</data>
+  <data key="d4">W Yu, Z Zhang, Z Liang, M Jiang…</data>
+  <data key="d5">2023</data>
+  <data key="d6">44</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4008617626230499572&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="14452718092018481370">
+  <data key="d0">Retrieval-augmented generation for ai-generated content: A survey</data>
+  <data key="d1">14452718092018481370</data>
+  <data key="d2">https://arxiv.org/abs/2402.19473</data>
+  <data key="d3">Retrieval-augmented generation for ai-generated content: A survey</data>
+  <data key="d4">P Zhao, H Zhang, Q Yu, Z Wang, Y Geng, F Fu…</data>
+  <data key="d5">2024</data>
+  <data key="d6">80</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=14452718092018481370&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="8307738739142450350">
+  <data key="d0">Ares: An automated evaluation framework for retrieval-augmented generation systems</data>
+  <data key="d1">8307738739142450350</data>
+  <data key="d2">https://arxiv.org/abs/2311.09476</data>
+  <data key="d3">Ares: An automated evaluation framework for retrieval-augmented generation systems</data>
+  <data key="d4">J Saad-Falcon, O Khattab, C Potts…</data>
+  <data key="d5">2023</data>
+  <data key="d6">51</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8307738739142450350&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="15132728735043516149">
+  <data key="d0">Crud-rag: A comprehensive chinese benchmark for retrieval-augmented generation of large language models</data>
+  <data key="d1">15132728735043516149</data>
+  <data key="d2">https://arxiv.org/abs/2401.17043</data>
+  <data key="d3">Crud-rag: A comprehensive chinese benchmark for retrieval-augmented generation of large language models</data>
+  <data key="d4">Y Lyu, Z Li, S Niu, F Xiong, B Tang, W Wang…</data>
+  <data key="d5">2024</data>
+  <data key="d6">31</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=15132728735043516149&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="8988138336179158371">
+  <data key="d0">A Survey of Mamba</data>
+  <data key="d1">8988138336179158371</data>
+  <data key="d2">https://arxiv.org/abs/2408.01129</data>
+  <data key="d3">A Survey of Mamba</data>
+  <data key="d4">H Qu, L Ning, R An, W Fan, T Derr, X Xu…</data>
+  <data key="d5">2024</data>
+  <data key="d6">6</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8988138336179158371&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="12688772212027279416">
+  <data key="d0">NoMIRACL: Knowing When You Don't Know for Robust Multilingual Retrieval-Augmented Generation</data>
+  <data key="d1">12688772212027279416</data>
+  <data key="d2">https://arxiv.org/abs/2312.11361</data>
+  <data key="d3">NoMIRACL: Knowing When You Don't Know for Robust Multilingual Retrieval-Augmented Generation</data>
+  <data key="d4">N Thakur, L Bonifacio, X Zhang, O Ogundepo…</data>
+  <data key="d5">2023</data>
+  <data key="d6">12</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=12688772212027279416&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="888806300196541002">
+  <data key="d0">Leave no document behind: Benchmarking long-context llms with extended multi-doc qa</data>
+  <data key="d1">888806300196541002</data>
+  <data key="d2">https://arxiv.org/abs/2406.17419</data>
+  <data key="d3">Leave no document behind: Benchmarking long-context llms with extended multi-doc qa</data>
+  <data key="d4">M Wang, L Chen, C Fu, S Liao, X Zhang, B Wu…</data>
+  <data key="d5">2024</data>
+  <data key="d6">6</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=888806300196541002&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">3</data>
+</node>
+<node id="9797160768031734077">
+  <data key="d0">Ai transparency in the age of llms: A human-centered research roadmap</data>
+  <data key="d1">9797160768031734077</data>
+  <data key="d2">https://assets.pubpub.org/u7y5ridw/Liao%20&amp;%20Wortman%20Vaughan%20(2024)_Just%20Accepted-21709226724512.pdf</data>
+  <data key="d3">Ai transparency in the age of llms: A human-centered research roadmap</data>
+  <data key="d4">QV Liao, JW Vaughan</data>
+  <data key="d5">2023</data>
+  <data key="d6">101</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9797160768031734077&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="7326234598760659447">
+  <data key="d0">Knowledge editing for large language models: A survey</data>
+  <data key="d1">7326234598760659447</data>
+  <data key="d2">https://dl.acm.org/doi/abs/10.1145/3698590</data>
+  <data key="d3">Knowledge editing for large language models: A survey</data>
+  <data key="d4">S Wang, Y Zhu, H Liu, Z Zheng, C Chen, J Li</data>
+  <data key="d5">2023</data>
+  <data key="d6">63</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=7326234598760659447&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="9286063434044084759">
+  <data key="d0">Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects</data>
+  <data key="d1">9286063434044084759</data>
+  <data key="d2">https://www.authorea.com/doi/full/10.36227/techrxiv.23589741.v6</data>
+  <data key="d3">Large language models: a comprehensive survey of its applications, challenges, limitations, and future prospects</data>
+  <data key="d4">MU Hadi, Q Al Tashi, A Shah, R Qureshi…</data>
+  <data key="d5">2024</data>
+  <data key="d6">134</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9286063434044084759&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="13613213740114741930">
+  <data key="d0">Trustllm: Trustworthiness in large language models</data>
+  <data key="d1">13613213740114741930</data>
+  <data key="d2">https://arxiv.org/abs/2401.05561</data>
+  <data key="d3">Trustllm: Trustworthiness in large language models</data>
+  <data key="d4">L Sun, Y Huang, H Wang, S Wu, Q Zhang…</data>
+  <data key="d5">2024</data>
+  <data key="d6">149</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=13613213740114741930&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="8658636204379506457">
+  <data key="d0">A survey on large language models: Applications, challenges, limitations, and practical usage</data>
+  <data key="d1">8658636204379506457</data>
+  <data key="d2">https://www.techrxiv.org/doi/full/10.36227/techrxiv.23589741.v1</data>
+  <data key="d3">A survey on large language models: Applications, challenges, limitations, and practical usage</data>
+  <data key="d4">MU Hadi, R Qureshi, A Shah, M Irfan, A Zafar…</data>
+  <data key="d5">2023</data>
+  <data key="d6">197</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8658636204379506457&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="6897485371215453301">
+  <data key="d0">The foundation model transparency index</data>
+  <data key="d1">6897485371215453301</data>
+  <data key="d2">https://arxiv.org/abs/2310.12941</data>
+  <data key="d3">The foundation model transparency index</data>
+  <data key="d4">R Bommasani, K Klyman, S Longpre, S Kapoor…</data>
+  <data key="d5">2023</data>
+  <data key="d6">58</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=6897485371215453301&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="6873448619117884765">
+  <data key="d0">Large language models in radiology: fundamentals, applications, ethical considerations, risks, and future directions</data>
+  <data key="d1">6873448619117884765</data>
+  <data key="d2">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10916534/</data>
+  <data key="d3">Large language models in radiology: fundamentals, applications, ethical considerations, risks, and future directions</data>
+  <data key="d4">TA D'Antonoli, A Stanzione, C Bluethgen…</data>
+  <data key="d5">2024</data>
+  <data key="d6">47</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=6873448619117884765&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="15951900166407975645">
+  <data key="d0">Large language models for data annotation: A survey</data>
+  <data key="d1">15951900166407975645</data>
+  <data key="d2">https://arxiv.org/abs/2402.13446</data>
+  <data key="d3">Large language models for data annotation: A survey</data>
+  <data key="d4">Z Tan, A Beigi, S Wang, R Guo, A Bhattacharjee…</data>
+  <data key="d5">2024</data>
+  <data key="d6">50</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=15951900166407975645&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="5889990503748813277">
+  <data key="d0">Uncertainty in natural language generation: From theory to applications</data>
+  <data key="d1">5889990503748813277</data>
+  <data key="d2">https://arxiv.org/abs/2307.15703</data>
+  <data key="d3">Uncertainty in natural language generation: From theory to applications</data>
+  <data key="d4">J Baan, N Daheim, E Ilia, D Ulmer, HS Li…</data>
+  <data key="d5">2023</data>
+  <data key="d6">25</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=5889990503748813277&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="8206410786207775091">
+  <data key="d0">" I'm Not Sure, But...": Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust</data>
+  <data key="d1">8206410786207775091</data>
+  <data key="d2">https://dl.acm.org/doi/abs/10.1145/3630106.3658941</data>
+  <data key="d3">" I'm Not Sure, But...": Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust</data>
+  <data key="d4">SSY Kim, QV Liao, M Vorvoreanu, S Ballard…</data>
+  <data key="d5">2024</data>
+  <data key="d6">16</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=8206410786207775091&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">5</data>
+</node>
+<node id="18163601980996053604">
+  <data key="d0">Wizardlm: Empowering large language models to follow complex instructions</data>
+  <data key="d1">18163601980996053604</data>
+  <data key="d2">https://arxiv.org/abs/2304.12244</data>
+  <data key="d3">Wizardlm: Empowering large language models to follow complex instructions</data>
+  <data key="d4">C Xu, Q Sun, K Zheng, X Geng, P Zhao, J Feng…</data>
+  <data key="d5">2023</data>
+  <data key="d6">541</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=18163601980996053604&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="4617685833576771407">
+  <data key="d0">A survey of large language models attribution</data>
+  <data key="d1">4617685833576771407</data>
+  <data key="d2">https://arxiv.org/abs/2311.03731</data>
+  <data key="d3">A survey of large language models attribution</data>
+  <data key="d4">D Li, Z Sun, X Hu, Z Liu, Z Chen, B Hu, A Wu…</data>
+  <data key="d5">2023</data>
+  <data key="d6">15</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4617685833576771407&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="11103416019159060709">
+  <data key="d0">WizardLM: Empowering large pre-trained language models to follow complex instructions</data>
+  <data key="d1">11103416019159060709</data>
+  <data key="d2">https://openreview.net/forum?id=CfXh93NDgH</data>
+  <data key="d3">WizardLM: Empowering large pre-trained language models to follow complex instructions</data>
+  <data key="d4">C Xu, Q Sun, K Zheng, X Geng, P Zhao…</data>
+  <data key="d5">2024</data>
+  <data key="d6">52</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=11103416019159060709&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="2966788381753721864">
+  <data key="d0">Expertqa: Expert-curated questions and attributed answers</data>
+  <data key="d1">2966788381753721864</data>
+  <data key="d2">https://arxiv.org/abs/2309.07852</data>
+  <data key="d3">Expertqa: Expert-curated questions and attributed answers</data>
+  <data key="d4">C Malaviya, S Lee, S Chen, E Sieber, M Yatskar…</data>
+  <data key="d5">2023</data>
+  <data key="d6">36</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=2966788381753721864&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">0</data>
+</node>
+<node id="12134252796438680206">
+  <data key="d0">Lm vs lm: Detecting factual errors via cross examination</data>
+  <data key="d1">12134252796438680206</data>
+  <data key="d2">https://arxiv.org/abs/2305.13281</data>
+  <data key="d3">Lm vs lm: Detecting factual errors via cross examination</data>
+  <data key="d4">R Cohen, M Hamri, M Geva, A Globerson</data>
+  <data key="d5">2023</data>
+  <data key="d6">68</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=12134252796438680206&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="9658592038876097632">
+  <data key="d0">Challenges and applications of large language models</data>
+  <data key="d1">9658592038876097632</data>
+  <data key="d2">https://arxiv.org/abs/2307.10169</data>
+  <data key="d3">Challenges and applications of large language models</data>
+  <data key="d4">J Kaddour, J Harris, M Mozes, H Bradley…</data>
+  <data key="d5">2023</data>
+  <data key="d6">347</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9658592038876097632&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="168100539275365535">
+  <data key="d0">Communicative agents for software development</data>
+  <data key="d1">168100539275365535</data>
+  <data key="d2">https://openreview.net/pdf?id=yW0AZ5wPji</data>
+  <data key="d3">Communicative agents for software development</data>
+  <data key="d4">C Qian, X Cong, C Yang, W Chen, Y Su…</data>
+  <data key="d5">2023</data>
+  <data key="d6">304</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=168100539275365535&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="7169203285308212635">
+  <data key="d0">Factuality challenges in the era of large language models</data>
+  <data key="d1">7169203285308212635</data>
+  <data key="d2">https://arxiv.org/abs/2310.05189</data>
+  <data key="d3">Factuality challenges in the era of large language models</data>
+  <data key="d4">I Augenstein, T Baldwin, M Cha, T Chakraborty…</data>
+  <data key="d5">2023</data>
+  <data key="d6">64</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=7169203285308212635&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="12890097666801906958">
+  <data key="d0">Chatdev: Communicative agents for software development</data>
+  <data key="d1">12890097666801906958</data>
+  <data key="d2">https://aclanthology.org/2024.acl-long.810/</data>
+  <data key="d3">Chatdev: Communicative agents for software development</data>
+  <data key="d4">C Qian, W Liu, H Liu, N Chen, Y Dang, J Li…</data>
+  <data key="d5">2024</data>
+  <data key="d6">19</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=12890097666801906958&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="4094771018704741638">
+  <data key="d0">How to catch an ai liar: Lie detection in black-box llms by asking unrelated questions</data>
+  <data key="d1">4094771018704741638</data>
+  <data key="d2">https://arxiv.org/abs/2309.15840</data>
+  <data key="d3">How to catch an ai liar: Lie detection in black-box llms by asking unrelated questions</data>
+  <data key="d4">L Pacchiardi, AJ Chan, S Mindermann…</data>
+  <data key="d5">2023</data>
+  <data key="d6">31</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4094771018704741638&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="198795653708440327">
+  <data key="d0">Chatgpt's one-year anniversary: are open-source large language models catching up?</data>
+  <data key="d1">198795653708440327</data>
+  <data key="d2">https://arxiv.org/abs/2311.16989</data>
+  <data key="d3">Chatgpt's one-year anniversary: are open-source large language models catching up?</data>
+  <data key="d4">H Chen, F Jiao, X Li, C Qin, M Ravaut, R Zhao…</data>
+  <data key="d5">2023</data>
+  <data key="d6">34</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=198795653708440327&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">7</data>
+</node>
+<node id="17836999847955884253">
+  <data key="d0">How large language models will disrupt data management</data>
+  <data key="d1">17836999847955884253</data>
+  <data key="d2">https://dl.acm.org/doi/abs/10.14778/3611479.3611527</data>
+  <data key="d3">How large language models will disrupt data management</data>
+  <data key="d4">RC Fernandez, AJ Elmore, MJ Franklin…</data>
+  <data key="d5">2023</data>
+  <data key="d6">57</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=17836999847955884253&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="14504139471206275674">
+  <data key="d0">Table-gpt: Table-tuned gpt for diverse table tasks</data>
+  <data key="d1">14504139471206275674</data>
+  <data key="d2">https://arxiv.org/abs/2310.09263</data>
+  <data key="d3">Table-gpt: Table-tuned gpt for diverse table tasks</data>
+  <data key="d4">P Li, Y He, D Yashar, W Cui, S Ge, H Zhang…</data>
+  <data key="d5">2023</data>
+  <data key="d6">37</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=14504139471206275674&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="759883558890200373">
+  <data key="d0">Ai-assisted programming tasks using code embeddings and transformers</data>
+  <data key="d1">759883558890200373</data>
+  <data key="d2">https://www.mdpi.com/2079-9292/13/4/767</data>
+  <data key="d3">Ai-assisted programming tasks using code embeddings and transformers</data>
+  <data key="d4">S Kotsiantis, V Verykios, M Tzagarakis</data>
+  <data key="d5">2024</data>
+  <data key="d6">4</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=759883558890200373&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="16914360591890787539">
+  <data key="d0">Automating research synthesis with domain-specific large language model fine-tuning</data>
+  <data key="d1">16914360591890787539</data>
+  <data key="d2">https://arxiv.org/abs/2404.08680</data>
+  <data key="d3">Automating research synthesis with domain-specific large language model fine-tuning</data>
+  <data key="d4">T Susnjak, P Hwang, NH Reyes, ALC Barczak…</data>
+  <data key="d5">2024</data>
+  <data key="d6">12</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=16914360591890787539&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="7610915515241466730">
+  <data key="d0">To prompt or not to prompt: Navigating the use of large language models for integrating and modeling heterogeneous data</data>
+  <data key="d1">7610915515241466730</data>
+  <data key="d2">https://www.sciencedirect.com/science/article/pii/S0169023X24000375</data>
+  <data key="d3">To prompt or not to prompt: Navigating the use of large language models for integrating and modeling heterogeneous data</data>
+  <data key="d4">A Remadi, K El Hage, Y Hobeika, F Bugiotti</data>
+  <data key="d5">2024</data>
+  <data key="d6">5</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=7610915515241466730&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="5750793465707083691">
+  <data key="d0">SPADE: Synthesizing Data Quality Assertions for Large Language Model Pipelines</data>
+  <data key="d1">5750793465707083691</data>
+  <data key="d2">https://www.vldb.org/pvldb/vol17/p4173-shankar.pdf</data>
+  <data key="d3">SPADE: Synthesizing Data Quality Assertions for Large Language Model Pipelines</data>
+  <data key="d4">S Shankar, H Li, P Asawa, M Hulsebos, Y Lin…</data>
+  <data key="d5">2024</data>
+  <data key="d6">2</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=5750793465707083691&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="16962010499393248071">
+  <data key="d0">Exploring the Potential of Large Language Models in Supply Chain Management: A Study Using Big Data</data>
+  <data key="d1">16962010499393248071</data>
+  <data key="d2">https://www.igi-global.com/article/exploring-the-potential-of-large-language-models-in-supply-chain-management/335125</data>
+  <data key="d3">Exploring the Potential of Large Language Models in Supply Chain Management: A Study Using Big Data</data>
+  <data key="d4">SK Srivastava, S Routray, S Bag, S Gupta…</data>
+  <data key="d5">2024</data>
+  <data key="d6">8</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=16962010499393248071&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="16488573530778716403">
+  <data key="d0">Large language models (LLMs) on tabular data: Prediction, generation, and understanding-a survey</data>
+  <data key="d1">16488573530778716403</data>
+  <data key="d2">https://www.amazon.science/publications/large-language-models-llms-on-tabular-data-prediction-generation-and-understanding-a-survey</data>
+  <data key="d3">Large language models (LLMs) on tabular data: Prediction, generation, and understanding-a survey</data>
+  <data key="d4">X Fang, W Xu, FA Tan, J Zhang, Z Hu, YJ Qi…</data>
+  <data key="d5">2024</data>
+  <data key="d6">26</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=16488573530778716403&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="2374789508913546123">
+  <data key="d0">SchemaPile: A Large Collection of Relational Database Schemas</data>
+  <data key="d1">2374789508913546123</data>
+  <data key="d2">https://dl.acm.org/doi/abs/10.1145/3654975</data>
+  <data key="d3">SchemaPile: A Large Collection of Relational Database Schemas</data>
+  <data key="d4">T Döhmen, R Geacu, M Hulsebos…</data>
+  <data key="d5">2024</data>
+  <data key="d6">1</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=2374789508913546123&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="16691348932743114000">
+  <data key="d0">Spade: Synthesizing assertions for large language model pipelines</data>
+  <data key="d1">16691348932743114000</data>
+  <data key="d2">https://arxiv.org/abs/2401.03038</data>
+  <data key="d3">Spade: Synthesizing assertions for large language model pipelines</data>
+  <data key="d4">S Shankar, H Li, P Asawa, M Hulsebos, Y Lin…</data>
+  <data key="d5">2024</data>
+  <data key="d6">9</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=16691348932743114000&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">6</data>
+</node>
+<node id="4070471740709775406">
+  <data key="d0">Right to be forgotten in the era of large language models: Implications, challenges, and solutions</data>
+  <data key="d1">4070471740709775406</data>
+  <data key="d2">https://link.springer.com/article/10.1007/s43681-024-00573-9</data>
+  <data key="d3">Right to be forgotten in the era of large language models: Implications, challenges, and solutions</data>
+  <data key="d4">D Zhang, P Finckenberg-Broman, T Hoang, S Pan…</data>
+  <data key="d5">2024</data>
+  <data key="d6">42</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4070471740709775406&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="390446844104818351">
+  <data key="d0">Generative AI in medicine and healthcare: promises, opportunities and challenges</data>
+  <data key="d1">390446844104818351</data>
+  <data key="d2">https://www.mdpi.com/1999-5903/15/9/286</data>
+  <data key="d3">Generative AI in medicine and healthcare: promises, opportunities and challenges</data>
+  <data key="d4">P Zhang, MN Kamel Boulos</data>
+  <data key="d5">2023</data>
+  <data key="d6">108</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=390446844104818351&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="6176496505010054931">
+  <data key="d0">Silo language models: Isolating legal risk in a nonparametric datastore</data>
+  <data key="d1">6176496505010054931</data>
+  <data key="d2">https://arxiv.org/abs/2308.04430</data>
+  <data key="d3">Silo language models: Isolating legal risk in a nonparametric datastore</data>
+  <data key="d4">S Min, S Gururangan, E Wallace, W Shi…</data>
+  <data key="d5">2023</data>
+  <data key="d6">45</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=6176496505010054931&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="4304626474434734765">
+  <data key="d0">Rethinking machine unlearning for large language models</data>
+  <data key="d1">4304626474434734765</data>
+  <data key="d2">https://arxiv.org/abs/2402.08787</data>
+  <data key="d3">Rethinking machine unlearning for large language models</data>
+  <data key="d4">S Liu, Y Yao, J Jia, S Casper, N Baracaldo…</data>
+  <data key="d5">2024</data>
+  <data key="d6">54</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=4304626474434734765&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="18434188012260418066">
+  <data key="d0">Who's Harry Potter? Approximate Unlearning in LLMs</data>
+  <data key="d1">18434188012260418066</data>
+  <data key="d2">https://arxiv.org/abs/2310.02238</data>
+  <data key="d3">Who's Harry Potter? Approximate Unlearning in LLMs</data>
+  <data key="d4">R Eldan, M Russinovich</data>
+  <data key="d5">2023</data>
+  <data key="d6">96</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=18434188012260418066&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="17466616399348737261">
+  <data key="d0">Can sensitive information be deleted from llms? objectives for defending against extraction attacks</data>
+  <data key="d1">17466616399348737261</data>
+  <data key="d2">https://arxiv.org/abs/2309.17410</data>
+  <data key="d3">Can sensitive information be deleted from llms? objectives for defending against extraction attacks</data>
+  <data key="d4">V Patil, P Hase, M Bansal</data>
+  <data key="d5">2023</data>
+  <data key="d6">38</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=17466616399348737261&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="1209121450480925932">
+  <data key="d0">Knowledge unlearning for llms: Tasks, methods, and challenges</data>
+  <data key="d1">1209121450480925932</data>
+  <data key="d2">https://arxiv.org/abs/2311.15766</data>
+  <data key="d3">Knowledge unlearning for llms: Tasks, methods, and challenges</data>
+  <data key="d4">N Si, H Zhang, H Chang, W Zhang, D Qu…</data>
+  <data key="d5">2023</data>
+  <data key="d6">32</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=1209121450480925932&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="14159729898008942744">
+  <data key="d0">On protecting the data privacy of large language models (llms): A survey</data>
+  <data key="d1">14159729898008942744</data>
+  <data key="d2">https://arxiv.org/abs/2403.05156</data>
+  <data key="d3">On protecting the data privacy of large language models (llms): A survey</data>
+  <data key="d4">B Yan, K Li, M Xu, Y Dong, Y Zhang, Z Ren…</data>
+  <data key="d5">2024</data>
+  <data key="d6">27</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=14159729898008942744&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="1024732405647223939">
+  <data key="d0">Guardrail baselines for unlearning in llms</data>
+  <data key="d1">1024732405647223939</data>
+  <data key="d2">https://arxiv.org/abs/2403.03329</data>
+  <data key="d3">Guardrail baselines for unlearning in llms</data>
+  <data key="d4">P Thaker, Y Maurya, V Smith</data>
+  <data key="d5">2024</data>
+  <data key="d6">11</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=1024732405647223939&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="904680892872981578">
+  <data key="d0">Mapping the individual, social and biospheric impacts of Foundation Models</data>
+  <data key="d1">904680892872981578</data>
+  <data key="d2">https://dl.acm.org/doi/abs/10.1145/3630106.3658939</data>
+  <data key="d3">Mapping the individual, social and biospheric impacts of Foundation Models</data>
+  <data key="d4">A Domínguez Hernández, S Krishna…</data>
+  <data key="d5">2024</data>
+  <data key="d6">3</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=904680892872981578&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<node id="9796898633794561162">
+  <data key="d0">Towards comprehensive and efficient post safety alignment of large language models via safety patching</data>
+  <data key="d1">9796898633794561162</data>
+  <data key="d2">https://arxiv.org/abs/2405.13820</data>
+  <data key="d3">Towards comprehensive and efficient post safety alignment of large language models via safety patching</data>
+  <data key="d4">W Zhao, Y Hu, Z Li, Y Deng, Y Zhao, B Qin…</data>
+  <data key="d5">2024</data>
+  <data key="d6">7</data>
+  <data key="d7">https://scholar.google.com/scholar?cites=9796898633794561162&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en</data>
+  <data key="d8">4</data>
+</node>
+<edge source="16937631969605886569" target="7260188836062494273"/>
+<edge source="9887723550900807200" target="16937631969605886569"/>
+<edge source="13617115593134659255" target="16937631969605886569"/>
+<edge source="8758279725124918951" target="16937631969605886569"/>
+<edge source="15823019128814792922" target="16937631969605886569"/>
+<edge source="12152905247193975990" target="16937631969605886569"/>
+<edge source="4012435051513089306" target="16937631969605886569"/>
+<edge source="8268872002641691216" target="16937631969605886569"/>
+<edge source="5844001081387208038" target="16937631969605886569"/>
+<edge source="1839300589730483135" target="16937631969605886569"/>
+<edge source="830649740635169289" target="16937631969605886569"/>
+<edge source="3718677179435127430" target="7260188836062494273"/>
+<edge source="4182961117189114164" target="3718677179435127430"/>
+<edge source="18151771043590239118" target="3718677179435127430"/>
+<edge source="15010696175911896134" target="3718677179435127430"/>
+<edge source="9003410693487547568" target="3718677179435127430"/>
+<edge source="7235516420110993237" target="3718677179435127430"/>
+<edge source="7073830555641765587" target="3718677179435127430"/>
+<edge source="11660532880683595571" target="3718677179435127430"/>
+<edge source="17658431127869875250" target="3718677179435127430"/>
+<edge source="4591095664860373070" target="3718677179435127430"/>
+<edge source="11014023359417278121" target="3718677179435127430"/>
+<edge source="11955024365518501857" target="7260188836062494273"/>
+<edge source="11955024365518501857" target="14324932854487086731"/>
+<edge source="11955024365518501857" target="18178623228130928467"/>
+<edge source="3625720365842685347" target="11955024365518501857"/>
+<edge source="17076439280458156187" target="11955024365518501857"/>
+<edge source="17076439280458156187" target="14324932854487086731"/>
+<edge source="17076439280458156187" target="12134252796438680206"/>
+<edge source="1614807179983009071" target="11955024365518501857"/>
+<edge source="1614807179983009071" target="14324932854487086731"/>
+<edge source="1614807179983009071" target="18178623228130928467"/>
+<edge source="1614807179983009071" target="12134252796438680206"/>
+<edge source="13722137582486319378" target="11955024365518501857"/>
+<edge source="17212297856420608352" target="11955024365518501857"/>
+<edge source="5213298442364780829" target="11955024365518501857"/>
+<edge source="5213298442364780829" target="12134252796438680206"/>
+<edge source="2762352632434587623" target="11955024365518501857"/>
+<edge source="2735466021227840922" target="11955024365518501857"/>
+<edge source="14854019000652979716" target="11955024365518501857"/>
+<edge source="14854019000652979716" target="18178623228130928467"/>
+<edge source="5829217399111228605" target="11955024365518501857"/>
+<edge source="5829217399111228605" target="14324932854487086731"/>
+<edge source="5829217399111228605" target="18178623228130928467"/>
+<edge source="14324932854487086731" target="7260188836062494273"/>
+<edge source="14324932854487086731" target="18178623228130928467"/>
+<edge source="10544112972634639410" target="14324932854487086731"/>
+<edge source="10544112972634639410" target="9797160768031734077"/>
+<edge source="10544112972634639410" target="12134252796438680206"/>
+<edge source="13886427994278981669" target="14324932854487086731"/>
+<edge source="8898243279279799480" target="14324932854487086731"/>
+<edge source="15930016998314339614" target="14324932854487086731"/>
+<edge source="18178623228130928467" target="14324932854487086731"/>
+<edge source="18178623228130928467" target="7260188836062494273"/>
+<edge source="10890282943822204487" target="14324932854487086731"/>
+<edge source="10890282943822204487" target="18178623228130928467"/>
+<edge source="3946244813554043217" target="7260188836062494273"/>
+<edge source="9082880950785936523" target="3946244813554043217"/>
+<edge source="13305470411207019506" target="3946244813554043217"/>
+<edge source="3747114760917173301" target="3946244813554043217"/>
+<edge source="4008617626230499572" target="3946244813554043217"/>
+<edge source="14452718092018481370" target="3946244813554043217"/>
+<edge source="8307738739142450350" target="3946244813554043217"/>
+<edge source="15132728735043516149" target="3946244813554043217"/>
+<edge source="8988138336179158371" target="3946244813554043217"/>
+<edge source="12688772212027279416" target="3946244813554043217"/>
+<edge source="888806300196541002" target="3946244813554043217"/>
+<edge source="9797160768031734077" target="7260188836062494273"/>
+<edge source="7326234598760659447" target="9797160768031734077"/>
+<edge source="9286063434044084759" target="9797160768031734077"/>
+<edge source="9286063434044084759" target="17836999847955884253"/>
+<edge source="13613213740114741930" target="9797160768031734077"/>
+<edge source="8658636204379506457" target="9797160768031734077"/>
+<edge source="6897485371215453301" target="9797160768031734077"/>
+<edge source="6873448619117884765" target="9797160768031734077"/>
+<edge source="15951900166407975645" target="9797160768031734077"/>
+<edge source="5889990503748813277" target="9797160768031734077"/>
+<edge source="8206410786207775091" target="9797160768031734077"/>
+<edge source="18163601980996053604" target="18178623228130928467"/>
+<edge source="4617685833576771407" target="18178623228130928467"/>
+<edge source="11103416019159060709" target="18178623228130928467"/>
+<edge source="2966788381753721864" target="18178623228130928467"/>
+<edge source="12134252796438680206" target="7260188836062494273"/>
+<edge source="9658592038876097632" target="12134252796438680206"/>
+<edge source="168100539275365535" target="12134252796438680206"/>
+<edge source="7169203285308212635" target="12134252796438680206"/>
+<edge source="12890097666801906958" target="12134252796438680206"/>
+<edge source="4094771018704741638" target="12134252796438680206"/>
+<edge source="198795653708440327" target="12134252796438680206"/>
+<edge source="17836999847955884253" target="7260188836062494273"/>
+<edge source="14504139471206275674" target="17836999847955884253"/>
+<edge source="759883558890200373" target="17836999847955884253"/>
+<edge source="16914360591890787539" target="17836999847955884253"/>
+<edge source="7610915515241466730" target="17836999847955884253"/>
+<edge source="5750793465707083691" target="17836999847955884253"/>
+<edge source="16962010499393248071" target="17836999847955884253"/>
+<edge source="16488573530778716403" target="17836999847955884253"/>
+<edge source="2374789508913546123" target="17836999847955884253"/>
+<edge source="16691348932743114000" target="17836999847955884253"/>
+<edge source="4070471740709775406" target="7260188836062494273"/>
+<edge source="390446844104818351" target="4070471740709775406"/>
+<edge source="6176496505010054931" target="4070471740709775406"/>
+<edge source="4304626474434734765" target="4070471740709775406"/>
+<edge source="18434188012260418066" target="4070471740709775406"/>
+<edge source="17466616399348737261" target="4070471740709775406"/>
+<edge source="1209121450480925932" target="4070471740709775406"/>
+<edge source="14159729898008942744" target="4070471740709775406"/>
+<edge source="1024732405647223939" target="4070471740709775406"/>
+<edge source="904680892872981578" target="4070471740709775406"/>
+<edge source="9796898633794561162" target="4070471740709775406"/>
+</graph></graphml>

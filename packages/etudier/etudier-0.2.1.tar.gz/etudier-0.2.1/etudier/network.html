@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<!--
+
+This Google Scholar network visualization was generated with
+https://github.com/edsu/etudier using the following command:
+
+% etudier $__OPTIONS__
+
+--> 
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+      }
+
+      text {
+        font-family: sans-serif;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script>
+      var graph = $__GRAPH_JSON__;
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+
+      var focusNode = null;
+      var highlightNode = null;
+
+      var textCenter = false;
+      var outline = false;
+
+      var minScore = Math.min(...graph.nodes.map(n => n.modularity));
+      var maxScore = Math.max(...graph.nodes.map(n => n.modularity));
+
+      var color = d3.scale
+        .linear()
+        .domain([
+          minScore,
+          (minScore + maxScore) / 4,
+          (minScore + maxScore) / 2,
+          ((minScore + maxScore) * 3) / 4,
+          maxScore,
+        ])
+        .range(["lime", "yellow", "red", "deepskyblue"]);
+
+      var highlightColor = "blue";
+      var highlightTrans = 0.1;
+
+      const citedBy = graph.nodes
+        .map(n => n.cited_by)
+        .filter(n => n != null)
+
+      const maxCitedBy = Math.max(...citedBy)
+      const minCitedBy = Math.min(...citedBy)
+
+      var size = d3.scale
+        .pow()
+        .exponent(1)
+        .domain([minCitedBy, maxCitedBy])
+        .range([8, 24]);
+
+      var force = d3.layout
+        .force()
+        .linkDistance(h / (graph.nodes.length / 10))
+        .charge(-300)
+        .size([w, h]);
+
+      var defaultNodeColor = "#ccc";
+      var defaultLinkColor = "#888";
+      var nominalBaseNodeSize = 8;
+      var nominalTextSize = 10;
+      var maxTextSize = 24;
+      var nominalStroke = 1.5;
+      var maxStroke = 4.5;
+      var maxBaseNodeSize = 36;
+      var minZoom = 0.1;
+      var maxZoom = 7;
+      var svg = d3.select("body").append("svg");
+      var zoom = d3.behavior.zoom().scaleExtent([minZoom, maxZoom]);
+      var g = svg.append("g");
+      svg.style("cursor", "move");
+
+      var linkedByIndex = {};
+      graph.links.forEach(function (d) {
+        linkedByIndex[d.source + "," + d.target] = true;
+      });
+
+      function isConnected(a, b) {
+        return (
+          linkedByIndex[a.index + "," + b.index] ||
+          linkedByIndex[b.index + "," + a.index] ||
+          a.index == b.index
+        );
+      }
+
+      force.size([w, h]);
+
+      force
+        .nodes(graph.nodes)
+        .links(graph.links)
+        .start();
+
+      function getLine(data) {
+
+        const x1 = data.source.x;
+        const y1= data.source.y;
+        const x2 = data.target.x;
+        const y2 = data.target.y;
+
+        const r = size(data.target.cited_by) + 1;
+
+        const m = (y2 - y1) / (x2 - x1);
+        const b = y1 - m * x1;
+
+        const c = Math.sqrt(Math.pow((y2 - y1), 2) + Math.pow((x2 - x1), 2))
+        const a = y2 - y1
+        const cos = a / c
+
+        const a2 = cos * r
+        const b2 = Math.sqrt(Math.pow(r, 2) - Math.pow(a2, 2))
+
+        const x = x2 > x1 ? x2 - b2 : x2 + b2;
+        const y = y2 - a2;
+
+        const path = 'M ' + data.source.x + ',' + data.source.y + ' L ' + x + ',' + y;
+        return path;
+      }
+
+      var link = g
+        .selectAll(".link")
+        .data(graph.links)
+        .enter()
+        .append("svg:path")
+        .attr("d", getLine) 
+        .attr("stroke", defaultLinkColor)
+        .attr("fill", "red")
+        .style("stroke-width", nominalStroke)
+        .style("marker-end", "url(#end)")
+
+      var node = g
+        .selectAll(".node")
+        .data(graph.nodes)
+        .enter()
+        .append("g")
+        .attr("class", "node")
+        .call(force.drag);
+
+      var timeout = null;
+
+      node.on("dblclick", function (d) {
+        clearTimeout(timeout);
+
+        timeout = setTimeout(function () {
+          window.open(d.url, "_blank");
+          d3.event.stopPropagation();
+        }, 300);
+      });
+
+      var tocolor = "fill";
+      var towhite = "stroke";
+      if (outline) {
+        tocolor = "stroke";
+        towhite = "fill";
+      }
+
+      var circle = node
+        .append("path")
+        .attr(
+          "d",
+          d3.svg
+            .symbol()
+            .size(function (d) {
+              return (
+                Math.PI * Math.pow(size(d.cited_by) || nominalBaseNodeSize, 2)
+              );
+            })
+            .type(function (d) {
+              return d.type;
+            })
+        )
+        .style(tocolor, function (d) {
+          if (isNumber(d.modularity) && d.modularity >= 0) return color(d.modularity);
+          else return defaultNodeColor;
+        })
+        .style("stroke-width", nominalStroke)
+        .style(towhite, "white");
+
+      svg.append("svg:defs").selectAll("marker")
+	  .data(["end"])
+	.enter().append("svg:marker")
+	  .attr("id", String)
+	  .attr("viewBox", "0 -5 10 10")
+	  .attr("refX", 10)
+	  .attr("refY", 0)
+	  .attr("markerWidth", 6)
+	  .attr("markerHeight", 6)
+	  .attr("orient", "auto")
+          .style("fill", defaultLinkColor)
+	.append("svg:path")
+	  .attr("d", "M 0,-5 L 10,0 L 0,5")
+          .style("stroke", defaultLinkColor);
+
+      var text = g
+        .selectAll(".text")
+        .data(graph.nodes)
+        .enter()
+        .append("text")
+        .attr("dy", ".35em")
+        .style("font-size", nominalTextSize + "px");
+
+      node
+        .on("mouseover", function (d) {
+          setHighlight(d);
+        })
+        .on("mousedown", function (d) {
+          d3.event.stopPropagation();
+          focusNode = d;
+          setFocus(d);
+          if (highlightNode === null) setHighlight(d);
+        })
+        .on("mouseout", function (d) {
+          exitHighlight();
+        });
+
+      d3.select(window).on("mouseup", function () {
+        if (focusNode !== null) {
+          focusNode = null;
+          if (highlightTrans < 1) {
+            circle.style("opacity", 1);
+            text.style("opacity", 1);
+            link.style("opacity", 1);
+          }
+        }
+
+        if (highlightNode === null) exitHighlight();
+      });
+
+      function exitHighlight() {
+        highlightNode = null;
+        if (focusNode === null) {
+          svg.style("cursor", "move");
+          if (highlightColor != "white") {
+            circle.style(towhite, "white");
+            text.text('')
+            link.style("stroke", function (o) {
+              return isNumber(o.score) && o.score >= 0
+                ? color(o.score)
+                : defaultLinkColor;
+            });
+          }
+        }
+      }
+
+      function setFocus(d) {
+        if (highlightTrans < 1) {
+          circle.style("opacity", function (o) {
+            return isConnected(d, o) ? 1 : highlightTrans;
+          });
+
+          text.style("opacity", function (o) {
+            return isConnected(d, o) ? 1 : highlightTrans;
+          });
+
+          link.style("opacity", function (o) {
+            return o.source.index == d.index || o.target.index == d.index
+              ? 1
+              : highlightTrans;
+          });
+        }
+      }
+
+      function setHighlight(d) {
+        svg.style("cursor", "pointer");
+        if (focusNode !== null) d = focusNode;
+        highlightNode = d;
+
+        if (highlightColor != "white") {
+
+          circle.style(towhite, function (o) {
+            return isConnected(d, o) ? highlightColor : "white";
+          });
+          
+          text.attr("dx", function (d) {
+            return size(d.cited_by)
+          });
+
+          text.text(function (o) {
+            if (isConnected(d, o)) {
+              let title = o.title;
+              if (o.year) title = title + " (" + o.year + ")";
+              if (o.authors) title = title + " - " + o.authors;
+              return title
+            } else {
+              return ""
+            }
+          });
+
+        }
+      }
+
+      zoom.on("zoom", function () {
+        var stroke = nominalStroke;
+        if (nominalStroke * zoom.scale() > maxStroke)
+          stroke = maxStroke / zoom.scale();
+        link.style("stroke-width", stroke);
+        circle.style("stroke-width", stroke);
+
+        var baseRadius = nominalBaseNodeSize;
+        if (nominalBaseNodeSize * zoom.scale() > maxBaseNodeSize)
+          baseRadius = maxBaseNodeSize / zoom.scale();
+        circle.attr(
+          "d",
+          d3.svg
+            .symbol()
+            .size(function (d) {
+              return (
+                Math.PI *
+                Math.pow(
+                  (size(d.cited_by) * baseRadius) / nominalBaseNodeSize ||
+                    baseRadius,
+                  2
+                )
+              );
+            })
+        );
+
+        if (!textCenter)
+          text.attr("dx", function (d) {
+            return (
+              (size(d.cited_by) * baseRadius) / nominalBaseNodeSize ||
+              baseRadius
+            );
+          });
+
+        var textSize = nominalTextSize;
+        if (nominalTextSize * zoom.scale() > maxTextSize)
+          textSize = maxTextSize / zoom.scale();
+        text.style("font-size", textSize + "px");
+
+        g.attr(
+          "transform",
+          "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")"
+        );
+      });
+
+      svg.call(zoom);
+
+      resize();
+      d3.select(window).on("resize", resize);
+
+      force.on("tick", function () {
+        node.attr("transform", function (d) {
+          return "translate(" + d.x + "," + d.y + ")";
+        });
+        text.attr("transform", function (d) {
+          return "translate(" + d.x + "," + d.y + ")";
+        });
+
+        link.attr("d", getLine)
+
+        node
+          .attr("cx", function (d) {
+            return d.x;
+          })
+          .attr("cy", function (d) {
+            return d.y;
+          });
+      });
+
+      function resize() {
+        var width = window.innerWidth,
+          height = window.innerHeight;
+        svg.attr("width", width).attr("height", height);
+
+        force
+          .size([
+            force.size()[0] + (width - w) / zoom.scale(),
+            force.size()[1] + (height - h) / zoom.scale(),
+          ])
+          .resume();
+        w = width;
+        h = height;
+      }
+
+      function isNumber(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+      }
+
+    </script>
+  </body>
+</html>
