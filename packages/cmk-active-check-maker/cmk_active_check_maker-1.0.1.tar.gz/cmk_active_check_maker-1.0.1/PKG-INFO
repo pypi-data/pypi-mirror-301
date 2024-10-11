@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cmk-active-check-maker
+Version: 1.0.1
+Summary: 
+Author: NhanDD
+Author-email: hp.duongducnhan@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bump2version (>=1.0.1,<2.0.0)
+Requires-Dist: cookiecutter (>=2.6.0,<3.0.0)
+Requires-Dist: mkdocs (>=1.6.1,<2.0.0)
+Requires-Dist: mkdocstrings (>=0.26.1,<0.27.0)
+Requires-Dist: pre-commit (>=4.0.1,<5.0.0)
+Requires-Dist: psutil (>=6.0.0,<7.0.0)
+Requires-Dist: pylint (>=3.3.1,<4.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Installation
+- Require python >= 3.12
+- using pip
+    ```
+    $ pip install cmk-active-check-maker
+    ```
+- using poetry
+    ```
+    $ poetry add cmk-active-check-maker
+    ```
+
+
+# Guide
+- Require: using in global environment
+- create new checkmk active check plugin template with command then fill the questions
+    ```
+    $ create-cmk-active-check
+    ```
+
