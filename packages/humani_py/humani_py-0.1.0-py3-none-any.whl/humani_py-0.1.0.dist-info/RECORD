@@ -1,0 +1,11 @@
+humani_py/__init__.py,sha256=U-5YAmb41aTplexdvltdtJRx1FX8MqfX4SxZwlu2RaQ,313
+humani_py/delays.py,sha256=lsR-Zwc80RMM7Lpu3IMjm9WExIYk2U4ar9mtuUjdX5M,279
+humani_py/movements.py,sha256=Y7itMTrr6TeBmbkYdhOlXhrdCfMmw2N5nJTBfCJoan0,656
+humani_py/scrolling.py,sha256=o_XI7IbU1ZJFKid_hnnqyKcP8hRIpgBRIR9kta3fdfQ,511
+humani_py/stealth.py,sha256=6N40MnA5qhonefVvMoYQM2KaX3Qxw-0YhASwwzOS0tk,504
+humani_py/typing.py,sha256=tCzQq5CqGiwGWXwOUXzD6UaBeITCttSsyHnf2WXzD8s,396
+humani_py/utils.py,sha256=ilIahIkXSlWmfXmS95c_vNSF-cdicLDNUL4sUHTB4WU,1901
+humani_py-0.1.0.dist-info/LICENSE,sha256=AyaL4-XnQzgYumHVsG0I0JtCuMLRYP5ZBRfbFMR27CI,1092
+humani_py-0.1.0.dist-info/METADATA,sha256=XPPNwGVUxOz603c8V5PO--sQYgSNulH7rQl_klzNekw,3436
+humani_py-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+humani_py-0.1.0.dist-info/RECORD,,
