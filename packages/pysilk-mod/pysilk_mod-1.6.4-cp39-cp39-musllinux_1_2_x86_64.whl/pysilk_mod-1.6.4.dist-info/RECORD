@@ -1,0 +1,14 @@
+pysilk_mod.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
+pysilk_mod.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
+pysilk/utils.py,sha256=y2djEevlOhSreb0Xg7ociRtWQV5wpFpb60MpSGalyPE,1326
+pysilk/coder.cpython-39-x86_64-linux-gnu.so,sha256=OfGDcOwwsLrAL86Q30GLp6emfSofcB-UHuUWQ923gCs,469545
+pysilk/pysilk.py,sha256=PyxHW6Vnl2NbNgbPBMUipo8s3K66JHFfSPMzhBh4Ofk,2990
+pysilk/__init__.py,sha256=j4dSeSvwHz9t3aUpIc1P7cYHeAg1c2QF6OmYkHdJH7g,356
+pysilk/__main__.py,sha256=H79Z5IM8kTMh3_FZIbSZmKJfYw6CEWuceg5-63kfWNE,2530
+pysilk/wav.py,sha256=6coXfF5K_SjeBcHhAENwbeXhCazmNDiQIBqcItMdYI8,1094
+pysilk_mod-1.6.4.dist-info/top_level.txt,sha256=tcB-cCbL6OMj8uspHFAz4kJ8ObWLz--nuLQ1wVc0GRY,7
+pysilk_mod-1.6.4.dist-info/RECORD,,
+pysilk_mod-1.6.4.dist-info/LICENSE,sha256=E6Es4ZNxz5F6o35P3CftG05nWoYt6nBKtsqnVBl0EvA,6277
+pysilk_mod-1.6.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pysilk_mod-1.6.4.dist-info/METADATA,sha256=HaxSgr7duTHehTxvodQsfA5pICK3hial54txWUOCAg8,565
+pysilk_mod-1.6.4.dist-info/WHEEL,sha256=pIdo97g1szozWwu1P8xkkEmb70jHWgOm5X5pZwY55h4,111
