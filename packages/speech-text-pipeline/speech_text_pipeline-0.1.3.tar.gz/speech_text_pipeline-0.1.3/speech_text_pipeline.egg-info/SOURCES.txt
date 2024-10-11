@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+speech_text_pipeline/__init__.py
+speech_text_pipeline/main.py
+speech_text_pipeline.egg-info/PKG-INFO
+speech_text_pipeline.egg-info/SOURCES.txt
+speech_text_pipeline.egg-info/dependency_links.txt
+speech_text_pipeline.egg-info/requires.txt
+speech_text_pipeline.egg-info/top_level.txt
+test/test1.py
+test/test2.py
