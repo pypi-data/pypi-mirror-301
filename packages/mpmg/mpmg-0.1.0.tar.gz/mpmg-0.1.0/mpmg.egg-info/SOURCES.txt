@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mpmg/__init__.py
+mpmg/mpmg_env.py
+mpmg.egg-info/PKG-INFO
+mpmg.egg-info/SOURCES.txt
+mpmg.egg-info/dependency_links.txt
+mpmg.egg-info/requires.txt
+mpmg.egg-info/top_level.txt
+test/__init__.py
+test/test_mpmg_logic.py
