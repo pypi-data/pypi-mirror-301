@@ -1,0 +1,13 @@
+pdf_invoice_util/__init__.py,sha256=3mF-rmybgPwkK0kP1FYOHH6zuuUaTGfi6XAq6k_p2AA,91
+pdf_invoice_util/config.py,sha256=ycVE6Kv_oUwf2FEmZzF7IHyQzQigq3W1b29D2BH7rUg,851
+pdf_invoice_util/invoice.py,sha256=69FIkm1kWDHmuC3jhhRyYqSEgT9lW9IzrcysxV2MfjI,2723
+pdf_invoice_util/invoice_pdf.py,sha256=NJCp2IzRchThenbGwG2s8AdTZogUbQWj6Ycfg_GRf_E,8572
+pdf_invoice_util/pdf.py,sha256=_tp9oZx_RZSgKGwLrKiguaXHFILWbncaQAznNeswqck,2377
+pdf_invoice_util/test/test_config.py,sha256=i-iqqKdYzcTRAjDmz2Ss5ZwEdArkVR5al0j4zk5YhjY,2216
+pdf_invoice_util/test/test_invoice.py,sha256=M-xmmUgT6PLM0zqi6sjmg5PrxykngkOVQcmWJ8-b5-I,6755
+pdf_invoice_util/test/test_invoice_pdf.py,sha256=RngTUPttzj1aMtSR7tCAOR8sj3z74cMS0bksi92cVpA,4636
+pdf_invoice_util-0.0.2.dist-info/LICENSE,sha256=EHEudxmq5HhDm6gcAO71IT9gw2UtaImPRoBbnNfqR_s,1074
+pdf_invoice_util-0.0.2.dist-info/METADATA,sha256=KdKhHcyJ5e-W6GkstTaiR3n7TW0HjzRyK2G9pz4LeVQ,3360
+pdf_invoice_util-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pdf_invoice_util-0.0.2.dist-info/top_level.txt,sha256=20Wyy_SckNbMPn-kxV2A8uxiu2Sf5yktm0Bcccv2y38,17
+pdf_invoice_util-0.0.2.dist-info/RECORD,,
