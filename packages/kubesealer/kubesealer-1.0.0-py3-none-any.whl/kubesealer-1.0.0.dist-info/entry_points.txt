@@ -1,0 +1,3 @@
+[console_scripts]
+kubesealer=kubesealer.cli:cli
+
