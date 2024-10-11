@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zhutools
+Version: 0.0.2
+Summary: 我的个人python工具库
+Home-page: https://github.com/GodsLeft/
+Author: yaguangzhu@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 说明
+希望能够总结一些日常使用的脚本，代码片段，包含python, shell等
