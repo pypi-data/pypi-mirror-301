@@ -1,0 +1,11 @@
+agjax/__init__.py,sha256=tLLVFRBbL2ANzqNqmiuUUpKqsNb_S_svP6Bng_EIOZM,260
+agjax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agjax/utils.py,sha256=Fc2qfIxNFDjI5zoEATBM0R86eDVX-jn2N_opYTrp2_k,4035
+agjax/wrapper.py,sha256=EF4LioK20JrSzeY8OP9WT2svXYwZHPvFVN3oLwVpYJU,5957
+agjax/experimental/__init__.py,sha256=DbrPs9kVCJDR1UgqRLyXPFIHeBUIV7V6zyUHyeXXNio,133
+agjax/experimental/wrapper.py,sha256=RjJopCV5dJh14km4kNWxjYvplFrASCXbUocsE2JsF7M,5897
+agjax-0.3.3.dist-info/LICENSE,sha256=Xv-axFjjai65keQolOlhZ_R9kDSFBaJ939lyoqRoKTo,1082
+agjax-0.3.3.dist-info/METADATA,sha256=3OO2pPxbpcwZxFVs5THlrCtGLtsvKcEd88P1nW5KhpM,5053
+agjax-0.3.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+agjax-0.3.3.dist-info/top_level.txt,sha256=X4UFzpfuJTBSZnbY4dytaWq8OVPBOSCvq-KNDxcfT9Y,6
+agjax-0.3.3.dist-info/RECORD,,
