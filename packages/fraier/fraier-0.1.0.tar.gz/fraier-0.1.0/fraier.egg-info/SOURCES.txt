@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fraier/__init__.py
+fraier/fungsi_berat.py
+fraier.egg-info/PKG-INFO
+fraier.egg-info/SOURCES.txt
+fraier.egg-info/dependency_links.txt
+fraier.egg-info/top_level.txt
