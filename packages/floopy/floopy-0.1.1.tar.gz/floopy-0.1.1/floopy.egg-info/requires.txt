@@ -1,0 +1,7 @@
+numpy
+pandas
+collection
+jsonpickle
+tzlocal
+getmac
+rich
