@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: palgate-py
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/omercnet/palgate-py#readme
+Project-URL: Issues, https://github.com/omercnet/palgate-py/issues
+Project-URL: Source, https://github.com/omercnet/palgate-py
+Author-email: omercnet <639682+omercnet@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: click
+Requires-Dist: jpype1
+Description-Content-Type: text/markdown
+
+# Palgate-PY
+
+[![PyPI - Version](https://img.shields.io/pypi/v/palgate-py.svg)](https://pypi.org/project/palgate-py)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/palgate-py.svg)](https://pypi.org/project/palgate-py)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install palgate-py
+```
+
+## License
+
+`palgate-py` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
