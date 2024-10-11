@@ -1,0 +1,16 @@
+LICENSE
+README.md
+nlt.py
+setup.py
+natural_language_terminal/__init__.py
+natural_language_terminal/__main__.py
+natural_language_terminal/create_env.py
+natural_language_terminal/prompts.py
+natural_language_terminal.egg-info/PKG-INFO
+natural_language_terminal.egg-info/SOURCES.txt
+natural_language_terminal.egg-info/dependency_links.txt
+natural_language_terminal.egg-info/entry_points.txt
+natural_language_terminal.egg-info/requires.txt
+natural_language_terminal.egg-info/top_level.txt
+natural_language_terminal/cli/__init__.py
+natural_language_terminal/cli/app.py
