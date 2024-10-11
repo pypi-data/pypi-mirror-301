@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: iker-python-setup
+Version: 1.0.2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.11
+Requires-Dist: setuptools ~=72.0
+Requires-Dist: setuptools-scm ~=8.0
+Provides-Extra: test
+Requires-Dist: pytest-cov ~=5.0 ; extra == 'test'
+Requires-Dist: pytest-order ~=1.2 ; extra == 'test'
+Requires-Dist: pytest ~=8.3 ; extra == 'test'
+
