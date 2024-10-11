@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flow_matching
+Version: 0.0.0
+Summary: Flow Matching for Generative Modeling
+Author: Brian KarrerHeli Ben-Hamu,Itai Gat,Marton Havasi,Matthew Le,Neta Shaul,Ricky T.Q. Chen,Yaron Lipman
+Author-email: mattle@meta.com
+License: MIT License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchdiffeq
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pdoc3 ; extra == 'dev'
+
+Flow Matching for Generative Modeling
