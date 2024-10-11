@@ -1,0 +1,20 @@
+# Note: these are the development requirements for use with pip
+# the libraries dependencies are defined in pyproject.toml
+python-dateutil
+PyYAML
+requests
+Deprecated
+pytest
+responses
+python-dotenv
+invoke
+pylint
+PyJWT
+cachetools
+inputimeout
+Flask
+websockets
+pandas
+PyOTP
+hatchling
+hatch-vcs
