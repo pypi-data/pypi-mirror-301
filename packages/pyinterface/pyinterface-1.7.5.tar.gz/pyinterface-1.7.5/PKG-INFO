@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pyinterface
+Version: 1.7.5
+Summary: driver for Interface PCI board
+Home-page: https://github.com/ogawa-ros/pyinterface
+Author: Atsushi Nishimura
+Author-email: ars096@gmail.com
+License: MIT
+Project-URL: Documentation, https://pyinterface.readthedocs.io/
+Project-URL: Source Code, https://github.com/ogawa-ros/pyinterface
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: portio
+Requires-Dist: pypci
+Requires-Dist: psutil
+Requires-Dist: importlib-metadata; python_version < "3.8"
+
+# Interface PCI board driver for python
+
+## Environment
+- Linux
+- python 3
+- require : [portio module](http://portio.inrim.it/)
+
+
+## Installation
+`pip install pyinterface`
+
+
+## Usage
+
+    import pyinterface
+    
+    board_name = 2724
+    rsw_id = 2
+    
+    b = pyinterface.open(board_name, rsw_id)
+    b.input_byte('IN1_8')
+    >>> [0, 0, 0, 0, 0, 0, 0, 0]
+    
+    b.output_byte([0, 1, 0, 1, 0, 0, 1, 1], 'OUT25_32')
+    >>> 000000CA
+
+
+## Documents
+
+http://pyinterface.readthedocs.io/ja/latest/index.html
