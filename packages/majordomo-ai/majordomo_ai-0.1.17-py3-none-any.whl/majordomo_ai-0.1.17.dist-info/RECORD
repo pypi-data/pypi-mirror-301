@@ -1,0 +1,10 @@
+majordomo_ai/__init__.py,sha256=MIKbxdLPqSSWxt0zaRfFUkA56HNgRYHsxrlXK5ocGvQ,107
+majordomo_ai/auth.py,sha256=FT7Rnsk5pwkN6F-OEoJcWv8HITqJWRuY6HBJq_wCZnE,1434
+majordomo_ai/data_store.py,sha256=01QeHEhtgRGU0XvbTJMuvYHQN7HLHZOmUIXoC_D3h-A,15522
+majordomo_ai/ingest_pipeline.py,sha256=yg7c5B0wX_nfP5fJQQEewkFZqotSHZdQp5fQILDmsvk,4717
+majordomo_ai/models.py,sha256=4Ml0DaomEJXucMfHHMmt6-erJ1CNJpzAvgNW2enJyz8,3254
+majordomo_ai/query_pipeline.py,sha256=cJH0sUoM2bT-HHWgB9QJ-o2GE6iXl79rvCxmQkyvSv8,3862
+majordomo_ai-0.1.17.dist-info/METADATA,sha256=unSpbLyvEyjifaaDEJckbs1tx2lNI5Q8eqYehN5_0Jc,123
+majordomo_ai-0.1.17.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+majordomo_ai-0.1.17.dist-info/top_level.txt,sha256=ZL6w4-Fm981rvh9rSipxQwo62ZUYaUxMnWcps2ae7BU,13
+majordomo_ai-0.1.17.dist-info/RECORD,,
