@@ -1,0 +1,13 @@
+CMakeLists.txt
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+TorchImager/__init__.py
+TorchImager/main.hip
+TorchImager.egg-info/PKG-INFO
+TorchImager.egg-info/SOURCES.txt
+TorchImager.egg-info/dependency_links.txt
+TorchImager.egg-info/requires.txt
+TorchImager.egg-info/top_level.txt
+tests/test.py
