@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/moveread/tatr/__init__.py
+src/moveread/tatr/__init__.pyi
+src/moveread/tatr/config.py
+src/moveread/tatr/data.py
+src/moveread/tatr/decoding.py
+src/moveread/tatr/model.py
+src/moveread/tatr/sorting.py
+src/moveread_tatr.egg-info/PKG-INFO
+src/moveread_tatr.egg-info/SOURCES.txt
+src/moveread_tatr.egg-info/dependency_links.txt
+src/moveread_tatr.egg-info/requires.txt
+src/moveread_tatr.egg-info/top_level.txt
