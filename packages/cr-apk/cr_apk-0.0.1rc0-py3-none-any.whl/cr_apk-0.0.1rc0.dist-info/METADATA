@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: cr-apk
+Version: 0.0.1rc0
+Summary: APK Manager for Clash Royale
+Home-page: https://github.com/pyclashbot/cr-apk
+Author: Martin Miglio
+Author-email: code@martinmiglio.dev
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.37,<2.0.0)
+Requires-Dist: boto3-stubs[s3] (>=1.35.37,<2.0.0)
+Requires-Dist: cleo (>=2.1.0,<3.0.0)
+Requires-Dist: pymemuc (>=0.6.0,<0.7.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/pyclashbot/cr-apk
+Description-Content-Type: text/markdown
+
+# cr-apk
+
+Clash Royale APK Manager
+
+## Usage
+
+Installation:
+
+```bash
+poetry install
+```
+
+List available commands:
+
+```bash
+> poetry run crapk list
+```
+
+```plaintext
+Available commands:
+  build   Builds an APK version
+  deploy  Deploys an APK version
+  help    Displays help for a command.
+  list    Lists commands.
+  ls      Lists all APK versions
+  pull    Pulls an installed application's APKs from the device
+```
+
