@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+localstack-sdk-python/localstack/clients.py
+localstack-sdk-python/localstack/sdk/chaos/__init__.py
+localstack-sdk-python/localstack/sdk/chaos/client.py
+localstack-sdk-python/localstack/sdk/chaos/managers.py
+localstack-sdk-python/localstack/sdk/pods/__init__.py
+localstack-sdk-python/localstack/sdk/pods/client.py
+localstack-sdk-python/localstack_sdk_python.egg-info/PKG-INFO
+localstack-sdk-python/localstack_sdk_python.egg-info/SOURCES.txt
+localstack-sdk-python/localstack_sdk_python.egg-info/dependency_links.txt
+localstack-sdk-python/localstack_sdk_python.egg-info/requires.txt
+localstack-sdk-python/localstack_sdk_python.egg-info/top_level.txt
