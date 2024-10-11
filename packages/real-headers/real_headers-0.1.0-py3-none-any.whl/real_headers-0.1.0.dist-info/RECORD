@@ -1,0 +1,10 @@
+real_headers/__init__.py,sha256=z9fOYYQZx0K3JjrufH7dTuKdKiLNZ_19v2S1uiDJbBc,739
+real_headers/headers.py,sha256=dch42LjmIB7K4VlbExwxSYbaQdOIpksYkP-swCeocf4,1871
+real_headers/user_agents.py,sha256=dpnGey3pY_TN6CjLutc4m5aI5vuPKk2BWaJ8Hc1PiMk,532243
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_real_headers.py,sha256=BiO6hrWf-WGyRGcZQiRnbw2snRX6dYBnEzzHhm26PxI,1139
+real_headers-0.1.0.dist-info/LICENSE,sha256=5W-6gsdu6zL_qWR5hxiDis1T15bmAGV92elxvfiYq44,1091
+real_headers-0.1.0.dist-info/METADATA,sha256=rDTcxYi2MMWADMHZNoX1qjRRZsAYgyB4SVThwJcFYTQ,2597
+real_headers-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+real_headers-0.1.0.dist-info/top_level.txt,sha256=xmAVjPfk-q4uRomN0-BTlfJC0Tzrp2p7YUGyx6LkUvI,19
+real_headers-0.1.0.dist-info/RECORD,,
