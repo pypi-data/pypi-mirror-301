@@ -1,0 +1,8 @@
+setup.py
+PyMyMethods/Method.py
+PyMyMethods/__init__.py
+PyMyMethods/parentMethod.py
+PyMyMethods.egg-info/PKG-INFO
+PyMyMethods.egg-info/SOURCES.txt
+PyMyMethods.egg-info/dependency_links.txt
+PyMyMethods.egg-info/top_level.txt
