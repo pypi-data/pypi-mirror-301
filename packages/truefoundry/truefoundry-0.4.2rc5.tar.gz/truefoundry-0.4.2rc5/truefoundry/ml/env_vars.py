@@ -1,0 +1,9 @@
+"""
+Define all the env variable names that users can use
+"""
+
+DISABLE_MULTIPART_UPLOAD = "MLF_DISABLE_MULTIPART_UPLOAD"
+INTERNAL_ENV_VARS = [
+    "TFY_INTERNAL_APPLICATION_ID",
+    "TFY_INTERNAL_JOB_RUN_NAME",
+]
