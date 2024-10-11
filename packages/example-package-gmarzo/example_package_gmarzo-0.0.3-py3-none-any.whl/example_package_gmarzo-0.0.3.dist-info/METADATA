@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: example_package_gmarzo
+Version: 0.0.3
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Garrett Marzo <garrett.marzo@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pygame>=2.5.0
+Description-Content-Type: text/markdown
+
+Recreation of ps0 ufo project using pygame with abstraction layer.
