@@ -1,0 +1,2 @@
+[commitizen.plugin]
+deno-provider = deno_provider:DenoProvider
