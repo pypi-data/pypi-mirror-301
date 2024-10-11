@@ -1,0 +1,2 @@
+[console_scripts]
+PyJ = PyJ.__main__:main
