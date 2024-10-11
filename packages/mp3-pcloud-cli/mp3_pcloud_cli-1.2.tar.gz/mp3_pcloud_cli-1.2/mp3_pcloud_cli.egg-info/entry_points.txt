@@ -1,0 +1,2 @@
+[console_scripts]
+mp3-pcloud-cli = module.main:main
