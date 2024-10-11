@@ -1,0 +1,174 @@
+Qrogue<
+// not used at the moment
+Name = "Lesson 6: Challenge your Imagination"
+Description = Speaker "0" "Now that we told you about the three main quantum concepts (Superposition, Measurement, Entanglement), let's continue by making everything weird again!" "" "May we introduce: //05j//, the imaginary constant."
+Closing = *doneMsg
+NO_TELEPORTER
+
+// Introduced Concepts:
+// expeditions (structure), minibosses, imaginary states
+
+[Robot]
+2 qubits [ *xgate, *cxgate, *hgate ]
+circuit_space = 5
+maxenergy = 1000000
+
+[Layout]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| __ .. __ .. __ .. __ .. mm .. __ .. __ |
+| ..    ..    ..    ..    ==    ..    .. |
+| __ .. dd 11 cc == bb == aa == SR .. __ |
+| ..    ..    ..    ..    ==    ..    .. |
+| __ .. __ .. __ .. __ .. kk .. __ .. __ |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+[Custom Rooms]
+
+SR (Spawn):
+#############
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+#############
+
+aa (Wild):
+#############
+# o 1 0 3 o #
+# _ _ _ _ _ #
+# 3 _ m _ 0 #
+# _ _ _ _ _ #
+# o 2 0 3 o #
+#############
+m 1 *expStructure
+0 *allSupReal
+0 *allSupReal tutorial *reset
+0 *basej
+1 *allSupReal
+2 *allSupReal
+3 *allSupReal
+
+bb (Wild):
+#############
+# _ 6 4 _ o #
+# _ 4 o _ o #
+# _ o o 0 _ #
+# _ 3 o _ o #
+# _ 7 3 _ o #
+#############
+0 *base4j
+3 *basej
+4 *basej
+
+cc (Wild):
+#############
+# 7 _ 6 _ 2 #
+# _ o o o _ #
+# m 4 0 1 _ #
+# _ o o o _ #
+# 2 _ 8 _ 5 #
+#############
+m 1 *bossDoor
+
+dd (Wild):
+#############
+# o _ _ _ _ #
+# _ o _ _ _ #
+# o o b _ _ #
+# _ o _ _ _ #
+# o _ _ _ _ #
+#############
+b *bossPuzzle score 1000 10
+
+kk (Wild):
+#############
+# 0 _ _ 5 3 #
+# _ o o o 6 #
+# 0 _ c _ 4 #
+# _ o o o 2 #
+# 0 _ c _ 7 #
+#############
+c key 1 trigger *foundKey
+c score 1000
+
+mm (Wild):
+#############
+# o o o o o #
+# o _ _ _ o #
+# o _ ! _ o #
+# o _ _ _ o #
+# o o m o o #
+#############
+m 1 *tutChallenge
+! 2 *base00 gate *S input=*stvChallenge
+
+
+[Hallways]
+11 (locked; ; )
+
+
+[StateVector Pools]
+custom
+*base00 [ {num_qubits=2: gI @ q0} ]
+
+// all "old" (i.e., not using S Gates) superposition-related stvs
+*supH0 [ {num_qubits=2: gH @ q0} ]
+*supH1 [ {num_qubits=2: gH @ q1} ]
+*supH [ *supH0, *supH1 ]
+
+*supH0X1 [ {num_qubits=2: gH @ q0, gX @ q1} ]
+*supH1X0 [ {num_qubits=2: gH @ q1, gX @ q0} ]
+*supHX [ *supH0X1, *supH1X0 ]
+
+*entanglement0 [ {num_qubits=2: gH @q0, gCX @[q0, q1]} ]
+*entanglement1 [ {num_qubits=2: gH @q1, gCX @[q1, q0]} ]
+*entanglement [ *entanglement0, *entanglement1 ]
+*entAnti [ {num_qubits=2: gX @q0, gH @q1, gCX @[q1, q0]} ]
+
+*allSupReal [ *supH, *supHX, *entanglement, *entAnti ]
+
+// all "new" (i.e., using S Gates) stvs
+*base2j [ {num_qubits=2: gX @ q0, gS @ q0} ]
+*base3j [ {num_qubits=2: gX @ q1, gS @ q1} ]
+*base4j [ {num_qubits=2: gX @ q0, gCX @[q0, q1], gS @ q0} ]
+*basej [ *base2j, *base3j, *base4j ]
+
+*supHS0 [ {num_qubits=2: [gH, gS] @q0} ]
+*supHS1 [ {num_qubits=2: [gH, gS] @q1} ]
+*supHS [ *supHS0, *supHS1 ]
+
+*entJ [ {num_qubits=2: gH @q0, gS @q0, gCX @[q0, q1]} ]
+*entMinusJ [ {num_qubits=2: gX @q0, gH @q0, gS @q0, gCX @[q0, q1]} ]
+*entAntiJ [ {num_qubits=2: gX @q1, gH @q0, gS @q0, gCX @[q0, q1]} ]
+*entAntiJ2 [ {num_qubits=2: gX @q1, gH @q0, gS @q1, gCX @[q0, q1]} ]
+*entanglementJ [ *entJ, *entMinusJ, *entAntiJ, *entAntiJ2 ]
+
+*stvChallenge [ {num_qubits=2: [gX, gS, gS, gS] @q1} ]	// needs to be inverse!
+
+*allJ [ *baseJ, *supHS, *entanglementJ ]	// all that include a j
+
+default *allJ
+
+[Reward Pools]
+default *none
+
+
+[Messages]
+// highlight text by encapsulating it in "//02abcd//" where "abcd" is the text to highlight and "02" one of the available styles: 01 is for tiles, 02 is for game objects, 03 for actions, 04 for keys on the keyboard and 05 for other words
+// speaker: 0 = Examiner, 1 = Scientist, 2 = System, 3 = Player
+default Speaker "0"
+
+*reset "Going forward, the //02Puzzles// will get more complex and are often not solvable with just one or two //02Gates//. To make your life easier, you are now able to //03Reset// your //02Circuit// to //03remove// //05all// placed //02Gates//."
+
+*expStructure prio "But first things first: This lesson will also introduce you to the structure of //02Expeditions//. After you completed all lessons (spoiler: there is one more), we will send you to unknown planets of the quniverse, where you can collect new gates to experiment with on these so-called //02Expeditions//." "Due to their quantum nature, no one knows their exact layout beforehand, but they will all contain a //02Miniboss// as well as an actual //02Boss//." "You'll find out more as you explore this level!"
+
+*tutChallenge prio "So this //01!// is a //02Miniboss//." "It's pretty different from //02Bosses// and normal //02Puzzles//:" "  1) It gives you a new //02Gate// upon challenging it, which you will need to solve its //02Puzzle//." "  2) It will only accept your solution if you used a //05specified number// of //02Gates//." "  3) While its TargetStv will be a 0-state, its InputStv won't, so you have to kind of think backwards." "  4) It won't accept your attempts to flee." "" "Good luck challenging it!"
+
+*bossDoor prio pos5 "Beyond this //02Door// lies the //05Boss chamber//. Since it is locked, you need to find a //02Key// in one of the other rooms. This will also always be the case for //02Expeditions//. Additionally, you will need the //02Gate// given to you by the //02Miniboss//, so make sure to always challenge it first!" when *foundKey then *bossDoorKey
+*bossDoorKey prio pos5 "Beyond this //02Door// lies the //02Boss'// chamber. Since it is locked, you need to use the //02Key// you've already found in another room. This will also always be the case for //02Expeditions//. Additionally, you will need the //02Gate// given to you by the //02Miniboss//, so make sure to always challenge it first!"
+
+*doneMsg prio "Well done!" "If you feel ready, you can continue with the very //05last// //05Lesson//. Otherwise, we went ahead and unlocked //05Level Selection// in your main menu. So you can go back and revisit a previous //05Lesson// to beat your highscore. It's up to you."
+
+>Qrogue
