@@ -1,0 +1,9 @@
+README.md
+setup.py
+browsergym_weblinx/__init__.py
+browsergym_weblinx/version.py
+browsergym_weblinx.egg-info/PKG-INFO
+browsergym_weblinx.egg-info/SOURCES.txt
+browsergym_weblinx.egg-info/dependency_links.txt
+browsergym_weblinx.egg-info/requires.txt
+browsergym_weblinx.egg-info/top_level.txt
