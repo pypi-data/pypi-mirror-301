@@ -1,0 +1,7 @@
+django_sqids/__init__.py,sha256=YGWk8a7vHLvDdL9CU6AnKuF-55BKSQLaEyYgI7LD5tM,94
+django_sqids/exceptions.py,sha256=tYM_M9OEZpkEnEQUDdyou32DtCKR-Sk2ZW54vfM7_AA,97
+django_sqids/field.py,sha256=QeKU0nHNArFIc6Nb6jDtO3J45_JicLjmPX_kUtxOLf0,5790
+django_sqids-0.2.1.dist-info/LICENSE,sha256=9RId6MB3Z-sIOor4ihzgWA1NuG5jFEfj5jw8KlOdhpk,1098
+django_sqids-0.2.1.dist-info/METADATA,sha256=PWqUd-STPYGr82XaDgmEYLTySaDtPOQ9M051FN38elo,6436
+django_sqids-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_sqids-0.2.1.dist-info/RECORD,,
