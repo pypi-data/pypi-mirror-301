@@ -1,0 +1,10 @@
+[partis_view]
+view_editors = partis.nwl.view.plugin:get_view_editors
+
+[partis_schema]
+base_schemas = partis.nwl.plugin:get_base_schemas
+
+[console_scripts]
+partis-nwl = partis.nwl.__main__:main
+partis-nwl-pkg = partis.nwl.tool_pkg.__main__:main
+
