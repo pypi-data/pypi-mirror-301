@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: KALENDER
+Version: 0.0.1
+Summary: Kalender adalah salah satu package Python yang menyediakan berbagai fungsi terkait penanggalan. Package ini membantu kita untuk bekerja dengan kalender, menentukan hari libur, dan sebagainya. Beberapa fitur utamanya adalah menampilkan bulan atau tahun dalam bentuk kalender, menentukan hari dalam minggu untuk tanggal tertentu, dan menghitung hari kerja.
+Home-page: https://github.com/zlfaaasyyy/KALENDER.git
+Author: KELOMPOK 3 ALGO A
+Author-email: syauqiyahzalfa2006@gmail.com
+Description-Content-Type: text/markdown
+
+# KALENDER
