@@ -1,0 +1,3 @@
+[console_scripts]
+beepy-bluetooth-manager=beepy_bluetooth_manager.main:main
+
