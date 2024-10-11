@@ -1,0 +1,3 @@
+[console_scripts]
+bedrock-a-bot = bedrock_a_bot.__main__:main
+upload-bedrock-a-bot = upload_to_pip:main
