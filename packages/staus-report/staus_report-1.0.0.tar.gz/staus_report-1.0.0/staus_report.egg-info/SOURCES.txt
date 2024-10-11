@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+status_report/__init__.py
+status_report/core.py
+staus_report.egg-info/PKG-INFO
+staus_report.egg-info/SOURCES.txt
+staus_report.egg-info/dependency_links.txt
+staus_report.egg-info/top_level.txt
+tests/tests_core.py
