@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+corrGraph/__init__.py
+corrGraph/corrGraph.py
+corrGraph.egg-info/PKG-INFO
+corrGraph.egg-info/SOURCES.txt
+corrGraph.egg-info/dependency_links.txt
+corrGraph.egg-info/requires.txt
+corrGraph.egg-info/top_level.txt
