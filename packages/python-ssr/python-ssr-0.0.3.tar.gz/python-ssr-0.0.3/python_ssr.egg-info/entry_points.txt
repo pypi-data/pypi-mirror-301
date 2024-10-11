@@ -1,0 +1,2 @@
+[console_scripts]
+python_ssr = python_ssr.watch:start_rendering
