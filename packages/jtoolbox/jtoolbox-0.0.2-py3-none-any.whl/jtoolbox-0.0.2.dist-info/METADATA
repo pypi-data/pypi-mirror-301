@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jtoolbox
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: 
+Author: jongseo_park
+Author-email: jongsaeu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: rdkit
+Requires-Dist: torch
+Requires-Dist: torch-geometric
+
+UNKNOWN
+
