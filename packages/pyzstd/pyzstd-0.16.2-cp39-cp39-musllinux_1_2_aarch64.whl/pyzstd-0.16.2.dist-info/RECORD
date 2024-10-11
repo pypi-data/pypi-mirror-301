@@ -1,0 +1,13 @@
+pyzstd-0.16.2.dist-info/top_level.txt,sha256=9Sl3x1CXrPdyG5muunGLOQpJEbiwW6WW8Y46nZMgWsE,7
+pyzstd-0.16.2.dist-info/RECORD,,
+pyzstd-0.16.2.dist-info/LICENSE,sha256=7bd5kfZn8QneE767JuukMXusLz0qNNTcfH51c1nQa54,1540
+pyzstd-0.16.2.dist-info/METADATA,sha256=w7QcJ0UVteJwwBSL0iWfwDQgK3jqJ9GvR6rT3YpWR_w,2431
+pyzstd-0.16.2.dist-info/WHEEL,sha256=jTHGCDTUYSTX1zFzFJXVlQDYBkQup1H3u4vmKdrQLNk,111
+pyzstd/seekable_zstdfile.py,sha256=MKbDb5oUbm99BN50lCe377f-mB9XwgaFKzZ-xzAqKHE,26808
+pyzstd/zstdfile.py,sha256=UUvk5uEfvDMQbQJc06ax2mEfHrWzsrVKmvcogsIpIuI,17093
+pyzstd/__init__.py,sha256=QMDreemTlxnv8kRUzSRX9cICe9xKuI6ZQKVCWOKeoq8,6865
+pyzstd/__main__.py,sha256=1GBXeTbOtMji6t6dmGproR_GNXKV-BOZAlBFMtRMbVs,18351
+pyzstd/__init__.pyi,sha256=Os6hiOu4JbFEQxpm3wZ3xm4Do1kyW5R2XA8f_Jc8_8I,8622
+pyzstd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyzstd/c/_zstd.cpython-39-aarch64-linux-gnu.so,sha256=sjGfkGmWh_DbPmkkspwEP6PxVvQhjzBd6SaQE-9uGPY,838968
+pyzstd/c/__init__.py,sha256=LOXeaWb4xZIRXJYpskbMTvyaof98-5vQf_STZ6wLVko,5003
