@@ -1,0 +1,2 @@
+[console_scripts]
+python_ssg = python_ssg.watch:start_rendering

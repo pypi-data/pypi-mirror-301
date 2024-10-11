@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+python_ssg/__init__.py
+python_ssg/api_client.py
+python_ssg/site_renderer.py
+python_ssg/storage.py
+python_ssg/watch.py
+python_ssg.egg-info/PKG-INFO
+python_ssg.egg-info/SOURCES.txt
+python_ssg.egg-info/dependency_links.txt
+python_ssg.egg-info/entry_points.txt
+python_ssg.egg-info/requires.txt
+python_ssg.egg-info/top_level.txt
+tests/test_api_client.py
+tests/test_site_renderer.py
+tests/test_storage.py
