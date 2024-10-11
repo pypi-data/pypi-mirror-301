@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: opc-diag
+Version: 1.1.1
+Summary: A command-line application for exploring Microsoft Word, Excel, and PowerPoint files from Office 2007 and later.
+Author-email: Steve Canny <stcanny@gmail.com>
+License: MIT
+Project-URL: Changelog, https://github.com//opc-diag/blob/master/HISTORY.rst
+Project-URL: Documentation, https://opc-diag.readthedocs.org/en/latest/
+Project-URL: Homepage, https://github.com/python-openxml/opc-diag
+Project-URL: Repository, https://github.com/python-openxml/opc-diag
+Keywords: docx,pptx,xlsx,office,openxml,word,powerpoint,excel
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Office/Business :: Office Suites
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml >=4
+
+*opc-diag* is a command-line application for exploring Microsoft Word, Excel,
+and PowerPoint files from Office 2007 and later. Also known as *Office Open
+XML*, the structure of these files adheres to the Open Packaging Convention
+(OPC), specified by ISO/IEC 29500.
+
+*opc-diag* provides the `opc` command, which allows OPC files to be browsed,
+diff-ed, extracted, repackaged, and parts from one to be substituted into
+another.
+
+Its primary use is by developers of software that generates and/or
+manipulates Microsoft Office documents.
+
+A typical use would be diff-ing a Word file from before and after an operation,
+say inserting a paragraph, to identify the specific changes Word made to the
+XML. This is handy when one is developing software to do the same without
+Word's help:
+
+```bash
+$ opc diff before.docx after.docx
+```
+
+Another main use is to diagnose an issue causing an Office document to not load
+cleanly, typically because the software that generated it has a bug. These
+problems can be tedious and often difficult to diagnose without tools like
+*opc-diag*, and were the primary motivation for developing it.
+
+More information is available in the
+[opc-diag documentation](https://opc-diag.readthedocs.org/en/latest/) 
