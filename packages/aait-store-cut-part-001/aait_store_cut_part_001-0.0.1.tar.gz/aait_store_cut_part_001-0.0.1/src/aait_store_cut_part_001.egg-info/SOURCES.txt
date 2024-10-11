@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+src/aait_store_cut-part_001/__init__.py
+src/aait_store_cut-part_001/input/aait_store.zip.001
+src/aait_store_cut_part_001.egg-info/PKG-INFO
+src/aait_store_cut_part_001.egg-info/SOURCES.txt
+src/aait_store_cut_part_001.egg-info/dependency_links.txt
+src/aait_store_cut_part_001.egg-info/requires.txt
+src/aait_store_cut_part_001.egg-info/top_level.txt
