@@ -1,0 +1,6 @@
+torch
+transformers
+beautifulsoup4
+edge-tts
+nest_asyncio
+IPython

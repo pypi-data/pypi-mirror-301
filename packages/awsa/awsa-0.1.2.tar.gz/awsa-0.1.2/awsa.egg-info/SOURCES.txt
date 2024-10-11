@@ -1,0 +1,8 @@
+setup.py
+awsa/__init__.py
+awsa/awsa.py
+awsa.egg-info/PKG-INFO
+awsa.egg-info/SOURCES.txt
+awsa.egg-info/dependency_links.txt
+awsa.egg-info/requires.txt
+awsa.egg-info/top_level.txt
