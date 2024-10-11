@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.target.sdist.force-include]
+"src/cli.py" = "src/makechr/makechr.py"
+
+[project.scripts]
+makechr = "makechr.makechr:main"
+
+[project]
+name = "makechr"
+version = "1.8.5"
+authors = [
+  { name="Dustin Long", email="me@dustmop.io" },
+]
+description = "Graphics Tool for Retro Image Formats"
+license = {text = "GPL3 License"}
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'pillow',
+  'protobuf',
+]
+
+[project.urls]
+Homepage = "https://dustmop.io/software/makechr"
+Issues = "https://github.com/dustmop/makechr/issues"

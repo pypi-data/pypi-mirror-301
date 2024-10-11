@@ -1,0 +1,94 @@
+package valiant;
+
+// MAGIC_NUM = 7210303610482106886
+
+message ObjectFile {
+  optional int32 magic1 = 5;   // MAGIC_NUM / 100
+  optional fixed64 magic2 = 8; // MAGIC_NUM % 100
+  optional ObjectHeader header = 13;
+  optional ObjectData data = 14; // DEPRECATED
+  optional ObjectBody body = 15;
+}
+
+message ObjectHeader {
+  optional string module = 1;
+  optional bool short_palette = 2;
+}
+
+message ObjectData { // DEPRECATED
+  repeated DirectBinary binaries = 1;
+  optional GfxSettings settings = 2;
+  repeated GfxComponent components = 3;
+}
+
+message ObjectBody {
+  optional GfxSettings settings = 1;
+  repeated GfxPacket packets = 2;
+}
+
+enum DataRole {
+  NONE = 0;
+  CHR = 1;
+  NAMETABLE = 2;
+  ATTRIBUTE = 3;
+  PALETTE = 4;
+  SPRITELIST = 5;
+}
+
+///////////////////////////////////////////////////
+
+message GfxSettings {
+  optional int32 bg_color = 1;
+  repeated ChrMetadata chr_metadata = 5; // DEPRECATED
+  repeated PaletteMetadata palette_metadata = 6; // DEPRECATED
+}
+
+message PacketSettings {
+  optional ChrMetadata chr_metadata = 5;
+  optional PaletteMetadata palette_metadata = 6;
+}
+
+message GfxPacket {
+  optional DataRole role = 1;
+  optional string name = 2;
+  optional PacketSettings metadata = 3;
+  optional DirectBinary binary = 4;
+}
+
+message GfxComponent { // DEPRECATED
+  optional DataRole role = 1;
+  optional int32 binary_index = 2;
+  optional string name = 3;
+}
+
+message ChrMetadata {
+  optional int32 order = 1;
+  repeated int32 sorted_idx = 2; // DEPRECATED
+  optional int32 size = 3;
+  optional int32 is_locked_tiles = 4;
+  optional string traversal = 5;
+}
+
+message PaletteMetadata {
+  optional int32 order = 1;
+  optional int32 size = 3;
+}
+
+///////////////////////////////////////////////////
+
+message DirectBinary {
+  optional bytes bin = 1;
+  // Padding and pre_pad are used when bytes at the beginning and end,
+  // respectively, of a binary blob do have have important semantic value.
+  // An intelligent agent may modify the binary blob by overwriting the padded
+  // portion with other bytes, and this should not affect the meaning of the
+  // central data. Padding is not simply compression, and it is not appropriate
+  // to use if the binary blob needs to explicitly retain null values to retain
+  // its meaning. For example, unused chr banks may use padding. However,
+  // nametables that want to have blank portions must not use padding.
+  optional int32 padding = 2;
+  optional int32 pre_pad = 3;
+  // When padded data is expanded, the null value if it exists should be used
+  // for the expansion.
+  optional int32 null_value = 4;
+}

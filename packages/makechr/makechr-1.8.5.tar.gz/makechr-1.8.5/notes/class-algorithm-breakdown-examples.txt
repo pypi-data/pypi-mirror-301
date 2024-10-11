@@ -1,0 +1,62 @@
+install makechr-rs
+
+alias makechr into makechr-py-legacy
+makechr-py-legacy
+  will take old param arguments in
+  and translate them into "plans" or "scripts" to use makechr-rs instead
+
+========
+
+process_image
+  (if given) palette = read()
+  process_to_artifacts
+  make_palette
+  make_colorspace
+  traverse_artifacts
+
+guess_palette
+  uniq_color_sets = get_uniq_color_sets(color_needs_list)
+  minimal_colors = get_minimal_colors(uniq_color_sets)
+  possibilities = get_merged_color_possibilities(minimal_colors)
+  # possibilities is a list of "possibility" objects
+  # a possibility has: [:background-color:, :combined-colors:]
+  return get_palette(possibilities)
+
+get_merged_color_possibilities:
+
+====
+
+ minimal_colors = [1,2,3],[1,2,4],[1,5],[1,6,7],[1,6,8,9]
+ finalized = [1,6,8,9]
+ remaining = [1,2,3],[1,2,4],[1,5],[1,6,7]
+
+ partitions = 
+
+[
+  [bg=6, [[4, 6, 8, 9], {1, 5, 6, 7}, {1, 2, 4}, {1, 2, 3}]],
+  [bg=4, [[4, 6, 8, 9], {1, 6, 7}, {1, 2, 4, 5}, {1, 2, 3}]],
+  [bg=4, [[4, 6, 8, 9], {1, 6, 7}, {1, 5}, {1, 2, 3, 4}]]]
+]
+
+[
+ [bg=1, [[1, 6, 8, 9], {1, 5, 6, 7}, {1, 2, 3, 4}]],          [4],{4,4}
+ [bg=1, [[1, 6, 8, 9], {1, 5, 6, 7}, {1, 2, 4}, {1, 2, 3}]],  [4],{4,3,3}
+ [bg=1, [[1, 6, 8, 9], {1, 6, 7}, {1, 2, 4, 5}, {1, 2, 3}]],  [4],{3,4,3}
+ [bg=1, [[1, 6, 8, 9], {1, 6, 7}, {1, 2, 3, 5}, {1, 2, 4}]],  [4],{3,4,3}
+ [bg=1, [[1, 6, 8, 9], {1, 6, 7}, {1, 5}, {1, 2, 3, 4}]]      [4],{3,2,4}
+]
+
+----
+
+ minimal_colors = [1,2,3],[1,2,4],[1,5,6,7]
+ finalized = [1,5,6,7]
+ remaining = [1,2,3],[1,2,4]
+
+[
+ [bg=1, [[1, 5, 6, 7], {1, 2, 3, 4}]],
+ [bg=1, [[1, 5, 6, 7], {1, 2, 4}, {1, 2, 3}]]]
+]
+
+get_valid_combinations:
+  
+for merge_strategy in partitions(remaining)

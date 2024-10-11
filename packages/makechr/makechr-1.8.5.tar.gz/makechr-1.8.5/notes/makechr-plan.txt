@@ -1,0 +1,6 @@
+[x] moved it to new package layout
+[x] tests pass?
+[x] release to test-pypi
+[/] can we build filthy-kitchen
+[X] can we build lilgems
+[] import as a module for valimg?

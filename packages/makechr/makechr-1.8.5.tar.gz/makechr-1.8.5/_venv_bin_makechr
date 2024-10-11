@@ -1,0 +1,4 @@
+#!/Users/dlong/dev/code/py/makechr/venv/bin/python
+# EASY-INSTALL-SCRIPT: 'Makechr==1.5','makechr'
+__requires__ = 'Makechr==1.5'
+__import__('pkg_resources').run_script('Makechr==1.5', 'makechr')
