@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyflowery
+Version: 2.1.2
+Summary: A Python API wrapper for the Flowery API
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <4.0,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp >=3.10.9
+Provides-Extra: documentation
+Requires-Dist: mkdocs >=1.6.1 ; extra == 'documentation'
+Requires-Dist: mkdocs-git-authors-plugin >=0.9.0 ; extra == 'documentation'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin >=1.2.9 ; extra == 'documentation'
+Requires-Dist: mkdocs-material[imaging] >=9.5.40 ; extra == 'documentation'
+Requires-Dist: mkdocs-redirects >=1.2.1 ; extra == 'documentation'
+Requires-Dist: mkdocstrings[python] >=0.26.1 ; extra == 'documentation'
+
+# PyFlowery
+
+[<img alt="Actions Status" src="https://www.coastalcommits.com/cswimr/PyFlowery/badges/workflows/actions.yaml/badge.svg?style=plastic">](https://www.coastalcommits.com/cswimr/PyFlowery/actions?workflow=actions.yaml)
+[<img alt="Documentation" src="https://img.shields.io/badge/docs-CoastalCommits%20Pages-3e83fd?logo=materialformkdocs&style=plastic">](https://pyflowery.coastalcommits.com)
+[<img alt="PyPI - Version" src="https://img.shields.io/pypi/v/pyflowery?style=plastic">](https://pypi.org/project/pyflowery/)
+[<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/pyflowery?style=plastic">](https://pypi.org/project/pyflowery/)
+[<img alt="PyPI - License" src="https://img.shields.io/pypi/l/pyflowery?style=plastic">](https://www.coastalcommits.com/cswimr/pyflowery/src/branch/main/LICENSE/)  
+A simple async Python API wrapper for the [Flowery API](https://flowery.pw/about)
