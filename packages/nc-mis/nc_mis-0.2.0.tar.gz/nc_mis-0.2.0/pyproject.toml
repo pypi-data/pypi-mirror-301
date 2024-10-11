@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nc-mis"
+description = "ncubed automation backend for network device management"
+# readme = "README.md"
+authors = [{ name="Jasper Schoenmaker", email="jasper.schoenmaker@ncubed.nl" }]
+requires-python = ">=3.10"
+keywords = ["ncubed", "accelerator", "mis"]
+license = {text = "GNU General Public License v3.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "netmiko==4.3.*",
+    "pynetbox==7.3.*",
+    "ttp==0.9.*",
+    "nc_helpers>=1.0.4",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+   # "bandit==1.7.4",
+]
+
+# [project.scripts]
+# mis = "nc_mis.run:main"
+
+# [tool.setuptools]
+# package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+version = {attr = "nc_mis.__version__"}
