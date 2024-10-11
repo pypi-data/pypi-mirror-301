@@ -1,0 +1,11 @@
+flask_openapi3_elements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_openapi3_elements/__version__.py,sha256=HjBIzIrcjWC5DbX7S7Jq-n-qvAJSDRHv_eFMDEO7iHY,47
+flask_openapi3_elements/plugins.py,sha256=Z4Psa_uyGs3w-uCmFpj5jHYJ4_qnOiKSxUPuZebPjCg,1054
+flask_openapi3_elements/templates/__init__.py,sha256=xrzvXGDXzhFDmuuOOfTY9CJWIc47jJyaadBcFNzWa9o,910
+flask_openapi3_elements/templates/elements/css/styles.min.css,sha256=4m2_98R1JBvKAKWf_2s3miA2qg5m57z5JMhQPDujEGc,297495
+flask_openapi3_elements/templates/elements/images/elements.svg,sha256=JdLjhRyfuhiLrLERdJIp-7_KZL4Gf7hA7QPYaltpJ_M,3346
+flask_openapi3_elements/templates/elements/js/web-components.min.js,sha256=KXfap3DlUFz1bvgPUldNFy0LwLvEdK96oZkIiPcdSPk,2029805
+flask_openapi3_elements-8.4.6.dist-info/METADATA,sha256=Ev7Op7SoukOE_Y0174HW_Aejs2VMOTZ4wkWT76BnG4M,1011
+flask_openapi3_elements-8.4.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+flask_openapi3_elements-8.4.6.dist-info/entry_points.txt,sha256=e1j2FLw2hByC2m_yrDcmwyjFuUhWExGsbuLtFQAfxIU,83
+flask_openapi3_elements-8.4.6.dist-info/RECORD,,
