@@ -1,0 +1,69 @@
+[general]
+region = "ap-southeast-1"
+project_name = "testprj"
+stages = ["dev", "tst", "stg", "prd"]
+
+[[general.vpcs]]
+ref = "sandbox"
+zone_suffixes = ["c"]
+efs = {}
+
+[general.django_fallback.storages]
+default = { store = "filesystem" }
+management = { store = "filesystem", location = "management" }
+staticfiles = { store = "filesystem", static = true }
+
+[s3]
+public_dirs = ["static"]
+
+[awscontainer]
+dockerfile_path = "tests/sampleprj/Dockerfile"
+
+[awscontainer.django.settings]
+TEST_NESTED = { "first" = { "second" = { "third" = { "NAME" = "key" } } } }
+
+[awscontainer.django.storages]
+default = { store = "s3", location = "media" }
+staticfiles = { store = "s3", location = "static", static = true, manifest = true }
+
+[awscontainer.django.caches]
+default = { store = "efs" }
+
+[awscontainer.handlers.wsgi]
+command = "pocket.django.lambda_handlers.wsgi_handler"
+[awscontainer.handlers.management]
+command = "pocket.django.lambda_handlers.management_command_handler"
+timeout = 600
+[awscontainer.handlers.sqsmanagement]
+command = "pocket.django.lambda_handlers.sqs_management_command_report_failuers_handler"
+timeout = 60
+sqs = {}
+
+[dev.awscontainer]
+vpc_ref = "sandbox"
+
+[dev.awscontainer.envs]
+DJANGO_ENV_PATH = "project/env/env.dev"
+
+[dev.awscontainer.handlers.wsgi]
+apigateway = { domain = "api.project.com" }
+
+[dev.neon]
+
+# [prd.awscontainer.secretsmanager]
+# pocket_key_format = "{prefix}{stage}-{project}"
+# [awscontainer.secretsmanager]
+# pocket_key_format = "{prefix}{project}"
+# [awscontainer.secretsmanager.pocket_secrets]
+# SECRET_KEY = { type = "password", options = { length = 50 } }
+# DJANGO_SUPERUSER_PASSWORD = { type = "password", options = { length = 16 } }
+# DATABASE_URL = { type = "neon_database_url" }
+
+[prd.awscontainer]
+vpc_ref = "sandbox"
+
+[prd.awscontainer.envs]
+DJANGO_ENV_PATH = "project/env/env.prd"
+
+[prd.awscontainer.handlers.wsgi]
+apigateway = { domain = "api.project.com" }

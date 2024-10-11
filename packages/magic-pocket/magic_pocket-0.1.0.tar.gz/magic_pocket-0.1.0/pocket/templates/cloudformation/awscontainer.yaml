@@ -1,0 +1,361 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: lambda configuration for webapp
+
+Resources:
+  LambdaRole:
+    # This role must be created before the lambda function.
+    # https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html
+    # When you change Role, you must delete function and role.
+    # https://www.lastweekinaws.com/blog/the-sneaky-weakness-behind-aws-managed-kms-keys/
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: "sts:AssumeRole"
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
+        - arn:aws:iam::aws:policy/AmazonSESFullAccess
+        # {% if use_s3 %}
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        # {% endif %}
+        # {% if use_route53 %}
+        - arn:aws:iam::aws:policy/AmazonRoute53FullAccess
+        # {% endif %}
+        # {% if use_sqs %}
+        - arn:aws:iam::aws:policy/AmazonSQSFullAccess
+        # {% endif %}
+        # {% if use_efs %}
+        - arn:aws:iam::aws:policy/AmazonElasticFileSystemFullAccess
+        # {% endif %}
+      Policies:
+        # {% if secretsmanager %}
+        - PolicyName: "{{ slug }}-access-secretsmanager"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              # {% if secretsmanager.allowed_resources %}
+              - Effect: "Allow"
+                Action:
+                  - "secretsmanager:GetSecretValue"
+                Resource:
+                  # {% for value in secretsmanager.allowed_resources %}
+                  - Fn::Sub: "{{ value }}"
+                  # {% endfor %}
+              # {% endif %}
+              # {% if secretsmanager.require_list_secrets %}
+              - Effect: "Allow"
+                Action:
+                  - "secretsmanager:ListSecrets"
+                Resource:
+                  - "*"
+              # {% endif %}
+        # {% endif %}
+        - PolicyName:
+            Fn::Sub: "{{ slug }}-access-cloudformation"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: "Allow"
+                Action:
+                  - "cloudformation:DescribeStacks"
+                Resource:
+                  - Fn::Sub: "arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/{{ slug }}-*"
+      RoleName: "{{ stack_name }}"
+
+  # {% if vpc %}
+  LambdaSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "{{ slug }}-lambda"
+      GroupName: "{{ slug }}-lambda"
+      SecurityGroupEgress:
+        - CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic by default
+          IpProtocol: "-1"
+      Tags:
+        - Key: Name
+          Value: "{{ slug }}-lambda"
+      VpcId:
+        Fn::ImportValue: "{{ export.vpc_id }}"
+  # {% endif %}
+
+  # {% for handler in handlers.values() %}
+  "{{ handler.key|capitalize }}LambdaFunction":
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: "{{ handler.function_name }}"
+      PackageType: Image
+      MemorySize: "{{ handler.memory_size }}"
+      Timeout: "{{ handler.timeout }}"
+      # {% if handler.reserved_concurrency %}
+      ReservedConcurrentExecutions: "{{ handler.reserved_concurrency }}"
+      # {% endif %}
+      Role:
+        Fn::GetAtt: LambdaRole.Arn
+      Code:
+        ImageUri:
+          Fn::Sub: "${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/{{ ecr_name }}:{{ stage }}"
+      ImageConfig:
+        Command:
+          - "{{ handler.command }}"
+      Environment:
+        Variables:
+          "POCKET_STAGE": "{{ stage }}"
+          # {% for env_key, value in envs.items() %}
+          "{{ env_key }}": "{{ value }}"
+          # {% endfor %}
+      # {% if vpc %}
+      VpcConfig:
+        SecurityGroupIds:
+          - Ref: LambdaSecurityGroup
+        SubnetIds:
+          # {% for zone in vpc.zones %}
+          - Fn::ImportValue: "{{ export.private_subnet_ }}{{ loop.index }}"
+          # {% endfor %}
+      # {% endif %}
+      # {% if use_efs %}
+      FileSystemConfigs:
+        - Arn:
+            Fn::ImportValue: "{{ export.efs_access_point_arn }}"
+          LocalMountPath: "{{ efs_local_mount_path }}"
+      # {% endif %}
+  # {% endfor %}
+
+  # {% for handler in handlers.values() %}
+  # {% if handler.apigateway %}
+  "{{ handler.key|capitalize }}ApigatewayCloudWatchLogsGroup":
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: "{{ slug }}-{{ handler.key }}-apigateway"
+      RetentionInDays: 365
+
+  "{{ handler.key|capitalize }}Api":
+    Type: AWS::ApiGatewayV2::Api
+    Properties:
+      Name: "{{ slug }}-{{ handler.key }}"
+      ProtocolType: HTTP
+      Target:
+        Fn::GetAtt: "{{ handler.key|capitalize }}LambdaFunction.Arn"
+      DisableExecuteApiEndpoint: "{{ handler.apigateway.disable_execute_api_endpoint }}"
+
+  "{{ handler.key|capitalize }}ApiGatewayManagedOverrides":
+    Type: AWS::ApiGatewayV2::ApiGatewayManagedOverrides
+    Properties:
+      ApiId:
+        Ref: "{{ handler.key|capitalize }}Api"
+      Stage:
+        AutoDeploy: true
+        AccessLogSettings:
+          DestinationArn:
+            Fn::GetAtt: "{{ handler.key|capitalize }}ApigatewayCloudWatchLogsGroup.Arn"
+          Format: >-
+            {"requestTime": "$context.requestTime",
+            "requestId": "$context.requestId",
+            "httpMethod": "$context.httpMethod",
+            "path": "$context.path",
+            "routeKey": "$context.routeKey",
+            "status": $context.status,
+            "responseLatency": $context.responseLatency,
+            "integrationRequestId": "$context.integration.requestId",
+            "functionResponseStatus": "$context.integration.status",
+            "integrationLatency": "$context.integration.latency",
+            "integrationServiceStatus": "$context.integration.integrationStatus",
+            "integrationErrorMessage": "$context.integrationErrorMessage",
+            "ip": "$context.identity.sourceIp",
+            "userAgent": "$context.identity.userAgent"}
+
+  "{{ handler.key|capitalize }}Route":
+    Type: AWS::ApiGatewayV2::Route
+    DependsOn:
+      - "{{ handler.key|capitalize }}Integration"
+    Properties:
+      ApiId:
+        Ref: "{{ handler.key|capitalize }}Api"
+      RouteKey: "ANY /{proxy+}"
+      Target:
+        Fn::Join:
+          - /
+          - - integrations
+            - Ref: "{{ handler.key|capitalize }}Integration"
+
+  "{{ handler.key|capitalize }}Integration":
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId:
+        Ref: "{{ handler.key|capitalize }}Api"
+      IntegrationType: AWS_PROXY
+      IntegrationUri:
+        Fn::Join:
+          - ""
+          - - "arn:"
+            - Ref: "AWS::Partition"
+            - ":apigateway:"
+            - Ref: "AWS::Region"
+            - ":lambda:path/2015-03-31/functions/"
+            - Fn::GetAtt: "{{ handler.key|capitalize }}LambdaFunction.Arn"
+            - /invocations
+      PayloadFormatVersion: "2.0"
+
+  "{{ handler.key|capitalize }}Permission":
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName:
+        Ref: "{{ handler.key|capitalize }}LambdaFunction"
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ""
+          - - "arn:"
+            - Ref: "AWS::Partition"
+            - ":execute-api:"
+            - Ref: "AWS::Region"
+            - ":"
+            - Ref: "AWS::AccountId"
+            - ":"
+            - Ref: "{{ handler.key|capitalize }}Api"
+            - "/*/*"
+  # {% endif %}
+
+  # {% if handler.apigateway.domain %}
+  "{{ handler.cloudformation_cert_ref_name }}":
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: "{{ handler.apigateway.domain }}"
+      # {% if handler.apigateway.create_records %}
+      DomainValidationOptions:
+        - DomainName: "{{ handler.apigateway.domain }}"
+          HostedZoneId: "{{ handler.apigateway.hosted_zone_id }}"
+      # {% endif %}
+      Tags:
+        - Key: Name
+          Value: "{{ slug }}-{{ handler.key }}-cert"
+      ValidationMethod: DNS
+
+  ##### Warning #####
+  # Api Gateway does not support http, so you must use http.
+  # Moreover you can not just redirect http to https.
+  #  - https://stackoverflow.com/a/58683733
+  #  - https://stackoverflow.com/q/47311081
+  ###################
+  "{{ handler.key|capitalize }}ApiGatewayDomainName":
+    Type: AWS::ApiGatewayV2::DomainName
+    Properties:
+      DomainName: "{{ handler.apigateway.domain }}"
+      DomainNameConfigurations:
+        - CertificateArn:
+            Ref: "{{ handler.cloudformation_cert_ref_name }}"
+
+  # {% if handler.apigateway.create_records %}
+  "{{ handler.key|capitalize }}DNSRecord":
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: "{{ handler.apigateway.hosted_zone_id }}"
+      Name: "{{ handler.apigateway.domain }}"
+      Type: A
+      AliasTarget:
+        HostedZoneId:
+          Fn::GetAtt: "{{ handler.key|capitalize }}ApiGatewayDomainName.RegionalHostedZoneId"
+        DNSName:
+          Fn::GetAtt: "{{ handler.key|capitalize }}ApiGatewayDomainName.RegionalDomainName"
+  # {% endif %}
+
+  "{{ handler.key|capitalize }}ApiGatewayApiMapping":
+    DependsOn:
+      - "{{ handler.key|capitalize }}ApiGatewayDomainName"
+    Type: "AWS::ApiGatewayV2::ApiMapping"
+    Properties:
+      DomainName: "{{ handler.apigateway.domain }}"
+      ApiId:
+        Ref: "{{ handler.key|capitalize }}Api"
+      Stage: "$default"
+  # {% endif %}
+  # {% endfor %}
+
+  # {% for handler in handlers.values() %}
+  # {% if handler.sqs %}
+  "{{ handler.key|capitalize }}SqsQueue":
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName:
+        Fn::Sub: "{{ handler.sqs.name }}"
+      RedrivePolicy:
+        deadLetterTargetArn:
+          Fn::GetAtt: "{{ handler.key|capitalize }}DeadLetterQueue.Arn"
+        maxReceiveCount: "{{ handler.sqs.dead_letter_max_receive_count }}"
+      VisibilityTimeout: "{{ handler.sqs.visibility_timeout }}"
+      # default 4 days
+      MessageRetentionPeriod: "{{ handler.sqs.message_retention_period }}"
+
+  "{{ handler.key|capitalize }}DeadLetterQueue":
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName:
+        Fn::Sub: "{{ handler.sqs.name }}-dead-letter"
+      # max 14 days
+      MessageRetentionPeriod: "{{ handler.sqs.dead_letter_message_retention_period }}"
+
+  "{{ handler.key|capitalize }}SqsEventSourceMapping":
+    DependsOn:
+      - "{{ handler.key|capitalize }}SqsQueue"
+      - "{{ handler.key|capitalize }}LambdaFunction"
+    Type: AWS::Lambda::EventSourceMapping
+    Properties:
+      EventSourceArn:
+        Fn::GetAtt: "{{ handler.key|capitalize }}SqsQueue.Arn"
+      FunctionName:
+        Ref: "{{ handler.key|capitalize }}LambdaFunction"
+      BatchSize: "{{ handler.sqs.batch_size }}"
+      ScalingConfig:
+        MaximumConcurrency: "{{ handler.sqs.maximum_concurrency }}"
+      # {% if handler.sqs.report_batch_item_failures %}
+      FunctionResponseTypes:
+        - "ReportBatchItemFailures"
+      # {% endif %}
+  # {% endif %}
+  # {% endfor %}
+
+  # {% if use_efs %}
+  LambdaEFSAccess:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId:
+        Fn::ImportValue: "{{ export.efs_security_group }}"
+      SourceSecurityGroupId:
+        Ref: LambdaSecurityGroup
+      IpProtocol: tcp
+      FromPort: 2049
+      ToPort: 2049
+  # {% endif %}
+
+# {% if handlers %}
+Outputs:
+  # {% for handler in handlers.values() %}
+  "{{ handler.key|capitalize }}LambdaFunction":
+    Value:
+      Fn::GetAtt: "{{ handler.key|capitalize }}LambdaFunction.Arn"
+  # {% if handler.apigateway %}
+  "{{ handler.key|capitalize }}ApiEndpoint":
+    Value:
+      # {% if handler.apigateway.domain %}
+      Fn::Join:
+        - ""
+        - - "https://{{ handler.apigateway.domain }}/"
+      # {% else %}
+      Fn::GetAtt: "{{ handler.key|capitalize }}Api.ApiEndpoint"
+      # {% endif %}
+  # {% if handler.apigateway.domain %}
+  "{{ handler.key|capitalize }}RegionalDomainName":
+    Value:
+      Fn::GetAtt: "{{ handler.key|capitalize }}ApiGatewayDomainName.RegionalDomainName"
+  "{{ handler.key|capitalize }}RegionalHostedZoneId":
+    Value:
+      Fn::GetAtt: "{{ handler.key|capitalize }}ApiGatewayDomainName.RegionalHostedZoneId"
+  # {% endif %}
+  # {% endif %}
+  # {% endfor %}
+# {% endif %}
