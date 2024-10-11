@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+num2geotext/__init__.py
+num2geotext/float_num_to_geo_currency.py
+num2geotext/float_num_to_geo_text.py
+num2geotext/int_num_to_geo_text.py
+num2geotext/number_to_word.py
+num2geotext.egg-info/PKG-INFO
+num2geotext.egg-info/SOURCES.txt
+num2geotext.egg-info/dependency_links.txt
+num2geotext.egg-info/top_level.txt
+tests/__init__.py
+tests/test_float_to_currency.py
+tests/test_float_to_text.py
+tests/test_int_to_text.py
