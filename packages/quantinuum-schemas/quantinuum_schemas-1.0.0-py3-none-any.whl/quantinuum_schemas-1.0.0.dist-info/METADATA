@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: quantinuum-schemas
+Version: 1.0.0
+Summary: Shared data models for Quantinuum.
+Author: Matthew Burke
+Author-email: matthew.burke@quantinuum.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: qiskit
+Requires-Dist: pydantic (>=2.6.0,<3.0.0)
+Requires-Dist: pytket (>=1.24.0,<2.0.0)
+Requires-Dist: pytket-qiskit (>=0.50) ; extra == "qiskit"
+Description-Content-Type: text/markdown
+
+# Quantinuum schemas
+
+Public models that define API boundaries used by Quantinuum.  Intended to be
+used across teams and projects ie. shared. Backwards compatibility and semantic
+versioning are particularly important in this repo!
+
+## Dependencies
+
+We try to keep the dependencies minimal.
+However we do need `pydantic` for validation and `pytket` for core (serialisable) models.
+
