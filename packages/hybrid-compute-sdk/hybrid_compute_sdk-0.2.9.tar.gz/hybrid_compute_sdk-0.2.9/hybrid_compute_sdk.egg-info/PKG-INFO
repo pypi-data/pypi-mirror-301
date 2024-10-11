@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: hybrid-compute-sdk
+Version: 0.2.9
+Summary: A Python SDK for creating JSON-RPC servers with hybrid compute capabilities
+Home-page: https://github.com/bobanetwork/aa-hc-sdk
+Author: Boba
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# README.md
+# Hybrid Compute SDK
+
+A Python SDK for creating JSON-RPC servers with hybrid compute capabilities.
+
+## Installation
+
+```
+pip install hybrid_compute_sdk
+```
+
+## Usage
+
+```python
+import asyncio
+from hybrid_compute_sdk.server import HybridComputeSDK
+
+async def main():
+    sdk = HybridComputeSDK()
+    server = sdk.create_json_rpc_server_instance()
+
+    async def hybrid_action(params):
+        gen_response(request, error_code, response) 
+        
+    server.add_server_action("test_action", hybrid_action)
+    
+    await server.listen_at(8080)
+
+if __name__ == '__main__':
+    asyncio.run(main())
+```
+
