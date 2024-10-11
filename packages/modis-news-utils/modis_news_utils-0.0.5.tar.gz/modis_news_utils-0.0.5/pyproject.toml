@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "modis-news-utils"
+version = "0.0.5"
+description = "Client for news-utils"
+authors = ["smailil <s.dub@ispras.ru>"]
+packages = [{ include = "modis_news_utils" }]
+
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+jmespath = ">=0.7.1,<1.0.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

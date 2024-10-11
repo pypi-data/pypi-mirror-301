@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: modis-news-utils
+Version: 0.0.5
+Summary: Client for news-utils
+Author: smailil
+Author-email: s.dub@ispras.ru
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: jmespath (>=0.7.1,<1.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
