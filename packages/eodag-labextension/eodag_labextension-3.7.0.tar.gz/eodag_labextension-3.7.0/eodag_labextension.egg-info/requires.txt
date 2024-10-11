@@ -1,0 +1,12 @@
+jupyterlab~=3.0
+tornado<7.0.0,>=6.0.3
+notebook<7.0.0,>=6.0.3
+eodag[notebook]>=3.0.0b1
+orjson
+ipyleaflet<0.17.4
+
+[dev]
+black
+pre-commit
+pytest<8.2.0
+shapely
