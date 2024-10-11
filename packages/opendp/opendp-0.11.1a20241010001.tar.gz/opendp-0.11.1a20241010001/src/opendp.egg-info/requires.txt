@@ -1,0 +1,17 @@
+deprecated
+
+[numpy]
+numpy
+randomgen
+
+[polars]
+polars==1.1.0
+pyarrow
+scikit-learn
+numpy
+randomgen
+
+[scikit-learn]
+scikit-learn
+numpy
+randomgen
