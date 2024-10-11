@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "GONGHAlphaAnomalyzer"
+version = "1.0.0"
+dependencies = [
+"matplotlib==3.9.0",
+"numpy==2.0.0",
+"opencv-python==4.10.0.84",
+"pandas==2.2.2",
+"pillow==10.3.0",
+"requests==2.32.3",
+"scikit-image==0.24.0",
+"scikit-learn==1.5.0",
+"scipy==1.13.1",
+"tqdm==4.66.4",
+"urllib3==2.2.2",
+"notebook==7.2.1",
+"seaborn==0.13.0",
+]
+authors = [
+    {name="Mahsa KHazaei", email="mkdgy@umsystem.edu"},
+    {name="Heba Mahdi"},
+    {name="Azim Ahmadzadeh"}
+]
+description = "This software identifies anomalous observations captured by the GONG network."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://bitbucket.org/dataresearchlab/gonghalphaanomalyzer/src/master/"
