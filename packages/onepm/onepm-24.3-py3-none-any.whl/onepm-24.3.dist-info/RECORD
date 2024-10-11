@@ -1,0 +1,16 @@
+onepm-24.3.dist-info/METADATA,sha256=HvYMUveCQVS4sEIF7pfNM556Kg6BMKTir_1m6MoxGsE,3600
+onepm-24.3.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+onepm-24.3.dist-info/entry_points.txt,sha256=ImY4iLDLgJ0zvw_OW5nlkKMuui6-22BjWVaYGQlbuLs,129
+onepm-24.3.dist-info/licenses/LICENSE,sha256=ZfpC41Q0TE6uWT3m2I5jcRHEmFF3zbU2dJPi1LtEGgE,1067
+onepm/__init__.py,sha256=uv2JX2vsoHe0ihtcb8ZKFsVu2w4RiyNUayn50Kd4kqc,618
+onepm/cli.py,sha256=fgQBIpK1c9Fi3TglPFbpYghZrUb8s5mOWv9oELDNwjI,2138
+onepm/core.py,sha256=MDKQEI7h0EastqeM8bVB7LKsBQCimqpyzOaN2Aq0LFA,8577
+onepm/pm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onepm/pm/base.py,sha256=VhzzPJfAZaNlROJB517OHwDY8BnUzrTqo_b5H4OrqoU,4715
+onepm/pm/pdm.py,sha256=19v6T_mIuyTC0isUCxqCQROwkR8RvZP9eDYWx0AUk_M,997
+onepm/pm/pip.py,sha256=cVtxPoVpf6pf_3j5I6ACAI-ASqYjcv6bxkfZiDLVx_o,3477
+onepm/pm/pipenv.py,sha256=i39HCIGJPk7XhSbgpBaH5J_3ohuS-PNf_W3eusO8qrY,665
+onepm/pm/poetry.py,sha256=kU3G2zfYeodE4cyVKHu0jjaKs4GojDI2y54tvGblTHg,980
+onepm/pm/uv.py,sha256=U4FAf058P_N17jOtmBvJIsPAi1rxLLb5UYSPTomVXlQ,2285
+onepm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onepm-24.3.dist-info/RECORD,,
