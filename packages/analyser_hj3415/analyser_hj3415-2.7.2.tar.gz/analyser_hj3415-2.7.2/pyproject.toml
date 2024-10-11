@@ -1,0 +1,28 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "analyser_hj3415"
+version = "2.7.2"
+authors = [{name = "Hyungjin Kim", email = "hj3415@gmail.com"}]
+description = "Stock analyser and database processing programs"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+    "utils-hj3415>=2.9.2",
+    "db-hj3415>=4.0.3",
+]
+
+[project.scripts]
+analyser = "analyser_hj3415.cli:analyser_manager"
+
+[project.urls]
+Home = "https://www.hyungjin.kr"
+
+[tool.flit.sdist]
+exclude = [
+    'tests/',
+    'analyser_hj3415/settings.json'
+]
