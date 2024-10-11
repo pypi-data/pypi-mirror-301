@@ -1,0 +1,10 @@
+__pycache__/
+*.spec
+venv/
+build/
+dist/
+.venv/
+*.egg-info
+init.ipy
+*.kdbx
+.vim/

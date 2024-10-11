@@ -1,0 +1,37 @@
+[project]
+name = "pkp"
+version = "0.6.6"
+description = "Straightforward CLI for KeePass - powered by pykeepass"
+authors = [
+  {name = "Philipp Schmitt", email = "philipp@schmitt.co"}
+]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+requires-python = ">=3.8,<4.0"
+dependencies = [
+  "colorama>=0.4.4",
+  "pykeepass>=3.2.1,<5.0.0",
+]
+
+[project.urls]
+documentation = "https://github.com/pschmitt/pkp/blob/head/readme.md"
+homepage = "https://github.com/pschmitt/pkp"
+issues = "https://github.com/pschmitt/pkp/issues"
+repository = "https://github.com/pschmitt/pkp"
+
+[project.scripts]
+pkp = "pkp:cli_main"
+
+[project.optional-dependencies]
+dev = [
+  "isort>=5.13.2",
+  "pyinstaller>=4.5",
+  "staticx>=0.14.1",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 79

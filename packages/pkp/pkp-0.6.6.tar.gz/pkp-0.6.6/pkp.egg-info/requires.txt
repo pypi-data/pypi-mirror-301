@@ -1,0 +1,7 @@
+colorama>=0.4.4
+pykeepass<5.0.0,>=3.2.1
+
+[dev]
+isort>=5.13.2
+pyinstaller>=4.5
+staticx>=0.14.1

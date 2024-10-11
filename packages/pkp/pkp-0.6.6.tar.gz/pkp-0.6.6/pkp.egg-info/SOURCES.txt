@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+build.sh
+dev-update.sh
+pkp.py
+pyproject.toml
+.github/dependabot.yml
+.github/workflows/ci.yaml
+.github/workflows/release.yaml
+pkp.egg-info/PKG-INFO
+pkp.egg-info/SOURCES.txt
+pkp.egg-info/dependency_links.txt
+pkp.egg-info/entry_points.txt
+pkp.egg-info/requires.txt
+pkp.egg-info/top_level.txt
