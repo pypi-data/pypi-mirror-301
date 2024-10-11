@@ -1,0 +1,14 @@
+sphinx
+matplotlib
+ipython[notebook]
+pyyaml
+bs4
+markdown
+pandas
+matplotlib
+future
+html5lib
+plotly
+bokeh
+sphinx-book-theme
+myst-nb

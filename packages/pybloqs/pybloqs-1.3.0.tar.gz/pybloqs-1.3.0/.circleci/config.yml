@@ -1,0 +1,181 @@
+defaults: &defaults
+    parallelism: 1
+    shell: /bin/bash --login
+    environment:
+      CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
+      CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
+      COVERALLS_REPO_TOKEN: WnzSri2b3no9Fh0buPancG1krS4jVfQiG
+    steps:
+    - checkout
+    - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
+    # Restore the dependency cache
+    - restore_cache:
+        keys:
+        # This branch if available
+        - v1-dep-{{ .Branch }}-
+        # Default branch if not
+        - v1-dep-master-
+        # Any branch if there are none on the default branch - this should be unnecessary if you have your default branch configured correctly
+        - v1-dep-
+    - run: wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+    - run: tar Jxvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+    - run: sudo apt-get update
+    - run: sudo apt-get install poppler-utils
+    - run: sudo apt-get install pandoc
+    - run: npm install
+    - run: npm install highcharts@10.0.0
+    # Phantomjs is required to Bokeh static output
+    - run: npm install phantomjs-prebuilt
+    - run:
+       name: Create virtualenv and install
+       command: |
+         virtualenv ci
+         . ci/bin/activate
+         python setup.py load_highcharts --highcharts=node_modules/highcharts/,node_modules/highcharts/modules
+         python setup.py load_wkhtmltopdf --wkhtmltopdf=wkhtmltox/bin
+         pip install .[docs_and_notebook,plotly,bokeh,tests]
+    # Save dependency cache
+    - save_cache:
+        key: v1-dep-{{ .Branch }}-{{ epoch }}
+        paths:
+        - ~/ci
+        - ~/wkhtmltox
+    # Lint:
+    - run:
+       name: Check formatting
+       command: |
+         set -e
+         . ci/bin/activate
+         pip install ruff
+         ruff format --check pybloqs tests docs
+    - run:
+       name: Run lints
+       command: |
+         set -e
+         . ci/bin/activate
+         ruff check pybloqs tests docs
+    # Test
+    - run:
+       name: Run all tests
+       command: |
+         set -e
+         . ci/bin/activate
+         pip install coveralls pytest pytest-cov
+         mkdir -p /tmp/circleci-test-results
+         pytest --cov pybloqs --cov-report xml --cov-report html --junitxml=/tmp/circleci-test-results/junit.xml
+    - run: 
+       name: Get code coverage
+       command: |
+         . ci/bin/activate
+         coveralls
+    # Save test results
+    - store_test_results:
+        path: /tmp/circleci-test-results
+    # Save artifacts
+    - store_artifacts:
+        path: /tmp/circleci-artifacts
+    - store_artifacts:
+        path: /tmp/circleci-test-results
+    - run:
+       name: Build Sphinx documentation
+       command: |
+         set -e
+         . ci/bin/activate
+         pip install -r docs/source/requirements.txt
+         sphinx-build docs/source build/sphinx/html
+    - run:
+       name: Build package
+       command: |
+         set -e
+         . ci/bin/activate
+         pip install --upgrade build
+         python -m build
+    - store_artifacts:
+        path: dist
+    - run:
+       name: Run publish checks
+       command: |
+         set -e
+         . ci/bin/activate
+         pip install build twine
+         twine check dist/*
+
+
+version: 2
+jobs:
+  build_3_8:
+    working_directory: ~/manahl/PyBloqs_3_8
+    docker:
+      - image: cimg/python:3.8-browsers
+    <<: *defaults
+  build_3_10:
+    working_directory: ~/manahl/PyBloqs_3_10
+    docker:
+      - image: cimg/python:3.10-browsers
+    <<: *defaults
+  build_3_11:
+    working_directory: ~/manahl/PyBloqs_3_11
+    docker:
+      - image: cimg/python:3.11-browsers
+    <<: *defaults
+  publish:
+    working_directory: ~/manahl/PyBloqs_publish
+    docker:
+      - image: cimg/python:3.11.0
+    parallelism: 1
+    shell: /bin/bash --login
+    steps:
+    - checkout
+    - run:
+       name: Create virtualenv and install required packages
+       command: |
+         sudo apt-get update
+         sudo apt-get install pandoc
+         virtualenv ci
+         . ci/bin/activate
+         pip install build twine
+    - run:
+       name: Build package
+       command: |
+         set -e
+         . ci/bin/activate
+         python -m build
+    - run:
+       name: Publish package
+       command: |
+         set -e
+         . ci/bin/activate
+         if [[ $PYPI_INSTANCE == "test" ]]; then
+           echo "Publishing to test PyPI"
+           export TWINE_USERNAME='__token__'
+           export TWINE_PASSWORD=$TEST_PYPI_TOKEN
+           twine upload --verbose --repository=testpypi dist/*
+         elif [[ $PYPI_INSTANCE == "live" ]]; then
+           echo "Publishing to live PyPI"
+           export TWINE_USERNAME='__token__'
+           export TWINE_PASSWORD=$PYPI_TOKEN
+           if git describe --exact-match --tags; then
+             twine upload --verbose dist/*
+           else
+             echo "Not on an exact tag: refusing to publish"
+           fi
+         else
+           echo "Variable PYPI_INSTANCE must be set to either `live` or `test`."
+           exit 1
+         fi
+workflows:
+  version: 2
+  build_all:
+    jobs:
+      - build_3_8
+      - build_3_10
+      - build_3_11
+      - publish:
+          requires:
+            - build_3_8
+            - build_3_10
+            - build_3_11
+          filters:
+            branches:
+              only:
+                - master
