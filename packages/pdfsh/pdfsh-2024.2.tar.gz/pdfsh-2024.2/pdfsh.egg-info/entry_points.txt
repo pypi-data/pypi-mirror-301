@@ -1,0 +1,3 @@
+[console_scripts]
+pdfsh = pdfsh.pdfsh:run
+
