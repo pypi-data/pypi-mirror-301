@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+cv2/__init__.py
+testcv2.egg-info/PKG-INFO
+testcv2.egg-info/SOURCES.txt
+testcv2.egg-info/dependency_links.txt
+testcv2.egg-info/top_level.txt

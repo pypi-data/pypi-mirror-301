@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: testcv2
+Version: 0.0.1
+Summary: Compute Vector
+Home-page: https://github.com/geoffreyvd/cv2
+Author: Your Name
+Author-email: your.email@example.com
+Description-Content-Type: text/markdown
+
+### Compute Vector2
+
+library to compute the simple vector
