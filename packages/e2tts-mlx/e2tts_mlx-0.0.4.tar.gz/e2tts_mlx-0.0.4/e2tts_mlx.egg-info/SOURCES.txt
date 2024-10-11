@@ -1,0 +1,9 @@
+README.md
+e2tts.py
+setup.py
+e2tts_mlx.egg-info/PKG-INFO
+e2tts_mlx.egg-info/SOURCES.txt
+e2tts_mlx.egg-info/dependency_links.txt
+e2tts_mlx.egg-info/entry_points.txt
+e2tts_mlx.egg-info/requires.txt
+e2tts_mlx.egg-info/top_level.txt
