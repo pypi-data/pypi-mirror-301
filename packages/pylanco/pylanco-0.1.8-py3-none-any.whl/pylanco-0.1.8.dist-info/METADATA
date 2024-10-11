@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pylanco
+Version: 0.1.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: robocorp-log
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
