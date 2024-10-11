@@ -1,0 +1,10 @@
+requests
+pandas
+typing
+mlflow==2.11.3
+numpy
+Pillow
+matplotlib
+plotly
+pyamdgpuinfo
+psutil
