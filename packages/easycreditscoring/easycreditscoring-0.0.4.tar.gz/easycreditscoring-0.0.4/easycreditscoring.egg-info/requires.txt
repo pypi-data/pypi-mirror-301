@@ -1,0 +1,13 @@
+numpy
+pandas
+seaborn
+missingno
+matplotlib
+plotly
+scikit-learn
+statsmodels
+scipy
+tensorflow
+tf-keras
+imblearn
+setuptools
