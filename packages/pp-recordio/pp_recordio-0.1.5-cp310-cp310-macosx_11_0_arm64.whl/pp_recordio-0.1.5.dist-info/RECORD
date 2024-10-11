@@ -1,0 +1,12 @@
+pp_recordio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pp_recordio/pp_recordio.py,sha256=_GaeZRoIPfYq1TSs6_s5SRNHW00yPqNVaDt4YQI6rY8,4494
+pp_recordio/pp_recordio_lib.so,sha256=gjuFihU7mWqaPMEO2LwV2ETOHdmAeA8V66eh78WzKso,1731618
+pp_recordio/pp_recordio_lib_darwin_amd64.so,sha256=QwE8TZMKsAHrDXN3dObc2XdbVzFMS5CBE3eWCk9f3j0,1721832
+pp_recordio/pp_recordio_lib_darwin_arm64.so,sha256=1lSVwmAswQdmyGlzwTp0Vu46gkYKKeGndWpacbcQ1Qg,1731618
+pp_recordio/pp_recordio_lib_linux_amd64.so,sha256=QZOpMFqHeKVmFUFUKQSaZvPoMG35FWa2XjjuzD9gt24,2586376
+pp_recordio/pp_recordio_lib_linux_arm64.so,sha256=qpNutd7mjGhZ9FjbLHleVWP475uyLFJIaLsNHzC1RkY,2577384
+pp_recordio/pp_recordio_test.py,sha256=rJYa6S-KHuL27v-6J9r6WoCvmAfwU5JXKaGtgS3LvAg,7495
+pp_recordio-0.1.5.dist-info/METADATA,sha256=OYuOgzagygBeHWkJ3f_i58mo7u9i410XHU1QRpVAkRE,2795
+pp_recordio-0.1.5.dist-info/WHEEL,sha256=1MPyPs9-MLQHZykOzeBqIZBROBGKPY6rzfLYqQeUsL8,109
+pp_recordio-0.1.5.dist-info/top_level.txt,sha256=V_7j1YclMSS1iQHZ1NSyq7TXm_jfPIVZgLtOECobFCs,12
+pp_recordio-0.1.5.dist-info/RECORD,,
