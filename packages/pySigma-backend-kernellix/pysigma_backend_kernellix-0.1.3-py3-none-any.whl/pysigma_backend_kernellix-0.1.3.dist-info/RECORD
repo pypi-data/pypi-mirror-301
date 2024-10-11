@@ -1,0 +1,9 @@
+sigma/backends/kernellix/__init__.py,sha256=64kKIsUIIAm3UL02B642re_yFsGbbQjdDJUgiMO704U,39
+sigma/backends/kernellix/kernellix.py,sha256=LGe83aZdaUe5R82t6sI3Bx2L74lb-ySvhLbRoVcPYyU,6874
+sigma/pipelines/kernellix/__init__.py,sha256=Ue-Pw6LbCHlQpHKxAYKXlHLzlW6LJf8lgP72JH2QyM0,583
+sigma/pipelines/kernellix/kernellix.py,sha256=UT8Z5I5fjF-dUNRsgleMe-leEo3hrXcDXAVyWPyX5LE,32837
+sigma/pipelines/kernellix/linux.py,sha256=Xk35n9BzPcSef64mYCICyzV8dzWbZrJdIsZ1G6TfkDY,1596
+pysigma_backend_kernellix-0.1.3.dist-info/LICENSE,sha256=MSZehGUwYrIAflEVeomgZ1-EOqkdvlnzGwE6WC567Z0,1062
+pysigma_backend_kernellix-0.1.3.dist-info/METADATA,sha256=sUkz-3Xz5jEcsZY_a-82nEdqENOxuCzL0nf4CfA3lp4,771
+pysigma_backend_kernellix-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pysigma_backend_kernellix-0.1.3.dist-info/RECORD,,
