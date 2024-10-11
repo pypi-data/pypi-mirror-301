@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-pipelines-game-preprocess"
+version = "0.5.1"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Game preprocessing pipeline for Moveread"
+dependencies = [
+  "moveread-pipelines-preprocess>=0.5.0", "lazy-loader",
+  "pipeteer", "python-kv[fs,sql]"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/moveread/pipelines.git"
+
+[project.scripts]
+gamepre = "moveread.pipelines.game_preprocess.cli:main"

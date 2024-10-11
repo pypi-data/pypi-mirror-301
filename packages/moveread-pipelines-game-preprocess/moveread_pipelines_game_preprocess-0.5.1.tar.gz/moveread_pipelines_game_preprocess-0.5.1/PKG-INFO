@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: moveread-pipelines-game-preprocess
+Version: 0.5.1
+Summary: Game preprocessing pipeline for Moveread
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/pipelines.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: moveread-pipelines-preprocess>=0.5.0
+Requires-Dist: lazy-loader
+Requires-Dist: pipeteer
+Requires-Dist: python-kv[fs,sql]
+
+# Moveread Pipelines Game Preprocess
+
+> package_description
