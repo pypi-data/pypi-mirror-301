@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+stacktyping.py
+stacktyping.egg-info/PKG-INFO
+stacktyping.egg-info/SOURCES.txt
+stacktyping.egg-info/dependency_links.txt
+stacktyping.egg-info/top_level.txt
