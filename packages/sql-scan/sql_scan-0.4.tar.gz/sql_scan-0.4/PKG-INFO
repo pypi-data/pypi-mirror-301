@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: sql_scan
+Version: 0.4
+Summary: SQL file processing package for extracting table names and WHERE conditions
+Author: Meghsham Jambhulkar
+Author-email: meghshamofficial@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlparse
+
+# sql_scan
+
+**sql_scan** is a Python library designed for processing SQL files. It provides functionalities for extracting table names and WHERE conditions, formatting SQL queries, and generating structured reports. This package is particularly useful for data engineers and developers working with SQL scripts, enabling them to streamline their workflow and enhance code readability.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Modules](#modules)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Extract table names and types (FROM, JOIN, etc.) from SQL queries.
+- Identify and extract WHERE clauses associated with table queries.
+- Format SQL queries for improved readability using `sqlparse`.
+- Generate reports summarizing extracted information in a user-friendly format.
+
+## Installation
+
+To install **sql_scan**, you can use `pip`. The package requires Python 3.6 or higher. Run the following command in your terminal:
+
+```bash
+pip install sql_scan
+```
+
+## Usage
+
+To use **sql_scan** in your project, simply import the relevant modules and call the functions as needed. Below is a basic usage example.
+
+### Example
+
+```python
+from sql_scan.file_writer import extract_data
+
+# Replace 'your_sql_file.sql' with the path to your SQL file.
+extract_data('your_sql_file.sql', save_formatted_file=True)
+```
+
+This function will process the specified SQL file, extract the relevant information, and generate a report file summarizing the results.
+
+## Modules
+
+**sql_scan** is composed of several modules, each responsible for specific functionalities:
+
+- **name_cleaner.py**: Contains functions for cleaning SQL table names.
+- **table_extractor.py**: Handles the extraction of table names from SQL statements.
+- **where_extractor.py**: Extracts WHERE clauses from SQL queries.
+- **formatter.py**: Formats SQL queries for better readability.
+- **file_writer.py**: Integrates all modules to extract data and write it to output files.
+
+## Detailed Functionality
+
+### 1. **name_cleaner.py**
+This module provides functions for cleaning and validating SQL table names to ensure they adhere to proper naming conventions.
+
+**Function:**
+- `name_cleaner(name: str) -> str`: Cleans up table names by removing unwanted characters.
+
+### 2. **table_extractor.py**
+This module extracts table names from SQL lines based on specified keywords.
+
+**Function:**
+- `extract_table_name(current_line: str, prev_line: str) -> tuple`: Returns the keyword type and cleaned table name.
+
+### 3. **where_extractor.py**
+This module extracts WHERE conditions from SQL queries, returning them as lists of strings.
+
+**Function:**
+- `extract_where_condition(lines: list, bookmark: int) -> list`: Extracts WHERE clauses based on a starting bookmark.
+
+### 4. **formatter.py**
+Formats SQL files for improved readability using the `sqlparse` library.
+
+**Function:**
+- `format_file_first(file_name: str)`: Reads and formats an SQL file, saving it as a new file.
+
+### 5. **file_writer.py**
+This module consolidates the functionality of other modules to extract and write information to a report.
+
+**Function:**
+- `write_extracted_data_to_file(sql_file_name: str, save_formatted_file: bool)`: Main entry point for extracting data from SQL files and generating reports.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to **sql_scan**, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request describing your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the contributors of the `sqlparse` library, which greatly enhances the formatting capabilities of **sql_scan**.
+- Special thanks to the open-source community for their continuous support and inspiration.
+
+---
+
+For more information, feel free to reach out via [meghshamofficial@gmail.com](mailto:meghshamofficial@gmail.com).
+```
