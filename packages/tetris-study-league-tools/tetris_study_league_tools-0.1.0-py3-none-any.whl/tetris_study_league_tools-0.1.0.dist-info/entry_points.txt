@@ -1,0 +1,2 @@
+[console_scripts]
+tsl = tetris_study_league_tools:main
