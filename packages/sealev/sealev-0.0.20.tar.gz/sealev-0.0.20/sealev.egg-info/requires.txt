@@ -1,0 +1,6 @@
+pycountry
+pycurl
+requests
+reverse-geocoder
+matplotlib
+cartopy
