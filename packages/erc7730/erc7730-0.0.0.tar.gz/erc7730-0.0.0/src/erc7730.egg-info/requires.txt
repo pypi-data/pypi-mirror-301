@@ -1,0 +1,10 @@
+pydantic>=2.8.2
+eip712-clearsign>=2.1.0
+requests>=2.32.3
+typer>=0.12.5
+eth-utils>=5.0.0
+jsonschema
+eth_hash[pycryptodome]
+rich
+typer
+lark>=1.2.2
