@@ -1,0 +1,3 @@
+[console_scripts]
+yt=youtube_tools.main:app
+
