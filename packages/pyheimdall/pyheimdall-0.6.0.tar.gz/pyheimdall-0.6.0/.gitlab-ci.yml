@@ -1,0 +1,59 @@
+image: python:alpine
+
+doc:html:
+  stage: build
+  needs: []
+  before_script:
+  - apk add make
+  - pip install -e '.[doc]'
+  - pip uninstall -y pyheimdall  # we wanna use current sources
+  script:
+  - echo "Generating documentation…"
+  - sphinx-apidoc -f -o docs/source/ src/heimdall/  # generate .rst from .py
+  - cd docs ; make clean && make html ; cd -  # generate .html from .rst
+  artifacts:
+    when: always
+    paths:
+    - docs/build/html
+
+test:lint:
+  stage: test
+  needs: []
+  before_script:
+  - pip install -e '.[dev]'
+  - pip uninstall -y pyheimdall  # use current sources, not last release
+  script:
+  - echo "Running linter…"
+  - pycodestyle --config=.pycodestyle ./src
+  allow_failure: true
+
+test:coverage:
+  stage: test
+  needs: []
+  before_script:
+  - pip install -e '.[tests]'
+  - pip uninstall -y pyheimdall  # use current sources, not last release
+  script:
+  - coverage run -m pytest && coverage report -m && coverage html
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+  artifacts:
+    paths:
+    - coverage/
+
+pages:
+  stage: deploy
+  needs:
+  - job: doc:html
+    artifacts: true
+  - job: test:coverage
+    artifacts: true
+  script:
+  - mkdir public
+  - mv docs/build/html/ public/doc
+  - mv coverage/ public/coverage
+  - echo "Uploading to pages…"
+  artifacts:
+    paths:
+    - public
+  only:
+  - main
