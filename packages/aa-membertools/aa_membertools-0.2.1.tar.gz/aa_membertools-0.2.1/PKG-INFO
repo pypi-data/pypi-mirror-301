@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: aa_membertools
+Version: 0.2.1
+Summary: EVE University Member Tools Plugin for Alliance Auth
+Home-page: https://github.com/EVE-University/aa-membertools
+Author: Marn Vermuldir
+Author-email: marn@minin.io
+Maintainer: Marn Vermuldir
+Maintainer-email: marn@minin.io
+License: GPL-2.0
+Project-URL: Issue / Bug Reports, https://github.com/EVE-University/aa-membertools/issues
+Project-URL: Changelog, https://github.com/EVE-University/aa-membertools/blob/master/CHANGELOG.md
+Keywords: allianceauth,membertools
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aa-memberaudit>=3.5.0
+Requires-Dist: allianceauth>=4.0.0
+Requires-Dist: allianceauth-app-utils>=1.8.2
+Requires-Dist: celery-once>=2.0.1
+Requires-Dist: django-eveuniverse>=0.8.1
+Requires-Dist: humanize
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+
+# E-Uni Alliance Auth Member Tools
+
+EVE University's Member Administration Tools
+
+## Features
+
+Accepts and processes applications
+
+## Production Installation
+
+**Always remember to back up your database before performing any migrations!**
+
+1. Setup your Alliance Auth environment to access the EVE Uni PyPy repository
+
+2. Inside your alliance auth environment run 'pip install aa-membertools'
+
+3. Add this app to your installed apps in `/myauth/settings/local.py`:
+
+    ```python
+    INSTALLED_APPS += ["membertools"]
+    ```
+
+4. Run the following commands from your Auth directory [myauth]
+
+    ```shell
+    python manage.py migrate
+
+    python manage.py collectstatic --no-input
+    ```
+
+5. If you need to import hrappsnext data also run
+    ```shell
+    python manage.py membertools_import_hrappsnext --confirm
+    python manage.py membertools_create_members
+    ```
+
+## Upgrading from Alliance Auth 2.x
+
+After installing the app and adding it to your local.py run
+
+  ```shell
+  python manage.py migrate
+  python manage.py structures_preload_eveuniverse
+  python manage.py migrate
+  python manage.py collectstatic --no-input
+  python manage.py membertools_import_hrappsnext --confirm
+  python manage.py membertools_create_members
+```
+**Note:** that you may need to upgrade to a patched version of hrappsnext to perform the above commands.
