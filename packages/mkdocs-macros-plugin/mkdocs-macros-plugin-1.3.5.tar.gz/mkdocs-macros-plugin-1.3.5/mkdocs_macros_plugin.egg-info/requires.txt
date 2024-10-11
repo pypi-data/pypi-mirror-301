@@ -1,0 +1,15 @@
+mkdocs>=0.17
+jinja2
+termcolor
+pyyaml
+hjson
+pathspec
+python-dateutil
+packaging
+super-collections
+
+[test]
+mkdocs-macros-test
+mkdocs-material>=6.2
+mkdocs-include-markdown-plugin
+mkdocs-test

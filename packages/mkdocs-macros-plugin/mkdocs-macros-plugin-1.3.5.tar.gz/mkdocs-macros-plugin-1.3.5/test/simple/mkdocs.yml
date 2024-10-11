@@ -1,0 +1,15 @@
+site_name: My own
+theme: mkdocs
+
+nav:
+    - Home: index.md
+    - Error Page (intentional): second.md
+
+plugins:
+  - search
+  - macros
+  - test
+
+extra:
+  greeting: Hello World!
+

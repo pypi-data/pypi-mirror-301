@@ -1,0 +1,26 @@
+site_name: Test with a module (test)
+theme: 
+    name: material
+    palette:
+        scheme: slate
+copyright: (C) Laurent Franceschetti 2020
+
+nav:
+    - Home: index.md
+    - Environment for {{ unit_price}}: environment.md
+    - Second:
+        - other.md
+    - Not interpreted: literal.md
+
+plugins:
+  - search
+  - macros:
+      include_dir: include
+      modules: ['mkdocs-macros-test:mkdocs_macros_test']
+      # toggle to true if you are in CD/CI environment
+      on_error_fail: true
+      verbose: true # toggle to true if you want to macro debug
+  - test
+
+extra:
+  unit_price: 50
