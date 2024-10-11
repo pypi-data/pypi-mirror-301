@@ -1,0 +1,14 @@
+[project]
+name = "synchropy"
+description = "A library for easy synchronizing"
+version = "0.0.4"
+authors = [
+    {name="trollmii", email="trollmii@outlook.com"}
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license.file = "LICENSE"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
