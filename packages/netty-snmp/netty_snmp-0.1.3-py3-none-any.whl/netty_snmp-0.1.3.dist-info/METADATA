@@ -1,0 +1,166 @@
+Metadata-Version: 2.3
+Name: netty-snmp
+Version: 0.1.3
+Summary: Network Device information Discovery via SNMP
+Author-email: jeffry <wangxin.jeffry@gmail.com>
+Keywords: lldp,netmiko,network-automation,network-device,network-discovery,snmp,textfsm
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: ezsnmp>=1.0.0rc3
+Requires-Dist: icmplib>=3.0.4
+Requires-Dist: tcppinglib>=2.0.3
+Description-Content-Type: text/markdown
+
+# Netty SNMP
+
+[![PyPi version](https://img.shields.io/pypi/v/netty_snmp.svg)](https://pypi.python.org/pypi/netty-snmp/)
+![Python Versions](https://img.shields.io/pypi/pyversions/netty-snmp)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+![Test](https://img.shields.io/github/actions/workflow/status/netty-community/netty-snmp/test-suite.yaml)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v0.json)](https://github.com/charliermarsh/ruff)
+
+# Network Device information Discovery via SNMP
+
+Netty_snmp is a flexible,powerful,high performance tool for network device information collection.
+It will recognize network device's manufacture and platform(netmiko driver) automatically through
+SNMP `SysObjectId` and collect a lot of network basic information with friendly output format and
+exceptions traceback.
+
+Inspirations of SNMP and why not command line tools(CLI):
+
+CLI output is un-structure data, we need use regex/textfsm liked tools to extract the information
+from network device output. It's very painful to maintain the string-based regex code and very hard to
+extend. SNMP is fast, stable to get and all data is structured which is easy to handle by code, also it's
+much easier to maintain the codebase, some of items is generic for all network manufacturers, such
+as interface, hostname, lldp neighbors. One time coding and support all vendors, fancy, right?
+So, personally use snmp to collect basic information of network device is a better choice than CLI.
+
+
+## Installation Guide
+support python version: >= py3.11
+```
+pip3 install netty-snmp
+```
+
+## Examples
+1. scanning a prefix via SNMPv2 and discovery all network device items
+```python
+from netty_snmp import DispatchSnmpFactory, consts
+
+dis = DispatchSnmpFactory(
+    prefix="192.168.0.0/24",
+    port=161,
+    version=consts.SnmpVersion.v2c, # via snmp v2c
+    community="public",
+    max_workers=16, # concurrency for collection task, run in 16 threads
+)
+print(dis.discovery())
+```
+2. scanning a ip address via SNMPv2 and discovery partial items, in this example: only hostname and interfaces will be collected.
+```python
+dis = DispatchSnmpFactory(
+    prefix="192.168.0.0/32",
+    port=161,
+    version=consts.SnmpVersion.v2c, # via snmp v2c
+    community="public",
+    max_workers=16, # concurrency for collection task, run in 16 threads
+)
+print(dis.discovery(["hostname", "interfaces"]))
+
+3. scanning via SNMPv3
+```python
+DispatchSnmpFactory(
+    prefix="192.168.0.0/24",
+    port=161,
+    version=consts.SnmpVersion.v3,
+    v3_params=SnmpV3Params(
+        security_username="admin",
+        security_level="authNoPriv",
+        auth_protocol="md5",
+        auth_password="admin",
+        context_engine_id="0000000000000000",
+        privacy_protocol="des",
+        privacy_password="admin",
+    ),
+    max_workers=16,
+)
+print(dis.discovery())
+```
+---
+## Main Support Items
+- **Hostname**: the hostname of network device
+- **System Description**: the textual information of the system: include model name, software version, hardware version and etc.
+- **Uptime**: network device uptime
+- **ChassisID**: the mac address of chassis, the unique identifier of chassis
+- **Interfaces**: interface full information
+  - Interface Index
+  - Interface Name
+  - Interface Description
+  - Interface Mtu
+  - Interface Speed: physical speed
+  - Interface High Speed: negotiation speed
+  - Interface Type
+  - Interface Mac Address
+  - Interface Admin status
+  - Interface Operational Status
+  - Interface IP Addresses: (L3 Interface)
+  - Interface Port Mode: access/trunk/hybrid ...
+- **LLDP Neighbors**: lldp information will local and remote connection info
+  - Local Chassis Id: the unique identifier mac address of chassis
+  - Local Hostname: the hostname of local device
+  - Local Interface Name
+  - Local Interface Description
+  - Remote Chassis Id: the unique identifier mac address of lldp neighbor chassis
+  - Remote Hostname: the hostname of lldp neighbor
+  - Remote Interface Name: the interface name of lldp neighbor
+  - Remote interface Description: the interface description of lldp neighbor
+
+- **Entities**
+  - Entity Physical Description: the mode information of entity
+  - Entity Physical Name: the name of entity
+  - Entity Software revision: software version
+  - Entity Serial Number: the serial number of entity
+---
+> waiting for implement
+- **VLANS**
+- **StackWise**
+- **Prefixes**
+- **ARP Table**
+- **Mac Address Table**
+- **Routing table**
+
+---
+## Main support manufactures
+### well tested
+- Cisco
+- Huawei
+- Aruba
+### basic tested
+- H3C
+- Ruijie
+- Arista
+- Fortinet
+- PaloAlto
+- Juniper
+
+
+## Development Guide
+1. install [rye](https://rye.astral.sh/guide/installation/) for python project management
+2. execute `rye sync` to install dependencies
+3. execute `pre-commit install` for lint and pytest hooks
+4. perform you code changes and execute `pre-commit` to do static code check and unit test.
+5. push changes to the codebase.
