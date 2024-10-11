@@ -1,0 +1,13 @@
+README.md
+setup.py
+scribe_ai.egg-info/PKG-INFO
+scribe_ai.egg-info/SOURCES.txt
+scribe_ai.egg-info/dependency_links.txt
+scribe_ai.egg-info/entry_points.txt
+scribe_ai.egg-info/requires.txt
+scribe_ai.egg-info/top_level.txt
+scribe_cli/__init__.py
+scribe_cli/llm_infer.py
+scribe_cli/open_gui.py
+scribe_cli/prompt_gen.py
+scribe_cli/scribe.py
