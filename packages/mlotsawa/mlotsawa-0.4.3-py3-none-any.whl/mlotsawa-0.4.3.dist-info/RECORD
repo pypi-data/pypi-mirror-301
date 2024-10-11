@@ -1,0 +1,11 @@
+mlotsawa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlotsawa/translator.py,sha256=EEU1YvJd_J2HmYB-Y-p9inwSv7PnZkULXst-wa3-LQE,1295
+mlotsawa/transliterator.py,sha256=GsLeXFX09CGoE0JGGWdals5-xsE1Ch8WI0Bkw8wsPco,2603
+mlotsawa/webui.py,sha256=XwO7pJpVuVqgN88HhBZNj6Nno-e-dpHaoCBNyR4_Vdo,3985
+mlotsawa/static/favicon.ico,sha256=LDDyq4Um8HtjTI5OgYGKXzLGzEsMXoh74A9kU7E2zTM,3226
+mlotsawa/static/styles/main.css,sha256=i4rJ7p95a25h6JDLyMvAJkvm91WkncWKkvYPifd5UPI,560
+mlotsawa/templates/index.html,sha256=sNLo8GPuOwydZWB_wis94Cp8QbiF5PZhFqaVTiwdlAc,726
+mlotsawa-0.4.3.dist-info/METADATA,sha256=OnwPEOkykaAdugJ6AGQcr1mDiKPwc_jLzU-Lvv2LKuQ,3630
+mlotsawa-0.4.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mlotsawa-0.4.3.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlotsawa-0.4.3.dist-info/RECORD,,
