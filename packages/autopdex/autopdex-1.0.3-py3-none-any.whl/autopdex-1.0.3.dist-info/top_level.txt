@@ -1,0 +1,4 @@
+autopdex
+docs
+examples
+tests
