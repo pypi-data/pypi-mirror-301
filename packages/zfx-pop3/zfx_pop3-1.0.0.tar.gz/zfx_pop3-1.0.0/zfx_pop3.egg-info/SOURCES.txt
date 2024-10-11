@@ -1,0 +1,16 @@
+setup.py
+zfx_pop3/__init__.py
+zfx_pop3/删除指定邮件.py
+zfx_pop3/批量删除指定邮件.py
+zfx_pop3/断开连接.py
+zfx_pop3/登录.py
+zfx_pop3/获取最新一封邮件.py
+zfx_pop3/获取最新五封邮件.py
+zfx_pop3/获取最新十封邮件.py
+zfx_pop3/获取邮件内容.py
+zfx_pop3/获取邮件数量.py
+zfx_pop3/获取邮箱占用空间.py
+zfx_pop3.egg-info/PKG-INFO
+zfx_pop3.egg-info/SOURCES.txt
+zfx_pop3.egg-info/dependency_links.txt
+zfx_pop3.egg-info/top_level.txt
