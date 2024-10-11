@@ -1,0 +1,7 @@
+{
+    "0": "",
+    "1": "Possible gust between {{ bound_inf }} and {{ bound_sup }} {{ units }}, {{ period|safe }}.",
+    "2": "Gust {{ period|safe }}, between {{ bound_inf }} and {{ bound_sup }} {{ units }}, with locally up to {{ gust_max }} {{ units }} possible.",
+    "3": "Gusts possible locally up to {{ gust_max }} {{ units }}, {{ period|safe }}.",
+    "error": "Error during the generation of the wind synthesis."
+}
