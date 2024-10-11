@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "oakemugym"
+version = "0.0.2"
+authors = ["MrKWatkins <mrkwatkins@gmail.com>"]
+description = "Gymnasium environment for OakEmu."
+homepage = "https://www.mrkwatkins.co.uk"
+repository = "https://github.com/MrKWatkins/OakEmu-Gymnasium"
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "oakemugym", from = "src" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+gymnasium = {extras = ["box2d"], version = ">=0.29.1,<1.1.0"}
+oakemu = "^0.0.5"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.6.1"
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
