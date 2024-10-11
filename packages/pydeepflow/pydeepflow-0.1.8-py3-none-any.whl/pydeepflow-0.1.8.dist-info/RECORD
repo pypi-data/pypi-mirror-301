@@ -1,0 +1,15 @@
+pydeepflow/__init__.py,sha256=O4ZxNkDU1Dh0-2JPzDnlVAIr4nRxYMb0GhbIKxERmUs,534
+pydeepflow/activations.py,sha256=A-iX3xmxy5ikCk3yt2WQwv9E1i8PMGhx1uTGTBi8SyM,9153
+pydeepflow/checkpoints.py,sha256=dIHnD55sjc-x2GMd3MT_RhFWvz4FEqO1s9Zjh7wOR98,2662
+pydeepflow/device.py,sha256=VWpoUFHGA_d479344vdmiuVPY3zuHrDDzEvYf1kb7bA,7378
+pydeepflow/learning_rate_scheduler.py,sha256=vWV0SGgKz_Wa4OkakSG_rYwokqVjzhjUiQ2tWBVHPOY,1701
+pydeepflow/losses.py,sha256=CWxlCM1daby-J4yb0ZHQvN7EmgYhE4dIOqw6AspbIjc,7866
+pydeepflow/main.py,sha256=4xMfVlLGV_7ADeUq7bMQiLeh2YZtYwTpcFE2QMeVhO4,1895
+pydeepflow/model.py,sha256=ktg4jPNYJlFP4Mmf8mxYchPxL-tY0KrdH0ojo55IiI8,11110
+pydeepflow/regularization.py,sha256=JqjDPLzuO_hwixWWwypAHZRF3UOyVWIFWYYdP_L3b9c,716
+pydeepflow-0.1.8.dist-info/LICENSE,sha256=k96xbBY8LmWCk9mDlflJSJ1h4RIlE_K9j37E3i0VraU,1067
+pydeepflow-0.1.8.dist-info/METADATA,sha256=VOCWG97Sd3ZKF7BPaHeG6WagJx4_DTnVyVhd9MvPcsQ,6687
+pydeepflow-0.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydeepflow-0.1.8.dist-info/entry_points.txt,sha256=Lx3DVWFUzFz10MyDAm8DfYrgtc1CzwmHGA-99VZ1h00,56
+pydeepflow-0.1.8.dist-info/top_level.txt,sha256=NjwQXnG3p9fozgVaQpoem0k7xe2y1AiAVZ8ReVieZYk,11
+pydeepflow-0.1.8.dist-info/RECORD,,
