@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastzdp-upload"
+version = "0.1.4"
+description = "用于 FastAPI 快速实现文件上传下载功能"
+authors = ["zhangdapeng520 <1156956636@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastzdp-api = "^0.1.5"
+fastzdp-sqlmodel = "^0.1.4"
+python-multipart = "^0.0.12"
+
+
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = {extras = ["standard"], version = "^0.30.4"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
