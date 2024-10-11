@@ -1,0 +1,14 @@
+PyWrike/__init__.py,sha256=qEtRMDr9nJxXuj79haCnGfAP8zC8e5X9qX96mFaAURE,364
+PyWrike/api_calls.py,sha256=aoFIPuMNur_fxSFhzqJkfMAboRONLE0atpYkZbIvOxU,10417
+PyWrike/create_delete_folders.py,sha256=j7ywT9718gtFx-CwpuaT_0s51VE00LPPs8tIZRUJPHk,9416
+PyWrike/create_update_tasks.py,sha256=WBDnuudM-mpfAPeatmNBVueoi_8OZ5J7JLRWaAYDd54,35363
+PyWrike/new_space.py,sha256=MUURKVHU3H3Q0ji-DJxLzJcLhLaJW-LwohYl7q8FkUQ,19721
+PyWrike/propagate_tasks.py,sha256=7betVeeC1zyuILIV7foGzJ_mLoSwDfILTZUCRwNyurs,11071
+PyWrike/wrike_export.py,sha256=ZGJ8wKC1IAT0CSTIA0cMDk5TigI9orRET6Q5RuspUXI,23365
+PyWrike/gateways/__init__.py,sha256=OyhMsa3V89KoHuK06sLuokSHn8HH8uXDqzEko_DnYpw,116
+PyWrike/gateways/basegateway1.py,sha256=XKldUl4q7dsal2YV3KxrSkff7Zevu14JR1vxvQJDY4Q,2447
+PyWrike/gateways/oauth2gateway1.py,sha256=uQSnb--G2pU2aVpas8MpCnniJX3PGoraHyHJGr4Rfgc,8321
+PyWrike-0.7.dist-info/METADATA,sha256=5c7rOdz6NvcA3EhpzndtheqvDjd2DEMl4I2AOe6c9Dc,738
+PyWrike-0.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+PyWrike-0.7.dist-info/top_level.txt,sha256=DCkrpWUabRfNc7ijm2_RAaNODwZx-AchT3xuCzIPeU4,8
+PyWrike-0.7.dist-info/RECORD,,
