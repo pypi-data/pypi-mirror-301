@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pymicro_wakeword
+Version: 1.0.0
+Summary: A TensorFlow based wake word detection training framework using synthetic sample generation suitable for certain microcontrollers.
+Home-page: https://github.com/OHF-Voice/pymicro-wakeword
+Author: Michael Hansen
+Author-email: mike@rhasspy.org
+License: Apache-2.0
+Keywords: wake word detection hotword
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: pymicro-features ==1.0.0
+Requires-Dist: tensorflow <3,>=2.14
+Requires-Dist: numpy <2
+
