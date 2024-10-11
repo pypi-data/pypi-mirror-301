@@ -1,0 +1,4 @@
+[console_scripts]
+create-finic-app=finic.cli:create_finic_app
+finic=finic.cli:main
+
