@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: grupob_zoho
+Version: 0.1.0
+Summary: Uma biblioteca para manipular dados no zoho
+Home-page: https://github.com/juniorppp/zoho
+Author: Gelson Júnior
+Author-email: gelson.junior@grupobachega.com.br
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: requests
+
+
+# Zoho CRM API Wrapper
+
+Esta é uma biblioteca Python simples que permite interagir com a API do Zoho CRM, realizando autenticação e operações básicas como buscar leads e consultar histórico de estágios de um lead.
+
+## Instalação
+
+Você pode instalar esta biblioteca via `pip` assim que ela estiver disponível no PyPI:
+
+```bash
+pip install grupob_zoho
+```
+
+## Uso
+
+### Inicializando a Classe ZohoCRM
+
+Para começar a usar a biblioteca, você precisará inicializar a classe `ZohoCRM` com suas credenciais Zoho e, opcionalmente, o caminho onde deseja salvar o cache do token de autenticação.
+
+Exemplo:
+
+```python
+from grupob_zoho import ZohoCRM
+
+credentials = {
+    "client_id": "seu_client_id",
+    "client_secret": "seu_client_secret",
+    "reflesh_token": "seu_reflesh_token"
+}
+
+zoho = ZohoCRM(credential=credentials)
+```
+
+### Obtendo Leads de um Módulo
+
+Você pode buscar leads ou registros de outros módulos usando o método `getLeadsModulo`. Ele permite realizar uma pesquisa baseada em critérios e retornar os campos desejados.
+
+```python
+criteria = "(Last_Name:starts_with:Smith)"
+modulo = "Leads"
+fields = "Last_Name,First_Name,Email"
+
+leads = zoho.getLeadsModulo(criteria, modulo, fields)
+print(leads)
+```
+
+### Consultando o Histórico de Estágios de um Lead
+
+Para obter o histórico de estágios de um lead específico, use o método `getLeadsModuloHistory`. Este método aceita o ID do lead e o nome do módulo.
+
+```python
+id_lead = "1234567890"
+modulo = "Leads"
+fields = "Stage,Modified_Time"
+
+history = zoho.getLeadsModuloHistory(fields, modulo, id_lead)
+print(history)
+```
+
+### Como a Autenticação Funciona
+
+A biblioteca cuida da renovação automática do token de autenticação quando ele expira, utilizando o `refresh_token` fornecido. O token de acesso é armazenado em cache no caminho especificado (padrão: `token_cache.json`).
+
+### Exemplo Completo
+
+```python
+from zoho_crm import ZohoCRM
+
+# Configuração de credenciais
+credentials = {
+    "client_id": "seu_client_id",
+    "client_secret": "seu_client_secret",
+    "reflesh_token": "seu_reflesh_token"
+}
+
+# Inicializa a classe ZohoCRM
+zoho = ZohoCRM(credential=credentials)
+
+# Busca leads baseados em critérios específicos
+criteria = "(Email:starts_with:example)"
+modulo = "Leads"
+fields = "First_Name,Last_Name,Email"
+leads = zoho.getLeadsModulo(criteria, modulo, fields)
+print(leads)
+
+# Consulta o histórico de estágios de um lead específico
+id_lead = "1234567890"
+history = zoho.getLeadsModuloHistory(fields="Stage,Modified_Time", modulo="Leads", id_lead=id_lead)
+print(history)
+```
+
+## Estrutura da Classe
+
+### `ZohoCRM`
+
+A classe principal para interagir com a API do Zoho CRM.
+
+#### Parâmetros:
+
+- `credential (dict)`: Um dicionário contendo `client_id`, `client_secret` e `reflesh_token`. Estes são obrigatórios.
+- `save_cache_token (str)`: Caminho para salvar o cache do token de autenticação. Padrão: `"token_cache.json"`.
+
+#### Métodos:
+
+- `getLeadsModulo(criteria: str, modulo: str, fields: str, version: str = 'v3') -> list`: Obtém os leads ou registros de um módulo com base em critérios específicos.
+- `getLeadsModuloHistory(fields: str, modulo: str, id_lead: str, version: str = 'v5') -> list`: Obtém o histórico de estágios de um lead específico.
+- `gera_headers(token: str = None) -> dict`: Gera os cabeçalhos de autorização para as requisições.
+- `get_token() -> str`: Obtém o token de acesso armazenado em cache ou renova-o se necessário.
+- `refresh_token() -> str`: Renova o token de acesso utilizando o `refresh_token`.
+
+## Licença
+
+Este projeto está licenciado sob os termos da [MIT License](LICENSE).
+
+---
+
+GRUPO BACHEGA
