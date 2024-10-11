@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: markov_random_field
+Version: 0.1.1
+Summary: Markov Random Field for Image Segmentation
+Author-email: James Haberberger <jhaberbe@stanford.edu>
+Maintainer-email: James Haberberger <jhaberbe@stanford.edu>
+License: MIT license
+Project-URL: bugs, https://github.com/jhaberbe/markov_random_field/issues
+Project-URL: changelog, https://github.com/jhaberbe/markov_random_field/blob/master/changelog.md
+Project-URL: homepage, https://github.com/jhaberbe/markov_random_field
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
