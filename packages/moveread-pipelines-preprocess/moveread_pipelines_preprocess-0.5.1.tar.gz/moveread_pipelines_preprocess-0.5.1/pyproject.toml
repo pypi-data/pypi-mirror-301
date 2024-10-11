@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-pipelines-preprocess"
+version = "0.5.1"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Moveread Preprocessing pipeline"
+dependencies = [
+  "pure-cv", "robust-extraction2", "scoresheet-models", "lazy-loader",
+  "pipeteer", "dslog", "fastapi", "python-kv", "moveread-core", "moveread-tatr"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/moveread/pipelines.git"
+
+[project.scripts]
+preprocess = "moveread.pipelines.preprocess.scripts.cli:main"
+preprocess-clientgen = "moveread.pipelines.preprocess.scripts.clientgen_cli:main"
