@@ -1,0 +1,15 @@
+multifunctional/__init__.py,sha256=yCMmRg1gzBIgnq_Wh6seUPHw3ZgrjgZvwjvLUQWOAU0,1777
+multifunctional/allocation.py,sha256=rY7CoVc6cJywCdbTSM2iB61pnquTWBbwoSP2mokNYZE,7718
+multifunctional/custom_allocation.py,sha256=1whFbX-YHvBWYQyO3-WTZg4KbEFIWcV_oVoOnL6aaoA,9724
+multifunctional/database.py,sha256=NQ6v9BtzGrq2-3RxFVYxYWfCXyyF8cXJXUFYzOoYPh0,2992
+multifunctional/edge_classes.py,sha256=ZD8eQLhlbi_LIEss_y9s2zYTLqr33U0Ykj1pexnd6OM,668
+multifunctional/errors.py,sha256=GV1owHLc8qDzPahREhcOyt_RddeT9Argur_0MT0LM3g,180
+multifunctional/node_classes.py,sha256=1FfvtjplzZ3FHlA54mayNoWeq9ONVDrOezH-kZBY0YA,5662
+multifunctional/node_dispatch.py,sha256=Ka6V6VKcfYd_uxUPaSamlsWWuvI8nIMnQHOaV3V_Y4w,589
+multifunctional/supplemental.py,sha256=AV2C5gSzc2uAmHXfu0xTDc0ZB4vnX16RhEqkuTLNp5M,1161
+multifunctional/utils.py,sha256=kxJ8-W1Ob9EV-aevpHIBfAIsaYPHzxDxvEqfJgtFZ88,8532
+multifunctional-0.9.dist-info/LICENSE,sha256=lm1ISrt8lgHTizeXaVvkzNJBmelbPEM0b8ZoIErWItU,1456
+multifunctional-0.9.dist-info/METADATA,sha256=A08KPrkjJSxowrdZvxVGL7qdrsbTZwHU9Gp1I-99lSE,13608
+multifunctional-0.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+multifunctional-0.9.dist-info/top_level.txt,sha256=e9ChIFzoPXKZVVzOZic7b6rY2pKzw-gxnRsEWFFKQzs,16
+multifunctional-0.9.dist-info/RECORD,,
