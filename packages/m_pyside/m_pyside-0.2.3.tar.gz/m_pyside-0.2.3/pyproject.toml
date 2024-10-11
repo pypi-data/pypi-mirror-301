@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "m_pyside"
+version = "0.2.3"
+description = "myself pyside libs"
+authors = ["wangshuo_bijiben <204062518@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+pyside2 = "^5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

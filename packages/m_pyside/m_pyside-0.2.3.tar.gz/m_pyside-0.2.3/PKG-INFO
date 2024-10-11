@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: m_pyside
+Version: 0.2.3
+Summary: myself pyside libs
+Author: wangshuo_bijiben
+Author-email: 204062518@qq.com
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyside2 (>=5,<6)
+Description-Content-Type: text/markdown
+
+
