@@ -1,0 +1,2 @@
+[console_scripts]
+palgate-py = palgate_py.cli:palgate_py
