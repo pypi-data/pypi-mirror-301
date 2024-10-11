@@ -1,0 +1,12 @@
+neovim_gui/__init__.py,sha256=0GoWum739FC9dHJQyKVRP7A4Mi5xIXjkIr7bP9oURqo,35
+neovim_gui/cli.py,sha256=RJzXj5s2aH0sDUBdCqRSnlc-dbL0bRpcxlzF6Vo0n9o,2282
+neovim_gui/gtk_ui.py,sha256=jjdFXBQ6NOGw2sb5MKcYc5H5nvLTD-qFO-oMI_PBZe4,22930
+neovim_gui/qt_ui.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neovim_gui/screen.py,sha256=rj9StMWqAV7OrV2T9pky1q4evikeYik_CLzIcjwC8Cg,3962
+neovim_gui/ui_bridge.py,sha256=ALQNxNOaQFfxXd0V_apPaYs1niE7we1Vmvh1o4JOzNQ,4219
+nvimgtk-1.0.0.dist-info/LICENSE,sha256=KXpi_2HrhPUy_1qBgYYNkltxDURY8gTlbJCx2pl8hxE,11310
+nvimgtk-1.0.0.dist-info/METADATA,sha256=VKDFbG2ZuyvYxhA36DJAKvv-V9QWJ1eosub4W3wJZjA,821
+nvimgtk-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+nvimgtk-1.0.0.dist-info/entry_points.txt,sha256=8oszcacPzLWWs07gIgzKDsYck4aplQqojMAdxIss590,48
+nvimgtk-1.0.0.dist-info/top_level.txt,sha256=xQrnmjqRFgbwelHxq8S4ipGy0g4BgwwM7Hyfd1FpoKI,11
+nvimgtk-1.0.0.dist-info/RECORD,,
