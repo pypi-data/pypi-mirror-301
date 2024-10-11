@@ -1,0 +1,2 @@
+cassandra-driver>=3.29.1
+pandas>=1.0.0

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/cassandracrud/__init__.py
+src/cassandracrud/core.py
+src/cassandracrud.egg-info/PKG-INFO
+src/cassandracrud.egg-info/SOURCES.txt
+src/cassandracrud.egg-info/dependency_links.txt
+src/cassandracrud.egg-info/requires.txt
+src/cassandracrud.egg-info/top_level.txt
+tests/test_cassandra_crud.py
