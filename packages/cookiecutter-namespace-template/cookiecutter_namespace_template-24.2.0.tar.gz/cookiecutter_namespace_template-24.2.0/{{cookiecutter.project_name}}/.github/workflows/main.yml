@@ -1,0 +1,17 @@
+name: CI
+on: push
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Vale
+      uses: errata-ai/vale-action@v1.4.0
+      with:
+        config: https://raw.githubusercontent.com/cusyio/cusy-design-system/main/.vale.ini
+        files: docs
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
