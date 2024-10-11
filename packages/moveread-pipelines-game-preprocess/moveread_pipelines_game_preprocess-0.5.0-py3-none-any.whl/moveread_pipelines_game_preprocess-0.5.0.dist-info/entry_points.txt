@@ -1,0 +1,2 @@
+[console_scripts]
+gamepre = moveread.pipelines.game_preprocess.cli:main
