@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: snarkify-cli
+Version: 0.1.4
+Summary: The command line utility to interact with the Snarkify platform.
+Author: Boyu Sun
+Author-email: boyu@snarkify.io
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: docker (>=7.0.0,<8.0.0)
+Requires-Dist: inquirerpy (>=0.3.4,<0.4.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: richer (>=0.1.6,<0.2.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Description-Content-Type: text/markdown
+
+# Snarkify CLI
+
+The command line utility to interact with the Snarkify platform.
+
+## Dev Installation
+1. Install [poetry](https://python-poetry.org/)
+2. Run `poetry install` in the root directory
+3. Run `poetry shell` to get access to `snarkify` command
+
+## Build and install CLI
+```
+poetry build
+# Note the the version of the CLI is subject to change.
+pip3 install dist/snarkify_cli-0.1.0-py3-none-any.whl
+pip3 uninstall dist/snarkify_cli-0.1.0-py3-none-any.whl
+```
+
+## Run tests
+```
+poetry run pytest
+```
