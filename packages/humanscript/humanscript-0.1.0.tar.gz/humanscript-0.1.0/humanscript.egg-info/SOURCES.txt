@@ -1,0 +1,11 @@
+README.md
+setup.py
+humanscript.egg-info/PKG-INFO
+humanscript.egg-info/SOURCES.txt
+humanscript.egg-info/dependency_links.txt
+humanscript.egg-info/entry_points.txt
+humanscript.egg-info/requires.txt
+humanscript.egg-info/top_level.txt
+tests/__init__.py
+tests/test_integration.py
+tests/test_interpreter.py
