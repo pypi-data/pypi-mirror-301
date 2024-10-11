@@ -1,0 +1,9 @@
+README.md
+setup.py
+alteryse/__init__.py
+alteryse/text_generation.py
+alteryse/types.py
+alteryse_py.egg-info/PKG-INFO
+alteryse_py.egg-info/SOURCES.txt
+alteryse_py.egg-info/dependency_links.txt
+alteryse_py.egg-info/top_level.txt
