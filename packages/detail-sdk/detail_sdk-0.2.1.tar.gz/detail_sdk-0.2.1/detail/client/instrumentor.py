@@ -1,0 +1,2 @@
+from opentelemetry.instrumentation.instrumentor import BaseInstrumentor
+class Instrumentor(BaseInstrumentor):0

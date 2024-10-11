@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "detail-sdk"
+version = "0.2.1"
+packages = [{include = "detail/client"}]
+include = ["detail/__init__.py"]
+description = ""
+readme = "pypi-readme.md"
+homepage = "https://detail.dev"
+authors = ["Detail <pypi@detail.dev>"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.13"
+filelock = "*"
+forbiddenfruit = "*"
+more-itertools = "*"
+opentelemetry-exporter-otlp = "*"
+opentelemetry-exporter-otlp-proto-http = "*"
+opentelemetry-instrumentation-django = "*"
+opentelemetry-instrumentation-asgi = ">= 0.47b0"  # for the hook calling interface
+opentelemetry-instrumentation-fastapi = "*"
+opentelemetry-instrumentation-flask = "*"
+opentelemetry-instrumentation-grpc = "*"
+opentelemetry-sdk = "*"
+wrapt = "*"
+
+coverage = {version = "*", optional = true}
+psycopg2 = {version = "*", optional = true}
+psycopg2-binary = {version = "*", optional = true}
+
+[tool.poetry.extras]
+replay = ['coverage', 'psycopg2']
+replay-binary = ['coverage', 'psycopg2-binary']
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+arrow = "*"
+# These versions aren't strictly necessary, but speed up poetry resolution significantly.
+awscli = "> 1.33"
+awscli-local = "> 0.20"
+boto3 = "*"
+celery = "*"
+click = "*"
+coverage = "*"
+django = "*"
+django-stubs = "*"
+fastapi = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+grpcio-tools = "*"
+httpx = "*"
+localstack = "> 3.0"
+mypy = "*"
+pre-commit = "*"
+psycopg2-binary ="*"
+pytest = "*"
+redis = "*"
+requests = "*"
+ruff = "*"
+sentry-sdk = "*"
+types-protobuf = "*"
+types-psycopg2 = "*"
+types-requests = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore:::.*opentelemetry.*"]
+
+[tool.ruff]
+src = ["detail", "examples"]
+lint.extend-select = ["I"]
+lint.isort.known-third-party = ["coverage"]
