@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: furiosa-smi-py
+Version: 2024.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Furiosa-smi-py
+
+This repository is Python bindings for [Furiosa-smi](https://github.com/furiosa-ai/furiosa-smi).
+
+## Documentations
+
+TBD
+
+## Develop environment with maturin
+
+To use maturin, you need to use a python virtual environment. A simple example can be found [here](https://github.com/PyO3/pyo3/#Usage).
+
+```
+pip install maturin
+make install
+```
+
+## Examples
+
+Some examples for using Python API is available [here](examples).
+
+To run example programs, you need to install `tabulate`.
+
+```
+pip install tabulate
+make example
+```
+
