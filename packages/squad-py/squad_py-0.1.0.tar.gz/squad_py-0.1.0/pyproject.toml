@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "squad-py"
+version = "0.1.0"
+description = "Spatial QUality Assessment and Diagnosis"
+authors = ["fengsh <shaohong.feng.78@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "squad-py" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
