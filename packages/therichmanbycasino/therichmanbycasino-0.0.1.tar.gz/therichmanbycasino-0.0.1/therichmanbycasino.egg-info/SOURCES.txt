@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+therichmanbycasino.egg-info/.pypirc
+therichmanbycasino.egg-info/PKG-INFO
+therichmanbycasino.egg-info/SOURCES.txt
+therichmanbycasino.egg-info/dependency_links.txt
+therichmanbycasino.egg-info/top_level.txt
