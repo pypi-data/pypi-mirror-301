@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+StockETL/__init__.py
+StockETL/version.py
+StockETL.egg-info/PKG-INFO
+StockETL.egg-info/SOURCES.txt
+StockETL.egg-info/dependency_links.txt
+StockETL.egg-info/requires.txt
+StockETL.egg-info/top_level.txt
+StockETL/datetimeutils/__init__.py
+StockETL/globalpath/__init__.py
+StockETL/portfolio/__init__.py
