@@ -1,0 +1,9 @@
+reddit_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reddit_bot/bot.py,sha256=JQ1t4PIaTc3RSnfSeXLzMGbJjH9SrW411NVqEBgEvDE,1223
+reddit_bot/cli.py,sha256=noC0pcyGXPioqJ1U8ypJRzDhrpsT7rPtkm4KQU4av9Q,3242
+reddit_bot_cli-0.0.3.dist-info/LICENSE,sha256=1WpRdwbUnC5B_loGSy3sDbODEuIzhyRCJVyEUumSXS4,1071
+reddit_bot_cli-0.0.3.dist-info/METADATA,sha256=yh-yggFX5ZpFtNUcAulYSBr_T_QUeSFgeAk6Gj1rz14,1840
+reddit_bot_cli-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+reddit_bot_cli-0.0.3.dist-info/entry_points.txt,sha256=QGLp7VcSCAQ8Egqc40_Vd8LUjqzqZuW3PjYgbOTq8p0,55
+reddit_bot_cli-0.0.3.dist-info/top_level.txt,sha256=ffzA-ZUL8Jbk9dBFBsl9iIyDf6GtxYtMbWzCzvYIESI,11
+reddit_bot_cli-0.0.3.dist-info/RECORD,,
