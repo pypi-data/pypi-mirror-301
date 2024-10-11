@@ -1,0 +1,8 @@
+torch
+numpy
+scipy
+geomloss
+
+[docs]
+sphinx
+sphinx_rtd_theme

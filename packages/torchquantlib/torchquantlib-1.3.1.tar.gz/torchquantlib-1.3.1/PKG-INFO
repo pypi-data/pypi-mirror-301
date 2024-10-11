@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: torchquantlib
+Version: 1.3.1
+Summary: High-Performance PyTorch Library for Derivatives Pricing
+Home-page: https://github.com/jialuechen/torchquantlib
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: geomloss
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
