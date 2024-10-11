@@ -1,0 +1,39 @@
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+extend-select = ["E501"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "freelance_tasks"
+version = "1.0.0"
+description = "Parse freelance"
+readme = "README.md"
+authors = [
+    "Skelesheit <skelesheit@gmail.com>",
+    "PySashaPy <sasha.2000ibr@gmail.com>"
+]
+classifiers = [
+    "Development Status :: 1 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+packages = [{include="freelance_tasks"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^2"
+beautifulsoup4 = "^4.12"
+requests = "^2.32"
