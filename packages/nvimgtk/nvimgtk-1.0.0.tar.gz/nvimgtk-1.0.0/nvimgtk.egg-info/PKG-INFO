@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nvimgtk
+Version: 1.0.0
+Summary: Gtk gui for neovim
+License: Apache
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pynvim>=0.1.3
+Requires-Dist: click>=3.0
+Requires-Dist: pygobject
+
+## Python Gtk GUI for Neovim
+
+### Description
+Python Gtk GUI for Neovim allows users to interact with Neovim through a graphical user interface (GUI) using the Gtk library.
+
+### Running from Source
+To run the application from the source code, you need to install some required packages. You can do this as follows:
+
+#### Install the necessary dependencies:
+
+```sh
+sudo apt-get install -y gobject-introspection libgirepository1.0-dev
+pip install .
+```
+
+#### Run the application:
+```sh
+python -m neovim_gui.cli
+```
+
+### License
+This project is released under the Apache License 2.0.
