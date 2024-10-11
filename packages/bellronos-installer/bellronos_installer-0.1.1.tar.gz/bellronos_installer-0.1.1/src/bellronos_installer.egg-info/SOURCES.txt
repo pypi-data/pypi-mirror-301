@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+git_scripts/.gitignore
+src/.gitignore
+src/bellronos_installer/__init__.py
+src/bellronos_installer/bellronos_installer.py
+src/bellronos_installer.egg-info/PKG-INFO
+src/bellronos_installer.egg-info/SOURCES.txt
+src/bellronos_installer.egg-info/dependency_links.txt
+src/bellronos_installer.egg-info/entry_points.txt
+src/bellronos_installer.egg-info/requires.txt
+src/bellronos_installer.egg-info/top_level.txt

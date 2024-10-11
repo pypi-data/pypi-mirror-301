@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: bellronos_installer
+Version: 0.1.1
+Summary: Install Bellronos Scripting Languages into your Operating System
+Author: RonaldsonBellande
+Author-email: ronaldsonbellande@gmail.com
+Project-URL: Home, https://github.com/Architecture-Mechanism/bellronos_installer
+Project-URL: Homepage, https://github.com/Architecture-Mechanism/bellronos_installer
+Project-URL: documentation, https://github.com/Architecture-Mechanism/bellronos_installer
+Project-URL: repository, https://github.com/Architecture-Mechanism/bellronos_installer
+Project-URL: Bug Reports, https://github.com/Architecture-Mechanism/bellronos_installer/issues
+Project-URL: Source, https://github.com/Architecture-Mechanism/bellronos_installer
+Keywords: bellronos installer scripting languages
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: packaging
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov[all]; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
+# Bellronos Installer
+Install bellronos Programming Languages into your Operating System 
+
+## Install pip with sudo or bell
+- `sudo pip install bellronos_installer`
+- `bell pip install bellronos_installer`
+
+## Usage of bellronos Installer
+- **To use this script, you would run it with sudo privileges and specify an action:**
+  - To install a specific version: sudo bellronos_installer install --version <branch_name>
+  - To list available versions: sudo bellronos_installer list
+  - To install the latest version: sudo bellronos_installer latest
+  - To use the upload placeholder: sudo bellronos_installer update
+
+## Website PYPI
+- https://pypi.org/project/bellronos_installer
+
+### Upgrade (if not upgraded)
+- `pip install --upgrade bellronos_installer`
+
+```
+Name: bellronos_installer
+Summary: Install Bellronos Programming Languages into your Operating System 
+Home-page: github.com/Architecture-Mechanism/bellronos_installer
+Author: Ronaldson Bellande
+Author-email: ronaldsonbellande@gmail.com
+License: GNU General Public License v3.0
+```
+
+## License
+BellandeOS Programming Language Installer is distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), see [LICENSE](https://github.com/Architecture-Mechanism/bellronos_installer/blob/main/LICENSE) and [NOTICE](https://github.com/Architecture-Mechanism/bellronos_installer/blob/main/LICENSE) for more information.

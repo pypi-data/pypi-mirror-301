@@ -1,0 +1,8 @@
+requests
+packaging
+
+[dev]
+pytest
+pytest-cov[all]
+mypy
+black
