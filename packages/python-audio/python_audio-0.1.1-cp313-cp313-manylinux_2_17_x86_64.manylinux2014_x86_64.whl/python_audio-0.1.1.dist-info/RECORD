@@ -1,0 +1,8 @@
+_audioop.cpython-313-x86_64-linux-gnu.so,sha256=vdXw1t2--23Jvz0J-K096OE9iFXwYky9e5XLOFTkwj0,233528
+python_audio-0.1.1.dist-info/top_level.txt,sha256=DT2tjZV3rR1FGtZae2qkQVljnQu0_cK9Cw-yxdRKZ3Y,15
+python_audio-0.1.1.dist-info/RECORD,,
+python_audio-0.1.1.dist-info/METADATA,sha256=pkYiVyh_3Ii9MHHVG3S87THGRgL2GkDiO3GtkMJnixs,961
+python_audio-0.1.1.dist-info/WHEEL,sha256=l8JebZ2EucL4EHBzvkCTCBq8pKOzA1XejIK_DsvkSYE,151
+audio/op.py,sha256=Clk-XkCxC_ODoLGWg3bu3Fxha96wVzE_7KS0JuKG20A,3059
+audio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audio/core.py,sha256=p95ljt_Sy8taaj_yRZq1cxGnEr-Clctbaym8ail6i3Q,243
