@@ -1,0 +1,2 @@
+[console_scripts]
+sql_scan = sql_scan:main

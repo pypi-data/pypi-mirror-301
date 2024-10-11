@@ -1,0 +1,12 @@
+sql_scan/__init__.py,sha256=cfmMOBkSNGQe3zs0icpIw7MDfsAVbprYXWYM_1knt30,1073
+sql_scan/file_writer.py,sha256=XqTDNIc7hr1QKUMYFkSLz9wvATdBwptEk_B_xqr1MfM,1843
+sql_scan/formatter.py,sha256=MDGOJj7jwJGFy4OauoP1pxPR84ytLWSjV5zcL_Bemys,625
+sql_scan/name_cleaner.py,sha256=NqmocJrcL3IA4Qt3LipM1r-wC_su5UUEUE-7acHvZa4,329
+sql_scan/table_extractor.py,sha256=_wolS-mjsgHoBxrl1zS1LlQmFiArigPOyL6PS5OD72Q,2213
+sql_scan/where_extractor.py,sha256=LErjdoRqgLImwAJYwe7C4fT_cEGfOAvtN8pCeMpWmio,2832
+sql_scan-0.3.dist-info/LICENSE,sha256=j3w7U0zZc27ldr4iL5W6XlyLr2Rk2j1g3LTFlNo9nlI,1097
+sql_scan-0.3.dist-info/METADATA,sha256=IBLHvx1TRr7BO5SP62r1uWNWLe5A5GpjvH0X1GDX1VA,4779
+sql_scan-0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+sql_scan-0.3.dist-info/entry_points.txt,sha256=OpUBE_Go2QLQkJxoE7rTuLjSh4wAwOVuD25O-H20PmY,43
+sql_scan-0.3.dist-info/top_level.txt,sha256=PnC-mIJIqJ-Koz-q7fJg65MOCgmCFh4TvpedP_MURXU,9
+sql_scan-0.3.dist-info/RECORD,,
