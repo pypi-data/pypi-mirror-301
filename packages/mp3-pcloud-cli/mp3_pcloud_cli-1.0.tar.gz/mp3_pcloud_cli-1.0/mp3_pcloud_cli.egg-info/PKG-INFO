@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mp3-pcloud-cli
+Version: 1.0
+Author: Sam Pomerantz
+Author-email: sam@sampomerantz.me
+Requires-Dist: requests
+Requires-Dist: yt-dlp
