@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streaming-vocos
+Version: 0.0.9
+Summary: Streaming Vocos
+Home-page: https://github.com/pengzhendong/streaming-vocos
+Author: Zhendong Peng
+Author-email: pzd17@tsinghua.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vocos
+
+# streaming-vocos
