@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Getquantumoptics
+Version: 0.0.1
+Summary: A brief quantum simulator of the quantum optics
+Home-page: https://github.com/GetlinDu/Getquantumoptics
+Author: GetlinDu
+Author-email: 1578440935@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==2.0.2
+
+![2](https://github.com/user-attachments/assets/adc6fa3a-9ccd-4972-af14-7dc7b6113dca)
