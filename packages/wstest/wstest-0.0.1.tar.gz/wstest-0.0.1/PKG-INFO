@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wstest
+Version: 0.0.1
+Summary: PYPI tutorial package creation written by wonseop
+Home-page: https://github.com/wonseop/wstest
+Author: wonseop
+Author-email: wonseop.kim@samsung.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: scikit-learn

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wstest.egg-info/PKG-INFO
+wstest.egg-info/SOURCES.txt
+wstest.egg-info/dependency_links.txt
+wstest.egg-info/not-zip-safe
+wstest.egg-info/requires.txt
+wstest.egg-info/top_level.txt
