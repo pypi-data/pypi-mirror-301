@@ -1,0 +1,82 @@
+name: Tests
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+      - release
+
+jobs:
+  bake:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build Matrix
+        id: script
+        # just need a python version new enough to have tomllib
+        run: python scripts/get_poetry_versions.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+    outputs:
+      poetry_versions: ${{ steps.script.outputs.poetry_versions }}
+
+  test:
+    needs: bake
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        poetry_version: ${{ fromJSON(needs.bake.outputs.poetry_versions) }}
+        python_version: ["3.13", "3.12", "3.11", "3.10", "3.9"]
+
+    if: "${{ !contains(github.event.head_commit.message, 'ci skip') }}"
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          version: "latest"
+
+      - name: Install Python ${{ matrix.python_version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: "${{ matrix.python_version }}"
+
+      - name: Install vscode-task-runner
+        run: uv tool install vscode-task-runner
+
+      - name: Cache Pre-Commit
+        uses: NathanVaughn/actions-pre-commit-cache@main
+
+      - name: Run Pre-Commit Checks
+        run: vtr pre-commit --color=always --show-diff-on-failure
+
+      - name: Install Poetry Test Version
+        run: |
+          vtr build
+          uv tool install --with ./dist/poetry_azure_artifacts_plugin*.whl poetry==${{ matrix.poetry_version }} --python ${{ matrix.python_version }}
+
+      - name: Test Poetry
+        # at least make sure it doesn't crash
+        run: poetry lock --directory=testproject
