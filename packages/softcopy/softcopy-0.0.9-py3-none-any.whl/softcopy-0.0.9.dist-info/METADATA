@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: softcopy
+Version: 0.0.9
+Summary: Copies zarr archives from an acquisition frontend to a different disk, using filesystem watching and lockfiles to allow copying during acquisition.
+Author-email: Seth Hinz <sethhinz@me.com>
+Project-URL: Homepage, https://royerlab.github.io/softcopy/
+Project-URL: Repository, https://github.com/royerlab/softcopy
+Project-URL: Documentation, https://royerlab.github.io/softcopy/
+Keywords: python
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy ==2.1.1
+Requires-Dist: watchdog >=5.0.3
+Requires-Dist: psutil >=6.0.0
+Requires-Dist: click >=8.1.7
+Requires-Dist: pyyaml >=6.0.2
+Requires-Dist: tensorstore >=0.1.66
+
+# softcopy
+
+[![Release](https://img.shields.io/github/v/release/royerlab/softcopy)](https://img.shields.io/github/v/release/royerlab/softcopy)
+[![Build status](https://img.shields.io/github/actions/workflow/status/royerlab/softcopy/main.yml?branch=main)](https://github.com/royerlab/softcopy/actions/workflows/main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/royerlab/softcopy/branch/main/graph/badge.svg)](https://codecov.io/gh/royerlab/softcopy)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/royerlab/softcopy)](https://img.shields.io/github/commit-activity/m/royerlab/softcopy)
+[![License](https://img.shields.io/github/license/royerlab/softcopy)](https://img.shields.io/github/license/royerlab/softcopy)
+
+Copies zarr archives from an acquisition frontend to a different disk, using filesystem watching and lockfiles to allow copying during acquisition.
+
+- **Github repository**: <https://github.com/royerlab/softcopy/>
+- **Documentation** <https://royerlab.github.io/softcopy/>
+
+## Getting started with your project
+
+### 1. Create a New Repository
+
+First, create a repository on GitHub with the same name as this project, and then run the following commands:
+
+```bash
+git init -b main
+git add .
+git commit -m "init commit"
+git remote add origin git@github.com:royerlab/softcopy.git
+git push -u origin main
+```
+
+### 2. Set Up Your Development Environment
+
+Then, install the environment and the pre-commit hooks with
+
+```bash
+make install
+```
+
+This will also generate your `uv.lock` file
+
+### 3. Run the pre-commit hooks
+
+Initially, the CI/CD pipeline might be failing due to formatting issues. To resolve those run:
+
+```bash
+uv run pre-commit run -a
+```
+
+### 4. Commit the changes
+
+Lastly, commit the changes made by the two steps above to your repository.
+
+```bash
+git add .
+git commit -m 'Fix formatting issues'
+git push origin main
+```
+
+You are now ready to start development on your project!
+The CI/CD pipeline will be triggered when you open a pull request, merge to main, or when you create a new release.
+
+To finalize the set-up for publishing to PyPI, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/publishing/#set-up-for-pypi).
+For activating the automatic documentation with MkDocs, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/mkdocs/#enabling-the-documentation-on-github).
+To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/codecov/).
+
+## Releasing a new version
+
+- Create an API Token on [PyPI](https://pypi.org/).
+- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting [this page](https://github.com/royerlab/softcopy/settings/secrets/actions/new).
+- Create a [new release](https://github.com/royerlab/softcopy/releases/new) on Github.
+- Create a new tag in the form `*.*.*`.
+
+For more details, see [here](https://fpgmaas.github.io/cookiecutter-uv/features/cicd/#how-to-trigger-a-release).
+
+---
+
+Repository initiated with [fpgmaas/cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv).
