@@ -1,0 +1,6 @@
+scikit-learn
+aeon>=0.10.0
+openpyxl
+tqdm
+torch>=2.0.0
+captum==0.7.0
