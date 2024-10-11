@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: zuspec
+Version: 0.0.1.11285928715
+License-File: LICENSE
+Requires-Dist: zuspec-sv>=0.0.1
+
