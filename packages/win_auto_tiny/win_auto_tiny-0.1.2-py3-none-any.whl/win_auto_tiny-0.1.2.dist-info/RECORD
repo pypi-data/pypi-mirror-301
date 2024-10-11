@@ -1,0 +1,11 @@
+win_auto_tiny/__init__.py,sha256=kkpKudbpwfzeO9V6IMdbpXzPxMH1-_AIxE7bmafrTGQ,753
+win_auto_tiny/dpi_utils.py,sha256=WIQNOZEO_HCz9mAQ4s5_vqzifoX14DoKEfK7SMdeLQI,3443
+win_auto_tiny/keyboard.py,sha256=7icWesPkAXKCcxJReTZxjCIH2WGcqJrduoQkD0o7G88,1928
+win_auto_tiny/mouse.py,sha256=jrdbJu5WKL7grQb127UgSHm1OupyHbw1QV8YPsggknI,2524
+win_auto_tiny/process.py,sha256=ppclQngDGMtMehDy-OVbhYjPuwP8k7_Kx_1im9DsNvY,1978
+win_auto_tiny/win32_draw.py,sha256=JIDRpD5T2MGkqhS1EMI0ydiXLlh7aR-G3pJR0QwQ9YU,1728
+win_auto_tiny/window_utils.py,sha256=2f8nhQgP2gO4BHQHKjJ1ZbrbR11un3_pmwU-LROW9rs,2055
+win_auto_tiny-0.1.2.dist-info/LICENSE,sha256=L7fLUmFsWQ5oRyob4g73BqcAMYkJ5W8W5eAkgqABkpo,1063
+win_auto_tiny-0.1.2.dist-info/METADATA,sha256=IUQriALDYHGOXUh3w19kbn71S8lW2xmplVBpTTiOvxg,2018
+win_auto_tiny-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+win_auto_tiny-0.1.2.dist-info/RECORD,,
