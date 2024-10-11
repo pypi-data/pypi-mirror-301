@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: intrepydd
+Version: 0.1.0
+Summary: An implementation of the Intrepydd compiler
+Home-page: https://github.com/habanero-lab/Onward-Intrepydd
+Author: Tong Zhou
+Author-email: zt9465@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
