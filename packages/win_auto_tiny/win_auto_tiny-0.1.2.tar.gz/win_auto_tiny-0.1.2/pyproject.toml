@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "win_auto_tiny"
+version = "0.1.2"
+description = "A lightweight Python library for automating Windows GUI tasks, featuring simple functions to run applications, find windows, click, and type text."
+authors = ["th yoo <taihyungyoo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/th-yoo/win_auto_tiny"
+keywords = ["win32", "automation", "lightweight", "GUI", "windows", "mouse", "keyboard", "DPI"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pywin32 = {version = ">= 300", platform = "win32"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+psutil = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
