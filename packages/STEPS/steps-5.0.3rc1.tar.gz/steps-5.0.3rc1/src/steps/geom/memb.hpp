@@ -1,0 +1,237 @@
+/*
+ ___license_placeholder___
+ */
+
+#pragma once
+
+#include <string>
+#include <vector>
+
+#include "fwd.hpp"
+#include "util/vocabulary.hpp"
+
+namespace steps::tetmesh {
+
+/// Provides annotation for a membrane in a Tetmesh. If membrane potential
+/// is included in simulation, the potential will be calculated for this
+/// closed group of triangles in the tetrahedral mesh.
+/// Currently the only check this object performs is a closed-surface test,
+/// all checks on Patches on this membrane will be made during Tetmesh
+/// construction
+///
+/// Tetmesh object is responsible for maintaining lifetime of associated
+/// Memb objects (Python proxy class must set thisown to zero.)
+///
+/// \warning Methods start with an underscore are not exposed to Python.
+
+class Memb {
+  public:
+    ////////////////////////////////////////////////////////////////////////
+    // OBJECT CONSTRUCTION & DESTRUCTION
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Constructor.
+    ///
+    /// \param id ID of the TmPatch.
+    /// \param container Reference to the Tetmesh container.
+    /// \param patches A sequence of TmPatches as a vector
+    ///             of pointers which is represented as
+    ///             a sequence in Python.
+    ///
+    Memb(std::string id,
+         Tetmesh& container,
+         std::vector<TmPatch*> const& patches,
+         std::vector<TmComp*> const& compartments,
+         bool verify = false,
+         uint opt_method = 1,
+         double search_percent = 100.0,
+         std::string opt_file_name = {});
+
+    Memb(const Memb&) = delete;
+    Memb& operator=(const Memb&) = delete;
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS (EXPOSED TO PYTHON):
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Return a reference to the tetmesh container object.
+    ///
+    /// \return Reference to the parent tetmesh container.
+    inline tetmesh::Tetmesh& getContainer() const noexcept {
+        return pTetmesh;
+    }
+
+    /// Return the membrane id.
+    ///
+    /// \return ID of the membrane.
+    inline std::string const& getID() const noexcept {
+        return pID;
+    }
+
+    /// Return whether triangles (specified by index) are inside this patch.
+    ///
+    /// \param tri List of indices of triangles.
+    /// \return Results of whether the triangles are inside the patch.
+    std::vector<bool> isTriInside(const std::vector<index_t>& tri) const;
+
+    /// Return all triangles (by index) in the patch.
+    ///
+    /// \return List of indices of triangles.
+    inline std::vector<index_t> getAllTriIndices() const noexcept {
+        return strong_type_to_value_type(pTri_indices);
+    }
+
+    /// Return the number of triangles in this Memb.
+    ///
+    /// \return the number of triangles in this Memb
+    inline uint countTris() const noexcept {
+        return pTrisN;
+    }
+
+    /// Return all tetrahedrons in the conduction volume.
+    ///
+    /// \return List of indices of tetrahedrons in conduction volume.
+    inline std::vector<index_t> getAllVolTetIndices() const noexcept {
+        return strong_type_to_value_type(pTet_indices);
+    }
+
+    /// Return the number of tetrahedrons in the conduction volume.
+    ///
+    /// \return the number of tetrahedrons in the conduction volume
+    inline uint countVolTets() const noexcept {
+        return pTetsN;
+    }
+
+    /// Return all 'virtual triangles' that is the triangles that
+    /// make up the closed surface if supplied triangles form an open surface.
+    /// These triangles will be voltage-clamped for the time being with
+    /// the possibility of coupling to outside whole-cell simulators in
+    /// the future.
+    ///
+    /// \return List of indices of virtual triangles.
+    inline std::vector<index_t> getAllVirtTriIndices() const noexcept {
+        return strong_type_to_value_type(pTrivirt_indices);
+    }
+
+    /// Return the number of virtual triangles in this Memb.
+    ///
+    /// \return the number of virtual triangles in this Memb
+    inline uint countVirtTris() const noexcept {
+        return pTriVirtsN;
+    }
+
+    /// Return all vertices in the conduction volume and membrane surface.
+    ///
+    /// \return List of indices of vertices in membrane surface and conduction
+    /// volume.
+    inline std::vector<index_t> getAllVertIndices() const noexcept {
+        return strong_type_to_value_type(pVert_indices);
+    }
+
+    /// Return the number of vertices in the conduction volume and membrane
+    /// surface.
+    ///
+    /// \return the number of vertices in membrane surface and conduction volume.
+    inline uint countVerts() const noexcept {
+        return pVertsN;
+    }
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS (EXPOSED TO C++)
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Return all triangles (by index) in the patch.
+    ///
+    /// \return List of indices of triangles.
+    inline std::vector<triangle_global_id> const& _getAllTriIndices() const noexcept {
+        return pTri_indices;
+    }
+
+    /// Return all tetrahedrons in the conduction volume.
+    ///
+    /// \return List of indices of tetrahedrons in conduction volume.
+    inline std::vector<tetrahedron_global_id> const& _getAllVolTetIndices() const noexcept {
+        return pTet_indices;
+    }
+
+    /// Return all 'virtual triangles' that is the triangles that
+    /// make up the closed surface if supplied triangles form an open surface.
+    /// These triangles will be voltage-clamped for the time being with
+    /// the possibility of coupling to outside whole-cell simulators in
+    /// the future.
+    ///
+    /// \return List of indices of virtual triangles.
+    inline std::vector<triangle_global_id> const& _getAllVirtTriIndices() const noexcept {
+        return pTrivirt_indices;
+    }
+
+    /// Return all vertices in the conduction volume and membrane surface.
+    ///
+    /// \return List of indices of vertices in membrane surface and conduction
+    /// volume.
+    inline std::vector<vertex_id_t> const& _getAllVertIndices() const noexcept {
+        return pVert_indices;
+    }
+
+    /// Return whether surface is 'open' or not
+    ///
+    /// \return Bool of open or not.
+    inline bool open() const noexcept {
+        return pOpen;
+    }
+
+    /// Return the method the user has specified to optimize the vertex
+    /// indexing in the conduction volume.
+    inline uint _getOpt_method() const noexcept {
+        return pOpt_method;
+    }
+
+    /// Return the percentage of starting nodes tested for breadth-first search
+    /// (default 100%) Will be ignored if principal axis search is used
+    inline double _getSearch_percent() const noexcept {
+        return pSearch_percent;
+    }
+
+    /// Return optimization file, if it exists (otherwise empty string)
+    inline std::string const& _getOpt_file_name() const noexcept {
+        return pOpt_file_name;
+    }
+
+    ////////////////////////////////////////////////////////////////////////
+
+  private:
+    ////////////////////////////////////////////////////////////////////////
+
+    void verifyMemb();
+
+    std::string pID;
+    Tetmesh& pTetmesh;
+
+    std::vector<triangle_global_id> pTri_indices;
+
+    // The conduction volume tetrahedron indices
+    std::vector<tetrahedron_global_id> pTet_indices;
+
+    // The 'virtual triangles', triangles that will have to be voltage-clamped
+    std::vector<triangle_global_id> pTrivirt_indices;
+
+    // The vertices
+    std::vector<vertex_id_t> pVert_indices;
+
+    uint pTrisN{0};
+    uint pTetsN{0};
+    uint pTriVirtsN{0};
+    uint pVertsN{0};
+
+    bool pOpen{false};
+
+    uint pOpt_method;
+
+    std::string pOpt_file_name;
+
+    double pSearch_percent;
+
+    ////////////////////////////////////////////////////////////////////////////////
+};
+
+}  // namespace steps::tetmesh

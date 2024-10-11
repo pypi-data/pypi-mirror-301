@@ -1,0 +1,104 @@
+/*
+ ___license_placeholder___
+ */
+
+#pragma once
+
+#include <string>
+#include <vector>
+
+#include "geom/comp.hpp"
+#include "math/bbox.hpp"
+#include "model/fwd.hpp"
+#include "util/vocabulary.hpp"
+
+////////////////////////////////////////////////////////////////////////////////
+
+namespace steps::tetmesh {
+
+/// Provides annotation for a group of tetrahedron in a Tetmesh.
+///
+///
+/// \warning Methods start with an underscore are not exposed to Python.
+class TmComp: public wm::Comp {
+  public:
+    ////////////////////////////////////////////////////////////////////////
+    // OBJECT CONSTRUCTION & DESTRUCTION
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Constructor.
+    ///
+    /// \param id ID of the TmComp.
+    /// \param container Temesh container for the tetrahedrons.
+    /// \param tets A sequence of tetrahedron (by index) as a vector
+    ///             of unsigned integers which is represented as a
+    ///             sequence of positive integer values) in Python.
+    ///
+    TmComp(std::string const& id, Tetmesh& container, std::vector<index_t> const& tets);
+
+    TmComp(const TmComp&) = delete;
+    TmComp& operator=(const TmComp&) = delete;
+
+    ~TmComp() override;
+    ////////////////////////////////////////////////////////////////////////
+    // BASE CLASS METHODS
+    ////////////////////////////////////////////////////////////////////////
+
+    void setVol(double vol) override;
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS (EXPOSED TO PYTHON):
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Return a list of all tetrahedron by indices.
+    ///
+    /// \return List of indices of the tetrahedrons.
+    inline const std::vector<index_t> getAllTetIndices() const noexcept {
+        return strong_type_to_value_type(pTet_indices);
+    }
+
+    /// Return the number of tetrahedrons in this TmComp
+    ///
+    /// \return the number of tetrahedrons in this TmCOmp
+    inline uint countTets() const noexcept {
+        return pTetsN;
+    }
+
+    // Return whether tetrahedrons (specified by index) are inside this
+    // compartment.
+    ///
+    /// \param tet List of indices of tetrahedrons.
+    /// \return List of results of the tetrahedrons are inside the compartment.
+    std::vector<bool> isTetInside(const std::vector<index_t>& tets) const;
+
+    /// Get the minimal coordinate of the rectangular bounding box.
+    ///
+    /// \return Minimal coordinate of the rectangular bounding box.
+    std::vector<double> getBoundMin() const;
+
+    /// Get the maximal coordinate of the rectangular bounding box.
+    ///
+    /// \return Maximal coordinate of the rectangular bounding box.
+    std::vector<double> getBoundMax() const;
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS (EXPOSED TO C++)
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Return all tetrahedrons (by index) in the compartment.
+    ///
+    /// \return List of indices of tetrahedrons.
+    inline std::vector<tetrahedron_global_id> const& _getAllTetIndices() const noexcept {
+        return pTet_indices;
+    }
+
+  private:
+    Tetmesh& pTetmesh;
+    std::vector<tetrahedron_global_id> pTet_indices;
+    std::size_t pTetsN{0};
+    math::bounding_box pBBox;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+
+}  // namespace steps::tetmesh

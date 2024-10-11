@@ -1,0 +1,443 @@
+#pragma once
+
+#include <array>
+#include <ostream>
+#include <sstream>
+#include <vector>
+
+#include <boost/graph/undirected_graph.hpp>
+
+#include "geom/dist/fwd.hpp"
+#include "kproc_id.hpp"
+#include "propensities.hpp"
+#include "reactions.hpp"
+#include "surface_reactions.hpp"
+#include "util/flat_multimap.hpp"
+
+namespace steps::dist::kproc {
+
+class KProcState {
+  public:
+    /**
+     * \brief KProcState constructor.
+     *
+     * \param statedef model definition
+     * \param mesh distributed mesh
+     * \param independent_kprocs simulate unrelated subsets of kinetic
+     * processes independently
+     */
+    // TODO(BDM): OmegaHMesh should be warmed up and made const.
+    KProcState(const Statedef& statedef,
+               DistMesh& mesh,
+               MolState& mol_state,
+               bool independent_kprocs);
+
+    /**
+     * \brief List of kprocs classes handled by KProcState and associated sizes.
+     */
+    inline std::array<unsigned, num_kproc_types()> handledKProcsClassesAndSizes() const {
+        return {
+            static_cast<unsigned>(reactions().size()),
+            0u,
+            static_cast<unsigned>(surfaceReactions().size()),
+            static_cast<unsigned>(vDepSurfaceReactions().size()),
+            static_cast<unsigned>(ghkSurfaceReactions().size()),
+            static_cast<unsigned>(complexReactions().size()),
+            static_cast<unsigned>(complexSurfaceReactions().size()),
+            static_cast<unsigned>(vDepComplexSurfaceReactions().size()),
+            static_cast<unsigned>(complexGhkSurfaceReactions().size()),
+        };
+    }
+
+    /**
+     * \brief A function which computes the propensity of a kproc given the
+     * molecular state.
+     */
+    typename propensity_function_traits::value propensityFun() const;
+
+    /**
+     * \brief Update the molecular state and the occupancy of molecules following
+     * the occurrence of a kproc.
+     *
+     * \param mol_state molecular state
+     * \param diff_vars diffusion variables
+     * \param frac_time_to_period_end fraction of the remaining time to end of the
+     * opsplit period
+     * \param event_time event time. Required for the occupancy
+     * \param event a kinetic process that occured
+     * \return list of
+     * molecular state updates
+     */
+    const std::vector<MolStateElementID>& updateMolStateAndOccupancy(MolState& mol_state,
+                                                                     rng::RNG& rng,
+                                                                     const osh::Real event_time,
+                                                                     const KProcID& event) const;
+
+    void resetCurrents() {
+        ghk_surface_reactions_.resetCurrents();
+        complex_ghk_surface_reactions_.resetCurrents();
+    }
+
+    bool hasComplexReactions() const noexcept {
+        return (complex_reactions_.size() + complex_surface_reactions_.size() +
+                vdep_complex_surface_reactions_.size() + complex_ghk_surface_reactions_.size()) !=
+               0u;
+    }
+
+    /**
+     * \brief All reactions in the distributed mesh owned by the process.
+     */
+    inline const Reactions& reactions() const noexcept {
+        return reactions_;
+    }
+
+    /**
+     * \brief All complex reactions in the distributed mesh owned by the process.
+     */
+    inline const ComplexReactions& complexReactions() const noexcept {
+        return complex_reactions_;
+    }
+
+    /**
+     * \brief All surface reactions in the distributed mesh owned by the process.
+     */
+    inline const SurfaceReactions& surfaceReactions() const noexcept {
+        return surface_reactions_;
+    }
+
+    /**
+     * \brief All surface reactions in the distributed mesh owned by the process.
+     */
+    inline SurfaceReactions& surfaceReactions() noexcept {
+        return surface_reactions_;
+    }
+
+    /**
+     * \brief All complex surface reactions in the distributed mesh owned by the process.
+     */
+    inline const ComplexSurfaceReactions& complexSurfaceReactions() const noexcept {
+        return complex_surface_reactions_;
+    }
+
+    /**
+     * \brief All complex surface reactions in the distributed mesh owned by the process.
+     */
+    inline const VDepComplexSurfaceReactions& vDepComplexSurfaceReactions() const noexcept {
+        return vdep_complex_surface_reactions_;
+    }
+
+    /**
+     * \brief All voltage dependent surface reactions in the distributed mesh
+     * owned by the process.
+     */
+    inline const VDepSurfaceReactions& vDepSurfaceReactions() const noexcept {
+        return vdep_surface_reactions_;
+    }
+
+    /**
+     * \brief All GHK surface reactions in the distributed mesh owned by the
+     * process.
+     */
+    inline const GHKSurfaceReactions& ghkSurfaceReactions() const noexcept {
+        return ghk_surface_reactions_;
+    }
+
+    /**
+     * \brief All GHK surface reactions in the distributed mesh owned by the
+     * process.
+     */
+    inline GHKSurfaceReactions& ghkSurfaceReactions() noexcept {
+        return ghk_surface_reactions_;
+    }
+
+    /**
+     * \brief All GHK surface reactions in the distributed mesh owned by the
+     * process.
+     */
+    inline const ComplexGHKSurfaceReactions& complexGhkSurfaceReactions() const noexcept {
+        return complex_ghk_surface_reactions_;
+    }
+
+    /**
+     * \brief All GHK surface reactions in the distributed mesh owned by the
+     * process.
+     */
+    inline ComplexGHKSurfaceReactions& complexGhkSurfaceReactions() noexcept {
+        return complex_ghk_surface_reactions_;
+    }
+
+    /**
+     * \brief Return the triangle id of a given GHK reaction
+     */
+    const std::vector<mesh::triangle_id_t>& ghkCurrentsBoundaries() const noexcept {
+        return ghk_surface_reactions_.boundaries();
+    }
+
+    /**
+     * \brief Accumulate the charge generated by a GHK reaction
+     */
+    void updateGHKChargeFlow(size_t ghk_reaction_index) {
+        ghk_surface_reactions_.updateChargeFlow(ghk_reaction_index);
+    }
+
+    /**
+     * \brief Accumulate the charge generated by a complex GHK reaction
+     */
+    void updateComplexGHKChargeFlow(size_t ghk_reaction_index) {
+        complex_ghk_surface_reactions_.updateChargeFlow(ghk_reaction_index);
+    }
+
+    /**
+     * \return all independent groups of kprocs
+     */
+    const kproc_groups_t& groups() const noexcept {
+        return disjoint_kprocs_;
+    }
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreturn-type"
+    /**
+     * \brief A set of kinetic processes whose propensities need recomputation
+     * following the occurrence of a kinetic process.
+     *
+     * \param event a kinetic process id
+     * \return the dependent kinetic processes id
+     */
+    KProcDeps dependenciesFromEvent(const KProcID& event) const {
+        switch (event.type()) {
+        case KProcType::Reac:
+            return reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::ComplexReac:
+            return complex_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::ComplexSReac:
+            return complex_surface_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::VDepComplexSReac:
+            return vdep_complex_surface_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::SReac:
+            return surface_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::VDepSReac:
+            return vdep_surface_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::GHKSReac:
+            return ghk_surface_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::ComplexGHKSReac:
+            return complex_ghk_surface_reactions_dependencies_[static_cast<osh::LO>(event.id())];
+        case KProcType::Diff:
+            std::ostringstream oss;
+            oss << "Unhandled kinetic process " << static_cast<int>(event.type());
+            throw std::invalid_argument(oss.str());
+        }
+    }
+#pragma GCC diagnostic pop
+
+    /**
+     * \brief A report of kprocs
+     *
+     * \param report_stream a stream
+     */
+    // TODO:Implement
+    void report(std::ostream& report_stream, KProcID kid) const;
+
+    /**
+     * \brief Update the occupancy of a species on a boundary element following
+     * a change in population.
+     * */
+    [[noreturn]] static void updateOccupancy(mesh::triangle_id_t,
+                                             container::species_id,
+                                             osh::I64 stoichiometry_change);
+
+    /**
+     * \brief Update the occupancy of a species on an element following
+     * a change in population.
+     */
+    static void updateOccupancy(mesh::tetrahedron_id_t element,
+                                container::species_id species,
+                                osh::I64 stoichiometry_change);
+
+
+    using Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::vecS>;
+
+    /**
+     * \brief Build and get an undirected Gibson-Bruck dependencies graph.
+     *
+     * \return the undirected Gibson-Bruck dependencies graph
+     */
+    std::pair<Graph, std::vector<std::string>> getDependenciesGraphAndLabels() const;
+
+    /**
+     * \brief Initialize a propensity object.
+     *
+     * \tparam SearchMethod search method for the next event
+     * \param propensities to be initialized
+     */
+    template <unsigned int Policy>
+    void initPropensities(Propensities<Policy>& propensities) const {
+        propensities.init(handledKProcsClassesAndSizes(), propensityFun(), groups());
+    }
+
+    /**
+     * \brief Set the potential involved in voltage dependent surface reactions
+     * and GHK currents
+     *
+     * \tparam Dim
+     * \param potential_on_vertices mapping vertex index to potential
+     */
+    void updateVDepSReacs(osh::Reals& potential_on_vertices) {
+        vdep_complex_surface_reactions_.kCstUpdate(potential_on_vertices);
+        vdep_surface_reactions_.kCstUpdate(potential_on_vertices);
+        ghk_surface_reactions_.updatePotential(potential_on_vertices);
+        complex_ghk_surface_reactions_.updatePotential(potential_on_vertices);
+    }
+
+    /**
+     * \brief Write dependency graph in Graphviz format to output stream
+     *
+     * \param ostr output stream where to write the dependency graph
+     */
+    std::ostream& write_dependency_graph(std::ostream& ostr) const;
+
+    /// get a ref to the dependency map (elem, species) -> kprocID
+    const auto& get_dependency_map_elems() const noexcept {
+        return dependency_map_elems_;
+    }
+    /// get a ref to the dependency map (bnd, species) -> kprocID
+    const auto& get_dependency_map_bnds() const noexcept {
+        return dependency_map_bnds_;
+    }
+
+  private:
+    MolState& mol_state_;
+
+    /**
+     * \brief Setup dependencies of all kprocs handled by KProcState.
+     * \param use_rssa true if RSSA operator is used for the simulation, false
+     * otherwise \param independent_kprocs simulate unrelated subsets of kinetic
+     * processes independently
+     */
+    void setupDependencies();
+
+    /**
+     * \brief Containers relating the (element,species) pair with the corresponding KProcIDs
+     *
+     * In other words for every couple (elem, species) you get all the kprocids that directly depend
+     * on it. Usually this means that all the kprocids of (elem, species) have (elem, species) in
+     * the reactants side. Used for the diffusions and as intermediate tools to build the kproc ->
+     * kprocs dependency maps
+     *
+     * Divided in elements (tets) and boundaries (tris)
+     */
+    steps::util::flat_multimap<osh::LO, 1> dependency_map_elems_, dependency_map_bnds_;
+
+    /**
+     * \brief Containers relating the (element, complex, subunitstate) tuple with the corresponding
+     * KProcIDs
+     *
+     * In other words for every tuple (elem, complex, subunitstate) you get all the kprocids that
+     * directly depend on it. Usually this means that all the kprocids of (elem, complex,
+     * subunitstate) have a propensity that depends on the number of this complex and subunitstate.
+     * Used for the diffusions and as intermediate tools to build the kproc -> kprocs dependency
+     * maps
+     *
+     * Divided in elements (tets) and boundaries (tris)
+     */
+    steps::util::flat_multimap<osh::LO, 1> complex_dependency_map_elems_,
+        complex_dependency_map_bnds_;
+
+    /**
+     * \brief Extract groups of independent kprocs.
+     * \param independent_kprocs simulate unrelated subsets of kinetic processes
+     * independently
+     */
+    void setupGroups(bool independent_kprocs);
+
+    /**
+     * \brief Count dependencies for the num_data a2ab vectors of \p dependency_map_elems_ and \p
+     * dependency_map_bnds_
+     */
+    template <typename KineticProcesses>
+    void countDependencies(const KineticProcesses& processes,
+                           osh::Write<osh::LO>& dep_map_elems_num_data,
+                           osh::Write<osh::LO>& dep_map_bnds_num_data) const;
+
+    /**
+     * \brief Count complex dependencies for the num_data a2ab vectors of \p
+     * complex_dependency_map_elems_ and \p complex_dependency_map_bnds_
+     */
+    template <typename KineticProcesses>
+    void countComplexDependencies(const KineticProcesses& processes,
+                                  osh::Write<osh::LO>& dep_map_elems_num_data,
+                                  osh::Write<osh::LO>& dep_map_bnds_num_data) const;
+
+    /**
+     * \brief Fill dependencies (ab2c) of \p dependency_map_elems_ and \p dependency_map_bnds_.
+     *
+     * \p dependency_map_elems_ and \p dependency_map_bnds_ should have already been reshaped with
+     * countDependencies
+     * \p the filling order is reversed compared to \ref countDependencies for max efficiency.
+     * Example: if we encounter the dependencies of (elem, species) in this order: [A, B, C] the
+     * flat mutimap is filled with [C, B, A]. Their order should not matter
+     */
+    template <typename KineticProcesses>
+    void fillDependencies(const KineticProcesses& processes,
+                          osh::Write<osh::LO>& elems_curr_counters,
+                          osh::Write<osh::LO>& bnds_curr_counters);
+
+    /**
+     * \brief Fill dependencies (ab2c) of \p complex_dependency_map_elems_ and \p
+     * complex_dependency_map_bnds_.
+     *
+     * \p complex_dependency_map_elems_ and \p complex_dependency_map_bnds_ should have already been
+     * reshaped with countComplexDependencies \p the filling order is reversed compared to \ref
+     * countComplexDependencies for max efficiency. Example: if we encounter the dependencies of
+     * (elem, complex, subunitstate) in this order: [A, B, C] the flat mutimap is filled with [C, B,
+     * A]. Their order should not matter
+     */
+    template <typename KineticProcesses>
+    void fillComplexDependencies(const KineticProcesses& processes,
+                                 osh::Write<osh::LO>& elems_curr_counters,
+                                 osh::Write<osh::LO>& bnds_curr_counters);
+
+
+    /**
+     * \brief Cache dependencies of a kproc in a flat_multimap
+     *
+     * Used to quickly answer to the question: what kprocs (n in general, values) depend on this
+     * particular kproc (key)
+     *
+     * \param processes kprocs of a given type/class
+     * \param dependencies filled with the dependencies
+     */
+    template <typename KineticProcesses>
+    void cacheDependencies(const KineticProcesses& processes, dependencies_t& dependencies);
+
+    /**
+     * \brief Build and get an undirected Gibson-Bruck dependencies graph.
+     *
+     * \return the undirected Gibson-Bruck dependencies graph
+     */
+    Graph getDependenciesGraph(const Propensities<>& propensities) const;
+
+    /** \brief dependencies kprocID -> vector<kprocID>. The vector represents the kprocIDs that
+     * depend on the key
+     */
+    dependencies_t reactions_dependencies_;
+    dependencies_t complex_reactions_dependencies_;
+    dependencies_t surface_reactions_dependencies_;
+    dependencies_t complex_surface_reactions_dependencies_;
+    dependencies_t vdep_complex_surface_reactions_dependencies_;
+    dependencies_t vdep_surface_reactions_dependencies_;
+    dependencies_t ghk_surface_reactions_dependencies_;
+    dependencies_t complex_ghk_surface_reactions_dependencies_;
+
+    kproc_groups_t disjoint_kprocs_;
+
+    Reactions reactions_;
+    ComplexReactions complex_reactions_;
+    SurfaceReactions surface_reactions_;
+    ComplexSurfaceReactions complex_surface_reactions_;
+    VDepComplexSurfaceReactions vdep_complex_surface_reactions_;
+    VDepSurfaceReactions vdep_surface_reactions_;
+    GHKSurfaceReactions ghk_surface_reactions_;
+    ComplexGHKSurfaceReactions complex_ghk_surface_reactions_;
+};
+
+}  // namespace steps::dist::kproc

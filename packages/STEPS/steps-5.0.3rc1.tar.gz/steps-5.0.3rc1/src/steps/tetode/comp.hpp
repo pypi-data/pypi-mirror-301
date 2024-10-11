@@ -1,0 +1,103 @@
+/*
+ ___license_placeholder___
+ */
+
+#pragma once
+
+// STL headers.
+#include <cassert>
+#include <fstream>
+#include <vector>
+
+// STEPS headers.
+#include "solver/compdef.hpp"
+#include "tet.hpp"
+
+namespace steps::tetode {
+
+// Forward declarations.
+class Comp;
+
+// Auxiliary declarations.
+typedef Comp* CompP;
+typedef std::vector<CompP> CompPVec;
+typedef CompPVec::iterator CompPVecI;
+typedef CompPVec::const_iterator CompPVecCI;
+
+class Comp {
+  public:
+    ////////////////////////////////////////////////////////////////////////
+    // OBJECT CONSTRUCTION & DESTRUCTION
+    ////////////////////////////////////////////////////////////////////////
+
+    Comp(solver::Compdef* compdef);
+    ~Comp();
+
+    ////////////////////////////////////////////////////////////////////////
+    // CHECKPOINTING
+    ////////////////////////////////////////////////////////////////////////
+    /// checkpoint data
+    void checkpoint(std::fstream& cp_file);
+
+    /// restore data
+    void restore(std::fstream& cp_file);
+
+    /// Checks whether the Tet's compdef() corresponds to this object's
+    /// CompDef. There is no check whether the Tet object has already
+    /// been added to this Comp object before (i.e. no duplicate checking).
+    ///
+    void addTet(Tet* tet);
+
+    ////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS
+    ////////////////////////////////////////////////////////////////////////
+
+    inline solver::Compdef& def() const noexcept {
+        return *pCompdef;
+    }
+
+    // Return the local index of a tet given by global index
+    tetrahedron_local_id getTet_GtoL(tetrahedron_global_id gidx);
+
+    // Return the tet of a given local index
+    Tet* getTet(tetrahedron_local_id lidx);
+
+
+    inline double vol() const noexcept {
+        return pVol;
+    }
+
+    inline std::size_t countTets() const noexcept {
+        return pTets.size();
+    }
+
+    inline TetPVecCI bgnTet() const noexcept {
+        return pTets.begin();
+    }
+    inline TetPVecCI endTet() const noexcept {
+        return pTets.end();
+    }
+    inline const TetPVec& tets() const noexcept {
+        return pTets;
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////
+
+  private:
+    ////////////////////////////////////////////////////////////////////////
+
+    solver::Compdef* pCompdef;
+    double pVol{0.0};
+
+    TetPVec pTets;
+
+    // A map storing global index to local
+    std::map<tetrahedron_global_id, tetrahedron_local_id> pTets_GtoL;
+
+    ////////////////////////////////////////////////////////////////////////
+};
+
+}  // namespace steps::tetode

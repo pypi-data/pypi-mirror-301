@@ -1,0 +1,312 @@
+/*
+ ___license_placeholder___
+ */
+
+#pragma once
+
+#include <iosfwd>
+#include <string>
+
+#include "fwd.hpp"
+#include "model/fwd.hpp"
+#include "model/vdepsreac.hpp"
+
+namespace steps::solver {
+
+class VDepSReacdef {
+  public:
+    enum orientT  ///< Orientation of the voltage-dependent surface reaction.
+    {
+        INSIDE = 0,
+        OUTSIDE = 1
+    };
+
+    /// Constructor
+    ///
+    /// \param sd Defined state of the solver.
+    /// \param idx Global index of the voltage-dependent reaction.
+    /// \param vdsr Reference to the VDepSReac object.
+    VDepSReacdef(Statedef& sd, vdepsreac_global_id gidx, model::VDepSReac& vdsr);
+
+    VDepSReacdef(const VDepSReacdef&) = delete;
+    VDepSReacdef& operator=(const VDepSReacdef&) = delete;
+
+    ////////////////////////////////////////////////////////////////////////
+    // CHECKPOINTING
+    ////////////////////////////////////////////////////////////////////////
+    /// checkpoint data
+    void checkpoint(std::fstream& cp_file) const;
+
+    /// restore data
+    void restore(std::fstream& cp_file);
+
+    ////////////////////////////////////////////////////////////////////////
+    // SOLVER METHODS: SETUP
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Setup the object.
+    void setup();
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS: VOLTAGE-DEPENDENT REACTION
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Return the global index of this voltage-dependent reaction.
+    inline vdepsreac_global_id gidx() const noexcept {
+        return pIdx;
+    }
+
+    /// Return the name of the voltage-dependent reaction.
+    inline std::string const name() const noexcept {
+        return pName;
+    }
+
+    /// Return the order of this surface reaction.
+    inline uint order() const noexcept {
+        return pOrder;
+    }
+
+    /// Returns the reaction constant for value of V in the range.
+    ///
+    double getVDepK(double v) const;
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA ACCESS: STOICHIOMETRY
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Returns true if the left hand side of the reaction stoichiometry
+    /// involves reactants on the surface and on the inside volume.
+    inline bool inside() const noexcept {
+        return pOrient == INSIDE;
+    }
+
+    /// Returns true if any aspect of the surface reaction references
+    /// species on the inside volume, regardless of how they are
+    /// referenced. Whereas method SReacDef::inside only makes a
+    /// statement about the LHS part of the reaction stoichiometry, this
+    /// method checks everything, including the right hand side.
+    ///
+    /// As such, this method will always return true if
+    /// SReacDef::inside is true. The converse, however, is not the
+    /// the case: SReacDef::inside does not necessarily return true
+    /// if this routine returns true.
+    ///
+    /// It basically polls SReacDef::req_I for each possible species.
+
+    ///
+    // bool reqInside() const;
+    inline bool reqInside() const noexcept {
+        return pReqInside;
+    }
+
+    /// Returns true if the left hand side of the reaction stoichiometry
+    /// involves reactants on the surface and on the outside volume. This
+    /// method is mutually exclusive with SReacDef::inside, but not
+    /// with SReacDef::insideRef.
+    ///
+    inline bool outside() const noexcept {
+        return pOrient == OUTSIDE;
+    }
+
+    /// Returns true if any aspect of the surface reaction references
+    /// species on the outside volume, regardless of how they are
+    /// referenced. Whereas method SReacDef::outside only makes a
+    /// statement about the LHS part of the reaction stoichiometry, this
+    /// method checks everything, including the right hand side.
+    ///
+    /// As such, this method will always return true if
+    /// SReacDef::outside is true. The converse, however, is not the
+    /// the case: SReacDef::outside does not necessarily return true
+    /// if this routine returns true.
+    ///
+    /// It basically polls SReacDef::req_O for each possible species.
+    ///
+    // bool reqOutside() const;
+    inline bool reqOutside() const noexcept {
+        return pReqOutside;
+    }
+
+    /// Return true if this reaction only involves surface species,
+    /// nothing in a volume at all. In that case the reaction constant
+    /// should be treated in 2D
+    inline bool surf_surf() const noexcept {
+        return pSurface_surface;
+    }
+
+    /// Returns the number of molecules of species idx required in
+    /// the inner volume (_I), outer volume (_O) or surface patch (_S)
+    /// to have one occurence of this surface reaction.
+    ///
+    uint lhs_I(spec_global_id gidx) const;
+    uint lhs_S(spec_global_id gidx) const;
+    uint lhs_O(spec_global_id gidx) const;
+
+    /// Returns a description of how an occurence of this surface reaction
+    /// depends on some species, defined by its global index idx, to occur.
+    /// See steps/sim/shared/types.hpp for more information on the return
+    /// type. This method is distinct from the SReacDef::req_I,
+    /// SReacDef::req_S and SReacDef::req_O methods.
+    ///
+    depT dep_I(spec_global_id gidx) const;
+    depT dep_S(spec_global_id gidx) const;
+    depT dep_O(spec_global_id gidx) const;
+
+    /// Returns how many molecules of some species, specified by its
+    /// global index, are produced after a single occurence of this
+    /// surface reaction. '_I' returns this number for the inner volume,
+    /// '_S' for the surface patch and '_O' for the outer volume.
+    ///
+    uint rhs_I(spec_global_id gidx) const;
+    uint rhs_S(spec_global_id gidx) const;
+    uint rhs_O(spec_global_id gidx) const;
+
+    /// Returns how the amount of a species, specified by its global index,
+    /// changes as the result of a single occurence of this surface
+    /// reaction on the inside volume (_I), outer volume (_O) or
+    /// surface patch (_S).
+    ///
+    int upd_I(spec_global_id gidx) const;
+    int upd_S(spec_global_id gidx) const;
+    int upd_O(spec_global_id gidx) const;
+
+    /// Returns whether the surface reaction rule references a species,
+    /// specified by its global index, on the inner volume side (_I),
+    /// outer volume (_O) or surface patch (_S).
+    ///
+    bool reqspec_I(spec_global_id gidx) const;
+    bool reqspec_S(spec_global_id gidx) const;
+    bool reqspec_O(spec_global_id gidx) const;
+
+    inline spec_global_id_vecCI beginUpdColl_I() const noexcept {
+        return pSpec_I_UPD_Coll.begin();
+    }
+    inline spec_global_id_vecCI endUpdColl_I() const noexcept {
+        return pSpec_I_UPD_Coll.end();
+    }
+    inline const spec_global_id_vec& updcoll_I() const noexcept {
+        return pSpec_I_UPD_Coll;
+    }
+    inline spec_global_id_vecCI beginUpdColl_S() const noexcept {
+        return pSpec_S_UPD_Coll.begin();
+    }
+    inline spec_global_id_vecCI endUpdColl_S() const noexcept {
+        return pSpec_S_UPD_Coll.end();
+    }
+    inline const spec_global_id_vec& updcoll_S() const noexcept {
+        return pSpec_S_UPD_Coll;
+    }
+    inline spec_global_id_vecCI beginUpdColl_O() const noexcept {
+        return pSpec_O_UPD_Coll.begin();
+    }
+    inline spec_global_id_vecCI endUpdColl_O() const noexcept {
+        return pSpec_O_UPD_Coll.end();
+    }
+    inline const spec_global_id_vec& updcoll_O() const noexcept {
+        return pSpec_O_UPD_Coll;
+    }
+
+  private:
+    Statedef& pStatedef;
+
+    /// The global index of this voltage-dependent reaction.
+    const vdepsreac_global_id pIdx;
+
+    /// The string identifier of this voltage-dependent reaction.
+    const std::string pName;
+
+    const uint pOrder;
+
+    /// True if setup() has been called.
+    bool pSetupdone{false};
+
+    /// The stoichiometry stored as model level Spec objects.
+    /// To be used during setup ONLY
+    std::vector<model::Spec*> pIlhs;
+    std::vector<model::Spec*> pOlhs;
+    std::vector<model::Spec*> pSlhs;
+
+    std::vector<model::Spec*> pIrhs;
+    std::vector<model::Spec*> pOrhs;
+    std::vector<model::Spec*> pSrhs;
+
+    /// Store whether this surface reaction is 2D or not
+    bool pSurface_surface{true};
+
+    /// Does the left-hand side of the stoichiometry involve molecules
+    /// on the inside or on the outside?
+    orientT pOrient;
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA: STOICHIOMETRY
+    ////////////////////////////////////////////////////////////////////////
+
+    /// Array vector describing dependencies for inner volume (_I_),
+    /// outer volume (_O_) and surface (_S_) species. Dependencies can
+    /// be stoichiometric or in the rate function (this is not implemented
+    /// yet) -- see 'steps/sim/shared/types.hpp'. The vector must be
+    /// indexed through global indices, i.e. it runs over all species in
+    /// the entire model.
+    ///
+    util::strongid_vector<spec_global_id, depT> pSpec_I_DEP;
+    util::strongid_vector<spec_global_id, depT> pSpec_S_DEP;
+    util::strongid_vector<spec_global_id, depT> pSpec_O_DEP;
+
+    /// Vector describing the left hand (reactant) side of the reaction
+    /// stoichiometry, for species in the inner volume (_I_), outer
+    /// volume (_O_) and surface (_S_) species. The vector must be indexed
+    /// through global indices, i.e. it runs over all species in the entire
+    /// model.
+    ///
+    util::strongid_vector<spec_global_id, uint> pSpec_I_LHS;
+    util::strongid_vector<spec_global_id, uint> pSpec_S_LHS;
+    util::strongid_vector<spec_global_id, uint> pSpec_O_LHS;
+
+    /// An array vector describing the right hand (reaction product) side
+    /// of the surface reaction stoichiometry, for species in the inner
+    /// volume (_I_), outer volume (_O_) and surface (_S_) species. The
+    /// vector must be indexed through global indices, i.e. it runs over
+    /// all species in the entire model.
+    ///
+    util::strongid_vector<spec_global_id, uint> pSpec_I_RHS;
+    util::strongid_vector<spec_global_id, uint> pSpec_S_RHS;
+    util::strongid_vector<spec_global_id, uint> pSpec_O_RHS;
+
+    /// An array describing the update vector (i.e. RHS[] - LHS[]) of
+    /// the surface reaction, for species in the inner volume (_I),
+    /// outer volume (_O_) and patch surface (_S_). The vector must be
+    /// indexed through global indices, i.e. it runs over all species in
+    /// the entire model.
+    ///
+    util::strongid_vector<spec_global_id, int> pSpec_I_UPD;
+    util::strongid_vector<spec_global_id, int> pSpec_S_UPD;
+    util::strongid_vector<spec_global_id, int> pSpec_O_UPD;
+
+    /// A vector collecting the global indices of all species that are
+    /// updated when this surface reaction rule occurs.
+    spec_global_id_vec pSpec_I_UPD_Coll;
+    spec_global_id_vec pSpec_S_UPD_Coll;
+    spec_global_id_vec pSpec_O_UPD_Coll;
+
+    ////////////////////////////////////////////////////////////////////////
+    // DATA: VOLTAGE DEPENDENCE
+    ////////////////////////////////////////////////////////////////////////
+
+    /// The minimum voltage of stored voltage-dependent rates
+    double pVMin;
+
+    /// The maximum voltage of stored voltage-dependent rates
+    double pVMax;
+
+    /// The step between stored voltage-dependent rates
+    double pDV;
+
+    // Table of voltage-dependent reaction contants, size (pVMax-pVMin)/pDV
+    const std::vector<double> pVKTab;
+
+    bool pReqInside{false};
+    bool pReqOutside{false};
+
+    ////////////////////////////////////////////////////////////////////////
+};
+
+}  // namespace steps::solver
