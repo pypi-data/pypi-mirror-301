@@ -1,0 +1,5 @@
+requests<=2.32.3
+langchain-text-splitters<=0.3.0
+
+[:python_version < "3.8"]
+importlib-metadata
