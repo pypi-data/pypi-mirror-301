@@ -1,0 +1,9 @@
+mpmg/__init__.py,sha256=kzy4XOso2sfsuFxIiVrKil_9MQxenKYTTVyG-HA7FoQ,53
+mpmg/mpmg_env.py,sha256=5ceRJuIuQ0H-icN5dJC4MMROtB_G24d43smumWt1OfI,5984
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_mpmg_logic.py,sha256=uirBcUbZpaZM0jPQVQ2MoKcAsVe8-DZFXZBs1JK6qgc,6312
+mpmg-0.1.0.dist-info/LICENSE,sha256=HZ3tIr3VKQ1Viu7BMSvnOIyc-_C1vJVz73moXAbKghQ,1070
+mpmg-0.1.0.dist-info/METADATA,sha256=a5en-5E5_nvl_8efesSxdCA8dGHHbNApmmQCT1nzgPo,3965
+mpmg-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mpmg-0.1.0.dist-info/top_level.txt,sha256=EzLtvBX681mzOyQOE9gdSU041jVZWlkHj5kPfCE1Mx0,10
+mpmg-0.1.0.dist-info/RECORD,,
