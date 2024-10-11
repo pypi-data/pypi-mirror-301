@@ -1,0 +1,6 @@
+setup.py
+aisak_module.egg-info/PKG-INFO
+aisak_module.egg-info/SOURCES.txt
+aisak_module.egg-info/dependency_links.txt
+aisak_module.egg-info/requires.txt
+aisak_module.egg-info/top_level.txt
