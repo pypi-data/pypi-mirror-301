@@ -1,0 +1,14 @@
+README.md
+setup.py
+module/__init__.py
+module/auth.py
+module/constants.py
+module/download.py
+module/main.py
+module/upload.py
+mp3_pcloud_cli.egg-info/PKG-INFO
+mp3_pcloud_cli.egg-info/SOURCES.txt
+mp3_pcloud_cli.egg-info/dependency_links.txt
+mp3_pcloud_cli.egg-info/entry_points.txt
+mp3_pcloud_cli.egg-info/requires.txt
+mp3_pcloud_cli.egg-info/top_level.txt
