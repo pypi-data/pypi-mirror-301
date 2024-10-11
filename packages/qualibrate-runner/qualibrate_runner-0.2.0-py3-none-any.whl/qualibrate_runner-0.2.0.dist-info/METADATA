@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: qualibrate-runner
+Version: 0.2.0
+Summary: 
+Author: Quantum Machines
+Author-email: info@quantum-machines.co
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: qualibrary
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: fastapi (>=0.111.0,<0.112.0)
+Requires-Dist: jsonpatch (>=1.33,<2.0)
+Requires-Dist: pydantic-settings (>=2.2.1,<3.0.0)
+Requires-Dist: qualibrate-core (>=0.2.0,<0.3.0) ; extra == "qualibrary"
+Requires-Dist: tomli (>=2.0.1,<3.0.0) ; python_version < "3.11"
+Requires-Dist: tomli-w (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# QUAlibrate Runner
