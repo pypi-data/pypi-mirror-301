@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/GONGHAlphaAnomalyzer/__init__.py
+src/GONGHAlphaAnomalyzer/_anova_analysis.py
+src/GONGHAlphaAnomalyzer/_cell_average_calculator.py
+src/GONGHAlphaAnomalyzer/_cell_range_calculator.py
+src/GONGHAlphaAnomalyzer/anomalyzer.py
+src/GONGHAlphaAnomalyzer.egg-info/PKG-INFO
+src/GONGHAlphaAnomalyzer.egg-info/SOURCES.txt
+src/GONGHAlphaAnomalyzer.egg-info/dependency_links.txt
+src/GONGHAlphaAnomalyzer.egg-info/not-zip-safe
+src/GONGHAlphaAnomalyzer.egg-info/requires.txt
+src/GONGHAlphaAnomalyzer.egg-info/top_level.txt
