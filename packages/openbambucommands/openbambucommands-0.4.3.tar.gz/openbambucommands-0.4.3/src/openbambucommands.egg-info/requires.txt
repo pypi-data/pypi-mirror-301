@@ -1,0 +1,10 @@
+
+[dev]
+black
+docformatter[toml]
+flake8
+isort
+mypy
+pre-commit
+pytest
+pytest-cov
