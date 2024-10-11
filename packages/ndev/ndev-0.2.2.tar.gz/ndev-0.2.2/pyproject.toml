@@ -1,0 +1,29 @@
+[project]
+name = "ndev"
+version = "0.2.2"
+description = "Python projects management toolset"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cleo",
+    "pydantic>=2.9.2",
+]
+scripts = {ndev = "ndev.app:main"}
+
+[tool.ruff]
+line-length = 100
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+dev-dependencies = [
+    "mypy>=1.11.2",
+    "pytest>=8.3.3",
+    "ruff>=0.6.8",
+]
+
+[tool.ndev]
+release_root = "."
+common_ignores = [
+    "__pycache__",
+    ".venv",
+]
