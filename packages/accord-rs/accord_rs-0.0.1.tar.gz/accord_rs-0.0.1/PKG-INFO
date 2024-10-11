@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: accord-rs
+Version: 0.0.1
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python
+License-File: LICENSE
+Summary: Calculate consensus sequences
+Author: Fynn Freyer <fynn.freyer@googlemail.com>
+Author-email: Fynn Freyer <fynn.freyer@googlemail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/FynnFreyer/accord-rs
+Project-URL: Issues, https://github.com/FynnFreyer/accord-rs/issues
+
+# accord-rs
+
+To bring something into accord (*/əˈkɔrd/*) is to make it agree or correspond.
+The `accord-rs` library calculates a consensus sequence from an aligned reads and the reference.
+
