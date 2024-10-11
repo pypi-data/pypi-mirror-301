@@ -1,0 +1,10 @@
+python-dotenv
+pyarrow
+pandas
+variconfig
+matplotlib
+beautifulsoup4
+
+[dev]
+sphinx
+sphinx_rtd_theme
