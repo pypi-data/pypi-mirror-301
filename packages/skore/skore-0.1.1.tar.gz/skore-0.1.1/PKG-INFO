@@ -1,0 +1,165 @@
+Metadata-Version: 2.3
+Name: skore
+Version: 0.1.1
+Summary: Tooling and assistance for data scientists to "Own Your Data Science"
+Project-URL: Homepage, https://probabl.ai
+Project-URL: Repository, https://github.com/probabl-ai/skore
+Project-URL: Download, https://pypi.org/project/skore/#files
+Project-URL: Issues, https://github.com/probabl-ai/skore/issues
+Project-URL: Release notes, https://github.com/probabl-ai/skore/releases
+Maintainer-email: skore developers <skore@signal.probabl.ai>
+License: MIT License
+        
+        Copyright (c) 2024 Probabl
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: <3.13,>=3.9
+Requires-Dist: diskcache
+Requires-Dist: fastapi
+Requires-Dist: rich
+Requires-Dist: skops
+Requires-Dist: uvicorn
+Provides-Extra: test
+Requires-Dist: altair; extra == 'test'
+Requires-Dist: httpx; extra == 'test'
+Requires-Dist: matplotlib; extra == 'test'
+Requires-Dist: pandas; extra == 'test'
+Requires-Dist: pillow; extra == 'test'
+Requires-Dist: plotly; extra == 'test'
+Requires-Dist: pre-commit; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-order; extra == 'test'
+Requires-Dist: pytest-randomly; extra == 'test'
+Requires-Dist: ruff; extra == 'test'
+Requires-Dist: scikit-learn; extra == 'test'
+Description-Content-Type: text/markdown
+
+# 👋 Welcome to skore
+
+![ci](https://github.com/probabl-ai/skore/actions/workflows/ci.yml/badge.svg?event=push)
+![python](https://img.shields.io/badge/python-3.11%20|%203.12-blue?style=flat&logo=python)
+
+`skore` allows data scientists to create tracking and visualization from their Python code:
+1. Users can store objects of different types: python lists and dictionaries, `numpy` arrays, `scikit-learn` fitted models, `matplotlib`, `altair`, and `plotly` figures, etc. Storing some values over time allows one to perform **tracking** and also to **visualize** them:
+2. They can visualize these stored objects on a dashboard. The dashboard is user-friendly: objects can easily be organized.
+3. This dashboard can be exported into a HTML file.
+
+These are only the first features of `skore`'s roadmap.
+`skore` is a work in progress and, on the long run, it aims to be an all-inclusive library for data scientists.
+Stay tuned!
+
+<p align="center">
+    <img width="100%" src="https://github.com/sylvaincom/sylvaincom.github.io/blob/master/files/probabl/skore/2024_10_08_skore_demo.gif"/>
+</p>
+
+## ⚙️ Installation
+
+You can install `skore` by using `pip`:
+```bash
+pip install -U skore
+```
+
+## 🚀 Quick start
+=======
+
+In your shell, run the following to create a project file `project.skore` (the default) in your current working directory:
+```bash
+python -m skore create 'project.skore'
+```
+
+Run the following in your Python code (in the same working directory) to load the project, store some objects, delete them, etc:
+```python
+from skore import load
+
+# load the project
+project = load("project.skore")
+
+# save an item you need to track in your project
+project.put("my int", 3)
+
+# get an item's value
+project.get("my int")
+
+# by default, strings are assumed to be Markdown:
+project.put("my string", "Hello world!")
+
+# `put` overwrites previous data
+project.put("my string", "Hello again!")
+
+# list all the keys in a project
+print(project.list_item_keys())
+
+# delete an item
+project.delete_item("my int")
+```
+
+Then, in the directory containing your project, run the following command in your shell to start the UI locally:
+```bash
+python -m skore launch project.skore
+```
+This will automatically open a browser at the UI's location.
+In the `Elements` tab on the left, you can visualize the stored items.
+Create a new `View`, then you can then add items into this view.
+
+💡 Note that after launching the dashboard, you can keep modifying current items or store new ones, and the dashboard will automatically be refreshed.
+
+👨‍🏫 For a complete introductory example, see our [basic usage notebook](https://github.com/probabl-ai/skore/blob/main/examples/basic_usage.ipynb).
+It shows you how to store all types of items: python lists and dictionaries, `numpy` arrays, `scikit-learn` fitted models, `matplotlib`, `altair`, and `plotly` figures, etc.
+The resulting `skore` report has been exported to [this HTML file](https://sylvaincom.github.io/files/probabl/skore/basic_usage.html).
+
+## 🔨 Contributing
+
+Thank you for your interest!
+See [CONTRIBUTING.md](https://github.com/probabl-ai/skore/blob/main/CONTRIBUTING.md).
+
+## 💬 Where to ask questions
+
+| Type                                | Platforms                        |
+|-------------------------------------|----------------------------------|
+| 🐛 Bug reports                  | [GitHub Issue Tracker]           |
+| ✨ Feature requests and ideas      | [GitHub Issue Tracker] & [Discord] |
+| 💬 Usage questions, discussions, contributions, etc              | [Discord]   |
+
+[GitHub Issue Tracker]: https://github.com/probabl-ai/skore/issues
+[Discord]: https://discord.gg/scBZerAGwW
+
+---
+
+Brought to you by:
+
+<a href="https://probabl.ai" target="_blank">
+    <img width="120" src="https://sylvaincom.github.io/files/probabl/logo_probabl.svg" alt="Probabl logo">
+</a>
