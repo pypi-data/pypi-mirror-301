@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: adhoc-api
+Version: 0.1.0
+Summary: Agent automatically figures out how to make API requests given API docs and user query in plain text
+Author: David Samson
+Author-email: david.andrew.engineer@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: archytas (>=1.2.1,<2.0.0)
+Requires-Dist: easyrepl (>=0.1.3,<0.2.0)
+Requires-Dist: google-generativeai (>=0.8.2,<0.9.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Ad-Hoc API
+An [Archytas](https://github.com/jataware/archytas) tool that eses LLMs to interact with APIs given documentation. User explains what they want in plain english, and then the agent (using the APIs docs for context) writes python code to complete the task.
+
+## Installation
+```bash
+pip install adhoc-api
+```
+
+## Usage
+
+This is designed to be paired with an Archytas agent. You may omit the python tool, and the agent should instead return the source code to you rather than running it.
+
+```python
+from adhoc_api import AdHocAPI
+from archytas.react import ReActAgent, FailedTaskError
+from archytas.tools import PythonTool
+from easyrepl import REPL
+
+def main():
+    python = PythonTool()
+    adhoc_api = AdhocApi(run_code=python.run)
+    tools = [adhoc_api, python]
+    agent = ReActAgent(model='gpt-4o', tools=tools, verbose=True)
+
+    # REPL to interact with agent
+    for query in REPL(history_file='.chat'):
+        try:
+            answer = agent.react(query)
+            print(answer)
+        except FailedTaskError as e:
+            print(f"Error: {e}")
+
+
+if __name__ == "__main__":
+    main()
+```
