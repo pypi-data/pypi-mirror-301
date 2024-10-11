@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+vcpkg_sbom/__init__.py
+vcpkg_sbom.egg-info/PKG-INFO
+vcpkg_sbom.egg-info/SOURCES.txt
+vcpkg_sbom.egg-info/dependency_links.txt
+vcpkg_sbom.egg-info/entry_points.txt
+vcpkg_sbom.egg-info/requires.txt
+vcpkg_sbom.egg-info/top_level.txt

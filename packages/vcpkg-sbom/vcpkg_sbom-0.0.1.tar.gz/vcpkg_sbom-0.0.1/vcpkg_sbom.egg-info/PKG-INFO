@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vcpkg-sbom
+Version: 0.0.1
+Summary: A python CLI tool to extract a software bill of materials and license info from a vcpkg manifest.
+Home-page: https://github.com/moverseai/vcpkg-sbom/
+Author: Moverse P.C.
+Author-email: info@moverse.ai
+Project-URL: Documentation, https://github.com/moverseai/vcpkg-sbom/
+Project-URL: Source, https://github.com/moverseai/vcpkg-sbom/
+Keywords: vcpkg,sbom,spdx,license,eula,cpp,c++,software-bill-of-materials,dependencies,oss
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spdx-tools==0.8.3
+Requires-Dist: toolz==0.11.2
+
+# vcpkg_sbom
+A python CLI tool to extract a software bill of materials and license info from a vcpkg manifest.

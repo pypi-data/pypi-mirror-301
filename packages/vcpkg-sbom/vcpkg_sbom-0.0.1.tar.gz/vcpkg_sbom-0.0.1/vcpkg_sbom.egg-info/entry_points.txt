@@ -1,0 +1,2 @@
+[console_scripts]
+vcpkg-sbom = vcpkg_sbom.__init__:run
