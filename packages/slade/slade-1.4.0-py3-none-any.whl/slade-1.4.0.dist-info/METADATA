@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: slade
+Version: 1.4.0
+Summary: A package for doing great things!
+License: MIT
+Author: Massimo Gollo
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: myst-nb (>=1.1.2,<2.0.0)
+Requires-Dist: poetry (>=1.8.3,<2.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: python-semantic-release (>=9.9.0,<10.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: sphinx (==7.0.0)
+Requires-Dist: sphinx-autoapi (>=3.3.2,<4.0.0)
+Requires-Dist: sphinx-rtd-theme (>=2.0.0,<3.0.0)
+Requires-Dist: statsmodels (>=0.14.3,<0.15.0)
+Description-Content-Type: text/markdown
+
+# slade
+
+A package for doing great things!
+
+## Installation
+
+```bash
+$ pip install slade
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`slade` was created by Massimo Gollo. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`slade` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
