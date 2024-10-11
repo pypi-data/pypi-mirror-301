@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyplotsixel
+Version: 0.2.1
+Summary: Matplotlib sixel backend
+Home-page: https://github.com/nakagami/pyplotsixel
+Author: Hajime Nakagami
+Author-email: nakagami@gmail.com
+License: BSD
+Keywords: matplotlib,sixel
+License-File: LICENSE
+
+==================
+pyplotsixel
+==================
+
+Matplotlib sixel backend.
+
+It can draw matplotlib figures in SIXEL available terminal.
+
+
+Example
+-----------------
+
+::
+
+   import matplotlib
+   import matplotlib.pyplot as plt
+   import numpy as np
+
+   matplotlib.use('module://pyplotsixel')
+
+
+   x = np.linspace(0, 1)
+   y = x**2
+   plt.plot(x, y)
+   plt.show()
+

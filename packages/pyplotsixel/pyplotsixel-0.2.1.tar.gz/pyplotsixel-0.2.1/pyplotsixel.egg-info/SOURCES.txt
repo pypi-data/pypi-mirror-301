@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyplotsixel.py
+setup.py
+pyplotsixel.egg-info/PKG-INFO
+pyplotsixel.egg-info/SOURCES.txt
+pyplotsixel.egg-info/dependency_links.txt
+pyplotsixel.egg-info/top_level.txt
