@@ -1,0 +1,2 @@
+[console_scripts]
+bellronos_installer = bellronos_installer.bellronos_installer:main
