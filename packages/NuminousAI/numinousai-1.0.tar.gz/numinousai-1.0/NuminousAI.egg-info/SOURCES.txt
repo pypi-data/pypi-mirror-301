@@ -1,0 +1,9 @@
+README.md
+setup.py
+NuminousAI/__init__.py
+NuminousAI/main.py
+NuminousAI.egg-info/PKG-INFO
+NuminousAI.egg-info/SOURCES.txt
+NuminousAI.egg-info/dependency_links.txt
+NuminousAI.egg-info/requires.txt
+NuminousAI.egg-info/top_level.txt

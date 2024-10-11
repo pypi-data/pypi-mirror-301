@@ -1,0 +1,44 @@
+# NuminousAI
+
+NuminousAI is a simple Python package that allows you to perform basic URL interaction and other basic functionalities. This package is intended to serve as an example for learning purposes.
+
+## Features
+
+- A basic function to print a greeting: `hello()`
+- A function to get the HTTP status code of a provided URL: `get_status_code(url)`
+
+## Installation
+
+You can install the package via `pip`:
+
+```bash
+pip install NuminousAI
+```
+# Requirements
+- Python 3.6+
+- requests library
+
+# Usage
+
+```python
+from numinousai import hello, get_status_code
+
+# Greet
+hello()
+
+# Get the status code of a website
+status_code = get_status_code('https://www.example.com')
+print(f"Status Code: {status_code}")
+```
+# License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+# Hi, I'm Sujal Rajpoot! 👋
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sujalrajpoot.netlify.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sujal-rajpoot-469888305/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/sujalrajpoot70)
+
+
+## 🚀 About Me
+I'm a skilled Python programmer and experienced web developer. With a strong background in programming and a passion for creating interactive and engaging web experiences, I specialize in crafting dynamic websites and applications. I'm dedicated to transforming ideas into functional and user-friendly digital solutions. Explore my portfolio to see my work in action.
