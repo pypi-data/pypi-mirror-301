@@ -1,0 +1,12 @@
+---
+manufacturer: HPE
+model: FlexFabric 10Gb 2-port 534FLR-SFP+ Adapter
+part_number: 700751-B21
+comments: >
+  HP FlexFabric 10Gb 2port 534FLR-SFP+ Adapter
+  [QuickSpecs](https://www.hpe.com/psnow/doc/c04111369)
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp

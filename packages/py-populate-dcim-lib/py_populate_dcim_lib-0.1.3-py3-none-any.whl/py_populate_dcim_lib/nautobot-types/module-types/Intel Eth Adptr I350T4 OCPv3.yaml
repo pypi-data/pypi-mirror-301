@@ -1,0 +1,16 @@
+---
+manufacturer: Intel
+model: Ethernet Network Adapter I350-T4 for OCP 3.0
+# part_number: 
+comments: >
+  Intel Eth Adptr I350T4 OCPv3 
+  [QuickSpecs](https://www.intel.com/content/www/us/en/products/sku/184824/intel-ethernet-network-adapter-i350t4-for-ocp-3-0/specifications.html)
+interfaces:
+  - name: ETH 1
+    type: 1000base-t
+  - name: ETH 2
+    type: 1000base-t
+  - name: ETH 3
+    type: 1000base-t
+  - name: ETH 4
+    type: 1000base-t

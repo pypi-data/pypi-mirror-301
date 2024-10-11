@@ -1,0 +1,12 @@
+---
+manufacturer: Broadcom
+model: P210p NetXtreme-E Dual-port 10Gb Ethernet PCIe Adapter
+part_number: BCM957412A4120AC
+comments: >
+  Broadcom P210p NetXtreme-E Dual-port 10Gb Ethernet PCIe Adapter
+  [QuickSpecs](https://www.broadcom.com/products/ethernet-connectivity/network-adapters/p210p)
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp

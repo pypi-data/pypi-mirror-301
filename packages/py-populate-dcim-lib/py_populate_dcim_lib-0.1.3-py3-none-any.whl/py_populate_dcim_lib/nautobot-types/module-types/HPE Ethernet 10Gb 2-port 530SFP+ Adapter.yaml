@@ -1,0 +1,12 @@
+---
+manufacturer: HPE
+model: Ethernet 10Gb 2-port 530SFP+ Adapter
+part_number: 652503-B21
+comments: >
+  HP Ethernet 10Gb 2-port 530SFP+ Adapter
+  [QuickSpecs](https://www.hpe.com/psnow/doc/c04111517)
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp

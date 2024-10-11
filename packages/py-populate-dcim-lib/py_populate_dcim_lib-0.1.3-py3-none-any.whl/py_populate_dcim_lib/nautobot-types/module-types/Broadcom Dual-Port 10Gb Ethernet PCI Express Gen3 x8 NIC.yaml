@@ -1,0 +1,12 @@
+---
+manufacturer: Broadcom
+model: Dual-Port 10 Gb/s SFP+ Ethernet PCI Express Gen3 x8 OCP3
+part_number: BCM57414
+comments: >
+  BCM57414
+  [QuickSpecs](https://docs.broadcom.com/doc/957412A4120AC-DS)
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp
