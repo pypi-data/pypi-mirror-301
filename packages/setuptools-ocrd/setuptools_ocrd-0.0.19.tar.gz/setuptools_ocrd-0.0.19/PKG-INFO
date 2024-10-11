@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: setuptools_ocrd
+Version: 0.0.19
+Summary: Manage your package version through ocrd-tool.json
+Author-email: Mike Gerber <mike.gerber@sbb.spk-berlin.de>
+Project-URL: Homepage, https://github.com/qurator-spk/setuptools_ocrd
+Project-URL: Repository, https://github.com/qurator-spk/setuptools_ocrd.git
+Keywords: ocr-d,setuptools
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# setuptools_ocrd
+
+Manage your Python package version through `ocrd-tool.json`.
+
+To use this, set the `version` field in `ocrd-tool.json` and use this in your `pyproject.toml`:
+
+```
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "setuptools-ocrd"]
+
+[project]
+# ... any other options ...
+dynamic = ["version"]
+```
+
+## Developer information
+*Please refer to [README-DEV.md](README-DEV.md).*

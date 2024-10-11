@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+
+[project]
+name = "setuptools_ocrd"
+version = "0.0.19"
+authors = [
+    {name = "Mike Gerber", email = "mike.gerber@sbb.spk-berlin.de"},
+]
+description = "Manage your package version through ocrd-tool.json"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["ocr-d", "setuptools"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Build Tools",
+]
+
+dynamic = ["dependencies", "optional-dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/qurator-spk/setuptools_ocrd"
+Repository = "https://github.com/qurator-spk/setuptools_ocrd.git"
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies.dev = {file = ["requirements-dev.txt"]}
+
+[project.entry-points."setuptools.finalize_distribution_options"]
+setuptools_ocrd = "setuptools_ocrd._integration.setuptools:get_ocrd_tool_version"
+
+[project.entry-points."setuptools.file_finders"]
+setuptools_ocrd = "setuptools_ocrd._integration.setuptools:file_finder_ocrd_tool"
+
+[tool.ruff]
+select = ["E", "F", "I"]
+ignore = []
