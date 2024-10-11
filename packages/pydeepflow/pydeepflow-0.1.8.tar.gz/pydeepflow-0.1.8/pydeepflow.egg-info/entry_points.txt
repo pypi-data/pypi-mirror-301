@@ -1,0 +1,3 @@
+[console_scripts]
+pydeepflow-cli = pydeepflow.cli:main
+
