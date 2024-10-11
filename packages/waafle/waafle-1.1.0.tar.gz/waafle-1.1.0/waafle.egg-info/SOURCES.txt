@@ -1,0 +1,15 @@
+README.md
+setup.py
+waafle/__init__.py
+waafle/utils.py
+waafle/waafle_genecaller.py
+waafle/waafle_junctions.py
+waafle/waafle_orgscorer.py
+waafle/waafle_qc.py
+waafle/waafle_search.py
+waafle.egg-info/PKG-INFO
+waafle.egg-info/SOURCES.txt
+waafle.egg-info/dependency_links.txt
+waafle.egg-info/entry_points.txt
+waafle.egg-info/requires.txt
+waafle.egg-info/top_level.txt
