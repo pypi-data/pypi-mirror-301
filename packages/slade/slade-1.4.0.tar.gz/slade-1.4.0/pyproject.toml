@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "slade"
+version = "1.4.0"
+description = "A package for doing great things!"
+authors = ["Massimo Gollo"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.3"
+myst-nb = "^1.1.2"
+sphinx-autoapi = "^3.3.2"
+sphinx = "7.0.0"
+poetry = "^1.8.3"
+pytest = "^8.3.3"
+python-semantic-release = "^9.9.0"
+sphinx-rtd-theme = "^2.0.0"
+statsmodels = "^0.14.3"
+matplotlib = "^3.9.2"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".", "src"
+]
+
+[tool.poetry.dev-dependencies]
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
