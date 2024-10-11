@@ -1,0 +1,12 @@
+coupeutils/__init__.py,sha256=_qffwmk89eGvmAEb2aoSZRTCCnCP__1XVrvFGnb6bGY,200
+coupeutils/firestore.py,sha256=ecHVVQYzuK4MjO3kjUJzi8iZxFUJsViDOFSrNlbHgbk,6462
+coupeutils/gcs.py,sha256=i67jPx9mSAap_HaWgHBslO-oV8HXRqlSopQ1ZBMskk8,3191
+coupeutils/llm.py,sha256=Xldwx1VnYbHaWuur8YTu2JRvib6wmj31TFnfQ4mycb0,8585
+coupeutils/queue_utils.py,sha256=NYXz8iimLD_1n9hI6RjLEVDBpvxOz0PV1ORrjYKDc3w,1002
+coupeutils/weaviate.py,sha256=zlGkac9Kc7B48euAKC4NEjqLoqVYwDOOnooufr3EBLU,8154
+coupeutils/web.py,sha256=RSM1DM1fRhPfkJSrAFxy8kBwW-ATXxrzRKrGd73Ar7w,4498
+coupeutils-0.0.31.dist-info/LICENSE.txt,sha256=pzYzW4qM8jxdYS-gF30OlFpG-5OyZpXX_8IuDUxjHw0,1062
+coupeutils-0.0.31.dist-info/METADATA,sha256=8RsNeZhjayGZb4WAPNlrqlll45nH2dj2aWcFUWFQRSQ,2342
+coupeutils-0.0.31.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+coupeutils-0.0.31.dist-info/top_level.txt,sha256=ka2gSBjGxcCHRzRJA-6CnOOreKxx49S7Kq1YhYYgCOI,11
+coupeutils-0.0.31.dist-info/RECORD,,
