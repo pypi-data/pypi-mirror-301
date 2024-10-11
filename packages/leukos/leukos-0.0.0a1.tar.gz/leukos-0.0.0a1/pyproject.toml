@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "leukos"
+version = "0.0.0a1"
+description = "GUI front-end for Immunonaut, an immunoassay modeling toolkit."
+authors = ["kosmolebryce <k.lebryce@pm.me>"]
+license = "AGPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+immunonaut = "0.0.1a3"
+appdirs = "^1.4.4"
+
+[tool.poetry.group.dev.dependencies]
+reflex = "^0.6.2.post1"
+poetry = "^1.8.3"
+black = "^24.10.0"
+mypy = "^1.11.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
