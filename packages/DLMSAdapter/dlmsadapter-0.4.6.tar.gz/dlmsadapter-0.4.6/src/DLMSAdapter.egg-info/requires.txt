@@ -1,0 +1,2 @@
+DLMS-SPODES>=0.80.0
+semver>=3.0.2
