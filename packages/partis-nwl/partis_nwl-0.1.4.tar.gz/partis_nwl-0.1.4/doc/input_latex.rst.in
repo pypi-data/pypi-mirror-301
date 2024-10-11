@@ -1,0 +1,395 @@
+
+.. _simply_input_types:
+
+.. code-block:: yaml
+  :caption: Simple Input Yaml
+  :linenos:
+
+  type: bool
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: false
+
+.. _bool_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_bool.svg
+  :figwidth: 75 %
+  :align: center
+
+  Bool Tool Editor
+
+
+.. _bool_yaml_min:
+
+.. code-block:: yaml
+  :caption: Bool Yaml Min
+
+  type: bool
+
+.. _bool_yaml_full:
+
+.. code-block:: yaml
+  :caption: Bool Yaml Full
+  :linenos:
+
+  type: bool
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: false
+
+.. _int_yaml_min:
+
+.. code-block:: yaml
+  :caption: Int Yaml Min
+
+  type: int
+
+.. _int_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_int.svg
+  :figwidth: 75 %
+  :align: center
+
+  Int Tool Editor
+
+.. _int_yaml_full:
+
+.. code-block:: yaml
+  :caption: Int Yaml Full
+
+  type: int
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: 0
+
+.. _float_yaml_min:
+
+.. code-block:: yaml
+  :caption: Float Yaml Min
+
+  type: float
+
+.. _float_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_float.svg
+  :figwidth: 75 %
+  :align: center
+
+  Float Tool Editor
+
+.. _float_yaml_full:
+
+.. code-block:: yaml
+  :caption: Float Yaml Full
+
+  type: float
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: 0.0
+
+.. _string_yaml_min:
+
+.. code-block:: yaml
+  :caption: String Yaml Min
+
+  type: string
+
+.. _string_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_string.svg
+  :figwidth: 75 %
+  :align: center
+
+  String Tool Editor
+
+.. _string_yaml_full:
+
+.. code-block:: yaml
+  :caption: String Yaml Full
+
+  type: string
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: ''
+  max_lines: 1
+
+.. _file_yaml_min:
+
+.. code-block:: yaml
+  :caption: File Yaml Min
+
+  type: file
+
+.. _file_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_file.svg
+  :figwidth: 75 %
+  :align: center
+
+  File Tool Editor
+
+.. _file_yaml_full:
+
+.. code-block:: yaml
+  :caption: File Yaml Full
+
+  type: file
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: ''
+  nonempty: false
+  content_types: []
+
+
+.. _dir_yaml_min:
+
+.. code-block:: yaml
+  :caption: Dir Yaml Min
+
+  type: dir
+
+.. _dir_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_dir.svg
+  :figwidth: 75 %
+  :align: center
+
+  Dir Tool Editor
+
+.. _dir_yaml_full:
+
+.. code-block:: yaml
+  :caption: Dir Yaml Full
+
+  type: dir
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: ''
+  nonempty: false
+
+
+.. _list_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_list.svg
+  :figwidth: 75 %
+  :align: center
+
+  List Tool Editor
+
+.. _list_yaml_min:
+
+.. code-block:: yaml
+  :caption: List Yaml Min
+
+  type: list
+  item:
+    type: bool
+
+
+.. _list_yaml_full:
+
+.. code-block:: yaml
+  :caption: List Yaml Full
+
+  type: list
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  item:
+    type: bool
+    label: ''
+    doc: ''
+    visible: true
+    enabled: true
+    default_val: false
+  min_len: 0
+  default_val: []
+
+
+.. _struct_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_struct.svg
+  :figwidth: 75 %
+  :align: center
+
+  Struct Tool Editor
+
+
+.. _struct_yaml_min:
+
+.. code-block:: yaml
+  :caption: Struct Yaml Min
+
+  type: struct
+  struct:
+    new_key:
+      type: string
+    new_key_2:
+      type: list
+      item:
+        type: bool
+
+.. _struct_yaml_full:
+
+.. code-block:: yaml
+  :caption: Struct Yaml Full
+
+  type: struct
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  struct:
+    new_key:
+      type: string
+      label: ''
+      doc: ''
+      visible: true
+      enabled: true
+      default_val: ''
+      max_lines: 1
+    new_key_2:
+      type: list
+      label: ''
+      doc: ''
+      visible: true
+      enabled: true
+      item:
+        type: bool
+        label: ''
+        doc: ''
+        visible: true
+        enabled: true
+        default_val: false
+      min_len: 0
+      default_val: []
+
+
+.. _union_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_union.svg
+  :figwidth: 75 %
+  :align: center
+
+  Union Tool Editor
+
+.. _union_yaml_min:
+
+.. code-block:: yaml
+  :caption: Union Yaml Min
+
+  type: union
+  cases:
+    new_key:
+      type: bool
+    new_key_2:
+      type: int
+
+.. _union_yaml_full:
+
+.. code-block:: yaml
+  :caption: Union Yaml Full
+
+  type: union
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  cases:
+    new_key:
+      type: bool
+      label: ''
+      doc: ''
+      visible: true
+      enabled: true
+      default_val: false
+    new_key_2:
+      type: int
+      label: ''
+      doc: ''
+      visible: true
+      enabled: true
+      default_val: 0
+
+.. _selection_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_selection.svg
+  :figwidth: 75 %
+  :align: center
+
+  Selection Tool Editor
+
+.. _selection_yaml_min:
+
+.. code-block:: yaml
+  :caption: Selection Yaml Min
+
+  selection:
+  - abc
+  - xyz
+
+.. _selection_yaml_full:
+
+.. code-block:: yaml
+  :caption: Selection Yaml Full
+
+  selection:
+  - label: ''
+    doc: ''
+    value: abc
+  - label: ''
+    doc: ''
+    value: xyz
+
+.. _tool_tool_editor: 
+
+.. figure:: ./img/nwl_gui/edit_output.png
+  :figwidth: 75 %
+  :align: center
+
+  The Tool Editor
+
+.. _tool_yaml_min:
+
+.. code-block:: yaml
+  :caption: Tool Yaml Min
+
+  type: list
+  item:
+    type: bool
+  value: |-
+    $func:py
+    return [True, False, True]
+
+.. _tool_yaml_full:
+
+.. code-block:: yaml
+  :caption: Tool Yaml Full
+
+  type: list
+  label: ''
+  doc: ''
+  item:
+    type: bool
+    label: ''
+    doc: ''
+    default_val: false
+  default_val: []
+  value: |-
+    $func:py
+    return [True, False, True]

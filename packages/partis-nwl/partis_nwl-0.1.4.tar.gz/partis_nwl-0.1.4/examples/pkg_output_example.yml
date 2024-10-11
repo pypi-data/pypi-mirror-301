@@ -1,0 +1,9 @@
+type: tool_pkg
+info:
+  name: Output_example
+  label: Output_example_package
+  author:
+    name: Nanohmics inc.
+    email: software.support@nanohmics.com
+tools:
+- path: output_equal.yml

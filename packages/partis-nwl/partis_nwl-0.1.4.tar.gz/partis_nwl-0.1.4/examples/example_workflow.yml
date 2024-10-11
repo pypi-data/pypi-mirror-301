@@ -1,0 +1,20 @@
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+nwl: 1
+type: workflow
+stages:
+  data_run:
+    tool: nwl_example.data_example
+
+  grep_run:
+    tool: nwl_example.grep
+    inputs:
+      pattern: 'tools,'
+      files:
+        - $nwl:workflow/data_run?var=data.outputs.res_file
+
+  mod_run:
+    tool: nwl_example.module_example
+
+  generic_run:
+    tool: nwl_example.generic
+    inputs: generic_inputs_query.yml

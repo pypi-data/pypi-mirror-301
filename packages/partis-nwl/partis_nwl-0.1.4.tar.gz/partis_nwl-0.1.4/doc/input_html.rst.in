@@ -1,0 +1,536 @@
+Simple Input Types
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: yaml
+  :linenos:
+
+  type: bool
+  label: ''
+  doc: ''
+  visible: true
+  enabled: true
+  default_val: false
+
+.. tab-set::
+
+  .. tab-item:: bool
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_bool.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: bool
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+          :linenos:
+
+          type: bool
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          default_val: false
+
+    * :class:`partis.nwl.inputs.BoolInput`
+
+    The ``bool`` input type allows a single ``true`` or ``false`` value.
+
+  .. tab-item:: int
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_int.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: int
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: int
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          default_val: 0
+
+    * :class:`partis.nwl.inputs.IntInput`
+
+    The ``int`` input type allows a numeric value that must be equivalent to
+    a whole number.
+
+    .. note::
+
+      In YAML, integers are represented differently than floats
+      (e.g. ``10`` is an integer, while ``10.0`` and ``1e1`` are floats), but NWL
+      validation treat these values equivalently.
+
+  .. tab-item:: float
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_float.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: float
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: float
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          default_val: 0.0
+
+    * :class:`partis.nwl.inputs.FloatInput`
+
+    The ``float`` input type allows a numeric value that must be equivalent to
+    a real number.
+
+    .. note::
+
+      In YAML, integers are represented differently than floats
+      (e.g. ``10`` is an integer, while ``10.0`` and ``1e1`` are floats), but NWL
+      validation treat these values equivalently.
+
+  .. tab-item:: string
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_string.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: string
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: string
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          default_val: ''
+          max_lines: 1
+
+
+
+    * :class:`partis.nwl.inputs.StrInput`
+
+    The ``string`` input type allows a string of characters satisfying optional
+    conditions (lines, columns, regex pattern, etc).
+
+  .. tab-item:: file
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_file.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: file
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: file
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          default_val: ''
+          nonempty: false
+          content_types: []
+
+    * :class:`partis.nwl.inputs.WorkFileInput`
+
+    Path to file that must exist before tool runs.
+
+  .. tab-item:: dir
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_dir.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: dir
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: dir
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          default_val: ''
+          nonempty: false
+
+
+    * :class:`partis.nwl.inputs.WorkDirInput`
+
+    Path to directory that must exist before tool runs.
+
+Structural Input Types
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. tab-set::
+
+  .. tab-item:: list
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_list.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: list
+          item:
+            type: bool
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: list
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          item:
+            type: bool
+            label: ''
+            doc: ''
+            visible: true
+            enabled: true
+            default_val: false
+          min_len: 0
+          default_val: []
+
+    * :class:`partis.nwl.inputs.ListInput`
+
+    The ``list`` input type allows for a variable length list (ordered sequence)
+    of values.
+    Each value in the list is validated against the definition in the list's ``item``.
+    For example, the list definition shown would allow a list of boolean values.
+
+  .. tab-item:: struct
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_struct.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: struct
+          struct:
+            new_key:
+              type: string
+            new_key_2:
+              type: list
+              item:
+                type: bool
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: struct
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          struct:
+            new_key:
+              type: string
+              label: ''
+              doc: ''
+              visible: true
+              enabled: true
+              default_val: ''
+              max_lines: 1
+            new_key_2:
+              type: list
+              label: ''
+              doc: ''
+              visible: true
+              enabled: true
+              item:
+                type: bool
+                label: ''
+                doc: ''
+                visible: true
+                enabled: true
+                default_val: false
+              min_len: 0
+              default_val: []
+
+    * :class:`partis.nwl.inputs.StructInput`
+
+    The ``struct`` input type allows for a mapping of pre-defined key-value pairs
+    defined by the children in the ``struct`` field.
+    The ``struct_proxy`` field optionally allows a non-mapping value to be given as
+    an input value, which is assigned as the value for the given key leaving all other
+    values given by their respective ``default_val``.
+
+  .. tab-item:: union
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_union.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: union
+          cases:
+            new_key:
+              type: bool
+            new_key_2:
+              type: int
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: union
+          label: ''
+          doc: ''
+          visible: true
+          enabled: true
+          cases:
+            new_key:
+              type: bool
+              label: ''
+              doc: ''
+              visible: true
+              enabled: true
+              default_val: false
+            new_key_2:
+              type: int
+              label: ''
+              doc: ''
+              visible: true
+              enabled: true
+              default_val: 0
+
+    * :class:`partis.nwl.inputs.UnionInput`
+
+    The ``union`` input type allows the input value to be valid against one of
+    several possible cases.
+    In order to prevent ambiguity which case a value corresponds to while parsing
+    the input file, the cases allowed in the union is restricted to the following
+    combinations:
+
+    - Max of one ``bool``.
+    - Max of one numeric ``int`` or ``float``.
+    - Max of one ``string``.
+    - Max of one ``list``.
+    - Any number of cases of type ``struct`` (the ``type`` for the struct is
+      set by the case key )
+    - No *direct* case of another ``union`` (a list/struct with a union is ok).
+
+    The union type has a ``default_case`` instead of ``default_val``, which is the
+    key of the case that will be used to get the initial/default value.
+    If the ``default_case`` is not given, then the *first* case is used as the default.
+
+
+  .. tab-item:: selection
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_selection.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          selection:
+          - abc
+          - xyz
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          selection:
+          - label: ''
+            doc: ''
+            value: abc
+          - label: ''
+            doc: ''
+            value: xyz
+
+
+    * :class:`partis.nwl.inputs.IntSelectOption`
+    * :class:`partis.nwl.inputs.FloatSelectOption`
+    * :class:`partis.nwl.inputs.StrSelectOption`
+
+    The ``selection`` field appears on the ``int``, ``float``, and ``string`` input
+    types that can be used when there is a predefined set of allowed values.
+    In the graphical inputs editor, this will create a drop-down combo with the
+    selection as the available options instead of the general input editor.
+    If the label of each option is a non-empty string, then it is used as the
+    displayed value instead of the literal value.
+
+Outputs
+-------
+
+Tool outputs are structurally similar to the inputs, supporting all the same
+types and nesting/combinations as the inputs section.
+The main difference is that an additional ``value`` expression must be given
+to define how the output value is computed.
+The ``value`` expression must be defined at the first level of output names,
+and the return of the expression will be validated according to the remaining
+levels of the given output.
+In the example shown below, the ``new_key`` output is defined as a list of bools,
+and so the expression must evaluate to a list of boolean values (
+e.g. ``[True, False, True]``).
+
+.. note::
+
+  Outputs also have a ``default_val``, but  that value is *only* used in the event
+  that the expression evaluates to ``None``.
+
+
+.. tab-set::
+
+  .. tab-item:: Tool Editor
+    :sync: tool_editor
+
+    .. figure:: ./img/nwl_gui/edit_output.png
+      :figwidth: 75 %
+      :align: center
+
+  .. tab-item:: YAML (min)
+    :sync: tool_yaml_min
+
+    .. code-block:: yaml
+
+      type: list
+      item:
+        type: bool
+      value: |-
+        $func:py
+        return [True, False, True]
+
+
+  .. tab-item:: YAML (full)
+    :sync: tool_yaml_full
+
+    .. code-block:: yaml
+
+      type: list
+      label: ''
+      doc: ''
+      item:
+        type: bool
+        label: ''
+        doc: ''
+        default_val: false
+      default_val: []
+      value: |-
+        $func:py
+        return [True, False, True]

@@ -1,0 +1,16 @@
+type: tool
+info:
+  label: output_equal
+inputs:
+  list:
+    type: list
+    item:
+      type: int
+      min: 0
+      max: 999
+outputs:
+  list:
+    type: list
+    item:
+      type: int
+    value: $expr:py_.data.inputs.list

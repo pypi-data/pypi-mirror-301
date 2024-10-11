@@ -1,0 +1,207 @@
+
+.. _process_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_cmd_process.svg
+  :figwidth: 75 %
+  :align: center
+
+  Process Tool Editor
+
+.. _process_yaml_min:
+
+.. code-block:: yaml
+  :caption: Process Yaml Min
+
+  type: process
+  args:
+  - echo
+  - hello world
+
+.. _process_yaml_full:
+  
+.. code-block:: yaml
+  :caption: Process Yaml Full
+
+    type: process
+    label: ''
+    doc: ''
+    enabled: true
+    prolog: []
+    epilog:
+    - level: ERROR
+      msg: Command failed from non-zero process exit code
+      enabled: $expr:py _.command.returncode != 0
+    env: {}
+    args:
+    - value: echo
+      label: ''
+      doc: ''
+      enabled: true
+    - value: hello world
+      label: ''
+      doc: ''
+      enabled: true
+    stdin: ''
+
+
+.. _process_epilog:
+  
+.. code-block:: yaml
+  :caption: Process epilog yaml
+
+    epilog:
+      - level: ERROR
+        msg: Command failed from non-zero process exit code
+        enabled: $expr:py _.command.returncode != 0
+
+
+.. _file_command_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_cmd_file.svg
+  :figwidth: 75 %
+  :align: center
+
+  File Command Tool Editor
+
+.. _file_command_min_yaml:
+
+.. code-block:: yaml
+  :caption: File Command Yaml Min
+
+  type: file
+  path: ''
+  contents: ''
+
+.. _file_command_max_yaml:
+
+.. code-block:: yaml
+  :caption: File Command Yaml Full
+
+  type: file
+  label: ''
+  doc: ''
+  enabled: true
+  prolog: []
+  epilog: []
+  path: ''
+  content_mode: text
+  contents: ''
+
+
+.. _file_command_run_dir:
+
+.. code-block:: yaml
+  :caption: File Run Directory
+
+  type: file
+  path: path/to/file.txt
+  contents: |-
+    Some file contents....
+
+.. _file_command_expression:
+
+.. code-block:: yaml
+  :caption: File Command Expression Generation
+
+  type: file
+  path: path/to/file.txt
+  contents: |-
+    $func:py
+    return "Some file contents...."
+
+.. _file_command_raw_generation:
+
+.. code-block:: yaml
+  :caption: File command Raw Generation
+
+  type: file
+  path: path/to/file.txt
+  content_mode: binary
+  contents: aGVsbG8gd29ybGQ=
+
+.. _dir_command_tool_generation:
+
+.. figure:: ./img/nwl_gui/edit_cmd_dir.svg
+  :figwidth: 75 %
+  :align: center
+
+  Dir command tool generation
+
+.. _dir_command_yaml_min:
+
+.. code-block:: yaml
+  :caption: Directory command min yaml
+
+  type: dir
+  path: ''
+
+.. _dir_command_yaml_full:
+
+.. code-block:: yaml
+  :caption: Dir Command full Yaml
+
+  type: dir
+  label: ''
+  doc: ''
+  enabled: true
+  prolog: []
+  epilog: []
+  path: ''
+
+
+.. _create_dir:
+
+.. code-block:: yaml
+  :caption: Generate directory in run
+
+  type: dir
+  path: path/to/dir
+
+.. _script_command_tool_editor:
+
+.. figure:: ./img/nwl_gui/edit_cmd_script.svg
+  :figwidth: 75 %
+  :align: center
+
+  Script Command Tool Editor
+
+.. _script_command_min_yaml:
+
+.. code-block:: yaml
+  :caption: Min yaml for tool command
+
+  type: script
+  source: |-
+    $func:py
+      return 0
+
+.. _script_command_full_yaml:
+
+.. code-block:: yaml
+  :caption: Full yaml for script command
+
+  type: script
+  label: ''
+  doc: ''
+  enabled: true
+  prolog: []
+  epilog: []
+  source: |-
+    $func:py
+      return 0
+
+.. _running_script:
+
+.. code-block:: yaml
+  :caption: Python Script for running
+
+  type: script
+  source: |-
+    $func:py
+
+    import numpy as np
+    import sys
+
+    arr = np.array([5,6,7,8])
+
+    np.save( "arr2", arr )

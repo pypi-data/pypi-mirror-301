@@ -1,0 +1,242 @@
+
+
+
+Commands
+--------
+
+.. tab-set::
+
+  .. tab-item:: process
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_cmd_process.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: process
+          args:
+          - echo
+          - hello world
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: process
+          label: ''
+          doc: ''
+          enabled: true
+          prolog: []
+          epilog:
+          - level: ERROR
+            msg: Command failed from non-zero process exit code
+            enabled: $expr:py _.command.returncode != 0
+          env: {}
+          args:
+          - value: echo
+            label: ''
+            doc: ''
+            enabled: true
+          - value: hello world
+            label: ''
+            doc: ''
+            enabled: true
+          stdin: ''
+
+    * :class:`~partis.nwl.commands.process.ProcessCommand`
+
+    Run a command line program.
+
+    .. note::
+
+      The first item in the ``args`` list is the base command to run.
+
+    .. note::
+
+      By default, the process ``returncode`` is used to determine if the process
+      exited because of an error.
+      This is done in the default ``epilog``, and must be preserved, or altered, to
+      impose other conditions on the success of the command.
+
+      .. code-block:: yaml
+
+        epilog:
+          - level: ERROR
+            msg: Command failed from non-zero process exit code
+            enabled: $expr:py _.command.returncode != 0
+
+  .. tab-item:: file
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_cmd_file.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: file
+          path: ''
+          contents: ''
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: file
+          label: ''
+          doc: ''
+          enabled: true
+          prolog: []
+          epilog: []
+          path: ''
+          content_mode: text
+          contents: ''
+
+
+    * :class:`~partis.nwl.commands.file.FileCommand`
+
+    Create a file in the run directory with given contents.
+
+    .. code-block:: yaml
+
+      type: file
+      path: path/to/file.txt
+      contents: |-
+        Some file contents....
+
+    By default, the ``contents`` are given as text and encoded as UTF-8.
+    However, it may be an expression that generates the content of the file
+
+    .. code-block:: yaml
+
+      type: file
+      path: path/to/file.txt
+      contents: |-
+        $func:py
+        return "Some file contents...."
+
+    or, by setting ``content_mode: binary``, the contents given as raw binary data
+    in the URL- and filesystem-safe Base64 alphabet, which substitutes
+    ``-`` instead of ``+``, and ``_`` instead of ``/``.
+
+    .. code-block:: yaml
+
+      type: file
+      path: path/to/file.txt
+      content_mode: binary
+      contents: aGVsbG8gd29ybGQ=
+
+  .. tab-item:: dir
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_cmd_dir.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: dir
+          path: ''
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: dir
+          label: ''
+          doc: ''
+          enabled: true
+          prolog: []
+          epilog: []
+          path: ''
+
+    * :class:`~partis.nwl.commands.dir.DirCommand`
+
+    Create a directory in the run directory.
+
+    .. code-block:: yaml
+
+      type: dir
+      path: path/to/dir
+
+  .. tab-item:: script
+
+    .. tab-set::
+
+      .. tab-item:: Tool Editor
+        :sync: tool_editor
+
+        .. figure:: ./img/nwl_gui/edit_cmd_script.svg
+          :figwidth: 75 %
+          :align: center
+
+      .. tab-item:: YAML (min)
+        :sync: tool_yaml_min
+
+        .. code-block:: yaml
+
+          type: script
+          source: |-
+            $func:py
+              return 0
+
+      .. tab-item:: YAML (full)
+        :sync: tool_yaml_full
+
+        .. code-block:: yaml
+
+          type: script
+          label: ''
+          doc: ''
+          enabled: true
+          prolog: []
+          epilog: []
+          source: |-
+            $func:py
+              return 0
+
+    * :class:`~partis.nwl.commands.script.ScriptCommand`
+
+    Run a Python script
+
+    .. code-block:: yaml
+
+      type: script
+      source: |-
+        $func:py
+
+        import numpy as np
+        import sys
+
+        arr = np.array([5,6,7,8])
+
+        np.save( "arr2", arr )
+
+    The return value of the script is accessible to subsequent commands and output
+    expressions, and may be composed of the above elementary data types.
