@@ -1,0 +1,5 @@
+matplotlib
+pandas
+openpyxl
+tqdm
+streamlit
