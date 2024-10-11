@@ -1,0 +1,27 @@
+SingleTerminalScreen {
+    grid-size: 2;
+}
+
+#atasks {
+    content-align: center top;
+    padding: 1;
+    border: violet; 
+}
+
+#atasks > Static {
+    content-align: center middle;
+    background: $boost;
+    color: auto;
+    margin-bottom: 0;
+    
+}
+
+Button {
+    margin: 1 1;
+    width: 1fr;
+}
+
+.buttons {
+    width: auto;
+    height: auto;
+}
