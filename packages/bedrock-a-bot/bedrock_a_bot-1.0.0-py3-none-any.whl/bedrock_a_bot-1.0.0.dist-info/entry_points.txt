@@ -1,0 +1,2 @@
+[console_scripts]
+bedrock-a-bot = bedrock_a_bot.__main__:main
