@@ -1,0 +1,22 @@
+name: Upload Python Package
+
+on:
+  push:
+    tags:
+      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the latest version of rye
+        uses: eifinger/setup-rye@v4
+
+      - name: Build package
+        run: rye build
+
+      - name: Publish package
+        run: rye publish --token "${{ secrets.PYPI_API_TOKEN }}" --yes
