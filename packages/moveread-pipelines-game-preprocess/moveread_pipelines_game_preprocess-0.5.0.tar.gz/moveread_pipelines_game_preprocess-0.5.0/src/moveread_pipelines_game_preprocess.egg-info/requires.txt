@@ -1,0 +1,4 @@
+moveread-pipelines-preprocess>=0.5.0
+lazy-loader
+pipeteer
+python-kv[fs,sql]
