@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cloudreveimport/__init__.py
+cloudreveimport/invoker.py
+cloudreveimport.egg-info/PKG-INFO
+cloudreveimport.egg-info/SOURCES.txt
+cloudreveimport.egg-info/dependency_links.txt
+cloudreveimport.egg-info/top_level.txt
+test/test.py
