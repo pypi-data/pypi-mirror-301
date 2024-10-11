@@ -1,0 +1,31 @@
+[project]
+name = "voice-puppet"
+version = "0.2.1"
+description = "Experimentation with voice cloning for performance."
+authors = [
+    { name = "Sam Lavigne", email = "splavigne@gmail.com" }
+]
+dependencies = [
+    "coqui-tts>=0.24.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=8.1.1"
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/voice_puppet"]
+
+[project.scripts]
+voice_puppet = 'voice_puppet:main'
