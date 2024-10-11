@@ -1,0 +1,14 @@
+variconfig/__init__.py,sha256=tCVv-yoYpJ0UUo1qQ1HytfOqmJ6PPS_3JzTmYA0mdIo,147
+variconfig/_version.py,sha256=hB095avW4HuDZxn8qPHRG1UMzSSonb8ZDAsLxt9hmk8,411
+variconfig/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+variconfig/core/config.py,sha256=L5Vr5lumi8QkxrFiBc_blxtxNBnmPL2T0NBgy7QHZR4,9514
+variconfig/core/logging_config.py,sha256=ZiVbnOhEVQSPsMDxeDYSHeUFE6dv6HsjGeoUS5Z4RK8,10749
+variconfig/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+variconfig/utils/config.yml,sha256=BPE8FATDCQGuBffs2jKtpEVEOGnmU9HXUplwDlwU1KQ,891
+variconfig/utils/file_utils.py,sha256=E3j0il_aVXCa_vIhoASurA8WhzBtxXIyTCLgTB0UA2Y,2081
+variconfig/utils/general_utils.py,sha256=si57uy12Gd_MeNuz5M5QzvSX4uaVDHdUjEHOIy3B0pk,775
+variconfig-0.0.3.dist-info/LICENSE,sha256=RcGznHSD6cVpdOFIt9Wluq7qDhe5-zCVhYILtlh3fcs,1064
+variconfig-0.0.3.dist-info/METADATA,sha256=xkj8rWu-rmNUbi_KCZAVXP3uwDuJqQDS-bzBQ4VN3Gk,5051
+variconfig-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+variconfig-0.0.3.dist-info/top_level.txt,sha256=uJ8gNw4rXsz5Uu7Kl-Vw-mE4KNkWHW21q8qfxSaxCqg,11
+variconfig-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: variconfig
+Version: 0.0.3
+Summary: VariConfig is a Python package for managing configuration files in a variety of formats and is able to handle variable substitution.
+Author-email: Logan Lang <lllang@mix.wvu.edu>
+License: MIT License
+        
+        Copyright (c) 2023 lllangWV
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Repository, https://github.com/romerogroup/VariConfig
+Project-URL: Issues, https://github.com/romerogroup/VariConfig/issues
+Project-URL: Changelog, https://github.com/romerogroup/VariConfig/CHANGELOG.md
+Keywords: config,variable,yaml,json,toml,ini,variables,substitution,config-files
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: toml
+Requires-Dist: PyYAML
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+# VariConfig
+
+**VariConfig** is a flexible and powerful Python package for managing configuration files. It supports both YAML and JSON formats and allows for the use of variables within the configuration files, using template placeholders like `{{ var }}`.
+
+## Features
+
+- **Read Configurations**: Load configurations from YAML or JSON files.
+- **Template Resolution**: Supports variables inside configuration files using template placeholders (e.g., `{{ var }}`).
+- **Nested Configs**: Handles nested dictionaries as attribute-based objects for easy access.
+- **Dynamic Updates**: Update configurations dynamically in the code.
+- **Conversion**: Convert configurations back to standard Python dictionaries.
+
+## Installation
+
+To install VariConfig, use pip:
+
+```bash
+pip install variconfig
+```
+
+## Usage
+
+### 1. Loading a Configuration
+
+You can load configuration files in YAML or JSON format:
+
+```python
+from variconfig import ConfigDict
+
+# Load a YAML file
+config = ConfigDict.from_yaml('config.yml')
+
+# Load a JSON file
+config = ConfigDict.from_json('config.json')
+```
+
+### 2. Accessing Configuration Values
+
+Once the configuration is loaded, values can be accessed as object attributes:
+
+```python
+# Access configuration values
+print(config.data_dir)  # Output: path from config.yml
+print(config.logging_config.loggers.matgraphdb.level)  # Output: INFO
+```
+
+### 3. Template Resolution
+
+Variables can be defined using `{{ var }}` placeholders in the configuration file. These will be resolved when the configuration is loaded:
+
+```yaml
+root_dir: "."
+data_dir: "{{ root_dir }}/data"
+log_dir: "{{ root_dir }}/logs"
+```
+
+In the example above, `data_dir` will be resolved to `./data`, and `log_dir` will be resolved to `./logs`.
+
+### 4. Updating Configurations
+
+You can modify configuration values at runtime:
+
+```python
+# Update a configuration value
+config.logging_config.loggers.matgraphdb.level = 'DEBUG'
+
+# Print updated value
+print(config.logging_config.loggers.matgraphdb.level)  # Output: DEBUG
+```
+
+### 5. Converting to Dictionary
+
+If you need to convert the configuration back to a standard Python dictionary:
+
+```python
+config_dict = config.to_dict()
+print(config_dict)
+```
+
+## Example Configuration (YAML)
+
+```yaml
+root_dir: "."
+data_dir: "{{ root_dir }}/data"
+log_dir: "{{ root_dir }}/logs"
+db_name: 'VariConfig'
+
+logging_config:
+  version: 1
+  disable_existing_loggers: False
+  formatters:
+    simple:
+      format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+      datefmt: '%Y-%m-%d %H:%M:%S'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: simple
+      stream: ext://sys.stdout
+    file:
+      class: logging.FileHandler
+      formatter: simple
+      filename: "{{ log_dir }}/variconfig.log"
+      mode: a
+  loggers:
+    variconfig:
+      level: INFO
+      handlers: [console]
+      propagate: no
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
