@@ -1,0 +1,11 @@
+singer-python==6.0.0
+requests==2.31.0
+pendulum==1.2.0
+backoff==2.2.1
+
+[dev]
+ipdb
+
+[test]
+freezegun==1.5.1
+requests_mock==1.12.1
