@@ -1,0 +1,8 @@
+package_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_name/colordict.py,sha256=ZjAkSr8FzHg-zuN2zvyVUIwYzJkd6cq-gUuSWxj0MZg,25573
+package_name/functions.py,sha256=UILmdfV6tqj9nigq18180oZJBePCe1DaPqIqokWtmgY,4701
+package_name/screen.py,sha256=IuvaGoXCAM71vBjthBEMLnCj6g93OvfPwCSZilm8Uh0,1090
+example_package_gmarzo-0.0.1.dist-info/METADATA,sha256=j8eViQelNuzCtQZWkwzETfiS0ZO_1OWVo3S-lhfIPE0,579
+example_package_gmarzo-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+example_package_gmarzo-0.0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+example_package_gmarzo-0.0.1.dist-info/RECORD,,
