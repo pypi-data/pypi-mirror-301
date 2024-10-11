@@ -1,0 +1,8 @@
+eloy/__init__.py,sha256=4Je8z9GQFfkA35WpvCrxo36nFbTd7xyS_bhzKnpTMA0,53
+eloy/core.py,sha256=TwW4gGhQnk5D8Vzvqup1pT91iXVTbxYePxwEbfLkyv4,3621
+eloy/kernels.py,sha256=UxTt5Y93pUn0CW6IsZtqGNxNXgLxFkKgJFV3ie9fB7w,1083
+eloy/viz.py,sha256=qp9FP4m14FZF6_QPSW6uJvVaDXIshi9doq2v_X6AaY4,4690
+eloy-0.0.0b0.dist-info/METADATA,sha256=mjUVaH-djhqZj6DSFy6m5eQsCiPHlNL16XeQVAuJLfM,2350
+eloy-0.0.0b0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+eloy-0.0.0b0.dist-info/licenses/LICENSE,sha256=5t2CSimN0aFZkQeqlPlEw6fLYcKaCOfptHJMmS4L-2E,1118
+eloy-0.0.0b0.dist-info/RECORD,,
