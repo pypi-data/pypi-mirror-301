@@ -1,0 +1,8 @@
+publish.sh
+build
+MANIFEST.in
+tests
+setup.py
+setup.cfg
+dist
+src/bellande_rust_executable.egg-info
