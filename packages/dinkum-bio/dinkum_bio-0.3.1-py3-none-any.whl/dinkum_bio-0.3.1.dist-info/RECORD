@@ -1,0 +1,17 @@
+dinkum/__init__.py,sha256=VSHMWflma_fXkH15CS4YyYZ-8LrIXmJ7_4OhH4n1xEM,6906
+dinkum/observations.py,sha256=CkzQCf0aynoTRC11jrtWYH3U99tDzqhzS7tByv-oYA4,3548
+dinkum/vfg.py,sha256=yZXGA3CZv10YelmYAz_wpTOJzB73-ZMN-hN8FsO6c4U,10893
+dinkum/vfn.py,sha256=rvFnActJKWexmHVkI3ag8GpY0xYjKSx19P7XrqbFgLo,1454
+dinkum/display/__init__.py,sha256=doJY9vH04ZpnjzuEknigev2w-y_49RKlF5mSq0vk3GM,1023
+dinkum/display/draw_ipycanvas.py,sha256=XbEl1T6y4hSUoA1khoVMJmrAloKIRfndeEf0SEez1iA,983
+dinkum/display/draw_pillow.py,sha256=fAI5vJBwhgaldzngPHa3-ePXhTyMT03NhtAWKqvT7GU,713
+dinkum/display/widgets.py,sha256=m6i1V2cuu9sPvKuCxWY_JLXfzH-RXMRiSlmYr03MvoY,7345
+tests/test_custom_activation_fn.py,sha256=r9RUTOJzXYH9ihoc4lZ9WcCTIzPQ79-nrZm73jWRYqM,1296
+tests/test_misc.py,sha256=r5460ErFfpYwWj0DipVdGcYDDSpG3gErBQ6EJB5EHvc,684
+tests/test_receptor.py,sha256=Qq0W79rQ3MLLBcJSveGc2_VgSdLehSM9cJsFyDkdGCY,4836
+tests/test_simple.py,sha256=GgTfFd-3qsKyRrL8M8bv8a34fyP5ZE0mdqAi-OjXxLA,10259
+dinkum_bio-0.3.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+dinkum_bio-0.3.1.dist-info/METADATA,sha256=Cy3uFRoG6NzfZEj018diI2VUh-dCDHYhv5Q0RGm4Nfg,1802
+dinkum_bio-0.3.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dinkum_bio-0.3.1.dist-info/top_level.txt,sha256=vgLGLGJ8d2SFL4ddyFGZ13BIqnLBqEVihpWHdY_xq-A,13
+dinkum_bio-0.3.1.dist-info/RECORD,,
