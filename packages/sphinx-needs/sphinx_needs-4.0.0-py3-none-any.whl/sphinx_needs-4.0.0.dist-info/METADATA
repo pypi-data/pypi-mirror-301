@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: sphinx-needs
+Version: 4.0.0
+Summary: Sphinx needs extension for managing needs/requirements and specifications
+Home-page: http://github.com/useblocks/sphinx-needs
+License: MIT
+Author: team useblocks
+Author-email: info@useblocks.com
+Requires-Python: >=3.8,<4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Provides-Extra: benchmark
+Provides-Extra: docs
+Provides-Extra: plotting
+Provides-Extra: test
+Provides-Extra: test-parallel
+Provides-Extra: theme-furo
+Provides-Extra: theme-im
+Provides-Extra: theme-pds
+Provides-Extra: theme-rtd
+Requires-Dist: defusedxml (>=0.7.1,<0.8.0) ; extra == "test"
+Requires-Dist: furo (>=2024.8.6,<2025.0.0) ; extra == "theme-furo"
+Requires-Dist: jsonschema (>=3.2.0)
+Requires-Dist: lxml (>=4.6.5,<5.0.0) ; extra == "test"
+Requires-Dist: matplotlib (>=3.3.0) ; extra == "plotting" or extra == "test" or extra == "docs"
+Requires-Dist: memray (>=1.3.1,<2.0.0) ; extra == "benchmark"
+Requires-Dist: pydata-sphinx-theme (>=0.15.2,<0.16.0) ; extra == "theme-pds"
+Requires-Dist: pytest (>=7,<8) ; extra == "test"
+Requires-Dist: pytest-benchmark (>=4.0.0,<5.0.0) ; extra == "benchmark"
+Requires-Dist: pytest-cov (>=4,<5) ; extra == "test"
+Requires-Dist: pytest-xdist ; extra == "test-parallel"
+Requires-Dist: pytest-xprocess (>=0.22.2,<0.23.0) ; extra == "test"
+Requires-Dist: requests (>=2.32,<3.0)
+Requires-Dist: requests-file (>=2.1,<3.0)
+Requires-Dist: responses (>=0.22.0,<0.23.0) ; extra == "test"
+Requires-Dist: sphinx (>=6.0,<9)
+Requires-Dist: sphinx-copybutton (>=0.5,<0.6) ; extra == "docs"
+Requires-Dist: sphinx-data-viewer (>=0.1.5,<0.2.0)
+Requires-Dist: sphinx-design (>=0.6,<0.7) ; extra == "docs"
+Requires-Dist: sphinx-immaterial (>=0.11.11,<0.12.0) ; extra == "theme-im"
+Requires-Dist: sphinx_rtd_theme (>=2.0.0,<3.0.0) ; extra == "theme-rtd"
+Requires-Dist: sphinxcontrib-jquery (>=4,<5)
+Requires-Dist: sphinxcontrib-plantuml (>=0,<1) ; extra == "test" or extra == "docs"
+Requires-Dist: sphinxcontrib-programoutput (>=0.17,<0.18) ; extra == "docs"
+Requires-Dist: syrupy (>=3,<4) ; extra == "test"
+Project-URL: Documentation, https://sphinx-needs.readthedocs.io/en/latest/
+Project-URL: Repository, http://github.com/useblocks/sphinx-needs
+Description-Content-Type: text/x-rst
+
+**Complete documentation**: http://sphinx-needs.readthedocs.io/en/latest/
+
+**Attention**: ``sphinxcontrib-needs`` got renamed to ``sphinx-needs``. This affects also the URLs for documentation and repository:
+
+* Docs: https://sphinx-needs.readthedocs.io/en/latest/
+* Repo: https://github.com/useblocks/sphinx-needs
+
+
+Introduction
+============
+
+``Sphinx-Needs`` allows the definition, linking and filtering of class-like need-objects, which are by default:
+
+* requirements
+* specifications
+* implementations
+* test cases.
+
+This list can be easily customized via configuration (for instance to support bugs or user stories).
+
+A default requirement need looks like:
+
+.. image:: https://raw.githubusercontent.com/useblocks/sphinxcontrib-needs/master/docs/_images/need_1.png
+   :align: center
+
+Layout and style of needs can be highly customized, so that a need can also look like:
+
+.. image:: https://raw.githubusercontent.com/useblocks/sphinxcontrib-needs/master/docs/_images/need_2.png
+   :align: center
+
+Take a look into our `Examples <https://sphinxcontrib-needs.readthedocs.io/en/latest/examples/index.html>`_ for more
+pictures and ideas how to use ``Sphinx-Needs``.
+
+For filtering and analyzing needs, ``Sphinx-Needs`` provides different, powerful possibilities:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 46,14,40
+
+   - * `needtable <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needtable.html>`_
+     * `needflow <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needflow.html>`_
+     * `needpie <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needpie.html>`_
+   - * .. image:: https://raw.githubusercontent.com/useblocks/sphinxcontrib-needs/master/docs/_images/needtable_1.png
+     * .. image:: https://raw.githubusercontent.com/useblocks/sphinxcontrib-needs/master/docs/_images/needflow_1.png
+     * .. image:: https://raw.githubusercontent.com/useblocks/sphinxcontrib-needs/master/docs/_images/needpie_1.png
+
+Installation
+============
+
+Using poetry
+------------
+
+.. code-block:: bash
+
+    poetry add sphinx-needs
+
+Using pip
+---------
+
+.. code-block:: bash
+
+    pip install sphinx-needs
+
+If you wish to also use the plotting features of sphinx-needs (see ``needbar`` and ``needpie``), you need to also install ``matplotlib``, which is available *via* the ``plotting`` extra:
+
+.. code-block:: bash
+
+    pip install sphinx-needs[plotting]
+
+.. note::
+
+   Prior version **1.0.1** the package was named ``sphinxcontrib-needs``.
+
+Using sources
+-------------
+
+.. code-block:: bash
+
+    git clone https://github.com/useblocks/sphinx-needs
+    cd sphinx-needs
+    pip install .
+    # or
+    poetry install
+
+
+Activation
+----------
+
+For final activation, please add `sphinx_needs` to the project's extension list of your **conf.py** file.
+
+.. code-block:: python
+
+   extensions = ["sphinx_needs",]
+
+.. note::
+
+   Prior version **1.0.1** the extensions was called ``sphinxcontrib.needs``.
+
+
