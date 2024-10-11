@@ -1,0 +1,113 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "uow-abstractions"
+version = "0.0.0"
+description = "Unit Of Work Abstractions"
+homepage = "https://projects.rocshers.com/open-source/uow-abstractions"
+repository = "https://gitlab.com/rocshers/python/uow-abstractions"
+authors = ["Aleksei Marusich <aleksei.marusich@rocshers.com>"]
+readme = "readme.md"
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Topic :: System :: Software Distribution",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+packages = [{include = "uowabc"}]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4"
+
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
+mypy = "^1.11.2"
+pre-commit = "^3.8.0"
+pre-commit-hooks = "^4.6.0"
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+pytest-asyncio = "^0.24.0"
+
+
+[tool.poetry.group.extra.dependencies]
+sqlalchemy = "^2.0.35"
+
+[tool.black]
+skip-string-normalization = true
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+unsafe-fixes = true
+exclude = [
+    "**/rpc/*_grpc.py",
+    "**/rpc/*_pb2.py",
+    "**/rpc/*_pb2_grpc.py"
+]
+
+[tool.ruff.format]
+preview = true
+quote-style = "single"
+
+[tool.ruff.lint]
+preview = true
+select = ["A", "B", "C", "D", "E", "F", "I", "UP"]
+fixable = ["A", "B", "C", "D", "E", "F", "I", "UP"]
+ignore = ["UP004", "D100", "D101", "D102", "D103", "D104", "D107", "D415", "D105", "D106", "D203", "D213"]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.coverage.run]
+omit = [
+    "*/tests/*",
+    "install-poetry.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+
+[tool.pytest.ini_options]
+addopts = "-vvs --tb=short"
+xfail_strict = true
+testpaths = [
+    "tests",
+    "integration",
+]
+python_files = [
+    "tests/*.py",
+    "test_*.py"
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore:Module already imported:pytest.PytestWarning"
+]
+log_cli=true
+log_level='INFO'
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = 3.12
+ignore_missing_imports = true
