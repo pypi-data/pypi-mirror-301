@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pygess-py"
+version = "3.0.0"
+description = "Pygame Essentials"
+authors = ["Abhijay Bidari <craftyryte2011@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "pygess" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pygame-ce = "^2.5.1"
+uuid = "^1.30"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^3.29.1"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
