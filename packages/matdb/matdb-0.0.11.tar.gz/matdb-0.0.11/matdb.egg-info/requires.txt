@@ -1,0 +1,14 @@
+python-dotenv
+parquetdb
+pymatgen
+
+[dev]
+sphinx
+sphinx_rtd_theme
+
+[materials]
+ase
+mendeleev
+matminer
+coxeter
+crystals
