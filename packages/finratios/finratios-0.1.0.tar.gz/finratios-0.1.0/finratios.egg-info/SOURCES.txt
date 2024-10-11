@@ -1,0 +1,10 @@
+LICENSE.py
+README.md
+setup.py
+finratios/__init__.py
+finratios/core.py
+finratios.egg-info/PKG-INFO
+finratios.egg-info/SOURCES.txt
+finratios.egg-info/dependency_links.txt
+finratios.egg-info/requires.txt
+finratios.egg-info/top_level.txt

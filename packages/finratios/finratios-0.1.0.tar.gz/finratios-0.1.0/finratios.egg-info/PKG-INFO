@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: finratios
+Version: 0.1.0
+Summary: A package to calculate financial ratios of NIF A3 from stock companies and export them to Excel
+Home-page: https://github.com/josuecepeda94/finratios
+Author: Josué Daniel Cepeda Obregón
+Author-email: jcepedaobregon@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.py
+
+UNKNOWN
+
