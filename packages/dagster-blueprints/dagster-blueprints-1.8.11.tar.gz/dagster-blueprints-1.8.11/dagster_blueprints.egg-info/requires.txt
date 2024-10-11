@@ -1,0 +1,2 @@
+dagster==1.8.11
+dagster-databricks==0.24.11
