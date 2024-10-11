@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pguid
+Version: 0.0.7
+Description-Content-Type: text/markdown
+Requires-Dist: pygame>=1.9.1
+Requires-Dist: requests>=2.0.0
+
+# Pygame UI Designer
+
+Pygame UI Designer (pgUId) is a free library for the development of user interfaces in [Pygame](https://pypi.org/project/Pygame/). Creating UI in Pygame can be time-consuming and difficult, so with this library, you will be able to create a UI in under a minute, with little to no difficulty.
+
+### Installation
+
+Before installing, make sure that you have [Python](https://www.python.org/downloads/) installed on your computer. To check, run this command in a terminal:
+```
+python --version
+```
+After you have verified that Python is installed, you need to ensure that pip is installed. You can check that by running the following command:
+```
+pip --version
+```
+After you have verified that you have Python and pip installed, check if you have the [Pygame](https://pypi.org/project/Pygame/) library installed by running this command:
+```
+python -m pygame
+```
+Now that you have every dependency installed, you can install Pygame UI Designer by running this command:
+```
+pip install pguid
+```
+
+### Dependencies
+
+Currently, there is only one dependency for pgUId, which is, obviously, Pygame itself. I don't plan on needing any other libraries, but that is not a promise.
+
+| Name   | Version   |
+| ------ | --------- |
+| pygame | >=1.9.1  |
