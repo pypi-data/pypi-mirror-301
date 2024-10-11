@@ -1,0 +1,5 @@
+torch
+transformers
+haskellian
+pure-cv
+torchvision
