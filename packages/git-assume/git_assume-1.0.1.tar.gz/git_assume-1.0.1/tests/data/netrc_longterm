@@ -1,0 +1,14 @@
+[default]
+machine = github.com
+login = my-name
+password = ghp_xxxxxxxx
+
+[my-setting-1]
+machine = github.tmc-stargate.com
+login = my-name
+password = ghp_yyyyyyyy
+
+[my-setting-2]
+machine = github.tmc-stargate.com
+login = my-name
+password = ghp_zzzzzzzz
