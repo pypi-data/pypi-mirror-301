@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/skydict/__init__.py
+src/skydict.egg-info/PKG-INFO
+src/skydict.egg-info/SOURCES.txt
+src/skydict.egg-info/dependency_links.txt
+src/skydict.egg-info/requires.txt
+src/skydict.egg-info/top_level.txt
+src/skydict/types/__init__.py

@@ -1,0 +1,22 @@
+[project]
+name = "skydict"
+version = "0.0.4"
+authors = [
+  { name="ivan kornayhov", email="kiadu@bk.ru" },
+]
+description = "Pacage for translation of Russian-English words"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "aiohttp",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["skyeng", "translator", "api", "dictionary", "vocolabry", "lexicon"]
+
+[project.urls]
+Homepage = "https://github.com/ivakorn/skydict"
+Repository = "https://github.com/ivakorn/skydict.git"
