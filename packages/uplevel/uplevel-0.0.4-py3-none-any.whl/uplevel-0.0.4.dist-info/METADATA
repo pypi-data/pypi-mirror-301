@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: uplevel
+Version: 0.0.4
+Summary: Access the value of a variable in a higher stack frame
+Author-email: Michael Hohenstein <michael@hohenste.in>
+License: GPL3
+Project-URL: Repository, https://github.com/MitchiLaser/uplevel
+Keywords: variable,stack frame,closure
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# Uplevel
+
+Access the values of variables in the parent scope. This package provides two commands: `upvar` and `uplift`.
+
+## Installation
+
+```bash
+pip install uplevel
+```
+
+## Usage
+
+Here is a short example of how to use `upvar` command:
+
+```python
+from uplevel import upvar
+
+def fib(stop: int, step: int = 0):
+    if step < 2:
+        result = 0 if step == 0 else 1
+    elif step <= stop:
+        previous = upvar(1, 'result')  # result from previous iteration
+        preprevious = upvar(2, 'result')  # and one iteration before
+        result = previous + preprevious
+    else:
+        return upvar(1, 'result')
+    return fib(stop, step + 1)
+
+print(fib(20))
+```
+
+Here is another example for the `uplift` command:
+
+```python
+import re
+from uplevel import uplift
+
+
+def simplematch(regex, string):
+    results = re.match(regex, string)
+    uplift(1, 'match', results)
+    return results
+
+
+if simplematch(r"[abc]+", "abc123"):
+    print(f"Matched: {match.group(0)}")
+```
