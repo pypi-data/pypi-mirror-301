@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: genelastic
+Version: 0.6.0
+Summary: Generate and store genetic data into an Elasticsearch database.
+Author: CNRGH
+Author-email: Pierrick ROGER <pierrick.roger@cnrgh.fr>, Maxime BLANCHON <maxime.blanchon@cnrgh.fr>
+License: CeCILL
+Keywords: CNRGH,genelastic,generation,storage,elasticsearch,database
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: elasticsearch
+Requires-Dist: PyVCF3
+Requires-Dist: schema
+Requires-Dist: PyYAML
+Requires-Dist: biophony >=1.0.1
+Requires-Dist: colorlog
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pylint <3.3,>=3.2 ; extra == 'tests'
+Requires-Dist: bandit ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: yamllint ; extra == 'tests'
+Requires-Dist: types-PyYAML ; extra == 'tests'
+
+# genelastic
+
+Storing of genetics data into an Elasticsearch database.
