@@ -1,0 +1,9 @@
+matdb/__init__.py,sha256=I7J5fJR5MJhjivXPASClc8flzK_sVfAOKBv_RcpoS38,22
+matdb/_version.py,sha256=Ht_kK4WoZp7blBjGQJ5CR8Vli99GsMsH_I96HrAX0WE,413
+matdb/core.py,sha256=KuRsp5DsqLEZkVjno-GXbON18myPBX1GBOTRTY04F38,39367
+matdb/utils.py,sha256=Stp2W43khk7ZXJ7wix5kDPNHoy-j7MhcW_MP4eR_5nk,796
+matdb-0.0.11.dist-info/LICENSE,sha256=RcGznHSD6cVpdOFIt9Wluq7qDhe5-zCVhYILtlh3fcs,1064
+matdb-0.0.11.dist-info/METADATA,sha256=Szjs5BX7435FWCU-G0DKVPNDcPPNxo3yP9G9em7sD20,9484
+matdb-0.0.11.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+matdb-0.0.11.dist-info/top_level.txt,sha256=mvg5B8ygvwvhtzrmOL8lWg0Otv4Il9Ek_YBifZ7kdTo,6
+matdb-0.0.11.dist-info/RECORD,,
