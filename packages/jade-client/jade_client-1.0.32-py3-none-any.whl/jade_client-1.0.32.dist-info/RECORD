@@ -1,0 +1,12 @@
+jadepy/__init__.py,sha256=RVMSSHiNSw9LnfKPIS8s2xAWUVlwzdIxV1RPn_fH-NM,84
+jadepy/jade.py,sha256=qWALFZm300jPRg9_dfK9hZ7lUksABKO13Y-JhdpB3hA,83094
+jadepy/jade_ble.py,sha256=gSNqzG4vMSIxmMXqevNKdUUHYROuu2UmW8jdONt7uAg,8954
+jadepy/jade_error.py,sha256=pQqVKjOhkkzJ4m_kZScOz8sh49X1X_Oz5p5pe9B5DL0,655
+jadepy/jade_serial.py,sha256=Vb08fJ3jdRqC9Ru6fBijUFl7zF8e5mcBTYBmB0_LCUM,2589
+jadepy/jade_tcp.py,sha256=nqF8-ET-Vosq3WYVy8UsIHlxHRdAFH-j-43yxu7Id28,1797
+jade_client-1.0.32.dist-info/COPYING,sha256=ee535fAIg0lnRFR8zzcihEblPXklfBXInZx8VGBK0uY,35151
+jade_client-1.0.32.dist-info/LICENSE,sha256=DJ3Jcmela99L3f7JnDfRNEZvBAO0BrZkhrtNA01lTr0,1085
+jade_client-1.0.32.dist-info/METADATA,sha256=QvnJfyYGph2r-J5GM5rUeh2noU-xXNoRKT-V-Khp1Sw,1049
+jade_client-1.0.32.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+jade_client-1.0.32.dist-info/top_level.txt,sha256=PgVbuFWkNfeLrLiFtMWJrkuJl_Z_dbKEzRpdbOB_kqs,7
+jade_client-1.0.32.dist-info/RECORD,,
