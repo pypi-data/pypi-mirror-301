@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Discord-Flask
+Version: 1.0.2
+Summary: A feature rich discord extension for Flask.
+Home-page: https://github.com/hunter87ff/Discord-Flask
+Author: hunter87ff
+Author-email: souravyt87@gmail.com
+License: MIT
+Platform: any
+Classifier: Framework :: Flask
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: pyjwt>=2.4.0
+Requires-Dist: requests
+Requires-Dist: oauthlib
+Requires-Dist: cachetools
+Requires-Dist: requests_oauthlib
+Requires-Dist: typing-extensions
+
+
+Discord-Flask
+-------------
+
+A feature rich discord extension for Flask.

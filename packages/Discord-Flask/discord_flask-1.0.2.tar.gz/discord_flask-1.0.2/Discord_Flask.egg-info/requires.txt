@@ -1,0 +1,7 @@
+Flask
+pyjwt>=2.4.0
+requests
+oauthlib
+cachetools
+requests_oauthlib
+typing-extensions
