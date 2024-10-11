@@ -1,0 +1,21 @@
+{
+    "0xTS": [
+        "Temps sec."
+    ],
+    "1xTS": [
+        "{lab} {loc}."
+    ],
+    "1xTS_temp": [
+        "{temp}, {lab} {loc}."
+    ],
+    "severe": [
+        "Autres phénomènes sévères : {lab} {loc}."
+    ],
+    "LPN": [
+        "Limite pluie-neige au plus bas vers {low} m."
+    ],
+    "LPN_ground": [
+        "Limite pluie-neige jusqu’au niveau des points les plus bas.",
+        "Limite pluie-neige en-dessous des points les plus bas."
+    ]
+}

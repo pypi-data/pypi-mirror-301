@@ -1,0 +1,7 @@
+{
+    "0": "",
+    "1": "Ráfagas posibles entre {{ bound_inf }} y {{ bound_sup }} {{ units }}, {{ period|safe }}.",
+    "2": "Ráfagas {{ period|safe }}, alcanza entre {{ bound_inf }} y {{ bound_sup }} {{ units }}, con una velocidad máxima de {{ gust_max }} {{ units }} posible.",
+    "3": "Ráfagas es posible ubicarse hasta {{ gust_max }} {{ units }}, {{ period|safe }}.",
+    "error": "Error en la generación de síntesis eólica."
+}

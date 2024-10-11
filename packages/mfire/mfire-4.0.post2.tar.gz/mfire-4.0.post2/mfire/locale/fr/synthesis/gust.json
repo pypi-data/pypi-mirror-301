@@ -1,0 +1,7 @@
+{
+    "0": "",
+    "1": "Rafales possibles entre {{ bound_inf }} et {{ bound_sup }} {{ units }}, {{ period|safe }}.",
+    "2": "Rafales {{ period|safe }}, comprises entre {{ bound_inf }} et {{ bound_sup }} {{ units }}, avec localement jusqu'à {{ gust_max }} {{ units }} possible.",
+    "3": "Rafales possibles localement jusqu'à {{ gust_max }} {{ units }}, {{ period|safe }}.",
+    "error": "Erreur dans la génération de la synthèse du vent."
+}

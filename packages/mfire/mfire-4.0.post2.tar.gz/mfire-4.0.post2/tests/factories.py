@@ -1,0 +1,42 @@
+from typing import Optional
+
+from mfire.composite.base import BaseModel
+
+
+class Factory(BaseModel):
+    factories: dict = {}
+
+    def __init__(self, **kwargs):
+        factories, no_factories = {}, {}
+        for key, val in kwargs.items():
+            if key.endswith("_factory"):
+                factories[key] = val
+            else:
+                no_factories[key] = val
+        super().__init__(factories=factories, **no_factories)
+
+    def __getattribute__(self, item):
+        if not item.startswith("__"):
+            factories = object.__getattribute__(self, "factories")
+            if (key := f"{item}_factory") in factories:
+                return factories[key]
+        return super().__getattribute__(item)
+
+
+class Temp:
+    _factories: Optional[dict] = {}
+
+    def __init__(self, **kwargs):
+        no_factories = {}
+        for key, val in kwargs.items():
+            if key.endswith("_factory"):
+                self._factories[key] = val
+            else:
+                no_factories[key] = val
+        super().__init__(**no_factories)
+
+    def __getattribute__(self, item):
+        factories, key = super().__getattribute__("_factories"), f"{item}_factory"
+        if key in factories:
+            return factories[key]
+        return super().__getattribute__(item)
