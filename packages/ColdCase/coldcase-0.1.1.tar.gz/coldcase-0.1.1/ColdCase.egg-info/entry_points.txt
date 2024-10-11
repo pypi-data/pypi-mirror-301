@@ -1,0 +1,2 @@
+[console_scripts]
+ColdCase = ColdCase.__main__:main
