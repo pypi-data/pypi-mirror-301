@@ -1,0 +1,44 @@
+Version 0.4.0
+2024-07-31
+- Adapting code for geocover_utils 0.4.0
+- Adding CHANGES.txt file
+- Syncing geocover_utils and this module version number
+
+Version 0.4.1
+2024-07-31
+- Fixing conda build issues
+
+Version 0.4.2
+2024-07-31
+- Storing project path in config to use between tools
+
+Version 0.4.3
+2024-08-08
+- Adding minimal test for ESRI ArcMap Toolbox (python 2.7)
+
+Version 0.4.5
+2024-10-02
+- Pinned numpy version
+- Moved from bitbucket to github
+
+Version 0.4.6
+2024-10-06
+- Doc cleanup
+- Instal script (.bat and .ps1)
+- Create conda env from scratch anywhere (D:\conda\envs, \\server\conda\envs)
+
+Version 0.4.7
+2024-10-06
+- missing geocover_utils dependency
+- using scripts created by `entry_points (in `<conda env>\Scripts`)
+- fix small cleanup error
+
+Version 0.4.8
+2024-10-06
+- Removing tests (no license for arcpy)
+- Building on windows
+
+Version 0.4.9
+2024-10-07
+- Improved install and clone batch file
+- Doc
