@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tests/test_generator.py
+trace_generator/__init__.py
+trace_generator/trace_generator.py
+trace_generator.egg-info/PKG-INFO
+trace_generator.egg-info/SOURCES.txt
+trace_generator.egg-info/dependency_links.txt
+trace_generator.egg-info/top_level.txt

@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: trace_generator
+Version: 2.0
+Summary: A package for generating random traces based on sequence schemas..
+Home-page: https://github.com/alijlidi/trace_generator
+Author: Dr. Kovacs Laszlo
+Author-email: laszlo.kovacs@uni-miskolc.hu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Trace Generator
+
+This package generates random traces based on various sequence schemas.
+Creator : Dr. Kovacs Laszlo
+##Schemas list
+
+Cseqs = {
+"S_X_01"  : ['a','X',[['b'],['c']],'d','X',[['e'],['f']],'g'],
+"S_X_02"  : ['a','X',[['b'],['c']],'d','X',[['e'],['f']],'g','X',[['h'],['i']],'j' ],
+"S_X_03"  : ['a','X',[['b'],['c']],'d','X',[['e'],['f']],'g','X',[['h'],['i']],'j','X',[['k'],['l']],'m' ],
+"S_X_04"  : ['a','X',[['b'],['c']],'d','X',[['e'],['f']],'g','X',[['h'],['i']],'j','X',[['k'],['l']],'m' ,'X',[['n'],['o']],'p'],
+"S_XX_01" : ['a','X',[['f'],  ['b','X',[['c'],['d']]  ,'e' ]],'g'],
+"S_XXX_01": ['a','X', [['h'],  ['b','X',[['g'],[ 'c','X',[['d'],['e']]  ,'f' ]] ]],'j'],    
+"S_XX_10" : ['a', 'X',  [['c','b'],['b','X',[['g'],['e'] ],'f']],'e'],
+"S_XX_11" : ['a','X',[['f'], ['b','X',[['z'],['r']],'i']],'s' ],
+"S_XXX_10" : ['a', 'X',[['b',  'X',[['c', 'X',[['d'],['e']]   ,'f'] ,['g']]    ],['h' ]] ,'j' ],
+"S_L_01" : ['a','L',[['b','c']],'e'],
+"S_LX_02" : ['a','c','d','L',[['a'],['b']],'c'],
+"S_LX_01" : ['a','L',[['b'],['c']],'e'],
+"S_XL_01" : ['a','X',[['L',[['b','c']] ],['u']]  ,'e'],
+"S_LX_04" : ['x','L',[['a','b'],['d','e'] ],'y'],
+"S_LX_05" : ['x','L',[['a','b'],['d','e'],['f','g'] ],'y'],
+"S_2LX_01" : ['x','L',[['a','b'],['d','e'],['f','g'] ],'y','L',[['t'],['z','u']],'r'],
+"S_L2X_01" : ['a','L',[['b','X',[['c'],['d']],'e','X',[['f'],['g']],'h' ]],'i'],
+"S_LX_07" : ['x','L',[['a','b','c'],['d','e','f'] ],'y'],
+"S_2LX_02" : ['x','L',[['a','b','c'],['d','e','f'] ],'y','L',[['u','f']],'z'],
+"S_LL_01" : ['e','L',[['a','b', 'L',[['x','y' ]],  'c']],'f'],
+"S_LL_02" : ['e','L',[['a','b', 'L',[['x','a' ]],  'c']],'b'],
+"S_XL_02" : ['e','X',[['a','b', 'L',[['x','y' ]],  'c'], ['z','h']],'f'],
+"S_XL_03" : ['e','X',[['a','g', 'L',[['x','e' ]],  'c'], ['g','e']],'f'],
+"S_LL_03" : ['e','L',[['a','b', 'L',[['x','y' ]],  'c'], ['z','h']],'f'],
+"S_LXL_01" : ['e','L',[['b','X',[['a','L',[['u','e']] ],['d','g']]]],'f'],
+"S_XLX_01" : ['a','b','X',[['d','g'],['L',[['c','X',[['f'],['e','b']],'l']]]],'j'],    
+"S_XLX_02" : ['a','L',[['b', 'X',[['d'],['c','e']], 'f']],'X',[['g','k'],['L',[['h','X',[['l'],['j']] , 'k']]  ]],'l'],    
+"S_XLL_01" : ['a','X',[['f','L',[['a','L',[['t','v' ]],'h']]] ,['s','u']],'g' ],
+"S_LXLL_01" : ['e','L',[['a','b', 'L',[['x','y','L',[['o','i']] ]],  'c'], ['z','h']],'f'],
+"S_LXLL_02" : ['e','L',[['a','b', 'L',[['x','y','L',[['o','i']] ]],  'c'], ['x','b']],'f'],    
+"S_LLLL_01" :['a','L',[['b','L',[['d','L',[['f','L',[['h','u']], 'g']],'e']],'c']],'z'],
+"S_LLLLX_01" :['a','L',[['b','L',[['d','L',[['f','L',[['h','u'],['v','t']], 'g']],'e']],'c']],'z']
+    
+}
+
+
+## Usage
+
+```python
+from trace_generator import manual_trace, Cseqs
+
+# Generate 100 random traces using schema "S_X_01"
+traces = manual_trace(Cseqs["S_X_01"], N=100)
+print(traces)
