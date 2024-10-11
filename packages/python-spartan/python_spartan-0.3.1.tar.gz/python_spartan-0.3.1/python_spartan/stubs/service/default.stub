@@ -1,0 +1,187 @@
+import logging
+from typing import List, Tuple, Union
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.orm import Session
+
+from app.models.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}
+from app.requests.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}CreateRequest, {{class_name_title_case_singular}}UpdateRequest
+from app.responses.{{class_name_lower_case_singular}} import {{class_name_title_case_singular}}CreateResponse, {{class_name_title_case_singular}}Response, {{class_name_title_case_singular}}UpdateResponse
+
+
+class {{class_name_title_case_singular}}Service:
+    """
+    Service class for managing {{class_name_lower_case_singular}}-related operations.
+    """
+
+    def __init__(self, db: Session):
+        """
+        Initialize the {{class_name_title_case_singular}}Service class.
+
+        Args:
+            db (Session): The database session.
+        """
+        self.db = db
+        self.logger = logging.getLogger(__name__)
+
+    def get_by_id(self, id: int) -> {{class_name_title_case_singular}}:
+        """
+        Retrieve a {{class_name_lower_case_singular}} by their ID.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}}.
+
+        Returns:
+            {{class_name_title_case_singular}}: The {{class_name_lower_case_singular}} object.
+
+        Raises:
+            ValueError: If the {{class_name_lower_case_singular}} is not found.
+        """
+        try:
+            {{class_name_lower_case_singular}} = self.db.query({{class_name_title_case_singular}}).filter({{class_name_title_case_singular}}.id == id).first()
+            if not {{class_name_lower_case_singular}}:
+                raise ValueError(f"Record with id {id} not found")
+            return {{class_name_lower_case_singular}}
+        except SQLAlchemyError as e:
+            self.logger.error(f"Database error while retrieving {{class_name_lower_case_singular}} with id {id}: {e}")
+            raise DatabaseError("An error occurred while fetching data from the database") from e
+
+    def all(self, page: int, items_per_page: int, sort_type: str = 'asc', sort_by: str = 'id', start_date: str = None, end_date: str = None, first_field: str = None, second_field: str = None) -> Tuple[List[{{class_name_title_case_singular}}Response], int, int, int, int]:
+        """
+        Retrieve all {{class_name_lower_case_plural}} with pagination and optional date, first_field, and second field filters.
+
+        Args:
+            page (int): The page number.
+            items_per_page (int): The number of items per page.
+            sort_type (str): The sort type ('asc' or 'desc').
+            sort_by (str): The field to sort by ('created_at' or 'first_field').
+            start_date (str): The start date for the filter (YYYY-MM-DD).
+            end_date (str): The end date for the filter (YYYY-MM-DD).
+            first_field (str): The first field filter.
+            second_field (str): The second field filter.
+
+        Returns:
+            Tuple[List[{{class_name_title_case_singular}}Response], int, int, int, int]: A tuple containing the list of {{class_name_lower_case_singular}} responses, the total number of {{class_name_lower_case_plural}}, the last page number, the first item number, and the last item number.
+        """
+        try:
+            offset = (page - 1) * items_per_page
+            sort_field = self.get_sort_field(sort_by)
+            query = self.build_query(sort_field, sort_type, start_date, end_date, first_field, second_field)
+
+            {{class_name_lower_case_plural}} = query.offset(offset).limit(items_per_page).all()
+
+            responses = [{{class_name_title_case_singular}}Response(
+                id={{class_name_lower_case_singular}}.id,
+                first_field={{class_name_lower_case_singular}}.first_field,
+                second_field={{class_name_lower_case_singular}}.second_field,
+                created_at={{class_name_lower_case_singular}}.created_at.strftime("%Y-%m-%d %H:%M:%S"),
+                updated_at={{class_name_lower_case_singular}}.updated_at.strftime("%Y-%m-%d %H:%M:%S"),
+            ) for {{class_name_lower_case_singular}} in {{class_name_lower_case_plural}}]
+
+            total_{{class_name_lower_case_plural}} = query.count()
+            last_page = (total_{{class_name_lower_case_plural}} - 1) // items_per_page + 1
+            first_item = offset + 1
+            last_item = min(offset + items_per_page, total_{{class_name_lower_case_plural}})
+
+            return responses, total_{{class_name_lower_case_plural}}, last_page, first_item, last_item
+        except SQLAlchemyError as e:
+            self.logger.error(f"Database error while retrieving all {{class_name_lower_case_plural}}: {e}")
+            raise DatabaseError("An error occurred while fetching data from the database") from e
+
+    def save(self, {{class_name_lower_case_singular}}: {{class_name_title_case_singular}}CreateRequest) -> {{class_name_title_case_singular}}CreateResponse:
+        """
+        Save a new {{class_name_lower_case_singular}} to the database.
+
+        Args:
+            {{class_name_lower_case_singular}} ({{class_name_title_case_singular}}CreateRequest): The {{class_name_lower_case_singular}} create request object.
+
+        Returns:
+            {{class_name_title_case_singular}}CreateResponse: The response data of the created {{class_name_lower_case_singular}}.
+        """
+        try:
+            existing = self.db.query({{class_name_title_case_singular}}).filter({{class_name_title_case_singular}}.second_field == {{class_name_lower_case_singular}}.second_field).first()
+            if existing:
+                raise ValueError(f"{{class_name_title_case_singular}} with this second_field already exists")
+
+            data = {{class_name_lower_case_singular}}.dict(exclude_unset=True)
+            item = {{class_name_title_case_singular}}(**data)
+            self.db.add(item)
+            self.db.commit()
+            self.db.refresh(item)
+
+            return {{class_name_title_case_singular}}CreateResponse(
+                id=item.id,
+                first_field=item.first_field,
+                second_field=item.second_field,
+                created_at=item.created_at.strftime("%Y-%m-%d %H:%M:%S"),
+                updated_at=item.updated_at.strftime("%Y-%m-%d %H:%M:%S")
+            )
+        except SQLAlchemyError as e:
+            self.logger.error(f"Database error while saving {{class_name_lower_case_singular}}: {e}")
+            raise DatabaseError("An error occurred while saving data to the database") from e
+
+    def update(self, id: int, {{class_name_lower_case_singular}}: {{class_name_title_case_singular}}UpdateRequest) -> {{class_name_title_case_singular}}UpdateResponse:
+        """
+        Update a {{class_name_lower_case_singular}} in the database.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}}.
+            {{class_name_lower_case_singular}} ({{class_name_title_case_singular}}UpdateRequest): The update request object.
+
+        Returns:
+            {{class_name_title_case_singular}}UpdateResponse: The response data of the updated {{class_name_lower_case_singular}}.
+        """
+        try:
+            item = self.get_by_id(id)
+            data = {{class_name_lower_case_singular}}.dict(exclude_unset=True)
+
+            for key, value in data.items():
+                setattr(item, key, value)
+
+            self.db.commit()
+            self.db.refresh(item)
+
+            return {{class_name_title_case_singular}}UpdateResponse(
+                id=item.id,
+                first_field=item.first_field,
+                second_field=item.second_field,
+                created_at=item.created_at.strftime("%Y-%m-%d %H:%M:%S"),
+                updated_at=item.updated_at.strftime("%Y-%m-%d %H:%M:%S")
+            )
+        except SQLAlchemyError as e:
+            self.logger.error(f"Database error while updating {{class_name_lower_case_singular}} with id {id}: {e}")
+            raise DatabaseError("An error occurred while updating data in the database") from e
+
+    def delete(self, id: int) -> {{class_name_title_case_singular}}Response:
+        """
+        Deletes a {{class_name_lower_case_singular}} by their ID.
+
+        Args:
+            id (int): The ID of the {{class_name_lower_case_singular}} to delete.
+
+        Returns:
+            {{class_name_title_case_singular}}Response: The deleted {{class_name_lower_case_singular}} details.
+        """
+        try:
+            item = self.get_by_id(id)
+            self.db.delete(item)
+            self.db.commit()
+
+            return {{class_name_title_case_singular}}Response(
+                id=item.id,
+                first_field=item.first_field,
+                second_field=item.second_field,
+                created_at=item.created_at.strftime("%Y-%m-%d %H:%M:%S"),
+                updated_at=item.updated_at.strftime("%Y-%m-%d %H:%M:%S")
+            )
+        except SQLAlchemyError as e:
+            self.logger.error(f"Database error while deleting {{class_name_lower_case_singular}} with id {id}: {e}")
+            raise DatabaseError("An error occurred while deleting data from the database") from e
+
+# Custom Exception Classes
+class ServiceError(Exception):
+    """General service layer exception"""
+    pass
+
+class DatabaseError(ServiceError):
+    """Raised for database-related errors"""
+    pass

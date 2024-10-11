@@ -1,0 +1,6 @@
+import pytest
+
+
+def test_{{test_name}}():
+
+    assert True
