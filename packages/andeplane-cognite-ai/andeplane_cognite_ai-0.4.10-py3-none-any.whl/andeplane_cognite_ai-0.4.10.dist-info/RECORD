@@ -1,0 +1,9 @@
+cognite/ai/__init__.py,sha256=VZyK5nHp7xsh0mUpqS6eyoEdQQirf2mauSADT546Hto,192
+cognite/ai/_version.py,sha256=Gdbi_VjQzRTBSuTZ9qvNXnaj23vcJGy84tsQvXY5yYU,22
+cognite/ai/embeddingmodel.py,sha256=-JKZczJ1hXMnMFL4lReoaW4XjPhkNzJy8L1RoPldXnE,1352
+cognite/ai/pandasai.py,sha256=0Rmpxwo-bjDpWgaYSZyJy9qPFAlGl_biVWaXYqRuCww,6917
+cognite/ai/utils.py,sha256=bSBtvq4oWBpvOxF14o8npLzSXMwgFY-WdL3HQE_81W0,1543
+cognite/ai/vectorstore.py,sha256=pwS9S0L8BvZdDut_pcEcWWrjylxmsLszxw6Esv9JOBk,3110
+andeplane_cognite_ai-0.4.10.dist-info/METADATA,sha256=Bq2_JS36g6oAxyH_JKQMXtly-71pIqovyK-eBkvNzAw,2886
+andeplane_cognite_ai-0.4.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+andeplane_cognite_ai-0.4.10.dist-info/RECORD,,
