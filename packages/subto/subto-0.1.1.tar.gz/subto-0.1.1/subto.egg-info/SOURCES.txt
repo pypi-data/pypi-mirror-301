@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+./subto/__init__.py
+./subto/__version__.py
+./subto/job.py
+./subto/utils.py
+subto/__init__.py
+subto/__version__.py
+subto/job.py
+subto/utils.py
+subto.egg-info/PKG-INFO
+subto.egg-info/SOURCES.txt
+subto.egg-info/dependency_links.txt
+subto.egg-info/entry_points.txt
+subto.egg-info/requires.txt
+subto.egg-info/top_level.txt

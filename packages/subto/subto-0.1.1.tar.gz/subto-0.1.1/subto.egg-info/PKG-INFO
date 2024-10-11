@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: subto
+Version: 0.1.1
+Summary: A package to make life easier when submitting jobs to schedulers
+Home-page: https://gitlab.com/kragskow-group/subto
+Author: Jon Kragskow
+Author-email: jgck20@bath.ac.uk
+Project-URL: Bug Tracker, https://gitlab.com/kragskow-group/subto/issues
+Project-URL: Documentation, https://www.kragskow.dev/subto/index.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: xyz_py>=5.13.0
+
+
+`subto` is a package to make life easier when submitting jobs to schedulers
+
+
+
+Please see the `subto` documentation for more details.
