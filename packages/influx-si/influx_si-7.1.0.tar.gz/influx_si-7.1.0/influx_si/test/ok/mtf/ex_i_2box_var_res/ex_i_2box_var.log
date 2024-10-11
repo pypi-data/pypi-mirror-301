@@ -1,0 +1,22 @@
+"/home/sokol/sysbio/dev/ftbl2sys/influx_si/influx_i.py" "--pref" "e_coli_i" "--pref" "e_coli_iv" "--pref" "ex_i_2box_var" "--pref" "../prl_exp/mtf/e_coli_GX_prl"
+code gen: 2024-10-10 15:39:19
+calcul  : 2024-10-10 15:39:20
+load    : 2024-10-10 15:39:20.57 cpu=0.595
+rinit   : 2024-10-10 15:39:20.57 cpu=0.598
+r_flux  : 2024-10-10 15:39:20.57 cpu=0.598
+Afl qr(): 2024-10-10 15:39:20.58 cpu=0.605
+dfl_dffg: 2024-10-10 15:39:20.58 cpu=0.607
+spAbr   : 2024-10-10 15:39:20.58 cpu=0.608
+weight  1: 2024-10-10 15:39:20.58 cpu=0.608
+measure : 2024-10-10 15:39:20.59 cpu=0.611
+ineq    : 2024-10-10 15:39:20.59 cpu=0.611
+preopt  : 2024-10-10 15:39:20.60 cpu=0.619
+labargs : 2024-10-10 15:39:20.60 cpu=0.621
+run    1: 2024-10-10 15:39:20.60 cpu=0.626
+
+Starting point
+residjac: 2024-10-10 15:39:20.68 cpu=0.73
+postopt : 2024-10-10 15:39:20.69 cpu=0.743
+linstats: 2024-10-10 15:39:20.86 cpu=0.878
+***Warning: chi2: Measurement number 0 is lower or equal to parameter number 2. Chi2 test cannot be done.
+rend    : 2024-10-10 15:39:20.86 cpu=0.881

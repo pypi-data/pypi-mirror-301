@@ -1,0 +1,43 @@
+"/home/sokol/sysbio/dev/ftbl2sys/influx_si/influx_s.py" "--pref" "e_coli" "--pref" "e_coli_growth" "--pref" "../prl_exp/mtf/e_coli_glc1-6n"
+code gen: 2024-10-10 15:38:55
+calcul  : 2024-10-10 15:38:55
+load    : 2024-10-10 15:38:56.31 cpu=0.573
+rinit   : 2024-10-10 15:38:56.32 cpu=0.574
+r_flux  : 2024-10-10 15:38:56.32 cpu=0.575
+Afl qr(): 2024-10-10 15:38:56.34 cpu=0.59
+dfl_dffg: 2024-10-10 15:38:56.34 cpu=0.597
+spAbr   : 2024-10-10 15:38:56.34 cpu=0.602
+weight  1: 2024-10-10 15:38:56.34 cpu=0.602
+weight  2: 2024-10-10 15:38:56.34 cpu=0.605
+weight  3: 2024-10-10 15:38:56.34 cpu=0.612
+weight  4: 2024-10-10 15:38:56.35 cpu=0.615
+weight  5: 2024-10-10 15:38:56.35 cpu=0.617
+weight  6: 2024-10-10 15:38:56.35 cpu=0.62
+weight  7: 2024-10-10 15:38:56.35 cpu=0.624
+measure : 2024-10-10 15:38:56.37 cpu=0.681
+ineq    : 2024-10-10 15:38:56.39 cpu=0.715
+preopt  : 2024-10-10 15:38:56.43 cpu=0.795
+labargs : 2024-10-10 15:38:56.43 cpu=0.797
+run    1: 2024-10-10 15:38:56.43 cpu=0.798
+
+Starting point
+res esti: 2024-10-10 15:38:56.43 cpu=0.799
+The following 1 ineqalitie(s) are active at starting point:
+f.x.xul>=0
+check ja: 2024-10-10 15:38:56.44 cpu=0.814
+optim   : 2024-10-10 15:38:56.49 cpu=0.855
+it=0	res=45.2102
+it=1	res=12.83995	normstep=1.515861	btk=1
+it=2	res=12.25994	normstep=1.259661	btk=1
+it=3	res=8.098585	normstep=0.5463658	btk=1
+it=4	res=7.960851	normstep=0.0589933	btk=1
+it=5	res=7.959322	normstep=0.03050743	btk=1
+it=6	res=7.959081	normstep=0.004902886	btk=1
+it=7	res=7.959029	normstep=0.003060732	btk=1
+it=8	res=7.959017	normstep=0.001367668	btk=1
+it=9	res=7.959014	normstep=0.0006590508	btk=1
+it=10	res=7.959014	normstep=0.0003104052	btk=1
+it=15	res=7.959014	normstep=7.292328e-06	btk=1
+postopt : 2024-10-10 15:38:57.47 cpu=2.557
+linstats: 2024-10-10 15:38:57.53 cpu=2.727
+rend    : 2024-10-10 15:38:57.56 cpu=2.769
