@@ -1,0 +1,9 @@
+numpy>=1.19.0
+camb
+cobaya
+getdist
+classy_sz
+cmbagent_autogen
+ruamel.yaml
+pandas
+ipython
