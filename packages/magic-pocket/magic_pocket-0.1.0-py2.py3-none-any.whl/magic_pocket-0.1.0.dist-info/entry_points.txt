@@ -1,0 +1,3 @@
+[console_scripts]
+pocket=pocket.cli.main_cli:main
+
