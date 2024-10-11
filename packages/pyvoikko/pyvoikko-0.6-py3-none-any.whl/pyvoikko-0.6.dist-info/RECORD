@@ -1,0 +1,9 @@
+pyvoikko/__init__.py,sha256=T-NGUBxhmUFfTiQGwjYc4Ff-xoehcValurnPuqG80pM,681
+pyvoikko/analysis.py,sha256=1AGCIpua-fT8_NHLgIkuUickDXoMNNg7e5N8oqQPLLg,5371
+pyvoikko/constants.py,sha256=BT2qZCYTV9V-xLOYFjw76N_D9D4ZehzuLA-mREnydMU,2010
+pyvoikko/voikko.kfst,sha256=VKdVvgsIqiMkuKarbdHSh31iZZ0ZOo42-c4gchGHWyg,1071442
+pyvoikko-0.6.dist-info/LICENSE,sha256=OevXWYaIOKiQVrbM7dZTb5G1gnQ0RF0fbWc2XW0q2ig,35140
+pyvoikko-0.6.dist-info/METADATA,sha256=j_zp0WEG1yyHATlMYLY_w6ifv1NvaOr20Y-ZT1Jh4O0,1770
+pyvoikko-0.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyvoikko-0.6.dist-info/top_level.txt,sha256=nDXg1kcnr1jmta1KVutzLmlzhMO-Igskkgv7-jBtPp4,9
+pyvoikko-0.6.dist-info/RECORD,,
