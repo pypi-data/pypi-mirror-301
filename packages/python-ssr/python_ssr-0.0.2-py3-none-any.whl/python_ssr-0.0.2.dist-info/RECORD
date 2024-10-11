@@ -1,0 +1,11 @@
+python_ssr/__init__.py,sha256=h49a6g6ZwK6xNrAwU3p0gXsMogsG2P7Q1oXX_8VKsqU,215
+python_ssr/api_client.py,sha256=NBLBTpqdoHTY31P_qpj7Squ9hSZZo0swNsxiR8PP_JM,1245
+python_ssr/site_renderer.py,sha256=nzwu-aKSqL0HYDnEarQpM-ORdNP4G_22mAKsOU8NEZg,2137
+python_ssr/storage.py,sha256=yI8yM5VSAcXekjLuaQKLmtUilprtszJPkExEVd9Ol4Q,2165
+python_ssr/watch.py,sha256=CcsMMozmahazFQ_Wsadec7cRbz5AlVv8hy3Oq2eSGz4,2627
+python_ssr-0.0.2.dist-info/LICENSE,sha256=dlZUbE7Uw2_wRRhKvZqPwC3PTumqRG2a-EwtnDAA6qs,1087
+python_ssr-0.0.2.dist-info/METADATA,sha256=Fa36oxywhLZHbHUS7Wb-HCFcSMcLYD_Fog85QrS58Fw,5838
+python_ssr-0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+python_ssr-0.0.2.dist-info/entry_points.txt,sha256=PBORcclXR8l9pLWCWGlTFPW5AcNBqdSeEh28vYm-8AM,64
+python_ssr-0.0.2.dist-info/top_level.txt,sha256=Gh9ECTMipStq6nb8gsszt_PhHuOgO6FaGEwfYv8aqhI,11
+python_ssr-0.0.2.dist-info/RECORD,,
