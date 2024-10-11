@@ -1,0 +1,10 @@
+uowabc/__init__.py,sha256=F3UjigG7B-Bl-AKRMv2Ew2W-FAQ50NuVi2rLG39-NA0,234
+uowabc/base.py,sha256=loDADMe-H2cyMMUCws4VmQlOXk9c-aedG-gM5p4qaGE,3707
+uowabc/sa/__init__.py,sha256=TTxRYGo-kl07qJ_mMMxxh4zSBe_g1Z9Ge33VL65oj0c,152
+uowabc/sa/mixins.py,sha256=jetW9j882RNiLXaeLftn2HwtC9xhiDzrQiOQ2ZrOLyQ,2075
+uowabc/sa/repository.py,sha256=aM-vJaggmbxTesxVDzNelcd0zPTe5EpT7QUi9eEC894,887
+uowabc/sa/uow.py,sha256=iI6y0YPkHDW3z5HiAhijl4Uu8qYyjRAYQeqfvsRCJyY,1932
+uow_abstractions-0.1.0.dist-info/LICENSE,sha256=u38z1bfQ5TW8ewWoVLGOGz7w3S23d3QOZr8oxQDHsps,1052
+uow_abstractions-0.1.0.dist-info/METADATA,sha256=OlQaJZrb3dNFmUqIjdVAwmAdbfEnZjCEShFhFhFOpDo,4309
+uow_abstractions-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+uow_abstractions-0.1.0.dist-info/RECORD,,
