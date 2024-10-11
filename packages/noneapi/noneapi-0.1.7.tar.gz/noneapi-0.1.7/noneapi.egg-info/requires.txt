@@ -1,0 +1,15 @@
+pyzmq==26.2.0
+loguru==0.7.2
+gevent==24.10.1
+pdoc==14.7.0
+pydantic==2.9.2
+orjson==3.10.7
+
+[dev]
+pytest
+flake8
+black
+mypy
+isort
+pytest-cov
+requests
