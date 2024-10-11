@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+mpmath
+joblib
+h5py
+qtealeaves>=1.2.30
