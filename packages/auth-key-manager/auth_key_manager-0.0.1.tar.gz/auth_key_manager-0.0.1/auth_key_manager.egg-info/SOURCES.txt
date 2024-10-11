@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+auth_key_manager/__init__.py
+auth_key_manager/__version__.py
+auth_key_manager/update_checker.py
+auth_key_manager.egg-info/PKG-INFO
+auth_key_manager.egg-info/SOURCES.txt
+auth_key_manager.egg-info/dependency_links.txt
+auth_key_manager.egg-info/requires.txt
+auth_key_manager.egg-info/top_level.txt
