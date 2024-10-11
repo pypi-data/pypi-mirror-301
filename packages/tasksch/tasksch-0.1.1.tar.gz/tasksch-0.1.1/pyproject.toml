@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "tasksch"
+version = "0.1.1"
+description = "Python pywin32 Windows Task Scheduler wrapper"
+authors = ["Mark Gemmill <dev@markgemmill.com>"]
+homepage = "https://github.com/markgemmill/tasksch"
+readme = "README.md"
+classifiers = [
+    "Operating System :: Microsoft :: Windows",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pywin32 = "^307"
+dateparser = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+rich = ">=11,<14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.dover]
+versioned_files = [
+    "pyproject.toml"
+]
