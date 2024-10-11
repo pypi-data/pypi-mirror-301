@@ -1,0 +1,6 @@
+
+[easy_pyoc.qt5]
+PyQt5
+
+[utils.flask_util]
+flask
