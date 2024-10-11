@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+GeoAnalyze/__init__.py
+GeoAnalyze/file.py
+GeoAnalyze.egg-info/PKG-INFO
+GeoAnalyze.egg-info/SOURCES.txt
+GeoAnalyze.egg-info/dependency_links.txt
+GeoAnalyze.egg-info/top_level.txt
+tests/test_geoanalyze.py
