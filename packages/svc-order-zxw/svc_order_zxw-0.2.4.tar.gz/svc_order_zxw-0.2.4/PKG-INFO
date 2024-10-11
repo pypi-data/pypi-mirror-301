@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: svc_order_zxw
+Version: 0.2.4
+Summary: 订单与支付服务
+Home-page: https://github.com/sunshineinwater/
+Author: 薛伟的小工具
+Author-email: 
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi<0.113,>=0.112.0
+Requires-Dist: sqlalchemy==2.0.32
+Requires-Dist: greenlet==3.0.3
+Requires-Dist: asyncpg==0.29.0
+Requires-Dist: uvicorn<0.31.0,>=0.30.0
+Requires-Dist: app-tools-zxw>=1.0.81
+
+# 常用函数包
+
+-
+    1. 项目根目录下必须包含config.py文件
+
+# 更细说明
+
+- 0.0.4 : 取消对 app-tools-zxw.msvc_order_payments 的依赖
+- 0.0.5 : config.py中, 支付宝key配置为路径格式
+- 0.0.6 : 新增支付宝二维码支付vue页面示例, config新增自动导入
+- 0.0.7 : config自动导入 目录优化
+-
+- 0.1.0 : 重大更新
+    1. 表结构3NF优化,
+    2. 增加CRUD层,
+    3. 取消schemas, 在CRUD中定义数据模型
+    4. 重构interface层,
+        - 使用 函数驱动
+        - 删除 "通用管理", 用户调用CRUD完成所需操作
+    5. 支付宝手机url支付, 完成
+    6. 微信支付, 未完成
+
+- 0.1.1 :
+  1. 函数改动: crud1_applications.py -> get_application() : 根据app_name查询数据
+- 0.1.2 :
+  1. 更名: apis/api_支付_支付宝/api_二维码.py -> .../api_app_url.py
+- 0.1.3 :
+  1. bug fix: apis/api_商品管理.py : 
+     - 查询数据库中不存在的数据时,返回200状态码, response.text=='null'
+     - 基础功能,单元测试覆盖率100%
+     - 单元测试未覆盖: api-支付 
+- 0.0.4 :
+    1. bug fix: interface/interface_支付宝支付.py
+        - 使用db管理数据库会话, 方便fastapi依赖注入, 消除潜在资源溢出风险.
+- 0.0.5 :
+    1. 性能优化: svc_order_zxw/db/crud3_orders.py  get_order()
+        - 查询外键时, 取消额外的refresh操作.
+- 0.1.6 : 单元测试覆盖100%
+
+- 0.2.0 : 增加 models_活动表 相关一系列表, 以及相应CRUD接口, 新增功能: 单元测试覆盖率100%
+- 0.2.1 : bug fix
+- 0.2.2 : bug fix
+- 0.2.3 : bug fix
+- 0.2.4 : 新特性,  crud活动表2_支付转换权限.py 新增根据order_number查询数据
