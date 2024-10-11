@@ -1,0 +1,4 @@
+[console_scripts]
+delete-property = cgexplore._internal.scripts.delete_property:main
+get-energies = cgexplore._internal.scripts.get_energies:main
+get-values = cgexplore._internal.scripts.get_values:main
