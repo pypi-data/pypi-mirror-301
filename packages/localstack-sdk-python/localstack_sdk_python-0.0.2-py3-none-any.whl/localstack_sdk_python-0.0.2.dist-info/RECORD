@@ -1,0 +1,11 @@
+localstack/clients.py,sha256=UFBz23vDc48uGl1ton1-ejjQb-nnHnj0YEGVBelz57E,680
+localstack/sdk/chaos/__init__.py,sha256=czMV7U_iDgUPBObl6nmWQxl78cF-zVl1c8QPY5tnQg4,79
+localstack/sdk/chaos/client.py,sha256=l5hJ8NNLNv2FaSp8lol8fOXZCcAL7DRDV2X_wFGYwxc,1506
+localstack/sdk/chaos/managers.py,sha256=v9oKvotSmz3npEadYtrYBumCuISdxPeol_YGYYQQlGw,386
+localstack/sdk/pods/__init__.py,sha256=49ilbKnbGpIRcv0w71nEp4RvDFtkxfrvrUVdrSLFltI,76
+localstack/sdk/pods/client.py,sha256=YzHQBLbEaDb-veNS2NwDZrND12kFSAVoy5cm-hmS4-M,2909
+localstack_sdk_python-0.0.2.dist-info/LICENSE.txt,sha256=3PC-9Z69UsNARuQ980gNR_JsLx8uvMjdG6C7cc4LBYs,606
+localstack_sdk_python-0.0.2.dist-info/METADATA,sha256=3QTB1Pl1CrBrsbW42Ep2oDywzCAJ93C2khujATfCllg,1740
+localstack_sdk_python-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+localstack_sdk_python-0.0.2.dist-info/top_level.txt,sha256=3sqmK2lGac8nCy8nwsbS5SpIY_izmtWtgaTFKHYVHbI,11
+localstack_sdk_python-0.0.2.dist-info/RECORD,,
