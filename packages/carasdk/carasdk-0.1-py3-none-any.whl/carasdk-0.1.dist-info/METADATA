@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: carasdk
+Version: 0.1
+Summary: Cara Application Framework
+Author-email: Humanify Organization <public@humanify.org>
+Requires-Dist: protobuf>=5.27.3
+Requires-Dist: colorlog>=6.8.2
+Requires-Dist: nanoid>=2.0.0
+Requires-Dist: pyzmq>=26.1.1
+Requires-Dist: pyyaml>=6.0.2
+
