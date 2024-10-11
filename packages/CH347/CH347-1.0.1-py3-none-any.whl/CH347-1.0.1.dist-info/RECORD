@@ -1,0 +1,11 @@
+ch347/GPIO.py,sha256=BCVU4lTWEUSiLjucr25osyJluIkVYdQ8v5Wnv9cKqwo,617
+ch347/I2C.py,sha256=UcIfEEH3oW5Swyogm-JSI7zBmRPq5wTR9kSS9SQRpEE,2711
+ch347/JTAG.py,sha256=Ej15AXGYFbCi4chTEbSu9SWafMRFkVTAEh8xuv8FoiQ,4874
+ch347/SPI.py,sha256=g_UMHQmuP4qBPnqSbxn_N5SCrFDPR9EJfnqm4Y1sDLw,4286
+ch347/UART.py,sha256=_gfmyYRohK34vYor5Bk0PDODq-gpe-fylGGINRZ4V-A,1875
+ch347/__init__.py,sha256=fotRKAZChJHNekIbrgmtXdAxenEokTu3Gkbdz4bccQg,966
+ch347/util.py,sha256=8b2RVR2PxqF9Z8YcCnG-rOAKjx3RCzzCzc-pVW6QVQA,3396
+CH347-1.0.1.dist-info/METADATA,sha256=j7cLYHJHgF8hvNghjIuERQGWT1zYuHXls86SlSHrQxM,295
+CH347-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+CH347-1.0.1.dist-info/top_level.txt,sha256=wHMTwWA2LERtUIGHTz-LBfscA-LPzRbJdDegCjFEsRI,6
+CH347-1.0.1.dist-info/RECORD,,
