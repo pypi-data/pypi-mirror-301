@@ -1,0 +1,70 @@
+Metadata-Version: 2.3
+Name: djalgo
+Version: 0.2.3
+Summary: A music composition toolkit
+Project-URL: Documentation, https://essicolo.github.io/djalgo/
+Project-URL: Repository, https://github.com/essicolo/djalgo.git
+Project-URL: Bug Tracker, https://github.com/essicolo/djalgo/issues
+Author-email: Essi Parent <3pp0qk4a@duck.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Keywords: midi,music
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Requires-Python: >=3.11
+Requires-Dist: anywidget
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: scipy
+Requires-Dist: traitlets
+Provides-Extra: ai
+Requires-Dist: tensorflow; extra == 'ai'
+Provides-Extra: convert
+Requires-Dist: mido; extra == 'convert'
+Requires-Dist: music21; extra == 'convert'
+Requires-Dist: pretty-midi; extra == 'convert'
+Provides-Extra: dev
+Requires-Dist: bump-my-version; extra == 'dev'
+Requires-Dist: furo; extra == 'dev'
+Requires-Dist: ipynbname; extra == 'dev'
+Requires-Dist: ipywidgets; extra == 'dev'
+Requires-Dist: kaleido; extra == 'dev'
+Requires-Dist: nbsphinx; extra == 'dev'
+Requires-Dist: recommonmark; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: tomli; extra == 'dev'
+Provides-Extra: musician
+Requires-Dist: music21; extra == 'musician'
+Requires-Dist: pretty-midi; extra == 'musician'
+Requires-Dist: scamp; extra == 'musician'
+Provides-Extra: notebook
+Requires-Dist: ipykernel; extra == 'notebook'
+Requires-Dist: ipywidgets; extra == 'notebook'
+Requires-Dist: jupyter; extra == 'notebook'
+Requires-Dist: jupyterlab; extra == 'notebook'
+Requires-Dist: marimo; extra == 'notebook'
+Description-Content-Type: text/markdown
+
+# djalgo: A music composition toolkit
+
+Djalgo is a Python toolkit for music composition. Crafted for musicians and developers alike, Djalgo offers a versatile collection of tools for generating and manipulating musical notes and sequences. Without relying directly on MIDI files, it employs a MIDI-compatible format, enabling users to define each note through a trio of attributes: pitch (in MIDI notation), duration, and offset. Whether you're scripting a symphony, experimenting with algorithms to create melodies, or exploring the mathematical beauty of music, Djalgo makes the art of digital composition accessible and engaging. The name Djalgo was chosen after musician [Django Reinhardt](https://en.wikipedia.org/wiki/Django_Reinhardt), an a mix of *DJ* (disk jockey) and *algorithm*.
+
+## Install
+
+Djalgo is on PyPi.
+
+```
+pip install djalgo
+```
+
+## Usage
+
+To get started, you might follow the companion website at [essicolo.github.io/djalgo/01_getting-started.html](https://essicolo.github.io/djalgo/source/01_getting-started.html). Happy composing! 🎼
