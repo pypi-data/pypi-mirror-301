@@ -1,0 +1,3 @@
+[console_scripts]
+hermes = hermes:__main__
+hermes-setup = hermes.setup:main
