@@ -1,0 +1,10 @@
+qr_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qr_code/decoder.py,sha256=Uf6y8mWq50yAWLJLz8cfIHeezbkWEJCBDGjftwDh_WA,353
+qr_code/encoder.py,sha256=LJrdecGMeUJBRDEjpix6l-xj-oOgEpKb9SbjGa1rGAw,475
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_qr_code.py,sha256=3fykcEjZ2oytYVKGPrAXZL6_d-qdZ5omoB29OocD4LQ,495
+qr_code_lib-1.0.0.dist-info/LICENSE,sha256=c0_Sh1H0m-LbZAd4P4z57ympCJyGllAK5LtD4iuv_dU,1071
+qr_code_lib-1.0.0.dist-info/METADATA,sha256=tnR3F_NBq0sZYQ0XlirqfuYtS0LfF9Quk2Tl_1l9Zq0,363
+qr_code_lib-1.0.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+qr_code_lib-1.0.0.dist-info/top_level.txt,sha256=JCawfp54vpS8Fb4CWls9Lg3A-e2uCcua3OFmPQBAkSc,14
+qr_code_lib-1.0.0.dist-info/RECORD,,
