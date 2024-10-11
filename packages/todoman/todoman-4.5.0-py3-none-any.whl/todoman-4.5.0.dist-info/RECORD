@@ -1,0 +1,17 @@
+todoman/__init__.py,sha256=M1b93yYZ_HUVQflN51OCiBKIUU8nqB4OP2Wm4YX-gwc,183
+todoman/__main__.py,sha256=lYhWjV0oylUK6Tbewew4BP24P2cG056JxK8JxdDfSrw,130
+todoman/cli.py,sha256=pr9oZQeEmOHYjMLX3bL7mv77ClopfwRfq1t2c6sLlKA,19965
+todoman/configuration.py,sha256=v-0WxJnYdZROEhVBcVh7-P5sLV-rQLt3w1eAbH6BUgI,7090
+todoman/exceptions.py,sha256=gbMl060oL2Z_lkLHW7C9jW0Q5OQr5FK3wusnQacC_4M,1130
+todoman/formatters.py,sha256=qH1eKmibSAf4rnskKHE1d6LyKbS0YwFKheLh4SnOLnw,11553
+todoman/interactive.py,sha256=l3Q2lHl8kAuHiLy2xRcS3I6mV3lMpVCXmoMYDYEiw00,7209
+todoman/model.py,sha256=hZ_u0WrqzNAwX0zcIgrP1ux6Fhx04I13I7ViZF3MaWA,35235
+todoman/version.py,sha256=I5uQZ6yQmsQW0yfVSTwXL6ZPKKGV3P0cUL8M8YePi2s,411
+todoman/widgets.py,sha256=nq207xmA6ZaW35eia8vx_gXNCV6R01zrAvt3Pcx-PW0,5782
+todoman-4.5.0.dist-info/AUTHORS.rst,sha256=EqpS3xlvEX971zsaF-vOczjkZsuKW_h4nPukEa1NkgM,1344
+todoman-4.5.0.dist-info/LICENCE,sha256=dnLPTcdjIuR6cgVtYyxHm3B1OJ5AllPkzcnwACF2P10,765
+todoman-4.5.0.dist-info/METADATA,sha256=_15YPzX0DODM8kRUWD_fqfpehuDYXgCc-abFyAoDf6k,3835
+todoman-4.5.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+todoman-4.5.0.dist-info/entry_points.txt,sha256=HVcRTjIFC9fe6pV7OCr0vpH1fN78OYM1Nf7me2eqDqQ,41
+todoman-4.5.0.dist-info/top_level.txt,sha256=Vx-yv1ZP2SPRnnvdQ2pUrHNc3Gcc6sN04EPLD_1KwlI,8
+todoman-4.5.0.dist-info/RECORD,,
