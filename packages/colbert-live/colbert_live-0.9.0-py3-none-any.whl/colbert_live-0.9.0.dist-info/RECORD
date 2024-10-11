@@ -1,0 +1,13 @@
+colbert_live/__init__.py,sha256=xQ6A5z3Du5KK4Xklmwx848b4rn2zSIrVy_e4u8eO93g,55
+colbert_live/colbert_live.py,sha256=hc_JqqDybRHbnhyXEt0V_JwwDwfYxjcJYjzNrqdbX5w,8990
+colbert_live/models.py,sha256=Qf5EEcQV_w5SQk-SFwyBlqoPGgaNpfrbzSgu1vuL8gg,5556
+colbert_live/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colbert_live/db/__init__.py,sha256=KnJgfSVBbQ-6Z17EJ_X2-66BBvYnc6ClRzltxV38oNg,39
+colbert_live/db/astra.py,sha256=FlH_-p4oCRicdUOxSeopVOCWQWGEhpJsP7psGMLtIQE,15771
+colbert_live/db/db.py,sha256=Adewv1kCbG0_upKYdBOIeBs3Y98sTHY53JU8C4hGkXQ,1399
+colbert_live/db/sqlite.py,sha256=9MzypsB2gujf6ipFFogGBImWS3IOQF6wKb9bDfCBPbU,5788
+colbert_live-0.9.0.dist-info/LICENSE.txt,sha256=0E2CgI0OV7t2ArfBfiel_QDXa7Yiw9OiEUClN1fp94Y,12960
+colbert_live-0.9.0.dist-info/METADATA,sha256=d_z-WRTX6Mt0_grHhY94I-dlJFvrC0NockR9ZQiD5nU,4978
+colbert_live-0.9.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+colbert_live-0.9.0.dist-info/top_level.txt,sha256=jSudJ9hkE5ag8Ls_GvxzdHXK9dUaAeAfrPHiCJWml4g,13
+colbert_live-0.9.0.dist-info/RECORD,,
