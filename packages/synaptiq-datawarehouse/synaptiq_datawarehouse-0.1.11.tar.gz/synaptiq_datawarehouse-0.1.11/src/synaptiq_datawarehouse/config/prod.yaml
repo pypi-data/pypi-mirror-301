@@ -1,0 +1,21 @@
+database_name: synaptiq_dw #This is in hivemetastore once the new pipeline is activated can be removed
+
+everhour: 
+    base_url: https://api.everhour.com
+
+bigquery:
+    project: budget-dashboard-293100
+
+catalog_name: synaptiq_warehouse
+schema_name: bronze
+
+bronze:
+  asana_projects: bronze.asana_projects
+  asana_invoice_tasks: bronze.asana_invoice_tasks
+  everhour_time_entries: bronze.everhour_time_entries
+  everhour_projects: bronze.everhour_projects
+  everhour_users: bronze.everhour_users
+  everhour_assignments: bronze.everhour_assignments
+  freshteams_employees: bronze.freshteams_employees
+  gsuite_users: bronze.gsuite_users
+  xero_invoices: bronze.xero_invoices
