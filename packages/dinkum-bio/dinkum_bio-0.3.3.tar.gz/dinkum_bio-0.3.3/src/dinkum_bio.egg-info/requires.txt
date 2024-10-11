@@ -1,0 +1,2 @@
+ipycanvas==0.13.1
+Pillow==10.1.0
