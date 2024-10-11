@@ -1,0 +1,13 @@
+Version 1.8.1.(1-4)
+====================
+- PyPi Publishing Bugs Fixed
+
+Version 1.8.1
+====================
+- Major UI changes
+- Reduced the download size by removing vendor.js which took 1mb
+
+Version 1.8
+====================
+- Forked from muatik/flask-profiler
+- Fixed the MongoDB Support
