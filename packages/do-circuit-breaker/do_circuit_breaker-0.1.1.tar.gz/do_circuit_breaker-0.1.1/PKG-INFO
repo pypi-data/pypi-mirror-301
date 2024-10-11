@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: do_circuit_breaker
+Version: 0.1.1
+Summary: A custom circuit breaker for Airflow jobs
+Home-page: https://github.com/ankurrakuten/do_circuit_breaker
+Author: Ankur Kumar
+Author-email: ankur.kumar@rakuten.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Circuit Breaker
+
+A custom circuit breaker for Airflow jobs.
+
+## Installation
+
+```bash
+pip install circuit_breaker
