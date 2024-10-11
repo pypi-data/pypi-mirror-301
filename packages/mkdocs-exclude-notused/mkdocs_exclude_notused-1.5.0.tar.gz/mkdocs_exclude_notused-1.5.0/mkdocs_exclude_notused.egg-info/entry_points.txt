@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+mkdocs_exclude_notused = mkdocs_exclude_notused:ExcludeNotused
