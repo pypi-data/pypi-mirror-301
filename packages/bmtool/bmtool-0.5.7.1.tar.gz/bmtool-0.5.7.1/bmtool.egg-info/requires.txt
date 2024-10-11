@@ -1,0 +1,12 @@
+bmtk
+click
+clint
+h5py
+matplotlib
+networkx
+numpy
+pandas
+questionary
+pynmodlt
+xarray
+fooof
