@@ -1,0 +1,11 @@
+httpx~=0.24.1
+
+[instruments]
+httpx~=0.24.1
+
+[test]
+pytest==7.0.0
+pytest-cov==3.0.0
+testfixtures==6.18.3
+pytest-asyncio==0.18.3
+pytest-httpx==0.22.0
