@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+diff.bat
+pyproject.toml
+.github/workflows/publish.yml
+img/logo.png
+src/Demo.py
+src/Demo/Demo.png
+src/graphclass/__init__.py
+src/graphclass/_version.py
+src/graphclass/graphclass.py
+src/graphclass.egg-info/PKG-INFO
+src/graphclass.egg-info/SOURCES.txt
+src/graphclass.egg-info/dependency_links.txt
+src/graphclass.egg-info/top_level.txt
+src/graphclass/template/html.j2
