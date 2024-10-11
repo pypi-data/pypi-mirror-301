@@ -1,0 +1,2 @@
+[console_scripts]
+secure_rag = secure_rag:main
