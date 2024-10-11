@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+NoteMaster/__init__.py
+NoteMaster/module_1.py
+NoteMaster/module_2.py
+NoteMaster/module_3.py
+NoteMaster/module_4.py
+NoteMaster/module_5.py
+NoteMaster/module_6.py
+NoteMaster.egg-info/PKG-INFO
+NoteMaster.egg-info/SOURCES.txt
+NoteMaster.egg-info/dependency_links.txt
+NoteMaster.egg-info/top_level.txt
