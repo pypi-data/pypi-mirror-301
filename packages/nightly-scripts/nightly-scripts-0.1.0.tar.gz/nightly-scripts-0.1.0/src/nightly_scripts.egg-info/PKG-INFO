@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: nightly-scripts
+Version: 0.1.0
+Summary: Ночные скрипты
+Home-page: 
+Download-URL: 
+Author: BARS Group
+Author-email: bars@bars.group
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: packaging<24,>=21.3
+Requires-Dist: pip<24,>=23.2.1
+Requires-Dist: setuptools<70,>=47.3.1
+Requires-Dist: wheel<0.42,>=0.37.1
+Requires-Dist: Django<5.2,>=2.2
+
+# Проект "Ночные скрипты"
+
+По мере развития любого проекта необходимо заботиться о состоянии развернутого приложения в проде. Должны выполняться 
+такие задачи, как:
+
+- Очистка устаревших файлов;
+- Зачистка служебных записей по истечении времени хранения;
+- Иные служебные задачи.
+
+Данный пакет предоставляет довольно простую функцию - запуск Django-команд помеченных атрибутом `nightly_script = True`.
+В основе лежит команда `execute_nightly_scripts`, которая осуществляет запуск ночных скриптов. Данная команда должна 
+запускаться по cron-у или другим аналогичным средством.
+
+## Требования к окружению
+
+Для работы требуется Python >=3.9. Так же в зависимостях есть пакеты:
+
+- Django>=3.2.
+
+Версии всех пакетов уточнены в файлах с зависимостями.
+
+## Параметры конфигурационного файла
+
+В разных проектах существуют различные способы добавления настроек, где-то через плагины, где-то напрямую в settings.py.
+Будет рассмотрен подход указания настроек в settings.py и указания параметров в конфигурационном файле.
+
+Для возможности конфигурирования необходимо проделать ряд действий:
+
+- Добавить пакет `nightly_scripts` в INSTALLED_APPS в settings.py:
+    ```
+    INSTALLED_APPS = (
+        <some_app>,
+        ...,
+        'nightly_scripts',
+    )
+    ```
+
+## Сборка и распространение
+
+Сборка пакета производится при помощи [Job-а в Jenkins M3.build_dist](http://jenkins.py.bars.group/view/PY/job/M3.packages/job/M3.build_dist/).
+
+Пакет выкладывается в глобальный [PYPI](https://pypi.org/project/edu-rdm-integration/) и во внутренний [Nexus](http://nexus.py.bars.group/#browse/browse:pypi-edu-private:edu-rdm-integration) 
+
+## Документация
+
+С документацией можно ознакомиться по ссылке http://docs.py.bars.group/nigtly-scripts/
+# История изменений
+
+Все изменения проекта должны быть отражены в этом файле.
+
+Формат основан на [Keep a Changelog](http://keepachangelog.com/)
+и проект следует [Семантическому версионированию](http://semver.org/).
+
+## [x.y.z] - гггг-мм-дд
+
+Здесь должно быть расширенное описание того, что было сделано, какие есть планы у команды по дальнейшему развитию.
+Желательно будущие цели привязывать к конкретным задачам. Т.е. на каждую цель нужно поставить отдельную задачу и
+отразить ее номер здесь.
+
+### Добавлено
+
+- [ПРОЕКТ-ZZZZ](https://jira.bars.group/browse/ПРОЕКТ-ZZZZ)
+  PATCH Название задачи или изменения.
+
+- [ПРОЕКТ-YYYY](https://jira.bars.group/browse/ПРОЕКТ-YYYY)
+  MINOR Название задачи или изменения.
+
+- [ПРОЕКТ-XXXX](https://jira.bars.group/browse/ПРОЕКТ-XXXX)
+  MAJOR Название задачи или изменения.
+
+### Изменено
+
+### Исправлено
+
+### Удалено
+
+
+## [0.1.0] - 2024-10-10
+
+Инициализация проекта.
