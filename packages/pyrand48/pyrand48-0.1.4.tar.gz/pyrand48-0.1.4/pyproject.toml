@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pyrand48"
+repository = "https://github.com/uklibraries/pyrand48/"
+version = "0.1.4"
+description = "An implementation of the rand48 linear congruential generator."
+license = "MIT"
+authors = ["MLE Slone <m.slone@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+pre-commit = "^4.0.0"
+pytest = "^8.3.3"
+flakehell = "^0.9.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
