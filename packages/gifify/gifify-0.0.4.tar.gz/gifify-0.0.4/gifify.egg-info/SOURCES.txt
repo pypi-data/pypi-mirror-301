@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+gifify/__init__.py
+gifify/gifify.py
+gifify.egg-info/PKG-INFO
+gifify.egg-info/SOURCES.txt
+gifify.egg-info/dependency_links.txt
+gifify.egg-info/requires.txt
+gifify.egg-info/top_level.txt
