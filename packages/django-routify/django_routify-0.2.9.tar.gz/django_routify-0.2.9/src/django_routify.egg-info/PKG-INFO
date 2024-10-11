@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: django-routify
+Version: 0.2.9
+Summary: Django-Routify is a package for simple routing Views in the classic Django framework.
+Author-email: Vitaliy Popel <popelcompany@gmail.com>
+Maintainer-email: Vitaliy Popel <popelcompany@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Vitaliy Popel
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/vitaliypopel/django-routify
+Project-URL: Bug reports, https://github.com/vitaliypopel/django-routify/issues
+Project-URL: Source, https://github.com/vitaliypopel/django-routify/
+Keywords: django-routify,django routify,django-router,django router,router for django,router,routify
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Classifier: Typing :: Stubs Only
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=4.0
+
+# Django-Routify
+**Django-Routify** is a package for simple routing Views in the classic Django framework.
+
+With Django-Routify package you no longer have to manually register your views in `urlpatterns` using django.urls.path function.
+
+Django-Routify can help you to easily register your views using Router class and his @Router.route(...) decorator.
+If you are familiar with Flask, FastAPI or even Django REST Framework, you know that every single view should be registered using decorators.
+It is <ins>easy to read</ins> first of all, and <ins>simplified work</ins>.
+
+Also you can set `auto_trailing_slash` to `True` value when you're initializing your Router and can write your url_path similar to Flask, FastAPI etc.
+If `auto_trailing_slash` is `True` then url_path which will be equal to `'/hello-world'` will be translated to classic Django url rule - `'hello-world/'`.
+
+Django-Routify is support `function` and `class` based views, and also `asynchronous`.
+
+## Requirements
+- Python 3.8+
+- Django 4.0+
+
+## Installation
+To install Django-Routify package use the command below in your environment:
+
+- Using `pip`
+```shell
+pip install django-routify
+```
+
+- Using `Poetry`
+```shell
+poetry add django-routify
+```
+
+## Example
+For **extended example** with tests visit [examples/example](https://github.com/vitaliypopel/django-routify/tree/main/examples/example).
+
+### Using Django-Routify with Django
+
+~/project/app/views.py:
+```python
+from django.http import HttpRequest, HttpResponse
+
+from django_routify import Router
+
+router = Router('/app', 'app', auto_trailing_slash=True)
+# or   = Router(prefix='/app', app_name='app', auto_trailing_slash=True)
+
+
+@router.route('/hello-world', methods=['GET'])
+def hello_world(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('Hello World!')
+```
+
+~/project/app/urls.py:
+```python
+from django_routify import include_router
+
+from .views import router
+
+urlpatterns = [
+    include_router(router),
+]
+```
+
+### Using classic Django
+
+~/project/app/views.py:
+```python
+from django.http import HttpRequest, HttpResponse
+from django.views.decorators.http import require_http_methods
+
+
+@require_http_methods(['GET'])
+def hello_world(request: HttpRequest) -> HttpResponse:
+    return HttpResponse('Hello World!')
+```
+
+~/project/app/urls.py:
+```python
+from django.urls import path, include
+
+from .views import hello_world
+
+app_name = 'app'
+urlpatterns = [
+    path(
+        'app/',
+        include([
+                path('hello-world/', hello_world, name='hello_world'),
+        ])
+    ),
+]
+```
+
+#### Note:
+_The result of these two examples will do the same thing_
