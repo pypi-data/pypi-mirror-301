@@ -1,0 +1,13 @@
+# Include the README file
+include README.md
+
+# Include the LICENSE file
+include LICENSE
+
+# Include all the Python source files
+recursive-include roundr *.py
+
+# Include all test files
+recursive-include tests *.py
+
+# Include any additional files or directories as needed

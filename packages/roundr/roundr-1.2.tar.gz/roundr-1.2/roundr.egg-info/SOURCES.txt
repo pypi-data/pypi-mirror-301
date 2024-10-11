@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+roundr/__init__.py
+roundr/roundr.py
+roundr.egg-info/PKG-INFO
+roundr.egg-info/SOURCES.txt
+roundr.egg-info/dependency_links.txt
+roundr.egg-info/top_level.txt
+tests/test_roundr.py
