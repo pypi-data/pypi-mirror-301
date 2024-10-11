@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+anthropic_mock_wrapper/__init__.py
+anthropic_mock_wrapper/wrapper.py
+anthropic_mock_wrapper.egg-info/PKG-INFO
+anthropic_mock_wrapper.egg-info/SOURCES.txt
+anthropic_mock_wrapper.egg-info/dependency_links.txt
+anthropic_mock_wrapper.egg-info/requires.txt
+anthropic_mock_wrapper.egg-info/top_level.txt
