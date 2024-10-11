@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cybosx-login"
+version = "0.1.0"
+description = "Dhashin Cybosplus login automation 대신 사이보스플러스 자동 로그인"
+authors = ["th yoo <taihyungyoo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/th-yoo/cybosx_login"
+keywords = ["daishin", "cybosplus", "login", "automation", "대신", "사이보플러스", "로그인", "자동화"]
+exclude = ["example/*"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pywin32 = {version = ">= 300", platform = "win32"}
+run-as-task = {version = "^0.1.4", platform = "win32"}
+win-auto-tiny = {version = "^0.1.2", platform = "win32"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
