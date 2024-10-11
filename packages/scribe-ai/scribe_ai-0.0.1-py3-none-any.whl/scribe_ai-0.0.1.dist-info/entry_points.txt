@@ -1,0 +1,3 @@
+[console_scripts]
+scribe = scribe_cli.scribe:main
+
