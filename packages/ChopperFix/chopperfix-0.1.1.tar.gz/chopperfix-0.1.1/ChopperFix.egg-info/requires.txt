@@ -1,0 +1,13 @@
+sqlalchemy
+playwright
+beautifulsoup4
+adalflow
+openai
+selenium
+Pillow
+requests
+pydantic
+loguru
+numpy
+scikit-learn
+spacy
