@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qualibrate-core
+Version: 0.2.0
+Summary: 
+Author: Quantum Machines
+Author-email: info@quantum-machines.co
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jsonpointer (>=3.0.0,<4.0.0)
+Requires-Dist: networkx (>=3.2.0,<3.3.0)
+Requires-Dist: pydantic (>=2.7.3,<3.0.0)
+Requires-Dist: qualang_tools (>0.17.4) ; python_version >= "3.9" and python_version < "3.12"
+Requires-Dist: types-networkx (>=3.2.1.20240918,<3.3.0.0)
+Description-Content-Type: text/markdown
+
+# Qualibrate Core
+
