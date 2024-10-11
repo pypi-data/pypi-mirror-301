@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+mypy.ini
+pyproject.toml
+.github/dependabot.yml
+.github/workflows/lint.yaml
+.github/workflows/pypi.yaml
+.github/workflows/release.yaml
+justsendmail/__init__.py
+justsendmail/mail.py
+justsendmail.egg-info/PKG-INFO
+justsendmail.egg-info/SOURCES.txt
+justsendmail.egg-info/dependency_links.txt
+justsendmail.egg-info/entry_points.txt
+justsendmail.egg-info/requires.txt
+justsendmail.egg-info/top_level.txt
