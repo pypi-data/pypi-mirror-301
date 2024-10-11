@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aococr"
+version = "0.2.0"
+description = ""
+authors = ["bjarkemoensted <bjarkemoensted@gmail.com>"]
+readme = "README.md"
+package-mode = true
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+packages = [{include = "aococr", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^2.0"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aoc-ocr = "aococr.ocr:ocr_cli"
