@@ -1,0 +1,15 @@
+rik/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rik/consts.py,sha256=ppXxaJgNY3HKuVx9-2qiTfsZD7UNypTVHCCnR26vY3E,124
+rik/funcs.py,sha256=8ai60Jv8BBuKpE48YNx2c9Brlf6EZpeZP_cYcQwZIqw,5265
+rik/parsers.py,sha256=hUySahbMgXpnh7z6TfTV1GX5xHi_yC7krztnZbhK6R8,2607
+rik/path_constraints.py,sha256=bdQ1qAYHAxFKfD7znLae9By7rgg-zUi9vRssNX6KdHg,2754
+rik/integrity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rik/integrity/hash.py,sha256=oRX_h02Rzejb6raqQXjaqpnQk9Etew48j__sDsHH0D8,3438
+rik/integrity/integrity.py,sha256=RsRgpel6b_9EQlnqZjwGLBAQfxc8LtOWlBIOuQCd4lQ,2916
+rik/integrity/par2.py,sha256=7SdgWkvTCmbKa9c6eQJVlW8atI4kNY6e7muytB_z7Ls,4415
+rik-0.0.1.data/scripts/rik,sha256=LhvK3BgpqDtOUea2ji6McoAdL7WIrFYZPFvEqQOaDsQ,2150
+rik-0.0.1.dist-info/LICENSE,sha256=3Cjy8hPTLpkgT7OtNMBONH5FAJsmlFyJowBMzVsDVck,1326
+rik-0.0.1.dist-info/METADATA,sha256=Wkt_yzSgho4pbp-FqSd1_-KED3udfbWgOUfW7x3Meuo,3157
+rik-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+rik-0.0.1.dist-info/top_level.txt,sha256=avOZ95mxe6VpHZJg0Hi3Ig0IHihw53kHFYJsHExI3ok,4
+rik-0.0.1.dist-info/RECORD,,
