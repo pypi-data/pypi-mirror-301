@@ -1,0 +1,2 @@
+[console_scripts]
+aliasmate = aliasmate.__main__:main
