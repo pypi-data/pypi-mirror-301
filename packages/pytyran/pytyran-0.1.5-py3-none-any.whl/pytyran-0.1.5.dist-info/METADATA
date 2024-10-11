@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pytyran
+Version: 0.1.5
+Summary: Tyran SDK in Python.
+Home-page: https://github.com/clivern/pytyran/
+Author: Clivern
+Author-email: hello@clivern.com
+License: MIT
+Project-URL: Documentation, https://github.com/clivern/pytyran/
+Project-URL: Source, https://github.com/clivern/pytyran/
+Project-URL: Changelog, https://github.com/clivern/pytyran/blob/main/CHANGELOG.rst
+Project-URL: Tracker, https://github.com/clivern/pytyran/issues
+Project-URL: Download, https://pypi.org/project/pytyran/#files
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: requests<=2.32.3
+Requires-Dist: langchain-text-splitters<=0.3.0
+Requires-Dist: importlib-metadata; python_version < "3.8"
+
+.. image:: https://img.shields.io/pypi/v/pytyran.svg
+    :alt: PyPI-Server
+    :target: https://pypi.org/project/pytyran/
+.. image:: https://github.com/clivern/pytyran/actions/workflows/ci.yml/badge.svg
+    :alt: Build Status
+    :target: https://github.com/clivern/pytyran/actions/workflows/ci.yml
+
+|
+
+========
+pytyran
+========
+
+    Tyran SDK in Python.
+
+
+Note
+====
+
+This project is created and maintained for Tyran. see https://github.com/Clivern/Tyran
