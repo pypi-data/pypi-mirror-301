@@ -1,0 +1,2 @@
+[console_scripts]
+rbac_rag = secure_rag:main
