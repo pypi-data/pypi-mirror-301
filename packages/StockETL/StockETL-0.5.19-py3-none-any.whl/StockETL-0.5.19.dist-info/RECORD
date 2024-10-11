@@ -1,0 +1,10 @@
+StockETL/__init__.py,sha256=j3qHSjUEX6d3Aai_qMlQ7sa3QUkbkjZZMgmPEZAfei0,521
+StockETL/version.py,sha256=dMx4CQs3HR8bnKOTylddK8aWF1shctCkbknEtdfGcSA,66
+StockETL/datetimeutils/__init__.py,sha256=Y4a_bmBN2i2aNw-mw_YQweOv-0AX9nQ9Ek0s5l_2DhY,2890
+StockETL/globalpath/__init__.py,sha256=FM4aFHYXn6hOSk0voAW9ziNmajn5zZLrwWNMtPZFsAI,3488
+StockETL/portfolio/__init__.py,sha256=n44nPpVTBSezAe0qZS2qzueRzqZV4CuloN28OnN4CGY,26142
+StockETL-0.5.19.dist-info/LICENSE,sha256=0yf7zAA2p_OCsnOzmqv72Nbgdm9gFFbspkMj1p_xPeA,1104
+StockETL-0.5.19.dist-info/METADATA,sha256=9SmPsWuUy5qXpZUGnI4C8AHMzdWLO0kktQyUqLiqrLs,5520
+StockETL-0.5.19.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+StockETL-0.5.19.dist-info/top_level.txt,sha256=w1qhDRDP894bWxyEzl_c0i2VgXB4FKvBgq87R0EcWlw,9
+StockETL-0.5.19.dist-info/RECORD,,
