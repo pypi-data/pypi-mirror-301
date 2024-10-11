@@ -1,0 +1,8 @@
+fizzysearch/__init__.py,sha256=FxPANj2MaKax1Pt5SDG7nfUDVIJ7TsE4bjeg-Wx3QYQ,107
+fizzysearch/fts.py,sha256=CCIVCauJqZ-FTAx1EyLMZ4VTCeKkEToF_WpbaIErNYo,4443
+fizzysearch/rdf2vec.py,sha256=lsZu3zKviqD1nHc2sWcwiKEeOtN8hMw54GD9a35MH44,4980
+fizzysearch/rewriting.py,sha256=fhOXP55ujkOv4G4R66k9oVYyCIgWgYoa8Qf2M9Lcfxg,4743
+fizzysearch-0.11.dist-info/LICENSE,sha256=RC2yR2DjJ_Y2NKX2-TvSOpb-0yUpaqHK7ktFLQ4DbZA,1152
+fizzysearch-0.11.dist-info/METADATA,sha256=VemL2n1CySWU9tUoVsDulvOclTHCKDbRBfP5iN6cwIc,1631
+fizzysearch-0.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fizzysearch-0.11.dist-info/RECORD,,
