@@ -1,0 +1,58 @@
+name: CD
+
+on:
+  schedule:
+    - cron: "0 0 * * 3"
+  workflow_dispatch:
+
+env:
+  TASK_X_REMOTE_TASKFILES: 1
+
+jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+    secrets: inherit
+
+  release:
+    name: Release
+    needs: [ci]
+    runs-on: ubuntu-latest
+    container: ghcr.io/nikaro/gha:latest
+    permissions:
+      contents: write
+      id-token: write
+    environment: release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Bump
+        uses: commitizen-tools/commitizen-action@0.21.0
+        with:
+          changelog_increment_filename: _changelog.md
+          github_token: ${{ github.token }}
+          no_raise: 3,21
+
+      - name: Build package
+        if: env.PREVIOUS_REVISION != env.REVISION
+        run: task build --yes
+
+      - name: Release
+        if: env.PREVIOUS_REVISION != env.REVISION
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: _changelog.md
+          files: ./dist/*
+          tag_name: ${{ env.REVISION }}
+
+      - name: Publish package to PyPI
+        if: env.PREVIOUS_REVISION != env.REVISION
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          attestations: true
