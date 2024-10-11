@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "clandestino_minio"
+version = "0.1.1"
+description = "Clandestino MinIO implementation"
+authors = ["XimitGaia <im.ximit@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "clandestino_minio"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-decouple = "^3.8"
+miniopy-async = "^1.20.1"
+clandestino-interfaces = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
