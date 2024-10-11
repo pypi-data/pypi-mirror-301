@@ -1,0 +1,9 @@
+numpy
+pandas
+torch
+fair-esm
+tqdm
+biopython
+h5py
+einops
+pyyaml
