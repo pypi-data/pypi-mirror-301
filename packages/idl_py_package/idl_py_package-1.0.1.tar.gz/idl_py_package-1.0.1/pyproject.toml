@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "idl_py_package"
+version = "1.0.1"
+description = "IDL generated Python files"
+authors = ["jjuney <k6857172@naver.com>"]
+
+packages = [
+    { include = "build/python" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.core.masonry.api"
