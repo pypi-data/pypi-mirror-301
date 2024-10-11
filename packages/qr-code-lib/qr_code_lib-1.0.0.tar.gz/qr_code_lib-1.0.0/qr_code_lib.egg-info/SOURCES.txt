@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+qr_code/__init__.py
+qr_code/decoder.py
+qr_code/encoder.py
+qr_code_lib.egg-info/PKG-INFO
+qr_code_lib.egg-info/SOURCES.txt
+qr_code_lib.egg-info/dependency_links.txt
+qr_code_lib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_qr_code.py
