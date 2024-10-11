@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: skinoptics
+Version: 0.0.1b1
+Summary: SkinOptics: a python package with tools for building human skin computational models for Monte Carlo simulations of light transport
+Project-URL: Homepage, https://github.com/victorportog/skinoptics
+Author-email: Victor Lima <victorporto@ifsc.usp.br>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy<2.0.0,>=1.26.4
+Requires-Dist: pandas<3.0.0,>=2.2.2
+Requires-Dist: scipy<2.0.0,>=1.13.0
+Description-Content-Type: text/markdown
+
+SkinOptics
+==========
+
+**SkinOptics** is an open source Python package with tools for building human skin computational
+models for Monte Carlo simulations of light transport, as well as tools for analyzing simulation
+outputs. It can also be used for teaching and exploring about Optical Properties and Colorimetry.
+
+**SkinOptics** is under continuos development.
+
+New features may be available in the future.
+
+Please remember that **SkinOptics** is available without any warranty.
+
+You can access **SkinOptics** documentation at https://skinoptics.readthedocs.io/.
