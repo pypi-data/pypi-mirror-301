@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hvi-wrap
+Version: 0.2.0
+Summary: 
+Author: Guy McBride
+Author-email: guy_mcbride@keysight.com
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=2.1.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+
