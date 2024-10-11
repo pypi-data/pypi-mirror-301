@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+config/fake_cbc.yaml
+src/sgn_event.egg-info/PKG-INFO
+src/sgn_event.egg-info/SOURCES.txt
+src/sgn_event.egg-info/dependency_links.txt
+src/sgn_event.egg-info/top_level.txt
+src/sgnevent/base/__init__.py
+src/sgnevent/base/event.py
+tests/test_config.py
+tests/test_config2.py
