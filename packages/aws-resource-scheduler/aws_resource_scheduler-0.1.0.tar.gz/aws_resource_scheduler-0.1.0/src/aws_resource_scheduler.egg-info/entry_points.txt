@@ -1,0 +1,2 @@
+[console_scripts]
+aws-resource-scheduler = aws_resource_scheduler.scheduler:main
