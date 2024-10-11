@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: convertor-jpg-png
+Version: 1.0.0
+Summary: This package can be used to convert all jpg of a folder to png.
+Home-page: https://example.com
+Author: Xuan-Hung LE
+Author-email: hunglxtp@yahoo.com
+License: MIT
+Keywords: convertor,png,jpg
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: opencv-python
+Requires-Dist: pillow
