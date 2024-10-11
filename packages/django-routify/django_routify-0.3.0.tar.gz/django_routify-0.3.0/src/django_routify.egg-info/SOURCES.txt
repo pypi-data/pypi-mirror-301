@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_routify/__init__.py
+src/django_routify/_abstraction.py
+src/django_routify/include.py
+src/django_routify/patterns.py
+src/django_routify/router.py
+src/django_routify/validator.py
+src/django_routify.egg-info/PKG-INFO
+src/django_routify.egg-info/SOURCES.txt
+src/django_routify.egg-info/dependency_links.txt
+src/django_routify.egg-info/requires.txt
+src/django_routify.egg-info/top_level.txt
