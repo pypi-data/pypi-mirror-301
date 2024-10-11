@@ -1,0 +1,2 @@
+[console_scripts]
+e2tts = e2tts:fire_main
