@@ -1,0 +1,6 @@
+[project]
+name = "exca"
+authors = [{name = "Jeremy Rapin"}]
+description = "coming soon"
+version = "0.0.0"
+requires-python = ">=3.7"
