@@ -1,0 +1,20 @@
+[build-system]
+requires = ['setuptools>=61.0', 'argparse', 'paho.mqtt>=2', 'uuid', 'pandas', 'matplotlib', 'urllib3']
+build-backend = 'setuptools.build_meta'
+[project]
+name = "co2_info"
+version = "24.10.10"
+authors = [
+  { name="Peter Vennemann", email="vennemann@fh-muenster.de" },
+]
+description = "A simple alert app for indoor air quality."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://git.fh-muenster.de/pv238554/co2_info"
+Issues = "https://git.fh-muenster.de/pv238554/co2_info/-/issues"
