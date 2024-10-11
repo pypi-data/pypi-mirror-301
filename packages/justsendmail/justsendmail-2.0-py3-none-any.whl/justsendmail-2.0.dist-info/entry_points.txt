@@ -1,0 +1,2 @@
+[console_scripts]
+justsendmail = justsendmail.mail:main
