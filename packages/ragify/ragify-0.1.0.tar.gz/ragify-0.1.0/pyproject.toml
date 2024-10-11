@@ -1,0 +1,19 @@
+[project]
+name = "ragify"
+version = "0.1.0"
+description = "Convert any website into RAG vector DB"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Fatih Cagatay Akyon", email = "fatih@safevideo.ai"},
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/fcakyon/ragify"
+Repository = "https://github.com/fcakyon/ragify.git"
+"Bug Tracker" = "https://github.com/fcakyon/ragify/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

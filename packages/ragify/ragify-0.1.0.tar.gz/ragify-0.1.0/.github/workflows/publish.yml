@@ -1,0 +1,41 @@
+name: Publish to PyPI
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger the action on version tags like v1.0.0
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+        contents: read
+        id-token: write
+
+    steps:
+      # Checkout the repository code
+      - uses: actions/checkout@v4
+
+      # Install `uv` using the GitHub Action
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'  # Replace '3.x' with your desired version
+
+      # Install project dependencies (if any)
+      - name: Install dependencies
+        run: uv sync
+
+      # Build the package
+      - name: Build the package
+        run: uv build
+
+      # Publish to PyPI using the token stored in GitHub secrets
+      - name: Publish to PyPI
+        env:
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        run: uv publish
