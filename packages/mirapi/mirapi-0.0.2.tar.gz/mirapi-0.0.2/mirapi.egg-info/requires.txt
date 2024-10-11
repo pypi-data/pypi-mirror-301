@@ -1,0 +1,10 @@
+starlette==0.39.2
+parse==1.20.2
+uvicorn==0.31.1
+pydantic==2.9.2
+
+[database]
+psycopg2-binary
+
+[orm]
+sqlalchemy
