@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+parseable.flight = sqlalchemy_parseable.flight:ParseableDialect_flight
