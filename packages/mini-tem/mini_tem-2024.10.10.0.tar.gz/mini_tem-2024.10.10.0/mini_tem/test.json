@@ -1,0 +1,174 @@
+{
+    "source": {
+        "z": 0,
+        "xy_function": "small_source_xy_function",
+        "velocity_function": "uniformly_spread_velocity_function"
+    },
+    "z_screen": 2.4859500000000003,
+    "components": {
+        "cond_app": {
+            "type": "aperture",
+            "name": "cond_app",
+            "diameter": 5e-07,
+            "position": [
+                0.0,
+                0.0,
+                0.5784
+            ]
+        },
+        "bpc": {
+            "type": "biprism",
+            "name": "bpc",
+            "position": [
+                0.0,
+                0.0,
+                0.585999975
+            ],
+            "theta": 0,
+            "width": 1e-07,
+            "power": 100.0
+        },
+        "c1": {
+            "type": "lens",
+            "name": "c1",
+            "z": 0.651507265273,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "c2": {
+            "type": "lens",
+            "name": "c2",
+            "z": 0.754902093688,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "stem_app": {
+            "type": "aperture",
+            "name": "stem_app",
+            "diameter": 5e-07,
+            "position": [
+                0.0,
+                0.0,
+                0.77376
+            ]
+        },
+        "c3": {
+            "type": "lens",
+            "name": "c3",
+            "z": 0.92594196596,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "lorentz": {
+            "type": "sample",
+            "name": "lorentz",
+            "position": [
+                0.0,
+                0.0,
+                0.9518
+            ],
+            "scale": 1e-06,
+            "enabled": true,
+            "shape_function": "default_shape_function"
+        },
+        "obj": {
+            "type": "lens",
+            "name": "obj",
+            "z": 0.9985300839,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "normal": {
+            "type": "sample",
+            "name": "normal",
+            "position": [
+                0.0,
+                0.0,
+                0.9988
+            ],
+            "scale": 1e-06,
+            "enabled": true,
+            "shape_function": "default_shape_function"
+        },
+        "obj_app": {
+            "type": "aperture",
+            "name": "obj_app",
+            "diameter": 5e-07,
+            "position": [
+                0.0,
+                0.0,
+                1.0026
+            ]
+        },
+        "sa_app": {
+            "type": "aperture",
+            "name": "sa_app",
+            "diameter": 5e-07,
+            "position": [
+                0.0,
+                0.0,
+                1.1947
+            ]
+        },
+        "bp1": {
+            "type": "biprism",
+            "name": "bp1",
+            "position": [
+                0.0,
+                0.0,
+                1.6151499500000002
+            ],
+            "theta": 0,
+            "width": 1e-07,
+            "power": 100.0
+        },
+        "i1": {
+            "type": "lens",
+            "name": "i1",
+            "z": 1.6781553743100002,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "bp2": {
+            "type": "biprism",
+            "name": "bp2",
+            "position": [
+                0.0,
+                0.0,
+                1.7431499499999998
+            ],
+            "theta": 0,
+            "width": 1e-07,
+            "power": 100.0
+        },
+        "i2": {
+            "type": "lens",
+            "name": "i2",
+            "z": 1.8056735984999999,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "i3": {
+            "type": "lens",
+            "name": "i3",
+            "z": 1.92767359173,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "p1": {
+            "type": "lens",
+            "name": "p1",
+            "z": 2.10585424466,
+            "focal_length": 0.5,
+            "width": 0
+        },
+        "p2": {
+            "type": "lens",
+            "name": "p2",
+            "z": 2.22085596186,
+            "focal_length": 0.5,
+            "width": 0
+        }
+    },
+    "default_electron_number": 100000
+}

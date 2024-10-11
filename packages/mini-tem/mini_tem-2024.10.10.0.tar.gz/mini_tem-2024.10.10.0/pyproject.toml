@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mini-tem"
+version = "2024.10.10.0"
+description = "Implementation of a 3D TEM simulation based on "
+authors = ["Darknestea <loic.grossetete@cemes.fr>"]
+readme = "README.md"
+license = "GPL-3.0"
+include = ["mini_tem"]
+exclude = ["tests", "mini_tem_renderer", "MiniTemUI", "random_things"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3"
+]
+keywords = ["TEM", "simulation", "3D"]
+repository  = "https://github.com/I3EM/miniTEM"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+numpy = "^1.24.2"
+scipy = "^1.7.1"
+matplotlib = "^3.7.2"
+seaborn = "^0.13.2"
+pyside6 = "^6.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
