@@ -1,0 +1,17 @@
+DefoldSdk/Game.py,sha256=pBad7_aAu0TUUX2onpprJAU-EoK2s2bX7dgzuVxuRBo,4316
+DefoldSdk/Gameproject.py,sha256=_QIIAh083oRV-OLqa4Eprcs7wYiuvzKyJaYDhfavWaI,904
+DefoldSdk/Settings.py,sha256=noOJGn0I-LSMbOc_e-4SwBQcKaHamUQM_25xByhZ8LQ,173
+DefoldSdk/__init__.py,sha256=YhSJelbg6jVaSRbiQReHJuDRzhSRrSyrbVDlNr0O-Ls,57
+DefoldSdk/Naitivesdk/__init__.py,sha256=JG5f1h7_RAXS5ayo3xaEY_LSJrKqJbdoARWYCV-uWIU,6960
+DefoldSdk/Sdk/CameraDesc.py,sha256=tXLa9UmHMBIV3IHmGATTrYWK00ozak3GztNOWfIIHGM,335
+DefoldSdk/Sdk/CollectionDesc.py,sha256=E2avIvyhXRoM4vOoMWynsva2dvQYh92ff86qh0fFJvI,400
+DefoldSdk/Sdk/ComponentDesc.py,sha256=PU6WZZmXplEebiWt0WvWuOWAMCkfoYnUrtMxv2GPi0c,161
+DefoldSdk/Sdk/EmbeddedInstanceDesc.py,sha256=4bOvxfelwN8Az-kDpfWff1zb3WgZn4hsJrE-h3SH9N4,1639
+DefoldSdk/Sdk/LuaSourceFile.py,sha256=j7EblUpAh72yJEmOWpV-7eFj2XDFVVmncbHk-Gymj0g,4333
+DefoldSdk/Sdk/MaterialDesc.py,sha256=7kfJyjj9R5YHeFpuMKEJ5UV4D2YOLArBSA7tPO3S7KA,3484
+DefoldSdk/Sdk/ModelDesc.py,sha256=ABI3baTaemaYrfoGY4s5L1eLAU_PrKlKZk8zr8f6c7I,1089
+DefoldSdk/Sdk/__init__.py,sha256=zXRhQP9RCkRfe9UwtkPWbQ_gCQU67GXHQxgHcUdUW3Y,704
+DefoldSdk-1.0.7.dist-info/METADATA,sha256=4kW4TD9LJdzDiUw9do2j5KI_uR9X4qmg8CsicerAEv0,581
+DefoldSdk-1.0.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+DefoldSdk-1.0.7.dist-info/top_level.txt,sha256=JHTY2GxdWSCeYJU_nYt-IaRaHLNBuABjtccWm3zmNKA,10
+DefoldSdk-1.0.7.dist-info/RECORD,,
