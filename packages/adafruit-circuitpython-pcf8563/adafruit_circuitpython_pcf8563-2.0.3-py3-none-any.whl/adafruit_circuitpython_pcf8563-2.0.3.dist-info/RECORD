@@ -1,0 +1,8 @@
+adafruit_pcf8563/clock.py,sha256=sIemG2IW_aiNvQcZvg3UeClUXkIWKqnIx0KTk5z9HHg,2878
+adafruit_pcf8563/pcf8563.py,sha256=bzSPSIrWMF-TUxwVXbiWaiTLCLhwua0IIJi9amuQu2M,3934
+adafruit_pcf8563/timer.py,sha256=OQRbChajcBFnJeAKKj5va6SC-ZyG1Da1ZoZc655AZVE,3612
+adafruit_circuitpython_pcf8563-2.0.3.dist-info/LICENSE,sha256=8t7c-RZ_9bKbW4qRKAQCT0v18kT3RiJwCygRE63h-iA,1119
+adafruit_circuitpython_pcf8563-2.0.3.dist-info/METADATA,sha256=Tn_GHClY580q5pRlyf6tvTlV79aSI8IJEtsjHx5tyDw,5740
+adafruit_circuitpython_pcf8563-2.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+adafruit_circuitpython_pcf8563-2.0.3.dist-info/top_level.txt,sha256=PWVAukx_plgggObdahqT8Bz7pjkHedgmtzXPc__cbSM,17
+adafruit_circuitpython_pcf8563-2.0.3.dist-info/RECORD,,
