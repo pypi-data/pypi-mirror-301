@@ -1,0 +1,182 @@
+# RAZ Client 
+RAZ Client python package provides plugin to boto3 library to use Apache Ranger for granular authorization for S3 access
+
+## Prerequisites
+
+* Python 3.8 or higher
+* Protocol Buffers version 4.25
+
+---
+## Installation
+
+To install using `pip` from the
+[raz_client PyPI project](https://pypi.org/project/raz_client/):
+
+    $ pip install raz_client
+
+---
+## Usage
+<ul>
+<li>The client assumes a kinited user session and will use the same principle to negotiate the authentication with the RAZ server.</li>
+<li>
+Create a boto3 client of type s3.
+
+    client = boto3.client("s3")
+
+</li>
+
+<li>
+Create a configuration object of type configuration by importing it from the raz_python package.
+
+    conf = Configuration()
+
+</li>
+<li>
+Add the basic raz server configs by adding them via script or using a hadoop configuration file. Examples for both
+are present in the examples folder.
+</li>
+<li>Configure the boto3 client by calling the <code> configure_ranger_raz(client, conf) </code> method from the raz_client lib. 
+</li>
+<li>The client is ready to be used as it is now.
+</li>
+</ul>
+
+---
+## Example
+Look at the example directory for example usage of different options and different APIs.
+
+Basic startup code for usage:
+
+    import boto3
+    import raz_client
+    
+    client = boto3.client("s3")
+    
+    # configure the client. The client uses the kerberos credentials of the logged in user for authorization
+    raz_client.configure_ranger_raz(client)
+    
+    # To configure SSL certificate,
+    # 1. Download the certificate: CDP UI -> environment -> FreeIPA -> Get FreeIPA certificate
+    # 2. Configure the certificate path: 
+    # raz_client.configure_ranger_raz(client, ssl_file="<ssl_filepath>")
+     
+    # list objects in bucket
+    result = client.list_objects(Bucket="<bucket name>", Prefix="/")
+    print(result)
+
+---
+## List of Supported Operations
+-   [abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/abort_multipart_upload.html)
+
+-   [complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/complete_multipart_upload.html)
+
+-   [copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/copy.html)
+
+-   [copy_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/copy_object.html)
+
+-   [create_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/create_multipart_upload.html)
+
+-   [delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/delete_object.html)
+
+-   [delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/delete_objects.html)
+
+-   [download_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/download_file.html)
+
+-   [download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/download_fileobj.html)
+
+-   [get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/get_bucket_acl.html)
+
+-   [get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/get_bucket_location.html)
+
+-   [get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/get_object.html)
+
+-   [head_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/head_bucket.html)
+
+-   [head_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/head_object.html)
+
+-   [list_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_buckets.html)(in process)
+
+-   [list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_multipart_uploads.html)
+
+-   [list_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_objects.html)
+
+-   [List_objects_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_objects_v2.html)
+
+-   [list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_parts.html)
+
+-   [put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/put_object.html)
+
+-   [select_object_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/select_object_content.html)
+
+-   [upload_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_file.html)
+
+-   [upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_fileobj.html)
+
+-   [upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_part.html)
+
+-   [upload_part_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/upload_part_copy.html)
+
+---
+
+## Configuration
+The Configuration object provided can be used to pass additional parameters to the client. The user specified configs
+will override the raz server default configs.
+
+<table>
+<tr>
+<td><h3>Raz Constant</h3></td>
+<td><h3>Key</h3></td>
+<td><h3>Description</h3></td>
+</tr>
+<tr>
+<td>RAZ_URL_KEY</td>
+<td>fs.s3a.ext.raz.rest.host.url</td>
+<td>URL for the RAZ server along with port. There is no default value for this and is required
+by the user.
+Eg: https://raz_node:6082/</td>
+</tr>
+<tr>
+<td>USE_SSL_VERIFICATION</td>
+<td>raz.client.use.ssl.verification</td>
+<td>Enable ssl verification on the client for talking to raz server 
+for additional security. This config expects a True or False value. It is turned off by default.</td>
+</tr>
+<tr>
+<td>SSL_CERT_LOCATION</td>
+<td>raz.client.ssl.cert.location</td>
+<td>Path to the SSL cert location. If the path is not set but USE_SSL_VERIFICATION
+is set to true the client will throw an error. For more info on the SSL Cert kind refer to 
+<a href="https://requests.readthedocs.io/en/latest/user/advanced/#ssl-cert-verification">this</a>.
+This config expects the absolute path to the file.
+</td>
+</tr>
+<tr>
+<td>RAZ_CLIENT_USE_DELEGATION_TOKEN</td>
+<td>raz.client.use.delegation.token</td>
+<td>Use delegation token for authenticating requests to RAZ Server. This means that on every request there
+won't be a kerberos handshake, making the authorization faster. Kerberos' authentication will still be required
+at the time of token creation and renewal. This config expects a True or False value.</td>
+</tr>
+<tr>
+<td>RAZ_DELEGATION_TOKEN_VALIDITY</td>
+<td>raz.client.delegation.token.validity</td>
+<td>Validity of the delegation token, it is by default set to 15 minutes and can be increased or decreased.
+The client doesn't renew the delegation token asynchronously instead it renews the token on the request made after 
+the expiry time. The value is set in seconds. Eg: To renew delegation token at 10 minutes set it to 10 * 60</td>
+</tr>
+<tr>
+<td>RAZ_CLIENT_ENABLE_DEBUG_MODE</td>
+<td>raz.client.enable.debug.mode</td>
+<td>Enables the debug mode on the client. 
+Set it to True to print all the debug info of the client.</td>
+</tr>
+</table>
+
+---
+
+## License
+Copyright (c) 2023 Cloudera, Inc.  All Rights Reserved.
+This software and any associated use of this software is governed exclusively 
+by the Cloudera Standard License included in the accompanying LICENSE.txt file or found at
+[Cloudera License](https://www.cloudera.com/legal/terms-and-conditions/cloudera-standard-license/cloudera-standard-license-v9-2019-12-12.html)
+

@@ -1,0 +1,4 @@
+requests>=2.25.1
+requests_kerberos>=0.14.0
+protobuf==4.25.3
+boto3>=1.23.10
