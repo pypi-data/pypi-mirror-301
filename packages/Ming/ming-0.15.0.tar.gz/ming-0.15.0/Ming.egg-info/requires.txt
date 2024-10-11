@@ -1,0 +1,5 @@
+pymongo[encryption]<4.9
+pytz
+
+[configure]
+FormEncode>=1.2.1
