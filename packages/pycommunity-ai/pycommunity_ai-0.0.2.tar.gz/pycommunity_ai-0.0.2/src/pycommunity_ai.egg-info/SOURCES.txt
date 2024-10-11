@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+./LICENSE
+src/community_ai/___installer.py
+src/community_ai/___loader.py
+src/community_ai/__init__.py
+src/pycommunity_ai.egg-info/PKG-INFO
+src/pycommunity_ai.egg-info/SOURCES.txt
+src/pycommunity_ai.egg-info/dependency_links.txt
+src/pycommunity_ai.egg-info/top_level.txt
