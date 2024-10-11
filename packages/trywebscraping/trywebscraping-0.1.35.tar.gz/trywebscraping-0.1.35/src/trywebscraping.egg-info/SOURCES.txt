@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+src/trywebscraping/__init__.py
+src/trywebscraping/api_key.py
+src/trywebscraping/base_scraper.py
+src/trywebscraping/browse.py
+src/trywebscraping/cli.py
+src/trywebscraping/fetch.py
+src/trywebscraping/query.py
+src/trywebscraping/utils.py
+src/trywebscraping.egg-info/PKG-INFO
+src/trywebscraping.egg-info/SOURCES.txt
+src/trywebscraping.egg-info/dependency_links.txt
+src/trywebscraping.egg-info/entry_points.txt
+src/trywebscraping.egg-info/requires.txt
+src/trywebscraping.egg-info/top_level.txt
