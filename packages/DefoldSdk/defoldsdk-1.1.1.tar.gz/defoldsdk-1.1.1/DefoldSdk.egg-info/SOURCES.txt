@@ -1,0 +1,11 @@
+setup.py
+DefoldSdk/Game.py
+DefoldSdk/Gameproject.py
+DefoldSdk/Settings.py
+DefoldSdk/__init__.py
+DefoldSdk.egg-info/PKG-INFO
+DefoldSdk.egg-info/SOURCES.txt
+DefoldSdk.egg-info/dependency_links.txt
+DefoldSdk.egg-info/requires.txt
+DefoldSdk.egg-info/top_level.txt
+DefoldSdk/Sdk/__init__.py
