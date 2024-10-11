@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nc-mis
+Version: 0.2.0
+Summary: ncubed automation backend for network device management
+Author-email: Jasper Schoenmaker <jasper.schoenmaker@ncubed.nl>
+License: GNU General Public License v3.0
+Keywords: ncubed,accelerator,mis
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: netmiko ==4.3.*
+Requires-Dist: pynetbox ==7.3.*
+Requires-Dist: ttp ==0.9.*
+Requires-Dist: nc-helpers >=1.0.4
+Provides-Extra: dev
+
