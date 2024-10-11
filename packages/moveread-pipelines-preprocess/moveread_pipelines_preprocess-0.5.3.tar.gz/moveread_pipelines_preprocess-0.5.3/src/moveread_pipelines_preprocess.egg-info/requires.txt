@@ -1,0 +1,10 @@
+pure-cv
+robust-extraction2
+scoresheet-models
+lazy-loader
+pipeteer
+dslog
+fastapi
+python-kv
+moveread-core
+moveread-tatr
