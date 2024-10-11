@@ -1,0 +1,178 @@
+import typing
+import collections.abc
+import typing_extensions
+import bpy.types
+
+class TEXT_HT_header(bpy.types.Header):
+    bl_rna: typing.Any
+    bl_space_type: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_edit(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+    @classmethod
+    def poll(cls, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_edit_select(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_edit_to3d(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_editor_menus(bpy.types.Menu):
+    bl_idname: typing.Any
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+    @staticmethod
+    def draw_menus(layout, context):
+        """
+
+        :param layout:
+        :param context:
+        """
+
+class TEXT_MT_format(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_templates(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_templates_osl(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_templates_py(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_text(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_toolbox(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_MT_view(bpy.types.Menu):
+    bl_label: typing.Any
+    bl_rna: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_PT_find(bpy.types.Panel):
+    bl_label: typing.Any
+    bl_region_type: typing.Any
+    bl_rna: typing.Any
+    bl_space_type: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
+
+class TEXT_PT_properties(bpy.types.Panel):
+    bl_label: typing.Any
+    bl_region_type: typing.Any
+    bl_rna: typing.Any
+    bl_space_type: typing.Any
+    id_data: typing.Any
+
+    def draw(self, context):
+        """
+
+        :param context:
+        """
