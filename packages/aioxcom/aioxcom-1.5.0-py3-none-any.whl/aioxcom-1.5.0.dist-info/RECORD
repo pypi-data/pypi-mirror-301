@@ -1,0 +1,14 @@
+aioxcom/__init__.py,sha256=lVhIMtXgwlj7_M32MY038iYA6NddtjU4N8aBzK__Fic,844
+aioxcom/xcom_api.py,sha256=JNsXabeIyZxZviOZBa7cgf1C22AQnt8ak37CHt4bPcE,16543
+aioxcom/xcom_const.py,sha256=x6435l6B70LJpuuzFbaRXeD1ye0EJJVIHzpY2Md5N9U,8446
+aioxcom/xcom_datapoints.py,sha256=KFTEOVOWZN6CbI3StTwQEXVY6ukhSJ12SLrApEWOexs,5431
+aioxcom/xcom_datapoints_120v.json,sha256=IsWl1_VmGTMW93sb8CX8THucKUNrD6dcEsKknzLhy6k,2966
+aioxcom/xcom_datapoints_240v.json,sha256=uC9FqgniRjziwuEXNvrr3Ba6lHYMDxEj7N9E1-aSjvU,299660
+aioxcom/xcom_discover.py,sha256=d5zh2Y-tXHBW_yWZp0FzaerEXGh15MsDiLiVOjIRB98,7723
+aioxcom/xcom_families.py,sha256=oKRks_3JKK6ipCcqswkzN5Ea7Ib40IlAexBIfYXCy-Y,5857
+aioxcom/xcom_protocol.py,sha256=4vETIY-ASs-NJgPwzaIlPBBZ5KNgQ-meaYlso3Do6_0,13829
+aioxcom-1.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aioxcom-1.5.0.dist-info/METADATA,sha256=cK_SfVBGjQRogLL5nDlKPmmN6y7-BQkck0CllZ7vags,6253
+aioxcom-1.5.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+aioxcom-1.5.0.dist-info/top_level.txt,sha256=M4tPjiN0m38ARLpSkji4cxlR82NQPwfq5A1bYirJHVA,8
+aioxcom-1.5.0.dist-info/RECORD,,
