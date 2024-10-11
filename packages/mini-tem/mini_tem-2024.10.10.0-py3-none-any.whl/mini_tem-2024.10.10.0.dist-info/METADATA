@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mini-tem
+Version: 2024.10.10.0
+Summary: Implementation of a 3D TEM simulation based on 
+Home-page: https://github.com/I3EM/miniTEM
+License: GPL-3.0
+Keywords: TEM,simulation,3D
+Author: Darknestea
+Author-email: loic.grossetete@cemes.fr
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.2,<4.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pyside6 (>=6.4.3,<7.0.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Project-URL: Repository, https://github.com/I3EM/miniTEM
+Description-Content-Type: text/markdown
+
+# Mini TEM
+This project aims at making a very lightweight simulation of a transmission electron microscope
+
+## Use
+To use this project you can use `mini_tem\i2tem.py` or `mini_tem\i2tem.json` to design your own microscope using the 
+components provided (For now lenses, biprims, shifters, deflectors, samples and stigmators).
+
+## Components
+The class `Component` is used as an interface to standardize how the components are used. 
+It's possible to make your own components by inheriting from it.
+Some basic components are provided:
+
+### Lenses
+Lenses are the most important component of the microscope. They are used to focus the beam of electrons.
+
+### Biprims
+Biprims are used to split the electron beam into two beams.
+
+### Shifters
+Shifters are used to shift the beam of electrons along a direction perpendicular to the optical axis.
+
+### Deflectors
+Deflectors are used to deflect the beam of electrons along a direction parallel to the optical axis.
+
+### Samples
+Samples are used to simulate an interaction between the beam of electrons and an object.
