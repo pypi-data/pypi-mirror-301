@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: the-fairly-project
+Version: 0.1
+Summary: A package for analyzing the fairness of text data
+Home-page: https://github.com/ethical-spectacle/fair-ly/pypi_package
+Author: Maximus Powers
+Author-email: maximuspowersdev@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<2
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: gradio
+
+# The Fair-ly Project
+
+This is a Python package designed to make it easy to work with SOTA bias detection technology. 
+
+You can find the official docs [here](https://ethical-spectacle-research.gitbook.io/the-fair-ly-project/toolkit/python-package).

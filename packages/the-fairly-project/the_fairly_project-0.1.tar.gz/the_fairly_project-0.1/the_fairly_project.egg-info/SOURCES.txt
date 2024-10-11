@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+fairly/__init__.py
+fairly/analyzer.py
+fairly/test.py
+the_fairly_project.egg-info/PKG-INFO
+the_fairly_project.egg-info/SOURCES.txt
+the_fairly_project.egg-info/dependency_links.txt
+the_fairly_project.egg-info/requires.txt
+the_fairly_project.egg-info/top_level.txt
