@@ -1,0 +1,3 @@
+[console_scripts]
+aoc-ocr=aococr.ocr:ocr_cli
+

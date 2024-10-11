@@ -1,0 +1,12 @@
+aococr/__init__.py,sha256=JFuKpBpocivUlkpTNBAqxifC86qX-XWRTnxs-IBIETw,124
+aococr/config.py,sha256=U9NptJ_9tZ_5d-C5wEX7cU8nqeoO0v5H69vkxonqEzA,366
+aococr/data/fontsize_10x6.txt,sha256=JJcA5xpP-GZ8m6sburfpG5TsCaTBV2pASiAHsbNE-gk,1123
+aococr/data/fontsize_6x4.txt,sha256=7Z-EgpPwYUiiZDaJwKapWq5f_LoOC9NDl5eyDybabzU,628
+aococr/ocr.py,sha256=ymECaNLQxC7Z0Xj4aj2j48jkAEU88t8qQHzbwbfga1I,6583
+aococr/parsing.py,sha256=Tg3ORcjhZOBfIFqpFSCc-x0-maNh2BHBxCGvgX8XLH4,1088
+aococr/resources.py,sha256=AeQsbkdvVGkBByeOFolVc7OcPgDazoW8iXPMNKLdCGQ,628
+aococr-0.2.0.dist-info/LICENSE,sha256=KYvJ1sg2SNHX8MA3I4TT7GylWg6fiB0TTwuKKA0HP-U,1072
+aococr-0.2.0.dist-info/METADATA,sha256=ZH7230m-eG_oQA618MMPr2ukw3yrXNfUQy3-UtCTotk,2171
+aococr-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aococr-0.2.0.dist-info/entry_points.txt,sha256=z0mr4RXuK3lSIwqPFm7_TMyHO5g2-sP9fR3MTywG0e8,46
+aococr-0.2.0.dist-info/RECORD,,
