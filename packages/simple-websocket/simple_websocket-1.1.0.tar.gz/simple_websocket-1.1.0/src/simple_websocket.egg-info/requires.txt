@@ -1,0 +1,10 @@
+wsproto
+
+[dev]
+tox
+flake8
+pytest
+pytest-cov
+
+[docs]
+sphinx
