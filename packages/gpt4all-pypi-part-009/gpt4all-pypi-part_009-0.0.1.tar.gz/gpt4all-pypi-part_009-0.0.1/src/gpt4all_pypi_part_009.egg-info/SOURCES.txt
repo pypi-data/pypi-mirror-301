@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+src/gpt4all-pypi-part_009/__init__.py
+src/gpt4all-pypi-part_009/input/gpt4all.zip.009
+src/gpt4all_pypi_part_009.egg-info/PKG-INFO
+src/gpt4all_pypi_part_009.egg-info/SOURCES.txt
+src/gpt4all_pypi_part_009.egg-info/dependency_links.txt
+src/gpt4all_pypi_part_009.egg-info/requires.txt
+src/gpt4all_pypi_part_009.egg-info/top_level.txt
