@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rbac_rag"
+version = "0.1.2"
+description = "Simple, Safe, and Secure RAG"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "pymongo",
+    "requests",
+    "python-dotenv",
+    "pydantic",
+    "numpy",
+]
+
+[project.scripts]
+rbac_rag = "rbac_rag:main"
