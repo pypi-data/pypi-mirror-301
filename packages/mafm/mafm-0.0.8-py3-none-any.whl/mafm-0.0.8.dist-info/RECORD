@@ -1,0 +1,11 @@
+mafm/__init__.py,sha256=6oNZQPtMy6XMUebMvlsIUtnDpW0XxnzDkyMyrnQKGFM,356
+mafm/cli.py,sha256=H12FdnQHLzByhjpkjPoFZN_B44LDr3bJcOqT-nnTcNI,289
+mafm/constants.py,sha256=fsJuzzGLMbCUsVHgninin2K-sy4Av5qWb05RnpMsawU,2651
+mafm/ldmatrix.py,sha256=Vjwa85udCtegF7fTu9VwQmO_yBDF34g7DEjdvmPxT28,6059
+mafm/mafm.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+mafm/sumstats.py,sha256=kMB29UGMYBaxFkMJ8L0DJhlBde3Aeae69AcI841f-YQ,19066
+mafm/utils.py,sha256=_-OqnCO25mvMh726F20WVQoqa3GxpSwa-KxaxgWYEYE,3119
+mafm-0.0.8.dist-info/LICENSE,sha256=Zg_pD3Ia8sQJgj6WxrhjBtZzNbSbVf1z5bw-VW5em0E,1070
+mafm-0.0.8.dist-info/METADATA,sha256=-AuFcF11NH2f0kKPIArFHgJGk2h-YtzGINmZfgc7jMk,1682
+mafm-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mafm-0.0.8.dist-info/RECORD,,
