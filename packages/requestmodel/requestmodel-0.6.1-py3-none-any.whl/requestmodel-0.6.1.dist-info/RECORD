@@ -1,0 +1,15 @@
+requestmodel/__init__.py,sha256=NzWEKasCG9h_EVQ5K0SPGBACUH2MrNK2gtPzhuxV0AM,125
+requestmodel/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requestmodel/adapters/base.py,sha256=oxKtvTjxXWwXoeIvpr4MoT07jqNlXkdjxaege9-8dnI,316
+requestmodel/adapters/httpx.py,sha256=qglTrKk1h2PjJPQl6BPW8sTpKFIm1k0YGSQ3wz3njsg,1136
+requestmodel/adapters/requests.py,sha256=ytIZr0nqQ3p8uUuuqM89fdYc2_JvQu_ObXRJhl5PAvM,1702
+requestmodel/fastapi.py,sha256=U4gWb4wx37uUqUs0C-UEDxvNijnyL8dM8yl4XBH2yPo,9936
+requestmodel/model.py,sha256=g8qY6rlTC7ZqPAsTomL5mtqenVByje3Kcb-cWh_zab8,4901
+requestmodel/params.py,sha256=xuA2bcu64o_Q7lB89eHkkFVU6kBjsl9UGeAplk-hKWU,679
+requestmodel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requestmodel/typing.py,sha256=0LHX6MDdkB1Z0YDeaXdX9wrMFTWcRpai6E2RAHikwH8,278
+requestmodel/utils.py,sha256=UZyWp5t3bhzyRbbInJ7KJvn4hlm8rQzZDacp9C3swH8,2822
+requestmodel-0.6.1.dist-info/LICENSE,sha256=mPi4CIU4pinODnrksUwzExEuDt9HBDrUC4WsUQY6Ggk,1071
+requestmodel-0.6.1.dist-info/METADATA,sha256=P0qlaqITiM1HdixQAzhQyQlNWDASeJkb8vY2tDQnlcU,3518
+requestmodel-0.6.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+requestmodel-0.6.1.dist-info/RECORD,,
