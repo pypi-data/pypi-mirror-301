@@ -1,0 +1,12 @@
+ssdportal/__init__.py,sha256=hgpZyu2vz6WzBMJH4trc5D4ni2JcSZbBfi1k8vTaEXw,87
+ssdportal/config.py,sha256=kpv5E6JzAx4I2mWA5x5yBwPumtA-mvbSSPcy7qEPmEE,493
+ssdportal/contact.py,sha256=Q6vKmsJZrzm_Hwziteg0Pr1ibGsf8BjfMEk8r98vFn4,1387
+ssdportal/message.py,sha256=hhZT61aaYk6rJO7O69uUQMm7xyRqUf7RUFq6-W4ZVM4,552
+ssdportal/module.py,sha256=ufEy4S3Oe7kY0WjKnrjhIIsujs22raCBiZBKi336dmQ,515
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module.py,sha256=4xaKBGsMelOJgUScPB5Inwabz5I62xPMYfprH3dLvr8,110
+ssdportal-0.0.2.dist-info/LICENSE,sha256=XVdbF2M4raG9rgm8gn9rXeNsjbAPuab4PyySlbJlutg,1074
+ssdportal-0.0.2.dist-info/METADATA,sha256=Xx88kunITuzXUmTpmATcaJEDc9y6WRVkCf6wnW2AdJU,454
+ssdportal-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ssdportal-0.0.2.dist-info/top_level.txt,sha256=DaKOVlw_1BMsbpXOz2iVbDUNYPEBcmZNKY7tnOH678c,16
+ssdportal-0.0.2.dist-info/RECORD,,
