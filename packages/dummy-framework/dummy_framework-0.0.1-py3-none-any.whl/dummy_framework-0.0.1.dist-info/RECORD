@@ -1,0 +1,8 @@
+dummy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dummy/api.py,sha256=no1V9EnqZZTVppSQcUYnf_nVUYGu6NEBy975GFJ50TM,4346
+dummy/middleware.py,sha256=jeOkD31iQjtL9PvjrgI4hycc92n2klh3e-FTsyCXMJk,706
+dummy/response.py,sha256=n2ARDpMm3L9ON5I_YSzlO94z_nHJNOFSE_GncosixYk,1016
+dummy_framework-0.0.1.dist-info/METADATA,sha256=G8qFf8OU8WHrk7zUMW3aSCtTl9tCo7DPJwLyjmY8rYI,4040
+dummy_framework-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+dummy_framework-0.0.1.dist-info/top_level.txt,sha256=0-tTmlVjUvP0eIHXH7Dld3svPppCUdKDwYxnzplndLc,6
+dummy_framework-0.0.1.dist-info/RECORD,,
