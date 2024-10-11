@@ -1,0 +1,2 @@
+[console_scripts]
+proxmox-info = proxmox_info.pminfo:main
