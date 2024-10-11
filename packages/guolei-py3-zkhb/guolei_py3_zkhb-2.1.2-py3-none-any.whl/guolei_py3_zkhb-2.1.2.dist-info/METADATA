@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: guolei-py3-zkhb
+Version: 2.1.2
+Summary: 中科华博 API
+Home-page: https://github.com/guolei19850528/guolei_py3_zkhb
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: guolei-py3-requests
+Requires-Dist: requests
+Requires-Dist: diskcache
+Requires-Dist: redis
+Requires-Dist: addict
+Requires-Dist: retrying
+Requires-Dist: jsonschema
+Requires-Dist: xmltodict
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+# guolei_py3_zkhb
+### a python3 library for zhkb
+# Example
+```python
+from guolei_py3_zkhb.library.pmf import (
+    Api, UrlSetting
+)
+api = Api(base_url="YOUR BASE URL")
+actual_charge_list = api.query_actual_charge_list(
+    estate_id="<ESTATE ID>",
+    types="<TYPES>",
+    room_no="<ROOM NO>",
+    end_date="<END DATE>"
+)
+```
