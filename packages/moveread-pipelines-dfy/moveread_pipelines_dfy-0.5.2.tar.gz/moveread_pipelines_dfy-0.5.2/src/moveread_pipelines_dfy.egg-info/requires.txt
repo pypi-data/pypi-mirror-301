@@ -1,0 +1,7 @@
+moveread-pipelines-input-validation
+moveread-pipelines-game-preprocess>=0.5.0
+moveread-pipelines-ocr-predict
+moveread-pipelines-game-correction
+pipeteer
+moveread-core
+python-kv[server]
