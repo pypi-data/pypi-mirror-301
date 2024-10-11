@@ -1,0 +1,29 @@
+stages:
+  - build
+
+# build-dev
+build-dev:
+  image: python:3.12.4-bullseye
+  stage: build
+  tags:
+  - scc
+  only:
+    - dev
+  before_script:
+  - apt-get update -y
+  - python3.12 -m pip install --upgrade pip
+  - pip3.12 install poetry
+
+  script:
+  - echo "----------------------Install dependency----------------------"
+  - poetry install
+
+  - echo "----------------------Run test--------------------------------"
+  - poetry run pytest
+
+  - echo "----------------------Build plugin----------------------------"
+  - poetry run python mkp_packer.py
+  artifacts:
+    paths:
+      - "*.mkp"
+    expire_in: 1 day

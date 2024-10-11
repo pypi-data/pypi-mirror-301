@@ -1,0 +1,4 @@
+[console_scripts]
+create-cmk-active-check=cmk_active_check_maker:create_cmk_active_check
+welcome=cmk_active_check_maker:welcome
+
