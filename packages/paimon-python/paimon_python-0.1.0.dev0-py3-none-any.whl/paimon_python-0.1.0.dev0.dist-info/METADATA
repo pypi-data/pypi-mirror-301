@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: paimon_python
+Version: 0.1.0.dev0
+Summary: Apache Paimon Python API
+Home-page: https://paimon.apache.org
+Author: Apache Software Foundation
+Author-email: dev@paimon.apache.org
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: py4j ==0.10.9.7
+Requires-Dist: python-dateutil <3,>=2.8.0
+Requires-Dist: pytz >=2018.3
+Requires-Dist: numpy >=1.22.4
+Requires-Dist: pandas >=1.3.0
+Requires-Dist: pyarrow >=5.0.0
+
+See Apache Paimon Python API     [Doc](https://paimon.apache.org/docs/master/program-api/python-api/) for usage.
