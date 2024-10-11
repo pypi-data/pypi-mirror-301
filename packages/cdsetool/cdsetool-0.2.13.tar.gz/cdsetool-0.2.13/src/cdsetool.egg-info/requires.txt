@@ -1,0 +1,13 @@
+typer<1,>=0.9
+rich<14,>=13.6
+requests<3,>=2.28.1
+pyjwt[crypto]<2.10,>=2.8
+geopandas>=0.13.2
+
+[test]
+pylint==3.3.1
+pytest==8.3.3
+pytest-cov==5.0.0
+requests-mock==1.12.1
+ruff==0.6.6
+pytest-mock==3.14.0
