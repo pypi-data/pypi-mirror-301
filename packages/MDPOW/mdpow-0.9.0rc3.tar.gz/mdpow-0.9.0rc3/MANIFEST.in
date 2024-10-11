@@ -1,0 +1,5 @@
+include   setup.py setup.cfg COPYING INSTALL.rst README.rst AUTHORS CHANGES
+graft     mdpow/templates/
+graft     mdpow/top/
+include versioneer.py
+include mdpow/_version.py
