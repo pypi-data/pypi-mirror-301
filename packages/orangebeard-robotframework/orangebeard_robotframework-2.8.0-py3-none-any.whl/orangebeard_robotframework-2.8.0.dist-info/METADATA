@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: orangebeard-robotframework
+Version: 2.8.0
+Summary: A robotframework listener for Orangebeard
+Author-email: Tom Heintzberger <tom@orangebeard.io>
+Project-URL: Homepage, https://github.com/orangebeard-io/robotframework-listener
+Project-URL: Bug Tracker, https://github.com/orangebeard-io/robotframework-listener/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: robotframework >=6.1.1
+Requires-Dist: orangebeard-client >=2.3.0
+
