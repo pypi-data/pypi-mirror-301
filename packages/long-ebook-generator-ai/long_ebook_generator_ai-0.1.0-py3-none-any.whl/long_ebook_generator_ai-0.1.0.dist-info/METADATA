@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: long-ebook-generator-ai
+Version: 0.1.0
+Summary: An A.I. tool for generating long Kindle ebooks based on a prompt
+Home-page: UNKNOWN
+Author: Alexis Kirke
+Author-email: alexiskirke2@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: tiktoken
+Requires-Dist: ebooklib
+Requires-Dist: gpt4all
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: latex2mathml
+
+# long_ebook_generator_ai
+
+## Overview
+`long_ebook_generator_ai` is a Python package designed to generate a long (or short) eBook based on an AI-generated outline. It leverages AI to create structured book content with chapters, sections, and paragraphs, and can automatically create ePub files. The script can also generate a book cover image if desired. The output eBook can be used for Kindle and other eBook readers.
+
+## Features
+- **Outline Generation**: Automatically generate a book outline with customizable depth and structure.
+- **eBook Creation**: Converts the generated outline into an ePub file format.
+- **Customizable Content**: Allows specifying the number of chapters, sections, and paragraphs for the generated book.
+- **Cover Image Generation**: Option to generate a cover image based on an AI-prompt.
+- **Kindle Compatibility**: Ensures that the generated ePub file is compatible with Kindle devices if needed.
+
+## Usage
+
+### 1. Create a Book Outline
+You can generate a book outline by providing the book title and specifying the desired structure:
+- **num_chapters**: Number of chapters in the book.
+- **sections_per_chapter**: Number of sections per chapter.
+- **subsections_per_section**: Number of subsections within each section.
+- **paras_per_subsection**: Number of paragraphs per subsection.
+
+Example:
+```python
+book_writer = BookWriter("How to become a Film Producer", use_gpt4all=False)
+book_writer.generate_outline(num_chapters=3, sections_per_chapter=2, subsections_per_section=3, paras_per_subsection=3)
+```
+
+### 2. Generate the eBook
+Once the outline is generated, you can create an ePub file. You have the option to generate a cover image by providing an `image_prompt` for AI-based image generation.
+
+Example:
+```python
+image_prompt = "Photo realistic cover of How to become a Film Producer"
+book_writer.generate_ebook(author='Alexis Kirke', image_prompt=image_prompt)
+```
+
+### 3. Save the eBook
+The script automatically saves the generated eBook in the current working directory with a filename based on the book title. The ePub file will be Kindle-compatible if the `force_kindle_compatibility` flag is set to `True`.
+
+### Example Workflow
+```python
+if __name__ == "__main__":
+    title = 'How to become a Film Producer in the age of Indies, Netflix, YouTube, and A.I.: A Step by Step Guide'
+    book_writer = BookWriter(title, use_gpt4all=False)
+    book_writer.generate_outline(num_chapters=3, sections_per_chapter=2, subsections_per_section=3, paras_per_subsection=3)
+
+    image_prompt = "Photo realistic. " + title
+    book_writer.generate_ebook(author='Alexis Kirke', image_prompt=image_prompt)
+```
+
+## Customization
+
+### Parameters
+You can customize the output by modifying the following parameters during the outline and eBook generation processes:
+- **title**: The title of your book.
+- **author**: The author name to be included in the book.
+- **num_chapters**: Number of chapters.
+- **sections_per_chapter**: Number of sections per chapter.
+- **subsections_per_section**: Number of subsections in each section.
+- **paras_per_subsection**: Number of paragraphs per subsection.
+- **generate_cover**: Boolean to indicate whether to generate a cover image.
+- **force_kindle_compatibility**: Ensures the ePub file is Kindle-compatible.
+
+## Dependencies
+- **OpenAI**: Used to generate the book outline and content. Make sure you have access to the OpenAI API key.
+- **EpubLib**: A library for creating and manipulating ePub files.
+- **HTML**: Used to sanitize content and ensure it's properly formatted for ePub creation.
+
+## License
+This project is open-source. You are free to use, modify, and distribute it under the terms of the MIT license.
+
+
+
