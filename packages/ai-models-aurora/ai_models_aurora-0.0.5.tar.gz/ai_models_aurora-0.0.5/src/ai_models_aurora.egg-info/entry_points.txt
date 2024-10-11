@@ -1,0 +1,5 @@
+[ai_models.model]
+aurora = ai_models_aurora.model:model
+aurora-0.1-finetuned = ai_models_aurora.model:Aurora0p1FineTuned
+aurora-2.5-finetuned = ai_models_aurora.model:Aurora0p25FineTuned
+aurora-2.5-pretrained = ai_models_aurora.model:Aurora0p25Pretrained
