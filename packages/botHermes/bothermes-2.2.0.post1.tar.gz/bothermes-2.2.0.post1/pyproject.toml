@@ -1,0 +1,39 @@
+#########################################################
+#   HERMES - github.com/baronefr/hermes
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#  coder: Barone Francesco, last edit: 10 Oct 2024
+#--------------------------------------------------------
+
+# Choosing a build backend:
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "botHermes"
+version = "2.2.0-1"
+description = "Telegram bot for messages, task notifications & system management"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Francesco Barone"}
+]
+dependencies = [
+  "pyTelegramBotAPI",
+  "termcolor"
+]
+
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/baronefr/hermes"
+Issues = "https://github.com/baronefr/hermes/issues"
+Documentation = "https://hermes-bot.readthedocs.io/en/latest/"
+
+[project.scripts]
+hermes = "hermes:__main__"
+hermes-setup = "hermes.setup:main"
