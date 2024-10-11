@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ssdportal
+Version: 0.0.2
+Summary: Official Python SDK for SSDPortal
+Home-page: https://github.com/david-marko/ssdportal-python
+Author: David Marko
+Author-email: info@davemarko.com
+Keywords: ['python','sms','southsudan','south sudan']
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ssdportal/__init__.py
+ssdportal/config.py
+ssdportal/contact.py
+ssdportal/message.py
+ssdportal/module.py
+ssdportal.egg-info/PKG-INFO
+ssdportal.egg-info/SOURCES.txt
+ssdportal.egg-info/dependency_links.txt
+ssdportal.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module.py
