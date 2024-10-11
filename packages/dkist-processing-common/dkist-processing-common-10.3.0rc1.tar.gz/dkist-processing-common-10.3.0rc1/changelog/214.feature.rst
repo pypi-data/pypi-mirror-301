@@ -1,0 +1,2 @@
+Update the machinery in `quality_store_polcal_results` to handle NaN values.
+This is required for the new error-handling paradigm in `dkist-processing-pac` VERSIONXXXXXX.
