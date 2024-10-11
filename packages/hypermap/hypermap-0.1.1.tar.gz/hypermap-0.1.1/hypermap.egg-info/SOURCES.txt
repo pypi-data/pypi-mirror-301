@@ -1,0 +1,9 @@
+setup.py
+hypermap.egg-info/PKG-INFO
+hypermap.egg-info/SOURCES.txt
+hypermap.egg-info/dependency_links.txt
+hypermap.egg-info/requires.txt
+hypermap.egg-info/top_level.txt
+package/__init__.py
+package/hypermap.py
+package/utils.py
