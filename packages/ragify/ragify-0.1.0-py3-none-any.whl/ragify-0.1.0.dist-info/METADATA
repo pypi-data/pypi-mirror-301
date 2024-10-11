@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: ragify
+Version: 0.1.0
+Summary: Convert any website into RAG vector DB
+Project-URL: Homepage, https://github.com/fcakyon/ragify
+Project-URL: Repository, https://github.com/fcakyon/ragify.git
+Project-URL: Bug Tracker, https://github.com/fcakyon/ragify/issues
+Author-email: Fatih Cagatay Akyon <fatih@safevideo.ai>
+License-File: LICENSE.md
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# ragify
+
+Convert any website into RAG vector DB
+
+Coming soon into PyPI...
