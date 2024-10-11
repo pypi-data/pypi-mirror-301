@@ -1,0 +1,2 @@
+[console_scripts]
+geotrame = pan3d.serve_geotrame:serve
