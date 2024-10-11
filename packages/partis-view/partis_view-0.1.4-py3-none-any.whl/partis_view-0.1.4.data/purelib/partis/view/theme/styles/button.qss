@@ -1,0 +1,433 @@
+
+
+QPushButton
+{
+  color: {{ color.control.fore }};
+
+  background-color: {{ color.control.edge |alpha(0.02) }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.control.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+
+  padding: 0.5ex;
+  outline: none;
+}
+
+QPushButton:hover
+{
+  background-color: {{ color.control.edge |alpha(0.1) }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+
+QPushButton:pressed
+{
+  color: {{ color.active.fore }};
+
+  background-color: {{ color.active.edge |alpha(0.1) }};
+
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QPushButton:checked
+{
+  background-color: {{ color.active.edge |alpha(0.3) }};
+
+}
+
+QPushButton::menu-indicator
+{
+    subcontrol-origin: padding;
+    subcontrol-position: bottom right;
+    left: 0.8ex;
+}
+
+QPushButton:disabled
+{
+  color: {{ color.control.fore |cinterp(color.static.back, 0.5) |desaturate(1) }};
+  background-color: {{ color.static.back |cinterp(color.control.edge, 0.1) }};
+  border-color: transparent;
+}
+
+LeftButton
+{
+  color: {{ color.control.fore }};
+
+  background-color: {{ color.control.edge |alpha(0.02) }};
+  border-style: solid;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.control.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-top-width: 0.1ex;
+  border-right-width: 0ex;
+  border-bottom-width: 0.1ex;
+  border-left-width: 0.1ex;
+
+  border-top-left-radius: 0.5ex;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.5ex;
+
+  padding: 0.5ex;
+  outline: none;
+}
+
+LeftButton[highlighted="true"],
+LeftButton:hover
+{
+  background-color: {{ color.control.edge |alpha(0.1) }};
+  border-style: solid;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-top-width: 0.1ex;
+  border-right-width: 0ex;
+  border-bottom-width: 0.1ex;
+  border-left-width: 0.1ex;
+
+  border-top-left-radius: 0.5ex;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.5ex;
+}
+
+LeftButton[emphasized="true"],
+LeftButton:pressed
+{
+  color: {{ color.active.fore }};
+
+  background-color: {{ color.active.edge |alpha(0.1) }};
+  border-style: solid;
+
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-top-width: 0.1ex;
+  border-right-width: 0ex;
+  border-bottom-width: 0.1ex;
+  border-left-width: 0.1ex;
+
+  border-top-left-radius: 0.5ex;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.5ex;
+}
+
+MiddleButton
+{
+  color: {{ color.control.fore }};
+
+  background-color: {{ color.control.edge |alpha(0.02) }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.control.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0ex 0ex 0ex 0ex;
+
+  padding: 0.5ex;
+  outline: none;
+}
+
+MiddleButton:hover
+{
+  background-color: {{ color.control.edge |alpha(0.1) }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0ex 0ex 0ex 0ex;
+}
+
+
+MiddleButton:pressed
+{
+  color: {{ color.active.fore }};
+
+  background-color: {{ color.active.edge |alpha(0.1) }};
+
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0ex 0ex 0ex 0ex;
+}
+
+RightButton
+{
+  color: {{ color.control.fore }};
+
+  background-color: {{ color.control.edge |alpha(0.02) }};
+  border-style: solid;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.control.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-top-width: 0.1ex;
+  border-right-width: 0.1ex;
+  border-bottom-width: 0.1ex;
+  border-left-width: 0ex;
+
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.5ex;
+  border-bottom-right-radius: 0.5ex;
+  border-bottom-left-radius: 0;
+
+  padding: 0.5ex;
+  outline: none;
+}
+
+RightButton[highlighted="true"],
+RightButton:hover
+{
+  background-color: {{ color.control.edge |alpha(0.1) }};
+  border-style: solid;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-top-width: 0.1ex;
+  border-right-width: 0.1ex;
+  border-bottom-width: 0.1ex;
+  border-left-width: 0ex;
+
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.5ex;
+  border-bottom-right-radius: 0.5ex;
+  border-bottom-left-radius: 0;
+}
+
+RightButton[emphasized="true"],
+RightButton:pressed
+{
+  color: {{ color.active.fore }};
+
+  background-color: {{ color.active.edge |alpha(0.1) }};
+  border-style: solid;
+
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-top-width: 0.1ex;
+  border-right-width: 0.1ex;
+  border-bottom-width: 0.1ex;
+  border-left-width: 0ex;
+
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.5ex;
+  border-bottom-right-radius: 0.5ex;
+  border-bottom-left-radius: 0;
+}
+
+QToolButton
+{
+  color: {{ color.control.fore }};
+
+  background-color: transparent;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+
+  padding: 0.5ex;
+  outline: none;
+
+}
+
+QToolButton[popupMode="1"] /* only for MenuButtonPopup */
+{
+    padding-right: 2ex; /* make way for the popup button */
+}
+
+QToolButton[popupMode="2"] /* only for InstantPopup */
+{
+    padding-right: 1ex; /* make way for the popup button */
+}
+
+QToolButton::menu-indicator
+{
+    border-image: url(images/icons/down_arrow.svg);
+    top: -0.7ex; left: -0.2ex; /* shift it a bit */
+    width = 0.9ex;
+    height = 0.6ex;
+}
+
+QToolButton::menu-arrow
+{
+    border-image: url(images/icons/down_arrow.svg);
+    width = 0.9ex;
+    height = 0.6ex;
+}
+
+QToolButton:hover,
+QToolButton::menu-button:hover
+{
+  background-color: {{ color.control.edge |alpha(0.1) }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QToolButton:checked,
+QToolButton:pressed,
+QToolButton::menu-button:pressed
+{
+  color: {{ color.active.fore }};
+
+  background-color: {{ color.active.edge |alpha(0.1) }};
+
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QToolButton::menu-button
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* 1ex width + 0.4ex for border + no text = 2ex allocated above */
+    width: 1ex;
+    padding: 0.5ex;
+    outline: none;
+}
+
+QToolButton::menu-arrow:open
+{
+    border: 0.1ex solid {{ color.static.edge }};
+}
+
+QToolBar
+{
+  icon-size: 0.8em;
+  font-size: 0.75em;
+
+  background-color: transparent;
+
+  border-width: 0ex;
+  border-radius: 0.5ex;
+
+  padding: 0.5ex;
+
+}
+
+QToolBar QToolButton
+{
+  icon-size: 1.1em;
+  font-size: 1em;
+
+  border-bottom-color: {{ color.control.edge |alpha(0.5) }};
+}
+
+QToolBar QPushButton
+{
+  icon-size: 1.1em;
+  font-size: 1em;
+}
+
+QToolBar::handle:horizontal
+{
+    border-image: url(images/base/hmovetoolbar.svg);
+    width = 1.6ex;
+    height = 6.4ex;
+}
+
+QToolBar::handle:vertical
+{
+    border-image: url(images/base/vmovetoolbar.svg);
+    width = 5.4ex;
+    height = 1ex;
+}
+
+QToolBar::separator:horizontal
+{
+    border-image: url(images/base/hsepartoolbar.svg);
+    width = 0.7ex;
+    height = 6.3ex;
+}
+
+QToolBar::separator:vertical
+{
+    border-image: url(images/base/vsepartoolbars.svg);
+    width = 6.3ex;
+    height = 0.7ex;
+}
+
+QPushButton#edit,
+QToolButton#edit
+{
+  qproperty-icon : {{ 'images/icons/edit.svg' | svg }};
+}
+
+QPushButton#script,
+QToolButton#script
+{
+  qproperty-icon : {{ 'images/icons/script.svg' | svg }};
+}
+
+QPushButton#script_active,
+QToolButton#script_active
+{
+  qproperty-icon : {{ 'images/icons/script.svg' | svg(fore = color.active.edge) }};
+}

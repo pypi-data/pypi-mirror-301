@@ -1,0 +1,408 @@
+QFrame[frameShape="2"],  /* QFrame::Panel == 0x0003 */
+QFrame[frameShape="3"],  /* QFrame::WinPanel == 0x0003 */
+QFrame[frameShape="4"],  /* QFrame::HLine == 0x0004 */
+QFrame[frameShape="5"],  /* QFrame::VLine == 0x0005 */
+QFrame[frameShape="6"]  /* QFrame::StyledPanel == 0x0006 */
+{
+    border-width: 0.1ex;
+    padding: 0.1ex;
+    border-style: solid;
+    border-color: {{ color.static.back }};
+    background-color: #bcbfc2;
+    border-radius: 0.5ex;
+}
+
+QStackedWidget
+{
+    border: 0.1ex transparent black;
+}
+
+QSplitter::handle
+{
+    border: 0.1ex dashed {{ color.static.edge }};
+}
+
+QSplitter::handle:hover
+{
+    background-color: #787876;
+    border: 0.1ex solid {{ color.static.edge }};
+}
+
+QSplitter::handle:horizontal
+{
+    width: 0.1ex;
+}
+
+QSplitter::handle:vertical
+{
+    height: 0.1ex;
+}
+
+
+QTabWidget{
+    border: 0.1ex solid {{ color.static.edge }};
+}
+
+/* BORDERS */
+QTabWidget::pane
+{
+    padding: 0.5ex;
+    margin: 0.1ex;
+}
+
+QTabWidget::pane:top
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    top: -0.1ex;
+}
+
+QTabWidget::pane:bottom
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    bottom: -0.1ex;
+}
+
+QTabWidget::pane:left
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    right: -0.1ex;
+}
+
+QTabWidget::pane:right
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    left: -0.1ex;
+}
+
+QTabWidget:focus
+{
+    border: none;
+}
+
+QTabBar
+{
+    qproperty-drawBase: 0;
+    left: 0.5ex; /* move to the right by 0.5ex */
+    border-radius: 0.3ex;
+}
+
+QTabBar:focus
+{
+    border: 0ex transparent black;
+}
+
+QTabBar::close-button
+{
+    border-image: {{ 'images/icons/remove.svg' | svg }};
+    width: 1.2ex;
+    height: 1.2ex;
+    background: transparent;
+}
+
+QTabBar::close-button:hover
+{
+    border-image: {{ 'images/icons/remove.svg' | svg(fore = color.red.high) }};
+    width: 1.2ex;
+    height: 1.2ex;
+    background: transparent;
+}
+
+QTabBar::close-button:pressed
+{
+    border-image: {{ 'images/icons/remove.svg' | svg(fore = color.red.mid) }};
+    width: 1.2ex;
+    height: 1.2ex;
+    background: transparent;
+}
+
+QTabBar::tab
+{
+  color: {{ color.static.fore }};
+
+  border-style: solid;
+  border-radius: 0ex;
+
+  background: transparent;
+  padding: 0.5ex;
+}
+
+/* TOP TABS */
+QTabBar::tab:top
+{
+  border-width: 0ex 0.1ex 0.5ex 0.1ex;
+
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: {{ color.static.edge }};
+  min-width: 10ex;
+}
+
+QTabBar::tab:top:last,
+QTabBar::tab:top:only-one
+{
+  border-right-color: {{ color.static.edge }};
+  border-left-color: {{ color.static.edge }};
+  border-bottom-color: transparent;
+}
+
+QTabBar::tab:top:selected
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back |alpha(0.4) }};
+
+  border-bottom-color: {{ color.active.edge }};
+  border-left-color: {{ color.static.edge }};
+}
+
+QTabBar::tab:top:selected:last,
+QTabBar::tab:top:selected:only-one
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back |alpha(0.4) }};
+
+  border-right-color: {{ color.static.edge }};
+  border-bottom-color: {{ color.active.edge }};
+  border-left-color: {{ color.static.edge }};
+
+}
+
+QTabBar::tab:top:!selected:hover
+{
+  background-color: {{ color.active.back |alpha(0.2) }};
+}
+
+
+
+/* BOTTOM TABS */
+QTabBar::tab:bottom
+{
+  border-width: 0.5ex 0.1ex 0ex 0.1ex;
+
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-left-color: {{ color.static.edge }};
+  min-width: 10ex;
+}
+
+QTabBar::tab:bottom:last,
+QTabBar::tab:bottom:only-one
+{
+  border-right-color: {{ color.static.edge }};
+  border-left-color: {{ color.static.edge }};
+  border-top-color: transparent;
+}
+
+QTabBar::tab:bottom:selected
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back }};
+
+  border-top-color: {{ color.active.edge }};
+  border-left-color: {{ color.static.edge }};
+}
+
+QTabBar::tab:bottom:selected:last,
+QTabBar::tab:bottom:selected:only-one
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back }};
+
+  border-right-color: {{ color.static.edge }};
+  border-top-color: {{ color.active.edge }};
+  border-left-color: {{ color.static.edge }};
+
+}
+
+QTabBar::tab:bottom:!selected:hover
+{
+  background-color: {{ color.active.back |alpha(0.2) }};
+}
+
+/* LEFT TABS */
+QTabBar::tab:left
+{
+  border-width: 0.1ex 0.5ex 0ex 0.1ex;
+
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: {{ color.static.edge }};
+  min-height: 10ex;
+}
+
+QTabBar::tab:left:last,
+QTabBar::tab:left:only-one
+{
+  border-bottom-color: {{ color.static.edge }};
+  border-top-color: {{ color.static.edge }};
+  border-right-color: transparent;
+}
+
+QTabBar::tab:left:selected
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back }};
+
+  border-right-color: {{ color.active.edge }};
+  border-top-color: {{ color.static.edge }};
+}
+
+QTabBar::tab:left:selected:last,
+QTabBar::tab:left:selected:only-one
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back }};
+
+  border-bottom-color: {{ color.static.edge }};
+  border-right-color: {{ color.active.edge }};
+  border-top-color: {{ color.static.edge }};
+
+}
+
+QTabBar::tab:left:!selected:hover
+{
+  background-color: {{ color.active.back |alpha(0.2) }};
+}
+
+/* RIGHT TABS */
+QTabBar::tab:right
+{
+    color: {{ color.static.fore }};
+    border: 0.1ex transparent black;
+    border-top: 0.1ex solid {{ color.static.edge }};
+    border-left: 0.1ex solid {{ color.static.edge }};
+    background-color: #D9D8D7;
+    padding: 0.5ex;
+    border-top-left-radius: 0.2ex;
+    border-bottom-left-radius: 0.2ex;
+    min-height: 5ex;
+}
+
+QTabBar::tab:right:last,
+QTabBar::tab:right:only-one
+{
+    color: {{ color.static.fore }};
+    border: 0.1ex transparent black;
+    border-top: 0.1ex solid {{ color.static.edge }};
+    border-bottom: 0.1ex solid {{ color.static.edge }};
+    border-left: 0.1ex solid {{ color.static.edge }};
+    background-color: #D9D8D7;
+    padding: 0.5ex;
+    border-top-left-radius: 0.2ex;
+    border-bottom-left-radius: 0.2ex;
+    min-height: 5ex;
+}
+
+QTabBar::tab:right:!selected
+{
+    color: {{ color.static.fore }};
+    background-color: #54575B;
+    border: 0.1ex transparent black;
+    border-top: 0.1ex solid {{ color.static.edge }};
+    border-top-left-radius: 0.2ex;
+    border-bottom-left-radius: 0.2ex;
+}
+
+QTabBar::tab:right:!selected:hover
+{
+    background-color: rgba(61, 173, 232, 0.1);
+    border: 0.1ex rgba(61, 173, 232, 0.1);
+    border-top: 0.1ex solid {{ color.static.edge }};
+}
+
+QTabBar::tab:right:!selected:first:hover
+{
+    background-color: rgba(61, 173, 232, 0.1);
+    border: 0.1ex rgba(61, 173, 232, 0.1);
+}
+
+QTabBar QToolButton
+{
+    background: {{ color.static.back }};
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+QTabBar QToolButton::right-arrow:enabled
+{
+    background: {{ color.static.back }};
+    image: url(images/icons/forward.svg);
+}
+
+QTabBar QToolButton::left-arrow:enabled
+{
+    background: {{ color.static.back }};
+    image: url(images/icons/back.svg);
+}
+
+QTabBar QToolButton::right-arrow:disabled
+{
+    background: {{ color.static.back }};
+    image: url(images/icons/forward.svg);
+}
+
+QTabBar QToolButton::left-arrow:disabled
+{
+    background: {{ color.static.back }};
+    image: url(images/icons/back.svg);
+}
+
+
+QToolBox
+{
+    padding: 0.5ex;
+    border: 0.1ex transparent black;
+}
+
+QToolBox:selected
+{
+    background-color: {{ color.active.back }};
+    border-color: {{ color.active.edge }};
+}
+
+QToolBox:hover
+{
+    border-color: {{ color.active.back }};
+}
+
+QDockWidget
+{
+    background: {{ color.static.back }};
+    border: 0.1ex solid #403F3F;
+    titlebar-close-icon: url(images/base/transparent.svg);
+    titlebar-normal-icon: url(images/base/transparent.svg);
+}
+
+QDockWidget::close-button,
+QDockWidget::float-button
+{
+    border: 0.1ex solid transparent;
+    border-radius: 0.5ex;
+    background: transparent;
+}
+
+
+QDockWidget::float-button
+{
+    border-image: url(images/base/undock.svg);
+}
+
+QDockWidget::float-button:hover
+{
+    border-image: url(images/base/undock-hover.svg) ;
+}
+
+QDockWidget::close-button
+{
+    border-image: url(images/base/close.svg) ;
+}
+
+QDockWidget::close-button:hover
+{
+    border-image: url(images/base/close-hover.svg) ;
+}
+
+QDockWidget::close-button:pressed
+{
+    border-image: url(images/base/close-pressed.svg) ;
+}

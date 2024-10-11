@@ -1,0 +1,161 @@
+
+QWidget
+{
+  color: {{ color.static.fore }};
+  background-color: none;
+
+  selection-color: {{ color.static.fore }};
+  selection-background-color: {{ color.active.back |alpha(0.4) }};
+
+  background-clip: border;
+  border-image: none;
+  border: 0px transparent black;
+  outline: 0;
+
+  font: {{ text.narrative.size |pt }} "{{ text.narrative.font }}"
+}
+
+QWidget:focus
+{
+  border: 0.1ex solid {{ color.active.edge_alt }};
+}
+
+QWidget:disabled
+{
+  color: {{ color.static.fore |cinterp(color.static.back, 0.5) |desaturate(1) }};
+  background-color: {{ color.static.back |desaturate(1) }};
+}
+
+QWidget[popoutStyle="true"] {
+  background-color: {{ color.static.back }};
+  border: 0.1ex solid {{ color.static.edge }};
+  border-radius: 0.5ex;
+}
+
+QMainWindow
+{
+  background-color: {{ color.static.back }};
+}
+
+QMainWindow::separator
+{
+    background-color: {{ color.static.back }};
+    color: white;
+    padding-left: 0.4ex;
+    spacing: 0.2ex;
+    border: 0.1ex dashed {{ color.static.edge }};
+}
+
+QMainWindow::separator:hover
+{
+
+    background-color: {{ color.static.edge_alt }};
+    color: white;
+    padding-left: 0.4ex;
+    border: 0.1ex solid {{ color.static.edge }};
+    spacing: 0.2ex;
+}
+
+QAbstractItemView
+{
+  color: {{ color.dynamic.fore }};
+  background-color: {{ color.dynamic.back }};
+  alternate-background-color: {{ color.dynamic.back_alt }};
+
+  selection-color: {{ color.dynamic.fore }};
+  selection-background-color: {{ color.active.back |alpha(0.4) }};
+
+  /* Controls whether selections cover the entire row */
+  show-decoration-selected: 1;
+
+  border: 0.1ex solid {{ color.dynamic.edge }};
+  border-radius: 0.5ex;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+QAbstractItemView::item
+{
+  color: {{ color.dynamic.fore }};
+
+  outline: 0;
+  margin: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0ex 0ex 0.1ex 0ex;
+  padding: 0.3ex;
+}
+
+QAbstractItemView::item:!selected:hover
+{
+  color: {{ color.dynamic.fore }};
+  background-color: {{ color.active.back |alpha(0.2) }};
+
+  border-color: {{ color.active.edge |alpha(0.5) }};
+}
+
+QAbstractItemView::item:selected {
+  color: {{ color.dynamic.fore }};
+  background-color: {{ color.active.back |alpha(0.4) }};
+
+  border-color: {{ color.active.edge |alpha(0.75) }};
+}
+
+QAbstractItemView::item:pressed
+{
+  color: {{ color.dynamic.fore }};
+  background-color: {{ color.active.back |alpha(0.4) }};
+
+  border-color: {{ color.active.edge |alpha(0.75) }};
+}
+
+QDialog
+{
+  background-color: {{ color.static.back }};
+}
+
+QLabel
+{
+  border: 0ex solid black;
+}
+
+Heading1 {
+  font: {{ text.narrative.size*1.6 |round|int }};
+  font-weight: bold;
+}
+
+Heading2 {
+  font: {{ text.narrative.size*1.4 |round|int }};
+  font-weight: bold;
+}
+
+Heading3 {
+  font: {{ text.narrative.size*1.2 |round|int }};
+  font-weight: bold;
+}
+
+HLine {
+  border-width: 0.1ex;
+  padding: 0.1ex;
+  border-style: solid;
+  border-color: {{ color.static.edge_alt }};
+  background-color: {{ color.static.back_alt }};
+  border-radius: 0.5ex;
+}
+
+QToolTip
+{
+  border: 0.1ex solid {{ color.static.fore }};
+  background-color: {{ color.static.back }};
+  alternate-background-color: {{ color.static.back_alt }};
+  color: {{ color.static.fore }};
+  padding: 0.5ex;
+}
+
+QSizeGrip
+{
+  border-image: url(images/base/sizegrip.svg);
+  width: 1.2ex;
+  height: 1.2ex;
+}

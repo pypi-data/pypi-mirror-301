@@ -1,0 +1,131 @@
+
+QMenuBar
+{
+    background-color: {{ color.static.back }};
+    color: {{ color.static.fore }};
+}
+
+QMenuBar:focus
+{
+    border: 0.1ex solid {{ color.active.back }};
+}
+
+QMenuBar::item
+{
+    background: transparent;
+}
+
+QMenuBar::item:selected
+{
+    background: transparent;
+    border: 0.1ex solid {{ color.static.edge }};
+}
+
+QMenuBar::item:pressed
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    background-color: {{ color.active.back }};
+    color: {{ color.static.fore }};
+    margin-bottom: -0.1ex;
+    padding-bottom: 0.1ex;
+}
+
+QMenu
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    color: {{ color.static.fore }};
+    margin: 0.2ex;
+}
+
+QMenu::icon
+{
+    margin: 0.5ex;
+}
+
+QMenu::item
+{
+    padding: 0.5ex 3ex 0.5ex 3ex;
+    margin-left: 0.5ex;
+    border: 0.1ex solid transparent; /* reserve space for selection border */
+}
+
+QMenu::item:hover
+{
+  color: {{ color.active.fore_alt }};
+  background-color: {{ color.active.back_alt }};
+}
+
+QMenu::item:selected
+{
+  color: {{ color.active.fore }};
+  background-color: {{ color.active.back }};
+}
+
+QMenu::separator
+{
+    height: 0.2ex;
+    background: lightblue;
+    margin-left: 1ex;
+    margin-right: 0.5ex;
+}
+
+QMenu::separator
+{
+    height: 0.1ex;
+    background-color: {{ color.static.edge }};
+    color: {{ color.static.fore }};
+    padding-left: 0.4ex;
+    margin-left: 1ex;
+    margin-right: 0.5ex;
+}
+
+/* non-exclusive indicator = check box style indicator
+   (see QActionGroup::setExclusive) */
+QMenu::indicator:non-exclusive:unchecked
+{
+    border-image: url(images/base/checkbox_unchecked_disabled.svg);
+}
+
+QMenu::indicator:non-exclusive:unchecked:selected
+{
+    border-image: url(images/base/checkbox_unchecked_disabled.svg);
+}
+
+QMenu::indicator:non-exclusive:checked
+{
+    border-image: url(images/base/checkbox_checked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked:selected
+{
+    border-image: url(images/base/checkbox_checked.svg);
+}
+
+/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:exclusive:unchecked
+{
+    border-image: url(images/base/radio_unchecked_disabled.svg);
+}
+
+QMenu::indicator:exclusive:unchecked:selected
+{
+    border-image: url(images/base/radio_unchecked_disabled.svg);
+}
+
+QMenu::indicator:exclusive:checked
+{
+    border-image: url(images/base/radio_checked.svg);
+}
+
+QMenu::indicator:exclusive:checked:selected
+{
+    border-image: url(images/base/radio_checked.svg);
+}
+
+QMenu::right-arrow
+{
+    margin: 0.5ex;
+    border-image: url(images/base/right_arrow.svg);
+    width: 0.6ex;
+    height: 0.9ex;
+}

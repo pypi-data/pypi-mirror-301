@@ -1,0 +1,527 @@
+
+QComboBox,
+QAbstractSpinBox,
+QLineEdit,
+QTextEdit,
+QPlainTextEdit,
+QAbstractView
+{
+  color: {{ color.control.fore_alt }};
+  background-color: {{ color.control.back_alt }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.control.edge_alt |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QComboBox:hover,
+QAbstractSpinBox:hover,
+QLineEdit:hover,
+QTextEdit:hover,
+QPlainTextEdit:hover,
+QAbstractView:hover
+{
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QComboBox:hover:pressed,
+QPushButton:hover:pressed,
+QAbstractSpinBox:hover:pressed,
+QLineEdit:hover:pressed,
+QTextEdit:hover:pressed,
+QPlainTextEdit:hover:pressed,
+QAbstractView:hover:pressed
+{
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QLineEdit
+{
+
+}
+
+QTextEdit
+{
+
+}
+
+QPlainTextEdit
+{
+
+}
+
+CodeText
+{
+    font: {{ text.syntactic.size |pt }} "{{ text.syntactic.font }}";
+}
+
+CodeText QToolTip
+{
+    font: {{ text.syntactic.size |pt }} "{{ text.syntactic.font }}";
+}
+
+LineNumberArea {
+  color: {{ color.active.fore }};
+  background-color: {{ color.control.back }};
+  alternate-background-color: {{ color.active.back }};
+
+  font: {{ (text.syntactic.size * 0.75) |pt }} "{{ text.syntactic.font }}";
+}
+
+Edit {
+  background-color: {{ color.static.back }};
+}
+
+CodeEdit {
+  alternate-background-color: {{ color.static.back_alt }};
+}
+
+*[acceptableInput="false"] {
+  background-color: #f7dfdf;
+  border: 0.1ex solid #c76858;
+}
+
+*:focus[acceptableInput="false"] {
+  border: 0.1ex solid #dd4f4f;
+}
+
+*:hover[acceptableInput="false"] {
+  border: 0.1ex solid #dd4f4f;
+}
+
+QGroupBox
+{
+    border: 0.1ex solid {{ color.static.edge }};
+    border-radius: 0.5ex;
+    padding-top: 1ex;
+    margin-top: 1ex;
+}
+
+QGroupBox::title
+{
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 0.1ex;
+    padding-right: 0.1ex;
+    margin-top: -0.7ex;
+}
+
+QCheckBox
+{
+    spacing: 0.5ex;
+    outline: none;
+    color: {{ color.static.fore }};
+    margin-bottom: 0.2ex;
+    opacity: 200;
+    background-color: none;
+}
+
+QCheckBox:disabled
+{
+    color: {{ color.static.edge }};
+}
+
+QGroupBox::indicator
+{
+    margin-left: 0.2ex;
+}
+
+QCheckBox::indicator:unchecked,
+QCheckBox::indicator:unchecked:focus
+{
+    border-image: url(images/base/checkbox_unchecked_disabled.svg);
+}
+
+QCheckBox::indicator:unchecked:hover,
+QCheckBox::indicator:unchecked:pressed,
+QGroupBox::indicator:unchecked:hover,
+QGroupBox::indicator:unchecked:focus,
+QGroupBox::indicator:unchecked:pressed
+{
+    border: none;
+    border-image: url(images/base/checkbox_unchecked-hover.svg);
+}
+
+QCheckBox::indicator:checked
+{
+    border-image: url(images/base/checkbox_checked.svg);
+}
+
+QCheckBox::indicator:checked:focus,
+QCheckBox::indicator:checked:pressed,
+QGroupBox::indicator:checked:focus,
+QGroupBox::indicator:checked:pressed
+{
+    border: none;
+    border-image: url(images/base/checkbox_checked.svg);
+}
+
+QCheckBox::indicator:checked:hover,
+QGroupBox::indicator:checked:hover
+{
+    border-image: url(images/base/checkbox_checked-hover.svg);
+}
+
+QCheckBox::indicator:indeterminate
+{
+    border-image: url(images/base/checkbox_indeterminate.svg);
+}
+
+QCheckBox::indicator:indeterminate:hover
+{
+    border-image: url(images/base/checkbox_indeterminate-hover.svg);
+}
+
+QCheckBox::indicator:indeterminate:focus,
+QCheckBox::indicator:indeterminate:pressed
+{
+}
+
+QCheckBox::indicator:indeterminate:disabled
+{
+    border-image: url(images/base/checkbox_indeterminate_disabled.svg);
+}
+
+QCheckBox::indicator:checked:disabled,
+QGroupBox::indicator:checked:disabled
+{
+    border-image: url(images/base/checkbox_checked_disabled.svg);
+}
+
+QCheckBox::indicator:unchecked:disabled,
+QGroupBox::indicator:unchecked:disabled
+{
+    border-image: url(images/base/checkbox_unchecked_disabled.svg);
+}
+
+QRadioButton
+{
+    spacing: 0.5ex;
+    outline: none;
+    color: {{ color.static.fore }};
+    margin-bottom: 0.2ex;
+}
+
+QRadioButton:disabled
+{
+    color: {{ color.static.edge }};
+}
+
+QRadioButton::indicator:unchecked,
+QRadioButton::indicator:unchecked:focus
+{
+    border-image: url(images/base/radio_unchecked_disabled.svg);
+}
+
+QRadioButton::indicator:unchecked:hover,
+QRadioButton::indicator:unchecked:pressed
+{
+    border: none;
+    outline: none;
+    border-image: url(images/base/radio_unchecked-hover.svg);
+}
+
+QRadioButton::indicator:checked
+{
+    border: none;
+    outline: none;
+    border-image: url(images/base/radio_checked.svg);
+}
+
+QRadioButton::indicator:checked:focus,
+QRadioButton::indicator:checked:pressed
+{
+    border: none;
+    outline: none;
+    border-image: url(images/base/radio_checked.svg);
+}
+
+QRadioButton::indicator:checked:hover
+{
+    border-image: url(images/base/radio_checked-hover.svg);
+}
+
+QRadioButton::indicator:checked:disabled
+{
+    outline: none;
+    border-image: url(images/base/radio_checked_disabled.svg);
+}
+
+QRadioButton::indicator:unchecked:disabled
+{
+    border-image: url(images/base/radio_unchecked_disabled.svg);
+}
+
+QAbstractSpinBox
+{
+    background-color: {{ color.static.back }};
+}
+
+QSpinBox,
+QDoubleSpinBox
+{
+    padding-right: 1.5ex;
+}
+
+QSpinBox::up-button,
+QDoubleSpinBox::up-button
+{
+    subcontrol-origin: content;
+    subcontrol-position: right top;
+
+    width: 1.6ex;
+    border-width: 0.1ex;
+}
+
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow
+{
+    border-image: url(images/base/up_arrow.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QSpinBox::up-arrow:hover,
+QSpinBox::up-arrow:pressed,
+QDoubleSpinBox::up-arrow:hover,
+QDoubleSpinBox::up-arrow:pressed
+{
+    border-image: url(images/base/up_arrow-hover.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QSpinBox::up-arrow:disabled,
+QSpinBox::up-arrow:off,
+QDoubleSpinBox::up-arrow:disabled,
+QDoubleSpinBox::up-arrow:off
+{
+   border-image: url(images/base/up_arrow_disabled.svg);
+}
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button
+{
+    subcontrol-origin: content;
+    subcontrol-position: right bottom;
+
+    width: 1.6ex;
+    border-width: 0.1ex;
+}
+
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow
+{
+    border-image: url(images/base/down_arrow.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QSpinBox::down-arrow:hover,
+QSpinBox::down-arrow:pressed,
+QDoubleSpinBox::down-arrow:hover,
+QDoubleSpinBox::down-arrow:pressed
+{
+    border-image: url(images/base/down_arrow-hover.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QSpinBox::down-arrow:disabled,
+QSpinBox::down-arrow:off,
+QDoubleSpinBox::down-arrow:disabled,
+QDoubleSpinBox::down-arrow:off
+{
+   border-image: url(images/base/down_arrow_disabled.svg);
+}
+
+
+QComboBox
+{
+  min-width: 7.5ex;
+}
+
+QComboBox QAbstractItemView {
+  color: {{ color.control.fore }};
+  background-color: {{ color.control.back_alt }};
+  alternate-background-color: {{ color.control.back_alt }};
+
+  selection-color: {{ color.control.fore }};
+  selection-background-color: {{ color.active.back |alpha(0.4) }};
+}
+
+QComboBox::drop-down
+{
+  subcontrol-origin: padding;
+  subcontrol-position: top right;
+  width: 1.5ex;
+
+  border-left-width: 0ex;
+  border-left-color: darkgray;
+  border-left-style: solid;
+  border-top-right-radius: 0.3ex;
+  border-bottom-right-radius: 0.3ex;
+}
+
+QComboBox::down-arrow
+{
+  border-image: url(images/base/down_arrow_disabled.svg);
+  width: 0.9ex;
+  height: 0.6ex;
+}
+
+QComboBox::down-arrow:on,
+QComboBox::down-arrow:hover,
+QComboBox::down-arrow:focus
+{
+  border-image: url(images/base/down_arrow.svg);
+  width: 0.9ex;
+  height: 0.6ex;
+}
+
+QAbstractSpinBox
+{
+    padding: 0.5ex;
+    border: 0.1ex solid {{ color.static.edge }};
+    background-color: #D9D8D7;
+    color: {{ color.static.fore }};
+    border-radius: 0.5ex;
+    min-width: 7.5ex;
+}
+
+QAbstractSpinBox:up-button
+{
+    background-color: transparent;
+    subcontrol-origin: border;
+    subcontrol-position: center right;
+}
+
+QAbstractSpinBox:down-button
+{
+    background-color: transparent;
+    subcontrol-origin: border;
+    subcontrol-position: center left;
+}
+
+QAbstractSpinBox::up-arrow,
+QAbstractSpinBox::up-arrow:disabled,
+QAbstractSpinBox::up-arrow:off
+{
+    border-image: url(images/base/up_arrow_disabled.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QAbstractSpinBox::up-arrow:hover
+{
+    border-image: url(images/base/up_arrow.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QAbstractSpinBox::down-arrow,
+QAbstractSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:off
+{
+    border-image: url(images/base/down_arrow_disabled.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+QAbstractSpinBox::down-arrow:hover
+{
+    border-image: url(images/base/down_arrow.svg);
+    width: 0.9ex;
+    height: 0.6ex;
+}
+
+
+QSlider::groove:horizontal
+{
+    border: 0.1ex solid {{ color.static.back }};
+    height: 0.4ex;
+    background: #9CA0A4;
+    margin: 0px;
+    border-radius: 0.5ex;
+}
+
+QSlider::handle:horizontal
+{
+    background: #D9D8D7;
+    border: 0.1ex solid #BABEC2;
+    width: 1.6ex;
+    height: 1.6ex;
+    margin: -0.8ex 0;
+    border-radius: 0.9ex;
+}
+
+QSlider::groove:vertical
+{
+    border: 0.1ex solid {{ color.static.back }};
+    width: 0.4ex;
+    background: #9CA0A4;
+    margin: 0ex;
+    border-radius: 0.3ex;
+}
+
+QSlider::handle:vertical
+{
+    background: #D9D8D7;
+    border: 0.1ex solid #BABEC2;
+    width: 1.6ex;
+    height: 1.6ex;
+    margin: 0 -0.8ex;
+    border-radius: 0.9ex;
+}
+
+QSlider::handle:horizontal:focus,
+QSlider::handle:vertical:focus
+{
+    border: 0.1ex solid {{ color.active.back }};
+}
+
+QSlider::handle:horizontal:hover,
+QSlider::handle:vertical:hover
+{
+    border: 0.1ex solid #51c2fc;
+}
+
+QSlider::sub-page:horizontal,
+QSlider::add-page:vertical
+{
+    background: {{ color.active.back }};
+    border-radius: 0.3ex;
+}
+
+QSlider::add-page:horizontal,
+QSlider::sub-page:vertical
+{
+    background: #BABEC2;
+    border-radius: 0.3ex;
+}
+
+QCheckBox:focus,
+QRadioButton:focus,
+QSlider:focus
+{
+    border: none;
+}

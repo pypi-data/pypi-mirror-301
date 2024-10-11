@@ -1,0 +1,35 @@
+
+QStatusBar
+{
+  background-color: {{ color.static.back }};
+}
+
+QStatusBar::item
+{
+    border: 0px transparent dark;
+}
+
+QProgressBar
+{
+    background-color: {{ color.static.back }};
+    border: 0.1ex solid {{ color.static.back }};
+    border-radius: 0.3ex;
+    padding: 0px;
+}
+
+QProgressBar::horizontal
+{
+    height: 0.5ex;
+    text-align: right;
+
+}
+
+QProgressBar::chunk:horizontal
+{
+    background-color: {{ color.active.back }};
+    border: 0.1ex transparent;
+    border-radius: 0.3ex;
+    margin-top: 0.5ex;
+    margin-bottom: 0.5ex;
+    margin-right: 5ex;
+}

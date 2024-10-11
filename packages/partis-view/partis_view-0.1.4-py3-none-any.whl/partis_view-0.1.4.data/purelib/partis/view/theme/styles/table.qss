@@ -1,0 +1,83 @@
+
+QTableView
+{
+  gridline-color: {{ color.static.edge }};
+}
+
+
+
+QHeaderView
+{
+    background-color: {{ color.static.back }};
+    border: 0.1ex transparent;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+QHeaderView::section
+{
+    background-color: {{ color.static.edge }};
+    color: {{ color.static.fore }};
+    padding: 0.5ex;
+    border: 0.1ex solid {{ color.static.edge }};
+}
+
+QHeaderView::section
+{
+    background-color: {{ color.static.back }};
+    color: {{ color.static.fore }};
+    padding: 0.5ex;
+    border: 0.1ex solid {{ color.static.edge }};
+    border-radius: 0px;
+    text-align: center;
+}
+
+QHeaderView::section::vertical::first,
+QHeaderView::section::vertical::only-one
+{
+    border-top: 0.1ex solid {{ color.static.edge }};
+}
+
+QHeaderView::section::vertical
+{
+    border-top: transparent;
+}
+
+QHeaderView::section::horizontal::first,
+QHeaderView::section::horizontal::only-one
+{
+    border-left: 0.1ex solid {{ color.static.edge }};
+}
+
+QHeaderView::section::horizontal
+{
+    border-left: transparent;
+}
+
+
+QHeaderView::section:checked
+
+ {
+    color: black;
+    background-color: {{ color.active.back }};
+ }
+
+ /* style the sort indicator */
+QHeaderView::down-arrow
+{
+    image: url(images/base/down_arrow.svg);
+}
+
+QHeaderView::up-arrow
+{
+    image: url(images/base/up_arrow.svg);
+}
+
+QTableCornerButton::section
+{
+    background-color: {{ color.static.back }};
+    border: 0.1ex transparent {{ color.static.edge }};
+    border-radius: 0px;
+}

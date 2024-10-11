@@ -1,0 +1,108 @@
+
+QTreeView {
+  color: {{ color.dynamic.fore }};
+  background-color: {{ color.dynamic.back }};
+  alternate-background-color: {{ color.dynamic.back_alt }};
+}
+
+/*
+  branch connections
+*/
+
+QTreeView::branch {
+  background-color: transparent;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+  border-image: {{ 'images/tree/branch-skip.svg' | svg(color.dynamic) }} 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+  border-image: {{ 'images/tree/branch-more.svg' | svg(color.dynamic) }} 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  border-image: {{ 'images/tree/branch-end.svg' | svg(color.dynamic) }} 0;
+}
+
+/*
+  open/closed nodes
+*/
+
+QTreeView::branch:has-children:!has-siblings:closed {
+  image: {{ 'images/tree/branch-closed.svg' | svg(color.dynamic) }};
+  border-image: {{ 'images/tree/branch-end.svg' | svg(color.dynamic) }} 0;
+}
+
+QTreeView::branch:closed:has-children:has-siblings {
+  image: {{ 'images/tree/branch-closed.svg' | svg(color.dynamic) }};
+  border-image: {{ 'images/tree/branch-more.svg' | svg(color.dynamic) }} 0;
+}
+
+QTreeView::branch:open:has-children:!has-siblings {
+  image: {{ 'images/tree/branch-open.svg' | svg(color.dynamic) }};
+  border-image: {{ 'images/tree/branch-end.svg' | svg(color.dynamic) }} 0;
+}
+
+QTreeView::branch:open:has-children:has-siblings  {
+  image: {{ 'images/tree/branch-open.svg' | svg(color.dynamic) }};
+  border-image: {{ 'images/tree/branch-more.svg' | svg(color.dynamic) }} 0;
+}
+
+QTreeView QToolButton,
+QTreeView QComboBox
+{
+  background-color: transparent;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.control.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QTreeView QToolButton:hover,
+QTreeView QComboBox:hover
+{
+  background-color: {{ color.control.edge |alpha(0.1) }};
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: {{ color.active.edge |alpha(0.5) }};
+  border-left-color: transparent;
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+QTreeView QToolButton:pressed,
+QTreeView QComboBox:pressed
+{
+  border-top-color: {{ color.active.edge |alpha(0.5) }};
+  border-right-color: {{ color.active.edge |alpha(0.5) }};
+  border-bottom-color: {{ color.active.edge |alpha(0.75) }};
+  border-left-color: {{ color.active.edge |alpha(0.5) }};
+
+  border-width: 0.1ex;
+  border-style: solid;
+  border-radius: 0.5ex;
+}
+
+
+QTreeView QToolButton::menu-indicator
+{
+  border-image: none;
+  width = 0px;
+  height = 0px;
+}
+
+QTreeView QToolButton::menu-arrow
+{
+  border-image: none;
+  width = 0px;
+  height = 0px;
+}
