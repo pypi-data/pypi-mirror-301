@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+lxml
+selenium
+webdriver_manager
+click
+playwright
+cryptography
+twine
