@@ -1,0 +1,11 @@
+git_assume/__init__.py,sha256=lHg-r5GylfCTEhXKLiv4oIfEumkVrVZpZuxOIgU-fXs,56
+git_assume/logger_config.yml,sha256=OMLxnl1L41iqamSzB55RHg2Oxw05hdXRHsfjPbe7GSc,315
+git_assume/main.py,sha256=n9PNcCRsiIUs66xDPv37AkMs7yLh8Ns4NgIzz1PP01U,2041
+git_assume/utils.py,sha256=XA6yA-sspi9EoDt7PK0Ui_mKMlAFHOe-_Y4K6xNeomY,2595
+git_assume/subcommands/subcommand_assume.py,sha256=WlLZe0z8Trd6OM1qaRcHhOSVtdSKlQvubb-neM0IFlw,1583
+git_assume/subcommands/subcommand_list.py,sha256=dzlJzxyZUGVtWgjRheLlT0Db9XBH_QQhZxxMMYDljPU,911
+git_assume-1.0.1.dist-info/METADATA,sha256=sEwwAb-pODTgrD6oWSNRiq_CDyDeIWMu10T_mY-IH7U,4082
+git_assume-1.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+git_assume-1.0.1.dist-info/entry_points.txt,sha256=ry9VTN2nksS7PU6y8nSHk8Gkdt28C2ZFmVjqfeE83rQ,52
+git_assume-1.0.1.dist-info/licenses/LICENSE.txt,sha256=lfbAuaZEse_QlSButtkbvn7rVrD-PFnbj2Bkw5JLVmI,1087
+git_assume-1.0.1.dist-info/RECORD,,
