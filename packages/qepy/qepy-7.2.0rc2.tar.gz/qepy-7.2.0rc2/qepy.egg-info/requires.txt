@@ -1,0 +1,14 @@
+f90wrap>=0.2.14
+numpy<2.0
+
+[docs]
+sphinx
+sphinx-rtd-theme
+nbsphinx
+sphinx-panels
+
+[test]
+pytest
+pytest-cov
+pytest-mpi
+ase
