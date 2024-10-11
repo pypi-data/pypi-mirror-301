@@ -1,0 +1,45 @@
+[build-system]
+requires = [
+    "setuptools~=72.0",
+    "setuptools-scm~=8.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iker-python-setup"
+dynamic = ["version"]
+requires-python = ">=3.11,<3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "setuptools~=72.0",
+    "setuptools-scm~=8.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest-cov~=5.0",
+    "pytest-order~=1.2",
+    "pytest~=8.3",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[tool.pytest.ini_options]
+pythonpath = ["test"]
+
+[tool.coverage.run]
+include = [
+    "src/iker/setup/*",
+    "*/site-packages/iker/setup/*",
+]
