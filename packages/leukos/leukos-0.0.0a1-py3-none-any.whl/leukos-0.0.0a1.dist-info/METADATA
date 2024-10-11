@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: leukos
+Version: 0.0.0a1
+Summary: GUI front-end for Immunonaut, an immunoassay modeling toolkit.
+License: AGPL-3.0
+Author: kosmolebryce
+Author-email: k.lebryce@pm.me
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: immunonaut (==0.0.1a3)
+Description-Content-Type: text/markdown
+
+# leukos
+GUI front-end for Immunonaut, an immunochemical assaying toolkit.
+
