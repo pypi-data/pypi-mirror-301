@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-sign
+Version: 16.0.20241010.0
+Summary: Meta package for oca-sign Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-maintenance-sign-oca<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-project-task-sign-oca<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-sign-oca<16.1dev,>=16.0dev
+
+UNKNOWN
