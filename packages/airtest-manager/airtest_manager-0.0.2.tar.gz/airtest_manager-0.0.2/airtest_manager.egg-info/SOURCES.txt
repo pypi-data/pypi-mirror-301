@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+airtest_manager/__init__.py
+airtest_manager/template_manager.py
+airtest_manager.egg-info/PKG-INFO
+airtest_manager.egg-info/SOURCES.txt
+airtest_manager.egg-info/dependency_links.txt
+airtest_manager.egg-info/requires.txt
+airtest_manager.egg-info/top_level.txt
