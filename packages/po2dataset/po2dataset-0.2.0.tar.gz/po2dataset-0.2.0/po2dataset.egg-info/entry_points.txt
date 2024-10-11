@@ -1,0 +1,2 @@
+[console_scripts]
+po2dataset = po2dataset.po2dataset:main

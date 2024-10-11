@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+po2dataset/__init__.py
+po2dataset/po2dataset.py
+po2dataset.egg-info/PKG-INFO
+po2dataset.egg-info/SOURCES.txt
+po2dataset.egg-info/dependency_links.txt
+po2dataset.egg-info/entry_points.txt
+po2dataset.egg-info/requires.txt
+po2dataset.egg-info/top_level.txt
+tests/test_general.py
