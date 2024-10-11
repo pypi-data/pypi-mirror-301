@@ -1,0 +1,22 @@
+queue_rules:
+  - name: default
+    conditions:
+    - check-success=test (py310)
+    - check-success=test (pep8)
+
+pull_request_rules:
+  - name: automatic merge
+    actions:
+      queue:
+        method: squash
+        name: default
+    conditions:
+      - label!=work-in-progress
+      - "#approved-reviews-by>=1"
+      - check-success=test (py310)
+      - check-success=test (pep8)
+
+  - name: dismiss reviews
+    actions:
+      dismiss_reviews: {}
+    conditions: []

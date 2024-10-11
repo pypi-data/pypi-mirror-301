@@ -1,0 +1,18 @@
+daiquiri
+click
+jinja2
+fixtures
+packaging
+psutil
+
+[:sys_platform != "win32"]
+xattr
+
+[gnocchi]
+uwsgi
+
+[test]
+requests
+stestr
+testtools
+mock
