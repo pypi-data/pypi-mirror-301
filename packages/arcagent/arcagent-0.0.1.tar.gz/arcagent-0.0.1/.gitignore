@@ -1,0 +1,84 @@
+# Temporary files for Meld, nano, vim, etc
+.$*
+.~lock*
+*~
+*.tmp
+*.tmp.*
+*.old
+*.old.*
+*.bak
+*.bak.*
+*.bkp
+*.OLDVERSION.*
+*.hobs.*
+*.broke.*
+mergers/
+# *.wip.*
+# *.fixed.*
+# *.fix.*
+# *.master.*
+# *.develop.*
+# *.tmp.*
+# *.temp.*
+
+# PyTorch models
+*.pth
+
+# Binary files
+*.py[cod]
+!*.py
+*.so
+*.orig
+*.log
+*.pot
+__pycache__/*
+.cache/*
+.*.swp
+**/.ipynb_checkpoints
+
+# Project files
+.sublime-workspace
+.sublime-project
+.vscode
+.ropeproject
+.project
+.pydevproject
+.settings
+.idea
+# *.cfg
+# !setup.cfg
+
+# Package files
+*.egg
+*.eggs/
+.installed.cfg
+*.egg-info
+
+# Unittest and coverage
+htmlcov/*
+cover/*
+.coverage
+.tox
+junit.xml
+coverage.xml
+
+# Build and docs folder/files
+build/*
+dist/*
+sdist/*
+docs/api/*
+docs/_build/*
+MANIFEST
+
+# OSX
+.DS_Store
+
+# virtual envs
+venv
+.venv
+
+# secrets
+.env*
+!.env_template
+secret*
+*private*

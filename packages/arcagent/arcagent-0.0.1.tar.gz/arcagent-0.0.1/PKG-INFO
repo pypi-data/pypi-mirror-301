@@ -1,0 +1,55 @@
+Metadata-Version: 2.3
+Name: arcagent
+Version: 0.0.1
+Summary: An AI agent competing for the 2024 ARC Prize (Abstract Reasoning Challenge).
+Author-email: Hobson Lane <git@totalgood.com>
+License: GPLv3+
+Keywords: AGI,AI,AIMA,ARC Challenge,ARC Prize,DAG,LLM,NLP,NPC,agent,command line,graph search,numpy,personal assistant,puzzle,search
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: aima
+Requires-Dist: arc-py
+Requires-Dist: fastapi==0.108.0
+Requires-Dist: fastparquet
+Requires-Dist: ipython
+Requires-Dist: jsonlines
+Requires-Dist: jupyter
+Requires-Dist: jupyter-console==6.6.3
+Requires-Dist: jupyter-server==2.12.5
+Requires-Dist: numdifftools
+Requires-Dist: numpy==1.26.4
+Requires-Dist: openai
+Requires-Dist: pandas==2.1.4
+Requires-Dist: pandas[html]
+Requires-Dist: pytest-coverage
+Requires-Dist: python-dotenv
+Requires-Dist: pytorch-lightning==2.2.2
+Requires-Dist: scikit-image==0.22.0
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: sklearn-pandas==2.2.0
+Requires-Dist: torch==2.1.2
+Requires-Dist: torchtext==0.16.2
+Requires-Dist: torchvision==0.16.2
+Provides-Extra: all
+Requires-Dist: test; extra == 'all'
+Provides-Extra: test
+Requires-Dist: black; extra == 'test'
+Requires-Dist: build; extra == 'test'
+Requires-Dist: pip; extra == 'test'
+Requires-Dist: pytest-coverage; extra == 'test'
+Requires-Dist: twine; extra == 'test'
+Requires-Dist: wheel; extra == 'test'
+Description-Content-Type: text/markdown
+
+# arcagent
+
+You arcangel in the 2024 ARC Prize.

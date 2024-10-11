@@ -1,0 +1,65 @@
+[project]
+name = "arcagent"
+version = "0.0.1"
+description = "An AI agent competing for the 2024 ARC Prize (Abstract Reasoning Challenge)."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["ARC Challenge", "ARC Prize", "AI", "AGI", "agent", "AIMA", "NLP", "LLM", "agent", "graph search", "DAG", "puzzle", "NPC", "numpy", "search", "personal assistant", "command line"]
+authors = [
+    {name = "Hobson Lane", email = "git@totalgood.com"},
+]
+license = {text = "GPLv3+"}
+dependencies = [
+    "aima",
+    "arc-py",
+    "fastapi==0.108.0",
+    "fastparquet",
+    "ipython",
+    "jsonlines",
+    "jupyter",
+    "jupyter-console==6.6.3",
+    "numdifftools",
+    "numpy==1.26.4",
+    "pandas==2.1.4",
+    "openai",
+    "pandas[html]",
+    "pytest-coverage",
+    "python-dotenv",
+    "scikit-learn",
+    "jupyter_server==2.12.5",
+    "pytorch-lightning==2.2.2",
+    "scikit-image==0.22.0",
+    "scikit-learn==1.2.2",
+    "sklearn-pandas==2.2.0",
+    "torch==2.1.2",
+    "torchtext==0.16.2",
+    "torchvision==0.16.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    # "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+
+    "Topic :: Communications :: Chat", "Intended Audience :: Education",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+test = ["pytest-coverage", "black", "twine", "pip", "build", "wheel"]
+all = ["test"]
+
+[project.scripts]
+ask = "arcagent.cli:ask"
+
+[tool.setuptools.package-data]
+arcagent = [
+    "data/*",
+]
