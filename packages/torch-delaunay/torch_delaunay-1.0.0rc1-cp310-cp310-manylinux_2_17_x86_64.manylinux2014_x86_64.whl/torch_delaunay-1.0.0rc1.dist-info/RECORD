@@ -1,0 +1,9 @@
+torch_delaunay/functional_test.py,sha256=qDqdgmi5BIZQKDoThrl3cA3Ircp8mih237XqnN5yVDU,1020
+torch_delaunay/_C.cpython-310-x86_64-linux-gnu.so,sha256=pISvLq0HWSHXC5WB3YLucTA9h1C_TSXt1teXjvrBIjU,22040864
+torch_delaunay/functional.py,sha256=3ts1Ny4i8G8toBXivlquDDyrH2jcTe4gKbJ3FcTIJQM,1014
+torch_delaunay/__init__.py,sha256=6lnQzylszmkeJYGDk1TI0oIv7sJmqrt2HDgYX9Dhf_E,63
+torch_delaunay/__bind__/python_module.cc,sha256=Z4XUnjWbvP-i5P2MxGvDISV6vSZpmT1y6GYQP8gY5rw,308
+torch_delaunay-1.0.0rc1.dist-info/top_level.txt,sha256=_G7i-lBLJDX2nRdQ5nFENgWIw7DyajsLZCYB4bzRdOU,15
+torch_delaunay-1.0.0rc1.dist-info/RECORD,,
+torch_delaunay-1.0.0rc1.dist-info/METADATA,sha256=Ak2Au-1WUmNet5jgyvJEeEVGYe1l8q0vpSsfuCToJCY,2778
+torch_delaunay-1.0.0rc1.dist-info/WHEEL,sha256=baMMpUvyD0gnRdCe6fvqCg8rft4FNTdLqZQ01WfKJmc,152

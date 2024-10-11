@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: torch-delaunay
+Version: 1.0.0rc1
+Summary: The Delaunay triangulation for PyTorch
+Author-email: Yakau Bubnou <girokompass@gmail.com>
+Project-URL: Funding, https://github.com/sponsors/ybubnov
+Project-URL: Homepage, https://github.com/ybubnov/torch_delaunay
+Project-URL: Source, https://github.com/ybubnov/torch_delaunay
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: shapely>=2.0.0
+Requires-Dist: torch<2.4.0,>=2.3.0
+Provides-Extra: test
+Requires-Dist: geopandas>=1.0.0; extra == "test"
+Requires-Dist: numpy<2.0.0,>=1.4.0; extra == "test"
+Requires-Dist: pytest>=8.0.0; extra == "test"
+Requires-Dist: shapely>=2.0.0; extra == "test"
+
+# Torch Delaunay - The Delaunay triangulation library for PyTorch
+
+This is a fast library for computing [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation)
+of 2-dimensional points.
+
+The implementation is based on a sweep-algorithm, introduced by David Sinclair[^1] and later
+improved by Volodymyr Agafonkin[^2].
+
+## Installation
+
+The library is distributed as PyPI package, to install the package, execute the following
+command:
+```sh
+pip install torch_delaunay
+```
+
+You can use the `torch_delaunay` library for a fast computation of Delaunay triangulation for
+points defined as [PyTorch](https://pytorch.org) tensors.
+
+## Usage
+
+```py
+import torch
+from torch_delaunay.functional import shull2d
+
+# Compute Delaunay triangulation for randomly-generated 2-dimensional points.
+points = torch.rand((100, 2))
+simplices = shull2d(simplices)
+```
+
+## License
+
+The Torch Delaunay is distributed under GPLv3 license. See the [LICENSE](LICENSE) file for full
+license text.
+
+
+[^1]: David Sinclair - [S-hull: a fast radial sweep-hull routine for Delaunay triangulation](https://arxiv.org/abs/1604.01428).
+[^2]: Volodymyr Agafonkin - [Delaunator: An incredibly fast and robust JavaScript library for Delaunay triangulation of 2D points](https://github.com/mapbox/delaunator).
