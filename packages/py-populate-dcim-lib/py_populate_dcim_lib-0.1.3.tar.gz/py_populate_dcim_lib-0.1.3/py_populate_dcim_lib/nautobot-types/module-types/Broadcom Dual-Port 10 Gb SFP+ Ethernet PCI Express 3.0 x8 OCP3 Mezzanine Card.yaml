@@ -1,0 +1,12 @@
+---
+manufacturer: Broadcom
+model: Dual-Port 10 Gb/s SFP+ Ethernet PCI Express 3.0 x8 OCP 3.0 Mezzanine Card
+part_number: BCM57412
+comments: >
+  BCM57412
+  [QuickSpecs](https://www.broadcom.com/products/ethernet-connectivity/network-adapters/bcm57412-25g-ic)
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp

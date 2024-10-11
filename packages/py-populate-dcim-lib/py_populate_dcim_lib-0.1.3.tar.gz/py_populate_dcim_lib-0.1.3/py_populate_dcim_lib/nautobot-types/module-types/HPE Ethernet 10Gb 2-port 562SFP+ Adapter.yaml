@@ -1,0 +1,12 @@
+---
+manufacturer: HPE
+model: Ethernet 10Gb 2-port 562SFP+ Adapter
+part_number: 727055-B21
+comments: >
+  HPE Ethernet 10Gb 2-port 562SFP+ Adapter
+  [QuickSpecs](https://www.hpe.com/psnow/doc/c04605575)
+interfaces:
+  - name: SFP+ 1
+    type: 10gbase-x-sfpp
+  - name: SFP+ 2
+    type: 10gbase-x-sfpp

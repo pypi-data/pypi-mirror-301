@@ -1,0 +1,12 @@
+---
+manufacturer: HPE
+model: SN1100Q 16Gb Host Bus Adapter
+part_number: P9D94A
+comments: >
+  HPE SN1100Q 16Gb 2p FC HBA
+  [QuickSpecs](https://www.hpe.com/psnow/doc/PSN1008831635CZEN)
+interfaces:
+  - name: SFP+ 1
+    type: 16gfc-sfpp
+  - name: SFP+ 2
+    type: 16gfc-sfpp

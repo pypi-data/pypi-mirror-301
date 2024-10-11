@@ -1,0 +1,32 @@
+---
+manufacturer: HPE
+model: ProLiant DL325 Gen11
+part_number: S3N84A
+u_height: 1
+is_full_depth: true
+comments: '[QuickSpecs](https://www.hpe.com/psnow/doc/a50004297enw)'
+console-ports:
+  - name: Serial
+    type: de-9
+  - name: VGA
+    type: other
+power-ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw: 500
+  - name: PS2
+    type: iec-60320-c14
+    maximum_draw: 500
+module-bays:
+  - name: OCP3 slot 21
+    position: OCP3-21
+  - name: OCP3 slot 22
+    position: OCP3-22
+  - name: PCIe1
+    position: PCIe1
+  - name: PCIe2
+    position: PCIe2
+interfaces:
+  - name: iLO
+    type: 1000base-t
+    mgmt_only: true

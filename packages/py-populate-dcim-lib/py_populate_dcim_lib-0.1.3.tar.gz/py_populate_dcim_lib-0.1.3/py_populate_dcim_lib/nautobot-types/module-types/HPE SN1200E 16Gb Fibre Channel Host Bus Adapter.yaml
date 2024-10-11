@@ -1,0 +1,12 @@
+---
+manufacturer: HPE
+model: SN1200E 16Gb Fibre Channel Host Bus Adapter
+part_number: Q0L14A
+comments: >
+  HPE StoreFabric SN1200E 16Gb Dual Port Fibre Channel Host Bus Ad
+  [QuickSpecs](https://www.hpe.com/psnow/doc/PSN1009474282SEEN)
+interfaces:
+  - name: SFP+ 1
+    type: 16gfc-sfpp
+  - name: SFP+ 2
+    type: 16gfc-sfpp
