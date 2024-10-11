@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/test_wservice_client.py
+wservice_client/__init__.py
+wservice_client/wservice_client.py
+wservice_client.egg-info/PKG-INFO
+wservice_client.egg-info/SOURCES.txt
+wservice_client.egg-info/dependency_links.txt
+wservice_client.egg-info/requires.txt
+wservice_client.egg-info/top_level.txt
