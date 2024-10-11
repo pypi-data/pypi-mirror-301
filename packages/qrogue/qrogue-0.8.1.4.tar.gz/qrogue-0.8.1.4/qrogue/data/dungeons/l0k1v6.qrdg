@@ -1,0 +1,203 @@
+Qrogue<
+Name = "Lesson 7: The last rotation"
+Description = Speaker "0" prio "The last lesson will mimic an //02Expedition// once again. However, since last lesson was small compared to real //02Expeditions//, this one will have a more realistic size. To make it less cumbersome, we will give you hints on where to go first. But remember that real //02Expeditions// will probably require more backtracking." "You can start by peeking into the top and bottom room before continuing to the left."
+NO_TELEPORTER
+
+// Introduced Concepts:
+// 
+
+[Robot]
+2 qubits [ *xgate, *cxgate, *hgate, *sgate ]
+circuit_space = 7
+maxenergy = 1000000
+
+[Layout]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| __ .. __ .. bo 11 gg == ff == mb .. __ |
+| ..    ..    ..    ==    ==    ..    .. |
+| __ .. zz == aa == SR == ee .. __ .. __ |
+| ..    ..    ==    ==    22    ..    .. |
+| __ .. __ .. bb == cc == dd .. __ .. __ |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[Custom Rooms]
+
+SR (Spawn):
+#############
+# o o _ _ _ #
+# o _ _ o _ #
+# _ _ _ o _ #
+# o _ _ o _ #
+# o o _ _ _ #
+#############
+
+aa (Wild):
+#############
+# o o 0 o o #
+# _ o _ 4 o #
+# _ _ m _ _ #
+# 5 _ _ o o #
+# 4 _ 0 _ o #
+#############
+m 1 *forks
+
+bb (Wild):
+#############
+# _ _ _ o _ #
+# _ 8 _ o 2 #
+# 1 _ 0 _ _ #
+# _ o _ _ _ #
+# o 7 7 _ 9 #
+#############
+
+
+cc (Wild):
+#############
+# 0 o m o 1 #
+# _ o o o _ #
+# _ 1 2 3 _ #
+# _ o _ o _ #
+# 0 _ c _ 0 #
+#############
+m *keyHint trigger *sawKey
+c key 1
+
+dd (Wild):
+#############
+# o o 9 _ _ #
+# o o o o _ #
+# _ 2 o o 2 #
+# _ o o o _ #
+# 2 _ 3 _ 7 #
+#############
+
+ee (Wild):
+#############
+# o _ 0 _ o #
+# _ _ _ _ _ #
+# 0 5 5 5 0 #
+# _ _ _ _ _ #
+# o _ 0 _ o #
+#############
+
+ff (Wild):
+#############
+# 6 _ _ 2 _ #
+# _ o 0 o _ #
+# _ o o 0 _ #
+# o o 0 o 6 #
+# o o _ 2 _ #
+#############
+
+gg (Story):
+#############
+# _ _ _ o 1 #
+# o o o o _ #
+# _ 0 _ 0 _ #
+# o o o o _ #
+# m _ _ o 1 #
+#############
+m *bossHint trigger *sawLock
+
+zz (Wild):
+#############
+# 2 7 _ _ 3 #
+# 6 _ _ _ _ #
+# _ _ m _ _ #
+# _ _ _ _ 6 #
+# 3 _ _ 7 2 #
+#############
+m *deadEnds
+
+mb (Wild):
+#############
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+# _ _ ! _ _ #
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+#############
+! 2 *base00 gate *Y input=*stvChallenge
+
+bo (Wild):
+#############
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+# _ _ b _ _ #
+# _ _ _ _ _ #
+# _ _ _ _ _ #
+#############
+b *bossPuzzle score 1000 10
+
+
+[Hallways]
+11 (locked; ; )
+22 (closed; one way North; )
+
+[StateVector Pools]
+custom
+*base00 [ {num_qubits=2: gI @ q0} ]
+
+// all "old" (i.e., not using S Gates) superposition-related stvs
+*supH0 [ {num_qubits=2: gH @ q0} ]
+*supH1 [ {num_qubits=2: gH @ q1} ]
+*supH [ *supH0, *supH1 ]
+
+*supH0X1 [ {num_qubits=2: gH @ q0, gX @ q1} ]
+*supH1X0 [ {num_qubits=2: gH @ q1, gX @ q0} ]
+*supHX [ *supH0X1, *supH1X0 ]
+
+*entanglement0 [ {num_qubits=2: gH @q0, gCX @[q0, q1]} ]
+*entanglement1 [ {num_qubits=2: gH @q1, gCX @[q1, q0]} ]
+*entanglement [ *entanglement0, *entanglement1 ]
+*entAnti [ {num_qubits=2: gX @q0, gH @q1, gCX @[q1, q0]} ]
+
+*allSupReal [ *supH, *supHX, *entanglement, *entAnti ]
+
+// all "previous lesson's" (i.e., using S Gates) stvs
+*base2j [ {num_qubits=2: gX @ q0, gS @ q0} ]
+*base3j [ {num_qubits=2: gX @ q1, gS @ q1} ]
+*base4j [ {num_qubits=2: gX @ q0, gS @ q0, gCX @[q0, q1]} ]
+*basej [ *base2j, *base3j, *base4j ]
+
+*supHS0 [ {num_qubits=2: [gH, gS] @q0} ]
+*supHS1 [ {num_qubits=2: [gH, gS] @q1} ]
+*supHS [ *supHS0, *supHS1 ]
+
+*entJ [ {num_qubits=2: gH @q0, gS @q0, gCX @[q0, q1]} ]
+*entMinusJ [ {num_qubits=2: gX @q0, gH @q0, gS @q0, gCX @[q0, q1]} ]
+*entAntiJ [ {num_qubits=2: gX @q1, gH @q0, gS @q0, gCX @[q0, q1]} ]
+*entAntiJ2 [ {num_qubits=2: gX @q1, gH @q0, gS @q1, gCX @[q0, q1]} ]
+*entanglementJ [ *entJ, *entMinusJ, *entAntiJ, *entAntiJ2 ]
+
+*stvChallenge [ {num_qubits=2: [gX, gS, gS, gS] @q1} ]	// needs to be inverse!
+*bossPuzzle [ *entJ ]	// todo
+
+*allj [ *basej, *supHS, *entanglementJ ]	// all that include a j
+
+// all "new" (i.e., requiring  Y Gates) stvs
+
+
+default *allj
+
+[Reward Pools]
+default *none
+
+
+[Messages]
+// highlight text by encapsulating it in "//02abcd//" where "abcd" is the text to highlight and "02" one of the available styles: 01 is for tiles, 02 is for game objects, 03 for actions, 04 for keys on the keyboard and 05 for other words
+// speaker: 0 = Examiner, 1 = Scientist, 2 = System, 3 = Player
+default Speaker "0"
+
+*bossHint pos5 "Here you can peek into a room with a locked //02Door//. And what lies beyond locked Doors in //02Expeditions//?"
+
+*keyHint pos1 "This room contains a //02Key//. Do you remember what lies beyond a locked //02Door// in //02Expeditions//?"
+
+*forks prio pos2 "A fork in the road is a pretty common sight in //02Expeditions//. Don't hesitate to go in one direction only to come back later if it didn't lead to a //02Key//, //02Miniboss// or //02Boss//. //02Expeditions// are never big enough to get lost."
+
+*deadEnds pos5 "//02Expeditions// often have dead ends. You can use them to experiment on additonal //02Puzzles// or just ignore them. It's up to you - and that's the beauty of exploration."
+
+
+*doneMsg prio "TODO You finally made it! Congratulations on successfully completing the //05'Mission Quniverse' Trainings Program//. Now you should be ready for the //05Examination Trial//."
+
+>Qrogue
