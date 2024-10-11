@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyscnomics
+Version: 1.1.1
+Summary: An economic engine for calculating PSC Scheme in Indonesia.
+Author-email: Aditya Dewanto <adityadewanto@gmail.com>, Muhammad Adhim Mulia <adhimmuliam@gmail.com>, Fajril Ambia <fambia@skkmigas.go.id>, Iskandar Fahmi <ifahmi@bpma.go.id>, Zuher Syihab <zuher.syihab@itb.ac.id>, Sudono <sudono@gmail.com>
+Project-URL: Homepage, https://github.com/fajril/pyscnomics
+Project-URL: Documentation, https://github.com/fajril/pyscnomics
+Keywords: Production Sharing Contract,PSC,Project Economic
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: numpy ==1.26.2
+Requires-Dist: dateutils >=0.6.12
+Requires-Dist: matplotlib >=3.4.3
+Requires-Dist: pandas >=2.2.0
+Requires-Dist: pytest >=7.1.2
+Requires-Dist: pyxirr ==0.9.3
+Requires-Dist: pyxlsb >=1.0.10
+Requires-Dist: scipy >=1.7.3
+Requires-Dist: xlwings >=0.24.8
+Requires-Dist: click ==8.1.7
+Requires-Dist: uvicorn ==0.28.0
+Requires-Dist: pydantic ==2.6.4
+Requires-Dist: fastapi ==0.110.0
+
+# pyscnomics
+
+An economic engine for calculating PSC Scheme in Indonesia.
