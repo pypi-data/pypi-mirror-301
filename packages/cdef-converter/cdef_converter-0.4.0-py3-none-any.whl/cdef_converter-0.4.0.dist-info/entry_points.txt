@@ -1,0 +1,2 @@
+[console_scripts]
+cdef-converter = cdef_converter:main
