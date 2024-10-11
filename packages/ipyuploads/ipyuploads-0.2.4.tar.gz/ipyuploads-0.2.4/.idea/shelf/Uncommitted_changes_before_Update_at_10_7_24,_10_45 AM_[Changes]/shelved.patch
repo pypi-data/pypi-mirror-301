@@ -1,0 +1,127 @@
+Index: js/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"@g2nb/ipyuploads\",\n  \"version\": \"0.2.2\",\n  \"description\": \"A Jupyter file widget with chunked upload capabilities\",\n  \"author\": {\n    \"name\": \"Thorin Tabor\",\n    \"email\": \"tmtabor@cloud.ucsd.edu\"\n  },\n  \"license\": \"BSD-3-Clause\",\n  \"main\": \"lib/index.js\",\n  \"homepage\": \"https://github.com/g2nb/ipyuploads\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/g2nb/ipyuploads.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/g2nb/ipyuploads/issues\"\n  },\n  \"keywords\": [\n    \"jupyter\",\n    \"widgets\",\n    \"ipython\",\n    \"ipywidgets\",\n    \"jupyterlab-extension\"\n  ],\n  \"files\": [\n    \"lib/**/*.js\",\n    \"dist/*.js\"\n  ],\n  \"scripts\": {\n    \"clean\": \"rimraf dist/ && rimraf ../ipyuploads/labextension/ && rimraf ../ipyuploads/nbextension\",\n    \"prepublish\": \"yarn run clean && yarn run build:prod\",\n    \"build\": \"webpack --mode=development && yarn run build:labextension:dev\",\n    \"build:prod\": \"webpack --mode=production && yarn run build:labextension\",\n    \"build:labextension\": \"jupyter labextension build .\",\n    \"build:labextension:dev\": \"jupyter labextension build --development True .\",\n    \"watch\": \"webpack --watch --mode=development\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"devDependencies\": {\n    \"@jupyterlab/builder\": \"^3.0.0\",\n    \"webpack\": \"^5\",\n    \"rimraf\": \"^2.6.1\"\n  },\n  \"dependencies\": {\n    \"@jupyter-widgets/base\": \"^6\",\n    \"lodash\": \"^4.17.4\"\n  },\n  \"jupyterlab\": {\n    \"extension\": \"lib/labplugin\",\n    \"outputDir\": \"../ipyuploads/labextension\",\n    \"sharedPackages\": {\n      \"@jupyter-widgets/base\": {\n        \"bundled\": false,\n        \"singleton\": true\n      }\n    }\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/js/package.json b/js/package.json
+--- a/js/package.json	(revision b262cc512f0c8fa098e6ec8886dfd49164b717ac)
++++ b/js/package.json	(date 1718724873401)
+@@ -1,7 +1,7 @@
+ {
+   "name": "@g2nb/ipyuploads",
+-  "version": "0.2.2",
+-  "description": "A Jupyter file widget with chunked upload capabilities",
++  "version": "0.3.0",
++  "description": "A Jupyter file widget with serialization and chunked upload capabilities",
+   "author": {
+     "name": "Thorin Tabor",
+     "email": "tmtabor@cloud.ucsd.edu"
+Index: js/lib/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/**\n * Export widget models and views, and the npm package version number.\n */\nmodule.exports = require('./upload.js');\nmodule.exports['version'] = require('../package.json').version;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/js/lib/index.js b/js/lib/index.js
+--- a/js/lib/index.js	(revision b262cc512f0c8fa098e6ec8886dfd49164b717ac)
++++ b/js/lib/index.js	(date 1718724900447)
+@@ -2,4 +2,5 @@
+  * Export widget models and views, and the npm package version number.
+  */
+ module.exports = require('./upload.js');
++module.exports = require('./text.js');
+ module.exports['version'] = require('../package.json').version;
+Index: ipyuploads/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from ._version import __version__\nfrom .upload import Upload\n\n\ndef _jupyter_labextension_paths():\n    \"\"\"Called by Jupyter Lab Server to detect if it is a valid labextension and\n    to install the widget\n\n    Returns\n    =======\n    src: Source directory name to copy files from. Webpack outputs generated files\n        into this directory and Jupyter Lab copies from this directory during\n        widget installation\n    dest: Destination directory name to install widget files to. Jupyter Lab copies\n        from `src` directory into <jupyter path>/labextensions/<dest> directory\n        during widget installation\n    \"\"\"\n    return [{\n        'src': 'labextension',\n        'dest': '@g2nb/ipyuploads',\n    }]\n\n\ndef _jupyter_nbextension_paths():\n    \"\"\"Called by Jupyter Notebook Server to detect if it is a valid nbextension and\n    to install the widget\n\n    Returns\n    =======\n    section: The section of the Jupyter Notebook Server to change.\n        Must be 'notebook' for widget extensions\n    src: Source directory name to copy files from. Webpack outputs generated files\n        into this directory and Jupyter Notebook copies from this directory during\n        widget installation\n    dest: Destination directory name to install widget files to. Jupyter Notebook copies\n        from `src` directory into <jupyter path>/nbextensions/<dest> directory\n        during widget installation\n    require: Path to importable AMD Javascript module inside the\n        <jupyter path>/nbextensions/<dest> directory\n    \"\"\"\n    return [{\n        'section': 'notebook',\n        'src': 'nbextension',\n        'dest': '@g2nb/ipyuploads',\n        'require': 'ipyuloads/extension'\n    }]\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ipyuploads/__init__.py b/ipyuploads/__init__.py
+--- a/ipyuploads/__init__.py	(revision b262cc512f0c8fa098e6ec8886dfd49164b717ac)
++++ b/ipyuploads/__init__.py	(date 1718724834090)
+@@ -1,5 +1,6 @@
+ from ._version import __version__
+ from .upload import Upload
++from .cleartext import ClearText
+ 
+ 
+ def _jupyter_labextension_paths():
+Index: js/lib/text.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/js/lib/text.js b/js/lib/text.js
+new file mode 100644
+--- /dev/null	(date 1718725326273)
++++ b/js/lib/text.js	(date 1718725326273)
+@@ -0,0 +1,30 @@
++import widgets from "@jupyter-widgets/base";
++import data from "../package.json";
++
++export class ClearTextModel extends widgets.DOMWidgetModel {
++    defaults() {
++        return {
++            ...super.defaults(),
++            _model_name: 'ClearTextModel',
++            _model_module: data.name,
++            _model_module_version: data.version,
++
++            _view_name: 'ClearTextView',
++            _view_module: data.name,
++            _view_module_version: data.version,
++
++            value: '',
++            disabled: false,
++            placeholder: '',
++            continuous_update: false,
++            style: null
++        }
++    }
++}
++
++export class UploadView extends widgets.DOMWidgetView {
++    render() {
++        super.render();
++        console.log('---- RENDERED! ----');
++    }
++}
+Index: ipyuploads/cleartext.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ipyuploads/cleartext.py b/ipyuploads/cleartext.py
+new file mode 100644
+--- /dev/null	(date 1718724765139)
++++ b/ipyuploads/cleartext.py	(date 1718724765139)
+@@ -0,0 +1,24 @@
++from ipywidgets import register, Text, widget_serialization
++from ipywidgets.widgets.widget_string import TextStyle
++from ipywidgets.widgets.trait_types import InstanceDict
++from traitlets import Unicode, Bool
++from ._version import __npm_module__, __version__
++
++
++@register
++class ClearText(Text):
++    """Text box widget with clear button."""
++    _model_name = Unicode('ClearTextModel').tag(sync=True)
++    _model_module = Unicode(__npm_module__).tag(sync=True)
++    _model_module_version = Unicode(__version__).tag(sync=True)
++
++    _view_name = Unicode('ClearTextView').tag(sync=True)
++    _view_module = Unicode(__npm_module__).tag(sync=True)
++    _view_module_version = Unicode(__version__).tag(sync=True)
++
++    disabled = Bool(False, help="Enable or disable user changes").tag(sync=True)
++    continuous_update = Bool(False, help="Update the value as the user types. If False, update on submission, e.g., pressing Enter or navigating away.").tag(sync=True)
++    style = InstanceDict(TextStyle).tag(sync=True, **widget_serialization)
++
++    def __init__(self, **kwargs):
++        super(ClearText, self).__init__(**kwargs)
