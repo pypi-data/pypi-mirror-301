@@ -1,0 +1,4 @@
+web3<v5.31.4
+websocket-client
+cryptography
+cobo_waas2
