@@ -1,0 +1,5 @@
+dagster==1.8.11
+lkml
+looker_sdk
+sqlglot
+cattrs<23.2
