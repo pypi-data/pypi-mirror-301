@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "djalgo"
+version = "0.2.3"
+description = "A music composition toolkit"
+authors = [
+    {name = "Essi Parent", email = "3pp0qk4a@duck.com"},
+]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["midi", "music"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Sound/Audio :: MIDI",
+    "Natural Language :: English"
+]
+dependencies = [
+    "anywidget",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "plotly",
+    "traitlets",
+]
+
+[project.optional-dependencies]
+convert = ["mido", "music21", "pretty-midi"]
+musician = ["music21", "pretty-midi", "scamp"]
+ai = ["tensorflow"]
+notebook = ["ipykernel", "ipywidgets", "jupyter", "jupyterlab", "marimo"]
+dev = ["bump-my-version", "furo", "ipynbname", "ipywidgets", "kaleido", "nbsphinx", "recommonmark", "sphinx", "tomli"] # tomli?
+
+[project.urls]
+Documentation = "https://essicolo.github.io/djalgo/"
+Repository = "https://github.com/essicolo/djalgo.git"
+"Bug Tracker" = "https://github.com/essicolo/djalgo/issues"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/djalgo"]
+
+[tool.uv]
+# uv-specific configurations, if any
