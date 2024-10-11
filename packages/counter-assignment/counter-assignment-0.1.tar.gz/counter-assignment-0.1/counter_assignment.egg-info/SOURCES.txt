@@ -1,0 +1,8 @@
+setup.py
+counter-assignment/__init__.py
+counter-assignment/app.py
+counter_assignment.egg-info/PKG-INFO
+counter_assignment.egg-info/SOURCES.txt
+counter_assignment.egg-info/dependency_links.txt
+counter_assignment.egg-info/requires.txt
+counter_assignment.egg-info/top_level.txt
