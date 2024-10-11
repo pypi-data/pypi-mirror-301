@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "How-To-Sea-PyPackages"
+version = "0.0.8"
+authors = [
+  { name="Jun Song", email="justin.warambourg@gmail.com" },
+]
+description = "A internal project to easily access the GRPC bindings for the How to Sea project"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = []
+
+[tool.setuptools]
+packages = ["how_to_sea_auth_grpc"]
+
+[project.urls]
+Homepage = "https://github.com/early-riser18/HowToSea"
+Issues = "https://github.com/early-riser18/HowToSea/issues"
