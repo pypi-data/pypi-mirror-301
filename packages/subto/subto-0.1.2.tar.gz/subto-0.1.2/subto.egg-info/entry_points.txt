@@ -1,0 +1,2 @@
+[console_scripts]
+subto = subto.cli:interface
