@@ -1,0 +1,2 @@
+class RepositoryIntegrityError(Exception):
+    pass
