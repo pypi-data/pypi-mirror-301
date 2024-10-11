@@ -1,0 +1,9 @@
+zombie_nomnom_api-0.1.0.dist-info/METADATA,sha256=2Vuni-2x3fMqmv2NgupTjUFcmBNT-qyH7-cgDUQPZgc,3041
+zombie_nomnom_api-0.1.0.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+zombie_nomnom_api-0.1.0.dist-info/entry_points.txt,sha256=kLn-WwkwpF9UiFBhkdjqzgEUXwCOHxXA6ekaE31bbU0,81
+zombie_nomnom_api-0.1.0.dist-info/licenses/LICENSE,sha256=bJ3870Pr9bBHRBmtaRGYfcddKJCtjOwoMTCWHAzLrfQ,1079
+zombie_nomnom_api/__init__.py,sha256=NrS3PzmvMjk3puK61fTA-3bd4sWzwVnnwhnKJxvF9vw,80
+zombie_nomnom_api/__main__.py,sha256=2rfKn2tkn17joKm_MGug7RZ7YeQRvSF3c-1HcmmqP78,85
+zombie_nomnom_api/app.py,sha256=zQztJ4DHVvlNPkt2_4BWOAh5Z6GAva6KL6pj8vC1-AE,1096
+zombie_nomnom_api/server.py,sha256=XO7K99GgAXYuTtgCkWemqcCVIqCkb_86EFsS9lWhO3U,293
+zombie_nomnom_api-0.1.0.dist-info/RECORD,,

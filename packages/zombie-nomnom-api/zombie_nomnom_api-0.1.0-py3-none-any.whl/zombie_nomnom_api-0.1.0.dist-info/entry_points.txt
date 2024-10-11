@@ -1,0 +1,5 @@
+[console_scripts]
+zombie-nomnom-api = zombie_nomnom_api.app:main
+
+[gui_scripts]
+
