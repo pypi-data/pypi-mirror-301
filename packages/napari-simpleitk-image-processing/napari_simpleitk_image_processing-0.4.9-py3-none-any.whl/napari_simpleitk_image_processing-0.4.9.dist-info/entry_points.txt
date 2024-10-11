@@ -1,0 +1,5 @@
+[bia_bob_plugins]
+nsitk_plugin = napari_simpleitk_image_processing._bia_bob_plugins:list_bia_bob_plugins
+
+[napari.plugin]
+napari-simpleitk-image-processing = napari_simpleitk_image_processing
