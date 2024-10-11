@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: curves
+Version: 0.1.1
+Summary: functional curve algebra (created by auxilium)
+Home-page: https://github.com/sonntagsgesicht/curves
+Author: sonntagsgesicht
+Author-email: sonntagsgesicht@icloud.com
+License: Apache License 2.0
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+
+.. image:: logo.png
+
+
+Python Project *curves*
+-----------------------------------------------------------------------
+
+
+Introduction
+------------
+
+To import the project simply type
+
+.. code-block:: python
+
+    >>> import curves
+
+after installation.
+
+
+Install
+-------
+
+The latest stable version can always be installed or updated via pip:
+
+.. code-block:: bash
+
+    $ pip install curves
+
+
+License
+-------
+
+Code and documentation are available according to the license
+(see LICENSE file in repository).
