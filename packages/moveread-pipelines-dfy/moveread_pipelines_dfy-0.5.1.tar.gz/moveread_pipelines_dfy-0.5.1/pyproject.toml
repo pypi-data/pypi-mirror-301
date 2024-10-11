@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-pipelines-dfy"
+version = "0.5.1"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "The Moveread DFY Pipeline"
+dependencies = [
+  "moveread-pipelines-input-validation",
+  "moveread-pipelines-game-preprocess>=0.5.0",
+  "moveread-pipelines-ocr-predict",
+  "moveread-pipelines-game-correction",
+  "pipeteer", "moveread-core", "python-kv[server]"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/moveread/dfy-pipeline.git"
+
+[project.scripts]
+dfy-pipeline = "moveread.pipelines.dfy.cli:main"
