@@ -1,0 +1,5 @@
+[setuptools.file_finders]
+setuptools_ocrd = setuptools_ocrd._integration.setuptools:file_finder_ocrd_tool
+
+[setuptools.finalize_distribution_options]
+setuptools_ocrd = setuptools_ocrd._integration.setuptools:get_ocrd_tool_version
