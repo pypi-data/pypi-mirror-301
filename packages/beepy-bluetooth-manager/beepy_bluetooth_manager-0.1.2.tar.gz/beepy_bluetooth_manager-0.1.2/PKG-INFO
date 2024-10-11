@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: beepy-bluetooth-manager
+Version: 0.1.2
+Summary: A Bluetooth manager for Beepy.
+Home-page: https://github.com/conor-f/beepy-bluetooth-manager
+License: GPL-3.0-or-later
+Author: Conor Flynn
+Author-email: beepy@randombits.host
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: textual (>=0.82.0,<0.83.0)
+Description-Content-Type: text/markdown
+
+# Beepy Bluetooth Manager
+
+A simplified Bluetooth manager for Beepy devices.
+
+
+## Todo
+
+- [ ] No lag on startup
+- [ ] Notification for successful/failed connection
+- [ ] Auto-rescan/update list of devices
+- [ ] Highlight if already connected to device
+- [ ] Auto-connect profiles
+- [ ] Loading spinner while scanning for devices
+- [ ] Test on fresh device
+
