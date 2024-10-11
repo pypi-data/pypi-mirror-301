@@ -1,0 +1,1 @@
+call setup_git_alias.bat disable
