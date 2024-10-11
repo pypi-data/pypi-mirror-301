@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: scLift
+Version: 0.0.56
+Summary: scevow: Excellent optimization of variant function mapping through weighted random walks at single-cell resolution
+Author-email: Yu Zhengmin <3236170161@qq.com>
+Project-URL: gitee, https://gitee.com/ykenan_yingying/scLift
+Keywords: YKenan,Yu Zhengmin,scATAC-seq,Fine-mapping,Single-cell epiomics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==1.5.3
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: seaborn==0.11.2
+Requires-Dist: anndata==0.9.1
+Requires-Dist: scipy==1.14.1
+Requires-Dist: scanpy==1.9.6
+Requires-Dist: scikit-learn==1.5.2
+Requires-Dist: networkx==3.3
+Requires-Dist: palettable==3.3.3
+Requires-Dist: colormap==1.0.4
+Requires-Dist: easydev==0.13.2
+Requires-Dist: h5py==3.12.1
+Requires-Dist: mudata==0.2.3
+Requires-Dist: PyComplexHeatmap==1.6.1
+Requires-Dist: statannotations==0.6.0
+Requires-Dist: magic-impute==3.0.0
+Requires-Dist: leidenalg==0.10.2
+Requires-Dist: scvi-tools==1.2.0
+Requires-Dist: ykenan_file==0.2.6
+Requires-Dist: ykenan_log==0.2.2
+Requires-Dist: snapatac2>=2.5.3
+Requires-Dist: harmonypy==0.0.10
+Requires-Dist: gseapy==1.1.3
+Requires-Dist: pysam==0.22.1
+
+# scevow
+
+> scevow: Excellent optimization of variant function mapping through weighted random walks at single-cell resolution
+
+> scevow: 通过单细胞分辨率下的加权随机游走对突变功能映射进行优化
+
+## 1. 介绍
+
+## 2. 上传
+
+> upload
+
+> test
+
+```shell
+python3 -m build
+twine check dist/*
+twine upload --repository testpypi dist/*
+```
+
+> production
+
+```shell
+python3 -m build
+twine check dist/*
+twine upload dist/*
+```
+
+## 3. 使用
+
+```shell
+vim ~/.bashrc
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+source ~/.bashrc
+
+```
+
+> test
+
+```shell
+pip3 install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+pip3 install scLift -i https://test.pypi.org/simple/
+```
+
+> production
+
+```shell
+pip3 install scLift
+
+```
