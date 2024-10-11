@@ -1,0 +1,2 @@
+[console_scripts]
+trf = trf.__main__:main
