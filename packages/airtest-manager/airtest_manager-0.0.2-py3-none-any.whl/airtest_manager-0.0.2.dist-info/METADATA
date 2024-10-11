@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: airtest-manager
+Version: 0.0.2
+Summary: support using image url for airtest Template
+Home-page: https://github.com/nibilin33/airtest_manager
+Author: nibilin33
+Author-email: nibilin33@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: airtest
+
+# airtest_manager
+
+## 安装
+
+使用pip安装：
+
+```bash
+pip install airtest_manager
+```
+
+## 使用 
+
+```bash
+from airtest_manager import TemplateManager
+
+template_manager = TemplateManager()
+click_tab_all_product = template_manager.get_template('http://example.com/path/to/tab.png', rgb=True)
+```
