@@ -1,0 +1,15 @@
+matplotlib
+sphinx
+sphinx-rtd-theme
+sphinx-mdinclude
+sphinxcontrib-bibtex
+sphinx-markdown-tables
+recommonmark
+pandas
+pytest
+pytest-cov
+pytest-mock
+twine
+pre-commit
+coverage-badge
+urllib3==1.26.6
