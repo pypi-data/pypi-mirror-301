@@ -1,0 +1,3 @@
+[console_scripts]
+raygun-sample = raygun.commands.generate_samples:main
+raygun-train = raygun.commands.train:main
