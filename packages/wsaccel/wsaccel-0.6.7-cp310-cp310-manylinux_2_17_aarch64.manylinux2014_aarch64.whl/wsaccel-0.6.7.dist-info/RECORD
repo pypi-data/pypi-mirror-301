@@ -1,0 +1,11 @@
+wsaccel-0.6.7.dist-info/top_level.txt,sha256=7BkPoar4LKAb4h_MpAS6OCzTwGLwrfHPzoeE7tffpsw,8
+wsaccel-0.6.7.dist-info/RECORD,,
+wsaccel-0.6.7.dist-info/LICENSE,sha256=tpgpdMuDi5hbVLZj0XgNKAc1CGJJwuKAFfJd1FXfJdo,583
+wsaccel-0.6.7.dist-info/METADATA,sha256=AqHZUbm3eN_kRwa_AC9jK9B6NuSF__HPWuousOIFmK8,1744
+wsaccel-0.6.7.dist-info/WHEEL,sha256=IjQRalpktecrnjQ0mlgISGBVe9z7Fv6GdQT0dw4Gf_A,153
+wsaccel/utf8validator.c,sha256=HwriEvm7SyC6nnpiiuQplBNdRHfTztT4wGwM0FjEBwE,1104928
+wsaccel/utf8validator.cpython-310-aarch64-linux-gnu.so,sha256=ZSj03YPA44qc0D4QXoRQA1uYEt6QwchvzXqwues6-88,1538008
+wsaccel/xormask.cpython-310-aarch64-linux-gnu.so,sha256=Dy-qkO07qy8PdZduCN156wrHePu42LIWElAx6A7SbF0,1627784
+wsaccel/xormask.c,sha256=k7ioabUFX0xJAHXXYPvJTWKrF53iEFYMg71teX_cBxs,1175288
+wsaccel/__init__.py,sha256=Qk23GsOu1T0K_AZSWE64BQJZT_AYU6Z9yUb34BKSIPM,855
+wsaccel/dfa.h,sha256=Dqqa1IVCgRXegVI8-jCJ_OdvorbDsyODkLCKKILHGVs,1151
