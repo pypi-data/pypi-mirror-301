@@ -1,0 +1,26 @@
+<section id="identity" class="with-sidebar">
+  <form id="form-identity" hx-post="{{ form.post_url }}" hx-target="#identity" hx-swap="outerHTML" enctype="multipart/form-data">
+    <div class="stack"><!-- The person's name, pronouns, tagline, location, and social links - not sidebar -->
+      <div class="cluster">
+        <h2><input class="input-as-content" type="text" name="name" placeholder="{{ form.name.value }}" value="{{ form.name.value }}"></h2>
+        <ul class="cluster cluster-list pronoun-badges-list">
+          <li>{{ form.pronouns.value }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="avatar-container"><!-- Right side - the sidebar -->
+      {% if form.avatar_img.value %}
+        <img class="avatar" src="/media/{{ form.avatar_img.value }}" alt="{{ form.avatar_alt.value }}" width="110" height="110">
+      {% else %}
+        <svg class="avatar" width="110" height="110">
+          <use href="#avatar"></use>
+        </svg>
+      {% endif %}
+    </div>
+    <button id="submit-identity">
+      <svg class="edit-icon-small">
+        <use href="#ok"></use>
+      </svg>
+    </button>
+  </form>
+</section>
