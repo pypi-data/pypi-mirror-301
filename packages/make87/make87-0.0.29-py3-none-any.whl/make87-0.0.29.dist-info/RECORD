@@ -1,0 +1,13 @@
+make87/__init__.py,sha256=vLzz24d6Bdnz4UMiQKry9OIY0h5FQvmUXIfSsu-VQYI,1356
+make87/logging_handler.py,sha256=NE1-BNZ_bR-PHcG6bCBGxze-DyzdaHvoY_Q98v4C2c4,1728
+make87/lookups.py,sha256=dikuskiiW1ljQLjIy0KPV3ZEkz7TXCUhpxCYMgXPz30,1984
+make87/messages.py,sha256=A5muLpSi6YRU61hu0C7EOQ-IvXnxoMQYPv-WXs-Dd9U,2267
+make87/session_manager.py,sha256=_XzQOCLtGQVYO6O41AQCuBPuns2XlqX-8i-EUMaLsWA,3298
+make87/stderr_handler.py,sha256=94o-QxPzXWZlKjUxeNTRUSui88G6scY_zBfIkTn-C2U,1683
+make87/stdout_handler.py,sha256=P8ZQIdzXGI1pDDvK7SBmO9K3XMyHsyk4lz11dfMd7s8,1694
+make87/topics.py,sha256=q_tvFEG3qrQlblFErvlSMHE5CKqR1jLr4p645fF26J4,4678
+make87/utils.py,sha256=BVvdnUzUiFFVZCuN5vlF1IoFiRnHcv1OixDgNnAfo2w,497
+make87-0.0.29.dist-info/METADATA,sha256=UkY96g8LDG4xyNqJZb6vm5xBA_RvOKMmTA5nQQGG_w8,446
+make87-0.0.29.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+make87-0.0.29.dist-info/top_level.txt,sha256=cpdK_abH_DbS5p8vdbM9lCaeh_SOW9OxwC-PCjaU8BE,7
+make87-0.0.29.dist-info/RECORD,,
