@@ -1,0 +1,13 @@
+gmail_automator/__init__.py,sha256=CXEG7QW62hIUiEXs4wHZTzWYp2MFz0vgiP0tz1x-FE8,235
+gmail_automator/auth.py,sha256=JSMPO7yRdUydDaV3-I-hI6akKc97Q0X_bjOv_e-rTQ8,7141
+gmail_automator/email_generator.py,sha256=jSTmkFS_De5PhOysvFBMuoDlz-vDaFabWaPBpupKckI,4230
+gmail_automator/email_listener.py,sha256=6WaEqdmNOLwfID94hP7C3LcZ8vtMtv2mAnZDDi1R7kI,7876
+gmail_automator/email_parser.py,sha256=90dqnObD7B6Pz1kyd-4GvXjfOZd7qqpNV8XHZTe8_x0,7486
+gmail_automator/operations.py,sha256=vTXG_GIqoM2fBjvqKy9jG3vBMNSqoWMtBdd8P3BVHCE,5701
+gmail_automator/setup_auth.py,sha256=qBUG00bLaCMi4SmvbNOELoSTuONVLWC_yRlXIZn3C5E,5866
+mailship-0.1.0.dist-info/LICENSE,sha256=zRTi8ouh7fosgaK0aC17GcpD5c4sZlSqkmvVyWDiDMM,1301
+mailship-0.1.0.dist-info/METADATA,sha256=8wbgnQTDoyFWjX1GWSHR1gyVFDAEJC5IM7_ZkmU3j8U,7964
+mailship-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mailship-0.1.0.dist-info/entry_points.txt,sha256=SBcnCShHZrPrzbALvSgxE2dneQdvHqpJu7TBW5lkkiY,68
+mailship-0.1.0.dist-info/top_level.txt,sha256=_tkHq0cjuU_OxzRnI0qjtUZHd3__TXYomCcOPeSCHS4,16
+mailship-0.1.0.dist-info/RECORD,,

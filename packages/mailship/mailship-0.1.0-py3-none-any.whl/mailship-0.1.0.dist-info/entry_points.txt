@@ -1,0 +1,2 @@
+[console_scripts]
+mail-ship-setup = gmail_automator.setup_auth:main
