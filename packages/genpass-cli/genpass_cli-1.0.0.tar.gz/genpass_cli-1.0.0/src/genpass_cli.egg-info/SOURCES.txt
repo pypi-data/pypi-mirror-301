@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/genpass/__init__.py
+src/genpass/core.py
+src/genpass_cli.egg-info/PKG-INFO
+src/genpass_cli.egg-info/SOURCES.txt
+src/genpass_cli.egg-info/dependency_links.txt
+src/genpass_cli.egg-info/entry_points.txt
+src/genpass_cli.egg-info/requires.txt
+src/genpass_cli.egg-info/top_level.txt
+tests/test_core.py
