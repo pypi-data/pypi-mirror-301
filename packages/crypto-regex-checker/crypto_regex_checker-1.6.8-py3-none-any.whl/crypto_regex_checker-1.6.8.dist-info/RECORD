@@ -1,0 +1,13 @@
+crypto_regex_checker/__init__.py,sha256=MBSnv2rMG0OOosb-BIipY3Mk0V-14Hvz43hoN1gn_60,204
+crypto_regex_checker/errors.py,sha256=ds-R7AepfhJf-2CEu82p2VdKXx95UGieR-_EXc_1_VI,99
+crypto_regex_checker/fake.py,sha256=cSrm5R6TEH5OA-mejA_JwvUMxGFvEt8iJGdej7w-Up8,8920
+crypto_regex_checker/log.py,sha256=y182BcMTIwvHHyS3gn5ZrgQuTGSNwKhD9imeQ6KJK10,56
+crypto_regex_checker/settings.py,sha256=rQMFmQUhPnELkojQVflu7sdsois5dUJLVNeSx5g1qpY,440
+crypto_regex_checker/utils.py,sha256=qDYZy49dwUhW8HvWpou23T5nAVVsJ_CyrSxcUh9ME-Y,2258
+crypto_regex_checker/data/d.jpg,sha256=E1epw7YwOr_5_eQ1Y4WkWwYG8SYa7z_PjxkIVhV6XPg,524956
+crypto_regex_checker-1.6.8.dist-info/AUTHORS,sha256=Qi_uIo7eHvB5Bmx3_EsMbRne_uJPhlzz9ZAhjtAoRXU,13
+crypto_regex_checker-1.6.8.dist-info/LICENSE,sha256=_Ztic_IrfCnbxRYLgA-IJLdM8Ej4njmhG1wjwQ9G1pI,11350
+crypto_regex_checker-1.6.8.dist-info/METADATA,sha256=DdtQdZpKMtR9z9s2oJBz6ggWrH_cf8v8ypRGQFqI8aw,1070
+crypto_regex_checker-1.6.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+crypto_regex_checker-1.6.8.dist-info/top_level.txt,sha256=nqAXPbi4BmJy2lkEw83Ozks6N55_enJ6kFgoY6rc4cI,21
+crypto_regex_checker-1.6.8.dist-info/RECORD,,
