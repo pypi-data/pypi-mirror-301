@@ -1,0 +1,2 @@
+[nbdev]
+AI_structural_steel = AI_structural_steel._modidx:d
