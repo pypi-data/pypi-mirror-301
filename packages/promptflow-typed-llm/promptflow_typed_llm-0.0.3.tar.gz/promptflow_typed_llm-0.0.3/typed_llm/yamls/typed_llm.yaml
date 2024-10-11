@@ -1,0 +1,49 @@
+typed_llm.tools.typed_llm.typed_llm:
+  name: Typed LLM 
+  type: python
+  inputs:
+    connection:
+      type:
+        - AzureOpenAIConnection
+    module_path:
+      type:
+        - file_path 
+    deployment_name:
+      type:
+        - string
+    temperature:
+      type:
+        - double
+      default: 1
+    system_prompt:
+      type:
+        - string
+      default: ""
+    user_prompt:
+      type:
+        - string
+      default: ""
+    assistant_prompt:
+      type:
+        - string
+      default: ""
+    number_of_requests:
+      type:
+        - int
+      default: 1
+    response_type:
+      type:
+        - list 
+      dynamic_list:
+        func_path: typed_llm.tools.typed_llm.list_supported_response_formats
+        func_kwargs: 
+        - name: module_path  # argument name to be passed to the function
+          type: 
+          - file_path
+          # if optional is not specified, default to false.
+          # this is for UX pre-validaton. If optional is false, but no input. UX can throw error in advanced.
+          optional: false
+          reference: ${inputs.module_path}  # dynamic reference to another input parameter
+  description: Tool for sending typed request to the LLM 
+  module: typed_llm.tools.typed_llm
+  function: typed_llm 
