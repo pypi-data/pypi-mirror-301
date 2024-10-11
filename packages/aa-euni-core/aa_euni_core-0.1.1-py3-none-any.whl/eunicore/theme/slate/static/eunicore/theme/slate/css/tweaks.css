@@ -1,0 +1,4 @@
+/* Default body color doesn't contrast enough under .bg-success for the dashboard software version */
+#aa-dashboard-panel-software-version .bg-success {
+    --bs-body-color: #fff;
+}

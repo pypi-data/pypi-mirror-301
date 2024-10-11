@@ -1,0 +1,32 @@
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: lighten($body-bg, 7.5%);
+    border: 1px solid $gray-lighter;
+    border-left-width: 5px;
+    border-radius: 3px;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bs-callout-primary {
+    border-left-color: $brand-primary;
+}
+
+.bs-callout-success {
+    border-left-color: $brand-success;
+}
+
+.bs-callout-info {
+    border-left-color: $brand-info;
+}
+
+.bs-callout-warning {
+    border-left-color: $brand-warning;
+}
+
+.bs-callout-danger {
+    border-left-color: $brand-danger;
+}
