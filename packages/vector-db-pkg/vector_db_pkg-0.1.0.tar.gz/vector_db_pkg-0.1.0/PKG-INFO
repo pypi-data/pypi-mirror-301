@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vector_db_pkg
+Version: 0.1.0
+Summary: A vector database builder and search tool
+Home-page: UNKNOWN
+Author: Nwoka Ajinwo
+Author-email: nwoka05@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE  
+
+UNKNOWN
+

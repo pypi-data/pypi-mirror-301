@@ -1,0 +1,12 @@
+LICENSE  
+setup.py
+vector_db_pkg/__init__.py
+vector_db_pkg/data_ingestion.py
+vector_db_pkg/preprocessing.py
+vector_db_pkg/vector_db.py
+vector_db_pkg/vectorization.py
+vector_db_pkg.egg-info/PKG-INFO
+vector_db_pkg.egg-info/SOURCES.txt
+vector_db_pkg.egg-info/dependency_links.txt
+vector_db_pkg.egg-info/requires.txt
+vector_db_pkg.egg-info/top_level.txt
