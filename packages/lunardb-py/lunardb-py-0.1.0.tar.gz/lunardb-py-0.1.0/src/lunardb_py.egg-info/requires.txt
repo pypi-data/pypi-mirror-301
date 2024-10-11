@@ -1,0 +1,6 @@
+requests>=2.25.1
+
+[dev]
+pytest>=6.2.3
+black>=21.5b1
+flake8>=3.9.1

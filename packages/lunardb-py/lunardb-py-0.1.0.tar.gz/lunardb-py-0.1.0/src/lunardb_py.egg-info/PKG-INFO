@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: lunardb-py
+Version: 0.1.0
+Summary: A Python SDK for LunarDB
+Home-page: https://github.com/Kazooki123/lunardb-python-sdk
+Author: Kazooki123
+Author-email: mgamerdinge146@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# LunarDB Python Package SDK
+
+A Package SDK for the LunarDB database. Making LunarDB accessible for
+Python developers in the **Open Source Community!**
+
+## Installation
+
+**Python 3.9, 3.10** and above required
+
+Run this command to install the `lunardb-py` sdk package:
+
+```bash
+pip install lunardb-py
