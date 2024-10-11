@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-drifter
+Version: 0.1.2
+Summary: More migration commands to make development life simpler
+Author: klove
+Requires-Python: >=3.10
+Requires-Dist: django
+Requires-Dist: flit<4,>=3.2
+Requires-Dist: django-stubs ; extra == "development"
+Requires-Dist: interrogate ; extra == "development"
+Requires-Dist: pyright ; extra == "development"
+Requires-Dist: ruff ; extra == "development"
+Requires-Dist: coverage ; extra == "testing"
+Requires-Dist: pytest ; extra == "testing"
+Requires-Dist: pytest-cov ; extra == "testing"
+Requires-Dist: pytest-django ; extra == "testing"
+Requires-Dist: pytest-randomly ; extra == "testing"
+Requires-Dist: pytest-xdist ; extra == "testing"
+Requires-Dist: tox ; extra == "testing"
+Provides-Extra: development
+Provides-Extra: testing
