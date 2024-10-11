@@ -1,0 +1,97 @@
+"""MQT QMAP library.
+
+This file is part of the MQT QMAP library released under the MIT license.
+See README.md or go to https://github.com/cda-tum/qmap for more information.
+"""
+
+from __future__ import annotations
+
+
+# start delvewheel patch
+def _delvewheel_patch_1_8_2():
+    import os
+    libs_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, 'mqt_qmap.libs'))
+    if os.path.isdir(libs_dir):
+        os.add_dll_directory(libs_dir)
+
+
+_delvewheel_patch_1_8_2()
+del _delvewheel_patch_1_8_2
+# end delvewheel patch
+
+import os
+import sys
+from pathlib import Path
+
+if sys.platform == "win32" and "Z3_ROOT" in os.environ:
+    lib_path = Path(os.environ["Z3_ROOT"]) / "lib"
+    if lib_path.exists():
+        os.add_dll_directory(str(lib_path))
+    bin_path = Path(os.environ["Z3_ROOT"]) / "bin"
+    if bin_path.exists():
+        os.add_dll_directory(str(bin_path))
+
+from ._version import version as __version__
+from .clifford_synthesis import optimize_clifford, synthesize_clifford
+from .compile import compile  # noqa: A004
+from .pyqmap import (
+    Arch,
+    Architecture,
+    CliffordSynthesizer,
+    CommanderGrouping,
+    Configuration,
+    EarlyTermination,
+    Encoding,
+    Heuristic,
+    HybridMapperParameters,
+    HybridNAMapper,
+    InitialCircuitMapping,
+    InitialCoordinateMapping,
+    InitialLayout,
+    Layering,
+    LookaheadHeuristic,
+    MappingResults,
+    Method,
+    NeutralAtomHybridArchitecture,
+    QuantumComputation,
+    SwapReduction,
+    SynthesisConfiguration,
+    SynthesisResults,
+    Tableau,
+    TargetMetric,
+    Verbosity,
+)
+from .subarchitectures import SubarchitectureOrder
+
+__all__ = [
+    "Arch",
+    "Architecture",
+    "CliffordSynthesizer",
+    "CommanderGrouping",
+    "Configuration",
+    "EarlyTermination",
+    "Encoding",
+    "Heuristic",
+    "HybridMapperParameters",
+    "HybridNAMapper",
+    "InitialCircuitMapping",
+    "InitialCoordinateMapping",
+    "InitialLayout",
+    "Layering",
+    "LookaheadHeuristic",
+    "MappingResults",
+    "Method",
+    "NeutralAtomHybridArchitecture",
+    "QuantumComputation",
+    "SubarchitectureOrder",
+    "SwapReduction",
+    "SynthesisConfiguration",
+    "SynthesisResults",
+    "Tableau",
+    "TargetMetric",
+    "Verbosity",
+    "__version__",
+    "compile",
+    "optimize_clifford",
+    "synthesize_clifford",
+]
