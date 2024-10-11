@@ -1,0 +1,14 @@
+pulumiverse_matchbox/__init__.py,sha256=gTbDyYhPqGHq8_vsTmG6NeqHM0i5MVG_shN2Zva1B-Y,1049
+pulumiverse_matchbox/_utilities.py,sha256=WrLtyQX3NqN9G3SJjPEKw6fjrvR51KTivgFk8t8SMyw,10539
+pulumiverse_matchbox/group.py,sha256=2aG1zUant2g6u3xA0EEnRi9xiGs73BctRt_oQIbnnmc,12500
+pulumiverse_matchbox/profile.py,sha256=ZVRdvgyGXMf5PusF8vyhO9G7w9Zu-cCXGbXgmsFQ7ek,16380
+pulumiverse_matchbox/provider.py,sha256=omsTdK01Of-Fd99K7JhwRqkYiz7chOpK8yGqlRcGt3o,6708
+pulumiverse_matchbox/pulumi-plugin.json,sha256=jeJGbq0zKH6ie-mzPYBVwfzR2g5pLytRM6t052vl2Y0,135
+pulumiverse_matchbox/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumiverse_matchbox/config/__init__.py,sha256=cfY0smRZD3fDVc93ZIAxEl_IM2pynmXB52n3Ahzi030,285
+pulumiverse_matchbox/config/__init__.pyi,sha256=4aY_XITpY4iPcPPfZF4s8FeMisN6_hIr58PutkTSJDQ,442
+pulumiverse_matchbox/config/vars.py,sha256=4_ffOcWZ9zZjO1DyklXJAo9N-l0nUW-U_Vp3HLp_W94,831
+pulumiverse_matchbox-0.2.0a1728637932.dist-info/METADATA,sha256=sBVOj_RHZ5umhdFwEuoERLX7Wss0MOBXUfhI0IyLZ4U,2638
+pulumiverse_matchbox-0.2.0a1728637932.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pulumiverse_matchbox-0.2.0a1728637932.dist-info/top_level.txt,sha256=l53Fw2g80VMVjdMmguZvBezPyCPpgrC5MC78tA5BI0s,21
+pulumiverse_matchbox-0.2.0a1728637932.dist-info/RECORD,,
