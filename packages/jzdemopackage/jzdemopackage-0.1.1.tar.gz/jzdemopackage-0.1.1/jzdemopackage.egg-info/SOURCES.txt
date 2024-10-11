@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jzdemopackage/__init__.py
+jzdemopackage/functions.py
+jzdemopackage/greet.py
+jzdemopackage.egg-info/PKG-INFO
+jzdemopackage.egg-info/SOURCES.txt
+jzdemopackage.egg-info/dependency_links.txt
+jzdemopackage.egg-info/top_level.txt
