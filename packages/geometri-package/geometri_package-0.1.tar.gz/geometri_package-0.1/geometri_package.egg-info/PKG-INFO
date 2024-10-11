@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: geometri-package
+Version: 0.1
+Summary: Paket untuk menghitung berbagai bangun ruang.
+Home-page: https://github.com/nurulmarisa8/geometri-package.git
+Author: Kelompok 4 ALGO A
+Author-email: office@unhas.ac.id
+License: MIT
+Description-Content-Type: text/markdown
+
+# PACKAGE GEOMETRI
+
+**PACKAGE GEOMETRI** adalah library Python yang berfungsi untuk menghitung berbagai aspek dari beberapa bentuk geometri, termasuk kerucut, prisma, limas, balok, bola, dan tabung. Library ini menyediakan rumus untuk menghitung luas permukaan dan volume dari setiap bentuk tersebut.
+
+## Fitur
+
+- **Kerucut**: Menghitung luas permukaan dan volume kerucut.
+- **Prisma**: Menghitung luas permukaan dan volume prisma.
+- **Limas**: Menghitung luas permukaan dan volume limas.
+- **Balok**: Menghitung luas permukaan dan volume balok.
+- **Bola**: Menghitung luas permukaan dan volume bola.
+- **Tabung**: Menghitung luas permukaan dan volume tabung.
+
+## Instalasi
+
+Untuk menginstal library ini, Anda bisa menggunakan `pip` dengan perintah berikut:
+
+```bash
+pip install package-geometri
+
+```

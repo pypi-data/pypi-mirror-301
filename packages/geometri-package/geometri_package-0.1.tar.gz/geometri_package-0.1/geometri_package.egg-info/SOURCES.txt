@@ -1,0 +1,13 @@
+README.md
+setup.py
+geokel/BOLA1.py
+geokel/Limas.py
+geokel/__init__.py
+geokel/kerucut.py
+geokel/kubusBalok.py
+geokel/prisma.py
+geokel/tabung.py
+geometri_package.egg-info/PKG-INFO
+geometri_package.egg-info/SOURCES.txt
+geometri_package.egg-info/dependency_links.txt
+geometri_package.egg-info/top_level.txt
