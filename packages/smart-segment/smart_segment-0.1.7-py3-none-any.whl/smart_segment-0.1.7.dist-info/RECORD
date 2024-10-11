@@ -1,0 +1,13 @@
+smart_segment/__init__.py,sha256=Xw1PkMJ236IYfAYQDBzrUTrKKvXPOjSKkocpBH_Q_eI,481
+smart_segment/optimization.py,sha256=M5nHVxQV1e3JZQY4W1t2nw0xTYaYGMjrFggEEdqwWcU,3454
+smart_segment/segmentation.py,sha256=dC8DdPY-FikTH6GOJRjEDVcLPuvPGgolUyfh2HgMR3o,2399
+smart_segment/utils.py,sha256=-uFdowl5vIAGDaTnq1DPKeiGMjeHqLXyOdl3JSOH-dk,4904
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_optimization.py,sha256=yr_vzNWzZVGIn_tHLjSVtcpek0F889ifCe69KU5hbs8,1506
+tests/test_segmentation.py,sha256=OKrw7hsdpvfv-QlcFdfMN5EeyQB2XyvYWigyU3GFUXY,1535
+tests/test_utils.py,sha256=C-Xz5hqSQ_6isUNKdE6cI4EuyCmlH3Swjd2j5iEvBLs,1713
+smart_segment-0.1.7.dist-info/LICENSE,sha256=L_a_PiBLV9CLEdN9F5iJfXz8-qVEiyFu_-cslNk-2Fo,1096
+smart_segment-0.1.7.dist-info/METADATA,sha256=ZR04PbNfw1fEQo_AGDBxZKaFYwrlyc7clp5I85jzLVE,17440
+smart_segment-0.1.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+smart_segment-0.1.7.dist-info/top_level.txt,sha256=0n1ZURBMteOdGbkuRGNiiKqmrA5n5MN9WyGWzaKg1Hs,20
+smart_segment-0.1.7.dist-info/RECORD,,
