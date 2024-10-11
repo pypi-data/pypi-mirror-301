@@ -1,0 +1,5 @@
+[console_scripts]
+zibai = zibai.__main__:command_line
+
+[gui_scripts]
+
