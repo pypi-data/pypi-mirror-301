@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastfinder
+Version: 0.0.3
+Summary: Building lightcurve features for fast-evolving transients such as Kilonovae
+Home-page: https://github.com/mFulton07/LasairFastfinder
+Author: genghisken
+Author-email: ken.w.smith@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LasairFastfinder
+Python program for picking out fast-evolving transients such as Kilonova from the Lasair Datastream.
