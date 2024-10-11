@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "immunonaut"
+version = "0.0.2"
+description = "Tools for immunochemical analysis"
+authors = ["kosmolebryce <k.lebryce@pm.me>"]
+license = "AGPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+appdirs = "^1.4.4"
+ipython = "^8.27.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+poetry = "^1.8.3"
+mypy = "^1.11.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

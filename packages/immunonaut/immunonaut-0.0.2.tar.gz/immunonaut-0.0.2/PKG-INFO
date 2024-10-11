@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: immunonaut
+Version: 0.0.2
+Summary: Tools for immunochemical analysis
+License: AGPL-3.0
+Author: kosmolebryce
+Author-email: k.lebryce@pm.me
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: ipython (>=8.27.0,<9.0.0)
+Description-Content-Type: text/markdown
+
+# README.md
+
+## Immunonaut v0.0.1a2
+
+### Overview
+
+Immunonaut is an immunochemical assaying toolkit. This project is brand new, and I have yet to create a roadmap, so if you are interested, please check back later.
