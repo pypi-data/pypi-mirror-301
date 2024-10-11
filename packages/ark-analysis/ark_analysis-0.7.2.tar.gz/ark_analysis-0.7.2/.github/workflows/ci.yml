@@ -1,0 +1,95 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [labeled, opened, synchronize, reopened]
+  workflow_dispatch:
+  merge_group:
+    types: [checks_requested]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  id-token: write # Required for requesting the JWT
+  contents: read # to fetch code (actions/checkout)
+
+jobs:
+  get_dataset:
+    env:
+      cache-name: dataset-cache
+
+    name: Get / Update Example Dataset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ${{github.repository }}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore Example Dataset Cache
+        uses: actions/cache@v4
+        with:
+          path: ./data/cache/
+          key: huggingface-${{ env.cache-name }}
+          enableCrossOsArchive: true
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+            enable-cache: true
+            cache-dependency-glob: "uv.lock"
+  
+      - name: Set up Python
+        run: |
+          uv python install 3.11
+    
+      - name: Install Dependencies and ${{ github.repository }}
+        run: |
+          uv sync --all-extras
+      - name: Check the Example Dataset Cache
+        run: |
+          uv run ./.github/scripts/get_example_dataset.py
+
+  test:
+    needs: [get_dataset]
+    name: Test
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    secrets: inherit
+    uses: ./.github/workflows/test.yml
+
+  build:
+    name: Build
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    secrets: inherit
+    uses: ./.github/workflows/build.yml
+
+  upload_coverage:
+    needs: [test]
+    name: Upload Coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ${{github.repository }}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download Coverage Artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: coverage-*
+          merge-multiple: true
+
+      - name: Upload Coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
