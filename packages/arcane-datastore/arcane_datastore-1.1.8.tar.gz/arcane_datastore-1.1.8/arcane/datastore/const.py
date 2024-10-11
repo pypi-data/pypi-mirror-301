@@ -1,0 +1,16 @@
+PRODUCT_FLOW_KIND = 'smart-feeds-product-flow'
+DATA_EXPORT_KIND = 'smart-feeds-data-exports'
+DATA_INGESTION_KIND = 'smart-feeds-data-ingestions'
+DATA_PROCESSING_KIND = 'smart-feeds-data-processings'
+PROTECTION_KIND = 'protection-file-size'
+ALERT_KIND = 'alert-file-change'
+PERFORMANCE_DASHBOARD_KIND = 'performance-dashboard'
+# To maintain compatibility with the old version of package
+PEFORMANCE_DASHBOARD_KIND = PERFORMANCE_DASHBOARD_KIND
+GENERAL_DASHBOARD_KIND = 'general-dashboard'
+OPTIMIZATION_KIND = 'smart-feeds-optimization'
+OPTIMIZATION_CONFIG_KIND = 'smart-feeds-optimization-config'
+OPTIMIZATION_DETAILS_KIND = 'smart-feeds-optimization-details'
+OPTIMIZATION_EXAMPLES_KIND = 'smart-feeds-optimization-examples'
+CLIENT_KIND = 'base-clients'
+ORGANISATION_KIND = 'organisation'
