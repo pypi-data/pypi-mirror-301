@@ -1,0 +1,14 @@
+num2geotext/__init__.py,sha256=qSLT6_-h2TcmlbWT2NfEk7SMNHiuN1QvabMc0fQ-7B4,1422
+num2geotext/float_num_to_geo_currency.py,sha256=g3Tj3shrP-qhUR8L9DL9rr7SojVk8lQWaYCRu0Y1qhY,15707
+num2geotext/float_num_to_geo_text.py,sha256=3SoITE8L8yYdq6q6E0oWUME1WB-qryCU0NbYlAwsCx0,15189
+num2geotext/int_num_to_geo_text.py,sha256=iC2GeIGSx_ZXYP42bAWXpCdA_hqj8ekQyYdZGzutQnY,17121
+num2geotext/number_to_word.py,sha256=gEzw7swhb0HcV53FNj3VFYJPUuwC87vQLB9jM1Dr34E,4538
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_float_to_currency.py,sha256=X-siMRd_kP2bRaA9CxtKKxC2dcQVeGHYNQp_KAT1eZg,3803
+tests/test_float_to_text.py,sha256=NXRZQGI1p5zEaIM__6UaLQyfqA1z-T3MuGAvAIk5nKE,4167
+tests/test_int_to_text.py,sha256=KUHuVrh261ppsAa9ZDl1y4brXSoRpySGBWLChUMx3is,3177
+num2geotext-0.0.1.dist-info/LICENSE.txt,sha256=H1_ItZS14NayF8ZU1n6GbmjJT4RSKn4APB5lrD4e3mc,1097
+num2geotext-0.0.1.dist-info/METADATA,sha256=MDMLqKBieapjxILCsiyVZX5LpFuU9nEtXmRqUj7_m1s,1692
+num2geotext-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+num2geotext-0.0.1.dist-info/top_level.txt,sha256=zoP4l3CDo1h93pDpzG2uze-6XA2HHF5_359IYMDgd3E,18
+num2geotext-0.0.1.dist-info/RECORD,,
