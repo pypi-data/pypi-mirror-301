@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+git_script/.gitignore
+src/bospm/__init__.py
+src/bospm/bospm.py
+src/bospm.egg-info/PKG-INFO
+src/bospm.egg-info/SOURCES.txt
+src/bospm.egg-info/dependency_links.txt
+src/bospm.egg-info/entry_points.txt
+src/bospm.egg-info/requires.txt
+src/bospm.egg-info/top_level.txt
