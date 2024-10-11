@@ -1,0 +1,116 @@
+"""StraightBevelGearTeethSocket"""
+
+from __future__ import annotations
+
+from typing import ClassVar, TYPE_CHECKING
+
+from mastapy._private._internal import utility
+from mastapy._private._internal.cast_exception import CastException
+from mastapy._private._internal.dataclasses import extended_dataclass
+from mastapy._private._internal.python_net import python_net_import
+from mastapy._private.system_model.connections_and_sockets.gears import _2359
+
+_STRAIGHT_BEVEL_GEAR_TEETH_SOCKET = python_net_import(
+    "SMT.MastaAPI.SystemModel.ConnectionsAndSockets.Gears",
+    "StraightBevelGearTeethSocket",
+)
+
+if TYPE_CHECKING:
+    from typing import Any, Type, TypeVar
+
+    from mastapy._private.system_model.connections_and_sockets import _2351
+    from mastapy._private.system_model.connections_and_sockets.gears import (
+        _2355,
+        _2363,
+        _2369,
+    )
+
+    Self = TypeVar("Self", bound="StraightBevelGearTeethSocket")
+    CastSelf = TypeVar(
+        "CastSelf",
+        bound="StraightBevelGearTeethSocket._Cast_StraightBevelGearTeethSocket",
+    )
+
+
+__docformat__ = "restructuredtext en"
+__all__ = ("StraightBevelGearTeethSocket",)
+
+
+@extended_dataclass(frozen=True, slots=True, weakref_slot=True)
+class _Cast_StraightBevelGearTeethSocket:
+    """Special nested class for casting StraightBevelGearTeethSocket to subclasses."""
+
+    __parent__: "StraightBevelGearTeethSocket"
+
+    @property
+    def bevel_gear_teeth_socket(self: "CastSelf") -> "_2359.BevelGearTeethSocket":
+        return self.__parent__._cast(_2359.BevelGearTeethSocket)
+
+    @property
+    def agma_gleason_conical_gear_teeth_socket(
+        self: "CastSelf",
+    ) -> "_2355.AGMAGleasonConicalGearTeethSocket":
+        from mastapy._private.system_model.connections_and_sockets.gears import _2355
+
+        return self.__parent__._cast(_2355.AGMAGleasonConicalGearTeethSocket)
+
+    @property
+    def conical_gear_teeth_socket(self: "CastSelf") -> "_2363.ConicalGearTeethSocket":
+        from mastapy._private.system_model.connections_and_sockets.gears import _2363
+
+        return self.__parent__._cast(_2363.ConicalGearTeethSocket)
+
+    @property
+    def gear_teeth_socket(self: "CastSelf") -> "_2369.GearTeethSocket":
+        from mastapy._private.system_model.connections_and_sockets.gears import _2369
+
+        return self.__parent__._cast(_2369.GearTeethSocket)
+
+    @property
+    def socket(self: "CastSelf") -> "_2351.Socket":
+        from mastapy._private.system_model.connections_and_sockets import _2351
+
+        return self.__parent__._cast(_2351.Socket)
+
+    @property
+    def straight_bevel_gear_teeth_socket(
+        self: "CastSelf",
+    ) -> "StraightBevelGearTeethSocket":
+        return self.__parent__
+
+    def __getattr__(self: "CastSelf", name: str) -> "Any":
+        try:
+            return self.__getattribute__(name)
+        except AttributeError:
+            class_name = utility.camel(name)
+            raise CastException(
+                f'Detected an invalid cast. Cannot cast to type "{class_name}"'
+            ) from None
+
+
+@extended_dataclass(frozen=True, slots=True, weakref_slot=True)
+class StraightBevelGearTeethSocket(_2359.BevelGearTeethSocket):
+    """StraightBevelGearTeethSocket
+
+    This is a mastapy class.
+    """
+
+    TYPE: ClassVar["Type"] = _STRAIGHT_BEVEL_GEAR_TEETH_SOCKET
+
+    wrapped: "Any"
+
+    def __post_init__(self: "Self") -> None:
+        """Override of the post initialisation magic method."""
+        if not hasattr(self.wrapped, "reference_count"):
+            self.wrapped.reference_count = 0
+
+        self.wrapped.reference_count += 1
+
+    @property
+    def cast_to(self: "Self") -> "_Cast_StraightBevelGearTeethSocket":
+        """Cast to another type.
+
+        Returns:
+            _Cast_StraightBevelGearTeethSocket
+        """
+        return _Cast_StraightBevelGearTeethSocket(self)
