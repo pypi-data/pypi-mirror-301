@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: aait_store_cut-part_002
+Version: 0.0.1
+Summary: Package with binary files and subfolders
+Requires-Dist: aait-store-cut-part-001 ==0.0.1
+
