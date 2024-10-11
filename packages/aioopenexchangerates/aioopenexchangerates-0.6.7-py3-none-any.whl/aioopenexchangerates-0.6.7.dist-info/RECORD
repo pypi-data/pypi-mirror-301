@@ -1,0 +1,11 @@
+aioopenexchangerates/__init__.py,sha256=fInCkw7paFaqvZES8h85-t-d3RBbNTJ0W8lGDASaGTU,396
+aioopenexchangerates/client.py,sha256=J9YiLKHFNdxordF8kodFQh7QqlHtA_Yclb24KEGLr7M,3033
+aioopenexchangerates/exceptions.py,sha256=UOou0HIaGDFxlGHoFJPRBnooTSm2cpa0BFlP6knN_LI,483
+aioopenexchangerates/model/__init__.py,sha256=RnnozJAVoRamvNpyZSle5zAV7tsjtE8pUf-xCX39Jlw,105
+aioopenexchangerates/model/latest.py,sha256=pUSRaB8M0Lfqu3328qBJaU5lp0PM2qwgcxl89H0sq0g,226
+aioopenexchangerates/model/response.py,sha256=6mg5d28Q0pFY8vZ9T7XxhwWZzeqwRzslGKrz9w9JMZU,411
+aioopenexchangerates/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioopenexchangerates-0.6.7.dist-info/LICENSE,sha256=Rv55lGO015Ejn58OqaRYRrBiQgflx-GSjsjc51DVM64,11346
+aioopenexchangerates-0.6.7.dist-info/METADATA,sha256=1b8jUblGyi8fPesID5PC7iSJ95XJ4T0_LRD_HKxy8Gw,4168
+aioopenexchangerates-0.6.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aioopenexchangerates-0.6.7.dist-info/RECORD,,
