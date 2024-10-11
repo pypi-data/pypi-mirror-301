@@ -1,0 +1,3 @@
+[console_scripts]
+contactlookup=contactlookup.__main__:cli
+
