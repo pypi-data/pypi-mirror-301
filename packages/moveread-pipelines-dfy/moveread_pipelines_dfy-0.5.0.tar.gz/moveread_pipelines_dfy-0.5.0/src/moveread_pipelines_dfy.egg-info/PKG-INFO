@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: moveread-pipelines-dfy
+Version: 0.5.0
+Summary: The Moveread DFY Pipeline
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/dfy-pipeline.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: moveread-pipelines-input-validation
+Requires-Dist: moveread-pipelines-game-preprocess>=0.5.0
+Requires-Dist: moveread-pipelines-ocr-predict
+Requires-Dist: moveread-pipelines-game-correction
+Requires-Dist: pipeteer
+Requires-Dist: moveread-core
+Requires-Dist: python-kv[server]
+
+# Dfy
+
+> The Moveread DFY Pipeline

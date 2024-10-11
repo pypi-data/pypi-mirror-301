@@ -1,0 +1,2 @@
+[console_scripts]
+dfy-pipeline = moveread.pipelines.dfy.cli:main
