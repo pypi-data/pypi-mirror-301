@@ -1,0 +1,33 @@
+[project]
+name = "eloy"
+version = "0.0.0-beta"
+description = "Pixelated spheres"
+authors = [{ name = "Lionel Garcia" }, { name = "Benjamin Rackham" }]
+license = "MIT"
+readme = "readme.md"
+requires-python = ">=3.10"
+packages = [{ include = "eloy" }]
+dependencies = ["numpy", "healpy", "jax", "jaxlib"]
+
+[project.optional-dependencies]
+dev = ["black", "pytest", "nox"]
+test = ["pytest", "pytest-xdist"]
+comparison = ["starry", "tqdm", "xarray<2023.10.0", "numpy<1.22"]
+docs = [
+    "sphinx",
+    "docutils",
+    "jupyterlab",
+    "myst-parser",
+    "sphinx-book-theme",
+    "myst-nb",
+    "sphinx-copybutton",
+    "toml",
+    "ipywidgets",
+]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["eloy"]
