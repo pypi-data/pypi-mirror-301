@@ -1,0 +1,13 @@
+numpy
+magicgui
+qtpy
+cmap
+nap-plot-tools>=0.1.2
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari>=0.4.19
+pyqt5
