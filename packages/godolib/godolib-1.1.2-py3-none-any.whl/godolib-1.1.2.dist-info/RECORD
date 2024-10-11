@@ -1,0 +1,10 @@
+godolib/__init__.py,sha256=GDTBMB0Zb2Iaus46-jGChg5BLcAsRVaxoDUN92wFrMs,133
+godolib/cloud_touch.py,sha256=8T7waDTgs5v_Fe3FOt9OXBNAtym4Um78syCLWij1GJU,15738
+godolib/filing.py,sha256=fVxYczANe-LzEDEzhHFNyjFE1GpvHI3mCRJjrEtAnBA,1701
+godolib/memory_management.py,sha256=jR-O7DM_VCJF_VQuXoqqpwlpbS7EOphnwlpA-LdBDeg,663
+godolib/preprocessing.py,sha256=hjhC8coZSabfP6RJAnHWb8RbV9k2dr-lQK3bWsvXcB4,69881
+godolib/testers.py,sha256=8yxJK6CX0uGyPItTebA8AUYi5rmDUTzzjDrJ5Eo1UYI,1557
+godolib-1.1.2.dist-info/METADATA,sha256=DHagpoA7MUVkyhps0tjXS46kLf2PdecdtE2ezbDCWcM,480
+godolib-1.1.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+godolib-1.1.2.dist-info/top_level.txt,sha256=xJ0IZOnal7QDSoj3DhFdEMxGHduT-5wHp_dNMNrI4KY,8
+godolib-1.1.2.dist-info/RECORD,,
