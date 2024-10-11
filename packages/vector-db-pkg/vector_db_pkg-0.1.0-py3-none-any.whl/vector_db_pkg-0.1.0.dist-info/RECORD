@@ -1,0 +1,10 @@
+vector_db_pkg/__init__.py,sha256=SW57r26TDkUA5EwwC0xqcVbv3SJodqVIAPSCl_NgVGU,378
+vector_db_pkg/data_ingestion.py,sha256=pOikqcHRmzHoVFpLmAqP-LCCpPUix5hHAmIvgiUK5KI,682
+vector_db_pkg/preprocessing.py,sha256=tV0mn7hdvrsJsKD20r1eMKhS5YlpZKZ19T1Yp21TwS4,189
+vector_db_pkg/vector_db.py,sha256=hKb0jAkfG5VC8xrQH23eJJ7g9Cy96ea-yk_Bdh0gD10,470
+vector_db_pkg/vectorization.py,sha256=VtovQepXKXPm8Roc-WdlqKjW-cL5EFxhzfNmG-b9nv0,917
+vector_db_pkg-0.1.0.dist-info/LICENSE  ,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vector_db_pkg-0.1.0.dist-info/METADATA,sha256=Cqf38bfdnneLOZBLMs9JYbgTZptDUge3xT3KDeKUvD4,540
+vector_db_pkg-0.1.0.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+vector_db_pkg-0.1.0.dist-info/top_level.txt,sha256=Ey9TiYDD9durFYNj01flkUcAiDwn8r4r0wC_3V9W3Kk,14
+vector_db_pkg-0.1.0.dist-info/RECORD,,
