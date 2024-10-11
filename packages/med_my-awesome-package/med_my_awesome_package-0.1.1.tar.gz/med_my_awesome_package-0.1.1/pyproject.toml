@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "med_my-awesome-package"
+version = "0.1.1"
+description = ""
+authors = ["mohamed aymen ghribi <mohamedaymeng@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^3.29.1"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver2"
+version_provider = "poetry"
+update_changelog_on_bump = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
