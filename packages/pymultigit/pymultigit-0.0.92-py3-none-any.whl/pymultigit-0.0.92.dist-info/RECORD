@@ -1,0 +1,13 @@
+pymultigit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymultigit/configs.py,sha256=8Hbt4ajZuHub1q78rR3uSXvMCxTrl3ACanfNauucC88,2668
+pymultigit/core.py,sha256=ZzZvxUz587CUD-Vr5Rp5a-15c7_mI2V5CepD5Kfg7J8,9118
+pymultigit/main.py,sha256=Ba446mU08J7daj-JKBCRY6y3Av5Kk1K6-bYjrT_rM-o,5463
+pymultigit/static.py,sha256=JGReRHJJV2014UvzD7ISWbxenhlLu91o1U39XPbjqhE,208
+pymultigit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymultigit/utils/subprocess.py,sha256=d3eXIo3ZDezzdEAToaxqIh6shzn-rH5M54-3YOmKPbs,797
+pymultigit-0.0.92.dist-info/LICENSE,sha256=7GPQ81WrD0AWylSGKKAv7C8K_D3XhdpKyElB0LAiF4A,1069
+pymultigit-0.0.92.dist-info/METADATA,sha256=6eqy8e6U0ts2d09EjgkhSfLBt-XOpSmLZywfVJd9qmw,1439
+pymultigit-0.0.92.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pymultigit-0.0.92.dist-info/entry_points.txt,sha256=9_OR3wy8lvSNd39Sify0O16CK5O6F0knPE7Q5JdOs5g,52
+pymultigit-0.0.92.dist-info/top_level.txt,sha256=mEDlNBG1vVe0cRAFveA09aEVXXOlDyDAdznw3tN1kk4,11
+pymultigit-0.0.92.dist-info/RECORD,,
