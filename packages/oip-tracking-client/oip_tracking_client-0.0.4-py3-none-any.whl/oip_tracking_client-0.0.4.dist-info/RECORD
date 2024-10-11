@@ -1,0 +1,10 @@
+oip_tracking_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oip_tracking_client/lib.py,sha256=Bnc3mOlcy9M78lM7zA6amB2_3lgykv1M_RPoQDEgBWs,5875
+oip_tracking_client/rest.py,sha256=IKs8uipUKPIW3VG8dbKIxkclxlVXpaBQElUpy0cQ5Hw,5459
+oip_tracking_client/tracking.py,sha256=llMbR2t9jlRyLYTIwIX1BHkxhvL1z78vCHMq4vOFoO8,11743
+oip_tracking_client/utilies.py,sha256=txsRBLNkhuiFymBb608hIrCKjce4OBXQ_eFYMsvXXJs,230
+oip_tracking_client/wavfile.py,sha256=vAYY3NF0KZ-wP0VLCMcya0_99OtNGcoWP5XOeyZfF2g,21096
+oip_tracking_client-0.0.4.dist-info/METADATA,sha256=SkYKOEJxkjaiUi-ZIbJ8KcWwUv_id4wSwGK9JR29AFo,5709
+oip_tracking_client-0.0.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+oip_tracking_client-0.0.4.dist-info/top_level.txt,sha256=TlX4Qx0OtAJefucshHIOZ2z8FR8BF-Us-9af0zLI3Uc,20
+oip_tracking_client-0.0.4.dist-info/RECORD,,
