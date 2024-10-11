@@ -1,0 +1,7 @@
+[console_scripts]
+bie=bioimage_embed.cli:app
+bie_finetune=bioimage_embed.cli:finetune
+bie_infer=bioimage_embed.cli:infer
+bie_train=bioimage_embed.cli:train
+bioimage_embed=bioimage_embed:app
+
