@@ -1,0 +1,8 @@
+charset-normalizer
+cryptography
+mtranslate
+pymupdf
+tqdm
+tenacity
+layoutparser[effdet]
+numpy
