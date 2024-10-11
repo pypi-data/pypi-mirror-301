@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gmaps-route
+Version: 0.1.0
+Summary: Easily create Google Maps routes using Python
+Author: Lukas Voegl
+Author-email: lukas@voegl.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# GMaps Route
+
+GMaps Route is a allows you to create routes for Google Maps directly in Python.
+The project enables you to create a route between two locations, add intermediate destinations and specify waypoints (subdestinations) to route-along.
+
+A simple and more complex example can be found in the [examples/](./examples) directory.
+
+## Installation
+`pip install gmaps-route`
+
