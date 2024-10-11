@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "idl-py-package"
+version = "1.0.0"
+description = "IDL generated Python files"
+authors = ["Your Name <your.email@example.com>"]
+packages = [
+    { include = "build/python" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.core.masonry.api"
