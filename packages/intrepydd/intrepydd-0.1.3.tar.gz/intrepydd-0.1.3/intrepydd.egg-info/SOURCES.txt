@@ -1,0 +1,7 @@
+README.md
+setup.py
+intrepydd.egg-info/PKG-INFO
+intrepydd.egg-info/SOURCES.txt
+intrepydd.egg-info/dependency_links.txt
+intrepydd.egg-info/requires.txt
+intrepydd.egg-info/top_level.txt
