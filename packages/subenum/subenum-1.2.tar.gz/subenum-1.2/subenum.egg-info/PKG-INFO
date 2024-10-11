@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: subenum
+Version: 1.2
+Summary: A tool to find subdomains passively
+Home-page: https://github.com/42zen/subenum
+Author: Mathias Bochet (aka Zen)
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: fake-useragent
+Requires-Dist: python-dotenv
+
+subenum is a tool designed to enumerate subdomains using search engines, websites and apis.

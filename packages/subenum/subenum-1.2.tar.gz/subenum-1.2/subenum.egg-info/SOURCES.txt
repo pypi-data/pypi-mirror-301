@@ -1,0 +1,9 @@
+setup.py
+subenum.py
+./subenum.py
+subenum.egg-info/PKG-INFO
+subenum.egg-info/SOURCES.txt
+subenum.egg-info/dependency_links.txt
+subenum.egg-info/entry_points.txt
+subenum.egg-info/requires.txt
+subenum.egg-info/top_level.txt
