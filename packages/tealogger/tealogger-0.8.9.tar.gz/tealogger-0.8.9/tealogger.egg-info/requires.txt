@@ -1,0 +1,13 @@
+pytest
+
+[develop]
+build
+pytest-cov
+pytest
+ruff
+twine
+
+[test]
+pytest-cov
+pytest
+ruff

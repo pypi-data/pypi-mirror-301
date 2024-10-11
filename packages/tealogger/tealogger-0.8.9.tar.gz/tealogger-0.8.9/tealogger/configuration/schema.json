@@ -1,0 +1,64 @@
+{
+    "version": 1,
+    "formatters": {
+        "default": {
+            "()": "tealogger.formatter.DefaultFormatter",
+            "class": "optional",
+            "format": "[%(levelname)s %(name)s %(asctime)s] %(message)s",
+            "datefmt": "%Y-%m-%d %H:%M:%S",
+            "style": "",
+            "validate": "",
+            "defaults": ""
+        }
+    },
+    "filters": {
+        "name": {
+            "()": "tealogger.filter.DefaultFilter",
+            "class": "logging.Filter"
+        }
+    },
+    "handlers": {
+        "default": {
+            "class": "logging.StreamHandler",
+            "level": "WARNING",
+            "formatter": "default",
+            "filters": [],
+            "stream": "ext://sys.stdout"
+        },
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "WARNING",
+            "formatter": "default",
+            "filters": [],
+            "stream": "ext://sys.stdout"
+        },
+        "file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "DEBUG",
+            "formatter": "default",
+            "filename": "tealogger.log",
+            "maxBytes": 1024,
+            "backupCount": 3
+        }
+    },
+    "loggers": {
+        "base": {
+            "level": "DEBUG",
+            "propagate": false,
+            "filters": [],
+            "handlers": [
+                "console",
+                "file"
+            ]
+        }
+    },
+    "root": {
+        "level": "WARNING",
+        "filters": [],
+        "handlers": [
+            "default"
+        ]
+    },
+    "incremental": false,
+    "disable_existing_loggers": false
+}
