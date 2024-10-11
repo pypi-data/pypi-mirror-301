@@ -1,0 +1,4 @@
+[console_scripts]
+trywebscraping = trywebscraping.cli:main
+trywebscraping-setup = trywebscraping.setup_script:main
+

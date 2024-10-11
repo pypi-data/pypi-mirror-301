@@ -1,0 +1,13 @@
+trywebscraping/__init__.py,sha256=UQcsIKwnj-t2KpDg-IGGLxxAGmPsfWF9hIYgLp0W-zI,1446
+trywebscraping/api_key.py,sha256=ZmgKskMMZ6t5bJaxVAQZEodP0ohRRb9tO3lLot6FAkU,1354
+trywebscraping/base_scraper.py,sha256=B4iH7gl_q8rjSfaDpIglBrrYEfxu6u4cOXsEZpL9mgw,1974
+trywebscraping/browse.py,sha256=83LtZ3SJFCfBtRvgyA8mTnShdQHciqEdGe47MYIdIos,4268
+trywebscraping/cli.py,sha256=L9UHLbiojlTiQy0DzfnjvNXwPQQGqfkTqPUVv2A9vTM,2614
+trywebscraping/fetch.py,sha256=fwMqoAonsjV7AkV7_FSF8OZSLxbeJ9IvzPFKEIEM78I,4006
+trywebscraping/query.py,sha256=LGvs37IETLiLSDdqL0eV4SVmwtOkx5wftgQGwEKOPmw,2910
+trywebscraping/utils.py,sha256=HeRQgGPG7GTkgIyvz4ceBvzoZDsz80AIV54cBkrTuP4,6898
+trywebscraping-0.1.35.dist-info/METADATA,sha256=mf5yrOfF8bNQeZBKpuOH2M4qHmfMWpr5W5Xde2yRzOI,2268
+trywebscraping-0.1.35.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+trywebscraping-0.1.35.dist-info/entry_points.txt,sha256=DoL6WUcv5fk0fnCif1IEbcR_OHTvZEcBHAfi8QbIYjM,116
+trywebscraping-0.1.35.dist-info/top_level.txt,sha256=O7Qfw9ngJ-sSlsevCPN4YbemKgydzGEeKKQdTe7SaP4,15
+trywebscraping-0.1.35.dist-info/RECORD,,
