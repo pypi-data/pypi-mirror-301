@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: python-stm32cubeprog
+Version: 0.0.9
+Summary: Python API for STM32CubeProgrammer
+Project-URL: Homepage, https://github.com/wervin/python-stm32cubeprog
+Project-URL: Bug Tracker, https://github.com/wervin/python-stm32cubeprog/issues
+Author-email: Vincent Werner <vincent.werner@outlook.fr>
+License-Expression: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# python-stm32cubeprog [![PyPi Version](https://img.shields.io/pypi/v/python-stm32cubeprog.svg)](https://pypi.python.org/pypi/python-stm32cubeprog/) [![PyPi Python Versions](https://img.shields.io/pypi/pyversions/python-stm32cubeprog.svg)](https://pypi.python.org/pypi/python-stm32cubeprog/)
+
+Python API for STM32CubeProgrammer
+
+## Prerequisites
+* Python (3.11+)
+* pip
+* numpy
+
+## Install
+```sh
+pip install python-stm32cubeprog
+```
+
+## Get Started
+
+See `examples` directory.
