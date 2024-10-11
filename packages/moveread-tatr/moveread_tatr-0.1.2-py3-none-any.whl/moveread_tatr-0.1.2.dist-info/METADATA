@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: moveread-tatr
+Version: 0.1.2
+Summary: Moveread Table Transformer model
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/table-transformer.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: haskellian
+Requires-Dist: pure-cv
+
+# Moveread Tatr
+
+> package_description
