@@ -1,0 +1,3 @@
+[console_scripts]
+labelo=labelo.server:main
+
