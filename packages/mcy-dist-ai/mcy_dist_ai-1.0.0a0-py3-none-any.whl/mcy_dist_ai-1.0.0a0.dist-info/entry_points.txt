@@ -1,0 +1,2 @@
+[console_scripts]
+mcy-split-data = mcy_dist_ai.script.split_data:split_data
