@@ -1,0 +1,8 @@
+Readme.md
+pyproject.toml
+src/uplevel/__init__.py
+src/uplevel.egg-info/PKG-INFO
+src/uplevel.egg-info/SOURCES.txt
+src/uplevel.egg-info/dependency_links.txt
+src/uplevel.egg-info/requires.txt
+src/uplevel.egg-info/top_level.txt
