@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: nextline-test-utils
+Version: 0.1.2
+Summary: A collection of utilities for testing Nextline packages
+Project-URL: Documentation, https://github.com/simonsobs/nextline-test-utils#readme
+Project-URL: Issues, https://github.com/simonsobs/nextline-test-utils/issues
+Project-URL: Source, https://github.com/simonsobs/nextline-test-utils
+Author-email: Simons Observatory <so_software@simonsobservatory.org>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Requires-Dist: black>=24.3
+Requires-Dist: graphql-core>=3.2
+Requires-Dist: hypothesis>=6.88
+Requires-Dist: typing-extensions>=4.8
+Provides-Extra: tests
+Requires-Dist: pytest-asyncio>=0.18; extra == 'tests'
+Requires-Dist: pytest-cov>=3.0; extra == 'tests'
+Requires-Dist: pytest-timeout>=2.1; extra == 'tests'
+Requires-Dist: pytest>=7.0; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# Nextline Test Utils
+
+[![PyPI - Version](https://img.shields.io/pypi/v/nextline-test-utils.svg)](https://pypi.org/project/nextline-test-utils)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nextline-test-utils.svg)](https://pypi.org/project/nextline-test-utils)
+
+[![Test Status](https://github.com/simonsobs/nextline-test-utils/actions/workflows/unit-test.yml/badge.svg)](https://github.com/simonsobs/nextline-test-utils/actions/workflows/unit-test.yml)
+[![Test Status](https://github.com/simonsobs/nextline-test-utils/actions/workflows/type-check.yml/badge.svg)](https://github.com/simonsobs/nextline-test-utils/actions/workflows/type-check.yml)
+[![codecov](https://codecov.io/gh/simonsobs/nextline-test-utils/branch/main/graph/badge.svg)](https://codecov.io/gh/simonsobs/nextline-test-utils)
+
+A collection of test utilities for the development of Nextline backend server and plugins.
+
+---
