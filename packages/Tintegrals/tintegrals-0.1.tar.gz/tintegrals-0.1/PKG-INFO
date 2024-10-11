@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Tintegrals
+Version: 0.1
+Author-email: Henning Bahl <hbahl@uchicago.edu>, Johannes Braathen <johannes.braathen@desy.de>, Martin Gabelmann <martin.gabelmann@desy.de>
+Requires-Python: >=3.5
+Requires-Dist: numpy>=1.13.0
+Requires-Dist: scipy
