@@ -1,0 +1,7 @@
+openai
+tiktoken
+ebooklib
+gpt4all
+Pillow
+requests
+latex2mathml
