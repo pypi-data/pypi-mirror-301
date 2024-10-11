@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+trf/README.txt
+trf/__init__.py
+trf/__main__.py
+trf/__version__.py
+trf/backup.py
+trf/dialog.py
+trf/trf.py
+trf_dgraham.egg-info/PKG-INFO
+trf_dgraham.egg-info/SOURCES.txt
+trf_dgraham.egg-info/dependency_links.txt
+trf_dgraham.egg-info/entry_points.txt
+trf_dgraham.egg-info/requires.txt
+trf_dgraham.egg-info/top_level.txt
