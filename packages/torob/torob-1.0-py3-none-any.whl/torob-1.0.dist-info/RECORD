@@ -1,0 +1,13 @@
+torob/__init__.py,sha256=HCgG_I_QloTKkumTrpoHFD1108Y8IZMIIVqBqzeb2SM,2260
+torob/att.py,sha256=KHjWFuedgPzT11UALGasgXo94NiC3ZW2eROYlJ3Wb8w,426
+torob/city.py,sha256=tx50PF8KHoDeh920wC5G6eLJHfk23djgUg0O9meI1sI,2000
+torob/torob.py,sha256=jEQoOVO3QmgUEJXknSSm36P58lmdz3tr6MmMxMC0zLw,27619
+torob/torobot_documentation.pdf,sha256=dak0fbIH7b6F3hZ_Iu4rGmaCgu2ALP4qgZY9bFrNMtM,532814
+torob/image/main-bg.png,sha256=wS5kw8AXK9h763wqtlU4XgeYqbaWp8q-i7Mj1dqjCI0,60050
+torob/image/main-nm.png,sha256=ezeiXXhDspsUrrGjeZcfQ1abAQAZxX3wkWkJvTR8qNI,32141
+torob/image/main.png,sha256=2Yn8rF4fTVz94elMNkm0jfhTcITap1IN1QYJP7MjBG0,9062
+torob/image/orginal.png,sha256=1xDVgOqr4zW4M8QUQ7x8oUVNTSc4NNX-RHG7uHh53l4,38373
+torob-1.0.dist-info/METADATA,sha256=gycLXj8Fj2wnfnLcjWe8vB6N4o8s_0adqlIHl9xNNMM,6809
+torob-1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+torob-1.0.dist-info/licenses/LICENSE,sha256=Ha66YSHrSlGyS9YGIkViPfZXcrgBiXIERMY3mjegNfI,1084
+torob-1.0.dist-info/RECORD,,
