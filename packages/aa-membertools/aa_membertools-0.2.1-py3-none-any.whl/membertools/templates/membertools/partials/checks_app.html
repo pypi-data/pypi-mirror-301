@@ -1,0 +1,70 @@
+{% load i18n %}
+<table class="table">
+    <tr>
+        <th class="text-center col-md-3">{% translate "Name" %}</th>
+        <th class="text-center col-md-1">{% translate "Status" %}</th>
+        <th class="text-center">{% translate "Reason" %}</th>
+    </tr>
+    {% for key,check in checks.items %}
+    {% if check.messages|length == 1 and check.failed == 0 %}
+        {% if check.status == -1 %}
+    <tr>
+        {% elif check.status == 0 %}
+    <tr class="danger">
+        {% elif check.status == 1 %}
+    <tr class="success">
+        {% else %}
+    <tr class="warning">
+        {% endif %}
+    {% else %}
+    <tr class="active">
+    {% endif %}
+        <td class="text-center">{{check.title}}</td>
+        <td class="text-center">
+        {% if check.status == -1 %}
+            <i class="far fa-question-circle text-warning"></i>
+        {% elif check.status == 0 %}
+            <i class="fas fa-times text-danger"></i>
+        {% elif check.status == 1 %}
+            <i class="fas fa-check text-success"></i>
+        {% elif check.status == 2 %}
+            <i class="fas fa-exclamation text-warning"></i>
+        {% endif %}
+        </td>
+        <td class="text-center">{{check.reason}}</td>
+    </tr>
+    {% if not check.status and check.messages|length > 1 %}
+        {% for message in check.messages %}
+        {% if message.status == -1 %}
+    <tr>
+        {% elif message.status == 0 %}
+    <tr class="danger">
+        {% elif message.status == 1 %}
+    <tr class="success">
+        {% else %}
+    <tr class="warning">
+        {% endif %}
+        <td class="text-center">-</td>
+        <td class="text-center">
+            {% if message.status == -1 %}
+            <i class="far fa-question-circle text-warning"></i>
+            {% elif message.status == 0 %}
+            <i class="fas fa-times text-danger"></i>
+            {% elif message.status == 1 %}
+            <i class="fas fa-check text-success"></i>
+            {% elif message.status == 2 %}
+            <i class="fas fa-exclamation text-warning"></i>
+            {% endif %}
+        </td>
+        <td class="text-center">{{message.message}}</td>
+    </tr>
+        {% endfor %}
+    {% endif %}
+    {% empty %}
+    <tr class="danger">
+        <td class="text-center" colspan="3">
+            <p class="lead" style="margin-bottom: 0;">{% translate "Required Steps checks are unavailable at this time. Please contact an Intake & Progression Officer if this issue persits." %}</p>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

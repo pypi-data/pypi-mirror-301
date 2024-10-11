@@ -1,0 +1,48 @@
+{% comment %}
+    Params:
+    member: Memberdetail
+
+{% endcomment %}
+{% load i18n %}
+{% load humanize %}
+<div class="details-flex">
+    <div class="details-portrait hidden-xs">
+        <img class="img-rounded" src="{{ member.main_character.portrait_url_128 }}" width="128" height="128">
+    </div>
+    <div class="details-info">
+        <div class="row">
+            <div class="col-lg-6">
+                <dl class="dl-horizontal">
+                    <dt>Main Character:</dt>
+                    {% if member.main_character.next_character %}
+                    <dd><a href="{% url 'membertools_admin:char_detail_view' member.main_character.next_character.id %}">{{ member.main_character.character_name }}</a></dd>
+                    {% else %}
+                    <dd>{{ member.main_character.character_name }}</dd>
+                    {% endif %}
+                    <dt>Awarded Title:</dt>
+                    <dd>{{ member.awarded_title }}</dd>
+                    <dt>First Joined:</dt>
+                    <dd class="nowrap">{{ member.first_joined|naturaltime }}</dd>
+                    <dt>Last Joined:</dt>
+                    <dd class="nowrap">{{ member.last_joined|naturaltime }}</dd>
+                </dl>
+            </div>
+            <div class="col-lg-6">
+                <dl class="dl-horizontal">
+                    <dt>Current Corp:</dt>
+                    <dd>{{ member.main_character.corporation_name }}</dd>
+                    <dt>Current Alliance:</dt>
+                    <dd>{{ member.main_character.alliance_name }}</dd>
+                    <dt>Current Faction:</dt>
+                    <dd>{{ member.main_character.faction_name }}</dd>
+                    <dt>First Main:</dt>
+                    {% if member.first_main_character.next_character %}
+                    <dd><a href="{% url 'membertools_admin:char_detail_view' member.first_main_character.next_character.id %}">{{ member.first_main_character.character_name }}</a></dd>
+                    {% else %}
+                    <dd>{{ member.first_main_character.character_name }}</dd>
+                    {% endif %}
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

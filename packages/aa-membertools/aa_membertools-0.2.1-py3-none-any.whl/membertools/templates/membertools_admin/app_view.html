@@ -1,0 +1,130 @@
+{% extends "membertools_admin/base.html" %}
+
+{% load static %}
+{% load bootstrap %}
+{% load i18n %}
+{% load discourse_username %}
+
+{% block inside_content %}
+<div class="container-fluid">
+    <div class="row">
+        {% include "membertools_admin/partials/app_status_banner.html" with application=app %}
+    </div>
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">{% translate "Application Details" %}</div>
+            <div class="panel-body">
+            {% include "membertools_admin/partials/app_details.html" with application=app %}
+            </div>
+        </div>
+        <div class="panel panel-primary clearfix">
+            <div class="panel-heading">{% translate "Character Details" %}</div>
+            <div class="panel-body">
+            {% include "membertools_admin/partials/character_detail.html" %}
+            </div>
+        </div>
+    {% if char_detail.member %}
+        <div class="panel panel-primary clearfix">
+            <div class="panel-heading">{% translate "Member Details" %}</div>
+            <div class="panel-body">
+            {% include "membertools_admin/partials/member_detail.html" with member=char_detail.member %}
+            </div>
+        </div>
+    {% endif %}
+        <div class="panel panel-primary clearfix">
+            <div class="panel-heading">{% translate "Required Steps" %}</div>
+            {% include "membertools_admin/partials/checks_table.html" %}
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">{% translate "Links" %}</div>
+            {% include "membertools_admin/partials/background_links.html" with character=app.eve_character memberaudit_character=char_detail.memberaudit_character %}
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">{% translate "Characters" %}</div>
+            {% include "membertools_admin/partials/characters_table.html" with characters=app.characters main_character=app.main_character %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Responses</div>
+            <div class="panel-body">
+                <dl class="app-responses">
+        {% for response in responses %}
+                    <dt>{{ response.question.title }}</dt>
+                    <dd>{{ response.answer|linebreaksbr }}</dd>
+        {% endfor %}
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">{% translate "Actions" %}</div>
+            <div class="panel-body text-center">
+            {% if app.status == app.STATUS_PROCESSED and is_manager %}
+                <a href="{% url 'membertools_admin:action_close' app.id %}" class="btn btn-warning" title="{% translate 'Close this application' %}">{% translate "Close" %}</a>
+            {% elif app.status == app.STATUS_REVIEW and app.reviewer.character_ownership.user == user or app.status == app.STATUS_REVIEW and is_manager %}
+                <a href="{% url 'membertools_admin:action_approve' app.id %}" class="btn btn-success" title="{% translate 'Accept this application' %}">{% translate "Accept" %}</a>
+                <a href="{% url 'membertools_admin:action_wait' app.id %}"
+                    class="btn btn-primary" title="{% translate 'Mark application as waiting for feedback or applicant response' %}">{% trans "Wait" %}</a>
+                <a href="{% url 'membertools_admin:action_withdraw' app.id %}"
+                    class="btn btn-warning" title="{% translate 'Withdraw application, closing it' %}">{% trans "Withdraw" %}</a>
+                <a href="{% url 'membertools_admin:action_release' app.id %}"
+                    class="btn btn-info" title="{% translate 'Release reviewer claim on this application and return it to its last queue' %}">{% trans "Release" %}</a>
+                {% if perms.membertools.reject_application %}
+                <a href="{% url 'membertools_admin:action_reject' app.id %}" class="btn btn-danger" title="{% translate 'Reject this application' %}">{% translate "Reject" %}</a>
+                {% endif %}
+            {% elif app.status == app.STATUS_REVIEW or app.status == app.STATUS_WAIT %}
+                {% if not app.reviewer %}
+                <a href="{% url 'membertools_admin:action_start_review' app.id %}" class="btn btn-info">{% translate "Start Review" %}</a>
+                {% elif app.status == app.STATUS_WAIT and app.reviewer.character_ownership.user == user %}
+                <a href="{% url 'membertools_admin:action_start_review' app.id %}" class="btn btn-info">{% translate "Continue Review" %}</a>
+                {% elif is_manager %}
+                <a href="{% url 'membertools_admin:action_start_review' app.id %}" class="btn btn-info">{% translate "Take Over" %}</a>
+                {% else %}
+                <button class="btn btn-primary" disabled="disabled">Start Review</button>
+                {% endif %}
+            {% elif app.status == app.STATUS_NEW %}
+                <a href="{% url 'membertools_admin:action_start_review' app.id %}" class="btn btn-info">{% translate "Start Review" %}</a>
+            {% endif %}
+            {% if perms.membertools.view_comment and perms.membertools.add_comment %}
+                <button id="add-comment-button" type="button" class="btn btn-primary">{% translate "Comment" %}</button>
+            {% endif %}
+            {% if perms.membertools.delete_application and is_manager %}
+                <a href="{% url 'membertools_admin:remove' app.id %}" class="btn btn-danger">{% translate "Delete" %}</a>
+            {% endif %}
+                <a href="{% url 'membertools_admin:memberaudit_update' app.id %}" class="btn btn-primary">Update MA</a>
+            </div>
+        </div>
+    </div>
+    {% if comments %}
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">{% translate "Comments" %}</div>
+            <div class="panel-body">
+            {% include "membertools_admin/partials/comments_list.html" %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if perms.membertools.add_comment %}
+    <div class="row panel panel-primary add-comment-panel" id="add-comment-panel">
+        <div class="panel-heading">
+            {% translate "Add Comment" %}
+            <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="panel-body">
+            <form class="form-signin" role="form" method="POST" action="{% url 'membertools_admin:comment_create' app.id %}">
+                {% csrf_token %}
+                {% include "membertools_admin/partials/comment_form.html" %}
+            </form>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+{% block search_box %}
+{% include "membertools_admin/partials/search_form.html" %}
+{% endblock %}
