@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "torob"
+version = "1.0"
+authors = [
+  { name="itsMajid", email="itsMajid.dev@gmail.com" },
+]
+description = "Search for goods and stores on torob.com 🍎"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "pandas>1.2.4",
+  "requests>2.25.1",
+  "beautifulsoup4>4.9.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/itsMajid-dev/torobot"
+Issues = "https://github.com/pypa/sampleproject/issues"
