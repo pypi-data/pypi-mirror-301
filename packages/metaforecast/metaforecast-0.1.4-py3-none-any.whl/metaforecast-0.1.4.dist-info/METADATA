@@ -1,0 +1,55 @@
+Metadata-Version: 2.3
+Name: metaforecast
+Version: 0.1.4
+Summary: Meta-learning and Data-centric Forecasting
+Project-URL: Homepage, https://github.com/vcerqueira/metaforecast
+Project-URL: Bug Tracker, https://github.com/vcerqueira/metaforecast/issues
+Author-email: Vitor Cerqueira <cerqueira.vitormanuel@gmail.com>
+Keywords: Data Science,Forecasting,Machine Learning,Time Series
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: lightgbm==4.5.0
+Requires-Dist: mlforecast==0.13.4
+Requires-Dist: neuralforecast==1.7.5
+Requires-Dist: tslearn==0.6.3
+Description-Content-Type: text/markdown
+
+# metaforecast: Meta-Learning and Data-Centric AI for Actionable Forecasting
+
+metaforecast is a Python package that combines meta-learning techniques with data-centric AI approaches to provide powerful and actionable forecasting capabilities. Built on top of the Nixtla ecosystem, this package offers advanced tools for time series analysis and prediction.
+
+## Features
+
+MetaForecast currently consists of three main modules:
+
+1. **Dynamic Ensembles**: Leveraging multiple models with adaptive ensemble techniques.
+2. **Synthetic Time Series Generation**: Creating realistic synthetic time series data for robust model training and testing.
+3. **Long-Horizon Meta-Learning**: Instance-based meta-learning for multi-step forecasting.
+
+## Installation
+
+You can install metaforecast using pip:
+
+```
+pip install metaforecast
+```
+
+## Quick Start
+
+todo
+
+## Documentation
+
+For detailed documentation, please visit todo
+
+## Examples
+
+Check out the `notebooks` folder (currently under construction) for example usage and tutorials. 
+
+## Dependencies
+
+metaforecast is built on top of the Nixtla ecosystem. 
+
+
