@@ -1,0 +1,7 @@
+/**/.idea
+/**/.venv*
+/**/.cache
+/**/.DS_Store
+/**/__pycache__/
+/tmp
+
