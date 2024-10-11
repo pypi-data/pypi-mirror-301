@@ -1,0 +1,12 @@
+pdf_processing_lib/__init__.py,sha256=EcChN7XAIx76qXF94M3TL_mKQK3mQieeW05a1FcR2Ms,305
+pdf_processing_lib/image_processor.py,sha256=wHGCxpMZDUyVBISTfMA6E_We12BG6Tye-CDYa0bqNTk,3234
+pdf_processing_lib/json_merger.py,sha256=rUHUljC8X-Mk1x0VOrhdUuBF1Zzi_LAoeM4hxp7PZ8I,1950
+pdf_processing_lib/pdf_processor.py,sha256=fMBmaUAo3yFqM2q22gDY8sdT3HZdH_uphgceqoujcAA,6213
+pdf_processing_lib/text_extractor.py,sha256=GAjiasV-IuVZYI6BRxJIK03jntmFMUJ4qUxNeabHzbc,8107
+pdf_processing_lib/tsv_to_json_parser.py,sha256=chZJKcmRHN2-oikg6YV18C7jCy13tKviAsluoOpSgOo,5614
+pdf_processing_lib/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_processing_lib-0.1.0.dist-info/LICENSE,sha256=5dz_6Da27IpY5JJBm1UOZfuMvcMIUDl55drLM6x-o7c,3
+pdf_processing_lib-0.1.0.dist-info/METADATA,sha256=KgCAw45VHrMnjs7ELNqX_hYHsnRvQx9rsStx4sGjrEI,2639
+pdf_processing_lib-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pdf_processing_lib-0.1.0.dist-info/top_level.txt,sha256=ICmMS8cTgHZToTjxPt8L7nao4fsln9nIelZulA3nbII,19
+pdf_processing_lib-0.1.0.dist-info/RECORD,,
