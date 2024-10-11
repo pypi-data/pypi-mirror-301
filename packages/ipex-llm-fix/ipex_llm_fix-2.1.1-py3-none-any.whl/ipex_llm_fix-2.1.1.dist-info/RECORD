@@ -1,0 +1,10 @@
+ipex_llm/__init__.py,sha256=kSA9JjVLPlpN4YchWtfOybRh4XiP6d_VTYvzbAouPSU,2118
+ipex_llm/convert_model.py,sha256=jopEe6wu88ZPZfNFhgnQUu7807iciiWW_EMyTsVni5A,6816
+ipex_llm/llm_patching.py,sha256=becMYcawtR8lgl2yeRQhvvX6CLaq09WZGm9dDmLJWL0,3232
+ipex_llm/models.py,sha256=XROP6GLLrGQDlogGXpXZENbV143YNi6j0VPJeOdQ3Cg,1063
+ipex_llm/optimize.py,sha256=BjG-jSts5K3QOVyPodsKK75G00BsXEAgQDsIXgnkthk,12466
+ipex_llm/setup.py,sha256=mciTLuBock9r8rtYt8Wk1I1PaVYuFonPFK3-3p_0-8g,1000
+ipex_llm_fix-2.1.1.dist-info/METADATA,sha256=C4WzHD2PG3OU5HWBBjE2dzTHqueqOMl7Il-nShACP3A,429
+ipex_llm_fix-2.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ipex_llm_fix-2.1.1.dist-info/top_level.txt,sha256=CGCMHM-SyqUabU4h8RqJ2KTYckQUO3LvIWwmUQ6Qbzw,9
+ipex_llm_fix-2.1.1.dist-info/RECORD,,
