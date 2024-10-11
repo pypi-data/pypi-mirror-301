@@ -1,0 +1,3 @@
+[console_scripts]
+escope = escope.escope:main
+espark = escope.espark:main
