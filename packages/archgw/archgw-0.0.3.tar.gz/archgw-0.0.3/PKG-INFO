@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: archgw
+Version: 0.0.3
+Summary: Python-based CLI tool to manage Arch Gateway.
+Author: Katanemo Labs, Inc.
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: archgw_modelserver (==0.0.3)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: huggingface_hub (>=0.25.2,<0.26.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: jsonschema (>=4.23.0,<5.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: setuptools (==75.1.0)
