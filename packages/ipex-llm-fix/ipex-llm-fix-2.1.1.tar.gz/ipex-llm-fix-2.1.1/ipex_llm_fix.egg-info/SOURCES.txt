@@ -1,0 +1,12 @@
+setup.py
+ipex_llm/__init__.py
+ipex_llm/convert_model.py
+ipex_llm/llm_patching.py
+ipex_llm/models.py
+ipex_llm/optimize.py
+ipex_llm/setup.py
+ipex_llm_fix.egg-info/PKG-INFO
+ipex_llm_fix.egg-info/SOURCES.txt
+ipex_llm_fix.egg-info/dependency_links.txt
+ipex_llm_fix.egg-info/not-zip-safe
+ipex_llm_fix.egg-info/top_level.txt

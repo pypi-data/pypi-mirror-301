@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ipex-llm-fix
+Version: 2.1.1
+Summary: ipex-llm fix version
+Home-page: https://github.com/intel-analytics/ipex-llm
+Author: Intel
+Author-email: dep36@qq.com
+License: Apache-2.0 license
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+ipex-llm fix
+
