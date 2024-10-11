@@ -1,0 +1,2 @@
+[console_scripts]
+model_trainer_app = model_trainer_app.app:run_app
