@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: idl_py_package
+Version: 1.0.1
+Summary: IDL generated Python files
+Author: jjuney
+Author-email: k6857172@naver.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
