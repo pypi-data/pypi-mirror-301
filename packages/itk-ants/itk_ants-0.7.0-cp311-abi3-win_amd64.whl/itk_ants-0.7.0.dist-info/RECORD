@@ -1,0 +1,14 @@
+itk/ANTsWasmPython.py,sha256=vyw2lx-jFox5AcqTy8CIAeoLyO3rk72SoiEDuCSmlhM,2523
+itk/_ANTsWasmPython.pyd,sha256=bqg7-m_c51xPSs6PN3_587GFzeUea52nioP0hbvKKEE,16739328
+itk/__init_ants__.py,sha256=PSThOsU0L_51xrHqsN9Q-CRSVFSrXt3F5gzA7YMMXA8,338
+itk/itkANTSGroupwiseBuildTemplatePython.py,sha256=ZrfJc8OmID0w2pbCOqSIA9kHQmcqzamxQ1x_MT4So40,205649
+itk/itkANTSRegistrationPython.py,sha256=3bS55ym0Ro3EZOTmwFdwQPOolMwgnLAbIx5qHtuBICQ,909075
+itk/Configuration/ANTsWasmConfig.py,sha256=CuvTS11xP0kFc_UgHQ39RruZGD-tFlAq7okgRHyX6tA,11785
+itk/Configuration/ANTsWasm_snake_case.py,sha256=P_m9b0U_Uh_DEkD8hReA1NM3Xex-Y7N3WK6TLoD2RIs,81
+itk_ants-0.7.0.dist-info/licenses/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_ants.libs/msvcp140.dll,sha256=19dpkdvMzVj1HXgTMNJvUAeJUuHKmQHKnaXP0oWj1VQ,574872
+itk_ants.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_ants-0.7.0.dist-info/DELVEWHEEL,sha256=Gfyff7JvMoHt6skp5EpD7Mud1pR-cd8TCua_01D5d-Q,271
+itk_ants-0.7.0.dist-info/METADATA,sha256=uwOzkG_kFs5oTRbGMk3kUX5VbieZkSDG1FA7alMpjdA,15127
+itk_ants-0.7.0.dist-info/WHEEL,sha256=tM-9ykcboNEp5rTpRs7sQbF6PWT3UqjAJDMANbr2QVY,105
+itk_ants-0.7.0.dist-info/RECORD,,
