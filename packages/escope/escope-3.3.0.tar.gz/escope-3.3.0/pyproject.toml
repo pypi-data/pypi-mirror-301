@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "escope"
+version = "3.3.0"
+authors = [
+  { name="Daniel A. Wagenaar", email="daw@caltech.edu" }
+]
+description = "A software oscilloscope for electrophysiology"
+readme = "README.md"
+
+dependencies = [
+  "pyqt5",
+  "numpy",
+  "numba",
+  "nidaqmx",
+]
+
+
+requires-python = ">=3.10"
+classifiers = [ 
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wagenadl/escope"
+
+
+[project.scripts]
+escope = "escope.escope:main"
+espark = "escope.espark:main"
