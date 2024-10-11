@@ -1,0 +1,2 @@
+[console_scripts]
+nlt = natural_language_terminal.cli.app:app
