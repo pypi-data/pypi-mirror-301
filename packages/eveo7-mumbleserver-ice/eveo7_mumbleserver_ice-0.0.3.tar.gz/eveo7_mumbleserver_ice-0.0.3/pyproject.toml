@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "eveo7-mumbleserver-ice"
+version = "0.0.3"
+description = "Python bindings for interacting with Mumble server using ZeroC's ICE technology."
+keywords = ["mumble", "murmur", "ice", "slice2py", "zeroc"]
+authors = ["Boris Talovikov <boris@talovikov.ru>"]
+readme = "README.md"
+packages = [{ include = "eveo7_mumbleserver_ice" }]
+repository = "https://gitlab.com/eveo7/eveo7-mumbleserver-ice"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+zeroc-ice = "^3.7.10.1"
+
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
