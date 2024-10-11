@@ -1,0 +1,11 @@
+django_routify/__init__.py,sha256=L1zuEC9mJWh3ZhMahadi78uL4_YPcuDJqAjNqj-1ijM,382
+django_routify/_abstraction.py,sha256=GHj7644DKBSHs3EocZAZ0pIkf6S12egH2KboAtnAR7Y,7058
+django_routify/include.py,sha256=VSf17gqqy0OEhFiTSH4_miOGmQ5N7zBhKCXofJENCEQ,587
+django_routify/patterns.py,sha256=ozfX2-tl7CChfGO6hBCMQOoOyMPYAtf91irzOdQ_WBo,4460
+django_routify/router.py,sha256=vzLdyirxEjvdR8jvXx_SY97hz5PlR0-DrMB5dWEtGpc,4694
+django_routify/validator.py,sha256=7c-Efjk43hipOjjYRMPa-ihNwZ9hIoxSuYtAlVIXSOo,555
+django_routify-0.2.9.dist-info/LICENSE,sha256=oD-lvHHTCQ2UvcjhJqFvUPgl-VKzZrW-7gj0ByRuWE8,1070
+django_routify-0.2.9.dist-info/METADATA,sha256=AvEKGxH6FvUiePwfN1zbOtYqmxDTfLaFveqsEs34BFs,6356
+django_routify-0.2.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_routify-0.2.9.dist-info/top_level.txt,sha256=ntV4PoF5CelZ6sk30Wty23bS1nmFB4WOYorE3uzcHtU,15
+django_routify-0.2.9.dist-info/RECORD,,
