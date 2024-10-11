@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+psprop/__init__.py
+psprop/propagation.py
+psprop.egg-info/PKG-INFO
+psprop.egg-info/SOURCES.txt
+psprop.egg-info/dependency_links.txt
+psprop.egg-info/requires.txt
+psprop.egg-info/top_level.txt

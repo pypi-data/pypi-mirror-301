@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: psprop
+Version: 0.1.1
+Summary: Partially coherent wave propagation through phase space
+Author: Jake Rogers
+Author-email: jakejohnrogers@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+# Phase Space Propagator
+ An optical propagation algorithm based on the properties of phase space.
