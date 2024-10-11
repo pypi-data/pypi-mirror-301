@@ -1,0 +1,12 @@
+name: variconfig_dev
+channels:
+- defaults
+dependencies:
+- python==3.9.*
+- pip
+- pip:
+  - -e .[dev] --config-settings editable_mode=strict
+  # - -e .[dev] --config-settings editable_mode=compat
+
+
+

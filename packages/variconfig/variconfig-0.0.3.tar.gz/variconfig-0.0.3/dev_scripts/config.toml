@@ -1,0 +1,10 @@
+root_dir = "."
+data_dir = "{{ root_dir }}/data"
+log_dir = "{{ root_dir }}/logs"
+db_name = "TestDB"
+
+[logging_config]
+version = 1
+
+[logging_config.loggers.test_logger]
+level = "INFO"

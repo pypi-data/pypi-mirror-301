@@ -1,0 +1,7 @@
+python-dotenv
+toml
+PyYAML
+
+[dev]
+sphinx
+sphinx_rtd_theme
