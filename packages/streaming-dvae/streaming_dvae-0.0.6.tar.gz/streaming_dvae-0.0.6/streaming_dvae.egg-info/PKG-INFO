@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: streaming-dvae
+Version: 0.0.6
+Summary: Streaming DVAE
+Home-page: https://github.com/pengzhendong/streaming-dvae
+Author: Zhendong Peng
+Author-email: pzd17@tsinghua.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: modelscope
+Requires-Dist: pyyaml
+Requires-Dist: streaming_vocos
+Requires-Dist: vector_quantize_pytorch
+
+# streaming-dvae
