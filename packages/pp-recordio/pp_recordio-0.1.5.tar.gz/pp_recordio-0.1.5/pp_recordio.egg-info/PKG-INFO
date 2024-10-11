@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pp_recordio
+Version: 0.1.5
+Summary: Post Perception's RecordIO facimile.
+Home-page: https://github.com/postperception/pp_recordio
+Author: Sam Liu
+Author-email: sam@postperception.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+PostPerception's facimile of Google's RecordIO library (no direct relation
+    other than name). This is a binary format for storing sequences of arbitrary
+    binary data, usually protocol buffers. It tolerates corruption of the
+    underlying data and uses a CRC32 checksum to detect data corruptions.
+    Supports Linux x86, Linux aarch64, Darwin x86, and Apple Silicon (Darwin
+    amd64).
+
+    The core implementation is done in golang and exposed to python by wrapping
+    using `cgo`.
+
+    Example Usage:
+
+    ```python
+    # Import the module.
+    from pp_recordio import pp_recordio as rio
+
+    FILENAME = "test.pp_recordio"
+    w = rio.RecordWriter(FILENAME)
+    w.write(b'This is a binary blob!')
+    w.write(b'Individual messages can be quite big.!')
+    w.write(b'Protocol buffers are good to store here!')
+
+    r = rio.RecordReader(FILENAME)
+    for item in r.read():
+      print(item)
+    ```
+
+    ## Technical Details
+
+    The frame is composed of a header followed by the actual data. The total frame
+    size is variable, depending on the size of the data being stored.
+
+    #### Frame Header Description
+
+    - Magic Number: 4 bytes; constant value: 0xDEADBEEF. Used to identify the start
+      of a frame.
+    - Length: 8 bytes; stores the total length of the frame (header + data).
+    - CRC32: 8 bytes; stores the CRC32 checksum of the data for integrity checking.
+    - Flags: 4 bytes; used to indicate various frame properties (e.g., compression).
+    - Reserved: 16 bytes; currently unused, reserved for future use.
+
+    4 + 8 + 8 + 4 + 16 = 40 bytes total overhead per stored datum.
+
+    ## Release Notes
+
+    ### Version 0.1.5
+
+    First working version.
+
+    Issues I'd like to address / fix:
+
+    - Does not tolerate corruption to the frames themselves.
+    - Does not support sharded paths and requires suffix to be `.pp_recordio`.
+    - Not thread safe.
+    - The underlying go library generates a ton of noisy logs. I should clean those up / remove them.
+    - The underlying go library has a gzip compression feature that should either be removed or exposed to the python interface.
+    
