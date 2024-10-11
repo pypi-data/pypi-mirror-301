@@ -1,0 +1,46 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = [
+    "poetry-core",
+]
+
+[tool.poetry]
+authors = [
+    "Ruslan Sirazhetdinov <ruslansir@icloud.com>",
+]
+description = ""
+license = "MIT"
+name = "iprotopy"
+packages = [
+    { include = "iprotopy" },
+]
+readme = "README.md"
+repository = "https://github.com/irusland/iprotopy"
+version = "0.3.0"
+
+[tool.poetry.dependencies]
+astor = "*"
+grpcio = "*"
+grpcio-tools = "*"
+mypy-protobuf = "*"
+proto-schema-parser = "*"
+python = ">=3.8,<4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+pyprojectsort = "^0.3.0"
+ruff = "^0.6.9"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    "__pycache__",
+    "astor_parse.py",
+    "build",
+    "convertion.py",
+    "dist",
+]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "single"
