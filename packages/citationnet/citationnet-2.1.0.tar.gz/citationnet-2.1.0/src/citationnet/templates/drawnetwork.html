@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{% if message %}
+<div class="alert alert-{{ message.level }} alert-dismissible fade show" role="alert">
+  {{ message.text }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endif %}  
+<div id="3d-graph" style="position: fixed; top: 75px; height:100px; left: 0px;">
+</div>
+<div id="citationnet-main">
+  <button class="btn btn-outline-success float-left openbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">☰</button>
+</div>
+<div id="piechart" class="piechart" hidden>
+</div>
+
+{% include 'control.html' %}
+
+<script>
+let citenet = new citationnet.CitationNet(
+    jsondata = "/static/data/{{ filename }}",
+    containerID = "3d-graph"
+  );
+  
+  document.addEventListener('keyup', event => citationnet.toggleView(event, citenet))
+  
+  citenet.loadData();
+  citenet.setNodeProp();
+  citenet.setLinkStrength();
+  citenet.setCylinder();
+  citenet.view("side");
+</script>
+
+{% endblock %}
+
