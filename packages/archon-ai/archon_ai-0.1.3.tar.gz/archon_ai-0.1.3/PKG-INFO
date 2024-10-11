@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: archon-ai
+Version: 0.1.3
+Summary: 
+License: MIT
+Author: Shlok Natarajan
+Author-email: shlok.natarajan@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.34.2,<0.35.0)
+Requires-Dist: google-generativeai (>=0.8.1,<0.9.0)
+Requires-Dist: groq (>=0.11.0,<0.12.0)
+Requires-Dist: litellm (>=1.45.0,<2.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: openai (>=1.45.0,<2.0.0)
+Requires-Dist: pydantic (>=2.9.1,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# mini-archon
+Archon with just chat completions
+
+## Usage
+Create an api_keys.json of this format:
+```
+{
+    "OPENAI_API_KEY": [],
+    "TOGETHER_API_KEY": [],
+    "ANTHROPIC_API_KEY": [],
+    "GROQ_API_KEY": [],
+    "GOOGLE_API_KEY": [],
+    "EXAMPLE_API_KEY": []
+}
+```
+
+Pass this into your archon class along with an Archon config
+Example:
+```
+archon = Archon(archon_config, api_key_file='api_keys.json', query_saves=False)
+```
+archon_config should be a valid Archon config json
+
+# TODO:
+- Update this readme
+- Create completion formats similar to openai
+
