@@ -1,0 +1,5 @@
+furiosa_torch_ext/__init__.py,sha256=IsPDRTBHprBLptp6X1ZtdRt-_BfnOu3XKi-QpQHMW8U,130
+furiosa_torch_ext/torch_ext.py,sha256=IFprf5BPVIKgguCNGX4PSDt19BniT-vi8pbyiuzD6_8,7803
+furiosa_torch_ext-2024.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+furiosa_torch_ext-2024.1.0.dist-info/METADATA,sha256=cNWla6fcNy3dq6jYfBIfG3_GJehxsmOvJR3upzMpwrA,1447
+furiosa_torch_ext-2024.1.0.dist-info/RECORD,,
