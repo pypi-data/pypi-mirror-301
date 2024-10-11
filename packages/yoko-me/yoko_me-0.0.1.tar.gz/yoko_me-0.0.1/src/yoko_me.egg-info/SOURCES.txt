@@ -1,0 +1,6 @@
+pyproject.toml
+src/__init__.py
+src/yoko_me.egg-info/PKG-INFO
+src/yoko_me.egg-info/SOURCES.txt
+src/yoko_me.egg-info/dependency_links.txt
+src/yoko_me.egg-info/top_level.txt
