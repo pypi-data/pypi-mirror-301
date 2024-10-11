@@ -1,0 +1,11 @@
+grokit/__init__.py,sha256=BWn3WRqZYy88hNJ8jKvm5zNSX5ZxusLF93B568ulXBI,122
+grokit/grokit.py,sha256=JVdJTy26eDU-uxaHppziDxfyAKphYV86ehYN_jiW66g,5293
+grokit/version.py,sha256=P_FXi5GEdeIot8bygLONW1rjh8qmnHb6GhEcuuGQgys,72
+grokit/__pycache__/__init__.cpython-312.pyc,sha256=smaRyU2LcRkUxF01ynjpFBzuZI4qrPx007adLefbG68,224
+grokit/__pycache__/grokit.cpython-312.pyc,sha256=wZH0zRsG4szLfA30SgBUcNJg8pPToBPNuHAqWEyoWL4,6960
+grokit/__pycache__/version.cpython-312.pyc,sha256=DSKw0L513QJujKZaesh2X43C_PyfzNPyUevNNiXDIwg,180
+grokit-1.2410.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+grokit-1.2410.0.dist-info/METADATA,sha256=cx4F69q5OqzrQdF8hM_Is_5BRfCdniqOh_EAAXYCdxs,741
+grokit-1.2410.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+grokit-1.2410.0.dist-info/top_level.txt,sha256=UATi5wh0NNGr24kuFHF8hXmU-MGJAu53FKPMaK3VTQs,7
+grokit-1.2410.0.dist-info/RECORD,,
