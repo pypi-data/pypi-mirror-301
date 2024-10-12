@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: carlink
+Version: 0.0.13
+Summary: carlink is a library to interact with your car
+Home-page: https://github.com/deeeepc/carlink
+Author: deep C
+Author-email: 
+License: MIT
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Hardware
+Requires-Dist: libusb1==2.0.1
+Requires-Dist: hexdump>=3.3
+Requires-Dist: pycryptodome>=3.9.8
+Requires-Dist: tqdm>=4.14.0
+Requires-Dist: requests
+
+See https://github.com/deeeepc/carlink
