@@ -1,0 +1,4 @@
+[ai_models.output]
+multio = ai_models_multio.output:MultioOutput
+multiodebug = ai_models_multio.output:MultioDebugOutput
+multiofdb = ai_models_multio.output:FDBMultioOutput
