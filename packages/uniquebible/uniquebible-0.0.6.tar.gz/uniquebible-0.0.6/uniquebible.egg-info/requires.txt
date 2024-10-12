@@ -1,0 +1,14 @@
+PySide6
+apsw
+babel
+gdown
+prompt_toolkit
+requests
+
+[gui]
+PySide6
+
+[linux]
+flaml[automl]
+piper-tts
+pyautogen[autobuild]==0.3.0
