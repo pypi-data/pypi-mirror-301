@@ -1,0 +1,3 @@
+[console_scripts]
+mdcor=mdcor.cli:main
+

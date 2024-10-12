@@ -1,0 +1,10 @@
+mdcor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdcor/cli.py,sha256=0zpnNdTBfLcf-OPIeEvVyuVmx0JzbkTLhNEQGU-nIFU,1792
+mdcor/converts.py,sha256=Zc3w_SRvlqU6exQkuOTWLi77_TOyIuE93zZ0Iuo8z8M,2554
+mdcor/process_yalm.py,sha256=Okm8AzmQhz23ma64lppT0SGBJlBb-FPQYxPBLSrE7GY,1462
+mdcor/watcher.py,sha256=ZVGa_enSOxg-oqu5Ubr786lBFYwTmHjKEREwdGcalOA,1579
+mdcor-0.1.0.dist-info/LICENSE,sha256=pidQ-tQSyeL3uYqRQzyLeb3BA5zGdNPqj4YOMAOA6l8,1072
+mdcor-0.1.0.dist-info/METADATA,sha256=kRbAOAC5UURplkDhMyzuIXoJzvPJ8gAYOu597BNrE8w,657
+mdcor-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mdcor-0.1.0.dist-info/entry_points.txt,sha256=LTC7dUMBUoFcqoFjAwHrQdT7b0eQpBbqxzyCuuqVpq8,40
+mdcor-0.1.0.dist-info/RECORD,,
