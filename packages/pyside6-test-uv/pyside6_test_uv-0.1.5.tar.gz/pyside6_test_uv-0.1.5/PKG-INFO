@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyside6-test-uv
+Version: 0.1.5
+Summary: A test project using uv.
+Author-email: Ioan Calin <iborco@gmail.com>
+Maintainer-email: Ioan Calin <iborco@gmail.com>
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: pyside6>=6.8.0

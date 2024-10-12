@@ -1,0 +1,2 @@
+[gui_scripts]
+pyside6_test_uv = pyside6_test_uv.app:main
