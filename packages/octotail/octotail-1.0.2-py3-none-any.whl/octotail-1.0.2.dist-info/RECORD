@@ -1,0 +1,10 @@
+octotail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octotail/browser.py,sha256=vg6psaKvHRos2w7gZRJ6P4aUM0zIzbqoZuZ0EaH_l3Q,5300
+octotail/gh.py,sha256=lXC9Q3Y5w4yiWmf_gCceUrmmBZ_MOmS1XsSZMi9g9Jo,2725
+octotail/main.py,sha256=xXGHO2Z9QjHGseYYcujUPP9ANu-hcX6kW32rPMIoAPc,4230
+octotail/mitm.py,sha256=G2rSg2LtYJbFuNfbBjXTXAaOhMTHRmD_ULBI4QiogwM,3493
+octotail/streamer.py,sha256=NUbn6S6F5YEWf8H82mUABCmBibWO1p4q-XA0PkusOfw,1827
+octotail/utils.py,sha256=E4iv3H58_P5_Z499ksPECgssVIDe2TyT62FH64l1a7c,3089
+octotail-1.0.2.dist-info/METADATA,sha256=EeLSHmEGftdFysprIRrDQm-NW6-7lPd9kerBq67cTcg,4575
+octotail-1.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+octotail-1.0.2.dist-info/RECORD,,
