@@ -1,0 +1,102 @@
+
+[tool.poetry]
+name = "toqito"
+version = "1.1.0"
+description = "Python tools for the study of quantum information."
+authors = ["Vincent Russo <vincentrusso1@gmail.com>"]
+maintainers = ["Vincent Russo <vincentrusso1@gmail.com>, Purva Thakre <purva.athakre@gmail.com>"]
+readme = "README.md"
+homepage = "https://vprusso.github.io/toqito/"
+repository = "https://github.com/vprusso/toqito"
+keywords = ["quantum information", "quantum computing", "nonlocal games"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+cvxpy = "1.5.3"
+cvxopt = "1.3.2"
+more-itertools = "10.5.0"
+numpy = "2.1.2"
+scipy = "1.14.1"
+scs = "3.2.7"
+picos = "2.4.17"
+qiskit = "1.2.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.3"
+pytest-cov = "5.0.0"
+coverage = "7.6.2"
+sympy = "1.13.3"
+distlib = "0.3.9"
+ipython = "8.28.0"
+setuptools = ">65.5.1"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "7.1.1"
+flake8-docstrings = "1.7.0"
+isort = "5.13.2"
+myst-parser = "4.0.0"
+pep8 = "1.7.1"
+ruff = "0.6.9"
+mypy = "1.11.2"
+black = "*"
+
+[tool.poetry.group.docs.dependencies]
+readthedocs-sphinx-ext = "*"
+sphinx = "8.1.0"
+furo = "2024.8.6"
+sphinxcontrib-bibtex = "2.6.3"
+sphinx-autoapi = "3.3.2"
+
+[build-system]
+requires = ["setuptools","poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.ruff]
+# exclude = ["__init__.py"]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["I", "E", "W", "D", "PL"]
+# ruff configuration
+# E, W -- pycodestyle
+# D -- pydocstyle
+# I -- isort
+# PL -- pylint
+
+# Rules considered over other incompatible ones
+exclude = ["docs/conf.py", "setup.py"]
+
+ignore = ["D407", "D203", "D213", "D416", "PLR0912", "PLR0911", "PLR0915", "PLR2004", "PLR0913"]
+# Rules Ignored
+
+# D407 - Ignored because ==== under a section heading is considered as a missing underline.
+# pydocstyle considers ----- an underline.
+
+# D212 and D211 specially selected due to following incompatibilities
+# warning: `one-blank-line-before-class` (D203) and `no-blank-line-before-class` (D211) are incompatible. Ignoring `one-blank-line-before-class`.
+# warning: `multi-line-summary-first-line` (D212) and `multi-line-summary-second-line` (D213) are incompatible. Ignoring `multi-line-summary-second-line`.
+
+# D416 was adding a semicolon after some section headings when ruff's automated --fix was was used
+# As this was not added evenly after all section headings, we ignore this. 
+
+# PLR0912 -- Checks for functions or methods with too many branches. The default number is 12. 
+# PLR0911 -- Checks for functions or methods with too many return statements. The default number is 6.
+# PLR0915 -- Checks for functions or methods with too many statements. The default number is 50. 
+# PLR2004 -- Checks if an equality or an inequality is compared to a variable or a num (prefers variable pre)
+# PLR0913 Too many arguments in function definition
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["I001"]
+# I001 - skip checking Import block is un-sorted or un-formatted
+
+[tool.black]
+target-version = ['py311']
+# 'extend-exclude' excludes files or directories in addition to the defaults
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+(/*.py # exclude all py files
+)
+'''
