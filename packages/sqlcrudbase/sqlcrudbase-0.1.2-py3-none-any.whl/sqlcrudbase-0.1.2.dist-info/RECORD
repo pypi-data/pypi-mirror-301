@@ -1,0 +1,9 @@
+sqlcrudbase/__init__.py,sha256=tUudKcC-XWKJzR5DIJ430J2AsSRZ42SccrGltco11Kc,189
+sqlcrudbase/base_controller.py,sha256=ELoRQuBwiIJuGuSkI6wrs6oKaClc6eSkGmyFtK0IyT0,2181
+sqlcrudbase/base_repository.py,sha256=_tnmwEB_eo5gnYjAQ921MGQS6qrxRpUsHEvQKRV_J-E,723
+sqlcrudbase/base_service.py,sha256=ck1VUnW31n-Y237_ce3Sg4asPAdHIpGueRLobA_V12w,959
+sqlcrudbase-0.1.2.dist-info/LICENSE,sha256=RUIiya51wCiSjlI7kvIsZnWUnLZHurCSUYsae-u-vcQ,1081
+sqlcrudbase-0.1.2.dist-info/METADATA,sha256=wiuHzzeTGM9ywK5GUNjeeRiDBNfsQl23SVtG2GsF8HI,4389
+sqlcrudbase-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sqlcrudbase-0.1.2.dist-info/top_level.txt,sha256=_ALlfr6juqdG6hxHuQw1PiUl9NvkPEZr2gh71pUL-58,12
+sqlcrudbase-0.1.2.dist-info/RECORD,,
