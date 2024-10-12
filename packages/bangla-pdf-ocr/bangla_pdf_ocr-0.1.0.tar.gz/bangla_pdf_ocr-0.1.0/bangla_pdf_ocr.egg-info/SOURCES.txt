@@ -1,0 +1,19 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+bangla_pdf_ocr/__init__.py
+bangla_pdf_ocr/ocr.py
+bangla_pdf_ocr.egg-info/PKG-INFO
+bangla_pdf_ocr.egg-info/SOURCES.txt
+bangla_pdf_ocr.egg-info/dependency_links.txt
+bangla_pdf_ocr.egg-info/entry_points.txt
+bangla_pdf_ocr.egg-info/requires.txt
+bangla_pdf_ocr.egg-info/top_level.txt
+bangla_pdf_ocr/data/Freedom Fight.pdf
+bangla_pdf_ocr/data/__init__.py
+bangla_pdf_ocr/scripts/__init__.py
+bangla_pdf_ocr/scripts/install_linux_dependencies.sh
+bangla_pdf_ocr/scripts/install_macos_dependencies.sh

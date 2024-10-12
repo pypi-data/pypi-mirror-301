@@ -1,0 +1,5 @@
+tqdm==4.66.3
+Pillow==9.4.0
+pdf2image==1.17.0
+pytesseract==0.3.10
+colorama

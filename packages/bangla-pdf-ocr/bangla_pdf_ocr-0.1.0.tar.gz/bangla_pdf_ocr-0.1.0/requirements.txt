@@ -1,0 +1,5 @@
+tqdm
+Pillow
+pdf2image
+pytesseract
+colorama
