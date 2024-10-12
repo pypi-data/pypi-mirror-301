@@ -1,0 +1,15 @@
+hopeit/dataframes/__init__.py,sha256=ZG8syYN3K-KWf_PjPPahkOo3NWwUl9ykWtF7-j4_9yg,4391
+hopeit/dataframes/dataframe.py,sha256=Q9QVR3SBxWOXacV5pCT0EHRy5lDfLoHSNG2gO3yxdzk,9647
+hopeit/dataframes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hopeit/dataframes/serialization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hopeit/dataframes/serialization/dataset.py,sha256=BYWAy79mD983sFyJhRYA1pN0YjeuJQSh0x9dUBCqKf8,1441
+hopeit/dataframes/serialization/files.py,sha256=9GQ_cSwc2UbVOArCjb59vRhFzRSb2wnUEgV9q1IbDMM,3079
+hopeit/dataframes/serialization/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hopeit/dataframes/serialization/settings.py,sha256=O4k90eSa7jOBNhSPF0gdB7NFUM8c5kgHOBAyz1KTBms,258
+hopeit/dataframes/setup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hopeit/dataframes/setup/dataframes.py,sha256=h2octuAYr5xUNz6nGX_8TLKcvQ_2Q1PLj0mb2fyIdGw,1279
+hopeit/dataframes/setup/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hopeit.dataframes-0.25.3.dist-info/METADATA,sha256=LQmbOGCiJlmwe_6PUAcSAiiFzEyLdqnRUEcPsRPs3Is,2503
+hopeit.dataframes-0.25.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+hopeit.dataframes-0.25.3.dist-info/top_level.txt,sha256=m-R472J_P82Xe5R09_jBDKP0kbMqrEHawwB90H1iWJI,7
+hopeit.dataframes-0.25.3.dist-info/RECORD,,
