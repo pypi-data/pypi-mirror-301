@@ -1,0 +1,6 @@
+wrapper_test/__init__.py,sha256=NqRzWfdpNUf6GUlNqTd2JIfLvFDUZcIyeQuI7NngzWQ,52
+wrapper_test/_wrapper_test.cp311-win_amd64.pyd,sha256=x3jBqhzcE6mDd93NKd6zpmV0yX3no5pkv-TVXWqzre8,32256
+wrapper_test/wrapper_test.py,sha256=byK0fLFip68gJb_zVDe5v5HAYNolMUAxSxrsfpHXoFI,2510
+wrapper_test-0.0.3.dist-info/METADATA,sha256=aRh6t8LvkKPunwTcgi4lhnHDOqGNaHU56TSvNl9g2Rk,456
+wrapper_test-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wrapper_test-0.0.3.dist-info/RECORD,,
