@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "palkia"
+version = "0.2.1"
+description = "indoor positioning library"
+authors = ["happy663 <tatu2425@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "palkia", from = "src" }]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.1.0"
+scipy = "^1.14.0"
+matplotlib = "^3.9.2"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+pytest = "^8.3.3"
+pyright = "^1.1.384"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "E501",    # line too long, handled by black
+  "PLR0913", # too many arguments
+  "D100",    # undocumented-public-module
+  "D101",    # undocumented-public-class
+  "D102",    # undocumented-public-method
+  "D103",    # undocumented-public-function
+  "D104",    # undocumented-public-module
+  "D107",    # missing-docstring
+  "ANN101",  # missing type annotation for self in method
+  "D203",    # one-blank-line-before-class (linter rule 競合解決のため)
+  "D213",    # multi-line-summary-second-line (linter rule 競合解決のため)
+  # formatとの競合を解消するため、以下のルールを無効化
+  "COM812", # Missing trailing comma in Python 3.6+
+  "ISC001", # Single line implicit string concatenation
+
+]
+unfixable = ["F401"]
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "standard"
+# basePath
+venvPath = "."
+# basePathから指定する
+venv = ".venv"
+
+
+[tool.pytest.ini_options]
+pythonpath = "./src/common"
+# testpaths = "./src/common/map_matching"
