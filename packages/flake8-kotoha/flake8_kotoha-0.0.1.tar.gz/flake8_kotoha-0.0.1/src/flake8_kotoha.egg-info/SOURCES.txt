@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/flake8_kotoha.egg-info/PKG-INFO
+src/flake8_kotoha.egg-info/SOURCES.txt
+src/flake8_kotoha.egg-info/dependency_links.txt
+src/flake8_kotoha.egg-info/entry_points.txt
+src/flake8_kotoha.egg-info/requires.txt
+src/flake8_kotoha.egg-info/top_level.txt
+src/kotoha/__init__.py
+src/kotoha/__main__.py
+src/kotoha/core.py
+src/kotoha/plugins.py
+tests/test_core.py
