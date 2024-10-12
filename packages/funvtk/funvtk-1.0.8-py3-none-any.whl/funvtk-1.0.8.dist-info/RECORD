@@ -1,0 +1,11 @@
+funvtk/LICENSE,sha256=pFYF3EgsSGLfcYdxK9YKVNsoQsfjByMBEXXu3M0-YlM,1078
+funvtk/__init__.py,sha256=cdUgnPjVYTfBt6EEImHcpm56VhRWcRv9toIfr_TDb5M,151
+funvtk/evtk.py,sha256=rpKppmKfHRYHc0FeScqww7i2_1CGyGh0IeKa2c31IOo,2559
+funvtk/hl.py,sha256=lFLtEF8I23LRgm5fDrF7XNp16FT5Rs9tYh7R-ndeYc0,27734
+funvtk/version.py,sha256=D0Tgy0z-UV0gQJSD7C8G7eSeyUXvXY0aIBEdM2cdmJ0,86
+funvtk/vtk.py,sha256=Z57cdIVUyH1Na6jmiw7WnYR0ZDH7OoUK-VWc7kVx--o,17266
+funvtk/xml.py,sha256=KMj-61wpCE_WsIHWwX-ODnzCH2p8_w2MRB-mtmfCsBA,2261
+funvtk-1.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+funvtk-1.0.8.dist-info/METADATA,sha256=lZFNDmLkCNo2UOB3-ywSgFSSx6gzS1oJGxNgmXT0dSs,436
+funvtk-1.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funvtk-1.0.8.dist-info/RECORD,,
