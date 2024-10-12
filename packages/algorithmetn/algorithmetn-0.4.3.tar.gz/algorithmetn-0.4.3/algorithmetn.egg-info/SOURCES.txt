@@ -1,0 +1,8 @@
+README.md
+setup.py
+Algorithmetn/__init__.py
+Algorithmetn/algorithms.py
+algorithmetn.egg-info/PKG-INFO
+algorithmetn.egg-info/SOURCES.txt
+algorithmetn.egg-info/dependency_links.txt
+algorithmetn.egg-info/top_level.txt
