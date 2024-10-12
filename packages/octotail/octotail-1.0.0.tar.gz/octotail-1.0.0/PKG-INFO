@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: octotail
+Version: 1.0.0
+Summary: Live tail GitHub Actions runs on git push.
+License: UNLICENSE
+Keywords: github-actions,tail,post-receive,codecrafters,git
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: fake-useragent==1.5.1
+Requires-Dist: mitmproxy==11.0.0
+Requires-Dist: pygithub==2.4.0
+Requires-Dist: pykka==4.0.2
+Requires-Dist: pyppeteer==2.0.0
+Requires-Dist: pyppeteer_stealth==2.7.4
+Requires-Dist: pyxdg==0.28
+Requires-Dist: typer-slim==0.12.5
+Requires-Dist: websockets==10.4

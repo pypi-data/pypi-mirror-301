@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+octotail/__init__.py
+octotail/browser.py
+octotail/gh.py
+octotail/main.py
+octotail/mitm.py
+octotail/streamer.py
+octotail/utils.py
+octotail.egg-info/PKG-INFO
+octotail.egg-info/SOURCES.txt
+octotail.egg-info/dependency_links.txt
+octotail.egg-info/entry_points.txt
+octotail.egg-info/requires.txt
+octotail.egg-info/top_level.txt
