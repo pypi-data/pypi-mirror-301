@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/usms/__init__.py
+src/usms/__main__.py
+src/usms/usms.py
+src/usms.egg-info/PKG-INFO
+src/usms.egg-info/SOURCES.txt
+src/usms.egg-info/dependency_links.txt
+src/usms.egg-info/requires.txt
+src/usms.egg-info/top_level.txt
