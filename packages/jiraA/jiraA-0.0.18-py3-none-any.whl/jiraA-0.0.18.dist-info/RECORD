@@ -1,0 +1,16 @@
+jiraX/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jiraX/backlog.py,sha256=A5KMvgmDiZ9xJ7egzSLkq1IX5uDJOASiA7w8SeyKfiQ,1401
+jiraX/base.py,sha256=eOxsZMGKrxDnrpQJIg0sYJf_khYhVDHJWgUhWxFk5DI,309
+jiraX/board.py,sha256=p7jSIhWrD4yGCir41QLTUKEkm2PknSwgS4NqMnyoayM,1938
+jiraX/comment.py,sha256=qSSJ4GN-pJBZe9OrhEumFlvh6mwEb3sfkWCS5EL-Nos,2142
+jiraX/factories.py,sha256=Ug9FHIpctrJxv1FwEOHqtjJ7iHbCvnBYptucLygvOgE,1499
+jiraX/issue.py,sha256=BP0zL-XYelGSR8PRmIbsKJHX17fNSHXnKHORzbmchAs,5418
+jiraX/project.py,sha256=gTFcwD-uCEV-3v8t2Gq21kKC2ku9zjLIeR6WGFS-ajo,2630
+jiraX/role.py,sha256=9hoz1xzUYYNvhUsVW968SktbkYr6GNAHFmVGblCI6Dg,1920
+jiraX/sprint.py,sha256=uLnYz5yOMXBbG03Afm22MdP1cT_BMKayiLYWJX4u_CY,2438
+jiraX/sprintbacklog.py,sha256=UTtOxNDY_NVmlhCBkwa1LSFgx-hDMYI9StfD0jK2aQs,787
+jiraX/user.py,sha256=pz9o00r38l1hqbzFPMvrP5rqLvJhd4TiQT94ondpwHQ,3508
+jiraA-0.0.18.dist-info/METADATA,sha256=mRfcn5Bv8GeGK4kfUrd8zEoa_X4cDjN5BDG_66_rYnU,3297
+jiraA-0.0.18.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jiraA-0.0.18.dist-info/top_level.txt,sha256=ALK1II_rDaF8gAa1lmDaKiZ7nr23rPPmgEtSXv03tyY,6
+jiraA-0.0.18.dist-info/RECORD,,
