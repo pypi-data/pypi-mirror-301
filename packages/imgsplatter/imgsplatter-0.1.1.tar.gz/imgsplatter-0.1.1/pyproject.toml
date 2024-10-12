@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "imgsplatter"
+version = "0.1.1"
+description = "Create randomized wallpapers from your favorite images"
+authors = ["DJ Stomp <85457381+DJStompZone@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pillow = "^10.4.0"
+tqdm = "^4.66.5"
+argparse = "^1.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
