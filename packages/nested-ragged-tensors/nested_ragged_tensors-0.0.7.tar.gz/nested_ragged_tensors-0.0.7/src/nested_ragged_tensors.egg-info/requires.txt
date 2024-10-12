@@ -1,0 +1,15 @@
+safetensors
+numpy
+
+[benchmarks]
+ml-mixins
+torch
+rootutils
+memray
+
+[dev]
+pre-commit<4
+
+[tests]
+pytest
+pytest-cov
