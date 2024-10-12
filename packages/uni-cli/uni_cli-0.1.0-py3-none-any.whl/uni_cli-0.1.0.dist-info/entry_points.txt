@@ -1,0 +1,2 @@
+[console_scripts]
+hello = ai_cli.hello:say_hello
