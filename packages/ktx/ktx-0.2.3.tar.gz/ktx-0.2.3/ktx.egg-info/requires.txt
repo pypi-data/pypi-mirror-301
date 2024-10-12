@@ -1,0 +1,15 @@
+immutabledict
+
+[:python_version < "3.11"]
+typing-extensions
+
+[all]
+sentry-sdk>=2.11.0
+opentelemetry-api
+
+[test]
+coverage>=7.6.1
+pytest
+mypy
+ruff
+deptry
