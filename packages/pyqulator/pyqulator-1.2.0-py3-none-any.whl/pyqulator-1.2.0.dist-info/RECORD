@@ -1,0 +1,11 @@
+pyqulator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqulator/main.py,sha256=wPFvAxMgkbl_tDNskr456x-mvhc2M3YLUNM2BOykTpE,20316
+pyqulator/ui.py,sha256=XIL_AWpfl1SzVibjjH7FhU_ugeNUzjNGstKgTtE2PiY,77716
+pyqulator/locales/ui_ru.qm,sha256=u988h_CNrVcLzeVSKKvWCubBlzN5-fx1Kb441mRJfic,6177
+pyqulator/locales/ui_uk.qm,sha256=9mJu0uwTPQrSE6boeGGig-6wtksd6FnDMRSvgBP7RH8,6125
+pyqulator-1.2.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+pyqulator-1.2.0.dist-info/METADATA,sha256=ivcRvr7scRZKZb0AT3JVRv30-fxHsLMYSdaZyj0F5Ag,42599
+pyqulator-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyqulator-1.2.0.dist-info/entry_points.txt,sha256=AyOAGgUIhST7hDW7v8ogzjJFF3XsczE84Cxi6Gol4Ws,46
+pyqulator-1.2.0.dist-info/top_level.txt,sha256=K8gOHm-nd_pKFWA2J2ls1EkITcbuPZey2SkTwhSkn9Q,10
+pyqulator-1.2.0.dist-info/RECORD,,
