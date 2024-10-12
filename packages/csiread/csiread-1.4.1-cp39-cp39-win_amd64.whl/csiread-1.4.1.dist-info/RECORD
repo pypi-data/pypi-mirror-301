@@ -1,0 +1,11 @@
+csiread/__init__.py,sha256=TSV-eLICdeVMQ6N0NDF7naE_V_z5Z_SMHTl_PfXtjQg,233
+csiread/_csiread.cp39-win_amd64.pyd,sha256=JeMpbyxadf8lVvcMr6RASoc7laliCFefJtuEFt_mnnE,450560
+csiread/_picoscenes.cp39-win_amd64.pyd,sha256=kuTLgDvHqM2oCzCPRReWNKoeHid6VXZOrp7uB_0b7qk,262656
+csiread/_type.py,sha256=GrZrvjfdnUvZx1ydMQVFb_zfaGSg8ga8wAafHJAkIhk,6181
+csiread/core.py,sha256=kHEGYJayZ2BHu7cihjLRU8DQ6tWjgQd5-4D8j3xibiI,52880
+csiread/utils.py,sha256=V3ije9lB4RorBgKsWw_2Kpf3dqijZBGZFGGWWOxuNMo,7026
+csiread-1.4.1.dist-info/LICENSE.md,sha256=G3RlFGl4tAHzWxgcwfpcN_WqGIqXwfliJMH5fzRWEM0,1100
+csiread-1.4.1.dist-info/METADATA,sha256=LGTkpSHcblEaoGMrlqjel0MJ_tDuEEAnpHIweN4t6Hc,7052
+csiread-1.4.1.dist-info/WHEEL,sha256=YorN2HPccIdfJm1vtDZTOGjQ579sMRaAowQ3R-HpNAE,100
+csiread-1.4.1.dist-info/top_level.txt,sha256=C7n5tV6sqYRsgKCUjvDCYoGgQtPRu--PglhrkbaHQpk,8
+csiread-1.4.1.dist-info/RECORD,,
