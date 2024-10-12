@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mayaff
+Version: 1.1.0
+Summary: Format maya command flags
+Home-page: https://github.com/maxWiklund/mayaFlagFormatter
+Author: Max Wiklund
+Author-email: 
+License: Apache License, Version 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+License-File: LICENSE
+
