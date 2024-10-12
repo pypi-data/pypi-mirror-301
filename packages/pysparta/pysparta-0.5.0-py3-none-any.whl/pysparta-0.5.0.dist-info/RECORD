@@ -1,0 +1,15 @@
+sparta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparta/delete.py,sha256=W7IhEgw4SnT5mU_LM-ifnTPZWvTBXslXcRIvEqK7aNE,1161
+sparta/extract.py,sha256=ULtc7AQ-bqTvDb7aClVaQTCrJIihc3Jvlex-qWlJvUk,2704
+sparta/load.py,sha256=iE4gYVnEhah4y0YNaV2MBmSBdf2ZwUIAzq_YRuXq9M8,4863
+sparta/logs.py,sha256=IsqNGzTeQqL913py9egcbDYt7KVe4VgGO7wWrEVJMt8,2888
+sparta/secret.py,sha256=4Xbow6P_q3becY8FvzAxvamz41VUNTXjLCTNWkb4WeI,837
+sparta/transformation.py,sha256=V11E_IAFWedWEmefxzpQnLLeannEPZ3dOiWLp-GK4Ss,7406
+sparta/validator.py,sha256=ie_wvupgtJvEo0VzA_84_LZxpEuWDQSPgPYmN98hP0Y,3305
+sparta/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparta/tests/test_transformation.py,sha256=C13RTe-ovRmXZ1iVBS2VwSxs9tp6Qe6nlHjbU8Xgc24,3983
+pysparta-0.5.0.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+pysparta-0.5.0.dist-info/METADATA,sha256=RR8tPS6ALXeJ7nO_7qd3Je7UnxP8_P4BdSYgNmeTPjs,2967
+pysparta-0.5.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pysparta-0.5.0.dist-info/top_level.txt,sha256=9rswyiejD5V8XRmuvDo-VtldjpMNe_bJT6-7N4OR2DI,7
+pysparta-0.5.0.dist-info/RECORD,,
