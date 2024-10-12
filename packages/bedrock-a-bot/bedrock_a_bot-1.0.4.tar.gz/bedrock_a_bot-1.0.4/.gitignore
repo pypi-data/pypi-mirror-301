@@ -1,0 +1,5 @@
+__pycache__*
+saved_sessions.json
+build
+dist
+bedrock_a_bot.egg-info*
