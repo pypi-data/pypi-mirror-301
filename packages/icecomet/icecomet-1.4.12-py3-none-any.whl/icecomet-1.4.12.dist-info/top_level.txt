@@ -1,0 +1,4 @@
+iclone
+icolor
+iexample
+iprint
