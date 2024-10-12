@@ -1,0 +1,13 @@
+README.md
+setup.py
+Data_Statistik.egg-info/PKG-INFO
+Data_Statistik.egg-info/SOURCES.txt
+Data_Statistik.egg-info/dependency_links.txt
+Data_Statistik.egg-info/requires.txt
+Data_Statistik.egg-info/top_level.txt
+src/__init__.py
+src/main.py
+src/skewness dan kurtosis.py
+src/tes.py
+test/__init__.py
+test/sample_test.py
