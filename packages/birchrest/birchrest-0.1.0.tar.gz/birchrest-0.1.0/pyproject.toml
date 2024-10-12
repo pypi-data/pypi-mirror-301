@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "birchrest"
+version = "0.1.0"
+description = "A lightweight Python framework for building REST APIs with a controller-based approach. It includes built-in middleware, error handling, auth handling, automatic response management and more."
+authors = [{ name = "Alexander Engström", email = "alexander@engstrom.ae" }]
+license = { text = "MIT" }
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+keywords = ["api", "rest", "framework", "web"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "colorama"
+]
+
+[project.urls]
+homepage = "https://github.com/alexandengstrom/birchrest"
+repository = "https://github.com/alexandengstrom/birchrest"
+documentation = "https://github.com/alexandengstrom/birchrest/wiki"
+
+[tool.setuptools]
+packages = ["birchrest"]
+
+[tool.setuptools.package-data]
+birchrest = ["*.md", "*.txt"]
+
+[tool.mypy]
+files = ["birchrest/"]
+ignore_missing_imports = true
+strict = true
