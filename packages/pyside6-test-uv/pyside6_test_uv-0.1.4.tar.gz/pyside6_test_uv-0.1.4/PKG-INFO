@@ -1,0 +1,6 @@
+Metadata-Version: 2.3
+Name: pyside6-test-uv
+Version: 0.1.4
+Summary: A test project using uv.
+Requires-Python: >=3.13
+Requires-Dist: pyside6>=6.8.0
