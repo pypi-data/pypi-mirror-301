@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: collar
+Version: 0.1.11
+Summary: 一个利用LLM来一起进行项目开发的工具
+Home-page: https://github.com/dinght-1975/collar_project
+Author: Ding Haitao
+Author-email: Ding Haitao <dinght1975@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: jpype1
+
