@@ -1,0 +1,14 @@
+quizgen/quizgen.py,sha256=mcfof4rdz6-JkphYXFLysfahRqh0WlKU_CDMn-Khjds,2176
+quizgen/scripts/convert_questions.py,sha256=u1WHbWD7T0zDae-YeNyannR8DsHFaZto-TD1AIGLY4A,1490
+quizgen/scripts/convert_questions_batch.py,sha256=7CnpODEjG1jbQHcRpuLG6TN6LhIfhkQ9Lt4NeKkac3s,1786
+quizgen/scripts/generate_embeddings.py,sha256=810djYTpTVIncgQQR-kzDPF3EEHJMJMmjo7CYfNeM6I,1042
+quizgen/scripts/generate_embeddings_batch.py,sha256=VDD0l_By5S8u9f7w0kV-B0EWMTKUS_3V5JgfCRbmr6A,1805
+quizgen/scripts/generate_questions.py,sha256=6lnhhXFVjoknJT2Ljys1pG0WYgzE9CbB4H5TuNZwkLs,3393
+quizgen/scripts/generate_questions_batch.py,sha256=JxQDMCS8EwGc6BJGG9pI7pawQRH9EGPD_GoYh_5Qe2o,2640
+quizgen/scripts/import_to_anki.py,sha256=VM-qIeuBxEzSz3bnt5cnZC8CabGJiYI2jz5sl0RBr_s,2835
+quizgen/scripts/thin_out_questions.py,sha256=K99tY0LactyOmniK4dhnu0FBUVDisbqNX-7QdtmLZM4,6808
+quizgen_ai-1.0.1.dist-info/LICENSE,sha256=Auzd7JfAIMjBp-s3Kt0V13JdR-3kkeDaZzzXR-UEEZ0,1072
+quizgen_ai-1.0.1.dist-info/METADATA,sha256=-4snWZ6Yjh0EPPvuCeoiGyviVz1kzAdN7WY1mXATrAk,6204
+quizgen_ai-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+quizgen_ai-1.0.1.dist-info/entry_points.txt,sha256=lcIK3xgAc9oMBMZpyK6-AT3Cjk83GyMIJq8tlwj3Reo,48
+quizgen_ai-1.0.1.dist-info/RECORD,,
