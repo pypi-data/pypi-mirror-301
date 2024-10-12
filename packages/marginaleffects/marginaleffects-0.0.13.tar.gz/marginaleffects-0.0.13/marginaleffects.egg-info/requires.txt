@@ -1,0 +1,13 @@
+numpy>=2.0.0
+patsy>=0.5.6
+polars>=1.7.0
+pyarrow>=17.0.0
+scipy>=1.14.1
+plotnine>=0.13.6
+
+[test]
+pandas>=2.2.2
+matplotlib>=3.7.1
+typing-extensions>=4.7.0
+statsmodels>=0.14.0
+pyfixest>=0.24.2
