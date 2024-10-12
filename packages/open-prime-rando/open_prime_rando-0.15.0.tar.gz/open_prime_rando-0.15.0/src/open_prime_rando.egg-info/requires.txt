@@ -1,0 +1,11 @@
+retro-data-structures>=0.28.0
+jsonschema>=4.0.0
+ppc-asm
+py_randomprime
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+pre-commit
