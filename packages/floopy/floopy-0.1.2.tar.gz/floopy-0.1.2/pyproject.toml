@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+#py-modules = []
+packages = ["floopy"]
+
+[project]
+name = "floopy"
+version = "0.1.2"
+dependencies = [
+    "numpy",
+    "pandas",
+    "collection",
+    "jsonpickle",
+    "tzlocal",
+    "getmac",
+    "rich",
+    # "seaborn",  # tutorial.ipynb
+]
+requires-python = ">= 3.10"
+description = "Tester-Agnostic Sequencer for Hardware-Testing in Python"
+keywords = ["test", "sequencer", "task", "loop", "sweep"]
+authors = [{name = "Friedrich Hagedorn", email = "friedrich_h@gmx.de"}]
+readme = "README.md"
+license = {text = "GPL 3"}
+
+[project.urls]
+Homepage = "https://github.com/floopy-systems/floopy"

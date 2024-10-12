@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+floopy/__init__.py
+floopy/basesystem.py
+floopy/datamanager.py
+floopy/pathnode.py
+floopy.egg-info/PKG-INFO
+floopy.egg-info/SOURCES.txt
+floopy.egg-info/dependency_links.txt
+floopy.egg-info/requires.txt
+floopy.egg-info/top_level.txt
+tests/test_01_pathnode.py
+tests/test_02_basesystem.py
+tests/test_03_systemnode.py
+tests/test_04_squeeze.py
+tests/test_05_output.py
