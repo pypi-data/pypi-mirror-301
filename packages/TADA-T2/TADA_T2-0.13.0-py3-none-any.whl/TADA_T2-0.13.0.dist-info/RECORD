@@ -1,0 +1,12 @@
+TADA_T2/TADA.py,sha256=-pj2WCKrIjeK9k1JNk5pD7LabG4XHiOoC3LnXeGFlrE,5613
+TADA_T2/__init__.py,sha256=ZVPSxgHXsTH5zLFlBsUCOEdqL3-yX1qQJgwR01Dtl0Q,185
+TADA_T2/_version.py,sha256=DgpLNbv0e1LIEOOe54Db8_390i9pelMEFEnsBsNmyhA,23
+TADA_T2/py.typed,sha256=o_skYYOgBqbwMt-5lUZDunyM7CcemHaJt2k9MsSACeY,61
+TADA_T2/tests/__init__.py,sha256=nRKPWsTbB025bJRfX6ZOZayBVXMs3HMdd_JXUPpjWnA,113
+TADA_T2/tests/test_TADA_T2.py,sha256=8mAQaOQp3n3jMe9HvQ6oOgd538cV76MOlnIz4z0AhkA,303
+TADA_T2/tests/test_predictor_is_correct.py,sha256=jGoWPJ9vsmJazHRBJO970KaXKUEPIvIGyEaptE9WUFw,6405
+TADA_T2-0.13.0.dist-info/LICENSE,sha256=CgFqG_4JEauAAcYIVtxi0SWZRIZeJpu35sFu31oYUP8,1091
+TADA_T2-0.13.0.dist-info/METADATA,sha256=WMZAN2mccWSNPtq4yw793nVUSNu8fOeroXdlTA5hNxs,18009
+TADA_T2-0.13.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+TADA_T2-0.13.0.dist-info/top_level.txt,sha256=axwjAjVT2WDqN0bE8JQ7DgrFGVjee7AINYKEWWpFZcQ,8
+TADA_T2-0.13.0.dist-info/RECORD,,
