@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: palkia
+Version: 0.2.0
+Summary: indoor positioning library
+License: MIT
+Author: happy663
+Author-email: tatu2425@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: numpy (>=2.1.0,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: scikit-learn (>=1.5.2,<2.0.0)
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Palkia: Indoor Positioning Library
+
+Palkia は、屋内位置推定を実現するためのPythonライブラリです。
+PDR（Pedestrian Dead Reckoning）をベースとしており,マップマッチング、BLEビーコンを用いた位置補正などが行えます。
+
+## 特徴
+
+- 歩行者デッドレコニング（PDR）
+- マップマッチングによる位置補正
+- BLEビーコンを用いた位置精度の向上
+- 3次元空間での位置推定（階層対応）
+- データ前処理と後処理機能
+
+
+## Makeコマンド
+
+Poetry を使用した依存関係の解決
+
+```bash
+make install
+```
+
+リント、フォーマットチェック、型チェック
+```
+make ci
+```
