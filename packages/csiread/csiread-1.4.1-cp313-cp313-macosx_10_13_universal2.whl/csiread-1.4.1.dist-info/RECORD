@@ -1,0 +1,11 @@
+csiread/__init__.py,sha256=-2L9ZrogiWw8D3J0d0T4K0IGfLkLQe68TnJPwLDz_KI,226
+csiread/_csiread.cpython-313-darwin.so,sha256=Muo94_kVo2Iv8fBWk9rxJ9lnBXR69gaPLJmaYi_4UFE,895824
+csiread/_picoscenes.cpython-313-darwin.so,sha256=s57EyTeGFTgLlgOYI2XDZD9TW0nysSwdk9xwhP_hTKI,490024
+csiread/_type.py,sha256=s-cjkqyknV2Z8REa3BOTUqEtVfbtJ5wrdGJgY1SqSGQ,5976
+csiread/core.py,sha256=TvGqYfz3uCjElpbeSRJJwq0eSmfmlZk_o3l526J0NHY,51569
+csiread/utils.py,sha256=i4rD4El3KqdUcK3rSPnZDy_cs3Fp_ZH2sArrWKD-PQw,6819
+csiread-1.4.1.dist-info/LICENSE.md,sha256=F9FqYYwOngTz4dge8b0Gv7aBl08e8rFdZNPz_tA5m-k,1078
+csiread-1.4.1.dist-info/METADATA,sha256=xBxNoxMLXornehREBc_IfOmpRlYNQJ-Veg1SHSm4u44,6892
+csiread-1.4.1.dist-info/WHEEL,sha256=Atbd32uHC5ud5B4JupjIDNKQgnXrL6njGq322U0ClSQ,115
+csiread-1.4.1.dist-info/top_level.txt,sha256=C7n5tV6sqYRsgKCUjvDCYoGgQtPRu--PglhrkbaHQpk,8
+csiread-1.4.1.dist-info/RECORD,,
