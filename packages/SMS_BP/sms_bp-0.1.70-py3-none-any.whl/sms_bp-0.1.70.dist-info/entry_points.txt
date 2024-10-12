@@ -1,0 +1,2 @@
+[console_scripts]
+run_SMS_BP = SMS_BP.run_cell_simulation:typer_app_sms_bp
