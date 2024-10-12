@@ -1,0 +1,2 @@
+[console_scripts]
+docker-compose-builder = docker_compose_builder.main:app
