@@ -1,0 +1,8 @@
+autora-core
+scikit-learn
+pysindy
+torch
+typeguard
+
+[dev]
+autora-core[dev]
