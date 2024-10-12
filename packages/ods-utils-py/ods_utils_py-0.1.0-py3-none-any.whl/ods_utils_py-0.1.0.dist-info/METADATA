@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: ods_utils_py
+Version: 0.1.0
+Summary: A Python package for interacting with OpenDataSoft (ODS) platforms.
+Home-page: https://github.com/rstam-aloush/odsAutomationPython/
+Author: Renato FARRUGGIO
+Author-email: renato.farruggio@bs.ch
+License: MIT License
+        
+        Copyright (c) 2024 Renato FARRUGGIO
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi ==2024.8.30
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.10
+Requires-Dist: pytest ==8.3.3
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: requests ==2.32.3
+Requires-Dist: setuptools ==75.1.0
+Requires-Dist: urllib3 ==2.2.3
+
+# ods-utils-py
+Mit `ods-utils-py` lÃ¤sst sich direkt aus Python auf die Automation API von Opendatasoft zugreifen. Voraussetzung ist der Besitz eines gÃ¼ltigen API SchlÃ¼ssels ([API-SchlÃ¼ssel erstellen](#api-schlÃ¼ssel-einrichten)).
+
+
+## Inhaltsverzeichnis
+
+   - [Installation](#installation)
+   - [Voraussetzungen](#voraussetzungen)
+   - [Erste Schritte](#erste-schritte)
+     - [API-SchlÃ¼ssel einrichten](#api-schlÃ¼ssel-einrichten)
+   - [Verwendung](#verwendung)
+   - [WeiterfÃ¼hrende Links](#weiterfÃ¼hrende-links)
+   - [Lizenz](#lizenz)
+
+---
+
+## Installation
+
+Installation via `pip`:
+
+```bash
+pip install ods-utils-py
+```
+
+---
+
+## Voraussetzungen
+
+- **Python Version:** 3.11 oder hÃ¶her
+- **API-SchlÃ¼ssel:** Ein gÃ¼ltiger API-SchlÃ¼ssel von Opendatasoft
+
+---
+
+## Erste Schritte
+
+### API-SchlÃ¼ssel einrichten
+
+Um `ods-utils-py` nutzen zu kÃ¶nnen, wird ein gÃ¼ltiger API-Key von Opendatasoft benÃ¶tigt. 
+
+[FÃ¼r die OGD Basel kann der API Key hier erstellt werden](https://data.bs.ch/account/api-keys/).
+
+FÃ¼r die Key-Erstellung auf anderen Plattformen kann oben rechts auf die SchaltflÃ¤che mit dem Benutzernamen geklickt werden, um die Kontoeinstellungen zu Ã¶ffnen. Unter API-Keys kÃ¶nnen benutzerdefinierte Keys mit den entsprechenden Berechtigungen erstellt werden. 
+
+Der Name sollte beschreiben wofÃ¼r er verwendet wird, beispielsweise `"ods_utils_py - <Initialer Name des Keys>"`
+
+Der API Key benÃ¶tigt die folgenden 4 Berechtigungen:
+- Alle DatensÃ¤tze durchsuchen
+- Neue DatensÃ¤tze erstellen
+- Alle DatensÃ¤tze bearbeiten
+- Eigene DatensÃ¤tze verÃ¶ffentlichen
+
+Der API Key wird nun als Umgebungsvariable benÃ¶tigt.
+
+### Umgebungsvariablen einrichten
+   Die [`.env.template`](.env.template) Datei kopieren und in `.env` umbenennen:
+   - **Windows**
+     ```cmd
+     copy .env.template .env
+     ```
+   - **Mac/Linux**
+     ```bash
+     cp .env.template .env
+     ```
+   Anschliessend die `.env` Datei Ã¶ffnen und mit den erforderlichen Zugangsdaten und Informationen ausfÃ¼llen.
+
+## Verwendung
+
+Hier ein einfaches Beispiel, um die Anzahl der DatensÃ¤tze abzurufen:
+
+```python
+import ods_utils_py as ods_utils
+
+num_datasets = ods_utils.get_number_of_datasets()
+print(f"Derzeit haben wir {num_datasets} DatensÃ¤tze.")
+```
+
+Falls eine gewÃ¼nschte Funktion nicht existiert, kann sie Ã¼ber _requests_utils implementiert werden:
+
+```python
+import ods_utils_py as ods_utils
+
+antwort = ods_utils._requests_get("https://www.example.com")
+print(antwort.text)
+```
+
+*Hinweis:* Die meisten dieser Funktionen sollten dann langfristig in `ods_utils_py` integriert werden.
+
+---
+
+## WeiterfÃ¼hrende Links
+Die vollstÃ¤ndige Dokumentation der Automation API 1.0 ist [hier](https://help.opendatasoft.com/apis/ods-automation-v1/) zu finden.
+
+## Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE) Datei im Repository fÃ¼r den vollstÃ¤ndigen Lizenztext.

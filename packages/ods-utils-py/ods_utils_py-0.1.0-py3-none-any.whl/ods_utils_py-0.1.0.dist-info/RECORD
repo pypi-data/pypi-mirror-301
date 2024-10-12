@@ -1,0 +1,14 @@
+ods_utils_py/__init__.py,sha256=UF-18v8pvZrFhd9QyyY1QuzHmv8sNojTzkturqyGgRg,461
+ods_utils_py/_config.py,sha256=sVqEaQ3iQHGif_ydvu9sOUxeaoTz2k5ITcFSgurFX3o,2170
+ods_utils_py/_requests_utils.py,sha256=5gfa2MzGm5Ywdg5IXq6F6RvX1CEzwHzZLre5lkHA1MQ,3748
+ods_utils_py/get_dataset_custom_view.py,sha256=YtuF4FXSzGzYsKcCyahGPr8cqt29wP4Bv0r5ZB-qMjE,2282
+ods_utils_py/get_dataset_license.py,sha256=4jK0on0NdCKxp09DnOuRALGkUkOaih_gk0eh8yMEzTE,2620
+ods_utils_py/get_number_of_datasets.py,sha256=z8VCzFCd6nk_b7UTQhgk3ibXBl57WewI_gQ8Hi6pxNU,447
+ods_utils_py/get_uid_by_id.py,sha256=co3u_ff-zgbIAlQPmx0j2wuIqvd9KP51tzHzt7o63hs,377
+ods_utils_py/set_dataset_license.py,sha256=pI3DhclBtM2oNyoo781hNgtqy-7bNAX4p88UTmd38W0,2786
+ods_utils_py/set_dataset_public.py,sha256=IAKfa6O7L2MbuI37sE5LUIz-afibL1Sw_AHL9Nohzzk,1336
+ods_utils_py-0.1.0.dist-info/LICENSE,sha256=lYtZQS756yvSpkDqiJ7NDvGdOI1VQr_teHoM3bMK-UE,1092
+ods_utils_py-0.1.0.dist-info/METADATA,sha256=9gHGwQG998wqOiYijCW3eElMTNjwQVtrf33yn_ZwdnQ,5106
+ods_utils_py-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ods_utils_py-0.1.0.dist-info/top_level.txt,sha256=E6uC6yErQClP5SJUHa5tVfa4xEF8iwfxXE8RHS5poT4,13
+ods_utils_py-0.1.0.dist-info/RECORD,,
