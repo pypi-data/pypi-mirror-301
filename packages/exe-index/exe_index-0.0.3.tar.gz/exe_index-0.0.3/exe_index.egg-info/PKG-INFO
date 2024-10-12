@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: exe-index
+Version: 0.0.3
+Summary: A Python package.
+Description-Content-Type: text/markdown
+Requires-Dist: click~=8.1.7
+Requires-Dist: packaging~=24.1
+
+
+# exe-index
+
+A Python package.

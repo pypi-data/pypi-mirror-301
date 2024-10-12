@@ -1,0 +1,23 @@
+
+[build-system]
+requires = [ "setuptools>=61.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exe-index"
+description = "A Python package."
+authors = []
+readme = "README.md"
+keywords = []
+version = "0.0.3"
+dynamic = [ "dependencies",]
+
+[tool.setuptools]
+packages = ["exe_index"]
+
+[project.scripts]
+exe-index = "exe_index.exe_index:cli"
+exe-new-index = "exe_index.exe_index:new_index"
+
+[tool.setuptools.dynamic.dependencies]
+file = [ "requirements.txt",]

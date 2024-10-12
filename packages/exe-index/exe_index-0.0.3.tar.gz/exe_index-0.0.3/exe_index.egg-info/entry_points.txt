@@ -1,0 +1,3 @@
+[console_scripts]
+exe-index = exe_index.exe_index:cli
+exe-new-index = exe_index.exe_index:new_index
