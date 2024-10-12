@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/zaowr_polsl_kisiel/__init__.py
+src/zaowr_polsl_kisiel/main.py
+src/zaowr_polsl_kisiel.egg-info/PKG-INFO
+src/zaowr_polsl_kisiel.egg-info/SOURCES.txt
+src/zaowr_polsl_kisiel.egg-info/dependency_links.txt
+src/zaowr_polsl_kisiel.egg-info/top_level.txt
