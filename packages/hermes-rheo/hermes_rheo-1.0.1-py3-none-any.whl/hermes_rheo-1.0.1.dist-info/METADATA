@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: hermes_rheo
+Version: 1.0.1
+Summary: 'Piblin transforms tailored for advanced rheological analysis'
+Author: Alessandro Perego <aperego@mmm.com>
+Project-URL: Source, https://github.com/3mcloud/hermes-rheo
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <3.11,>=3.7
+License-File: LICENSE
+Requires-Dist: piblin
+Requires-Dist: matplotlib <3.9.0
+Requires-Dist: numpy <2.0,>=1.21
+Requires-Dist: pandas
+Requires-Dist: scipy <1.14
+Requires-Dist: openpyxl
+Requires-Dist: mastercurves
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# hermes
+Piblin transforms tailored for advanced rheological analysis
