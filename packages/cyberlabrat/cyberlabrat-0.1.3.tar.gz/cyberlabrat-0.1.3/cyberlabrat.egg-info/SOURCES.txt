@@ -1,0 +1,8 @@
+README.md
+setup.py
+cyberlabrat.egg-info/PKG-INFO
+cyberlabrat.egg-info/SOURCES.txt
+cyberlabrat.egg-info/dependency_links.txt
+cyberlabrat.egg-info/requires.txt
+cyberlabrat.egg-info/top_level.txt
+tests/test_project.py
