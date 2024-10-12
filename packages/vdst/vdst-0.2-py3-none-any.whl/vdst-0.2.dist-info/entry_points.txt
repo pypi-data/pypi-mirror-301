@@ -1,0 +1,2 @@
+[console_scripts]
+create-data-science = vdst.template:create_vdst

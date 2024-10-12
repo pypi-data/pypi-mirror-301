@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: vdst
+Version: 0.2
+Summary: A python package for data-science project templates
+Home-page: https://github.com/vanshxo/vdst
+Author: Vansh Khatri
+Author-email: khatrivansh43@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
