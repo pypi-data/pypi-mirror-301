@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+CustomThread.egg-info/PKG-INFO
+CustomThread.egg-info/SOURCES.txt
+CustomThread.egg-info/dependency_links.txt
+CustomThread.egg-info/top_level.txt
