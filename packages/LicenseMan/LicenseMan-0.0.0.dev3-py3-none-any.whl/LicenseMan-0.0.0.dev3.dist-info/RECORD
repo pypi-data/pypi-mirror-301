@@ -1,0 +1,13 @@
+licenseman/__init__.py,sha256=yldtURmo6i-h4DtYltZtg5dO2aikwFmBEjUDM67S9vY,58
+licenseman/data/__init__.py,sha256=2sa4YwLv2sYJbwiEfd-KhxV7D8aN8tDj9RIuqcsoqrA,1044
+licenseman/exception/__init__.py,sha256=tZ1cfqTo2cB9YWBjQjEhviwt6JGo7IMxKQ7cvbI3Mgk,154
+licenseman/exception/data.py,sha256=AbuEJLbbl4EHjK30qNsBisqGHSLkr3a_Fpz1g-hqM4Q,908
+licenseman/spdx/__init__.py,sha256=1tmlbYUWJAo39-I1lKWVjkk9TwthuNZoLdC_urbBFBs,5952
+licenseman/spdx/license.py,sha256=C8m7Y6M9g0MfcfaAPrJdT16-MwQSR-yk4au27BAR-hU,15575
+licenseman/spdx/license_db.py,sha256=xUPbveCdAq84znPa9aaY4UP-Daj7bpKPlRakQziyv5A,2431
+licenseman/spdx/license_list.py,sha256=gGOxIYj7aEjTk27gsm56jVEec1GrASEgFqrpQp9xo58,1128
+licenseman/spdx/license_text.py,sha256=7yYMRRtk6VW35Q0zGEurqNZYPOqmJ264Nw0u7UYPXlk,27139
+LicenseMan-0.0.0.dev3.dist-info/METADATA,sha256=St9VRN3CRkFIAdybiBtM94EbxXJVa6WvenAoRkCJ278,307
+LicenseMan-0.0.0.dev3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+LicenseMan-0.0.0.dev3.dist-info/top_level.txt,sha256=Nqbr61xGE7d-eD0IqOinp6MRo6dabf2FTVbNKA451HU,11
+LicenseMan-0.0.0.dev3.dist-info/RECORD,,
