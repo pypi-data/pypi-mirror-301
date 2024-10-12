@@ -1,0 +1,2 @@
+[console_scripts]
+tree-values = tree_values.tree_values:main

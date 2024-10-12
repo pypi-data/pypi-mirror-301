@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: tree-values-viewer
+Version: 0.1.0
+Summary: A tool to view project tree and file contents
+Home-page: https://github.com/keskinbu/tree-values-viewer
+Author: Burak Keskin
+Author-email: me@burak.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tree Values Viewer
+
+A simple tool to view project tree structure and file contents.
+
+## Installation
+
+```
+pip install tree-values-viewer
+```
+
+## Usage
+
+```
+view-project tree
+view-project values
+view-project values --ignore .env,.git
+```
+
+## Package Creation and Upload Commands
+# Install required tools
+pip install setuptools wheel twine
+
+# Create distribution packages
+python setup.py sdist bdist_wheel
+
+# Upload to Test PyPI (optional)
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+# Upload to PyPI
+twine upload dist/*
