@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+open_ksa/__init__.py
+open_ksa/download_file.py
+open_ksa/get_dataset_resources.py
+open_ksa/get_org_resources.py
+open_ksa/organizations.py
+open_ksa/ssl_adapter.py
+open_ksa.egg-info/PKG-INFO
+open_ksa.egg-info/SOURCES.txt
+open_ksa.egg-info/dependency_links.txt
+open_ksa.egg-info/requires.txt
+open_ksa.egg-info/top_level.txt
