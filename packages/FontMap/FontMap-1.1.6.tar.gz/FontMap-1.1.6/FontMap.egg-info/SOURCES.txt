@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+FontMap/HuiFontMap.py
+FontMap/__init__.py
+FontMap.egg-info/PKG-INFO
+FontMap.egg-info/SOURCES.txt
+FontMap.egg-info/dependency_links.txt
+FontMap.egg-info/top_level.txt
