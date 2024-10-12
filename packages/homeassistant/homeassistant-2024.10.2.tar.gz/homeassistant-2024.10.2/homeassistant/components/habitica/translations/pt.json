@@ -1,0 +1,44 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Conta j\u00e1 configurada"
+        },
+        "error": {
+            "invalid_credentials": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "unknown": "Erro inesperado"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "Chave da API",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "selector": {
+        "skill_select": {
+            "options": {
+                "backstab": "Ladino: Facada nas costas",
+                "fireball": "Mago: Explos\u00e3o de chamas",
+                "pickpocket": "Ladino: Bater carteira",
+                "smash": "Guerreiro: Destrui\u00e7\u00e3o brutal"
+            }
+        }
+    },
+    "services": {
+        "api_call": {
+            "fields": {
+                "args": {
+                    "name": "Args"
+                },
+                "name": {
+                    "name": "Nome"
+                },
+                "path": {
+                    "name": "Caminho"
+                }
+            }
+        }
+    }
+}

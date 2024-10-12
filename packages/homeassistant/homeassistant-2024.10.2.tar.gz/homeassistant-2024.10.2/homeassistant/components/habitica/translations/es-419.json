@@ -1,0 +1,22 @@
+{
+    "entity": {
+        "sensor": {
+            "gems": {
+                "name": "Gemas"
+            },
+            "trinkets": {
+                "name": "Relojes de arena m\u00edsticos"
+            }
+        }
+    },
+    "selector": {
+        "skill_select": {
+            "options": {
+                "backstab": "P\u00edcaro: Pu\u00f1alada",
+                "fireball": "Mago: Explosi\u00f3n de llamas",
+                "pickpocket": "P\u00edcaro: Carterista",
+                "smash": "Guerrero: Golpe brutal"
+            }
+        }
+    }
+}

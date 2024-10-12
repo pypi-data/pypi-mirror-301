@@ -1,0 +1,20 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "counter_id": "Num\u00e9ro de compteur",
+                    "password": "Mot de passe",
+                    "username": "Nom d'utilisateur"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "water_usage_yesterday": {
+                "name": "Consommation d'eau hier"
+            }
+        }
+    }
+}
