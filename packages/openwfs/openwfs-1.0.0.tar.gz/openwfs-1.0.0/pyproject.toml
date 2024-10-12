@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "openwfs"
+version = "1.0.0"
+description = 'A libary for performing wavefront shaping experiments and simulations'
+authors = ["Ivo Vellekoop <i.m.vellekoop@utwente.nl>", "Jeroen Doornbos", "Daniël Cox"]
+license = "BSD-3-Clause"
+readme = "README.md"
+repository = "https://github.com/ivovellekoop/openwfs"
+documentation = "https://openwfs.readthedocs.io/en/latest/"
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Development Status :: 4 - Beta',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+# required dependencies
+python = ">=3.9,<4.0"
+numpy = ">=1.25.2"  # also allow numpy 2.x.y
+astropy = ">=5.1.0" # assuming the astropy.units is stable
+opencv-python = "^4.9.0.80"
+matplotlib = "^3.7.3"
+scipy = "^1.11.3"
+annotated-types = "^0.7.0"
+
+# optional dependencies for hardware components
+nidaqmx = { version = "^1.0.1", optional = true }
+harvesters = { version = "^1.4.2", optional = true, markers = "python_version < '3.12'" }
+PyOpenGL = { version = "^3.1.7", optional = true }
+glfw = { version = "^2.5.9", optional = true }
+
+[tool.poetry.extras]
+# optional dependencies for hardware components
+# these are not required for the core functionality of the library
+# to install, use pip install openwfs[nidaq, genicam, opengl]
+# or poetry install --extras "nidaq" --extras "genicam" -- extras "opengl"
+nidaq = ["nidaqmx"]
+genicam = ["harvesters"]
+opengl = ["PyOpenGL", "glfw"]
+all = ["nidaqmx", "harvesters", "PyOpenGL", "glfw"]
+
+[tool.black]
+line-length = 120
+
+# for the development process, we also want the docs and dev dependencies
+# these can only be installed through poetry using --with dev and --with docs
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+# development dependencies, used for testing only, not needed for normal use
+# to install, use pip install openwfs[dev]
+scikit-image = ">=0.21.0"
+pytest = ">=7.0.0"
+nidaqmx = "^1.0.1" # we can test without the hardware, but still need the package
+black = ">=24.0.0" # code formatter
+poetry = ">=1.2.0" # package manager
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+# documentation dependencies, used for building the sphinx documentation only
+# to install, use pip install openwfs[docs]
+sphinx = ">=4.1.2"
+sphinx_mdinclude = ">=0.5.0"
+sphinx-rtd-theme = ">=2.0.0"
+sphinx-autodoc-typehints = ">=2.2.0"
+sphinxcontrib-bibtex = ">=2.6.0"
+sphinx-markdown-builder = "=0.6.7"
+sphinx-gallery = ">=0.15.0"
+
+
