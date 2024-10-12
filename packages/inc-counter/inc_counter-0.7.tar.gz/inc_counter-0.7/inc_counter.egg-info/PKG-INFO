@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: inc-counter
+Version: 0.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
+Requires-Dist: flask
+Requires-Dist: flask_cors

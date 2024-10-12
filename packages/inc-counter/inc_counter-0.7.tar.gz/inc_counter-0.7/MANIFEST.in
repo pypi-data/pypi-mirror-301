@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include inc_counter/templates *.html
+recursive-include inc_counter/static *
