@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+kiowaplatform/__init__.py
+kiowaplatform/platform.py
+kiowaplatform.egg-info/PKG-INFO
+kiowaplatform.egg-info/SOURCES.txt
+kiowaplatform.egg-info/dependency_links.txt
+kiowaplatform.egg-info/top_level.txt
