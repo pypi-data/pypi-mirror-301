@@ -1,0 +1,40 @@
+# icecomet_test
+## iprint :
+```
+from iprint import *
+iprint()       #check attribute in mode
+oncode():      #change directory to file'folder
+
+cprint(*arg,color=cb.cprint,end='\n):
+
+ij(tag='',mode='',c=cb.ij,end='\n') # Default color : green
+ji(tag='',mode='',c=cb.ji,end='\n') # Default color : yello
+jk(tag='',mode='',c=cb.jk,end='\n') # Default color : red
+
+in mode
+    full : mode = 'iltapnv'
+    i    : value
+    l    : len()
+    t    : type()
+    a    : At line()
+    n    : Number of passed
+    s    : skip/pass this function
+    p    : comming soon #[ path of file ] 
+    v    : comming soon #[ about being a variable ] 
+object : ct.
+    ct.gray = '\033[90m'
+    ct.red = '\033[91m'
+    ct.green = '\033[92m'
+    [and more]
+object : cb.
+    cb.cprint = ct.green
+    cb.ij=ct.green
+    cb.ji=ct.yello
+    cb.jk=ct.red
+    cb.set=ct.set
+```
+
+
+
+
+    
