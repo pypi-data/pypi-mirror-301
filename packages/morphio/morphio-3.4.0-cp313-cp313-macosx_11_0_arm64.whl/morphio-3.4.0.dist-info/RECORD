@@ -1,0 +1,10 @@
+morphio-3.4.0.dist-info/RECORD,,
+morphio-3.4.0.dist-info/WHEEL,sha256=L5Yzp3Ie3qzhKJYO8ywXtZfSISbcpXt4-U2h3P52Hng,109
+morphio-3.4.0.dist-info/top_level.txt,sha256=BzAG9hbvHB8LPMdmFQVdeNk0G6UfL-Nm7XuVcLmd0c8,8
+morphio-3.4.0.dist-info/LICENSE.txt,sha256=d0emUPhW0B24FKaJxRwaCKc0cmW9g_sxPH0S2XHzS60,11362
+morphio-3.4.0.dist-info/AUTHORS.txt,sha256=OpXj0Kz4VDs56WOxv2ZrT5M1wOR_-_g--CRTBaj5ovg,468
+morphio-3.4.0.dist-info/METADATA,sha256=g1jE93OQuhKi6O1RDl_K88lusiHYy_30fLGFj9wHLk8,3541
+morphio/__init__.py,sha256=jNe8d-gK4ozo0o-Uts74U1dUn4nzOMtbrxLn6U4aVVk,1251
+morphio/_morphio.cpython-313-darwin.so,sha256=w6McpYQ6b5Tgu7OqQm4EZJ0k2Jdk30q-NVjw2dTBjl8,5149856
+morphio/mut/__init__.py,sha256=WMIQqCWysmUZVlxvquKbD0IjaYXt012Al5vErF8Uawg,357
+morphio/vasculature/__init__.py,sha256=8MkRVXSmsENGcFVEu9bnJKtjT9gY3Zz-SIhoh4RQkac,56
