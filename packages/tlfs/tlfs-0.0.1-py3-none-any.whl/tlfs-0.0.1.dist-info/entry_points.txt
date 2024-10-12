@@ -1,0 +1,2 @@
+[console_scripts]
+tlfs = tlfs.scripts:main
