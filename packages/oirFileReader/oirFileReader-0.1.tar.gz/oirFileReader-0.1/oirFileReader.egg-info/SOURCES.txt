@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+oirFileReader/__init__.py
+oirFileReader/oirFileReader.py
+oirFileReader.egg-info/PKG-INFO
+oirFileReader.egg-info/SOURCES.txt
+oirFileReader.egg-info/dependency_links.txt
+oirFileReader.egg-info/requires.txt
+oirFileReader.egg-info/top_level.txt

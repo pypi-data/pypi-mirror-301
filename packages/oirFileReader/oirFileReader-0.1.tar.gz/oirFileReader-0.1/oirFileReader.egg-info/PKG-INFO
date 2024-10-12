@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: oirFileReader
+Version: 0.1
+Summary: Read Olympus .oir image files in python
+Home-page: https://github.com/sidoschn/oirFileReader
+Download-URL: https://github.com/sidoschn/oirFileReader/archive/refs/tags/v0.1.tar.gz
+Author: Dominik Schneidereit
+Author-email: dominik.schneidereit@gmail.com
+License: GPL-3.0-only
+Keywords: Olympus,OIR,.oir,reader
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
