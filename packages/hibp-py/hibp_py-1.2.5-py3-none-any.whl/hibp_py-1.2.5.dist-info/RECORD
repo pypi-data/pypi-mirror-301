@@ -1,0 +1,13 @@
+hibp_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hibp_py/__main__.py,sha256=LcbGENOalPjC61pwju3OrCWdC897PcbGDpOiafjclPQ,2243
+hibp_py/ad.py,sha256=QNnwqsd0Y4ZLpoX3ZAXB_rCNSnIDoDmjEbHnOHDWdtM,884
+hibp_py/api.py,sha256=LPdVf8RRB8FzGFOOCPCNWCOLP12K1TkRAzFvTIkgUDM,1545
+hibp_py/args.py,sha256=8dIUD8KiDfJuVWixZDKMel7DZ28QwPyoO_GLH2y7heA,621
+hibp_py/db.py,sha256=eP9C7kz1uVrWtvVttpUF8OzocSeiK_wVRLl4Uv7xCoc,2149
+hibp_py/mail.py,sha256=UXObv2UWv36xIX2GrjQGKHSithPhMdX82qMt_8u-_k8,2317
+hibp_py/report.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hibp_py/utils.py,sha256=1PZxsK5Jdqc1qbV6jc-_5dE_P36NJz0Y-FRJPDvHLGs,2232
+hibp_py-1.2.5.dist-info/METADATA,sha256=aYiUBDOciYfMY4-LCXkRGflen1j53Na0xfpinuPAA0M,2742
+hibp_py-1.2.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+hibp_py-1.2.5.dist-info/licenses/LICENSE,sha256=eiVckEskpDGv_6Z1zCj-1OBa452qIY1nptte-ukOSXk,1069
+hibp_py-1.2.5.dist-info/RECORD,,
