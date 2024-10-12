@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "phaser"
+version = "0.3"
+authors = [
+    {name="Lisa Dusseault", email="lisa@rtfm.com"},
+    {name="Jeff Kolesky", email="jeff.kolesky@gmail.com"},
+]
+requires-python = ">=3.11"
+readme = "README.md"
+description = "The missing framework and utilities to make complex data pipelines better"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]

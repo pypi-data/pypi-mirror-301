@@ -1,0 +1,5 @@
+240918-132154
+-------------
+Beginning errors and warnings for Validator
+-------------
+DROPPED_ROW in step drop_rows_with_no_id_and_not_employed, row 3: message: 'DropRowException raised (Employee Garak has no ID and inactive, dropping row)'

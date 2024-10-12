@@ -1,0 +1,4 @@
+Employee ID,First name,Last name,Pay period,Pay rate,bonusAmount,Status,__phaser_row_num__
+1,Benjamin,Sisko,Year,188625.0,30000,Active,1
+2,Kira,Nerys,Year,118625.0,20000,Active,2
+3,Julian,Bashir,Year,142880.0,25000,Active,4

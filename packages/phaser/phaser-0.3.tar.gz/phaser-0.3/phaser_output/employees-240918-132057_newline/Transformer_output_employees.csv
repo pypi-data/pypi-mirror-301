@@ -1,0 +1,4 @@
+Employee ID,First name,Last name,Pay period,Pay rate,bonusAmount,Status,Full name,salary,Bonus percent,__phaser_row_num__
+1,Benjamin,Sisko,Year,188625.0,30000.0,Active,Benjamin Sisko,188625.0,15.9%,1
+2,Kira,Nerys,Year,118625.0,20000.0,Active,Kira Nerys,118625.0,16.9%,2
+3,Julian,Bashir,Year,142880.0,25000.0,Active,Julian Bashir,142880.0,17.5%,4

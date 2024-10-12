@@ -1,0 +1,11 @@
+240901-194605
+-------------
+Beginning errors and warnings for Validator
+-------------
+DROPPED_ROW in step drop_rows_with_no_id_and_not_employed, row 3: message: 'DropRowException raised (Employee Garak has no ID and inactive, dropping row)'
+-------------
+Beginning errors and warnings for Transformer
+-------------
+WARNING in step consistency_check, row 1: message: 'New field 'Full name' was added to the row_data and not declared a header'
+WARNING in step consistency_check, row 1: message: 'New field 'salary' was added to the row_data and not declared a header'
+WARNING in step consistency_check, row 1: message: 'New field 'Bonus percent' was added to the row_data and not declared a header'
