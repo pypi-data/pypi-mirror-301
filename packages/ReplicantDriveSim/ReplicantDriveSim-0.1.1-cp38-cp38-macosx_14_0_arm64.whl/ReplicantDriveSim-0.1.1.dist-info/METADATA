@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ReplicantDriveSim
+Version: 0.1.1
+Summary: Traffic simulation package with C++ backend
+Home-page: https://github.com/chrisjcc/ReplicantDriveSim
+Author: Christian Contreras Campana
+Author-email: chrisjcc.physics@gmail.com
+License: MIT
+Requires-Python: >=3.6
+
