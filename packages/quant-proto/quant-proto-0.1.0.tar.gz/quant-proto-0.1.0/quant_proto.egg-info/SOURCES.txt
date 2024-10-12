@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.cfg
+setup.py
+quant_proto/__init__.py
+quant_proto/quant.proto
+quant_proto/quant_pb2.py
+quant_proto/quant_pb2_grpc.py
+quant_proto/servicer.py
+quant_proto.egg-info/PKG-INFO
+quant_proto.egg-info/SOURCES.txt
+quant_proto.egg-info/dependency_links.txt
+quant_proto.egg-info/requires.txt
+quant_proto.egg-info/top_level.txt
+tests/__init__.py
+tests/test_quant_proto.py
