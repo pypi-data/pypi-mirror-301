@@ -1,0 +1,11 @@
+bizapi/__init__.py,sha256=4Yw3-pbrwtbhnJtueDNilx4-y6gd7NZtjiB1fNGh-Co,75
+bizapi/bizapi.py,sha256=RYJalbd6vsMtTPJzlynsyu8fvTlIGwuqS7ZdnigkqVI,2778
+bizapi/errors.py,sha256=uzBQfrkKZdSmPmApkhdaaZQINnXhaikVnbkz9UHcEec,353
+bizapi/exceptions.py,sha256=JlWx_VRxZAQjNAnXn8rSguRop0_HJ_ux3z_8_aF-HCM,167
+bizapi/router.py,sha256=81ZUj7BHWdQSzirs-ncgTAoz3A0AyoNdUwfxAYhD884,770
+bizapi/types.py,sha256=7L10NmIpw4IWpmnABx5LFnAaoLvqeCFHaJsI2vHNguE,35
+BizAPI-0.0.5.dist-info/LICENSE,sha256=Bwhpk6Hm8lE9i70_X9JqXzicXodoytPl5IYV78xDexM,1096
+BizAPI-0.0.5.dist-info/METADATA,sha256=YLFExZBemjsnlEB1M8ScCBhSQCh8KHA8MIRsLXh432E,4013
+BizAPI-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+BizAPI-0.0.5.dist-info/top_level.txt,sha256=w63iK02ufXD7JjJYli6J_yeQOS2GZWyOPrBVuOAYO1Q,7
+BizAPI-0.0.5.dist-info/RECORD,,
