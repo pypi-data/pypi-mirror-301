@@ -1,0 +1,2 @@
+[console_scripts]
+rods = rods.__main__:main
