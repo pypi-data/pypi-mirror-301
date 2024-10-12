@@ -1,0 +1,38 @@
+name: Pifpaf
+
+on:
+  pull_request:
+
+env:
+  INFLUXDB_VERSION: "0.13.0"
+  SCALA_VERSION: "2.12"
+  KAFKA_VERSION: "2.6.0"
+  ETCD_VERSION: "3.4.13"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      matrix:
+        env:
+          - py39
+          - py311
+          - py312
+          - pep8
+          - build
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo chown -R 1010:1010 $GITHUB_WORKSPACE
+      - uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false
+          build-args: |
+            INFLUXDB_VERSION=${{ env.INFLUXDB_VERSION }}
+            SCALA_VERSION=${{ env.SCALA_VERSION }}
+            KAFKA_VERSION=${{ env.KAFKA_VERSION }}
+            ETCD_VERSION=${{ env.ETCD_VERSION }}
+          tags: ghcr.io/pifpaf/ci:latest
+      - name: Run tox
+        run: docker run --rm -v ${{ github.workspace }}:/home/pifpaf/pifpaf ghcr.io/pifpaf/ci:latest tox -e ${{ matrix.env }}
