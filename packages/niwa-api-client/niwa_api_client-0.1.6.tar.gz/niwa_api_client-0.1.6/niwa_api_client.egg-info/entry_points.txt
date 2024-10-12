@@ -1,0 +1,2 @@
+[console_scripts]
+niwa-tides = niwa_api.cli:app
