@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: deepview-converter-rtm
+Version: 2.5.31
+Summary: DeepView Converter for DeepViewRT
+Home-page: https://au-zone.com
+Author: Au-Zone
+Author-email: support@au-zone.com
+License: PROPRIETARY
+License-File: LICENSE.txt
+Requires-Dist: deepview-converter (~=2.6.7)
+Requires-Dist: deepview-rt (>=2.6.3)
+Provides-Extra: tensorflow
+Requires-Dist: wheel ; extra == 'tensorflow'
+
