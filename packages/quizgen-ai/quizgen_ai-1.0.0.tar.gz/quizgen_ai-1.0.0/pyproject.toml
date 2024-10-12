@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "quizgen-ai"
+version = "1.0.0"
+description = "AI-Powered Question Generation Tool"
+authors = ["Kosma Dunikowski <kosmadunikowski@gmail.com>"]
+readme = "README.md"
+packages = [{include = "quizgen", from = "src"}]
+repository = "https://github.com/kdunee/quizgen"
+license = "MIT"
+keywords = ["ai", "quiz", "anki", "llm"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.47.1"
+scikit-learn = "^1.5.2"
+numpy = "^2.1.2"
+tqdm = "^4.66.5"
+
+[tool.poetry.dev-dependencies]
+ruff = "^0.6.9"
+
+[tool.poetry.scripts]
+quizgen = "quizgen.quizgen:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
