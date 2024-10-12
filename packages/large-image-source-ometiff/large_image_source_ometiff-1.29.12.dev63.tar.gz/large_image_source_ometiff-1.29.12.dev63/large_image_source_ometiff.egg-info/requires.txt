@@ -1,0 +1,5 @@
+large-image>=1.29.12.dev63
+large-image-source-tiff>=1.29.12.dev63
+
+[girder]
+girder-large-image>=1.29.12.dev63
