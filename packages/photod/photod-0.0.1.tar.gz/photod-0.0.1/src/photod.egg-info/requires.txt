@@ -1,0 +1,6 @@
+
+[dev]
+jupyter
+pre-commit
+pytest
+pytest-cov
