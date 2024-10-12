@@ -1,0 +1,12 @@
+mach_client/__init__.py,sha256=39wm2UlDnDD_Yibodhc2DphM7pTPgpBBpZPh94gHs-w,508
+mach_client/client.py,sha256=Typu7mIXKUY-1iVDz6eWsP-dWGdoNq_gx-am5efitJM,8842
+mach_client/config.py,sha256=fv3y1DksPPiLNYZCl_VAt9XZMvzJI3R38iZNlVviFV8,2706
+mach_client/constants.py,sha256=ouLzQr27Pc6GLKnbAeH7efur0JcbXmA-SC43dCHrMNU,2227
+mach_client/data_types.py,sha256=DeQKAhfBm5NTSdrKvOX28kpgwhfpZUpCY0P31DBXjQs,2053
+mach_client/log.py,sha256=q3BsxeZ6DMWRNPF3MiQI33_gzG8kVPNCVBZUOA-nOho,1310
+mach_client/utility.py,sha256=v3gCIBokWJexm4bpNM6mZNPr7NPI1K3gfvR_i0sRooI,938
+abi/ethereum/erc20.json,sha256=Yax3cLEBBIE9yIMFKCJqjeV1GuFWl6EAjKHo-bR3tgU,14764
+abi/mach/order_book.json,sha256=FE-JpqAxSjEUEhB4glomUCk5NGit0dPi8G19HEFok2g,49492
+mach_client-0.0.78.dist-info/METADATA,sha256=YbOWBi-G4G0R1ihrTcgQAXGeIXsUWKKskG2CMUpfSbI,1065
+mach_client-0.0.78.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mach_client-0.0.78.dist-info/RECORD,,
