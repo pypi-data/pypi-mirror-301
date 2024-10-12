@@ -1,0 +1,8 @@
+cxx_image_io/__init__.py,sha256=c_51oWfqMqsNjElBJL9GP3dPUx_EjaXjLNJjZ7q6yDg,611
+cxx_image_io/cxx_image.cp311-win_amd64.pyd,sha256=6GOtYzPL1ZLtR8X0_7JSgn4x960g1vOR41WQ4wRJkm0,6679040
+cxx_image_io/io.py,sha256=tdNJRy06Ix-XUFpvbWxiQcAy9Rj1f6PMmdc0BP63vNY,6688
+cxx_image_io-0.0.10a0.dist-info/LICENSE.md,sha256=gKrM2JuiKs-eyKSzlB-YIhvfYdyVtGEutMteJvCiWxQ,1091
+cxx_image_io-0.0.10a0.dist-info/METADATA,sha256=qQ4mki0gGTGgqUHQnLspGxhX06qTji9AgKKb8GTl_gU,7460
+cxx_image_io-0.0.10a0.dist-info/WHEEL,sha256=yEpuRje-u1Z_HrXQj-UTAfIAegW_HcP2GJ7Ek8BJkUM,102
+cxx_image_io-0.0.10a0.dist-info/top_level.txt,sha256=qfJHhjlSV-6njNwlUODGXv8V6CNBhvGOjZQShPnbsBQ,23
+cxx_image_io-0.0.10a0.dist-info/RECORD,,
