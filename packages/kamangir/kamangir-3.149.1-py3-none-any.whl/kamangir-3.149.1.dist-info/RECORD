@@ -1,0 +1,15 @@
+kamangir/README.py,sha256=vu8E9YFDfKwqb_QS9ILX76K6vy3X-LrIhvOFizz6vhA,1096
+kamangir/__init__.py,sha256=iwP3_SPkTj62hizMyLUcXQnB1A25Z-urUph-uhq3KwA,120
+kamangir/__main__.py,sha256=hxDjThI_Cx2wDVUlwE5T3A6W-J-mu-jzJfHQ0Yi3wMc,346
+kamangir/content.py,sha256=Kow34uXzJDpYyAA_OrZCRINsoFl9cc450C1ZhqlfJHA,3333
+kamangir/logger.py,sha256=-SjYxZ3lq-Uim4rEr16IrWs_KJg7OPVxs522sWVyAf8,96
+kamangir/urls.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+kamangir/.abcli/actions.sh,sha256=XPMad6sdoOGrM0CYb1JJPEK85l_QdIkr31LADWi0QPs,173
+kamangir/.abcli/kamangir.sh,sha256=HmjKyF4z-Q05y-sgrS5zIep7D9c0O8plaJtzvCHU3Fg,306
+kamangir/.abcli/tests/build_README.sh,sha256=rw6L1ICr-ZtSn843YQbQOM8Fq16QsvZe2GO9BPQpjTU,220
+kamangir/.abcli/tests/version.sh,sha256=gq6CVZPA0nYIOrm-xIS3pp6fVAWQCwnTDsGQGJ96mw4,224
+kamangir-3.149.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+kamangir-3.149.1.dist-info/METADATA,sha256=p7QgjIesq5DUIm8nwOUQLYeR6JWpeGCP0yIckMzBdnQ,8322
+kamangir-3.149.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+kamangir-3.149.1.dist-info/top_level.txt,sha256=3AnsQK4sFaTK4cYKt0IE80Fsn9VnWcprPoUl6s-Luiw,9
+kamangir-3.149.1.dist-info/RECORD,,
