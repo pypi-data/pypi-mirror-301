@@ -1,0 +1,10 @@
+json_repair
+numpy
+matplotlib
+tqdm
+pillow
+PyMuPDF
+opencv-python
+python-dotenv
+requests
+regex

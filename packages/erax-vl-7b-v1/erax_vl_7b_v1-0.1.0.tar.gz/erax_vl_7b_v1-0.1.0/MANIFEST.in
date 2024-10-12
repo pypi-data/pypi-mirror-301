@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+
+exclude .env
+exclude *.key
+exclude *.pem
+exclude output.json
+
+exclude __pycache__
+exclude tmp/*
+exclude images/*

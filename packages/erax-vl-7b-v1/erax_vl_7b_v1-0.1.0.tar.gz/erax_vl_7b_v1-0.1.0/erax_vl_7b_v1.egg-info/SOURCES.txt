@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+erax_vl_7b_v1/__init__.py
+erax_vl_7b_v1/erax_api_lib.py
+erax_vl_7b_v1/prompts.py
+erax_vl_7b_v1/utils.py
+erax_vl_7b_v1.egg-info/PKG-INFO
+erax_vl_7b_v1.egg-info/SOURCES.txt
+erax_vl_7b_v1.egg-info/dependency_links.txt
+erax_vl_7b_v1.egg-info/requires.txt
+erax_vl_7b_v1.egg-info/top_level.txt
