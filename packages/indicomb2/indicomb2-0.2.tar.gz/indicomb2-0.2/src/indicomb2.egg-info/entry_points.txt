@@ -1,0 +1,2 @@
+[console_scripts]
+indicomb2 = indicomb2.indicomb2:main
