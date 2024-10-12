@@ -1,0 +1,8 @@
+mirrormate/__init__.py,sha256=gJo0qpTK6a3DDPVllI2ef2Zr9V_g0f4z6rNlcRFSYns,111
+mirrormate/cli.py,sha256=9JMUf8fGvzvo0InhcbD4KXH1MSpsvwQV2UEID_LMqDk,1708
+mirrormate/clone.py,sha256=_Iz50khnp5ypdx8-DganRHAyuJSVjSlHJTsPkfYc5VU,3029
+mirrormate-2.0.dist-info/METADATA,sha256=0wSoJ-x9Cu_6tRbynD0UnlKcFrH1JVhKiaBX2HKJPBU,57
+mirrormate-2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mirrormate-2.0.dist-info/entry_points.txt,sha256=gVXQpt6W0rnt7g5rXXjg6iZGXKe8o-WJFnCkKrrk88I,51
+mirrormate-2.0.dist-info/top_level.txt,sha256=XkVtmnS3sb6HIumsvmCP8ywZdv4EvOI5paW4vGvIWy8,11
+mirrormate-2.0.dist-info/RECORD,,
