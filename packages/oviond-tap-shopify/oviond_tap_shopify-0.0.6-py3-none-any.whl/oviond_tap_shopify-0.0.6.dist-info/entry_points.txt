@@ -1,0 +1,3 @@
+[console_scripts]
+tap-shopify=tap_shopify.tap:Tapshopify.cli
+

@@ -1,0 +1,10 @@
+tap_shopify/__init__.py,sha256=wZEM6gFPtdsyV5hxXa_AV2-_RPOlyL0dmj4kz82ulr0,23
+tap_shopify/__main__.py,sha256=au_A6tjhQVZMwPUJmSBtaq2xxA1fU6mN6SkRBbVAvM0,121
+tap_shopify/auth.py,sha256=7SDtGIHktIll50WVva2fCrT1q0-WnUqFepgDesAYT7c,901
+tap_shopify/client.py,sha256=8gsXyQoeY0xrgiACdrgpfVBM2w4hZcLI2Z9K7kjEnp0,2451
+tap_shopify/streams.py,sha256=g-4x6QJduE_hdhhzWAOlRc5--FfS2tXzcT0IwIOr-4I,7154
+tap_shopify/tap.py,sha256=KYIm-0x15hFy8yBw5E_U_TedApZj9EvvJSseW-uige0,1799
+oviond_tap_shopify-0.0.6.dist-info/METADATA,sha256=e8E9EVODy9JFQks4YpACSSq5GbvUBNlHbut2VAM8-7g,3928
+oviond_tap_shopify-0.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oviond_tap_shopify-0.0.6.dist-info/entry_points.txt,sha256=vjAVECYWxKIl_C-H5alvJGr0aJCH80Q5JCM3_005JYs,62
+oviond_tap_shopify-0.0.6.dist-info/RECORD,,
