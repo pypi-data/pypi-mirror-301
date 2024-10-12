@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pretty_progress
+Version: 0.1.2
+Summary: A Python module for creating a terminal progress bar.
+Author-email: Hal Kolb <hal@kolb.com>
+License: MIT License
+Project-URL: homepage, https://github.com/hal609/pretty-progress
+Project-URL: repository, https://github.com/hal609/pretty-progress
+Project-URL: bug-tracker, https://github.com/hal609/pretty-progress/issues
+Keywords: progress bar,terminal,progress,python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# pretty_progress
+
+A simple Python progress bar utility for loops.
+
+## Installation
+
+```
+pip install pretty_progress
+```
+
+## Usage
+
+```python
+from pretty_progress import progress_bar
+
+for i in range(100):
+    progress_bar(i, 100)
+```
