@@ -1,0 +1,11 @@
+sagda/__init__.py,sha256=8TOL1M6SMrAeLavC4ieaVCmVXm6HyeDJV6ZYM3OemDM,180
+sagda/api_utils.py,sha256=9TykPH6H9slz63q42C1L-LtQhco-lXa8cEPjVkqYXxw,1738
+sagda/data_augmentation.py,sha256=O_Og-pCFHjOsCXTRGlEPdm3SEHTEoXL-z33AXsXyxsk,3539
+sagda/data_generation.py,sha256=wz8p0xbYfeeusnHxNtNyHgqetJ0keggl0_OvTbPGAIk,4074
+sagda/data_validation.py,sha256=Alwn_He6VnZf2iiKmqgImklRDrERzR4FgJX59edAEUU,1564
+sagda/utils.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sagda-0.1.1.dist-info/LICENSE,sha256=ozWBHJ3m_MAtzv1q2wtjdS9JjsRSslGQtaM45uMYqoA,1064
+sagda-0.1.1.dist-info/METADATA,sha256=tvfZ17tvO2nV8DDVvzMLHUK8giDdCFHrIiuI0OlO3k0,6040
+sagda-0.1.1.dist-info/WHEEL,sha256=T5oNQLb20esdG_07S4BF-Kj-qE6bfPE4KNpyeSgAYEQ,97
+sagda-0.1.1.dist-info/top_level.txt,sha256=z1uQKVbdgPdzoOqZ6YJs1Tt5jOznMPgxpZeIuKsVKGI,6
+sagda-0.1.1.dist-info/RECORD,,
