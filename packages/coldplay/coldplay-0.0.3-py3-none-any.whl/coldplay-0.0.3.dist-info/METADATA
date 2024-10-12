@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: coldplay
+Version: 0.0.3
+Summary: This is a package that logs console output
+Project-URL: Documentation, https://github.com/liam/coldplay#readme
+Project-URL: Issues, https://github.com/liam/coldplay/issues
+Project-URL: Source, https://github.com/liam/coldplay
+Author-email: liam <liam@limxdynamics.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# coldplay
+
+[![PyPI - Version](https://img.shields.io/pypi/v/coldplay.svg)](https://pypi.org/project/coldplay)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/coldplay.svg)](https://pypi.org/project/coldplay)
+
+---
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install coldplay
+```
+
+## License
+
+`coldplay` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
