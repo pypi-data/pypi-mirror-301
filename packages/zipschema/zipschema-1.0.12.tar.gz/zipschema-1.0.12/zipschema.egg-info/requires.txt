@@ -1,0 +1,4 @@
+pyyaml
+jsonschema
+jinja2
+python-docx

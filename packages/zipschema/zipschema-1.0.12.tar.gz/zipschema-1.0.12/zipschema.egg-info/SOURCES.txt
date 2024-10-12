@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+zipschema/__init__.py
+zipschema/zipschema.py
+zipschema.egg-info/PKG-INFO
+zipschema.egg-info/SOURCES.txt
+zipschema.egg-info/dependency_links.txt
+zipschema.egg-info/entry_points.txt
+zipschema.egg-info/requires.txt
+zipschema.egg-info/top_level.txt
