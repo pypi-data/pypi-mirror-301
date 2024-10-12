@@ -1,0 +1,2 @@
+[console_scripts]
+view-project = tree_values.tree_values:main
