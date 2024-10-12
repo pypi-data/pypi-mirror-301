@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: funmedia
+Version: 1.0.4
+Summary: 
+Author: farfun
+Author-email: 1007530194@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: aiomysql (==0.2.0)
+Requires-Dist: fastapi (==0.110.2)
+Requires-Dist: httpx (==0.24.0)
+Requires-Dist: jieba (==0.42.1)
+Requires-Dist: matplotlib (==3.9.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: playwright (==1.42.0)
+Requires-Dist: pydantic (==2.5.2)
+Requires-Dist: python-dotenv (==1.0.1)
+Requires-Dist: redis (>=4.6.0,<5.0.0)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: tenacity (==8.2.2)
+Requires-Dist: uvicorn (==0.29.0)
+Requires-Dist: wordcloud (==1.9.3)
+Description-Content-Type: text/markdown
+
+# funmedia
