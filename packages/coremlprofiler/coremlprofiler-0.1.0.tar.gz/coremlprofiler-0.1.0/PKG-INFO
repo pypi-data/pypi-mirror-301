@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: coremlprofiler
+Version: 0.1.0
+Summary: Profile your CoreML model directly from Python.
+Author: FL33TW00D
+Author-email: chris@fleetwood.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4,<0.5)
+Requires-Dist: pyobjc-core (>=10.3,<11.0)
+Requires-Dist: pyobjc-framework-Cocoa (>=10.3,<11.0)
+Requires-Dist: pyobjc-framework-CoreML (>=10.3,<11.0)
