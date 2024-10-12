@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sqlcrudbase/__init__.py
+sqlcrudbase/base_controller.py
+sqlcrudbase/base_repository.py
+sqlcrudbase/base_service.py
+sqlcrudbase.egg-info/PKG-INFO
+sqlcrudbase.egg-info/SOURCES.txt
+sqlcrudbase.egg-info/dependency_links.txt
+sqlcrudbase.egg-info/requires.txt
+sqlcrudbase.egg-info/top_level.txt
