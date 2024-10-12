@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tureng_api.egg-info/PKG-INFO
+tureng_api.egg-info/SOURCES.txt
+tureng_api.egg-info/dependency_links.txt
+tureng_api.egg-info/requires.txt
+tureng_api.egg-info/top_level.txt

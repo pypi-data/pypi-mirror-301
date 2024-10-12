@@ -1,0 +1,32 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+    "hatchling",
+    "requests",
+    "beautifulsoup4", 
+]
+
+[project]
+name = "tureng_api"
+version = "0.0.1"
+authors = [
+  { name="ramazan", email="mramazantrn28@gmail.com" },
+]
+description = "A simple wrapper for the Tureng dictionary API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/MRamazan/turengAPI"
+Issues = "https://github.com/MRamazan/turengAPI/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/TurengAPI"]
+
+
+
