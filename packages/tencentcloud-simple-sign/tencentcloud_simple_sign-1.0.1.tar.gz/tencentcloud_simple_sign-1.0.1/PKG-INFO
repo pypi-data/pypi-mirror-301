@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tencentcloud-simple-sign
+Version: 1.0.1
+Summary: Tencent Cloud Simple Sign SDK for Python
+Home-page: https://github.com/TencentCloud/simple-auth-sign-python
+Author: Tencent Cloud
+Maintainer-email: tencentcloudapi@tencent.com
+License: Apache License 2.0
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
