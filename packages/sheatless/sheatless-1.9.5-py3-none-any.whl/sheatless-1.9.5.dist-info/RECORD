@@ -1,0 +1,9 @@
+sheatless/__init__.py,sha256=o5BeAsjH3OIR-_KMpayM9z0NLBUq9iXMrUTgNuW9uQg,120
+sheatless/api.py,sha256=xxlIol8imZR4_srMrK4SKg114Y3qMHpr7zPHOz0v6u0,4350
+sheatless/engine.py,sha256=tGAvQWUuGKFEV79HbiUvvuvTyLMAg81f2g2oSJ-a3GA,15814
+sheatless/pdf_predictor.py,sha256=kgjGwhZsjy1hMmqGhTHDx8fxtxlj0caqmHkvAKcAkDU,5700
+sheatless-1.9.5.dist-info/LICENSE,sha256=p3hDzhBqKAeMqPTMCNHaEM1B4KyqujYCd8G7k5osrkw,34452
+sheatless-1.9.5.dist-info/METADATA,sha256=F8TqoJqOH1CZyU-iTjztjp62LFhDSprG4iLZdP3B6B4,11965
+sheatless-1.9.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sheatless-1.9.5.dist-info/top_level.txt,sha256=2JqhOHcUfK62cGWUlfykY1-LVNKYodlaV-w8TR7_AY4,10
+sheatless-1.9.5.dist-info/RECORD,,
