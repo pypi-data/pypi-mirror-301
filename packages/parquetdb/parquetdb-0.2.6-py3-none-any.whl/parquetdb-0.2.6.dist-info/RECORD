@@ -1,0 +1,16 @@
+parquetdb/__init__.py,sha256=dDeRC2Uccr2S3VazjiOfpLs-qpIgdAs15LVY6imPSPM,195
+parquetdb/_version.py,sha256=ea_eUoeOtyzu66mqXKQmkHZOdifhlCDVPsMy9xvsneQ,411
+parquetdb/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parquetdb/core/parquetdb.py,sha256=zMFRoa2xFRGtNOvmy1RUUdV7h8gFFnhTDuqrTA11tBo,50020
+parquetdb/core/parquetdb_manager.py,sha256=GoUYnEnw_yoORYQQSfd8U8hLf81Z24uoQglNdkaCtZ4,25205
+parquetdb/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parquetdb/utils/config.py,sha256=GZ8iWAb_vuRk2mqbB20fVYfY_jruq7CIyc6Kk4kKK0A,243
+parquetdb/utils/config.yml,sha256=mxG5HPJjr8kNw7HWd3DtA74yq-5PleVHpD2YktKTDcE,1021
+parquetdb/utils/external_utils.py,sha256=jqxOtNAuVc3d6GmaqoQvDUoLHRvjRSSwLSENH94O5vs,7654
+parquetdb/utils/general_utils.py,sha256=4swWinOW3MSJbBBdUAVFfO9_hHaQGAFA8RHYYf7CFTk,3690
+parquetdb/utils/pyarrow_utils.py,sha256=dZ9DLzFwob7AOOBxz1UKEMEv_OOZLT1EwCiqomSCiGw,43025
+parquetdb-0.2.6.dist-info/LICENSE,sha256=RcGznHSD6cVpdOFIt9Wluq7qDhe5-zCVhYILtlh3fcs,1064
+parquetdb-0.2.6.dist-info/METADATA,sha256=zFcUhA5qTtLi1FuCrulHX5xu8wUvEQHFvM_LJZdxP_Y,10323
+parquetdb-0.2.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+parquetdb-0.2.6.dist-info/top_level.txt,sha256=8LPTcNXV25cdI4hvn-xg_4oKQixZ9uy112ZRiEjKiT0,10
+parquetdb-0.2.6.dist-info/RECORD,,
