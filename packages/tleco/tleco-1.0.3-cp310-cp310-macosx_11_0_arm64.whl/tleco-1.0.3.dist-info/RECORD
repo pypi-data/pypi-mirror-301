@@ -1,0 +1,10 @@
+tleco-1.0.3.dist-info/METADATA,sha256=bAlMrgUkEQbq11OqtB0c6OUCPUgtAcWxOumxFzkXJVQ,6917
+tleco-1.0.3.dist-info/WHEEL,sha256=IQ-G-ye1g_mDemVbtoyEXvcGWYyUO86u9CzWCchWqDI,104
+tleco-1.0.3.dist-info/licenses/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tleco/constants.py,sha256=JWCXfc_FW6XPcUu4QsvMleg7yKlB6MfgTP2mv_npwYg,691
+tleco/__init__.py,sha256=6Yvn2w4VNE5uXKk16yoFoHvI-5RWV5BDOnLmGqSZU7c,103
+tleco/conversion_funcs.py,sha256=WYWF6yR13ui2qAzPWXV0pAvm3cs43jY_UoYUe_1-3Us,259
+tleco/misc_func.py,sha256=xq00qWOw0-eeOY6L_3ONSvomW_EWtmszPmpEjT7_i-E,1358
+tleco/tleco.pyi,sha256=9IxNAhx0jwjuZl2y61hhWf3hl8SAc16RaCKBl1Dir68,1178
+tleco/tleco.cpython-310-darwin.so,sha256=YKcwOZzul0nekwSq1e_k4ztIo_D8-SUOhN9qTokl0Fk,834688
+tleco-1.0.3.dist-info/RECORD,,
