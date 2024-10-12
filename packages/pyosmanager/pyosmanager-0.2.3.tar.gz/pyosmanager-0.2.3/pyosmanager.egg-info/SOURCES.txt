@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyosmanager/__init__.py
+pyosmanager/pyosmanager.py
+pyosmanager/responses.py
+pyosmanager.egg-info/PKG-INFO
+pyosmanager.egg-info/SOURCES.txt
+pyosmanager.egg-info/dependency_links.txt
+pyosmanager.egg-info/requires.txt
+pyosmanager.egg-info/top_level.txt
