@@ -1,0 +1,10 @@
+imf_reader/__init__.py,sha256=CE776MJSzTZoG72GIpVetwGv8E8d1nWOL1Q0IdNH_qA,114
+imf_reader/config.py,sha256=L7wNtzjWkO5OlY_NZFW20MsDxe6M1qqrQwD7UhuyKyM,1098
+imf_reader/weo/__init__.py,sha256=S0IaVFfEkA9yPWHwncE8iIhBxts_33nGOJwT5OxIqZE,58
+imf_reader/weo/parser.py,sha256=WsXmDz_S_WeFWS-Ot3q0eWc1_NnwaqJ55ZHtQeUQhB4,5743
+imf_reader/weo/reader.py,sha256=IM2BCA3GV4dEGW2f2XXF0jtO78x8TcQ8ui7YIICGblQ,5652
+imf_reader/weo/scraper.py,sha256=nnDHf2dTyFYpqFpovUUUHyoNcAdVjIHBPuBzOImqOd4,3390
+imf_reader-1.1.0.dist-info/LICENSE,sha256=wEAtsZNKBs6rMe8AG23-vnmi54yKqGRH1wp4YcFcQkM,1075
+imf_reader-1.1.0.dist-info/METADATA,sha256=dQLsIjK3Pvv1Hop3d_D4Vhh70EgGXTQTcdFXxkrK9yQ,3954
+imf_reader-1.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+imf_reader-1.1.0.dist-info/RECORD,,
