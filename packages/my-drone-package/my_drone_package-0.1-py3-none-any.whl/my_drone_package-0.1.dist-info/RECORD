@@ -1,0 +1,8 @@
+drone_teaching_package/__init__.py,sha256=ESHZLMhFnV8kHBcNdczPFrjBOTFL1CzEuzNClCsKj-8,135
+drone_teaching_package/real_tello.py,sha256=gwJwG3w_cI80h1IqXe65QcQ1flQMmK5ne3H8vUQjInk,1981
+drone_teaching_package/simulated_tello.py,sha256=pG9IVbZKyciZJAs2xB2PrWl6uEEG-2Jrg2y8RlauoTc,2541
+my_drone_package-0.1.dist-info/LICENSE,sha256=t4WFxSXT7NeJ6WMQnIqZcg37tEASSmev9w1fA1Euvgs,480
+my_drone_package-0.1.dist-info/METADATA,sha256=nV1YERy5jzYxTs24iZQVQAomXWMKQRWhwD7rpTBpd7k,4698
+my_drone_package-0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+my_drone_package-0.1.dist-info/top_level.txt,sha256=C_IHz4dwdjD_i9EJvp8JW4-gjFC4b4HPi6Dvm3KKZjo,23
+my_drone_package-0.1.dist-info/RECORD,,
