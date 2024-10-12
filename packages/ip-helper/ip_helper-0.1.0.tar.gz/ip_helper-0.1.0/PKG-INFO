@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ip-helper
+Version: 0.1.0
+Summary: 
+Author: Xian Wu
+Author-email: xianwuusa@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+# IP Helper
+![Build&Test Workflow](https://github.com/rogerxwu/ip_helper/actions/workflows/ci.yml/badge.svg)
+![Build&Test Workflow](https://github.com/rogerxwu/ip_helper/actions/workflows/cd.yml/badge.svg)
+![Python3.11](https://img.shields.io/badge/language-Python3.11-blue)
+
+## Goal
+A tool to take the ip and submask as the input and return all IP addressing details
+
+## Install
+pip install ip-helper
+
+## Dev
+Make sure you have poetry installed, then run the following cmds
+```
+poetry install
+```
+
+## Test
+To run test manually
+```
+# Pytest
+poetry run pytest tests/test_main.py
+```
+
