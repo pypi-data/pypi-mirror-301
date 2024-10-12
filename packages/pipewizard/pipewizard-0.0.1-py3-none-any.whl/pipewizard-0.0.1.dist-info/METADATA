@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pipewizard
+Version: 0.0.1
+Summary: A tool to help generate GitHub pipelines for Python projects
+Home-page: https://github.com/atxpaul/pipewizard
+Author: atxpaul
+Author-email: 
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: questionary
+Requires-Dist: rich
+
+# Pipewizard - WORK IN PROGRESS
+
+Pipewizard is a CLI tool that helps you generate GitHub pipelines for Python projects. You can select different Python versions and tasks like testing, linting, and Dockerizing.
+
+## Installation
+
+To install the tool, run:
+
+```bash
+pip install pipewizard
+```
+
+## Usage
+
+```bash
+pipewizard
+```
