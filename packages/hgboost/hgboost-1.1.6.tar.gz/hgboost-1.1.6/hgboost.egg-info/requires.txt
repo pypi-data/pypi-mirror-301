@@ -1,0 +1,15 @@
+datazets
+pypickle
+matplotlib
+numpy
+pandas
+tqdm
+hyperopt
+lightgbm>=4.1.0
+catboost
+xgboost
+classeval
+treeplot
+df2onehot
+colourmap
+seaborn
