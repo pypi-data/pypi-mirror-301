@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "robottest"
+version = "0.1.4"
+description = ""
+authors = ["yinhejianke <yinhejianke@yinehajianke.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-gitlab = "^4.13.0"
+robotframework = "^7.1"
+django = "^5.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
