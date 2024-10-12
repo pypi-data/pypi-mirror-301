@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackmesa_dbt"
+version = "0.1.1"
+description = "A packaged dbt project for use with Prefect"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+# List of dependencies, including dbt and Prefect
+dependencies = [
+    "dbt-core>=1.8.7",
+    "dbt-postgres>=1.8.2",  # Adapt for your specific dbt adapter (e.g., dbt-bigquery)
+    "prefect-dbt-flow>=0.5.8",
+    "boto3>=1.35.38",
+    "sqlfluff>=3.2.3",
+]
+
+# Specify entry points for Prefect flow or any CLI commands
+[project.scripts]
+dbt_prefect_flow = "blackmesa_dbt.main:dbt_flow"
+
+[tool.setuptools]
+packages = ["blackmesa_dbt"]

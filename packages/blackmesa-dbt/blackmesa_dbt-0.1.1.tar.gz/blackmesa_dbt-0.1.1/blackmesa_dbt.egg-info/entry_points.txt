@@ -1,0 +1,2 @@
+[console_scripts]
+dbt_prefect_flow = blackmesa_dbt.main:dbt_flow

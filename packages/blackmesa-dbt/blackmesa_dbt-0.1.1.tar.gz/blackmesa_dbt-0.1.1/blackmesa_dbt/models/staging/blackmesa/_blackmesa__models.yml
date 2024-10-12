@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: cases
+    description: This table has basic information about a customer, as well as some derived facts based on a customer's orders
+
+    columns:
+      - name: identifier
+        description: Identifier
+        tests:
+          - not_null
+
+      - name: name
+        description: Name.
+
+      - name: description
+        description: Description
+
+      - name: key
+        description: Key

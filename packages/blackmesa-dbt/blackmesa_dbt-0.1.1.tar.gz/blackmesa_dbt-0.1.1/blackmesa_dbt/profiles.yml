@@ -1,0 +1,23 @@
+# The secrets in this file are examples
+
+blackmesa:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: data-db
+      user: admin
+      password: pass123
+      port: 5432
+      dbname: data
+      schema: blackmesa
+      connect_timeout: 30
+    prod:
+      type: postgres
+      host: prod-db
+      user: admin
+      password: prodpass456
+      port: 5432
+      dbname: data
+      schema: blackmesa  # Production schema
+      connect_timeout: 30
