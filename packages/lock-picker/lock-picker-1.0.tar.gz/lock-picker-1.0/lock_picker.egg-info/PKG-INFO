@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lock-picker
+Version: 1.0
+Summary: A tool to find api keys from Github
+Home-page: https://github.com/42zen/lock-picker
+Author: Mathias Bochet (aka Zen)
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+lock-picker is a tool designed to find api keys from an environment variable.
