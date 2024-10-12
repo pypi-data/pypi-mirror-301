@@ -1,0 +1,2 @@
+[console_scripts]
+hoptest = hoptest:main
