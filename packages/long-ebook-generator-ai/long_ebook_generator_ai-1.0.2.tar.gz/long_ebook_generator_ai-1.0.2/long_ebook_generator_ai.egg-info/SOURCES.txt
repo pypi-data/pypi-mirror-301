@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+book_writer/__init__.py
+book_writer/book_writer.py
+long_ebook_generator_ai.egg-info/PKG-INFO
+long_ebook_generator_ai.egg-info/SOURCES.txt
+long_ebook_generator_ai.egg-info/dependency_links.txt
+long_ebook_generator_ai.egg-info/requires.txt
+long_ebook_generator_ai.egg-info/top_level.txt
