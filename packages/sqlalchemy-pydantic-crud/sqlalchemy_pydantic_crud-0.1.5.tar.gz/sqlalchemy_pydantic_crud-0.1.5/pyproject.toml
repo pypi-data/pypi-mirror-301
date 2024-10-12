@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sqlalchemy-pydantic-crud"
+version = "0.1.5"
+description = ""
+authors = ["Denisov Pavel <denisov.p.g@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <4.0"
+pydantic = "^2.9.2"
+setuptools = "^75.1.0"
+sqlalchemy = "^2.0.35"
+asyncache = "^0.3.1"
+cachetools = "^5.5.0"
+
+[tool.poetry.group.dev.dependencies]
+build = "^1.2.1"
+twine = "^5.1.1"
+docutils = "=0.21.1"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sqlalchemy_pydantic_crud
+Version: 0.1.5
+Summary: Base CRUD for SqlAlchemy
+Home-page: https://github.com/yourusername/your_package_name
+Author: Denisov Pavel
+Author-email: denisov.p.g@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
