@@ -1,0 +1,65 @@
+Metadata-Version: 2.3
+Name: pyurlon
+Version: 0.2.0
+Summary: Python port of https://github.com/cerebral/urlon javascript package
+Project-URL: Documentation, https://github.com/unknown/pyurlon#readme
+Project-URL: Issues, https://github.com/unknown/pyurlon/issues
+Project-URL: Source, https://github.com/unknown/pyurlon
+Author-email: adamws <adamws@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pyurlon
+
+[![CI - Main](https://github.com/adamws/pyurlon/actions/workflows/main.yml/badge.svg)](https://github.com/adamws/pyurlon/actions/workflows/main.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/pyurlon.svg)](https://pypi.org/project/pyurlon)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyurlon.svg)](https://pypi.org/project/pyurlon)
+[![Coverage Status](https://coveralls.io/repos/github/adamws/pyurlon/badge.svg?branch=master)](https://coveralls.io/github/adamws/pyurlon?branch=master)
+
+-----
+
+This is python port of [urlon](https://github.com/cerebral/urlon) javascript package.
+It is compatible with urlon version 3.1.0.
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pyurlon
+```
+
+## Usage
+
+```python
+>>> import pyurlon
+>>> pyurlon.stringify({"table":{"achievement":{"column":"instance","ascending":True}}})
+'$table$achievement$column=instance&ascending:true'
+>>> pyurlon.parse("$table$achievement$column=instance&ascending:true")
+{'table': {'achievement': {'column': 'instance', 'ascending': True}}}
+```
+
+## License
+
+`pyurlon` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
