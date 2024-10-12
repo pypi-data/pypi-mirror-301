@@ -1,0 +1,38 @@
+x-common: &common
+  build: ./
+  restart: unless-stopped
+  env_file: .env
+  networks:
+    - infra_services_network
+
+services:
+  local:
+    <<: *common
+    container_name: ${LOCAL_CONTAINER_NAME:-local-api-key-manager}
+    profiles: ["local"]
+    ports:
+      - "${LOCAL_PORT:-8000}:8000"
+
+  stg:
+    <<: *common
+    container_name: ${STG_CONTAINER_NAME:-stg-flow-runner-api}
+    profiles: ["stg"]
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:12201"
+        tag: ${STG_LOG_TAG:-stg-flow-runner-api}
+
+  prod:
+    <<: *common
+    container_name: ${PROD_CONTAINER_NAME:-prod-flow-runner-api}
+    profiles: ["prod"]
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:12201"
+        tag: ${PROD_LOG_TAG:-prod-flow-runner-api}
+
+networks:
+  infra_services_network:
+    external: true
