@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: highwire
+Version: 0.7.0
+Author-Email: Bart Frenk <bart.frenk@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://gitlab.com/greenhousegroup/ai/libraries/highwire/
+Requires-Python: >=3.10
+Requires-Dist: setuptools>=75.1.0
+Requires-Dist: pydantic==2.*
+Description-Content-Type: text/markdown
+
+# highwire
