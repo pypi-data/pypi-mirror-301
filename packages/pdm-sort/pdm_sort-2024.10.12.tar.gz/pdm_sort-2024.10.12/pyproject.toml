@@ -1,0 +1,32 @@
+[project]
+name = "pdm-sort"
+version = "2024.10.12"
+requires-python = ">=3.8"
+
+[project.entry-points.pdm]
+pdm_sort = "pdm_sort:setup_pdm_sort"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy==1.11.2",
+    "pdm[pytest]==2.19.2",
+    "pre-commit==4.0.0",
+    "pytest==8.3.3",
+]
+
+[tool.mypy]
+strict = true
+
+[tool.ruff.lint]
+extend-select = [
+    "I",
+    "INP",
+]
+preview = true
+explicit-preview-rules = true
