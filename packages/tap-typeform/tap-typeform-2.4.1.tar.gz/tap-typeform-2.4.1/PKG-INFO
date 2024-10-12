@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tap-typeform
+Version: 2.4.1
+Summary: Singer.io tap for extracting data from the TypeForm Responses API
+Home-page: http://singer.io
+Author: bytcode.io
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: singer-python==6.0.0
+Requires-Dist: pendulum==3.0.0
+Requires-Dist: ratelimit==2.2.1
+Requires-Dist: backoff==2.2.1
+Requires-Dist: requests==2.32.3
+Provides-Extra: dev
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: nose2; extra == "dev"
+Requires-Dist: parameterized; extra == "dev"
