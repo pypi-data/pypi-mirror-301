@@ -1,0 +1,13 @@
+README.md
+setup.py
+Kalkulus8/__init__.py
+Kalkulus8/module_domain_dan_range.py
+Kalkulus8/module_grafik.py
+Kalkulus8/module_kekontinuan.py
+Kalkulus8/module_limit.py
+Kalkulus8/module_trigonometri.py
+Kalkulus8.egg-info/PKG-INFO
+Kalkulus8.egg-info/SOURCES.txt
+Kalkulus8.egg-info/dependency_links.txt
+Kalkulus8.egg-info/requires.txt
+Kalkulus8.egg-info/top_level.txt
