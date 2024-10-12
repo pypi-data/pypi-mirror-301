@@ -1,0 +1,22 @@
+set dotenv-load
+
+project := "mach_client"
+
+
+# Directory to store build artifacts
+dist := "dist"
+
+# Path to Python executable
+python := "python"
+
+init:
+	{{ python }} -m pip install --upgrade -e .[dev]
+
+build:
+	{{ python }} -m build -o {{ dist }}
+
+upload:
+	{{ python }} -m twine upload {{ dist }}/{{ project }}* --verbose
+
+clean:
+	rm -rf {{ dist }}/{{ project }}*
