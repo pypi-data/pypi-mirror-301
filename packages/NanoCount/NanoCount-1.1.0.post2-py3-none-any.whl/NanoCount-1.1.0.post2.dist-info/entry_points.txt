@@ -1,0 +1,2 @@
+[console_scripts]
+NanoCount = NanoCount.__main__:main
