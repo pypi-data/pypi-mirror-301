@@ -1,0 +1,10 @@
+html5lib==1.1
+jsonschema==4.23.0
+packaging==24.1
+python-gitlab==4.13.0
+PyYAML==6.0.2
+# approximation of libgit2 1.0 transition:
+pygit2==1.15.1; python_version >= "3.9"
+pygit2<1.15.2; python_version<"3.9"
+pygithub==2.4.0
+semantic_version==2.10.0
