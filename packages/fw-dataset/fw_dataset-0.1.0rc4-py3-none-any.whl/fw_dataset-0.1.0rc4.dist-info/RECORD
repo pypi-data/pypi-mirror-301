@@ -1,0 +1,12 @@
+fw_dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fw_dataset/admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fw_dataset/admin/admin_helpers.py,sha256=pZDT9HotqDZQ7iZwwGaBjFYS-XyEsTHkMVhMpE1Hgls,17169
+fw_dataset/admin/custom_info_table_builder.py,sha256=d3d-LRkA-qhWS4d0tHzbjm5tuWCQ1b-spVBC6_3BedY,7417
+fw_dataset/admin/dataset_builder.py,sha256=fRA7T22z8p21gnT1yjZXw392JpWXHJKKhH6vOhn_IAc,14952
+fw_dataset/admin/tabular_file_table_builder.py,sha256=2fe0meDdw1pdcN_B0sfszMwoT2BCrOYd1fH8qDk-RnU,9393
+fw_dataset/dataset_client.py,sha256=6rdO3lzuUdsdPYLCCMDryj18YcQoA4BPwKa8HWmVa48,7114
+fw_dataset/filesystem_fns.py,sha256=dKMVreyelLD0tFO4wYo1ry8xVaN-ev1bIUap5I--OUk,4807
+fw_dataset/models.py,sha256=402DbKyjUnexWFt75UqyCzRLbfKP0nP42b3ZCUGMEA4,10990
+fw_dataset-0.1.0rc4.dist-info/METADATA,sha256=d4eQ9LpZejKLkHNoOc0KWIk5F5KiEuV5heKKNxBvll4,7152
+fw_dataset-0.1.0rc4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fw_dataset-0.1.0rc4.dist-info/RECORD,,
