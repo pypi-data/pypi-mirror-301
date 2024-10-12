@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vertopy/__init__.py
+vertopy/fungsi_berat.py
+vertopy/fungsi_kecepatan.py
+vertopy/fungsi_panjang.py
+vertopy/fungsi_suhu.py
+vertopy/fungsi_waktu.py
+vertopy.egg-info/PKG-INFO
+vertopy.egg-info/SOURCES.txt
+vertopy.egg-info/dependency_links.txt
+vertopy.egg-info/top_level.txt
