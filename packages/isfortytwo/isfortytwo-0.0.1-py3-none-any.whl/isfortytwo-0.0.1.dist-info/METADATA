@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: isfortytwo
+Version: 0.0.1
+Summary: return if 42
+Home-page: UNKNOWN
+Author: FLAMIE
+Author-email: <flamiedev1@gmail.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+A package that returns a boolean if a variable is the number 42
+
