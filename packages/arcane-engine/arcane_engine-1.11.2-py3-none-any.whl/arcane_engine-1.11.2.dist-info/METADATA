@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: arcane-engine
+Version: 1.11.2
+Summary: Python SDK for Arcane Engine, a text-to-task automation platform.
+Home-page: https://github.com/arc-eng/kit
+License: GPL-3.0
+Author: Marco Lamina
+Author-email: marco@arcane.engineer
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (<2.7)
+Requires-Dist: python-dateutil (==2.9.0)
+Requires-Dist: urllib3 (==2.2.1)
+Requires-Dist: wheel (==0.42.0)
+Project-URL: Repository, https://github.com/arc-eng/kit
+Description-Content-Type: text/markdown
+
+<div align="center">
+<img src="https://avatars.githubusercontent.com/ml/17635?s=140&v=" width="100" alt="Arcane Engine Logo">
+</div>
+
+<p align="center">
+  <a href="https://github.com/apps/arcane-engine/installations/new"><b>Install</b></a> |
+  <a href="https://docs.arcane.engineer">Documentation</a> |
+  <a href="https://arcane.engineer/">Website</a>
+</p>
+
+# Arcane Kit
+
+Welcome to the development kit for **[Arcane Engine](https://arcane.engineer/engine)**, a platform that enables developers to create agentic workflows easily.
+
+This project contains the official Python SDK.
+
+## Usage
+
+Install the Python SDK using pip:
+
+```bash
+pip install arcane-engine
+```
+
+Use the `ArcaneEngine` class to create tasks and interact with the engine. Here's an example of how to create a task and wait for the result:
+
+```python
+from arcane.engine import ArcaneEngine
+from arcane.util import wait_for_result
+
+engine = ArcaneEngine()
+task = engine.create_task("arc-eng/kit", "Summarize the README file and create a Github issue with the result.")
+result = wait_for_result(task)
+print(f"Task completed. Result:\n\n{task.result}")
+```
+
