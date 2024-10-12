@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ccrestoration
+Version: 0.0.9
+Summary: an inference framework for image/video restoration with VapourSynth support
+Home-page: https://github.com/TensoRaws/ccrestoration
+License: MIT
+Author: Tohrusky
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: einops
+Requires-Dist: opencv-python
+Requires-Dist: pydantic
+Requires-Dist: tenacity
+Project-URL: Repository, https://github.com/TensoRaws/ccrestoration
+Description-Content-Type: text/markdown
+
+# dev
+
