@@ -1,0 +1,12 @@
+decentriq_util/__init__.py,sha256=wjHRy7lrpmioI3iRT8pKUPTD0kqHMVKGb1p33U-vMb4,733
+decentriq_util/error.py,sha256=MQn5zdLGzV31cy7KNtHMU1kVNUq1j9z3mzbMDBvfXvk,4798
+decentriq_util/proto/__init__.py,sha256=KRWAX1OV9ZT041U4HotBJhgnGx265FQ8BoCYMMNfTQc,914
+decentriq_util/python/__init__.py,sha256=NxsROEFbKKBy_WodSp0_vKNAnzr36FXlHfItid21knQ,873
+decentriq_util/spark/__init__.py,sha256=1p55yMIYtP02x-i5IEpHUmgV-xzIfCC2Lto4TUAxTi8,9699
+decentriq_util/sql/__init__.py,sha256=y8mjAuwtXoFufXwYHOazAX7XM5H_39LVOSELpDYYzB4,8863
+decentriq_util/sql/proto/__init__.py,sha256=6AXw4_0BzJDiR8GClJvu9ztLJGif84jVeBieXyPsRJA,210
+decentriq_util/sql/proto/compute_sql_pb2.py,sha256=gWYGaxUj1wMxSK7PMIAfpbl015AsNY9IFgc8kMGpnaA,5822
+decentriq_util/sql/proto/compute_sql_pb2.pyi,sha256=ubGrxmUsCxO0rhozqBH8OLZ2HvolYGFnYIcazbnNQBo,6914
+decentriq_util-0.1.0.dev10.dist-info/METADATA,sha256=eg_bFwW9Wb8HQmmkEaisOgwxUC3ChuD5AVvzG7J4Ce0,650
+decentriq_util-0.1.0.dev10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+decentriq_util-0.1.0.dev10.dist-info/RECORD,,
