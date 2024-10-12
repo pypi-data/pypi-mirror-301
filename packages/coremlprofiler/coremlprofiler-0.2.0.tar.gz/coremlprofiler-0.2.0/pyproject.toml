@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "coremlprofiler"
+version = "0.2.0"
+description = "Profile your CoreML model directly from Python."
+authors = ["FL33TW00D <chris@fleetwood.dev>", "pcuenca <pcuenca@huggingface.co"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyobjc-core = "^10.3"
+pyobjc-framework-Cocoa = "^10.3"
+pyobjc-framework-CoreML = "^10.3"
+colorama = "^0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8"
+huggingface-hub = "^0.25"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
