@@ -1,0 +1,14 @@
+naked_sqla/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naked_sqla/__version__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+naked_sqla/exception.py,sha256=VeISHWZGbVPCQeejvZo6F4UStNJqepLwSDbC4f2WcSM,116
+naked_sqla/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naked_sqla/view.py,sha256=vml825DDI7WVDuSLJApNY9zzY2hIT5QyF5c9j66INDo,7642
+naked_sqla/om/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naked_sqla/om/asession.py,sha256=vuoyFCMsb8QmzaTIxY8ivvPoKExyDj7I3MKsx3jxeRM,12449
+naked_sqla/om/bulk_persistent.py,sha256=sk7jQgUSvYF4Upoc9i2iePgIl4TtY0Y-mV0cLH9y3xA,2324
+naked_sqla/om/context.py,sha256=JOqZF1AE42pOSkpu-jRwGJYqH4q6FQ43EcDvZPg6jjw,4115
+naked_sqla/om/loading.py,sha256=r2W4oxbtvKMNabvmj8bBekyMh8lEjOUSioWacHPXSk4,7012
+naked_sqla/om/session.py,sha256=4AClG1hvyrd3S66v3Ydru5UVaMbkC7lHclgUZY49p3s,11718
+naked_sqla-0.1.0.dist-info/METADATA,sha256=20ZYQNl0itgYWRx-hNvYUGJRo64emeDEcX0FlyekcUQ,2075
+naked_sqla-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+naked_sqla-0.1.0.dist-info/RECORD,,
