@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+joywins_my_data_coupang_order/__init__.py
+joywins_my_data_coupang_order/joywins_my_data_coupang_order.py
+joywins_my_data_coupang_order.egg-info/PKG-INFO
+joywins_my_data_coupang_order.egg-info/SOURCES.txt
+joywins_my_data_coupang_order.egg-info/dependency_links.txt
+joywins_my_data_coupang_order.egg-info/top_level.txt
