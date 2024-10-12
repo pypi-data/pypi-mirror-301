@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+customcolor/__init__.py
+customcolor/result.py
+customcolor/runner.py
+customcolor.egg-info/PKG-INFO
+customcolor.egg-info/SOURCES.txt
+customcolor.egg-info/dependency_links.txt
+customcolor.egg-info/top_level.txt
+customcolor/colors/__init__.py
+customcolor/colors/_linux_color_types.py
+customcolor/colors/_linux_console_utils.py
+customcolor/colors/_win_color_types.py
+customcolor/colors/_win_console_utils.py
+customcolor/colors/color_print.py
