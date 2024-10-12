@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Orange-All-Dependencies
+Version: 0.0.4
+Summary: Install all the addons at once for Orange Data Mining !!
+Home-page: 
+Author: Orange community
+Author-email: 
+Keywords: orange3 add-on
+Requires-Dist: AAIT>=0.0.4.19
+Requires-Dist: gpt4all-pypi-part-011
+Requires-Dist: aait-store-cut-part-016
+Requires-Dist: all-mpnet-base-v2-pypi-part-005
+Requires-Dist: Orange3-Associate
+Requires-Dist: Orange3-Bioinformatics
+Requires-Dist: Orange3-Educational
+Requires-Dist: Orange3-Explain
+Requires-Dist: Orange3-Fairness
+Requires-Dist: Orange3-Geo
+Requires-Dist: Orange3-ImageAnalytics
+Requires-Dist: Orange3-Network
+Requires-Dist: Orange3-Prototypes
+Requires-Dist: Orange3-SingleCell
+Requires-Dist: Orange-Spectroscopy
+Requires-Dist: Orange3-Survival-Analysis
+Requires-Dist: Orange3-Text
+Requires-Dist: Orange3-Textable
+Requires-Dist: Orange3-Timeseries
+Requires-Dist: Orange3-WorldHappiness

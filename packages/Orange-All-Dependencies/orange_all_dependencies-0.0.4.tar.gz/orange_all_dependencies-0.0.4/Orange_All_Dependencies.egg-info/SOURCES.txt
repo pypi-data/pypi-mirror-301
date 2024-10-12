@@ -1,0 +1,6 @@
+setup.py
+Orange_All_Dependencies.egg-info/PKG-INFO
+Orange_All_Dependencies.egg-info/SOURCES.txt
+Orange_All_Dependencies.egg-info/dependency_links.txt
+Orange_All_Dependencies.egg-info/requires.txt
+Orange_All_Dependencies.egg-info/top_level.txt
