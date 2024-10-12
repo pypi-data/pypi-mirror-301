@@ -1,0 +1,32 @@
+[project]
+name = "obsidian2html"
+version = "0.1.2"
+description = "Convert Obsidian-flavoured markdown to HTML"
+authors = [
+    { name = "Dan Strong", email = "dan@glyx.co.uk" }
+]
+dependencies = [
+    "marko[codehilite]>=2.1.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+"obsidian2html" = "obsidian2html:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "mypy>=1.11.2",
+    "pytest>=8.3.3",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/obsidian2html"]

@@ -1,0 +1,24 @@
+fix: mypy
+    rye lint --fix -- --select I
+    rye fmt
+    superhtml fmt .
+
+lint: mypy
+    rye lint -- --select I
+    rye fmt --check
+    superhtml check .
+
+mypy:
+    rye run mypy src/
+
+test *args: mypy
+    rye test -- {{args}}
+
+serve posts:
+    rye run blog "{{posts}}"
+    python -m http.server 8080 -d www
+
+publish:
+    rm -rf dist/
+    rye build
+    rye publish
