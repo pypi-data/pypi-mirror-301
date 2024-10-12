@@ -1,0 +1,9 @@
+ensemble_eeg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ensemble_eeg/brm_to_edf.py,sha256=NO_T2ncc5wUNNoc6h2Dq62r_pjXS7vbq3mj1ojHfTto,11010
+ensemble_eeg/ensemble_edf.py,sha256=NKVkjPG4BBOaww-3a994CsHMoFB39TiP13IKDBwD9b0,17514
+ensemble_eeg-0.1.6.dist-info/LICENSE,sha256=qXzAXUqPurJdhVIJzMejS0Qgs8zlMa9LWe8XyTBO9MA,32005
+ensemble_eeg-0.1.6.dist-info/METADATA,sha256=CApBcqcJe0A3sOzRBgGIz5oV2mnD_5BgQFy6MHIr2oM,8614
+ensemble_eeg-0.1.6.dist-info/NOTICE,sha256=nHgkntXezqQ-K2wUhC-_jmiM6xl3Gc-9f6wNdcjjwIk,989
+ensemble_eeg-0.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ensemble_eeg-0.1.6.dist-info/top_level.txt,sha256=wZe3epOvL0kHDHu6RagQJUAE6TDvw-QTFz07xMcDzeY,37
+ensemble_eeg-0.1.6.dist-info/RECORD,,
