@@ -1,0 +1,9 @@
+infinistore/__init__.py,sha256=L_orYg4dS13L0u2FCBfpc80rtocUyqTGI52ezUp9_To,376
+infinistore/_infinistore.cpython-311-x86_64-linux-gnu.so,sha256=huCDhaOSLJHJH7EsfMwRzFMJPu3zNl1KBfZ56d433HI,20202768
+infinistore/lib.py,sha256=oPsPqCgEBwVeYYWQv8yBTPeCTB1hdaQB90U5U_e2yuE,10415
+infinistore/test.py,sha256=7VFfImEsv5u2aB7VwwmPqIZz__5n44_8snQfQy5DQ2w,1263
+infinistore/test_infinistore.py,sha256=YAdWe5OW-ZPILmQTH-f6jBgOltzYzRH0MqsK60QSAHU,3869
+infinistore-0.1.70.dist-info/METADATA,sha256=8P8p5G7z4TrVQopOm3qG6qsBsBMfjmbewViPQyjaYVw,1000
+infinistore-0.1.70.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+infinistore-0.1.70.dist-info/top_level.txt,sha256=KpdfFfSfAf80vc2bq4AhEK7h8mIm3_ETdRcZAx-vZFA,12
+infinistore-0.1.70.dist-info/RECORD,,
