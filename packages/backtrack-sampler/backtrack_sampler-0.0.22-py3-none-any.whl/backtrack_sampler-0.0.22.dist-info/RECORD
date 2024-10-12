@@ -1,0 +1,14 @@
+backtrack_sampler/__init__.py,sha256=rqjBlQ2i4PbsPF7VyCYtgO8Jv39NSD5fJBJZDEck1RA,283
+backtrack_sampler/backtrack_sampler.py,sha256=HZuYc2w_5y4L3e1EkPlbZesNXonBmtlVu1l0docSRM4,4371
+backtrack_sampler/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtrack_sampler/provider/base_provider.py,sha256=0D3-lnymAoVBvKaPdSse0oNnC9QcDvOT4UpzWjjFIeU,654
+backtrack_sampler/provider/llamacpp_provider.py,sha256=OEITH8PyDcbQttsokq-yIXSf724qjsIF0xshcT9jlPQ,1766
+backtrack_sampler/provider/transformers_provider.py,sha256=a8d2vJDw83a8oGWo_g_2XSeTXVibuXlUF8Sr262wpVE,1813
+backtrack_sampler/strategy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtrack_sampler/strategy/antislop_strategy.py,sha256=46GlggK1EzShdY17leHKtpmUqUPfBJtQI45zLMQIfBI,3459
+backtrack_sampler/strategy/base_strategy.py,sha256=15Lh2xyDobOMxXMc7C7AELvQKXSnT0zANLdpDa2Wlns,1081
+backtrack_sampler/strategy/creative_writing_strategy.py,sha256=kpmbYoLW-g4PC1Gihd2c0guk8Ql2Kj77gT6RH-IzhQE,3945
+backtrack_sampler-0.0.22.dist-info/METADATA,sha256=u-hWAWEamAJMx5QR44Fpn2LGQPMWPy06D3LefwRIkUQ,5813
+backtrack_sampler-0.0.22.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+backtrack_sampler-0.0.22.dist-info/top_level.txt,sha256=4k2UWEVmcqpngtMovPNKKaafD9ARzdpcUJJwRZbxro8,18
+backtrack_sampler-0.0.22.dist-info/RECORD,,
