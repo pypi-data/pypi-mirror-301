@@ -1,0 +1,10 @@
+sqlalchemy
+beautifulsoup4
+adalflow
+openai
+Pillow
+requests
+pydantic
+loguru
+numpy
+scikit-learn
