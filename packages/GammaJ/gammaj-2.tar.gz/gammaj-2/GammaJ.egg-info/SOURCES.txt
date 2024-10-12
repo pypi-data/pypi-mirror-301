@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+GammaJ.egg-info/PKG-INFO
+GammaJ.egg-info/SOURCES.txt
+GammaJ.egg-info/dependency_links.txt
+GammaJ.egg-info/entry_points.txt
+GammaJ.egg-info/top_level.txt
+gammaj/__init__.py
+gammaj/__main__.py
+gammaj/parser.py
+gammaj/run.py
+gammaj/utilsbox.py
