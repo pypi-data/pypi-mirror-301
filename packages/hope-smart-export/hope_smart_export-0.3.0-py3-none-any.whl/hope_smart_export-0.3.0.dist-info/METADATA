@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: hope-smart-export
+Version: 0.3.0
+License: MIT
+Project-URL: Homepage, https://github.com/unicef/hope-smart-export
+Project-URL: Documentation, https://unicef.github.io/hope-smart-export/
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: django-admin-extra-buttons >=1.5.8
+Requires-Dist: django-adminactions >=2.3.0
+Requires-Dist: django-strategy-field >=3.1.0
+Requires-Dist: xlsxwriter >=3.2.0
+Provides-Extra: docs
+Requires-Dist: mkdocs >=1.6.1 ; extra == 'docs'
+Requires-Dist: mkdocs-material >=9.5.36 ; extra == 'docs'
+Requires-Dist: mkdocs-awesome-pages-plugin >=2.9.3 ; extra == 'docs'
+Requires-Dist: mkdocstrings-python ; extra == 'docs'
+
+# HOPE Smart Export
+
+
+[![Test](https://github.com/unicef/hope-smart-export/actions/workflows/test.yml/badge.svg)](https://github.com/unicef/hope-smart-export/actions/workflows/test.yml)
+[![Lint](https://github.com/unicef/hope-smart-export/actions/workflows/lint.yml/badge.svg)](https://github.com/unicef/hope-smart-export/actions/workflows/lint.yml)
+[![Documentation](https://github.com/unicef/hope-smart-export/actions/workflows/docs.yml/badge.svg)](https://unicef.github.io/hope-smart-export/)
+[![codecov](https://codecov.io/github/unicef/hope-smart-export/graph/badge.svg?token=L7HA5PJ45B)](https://codecov.io/github/unicef/hope-smart-export)
+[![PyPI](https://img.shields.io/pypi/v/hope-smart-export)](https://pypi.org/project/hope-smart-export/)
+
+Extremely simple application to create user customisable exporting patterns.
+
+This library handles situations where an application must provide easily customizable exporting capabilities.
+It has been designed to manage Payment Orders that must be sent to the Financial Service Provider.
+
+
+--- 
+
+It is not designed to export big datasets but to be flexible and facilitate customization without changing the code.
+
+---
