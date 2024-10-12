@@ -1,0 +1,5 @@
+abi/ethereum/erc20.json,sha256=Yax3cLEBBIE9yIMFKCJqjeV1GuFWl6EAjKHo-bR3tgU,14764
+abi/mach/order_book.json,sha256=FE-JpqAxSjEUEhB4glomUCk5NGit0dPi8G19HEFok2g,49492
+mach_client-0.0.77.dist-info/METADATA,sha256=xtLRtSIyS75cef7u5FrmSexttOa9Jm-WdL7nQ4ffdTQ,1065
+mach_client-0.0.77.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mach_client-0.0.77.dist-info/RECORD,,
