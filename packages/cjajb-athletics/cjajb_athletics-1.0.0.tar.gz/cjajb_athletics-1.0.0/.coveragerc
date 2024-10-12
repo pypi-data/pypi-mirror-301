@@ -1,0 +1,2 @@
+[run]
+omit = cjajb_athletics/tests/*
