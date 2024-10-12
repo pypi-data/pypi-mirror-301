@@ -1,0 +1,2 @@
+[console_scripts]
+kamla-cli = kamla_cli.cli:main
