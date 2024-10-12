@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: xnano
+Version: 0.0.25
+Summary: xnano
+Author: Hammad Saeed
+Author-email: hvmmad@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: data
+Provides-Extra: ext
+Requires-Dist: chromadb (>=0.5.13,<0.6.0) ; extra == "all" or extra == "data"
+Requires-Dist: instructor (>=1.5.1,<2.0.0)
+Requires-Dist: litellm (>=1.47.0,<2.0.0) ; extra == "all" or extra == "ext"
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: openai (>=1.51.0,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: python-docx (>=1.1.2,<2.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Requires-Dist: semchunk (>=2.2.0,<3.0.0)
+Requires-Dist: sounddevice (>=0.5.0,<0.6.0)
+Requires-Dist: soundfile (>=0.12.1,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Xnano
+
+Xnano is a Python library for building AI applications. It is designed to be simple, flexible, and extensible.
+
+Xnano is the lightweight port of [zyx](https://zyx.hammad.fun)
+
+## Features
+
+- **Simple**: Xnano is designed to be simple to use and understand.
+- **Flexible**: Xnano is designed to be flexible and extensible.
+- **Extensible**: Xnano is designed to be extensible and easy to extend.
+
+
