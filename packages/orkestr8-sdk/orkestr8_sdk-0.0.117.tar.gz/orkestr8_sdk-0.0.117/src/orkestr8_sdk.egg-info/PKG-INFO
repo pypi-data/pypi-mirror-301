@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: orkestr8-sdk
+Version: 0.0.117
+Summary: SDK to easily interact with Orkestr8 ML entities
+Author: Antsthebul
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# orkestr8-sdk
+
+Python SDK to simplify resource accumulation and model training. This SDK is used by Orkestr8-ML.
