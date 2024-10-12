@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-dot-tree
+Version: 1.0.8
+Summary: Asset manager for python that leverages dot notation for simplified usage
+Home-page: https://github.com/nebko16/dot_tree
+Author: nebko16
+Author-email: nebko16@gmail.com
+License: GPL-3.0
+Keywords: asset manager dot notation dot-notation pygame images textures sprites sounds fonts files caching loading
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: pygame-ce
+Requires-Dist: appdirs
+
+Dot notation asset manager for python to greatly simplify and shorten code related to asset management.  Includes caching, preloading, and other helpful tools.  Also includes a PyGame-CE specific extension that further simplifies managing assets for PyGame projects.
