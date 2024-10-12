@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: checksum-lib
+Version: 0.1
+Summary: Uma biblioteca simples para calcular e validar checksums.
+Author: Luiz Felipe
+Author-email: luiz.nogueira@ufpi.edu.br
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# checksum_lib
+
+Esta é uma biblioteca Python simples para calcular e validar checksums. Ela pode ser usada em comunicações UDP para detectar corrupção de mensagens.
+
+## Instalação
+
+Você pode instalar esta biblioteca usando pip:
+
+```bash
+pip install checksum_lib

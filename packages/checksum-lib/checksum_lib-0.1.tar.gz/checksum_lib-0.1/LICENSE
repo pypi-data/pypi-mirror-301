@@ -1,0 +1,18 @@
+
+### 4. **Licença (Opcional)**
+
+Se você quiser adicionar uma licença ao seu projeto, inclua um arquivo `LICENSE`. Aqui está um exemplo para a licença MIT:
+
+```text
+Licença MIT
+
+Copyright (c) 2024 Seu Nome
+
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e dos arquivos de documentação associados (o "Software"), para lidar
+no Software sem restrições, incluindo, sem limitação, os direitos
+de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
+cópias do Software, e permitir às pessoas a quem o Software é
+fornecido a fazê-lo, sujeito às seguintes condições:
+
+...
