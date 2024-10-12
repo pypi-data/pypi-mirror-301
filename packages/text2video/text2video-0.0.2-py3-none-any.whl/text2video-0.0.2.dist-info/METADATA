@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: text2video
+Version: 0.0.2
+Summary: Utils for text2video generation models
+Author-email: dingo0927@126.com
+Project-URL: homepage, http://www.deepnlp.org
+Project-URL: repository, https://github.com/rockingdingo/text2video
+Keywords: text,video,generation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.4
+
+Utils for text2video generation models
