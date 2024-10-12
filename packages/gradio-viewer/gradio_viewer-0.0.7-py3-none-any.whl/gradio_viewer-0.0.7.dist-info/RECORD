@@ -1,0 +1,10 @@
+gradio_viewer/__init__.py,sha256=cKjN28HcDA8kneNsTZVNVThADFWsp5gdLSWUU376N8I,50
+gradio_viewer/viewer.py,sha256=QkRQgx5Dtmx1UT06aqFJTjOL3GoO1uxR7Tt-7gG3tj8,6739
+gradio_viewer/viewer.pyi,sha256=A4mhZHCyBWm_3VqDcpU4kAAMKBLQZykrtqYZat223Ig,15952
+gradio_viewer/templates/component/index.js,sha256=Ls7efGhxjwzSFTsbh1T2lQQgzz-Z_c1pEsgXUlEAe_g,1256437
+gradio_viewer/templates/component/style.css,sha256=A8TgzM_HDqxvizwRAEAjPmN4g_i4FKZvv10IR-Ks3Hg,1477760
+gradio_viewer/templates/example/index.js,sha256=0wI65nO0kZOhasuU6UdsVmrKBGg1tWWD5j-PZghT2o8,1849
+gradio_viewer/templates/example/style.css,sha256=PmBkZe6ATBey2-rKvFlYDc6f7Ix5fk0mKg5_jbKcCP0,201
+gradio_viewer-0.0.7.dist-info/METADATA,sha256=4hBg8-yOVAtltwaQruzIekxD1fOYzyXdJY9wM6gyAWs,7076
+gradio_viewer-0.0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gradio_viewer-0.0.7.dist-info/RECORD,,
