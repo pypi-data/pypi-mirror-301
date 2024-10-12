@@ -1,0 +1,15 @@
+dj_angles/__init__.py,sha256=WpvgrxfQFcT-RExggPfSMRYGhVyRBMY97SnRZ04yWKE,116
+dj_angles/apps.py,sha256=A8ZIF_kMHe0ktazblU-AyqRDJ-CQS6LDmcsQGTI9mF0,1020
+dj_angles/attributes.py,sha256=1Pf5qJYfVE757zVJqcb-lnIM4qOFQuVBHY0CpiD8i2g,5244
+dj_angles/exceptions.py,sha256=gYU_lp3z92cNuxqMenEwas9Qe5ua-4XOOkgxmBSn2tM,961
+dj_angles/mappers.py,sha256=cLx0Zd8i3jbIo8oAZ844MdG4a8hQAotlFCJWwyWfupg,4902
+dj_angles/regex_replacer.py,sha256=anGUmpYaO7k6wU-EJ70dXdJBnbc2cEvt0WISk5FLM28,3613
+dj_angles/settings.py,sha256=bMdduZE-drlhmIXVJoHSiVIwoi7Gp_TOdJaD6L2_uqA,519
+dj_angles/strings.py,sha256=TFT6rz3Ux0gMrTijgEuusCwHD4S3oS_bbYSB_2Ku9ck,158
+dj_angles/tags.py,sha256=kpjewwnNHhSmxm_tI_4ZQNw0thx4zLxOcR5rnOTGdSg,3735
+dj_angles/template_loader.py,sha256=9UIeraDm07KmqkwKDF9fwSXPER-n9bGl2LgpDvT1Jeg,1420
+dj_angles/tokenizer.py,sha256=m77ol0pOT9fFRn_C1sP_GPGsWyzhx1ON3vjx57GofDQ,924
+dj_angles-0.7.0.dist-info/METADATA,sha256=PhX-bvTcvKwDP-QT0sZltSIKCaXKhGaW1EDrIB090ck,5801
+dj_angles-0.7.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dj_angles-0.7.0.dist-info/licenses/LICENSE,sha256=WRW4FExPwULFFJHWXQVRbhlRe2ng_wHx_dFne-1W4Ps,1066
+dj_angles-0.7.0.dist-info/RECORD,,
