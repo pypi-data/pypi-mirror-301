@@ -1,0 +1,584 @@
+Metadata-Version: 2.1
+Name: extapi
+Version: 0.1.7
+Summary: External API library
+Author-email: KTS <hello@kts.tech>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: multidict
+Requires-Dist: yarl
+Requires-Dist: typing-extensions; python_version < "3.11"
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp; extra == "aiohttp"
+Provides-Extra: httpx
+Requires-Dist: httpx; extra == "httpx"
+Provides-Extra: opentelemetry
+Requires-Dist: opentelemetry-api; extra == "opentelemetry"
+Requires-Dist: opentelemetry-semantic-conventions; extra == "opentelemetry"
+Provides-Extra: prometheus
+Requires-Dist: prometheus_client; extra == "prometheus"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-asyncio; extra == "tests"
+Requires-Dist: pytest-aiohttp; extra == "tests"
+Requires-Dist: pytest-mock; extra == "tests"
+Requires-Dist: coverage; extra == "tests"
+Requires-Dist: mypy; extra == "tests"
+Requires-Dist: ruff; extra == "tests"
+Requires-Dist: deptry; extra == "tests"
+Requires-Dist: opentelemetry-sdk; extra == "tests"
+
+# extapi
+
+[![Build](https://github.com/ktsstudio/extapi/actions/workflows/actions.yaml/badge.svg?branch=main)](https://github.com/ktsstudio/extapi/actions)
+[![PyPI](https://img.shields.io/pypi/v/extapi.svg)](https://pypi.python.org/pypi/extapi)
+
+Library for performing HTTP calls to external systems. Made to be modular, extensible and easy to use.
+
+## Installation
+
+To use with aiohttp backend:
+```bash
+pip install 'extapi[aiohttp]'
+```
+
+To use with httpx backend:
+```bash
+pip install 'extapi[httpx]'
+```
+
+## Quick example
+
+Using aiohttp:
+
+```python
+import asyncio
+from extapi.http.backends.aiohttp import AiohttpExecutor
+
+
+async def main():
+    async with AiohttpExecutor() as executor:
+        async with await executor.get('https://httpbin.org/get') as response:
+            print(response.status)
+            print(await response.read())
+
+
+asyncio.run(main())
+```
+
+Using httpx:
+
+```python
+import asyncio
+from extapi.http.backends.httpx import HttpxExecutor
+
+
+async def main():
+    async with HttpxExecutor() as executor:
+        async with await executor.get('https://httpbin.org/get') as response:
+            print(response.status)
+            print(await response.read())
+
+
+asyncio.run(main())
+```
+
+## Features
+
+### Retryable executor
+
+You can use the `RetryableExecutor` class to retry requests in case of failure. It will retry the request until the maximum number of retries is reached or the request is successful.
+
+There is also a set of additional `Addon`s to a RetyableExecutor. Usually you would probably use `RetryableExecutor` in your code base.
+
+```python
+import asyncio
+from extapi.http.backends.aiohttp import AiohttpExecutor
+from extapi.http.executors.retry import RetryableExecutor
+
+
+async def main():
+    async with AiohttpExecutor() as backend:
+        executor = RetryableExecutor(backend, max_retries=3)
+
+        async with await executor.get('https://httpbin.org/get') as response:
+            print(response.status)
+            print(await response.read())
+
+
+asyncio.run(main())
+```
+
+As you can see nothing changes in terms of usage, but now we have retries in case of failure (it may be 500 errors, 401 with custom authentication and token reacquiring for example, TimeoutError, any other Exceptions). There is a default set of addons that are being added to a `RetryableExecutor`:
+
+```python
+default_addons = [
+    Retry5xxAddon(),
+    Retry429Addon(),
+    LoggingAddon(),
+]
+```
+
+First 2 retry 5xx and 429 status codes. The last one logs the request and response.
+
+### Addons
+
+Addons are a way to extend the functionality of an executor. They can be used to add additional functionality to the executor, like logging, retrying requests, headers passing, authentication, etc.
+
+#### LoggingAddon
+
+This one is simple ad just logs the fact of a request being sent and a received response.
+
+
+#### VerboseLoggingAddon
+
+This one is more verbose and logs the request and response headers and body.
+
+#### Retry5xxAddon
+
+This one retries the request in case of 5xx status code.
+
+#### Retry429Addon
+
+This one retries the request in case of 429 status code. It also waits for the `Retry-After` header if it is present in the response and waits the specified time.
+
+#### StatusValidationAddon
+
+This one validates the status code of the response. If the status code is not in the list of allowed status codes, it raises an exception.
+
+#### AddHeadersAddon
+
+This one adds headers to the request. It expects a callable or an awaitable that accepts headers in order to modify them.
+
+In the following example we add an `X-Api-Key` header on each request (in case of errors this would be 3 requests).
+
+_Note: the function `headers_patch` is called before each request in case of retries, so you can leverage that to add some keys rotating logic in this case, for example._
+
+```python
+import asyncio
+
+from multidict import CIMultiDict
+
+from extapi.http.addons.headers import AddHeadersAddon
+from extapi.http.backends.aiohttp import AiohttpExecutor
+from extapi.http.executors.retry import RetryableExecutor
+
+
+async def headers_patch(headers: CIMultiDict):
+    headers["X-Api-Key"] = "some-api-token"
+
+
+async def main():
+    async with AiohttpExecutor() as backend:
+        executor = RetryableExecutor(backend, max_retries=3, addons=[
+            AddHeadersAddon(headers_patch)
+        ])
+
+        async with await executor.get('https://httpbin.org/get') as response:
+            print(await response.read())
+
+
+asyncio.run(main())
+```
+
+#### BearerAuthAddon:
+
+This one adds a `Authorization` header with a `Bearer` token. As in the previous example, you may execute some complex logic in the callable - like issuing new token in case of 401 error.
+
+```python
+import asyncio
+
+from extapi.http.addons.auth import BearerAuthAddon
+from extapi.http.backends.aiohttp import AiohttpExecutor
+from extapi.http.executors.retry import RetryableExecutor
+
+
+async def token_getter() -> str:
+    return "some-api-token"
+
+
+async def main():
+    async with AiohttpExecutor() as backend:
+        executor = RetryableExecutor(backend, max_retries=3, addons=[
+            BearerAuthAddon(token_getter)
+        ])
+
+        async with await executor.get('https://httpbin.org/get') as response:
+            print(await response.read())
+
+
+asyncio.run(main())
+```
+
+##### Custom
+
+You can also extend any existing addons or create your own. Just inherit from `Addon` and implement the `execute` method.
+
+This is the `Addon` protocol and your custom addon has to satisfy it.
+```python
+@runtime_checkable
+class Addon(Protocol[T]):
+    async def before_request(self, request: RequestData) -> None:
+        return None
+
+    async def process_response(
+        self, request: RequestData, response: Response[T]
+    ) -> Response[T]:
+        return response
+
+    async def process_error(self, request: RequestData, error: Exception) -> None:
+        return None
+```
+
+If you want to execute some custom logic in case of retry you would also need to satisfy a `Retryable` protocol. The `need_retry` function must return a tuple (bool, float | None) where the first element is a flag if the request should be retried and the second is a delay in seconds before the next retry if any.
+
+```python
+@runtime_checkable
+class Retryable(Protocol[T_contr]):
+    async def need_retry(
+        self, response: Response[T_contr]
+    ) -> tuple[bool, float | None]: ...
+```
+
+And as an example Retry5xxAddon:
+
+```python
+class Retry5xxAddon(Retryable[T], Generic[T]):
+    async def need_retry(self, response: Response[T]) -> tuple[bool, float | None]:
+        if response.status >= 500:
+            return True, 1.0
+
+        return False, None
+```
+
+### Other executors
+
+You can create your own executor by inheriting from the `Executor` class and implementing the `execute` method. There are a couple more extra executors that modify behaviour of the initial request:
+
+* `OpenTelemetryExecutor` — adds OpenTelemetry tracing to the request.
+* `PrometheusMetricsExecutor` — tracks Prometheus metrics from the request/response.
+* `ConcurrencyLimitedExecutor` - limits amount of concurrent requests that can happen simultaneously.
+* `RateLimitedExecutor` — limits the amount of requests per second/minute. You can choose the window.
+
+Let's see at the full-featured example:
+
+```python
+import asyncio
+
+from multidict import CIMultiDict
+
+from extapi.http.addons.auth import BearerAuthAddon
+from extapi.http.addons.headers import AddHeadersAddon
+from extapi.http.addons.status import StatusValidationAddon
+from extapi.http.backends.aiohttp import AiohttpExecutor
+from extapi.http.executors.limiters import (
+    ConcurrencyLimitedExecutor,
+    RateLimitedExecutor,
+)
+from extapi.http.executors.metrics import PrometheusMetricsExecutor
+from extapi.http.executors.retry import RetryableExecutor
+from extapi.http.executors.trace import OpenTelemetryExecutor
+from extapi.http.metrics.container import MetricsContainer
+from extapi.limiters.concurrency.local import LocalConcurrencyLimiter
+from extapi.limiters.rps.local import LocalRateLimiter
+
+
+class TestHeaders:
+    async def __call__(self, headers: CIMultiDict) -> None:
+        headers.add("X-Test-Header", "test")
+
+
+class FooTokenGetter:
+    def __call__(self) -> str:
+        return "foo-bar"
+
+
+async def main():
+    async with AiohttpExecutor() as base:
+        executor = base.generalize()
+        executor = OpenTelemetryExecutor(executor)
+        executor = PrometheusMetricsExecutor(
+            executor, metrics_container=MetricsContainer(metrics_prefix="demo")
+        )
+        executor = RateLimitedExecutor(
+            executor,
+            rate_limiter=LocalRateLimiter(rate_limit=50, rate_limit_window_seconds=1),
+        )
+        executor = ConcurrencyLimitedExecutor(
+            executor,
+            concurrency_limiter=LocalConcurrencyLimiter(max_concurrency=100),
+        )
+
+        executor = RetryableExecutor(
+            executor,
+            addons=[
+                BearerAuthAddon(FooTokenGetter()),
+                AddHeadersAddon(TestHeaders()),
+                StatusValidationAddon((200,)),
+            ],
+        )
+
+        async with await executor.get('https://httpbin.org/get') as response:
+            print(await response.read())
+
+asyncio.run(main())
+```
+
+In this example we leverage opentelemetry, metrics, rate limiting, retrying mechanics. We also add a custom header and a bearer token to the request. We also validate the status code of the response to be 200.
+
+
+### What to depend on?
+
+If you need to accept somewhere an executor in your code you may reference a `AbstractExecutor` as the most abstract class that all executors inherit from.
+
+```python
+from typing import Any, TypeVar
+
+from extapi.http.abc import AbstractExecutor
+
+T = TypeVar("T")
+
+async def httpbin_get(executor: AbstractExecutor[T]) -> Any:
+    async with await executor.get('https://httpbin.org/get') as response:
+        return await response.json()
+
+```
+
+This way you may add any executor to your code, and it will work with it.
+
+
+### Get an underlying backend executor
+
+In some cases you may need to get an underlying backend executor to be sure that you may send a request in a specific format for this particular executor. You can do so like the following:
+
+```python
+import asyncio
+
+from extapi.http.backends.aiohttp import AiohttpExecutor
+from extapi.http.executors.retry import RetryableExecutor
+from extapi.http.executors.wrapped import unwrap_executor
+
+
+async def main():
+    async with AiohttpExecutor() as backend:
+        executor = RetryableExecutor(backend)
+
+        assert isinstance(unwrap_executor(executor), AiohttpExecutor)
+
+        # ... the rest
+
+asyncio.run(main())
+```
