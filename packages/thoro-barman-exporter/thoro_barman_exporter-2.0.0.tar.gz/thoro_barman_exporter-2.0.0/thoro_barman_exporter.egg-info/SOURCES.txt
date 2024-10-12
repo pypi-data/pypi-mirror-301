@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+barman_exporter/__init__.py
+barman_exporter/barman_exporter.py
+thoro_barman_exporter.egg-info/PKG-INFO
+thoro_barman_exporter.egg-info/SOURCES.txt
+thoro_barman_exporter.egg-info/dependency_links.txt
+thoro_barman_exporter.egg-info/entry_points.txt
+thoro_barman_exporter.egg-info/not-zip-safe
+thoro_barman_exporter.egg-info/requires.txt
+thoro_barman_exporter.egg-info/top_level.txt

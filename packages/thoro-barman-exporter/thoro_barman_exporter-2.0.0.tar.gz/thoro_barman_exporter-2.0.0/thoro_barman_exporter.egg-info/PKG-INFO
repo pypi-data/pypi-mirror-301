@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: thoro_barman_exporter
+Version: 2.0.0
+Summary: Fork of ahes Barman exporter for Prometheus
+Home-page: https://github.com/thoro/prometheus-barman-exporter
+Author: Thomas Rosenstein
+Author-email: thomas@thoro.at
+License: MIT
+Keywords: prometheus barman exporter barman-exporter
+License-File: LICENSE
+Requires-Dist: prometheus-client
+Requires-Dist: sh
+
+Fork of ahes Barman exporter for Prometheus. Full description at https://github.com/thoro/prometheus-barman-exporter

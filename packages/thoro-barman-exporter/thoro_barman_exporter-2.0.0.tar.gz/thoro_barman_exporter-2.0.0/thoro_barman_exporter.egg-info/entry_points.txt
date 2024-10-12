@@ -1,0 +1,2 @@
+[console_scripts]
+barman-exporter = barman_exporter.barman_exporter:main
