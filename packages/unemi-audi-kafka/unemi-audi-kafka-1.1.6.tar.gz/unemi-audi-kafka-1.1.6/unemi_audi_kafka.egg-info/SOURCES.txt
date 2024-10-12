@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+audit_logger/__init__.py
+audit_logger/apps.py
+audit_logger/helpers.py
+audit_logger/logger.py
+audit_logger/middlewares.py
+unemi_audi_kafka.egg-info/PKG-INFO
+unemi_audi_kafka.egg-info/SOURCES.txt
+unemi_audi_kafka.egg-info/dependency_links.txt
+unemi_audi_kafka.egg-info/requires.txt
+unemi_audi_kafka.egg-info/top_level.txt
