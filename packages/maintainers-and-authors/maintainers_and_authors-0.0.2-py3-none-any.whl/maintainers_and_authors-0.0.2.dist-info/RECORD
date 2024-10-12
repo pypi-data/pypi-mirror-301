@@ -1,0 +1,11 @@
+maintainers_and_authors/__about__.py,sha256=Ty4skx6xWGVGJjEX9baEbiptX5XR8V1_7KiHm1tTYhc,112
+maintainers_and_authors/__init__.py,sha256=zmi3FXN2q9xEk9dTv809hYj0cwxnpCVXc7osIbFkAUY,89
+maintainers_and_authors/__main__.py,sha256=B6LiIhgXtz6LGQvaQWtbduzGnqfbFcSitmEgPV9e3Z0,146
+maintainers_and_authors/api.py,sha256=8NO5-dHRuV_obRzeGWDMxrJRTd7A-Om9P-f6MZO1Ni8,291
+maintainers_and_authors/cli.py,sha256=9zSWtyMpFbIf5p04mvs5nraNnRYhDqewXbG1vqjzNDU,290
+maintainers_and_authors/core.py,sha256=E7XC8aTxpTB34ptN2-rEkc79lM_-RlrEH48gHBJsGXk,2161
+maintainers_and_authors-0.0.2.dist-info/METADATA,sha256=UjIHRWnlR--4JkxE3CvA8dhAFbAi2bQJe6MSLaoCQNc,1395
+maintainers_and_authors-0.0.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+maintainers_and_authors-0.0.2.dist-info/entry_points.txt,sha256=dBGb9UdysEwiCdhbOIiiFiUB-3G_eCvGkc7uX-FT7yg,77
+maintainers_and_authors-0.0.2.dist-info/licenses/LICENSE.txt,sha256=R4NoazGD504IoyRM1dqDE7jwO4qfgPVnk1YoZD-9JmY,1087
+maintainers_and_authors-0.0.2.dist-info/RECORD,,
