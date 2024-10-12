@@ -1,0 +1,74 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="280pt" height="104pt" viewBox="0.00 0.00 280.25 104.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 100)">
+<ns0:title>inheritancee7ca70aa36</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>Application</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="..\masterpiece\base\index.html#masterpiece.base.Application" ns1:title="Masterpiece application. Implements startup argument parsing," target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="272.25,-96 208.25,-96 208.25,-76 272.25,-76 272.25,-96" />
+<ns0:text text-anchor="middle" x="240.25" y="-82.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Application</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>Composite</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="..\masterpiece\base\index.html#masterpiece.base.Composite" ns1:title="Class implementing hierarchy. Objects of this class can consist of children." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="170.75,-96 108.25,-96 108.25,-76 170.75,-76 170.75,-96" />
+<ns0:text text-anchor="middle" x="139.5" y="-82.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Composite</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>Composite-&gt;Application</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M171.2,-86C180.77,-86 191.44,-86 201.43,-86" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="202.13,-87.75 207.13,-86 202.13,-84.25 202.13,-87.75" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>MasterPiece</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="..\masterpiece\base\index.html#masterpiece.base.MasterPiece" ns1:title="An object with a name. Base class of everything. Serves as the foundational class offering &#160;key" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="70.75,-58 0,-58 0,-38 70.75,-38 70.75,-58" />
+<ns0:text text-anchor="middle" x="35.38" y="-44.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">MasterPiece</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>MasterPiece-&gt;Composite</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M64.55,-58.48C76.94,-63.09 91.6,-68.55 104.58,-73.38" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="104.41,-75.18 109.71,-75.29 105.63,-71.9 104.41,-75.18" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>PlugMaster</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="..\masterpiece\base\index.html#masterpiece.base.PlugMaster" ns1:title="The `Plugmaster` class is responsible for managing and loading plugins into an application." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="172.25,-58 106.75,-58 106.75,-38 172.25,-38 172.25,-58" />
+<ns0:text text-anchor="middle" x="139.5" y="-44.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">PlugMaster</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>MasterPiece-&gt;PlugMaster</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M71.23,-48C80.53,-48 90.63,-48 100.1,-48" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="100.79,-49.75 105.79,-48 100.79,-46.25 100.79,-49.75" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>Plugin</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="..\masterpiece\base\index.html#masterpiece.base.Plugin" ns1:title="Base class for plugins." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="166.5,-20 112.5,-20 112.5,0 166.5,0 166.5,-20" />
+<ns0:text text-anchor="middle" x="139.5" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Plugin</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>MasterPiece-&gt;Plugin</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M64.55,-37.52C77.45,-32.71 92.81,-27 106.18,-22.03" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="107.38,-23.45 111.46,-20.06 106.16,-20.17 107.38,-23.45" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

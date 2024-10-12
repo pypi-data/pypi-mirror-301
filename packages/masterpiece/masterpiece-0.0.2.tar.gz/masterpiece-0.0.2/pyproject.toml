@@ -1,0 +1,54 @@
+
+[build-system]
+requires = ["setuptools"] 
+build-backend = "setuptools.build_meta"  
+
+
+[project]
+name = "masterpiece"
+version = "0.0.2"
+description = "Masterpiece framework"
+readme = {file = "docs/source/README.rst", content-type = "text/markdown"}
+requires-python = ">=3.8"
+license = {file = "docs/source/LICENSE.rst", content-type = "text/markdown"}
+keywords = ["object-oriented", "plugin", "framework"]
+authors = [
+  {name = "J Meskanen", email = "juham.api@gmail.com" }
+]
+maintainers = [
+  {name = "J. Meskanen", email = "juham.api@gmail.com" }
+]
+
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8",
+]
+
+dependencies = [
+  "requests >= 2.31",
+  "pytz >= 2024.1",
+  "importlib-metadata"
+]
+
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+
+
+[project.urls]
+"Homepage" = "https://meskanen.com"
+"Bug Reports" = "https://meskanen.com"
+"Funding" = "https://meskanen.com"
+"Say Thanks!" = "http://meskanen.com"
+"Source" = "https://meskanen.com"
+
+
+
+[tool.mypy]
+files = "src/"
+ignore_missing_imports = true
+
+
