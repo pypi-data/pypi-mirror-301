@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+kamla_cli/__init__.py
+kamla_cli/cli.py
+kamla_cli/inhouse_api.py
+kamla_cli/utils.py
+kamla_cli.egg-info/PKG-INFO
+kamla_cli.egg-info/SOURCES.txt
+kamla_cli.egg-info/dependency_links.txt
+kamla_cli.egg-info/entry_points.txt
+kamla_cli.egg-info/requires.txt
+kamla_cli.egg-info/top_level.txt
