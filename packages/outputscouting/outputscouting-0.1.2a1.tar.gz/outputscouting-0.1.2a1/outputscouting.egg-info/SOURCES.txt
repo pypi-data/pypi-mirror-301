@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+outputscouting/__init__.py
+outputscouting/_command.py
+outputscouting/_extensive_search.py
+outputscouting/_min_dependencies.py
+outputscouting/_scout.py
+outputscouting/_temp_setter.py
+outputscouting/_version.py
+outputscouting/_visualization.py
+outputscouting/base.py
+outputscouting.egg-info/PKG-INFO
+outputscouting.egg-info/SOURCES.txt
+outputscouting.egg-info/dependency_links.txt
+outputscouting.egg-info/requires.txt
+outputscouting.egg-info/top_level.txt
