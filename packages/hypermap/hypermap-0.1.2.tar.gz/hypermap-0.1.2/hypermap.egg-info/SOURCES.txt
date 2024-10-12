@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+hypermap/__init__.py
+hypermap/hypermap.py
+hypermap/utils.py
+hypermap.egg-info/PKG-INFO
+hypermap.egg-info/SOURCES.txt
+hypermap.egg-info/dependency_links.txt
+hypermap.egg-info/requires.txt
+hypermap.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hypermap
+Version: 0.1.2
+Summary: A package for generating wafermap plots with wafer edge, measurements with interpolated contour map, reticles, reticle-level results etc
+Home-page: 
+Author: yana
+Author-email: yana@hyperlightcorp.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
