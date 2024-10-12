@@ -1,0 +1,3 @@
+[console_scripts]
+legallint=legallint.scripts.legallint_tool:main
+
