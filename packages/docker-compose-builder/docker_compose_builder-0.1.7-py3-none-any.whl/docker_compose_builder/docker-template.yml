@@ -1,0 +1,38 @@
+x-common: &common
+  build: ./
+  restart: unless-stopped
+  env_file: .env
+  networks:
+    - infra_services_network
+
+services:
+  local:
+    <<: *common
+    container_name: local-${SERVICE_NAME}
+    profiles: ["local"]
+    ports:
+      - "${LOCAL_PORT:-8000}:8000"
+
+  stg:
+    <<: *common
+    container_name: stg-${SERVICE_NAME}
+    profiles: ["stg"]
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:12201"
+        tag: "stg-${SERVICE_NAME}"
+
+  prod:
+    <<: *common
+    container_name: prod-${SERVICE_NAME}
+    profiles: ["prod"]
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:12201"
+        tag: "prod-${SERVICE_NAME}"
+
+networks:
+  infra_services_network:
+    external: true
