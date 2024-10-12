@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: polors
+Version: 0.1.1
+Summary: Add your description here
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: polars>=1.9
+Requires-Dist: polugins-type-gen>=0.6.0rc1
+Requires-Dist: polugins>=0.5.1
+Provides-Extra: gurobi
+Requires-Dist: gurobipy>=11.0.3; extra == 'gurobi'
+Requires-Dist: numpy>=2.1.2; extra == 'gurobi'
+Description-Content-Type: text/markdown
+
+## polORs - Operation Research with polars
+
+
+This package is heavily inspired by [gurobipy-pandas](https://github.com/Gurobi/gurobipy-pandas) but uses polars as dataframe backend.
