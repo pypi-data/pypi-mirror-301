@@ -1,0 +1,51 @@
+# mega-pack-pbf-parser
+ Parse a BB project's PBF contents and output data in various formats
+
+Goals
+
+1. create a Mega Pack project with all available packs (add to download area?)
+2. create script(s) to generate csv and PDF with details (song names, tempo, total songs per pack, total songs for Mega Pack)
+3. create a package for easy installation
+
+github repository description: Parse a BB project's PBF contents and output data in various formats
+
+Scripting
+
+Output
+- csv listing of all content
+- convert csv to PDF
+- create HTML from csv? (try chat GPT or github or Microsoft)
+
+Process Mega Project "SONGS" folder
+
+This folder has a folder for each PBF. 
+Each PBF folder has a cvs file with a listing of all songs
+Create a database of songs to avoid having to parse the project folder to create PDF or HTML?
+
+** I probably need a csv or database of pack names and PBF names (e.g. GM_Doom -> Doom)
+Parse Project Folder Class
+input
+- source folder
+
+data
+- song dictionary (pack, tempo, song name)
+
+output
+- dictionary
+
+Methods
+- Generator to return Path directory objects
+- csv parser w/optional line parser method?
+- add data to dictionary
+- manager function
+
+Write Output?
+This could be an interface that writes csv, PDF or HTML
+
+Create PDF
+
+Create HTML
+
+
+
+

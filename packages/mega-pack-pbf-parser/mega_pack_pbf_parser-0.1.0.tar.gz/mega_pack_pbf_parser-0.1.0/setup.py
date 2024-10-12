@@ -1,0 +1,24 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='mega_pack_pbf_parser', 
+    version='0.1.0',
+    author='RC',  
+    description='Collects song information from BB Projects',
+    long_description=open("README.md").read(),
+    long_description_content_type='text/plain',
+    url='https://github.com/rjcannizzo/mega-pack-pbf-parser',
+    packages=find_packages(),
+    include_package_data=True,  # Needed for MANIFEST.in to take effect
+        package_data={        
+        'mypackage': ['templates/*.html',],
+    },
+    install_requires=[
+        'Jinja2',
+    ],
+)
+
+
+
+
+
