@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: green_cli
+Version: 0.6.0
+Summary: Blockstream Green Command Line Interface
+Home-page: https://github.com/Blockstream/green_cli
+Author: Blockstream
+Author-email: inquiries@blockstream.com
+License: MIT
+Project-URL: Documentation, https://github.com/Blockstream/green_cli/README.md
+Project-URL: Source, https://github.com/Blockstream/green_cli
+Project-URL: Tracker, https://github.com/Blockstream/green_cli/issues
+Keywords: Blockstream,Green,Bitcoin,wallet,Liquid,Elements,BTC
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: wallycore >=1.3.1
+Requires-Dist: green-gdk <0.74.0,>=0.73.2
+Requires-Dist: click >=8.1.7
+Requires-Dist: click-repl >=0.3.0
+Provides-Extra: jade
+Requires-Dist: jade-client >=1.0.32 ; extra == 'jade'
+
+green-cli is a command line interface to Blockstream Green multisig and singlesig Bitcoin and Liquid wallets, based on the Green gdk library.
