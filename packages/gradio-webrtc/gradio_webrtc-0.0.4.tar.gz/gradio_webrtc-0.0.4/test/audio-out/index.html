@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Audio Streaming from Server</title>
+</head>
+<body>
+    <h1>WebRTC Audio Streaming from Server</h1>
+    <button id="startButton">Start Streaming</button>
+    <audio id="remoteAudio" autoplay controls></audio>
+    <div id="log"></div>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const remoteAudio = document.getElementById('remoteAudio');
+        const logDiv = document.getElementById('log');
+        let peerConnection;
+        let ws;
+
+        function log(message) {
+            console.log(message);
+            logDiv.innerHTML += message + '<br>';
+        }
+
+        startButton.addEventListener('click', startStreaming);
+
+        function startStreaming() {
+            log('Starting WebRTC connection...');
+            ws = new WebSocket(`ws://${window.location.host}/ws`);
+            peerConnection = new RTCPeerConnection({
+                iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
+            });
+
+            peerConnection.ontrack = event => {
+                log('Received remote track');
+                remoteAudio.srcObject = event.streams[0];
+            };
+
+            peerConnection.onicecandidate = event => {
+                if (event.candidate) {
+                    log('Sending ICE candidate');
+                    ws.send(JSON.stringify({
+                        type: 'candidate',
+                        candidate: event.candidate
+                    }));
+                }
+            };
+
+            peerConnection.oniceconnectionstatechange = () => {
+                log(`ICE connection state: ${peerConnection.iceConnectionState}`);
+            };
+
+            peerConnection.onsignalingstatechange = () => {
+                log(`Signaling state: ${peerConnection.signalingState}`);
+            };
+
+            ws.onopen = () => {
+                log('WebSocket connected');
+                peerConnection.createOffer({offerToReceiveAudio: true})
+                    .then(offer => {
+                        log('Created offer');
+                        return peerConnection.setLocalDescription(offer);
+                    })
+                    .then(() => {
+                        log('Local description set');
+                        ws.send(JSON.stringify({
+                            type: peerConnection.localDescription.type,
+                            sdp: peerConnection.localDescription.sdp
+                        }));
+                        log('Offer sent');
+                    })
+                    .catch(error => log('Error: ' + error));
+            };
+
+            ws.onmessage = event => {
+                const data = JSON.parse(event.data);
+                log(`Received ${data.type}`);
+                if (data.type === 'answer') {
+                    peerConnection.setRemoteDescription(new RTCSessionDescription(data))
+                        .then(() => log('Remote description set'))
+                        .catch(error => log('Error setting remote description: ' + error));
+                }
+            };
+
+            ws.onerror = error => {
+                log('WebSocket error: ' + error);
+            };
+
+            ws.onclose = () => {
+                log('WebSocket closed');
+            };
+        }
+    </script>
+</body>
+</html>
