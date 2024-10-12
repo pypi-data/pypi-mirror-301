@@ -1,0 +1,2 @@
+[console_scripts]
+hello = uni_cli.hello:say_hello
