@@ -1,0 +1,2 @@
+[console_scripts]
+python-wheel-to-conda-package = python_wheel_to_conda_package.__main__:main
