@@ -1,0 +1,14 @@
+exp4-agepy>=0.2
+numpy>=1.24.2
+matplotlib
+pandas
+scipy
+pyyaml
+h5py
+scikit-learn
+scikit-image
+ipython_genutils
+ipykernel>=6.0.3
+NSFopen>=2.0.0
+pyqt6>=6.4.2
+lmfit
