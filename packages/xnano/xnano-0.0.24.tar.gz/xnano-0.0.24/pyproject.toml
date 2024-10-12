@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "xnano"
+version = "0.0.24"
+description = "xnano"
+authors = ["Hammad Saeed <hvmmad@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.51.0"
+instructor = "^1.5.1"
+rich = "^13.9.2"
+litellm = ">=1.47.0,<2.0.0"
+loguru = "^0.7.2"
+pypdf2 = "^3.0.1"
+python-docx = "^1.1.2"
+openpyxl = "^3.1.5"
+soundfile = "^0.12.1"
+sounddevice = "^0.5.0"
+semchunk = "^2.2.0"
+chromadb = "^0.5.13"
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+
+[tool.poetry.extras]
+all = ["litellm", "chromadb"]
+ext = ["litellm"]
+data = ["chromadb"]
+
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.3"
+ruff = "^0.6.9"
+uv = "^0.4.18"
+pytest = "^8.3.3"
+marimo = "^0.9.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
