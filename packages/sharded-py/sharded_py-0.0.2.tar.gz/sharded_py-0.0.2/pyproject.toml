@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sharded-py"
+version = "0.0.2"
+description = ""
+authors = ["Adam Garza <adam@sharded.app>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://sharded.app/"
+repository = "https://github.com/shardedproject/sharded"
+packages = [
+    { include = "sharded", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+discord-py = "^2.4.0"
+rich = "^13.9.2"
+typer = {extras = ["all"], version = "^0.12.5"}
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.40"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
