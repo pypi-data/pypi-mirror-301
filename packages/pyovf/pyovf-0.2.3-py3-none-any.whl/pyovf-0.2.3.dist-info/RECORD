@@ -1,0 +1,17 @@
+pyovf/__init__.py,sha256=cbMDLSEEEGJFsoYEjJj6FUzIRQdDAchdALkFGOwoe1k,347
+pyovf/_version.py,sha256=XtWUl6HPylv5jZLd2KkgtPptuzuda93kC2REmOrF-Cs,22
+pyovf/helper_funcs.py,sha256=0zFXRWl5a2MFhZK0ydwu27IvxRlsSQ5vUHXTHjOFo7c,392
+pyovf/ovf_handler.py,sha256=Yvjc3TtQjJiAkWaw1aRcpG4L7kqJ2nXL6f0K4FNV1Ss,4081
+pyovf/binaries/OVF_File_py.cpython-310-darwin.so,sha256=BxHb4yYrX0x3X7u0Q6NufTyTmsklm_k4-FkcCkiXFvs,4152
+pyovf/binaries/OVF_File_py.cpython-310-x86_64-linux-gnu.so,sha256=jrr3IFl046bHm0X-nCGbhjeejT632S4cAr8wBmE-ES0,419656
+pyovf/binaries/OVF_File_py.cpython-311-darwin.so,sha256=FdIsh0l5g9zxR1nPaX5Xbtk7wTOrHbpXaqdIQqmnjnI,77568
+pyovf/binaries/OVF_File_py.cpython-311-x86_64-linux-gnu.so,sha256=V5yQsSsZBzFaxdGv-CBqyyKSiXUZe7tzZEAiytmKSJo,968608
+pyovf/binaries/OVF_File_py.cpython-312-darwin.so,sha256=kXS-NqaB186fbVNuxcNZSqNh5Zcu1cAsom_l6_8DZqM,166768
+pyovf/binaries/OVF_File_py.cpython-312-x86_64-linux-gnu.so,sha256=0yOwP8VVmmsvgLAi7kFqL4XbBDc8-ibfLejmRyh2AF8,967384
+pyovf/binaries/OVF_File_py.cpython-313-darwin.so,sha256=WFLnA7A8WyaFD67XQwiSvMPxR4tqT5WXxDm1Iyqrv2w,166336
+pyovf/binaries/OVF_File_py.cpython-313-x86_64-linux-gnu.so,sha256=zBQsSR-nDTI3BtUZGHgetNfZfZrrqD3MQ2eVwsA5uls,965768
+pyovf-0.2.3.dist-info/LICENSE,sha256=nJ1watAsV1BLWIgjk_rCWBNJ3G41BOxvRCWV9Kd49Sc,1076
+pyovf-0.2.3.dist-info/METADATA,sha256=dJkNuuV4ltum0IXWbVGhXaR0XQNvffamOKvIK-RL4Fo,4193
+pyovf-0.2.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyovf-0.2.3.dist-info/top_level.txt,sha256=9n90nQLvyxasZPwihvyjQnCdOjaSYLtcE_Ae6_OMcq8,6
+pyovf-0.2.3.dist-info/RECORD,,
