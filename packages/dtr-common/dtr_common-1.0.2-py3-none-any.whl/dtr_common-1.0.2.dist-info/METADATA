@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dtr_common
+Version: 1.0.2
+Summary: Common module package
+Home-page: https://aforge-frdr.biz.nstd.fr.airbusds.corp/gitlab/xxx/xxx
+Author: Corentin MAGYAR
+Author-email: corentin.magyar.external@airbus.com
+Project-URL: Bug Tracker, https://aforge-frdr.biz.nstd.fr.airbusds.corp/gitlab/xxx/xxx/xxx/-/issues
+Project-URL: Source Code, https://aforge-frdr.biz.nstd.fr.airbusds.corp/gitlab/xxx/xxx/xxx
+Keywords: dtr,api,flask
+Platform: any
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests ==2.25.1
+Requires-Dist: boto3 ==1.28.36
+Requires-Dist: paramiko ==3.4.0
+
+# Common
+
+common functions reused by multiple modules of the DTR
