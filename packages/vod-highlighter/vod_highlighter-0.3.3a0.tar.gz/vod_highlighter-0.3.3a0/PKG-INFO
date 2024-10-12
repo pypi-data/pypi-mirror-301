@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: vod-highlighter
+Version: 0.3.3a0
+Summary: tool to generate clips from a video. (mainly twitch VODs)
+Author: porplax
+Author-email: saynemarsh9@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: nicegui (>=2.3.0,<3.0.0)
+Requires-Dist: numpy (>=2.1.1,<3.0.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: pycparser (>=2.22,<3.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Requires-Dist: vosk (>=0.3.45,<0.4.0)
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img align="center" src="vod-icon.svg">
+</p>
+
+<p align="center">
+    CLI tool that generates clips from a video (mainly twitch VODs)
+</p>
+
+```commandline
+pip install vod-highligher
+```
+
+----
+
+- **you must have ffmpeg installed!**
+- **python 3.11+**
+- **free disk space of at least 2GB is recommended**
+
+## usage
+```shell
+# analyzing a video and generating clips is easy!
+vod-highlighter analyze -i "PATH/TO/VIDEO" 
+# OR
+python -m highlighter analyze -i "PATH/TO/VIDEO"
+```
+Use the `--help` option to see what else you can do! It is very customizable. 
+## :O how does it work?!
+The highlighter works by finding the loudest points of a given video. When a point 
+of a video exceeds a given target dB (*default: 85.0dB*), it counts that as a 
+clip and will compile that into a 30 seconds video. 
+
+All generated videos will automatically be outputted to a directory called `./highlights`. 
+This directory will be created in the location where you called the command. You can
+also specifiy where the highlighter should output videos by using the `--output, -o` option.
+
+You can also use another detection method with video! The way this method works is by
+taking the brightest moments of a video and creating a clip out of that too. You can
+also adjust the target luminance.
+
+
