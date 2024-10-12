@@ -1,0 +1,9 @@
+from pydantic import BaseModel as PydanticBaseModel
+from pydantic import ConfigDict
+
+
+class BaseModel(PydanticBaseModel):
+    model_config = ConfigDict(
+        populate_by_name=True,  # support populating object by Field alias
+        use_enum_values=True,  # supports using enums, which are then unpacked to obtain the actual `.value`
+    )
