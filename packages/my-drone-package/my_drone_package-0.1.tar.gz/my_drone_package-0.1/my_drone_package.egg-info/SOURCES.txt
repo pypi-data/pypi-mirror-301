@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+drone_teaching_package/__init__.py
+drone_teaching_package/real_tello.py
+drone_teaching_package/simulated_tello.py
+my_drone_package.egg-info/PKG-INFO
+my_drone_package.egg-info/SOURCES.txt
+my_drone_package.egg-info/dependency_links.txt
+my_drone_package.egg-info/requires.txt
+my_drone_package.egg-info/top_level.txt
