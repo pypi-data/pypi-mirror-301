@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: large-image-source-openvisus
+Version: 1.0.8
+Summary: OpenVisus tilesource for large_image.
+Home-page: https://github.com/girder/large_image
+Author: OpenVisus
+Author-email: scrgiorgio@gmail.com
+License: Apache Software License 2.0
+Keywords: large_image,tile source
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Requires-Dist: OpenVisusNoGui
+Requires-Dist: large-image
+Provides-Extra: all
+Requires-Dist: large-image-converter ; extra == 'all'
+Provides-Extra: girder
+Requires-Dist: girder-large-image ; extra == 'girder'
+
+OpenVisus tilesource for large_image.
+
+See the large-image package for more details.
+
