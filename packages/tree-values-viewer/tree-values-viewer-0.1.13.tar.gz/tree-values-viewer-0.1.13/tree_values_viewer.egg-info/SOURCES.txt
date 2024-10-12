@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tests/__init__.py
+tests/test_tree_values.py
+tree_values/__init__.py
+tree_values/tree_values.py
+tree_values_viewer.egg-info/PKG-INFO
+tree_values_viewer.egg-info/SOURCES.txt
+tree_values_viewer.egg-info/dependency_links.txt
+tree_values_viewer.egg-info/entry_points.txt
+tree_values_viewer.egg-info/requires.txt
+tree_values_viewer.egg-info/top_level.txt
