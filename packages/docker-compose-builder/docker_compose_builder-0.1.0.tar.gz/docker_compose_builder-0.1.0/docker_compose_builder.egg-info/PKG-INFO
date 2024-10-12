@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: docker-compose-builder
+Version: 0.1.0
+Summary: "CLI tool to build Docker Compose files from templates"
+Home-page: https://github.com/yash2002vardhan
+Author: Yashvardhan Goel
+Author-email: yashvardhan090202@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# docker-compose-builder
+
+`docker-compose-builder` is a Python CLI tool to generate Docker Compose files from a YAML template.
+
+## Installation
+
+You can install the tool via PyPI:
+
+```bash
+pip install docker-compose-builder
+```

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+docker_compose_builder.egg-info/PKG-INFO
+docker_compose_builder.egg-info/SOURCES.txt
+docker_compose_builder.egg-info/dependency_links.txt
+docker_compose_builder.egg-info/top_level.txt
