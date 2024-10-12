@@ -1,0 +1,13 @@
+chopperfix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chopperfix/chopper_decorators.py,sha256=WgJfZd-617WkGyIoBXDEE3cHuED1f2EE0eTXGCGBUQ8,7333
+learning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+learning/pattern_storage.py,sha256=VY6Z5PhmfeH909hXUddG9h93JTSIoQc317NiftznnvA,9103
+llm_integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_integration/adalflow_manager.py,sha256=HGeBP-ycxkEUcwKrgAM7s7oOp_oP_rLGl0uUTttSU7o,6477
+self_healing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/config.py,sha256=VSu2-BT0XxJUanW8yJ8GnPBRnd_bQ8b9hsDgkF3l42Q,358
+ChopperFix-0.0.1.dist-info/METADATA,sha256=lG25v-bDTZFY1PYNKiIauxd37gyMiaZFpV_OnQbhL78,8000
+ChopperFix-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ChopperFix-0.0.1.dist-info/top_level.txt,sha256=VP-A6nlSFv42-DTPwXs1wp0oKNCw7aI6FAHVIPQKuQc,55
+ChopperFix-0.0.1.dist-info/RECORD,,
