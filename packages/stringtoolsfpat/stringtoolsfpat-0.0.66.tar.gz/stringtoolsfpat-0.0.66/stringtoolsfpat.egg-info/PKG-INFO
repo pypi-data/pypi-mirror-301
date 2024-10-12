@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: stringtoolsfpat
+Version: 0.0.66
+Summary: String tools
+Home-page: https://github.com/fptiangco/stringtoolsfpat
+Download-URL: https://github.com/fptiangco/stringtoolsfpat
+Project-URL: Bug Reports, https://github.com/fptiangco/stringtoolsfpat/issues
+Project-URL: Source, https://github.com/fptiangco/stringtoolsfpat/
+Keywords: stringtoolsfpat
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+
+### Stringtoolsfpat
