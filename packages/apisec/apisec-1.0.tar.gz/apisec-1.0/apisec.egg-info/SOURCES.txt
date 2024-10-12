@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+apisec/__int__.py
+apisec/__main__.py
+apisec/graphql.py
+apisec/init.py
+apisec/rest.py
+apisec/soap.py
+apisec.egg-info/PKG-INFO
+apisec.egg-info/SOURCES.txt
+apisec.egg-info/dependency_links.txt
+apisec.egg-info/entry_points.txt
+apisec.egg-info/top_level.txt
