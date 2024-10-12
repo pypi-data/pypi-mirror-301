@@ -1,0 +1,14 @@
+README.md
+setup.py
+Editing_gambar/Kecerahan.py
+Editing_gambar/__init__.py
+Editing_gambar/hitam_putih.py
+Editing_gambar/pemotonganGambar.py
+Editing_gambar/penambahanTeks.py
+Editing_gambar/pencerminanGambar.py
+Editing_gambar/rotasiGambar.py
+Editing_gambar.egg-info/PKG-INFO
+Editing_gambar.egg-info/SOURCES.txt
+Editing_gambar.egg-info/dependency_links.txt
+Editing_gambar.egg-info/requires.txt
+Editing_gambar.egg-info/top_level.txt
