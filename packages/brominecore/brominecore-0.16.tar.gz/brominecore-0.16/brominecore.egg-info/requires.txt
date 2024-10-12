@@ -1,0 +1,4 @@
+websockets
+
+[:python_version < "3.13"]
+typing_extensions
