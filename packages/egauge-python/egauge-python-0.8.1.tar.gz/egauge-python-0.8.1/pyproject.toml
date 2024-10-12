@@ -1,0 +1,10 @@
+[tool.ruff]
+line-length = 79
+
+exclude = [
+        "egauge/webapi/cloud/gui/*.py"
+]
+
+[tool.ruff.lint]
+extend-select = ["I", "SLF"]
+ignore = ["E741"]
