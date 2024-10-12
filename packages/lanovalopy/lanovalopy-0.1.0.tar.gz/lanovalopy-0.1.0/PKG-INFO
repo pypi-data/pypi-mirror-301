@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lanovalopy
+Version: 0.1.0
+Summary: This is a wrapper for the Valorant API, source: https://github.com/henrikdev/valorant-api
+License: MIT
+Author: Lanxre
+Author-email: 73068449+Lanxre@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.10.10,<4.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# LanoValoPy
