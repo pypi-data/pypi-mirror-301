@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block title %}Celery{% endblock %}
+
+{% block content %}
+<div id="app" v-loading="loading">
+  <el-container>
+    <el-main>
+      <el-row>
+        <h1>Celery</h1>
+      </el-row>
+      <el-row>
+        <el-form ref="form" :model="formData" label-width="150px">
+          <div>
+            <el-form-item label="任务">
+              <el-select v-model="formData.name" :data="tasks" filterable placeholder="任务" @change="handleTaskChange">
+                <el-option v-for="item in tasks" :key="item.name" :label="item.name" :value="item.name"></el-option>
+              </el-select>
+            </el-form-item>
+          </div>
+          <el-form-item label="参数">
+            <json-editor v-model="formData.kwargs" :value="formData.kwargs"></json-editor>
+          </el-form-item>
+          <el-form-item>
+            <el-checkbox v-model="showAdvanced">高级选项</el-checkbox>
+          </el-form-item>
+          <div v-if="showAdvanced">
+            <el-form-item label="倒计时 (秒)">
+              <el-input type="number" min="0" v-model="formData.countdown"></el-input>
+            </el-form-item>
+
+            <el-form-item label="执行时间">
+              <el-date-picker v-model="formData.eta" type="datetime" placeholder="选择时间"></el-date-picker>
+            </el-form-item>
+
+            <el-form-item label="过期时间 (秒)">
+              <el-input type="number" v-model="formData.expires"></el-input>
+            </el-form-item>
+
+            <el-form-item label="队列">
+              <el-input v-model="formData.queue"></el-input>
+            </el-form-item>
+
+            <el-form-item label="优先级 (0-9)">
+              <el-input type="number" v-model="formData.priority" min="0" max="9"></el-input>
+            </el-form-item>
+
+            <el-form-item label="序列化方法">
+              <el-select v-model="formData.serializer" placeholder="选择序列化方法">
+                <el-option label="pickle" value="pickle"></el-option>
+                <el-option label="json" value="json"></el-option>
+                <el-option label="yaml" value="yaml"></el-option>
+                <el-option label="msgpack" value="msgpack"></el-option>
+              </el-select>
+            </el-form-item>
+
+            <el-form-item label="忽略结果">
+              <el-checkbox v-model="formData.ignore_result">忽略结果</el-checkbox>
+            </el-form-item>
+
+            <el-form-item label="消息头 (JSON)">
+              <el-input type="textarea" v-model="formData.headers"></el-input>
+            </el-form-item>
+          </div>
+          <el-form-item>
+            <el-button type="primary" @click="send">调用</el-button>
+          </el-form-item>
+        </el-form>
+      </el-row>
+      <el-row>
+        <div>[[task]]</div>
+      </el-row>
+    </el-main>
+  </el-container>
+</div>
+{% endblock %}
+
+{% block script %}
+{% include 'json-editor.html' %}
+<script>
+  // const DEFAULT_MAX_TOKENS = {{ max_tokens }}; // 默认最大字数, 从Flask模板引擎传递变量
+  // const DEFAULT_MODEL = "{{ model }}";
+  const $TASKS_URL = "{{ url_for('celery.tasks') }}"
+  const $SEND_URL = "{{ url_for('celery.send') }}"
+  // 从Flask模板引擎传递变量
+  const app = new Vue({
+    el: '#app',
+    // 分隔符以为 [[]], 避免与Flask模板语言冲突
+    delimiters: ['[[', ']]'],
+    data: () => ({
+      formData: {
+        kwargs: {},
+        name: '',
+        countdown: 1,
+        eta: '',
+        expires: null,
+        queue: 'celery',
+        priority: null,
+        serializer: 'json',
+        ignore_result: false,
+        headers: '',
+      },
+      showAdvanced: false,
+      task: {},
+      loading: false,
+      show: false,    // 是否显示高级选项
+      tasks: [
+        {"name": '', "signature": {}, "kwargs": {}}
+      ],
+    }),
+    computed: {
+      buttonIconClass() {
+        return this.speaking ? 'el-icon-loading' : 'el-icon-reading';
+      }
+    },
+    methods: {
+      getTasks() {
+        axios.get($TASKS_URL)
+          .then(response => {
+            this.tasks = response.data;
+            // console.log(this.tasks)
+            this.$nextTick(() => {
+              this.formData.name = this.tasks[0].name
+            })
+          })
+      },
+      // 处理任务选择的变化
+      handleTaskChange(taskname) {
+        const selectedTask = this.tasks.find(task => task.name === taskname);
+        if (selectedTask) {
+          // 直接使用后端返回的默认 kwargs
+          this.formData.kwargs = selectedTask.kwargs;
+        }
+      },
+      send() {
+        this.loading = true
+        axios.post($SEND_URL, this.formData)
+          .then(response => {
+            this.task = response.data
+            this.loading = false
+          })
+          .catch(error => {
+            console.log(error.response)
+            this.$message.error('请求失败:' + error.response.statusText)
+            this.loading = false
+          })
+      },
+    },
+    mounted() {
+      this.getTasks()
+    }
+  })
+</script>
+{% endblock %}
