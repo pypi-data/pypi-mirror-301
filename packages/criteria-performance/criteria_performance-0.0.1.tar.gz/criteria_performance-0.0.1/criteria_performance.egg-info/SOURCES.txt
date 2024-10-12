@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+criteria/__init__.py
+criteria/criteria_performance.py
+criteria_performance.egg-info/PKG-INFO
+criteria_performance.egg-info/SOURCES.txt
+criteria_performance.egg-info/dependency_links.txt
+criteria_performance.egg-info/requires.txt
+criteria_performance.egg-info/top_level.txt
