@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "test-vcs-dynamic-versioning"
+version = "0.0.6"
+description = ""
+authors = ["parikls <porovozls@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
