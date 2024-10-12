@@ -1,0 +1,2 @@
+[console_scripts]
+pinggutools = pinggutools:main
