@@ -1,0 +1,10 @@
+click
+nltk>=3.8.2
+openai
+pip-tools
+platformdirs
+pydub
+python-dotenv
+
+[test]
+pytest
