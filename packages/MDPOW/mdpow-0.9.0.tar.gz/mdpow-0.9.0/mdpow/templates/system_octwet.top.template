@@ -1,0 +1,29 @@
+; system.top
+; Part of the MDPOW package.
+; Template for simple Gromacs simulations of a compound in water
+; NOTE: This file is processed with mdpow.equil.topology()
+;       which expects EXACTLY this file as input in order to be able
+;       to change it as needed. See the source mdpow/equil.py for details.
+
+; Include forcefield parameters
+#include "$forcefield_itp"
+
+; Include compound topology
+$prm_line
+#include "$compound_itp"
+
+; Include solvent topology
+#include "$solvent_itp"
+
+; Include topology for OPLS/AA ions
+#include "$ions_itp"
+#include "$water_itp"
+
+[ system ]
+; Name
+Compound $compound_name in $solvent
+
+[ molecules ]
+; Compound        #mols
+$compound_name      1
+;OcOH               1

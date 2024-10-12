@@ -1,0 +1,257 @@
+=================
+CHANGES for MDPOW
+=================
+
+Add summary of changes for each release. Use ISO 8061 dates. Reference
+GitHub issues numbers and PR numbers.
+
+2024-10-11    0.9.0
+cadeduckworth, orbeckst, VOD555, a-ws-m
+
+Changes
+
+* change in TI implementation in fep.Gsolv.analysis(): scipy.integrate.simpson()
+  now always uses Cartwright's approach to compute the last interval instead of
+  the old `even="last"` behavior. This change **may lead to small numerical 
+  differences in output** (#281)
+* added testing/support for Python 3.10 (#202) to 3.12 (#283)
+* dropped testing/support for Python 3.9 (#286), 3.8 (#281), 3.7 (#248),
+  3.6 (PR #220, #202)
+* support Gromacs 2022.4 and 2023.1 (#256) and 2024.3 (PR #290)
+* use pymbar >= 4 and alchemlyb >= 2 (#246)
+* for ensemble.EnsembleAnalysis._single_frame() 
+  changed 'pass' to 'raise NotImplementedError' (#216)
+* for ensemble.EnsembleAnalysis._single_universe() 
+  changed 'pass' to 'raise NotImplementedError' (#216)
+* for ensemble.EnsembleAnalysis.run() changed to detect 
+  and use _single_frame OR _single_universe (#216)
+* _prepare_universe and _conclude_universe removed from 
+  EnsembleAnalysis.run() method, no longer needed (per comments, #199)
+* internal log_banner() now uses logger as argument (PR #247)
+* use `black` formatter for codebase (#271)
+* implemented `forcefields.Forcefield` class (#267)
+  - facilitates users using non-default forcefields without changing package
+    code  
+  - `equil.Simulation` has new `ff_class` argument
+  - each `Forcefield` has unique `default_water_model`, replacing global
+    `DEFAULT_WATER_MODEL`
+  - `get_solvent_model()` and `get_solvent_identifier()` take either `str` or
+    `Forcefield` type for the `forcefield` argument    
+  - both functions also use the `Forcefield`-specific `default_water_model`
+    (fixes #112)  
+* `forcefields.DEFAULT_WATER_MODEL` removed (#267)
+* changed `system.top` and `system_octwet.top` to act as templates and added
+  `.template` suffix (#267)  
+* removed `forcefields.get_ff_paths()` (#267)
+* changed `forcefields.get_solvent_identifier()`: will raise `ValueError`
+  instead of returning `None` (#267)
+
+Enhancements
+
+* convert figure components to SVG, save as individual PDFs,
+  and generate PDF of all figures combined in one file,
+  for workflows dihedrals module (#243)
+* add RDKit mol object to dihedrals plot with dihedral atom
+  indices labeled and dihedral atom group bonds highlighted
+  for workflows dihedrals module (#243)
+* new workflows registry that contains each EnsembleAnalysis for which
+  a workflows module exists, for use with workflows base module (#229)
+* new workflows base module that provides iterative workflow use for
+  directories that contain multiple projects (#229)
+* new workflows module (#217)
+* new automated dihedral analysis workflow (detect dihedrals with SMARTS,
+  analyze with EnsembleAnalysis, and generate seaborn violinplots) (#217)
+* new workflows.base.guess_elements() function to guess elements
+  from masses (PR #264)  
+* add new exit_on_error=False|True argument to run.runMD_or_exit() so
+  that failures just raise exceptions and not call sys.exit() (PR #249)
+
+Fixes
+
+* for mdpow.workflows.dihedrals.periodic_angle() implement .copy(deep=True)
+  to explicitly make a copy DataFrame of the data for angle padding (#242)
+* fix rcoulomb in CHARMM energy minimization MDP template file (PR #210)
+* fix ensemble.EnsembleAnalysis.check_groups_from_common_ensemble (#212)
+* updated versioneer (#285)
+* fix that simulation stages cannot be restarted after error (#272)
+* fix that testing resource data files were not packaged at all; they are now
+  included with the sdist (tar.gz) (23 MiB) but excluded from the wheel (whl)
+  (2.3 MiB) (#293)
+
+
+2022-01-03    0.8.0
+ALescoulie, orbeckst
+
+Changes
+
+* dropped support for Python 2 and <3.6: only Python 3.7--3.9
+  are supported (#177)
+* removed unused POWConfigParser.getintarray() (PR #187)
+* removed deprecated mdpow-gyhd script, use mdpow-solvationenergy
+  instead (#183)
+
+Enhancements
+
+* new Ensemble and EnsembleAtomGroup objects for loading set of system
+  simulations (issue #168, PR #179)
+* new EnsembleAnalysis framework for collecting data from MDPOW simulations 
+  (issue #168, PR #179)
+* new EnsembleAnalysis: dihedrals (#190, PR #193)    
+* new EnsembleAnalysis: solvation shell (#195, PR #196)  
+* new exception config.NoSectionError to indicate missing section
+  ("protocol") in the YAML run input file (PR #187)
+* new config.NoOptionWarning when undefined options are used (with
+  default None) and POWConfigParser.get() now logs when an option is used
+  at level DEBUG (PR #187)
+
+Fixes
+
+* run.get_mdp_files() finds the full path for an MDP file and raises ValueError
+  when MDP file is not found (PR #187)
+* POWConfigParser.getpath() returns None for empty options instead of raising
+  TypeError (PR #187)
+* POWConfigParser.getlist() and getarray() return empty list or array for
+  empty options instead of raising TypeError (PR #187)
+
+
+2021-08-04    0.7.1
+orbeckst, iorga
+
+Fixes
+
+* restrict alchemlyb to <0.5.0 for Python 2 (otherwise the installation fails
+  due to an unsatisfiable pandas dependency) (#180)
+* fix failure of mdpow-solvation script "AttributeError: 'AttributeDict' object
+  has no attribute 'Gibbs'" (#180)
+* fix fep.p_transfer() only analyzing the second input Gsolv (would lead to an
+  error like "results.DeltaA does not contain 'Gibbs'") (PR #185)
+* ensure that pickle files created under Python 2 are also readable under
+  Python 3
+* documentation fixes (PR #176)
+
+
+2021-08-02    0.7.0
+orbeckst, VOD555, ALescoulie
+
+Changes
+
+* renamed package to MDPOW
+* support Python 3.7 -- 3.9 on Linux and macOS (#84)
+* tested with GROMACS 4.6.5, 2018.6, 2020.6, 2021.1 (PR #159, #164)
+* removed all generated docs from package
+* config parser MERGES user runinput.yml with the package defaults
+  (#8)
+* Configuration setting mdrun.maxthreads now also applies to energy
+  minimization with mdpow-equilibrium.py/mdpow.run() (#119)
+* Default plot option is now "none" for the mdpow-* scripts (PR #142)
+* Default estimator for mdpow analysis scripts is now alchemlyb MBAR
+  (#139, PR #142)
+* mdpow analysis scripts now default to statistical inefficiency
+  calculation (--SI) and stride=1 (#139, PR #142)
+* updated bundled CHARMM/CGENFF with charmm36-mar2019 (previously was
+  charmm36-jul2017)
+* removed deprecated -DFLEXIBLE grompp preprocessor flag from
+  em_opl.mdp template file
+* updated MDP templates (PR #155):
+  - add files for AMBER (same as OPLS) and CHARMM for em, NPT, and bar (FEP)
+    stages
+  - NOTE: explicitly set "cutoff-scheme = verlet" in all MDP files;
+    for GROMACS 4.6.5 FEP will fail with a FATAL ERROR "The Verlet cut-off scheme
+    does not (yet) support free-energy calculations with perturbed
+    atoms, only perturbed interactions." so you need to set the
+    cutoff-scheme to the value "group".
+  - disable energy group calculation to allow running on GPUs with
+    modern GROMACS versions (such as 2021)
+  - added comments regarding GROMACS bug
+    https://gitlab.com/gromacs/gromacs/-/issues/3403 that requires
+    manually increasing rlist >= solute diameter
+  - added comment regarding 'pme_order = 6' preventing PME calculation
+    on GPUs with GROMACS 2021.
+* store version information in mdpow.__version__ instead of VERSION
+  get_version() (#165)
+
+Enhancements
+
+* tested with GROMACS 4.6.5, 2018.6, 2020.6, 2021.1 (PR #159, #164)
+* tested on Linux and and macOS (PR #159, #164)
+* supported CHARMM and AMBER forcefield, including PRM parameter files
+  with the "setup.prm" parameter in the configuration file (#104)
+* supported wet-octanol mixed solvent boxtype but this only works with
+  GROMACS >= 2018 (#98)
+* support OPLS-AA TIP4PD, AMBER TIP4PEW and cyclohexane, and CHARMM TIP5P
+  and cyclohexane solvent types (#141)
+* supported forcefield options in scripts (#123)
+* supported multiple edr files input in fep.py (#132)
+* supported alchemlyb estimators (MBAR and TI) in analysis functions
+  and scripts (#133 #135)
+* boxtype and minimum distance (#30) can be set in runinput.yml and are
+  documented (#91, #88)
+* can now set fep.setup.maxwarn in config file (#113)
+
+Fixes
+
+* fixed: return fig in fep.py so plot function in scripts can access the
+  object (#129)
+* fixed: buffering kwarg was removed from openany() so code is
+  compatible with GromacsWrapper >= 0.8.0 (#107)
+* fixed: GROMACS 2020 fails with "Inconsistency in user input:
+  Could not do a restart with appending because the checkpoint file was not
+  found. Either supply the name of the right checkpoint file or do not use
+  -append": mdpow.run.runMD_or_exit() does not anymore add -append to GROMACS
+  invocation (#128)
+* fixed mdpow-pow and mdpow-pcw scripts (#138)
+* fixed template em_charmm.mdp to use standard CHARMM non-bonded parameters
+  for energy minimization (PR #155)
+
+
+2017-05-02    0.6.1
+orbeckst, iorga, ianmkenney, rhheilma
+
+* works with Gromacs 2016.x, 5.1.x, and 4.6.x (#36)
+* removed unused analysis.py and analysis/thermodynamics.py
+* supported water models: TIP4P, TIP3P, TIP5P, SPC, SPC/E, and
+  new: M24 (modified TIP3P, #46)
+* fixed sc-power can only take integer powers (#71)
+* use PyBOL for building the testing environment
+* removed run.MDrunnerSimple (#60)
+* used flexible water model (-DFLEXIBLE) for more robust energy
+  minimization
+* FEP failed with IndexError when lambdas where presented as a list
+  (#78)
+* EDR files are now output by default instead of XVG (#75)
+* fep.Gsolv.analyze() automatically converts EDR to XVG.bz2 if
+  necessary and can process the XVG/MBAR format of Gromacs 5.x
+  for TI (issue #82)
+* deprecated mdpow-ghyd script (issue #14)
+
+
+2016-06-29    0.6.0
+orbeckst, ianmkenney
+
+Code and development are now public on GitHub https://github.com/Becksteinlab/MDPOW
+
+* supported solvents: water, octanol, cyclohexane (new) (#11, #16)
+* supported water models: TIP4P, and new: TIP3P, TIP5P, SPC, SPC/E (#38)
+* FEP simulations are now done in NPT (Parrinello-Rahman barostat)
+  instead of NVT (#28)
+* can run with Gromacs BAR and/or TI
+* input file format was changed from ini to YAML (#1, #5, #6)
+* additional configuration options in the runinput.yml file (#30, #38)
+
+
+
+2011-09-06    0.5.1
+orbeckst
+
+Bug fixes and the mdpow-rebuild-simulation script to fix-up the state
+files. For details see the git log commit messages.
+
+
+2011-08-25    0.5.0
+orbeckst, iorga
+
+Fully working version with all scripts in place. Was used for the SAMPL3
+challenge. For details see the git log commit messages.
+
+
+For earlier releases see the commit messages.
