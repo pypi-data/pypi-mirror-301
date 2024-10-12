@@ -1,0 +1,7 @@
+setup.py
+akmal/__init__.py
+akmal/modul.py
+akmal.egg-info/PKG-INFO
+akmal.egg-info/SOURCES.txt
+akmal.egg-info/dependency_links.txt
+akmal.egg-info/top_level.txt

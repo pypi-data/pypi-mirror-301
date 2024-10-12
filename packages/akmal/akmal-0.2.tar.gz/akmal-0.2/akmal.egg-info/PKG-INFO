@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: akmal
+Version: 0.2
+Summary: orang tamvan
+Author: akmal
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Nama Package
+Deskripsi singkat tentang package ini, jelaskan fungsionalitas utamanya, siapa yang mungkin tertarik untuk menggunakannya, dan masalah apa yang dipecahkan oleh package ini.
+
+Fitur Utama
+Fitur 1: Penjelasan singkat fitur utama.
+Fitur 2: Penjelasan singkat fitur lainnya.
+Fitur 3: Tambahkan sebanyak mungkin sesuai kebutuhan.
+Instalasi
+Untuk menginstal package ini, Anda dapat menggunakan pip dengan perintah berikut:
+
+bash
+Salin kode
+pip install nama-package
+Jika Anda ingin menginstal versi tertentu, gunakan perintah berikut:
+
+bash
+Salin kode
+pip install nama-package==versi
+Penggunaan
+Contoh Penggunaan Sederhana
+Berikan contoh sederhana tentang bagaimana package ini dapat digunakan. Ini penting untuk membantu pengguna memahami cara kerja package Anda secara langsung.
+
+python
+Salin kode
+
+# Impor package
+
+from nama_package import modul
+
+# Contoh fungsi yang digunakan
+
+hasil = modul.fungsi_utama(argumen)
+print(hasil)
+Fungsi-Fungsi Utama
+fungsi_utama(argumen1, argumen2)
+Deskripsi singkat fungsi utama.
+
+argumen1: Penjelasan argumen pertama.
+argumen2: Penjelasan argumen kedua.
+python
+Salin kode
+modul.fungsi_utama('contoh_input')
+Output: Jelaskan outputnya di sini.
+
+Fungsi Lainnya
+Berikan penjelasan fungsi lainnya dengan format yang sama seperti di atas.
+
+Modul dalam Package
+Jika package Anda terdiri dari beberapa modul, Anda bisa menambahkan bagian yang menjelaskan setiap modul secara ringkas.
+
+modul1: Deskripsi singkat.
+modul2: Deskripsi singkat.
+Changelog
+Berikan informasi tentang perubahan yang terjadi di setiap versi package.
+
+Versi 1.0.0: Rilis pertama dengan fitur utama A, B, C.
+Versi 1.1.0: Penambahan fitur X dan perbaikan bug Y.
+Kontribusi
+Jika Anda ingin mengundang kontribusi dari pengembang lain, Anda bisa menambahkan bagian ini untuk memberi tahu mereka cara berkontribusi.
+
+Fork repositori di GitHub.
+Buat branch fitur baru (git checkout -b fitur-baru).
+Commit perubahan (git commit -m 'Tambahkan fitur baru').
+Push ke branch (git push origin fitur-baru).
+Buat pull request.
+Lisensi
+Sebutkan jenis lisensi yang digunakan oleh package ini, misalnya:
+
+Salin kode
+MIT License
