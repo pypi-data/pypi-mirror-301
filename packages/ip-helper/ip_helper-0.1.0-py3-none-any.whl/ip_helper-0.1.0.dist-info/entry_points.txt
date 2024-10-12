@@ -1,0 +1,3 @@
+[console_scripts]
+ip-helper=ip_helper.main:main
+
