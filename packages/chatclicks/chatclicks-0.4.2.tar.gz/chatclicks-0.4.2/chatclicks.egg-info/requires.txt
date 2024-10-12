@@ -1,0 +1,5 @@
+python-socketio
+scikit-learn
+numpy
+aiohttp
+asyncio
