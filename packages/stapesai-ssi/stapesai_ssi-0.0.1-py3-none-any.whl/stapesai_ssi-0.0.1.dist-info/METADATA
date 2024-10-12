@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: stapesai-ssi
+Version: 0.0.1
+Summary: This project builds upon Whisper and VAD systems to provide plug and play solutions (FastAPI router) that can be easily included in any AI Assistant type project to have Streaming ASR in their application.
+License: MIT
+Author: Devasheesh Mishra
+Author-email: devasheeshmishra4@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorlog (>=6.8.2,<7.0.0)
+Requires-Dist: fastapi (>=0.115.0,<0.116.0)
+Requires-Dist: numpy (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.5.2,<3.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: torch (>=2.4.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+@mayank https://www.markepear.com/blog/github-search-engine-optimization
+
+https://www.codemotion.com/magazine/dev-life/github-project/
+
+usecase 1 - use in existing reposall models will be loaded from the existing repo and then the server will be started
+
+```bash
+pip install ssi[fastapi]
+```
+
+```python
+from fastapi import FastAPI
+from stapesai_ssi.fastapi import StreamingWSRouter
+from stapesai_ssi.types import StreamingDataChunk, NewClientConnected
+
+app = FastAPI()
+
+def asr_callback(data: StreamingDataChunk):
+    print(data)
+
+def new_client_callback(data: NewClientConnected):
+    print(data)
+
+streaming_ws_router = StreamingWSRouter(
+    asr_callback=asr_callback,
+    new_client_callback=new_client_callback,
+    endpoint="/ws/transcribe"
+)
+
+app.include_router(streaming_ws_router)
+```
+
+usecase 2 - deploy as a docker server and then use in existing repos
+here SSI server is deployed as a docker container and then ssi_client can be used in existing repos
+
+```bash
+pip install ssi[client]
+```
+
+```python
+from fastapi import FastAPI
+from stapesai_ssi.clients import StreamingClient
+from stapesai_ssi.types import StreamingDataChunk
+
+app = FastAPI()
+
+def callback(data: StreamingDataChunk):
+    print(data)
+
+ssi_client = StreamingClient(
+    server_host="localhost",
+    server_port=8000,
+    callback=callback,
+)
+
+app.include_router(ssi_client.fastapi_proxy_router)
+```
+
+usecase 3 - CLI (for local system as well as simple socket server)
+bc dimak nhi chal rha abhi
+
