@@ -1,0 +1,7 @@
+README.md
+setup.py
+riscvflow/version.py
+riscvflow.egg-info/PKG-INFO
+riscvflow.egg-info/SOURCES.txt
+riscvflow.egg-info/dependency_links.txt
+riscvflow.egg-info/top_level.txt
