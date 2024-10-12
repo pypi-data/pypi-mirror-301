@@ -1,0 +1,264 @@
+#!python
+
+"""
+threefive command line SCTE35 decoder.
+
+"""
+
+
+import sys
+from time import sleep
+from threefive import Cue, Stream, print2, decode, version
+from threefive.sixfix import sixfix
+from new_reader import reader
+import cProfile
+
+REV = "\033[7m"
+NORM = "\033[27m\033[0m"
+WHITE = "\033[0m"
+GREEN = "\033[92m"
+
+
+def xml_out(cue):
+    print2(cue.xml())
+
+
+class SupaStream(Stream):
+
+    def _parse_scte35(self, pkt, pid):
+        print2(pkt)
+        super()._parse_scte35(pkt, pid)
+
+
+def mk_sidecar(cue):
+    """
+    mk_sidecar generates a sidecar file with the SCTE-35 Cues
+    """
+    pts = 0.0
+    with open("sidecar.txt", "a") as sidecar:
+        cue.show()
+        if cue.packet_data.pts:
+            pts = cue.packet_data.pts
+        data = f"{pts},{cue.encode()}\n"
+        sidecar.write(data)
+
+
+HELP = f"""
+{REV}        Parse                  {NORM}
+{GREEN}    base64: {NORM}\tthreefive '/DAWAAAAAAAAAP/wBQb+AKmKxwAACzuu2Q=='
+{GREEN}    hex: {NORM}\tthreefive '0xfc301600000000000000fff00506fe00a98ac700000b3baed9'
+{GREEN}    files: {NORM}\tthreefive myvideo.ts
+{GREEN}    stdin: {NORM}\tcat myvideo.ts | threefive
+{GREEN}    http(s): {NORM}\tthreefive https://futzu.com/xaa.ts
+{GREEN}    udp: {NORM}\tthreefive udp://127.0.0.1:3535
+{GREEN}    multicast:{NORM}\tthreefive udp://@235.35.3.5:3535
+   
+{REV}        Keywords               {NORM}
+
+   {REV}  sixfix  {NORM}{GREEN}\tFix SCTE-35 data mangled by ffmpeg:{NORM} threefive fixsix video.ts
+   
+   {REV}  xml     {NORM} {GREEN}\tParse a Cue string or mpegts stream and output xml {NORM}
+        {GREEN}\tParse base64 {NORM} threefive xml'/DAWAAAAAAAAAP/wBQb+AKmKxwAACzuu2Q=='
+        {GREEN}\tParse a Stream {NORM} threefive xml video.ts     
+   {REV} packets {NORM}{GREEN}\tPrint raw SCTE-35 packets from mpegts video:{NORM} threefive packets video.ts
+   
+   {REV} show    {NORM}{GREEN}\tProbe mpegts video:{NORM}     threefive show video.ts
+   
+   {REV} pts     {NORM} {GREEN}\tPrint PTS from mpegts video{NORM}    threefive pts video.ts
+   
+   {REV} proxy   {NORM} {GREEN}\tParse a stream, write raw video to stdout {NORM} threefive proxy https://example.com/video.ts
+   
+   {REV} sidecar {NORM}{GREEN}\tParse a stream, write pts,write SCTE-35 Cues to sidecar.txt:{NORM}  threefive sidecar https://example.com/video.ts
+   
+   {REV} encode  {NORM}{GREEN}\tLoad JSON, XML, Base64 or Hex and encode to JSON,XML,Base64,Hex,Int or Bytes
+            {GREEN}\tLoad JSON to base64:{NORM}  cat json.file | threefive encode
+            {GREEN}\tLoad JSON to hex:{NORM}  cat json.file | threefive encode hex
+            {GREEN}\tLoad xml to hex:{NORM}  cat xml.xml | threefive encode hex
+            {GREEN}\tLoad JSON to int:{NORM}  cat json.file | threefive encode int
+            {GREEN}\tLoad JSON to bytes:{NORM}  cat json.file | threefive encode bytes
+            {GREEN}\tLoad JSON to xml:{NORM}  cat json.file | threefive encode xml
+            {GREEN}\tLoad xml to json:{NORM}  cat xml.xml | threefive encode json
+            {GREEN}\tLoad xml to hex:{NORM} cat xml.xml | threefive encode hex{WHITE}
+
+   {REV} version {NORM}{GREEN}\tShow  version:{NORM} threefive version
+
+   {REV} Help    {NORM} {GREEN}\tHelp: {NORM}  threefive help
+"""
+
+
+def print_help():
+    """
+    print_help checks sys.argv for the word help
+    and displays the help if found
+    """
+    print2(HELP)
+    sys.exit()
+
+
+def print_version():
+    """
+    version_chk checks for the version keyword.
+
+    """
+    print2(f"{version}")
+    sys.exit()
+
+
+def json_load():
+    cmdlist = ["encode", "hex", "int", "bytes", "xml", "json"]
+    json = False
+    arglist = [arg for arg in sys.argv[1:] if arg not in cmdlist]
+    if not arglist:
+        with reader(sys.stdin.buffer) as stuff:
+            json = stuff.read().decode()
+            arglist.append(json)
+    for arg in arglist:
+        try:
+            cue = Cue()
+            cue.load(arg)
+        except:
+            try:
+                cue = Cue(arg)
+                cue.decode()
+            except:
+                print2("threefive accepts json, xml, base64, or hex as input")
+                return False
+        if "hex" in sys.argv:
+            print2(cue.encode_as_hex())
+            return True
+        if "int" in sys.argv:
+            print2(cue.encode_as_int())
+            return True
+        if "bytes" in sys.argv:
+            cue.encode()
+            print2(cue.bites)
+            return True
+        if "xml" in sys.argv:
+            cue.encode()
+            print2(cue.xml())
+            return True
+        if "json" in sys.argv:
+            _ = cue.encode()
+            print2(cue.get_json())
+            return True
+        return True
+
+
+print_map = {
+    "help": print_help,
+    "version": print_version,
+    "encode": json_load,
+}
+
+
+#   #   #
+
+
+def no_op(cue):
+    """
+    no_op is just a dummy func to pass to Stream.decode()
+    to suppress output.
+    """
+    return cue
+
+
+def packet_chk(arg):
+    """
+    packet_chk checks for the packet keyword
+    and displays SCTE-35 packets if present.
+    """
+    supa = SupaStream(arg)
+    supa.decode()
+
+
+def proxy_chk(arg):
+    """
+    proxy_chk checks for the proxy keyword
+    and proxies the stream to stdout if present.
+    proxy_chk also writes pts,cue pairs to sidecar.txt
+    """
+    strm = Stream(arg)
+    strm.proxy(func=mk_sidecar)
+
+
+def pts_chk(arg):
+    strm = Stream(arg)
+    strm.show_pts()
+
+
+def show_chk(arg):
+    """
+    show_chk checks for the show keyword
+    and displays the streams if present.
+    """
+    strm = Stream(arg)
+    strm.show()
+
+
+def sidecar_chk(arg):
+    """
+    sidecar_chk checks for the sidecar keyword and
+    generates a sidecar file if present.
+    """
+    strm = Stream(arg)
+    strm.decode(func=mk_sidecar)
+
+
+def to_xml(arg):
+    try:
+        # Mpegts Video
+        strm = Stream(arg)
+        strm.decode(func=xml_out)
+        return True
+
+    except:
+        try:
+            cue = Cue(arg)
+            cue.decode()
+            print2(cue.xml())
+            return True
+        except:
+            return False
+
+
+func_map = {
+    "pts": pts_chk,
+    "show": show_chk,
+    "packets": packet_chk,
+    "proxy": proxy_chk,
+    "sidecar": sidecar_chk,
+    "xml": to_xml,
+    "sixfix": sixfix,
+}
+
+
+def chk_print_map():
+    """
+    chk_print_map checks for print_map.keys() in sys.argv
+    """
+    for key in print_map.keys():
+        if key in sys.argv:
+            print_map[key]()
+            sys.exit()
+
+
+def chk_func_map():
+    """
+    chk_func_map checks for func_map.keys() in sys.argv
+    """
+    for key in func_map.keys():
+        if key in sys.argv:
+            sys.argv.remove(key)
+            for arg in sys.argv[1:]:
+                func_map[key](arg)
+            sys.exit()
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        chk_print_map()
+        chk_func_map()
+        for arg in sys.argv[1:]:
+            decode(arg)
+    else:
+        decode(sys.stdin.buffer)
