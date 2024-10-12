@@ -1,0 +1,15 @@
+hoyo_daily_logins_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hoyo_daily_logins_helper/__main__.py,sha256=bYTR9AKcYfyF_BMCr0M2Rp_n685rLKpD09nJfbWXhGk,55
+hoyo_daily_logins_helper/_version.py,sha256=Z8vbtAXrCjn6j4yT6o78MiKYxaxreIs6blXiTvm3G7I,80
+hoyo_daily_logins_helper/consts.py,sha256=FqTt0ZiA0_3IjhAbYUH3YDVjQ-bEsFs-XpgQQnvluzY,94
+hoyo_daily_logins_helper/games.py,sha256=jmkTUmeSjZv9OVwWilFuWnKSqfoZg3z_jjWfi3DXF3c,8515
+hoyo_daily_logins_helper/http.py,sha256=emfBBWKMgEKJpqiRk_T1z-w39I5CC5IquQkPSCv5qjE,2034
+hoyo_daily_logins_helper/main.py,sha256=0Vc4kw_DlN2cIRqk96SuVq7alm8_QIKIyj0kt5BBAsc,7239
+hoyo_daily_logins_helper/notifications.py,sha256=Oxbb7RBv5bPo43lnSuWzGtl7n1xunAP6UhxYJO1w_j4,4072
+hoyo_daily_logins_helper/scheduler.py,sha256=-sq-7JTAegLRHAgEujIneeNbnaMxwMkzGZHi2uiCkaA,3834
+hoyo_daily_logins_helper/utils.py,sha256=LH4mlBT3MdqRgIiKNFCQZFveY-xrWItfv_u6VLnS_X4,100
+hoyo_daily_logins_helper-2.9.1.dist-info/LICENSE,sha256=mYluISwUlRhyOocFBuQndyF5ZKqTzDtalcVTCKd34gE,34227
+hoyo_daily_logins_helper-2.9.1.dist-info/METADATA,sha256=H8770Y7X08iJUWQaOOqP2ayCfU5ErEUUvVOV3yQszXQ,7280
+hoyo_daily_logins_helper-2.9.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hoyo_daily_logins_helper-2.9.1.dist-info/entry_points.txt,sha256=HKVYDN3rBeGtOfurUQtd9zlRhZ1SnqpoVCu6mynemA4,79
+hoyo_daily_logins_helper-2.9.1.dist-info/RECORD,,
