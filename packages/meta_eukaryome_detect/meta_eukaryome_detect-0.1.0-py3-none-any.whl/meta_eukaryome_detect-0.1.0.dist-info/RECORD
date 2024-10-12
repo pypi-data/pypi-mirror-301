@@ -1,0 +1,11 @@
+meta_eukaryome_detect/__init__.py,sha256=Qh3-tkVDTMJ-z5tEqq8CXiBoGVcgCYPvKQaUTF-y5xY,145
+meta_eukaryome_detect/create_ngless_template.py,sha256=AubZmPjmEySiUgdtbqxUQ7tPTlw1BWKfAtd9ZWCZowY,1838
+meta_eukaryome_detect/depth_summary.py,sha256=dsF77dE5Ie77JcOpJMlMw80NUeMOF9KMNe77Y_nDbp4,3276
+meta_eukaryome_detect/external_tools.py,sha256=wMtrnTV_0XG6lFNi_pLJ81MUDd6_5U5bLFt7ieYcZ_w,2419
+meta_eukaryome_detect/meta_eukaryome_database.py,sha256=PHoT9RTA-T4GKOBIGxX2_A5OXBmgKbUBWwbgmxkIbvg,3798
+meta_eukaryome_detect/meta_eukaryome_detect.py,sha256=953HzFjY6HGBIHDGN0B8hL1JZln46RUmHyiHloX5-IE,9503
+meta_eukaryome_detect-0.1.0.dist-info/LICENSE,sha256=J-i0Kso2wMS7ScD4uygnfAUC9vUiYSgzb0-L0cHThJI,1072
+meta_eukaryome_detect-0.1.0.dist-info/METADATA,sha256=nD4yNblcbGd7P2X4sry4wWcYmR9pSapfb8NiD6GupFo,2771
+meta_eukaryome_detect-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+meta_eukaryome_detect-0.1.0.dist-info/entry_points.txt,sha256=xJ0xC3f4lNqP2TqlEFc64i7vN6LdlG6nn1hcsK5RKdc,90
+meta_eukaryome_detect-0.1.0.dist-info/RECORD,,

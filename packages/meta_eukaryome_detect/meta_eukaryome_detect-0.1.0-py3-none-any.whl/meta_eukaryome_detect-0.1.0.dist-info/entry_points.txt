@@ -1,0 +1,3 @@
+[console_scripts]
+meta-eukaryome-detect=meta_eukaryome_detect.meta_eukaryome_detect:main
+
