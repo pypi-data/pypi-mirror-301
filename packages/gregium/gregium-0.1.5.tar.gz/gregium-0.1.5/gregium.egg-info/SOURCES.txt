@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+gregium/__init__.py
+gregium.egg-info/PKG-INFO
+gregium.egg-info/SOURCES.txt
+gregium.egg-info/dependency_links.txt
+gregium.egg-info/requires.txt
+gregium.egg-info/top_level.txt
+gregium/editor/SpaceMono-Bold.ttf
+gregium/editor/SpaceMono-BoldItalic.ttf
+gregium/editor/SpaceMono-Italic.ttf
+gregium/editor/SpaceMono-Regular.ttf
+gregium/editor/__init__.py
+gregium/editor/editor.grg
+gregium/env/__init__.py

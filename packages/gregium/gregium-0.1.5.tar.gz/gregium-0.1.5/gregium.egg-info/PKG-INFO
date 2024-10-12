@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gregium
+Version: 0.1.5
+Summary: A simple package with easy features for using pygame
+Home-page: https://github.com/LavaTigerUnicrn/Gregium
+Download-URL: https://github.com/LavaTigerUnicrn/Gregium/archive/refs/tags/v0.1.5.tar.gz
+Author: LavaTigerUnicrn
+Author-email: nolanlance711@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE.txt
+Requires-Dist: pygame-ce
+Requires-Dist: pynput
+
+README.md
