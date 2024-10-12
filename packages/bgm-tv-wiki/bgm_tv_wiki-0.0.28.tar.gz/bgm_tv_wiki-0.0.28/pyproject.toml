@@ -1,0 +1,112 @@
+[build-system]
+requires = ["hatchling>=1.20.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bgm-tv-wiki"
+version = "0.0.28"
+description = "bgm.tv wiki syntax parser"
+authors = [
+    { name = "trim21", email = "trim21me@gmail.com" },
+]
+readme = 'readme.md'
+license = { text = 'MIT' }
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3 :: Only',
+]
+
+requires-python = "~=3.10"
+
+dependencies = [
+    'typing-extensions>=4.7.0'
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+    "pytest-github-actions-annotate-failures==0.2.0",
+    "coverage==7.6.1",
+    'pre-commit==3.8.0; python_version >= "3.9"',
+    'mypy==1.11.2; python_version >= "3.9"',
+    'pyyaml>=6,<7',
+    'types-PyYAML'
+]
+
+[project.urls]
+
+[tool.hatch.build.targets.sdist]
+sources = ['src/']
+include = ['src/']
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bgm_tv_wiki"]
+
+[tool.hatch.build.targets.wheel.hooks.cython]
+enable-by-default = false
+dependencies = ["hatch-cython<1"]
+
+[tool.hatch.build.targets.wheel.hooks.cython.options]
+directives = { boundscheck = false, nonecheck = false, language_level = 3, binding = true }
+src = "bgm_tv_wiki"
+
+[tool.cibuildwheel]
+before-build = "python cleanup.py"
+skip = "pp* *musllinux*"
+
+[tool.cibuildwheel.environment]
+HATCH_BUILD_HOOKS_ENABLE = "1"
+
+[tool.pytest.ini_options]
+addopts = '-rav -Werror'
+
+[tool.mypy]
+python_version = "3.10"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+warn_return_any = false
+warn_unused_configs = true
+show_error_codes = true
+
+[tool.black]
+target-version = ['py310']
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.lint]
+extend-select = ['UP', 'I']
+
+ignore = [
+    'PLW2901',
+    'PLR0911',
+    'INP001',
+    'N806',
+    'N802',
+    'N803',
+    'E501',
+    'BLE001',
+    'RUF002',
+    'S324',
+    'S301',
+    'S314',
+    'S101',
+    'N815',
+    'S104',
+    'C901',
+    'PLR0913',
+    'RUF001',
+    'SIM108',
+    'TCH003',
+    'RUF003',
+    'RET504',
+    'TRY300',
+    'TRY003',
+    'TRY201',
+    'TRY301',
+    'PLR0912',
+    'PLR0915',
+    'PLR2004',
+    'PGH003',
+]
