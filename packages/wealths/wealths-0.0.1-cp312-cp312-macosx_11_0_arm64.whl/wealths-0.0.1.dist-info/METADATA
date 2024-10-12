@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: wealths
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: polars ==1.9.0
+Requires-Python: >=3.8
