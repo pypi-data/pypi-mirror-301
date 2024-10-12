@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+hayatapps-pa-proto/__init__.py
+hayatapps_pa_proto.egg-info/PKG-INFO
+hayatapps_pa_proto.egg-info/SOURCES.txt
+hayatapps_pa_proto.egg-info/dependency_links.txt
+hayatapps_pa_proto.egg-info/top_level.txt
