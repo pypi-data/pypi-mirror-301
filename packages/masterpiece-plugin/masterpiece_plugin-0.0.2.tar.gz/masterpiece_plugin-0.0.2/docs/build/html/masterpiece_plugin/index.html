@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Masterpiece Plugin &#8212; masterpiece_plugin  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="../_static/masterpiece.css?v=7a3aeb84" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="TODOs for MasterPiece" href="../TODO.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          masterpiece_plugin</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">masterpiece_plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">MIT License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../TODO.html">TODOs for MasterPiece</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Masterpiece Plugin</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Masterpiece Plugin</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo"><code class="docutils literal notranslate"><span class="pre">Foo</span></code></a><ul>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.app_name"><code class="docutils literal notranslate"><span class="pre">Foo.app_name()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.classattrs_from_dict"><code class="docutils literal notranslate"><span class="pre">Foo.classattrs_from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.classattrs_to_dict"><code class="docutils literal notranslate"><span class="pre">Foo.classattrs_to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.configure_args"><code class="docutils literal notranslate"><span class="pre">Foo.configure_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.copy"><code class="docutils literal notranslate"><span class="pre">Foo.copy()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.debug"><code class="docutils literal notranslate"><span class="pre">Foo.debug()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.deserialize_from_json"><code class="docutils literal notranslate"><span class="pre">Foo.deserialize_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.elapsed_seconds_in_day"><code class="docutils literal notranslate"><span class="pre">Foo.elapsed_seconds_in_day()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.elapsed_seconds_in_hour"><code class="docutils literal notranslate"><span class="pre">Foo.elapsed_seconds_in_hour()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.epoc2utc"><code class="docutils literal notranslate"><span class="pre">Foo.epoc2utc()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.error"><code class="docutils literal notranslate"><span class="pre">Foo.error()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.find_class"><code class="docutils literal notranslate"><span class="pre">Foo.find_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.from_dict"><code class="docutils literal notranslate"><span class="pre">Foo.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_app_name"><code class="docutils literal notranslate"><span class="pre">Foo.get_app_name()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_class_id"><code class="docutils literal notranslate"><span class="pre">Foo.get_class_id()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_json_file"><code class="docutils literal notranslate"><span class="pre">Foo.get_json_file()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_registered_classes"><code class="docutils literal notranslate"><span class="pre">Foo.get_registered_classes()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.has_class_method_directly"><code class="docutils literal notranslate"><span class="pre">Foo.has_class_method_directly()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.info"><code class="docutils literal notranslate"><span class="pre">Foo.info()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.initialize_class"><code class="docutils literal notranslate"><span class="pre">Foo.initialize_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.install"><code class="docutils literal notranslate"><span class="pre">Foo.install()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.instantiate"><code class="docutils literal notranslate"><span class="pre">Foo.instantiate()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.instantiate_with_param"><code class="docutils literal notranslate"><span class="pre">Foo.instantiate_with_param()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.is_abstract"><code class="docutils literal notranslate"><span class="pre">Foo.is_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.is_time_between"><code class="docutils literal notranslate"><span class="pre">Foo.is_time_between()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.load_from_json"><code class="docutils literal notranslate"><span class="pre">Foo.load_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.parse_args"><code class="docutils literal notranslate"><span class="pre">Foo.parse_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.parse_initial_args"><code class="docutils literal notranslate"><span class="pre">Foo.parse_initial_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.print"><code class="docutils literal notranslate"><span class="pre">Foo.print()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.quantize"><code class="docutils literal notranslate"><span class="pre">Foo.quantize()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.register"><code class="docutils literal notranslate"><span class="pre">Foo.register()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.register_args"><code class="docutils literal notranslate"><span class="pre">Foo.register_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.register_class"><code class="docutils literal notranslate"><span class="pre">Foo.register_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.run"><code class="docutils literal notranslate"><span class="pre">Foo.run()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.run_forever"><code class="docutils literal notranslate"><span class="pre">Foo.run_forever()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.save_to_json"><code class="docutils literal notranslate"><span class="pre">Foo.save_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.serialize_to_json"><code class="docutils literal notranslate"><span class="pre">Foo.serialize_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.set_log"><code class="docutils literal notranslate"><span class="pre">Foo.set_log()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.shutdown"><code class="docutils literal notranslate"><span class="pre">Foo.shutdown()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.timestamp"><code class="docutils literal notranslate"><span class="pre">Foo.timestamp()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.timestamp_hour"><code class="docutils literal notranslate"><span class="pre">Foo.timestamp_hour()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.timestampstr"><code class="docutils literal notranslate"><span class="pre">Foo.timestampstr()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.to_dict"><code class="docutils literal notranslate"><span class="pre">Foo.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.warning"><code class="docutils literal notranslate"><span class="pre">Foo.warning()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../TODO.html" title="Previous Chapter: TODOs for MasterPiece"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; TODOs for MasterPiece</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/masterpiece_plugin/index.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Masterpiece Plugin</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo"><code class="docutils literal notranslate"><span class="pre">Foo</span></code></a><ul>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.app_name"><code class="docutils literal notranslate"><span class="pre">Foo.app_name()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.classattrs_from_dict"><code class="docutils literal notranslate"><span class="pre">Foo.classattrs_from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.classattrs_to_dict"><code class="docutils literal notranslate"><span class="pre">Foo.classattrs_to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.configure_args"><code class="docutils literal notranslate"><span class="pre">Foo.configure_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.copy"><code class="docutils literal notranslate"><span class="pre">Foo.copy()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.debug"><code class="docutils literal notranslate"><span class="pre">Foo.debug()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.deserialize_from_json"><code class="docutils literal notranslate"><span class="pre">Foo.deserialize_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.elapsed_seconds_in_day"><code class="docutils literal notranslate"><span class="pre">Foo.elapsed_seconds_in_day()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.elapsed_seconds_in_hour"><code class="docutils literal notranslate"><span class="pre">Foo.elapsed_seconds_in_hour()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.epoc2utc"><code class="docutils literal notranslate"><span class="pre">Foo.epoc2utc()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.error"><code class="docutils literal notranslate"><span class="pre">Foo.error()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.find_class"><code class="docutils literal notranslate"><span class="pre">Foo.find_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.from_dict"><code class="docutils literal notranslate"><span class="pre">Foo.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_app_name"><code class="docutils literal notranslate"><span class="pre">Foo.get_app_name()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_class_id"><code class="docutils literal notranslate"><span class="pre">Foo.get_class_id()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_json_file"><code class="docutils literal notranslate"><span class="pre">Foo.get_json_file()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.get_registered_classes"><code class="docutils literal notranslate"><span class="pre">Foo.get_registered_classes()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.has_class_method_directly"><code class="docutils literal notranslate"><span class="pre">Foo.has_class_method_directly()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.info"><code class="docutils literal notranslate"><span class="pre">Foo.info()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.initialize_class"><code class="docutils literal notranslate"><span class="pre">Foo.initialize_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.install"><code class="docutils literal notranslate"><span class="pre">Foo.install()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.instantiate"><code class="docutils literal notranslate"><span class="pre">Foo.instantiate()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.instantiate_with_param"><code class="docutils literal notranslate"><span class="pre">Foo.instantiate_with_param()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.is_abstract"><code class="docutils literal notranslate"><span class="pre">Foo.is_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.is_time_between"><code class="docutils literal notranslate"><span class="pre">Foo.is_time_between()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.load_from_json"><code class="docutils literal notranslate"><span class="pre">Foo.load_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.parse_args"><code class="docutils literal notranslate"><span class="pre">Foo.parse_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.parse_initial_args"><code class="docutils literal notranslate"><span class="pre">Foo.parse_initial_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.print"><code class="docutils literal notranslate"><span class="pre">Foo.print()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.quantize"><code class="docutils literal notranslate"><span class="pre">Foo.quantize()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.register"><code class="docutils literal notranslate"><span class="pre">Foo.register()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.register_args"><code class="docutils literal notranslate"><span class="pre">Foo.register_args()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.register_class"><code class="docutils literal notranslate"><span class="pre">Foo.register_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.run"><code class="docutils literal notranslate"><span class="pre">Foo.run()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.run_forever"><code class="docutils literal notranslate"><span class="pre">Foo.run_forever()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.save_to_json"><code class="docutils literal notranslate"><span class="pre">Foo.save_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.serialize_to_json"><code class="docutils literal notranslate"><span class="pre">Foo.serialize_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.set_log"><code class="docutils literal notranslate"><span class="pre">Foo.set_log()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.shutdown"><code class="docutils literal notranslate"><span class="pre">Foo.shutdown()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.timestamp"><code class="docutils literal notranslate"><span class="pre">Foo.timestamp()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.timestamp_hour"><code class="docutils literal notranslate"><span class="pre">Foo.timestamp_hour()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.timestampstr"><code class="docutils literal notranslate"><span class="pre">Foo.timestampstr()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.to_dict"><code class="docutils literal notranslate"><span class="pre">Foo.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_plugin.Foo.warning"><code class="docutils literal notranslate"><span class="pre">Foo.warning()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="../TODO.html" title="Previous Chapter: TODOs for MasterPiece"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; TODOs for MasterPiece</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../_sources/masterpiece_plugin/index.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <section id="module-masterpiece_plugin">
+<span id="masterpiece-plugin"></span><h1>Masterpiece Plugin<a class="headerlink" href="#module-masterpiece_plugin" title="Link to this heading">¶</a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
+<p>A simple demonstration plugin designed to extend <cite>masterpiece</cite> applications.</p>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masterpiece_plugin.</span></span><span class="sig-name descname"><span class="pre">Foo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'noname'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'foo'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_plugin/foo.html#Foo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_plugin.Foo" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Plugin</span></code></p>
+<p>An object with a description.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.app_name">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">app_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.app_name" title="Link to this definition">¶</a></dt>
+<dd><p>Set application name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – application name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.classattrs_from_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">classattrs_from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.classattrs_from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Set class attributes from a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.classattrs_to_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">classattrs_to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.classattrs_to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert class attributes to a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.configure_args">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">configure_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.configure_args" title="Link to this definition">¶</a></dt>
+<dd><p>Register startup arguments to be parsed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<em>argparse.ArgumentParser</em>) – parser to add the startup arguments.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.copy" title="Link to this definition">¶</a></dt>
+<dd><p>Create and return a copy of the current object.</p>
+<p>This method serializes the current object to a dictionary using the <cite>to_dict</cite> method,
+creates a new instance of the object’s class, and populates it with the serialized data
+using the <cite>from_dict</cite> method.</p>
+<p>This method uses class identifier based instantiation (see factory method pattern) to create a new instance
+of the object, and ‘to_dict’ and ‘from_dict’  methods to initialize object’s state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MasterPiece</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new instance of the object’s class with the same state as the original object.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">clone_of_john</span> <span class="o">=</span> <span class="n">john</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.debug" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given debug message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.deserialize_from_json">
+<span class="sig-name descname"><span class="pre">deserialize_from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.deserialize_from_json" title="Link to this definition">¶</a></dt>
+<dd><p>Load  attributes from the given JSON file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.elapsed_seconds_in_day">
+<span class="sig-name descname"><span class="pre">elapsed_seconds_in_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts_utc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.elapsed_seconds_in_day" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch the elapsed seconds since the be given time stamp ‘ts_utc’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>elapsed second today</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.elapsed_seconds_in_hour">
+<span class="sig-name descname"><span class="pre">elapsed_seconds_in_hour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts_utc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.elapsed_seconds_in_hour" title="Link to this definition">¶</a></dt>
+<dd><p>Given timestamp in UTC, Compute elapsed seconds within an hour</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ts</strong> (<em>float</em>) – seconds since UTC epoch</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>_description_</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.epoc2utc">
+<span class="sig-name descname"><span class="pre">epoc2utc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">epoch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.epoc2utc" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the given epoch time to UTC time string. All time
+coordinates are represented in UTC time. This allows the time
+coordinate to be mapped to any local time representation without
+ambiguity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epoch</strong> (<em>float</em>) – timestamp in UTC time</p></li>
+<li><p><strong>rc</strong> (<em>str</em>) – time string describing date, time and time zone e.g 2024-07-08T12:10:22Z</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>UTC time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.error">
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.error" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given error message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.find_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.find_class" title="Link to this definition">¶</a></dt>
+<dd><p>Given class identifier find the registered class. If no class with
+the give identifier exists return None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>class_id</strong> (<em>int</em>) – class identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>class or null if not registered</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (obj)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.from_dict">
+<span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_plugin/foo.html#Foo.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_plugin.Foo.from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Update instance attributes from a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.get_app_name">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_app_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.get_app_name" title="Link to this definition">¶</a></dt>
+<dd><p>Get application name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>application name</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>name (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.get_class_id">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_class_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.get_class_id" title="Link to this definition">¶</a></dt>
+<dd><p>Return the class id of the class. Each class has an unique
+identifier that can be used for instantiating the class via
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">Object.instantiate()</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<em>class</em>) – class</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>id (int) unique class identifier through which the class can be instantiated by factory method pattern.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.get_json_file">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_json_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.get_json_file" title="Link to this definition">¶</a></dt>
+<dd><p>Generate the JSON file name based on the class name.</p>
+<p>The file is created into users home folder.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.get_registered_classes">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_registered_classes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.get_registered_classes" title="Link to this definition">¶</a></dt>
+<dd><p>Get the dictionary holding the registered class identifiers and
+the corresponding classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dictionary of class identifier - class pairs</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.has_class_method_directly">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_class_method_directly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.has_class_method_directly" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the method is in the class’s own dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.info">
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.info" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given information message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.initialize_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">initialize_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">load_class_attrs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.initialize_class" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize the class for instantiation. Initializes the class identifier. Initialize public class
+attributes from the class-specific configuration files, unless disabled with the <cite>load_class_attrs</cite> parameter.
+Call the <cite>register()</cite> method of the class to let each class do custom initializations.
+Set up <cite>atexit</cite> callback to generate class-specific initialization files if they don’t exist already.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>load_class_attrs</strong> (<em>bool</em><em>, </em><em>optional</em>) – If true, then attempts to initialize class attributes
+from the class-specific configuration files. Defaults to True.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Returns true if the class was initialized. False implies the class is already initialized,</dt><dd><p>in which case the method call has no effect.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.install">
+<span class="sig-name descname"><span class="pre">install</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_plugin/foo.html#Foo.install"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_plugin.Foo.install" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.instantiate">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">instantiate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.instantiate" title="Link to this definition">¶</a></dt>
+<dd><p>Create an instance of the class corresponding to the given class identifier.
+This method implements the factory method pattern, which is essential for a plugin architecture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>class_id</strong> (<em>int</em>) – Identifier of the class to instantiate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the class corresponding to the given class identifier.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.instantiate_with_param">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">instantiate_with_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.instantiate_with_param" title="Link to this definition">¶</a></dt>
+<dd><p>Given class identifier and one constructor argument create the
+corresponding object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_id</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – class identifier</p></li>
+<li><p><strong>param</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span>) – class specific constructor parameter</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>instance of the given class.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.is_abstract">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_abstract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.is_abstract" title="Link to this definition">¶</a></dt>
+<dd><p>Check whether the class is abstract or real. Override in the derived
+sub-classes. The default is False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True (bool) if abstract</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.is_time_between">
+<span class="sig-name descname"><span class="pre">is_time_between</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.is_time_between" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the given time is within the given time line. All
+timestamps must be in UTC time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>begin_time</strong> (<em>timestamp</em>) – beginning of the timeline</p></li>
+<li><p><strong>end_time</strong> (<em>timestamp</em>) – end of the timeline</p></li>
+<li><p><strong>check_time</strong> (<em>timestamp</em>) – time to be checked</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if within the timeline</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>rc (bool)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.load_from_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_from_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.load_from_json" title="Link to this definition">¶</a></dt>
+<dd><p>Load class attributes from a JSON file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.parse_args">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.parse_args" title="Link to this definition">¶</a></dt>
+<dd><p>Parse registered startup arguments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<em>argparse.ArgumentParser</em>) – parser to add the startup arguments.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.parse_initial_args">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_initial_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.parse_initial_args" title="Link to this definition">¶</a></dt>
+<dd><p>Parse application name and configuration name  arguments. Note that argument parsing
+is two stage process. This method must be
+called  at very early on to know where to load class initialization  files.
+See <cite>register_args()</cite> method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.print">
+<span class="sig-name descname"><span class="pre">print</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_last</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.print" title="Link to this definition">¶</a></dt>
+<dd><p>Print the name of the object, decorated with prefix consisting of ├─, └─, and │.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.quantize">
+<span class="sig-name descname"><span class="pre">quantize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quanta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.quantize" title="Link to this definition">¶</a></dt>
+<dd><p>Quantize the given value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quanta</strong> (<em>float</em>) – resolution for quantization</p></li>
+<li><p><strong>value</strong> (<em>float</em>) – value to be quantized</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>quantized value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(float)</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hour_of_a_day</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">quantize</span><span class="p">(</span><span class="mi">3600</span><span class="p">,</span> <span class="n">epoch_seconds</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.register">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.register" title="Link to this definition">¶</a></dt>
+<dd><p>General purpose class method for initializing classes for instantiation. Up to the
+sub clases to implement. This method is called right before the class attributes are loaded
+from the class specific configuration files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.register_args">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.register_args" title="Link to this definition">¶</a></dt>
+<dd><p>Register startup arguments to be parsed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<em>argparse.ArgumentParser</em>) – parser to add the startup arguments.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.register_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.register_class" title="Link to this definition">¶</a></dt>
+<dd><p>Register the given class identifier for identifier based
+instantiation . This, factory method pattern, as it is called,
+decouples the actual implementation from the interface.  For more
+information see <a class="reference internal" href="#masterpiece_plugin.Foo.instantiate" title="masterpiece_plugin.Foo.instantiate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">instantiate()</span></code></a> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_id</strong> (<em>str</em>) – class identifier</p></li>
+<li><p><strong>ctor</strong> (<em>function</em>) – constructor</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.run" title="Link to this definition">¶</a></dt>
+<dd><p>Run the masterpiece.  Dispatches the call to <cite>payload</cite> object and
+returns  the control to the caller.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.run_forever">
+<span class="sig-name descname"><span class="pre">run_forever</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.run_forever" title="Link to this definition">¶</a></dt>
+<dd><p>Run the masterpiece forever. This method will return only when violently
+terminated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.save_to_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.save_to_json" title="Link to this definition">¶</a></dt>
+<dd><p>Create class configuration file, if the file does not exist yet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.serialize_to_json">
+<span class="sig-name descname"><span class="pre">serialize_to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.serialize_to_json" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize the object to given JSON file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.set_log">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.set_log" title="Link to this definition">¶</a></dt>
+<dd><p>Set logger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>l</strong> (<em>logger</em>) – logger object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.shutdown" title="Link to this definition">¶</a></dt>
+<dd><p>Shutdown the masterpiece. It is up to the sub classes to implement this method.
+Dispatches the call to <cite>payload</cite> object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.timestamp">
+<span class="sig-name descname"><span class="pre">timestamp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.timestamp" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the current date-time in UTC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime in UTC.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>rc (datetime)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.timestamp_hour">
+<span class="sig-name descname"><span class="pre">timestamp_hour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.timestamp_hour" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the hour in 24h format in UTC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ts</strong> (<em>float</em>) – timestamp</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>current hour in UTC 0 …23</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>rc (int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.timestampstr">
+<span class="sig-name descname"><span class="pre">timestampstr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.timestampstr" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the given timestamp to human readable string of format ‘Y-m-d
+H:M:S’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ts</strong> (<em>timestamp</em>) – time stamp to be converted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>human readable date-time string</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>rc (string)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_plugin/foo.html#Foo.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_plugin.Foo.to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert instance attributes to a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_plugin.Foo.warning">
+<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_plugin.Foo.warning" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given warning message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2024, juha meskanen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
