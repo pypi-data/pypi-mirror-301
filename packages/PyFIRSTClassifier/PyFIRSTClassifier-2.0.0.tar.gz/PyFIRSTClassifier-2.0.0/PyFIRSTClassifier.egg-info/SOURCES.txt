@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PyFIRSTClassifier.egg-info/PKG-INFO
+PyFIRSTClassifier.egg-info/SOURCES.txt
+PyFIRSTClassifier.egg-info/dependency_links.txt
+PyFIRSTClassifier.egg-info/entry_points.txt
+PyFIRSTClassifier.egg-info/requires.txt
+PyFIRSTClassifier.egg-info/top_level.txt
+tests/__init__.py
+tests/test_FIRSTClassifier.py

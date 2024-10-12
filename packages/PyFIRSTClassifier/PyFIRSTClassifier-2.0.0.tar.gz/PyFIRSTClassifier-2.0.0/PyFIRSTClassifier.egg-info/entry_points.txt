@@ -1,0 +1,3 @@
+[console_scripts]
+first_classifier = PyFIRSTClassifier.FIRSTClassifier:main
+
