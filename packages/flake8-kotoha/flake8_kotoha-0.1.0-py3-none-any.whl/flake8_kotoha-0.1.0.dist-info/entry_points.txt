@@ -1,0 +1,5 @@
+[console_scripts]
+kotoha = kotoha.__main__:main
+
+[flake8.extension]
+KTH = kotoha.plugins:Flake8KotohaPlugin
