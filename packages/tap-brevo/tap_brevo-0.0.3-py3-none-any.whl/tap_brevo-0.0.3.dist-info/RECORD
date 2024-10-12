@@ -1,0 +1,10 @@
+tap_brevo/__init__.py,sha256=Op2N8F0384LA_LHL1r9DIDoT5aWwZe3mcrcuhGQWV9w,21
+tap_brevo/__main__.py,sha256=BdnGSgnknqtC8vUFqdSs5YcDLg24c8I_7HJwrQ_5XEs,113
+tap_brevo/client.py,sha256=nKzj3VLkx2Vo9f56fzECvs99FNOGhGN5iKTXJzpMDos,1015
+tap_brevo/schemas/__init__.py,sha256=4L_j2w9G0RLeNu1IvmrlYD685cMULZhpvOezBL0leR8,42
+tap_brevo/streams.py,sha256=WKKeq8emTQsGU5Bqy7-kOpTtTHDSFWhVVv7zwBgqDPs,8980
+tap_brevo/tap.py,sha256=5ovrMliuSmMnDSE0Q2wxp6eVyUqJ9tg2L8GzaokGZIU,1210
+tap_brevo-0.0.3.dist-info/METADATA,sha256=FGY3bZ3Q1u670XN9CxG347COSV2z8LPynu_2UkIQQlQ,3883
+tap_brevo-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tap_brevo-0.0.3.dist-info/entry_points.txt,sha256=_c6yX0-Io1hEg2untSzbjXK70oHyY-1f6RG5v8Ph290,56
+tap_brevo-0.0.3.dist-info/RECORD,,
