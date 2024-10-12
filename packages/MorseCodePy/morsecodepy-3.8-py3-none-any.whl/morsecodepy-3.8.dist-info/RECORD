@@ -1,0 +1,16 @@
+MorseCodePy/__init__.py,sha256=vy1W_EayL8Tp2moZ60ASRbnXNNRHvuMEE6tI5g8u5c8,684
+MorseCodePy/chart.py,sha256=jaUW0Ywa3NRU53z0uPe5gJzdrQCXGsAXxS_KudssQyI,974
+MorseCodePy/decode.py,sha256=lq74WNzx3Mc6NzOHBVwNQTTrk5s-Dz1EeFzlxb1Z8yI,2001
+MorseCodePy/encode.py,sha256=dTQZ3__GMaCKPcBk1UsD4PvdskCGisPNs7GpgVjPzCk,2000
+MorseCodePy/play_pygame.py,sha256=1SUvr1zLtMOZXcEoJgwlhc7FZuWe5hGQg2fQXNXOn6c,3901
+MorseCodePy/play_sounddevice.py,sha256=oWP6-W4kwh9K9XPFw4EpfieMewqwk-ejLE4FiPbsyVk,3703
+MorseCodePy/setup_logging.py,sha256=FXCFGL20OJpG5xJyYSJNuj9TrGi78mvmLwlt8TPddxs,1159
+MorseCodePy/utilities.py,sha256=_YCPFUcmHT3B0lxYBErVHci9x48zcREqAsofrU9jFgo,3638
+MorseCodePy/codes/decodes.json,sha256=MVCMHCE4wQ8Ch5ak7XBMncKbRkGJX2N3qVdSODPaWbM,2905
+MorseCodePy/codes/encodes.json,sha256=6LVRhScK25S9Lu97_lS1f8Kg4D-R6w6PobkxYruEWIg,3087
+MorseCodePy/sounds/dash.wav,sha256=Mcp78Q__s0vvbAYxNvKrmVvVmN0lLYRKM5l2wB6-VkI,74520
+MorseCodePy/sounds/dot.wav,sha256=JqhFzNT4RMEc6llPnMRgfuVtBE5EsARkV1Ob9ED7k0k,30012
+MorseCodePy/sounds/error.wav,sha256=IieurHfIt8-gfOSzPi60xr95ghA3R1FFZ_Bu0HiclrE,63614
+morsecodepy-3.8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+morsecodepy-3.8.dist-info/METADATA,sha256=B23NTGQziKVMNt5psO69SEN520otmPI7cc5in2QuckA,5094
+morsecodepy-3.8.dist-info/RECORD,,
