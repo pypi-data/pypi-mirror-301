@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: neptyne-kernel
+Version: 0.1.9
+Summary: The Neptyne kernel
+Project-URL: Homepage, https://neptyne.com
+Project-URL: Documentation, https://docs.neptyne.com
+Project-URL: Repository, https://github.com/neptyneco/neptyne-kernel.git
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: httpx
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: jupyter-client
+Requires-Dist: libcst
+Requires-Dist: nbformat
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Pillow <10.0.0,>=9.4.0
+Requires-Dist: plotly
+Requires-Dist: pydeck
+Requires-Dist: pygments
+Requires-Dist: pyflakes <3.0.0,>=2.5.0
+Requires-Dist: pyjwt
+Requires-Dist: stack-data
+Requires-Dist: tokenize-rt
+Requires-Dist: untokenize
+Provides-Extra: extras
+Requires-Dist: altair ; extra == 'extras'
+Requires-Dist: anthropic ; extra == 'extras'
+Requires-Dist: bahttext ; extra == 'extras'
+Requires-Dist: black ; extra == 'extras'
+Requires-Dist: bokeh ; extra == 'extras'
+Requires-Dist: beautifulsoup4 ; extra == 'extras'
+Requires-Dist: calweek ; extra == 'extras'
+Requires-Dist: croniter ; extra == 'extras'
+Requires-Dist: db-dtypes ; extra == 'extras'
+Requires-Dist: descartes ; extra == 'extras'
+Requires-Dist: fastavro ; extra == 'extras'
+Requires-Dist: geopy ; extra == 'extras'
+Requires-Dist: google-generativeai ; extra == 'extras'
+Requires-Dist: graphlib ; extra == 'extras'
+Requires-Dist: html5lib ; extra == 'extras'
+Requires-Dist: isoweek ; extra == 'extras'
+Requires-Dist: jaconv ; extra == 'extras'
+Requires-Dist: json-fix ; extra == 'extras'
+Requires-Dist: mapboxgl ; extra == 'extras'
+Requires-Dist: mapclassify ; extra == 'extras'
+Requires-Dist: markdown ; extra == 'extras'
+Requires-Dist: matplotlib ; extra == 'extras'
+Requires-Dist: networkx ; extra == 'extras'
+Requires-Dist: openai ; extra == 'extras'
+Requires-Dist: openpyxl ; extra == 'extras'
+Requires-Dist: orjson ; extra == 'extras'
+Requires-Dist: pyxirr >=0.10.5 ; extra == 'extras'
+Requires-Dist: qrcode ; extra == 'extras'
+Requires-Dist: roman ; extra == 'extras'
+Requires-Dist: scikit-learn ; extra == 'extras'
+Requires-Dist: scipy ; extra == 'extras'
+Requires-Dist: seaborn ; extra == 'extras'
+Requires-Dist: statsmodels ; extra == 'extras'
+Requires-Dist: tweepy ; extra == 'extras'
+Requires-Dist: streamlit >=1.36.0 ; extra == 'extras'
+Requires-Dist: folium ; extra == 'extras'
+Requires-Dist: feedparser ; extra == 'extras'
+Requires-Dist: geodatasets ; extra == 'extras'
+Requires-Dist: geopandas ; extra == 'extras'
+Requires-Dist: geoplot ; extra == 'extras'
+Requires-Dist: google-cloud-bigquery ; extra == 'extras'
+Requires-Dist: google-cloud-bigquery-storage ; extra == 'extras'
+Requires-Dist: iexfinance ; extra == 'extras'
+Requires-Dist: lxml ; extra == 'extras'
+Provides-Extra: formulas
+Requires-Dist: bahttext ; extra == 'formulas'
+Requires-Dist: calweek ; extra == 'formulas'
+Requires-Dist: isoweek ; extra == 'formulas'
+Requires-Dist: jaconv ; extra == 'formulas'
+Requires-Dist: pyxirr ; extra == 'formulas'
+Requires-Dist: roman ; extra == 'formulas'
+Requires-Dist: statsmodels ; extra == 'formulas'
+
+# The Neptyne Kernel
+
+This package contains everything shipped in a [Neptyne](https://neptyne.com) kernel container.
+
+## Python Version
+
+Neptyne kernels use Python 3.11, so this is the only version currently tested/supported.
+
+## Local Kernels + Google Sheets
+
+You can use the Neptyne kernel to run in a Jupyter notebook, and connect it to a Google sheet. To do so, first get an API key from your Neptyne Google sheets extension. In the extension menu, open 'Manage Advanced Features', and enable the API. Copy your API key, and put in your notebook cell:
+
+
+```python
+import neptyne_kernel
+
+neptyne_kernel.init_notebook("<your api key>")
+```
+
+You can now use Neptyne A1-notation in your notebook cells (e.g. `A1 = 1`)
