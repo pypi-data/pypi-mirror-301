@@ -1,0 +1,14 @@
+gradio_webrtc/__init__.py,sha256=NkgtZiEu1TRbNnGaUIbP291lMg8iFehH9QNgpTX9D6g,49
+gradio_webrtc/utils.py,sha256=qF0QI-qjhAelMwsNipnssQgKSY0Ow2O1XP6b_PR2hd0,1967
+gradio_webrtc/webrtc.py,sha256=HI7t67RU_zfSsJBrgms3s-Gqj__JgQzciBJJzwp4-RY,21703
+gradio_webrtc/webrtc.pyi,sha256=3h4EeIbn5meb3K26yYkWZTOCZAG8NGpH6at4v9TuQ9A,21723
+gradio_webrtc/templates/component/index.js,sha256=IMdBHEEr0LfuISMK57cRJxT2cXCQOcLZmO9n64Ax9uE,636402
+gradio_webrtc/templates/component/style.css,sha256=W9kL1GxInp7myM5ndD8t9NwuTSPW5s9qfXETOM5wZrg,1481924
+gradio_webrtc/templates/component/assets/worker-lPYB70QI.js,sha256=t2H7ERfi6C1zImIL1tZmxLdtySPkGq4bnYOycKNU1uU,2374
+gradio_webrtc/templates/example/index.js,sha256=RO5Zy7yg-y0tpP4qa8CK3-QFjnPkYAP0Oem90SuyoDw,4857
+gradio_webrtc/templates/example/style.css,sha256=DtPmWRYiC165hek6ziA6KdfN3XQGj6tnnhOy_N3BJPU,552
+gradio_webrtc/templates/example/assets/worker-lPYB70QI.js,sha256=t2H7ERfi6C1zImIL1tZmxLdtySPkGq4bnYOycKNU1uU,2374
+gradio_webrtc-0.0.4.dist-info/METADATA,sha256=C9wrVEw2nYWIqQ7L-tHUnd8RptVSS2EQW-K5toiKNMI,11846
+gradio_webrtc-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gradio_webrtc-0.0.4.dist-info/licenses/LICENSE,sha256=LRzmwLrNO-wvS2om_Fn-pfc9IrH9kaTGE1h3zrLtPrs,1071
+gradio_webrtc-0.0.4.dist-info/RECORD,,
