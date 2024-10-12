@@ -1,0 +1,9 @@
+ipyleaflet
+numpy
+pandas
+
+[all]
+leafagro[extra]
+
+[extra]
+pandas
