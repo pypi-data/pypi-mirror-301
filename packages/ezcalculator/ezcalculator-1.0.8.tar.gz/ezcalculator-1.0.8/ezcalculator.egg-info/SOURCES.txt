@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+ezcalculator.egg-info/PKG-INFO
+ezcalculator.egg-info/SOURCES.txt
+ezcalculator.egg-info/dependency_links.txt
+ezcalculator.egg-info/top_level.txt
+ezcalculatorr/__init__.py
