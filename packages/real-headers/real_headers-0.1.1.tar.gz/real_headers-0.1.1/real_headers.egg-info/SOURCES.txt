@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+real_headers/__init__.py
+real_headers/cli.py
+real_headers/headers.py
+real_headers/user_agents.py
+real_headers.egg-info/PKG-INFO
+real_headers.egg-info/SOURCES.txt
+real_headers.egg-info/dependency_links.txt
+real_headers.egg-info/entry_points.txt
+real_headers.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+[console_scripts]
+real-headers = real_headers.cli:show_headers
+real-user-agent = real_headers.cli:show_user_agent
+real_headers = real_headers.cli:show_headers
+real_user_agent = real_headers.cli:show_user_agent
