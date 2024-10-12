@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pycgdescent
+Version: 0.10.3
+Summary: Python wrapper for the CG_DESCENT library
+Keywords: cg,optimization
+Author-Email: Alexandru Fikl <alexfikl@gmail.com>
+Maintainer-Email: Alexandru Fikl <alexfikl@gmail.com>
+License: GPL-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Project-URL: Documentation, https://pycgdescent.readthedocs.io
+Project-URL: Repository, https://github.com/alexfikl/pycgdescent
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pyproject-fmt; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: reuse; extra == "dev"
+Requires-Dist: rich; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: types-dataclasses; extra == "dev"
+Requires-Dist: typos; extra == "dev"
+Requires-Dist: uv; extra == "dev"
+Requires-Dist: sphinx>=6; extra == "docs"
+Requires-Dist: sphinx-autoapi; extra == "docs"
+Requires-Dist: sphinx-book-theme; extra == "docs"
+Provides-Extra: dev
+Provides-Extra: docs
+Description-Content-Type: text/x-rst
+
+.. |badge-ci| image:: https://github.com/alexfikl/pycgdescent/workflows/CI/badge.svg
+    :alt: Build Status
+    :target: https://github.com/alexfikl/pycgdescent/actions?query=branch%3Amain+workflow%3ACI
+
+.. |badge-rtd| image:: https://readthedocs.org/projects/pycgdescent/badge/?version=latest
+    :alt: Documentation
+    :target: https://pycgdescent.readthedocs.io/en/latest/?badge=latest
+
+.. |badge-pypi| image:: https://badge.fury.io/py/pycgdescent.svg
+    :alt: PyPI
+    :target: https://pypi.org/project/pycgdescent/
+
+.. |badge-reuse| image:: https://api.reuse.software/badge/github.com/alexfikl/pycgdescent
+    :alt: REUSE
+    :target: https://api.reuse.software/info/github.com/alexfikl/pycgdescent
+
+|badge-ci| |badge-rtd| |badge-pypi| |badge-reuse|
+
+pycgdescent
+===========
+
+Python wrapper for the `CG_DESCENT <https://people.clas.ufl.edu/hager/software/>`__
+algorithm by Hager and Zang (see `DOI <https://doi.org/10.1145/1132973.1132979>`__).
+A previous wrapper can be found `here <https://github.com/martiniani-lab/PyCG_DESCENT>`__.
+Some differences:
+
+* This one only depends on `pybind11 <https://github.com/pybind/pybind11>`__.
+* Tries to emulate the interface from `scipy <https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html>`__
+  (still needs work).
+
+Interesting links:
+
+* `Documentation <https://pycgdescent.readthedocs.io/en/latest/>`__.
+* `Code <https://github.com/alexfikl/pycgdescent>`__.
