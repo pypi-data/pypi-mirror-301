@@ -1,0 +1,2 @@
+[console_scripts]
+dabarqus-install-service = dabarqus.install_service:main
