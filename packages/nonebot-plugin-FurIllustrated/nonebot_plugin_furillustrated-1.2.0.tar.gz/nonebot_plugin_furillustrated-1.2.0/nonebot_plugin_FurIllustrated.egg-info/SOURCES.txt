@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nonebot-plugin-FurIllustrated/__init__.py
+nonebot-plugin-FurIllustrated/config.py
+nonebot-plugin-FurIllustrated/fox.py
+nonebot-plugin-FurIllustrated/login.py
+nonebot_plugin_FurIllustrated.egg-info/PKG-INFO
+nonebot_plugin_FurIllustrated.egg-info/SOURCES.txt
+nonebot_plugin_FurIllustrated.egg-info/dependency_links.txt
+nonebot_plugin_FurIllustrated.egg-info/requires.txt
+nonebot_plugin_FurIllustrated.egg-info/top_level.txt
