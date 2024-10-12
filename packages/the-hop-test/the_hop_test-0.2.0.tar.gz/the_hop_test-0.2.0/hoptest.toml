@@ -1,0 +1,2 @@
+[tool.hoptest]
+skip_checks = ["script_runner"]

@@ -1,0 +1,6 @@
+- id: the-hop-test
+  name: The Hop Test
+  description: This hook runs the Hop Test
+  entry: hoptest
+  language: python
+  pass_filenames: false
