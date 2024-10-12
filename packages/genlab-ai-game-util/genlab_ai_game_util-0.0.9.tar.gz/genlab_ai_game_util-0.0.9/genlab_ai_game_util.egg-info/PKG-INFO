@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: genlab-ai-game-util
+Version: 0.0.9
+Summary: ai game python
+Home-page: 
+Author: hy
+Author-email: huyang3572@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: redis>=5.1.1
