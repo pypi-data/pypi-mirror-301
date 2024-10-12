@@ -1,0 +1,87 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "bosing"
+dynamic = ["version"]
+description = "Waveform generator for pulse sequences in quantum computing"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = []
+authors = [{ name = "kaho", email = "kaho0769@qq.com" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = ["numpy>=1.16.0,<2"]
+
+[project.urls]
+Documentation = "https://bosing.readthedocs.io"
+Issues = "https://github.com/kahojyun/Bosing/issues"
+Source = "https://github.com/kahojyun/Bosing"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.uv]
+dev-dependencies = [
+  "mypy>=1.11.2",
+  "ruff>=0.6.7",
+  "matplotlib>=3.9.2",
+  "taskipy>=1.13.0",
+  "pytest>=8.3.3",
+  "scipy>=1.13.1",
+  "furo>=2024.8.6",
+  "sphinx>=7.4.7",
+]
+cache-keys = [
+  { file = "src/**/*.rs" },
+  { file = "pyproject.toml" },
+  { file = "Cargo.toml" },
+  { file = "Cargo.lock" },
+  { file = "rust-toolchain.toml" },
+]
+
+[tool.taskipy.tasks]
+format = "task format_py && task format_rs"
+format_py = "ruff format"
+format_rs = "cargo fmt"
+lint = "task lint_py && task lint_rs"
+lint_py = "ruff check"
+lint_rs = "cargo clippy --all-targets"
+test = "task test_py && task test_rs"
+test_py = "pytest"
+test_rs = "cargo test"
+stubtest = "stubtest bosing --allowlist stubtest-allowlist.txt"
+makedocs = "sphinx-build -M html docs docs/_build"
+cleandocs = "sphinx-build -M clean docs docs/_build"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["COM812", "ISC001"]
+isort.known-first-party = ["bosing"]
+[tool.ruff.lint.per-file-ignores]
+"examples/*.py" = ["INP", "D", "T201"]
+"tests/*.py" = ["INP", "D", "S101"]
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.basedpyright]
+include = ["examples", "tests", "docs"]
+exclude = ["**/node_modules", "**/__pycache__", "docs/_build"]
+[[tool.basedpyright.executionEnvironments]]
+root = "examples"
+reportAny = "none"
+reportMissingTypeStubs = "none"
+reportUnknownArgumentType = "none"
+reportUnknownVariableType = "none"
+reportUnknownMemberType = "none"
+reportUnknownParameterType = "none"
+reportUnusedCallResult = "none"
+reportMissingTypeArgument = "none"
