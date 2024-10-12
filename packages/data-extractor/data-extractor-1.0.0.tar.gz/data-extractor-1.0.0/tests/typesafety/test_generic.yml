@@ -1,0 +1,268 @@
+- case: field_extract_without_typing
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f = Field(D())
+    rv = f.extract(1)
+    reveal_type(rv)
+  out: |
+    main:6: note: Revealed type is "Any"
+- case: field_extract_with_typing
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f_str = Field[str](D())
+    rv_str = f_str.extract(1)
+    reveal_type(rv_str)
+
+    f_int = Field(D(), type=int)
+    rv_int = f_int.extract("1")
+    reveal_type(rv_int)
+
+    f_str_2: Field[str] = Field(D())
+    rv_str_2 = f_str_2.extract("1")
+    reveal_type(rv_str_2)
+
+    reveal_type(Field[str](D()).extract(1))
+  out: |
+    main:6: note: Revealed type is "builtins.str"
+    main:10: note: Revealed type is "builtins.int"
+    main:14: note: Revealed type is "builtins.str"
+    main:16: note: Revealed type is "builtins.str"
+- case: field_extract_with_typing_alias
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    StrField = Field[str]
+    f = StrField(D())
+    rv = f.extract(1)
+    reveal_type(rv)
+  out: |
+    main:7: note: Revealed type is "builtins.str"
+- case: field_type_hinting_conflict_with_type_param
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f_1 = Field[str](D(), type=int)
+    reveal_type(f_1)
+
+    f_2: Field[str] = Field(D(), type=int)
+    reveal_type(f_2)
+  out: |
+    main:4: error: Argument "type" to "Field" has incompatible type "Type[int]"; expected "Optional[Type[str]]"  [arg-type]
+    main:5: note: Revealed type is "data_extractor.item.Field[builtins.str]"
+    main:7: error: Argument "type" to "Field" has incompatible type "Type[int]"; expected "Optional[Type[str]]"  [arg-type]
+    main:8: note: Revealed type is "data_extractor.item.Field[builtins.str]"
+- case: field_type_hinting_conflict_with_convertor_param
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f_1 = Field[str](D(), convertor=int)
+    reveal_type(f_1)
+
+    f_2: Field[str] = Field(D(), convertor=int)
+    reveal_type(f_2)
+  out: |
+    main:4: error: Argument "convertor" to "Field" has incompatible type "Type[int]"; expected "Optional[Callable[[Any], str]]"  [arg-type]
+    main:5: note: Revealed type is "data_extractor.item.Field[builtins.str]"
+    main:7: error: Argument "convertor" to "Field" has incompatible type "Type[int]"; expected "Optional[Callable[[Any], str]]"  [arg-type]
+    main:8: note: Revealed type is "data_extractor.item.Field[builtins.str]"
+- case: field_extract_with_typing_while_trying_to_change_type
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f = Field[str](D())
+    rv = f.extract(1)
+    reveal_type(rv)
+    f.type = int  # unable to change
+    rv = f.extract("1")
+    reveal_type(rv)
+  out: |
+    main:6: note: Revealed type is "builtins.str"
+    main:7: error: Incompatible types in assignment (expression has type "Type[int]", variable has type "Optional[Type[str]]")  [assignment]
+    main:9: note: Revealed type is "builtins.str"
+- case: field_extract_with_flag_is_many
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f = Field[str](D(), is_many=True)
+    rvs = f.extract([1])
+    reveal_type(rvs)
+
+    reveal_type(Field[str](D(), is_many=True).extract([1]))
+  out: |
+    main:6: note: Revealed type is "builtins.list[builtins.str]"
+    main:8: note: Revealed type is "builtins.list[builtins.str]"
+- case: field_extract_while_trying_to_change_the_flag_of_is_many
+  main: |
+    from tests.utils import D
+    from data_extractor.item import Field
+
+    f = Field[str](D(), is_many=True)
+    rvs = f.extract([1])
+    reveal_type(rvs)
+
+    f.is_many = False  # unable to change
+    rv = f.extract(1)
+    reveal_type(rv)
+  out: |
+    main:6: note: Revealed type is "builtins.list[builtins.str]"
+    main:10: note: Revealed type is "builtins.list[builtins.str]"
+- case: subclass_field_extract_with_flag_is_many
+  main: |
+    from tests.utils import D
+    from data_extractor import Field, RV
+
+    class CField(Field[RV]):
+        pass
+
+    f1 = CField[str](D())
+    rv = f1.extract([1])
+    reveal_type(rv)
+    f2 = CField[str](D(), is_many=True)
+    rvs = f2.extract([1])
+    reveal_type(rvs)
+  out: |
+    main:9: note: Revealed type is "builtins.str"
+    main:12: note: Revealed type is "builtins.list[builtins.str]"
+- case: item_extract_with_flag_is_many
+  skip: sys.version_info.minor < 8
+  main: |
+    from tests.utils import D
+    from data_extractor import RV, Item
+
+    class C(Item[RV]):
+        pass
+
+    f1 = C(D())
+    rv = f1.extract([1])
+    reveal_type(rv)
+    f2 = C(D(), is_many=True)
+    rvs = f2.extract([1])
+    reveal_type(rvs)
+  out: |
+    main:9: note: Revealed type is "TypedDict({})"
+    main:12: note: Revealed type is "builtins.list[TypedDict({})]"
+- case: item_extract_with_flag_is_many/compat
+  skip: sys.version_info.minor >= 8
+  main: |
+    from tests.utils import D
+    from data_extractor import RV, Item
+
+    class C(Item[RV]):
+        pass
+
+    f1 = C(D())
+    rv = f1.extract([1])
+    reveal_type(rv)
+    f2 = C(D(), is_many=True)
+    rvs = f2.extract([1])
+    reveal_type(rvs)
+  out: |
+    main:9: note: Revealed type is "Any"
+    main:12: note: Revealed type is "builtins.list[Any]"
+- case: field_is_many_work_with_assign_expr
+  main: |
+    from tests.utils import D
+    from data_extractor import Field
+
+    f2 = f1 = Field(D(), is_many=True)
+    rv1 = f1.extract([1])
+    reveal_type(rv1)
+    rv2 = f2.extract([1])
+    reveal_type(rv2)
+  out: |
+    main:6: note: Revealed type is "builtins.list[Any]"
+    main:8: note: Revealed type is "builtins.list[Any]"
+- case: field_is_many_work_with_assign_expr_in_classdef
+  main: |
+    from tests.utils import D
+    from data_extractor import Field
+
+    class B:
+        f2 = f1 = Field(D(), is_many=True)
+
+    rv1 = B.f1.extract([1])
+    reveal_type(rv1)
+    rv2 = B.f2.extract([1])
+    reveal_type(rv2)
+  out: |
+    main:8: note: Revealed type is "builtins.list[Any]"
+    main:10: note: Revealed type is "builtins.list[Any]"
+- case: field_is_many_work_with_member_assign_expr
+  main: |
+    from typing import Any
+
+    from tests.utils import D
+    from data_extractor import Field
+
+    class C:
+        def bar(self):
+            pass
+
+        f: int = 0
+        f1: Field
+        f3: Any
+
+    C.f3 = f2 = C.f1 = Field(D(), is_many=True)
+    rv1 = C.f1.extract([1])
+    reveal_type(rv1)
+    rv2 = f2.extract([1])
+    reveal_type(rv2)
+    rv3 = C.f3.extract([1])
+    reveal_type(rv3)
+
+    C.f = Field(D())
+    c.f = Field(D())
+  out: |
+    main:16: note: Revealed type is "builtins.list[Any]"
+    main:18: note: Revealed type is "builtins.list[Any]"
+    main:20: note: Revealed type is "builtins.list[Any]"
+    main:22: error: Incompatible types in assignment (expression has type "Field[Any]", variable has type "int")  [assignment]
+    main:23: error: Name "c" is not defined  [name-defined]
+- case: disallow_any_generic
+  main: |
+    from data_extractor import Field
+    f1 = Field()
+    f2 = Field[int]()
+    rv = f2.extract([1])
+    reveal_type(rv)
+  mypy_config: |
+    disallow_any_generics=true
+  out: |
+    main:2: error: Need type annotation for "f1"  [var-annotated]
+    main:5: note: Revealed type is "builtins.int"
+- case: extractor_cls_as_func_argument
+  main: |
+    from typing import Type
+    from data_extractor import Field
+
+    def bar1(CF):
+        f1 = CF(is_many=True)
+        rv1 = f1.extract([1])
+        reveal_type(rv1)
+
+    def bar2(CF: Type[Field[int]]):
+        f2 = CF(is_many=False)
+        rv2 = f2.extract([1])
+        reveal_type(rv2)
+  out: |
+    main:7: note: Revealed type is "Any"
+    main:7: note: 'reveal_type' always outputs 'Any' in unchecked functions
+    main:12: note: Revealed type is "builtins.int"
+- case: item_classdef_not_effects_normal_function_call
+  main: |
+    import inspect
+    from data_extractor import Item, Field
+
+    class User(Item):
+        uid = Field()
+
+    _ = inspect.currentframe()
