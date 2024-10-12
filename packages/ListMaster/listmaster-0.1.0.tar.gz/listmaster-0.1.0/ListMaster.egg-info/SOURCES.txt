@@ -1,0 +1,13 @@
+README.md
+setup.py
+ListMaster/__init__.py
+ListMaster/list_filter.py
+ListMaster/list_modification.py
+ListMaster/list_search.py
+ListMaster/list_sorting.py
+ListMaster/list_statistics.py
+ListMaster/list_unique.py
+ListMaster.egg-info/PKG-INFO
+ListMaster.egg-info/SOURCES.txt
+ListMaster.egg-info/dependency_links.txt
+ListMaster.egg-info/top_level.txt
