@@ -1,0 +1,14 @@
+LICENSE,sha256=HSQ4WHSY05TjHEqVXtGx-It9ChU6uL1G6GZRwExiNDk,1069
+rejx/__init__.py,sha256=tfdTs_jcauJwB2dus3B5Rfxf2BzqctnePEpi30ruwkQ,144
+rejx/__main__.py,sha256=osOw7QOojJqpg_CurR3EjpqEcfh63Hb8H1Sk7NVRNQg,76
+rejx/cli.py,sha256=AAPbSGhNa6T2XdSMmsWHpqPUqNReQ2vKVQlUSn9lWs4,8961
+rejx/exceptions.py,sha256=93TYZaWyytb4aQ-yD5k5FcdbvBsa8vswavtzJibXPLE,160
+rejx/logger.py,sha256=qvO2LePiYhQw803UGK7Clf4ARjNEsmpTUSzkqJ0fFNc,488
+rejx/logo.py,sha256=h2HnAoUYEshDzyCsW3Hi6GHe3cYtZUzWmSnt8eqnzhg,230
+rejx/utils.py,sha256=9wDUVnPEcrXtGmxKpiRQ9XP4CjNI-YCF5cRSgHy9pYc,7075
+rejx/version.py,sha256=2udgfUVouMHCW8_XTtj3Dksnm3x9Bh6RO1mYuWy3rCY,329
+rejx-0.1.0.dist-info/LICENSE,sha256=HSQ4WHSY05TjHEqVXtGx-It9ChU6uL1G6GZRwExiNDk,1069
+rejx-0.1.0.dist-info/METADATA,sha256=Rya3UTP8QWujfQJCIAu1MtuEB6ZV9vCMV2_5B1AJjPU,3418
+rejx-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rejx-0.1.0.dist-info/entry_points.txt,sha256=j24OaFmip76i_vaICvd1G5Ml-_kp43ma-8K51YKVEBM,42
+rejx-0.1.0.dist-info/RECORD,,
