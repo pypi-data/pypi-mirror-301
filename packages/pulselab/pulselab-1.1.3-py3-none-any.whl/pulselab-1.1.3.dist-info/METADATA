@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pulselab
+Version: 1.1.3
+Summary: Creates RF envelopes with or without carrier. A timebase and waveform is supplied.
+Author: Guy McBride
+Author-email: guy_mcbride@keysight.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.1.2,<3.0.0)
+Requires-Dist: scipy (>=1.14.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+Pulselab contains:
+    Class Pulse : This defines a single pulse. It is defined in terms of pulse descriptor parameters (e.g. Pulse width). It also has a, created, waveform and timebase.
+    Class Pulses : This holds a number of pulses. It has a generated waveform that holds all the pulse.
+     
