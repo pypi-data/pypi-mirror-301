@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/pexels_api/__init__.py
+src/pexels_api/main.py
+src/pexels_api/utils.py
+src/pexels_apis.egg-info/PKG-INFO
+src/pexels_apis.egg-info/SOURCES.txt
+src/pexels_apis.egg-info/dependency_links.txt
+src/pexels_apis.egg-info/top_level.txt
+tests/test_pexels_api.py
