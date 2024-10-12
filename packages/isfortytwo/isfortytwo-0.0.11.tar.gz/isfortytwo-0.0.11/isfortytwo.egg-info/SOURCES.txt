@@ -1,0 +1,8 @@
+README.md
+setup.py
+isfortytwo/__init__.py
+isfortytwo/isfortytwo.py
+isfortytwo.egg-info/PKG-INFO
+isfortytwo.egg-info/SOURCES.txt
+isfortytwo.egg-info/dependency_links.txt
+isfortytwo.egg-info/top_level.txt
