@@ -1,0 +1,13 @@
+live2d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+live2d/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+live2d/utils/lipsync.py,sha256=O3xi5fsMKsSHuZty8dtMrgj6k1qwJy48ao9rrJ7UW-I,2531
+live2d/utils/log.py,sha256=IGtdwsuQRbnwSkzlgVxIg9bT0-fj3XvoDmnTGKATk_Q,888
+live2d/v3/__init__.py,sha256=nbGUTxvGR86jyHv_avGOP4tSM4i7P4XBmtLkUZRunKg,304
+live2d/v3/live2d.pyd,sha256=-IKb-hD5t4iMIPaeUCPIMs2EV0Waigni-NrX1O1A_30,812544
+live2d/v3/live2d.pyi,sha256=B0KfFtlSwIH0SS6jHe_Qv5H2Yp25UZ14hxaI0R3xpho,7019
+live2d/v3/params.py,sha256=Vf3-BcMpRI29YhgSGblUaNG3Npji_Z_lYEN-2XteMoQ,1679
+live2d_py-0.2.4.dist-info/LICENSE,sha256=fOLopjQpo-dFewuZO3onAtauAKu0ExQiVOIsP3OdqDE,1085
+live2d_py-0.2.4.dist-info/METADATA,sha256=HDxxCZPqE4uE7DP-NioascCBdMDOp77VitzmZMnIBiY,3896
+live2d_py-0.2.4.dist-info/WHEEL,sha256=vWOmsWnO0Nob147kL-aXKbtep3IWyBtFMRAV1wTXzXg,97
+live2d_py-0.2.4.dist-info/top_level.txt,sha256=4rv-P6qUVr4bYYmEWR73yldmRVA70ahHvkuyjeJFsss,24
+live2d_py-0.2.4.dist-info/RECORD,,
