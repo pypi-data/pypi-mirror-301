@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+nonebot_plugin_FurIllustrated.egg-info/PKG-INFO
+nonebot_plugin_FurIllustrated.egg-info/SOURCES.txt
+nonebot_plugin_FurIllustrated.egg-info/dependency_links.txt
+nonebot_plugin_FurIllustrated.egg-info/requires.txt
+nonebot_plugin_FurIllustrated.egg-info/top_level.txt
