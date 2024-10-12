@@ -1,0 +1,4 @@
+bot_user.egg-info/PKG-INFO
+bot_user.egg-info/SOURCES.txt
+bot_user.egg-info/dependency_links.txt
+bot_user.egg-info/top_level.txt
