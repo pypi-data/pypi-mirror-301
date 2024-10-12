@@ -1,0 +1,8 @@
+flytekitplugins_modin-1.14.0b1-py3.12-nspkg.pth,sha256=ya_zoT0ZM023a2lpUsRaqXsgDEknLucLLOWbbtFBPw4,512
+flytekitplugins/modin/__init__.py,sha256=cwHIRPbitGFx8ElzTQyi2OGim033b06g-6_CwdKR_Pk,276
+flytekitplugins/modin/schema.py,sha256=-dfaD0MQUpySKK_6nzFCEX0flZ7-Y3fBnmROicjRIzA,4117
+flytekitplugins_modin-1.14.0b1.dist-info/METADATA,sha256=US8gP5adC8mFyQ6ScufWklZjisRqDFGCP5S97AjjW_s,797
+flytekitplugins_modin-1.14.0b1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+flytekitplugins_modin-1.14.0b1.dist-info/namespace_packages.txt,sha256=b2gTzXFHuV5afchaJ28HueRhYzj-8x5Ytr8n2twnAik,16
+flytekitplugins_modin-1.14.0b1.dist-info/top_level.txt,sha256=b2gTzXFHuV5afchaJ28HueRhYzj-8x5Ytr8n2twnAik,16
+flytekitplugins_modin-1.14.0b1.dist-info/RECORD,,
