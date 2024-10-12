@@ -1,0 +1,10 @@
+pySVCGAL/__init__.py,sha256=typBs_lB97s7QRqykqp-xzMc5TPW-5u3KJF6Mo5tMOc,29
+pySVCGAL/pySVCGAL.py,sha256=ksqbhM_O1KcLo9sErVmDyTpTFTWMapQBUEH5heJojlo,8423
+pySVCGAL/clib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pySVCGAL/clib/ctypes_SVCGAL.dll,sha256=-PDEAfOUDnV_XFnhZFRf8gLhXrYUZFXTqQ3o2r-uo9U,842752
+pySVCGAL/clib/libctypes_SVCGAL.so,sha256=HYjlenfPe6GSVLuQ5-PDOqRVjgxYpdzltP5C8rFfeHU,1791616
+pySVCGAL/clib/load_library.py,sha256=Q-KNvcTI-cIMEiEl4z9amyD-uUBSaBttVp4LTW-25Qg,705
+pysvcgal-0.0.6.dist-info/METADATA,sha256=-R-WRVw_QKY6TEovH_a87BUmT1U7GfbaEZkK1LNf1Yk,1202
+pysvcgal-0.0.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pysvcgal-0.0.6.dist-info/licenses/LICENSE,sha256=5dz_6Da27IpY5JJBm1UOZfuMvcMIUDl55drLM6x-o7c,3
+pysvcgal-0.0.6.dist-info/RECORD,,
