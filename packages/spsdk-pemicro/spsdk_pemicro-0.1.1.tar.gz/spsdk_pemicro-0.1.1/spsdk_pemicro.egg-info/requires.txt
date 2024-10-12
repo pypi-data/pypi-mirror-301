@@ -1,0 +1,2 @@
+spsdk>=2.3.0.dev82
+pypemicro>=0.1.11
