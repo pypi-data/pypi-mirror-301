@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nerfboost
+Version: 0.0.1
+Summary: A CUDA-enhanced package for common NeRF model operations
+Author: Akshay Pappu
+License-File: LICENCE.txt
+Requires-Dist: torch
+
