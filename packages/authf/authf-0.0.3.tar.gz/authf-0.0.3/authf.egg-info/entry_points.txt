@@ -1,0 +1,2 @@
+[console_scripts]
+authf = authf.cli:main
