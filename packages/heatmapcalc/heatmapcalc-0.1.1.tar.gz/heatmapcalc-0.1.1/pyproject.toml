@@ -1,0 +1,31 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+version = "0.1.1"
+name = "heatmapcalc"
+requires-python = ">=3.12"
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["maturin>=1.7.4", "pip>=24.2", "numpy>2"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.uv]
+dev-dependencies = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = [
+  "--import-mode=importlib",
+  "--ignore=.archiv",
+  "--ignore=scripts",
+  "--no-header",
+]
+pythonpath = ["."]
+testpaths = ["**/test", "test", "test/*.py"]
