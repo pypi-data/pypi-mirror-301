@@ -1,0 +1,6 @@
+setup.py
+BagVision.egg-info/PKG-INFO
+BagVision.egg-info/SOURCES.txt
+BagVision.egg-info/dependency_links.txt
+BagVision.egg-info/requires.txt
+BagVision.egg-info/top_level.txt
