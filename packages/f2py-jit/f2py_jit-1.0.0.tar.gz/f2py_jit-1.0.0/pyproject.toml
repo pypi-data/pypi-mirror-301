@@ -1,0 +1,35 @@
+[project]
+name = "f2py-jit"
+description = "Just-in-time Fortran extension builder for Python"
+readme = "README.md"
+version = "1.0.0"
+authors = [
+    {name = "Daniele Coslovich", email = "daniele.coslovich@umontpellier.fr"}
+]
+requires-python = ">=3.7"
+license = {text = "GPLv3"}
+dependencies = [
+    "numpy",
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    'Programming Language :: Python :: 3.7',
+]
+
+[project.optional-dependencies]
+types = ["f90wrap~=0.2.12", "setuptools<74"]  # this let types work with python>3.7
+
+[project.urls]
+repository = "https://framagit.org/coslo/f2py-jit"
+homepage = "https://framagit.org/coslo/f2py-jit"
+documentation = "https://coslo.frama.io/f2py-jit"
+# changelog = ""
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["f2py_jit"]

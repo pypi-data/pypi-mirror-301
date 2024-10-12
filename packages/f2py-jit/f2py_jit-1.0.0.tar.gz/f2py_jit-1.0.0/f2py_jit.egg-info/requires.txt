@@ -1,0 +1,5 @@
+numpy
+
+[types]
+f90wrap~=0.2.12
+setuptools<74
