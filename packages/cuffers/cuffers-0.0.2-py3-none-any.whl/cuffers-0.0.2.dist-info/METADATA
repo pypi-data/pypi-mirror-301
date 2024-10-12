@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: cuffers
+Version: 0.0.2
+Summary: a python module to split a large file into smaller files with multiple processes.
+Author-email: GGN_2015 <premierbob@qq.com>
+License: MIT License
+        
+        Copyright (c) 2024 GGN_2015
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+
+# cuffers
+a python module to split a large file into smaller files.
+
+## install from github release
+1. go [https://github.com/GGN-2015/cuffers/releases](https://github.com/GGN-2015/cuffers/releases) and download a `.whl` file.
+2. use `pip install cuffers-<version>-py3-none-any.whl` to install the package into your local environment.
+
+## install from pypi
+
+```bash
+pip install cuffers
+```
+
+## usage
+
+### split file into small files (no more than 1MB)
+```bash
+python3 -m cuffers <input_file> <output_folder>
+```
+`<output_folder>` will be automatically generated when you run this command, and all fractions will be saved in that folder along with a file named `summary.<index>.json`.
+
+### merge fractions into a whole file
+```bash
+python3 -m cuffers --merge <input_folder>
+```
+a merged file will be generated based on the fractions in `<input_folder>` and the `name` stated in `<input_folder>/summary.<index>.json`. the newly generated file will be placed right outside the folder `<input_folder>`, and if there has already been a file with the same name, the merge operation will be ignored (and you will get a warning output to stderr).
