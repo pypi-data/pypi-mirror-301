@@ -1,0 +1,5 @@
+llama_index/embeddings/zhipuai/__init__.py,sha256=b9YGnNojyHwMLIIxd5-9746Tek7BZscxGAWYcQEim6Y,97
+llama_index/embeddings/zhipuai/base.py,sha256=R5olLR7O-NdfjTospO91mWQKLpNdelERJsQF2qbk8mc,4001
+llama_index_embeddings_zhipuai-0.1.0.dist-info/METADATA,sha256=brkfrNzxbH-OTzJLBudZ5CQVP7BTRwgmeSKh3bNvitU,1276
+llama_index_embeddings_zhipuai-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_embeddings_zhipuai-0.1.0.dist-info/RECORD,,
