@@ -1,0 +1,14 @@
+anjl/__init__.py,sha256=i-t4b-mO0Pgt9lNpcWkuHlOx8r_pAGJeDXBSAi73U7I,424
+anjl/_canonical.py,sha256=BrUhWtrZfhXogpB4Fjag38D_qJ0XDkVHfLJsdIsGgYw,8232
+anjl/_layout.py,sha256=Xt2DEgv4lbHLKjSgrsfGqLuCiOVjPOoYBX5yET6TkCk,4720
+anjl/_plot.py,sha256=nwzL7ZUCV2TtYK4jIBZGDwYIlHd7C8fbtxtTvQ5qPCE,10679
+anjl/_rapid.py,sha256=to3R3GKnnk3CGQ2gCnvAgpnYVZa0AsO6egtFif33RvM,15445
+anjl/_util.py,sha256=2G1VwX_eOeXesiTfvh9txqarwMKzKtZlmaPUWH8vdeo,2083
+anjl/data.py,sha256=U5JFmiMJWYx1v-oiphBNiOcCXeCETrMR7FzTIbsx4DA,2603
+anjl/params.py,sha256=a8jTp4yuxxKyTOr0nYuYK5fsQzlh3j352Bob4lpEQOs,4748
+anjl/resources/mosquitoes.csv,sha256=IC_zkv3NNcehfJJ8UmtQdM7inJy4hRM6Ft-VpbmQy_k,110010
+anjl/resources/mosquitoes.npy,sha256=fmM9vheTDyAG8YnvIGiqWPTmzWZliytQjZb7Ys1CwoQ,131172
+anjl-1.0.0.dist-info/LICENSE,sha256=O41dffo1Eyt8UTGNNDelvs-3SyBfF7e2I0Kehh03ZrY,1071
+anjl-1.0.0.dist-info/METADATA,sha256=VTeRjRg0f_GODV0TH9nXeF_l5VcOmFMASz7086Lwo8I,1751
+anjl-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+anjl-1.0.0.dist-info/RECORD,,
