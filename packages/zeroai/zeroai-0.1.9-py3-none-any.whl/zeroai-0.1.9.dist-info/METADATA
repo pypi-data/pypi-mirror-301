@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zeroai
+Version: 0.1.9
+Summary: A Flask-based model training application with authentication.
+Author: jagdesh
+Author-email: aigpt52@gmail.com
+Requires-Python: >=3.10
+Requires-Dist: Flask
+Requires-Dist: Flask-HTTPAuth
+Requires-Dist: transformers
+Requires-Dist: datasets
+Requires-Dist: seqeval
+Requires-Dist: tensorboard
+Requires-Dist: evaluate
+Requires-Dist: Pillow
+Requires-Dist: numpy
+
