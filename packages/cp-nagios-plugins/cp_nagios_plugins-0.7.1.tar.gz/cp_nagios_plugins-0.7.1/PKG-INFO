@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: cp-nagios-plugins
+Version: 0.7.1
+Summary: Cross Platform Nagios Plugins
+Project-URL: Homepage, https://github.com/HopliteInd/cp-nagios-plugins
+Author-email: "Hoplite Industries, Inc." <smichael@hopliteindustries.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Keywords: nagios,plugins
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.6
+Requires-Dist: paramiko
+Requires-Dist: psutil>=5.6.2
+Requires-Dist: rich
+Requires-Dist: rich-argparse
+Provides-Extra: lint
+Requires-Dist: black; extra == 'lint'
+Requires-Dist: flake8; extra == 'lint'
+Requires-Dist: isort; extra == 'lint'
+Requires-Dist: pylint; extra == 'lint'
+Description-Content-Type: text/x-rst
+
+Cross platform nagios plugins
+=============================
+
+The focus cp-nagios-plugins is to start providing the functionality of many
+of the core plugins from the nagios-plugins repository.  This primary purpose
+of this is to support these tests on Windows.   The plugins are written
+in a way so that they are cross platform where possible.
+
+These cross platform plugins rely on Python to attain that cross platform
+ability.  This means that they are more expensive to run than the compiled
+programs from the Nagios-plugins repository.
+
+
+Plugins
+=======
+
+A list of the current plugins is available `here <docs/plugins.rst>`_.
