@@ -1,0 +1,3 @@
+[console_scripts]
+nomodeco=nomodeco.nomodeco:main
+
