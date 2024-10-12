@@ -1,0 +1,7 @@
+notion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notion/client.py,sha256=FEZBrWr_dzY_sBEJR3h12xdNiaJkNL39AeziaRr3H98,6195
+notion/exceptions.py,sha256=STZaO95LfppEDnKUko1azq2E7nhR-M7ngRFYx8RaHFU,203
+notion_python_2-0.1.2.dist-info/LICENSE,sha256=7bwe-hTbBZDn4_dpg2w92BmivmC5FbZk2WUCwWN1EHw,1086
+notion_python_2-0.1.2.dist-info/METADATA,sha256=hilzS7KbhnPn4sFYrOOuBH8_AdBSMiIsgl1sUkL_e6Q,3649
+notion_python_2-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+notion_python_2-0.1.2.dist-info/RECORD,,
