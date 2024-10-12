@@ -1,0 +1,9 @@
+docker_compose_builder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_compose_builder/docker-template.yml,sha256=IjE-wgGAnVgW2y7A1KoEhnnIC8h9pa2ioErWOMElQ2k,750
+docker_compose_builder/main.py,sha256=X0WmQ3aBMPse2h3wq4tve1ar8sCuLyMkV95XOjKl4qQ,1265
+docker_compose_builder-0.1.5.dist-info/LICENSE,sha256=88sGTxIiaGmJzSUkm2T5hfSv8S3dkU9fZhuIZphv_6Y,1074
+docker_compose_builder-0.1.5.dist-info/METADATA,sha256=K9Gt__ohtRINiLz9wkcjyKO1lJavgm64lGNo2seXgok,800
+docker_compose_builder-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+docker_compose_builder-0.1.5.dist-info/entry_points.txt,sha256=I7_1-J7ENR1MaWYllWvEmqaCxzzJ0iSQ0qDNWogrM1g,75
+docker_compose_builder-0.1.5.dist-info/top_level.txt,sha256=TlZ1LSYYATTQH0dtfMvsSfedv9YD1mOc1izMPoESzrM,23
+docker_compose_builder-0.1.5.dist-info/RECORD,,
