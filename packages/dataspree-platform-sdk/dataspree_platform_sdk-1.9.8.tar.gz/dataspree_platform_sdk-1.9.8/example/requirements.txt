@@ -1,0 +1,3 @@
+Click==7.0
+dlds-client==0.9.0
+sentry-sdk==0.14.1

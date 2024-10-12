@@ -1,0 +1,5 @@
+boto3~=1.11.8
+Click~=7.0
+dlds-client~=1.0
+PyYAML~=5.3
+sentry-sdk~=0.14.1

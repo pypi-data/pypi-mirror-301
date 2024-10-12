@@ -1,0 +1,39 @@
+dlds:
+  worker_id: 2
+  token:
+
+sentry:
+  dsn: 'https://<public-key>@sentry.io/<project>'
+
+aws:
+  access_key_id:
+  secret_access_key:
+  region_name: eu-central-1
+  cluster: deep-learning-ds-gpu-p2
+  task_definitions:
+    dlds-training:
+      container_name: dlds-training
+      container_command: [
+        'python', 'main.py',
+        '--dlds_token', '',
+        '--worker_id', '%WORKER_ID%',
+        '--model_id', '%MODEL_ID%',
+        '--dataset_directory', '/data'
+      ]
+      cpus: 1
+      memory: 32768
+      gpus: 1
+      dlds_model_config_ids: [1, 2, 3]
+    keras-training:
+      container_name: keras-training
+      container_command: [
+        'python', 'main.py',
+        '--dlds_token', '',
+        '--worker_id', '%WORKER_ID%',
+        '--model_id', '%MODEL_ID%',
+        '--dataset_directory', '/data'
+      ]
+      cpus: 1
+      memory: 8192
+      gpus: 1,
+      dlds_model_config_ids: [4, 5, 6]
