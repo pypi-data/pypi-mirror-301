@@ -1,0 +1,14 @@
+daft_launcher/__init__.py,sha256=S9hDIcUHAklKPAqP_-JIwJUSp9bYXgh12kEIrLRV6TU,50
+daft_launcher/cli.py,sha256=aN1kwSbX5IybYMlRPzSv6bTLxMorPhw2Dofspcd5leg,5341
+daft_launcher/commands.py,sha256=bGP3fjVdV9D4-xsohOXIOTLITwiHhWjGa0msQoJQ3M0,3814
+daft_launcher/configs.py,sha256=rwALXL2SINftz80MZ_oXv6TwyMTRA78QbWOC5ZigRbM,5241
+daft_launcher/helpers.py,sha256=9ZnDLMSkKuk3V-uJ2Jsgta1Rryr9A2di7a4Yg0ueFfI,8821
+daft_launcher/ray_default_configs/aws.yaml,sha256=HlayKc5_GYQELlPt2u7yhkpQLMBPtEhDoe77xW1IaYo,779
+daft_launcher/sql_templates/sql.py,sha256=7932W7krc6G4sNwgQBfvsKggMHvuCRMzU0M3gTziRu4,280
+daft_launcher/templates/aws.toml,sha256=xqR2GocuCYwqd-W-KB7vjzoKgjTX-EHGAN5wyUosFZU,2167
+daft_launcher-0.3.8.dev1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+daft_launcher-0.3.8.dev1.dist-info/METADATA,sha256=UQt58h7hahUG573IIWg8A8xvLFoIbJiG99Hx_Z4snJ4,17325
+daft_launcher-0.3.8.dev1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+daft_launcher-0.3.8.dev1.dist-info/entry_points.txt,sha256=httBdFCEeT37qNIu4KAhZMQJaq66x3TXej67TXnOgt0,53
+daft_launcher-0.3.8.dev1.dist-info/top_level.txt,sha256=OFGPgKdCz9EGJVupoAQFtaaHfHVO34DddNfwV7luROk,14
+daft_launcher-0.3.8.dev1.dist-info/RECORD,,
