@@ -1,0 +1,209 @@
+Metadata-Version: 2.1
+Name: dappier-py
+Version: 0.2.0
+Summary: Dappier Python SDK for interacting with Dappier APIs
+Home-page: https://github.com/DappierAI/dappier-py
+Author: Maddy Arvapally
+Author-email: support@dappier.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aioboto3 ==11.2.0
+Requires-Dist: aiobotocore ==2.5.0
+Requires-Dist: aiohttp ==3.8.5
+Requires-Dist: aioitertools ==0.11.0
+Requires-Dist: aioredis ==2.0.1
+Requires-Dist: aiosignal ==1.3.1
+Requires-Dist: async-timeout ==4.0.3
+Requires-Dist: attrs ==23.1.0
+Requires-Dist: bigquery ==0.0.38
+Requires-Dist: boto3 ==1.26.76
+Requires-Dist: botocore ==1.29.76
+Requires-Dist: cachetools ==5.3.1
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: charset-normalizer ==3.2.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: cryptography ==41.0.4
+Requires-Dist: dacktool ==0.0.7
+Requires-Dist: dataclasses-json ==0.5.14
+Requires-Dist: datadog-log ==1.4.1
+Requires-Dist: dbstream ==0.1.21
+Requires-Dist: deeplake ==3.8.0
+Requires-Dist: dill ==0.3.7
+Requires-Dist: dnspython ==2.4.2
+Requires-Dist: docopt ==0.6.2
+Requires-Dist: docutils ==0.20.1
+Requires-Dist: entrypoints ==0.4
+Requires-Dist: frozenlist ==1.4.0
+Requires-Dist: google-api-core ==2.11.1
+Requires-Dist: google-api-python-client ==1.7.11
+Requires-Dist: google-auth ==2.22.0
+Requires-Dist: google-auth-httplib2 ==0.0.3
+Requires-Dist: google-auth-oauthlib ==1.1.0
+Requires-Dist: google-cloud-bigquery ==3.11.4
+Requires-Dist: google-cloud-bigquery-storage ==2.22.0
+Requires-Dist: google-cloud-core ==2.3.3
+Requires-Dist: google-cloud-secret-manager ==2.7.2
+Requires-Dist: google-crc32c ==1.5.0
+Requires-Dist: google-resumable-media ==2.6.0
+Requires-Dist: googleapis-common-protos ==1.60.0
+Requires-Dist: googleauthentication ==0.0.17
+Requires-Dist: greenlet ==2.0.2
+Requires-Dist: grpc-google-iam-v1 ==0.12.6
+Requires-Dist: grpcio ==1.58.0
+Requires-Dist: grpcio-status ==1.58.0
+Requires-Dist: httplib2 ==0.22.0
+Requires-Dist: humbug ==0.3.2
+Requires-Dist: idna ==3.4
+Requires-Dist: jmespath ==1.0.1
+Requires-Dist: langchain ==0.0.266
+Requires-Dist: langsmith ==0.0.23
+Requires-Dist: libcst ==1.1.0
+Requires-Dist: libdeeplake ==0.0.83
+Requires-Dist: loguru ==0.7.0
+Requires-Dist: marshmallow ==3.20.1
+Requires-Dist: multidict ==6.0.4
+Requires-Dist: multiprocess ==0.70.15
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: nest-asyncio ==1.5.7
+Requires-Dist: numcodecs ==0.11.0
+Requires-Dist: numexpr ==2.8.5
+Requires-Dist: numpy ==1.25.2
+Requires-Dist: oauthlib ==3.2.2
+Requires-Dist: openai ==0.27.8
+Requires-Dist: openapi-schema-pydantic ==1.2.4
+Requires-Dist: packaging ==23.1
+Requires-Dist: pandas ==1.3.4
+Requires-Dist: pathos ==0.3.1
+Requires-Dist: Pillow ==10.0.0
+Requires-Dist: pinecone-client ==2.2.2
+Requires-Dist: pipreqs ==0.4.13
+Requires-Dist: pox ==0.3.3
+Requires-Dist: ppft ==1.7.6.7
+Requires-Dist: proto-plus ==1.22.3
+Requires-Dist: protobuf ==4.24.3
+Requires-Dist: pyarrow ==13.0.0
+Requires-Dist: pyasn1 ==0.5.0
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pycparser ==2.21
+Requires-Dist: pydantic ==1.10.12
+Requires-Dist: PyJWT ==2.8.0
+Requires-Dist: pymongo ==4.5.0
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: python-json-logger ==2.0.7
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: redis ==5.0.0
+Requires-Dist: regex ==2023.8.8
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-oauthlib ==1.3.1
+Requires-Dist: rsa ==4.9
+Requires-Dist: s3transfer ==0.6.2
+Requires-Dist: six ==1.16.0
+Requires-Dist: SQLAlchemy ==2.0.20
+Requires-Dist: tenacity ==8.2.3
+Requires-Dist: tiktoken ==0.4.0
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: typing-inspect ==0.9.0
+Requires-Dist: typing-extensions ==4.7.1
+Requires-Dist: uritemplate ==3.0.1
+Requires-Dist: urllib3 ==1.26.16
+Requires-Dist: win32-setctime ==1.1.0
+Requires-Dist: wrapt ==1.15.0
+Requires-Dist: yarg ==0.1.9
+Requires-Dist: yarl ==1.9.2
+Requires-Dist: cffi ==1.16.0
+
+# Dappier Python SDK
+
+Python SDK for interacting with Dappier's API's.
+
+## Overview
+
+`dappier-py` provides a straightforward way to interact with Dappier's API's, which allows for real-time data search on the internet and other datamodels from the marketplace. The library is designed to be easy to use and integrate into existing Python projects.
+
+## Installation
+
+To install the package, run:
+
+```bash
+pip install dappier
+
+```
+
+Alternatively, you can clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/DappierAI/dappier-py
+cd dappier-py
+pip install -r requirements.txt
+```
+
+## Initialization
+
+You can get your API key from your [Dappier account](https://platform.dappier.com).
+
+```bash
+from dappier.dappier import DappierApp
+
+app = DappierApp(api_key='your_api_key')
+
+```
+## Real-Time Search
+
+You can perform a real-time search by providing a query. This will search for real-time data related to your query.
+
+```bash
+result = app.realtime_search_api("When is the next election?")
+print(result.response['response']["results"])
+
+```
+
+## AI Recommendations
+The AI Recommendations feature allows you to query for articles and other content using a specific data model. 
+You can pick a specific datamodel from [marketplace](https://marketplace.dappier.com/) 
+
+### Default Options:
+
+```python
+ai_result = app.ai_recommendations(query="latest tech news", datamodel_id="dm_02hr75e8ate6adr15hjrf3ikol")
+print(ai_result.results)
+```
+
+### Custom Options:
+You can pass custom parameters such as `similarity_top_k`, `ref` and `num_articles_ref`:
+
+```python
+ai_custom_result = app.ai_recommendations(
+    query="latest tech news", 
+    datamodel_id="dm_02hr75e8ate6adr15hjrf3ikol", 
+    similarity_top_k=5, 
+    ref="techcrunch.com", 
+    num_articles_ref=2
+)
+print(ai_custom_result.results)
+
+```
+
+## Search API
+You can also perform a search using a specific datamodel_id. This method allows users to input custom queries and retrieve data based on the datamodel provided.
+```python
+search_result = app.search(
+    query="Latest Microsoft News",
+    datamodel_id="dm_01htjq2njgecvah7ncepm8v87y",
+    similarity_top_k=6,
+    ref="familyproof.com",
+    num_articles_ref=3
+)
+print(search_result.results)
+
+```
+
+
+Checkout (example.py)[https://github.com/DappierAI/dappier-py] in this repository for a working example.
