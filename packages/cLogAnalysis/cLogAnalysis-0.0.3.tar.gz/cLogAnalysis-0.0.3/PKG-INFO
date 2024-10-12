@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cLogAnalysis
+Version: 0.0.3
+Summary: 用于写入日志管理平台的python包
+Author: xiaoc
+Author-email: i@xiaoc.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### 用于写入日志管理平台的python包
