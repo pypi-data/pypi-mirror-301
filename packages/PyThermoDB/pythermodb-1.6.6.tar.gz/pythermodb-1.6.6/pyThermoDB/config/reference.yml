@@ -1,0 +1,722 @@
+REFERENCES:
+    Perry's Chemical Engineers' Handbook:
+      TABLES:
+        TABLE 2-8 Vapor Pressure of Inorganic and Organic Liquids:
+          EQUATIONS:
+            EQ-1:
+              BODY:
+                - parms['C1'] = parms['C1']/1
+                - parms['C2'] = parms['C2']/1
+                - parms['C3'] = parms['C3']/1
+                - parms['C4'] = parms['C4']/1
+                - parms['C5'] = parms['C5']/1
+                - res = math.exp(parms['C1'] + parms['C2']/args['T'] + parms['C3']*math.log(args['T']) + parms['C4']*(args['T']**parms['C5']))
+              ARGS:
+                temperature:
+                  name: temperature
+                  symbol: T
+                  unit: K
+              PARMS:
+                C1:
+                  name: C1
+                  symbol: C1
+                  unit: None
+                  conversion: 1
+                C2:
+                  name: C2
+                  symbol: C2
+                  unit: None
+                  conversion: 1
+                C3:
+                  name: C3
+                  symbol: C3
+                  unit: None
+                  conversion: 1
+                C4:
+                  name: C4
+                  symbol: C4
+                  unit: None
+                  conversion: 1
+                C5:
+                  name: C5
+                  symbol: C5
+                  unit: None
+                  conversion: 1
+              RETURNS:
+                vapor_pressure:
+                  name: vapor pressure
+                  symbol: P
+                  unit: Pa
+              BODY-INTEGRAL:
+                None
+              BODY-FIRST-DERIVATIVE:
+                None
+              BODY-SECOND-DERIVATIVE:
+                None
+        TABLE 2-179 Enthalpies and Gibbs Energies of Formation, Entropies, and Net Enthalpies of Combustion: 
+          DATA:
+            COLUMNS: 
+              - no.
+              - Name
+              - Formula
+              - CAS no
+              - Mol wt
+              - Ideal gas enthalpy of formation 
+              - Ideal gas Gibbs energy of formation 
+              - Ideal gas entropy
+              - Standard net enthalpy of combustion 
+            SYMBOL:
+              - None
+              - None
+              - None
+              - None
+              - MW
+              - EnFo_IG
+              - GiFo_IG
+              - S_IG
+              - EnCo_STD
+            UNIT:
+              - None
+              - None
+              - None
+              - None
+              - K
+              - J/kmol
+              - J/kmol
+              - J/kmol.K
+              - J/kmol
+            CONVERSION:
+              - None
+              - None
+              - None
+              - None
+              - None
+              - 1E-07
+              - 1E-07
+              - 1E-05
+              - 1E-09
+        TABLE 2-141 Critical Constants and Acentric Factors of Inorganic and Organic Compounds: 
+          DATA: 
+            COLUMNS:
+              - no.
+              - Name
+              - Formula
+              - CAS no
+              - Mol wt 
+              - Critical temperature 
+              - Critical pressure 
+              - Critical molar volume
+              - Critical compressibility factor
+              - Acentric factor
+            SYMBOL:
+              - None
+              - None
+              - None
+              - None
+              - MW
+              - Tc
+              - Pc
+              - Vc
+              - Zc
+              - AcFa
+            UNIT:
+              - None
+              - None
+              - None
+              - None
+              - K
+              - MPa
+              - m3/kmol
+              - None
+              - None
+            CONVERSION:
+              - None
+              - None
+              - None
+              - None
+              - None
+              - None
+              - None
+              - None
+              - None
+        TABLE 2-153 Heat Capacities of Inorganic and Organic Liquids:
+            EQUATIONS:
+              EQ-1:
+                BODY:
+                  - parms['C1'] = parms['C1']/1
+                  - parms['C2'] = parms['C2']/1
+                  - parms['C3'] = parms['C3']/1
+                  - parms['C4'] = parms['C4']/1
+                  - parms['C5'] = parms['C5']/1
+                  - res = parms['C1'] + parms['C2']*args['T'] + parms['C3']*(args['T']**2) + parms['C4']*(args['T']**3) + parms['C5']*(args['T']**4)
+                ARGS:
+                  temperature:
+                    name: temperature
+                    symbol: T
+                    unit: K
+                PARMS:
+                  C1:
+                    name: C1
+                    symbol: C1
+                    unit: None
+                    conversion: 1
+                  C2:
+                    name: C2
+                    symbol: C2
+                    unit: None
+                    conversion: 1
+                  C3:
+                    name: C3
+                    symbol: C3
+                    unit: None
+                    conversion: 1
+                  C4:
+                    name: C4
+                    symbol: C4
+                    unit: None
+                    conversion: 1
+                  C5:
+                    name: C5
+                    symbol: C5
+                    unit: None
+                    conversion: 1
+                RETURNS:
+                  heat_capacity:
+                    name: heat capacity
+                    symbol: Cp
+                    unit: J/(kmol.K)
+                BODY-INTEGRAL:
+                  - A1 = parms['C1']*args['T1']
+                  - B1 = (parms['C2']/2)*(args['T1']**2)
+                  - C1 = (parms['C3']/3)*(args['T1']**3)
+                  - D1 = (parms['C4']/4)*(args['T1']**4)
+                  - E1 = (parms['C5']/5)*(args['T1']**5)
+                  - res1 =  A1 + B1 + C1 + D1 + E1
+                  - A2 = parms['C1']*args['T2']
+                  - B2 = (parms['C2']/2)*(args['T2']**2)
+                  - C2 = (parms['C3']/3)*(args['T2']**3)
+                  - D2 = (parms['C4']/4)*(args['T2']**4)
+                  - E2 = (parms['C5']/5)*(args['T2']**5)
+                  - res2 =  A2 + B2 + C2 + D2 + E2
+                  - res = res2 - res1
+                BODY-FIRST-DERIVATIVE:
+                  - res = parms['C2'] + 2*parms['C3']*args['T'] + 3*parms['C4']*(args['T']**2) + 4*parms['C5']*(args['T']**3)
+                BODY-SECOND-DERIVATIVE:
+                  - res = 2*parms['C3'] + 6*parms['C4']*args['T'] + 12*parms['C5']*(args['T']**2)
+              EQ-2:
+                BODY:
+                  - parms['C1'] = parms['C1']/1
+                  - parms['C2'] = parms['C2']/1
+                  - parms['C3'] = parms['C3']/1
+                  - parms['C4'] = parms['C4']/1
+                  - parms['C5'] = parms['C5']/1
+                  - Tr = args['T']/args['Tc']
+                  - t = 1-Tr
+                  - res = (parms['C1']**2)/t + parms['C2'] - 2*parms['C1']*parms['C3']*t -
+                    parms['C1']*parms['C4']*(t**2) - (parms['C3']**2)*(t**3)/3 -
+                    (parms['C3'])*(parms['C4'])*(t**4)/2 -
+                    (parms['C4']**2)*(t**5)/5
+                ARGS:
+                  temperature:
+                    name: temperature
+                    symbol: T
+                    unit: K
+                  critical_temperature:
+                    name: critical temperature
+                    symbol: Tc
+                    unit: K
+                PARMS:
+                  C1:
+                    name: C1
+                    symbol: C1
+                    unit: None
+                    conversion: 1
+                  C2:
+                    name: C2
+                    symbol: C2
+                    unit: None
+                    conversion: 1
+                  C3:
+                    name: C3
+                    symbol: C3
+                    unit: None
+                    conversion: 1
+                  C4:
+                    name: C4
+                    symbol: C4
+                    unit: None
+                    conversion: 1
+                  C5:
+                    name: C5
+                    symbol: C5
+                    unit: None
+                    conversion: 1
+                RETURNS:
+                  heat_capacity:
+                    name: heat capacity
+                    symbol: Cp_LIQ
+                    unit: J/(kmol.K)
+                BODY-INTEGRAL:
+                  None
+                BODY-FIRST-DERIVATIVE:
+                  None
+                BODY-SECOND-DERIVATIVE:
+                  None
+        TABLE 2-155 Heat Capacity at Constant Pressure of Inorganic and Organic Compounds in the Ideal Gas:
+            EQUATIONS:
+              EQ-1:
+                BODY:
+                  - parms['C1'] = parms['C1']/1
+                  - parms['C2'] = parms['C2']/1
+                  - parms['C3'] = parms['C3']/1
+                  - parms['C4'] = parms['C4']/1
+                  - parms['C5'] = parms['C5']/1
+                  - res = parms['C1'] + parms['C2']*args['T'] + parms['C3']*math.pow(args['T'],2) +
+                    parms['C4']*math.pow(args['T'],3) +
+                    parms['C5']*math.pow(args['T'],4)
+                ARGS:
+                  temperature:
+                    name: temperature
+                    symbol: T
+                    unit: K
+                PARMS:
+                  C1:
+                    name: C1
+                    symbol: C1
+                    unit: 1
+                    conversion: 1
+                  C2:
+                    name: C2
+                    symbol: C2
+                    unit: 1
+                    conversion: 1
+                  C3:
+                    name: C3
+                    symbol: C3
+                    unit: 1
+                    conversion: 1
+                  C4:
+                    name: C4
+                    symbol: C4
+                    unit: 1E+5
+                    conversion: 1E+5
+                  C5:
+                    name: C5
+                    symbol: C5
+                    unit: 1E+10
+                    conversion: 1E+10
+                RETURNS:
+                  heat_capacity:
+                    name: heat capacity
+                    symbol: Cp_IG
+                    unit: J/kmol.K
+                BODY-INTEGRAL:
+                  None
+                BODY-FIRST-DERIVATIVE:
+                  None
+                BODY-SECOND-DERIVATIVE:
+                  None
+    Chemical Thermodynamics for Process Simulation:
+      TABLES:
+        Table A.1 General data for selected compounds:
+          DATA: 
+            COLUMNS: 
+              - No.
+              - Name
+              - critical-temperature
+              - critical-pressure
+              - critical-molar-volume
+              - molecular-weight
+              - acentric-factor
+              - boiling-temperature
+              - melting-temperature
+              - specific-enthalpy-of-fusion
+              - standard-enthalpy-of-formation
+              - standard-Gibbs-energy-of-formation
+            SYMBOL:
+              - None
+              - None
+              - Tc
+              - Pc
+              - Vc
+              - MW
+              - AcFa
+              - Tb
+              - Tm
+              - dHm
+              - dHf_std
+              - dGf_std
+            UNIT:
+              - None
+              - None
+              - K
+              - bar
+              - cm3/mol
+              - g/mol
+              - None
+              - K
+              - K
+              - J/mol 
+              - J/mol
+              - J/mol
+            CONVERSION:
+              - None
+              - None
+              - 1
+              - 1
+              - 1
+              - 1
+              - 1
+              - 1 
+              - 1 
+              - 1
+              - 1
+              - 1
+        Table A.2 Vapor pressure correlations for selected compounds:
+            EQUATIONS:
+              EQ-1:
+                BODY:
+                  - Tr = args['T']/args['Tc']
+                  - A1 = 1/Tr
+                  - A2 = parms['A']*(1-Tr)
+                  - A3 = parms['B']*math.pow(1-Tr, 1.5)
+                  - A4 = parms['C']*math.pow(1-Tr, 2.5)
+                  - A5 = parms['D']*math.pow(1-Tr, 5)
+                  - B1 = A1*(A2+A3+A4+A5)
+                  - B2 = args['Pc']*math.exp(B1)
+                  - res = B2
+                ARGS:
+                  temperature:
+                    name: temperature
+                    symbol: T
+                    unit: K
+                  critical_temperature:
+                    name: critical temperature
+                    symbol: Tc
+                    unit: K
+                  critical_pressure:
+                    name: critical pressure
+                    symbol: Pc
+                    unit: bar
+                PARMS:
+                  A:
+                    name: A
+                    symbol: A
+                    unit: None
+                    conversion: 1
+                  B:
+                    name: B
+                    symbol: B
+                    unit: None
+                    conversion: 1
+                  C:
+                    name: C
+                    symbol: C
+                    unit: None
+                    conversion: 1
+                  D:
+                    name: D
+                    symbol: D
+                    unit: None
+                    conversion: 1
+                RETURNS:
+                  vapor_pressure:
+                    name: vapor pressure
+                    symbol: VaPr
+                    unit: bar
+                BODY-INTEGRAL:
+                  None
+                BODY-FIRST-DERIVATIVE:
+                  None
+                BODY-SECOND-DERIVATIVE:
+                  None
+        Table A.3 Liquid density correlations for selected compounds:
+          EQUATIONS:
+            EQ-1:
+              BODY:
+                - Tr = args['T']/args['Tc']
+                - A = parms['A']*math.pow(1-Tr,0.35)
+                - B = parms['B']*math.pow(1-Tr,2/3)
+                - C = parms['C']*(1-Tr)
+                - D = parms['D']*math.pow(1-Tr,4/3)
+                - res = parms['rho_c'] + (A+B+C+D)
+              ARGS:
+                temperature:
+                  name: temperature
+                  symbol: T
+                  unit: K
+                critical_temperature:
+                  name: critical temperature
+                  symbol: Tc
+                  unit: K
+              PARMS:
+                rho_c:
+                  name: density constant
+                  symbol: rho_c
+                  unit: None
+                  conversion: 1
+                A:
+                  name: A
+                  symbol: A
+                  unit: None
+                  conversion: 1
+                B:
+                  name: B
+                  symbol: B
+                  unit: None
+                  conversion: 1
+                C:
+                  name: C
+                  symbol: C
+                  unit: None
+                  conversion: 1
+                D:
+                  name: D
+                  symbol: D
+                  unit: None
+                  conversion: 1
+              RETURNS:
+                liquid_density:
+                  name: liquid density
+                  symbol: rho_LIQ
+                  unit: kg/m3
+              BODY-INTEGRAL:
+                None
+              BODY-FIRST-DERIVATIVE:
+                None
+              BODY-SECOND-DERIVATIVE:
+                None
+        Table A.4 Enthalpy of vaporization correlations for selected compounds:
+          EQUATIONS:
+            EQ-1:
+              BODY:
+                - tau = 1 - args['T']/args['Tc']
+                - A = parms['A']*math.pow(tau, 1/3)
+                - B = parms['B']*math.pow(tau, 2/3)
+                - C = parms['C']*tau
+                - D = parms['D']*math.pow(tau, 2)
+                - E = parms['E']*math.pow(tau, 6)
+                - res = (parms['R']*args['Tc']*(A + B + C + D + E))/args['MW']
+              ARGS:
+                temperature:
+                  name: temperature
+                  symbol: T
+                  unit: K
+                critical_temperature:
+                  name: critical temperature
+                  symbol: Tc
+                  unit: K
+                molecular_weight:
+                  name: molecular weight
+                  symbol: MW
+                  unit: g/mol
+              PARMS:
+                A:
+                  name: A
+                  symbol: A
+                  unit: None
+                  conversion: 1
+                B:
+                  name: B
+                  symbol: B
+                  unit: None
+                  conversion: 1
+                C:
+                  name: C
+                  symbol: C
+                  unit: None
+                  conversion: 1
+                D:
+                  name: D
+                  symbol: D
+                  unit: None
+                  conversion: 1
+                E:
+                  name: E
+                  symbol: E
+                  unit: None
+                  conversion: 1
+                R:
+                  name: universal gas constant
+                  symbol: R
+                  unit: None
+                  conversion: 1
+              RETURNS:
+                enthalpy_of_vaporization:
+                  name: enthalpy of vaporization
+                  symbol: dHv
+                  unit: J/g
+              BODY-INTEGRAL:
+                None
+              BODY-FIRST-DERIVATIVE:
+                None
+              BODY-SECOND-DERIVATIVE:
+                None
+        Table A.5 Liquid heat capacity correlations for selected compounds:
+          EQUATIONS:
+            EQ-1:
+              BODY:
+                - Tau = 1 - (args['T']/args['Tc'])
+                - A = parms['A']/Tau
+                - B = parms['B']
+                - C = parms['C']*Tau
+                - D = parms['D']*math.pow(Tau,2)
+                - E = parms['E']*math.pow(Tau,3)
+                - F = parms['F']*math.pow(Tau,4)
+                - res = (parms['R']*(A+B+C+D+E+F))/args['MW']
+              ARGS:
+                temperature:
+                  name: temperature
+                  symbol: T
+                  unit: K
+                critical_temperature:
+                  name: critical temperature
+                  symbol: Tc
+                  unit: K
+              PARMS:
+                A:
+                  name: A
+                  symbol: A
+                  unit: None
+                  conversion: 1
+                B:
+                  name: B
+                  symbol: B
+                  unit: None
+                  conversion: 1
+                C:
+                  name: C
+                  symbol: C
+                  unit: None
+                  conversion: 1
+                D:
+                  name: D
+                  symbol: D
+                  unit: None
+                  conversion: 1
+                E:
+                  name: E
+                  symbol: E
+                  unit: None
+                  conversion: 1
+                F:
+                  name: F
+                  symbol: F
+                  unit: None
+                  conversion: 1
+                R:
+                  name: universal gas constant
+                  symbol: R
+                  unit: None
+                  conversion: 1
+              RETURNS:
+                liquid_heat_capacity:
+                  name: liquid heat capacity
+                  symbol: Cp_LIQ
+                  unit: J/g.K
+              BODY-INTEGRAL:
+                None
+              BODY-FIRST-DERIVATIVE:
+                None
+              BODY-SECOND-DERIVATIVE:
+                None
+    Chemical and Engineering Thermodynamics:
+      TABLES:
+        Table A.II The Molar Heat Capacities of Gases in the Ideal Gas (Zero-Pressure) State:
+          EQUATIONS:
+            EQ-1:
+              BODY:
+                - parms['a'] = parms['a']/1
+                - parms['b'] = parms['b']/1
+                - parms['c'] = parms['c']/1
+                - parms['d'] = parms['d']/1
+                - res = parms['a'] + parms['b']*args['T'] + parms['c']*(args['T']**2) + parms['d']*(args['T']**3)
+              ARGS:
+                temperature:
+                  name: temperature
+                  symbol: T
+                  unit: K
+              PARMS:
+                a:
+                  name: a
+                  symbol: a
+                  unit: None
+                  conversion: 1
+                b:
+                  name: b
+                  symbol: b
+                  unit: None
+                  conversion: 1E2
+                c:
+                  name: c
+                  symbol: c
+                  unit: None
+                  conversion: 1E5
+                d:
+                  name: d
+                  symbol: d
+                  unit: None
+                  conversion: 1E9
+              RETURNS:
+                heat_capacity_ideal_gas:
+                  name: heat capacity of ideal gas
+                  symbol: HeCa_IG
+                  unit: J/mol.K
+              BODY-INTEGRAL:
+                  None
+              BODY-FIRST-DERIVATIVE:
+                None
+              BODY-SECOND-DERIVATIVE:
+                None
+            EQ-2:
+              BODY:
+                - res = 75.464 - 1.872*1e-4*args['T'] - 661.42/math.sqrt(args['T'])
+              ARGS:
+                temperature:
+                  name: temperature
+                  symbol: T
+                  unit: K
+              PARMS: 
+                None
+              RETURNS:
+                heat_capacity_ideal_gas:
+                  name: heat capacity of ideal gas
+                  symbol: HeCa_IG
+                  unit: J/mol.K
+              BODY-INTEGRAL:
+                  None
+              BODY-FIRST-DERIVATIVE:
+                None
+              BODY-SECOND-DERIVATIVE:
+                None
+        Table A.IV Enthalpies and Gibbs Energies of Formation: 
+          DATA:
+            COLUMNS: 
+              - No.
+              - Name
+              - Formula
+              - State
+              - dHf_IG
+              - dGf_IG
+            SYMBOL:
+              - None
+              - None
+              - None
+              - None
+              - dHf_IG
+              - dGf_IG
+            UNIT:
+              - None
+              - None
+              - None
+              - None
+              - J/kmol
+              - J/kmol
+            CONVERSION:
+              - None
+              - None
+              - None
+              - None
+              - 1
+              - 1
+
