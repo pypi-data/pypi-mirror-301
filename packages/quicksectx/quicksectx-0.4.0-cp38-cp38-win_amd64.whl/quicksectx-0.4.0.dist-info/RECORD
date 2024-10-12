@@ -1,0 +1,14 @@
+quicksect/__init__.py,sha256=021HNWPv2hLaMFZIuJIoxgMifiNEe6pYqwK0omjxp0c,112
+quicksect/quicksect.cp38-win_amd64.pyd,sha256=JsE0sAEPS9D-Z-6bAJA62AT3c1R8QAH9fP_lwZLsB-I,129024
+quicksect/quicksect.cpp,sha256=3EqDEjpoQgIXFMByghhPdDV_JkAkO07miztEKwXQFIc,879061
+quicksect/quicksect.pyx,sha256=Se_8CdNlAnQ_M3wJJFZ4iN4pxz2o6wv5NqkvVyxXWv8,14787
+quicksectx/__init__.py,sha256=Dp1HXBhyyQe4K4xSYqBvjrgCROH9sWqAaiDIvLE-THs,135
+quicksectx/quicksectx.cp38-win_amd64.pyd,sha256=055dWtWHRG8f1_LxwF3sna9jkRCT4bwUYAONx0q_04k,141312
+quicksectx/quicksectx.cpp,sha256=_6CTSM_8pY-qfzYwjxgoeJFvRv5vw2EjxI3pJvAipC4,976551
+quicksectx/quicksectx.pxd,sha256=RhB3GuLXLqTw5QlPZt06yz1b5TyiEubBpIiSysCk7R8,1505
+quicksectx/quicksectx.pyx,sha256=1bDhDdLWmyy5yPrvHVDHQ5EIiEodksYlJY_n5CwigE0,17699
+quicksectx-0.4.0.dist-info/LICENSE,sha256=iLuGje-RcnHWPTPUiAtDMLKFFDA-bfux_KDl2sBIBB8,1088
+quicksectx-0.4.0.dist-info/METADATA,sha256=6mp216TxcuEMMRtUlOuOSEQth83hLBsQeJuZsR2XGzE,4729
+quicksectx-0.4.0.dist-info/WHEEL,sha256=1rwUt2BQv3N5S0pE0N9WlEu1uiKd-mQhEp4H-4r377U,99
+quicksectx-0.4.0.dist-info/top_level.txt,sha256=8NDGIj_DVaDPjTJqEw3r-3n9N4pUAEicM0Xb7LEAvwc,21
+quicksectx-0.4.0.dist-info/RECORD,,
