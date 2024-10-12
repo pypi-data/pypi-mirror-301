@@ -1,0 +1,6 @@
+[girder_large_image.source]
+openvisus = large_image_source_openvisus.girder_source:OpenVisusGirderTileSource
+
+[large_image.source]
+openvisus = large_image_source_openvisus:OpenVisusTileSource
+
