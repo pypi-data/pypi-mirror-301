@@ -1,0 +1,169 @@
+syntax = "proto3";
+
+package strique.types.dto.tiktok;
+
+option java_outer_classname = "TiktokAdsProto";
+option java_package = "com.strique.types.dto.tiktok";
+
+// Next Id: 3
+// A protobuf to Tiktok Ads.
+message TiktokResponse {
+  // Tiktok resoponce code.
+  uint64 code = 1 [json_name = "code"];
+
+  // Tiktok Ads Data.
+  TiktokData data = 2 [json_name = "data"];
+}
+
+// Next Id: 2
+message TiktokData {
+  // List of data.
+  repeated AdMetrics list = 1 [json_name = "list"];
+}
+
+// Next Id: 3
+message AdMetrics {
+  // dimesions of ad.
+  Dimensions dimensions = 1 [json_name = "dimensions"];
+
+  // metrics of ad.
+  Metrics metrics = 2 [json_name = "metrics"];
+}
+
+// Next Id: 3
+message Dimensions {
+  // Ad id.
+  string ad_id = 1 [json_name = "ad_id"];
+
+  // stat time day.
+  string stat_time_day = 2 [json_name = "stat_time_day"];
+}
+
+// Next Id: 43
+message Metrics {
+  // Optimization goal.
+  string smart_target = 1 [json_name = "smart_target"];
+
+  // Number of destination clicks.
+  uint64 clicks = 2 [json_name = "clicks"];
+
+  // Video views at 2 seconds.
+  uint64 video_watched_2s = 3 [json_name = "video_watched_2s"];
+
+  // Real-time conversions.
+  uint64 real_time_conversion = 4 [json_name = "real_time_conversion"];
+
+  // value of completed payments.
+  double total_complete_payment_rate = 5 [json_name = "total_complete_payment_rate"];
+
+  // Number of comments.
+  uint64 comments = 6 [json_name = "comments"];
+
+  // Number of follows.
+  uint64 follows = 7 [json_name = "follows"];
+
+  // Total value corresponding to initiated checkouts.
+  double total_initiate_checkout_value = 8 [json_name = "total_initiate_checkout_value"];
+
+  // Clicks (all).
+  uint64 engagements = 9 [json_name = "engagements"];
+
+  // 6-second focused views.
+  uint64 engaged_view = 10 [json_name = "engaged_view"];
+
+  // formate.
+  string image_mode = 11 [json_name = "image_mode"];
+
+  // Number of shares.
+  uint64 shares = 12 [json_name = "shares"];
+
+  // Campaign ID.
+  string campaign_id = 13 [json_name = "campaign_id"];
+
+  // Total value corresponding to form submissions.
+  double total_form_value = 14 [json_name = "total_form_value"];
+
+  // Ad name.
+  string ad_name = 15 [json_name = "ad_name"];
+
+  // Total reach.
+  uint64 reach = 16 [json_name = "reach"];
+
+  // Amount spent on advertising.
+  double spend = 17 [json_name = "spend"];
+
+  // Video views at 25% completion.
+  uint64 video_views_p25 = 18 [json_name = "video_views_p25"];
+
+  // Ad group name.
+  string adgroup_name = 19 [json_name = "adgroup_name"];
+
+  // Number of total page views.
+  uint64 total_pageview = 20 [json_name = "total_pageview"];
+
+  // Number of web events for add to cart.
+  uint64 web_event_add_to_cart = 21 [json_name = "web_event_add_to_cart"];
+
+  // Campaign name.
+  string campaign_name = 22 [json_name = "campaign_name"];
+
+  // Total value per page view.
+  double total_value_per_pageview = 23 [json_name = "total_value_per_pageview"];
+
+  // Number of subscriptions on web.
+  uint64 on_web_subscribe = 24 [json_name = "on_web_subscribe"];
+
+  // Video views.
+  uint64 video_play_actions = 25 [json_name = "video_play_actions"];
+
+  // Number of total landing page views.
+  uint64 total_landing_page_view = 26 [json_name = "total_landing_page_view"];
+
+  // Campaign type.
+  uint64 campaign_dedicate_type = 27 [json_name = "campaign_dedicate_type"];
+
+  // Video views at 100% completion.
+  uint64 video_views_p100 = 28 [json_name = "video_views_p100"];
+
+  // Total value corresponding to web subscriptions.
+  double total_on_web_subscribe_value = 29 [json_name = "total_on_web_subscribe_value"];
+
+  // Average time video was played per single video view.
+  float average_video_play = 30 [json_name = "average_video_play"];
+
+  // Total value corresponding to web event add to cart.
+  double total_web_event_add_to_cart_value = 31 [json_name = "total_web_event_add_to_cart_value"];
+
+  // No. of impressions.
+  uint64 impressions = 32 [json_name = "impressions"];
+
+  // Video views at 50% completion.
+  uint64 video_views_p50 = 33 [json_name = "video_views_p50"];
+
+  // Video views at 6 seconds.
+  uint64 video_watched_6s = 34 [json_name = "video_watched_6s"];
+
+  // Number of form submissions.
+  uint64 form = 35 [json_name = "form"];
+
+  // Ad group ID.
+  string adgroup_id = 36 [json_name = "adgroup_id"];
+
+  // Number of completed payments.
+  uint64 complete_payment = 37 [json_name = "complete_payment"];
+
+  // Average time your video was played per user.
+  float average_video_play_per_user = 38 [json_name = "average_video_play_per_user"];
+
+  // Number of initiated checkouts.
+  uint64 initiate_checkout = 39 [json_name = "initiate_checkout"];
+
+  // Total conversions.
+  uint64 conversion = 40 [json_name = "conversion"];
+
+  // Number of likes.
+  sint64 likes = 41 [json_name = "likes"];
+
+  // Video views at 75% completion.
+  uint64 video_views_p75 = 42 [json_name = "video_views_p75"];
+}
