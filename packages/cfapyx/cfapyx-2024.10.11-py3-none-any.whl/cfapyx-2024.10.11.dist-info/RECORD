@@ -1,0 +1,12 @@
+cfapyx/__init__.py,sha256=VLrmGYWEPSZQvDwNQQbKB_PQ4ICR8NUQ5jBE05DKHNw,79
+cfapyx/backend.py,sha256=KqVbqfNHjP_IFrP3IFMSACn9XpIlSxlDbLKCCMZH428,6701
+cfapyx/creator.py,sha256=Ozed-tzoKDdFgyhpB_nAYIcFwlwdoRi5H0XsNagjU9c,34535
+cfapyx/datastore.py,sha256=AwaF3cMh4D8EZXJPIkFzxYFQI3hnktAqu58dGZY8I-g,17536
+cfapyx/decoder.py,sha256=gmonQTFQqU6dzSelrUfwPqResn8-_gGU0Brmr31BgVk,3947
+cfapyx/group.py,sha256=WQLxr5KxKszTZXOzBLanpqS0rKgiqYKzqWHUdB3qugY,3982
+cfapyx/wrappers.py,sha256=vZZbYnwefR2IJize_bSQ9n3iwD1Lx8Lv_yUxlSdCtRM,18378
+cfapyx-2024.10.11.dist-info/LICENSE,sha256=-UdM0-HeWRU440Gy0ItdxaCMHdL_mptCDrfBh6xndOo,1651
+cfapyx-2024.10.11.dist-info/METADATA,sha256=qITrdp8XXnW1RoQa4Eq6QzfcLR6Za-Apsl95Xtn56v4,1838
+cfapyx-2024.10.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cfapyx-2024.10.11.dist-info/entry_points.txt,sha256=n--TfI-G5wNZrlsNzWrd-DakSwmFlsh25RpqdD79Gjc,65
+cfapyx-2024.10.11.dist-info/RECORD,,
