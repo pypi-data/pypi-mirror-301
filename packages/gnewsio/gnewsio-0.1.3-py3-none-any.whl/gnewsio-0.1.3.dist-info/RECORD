@@ -1,0 +1,12 @@
+gnews/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnews/api_client.py,sha256=8YAWLx0hEa_UXocaAu3-CgMFe1eRVlaIllIx8Vr_zW8,1794
+gnews/client_builder.py,sha256=3HnCiImufD138WHvuF0IlVZsA75i0HZhaHUuiKYiT9E,1502
+gnews/enums.py,sha256=0BqZO0fj-oGYxq1H6z_3Xn92SSYbnTZUHpRws0NJl6A,1314
+gnews/exceptions.py,sha256=liK4r0b7TDgLFnNMr-Nq7E5GwkYbwSxc3PiKjOQC5fw,193
+gnews/response_handler.py,sha256=Eoz0xXSSriUFJ6ROuEp9WRGoYXkl0eiEkg9jV4TAMfo,1467
+gnews/retrier.py,sha256=rF6iCep7KpNb4fTqTsOk1fq4tlbj4U3GskMog8Bc7kw,753
+gnewsio-0.1.3.dist-info/LICENSE,sha256=zT6k9Bh2jn5poTWm4SwYDgo_I51EzWD9xG8Gkh6qipM,1074
+gnewsio-0.1.3.dist-info/METADATA,sha256=Vh-xPY20DML-yK_yyvDdao4K-i8lVNt6CMHjoLwounE,1471
+gnewsio-0.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gnewsio-0.1.3.dist-info/top_level.txt,sha256=i5APuMSWS2tWPqz36M93Bh--NPTf7upTW3U_Yice_jw,6
+gnewsio-0.1.3.dist-info/RECORD,,
