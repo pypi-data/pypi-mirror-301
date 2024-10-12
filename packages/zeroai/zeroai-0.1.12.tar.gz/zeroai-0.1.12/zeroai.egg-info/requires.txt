@@ -1,0 +1,9 @@
+Flask
+Flask-HTTPAuth
+transformers
+datasets
+seqeval
+tensorboard
+evaluate
+Pillow
+numpy
