@@ -1,0 +1,17 @@
+LICENSE
+setup.py
+src/shellui/__init__.py
+src/shellui.egg-info/PKG-INFO
+src/shellui.egg-info/SOURCES.txt
+src/shellui.egg-info/dependency_links.txt
+src/shellui.egg-info/requires.txt
+src/shellui.egg-info/top_level.txt
+src/shellui/core/__init__.py
+src/shellui/core/handler.py
+src/shellui/core/interfaces.py
+src/shellui/core/terminal.py
+src/shellui/core/typings.py
+src/shellui/ui/__init__.py
+src/shellui/ui/abstracts.py
+src/shellui/ui/board.py
+src/shellui/ui/root.py

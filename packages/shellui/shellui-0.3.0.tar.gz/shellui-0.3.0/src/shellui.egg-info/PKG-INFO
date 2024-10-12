@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: shellui
+Version: 0.3.0
+Summary: library simplifies the creation of TUI (Text User Interface) in the terminal. Offers a clean and intuitive architecture to help you build interactive applications effortlessly.
+Home-page: https://github.com/highofolly/shellui
+Author: highofolly
+Author-email: sw3atyspace@email.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools>=75.1.0
+Requires-Dist: windows-curses>=2.3.3
+
+# SHELLUI
+
+library simplifies the creation of TUI (Text User Interface)
+in the terminal. Offers a clean and intuitive architecture to
+help you build interactive applications effortlessly.
+
+## INSTALLATION
+
+At the moment, download is only available via git:
+```
+pip install shellui
+```
+
+## DOCUMENTATION
+
+At the moment, documentation is provided directly in the comments to the objects.
+
+## CONTRIBUTION
+
+If you want other people to be able to contribute to your project, add a section with instructions:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/your-feature).
+3. Make changes and commit (git commit -m 'Add new feature').
+4. Push the branch (git push origin feature/your-feature).
+5. Create a Pull Request.
+
+## LICENSE
+
+This project is licensed under the [MIT License](LICENSE)
+
+## Contacts
+
+Source - https://github.com/highofolly/shellui <br>
+Email - sw3atyspace@gmail.com <br>
+GitHub - https://github.com/highofolly <br>
+Youtube - https://www.youtube.com/@sw3aty702
