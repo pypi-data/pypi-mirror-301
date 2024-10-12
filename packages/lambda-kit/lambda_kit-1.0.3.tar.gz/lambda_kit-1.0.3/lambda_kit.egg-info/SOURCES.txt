@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+lambda_kit/__init__.py
+lambda_kit/__main__.py
+lambda_kit.egg-info/PKG-INFO
+lambda_kit.egg-info/SOURCES.txt
+lambda_kit.egg-info/dependency_links.txt
+lambda_kit.egg-info/entry_points.txt
+lambda_kit.egg-info/requires.txt
+lambda_kit.egg-info/top_level.txt
+tests/test_deploy.py
+tests/test_package.py
