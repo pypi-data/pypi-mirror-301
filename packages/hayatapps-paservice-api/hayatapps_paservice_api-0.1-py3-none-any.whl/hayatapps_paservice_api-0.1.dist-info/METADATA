@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hayatapps_paservice_api
+Version: 0.1
+Summary: PA proto package
+Author: Roman =?unknown-8bit?q?Po=C5=82chowski?=
+Author-email: rp@hayatapps.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: protobuf (==5.26.1)
+Requires-Dist: grpcio (==1.66.2)
+Requires-Dist: grpcio-tools (==1.66.2)
+
