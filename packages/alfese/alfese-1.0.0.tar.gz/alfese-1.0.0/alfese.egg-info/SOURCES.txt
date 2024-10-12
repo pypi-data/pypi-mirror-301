@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+alfese/__init__.py
+alfese/alfese.py
+alfese.egg-info/PKG-INFO
+alfese.egg-info/SOURCES.txt
+alfese.egg-info/dependency_links.txt
+alfese.egg-info/requires.txt
+alfese.egg-info/top_level.txt
