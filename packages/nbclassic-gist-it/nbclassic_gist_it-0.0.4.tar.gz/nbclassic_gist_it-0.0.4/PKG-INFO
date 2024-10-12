@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nbclassic-gist-it
+Version: 0.0.4
+Summary: Gist it
+Home-page: https://github.com/AnswerDotAI/nbclassic-gist-it
+Author: Nbextensions team
+Author-email: info@fast.ai
+License: Apache Software License 2.0
+Keywords: notebook
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+
+# gist_it
+Publish notebooks as Github gists with a single button click.
+
+Ensure that either `GIST_TOKEN` or `GITHUB_TOKEN` is set before installing - if it is, it'll be used to set gist-it's token.

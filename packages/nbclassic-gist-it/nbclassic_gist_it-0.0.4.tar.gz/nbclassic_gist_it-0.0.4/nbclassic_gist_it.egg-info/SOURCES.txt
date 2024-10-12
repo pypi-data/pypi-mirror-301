@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+jupyter-config/gist_it.json
+nbclassic_gist_it.egg-info/PKG-INFO
+nbclassic_gist_it.egg-info/SOURCES.txt
+nbclassic_gist_it.egg-info/dependency_links.txt
+nbclassic_gist_it.egg-info/not-zip-safe
+nbclassic_gist_it.egg-info/requires.txt
+nbclassic_gist_it.egg-info/top_level.txt
+static/gist_it.js
