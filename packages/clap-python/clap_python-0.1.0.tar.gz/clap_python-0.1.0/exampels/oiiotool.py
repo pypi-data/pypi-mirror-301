@@ -1,0 +1,47 @@
+
+from clap_py import App, Arg, MutuallyExclusiveGroup
+
+
+def cli() -> dict:
+    return (
+        App()
+        .about("oiiotool CLI - Image manipulation tool using OpenImageIO.")
+        .arg_required_else_help(True)  # Show help if no args are provided
+        .arg(Arg("--input", "-i").required(True).help("Input image file"))
+        .arg(
+            MutuallyExclusiveGroup()  # Mutually exclusive input options
+            .arg(Arg("--resize").help("Resize the image"))
+            .arg(Arg("--crop").help("Crop the image"))
+            .arg(Arg("--rotate").help("Rotate the image"))
+            .arg(Arg("--flip").takes_value(False).help("Flip the image vertically"))
+            .arg(Arg("--flop").takes_value(False).help("Flip the image horizontally"))
+            .arg(Arg("--add").help("Composite another image").multiple_values(True))
+            .arg(Arg("--sub").help("Subtract another image").multiple_values(True))
+            .arg(
+                Arg("--mul").help("Multiply image by a constant").multiple_values(True)
+            )
+        )
+        .arg(
+            Arg("--output", "-o").help(
+                "Output image file"
+            )  # Subcommand for specifying output files
+        )
+        .arg(Arg("--list").help("List available operations").takes_value(False))
+        .arg(
+            Arg("--info")
+            .help("Display information about the input image")
+            .takes_value(False)
+        )
+        .arg(Arg("--verbose", "-v").help("Enable verbose output").takes_value(False))
+        .parse_known_args()
+    )
+
+
+if __name__ == "__main__":
+    args = cli()
+    import json
+
+    print(json.dumps(args, indent=4))
+
+# Example of how this could work:
+# Running with "--input image.jpg --resize 800x600 --output result.jpg"
