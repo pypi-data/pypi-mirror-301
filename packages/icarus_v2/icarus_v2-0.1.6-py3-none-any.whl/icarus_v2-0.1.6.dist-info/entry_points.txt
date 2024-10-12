@@ -1,0 +1,3 @@
+[console_scripts]
+icarus=icarus_v2.__main__:main
+
