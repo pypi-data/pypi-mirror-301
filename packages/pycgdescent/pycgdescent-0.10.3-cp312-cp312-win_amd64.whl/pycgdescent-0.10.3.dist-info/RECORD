@@ -1,0 +1,12 @@
+pycgdescent/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycgdescent/_cg_descent.cp312-win_amd64.dll.a,sha256=oMpzYc9D_jxZwL3iz2CpkckjiXqA7Y-XrZ3D-bU9Mx4,1782
+pycgdescent/_cg_descent.cp312-win_amd64.pyd,sha256=dS_n8_apZg16CXybXumJJkxwo1-7hMbX_f_AYhAgj50,551582
+pycgdescent/_cg_descent.pyi,sha256=ymArgLAe2MhoOcTPJ-Om6c9_DuZX1AFQOprRXQfgUvU,2999
+pycgdescent/__init__.py,sha256=1MYI_Qz0WvPoBWCEqlR9tk3lqZLBw4E7qfEK2uGrXz4,23851
+pycgdescent-0.10.3.dist-info/DELVEWHEEL,sha256=YCxqkxg9rWpmXKp4XJ5DPqya2yzGA9oMNiOekz7B7_0,404
+pycgdescent-0.10.3.dist-info/METADATA,sha256=9o39HGXB0edJ8V_hqpD7C2Jks4lwhpg1bRWGCJBK1x0,2988
+pycgdescent-0.10.3.dist-info/RECORD,,
+pycgdescent-0.10.3.dist-info/WHEEL,sha256=50PeAbplA6PkI0hYOYoeacB9US1R6EguyfOnsccH0WU,85
+pycgdescent.libs/libgcc_s_seh-1-8596168b188af1d2430aad9a4ed04b3e.dll,sha256=gacN68Hke3O3_-x_oInrArlMI5UtjD8YWR3K-o3ttJI,101376
+pycgdescent.libs/libstdc++-6-d551ea342580df56932cf870950ac133.dll,sha256=ugxv4kNnYttPfoWoOlrJfpK99tBDWKX4aDZa6kQnoNk,2020352
+pycgdescent.libs/libwinpthread-1-524aaf767e85adef3166b8436315049e.dll,sha256=4BuOhf1nwrhh9k1MzH32B1m1iapBAACij6K4SiCJF1s,54784
