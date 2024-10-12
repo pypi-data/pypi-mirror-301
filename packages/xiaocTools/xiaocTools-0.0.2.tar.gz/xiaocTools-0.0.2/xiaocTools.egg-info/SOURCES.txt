@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+xiaocTools/__init__.py
+xiaocTools/xiaocTools.py
+xiaocTools.egg-info/PKG-INFO
+xiaocTools.egg-info/SOURCES.txt
+xiaocTools.egg-info/dependency_links.txt
+xiaocTools.egg-info/top_level.txt

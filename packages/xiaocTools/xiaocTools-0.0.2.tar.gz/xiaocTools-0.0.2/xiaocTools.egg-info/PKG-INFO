@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xiaocTools
+Version: 0.0.2
+Summary: 自己封装的一些常用方法的python包
+Author: xiaoc
+Author-email: i@xiaoc.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### 自己封装的一些常用方法的python包
