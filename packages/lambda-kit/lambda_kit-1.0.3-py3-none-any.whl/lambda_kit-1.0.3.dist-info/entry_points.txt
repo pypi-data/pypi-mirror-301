@@ -1,0 +1,2 @@
+[console_scripts]
+lpack = lambda_kit.__main__:main
