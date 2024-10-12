@@ -1,0 +1,10 @@
+tortoise-orm[accel,asyncpg]
+passlib[bcrypt]
+pydantic
+python-dotenv
+
+[dev]
+pytest
+build
+twine
+setuptools_scm
