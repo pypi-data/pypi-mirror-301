@@ -1,0 +1,10 @@
+[console_scripts]
+draw_segments = RDG_networks.draw_segments:main
+generate_line_network = RDG_networks.generate_line_network:main
+generate_line_segments = RDG_networks.generate_line_segments:main
+generate_line_segments_dynamic = RDG_networks.generate_line_segments_dynamic:main
+generate_line_segments_dynamic_orientation = RDG_networks.generate_line_segments_dynamic_orientation:main
+generate_line_segments_static = RDG_networks.generate_line_segments_static:main
+generate_line_segments_thickness = RDG_networks.thickness.generate_line_segments_thickness:main
+get_intersection_segments = RDG_networks.get_intersection_segments:main
+save_to_stl = RDG_networks.save_to_stl:main
