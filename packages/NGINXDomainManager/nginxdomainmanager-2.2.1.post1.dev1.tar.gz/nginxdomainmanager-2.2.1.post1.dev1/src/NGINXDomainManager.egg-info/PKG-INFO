@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: NGINXDomainManager
+Version: 2.2.1.post1.dev1
+Summary: A tool to manage NGINX domains
+Author-email: Your Name <your.email@example.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/Bof98/NGINXDomainManager
+Project-URL: Issues, https://github.com/Bof98/NGINXDomainManager/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML>=6.0.2
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: requests>=2.31.0
+Requires-Dist: packaging>=24.1
+
+# NGINXDomainManager
+
+NGINXDomainManager is a Python-based tool to manage NGINX configurations and SSL certificates seamlessly.
+
+## Features
+
+- Create, edit, update, and delete Nginx subdomains.
+- Obtain and renew SSL certificates using Certbot.
+- View logs and changelog directly from the script.
+- Configure settings like directories and templates via a user-friendly menu.
+- Automated backups of Nginx configurations.
+
+## Installation
+
+```bash
+pip install NGINXDomainManager 
