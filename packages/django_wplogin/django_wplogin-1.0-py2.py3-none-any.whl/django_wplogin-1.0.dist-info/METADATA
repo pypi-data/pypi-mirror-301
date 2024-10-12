@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: django_wplogin
+Version: 1.0
+Summary: Enhance the Django admin login page
+Author-email: Baptiste Mispelon <hello@bmispelon.rocks>
+Classifier: License :: OSI Approved :: MIT License
