@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/dify_api_python/__init__.py
+src/dify_api_python/client.py
+src/dify_api_python.egg-info/PKG-INFO
+src/dify_api_python.egg-info/SOURCES.txt
+src/dify_api_python.egg-info/dependency_links.txt
+src/dify_api_python.egg-info/requires.txt
+src/dify_api_python.egg-info/top_level.txt
