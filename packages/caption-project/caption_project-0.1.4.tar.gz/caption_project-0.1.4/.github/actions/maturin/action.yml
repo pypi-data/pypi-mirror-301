@@ -1,0 +1,31 @@
+name: Maturin Action
+description: Build wheels using Maturin
+
+inputs:
+  target:
+    description: 'The target platform'
+    required: true
+    # default: 'x86_64-unknown-linux-gnu'
+  # args:
+  #   description: 'Additional arguments to pass to maturin'
+  #   required: false
+  #   default: ''
+  sccache:
+    description: 'Whether to use sccache'
+    required: false
+    default: 'false'
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: ./.github/actions/ci-setup
+    - name: Build wheels 
+      shell: bash
+      run: |
+        maturin build --release --out dist --find-interpreter --target 
+        
+        
+        
+        
+# if [ "${{ inputs.sccache }}" = "true" ]; then
+#   maturin build --release --out dist --find-interpreter
