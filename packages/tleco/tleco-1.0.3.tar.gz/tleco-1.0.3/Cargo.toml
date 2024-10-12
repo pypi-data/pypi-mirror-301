@@ -1,0 +1,18 @@
+[package]
+name = "tleco"
+version = "1.0.3"
+edition = "2021"
+
+[lib]
+name = "tleco"
+crate-type = [ "cdylib",]
+
+[dependencies]
+pyo3 = "0.19.0"
+scilib = "1.0.0"
+num = "0.4.1"
+rayon = "1.8.1"
+
+[dependencies.ndarray]
+version = "0.15.3"
+features = [ "rayon",]
