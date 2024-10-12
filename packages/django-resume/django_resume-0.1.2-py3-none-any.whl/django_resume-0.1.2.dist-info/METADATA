@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: django-resume
+Version: 0.1.2
+Summary: Add your description here
+Requires-Python: >=3.10
+Requires-Dist: django>=5.1.1
+Description-Content-Type: text/markdown
+
+# django-resume
+A pluggable framework for managing your resume
+
+## Installation
+
+```bash
+pip install django-resume
+```
+
+## Running Tests
+
+```bash
+pytest
+```
+
+## Run mypy
+
+```bash
+uv run mypy src
+```
+
+## Run coverage
+
+```bash
+coverage run -m pytest
+coverage report
+```
+
+## Run the javascript tests
+
+```bash
+npx vitest run
+```
