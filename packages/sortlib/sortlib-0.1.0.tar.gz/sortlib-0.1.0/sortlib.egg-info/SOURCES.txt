@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+sortlib/__init__.py
+sortlib/sorting_algorithms.py
+sortlib.egg-info/PKG-INFO
+sortlib.egg-info/SOURCES.txt
+sortlib.egg-info/dependency_links.txt
+sortlib.egg-info/top_level.txt
