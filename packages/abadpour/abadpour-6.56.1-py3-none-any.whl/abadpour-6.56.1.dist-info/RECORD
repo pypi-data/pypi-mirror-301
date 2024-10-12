@@ -1,0 +1,17 @@
+abadpour/__init__.py,sha256=NxEaTbN306yTD3tAIBGnMR-2dR8u2BBzC8NSBHu5QCA,99
+abadpour/__main__.py,sha256=Y4yyAzkddpdlE7UIvGq7mWPbFJCnYCTkjIA6oeonPjc,357
+abadpour/build.py,sha256=qygrvwwreANKv2FKt8LXtRxKzUgjjCWJlWFUH_N_Hyo,218
+abadpour/logger.py,sha256=TbNcBzaEW7gaDQhVdQQxYco_6NeZaJAdHZakWcbC4bE,96
+abadpour/urls.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+abadpour/.abcli/CV.sh,sha256=KflTt-xEacLCuXihUYdbt5wNP-R1XQVYaJFrbt5eyGE,267
+abadpour/.abcli/abcli.sh,sha256=eU-rV-J3_yRzjDHBet79fRCysM1B1268FAu7uHn_0Vs,93
+abadpour/.abcli/actions.sh,sha256=GGj-Qq-8nRLirlNJPgO8_eGVFNwh5CQ39mePpInXf4k,134
+abadpour/.abcli/aka.sh,sha256=ltNu5HKP46EmqwYH0OK5yvV3S76OBElz0q54nS8tQfQ,56
+abadpour/.abcli/build.sh,sha256=c-S2cTOPMgQUlN_dW3LHx2TnYfL_9FwZLd7XZuRw0JY,1398
+abadpour/.abcli/clean.sh,sha256=VUs6nQ-nKIR7LbBmr-OgUfvIiFyhbqiKWwrVVPU4Wl0,353
+abadpour/.abcli/tests/build.sh,sha256=lMGBGxdB6Jb3bbJB0E0pOvnGVQaSNZpr0MqhhpB2jyk,204
+abadpour/.abcli/tests/version.sh,sha256=ri3IHh9iGtJEHLRmC0ruFxkf4GeWCq-tHbBNYc52az4,212
+abadpour-6.56.1.dist-info/METADATA,sha256=uf7IJodiLrdonyfBkNuPby14zSJqGrp1fSwiuDVpZ4Y,1313
+abadpour-6.56.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+abadpour-6.56.1.dist-info/top_level.txt,sha256=LZ_Imm5cTEvxmlyPBGRDebI__Jt7Nj5_dsPEb145x9A,9
+abadpour-6.56.1.dist-info/RECORD,,
