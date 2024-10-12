@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dappier/__init__.py
+dappier/dappier.py
+dappier_py.egg-info/PKG-INFO
+dappier_py.egg-info/SOURCES.txt
+dappier_py.egg-info/dependency_links.txt
+dappier_py.egg-info/requires.txt
+dappier_py.egg-info/top_level.txt
+tests/test_dappier.py
