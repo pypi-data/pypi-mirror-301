@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+neko_rexec/__init__.py
+neko_rexec/__main__.py
+neko_rexec/send_remote_cmd.py
+neko_rexec.egg-info/PKG-INFO
+neko_rexec.egg-info/SOURCES.txt
+neko_rexec.egg-info/dependency_links.txt
+neko_rexec.egg-info/requires.txt
+neko_rexec.egg-info/top_level.txt
