@@ -1,0 +1,1 @@
+pyside_setup_macro

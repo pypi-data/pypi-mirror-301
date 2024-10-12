@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyside_setup_macro
+Version: 0.1.1
+Summary: Build tools to compile and generate QT qresource files and .ui files at build time (Pyside).
+Home-page: https://github.com/maxWiklund/PysideSetupMacro
+Author: Max Wiklund
+Author-email: 
+License: Apache License, Version 2.0
+License-File: LICENSE
+
