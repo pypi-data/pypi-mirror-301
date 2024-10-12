@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Kontoen er allerede konfigureret"
+        },
+        "error": {
+            "invalid_credentials": "Ugyldig godkendelse",
+            "unknown": "Uventet fejl"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API-n\u00f8gle",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "selector": {
+        "skill_select": {
+            "options": {
+                "backstab": "Slyngel: Snigl\u00f8b",
+                "fireball": "Magiker: Flammeudbrud",
+                "pickpocket": "Slyngel: Lommetyveri",
+                "smash": "Kriger: Brutalt slag"
+            }
+        }
+    }
+}

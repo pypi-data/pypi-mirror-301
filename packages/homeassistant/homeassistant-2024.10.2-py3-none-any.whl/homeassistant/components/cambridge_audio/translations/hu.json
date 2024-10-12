@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van",
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s"
+        },
+        "error": {
+            "cannot_connect": "Nem siker\u00fclt csatlakozni a Cambridge Audio eszk\u00f6zh\u00f6z. K\u00e9rj\u00fck, ellen\u0151rizze, hogy az eszk\u00f6z be van-e kapcsolva \u00e9s csatlakozik-e a h\u00e1l\u00f3zatra. Ha nem siker\u00fcl csatlakozni, pr\u00f3b\u00e1lja meg \u00fajraind\u00edtani az eszk\u00f6zt."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Szeretn\u00e9 be\u00e1ll\u00edtani: {name}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Hoszt"
+                },
+                "data_description": {
+                    "host": "A Cambridge Audio Streamer g\u00e9pneve vagy IP-c\u00edme."
+                },
+                "description": "\u00c1ll\u00edtsa be Cambridge Audio Streamer eszk\u00f6z\u00e9t a Home Assistant integr\u00e1l\u00e1s\u00e1hoz."
+            }
+        }
+    }
+}
