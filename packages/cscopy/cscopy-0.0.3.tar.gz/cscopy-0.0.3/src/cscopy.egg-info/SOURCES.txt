@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/cscopy/__init__.py
+src/cscopy/cli.py
+src/cscopy/model.py
+src/cscopy/workspace.py
+src/cscopy.egg-info/PKG-INFO
+src/cscopy.egg-info/SOURCES.txt
+src/cscopy.egg-info/dependency_links.txt
+src/cscopy.egg-info/requires.txt
+src/cscopy.egg-info/top_level.txt
+src/cscopy/utils/common.py

@@ -1,0 +1,17 @@
+[project]
+name = "cscopy"
+version = "0.0.3"
+description = "Python binding for cscopy"
+authors = [
+    {name = "jingfelix", email = "jingfelix@outlook.com"},
+]
+dependencies = [
+    "pydantic>=2.7.3",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = true
