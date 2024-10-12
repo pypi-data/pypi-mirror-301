@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "tela"
+version = "0.2.0"
+description = "The official Python library for the Tela API"
+authors = ["Thierry <thierry@tela.com>"]
+readme = "README.md"
+packages = [{include = "tela", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.9.2"
+anyio = "^4.6.0"
+httpx = "^0.27.2"
+distro = "^1.9.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+isort = "^5.13.2"
+ruff = "^0.6.9"
+pyright = "^1.1.383"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+output-format = "grouped"
+target-version = "py310"
+
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors (settings from FastAPI)
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "C901",  # too complex
+    "B006",  # mutable defaults
+    "E721",  # do not use `isinstance` to check for `None`
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint.isort]
+order-by-type = true
+relative-imports-order = "closest-to-furthest"
+extra-standard-library = ["typing"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+known-first-party = []
