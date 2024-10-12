@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "pfeed"
+version = "0.0.2"
+description = "Data pipeline for algo-trading, getting and storing both real-time and historical data made easy."
+license = "Apache-2.0"
+authors = ["Stephen Yau <softwareentrepreneer+pfeed@gmail.com>"]
+readme = "README.md"
+homepage = "https://pfund.ai"
+repository = "https://github.com/PFund-Software-Ltd/pfeed"
+documentation = "https://pfeed-docs.pfund.ai"
+keywords = ["trading", "algo-trading", "data pipeline", "ETL", "data lake", "data warehouse", "data integration", "historical data", "live data", "data streaming"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pfund = "^0.0.2.dev2"
+pandas = "^2.2.0"
+pydantic = "^2.7.0"
+yfinance = "^0.2.43"
+fastparquet = "^2024.2.0"
+beautifulsoup4 = "^4.12.3"
+pyarrow = {version = "^17.0.0", optional = true}
+modin = {extras = ["all"], version = "^0.32.0", optional = true}
+dask = {extras = ["complete"], version = "^2024.9.1", optional = true}
+coiled = {version = "^1.54.0", optional = true}
+pyspark = {version = "^3.5.3", optional = true}
+databricks-connect = {version = "^15.4.2", optional = true}
+polars = {version = "^1.7.1", optional = true}
+polars-xdt = {version = "^0.16.0", optional = true}
+psutil = {version = "^6.0.0", optional = true}
+ray = {version = "^2.35.0", optional = true}
+prefect = {version = "^3.0.5", optional = true}
+minio = {version = "^7.2.8", optional = true}
+s3fs = {version = "^2024.9.0", optional = true}
+adlfs = {version = "^2024.7.0", optional = true}
+gcsfs = {version = "^2024.9.0", optional = true}
+databento = {version = "^0.42.0", optional = true}
+polygon-api-client = {version = "^1.14.2", optional = true}
+connectorx = {version = "^0.3.3", optional = true}
+psycopg2 = {version = "^2.9.9", optional = true}
+confluent-kafka = {version = "^2.5.3", optional = true}
+bytewax = {version = "^0.21.0", optional = true}
+
+[tool.poetry.extras]
+core = ["modin", "pyarrow", "psutil", "ray", "minio", "databento", "polygon-api-client"]
+polars = ["polars", "polars-xdt"]
+dask = ["dask", "coiled"]
+spark = ["pyspark", "databricks-connect"]
+dfs = ["polars", "polars-xdt", "dask", "coiled", "pyspark", "databricks-connect"]
+storage = ["s3fs", "adlfs", "gcsfs", "connectorx", "psycopg2"]
+dataops = ["prefect", "confluent-kafka", "bytewax"]
+all = [
+    "modin", "pyarrow", "psutil", "ray", "minio", "databento", "polygon-api-client", # core dependencies
+    "polars", "polars-xdt", "dask", "coiled", "pyspark", "databricks-connect", # data tools
+    "fsspec", "s3fs", "adlfs", "gcsfs", "connectorx", "psycopg2", # storage
+    "prefect", "confluent-kafka", "bytewax", # DataOps
+]
+
+[tool.poetry.scripts]
+pfeed = "pfeed.main:run_cli"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pfund = { path = "../pfund", develop = true }
+mypy = "^1.11.2"
+ruff = "^0.6.9"
+grayskull = "^2.7.3"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+pytest-mock = "^3.14.0"
+pytest-xdist = "^3.6.1"
+tox = "^4.21.2"
+faker = "^30.1.0"
+bandit = "^1.7.10"
+pre-commit = "^4.0.0"
+
+[tool.poetry.group.doc]
+optional = true
+
+[tool.poetry.group.doc.dependencies]
+jupyter-book = "^1.0.2"
+notebook = "^7.2.2"
+sphinxawesome-theme = "5.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
