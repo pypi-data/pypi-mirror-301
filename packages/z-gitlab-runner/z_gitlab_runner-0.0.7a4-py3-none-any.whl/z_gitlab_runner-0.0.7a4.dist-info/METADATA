@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: z-gitlab-runner
+Version: 0.0.7a4
+Project-URL: Documentation, https://github.com/MehdiChelh/z-gitlab-runner#readme
+Project-URL: Issues, https://github.com/MehdiChelh/z-gitlab-runner/issues
+Project-URL: Source, https://github.com/MehdiChelh/z-gitlab-runner
+Author-email: MehdiChelh <mehdi.echel@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# z_gitlab_runner
+
+[![PyPI - Version](https://img.shields.io/pypi/v/z-gitlab-runner.svg)](https://pypi.org/project/z-gitlab-runner)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/z-gitlab-runner.svg)](https://pypi.org/project/z-gitlab-runner)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install z-gitlab-runner
+```
+
+## License
+
+`z-gitlab-runner` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
