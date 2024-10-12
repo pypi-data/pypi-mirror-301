@@ -1,0 +1,5 @@
+src/__init__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+src/__main__.py,sha256=Mm6HpQ8c6v1Z5LrQSSDrvMrlKCVPkBhxDcuPY8aAW3o,139
+test_vcs_dynamic_versioning-0.0.8.dist-info/METADATA,sha256=0qNvnye0Wrc4TFPjdgFgW3gHBvbqUUWYOJIsLVL1G9Y,301
+test_vcs_dynamic_versioning-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+test_vcs_dynamic_versioning-0.0.8.dist-info/RECORD,,
