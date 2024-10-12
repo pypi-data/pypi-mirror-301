@@ -1,0 +1,9 @@
+pyraymesh/__init__.py,sha256=FpxkgEtZw2s4agWNPpguUryrQBdDF1GpPu-py5p6dPY,49
+pyraymesh/_bvh_bind_ext.cp313-win_amd64.pyd,sha256=A9rBgSJEb2WMsod2VgrZiPAOJDY05JvRpUX7_3egTO4,216064
+pyraymesh/IntersectionResult.py,sha256=QbT-r-WXhJa9uYYXr_BsaRt2PURqlJgOrePVRXAMf8o,1137
+pyraymesh/Mesh.py,sha256=BvRn4sA6pL-2KT2fdZt3b2Yhr-rF5tQdF7s_ypJNu9k,6060
+pyraymesh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyraymesh-0.1.2.dist-info/METADATA,sha256=eVAuNL-0z5Imsd4oStYkgVQeTKFdTXFCZv3rmFo5_i4,3129
+pyraymesh-0.1.2.dist-info/WHEEL,sha256=EIu1Wj122E8B0k-vZcnNpwplI01di2dp-9WoG1ZyqT0,106
+pyraymesh-0.1.2.dist-info/licenses/LICENSE,sha256=UGbpo38T0KTBAQ7gpnrGuQNAWdxT92str0GVmSYO2RM,1091
+pyraymesh-0.1.2.dist-info/RECORD,,
