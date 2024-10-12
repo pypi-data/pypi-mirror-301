@@ -1,0 +1,2 @@
+[console_scripts]
+daft = daft_launcher.__init__:main
