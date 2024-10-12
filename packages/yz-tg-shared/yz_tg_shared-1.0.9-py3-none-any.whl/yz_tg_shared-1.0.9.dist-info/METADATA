@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: yz-tg-shared
+Version: 1.0.9
+Summary: A package for shared code
+Home-page: UNKNOWN
+Author: OP
+Author-email: parfenchuks@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy (==1.4.52)
+Requires-Dist: greenlet (==3.0.3)
+Requires-Dist: mysql-connector-python (==9.0.0)
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pyasn1 (==0.6.0)
+Requires-Dist: pydantic-sqlalchemy (==0.0.9)
+Requires-Dist: pydantic (==1.10.17)
+Requires-Dist: typing-extensions (==4.12.2)
+
+UNKNOWN
+
