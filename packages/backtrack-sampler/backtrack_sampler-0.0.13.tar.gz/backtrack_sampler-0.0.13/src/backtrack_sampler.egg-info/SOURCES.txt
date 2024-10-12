@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/backtrack_sampler.egg-info/PKG-INFO
+src/backtrack_sampler.egg-info/SOURCES.txt
+src/backtrack_sampler.egg-info/dependency_links.txt
+src/backtrack_sampler.egg-info/top_level.txt
+src/provider/__init__.py
+src/provider/base_provider.py
+src/provider/llamacpp_provider.py
+src/provider/transformers_provider.py
+src/strategy/__init__.py
+src/strategy/antislop_strategy.py
+src/strategy/base_strategy.py
+src/strategy/creative_writing_strategy.py
