@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Labelme2YOLO9
+Version: 0.1
+Summary: Labelme2YOLO9 is a powerful tool for converting LabelMe's JSON dataset to YOLO9  format.
+Home-page: https://github.com/Ashwin2929/labelme2yolo9
+Author: Ashwin, Purushothamadhas
+Author-email: p.ashwin79@gmail.com
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
+# labelme2yolo9
+Labelme2YOLO9 is a powerful tool for converting LabelMe's JSON dataset Yolo9 format. This tool can also be used for YOLO segmentation datasets.
