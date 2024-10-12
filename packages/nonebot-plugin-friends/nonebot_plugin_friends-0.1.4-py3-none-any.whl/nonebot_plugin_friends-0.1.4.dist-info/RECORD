@@ -1,0 +1,12 @@
+LICENSE,sha256=Qda6wT8uEu6CrkVxR71C6BSKoKeqAxXrA1F3Pdub-YA,1068
+README.md,sha256=QdLu79leDIJlecaKSK9WB3YXJyCub8gIu0YRFy6zwNU,2116
+nonebot_plugin_friends/__init__.py,sha256=X9XQ3vDLAXiNf23EhUWaR8S7cAksUJGRmY5DOuRpaqk,560
+nonebot_plugin_friends/config.py,sha256=M5cB03___m_CpWZTeZ4MK8-YcoWz8FxK2_UBs1jOOAI,1467
+nonebot_plugin_friends/event.py,sha256=QeOODBjRRypbD71zUJVq1rkj8XbvEk3mTKRn3frec7Y,6062
+nonebot_plugin_friends/matcher.py,sha256=VboPc1x80nwBF5bpGOmRhWL8IlAXEydSUUczMA6J8EA,4791
+nonebot_plugin_friends/rule.py,sha256=HJmafU3dCaou7_2QVjtTtqCMkoqkIVI31_30fjU0cB4,517
+nonebot_plugin_friends/utils.py,sha256=XuTgZwkOHEkFZ0SHGK_sUA4fLg39uoQskx_Zl5UUL5A,335
+nonebot_plugin_friends-0.1.4.dist-info/LICENSE,sha256=Qda6wT8uEu6CrkVxR71C6BSKoKeqAxXrA1F3Pdub-YA,1068
+nonebot_plugin_friends-0.1.4.dist-info/METADATA,sha256=HhWQXAff2hxvzALW0xBlhzozyT1Gxl6L0E7o13Z9k4o,3069
+nonebot_plugin_friends-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nonebot_plugin_friends-0.1.4.dist-info/RECORD,,
