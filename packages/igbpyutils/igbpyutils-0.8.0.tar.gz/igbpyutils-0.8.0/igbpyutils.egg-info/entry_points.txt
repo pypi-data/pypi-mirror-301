@@ -1,0 +1,2 @@
+[console_scripts]
+py-check-script-vs-lib = igbpyutils.dev.script_vs_lib:main
