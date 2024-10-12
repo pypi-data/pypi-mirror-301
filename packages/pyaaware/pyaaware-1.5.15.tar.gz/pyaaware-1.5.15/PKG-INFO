@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: pyaaware
+Version: 1.5.15
+Summary: Aaware Python development libraries
+Author-email: Jason Calderwood <jason@aaware.com>
+Maintainer-email: Jason Calderwood <jason@aaware.com>
+License-Expression: GPL-3.0-only
+License-File: LICENSE
+Requires-Python: <3.12,>=3.11
+Requires-Dist: torch<2.3,>=2.2
+Description-Content-Type: text/markdown
+
+the Aaware development library.
+
+## Cross Compile armhf
+
+```sh
+./build.sh -aarmhf
+```
+
+## Cross Compile arm64
+
+```sh
+./build.sh -aarm64
+```
+
+## Compile x86_64 (macos)
+
+```sh
+./build.sh -aosx-x86_64
+```
+
+## Compile x86_64 (linux)
+
+```sh
+./build.sh -ax86_64
+```
+
+## Compile All Targets
+
+```sh
+./build_all.sh
+```

@@ -1,0 +1,37 @@
+# Build files
+*.o
+*.d
+*.so
+scratch/
+test/data/algorithm/*.log
+test/data/algorithm/config_out.h5
+test/data/algorithm/capture.h5
+test/data/h5/h5-*.h5
+*.token
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+pytest.log
+
+# Virtual environments
+.venv
+
+# Editors
+*.*~
+*~
+*.asv
+.idea/
+.vscode/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
