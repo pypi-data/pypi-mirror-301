@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: apptranslate
+Version: 0.1.1
+Summary: Android App Translator v2
+Home-page: https://github.com/gr8mawiya
+Author: Mawiya
+Author-email: mawiya@outlook.be
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: googletrans
+
+## Android App Translator
+
+This python code is useful if you want to translate your android apps.
+It will take a xml (Android Strings File)
+Translated to target language.
+
+As it uses Google to translate it will support 245 Language.
