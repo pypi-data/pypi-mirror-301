@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+hive/email/__init__.py
+hive/email/__version__.py
+hive/email/message.py
+hive_email.egg-info/PKG-INFO
+hive_email.egg-info/SOURCES.txt
+hive_email.egg-info/dependency_links.txt
+hive_email.egg-info/requires.txt
+hive_email.egg-info/top_level.txt
+tests/test_load_email.py
+tests/test_properties.py
+tests/test_smoke.py
+tests/test_version.py
+tests/test_workarounds.py
