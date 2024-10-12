@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-13 05:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Move up"
+msgstr ""
+
+msgid "Change order up"
+msgstr ""
+
+msgid "Move down"
+msgstr ""
+
+msgid "Change order down"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "See details"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Not set"
+msgstr ""
+
+msgid "You must specify a layout in view_object_popup__layout"
+msgstr ""
+
+msgid "Object id not specified !"
+msgstr ""
+
+msgid "*** Not a valid column name ***"
+msgstr ""
+
+msgid "Unknown \"{}\" aggregation, choose one of these : {}"
+msgstr ""
+
+#, python-brace-format
+msgid "Total :<br>{value}"
+msgstr ""
+
+#, python-brace-format
+msgid "Min :<br>{value}"
+msgstr ""
+
+#, python-brace-format
+msgid "Max :<br>{value}"
+msgstr ""
+
+#, python-brace-format
+msgid "Min : {min_val}<br>Max : {max_val}"
+msgstr ""
+
+msgid ""
+"Min : {min_val}<br>Max : {max_val}<br>Avg : {avg_val:.{col.footer_precision}"
+"f}"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Reset"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Add"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Delete ALL"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Delete selected"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Clear the form"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Insert"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Duplicate"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Update selected"
+msgstr ""
+
+msgctxt "Attached form"
+msgid "Update ALL"
+msgstr ""
+
+msgid ""
+"In attached form, button tuple description must have 4 items : (action, "
+"label, icon css class, button css class)."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"In the {form_name} layout you specified the field \"{field_name}\" but there "
+"is no existing listing column with that name nor listing method "
+"\"{attrname}\"nor attached_form param \"{key}\""
+msgstr ""
+
+msgid "You must specify a list of columns names in the form layout"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"column {col_id} of listing {listing} is not a Column instance (class = "
+"{colclass})"
+msgstr ""
+
+msgid "Please choose..."
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "{} is not a valid django forms field class"
+msgstr ""
+
+msgid "{} is not a valid django forms widget class"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Cannot find choices from model for filter \"{name}\", Please specify the "
+"choices to display"
+msgstr ""
+
+#, python-brace-format
+msgid "Please specify the choices to display for filter \"{name}\""
+msgstr ""
+
+msgid "True"
+msgstr ""
+
+msgid "False"
+msgstr ""
+
+msgid "Button"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+#, python-brace-format
+msgid "<td{attrs}>Grand Total:<br>{value}</td>"
+msgstr ""
+
+msgid "Min"
+msgstr ""
+
+#, python-brace-format
+msgid "<td{attrs}>Overall Min:<br>{value}</td>"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
+#, python-brace-format
+msgid "<td{attrs}>Overall Max:<br>{value}</td>"
+msgstr ""
+
+msgid "Average"
+msgstr ""
+
+msgid "<td{attrs}>Overall avg:<br>{value:.{col.footer_precision}f}</td>"
+msgstr ""
+
+msgctxt "verb"
+msgid "Filter"
+msgstr ""
+
+msgctxt "Filters form"
+msgid "Reset"
+msgstr ""
+
+msgctxt "Filters form"
+msgid "Filter"
+msgstr ""
+
+msgctxt "Filters form"
+msgid "Advanced"
+msgstr ""
+
+#, python-brace-format
+msgid "Cannot find filter \"{name}\" definition"
+msgstr ""
+
+msgid "- No filtering -"
+msgstr ""
+
+msgid "Indiff."
+msgstr ""
+
+msgid "Use CTRL+click to select/deselect multiple choices"
+msgstr ""
+
+msgid "Select a value..."
+msgstr ""
+
+msgctxt "abbreviation"
+msgid "Min"
+msgstr ""
+
+msgctxt "abbreviation"
+msgid "Max"
+msgstr ""
+
+msgctxt "abbreviation"
+msgid "Sum"
+msgstr ""
+
+msgctxt "abbreviation"
+msgid "Avg"
+msgstr ""
+
+msgctxt "action button"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "action button"
+msgid "Edit"
+msgstr ""
+
+msgctxt "action button"
+msgid "Update"
+msgstr ""
+
+msgctxt "action button"
+msgid "Upload"
+msgstr ""
+
+#, python-brace-format
+msgid "Do you really want to DELETE {nb_items} item(s) ?"
+msgstr ""
+
+#, python-brace-format
+msgid "Do you really want to UPDATE {nb_items} items ?"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"WARNING : Do you really want to UPDATE absolutely all {nb_all_items} "
+"items ?\n"
+"\n"
+"This will process ALL items in ALL pages in the actual listing. Note that it "
+"will take in account the filter : only filtered items will be processed.\n"
+"\n"
+"IMPORTANT : Check that all form's fields are empty except those you want to "
+"update. You can use the CLEAR button to make all fields empty, then fill "
+"only one or more fields with value(s) you want to apply on all items."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"WARNING : Do you really want to DELETE absolutely all {nb_all_items} "
+"items ?\n"
+"\n"
+"This will process ALL items in ALL pages in the actual listing. Note that it "
+"will take in account the filter : only filtered items will be processed."
+msgstr ""
+
+msgid "Please configure at least one column in your listing"
+msgstr ""
+
+msgid "[CANNOT_EDIT_IN_AJAX]"
+msgstr "Cannot edit a listing in ajax mode, please remove accept_ajax=True"
+
+msgid "record"
+msgstr ""
+
+msgid "records"
+msgstr ""
+
+#, python-format
+msgid "There is no %s to display."
+msgstr ""
+
+msgid "[You do not have permission to export data]"
+msgstr ""
+
+msgid "Sort by:"
+msgstr "Sort by:"
+
+msgid ":"
+msgstr ""
+
+#, python-brace-format
+msgctxt "paginator"
+msgid "Page {page_number} of {nb_pages}"
+msgstr ""
+
+#, python-brace-format
+msgctxt "paginator"
+msgid "{row_first}-{row_last} of {nb_rows}"
+msgstr ""
+
+msgctxt "paginator"
+msgid "Previous"
+msgstr ""
+
+msgctxt "paginator"
+msgid "Next"
+msgstr ""
+
+msgctxt "paginator"
+msgid "First"
+msgstr ""
+
+msgctxt "paginator"
+msgid "Last"
+msgstr ""
+
+#, python-brace-format
+msgctxt "paginator"
+msgid "Go to page {goto_form}"
+msgstr ""
+
+msgid ""
+"Getting all records is only supported on SMALL sequence data, not on Django "
+"querysets"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"field \"{field}\" must be an integer, please choose the correct field that "
+"will be used to change object ordering"
+msgstr ""
+
+msgid "Listing data must be a sequence or a QuerySet."
+msgstr ""
+
+msgid "Please select a file format !"
+msgstr ""
+
+msgid "Please use checkboxes to select one or more fields to mass update"
+msgstr ""
+
+msgid "[Available columns]"
+msgstr ""
+
+msgid "[Selected columns]"
+msgstr ""
+
+msgid "Sort by"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Sort by..."
+msgstr ""
+
+msgid "Per page"
+msgstr ""
+
+msgid "Per page..."
+msgstr ""
+
+msgid "Choose..."
+msgstr ""
+
+msgid "Export to..."
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Select all"
+msgstr ""
+
+msgid "Unselect all"
+msgstr ""
+
+msgid "Invert selection"
+msgstr ""
+
+msgid "Group by..."
+msgstr ""
+
+#, python-brace-format
+msgid "<b>{object}</b> has been successfully added."
+msgstr ""
+
+msgid ""
+"The form is valid but nothing has been added to database as "
+"<tt>save_to_database=False</tt>."
+msgstr ""
+
+#, python-brace-format
+msgid "<b>{nb_updates} {model_verbose}</b> has been successfully updated."
+msgstr ""
+
+msgid ""
+"The form is valid but nothing has been updated to database as "
+"<tt>save_to_database=False</tt>."
+msgstr ""
+
+msgid "You do not have the required permission"
+msgstr ""
+
+msgid "Please select at least one item in the listing"
+msgstr ""
+
+msgid "Please select one item"
+msgstr ""
+
+msgid "You can duplicate only one item at the same time"
+msgstr ""
+
+msgid "Please select at least one item"
+msgstr ""
