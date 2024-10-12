@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/vercheck/__init__.py
+src/vercheck/about.py
+src/vercheck/py.typed
+src/vercheck/vercheck.py
+src/vercheck.egg-info/PKG-INFO
+src/vercheck.egg-info/SOURCES.txt
+src/vercheck.egg-info/dependency_links.txt
+src/vercheck.egg-info/entry_points.txt
+src/vercheck.egg-info/requires.txt
+src/vercheck.egg-info/top_level.txt

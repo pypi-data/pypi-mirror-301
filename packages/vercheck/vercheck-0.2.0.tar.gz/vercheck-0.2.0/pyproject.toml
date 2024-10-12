@@ -1,0 +1,219 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=61.2",
+]
+
+[project]
+authors = [
+    { email = "christian.ledermann@gmail.com", name = "Christian Ledermann" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Typed",
+]
+description = "Check if a version number is PEP-440 compliant and optionally compare it against a version specified in a python file or the PKG-INFO metadata file."
+dynamic = [
+    "version",
+]
+keywords = [
+    "__version__",
+    "cli",
+    "introspection",
+]
+name = "vercheck"
+requires-python = ">=3.10"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+complexity = [
+    "lizard",
+    "radon",
+]
+dev = [
+    "pre-commit",
+    "vercheck[complexity]",
+    "vercheck[linting]",
+    "vercheck[tests]",
+    "vercheck[typing]",
+]
+linting = [
+    "black",
+    "flake8",
+    "flake8-cognitive-complexity",
+    "flake8-comments",
+    "flake8-complex-f-strings",
+    "flake8-continuation",
+    "flake8-docstrings",
+    "flake8-encodings",
+    "flake8-expression-complexity",
+    "flake8-function-order",
+    "flake8-pep3101",
+    "flake8-super",
+    "flake8-use-fstring",
+    "ruff",
+    "yamllint",
+]
+tests = [
+    "hypothesis",
+    "pytest",
+    "pytest-cov",
+]
+typing = [
+    "mypy",
+]
+
+[project.readme]
+content-type = "text/markdown"
+file = "README.md"
+
+[project.scripts]
+vercheck = "vercheck.vercheck:main"
+
+[project.urls]
+Homepage = "https://github.com/cleder/vercheck/"
+
+[tool.coverage.paths]
+source = [
+    "*/site-packages",
+    "src",
+]
+tests = [
+    "*/tests",
+    "tests",
+]
+
+[tool.coverage.report]
+exclude_also = [
+    "^\\s*\\.\\.\\.$",
+    "class \\w+\\(Protocol\\)\\:",
+    "except AssertionError:",
+    "except ImportError:",
+    "if TYPE_CHECKING:",
+    "if __name__ == \"__main__\":",
+]
+fail_under = 100
+show_missing = true
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "*/tests/data/*",
+]
+source = [
+    "src/vercheck",
+    "tests",
+]
+
+[tool.isort]
+force_single_line = true
+lines_after_imports = 2
+profile = "black"
+
+[tool.mypy]
+exclude = [
+    "tests/data",
+]
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+strict = true
+warn_unreachable = true
+
+[tool.ruff]
+exclude = [
+    "tests/data",
+]
+fix = true
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = [
+    "D203",
+    "D213",
+]
+select = [
+    "A",
+    "AIR",
+    "ANN",
+    "ARG",
+    "ASYNC",
+    "B",
+    "BLE",
+    "C4",
+    "C90",
+    "COM",
+    "CPY",
+    "D",
+    "DJ",
+    "DTZ",
+    "E",
+    "EM",
+    "ERA",
+    "EXE",
+    "F",
+    "FA",
+    "FBT",
+    "FIX",
+    "FLY",
+    "FURB",
+    "G",
+    "I",
+    "ICN",
+    "INP",
+    "INT",
+    "ISC",
+    "LOG",
+    "N",
+    "NPY",
+    "PD",
+    "PERF",
+    "PGH",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "Q",
+    "RET",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "SLF",
+    "SLOT",
+    "T10",
+    "T20",
+    "TCH",
+    "TD",
+    "TID",
+    "TRY",
+    "UP",
+    "W",
+    "YTT",
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = [
+    "PLR2004",
+    "S101",
+    "SLF001",
+]
+
+[tool.setuptools.dynamic.version]
+attr = "vercheck.about.__version__"
