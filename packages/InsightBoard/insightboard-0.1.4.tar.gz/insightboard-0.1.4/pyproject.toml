@@ -1,0 +1,37 @@
+[project]
+name = "InsightBoard"
+description = "InsightBoard for data parsing and report generation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dash>=2.18.1",
+    "dash-table>=5.0.0",
+    "pandas>=2.2.3",
+    "dash-bootstrap-components>=1.6.0",
+    "pyarrow>=17.0.0",
+    "openpyxl>=3.1.5",
+    "jsonschema>=4.23.0",
+    "dash-dangerously-set-inner-html>=0.0.2",
+    "tomli-w>=1.0.0",
+    "waitress>=3.0.0",
+    "cachetools>=5.5.0",
+]
+scripts = { InsightBoard = "InsightBoard:main" }
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+version_scheme = "python-simplified-semver"
+write_to = "src/InsightBoard/version.py"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
+dev-dependencies = [
+    "chromedriver-py>=129.0.6668.89",
+    "pytest-cov>=5.0.0",
+    "pytest>=8.3.3",
+    "selenium>=4.25.0",
+]

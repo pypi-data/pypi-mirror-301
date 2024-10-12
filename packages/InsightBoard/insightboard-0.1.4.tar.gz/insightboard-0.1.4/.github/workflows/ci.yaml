@@ -1,0 +1,60 @@
+name: Unit and integration tests
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: |
+            3.11
+            3.12
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v2
+      - name: Run unit tests
+        run: |
+          uvx nox -s unit_tests
+      - name: Run system tests
+        run: |
+          uvx nox -s system_tests
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        with:
+          name: coverage-report
+          path: htmlcov
+      - name: Add coverage report to action summary
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: cat htmlcov/index.html >> $GITHUB_STEP_SUMMARY
+
+      - name: Return screenshot (on system test failure)
+        if: failure()
+        shell: bash
+        run: |
+          # Check if screenshot exists, then convert to base64 and embed in summary
+          if [ -f screenshot.png ]; then
+            python -c "import base64; print(base64.b64encode(open('screenshot.png', 'rb').read()).decode('utf-8'))" > screenshot_base64.txt
+            echo "### Screenshot of Failed Test" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo '<img src="data:image/png;base64,'$(cat screenshot_base64.txt)'" alt="Screenshot"/>' >> $GITHUB_STEP_SUMMARY
+          fi
+      - name: Upload screenshot as artifact (on system test failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-test-screenshot
+          path: screenshot.png
