@@ -1,0 +1,70 @@
+Metadata-Version: 2.3
+Name: locus_rs
+Version: 0.2.2
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# locusctl and Utilities Rust Library
+
+## Requirements
+
+This project uses Rust and Python
+
+- Rust
+- Python 3.12
+  - [Maturin][maturin]
+
+## Building
+
+This project is composed of two artifacts. A binary called `locusctl`, and a
+wheel called `locus_rs`.
+
+### Building the CLI
+
+To only build the CLI (locusctl) only Rust is required:
+
+    cargo build --bin locusctl
+
+### Building the Wheel Library
+
+Building the wheel requires both Rust and Python. For this we need to create a
+virtualenv and then install `maturing` to make the build.
+
+Setup the virtualenv and install dependencies:
+
+    python3.12 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+Build the wheel:
+
+    maturin build
+
+### Running in Development
+
+To run the CLI for development you can use the run subcommand and then pass in
+all the additional subcommand and flags required for it to work:
+
+    cargo run -- upload --url https://en.wikipedia.org/wiki/Michelin_TRX
+
+
+### Using the Wheel locally
+
+The wheel was developed to be used as a Python library, this library should be
+added to ferb.
+
+- First build the wheel. Run `maturin --build` which creates a wheel that can be
+moved to the python project, or `maturing --development` which puts the library
+into the local .env (probably not useful in this context. More useful if the
+rust was embedded in the python project)
+- Copy the wheel file to the python project. (location to be determined, but for
+now wheels subdir) `cp
+/Volumes/devel/omniarcs/github.com/locusai/locus-cli/target/wheels/locus_rs-0.1.0-cp312-cp312-macosx_11_0_arm64.whl
+../locus-ferb/wheels`
+- In Ferb or target python add the wheel into the requirements.txt, and then run pip
+
+
+**Note:** For now the use of the library can be found in this commit
+https://github.com/locusai/locus-ferb/commit/4c71785e2f9da649c2364187512c4b84cca4d924#diff-ee8cec5db1e429ed2f507e426d2eff6dd75b69755a2f493e4425caaf9e9d1630R31
+
+[maturin]: https://github.com/PyO3/maturin
+
