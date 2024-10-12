@@ -1,0 +1,4 @@
+pwinput>=1.0.0
+texttable>=1.6.3
+pytz>=2021.3
+requests>=2.26.0

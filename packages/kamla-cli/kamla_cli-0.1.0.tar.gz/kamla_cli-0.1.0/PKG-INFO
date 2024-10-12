@@ -1,0 +1,184 @@
+Metadata-Version: 2.1
+Name: kamla-cli
+Version: 0.1.0
+Summary: Inhouse Ten CLI
+Home-page: https://github.com/nurtasin/kamla-cli
+Author: NurTasin
+Author-email: nmuatasin2005@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pwinput>=1.0.0
+Requires-Dist: texttable>=1.6.3
+Requires-Dist: pytz>=2021.3
+Requires-Dist: requests>=2.26.0
+
+Here's a descriptive `README.md` file for your CLI tool, explaining the commands and usage.
+
+---
+
+# Kamla-CLI
+
+**Kamla-CLI** is an in-house command-line interface (CLI) tool for managing tasks, projects, and users. It provides various commands to log in, view user information, list data (projects, tasks, users, plans), create tasks, and mark task statuses (active, ongoing, completed).
+
+## Features
+
+- **Login**: Authenticate yourself with the API.
+- **Get User Data**: Retrieve your user information after logging in.
+- **List Projects, Tasks, Users, Plans**: Fetch and display various data.
+- **Create Tasks**: Add tasks to specific projects with due dates and descriptions.
+- **Mark Task Status**: Update the status of tasks (active, ongoing, or completed).
+
+---
+
+## Installation
+
+You can install **Kamla-CLI** using `pip`:
+
+```bash
+pip install kamla-cli
+```
+
+---
+
+## Usage
+
+Once installed, you can run the CLI using the command:
+
+```bash
+kamla-cli [COMMAND] [OPTIONS]
+```
+
+### Commands
+
+Below are the detailed descriptions of the available commands.
+
+### `login`
+
+Login to the system with your email and password. If either is not provided, you will be prompted to enter them.
+
+#### Example:
+
+```bash
+kamla-cli login --email john@acme.com --password MyPassword
+```
+
+You can also enter your email and password interactively
+
+```bash
+kamla-cli login
+```
+
+### `me`
+
+Get the logged-in user's details.
+
+#### Example:
+
+```bash
+kamla-cli me
+```
+
+### `list`
+
+Lists data such as projects, tasks, users, or plans.
+
+- **Type**: You must specify the type of list (projects, tasks, users, plans).
+- **Category**: Optional for listing tasks (default is "ongoing").
+
+#### Example:
+
+```bash
+# List all projects
+kamla-cli list projects
+
+# List all users
+kamla-cli list users
+
+# List all ongoing tasks
+kamla-cli list tasks
+
+# List tasks with optional category {ongoing, completed, incomplete} (comma separated)
+kamla-cli list tasks --category "completed,ongoing"
+
+# List the logged in user's today's task
+kamla-cli list plan
+# 
+```
+
+### `create`
+
+Create new tasks for a specified project. You will be prompted for details like the Project ID, due date, resources, and description if not provided via command-line arguments.
+
+#### Example:
+
+```bash
+# Create a task for the logged in user
+# Task names will be promted interactively
+kamla-cli create --pid {PROJECT_ID} --due 2024-12-31 --res "Resources" --desc "Description"
+```
+
+Alternatively, you can leave some fields out and enter them interactively when prompted:
+
+```bash
+kamla-cli create
+```
+
+### `mark`
+
+Marks tasks with a specific status. You can mark tasks as `active`, `ongoing`, or `done`.
+
+#### Subcommands
+
+- **active**: Marks tasks as active. Baically it moves the task from taday's plan to the work plan section.
+  
+  ```bash
+  # Marks task with ID 101 as active under the category UI
+  kamla-cli mark active 101 UI
+
+  # User can input many task IDs at once separated by comma
+  kamla-cli mark active "101,102" U!I
+
+  # **Note**: If entering many task IDs, make sure to wrap them in double quotes or type task IDs without spaces
+  # example: `kamla-cli mark active "101,102" U!I` or `kamla-cli mark active 101,102 U!I`
+  # but not `kamla-cli mark active 101, 102 U!I`
+  ```
+
+  Categories are `UI`, `U!I`, `!UI`, `!U!I`
+
+- **ongoing**: Marks tasks as ongoing. It takes the task from the work plan section and moves it to the ongoing section.
+
+  ```bash
+  # Marks task with ID 101 as ongoing
+  kamla-cli mark ongoing "101,102"
+  ```
+
+- **done**: Marks tasks as completed. Moves the task from the ongoing section to the completed section.
+
+  ```bash
+  # Marks task with ID 101 and 102 as completed
+  kamla-cli mark done "101,102"
+  ```
+
+For `active`, provide both task IDs and category. For `ongoing` and `done`, only task IDs are required.
+
+---
+
+### `about`
+
+Displays information about the CLI, including version and author details.
+
+#### Example:
+
+```bash
+kamla-cli about
+```
+
+---
+
+## License
+
+Kamla-CLI is licensed under the MIT License. Feel free to use and modify it.
