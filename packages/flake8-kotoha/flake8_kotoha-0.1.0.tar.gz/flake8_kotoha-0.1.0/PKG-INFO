@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: flake8-kotoha
+Version: 0.1.0
+Summary: flake8 plugin to improve your type hints
+Author-email: nikkie <takuyafjp+develop@gmail.com>
+License: MIT License
+Project-URL: Repository, https://github.com/ftnext/kotoha-python-linter
+Keywords: flake8,type hints
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Flake8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8
+Provides-Extra: dev
+Requires-Dist: taskipy; extra == "dev"
+Requires-Dist: autoflake; extra == "dev"
+Requires-Dist: pyupgrade; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-randomly; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# flake8-kotoha
+
+[**K**o**T**o**H**a](https://millionlive-theaterdays.idolmaster-official.jp/idol/kotoha/): **K**aizen **T**ype **H**int
+
+## Install
+
+pipx
+
+```sh
+$ pipx install flake8
+$ pipx inject flake8 flake8-kotoha
+$ flake8 -h
+...
+Installed plugins: flake8-kotoha: 0.1.0, ...
+```
+
+venv + pip
+
+```sh
+$ python -m venv .venv --upgrade-deps
+$ .venv/bin/python -m pip install flake8-kotoha
+$ .venv/bin/flake8 -h
+...
+Installed plugins: flake8-kotoha: 0.1.0, ...
+```
+
+## Usage
+
+```python
+def plus_one(numbers: list[int]) -> list[int]:
+    return [n + 1 for n in numbers]
+```
+
+```sh
+$ flake8 example.py
+example.py:1:14: KTH101 Type hint with abstract type `collections.abc.Iterable` or `collections.abc.Sequence`, instead of concrete type `list`
+```
+
+## Error codes
+
+Type hints in function **parameters**
+
+Use abstract types instead of concrete ones
+
+| error code | description |
+|:----:|:------------|
+| KTH101 | Use `Iterable` or `Sequence` instead of `list` |
+| KTH102 | Use `Iterable` or `Sequence` instead of `tuple` |
+| KTH103 | Use `Iterable` instead of `set` |
+| KTH104 | Use `Iterable` instead of `dict` |
