@@ -1,0 +1,75 @@
+# Bedrock-A-Bot
+
+Bedrock-A-Bot is a chatbot tool using AWS Bedrock and Streamlit. It provides a user-friendly interface for interacting with various language models and includes features like file upload, session management, and customizable model parameters.
+
+https://github.com/user-attachments/assets/b09b64d8-2901-4c02-8b74-b8ac304453e1
+
+## Installation
+
+You can install Bedrock-A-Bot using pip:
+
+```
+pip install bedrock-a-bot
+```
+
+## Usage
+
+To run Bedrock-A-Bot, use the following command:
+
+```
+bedrock-a-bot [--port PORT]
+```
+
+The `--port` argument is optional and defaults to 8501 if not specified.
+
+## Features
+
+- Interactive chat interface
+- Support for multiple language models
+- File upload functionality
+- Session management
+- Customizable model parameters (temperature, top_p)
+- Integration with AWS Bedrock
+
+## Requirements
+
+- Python 3.12 or higher
+- AWS account with Bedrock access
+- AWS Credential profile [aws configure --profile ziya](https://docs.aws.amazon.com/cli/v1/userguide/cli-authentication-user.html)
+- Required Python packages (automatically installed with pip)
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Create a virtual environment:
+   ```
+   conda create -n BedRockABot python=3.12
+   conda activate BedRockABot
+   ```
+3. Install the package in editable mode:
+   ```
+   pip install -e .
+   ```
+
+## Uploading to PyPI
+
+To upload a new version of Bedrock-A-Bot to PyPI:
+
+1. Update the version number in `setup.py`.
+2. Run the upload command:
+   ```
+   upload-bedrock-a-bot
+   ```
+3. Confirm that you have updated the version when prompted.
+
+Note: Ensure you have `twine` installed and configured with your PyPI credentials before uploading.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
