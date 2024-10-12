@@ -1,0 +1,10 @@
+lazr.uri
+
+[:python_version < "3.9"]
+importlib-resources
+
+[docs]
+Sphinx
+
+[test]
+multipart

@@ -1,0 +1,31 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-ast
+    -   id: end-of-file-fixer
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-xml
+    -   id: check-yaml
+    -   id: debug-statements
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v3.16.0
+    hooks:
+    -   id: pyupgrade
+        args: [--keep-percent-format, --py38-plus]
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.1.1
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/mgedmin/check-manifest
+    rev: "0.49"
+    hooks:
+    -   id: check-manifest
+-   repo: https://github.com/mgedmin/check-python-versions
+    rev: "0.22.1"
+    hooks:
+    -   id: check-python-versions
