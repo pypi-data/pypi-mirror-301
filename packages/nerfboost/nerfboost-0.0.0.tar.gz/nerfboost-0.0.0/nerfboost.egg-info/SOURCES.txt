@@ -1,0 +1,14 @@
+LICENCE.txt
+README.md
+setup.py
+nerfboost/generate_rays.cu
+nerfboost/mlp_network.cu
+nerfboost/positional_encoding.cu
+nerfboost/pybind_module.cu
+nerfboost/rendering_loss.cu
+nerfboost/sampling.cu
+nerfboost/volume_rendering.cu
+nerfboost.egg-info/PKG-INFO
+nerfboost.egg-info/SOURCES.txt
+nerfboost.egg-info/dependency_links.txt
+nerfboost.egg-info/top_level.txt
