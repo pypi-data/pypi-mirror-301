@@ -1,0 +1,3 @@
+[console_scripts]
+pyrodigy=pyrodigy.cli:main
+
