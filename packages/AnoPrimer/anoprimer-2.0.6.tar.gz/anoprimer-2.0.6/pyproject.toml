@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "AnoPrimer"
+version = "2.0.6"
+description = "A package to design primers in Anopheles gambiae whilst considering genetic variation with malariagen_data"
+readme = "README.md"
+documentation = "https://sanjaynagi.github.io/anoprimer/latest/"
+repository = "https://github.com/sanjaynagi/anoprimer"
+authors = [
+    "Sanjay Nagi <sanjay.nagi@lstmed.ac.uk>",
+    ]
+packages = [
+    { include = "AnoPrimer" }
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+primer3-py = ">=2.0.0"
+malariagen_data = ">=10.0.0"
+openpyxl = "*"
+gget = "*"
+seaborn = "*"
+kaleido = "*"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "*"
+black = "*"
+pytest = "*"
+notebook = "*"
+jupyterlab = "*"
+snakeviz = "*"
+papermill = "*"
+ipykernel = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.isort]
+profile = "black"
