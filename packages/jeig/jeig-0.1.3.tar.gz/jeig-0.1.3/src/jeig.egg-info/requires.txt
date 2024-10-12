@@ -1,0 +1,17 @@
+jax
+jaxlib
+numpy
+scipy
+torch
+
+[dev]
+bump-my-version
+darglint
+jeig[tests]
+mypy
+pre-commit
+
+[tests]
+parameterized
+pytest
+pytest-cov
