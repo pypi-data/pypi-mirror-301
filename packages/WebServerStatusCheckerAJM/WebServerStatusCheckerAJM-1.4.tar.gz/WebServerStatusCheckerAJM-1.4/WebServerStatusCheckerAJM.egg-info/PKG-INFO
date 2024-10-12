@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: WebServerStatusCheckerAJM
+Version: 1.4
+Summary: Pings a machine to see if it is up, then checks for the presence of a given http server (originally conceived for use with Django and Apache).
+Home-page: https://github.com/amcsparron2793-Water/WebServerStatusCheckerAJM
+Download-URL: https://github.com/amcsparron2793-Water/WebServerStatusCheckerAJM/archive/refs/tags/1.4.tar.gz
+Author: Amcsparron
+Author-email: amcsparron@albanyny.gov
+License: MIT License
+Keywords: Web Server,Server Status,Django Server,Apache Server
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: EasyLoggerAJM

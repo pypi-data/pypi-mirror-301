@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+WebServerStatusCheckerAJM/ComponentStatus.py
+WebServerStatusCheckerAJM/DownTimeCalculation.py
+WebServerStatusCheckerAJM/ServerAddressPort.py
+WebServerStatusCheckerAJM/TitlesNames.py
+WebServerStatusCheckerAJM/WebServerStatusCheckerAJM.py
+WebServerStatusCheckerAJM/__init__.py
+WebServerStatusCheckerAJM/_version.py
+WebServerStatusCheckerAJM.egg-info/PKG-INFO
+WebServerStatusCheckerAJM.egg-info/SOURCES.txt
+WebServerStatusCheckerAJM.egg-info/dependency_links.txt
+WebServerStatusCheckerAJM.egg-info/requires.txt
+WebServerStatusCheckerAJM.egg-info/top_level.txt
