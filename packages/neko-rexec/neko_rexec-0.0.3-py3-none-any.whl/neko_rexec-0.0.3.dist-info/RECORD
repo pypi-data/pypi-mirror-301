@@ -1,0 +1,8 @@
+neko_rexec/__init__.py,sha256=PPT6Kh471VWEHS8PDhsbZPgkqjstpvp0fAMf3gUMGr4,66
+neko_rexec/__main__.py,sha256=Hp6GcFJBufR7TJcFd3LfdlAWD9_SyLVTGINVyg9xsD4,1000
+neko_rexec/send_remote_cmd.py,sha256=h49XMg1TzLFercBmmHKW0sE9NXhL-wsHQWltSrPSoKU,2241
+neko_rexec-0.0.3.dist-info/LICENSE,sha256=wzPC-K87w9Qm3pZewgyAKHjFUFnrJ6qqwW7ddxphpeM,1065
+neko_rexec-0.0.3.dist-info/METADATA,sha256=w2kByXsKYVa5c9pAm-AoNdqNEMRmSeyy136N_gNdL1k,2768
+neko_rexec-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+neko_rexec-0.0.3.dist-info/top_level.txt,sha256=sRaRxxKbTgHm-GEI05BhduQpmFAxhrr6CzW4fUd12kk,11
+neko_rexec-0.0.3.dist-info/RECORD,,
