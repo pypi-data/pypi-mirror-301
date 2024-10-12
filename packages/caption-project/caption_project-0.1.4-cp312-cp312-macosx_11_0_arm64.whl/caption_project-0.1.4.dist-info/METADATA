@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: caption-project
+Version: 0.1.4
+Requires-Dist: pillow >=10.4.0
+Requires-Dist: pyheif >=0.8.0
+Summary: Add your description here
+Author-email: alexwine36 <alexwine36@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# caption-project
+
+Describe your project here.
+
