@@ -1,0 +1,16 @@
+click
+requests
+aws-lambda-typing
+
+[dev]
+black
+flake8
+mypy
+isort
+pylint
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+invoke
+tox

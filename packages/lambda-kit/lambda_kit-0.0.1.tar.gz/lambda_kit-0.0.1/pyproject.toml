@@ -1,0 +1,118 @@
+# This file is used by the `pep517` build system. It is used to specify the
+# build system and dependencies required to build the project.
+
+# This section specifies the build system and dependencies required to build
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-date"
+
+# This section specifies the metadata for the project.
+[project]
+name = "lambda_kit"
+version = "0.0.1"  # This will be updated by semantic-release
+description = "A tool to package Python code for AWS Lambda."
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = ["aws", "lambda", "packaging", "deployment"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "click",
+    "requests",
+    "aws-lambda-typing",
+]
+authors = [
+    {name = "Omar Crosby", email = "omar.crosby@gmail.com"},
+]
+urls = {homepage = "https://github.com/ocrosby/lambda-kit"}
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+    "mypy",
+    "isort",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-xdist",
+    "invoke",
+    "tox",
+]
+
+# This section is used to define simple command-line scripts.
+# It maps command name to a Python function.
+# It is a straightforward way to create command-line tools.
+[project.scripts]
+lpack = "lambda_kit.__main__:main"
+
+
+# This section defines how setuptools should find packages.
+[tool.setuptools.packages.find]
+include = ["lambda_kit", "lambda_kit.*"]
+exclude = ["data", "node_modules", "tests", "tests.*"]
+
+# This section specifies the configuration for the `black` code formatter.
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
+
+
+[tool.pylint.master]
+ignore = ["venv"]
+jobs = 1
+
+[tool.pylint.messages_control]
+disable = ["C0114", "C0115", "C0116"]
+
+[tool.pylint.reports]
+output_format = "colorized"
+
+[tool.pylint.format]
+max_line_length = 120
+
+[tool.pylint.design]
+max_args = 5
+max_locals = 15
+max_returns = 6
+max_branches = 12
+max_statements = 50
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+strict = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers --tb=short --cov=lambda_kit --cov-report=term-missing --junitxml=junit.xml"
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["lambda_kit"]
+known_third_party = ["click", "pytest"]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+combine_as_imports = true
