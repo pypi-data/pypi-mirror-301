@@ -1,0 +1,162 @@
+[build-system]
+requires = ["setuptools>=57.0.0", "wheel", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlmc"
+dynamic = ["version"]
+description = "Python utils for AI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { "text" = "Apache-2.0" }
+keywords = ["machine-learning", "deep-learning", "ML", "DL", "AI"]
+authors = [
+    { name = "Ray Lam" }
+]
+maintainers = [
+    { name = "Ray Lam" }
+]
+
+# 发展时期
+#   3 - Alpha
+#   4 - Beta
+#   5 - Production/Stable
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+]
+
+
+dependencies = [
+    "colorlog", 
+    "pyyaml",
+    "tqdm",
+    "numpy",
+    "huggingface-hub",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "opencv-python",
+    "pillow",
+    "rich",
+    "requests",
+    "aiohttp",
+    "aiofiles",
+    "beautifulsoup4",
+    "lxml"
+]
+
+# Optional dependencies --------------------
+[project.optional-dependencies]
+dev = [
+    "pytest", 
+    "mypy",
+    "build",
+    "twine"
+]
+
+tensorflow = [
+    "h5py",
+    "tensorflow-gpu==2.7.0",
+    "keras"
+]
+
+torch = [
+    "soundfile",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "transformers",
+    "timm",
+    "segmentation-models-pytorch",
+    "torchsummary",
+    "thop",
+    "supervision"
+]
+
+paddle = [
+    "paddlepaddle",
+    "paddlehub"
+]
+
+jax=[
+    "jax",
+    "jaxlib"
+]
+
+download=[
+    "modelscope",
+    "codewithgpu"
+]
+
+git=[
+    "gitpython",
+]
+
+chart=[
+    "matplotlib",
+    "pyecharts",
+]
+
+video=[
+    "av",
+    "pyaudio",
+    "moviepy",
+]
+
+
+assistant=[
+    "pyaudio",
+    "pyttsx3",
+    "ChatTTS",
+    "pynput",
+    "pyperclip",
+    "easyocr",
+    "wave"
+]
+
+handcontrol=[
+    "pycaw",
+    "mediapipe",
+    "comtypes",
+    "pynput",
+]
+
+
+
+[project.urls]
+"Source" = "https://github.com/RayLam2022/rlmc"
+
+[project.scripts]
+chatbot="rltools.call_qianfan:main"
+clearcache= "rltools.clear_cache:clear_cache"
+testcuda = "rltools.cuda_test:cudatest"
+deltemp = "rltools.del_jupyter_temp:del_jupyter_temp"
+downloadmodel="rltools.download_model:main"
+findtool= "rltools.findtool:find"
+genhash= "rltools.gen_hash:gen_hash"
+handcontrol="rltools.handcontrol:main"
+managesource= "rltools.manage_source:manage_source"
+cutvideo="rltools.moviepy_cut_video:main"
+ocr= "rltools.ocr:main"
+stt="rltools.stt_turbo:main"
+sysinfo= "rltools.systeminfos:general_info"
+gpuinfo= "rltools.systeminfos:gpu_info"
+takephoto="rltools.take_photo:main"
+findimg= "rltools.tsi:main"
+# image_registration tts
+
+[tool.setuptools] 
+packages = { find = { where = ["."], include = ["rlmc", "rlmc.*"], exclude=["*__pycache__*","*ipynb_checkpoints*","*vscode*","","build.*","dist.*","*egg-info","*.mypy_cache","*.git.*"]} }
+package-data = {"rlmc"=["*","../rltools/*.py","../rltests/*.py"], "rlmc.resource"=["*.json", "*.conf", "*.ini","*.txt"], "rlmc.configs"=["*.yaml"], "rlmc.configs.datasets"=["*.yaml"], "rlmc.configs.models"=["*.yaml"], "rlmc.configs.trainval"=["*.yaml"],"rlmc.tutorial.c_packages.cython_test"=["*.pyx"]}
+
+
+[tool.setuptools.dynamic]
+version = { attr = "rlmc.__version__" }
+
+
