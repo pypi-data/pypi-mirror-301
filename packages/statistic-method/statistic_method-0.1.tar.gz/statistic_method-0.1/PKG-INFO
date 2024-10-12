@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: statistic-method
+Version: 0.1
+Summary: Package ini bertujuan untuk membantu dalam mengolah data/nilai
+Author: kelompok 2 B
+Requires-Dist: pandas
+Requires-Dist: openpyxl
