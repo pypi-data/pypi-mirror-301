@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="gnewsio",  # Package name
+    version="0.1.0",
+    description="A Python client for the GNews API with category, country, and language filtering",
+    author="Sanket Mishra",
+    author_email="isanketmishra@gmail.com",
+    url="https://github.com/project-arth-tech/gnewsio",
+    packages=find_packages(),
+    install_requires=[
+        "requests"
+    ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.8',
+)
