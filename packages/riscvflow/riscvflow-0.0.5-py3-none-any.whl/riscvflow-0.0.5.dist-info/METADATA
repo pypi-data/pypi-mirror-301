@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: riscvflow
+Version: 0.0.5
+Summary: A library for control flow graph analysis of RISC-V assembly
+Author: Akshit Sharma
+Author-email: akshitsharma@mines.edu
+
