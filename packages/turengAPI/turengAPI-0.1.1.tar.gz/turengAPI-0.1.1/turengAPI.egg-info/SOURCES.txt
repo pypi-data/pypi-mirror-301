@@ -1,0 +1,7 @@
+README.md
+setup.py
+turengAPI.egg-info/PKG-INFO
+turengAPI.egg-info/SOURCES.txt
+turengAPI.egg-info/dependency_links.txt
+turengAPI.egg-info/requires.txt
+turengAPI.egg-info/top_level.txt
