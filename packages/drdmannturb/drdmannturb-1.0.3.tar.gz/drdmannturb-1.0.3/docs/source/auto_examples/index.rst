@@ -1,0 +1,228 @@
+:orphan:
+
+.. py:currentmodule:: drdmannturb
+
+Examples
+========
+The first two examples correspond to the experiments presented in `the original DRD paper <https://arxiv.org/abs/2107.11046>`_.
+
+.. toctree::
+    :titlesonly:
+    :numbered:
+    :caption: Contents:
+    
+    01_basic_mann_parameters_fit.py 
+
+    02_eddy-lifetime_fit.py
+
+    03_eddy-lifetime_fit_3term_loss.py
+
+    04_eddy-lifetime_fit_gelu.py
+
+    05_custom_noisy_data_fit.py
+
+    06_custom_data_interpolate_and_fit.py
+
+    07_mann_linear_regression.py
+
+    08_mann_box_generation_IEC.py
+
+    09_drd_box.py
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the a simple configuration of DRDMannTurb to spectra fitting while us...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_07_mann_linear_regression_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_07_mann_linear_regression.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 7: Mann Eddy Lifetime Linear Regression</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates fitting the Mann model eddy lifetime function to the Kaimal one-point...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_01_basic_mann_parameters_fit_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_01_basic_mann_parameters_fit.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 1: Basic Mann Model Fit</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example is nearly identical to Example 2, however we use a more sophisticated loss functio...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_03_eddy-lifetime_fit_3term_loss_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_03_eddy-lifetime_fit_3term_loss.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 3: Adding Regularization and Penalty Terms to Fitting</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example is nearly identical to the Synthetic Data fit, however we use a different neural n...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_04_eddy-lifetime_fit_gelu_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_04_eddy-lifetime_fit_gelu.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 4: Changing MLP Architecture and Fitting</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we use drdmannturb to fit a simple neural network model to real-world data wit...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_05_custom_noisy_data_fit_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_05_custom_noisy_data_fit.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 5: Custom Data Fit</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the utilities for generating synthetic turbulence, which can be eithe...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_08_mann_box_generation_IEC_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_08_mann_box_generation_IEC.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 8: Fluctuation Field Generation</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the utilities for generating fluctuation fields, which can be either ...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_09_drd_box_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_09_drd_box.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 9: Fluctuation Field Generation from DRD Model</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we compare the DRD model to the Mann model, using the three IEC-recommended Ma...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_02_eddy-lifetime_fit_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_02_eddy-lifetime_fit.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 2: Synthetic Data Fit</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we&#x27;re using real-world data, but importantly the data points are not over the ...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_06_custom_data_interpolate_and_fit_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_06_custom_data_interpolate_and_fit.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Example 6: Interpolating Spectra Data and Fitting</div>
+    </div>
+
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/07_mann_linear_regression
+   /auto_examples/01_basic_mann_parameters_fit
+   /auto_examples/03_eddy-lifetime_fit_3term_loss
+   /auto_examples/04_eddy-lifetime_fit_gelu
+   /auto_examples/05_custom_noisy_data_fit
+   /auto_examples/08_mann_box_generation_IEC
+   /auto_examples/09_drd_box
+   /auto_examples/02_eddy-lifetime_fit
+   /auto_examples/06_custom_data_interpolate_and_fit
+
+
+.. only:: html
+
+  .. container:: sphx-glr-footer sphx-glr-footer-gallery
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download all examples in Python source code: auto_examples_python.zip </auto_examples/auto_examples_python.zip>`
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download all examples in Jupyter notebooks: auto_examples_jupyter.zip </auto_examples/auto_examples_jupyter.zip>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_
