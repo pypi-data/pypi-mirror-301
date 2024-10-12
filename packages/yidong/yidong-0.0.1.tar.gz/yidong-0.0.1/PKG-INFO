@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yidong
+Version: 0.0.1
+Summary: 
+License: MIT
+Author: Yi Team
+Author-email: yi@01.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.5.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# YiDong Python Client SDK
