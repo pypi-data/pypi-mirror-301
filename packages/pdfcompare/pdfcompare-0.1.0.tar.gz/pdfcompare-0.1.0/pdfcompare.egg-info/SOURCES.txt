@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pdfcompare/__init__.py
+pdfcompare/cli.py
+pdfcompare.egg-info/PKG-INFO
+pdfcompare.egg-info/SOURCES.txt
+pdfcompare.egg-info/dependency_links.txt
+pdfcompare.egg-info/entry_points.txt
+pdfcompare.egg-info/requires.txt
+pdfcompare.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pdfcompare.py
