@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+finite_topology/__init__.py
+finite_topology/functions.py
+finite_topology/known_topologies.py
+finite_topology/topology.py
+finite_topology.egg-info/PKG-INFO
+finite_topology.egg-info/SOURCES.txt
+finite_topology.egg-info/dependency_links.txt
+finite_topology.egg-info/top_level.txt
