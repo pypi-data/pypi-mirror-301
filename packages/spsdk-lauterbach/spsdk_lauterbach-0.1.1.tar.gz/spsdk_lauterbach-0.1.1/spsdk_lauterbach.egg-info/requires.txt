@@ -1,0 +1,2 @@
+spsdk>=2.2.0
+lauterbach-trace32-rcl

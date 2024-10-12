@@ -1,0 +1,2 @@
+[spsdk.debug_probe]
+lauterbach = spsdk_lauterbach.probe
