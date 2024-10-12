@@ -1,0 +1,116 @@
+Metadata-Version: 2.3
+Name: python-lilypad
+Version: 0.0.2
+Summary: An open-source prompt engineering framework.
+Project-URL: Repository, https://github.com/Mirascope/lilypad
+Project-URL: Issues, https://github.com/Mirascope/lilypad/issues
+Project-URL: Changelog, https://github.com/Mirascope/lilypad/releases
+Author-email: William Bakst <william@mirascope.io>, Brendan Kao <brendan@mirascope.io>
+Maintainer-email: William Bakst <william@mirascope.io>
+License: MIT License
+        
+        Copyright (c) 2024 Mirascope
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: artificial intelligence,developer tools,evaluation,llm,llm tools,prompt engineering
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: OpenTelemetry
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Requires-Dist: fastapi[standard]>=0.114.0
+Requires-Dist: mirascope>=1.2.0
+Requires-Dist: opentelemetry-api>=1.27.0
+Requires-Dist: opentelemetry-sdk>=1.27.0
+Requires-Dist: psycopg2-binary>=2.9.9
+Requires-Dist: sqlmodel>=0.0.22
+Requires-Dist: typer>=0.12.5
+Provides-Extra: anthropic
+Requires-Dist: anthropic>=0.36.0; extra == 'anthropic'
+Requires-Dist: opentelemetry-instrumentation-anthropic>=0.32.2; extra == 'anthropic'
+Provides-Extra: openai
+Requires-Dist: openai>=1.43.0; extra == 'openai'
+Requires-Dist: opentelemetry-instrumentation-openai>=0.31.2; extra == 'openai'
+Description-Content-Type: text/markdown
+
+# Lilypad
+
+> [!WARNING]
+> __Project is in alpha phase__
+> 
+> This means that things like the user interface, database schemas, etc. are still subject to change. We do not yet recommend fully relying on this project in production, but we've found it works quite well for local development in its current stage.
+
+An open-source prompt engineering framework built on these principles:
+
+- Prompt engineering is an optimization process, which requires...
+- Automatic versioning and tracing
+- Developer-centric prompt template editor
+- Proper syncing between prompts and code
+
+> [!IMPORTANT]
+> __We're looking for early design partners!__
+> 
+> We are also working on tooling for improved collaboration between technical and non-technical team members. This is particularly important for involving domain experts who may not have the technical chops to contribute to a code base.
+>
+> If you're interested, [join our community](https://join.slack.com/t/mirascope-community/shared_invite/zt-2ilqhvmki-FB6LWluInUCkkjYD3oSjNA) and DM William Bakst :)
+>
+> There are limited spots.
+
+## 30 Second Quickstart
+
+Install Lilypad, specifying the provider(s) you intend to use, and set your API key:
+
+```bash
+pip install "python-lilypad[openai]"
+
+export OPENAI_API_KEY=XXXXX
+```
+
+Create your first synced prompt to recommend a book.
+
+For example, you could use the prompt `Recommend a fantasy book`:
+
+```bash
+lilypad start                  # initialize local project
+lilypad create recommend_book  # creates a synced LLM function
+lilypad run recommend_book     # runs the function (and opens editor)
+```
+
+Once you hit "Submit" you'll see the function run in your shell. Follow the link to see the version and trace in an interactive UI.
+
+Next, try editing the function signature to take a `genre: str` argument. When you run the function again it will open the editor and give you access to the `{genre}` template variable (with autocomplete).
+
+## Usage
+
+We are actively working on this library and it's documentation, which you can find [here](https://lilypad.mirascope.com/docs)
+
+## Versioning
+
+Lilypad uses [Semantic Versioning](https://semver.org/)
+
+## License
+
+This project is currently licensed under the terms of the [MIT License](https://github.com/Mirascope/mirascope/blob/main/LICENSE); however, we expect certain future features to be licensed separately, which we will make extremely clear and evident.
