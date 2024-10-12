@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: sciduck
+Version: 0.2.0
+Summary: single cell data analyis unification and communication toolkit
+Project-URL: Source, https://github.com/AllenInstitute/sciduck
+Author: Nelson Johansen, Matthew Schmitz, Dan Yuan, Zizhen Yao, Trygve Bakken
+Maintainer-email: Nelson Johansen <nelson.johansen@alleninstitute.org>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.9
+Requires-Dist: anndata>=0.8
+Requires-Dist: numpy>=1.23
+Requires-Dist: pandas>=1.5
+Requires-Dist: scipy>=1.8
+Description-Content-Type: text/markdown
+
+# sciduck: single cell data analysis unification and communication toolkit
+
+`sciduck` provides a transparent framework for single cell/nuclei quality control and annotation. The package was built following **anndata** and **scanpy** to easily fit into related workflows. It provides tranparency to single cell analysis pipelines for reproducible data analysis and annotation.  The Python-based implementation efficiently deals with
+datasets of more than one million cells.
+
+<div align="center">
+<img
+    src="/logo/sciduck_DALLEv0.png"
+    width="200"
+>
+</div>
+
+## Documentation
+
+`https://sciduck.readthedocs.io/en/latest/`
+
+## Installation
+
+`pip install sciduck`
