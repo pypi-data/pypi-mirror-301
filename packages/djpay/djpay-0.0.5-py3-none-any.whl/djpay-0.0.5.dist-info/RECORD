@@ -1,0 +1,16 @@
+djpay/apps.py,sha256=EDSSfvQDXZAuzKzKMe1QarZucQFXig_yyOuAFpE4z6w,142
+djpay/errors.py,sha256=3LeHt45c-XPajtTF82yAb3BDZmCnXmRNMnXeY0oPQFA,331
+djpay/manager.py,sha256=4MjobytYYbMuYCz9_Ykv3Dgoy_CTLns47DcupgEoz6I,2013
+djpay/models.py,sha256=_EDUySQkSaYvgHgXlWscbGblx8HizJMJIwCevauIxbM,870
+djpay/utils.py,sha256=dee7vp4LT1mdDE3PeO5ceRryCpKzNobbC19Tf20ykNk,883
+djpay/backends/__init__.py,sha256=tlDOVgceJELkIajBeux-zXanOWUYFfajgmrRXd3Cjok,135
+djpay/backends/base.py,sha256=IcSB3bHV47fyQQVDj7dgmVpfKE9aFsZ4v2wKp-IpWMU,980
+djpay/backends/pay_on_delivery.py,sha256=uNxMYtbcV3rmx-YTNRxeFnDZ5FOxfBYyiu_HiL_WVxg,890
+djpay/backends/zarinpal.py,sha256=I2ukTm_4qJrdEHltzbRTrf7rF_GjQ3AozjAnQj9FBfk,4981
+djpay/migrations/0001_initial.py,sha256=WoNCqM_EhZU8N77caG4b2w_OOBXa8vUrZkofBpV6wgA,1148
+djpay/migrations/0002_bill_verified.py,sha256=Q5tmLXcl-N2F_DkR0qpkGzg0AidNdN7ZmwvaqF7rRHI,373
+djpay/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djpay-0.0.5.dist-info/METADATA,sha256=uE8-D-5GzaaGx5OKiOghnZTa3j35m_GtS2B2-a5hf7Q,708
+djpay-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+djpay-0.0.5.dist-info/top_level.txt,sha256=v7eza83qwBZJxPIARSrN8demJioEjvJkrLxGIMZH9HA,6
+djpay-0.0.5.dist-info/RECORD,,
