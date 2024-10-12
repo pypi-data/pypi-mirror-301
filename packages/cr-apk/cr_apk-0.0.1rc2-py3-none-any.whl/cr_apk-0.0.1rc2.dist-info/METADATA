@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: cr-apk
+Version: 0.0.1rc2
+Summary: APK Manager for Clash Royale
+Home-page: https://github.com/pyclashbot/cr-apk
+Author: Martin Miglio
+Author-email: code@martinmiglio.dev
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.37,<2.0.0)
+Requires-Dist: boto3-stubs[s3] (>=1.35.37,<2.0.0)
+Requires-Dist: cleo (>=2.1.0,<3.0.0)
+Requires-Dist: pymemuc (>=0.6.0,<0.7.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/pyclashbot/cr-apk
+Description-Content-Type: text/markdown
+
+# cr-apk
+
+Clash Royale APK Manager
+
+## Installation
+
+```bash
+pipx install cr-apk
+```
+
+## Usage
+
+List available commands:
+
+```bash
+crapk list
+# Available commands:
+#   build   Builds an APK version
+#   deploy  Deploys an APK version
+#   help    Displays help for a command.
+#   list    Lists commands.
+#   ls      Lists all APK versions
+#   pull    Pulls an installed application's APKs from the device
+```
+
+### Example
+
+```bash
+crapk pull 80256022 # target version
+# Pulling APKs for package com.supercell.clashroyale as version 80256022
+# APKs pulled.
+crapk build
+# Building APK...
+# Building version 80256022
+# APK built.
+crapk ls
+# Pulled versions:
+# 80256022
+#
+# Built versions:
+# 80256022
+crapk deploy
+# Deploying APK...
+# Deploying version 80256022
+# APK deployed.
+```
+
