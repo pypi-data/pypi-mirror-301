@@ -1,0 +1,2 @@
+[console_scripts]
+dustapi = dustapi.cli:cli
