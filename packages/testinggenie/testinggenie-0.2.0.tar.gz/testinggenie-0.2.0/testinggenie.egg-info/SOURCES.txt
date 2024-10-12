@@ -1,0 +1,11 @@
+README.md
+setup.py
+testinggenie/__init__.py
+testinggenie/client.py
+testinggenie/main.py
+testinggenie/utils.py
+testinggenie.egg-info/PKG-INFO
+testinggenie.egg-info/SOURCES.txt
+testinggenie.egg-info/dependency_links.txt
+testinggenie.egg-info/requires.txt
+testinggenie.egg-info/top_level.txt
