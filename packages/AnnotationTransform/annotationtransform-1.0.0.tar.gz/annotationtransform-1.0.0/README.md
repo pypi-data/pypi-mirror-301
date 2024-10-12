@@ -1,0 +1,3 @@
+# AnnotationTransform
+ 
+The software provides a training model function, users can use scRNA data as input, using random forest algorithm to train the model. By selecting and adjusting different parameters and features, users can optimize the performance of the model according to their research needs. Once the model is trained, the software allows users to use the trained model to make predictions on new scATAC data. scATAC data can be entered into the software, processed and analyzed by the model, and predicted results can be obtained. The software provides model evaluation capabilities to help users evaluate the performance and accuracy of trained models, as well as visualization capabilities.
