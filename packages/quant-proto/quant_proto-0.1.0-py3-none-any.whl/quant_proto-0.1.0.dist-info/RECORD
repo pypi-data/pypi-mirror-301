@@ -1,0 +1,11 @@
+quant_proto/__init__.py,sha256=mu5m9m1aTsSo_LypA15Wa0LSvZUcOAblFwzYXN0sYPo,41
+quant_proto/quant.proto,sha256=xfKsg4ua3n-Q4uPsgqk0lyIz8XSvJLlM-j2x4og86OU,221
+quant_proto/quant_pb2.py,sha256=S36ZpF2xIQKOYMBjPzwQEz6cdR8IEJud3m1CCZ6meX8,1398
+quant_proto/quant_pb2_grpc.py,sha256=FusO36JJLrJwgu1dDNHezYbaBy4B4638--ha5YL6-yI,2527
+quant_proto/servicer.py,sha256=fuLNfTPTPrzGYGdcW1_kL5gv7Y3GcPvoyScKoT8SSlM,257
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_quant_proto.py,sha256=NzRZ9EhGy9pGoU57Uk9-GCLK-vZZQXF4bCkh0TFbUSE,3022
+quant_proto-0.1.0.dist-info/METADATA,sha256=wEZQrm7JL-3ywSRHzb3YuGkGsEqBrIvfHPS1JEtuitc,324
+quant_proto-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+quant_proto-0.1.0.dist-info/top_level.txt,sha256=mfBTeK7VqUDxzB4octjOk1pf96jypi2RBd_sOos6Az0,18
+quant_proto-0.1.0.dist-info/RECORD,,
