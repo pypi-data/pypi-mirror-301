@@ -1,0 +1,11 @@
+AnoPrimer/__init__.py,sha256=WvQ5h4gLRDlOqzObOBxuXLpBFedWT-pq6lzCVtmkeXY,97
+AnoPrimer/design.py,sha256=LRalsddnkZ_IInN690oVl4n7GCM_9JV0sj-kUAnYjgQ,16523
+AnoPrimer/evaluate.py,sha256=chMgP2GAW2RwEPdbGm7yyZP7HGNNsGrmfOyObGkqkuY,18795
+AnoPrimer/params/default.json,sha256=6FNsWiNKHato8xDy0v8GvWDZqqqR0M-FkV3WUAjQlrQ,502
+AnoPrimer/params/relaxed.json,sha256=zff4-0luIl95wLlVcLvCOTeV-jOEf4_e-5BjmkbhF2c,502
+AnoPrimer/params/stringent.json,sha256=E2MQqp6_kMiEH_tVNgJ8Fxj9Xg5umpPtmlUYmk2Dz4s,541
+AnoPrimer/utils.py,sha256=7wdGs3OhLiagSfozegUzw18rS8kPjrmEMyqhMGkiC44,19112
+anoprimer-2.0.6.dist-info/LICENSE,sha256=5q2y8To6cxJf4TdtLtFs-PaE8GutIGrmhYhL7YnMnM8,1079
+anoprimer-2.0.6.dist-info/METADATA,sha256=ubFFTlk2enxfuWbsrk6q4_99-GHiQzfQmgQiGt8gQIc,2659
+anoprimer-2.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+anoprimer-2.0.6.dist-info/RECORD,,
