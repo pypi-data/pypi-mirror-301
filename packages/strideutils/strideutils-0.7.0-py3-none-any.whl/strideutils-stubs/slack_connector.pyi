@@ -1,0 +1,13 @@
+from strideutils.stride_config import config as config
+from typing import Union, List, Optional
+from slack_sdk import WebClient
+
+class SlackClient:
+    _instance: 'SlackClient'
+    api_token: str
+    client: WebClient
+
+    def __new__(cls) -> 'SlackClient': ...
+    def __init__(self) -> None: ...
+    def post_message(self, message: Union[str, List[str]], channel: str, botname: Optional[str] = None, thread_ts: Optional[str] = None) -> str: ...
+    def upload_file(self, file_name: str, content: str) -> str: ...
