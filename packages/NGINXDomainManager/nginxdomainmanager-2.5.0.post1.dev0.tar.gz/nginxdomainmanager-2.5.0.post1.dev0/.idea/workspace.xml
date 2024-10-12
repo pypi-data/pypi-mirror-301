@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26fd8c86-c00a-4d7a-a326-e97524ca75de" name="Changes" comment="Enhance logging setup for improved maintainability and readability&#10;&#10;- Introduce dedicated logger for NGINXDomainManager to avoid conflicts and improve control&#10;- Add log rotation using RotatingFileHandler to manage log file size and backups&#10;- Implement color-coded console output using colorama for better visibility of log levels&#10;- Refactor logging setup to allow configurable log levels and consistent use across functions&#10;- Improve error handling in log viewing and changelog display functions with contextual logging&#10;- Use custom ColorFormatter for dynamic log level color mapping in console output">
+      <change afterPath="$PROJECT_DIR$/upload_to_pypi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain_manager/_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain_manager/_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain_manager/updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain_manager/updater.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Bof98&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Bof98/NGINXDomainManager.git&quot;,
+    &quot;accountId&quot;: &quot;f71a557e-6673-4415-b871-69496f28cfbb&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2nIetg0dOqhgAfFzKgnRO2nFADP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.config.executor": "Run",
+    "Python.logger.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.updater.executor": "Run",
+    "Python.upload_to_pypi.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "configurable.group.project"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="NGINXDomainManager" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="NGINXDomainManager" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\harri\PycharmProjects\NGINXDomainManager\src\NGINXDomainManager" />
+      <recent name="C:\Users\harri\PycharmProjects\NGINXDomainManager" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.updater">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NGINXDomainManager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dist/nginxdomainmanager-2.0.14.post1.dev1/src/domain_manager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dist/nginxdomainmanager-2.0.14.post1.dev1/src/domain_manager/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NGINXDomainManager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/domain_manager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/domain_manager/logger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NGINXDomainManager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/domain_manager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/domain_manager/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="NGINXDomainManager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\harri\PycharmProjects\NGINXDomainManager\src\NGINXDomainManager\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="updater" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NGINXDomainManager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/domain_manager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/domain_manager/updater.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="upload_to_pypi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NGINXDomainManager" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upload_to_pypi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.updater" />
+        <item itemvalue="Python.logger" />
+        <item itemvalue="Python.upload_to_pypi" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.config" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-8336bb23522e-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.19072.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\harri\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26fd8c86-c00a-4d7a-a326-e97524ca75de" name="Changes" comment="" />
+      <created>1728665233497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728665233497</updated>
+    </task>
+    <task id="LOCAL-00001" summary="NGINX Domain Manager Initial Commit">
+      <option name="closed" value="true" />
+      <created>1728665479685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728665479686</updated>
+    </task>
+    <task id="LOCAL-00002" summary="NGINX Domain Manager Initial Commit">
+      <option name="closed" value="true" />
+      <created>1728665566279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728665566279</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add .gitignore file to exclude unnecessary files&#10;&#10;- Exclude byte-compiled, optimized, and DLL files&#10;- Exclude virtual environment directories&#10;- Exclude distribution and packaging directories">
+      <option name="closed" value="true" />
+      <created>1728666833099</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728666833099</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added automatic update mechanism to check GitHub for new versions and prompt user for updates">
+      <option name="closed" value="true" />
+      <created>1728673252909</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728673252909</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added automatic update mechanism to check GitHub for new versions and prompt user for updates">
+      <option name="closed" value="true" />
+      <created>1728673269431</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728673269431</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Testing the Update Mechanism">
+      <option name="closed" value="true" />
+      <created>1728673641334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728673641334</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1728676705188</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728676705188</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated imports in: utils/validation.py and updater.py">
+      <option name="closed" value="true" />
+      <created>1728677069387</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728677069387</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Moved package files to /src">
+      <option name="closed" value="true" />
+      <created>1728678186995</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728678186995</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1728678626184</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728678626184</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1728678916724</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728678916724</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1728679194663</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728679194663</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Building Package">
+      <option name="closed" value="true" />
+      <created>1728680437349</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728680437350</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Building Package">
+      <option name="closed" value="true" />
+      <created>1728680501511</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728680501511</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add dynamic version control">
+      <option name="closed" value="true" />
+      <created>1728682097911</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728682097911</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed version import">
+      <option name="closed" value="true" />
+      <created>1728682411756</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728682411756</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fixed">
+      <option name="closed" value="true" />
+      <created>1728682873934</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1728682873934</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixed logger import">
+      <option name="closed" value="true" />
+      <created>1728683154507</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1728683154507</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed logger import">
+      <option name="closed" value="true" />
+      <created>1728683634235</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728683634235</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated package-data">
+      <option name="closed" value="true" />
+      <created>1728685334738</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1728685334738</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed config.yaml import">
+      <option name="closed" value="true" />
+      <created>1728688871397</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1728688871397</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fix logging setup and improve log display handling&#10;&#10;- Ensure log file directory exists before setting up logging&#10;- Handle potential exceptions during logging setup&#10;- Improve `show_logs` function to handle different platforms (Windows and Unix-like systems)&#10;- Add fallback mechanism to read and print log file if `less` or `more` command is not available&#10;- Removed log files from package">
+      <option name="closed" value="true" />
+      <created>1728689239377</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1728689239377</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added self-update functionality using pip&#10;&#10;- Implement `update_package` function to update the package using pip&#10;- Implement `check_for_updates` function to check for updates on PyPI&#10;- Add logging and user prompts for update process&#10;- Ensure application restarts after successful update">
+      <option name="closed" value="true" />
+      <created>1728689788991</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1728689788991</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixed check_for_updates import">
+      <option name="closed" value="true" />
+      <created>1728690731992</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1728690731992</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added terminal clearing function and main menu to display.py&#10;&#10;- Implemented `clear_terminal` function to clear the terminal screen.">
+      <option name="closed" value="true" />
+      <created>1728691241274</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1728691241274</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updated Menu Opions&#10;&#10;- Moved 'View Logs', 'View changelog' and 'Configure settings' to 'Settings'">
+      <option name="closed" value="true" />
+      <created>1728691756331</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1728691756331</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updated updater.py&#10;&#10;- Replaced pip search with pip list --outdated">
+      <option name="closed" value="true" />
+      <created>1728692229058</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1728692229058</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixed main menu 'exit' choice">
+      <option name="closed" value="true" />
+      <created>1728692506582</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1728692506582</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Enhance logging setup for improved maintainability and readability&#10;&#10;- Introduce dedicated logger for NGINXDomainManager to avoid conflicts and improve control&#10;- Add log rotation using RotatingFileHandler to manage log file size and backups&#10;- Implement color-coded console output using colorama for better visibility of log levels&#10;- Refactor logging setup to allow configurable log levels and consistent use across functions&#10;- Improve error handling in log viewing and changelog display functions with contextual logging&#10;- Use custom ColorFormatter for dynamic log level color mapping in console output">
+      <option name="closed" value="true" />
+      <created>1728692995474</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1728692995474</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Deleted main.py" />
+    <MESSAGE value="NGINX Domain Manager Initial Commit" />
+    <MESSAGE value="Add .gitignore file to exclude unnecessary files&#10;&#10;- Exclude byte-compiled, optimized, and DLL files&#10;- Exclude virtual environment directories&#10;- Exclude distribution and packaging directories" />
+    <MESSAGE value="Added automatic update mechanism to check GitHub for new versions and prompt user for updates" />
+    <MESSAGE value="Testing the Update Mechanism" />
+    <MESSAGE value="Added pyproject.toml" />
+    <MESSAGE value="Updated imports in: utils/validation.py and updater.py" />
+    <MESSAGE value="Moved package files to /src" />
+    <MESSAGE value="Updated pyproject.toml" />
+    <MESSAGE value="Building Package" />
+    <MESSAGE value="Add dynamic version control" />
+    <MESSAGE value="Fixed version import" />
+    <MESSAGE value="Fixed" />
+    <MESSAGE value="Fixed logger import" />
+    <MESSAGE value="Updated package-data" />
+    <MESSAGE value="Fixed config.yaml import" />
+    <MESSAGE value="Fix logging setup and improve log display handling&#10;&#10;- Ensure log file directory exists before setting up logging&#10;- Handle potential exceptions during logging setup&#10;- Improve `show_logs` function to handle different platforms (Windows and Unix-like systems)&#10;- Add fallback mechanism to read and print log file if `less` or `more` command is not available&#10;- Removed log files from package" />
+    <MESSAGE value="Added self-update functionality using pip&#10;&#10;- Implement `update_package` function to update the package using pip&#10;- Implement `check_for_updates` function to check for updates on PyPI&#10;- Add logging and user prompts for update process&#10;- Ensure application restarts after successful update" />
+    <MESSAGE value="Fixed check_for_updates import" />
+    <MESSAGE value="Added terminal clearing function and main menu to display.py&#10;&#10;- Implemented `clear_terminal` function to clear the terminal screen." />
+    <MESSAGE value="Updated Menu Opions&#10;&#10;- Moved 'View Logs', 'View changelog' and 'Configure settings' to 'Settings'" />
+    <MESSAGE value="Updated updater.py&#10;&#10;- Replaced pip search with pip list --outdated" />
+    <MESSAGE value="Fixed main menu 'exit' choice" />
+    <MESSAGE value="Enhance logging setup for improved maintainability and readability&#10;&#10;- Introduce dedicated logger for NGINXDomainManager to avoid conflicts and improve control&#10;- Add log rotation using RotatingFileHandler to manage log file size and backups&#10;- Implement color-coded console output using colorama for better visibility of log levels&#10;- Refactor logging setup to allow configurable log levels and consistent use across functions&#10;- Improve error handling in log viewing and changelog display functions with contextual logging&#10;- Use custom ColorFormatter for dynamic log level color mapping in console output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance logging setup for improved maintainability and readability&#10;&#10;- Introduce dedicated logger for NGINXDomainManager to avoid conflicts and improve control&#10;- Add log rotation using RotatingFileHandler to manage log file size and backups&#10;- Implement color-coded console output using colorama for better visibility of log levels&#10;- Refactor logging setup to allow configurable log levels and consistent use across functions&#10;- Improve error handling in log viewing and changelog display functions with contextual logging&#10;- Use custom ColorFormatter for dynamic log level color mapping in console output" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>
