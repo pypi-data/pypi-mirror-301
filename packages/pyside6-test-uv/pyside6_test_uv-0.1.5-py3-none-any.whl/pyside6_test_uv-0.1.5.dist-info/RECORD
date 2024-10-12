@@ -1,0 +1,12 @@
+pyside6_test_uv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyside6_test_uv/__main__.py,sha256=CHYZE6GEimU3mdtk8RbkxRmLnmsmkQ-mI2YRmYr2f6o,82
+pyside6_test_uv/app.py,sha256=bgHgrmVaD04DWF78-W8DOwhe339BaHHy6uzWqNMLfZM,322
+pyside6_test_uv/main_window.py,sha256=uBacdW4YUmQCmnOrSXwgfEzhkXnPvlSPYFGBwpZY_ao,382
+pyside6_test_uv/main_window.ui,sha256=rt2g7vfPFbvW9soqs-jMfo53snyoFjLC44OpJ_-G07o,1229
+pyside6_test_uv/main_window_ui.py,sha256=Um9jJGk_59lKwCU-2PZicQoWIsxuRYskSHBVoi3oPyI,2439
+pyside6_test_uv/version.py,sha256=Jc3LXt5dytfDJC1npn7agUotLlYHStX6gAOgC4P2e0Q,427
+pyside6_test_uv-0.1.5.dist-info/METADATA,sha256=pCEjuyZ8RfuBk_V4rEyD_8r8p8PkP7avE63ZYMSrOyA,291
+pyside6_test_uv-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyside6_test_uv-0.1.5.dist-info/entry_points.txt,sha256=tUSwddSq-2nRgH5-6webTQMy8ZGzrDgRtfq7pTqXGnU,57
+pyside6_test_uv-0.1.5.dist-info/top_level.txt,sha256=aIWUbMTAQ2b4nStdXKid4d0yqBnMSfE5aLAgzzLXiG4,16
+pyside6_test_uv-0.1.5.dist-info/RECORD,,
