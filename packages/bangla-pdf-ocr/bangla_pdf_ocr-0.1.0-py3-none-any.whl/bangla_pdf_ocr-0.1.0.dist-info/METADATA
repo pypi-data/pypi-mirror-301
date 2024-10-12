@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: bangla-pdf-ocr
+Version: 0.1.0
+Summary: A package to extract Bengali text from PDFs using OCR
+Home-page: https://github.com/asiff00/bangla-pdf-ocr
+Author: Abdullah Al Asif
+Author-email: asif.dev.bd@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm==4.66.3
+Requires-Dist: Pillow==9.4.0
+Requires-Dist: pdf2image==1.17.0
+Requires-Dist: pytesseract==0.3.10
+Requires-Dist: colorama
+
+# Bangla PDF OCR
+
+Extract Bengali text from PDFs using OCR.
+
+## Installation
+
+1. Install the package:
+   ```bash
+   pip install bangla-pdf-ocr
+   ```
+
+2. Install system dependencies:
+   ```bash
+   bangla-pdf-ocr-setup
+   ```
+
+   This command installs `tesseract-ocr`, `poppler-utils`, and `tesseract-ocr-ben` on Linux, or `tesseract`, `poppler`, and `tesseract-lang` on macOS. Windows users should follow the on-screen instructions.
+
+## Usage
+
+Extract text from the default PDF:
+
+```bash
+bangla-pdf-ocr
+```
+
+**Optional Arguments:**
+
+- `-o` or `--output`: Specify the output file path (default is input filename with `.txt` extension)
+- `-l` or `--language`: Specify the OCR language (default is `'ben'` for Bengali)
+
+**Examples:**
+
+1. **Using Default PDF and Output:**
+
+   ```bash
+   bangla-pdf-ocr
+   ```
+
+   This will process `Freedom Fight.pdf` and save the extracted text to `Freedom Fight.txt`.
+
+2. **Specifying Output File:**
+
+   ```bash
+   bangla-pdf-ocr my_document.pdf -o extracted_text.txt
+   ```
+
+3. **Specifying OCR Language:**
+
+   ```bash
+   bangla-pdf-ocr my_document.pdf -l eng
+   ```
+
+### Python Module Usage
+
+You can also use Bangla PDF OCR in your Python scripts:
+
+```python
+from bangla_pdf_ocr import ocr
+
+# Extract text from a PDF
+extracted_text = ocr.process_pdf('path/to/your/file.pdf', output_file='output.txt', language='ben')
+
+# Print the extracted text
+print(extracted_text)
+```
+
+## Troubleshooting
+
+If you encounter any issues:
+
+1. **Ensure Dependencies Are Installed:**
+
+   Make sure Tesseract and Poppler are properly installed and their directories are in your system's PATH.
+
+2. **For Windows Users:**
+
+   - Verify you've installed the Bengali language data for Tesseract.
+   - Ensure the `tessdata` directory contains `ben.traineddata`.
+
+3. **Check Logs:**
+
+   Review the console output and logs for any error messages.
+
+4. **Re-run Setup Command:**
+
+   If dependencies were not installed correctly, try running:
+
+   ```bash
+   bangla-pdf-ocr-setup
+   ```

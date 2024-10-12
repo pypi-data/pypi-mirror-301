@@ -1,0 +1,3 @@
+[console_scripts]
+bangla-pdf-ocr = bangla_pdf_ocr.ocr:main
+bangla-pdf-ocr-setup = bangla_pdf_ocr.ocr:setup_dependencies
