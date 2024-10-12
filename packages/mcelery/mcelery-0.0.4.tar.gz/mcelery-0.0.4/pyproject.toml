@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcelery"
+version = "0.0.4"
+description = "celery and cos sdk for mercury"
+authors = [
+    { name = "Black", email = "hello.bug@foxmail.com" },
+]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "celery==5.4.0",
+    # https://github.com/celery/celery/blob/main/requirements/extras/redis.txt
+    "redis>=4.5.2,<6.0.0,!=4.5.5",
+    "cos-python-sdk-v5==1.9.31",
+]

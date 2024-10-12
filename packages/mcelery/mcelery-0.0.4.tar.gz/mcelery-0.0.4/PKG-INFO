@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mcelery
+Version: 0.0.4
+Summary: celery and cos sdk for mercury
+Author-email: Black <hello.bug@foxmail.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: celery==5.4.0
+Requires-Dist: redis!=4.5.5,<6.0.0,>=4.5.2
+Requires-Dist: cos-python-sdk-v5==1.9.31

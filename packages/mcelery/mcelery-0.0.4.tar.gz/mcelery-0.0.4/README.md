@@ -1,0 +1,1 @@
+celery and cos sdk for mercury

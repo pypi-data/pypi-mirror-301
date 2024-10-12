@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+mcelery/__init__.py
+mcelery/celery.py
+mcelery/cos.py
+mcelery/infer.py
+mcelery.egg-info/PKG-INFO
+mcelery.egg-info/SOURCES.txt
+mcelery.egg-info/dependency_links.txt
+mcelery.egg-info/requires.txt
+mcelery.egg-info/top_level.txt
