@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+looker_sdk/__init__.py
+looker_sdk/error.py
+looker_sdk/py.typed
+looker_sdk/version.py
+looker_sdk.egg-info/PKG-INFO
+looker_sdk.egg-info/SOURCES.txt
+looker_sdk.egg-info/dependency_links.txt
+looker_sdk.egg-info/requires.txt
+looker_sdk.egg-info/top_level.txt
