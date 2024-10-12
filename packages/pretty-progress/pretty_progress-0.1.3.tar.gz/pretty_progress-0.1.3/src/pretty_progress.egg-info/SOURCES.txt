@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/pretty_progress/__init__.py
+src/pretty_progress/pretty_progress.py
+src/pretty_progress.egg-info/PKG-INFO
+src/pretty_progress.egg-info/SOURCES.txt
+src/pretty_progress.egg-info/dependency_links.txt
+src/pretty_progress.egg-info/top_level.txt
