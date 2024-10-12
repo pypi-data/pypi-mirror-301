@@ -1,0 +1,2 @@
+qcore
+pygments
