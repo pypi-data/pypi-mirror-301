@@ -1,0 +1,2 @@
+[console_scripts]
+pafi-check-deps = pafi.check_dependencies:main
