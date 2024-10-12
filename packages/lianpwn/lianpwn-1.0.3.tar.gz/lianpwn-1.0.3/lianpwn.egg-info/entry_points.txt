@@ -1,0 +1,3 @@
+[console_scripts]
+lianpwn = lianpwn.cli:cli
+
