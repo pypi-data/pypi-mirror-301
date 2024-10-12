@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Flask_File_Bridge.egg-info/PKG-INFO
+Flask_File_Bridge.egg-info/SOURCES.txt
+Flask_File_Bridge.egg-info/dependency_links.txt
+Flask_File_Bridge.egg-info/requires.txt
+Flask_File_Bridge.egg-info/top_level.txt
+flask_file_bridge/__init__.py
+flask_file_bridge/exporter.py
+flask_file_bridge/importer.py
