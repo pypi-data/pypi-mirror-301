@@ -1,0 +1,2 @@
+[console_scripts]
+gammaj = gammaj_entrypoint:run

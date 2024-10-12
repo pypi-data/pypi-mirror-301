@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+-g/__init__.py
+-g/__main__.py
+-g/parser.py
+-g/utilsbox.py
+GammaJ.egg-info/PKG-INFO
+GammaJ.egg-info/SOURCES.txt
+GammaJ.egg-info/dependency_links.txt
+GammaJ.egg-info/entry_points.txt
+GammaJ.egg-info/top_level.txt
