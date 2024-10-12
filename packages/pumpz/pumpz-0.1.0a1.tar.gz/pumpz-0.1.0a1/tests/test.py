@@ -1,0 +1,30 @@
+from pumpz import *
+
+f_aq = open("aq.ppl", "w")
+f_org = open("org.ppl", "w")
+f_wash = open("wash.ppl", "w")
+f_master = open('master.ppl','w')
+
+aq = pump(f_aq, 26.59)
+org = pump(f_org, 26.59)
+wash = pump(f_wash, 26.59)
+
+master = masterppl(f_master)
+master.quickset({0:org,1:aq,2:wash})
+
+pump.init(aq,wash,org)
+aq.rat(22, 20, "wdr") 
+org.rat(22, 20, "wdr") 
+wash.rat(21,50,'wdr')
+aq.rat(10, 20, "inf") 
+aq.pas(5 * 60)
+pump.sync(aq, org)
+org.rat(10, 20, "inf") 
+org.pas(5 * 60)
+pump.sync(org,wash)
+wash.loopstart(2)
+wash.rat(21, 50, "inf")
+wash.rat(21, 50, "wdr")
+wash.loopend()
+wash.rat(21, 50, "inf")
+pump.stop(aq,org,wash)
