@@ -1,0 +1,10 @@
+tortoise_api_model/__init__.py,sha256=LrDAUX7IsIS0HvdPAyefqzNknvnn3-3XVk-UDLBukwA,1007
+tortoise_api_model/enum.py,sha256=yrTIzMVnqG-kAD4ifhJhMSnYI-DIDLkB236w-Ol2I-M,543
+tortoise_api_model/field.py,sha256=S461M94ryQG7yu8lreXtWnZo3YdCP97xhbcCJ3BzXsY,2751
+tortoise_api_model/func.py,sha256=E7jDoHJGaFpKvxbHnT_lyBxUZeMo-GRd5gv9dLw7B9s,289
+tortoise_api_model/model.py,sha256=ugxKBD0DguGLEn3r5r_utaP8XtYGEWV0T4MblfSSYZ4,13900
+tortoise_api_model/pydantic.py,sha256=8Y7-OQYoHXWV8o7OXqHZA14q_ndD9rZcsPSym37oOHw,975
+tortoise_api_model-0.10.2.dev1.dist-info/METADATA,sha256=DusCa1BebiFUvvIfNIpx3O-_qr69fTCdWf9sOtxjOPw,1071
+tortoise_api_model-0.10.2.dev1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+tortoise_api_model-0.10.2.dev1.dist-info/top_level.txt,sha256=PKaDC_YR_pYAtTxv1GsLY1rJ17IJIJyebiLsgG2zjwk,19
+tortoise_api_model-0.10.2.dev1.dist-info/RECORD,,
