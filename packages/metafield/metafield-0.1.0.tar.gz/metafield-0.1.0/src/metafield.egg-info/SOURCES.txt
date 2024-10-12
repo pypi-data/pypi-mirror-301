@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/metafield/__init__.py
+src/metafield.egg-info/PKG-INFO
+src/metafield.egg-info/SOURCES.txt
+src/metafield.egg-info/dependency_links.txt
+src/metafield.egg-info/top_level.txt

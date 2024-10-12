@@ -1,0 +1,7 @@
+[project]
+name = "metafield"
+version = "0.1.0"
+description = "Computational linguistic research companion"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
