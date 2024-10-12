@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: pyargdown
+Version: 0.0.1
+Summary: Parsing and processing argdown snippets in python
+Project-URL: Documentation, https://github.com/debatelab/pyargdown#readme
+Project-URL: Issues, https://github.com/debatelab/pyargdown/issues
+Project-URL: Source, https://github.com/debatelab/pyargdown
+Author-email: Gregor Betz <3662782+ggbetz@users.noreply.github.com>
+License-Expression: AGPL-3.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pyargdown
+Parsing and processing argdown snippets in python
+
+COMING SOON ...
