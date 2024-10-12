@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+dboard/__init__.py
+dboard/__main__.py
+dboard/main.py
+dboard.egg-info/PKG-INFO
+dboard.egg-info/SOURCES.txt
+dboard.egg-info/dependency_links.txt
+dboard.egg-info/requires.txt
+dboard.egg-info/top_level.txt
+dboard/usecases/__init__.py
+dboard/usecases/config.py
+dboard/usecases/lib_rich.py
+tests/test_dboard.py
+tests/test_main.py
