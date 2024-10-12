@@ -1,0 +1,2 @@
+Version: 1.8.2
+Arguments: ['C:\\OSGeo4W\\apps\\Python312\\Scripts\\delvewheel', 'repair', '--add-path', 'c:\\SFCGAL\\build\\src\\Release\\', '-w', 'dist', 'C:\\pysfcgal\\dist\\PySFCGAL-2.0.0-cp312-cp312-win_amd64.whl']
