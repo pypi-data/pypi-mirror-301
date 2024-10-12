@@ -1,0 +1,19 @@
+[project]
+name = "lenv-py"
+version = "0.1.0"
+authors = [
+  { name="Ty Hopp" }
+]
+description = "Manage symlinks from a root file to multiple destinations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "wasmtime>=25.0.0",
+]
+
+[project.scripts]
+lenv = "lenv_py.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
