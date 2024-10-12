@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "icpquery"
+version = "1.0.0"
+description = "A CLI tool for query keyword in China MIIT ICP Website to get ICP Record"
+license = "MIT"
+authors = ["SocialSisterYi <1440239038@qq.com>"]
+readme = "README.md"
+repository = "https://github.com/SocialSisterYi/ICPQuery"
+keywords = ["MIIT", "ICP"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+rich = "^13.7.1"
+typer = "^0.12.3"
+numpy = "^1.26.4"
+pydantic = "^2.7.1"
+pycryptodome = "^3.20.0"
+opencv-python = "^4.9.0.80"
+onnxruntime = "^1.17.3"
+httpx = "^0.27.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+icpquery = "icpquery.__main__:app"
+
+[tool.black]
+line-length = 110
+target-version = ['py310']
