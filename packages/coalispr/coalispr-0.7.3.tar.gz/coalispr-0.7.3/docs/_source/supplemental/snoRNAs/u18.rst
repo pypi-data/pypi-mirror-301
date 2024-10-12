@@ -1,0 +1,97 @@
+.. include:: /properties.rst
+   
+.. |targetRNA|  replace:: 25S rRNA
+.. |target| replace:: :raw-html:`<span class="mononorm">(gtctt)aaac<a href="../18s-tab.html#u18_25S" title="25S target">A</a>cggaccaagg</span>`
+.. |ortholog| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&amp;id=Saccharomyces_cerevisiae300067">U18</a>, human <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300524">SNORD18A</a>`
+
+
+U18-SNORD18
+===========
+
+.. figure:: /../_static/images/snoRNAs/u18_h99_igb.png
+   :name: u18_h99_igb
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 40%
+   :figwidth: 100%
+
+
+- U18-SNORD18_intronic-boxCDsnoRNA
+- Within 1\ :sup:`st` intron of CNC03420 (CNAG_02714) mRNA for elongation factor 1-beta_EF1-beta
+- Predicted target in |targetRNA|\ : |target|
+- Orthologue of |ortholog|
+- In yeast, modification was supported by the accessory guide while the *A* at the 5' end of the C' box and the *G* insertion in the D' box played a role in multiple modification [van.Nues-2016_], not seen in human nor expected for *Cryptococcus*.
+
+.. figure:: /../_static/images/snoRNAs/u18-aligned.png
+   :name: u18-align
+   :align: left
+   :width: 1362 px
+   :height: 268 px
+   :scale: 40%
+   :figwidth: 100%
+
+
+.. rst-class:: mononote
+
+>AE017343.1:1081077-1081180 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence :raw-html:`</br>`
+TTTCCTATGATGATATTTTGTTTTGGTCCGTGTTTCCGAGCTCAGCGGCGTAAGACCCCGCGACTTATGG :raw-html:`</br>`
+CGTTGAAGATACAACCTTTCCAAACCCTCTGATA
+
+
+|
+|
+|
+|
+|
+|
+
+=======
+
+- Image source:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        #=GS U18-SNORD18/1-121 DE intronic-boxCDsnoRNA-in-CNC03420 ncrna 3:1081077:1081184:1
+        U18-SNORD18/1-121              TTCTTGCTTTCCTATGATGATATT---TTGTTTTGGTCCGTGTTT-CCGA-GCTCAGCGGCGTAAGACCCCGCGACTTATGGCGTTGA-AGATACAACC---TTTCCAAACCCT--------CTGATACTTTCATCTT-
+        #=GS H99/1-119 DE CP003822.1:c934939-934821 Cryptococcus neoformans var. grubii H99 chromosome 3, complete sequence
+        H99/1-119                      ---CCGCCTTTCTGTGATGATATT---TTGTTTTGGTCCGTGTTT-CCGA-GCTCAGCGGCGTAAGACCCCGCGACTTATAGCGTTGA-AGATACAACC---TTTCCAAACCCT--------CTGATACTTCTCATCTT
+        #=GS CryWin/1-113 DE AWGH01000002.1:308062-308174 Cryptococcus wingfieldii CBS 7118 supercont1.2, whole genome shotgun sequence
+        CryWin/1-113                   --------TTTCTATGATGATCTA---CCGTTTTGGTCCGTGTTT-CCGA-GCTCAGCGGCTTAAGACCCCGCGCCTTTC-GCATTGA-AGATACAACCA---TTCCAAACCCA--------CTGACCCTTATCACCTT
+        #=GS R265/1-121 DE CP025759.1:1305605-1305725 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-121                     -TCTCGCCTTTCTATGATGATATT---TTGTTTTGGTCCGTGTTT-CCGA-GCTCAGCGGCGTAAGACCCCGCGACTTATAGCGTTGA-AGATACAACC---TTTCCAAACCCT--------CTGATTCTTCTCATCTT
+        #=GS KwoDej/1-101 DE ASCJ01000005.1:302519-302619 Kwoniella dejecticola CBS 10117 cont1.5, whole genome shotgun sequence
+        KwoDej/1-101                   ------------TATGATGATCTA---CCGTTTTGGTCCGTGTTT-CCGA-GCGCAGCGGCTTAAGACCCCGCGACTCAT-GCATTGA-AGATAAAAAC---TTTCCAAACTCA--------CTGATTCTT--------
+        #=GS KwoBes/1-104 DE ASCK01000010.1:c382429-382326 Kwoniella bestiolae CBS 10118 cont1.10, whole genome shotgun sequence
+        KwoBes/1-104                   -----------TCATGATGATATA---CCGTTTTGGTCCGTGTTT-CCGA-GCGCAGCGGCTTAAGACCCCGCGACTCAATGCATTGA-AGATAAAATA---TTTCCAAACTCA--------CTGATTCTTT-------
+        #=GS CutDas/1-103 DE BEDX01000001.1:3979302-3979404 Cutaneotrichosporon daszewskae DNA, scaffold: scaffold_1, strain: JCM_11166, whole genome shotgun sequence
+        CutDas/1-103                   --------TCTCTATGATGAACCA----TGTTTTGGTCCGTGTTT-CCGA-GCGTAGCGGCTTAAGACCCCGCGCCTTAA-GCGTTGA-AGACAACACCC--TTTCCAAACCCT--------CTGATCT----------
+        #=GS CrySki/1-107 DE BCHT01000003.1:c50503-50397 Cryptococcus skinneri DNA, scaffold: scaffold_2, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/1-107                   ---------TTTTGTGATGATCTA---CCGTTTTGGTCCGTGTTT-CCGA-GCGCAGCGGCTTAAGACCCCGCGCCTTTAAGCATTGA-AGATAATAA-T-TTTTCCAAACCCA--------CTGACCCTTT-------
+        #=GS KocImp/1-103 DE NBSH01000009.1:c173312-173210 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_9, whole genome shotgun sequence
+        KocImp/1-103                   ----------TTCTTGATGATCTA---CCGTTTTGGTCCGTGTTT-CCGA-GCTCAGCGGCTTAAGACACCGCGCCTTTTGGCACTGA-AGACAACATC---TTTCCAAACTCA--------CTGACCAC---------
+        #=GS TakKor/1-105 DE BCKT01000003.1:c1856617-1856513 Takashimella koratensis DNA, scaffold: scaffold_2, strain: JCM 12878, whole genome shotgun sequence
+        TakKor/1-105                   ----------TCTCGGATGAACC----TTGTTTTGGTCCGTGTTT-CCGACGCTCAGCGGATTAAGACCCCGCGCCTTATAGCAGTGA-AGATACACCCA-TTTTCCAAACTAT--------CTGATCTC---------
+        #=GS VanFra/1-107 DE BEDY01000002.1:2429061-2429167 Vanrija fragicola DNA, scaffold: scaffold_2, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-107                   ---------TCTCCTGATGAACC----TTGTTTTGGTCCGTGTTT-CCGA-GCGCAGCGGCTTAAGACCCCGCGACTCA-AGCATTGA-AGATAAACCCA-TTTTCCAAACTAT--------CTGATCCTATC------
+        #=GS TriFae/1-105 DE JXYK01000001.1:3999209-3999313 Trichosporon faecale strain JCM 2941 scaffold_0001, whole genome shotgun sequence
+        TriFae/1-105                   ---------TTTCATGATGAACAT---TTGTTTTGGTCCGTGTTT-CCGA-GCT--GCGGATTAAGACCCCGCGACTATG-GCGTTGA-CGACAACACCT--CTTCCAAACTAT--------CTGACTCTTTC------
+        #=GS KwoPin/1-103 DE ASCL01000006.1:353456-353558 Kwoniella pini CBS 10737 cont1.6, whole genome shotgun sequence
+        KwoPin/1-103                   ----------TTTATGATGATCTA---CCGTTTTGGTCCGTGTTT-CCGA-GCGCAGCGGCTTAAGACCCCGCGACTCAT-GCATTGA-AGATAAAATTA--TTTCCAAACTCA--------CTGATCTC---------
+        #=GS KwoMan/1-108 DE ASQD01000040.1:c172279-172172 Kwoniella mangroviensis CBS 10435 cont2.40, whole genome shotgun sequence
+        KwoMan/1-108                   ---------TACTATGATGATCTA---CCGTTTTGGTCCGTGTTT-CCGA-GCGCAGCGGCTTAAGACCCCGCGACTCAATGCATTGA-AGATAAAATTA--TTTCCAAACTCA--------CTGATTCTCTC------
+        #=GS VanPse/1-102 DE CP086715.1:c2041037-2040936 Vanrija pseudolonga isolate DUCC4014 chromosome 2
+        VanPse/1-102                   --------TCACCATGATGAACC----TTGTTTTGGTCCGTGTTT-CCGA--GGTAGCGGATTAAGACCCCGCGCCTTT--ACATTGA-AGATACAACCT--TTTCCAAACTAT--------CTGATCCC---------
+        Annot/1-44                     -------------RTGATGA---------AGGAACCAGGCACAAA-CTGA------------GUUCUG----------------RTGA-TGA------------------------------CTGA-------------
+        #=GS SacCer-snR18-U18/1-102 DE Saccharomyces_cerevisiae U18
+        SacCer-snR18-U18/1-102         ---------GTGAATGATGAATTTA--ATTCTTTGGTCCGTGTTT-ATGA--------------TGGGAAGTAAGACCCCCGATATGAGTGACAAAAGAGATGTGGTTGACTATCACAGTATCTGACG-----------
+        #=GS HomSap-SNORD18A/1-70 DE Homo_sapiens SNORD18A
+        HomSap-SNORD18A/1-70           --------CAGTAGTGATGAAATTCCACTTCATTGGTCCGTGTTT-CTGA--------ACCACATGATTTTCTC-----------GGA-TGTT-----------------------------CTGATG-----------
+        //
+
+

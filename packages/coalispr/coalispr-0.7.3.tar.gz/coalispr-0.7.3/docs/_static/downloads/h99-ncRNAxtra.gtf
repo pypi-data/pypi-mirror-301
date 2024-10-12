@@ -1,0 +1,187 @@
+# gff-version 2
+# Annotations based on literature search or overlap with RNA-Seq data.
+# Putative HACA or Box C/D ncRNAs with homology to JEC21 unspecific signals in small RNA-Seq libraries.
+# 5' and 3' ends are approximated
+1	RWvN	exon	20108	20471	.	+	.	gene_id "as-CNAG_12484_as-CNAG_12626_as-CNAG_12315_as-CNAG_12450"; transcript_id "as-CNAG_12484_as-CNAG_12626_as-CNAG_12315_as-CNAG_12450";
+1	RWvN	exon	100576	100826	.	+	.	gene_id "expressed_as-Jec21:1:573507-573595:-1"; transcript_id "expressed_as-Jec21:1:573507-573595:-1";
+1	RWvN	exon	382733	382850	.	-	.	gene_id "snR66_processed-boxCDsnoRNA"; transcript_id "snR66_processed-boxCDsnoRNA";
+1	RWvN	exon	441899	442237	.	+	.	gene_id "expressed_as-Jec21:1:405577-405881:1"; transcript_id "expressed_as-Jec21:1:405577-405881:1";
+1	RWvN	exon	752884	752970	.	+	.	gene_id "SNORD16_intronic-boxCDsnoRNA"; transcript_id "SNORD16_intronic-boxCDsnoRNA";
+1	RWvN	exon	787090	787238	.	-	.	gene_id "HACAcnag12044"; transcript_id "HACAcnag12044";
+1	RWvN	exon	801153	801482	.	-	.	gene_id "SRP RNA in-5'UTR-CNAG-00311"; transcript_id "SRP RNA in-5'UTR-CNAG-00311";
+#1	RWvN	exon	941552	941659	.	+	.	gene_id "tRNA-like_CNAG_10007"; transcript_id "tRNA-like_CNAG_10007";
+1	RWvN	exon	1095759	1095849	.	-	.	gene_id "snR38_intronic-boxCDsnoRNA"; transcript_id "snR38_intronic-boxCDsnoRNA";
+1	RWvN	exon	1187821	1187907	.	+	.	gene_id "snR50_snR40l_intronic-boxCDsnoRNA-exon1"; transcript_id "snR50_snR40l_intronic-boxCDsnoRNA-exon1";
+1	RWvN	exon	1187959	1188028	.	+	.	gene_id "snR50_snR40l_intronic-boxCDsnoRNA-exon2"; transcript_id "snR50_snR40l_intronic-boxCDsnoRNA-exon2";
+1	RWvN	exon	1188116	1188211	.	+	.	gene_id "snR74_intronic-boxCDsnoRNA"; transcript_id "snR74_intronic-boxCDsnoRNA";
+1	RWvN	exon	1388993	1389156	.	-	.	gene_id "HACAcnag00544_in-exon1"; transcript_id "HACAcnag00544_in-exon1";
+1	RWvN	exon	1690823	1691011	.	+	.	gene_id "HACAcnag00650_HACAsnoRNA-188nt"; transcript_id "HACAcnag00650_HACA-snoRNA-188nt";
+1	RWvN	exon	1707859	1707944	.	+	.	gene_id "snR39b_intronic-boxCDsnoRNA";  transcript_id "snR39b_intronic-boxCDsnoRNA";
+1	RWvN	exon	1835306	1835388	.	+	.	gene_id "snRcnag12093_intronic-boxCDsnoRNA-82nt"; transcript_id "snRcnag12093_intronic-boxCDsnoRNA-82nt";
+1	RWvN	exon	1888826	1889111	.	+	.	gene_id "HACAcnag12094"; transcript_id "HACAcnag12094";
+1	RWvN	exon	2171265	2171354	.	+	.	gene_id "snR60-Z15_intronic-boxCDsnoRNA"; transcript_id "snR60-Z15_intronic-boxCDsnoRNA";
+
+2	RWvN	exon	83096	83322	.	+	.	gene_id "HACAcnag06770-as-CNAG_12895"; transcript_id "HACAcnag06770-as-CNAG_12895";
+2	RWvN	exon	95174	95226	.	-	.	gene_id "as-25SrRNA(2:273195-273245:-1)"; transcript_id "as-25SrRNA(2:273195-273245:-1)";
+2	RWvN	intron	124550	124605	.	+	.	gene_id "intron CNAG_06757 (XM_012197532)"; transcript_id "intron CNAG_06757 (XM_012197532)";
+2	RWvN	intron	124848	124888	.	+	.	gene_id "alt intron CNAG_06757 (XM_012197532)"; transcript_id "alt intron CNAG_06757 (XM_012197532)";
+2	RWvN	intron	124848	124899	.	+	.	gene_id "intron CNAG_06757 (XM_012197532)"; transcript_id "intron CNAG_06757 (XM_012197532)";
+2	RWvN	intron	126192	126245	.	+	.	gene_id "intron CNAG_06757 (XM_012197532)"; transcript_id "intron CNAG_06757 (XM_012197532)";
+2	RWvN	exon	140091	140192	.	-	.	gene_id "like-tRNA-Asp"; transcript_id "like-tRNA-Asp";
+2	RWvN	exon	229033	229134	.	-	.	gene_id "like-tRNA-Asp"; transcript_id "like-tRNA-Asp";
+2	RWvN	intron	265219	265334	.	-	.	gene_id "intron CNAG_06705 (XM_012191751)"; transcript_id "intron CNAG_06705 (XM_012191751)";
+2	RWvN	intron	266968	267023	.	-	.	gene_id "intron CNAG_06704 (CNAG_06705?)"; transcript_id "intron CNAG_06705 (CNAG_06705?)";
+2	RWvN	exon	272755	276139	.	-	.	gene_id "25S-rRNA"; transcript_id "CNAG_10500-rRNA"
+2	RWvN	exon	276327	276486	.	-	.	gene_id "5.8S-rRNA"; transcript_id "CNAG_10501-rRNA"
+2	RWvN	exon	276606	278410	.	-	.	gene_id "18S-rRNA"; transcript_id "CNAG_10502-rRNA"
+2	RWvN	exon	278411	278988	.	-	.	gene_id "ETS1-pre-rRNA"; transcript_id "CNAG_10503-rRNA"
+2	RWvN	exon	279344	279613	.	-	.	gene_id "pre-5S-rRNA"; transcript_id "pre-5S-rRNA";
+2	RWvN	exon	281021	283163	.	-	.	gene_id "25S-rRNA-as-272747-to-274879"; transcript_id "25S-rDNA-as-272747-to-274879";
+2	RWvN	exon	312800	312891	.	-	.	gene_id "snR73-snoZ3_intronic-boxCDsnoRNA"; transcript_id "snR73-snoZ3_intronic-boxCDsnoRNA";
+2	RWvN	exon	313064	313182	.	-	.	gene_id "snR77_intronic-boxCDsnoRNA"; transcript_id "snR77_intronic-boxCDsnoRNA";
+2	RWvN	exon	313357	313440	.	-	.	gene_id "snR78_intronic-boxCDsnoRNA"; transcript_id "snR78_intronic-boxCDsnoRNA";
+2	RWvN	exon	428365	428459	.	+	.	gene_id "SNORD96_intronic-boxCDsnoRNA"; transcript_id "SNORD96_intronic-boxCDsnoRNA";
+2	RWvN	exon	428606	428687	.	+	.	gene_id "SnoR29_intronic-boxCDsnoRNA"; transcript_id "SnoR29_intronic-boxCDsnoRNA";
+2	RWvN	exon	647210	647328	.	-	.	gene_id "SNORD110_intronic-boxCDsnoRNA"; transcript_id "SNORD110_intronic-boxCDsnoRNA";
+2	RWvN	exon	650138	650339	.	-	.	gene_id "mitochondrion-11224-to-11369_12602-to-12680_as-JEC21-CND00960"; transcript_id "mitochondrion-11224-to-11369_12602-to-12680_as-JEC21-CND00960";
+2	RWvN	exon	752875	752978	.	-	.	gene_id "SNORD49_intronic-boxCDsnoRNA"; transcript_id "SNORD49_intronic-boxCDsnoRNA";
+2	RWvN	exon	963763	964295	.	+	.	gene_id "SCARNA6_intronic-boxCDsnoRNA"; transcript_id "SCARNA6_intronic-boxCDsnoRNA";
+2	RWvN	exon	1144551	1144715	.	-	.	gene_id "HACAcnag03904-2_exonic_HACAsnoRNA"; transcript_id "HACAcnag03904-2_exonic_HACAsnoRNA";
+2	RWvN	exon	1144837	1145001	.	-	.	gene_id "HACAcnag03904-1_exonic_HACAsnoRNA"; transcript_id "HACAcnag03904-1_exonic_HACAsnoRNA";
+2	RWvN	exon	1297313	1297400	.	-	.	gene_id "snoZ107-SnoR29b_intronic-boxCDsnoRNA"; transcript_id "snoZ107-SnoR29b_intronic-boxCDsnoRNA";
+2	RWvN	exon	1539619	1539791	.	-	.	gene_id "HACAcnag04068_intronic-HACAsnoRNA"; transcript_id "HACAcnag04068_intronic-HACAsnoRNA";
+2	RWvN	exon	1584001	1584208	.	-	.	gene_id "CNAG_12209-as-25SrRNA"; transcript_id "CNAG_12209-as-25SrRNA";
+
+3	RWvN	exon	40536	40656	.	+	.	gene_id "snR48-SNORD60_intronic-boxCDsnoRNA"; transcript_id "snR48-SNORD60_intronic-boxCDsnoRNA";
+3	RWvN	exon	142143	142238	.	-	.	gene_id "snR40_snR56_intronic-boxCDsnoRNA"; transcript_id "snR40_snR56_intronic-boxCDsnoRNA";
+3	RWvN	exon	142540	142623	.	-	.	gene_id "SNORD79_intronic-boxCDsnoRNA"; transcript_id "SNORD79_intronic-boxCDsnoRNA";
+3	RWvN	exon	149451	149650	.	+	.	gene_id "HACAcnag12223"; transcript_id "HACAcnag12223";
+3	RWvN	exon	543771	543865	.	+	.	gene_id "snR69_intronic-boxCDsnoRNA"; transcript_id "snR69_intronic-boxCDsnoRNA";
+3	RWvN	exon	574443	574526	.	-	.	gene_id "snR53_intronic-boxCDsnoRNA"; transcript_id "snR53_intronic-boxCDsnoRNA";
+3	RWvN	exon	574759	574875	.	-	.	gene_id "snR67-snoU31b_intronic-boxCDsnoRNA"; transcript_id "snR67-snoU31b_intronic-boxCDsnoRNA";
+3	RWvN	exon	581536	581969	.	+	.	gene_id "HACAcnag12250-exon1"; transcript_id "HACAcnag12250-exon1";
+3	RWvN	exon	582023	582110	.	+	.	gene_id "HACAcnag12250-exon2"; transcript_id "HACAcnag12250-exon2";
+3	RWvN	exon	582164	582298	.	+	.	gene_id "HACAcnag12250-exon3"; transcript_id "HACAcnag12250-exon3";
+3	RWvN	exon	606649	606900	.	+	.	gene_id "snR45-U13_U3a_exonic-boxCDsnoRNA"; transcript_id "snR45-U13_U3a_exonic-boxCDsnoRNA";
+3	RWvN	exon	607035	607128	.	+	.	gene_id "snR13_intronic-boxCDsnoRNA"; transcript_id "snR13_intronic-boxCDsnoRNA";
+3	RWvN	exon	629265	629428	.	-	.	gene_id "snR63-SNORD46_intronic-boxCDsnoRNA"; transcript_id "snR63-SNORD46_intronic-boxCDsnoRNA";
+3	RWvN	exon	635971	636442	.	-	.	gene_id "Nuclear-RNase-P_RF00009-CNAG_12260"; transcript_id "Nuclear-RNase-P_RF00009-CNAG_12260";
+3	RWvN	exon	636497	636537	.	-	.	gene_id "Nuclear-RNase-P_RF00009-CNAG_12260"; transcript_id "Nuclear-RNase-P_RF00009-CNAG_12260";
+3	RWvN	exon	636593	636605	.	-	.	gene_id "Nuclear-RNase-P_RF00009-CNAG_12260"; transcript_id "Nuclear-RNase-P_RF00009-CNAG_12260";
+3	RWvN	exon	729786	730469	.	+	.	gene_id "RNase-MRP_URS00006979AF_214684-from-CNAG_12265"; transcript_id "RNase-MRP_URS00006979AF_214684-from-CNAG_12265";
+3	RWvN	exon	730598	730712	.	+	.	gene_id "snR47_processed-boxCDsnoRNA-from-CNAG_12265"; transcript_id "snR47_processed-boxCDsnoRNA-from-CNAG_12265";
+3	RWvN	exon	735445	735736	.	-	.	gene_id "HACAcnag12266"; transcript_id "HACAcnag12266";
+3	RWvN	exon	839631	839731	.	-	.	gene_id "SnoR30_intronic-boxCDsnoRNA"; transcript_id "SnoR30_intronic-boxCDsnoRNA";
+3	RWvN	exon	899339	899435	.	+	.	gene_id "snR40-like_intronic-boxCDsnoRNA"; transcript_id "snR40-like_intronic-boxCDsnoRNA";
+3	RWvN	exon	934831	934934	.	-	.	gene_id "U18-SNORD18_intronic-boxCDsnoRNA"; transcript_id "U18-SNORD18_intronic-boxCDsnoRNA";
+3	rfam	exon	1200640	1200827	.	+	.	gene_id "tRNA-Ala-RF00005"; transcript_id "tRNA-Ala-RF00005";
+3	RWvN	exon	1338197	1338339	.	+	.	gene_id "mitochondrion-12612-to-12752"; transcript_id "mitochondrion-12612-to-12752";
+
+
+4	RWvN	exon	352130	352218	.	-	.	gene_id "snR73b_intronic-boxCDsnoRNA"; transcript_id "snR73b_intronic-boxCDsnoRNA";
+4	RWvN	exon	498275	498555	.	-	.	gene_id "SNORD17_intronic-boxCDsnoRNA"; transcript_id "SNORD17_intronic-boxCDsnoRNA";
+4	RWvN	exon	498770	498688	.	-	.	gene_id "snR61-SNORD38_intronic-boxCDsnoRNA"; transcript_id "snR61-SNORD38_intronic-boxCDsnoRNA";
+4	RWvN	exon	783345	783460	.	+	.	gene_id "snR76_intronic-boxCDsnoRNA"; transcript_id "snR76_intronic-boxCDsnoRNA";
+4	RWvN	exon	822998	823093	.	+	.	gene_id "like-tRNA-Asp_with-siRNAs"; transcript_id "like-tRNA-Asp_with-siRNAs";
+4	RWvN	exon	935807	935904	.	+	.	gene_id "snR52-SNORD83_intronic-boxCDsnoRNA"; transcript_id "snR52-SNORD83_intronic-boxCDsnoRNA";
+
+5	RWvN	exon	80105	80210	.	+	.	gene_id "mitochondrion-19340-to-19443"; transcript_id "mitochondrion-19340-to-19443";
+5	RWvN	exon	172041	172157	.	-	.	gene_id "mitochondrion-14503-to-14618"; transcript_id "mitochondrion-14503-to-14618";
+5	RWvN	exon	282835	283111	.	+	.	gene_id "HACAcnag07413-in-CNAG_07413"; transcript_id "HACAcnag07413-in-CNAG_07413";
+5	RWvN	exon	435694	435997	.	-	.	gene_id "HACAcnag12434"; transcript_id "HACAcnag12434";
+5	RWvN	exon	478444	478657	.	-	.	gene_id "mitochondrion-17766-to-17978"; transcript_id "mitochondrion-17766-to-17978";
+5	RWvN	exon	506806	506903	.	+	.	gene_id "snR64-SNORD74_intronic-boxCDsnoRNA"; transcript_id "snR64-SNORD74_intronic-boxCDsnoRNA";
+5	RWvN	exon	542554	542705	.	+	.	gene_id "snRcnag12441_intronic-boxCDsnoRNA-151nt-in-CNAG_12441"; transcript_id "snRcnag12441_intronic-boxCDsnoRNA-151nt-in-CNAG_12441";
+5	RWvN	exon	975136	975219	.	-	.	gene_id "as-JEC21-chr4-842897-to-842976"; transcript_id "as-JEC21-chr4-842897-to-842976";
+5	rfam	exon	1228128	1228253	.	+	.	gene_id "U5-snRNA_URS000099F63B_2354436"; transcript_id "U5-snRNA_URS000099F63B_2354436";
+5	RWvN	exon	1417872	1418025	.	-	.	gene_id "snR45-II_processed-boxCDsnoRNA-from-CNAG_12486"; transcript_id "snR45-II_processed-boxCDsnoRNA-from-CNAG_12486";
+5	RWvN	exon	1535565	1535684	.	-	.	gene_id "snR70_intronic-boxCDsnoRNA"; transcript_id "snR70_intronic-boxCDsnoRNA";
+5	RWvN	exon	1535840	1535936	.	-	.	gene_id "snR41_intronic-boxCDsnoRNA"; transcript_id "snR41_intronic-boxCDsnoRNA";
+5	RWvN	exon	1536112	1536250	.	-	.	gene_id "snoU2-30_intronic-boxCDsnoRNA"; transcript_id "snoU2-30_intronic-boxCDsnoRNA";
+5	RWvN	exon	1603496	1603763	.	-	.	gene_id "U14_intronic-boxCDsnoRNA"; transcript_id "U14_intronic-boxCDsnoRNA";
+5	RWvN	exon	1603888	1604029	.	-	.	gene_id "snR190_intronic-boxCDsnoRNA"; transcript_id "snR190_intronic-boxCDsnoRNA";
+5	RWvN	exon	1660497	1660581	.	-	.	gene_id "mitochondrion-21132 to 21214"; transcript_id "mitochondrion-21132 to 21214";
+
+6	RWvN	exon	164107	164285	.	+	.	gene_id "HACAcnag12523"; transcript_id "HACAcnag12523";
+6	RWvN	exon	492350	492443	.	+	.	gene_id "like-tRNA-Asp_with-siRNAs_intronic-ncRNA-in-CNAG_02372 (Enoyl reductase)"; transcript_id "like-tRNA-Asp_with-siRNAs_intronic-ncRNA-in-CNAG_02372 (Enoyl reductase)";
+6	RWvN	exon	833424	833559	.	+	.	gene_id "snRcn03050_intronic-boxCDsnoRNA"; transcript_id "snRcn03050_intronic-boxCDsnoRNA";
+6	RWvN	exon	959466	959546	.	+	.	gene_id "snR62_intronic-boxCDsnoRNA"; transcript_id "snR62_intronic-boxCDsnoRNA";
+6	RWvN	exon	1049742	1049920	.	+	.	gene_id "CNAG_12584-expressed_with-siRNAs"; transcript_id "CNAG_12584-expressed_with-siRNAs";
+6	RWvN	exon	1149537	1149633	.	+	.	gene_id "like-tRNA-Asp_with-siRNAs"; transcript_id "like-tRNA-Asp_with-siRNAs";
+6	RWvN	exon	1202362	1202824	.	-	.	gene_id "as-CNAG_12584-expressed_with-siRNAs"; transcript_id "as-CNAG_12584-expressed_with-siRNAs";
+
+7	RWvN	exon	158390	158483	.	+	.	gene_id "snRcnf04440_intronic-boxCDsnoRNA"; transcript_id "snRcnf04440_intronic-boxCDsnoRNA";
+7	RWvN	exon	323610	323808	.	-	.	gene_id "mitochondrion-573507-573595"; transcript_id "mitochondrion-573507-573595";
+7	RWvN	exon	335443	335620	.	+	.	gene_id "HACAcnag12640"; transcript_id "HACAcnag12640";
+7	RWvN	exon	651840	652008	.	-	.	gene_id "HACAcnag12667-2"; transcript_id "HACAcnag12667-2";
+7	RWvN	exon	652208	652379	.	-	.	gene_id "HACAcnag12667-1"; transcript_id "HACAcnag12667-1";
+7	RWvN	exon	839805	839948	.	+	.	gene_id "HACAcnag12677-1"; transcript_id "HACAcnag12677-1";
+7	RWvN	exon	840185	840359	.	+	.	gene_id "HACAcnag12677-2"; transcript_id "HACAcnag12677-2";
+7	RWvN	exon	988529	988697	.	-	.	gene_id "HACAcnag12684"; transcript_id "HACAcnag12684";
+7	RWvN	exon	988874	988993	.	-	.	gene_id "snR72_intronic-boxCDsnoRNA-in-CNAG_12684"; transcript_id "snR72_intronic-boxCDsnoRNA-in-CNAG_12684";
+7	RWvN	exon	1112744	1112820	.	-	.	gene_id "snR71_intronic-boxCDsnoRNA"; transcript_id "snR71_intronic-boxCDsnoRNA";
+7	RWvN	exon	1126749	1126958	.	+	.	gene_id "HACAcnag12692"; transcript_id "HACAcnag12692";
+7	RWvN	exon	1370631	1370806	.	-	.	gene_id "HACAcnag12714-exon2"; transcript_id "HACAcnag12714-exon2";
+7	RWvN	exon	1370868	1370886	.	-	.	gene_id "HACAcnag12714-exon1"; transcript_id "HACAcnag12714-exon1";
+
+8	RWvN	exon	215914	216045	.	+	.	gene_id "opp-CNAG_03154_with-siRNAs-in-H99"; transcript_id "opp-CNAG_03154_with-siRNAs-in-H99";
+8	RWvN	exon	339183	339273	.	+	.	gene_id "snR41-SNORD7_intronic-boxCDsnoRNA"; transcript_id "snR41-SNORD7_intronic-boxCDsnoRNA";
+8	RWvN	exon	573507	573595	.	+	.	gene_id "snR58_intronic-boxcDsnoRNA"; transcript_id "snR58_intronic-boxcDsnoRNA";
+8	RWvN	exon	824454	824620	.	-	.	gene_id "HACAcnag12764"; transcript_id "HACAcnag12764";
+8	RWvN	gene	1044662	1046494	.	+	.	gene_id "chr8-unannot-gene";transcript_id "chr8-unannot-gene";
+8	RWvN	transcript	1044662	1046494	.	+	.	gene_id "chr8-unannot-gene";transcript_id "chr8-unannot-gene";
+8	RWvN	exon	1044662	1044935	.	+	.	gene_id "chr8-unannot-transcript";transcript_id "chr8-unannot-transcript";exon_number "1";
+8	RWvN	exon	1044662	1045079	.	+	.	gene_id "chr8-unannot-transcript";transcript_id "chr8-unannot-transcript";exon_number "1-alternative";
+8	RWvN	exon	1045131	1045395	.	+	.	gene_id "chr8-unannot-transcript";transcript_id "chr8-unannot-transcript";exon_number "2";
+8	RWvN	exon	1045443	1045655	.	+	.	gene_id "chr8-unannot-transcript";transcript_id "chr8-unannot-transcript";exon_number "3";
+8	RWvN	exon	1045712	1046045	.	+	.	gene_id "chr8-unannot-transcript";transcript_id "chr8-unannot-transcript";exon_number "4";
+8	RWvN	exon	1046112	1046494	.	+	.	gene_id "chr8-unannot-transcript";transcript_id "chr8-unannot-transcript";exon_number "5";
+8	RWvN	exon	1318715	1318800	.	-	.	gene_id "snRcnc00300_intronic-boxCDsnoRNA"; transcript_id "snRcnc00300_intronic-boxCDsnoRNA";
+8	RWvN	exon	1149951	1150119	.	-	.	gene_id "HACAcnag03509"; transcript_id "HACAcnag03509";
+
+9	RWvN	exon	71865	71977	.	-	.	gene_id "mitochondrion-8275-to-8384"; transcript_id "mitochondrion-8275-to-8384";
+9	RWvN	exon	313713	313804	.	+	.	gene_id "snR67d_intronic-boxCDsnoRNA-in-CNAG_12831"; transcript_id "snR67d_intronic-boxCDsnoRNA-in-CNAG_12831";
+9	RWvN	exon	594671	594828	.	-	.	gene_id "HACAcnag04334"; transcript_id "HACAcnag04334";
+9	RWvN	exon	815361	815505	.	-	.	gene_id "mitochondrion-18330-to-18473"; transcript_id "mitochondrion-18330-to-18473";
+
+10	RWvN	exon	267246	267414	.	+	.	gene_id "HACAcnag12894"; transcript_id "HACAcnag12894";
+10	RWvN	exon	297137	297366	.	-	.	gene_id "HACAcnag12895"; transcript_id "HACAcnag12895";
+10	RWvN	exon	605072	605249	.	-	.	gene_id "HACAcnag12924"; transcript_id "HACAcnag12924";
+10	RWvN	exon	898951	899052	.	+	.	gene_id "Ago1-CNAG_04609-fragment"; transcript_id "Ago1-CNAG_04609-fragment";
+
+11	RWvN	exon	300191	300423	.	+	.	gene_id "HACAcnag01565-1_snoRNA-from-3UTR-CNAG_01565"; transcript_id "HACAcnag01565-1_snoRNA-from-3UTR-CNAG_01565";
+11	RWvN	exon	300599	300835	.	+	.	gene_id "HACAcnag01565-2_snoRNA-downstream-CNAG_01565"; transcript_id "HACAcnag01565-2_snoRNA-downstream-CNAG_01565";
+11	RWvN	exon	587119	587197	.	+	.	gene_id "snR51s-SNORD57_intronic-boxCDsnoRNA"; transcript_id "snR51s-SNORD57_intronic-boxCDsnoRNA";
+11	RWvN	exon	595983	596184	.	+	.	gene_id "HACAcnag12987"; transcript_id "HACAcnag12987";
+11	RWvN	exon	622478	622530	.	+	.	gene_id "mitochondrion-7340-to-7389"; transcript_id "mitochondrion-7340-to-7389";
+11	RWvN	exon	635458	635652	.	+	.	gene_id "U1-snRNA";transcript_id "U1-snRNA";
+11	RWvN	exon	1009887	1010066	.	-	.	gene_id "HACAcnag13008"; transcript_id "HACAcnag13008";
+11	RWvN	exon	1216131	1216211	.	-	.	gene_id "snRcnk02420-2_intronic-boxCDsnoRNA-in-CNAG_13018"; transcript_id "snRcnk02420-2_intronic-boxCDsnoRNA-in-CNAG_13018";
+11	RWvN	exon	1216439	1216529	.	-	.	gene_id "snRcnk02420-1_intronic-boxCDsnoRNA-in-CNAG_13018"; transcript_id "snRcnk02420-1_intronic-boxCDsnoRNA-in-CNAG_13018";
+11	RWvN	exon	1325652	1325709	.	+	.	gene_id "mitochondrion-18184-to-18238"; transcript_id "mitochondrion-18184-to-18238";
+11	RWvN	exon	1349682	1349847	.	+	.	gene_id "intronic-HACA-snoRNA-in-CNAG_01951"; transcript_id "intronic-HACA-snoRNA-in-CNAG_01951";
+11	RWvN	exon	1485786	1485867	.	-	.	gene_id "like-tRNA-Asp_with-siRNAs"; transcript_id "like-tRNA-Asp_with-siRNAs";
+
+12	RWvN	exon	182102	182186	.	+	.	gene_id "mitochondrion-1528-to-1611"; transcript_id "mitochondrion-1528 to 1611";
+12	RWvN	exon	293122	293320	.	-	.	gene_id "HACAup-cnag06094"; transcript_id "HACAup-cnag06094";
+12	RWvN	exon	374092	374187	.	+	.	gene_id "like-tRNA-Asp_with-siRNAs"; transcript_id "like-tRNA-Asp_with-siRNAs";
+12	RWvN	exon	483828	483918	.	-	.	gene_id "mitochondrion-21181-to-21269"; transcript_id "mitochondrion-21181-to-21269t";
+12	RWvN	exon	483916	484286	.	+	.	gene_id "LSU-rRNA-fragment"; transcript_id "LSU-rRNA-fragment";
+12	RWvN	exon	498274	498390	.	+	.	gene_id "snR55_intronic-boxCDsnoRNA"; transcript_id "snR55_intronic-boxCDsnoRNA";
+
+13	RWvN	exon	63925	64017	.	-	.	gene_id "snR71b_intronic-boxCDsnoRNA-in-CNAG_13104"; transcript_id "snR71b_intronic-boxCDsnoRNA-in-CNAG_13104";
+13	RWvN	exon	244420	244639	.	-	.	gene_id "snR75-SNORD15_intronic-boxCDsnoRNA"; transcript_id "snR75-SNORD15_intronic-boxCDsnoRNA";
+
+14	RWvN	exon	5360	5503	.	+	.	gene_id "mitochondrion-18071-to-18200_in-CNAG_05333"; transcript_id "mitochondrion-18071-to-18200_in-CNAG_05333";
+14	RWvN	exon	302732	302983	.	-	.	gene_id "U3b-from-CNAG_13174"; transcript_id "U3b-from-CNAG_13174";
+14	RWvN	exon	328272	328388	.	-	.	gene_id "U6 snRNA"; transcript_id "U6 snRNA";
+14	RWvN	exon	379621	379707	.	-	.	gene_id "U24_intronic-boxCDsnoRNA"; transcript_id "U24_intronic-boxCDsnoRNA";
+14	RWvN	exon	501595	501664	.	-	.	gene_id "snRcnh01600_intronic-boxCDsnoRNA-70nt"; transcript_id "snRcnh01600_intronic-boxCDsnoRNA-70nt";
+14	RWvN	exon	501787	501869	.	-	.	gene_id "snR88_intronic-boxCDsnoRNA-84nt"; transcript_id "snR88_intronic-boxCDsnoRNA-84nt";
+14	RWvN	intron	764700	764752	.	+	.	gene_id "intron CNAG_07888 (XM_012198547) as CNH02505"; transcript_id "intron CNAG_07888 (XM_012198547) as CNH02505";
+14	RWvN	intron	765462	765526	.	+	.	gene_id "intron CNAG_07888 (XM_012198547) as CNH02505"; transcript_id "intron CNAG_07888 (XM_012198547) as CNH02505";
+14	RWvN	exon	827235	827251	.	+	.	gene_id "HACAcnag13196-exon1"; transcript_id "HACAcnag13196-exon1";
+14	RWvN	exon	827309	827541	.	+	.	gene_id "HACAcnag13196-exon2"; transcript_id "HACAcnag13196-exon2";
+14	RWvN	exon	881195	881520	.	+	.	gene_id "HACAcnag05651-1"; transcript_id "HACAcnag05651-1";
+14	RWvN	exon	881595	881685	.	+	.	gene_id "snR51-snR79_intronic-boxCDsnoRNA-90nt"; transcript_id "snR51-snR79_intronic-boxCDsnoRNA-90nt";
+14	RWvN	exon	881885	882034	.	+	.	gene_id "HACAcnag05651-2"; transcript_id "HACAcnag05651-2";

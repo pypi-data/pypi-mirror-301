@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools",
+#    "numpy >= 1.26","Cython >= 0.29.28",
+    ]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "coalispr"
+version = "0.7.3"
+description = "Small RNA-Seq analysis starting from bedgraph files"
+readme = "README.md"
+requires-python = ">=3.11"
+
+keywords = ["matplotlib", "pandas", "pysam", "pyCRAC", "bedgraph", "RNA", "bam"]
+license = { text = "EUROPEAN UNION PUBLIC LICENCE v. 1.2 or later"}
+authors = [
+    { name = "Rob van Nues", email = "sborg63@disroot.org" },
+    ]
+maintainers = [
+    { name = "Rob van Nues", email = "sborg63@disroot.org" },
+    ]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    ]
+
+dependencies = [
+    "numpy >= 1.26",
+    "pandas >= 1.5",
+    "matplotlib >= 3.8",
+    "seaborn >= 0.13",
+    "pysam >= 0.20",
+    "PyQt6",
+    ]
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "furo",
+    "sphinx-autoapi",
+    "rich",
+    "common_mark",
+    ]
+
+[project.scripts]
+coalispr = "coalispr.coalispr:main"
+
+#[project.entry-points."coalispr"]
+#coalispr = "coalispr.coalispr:main"
+
+
+[project.urls]
+Homepage = "https://codeberg.org/coalispr/coalispr"
+Documentation = "https://coalispr.codeberg.page/"
+
+[tool.setuptools]
+zip-safe = false
+packages = [
+    "coalispr",
+    "coalispr.bedgraph_analyze",
+    "coalispr.count_analyze",
+    "coalispr.resources",
+    "coalispr.resources.constant_in",
+    "coalispr.resources.constant_out",
+    "coalispr.resources.share",
+    "coalispr.resources.share.bash_scripts",
+    "coalispr.resources.share.conversion_tables",
+    "coalispr.LICENCES",
+    ]

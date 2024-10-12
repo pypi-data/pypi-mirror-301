@@ -1,0 +1,25 @@
+include README.md
+include LICENCE.txt
+include INSTALL.txt
+include CODE_OF_CONDUCT.md
+recursive-include coalispr/resources *
+recursive-include coalispr/LICENCES *.txt *.svg
+include docs/_static/*.svg
+include docs/_static/favicon.ico
+include docs/Makefile
+include docs/make.bat
+include docs/docs_requirements
+recursive-include docs/_source *
+recursive-include docs/_static *
+recursive-include docs/_templates *
+recursive-exclude docs/_source/autoapi *
+recursive-exclude docs/_static/images_source_rest *
+recursive-exclude docs/_static/styles *
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude .*
+global-exclude *.bak
+global-exclude *~
+global-exclude *.session
+global-exclude *.vim
+global-exclude tags

@@ -1,0 +1,81 @@
+from within directory with 'setup.py':
+
+
+
+package documentation in './docs/html' has been build with 'sphinx', 
+    using extensions 'sphinx-autoapi', 'furo':
+
+    cd docs
+    make html
+
+
+package has been build with:
+
+    python3 -m build
+
+based on:
+    pyproject.toml
+    MANIFEST.in
+    setup.py (empty)
+
+
+INSTALLATION:
+    cd to folder with virtual environments
+    create environment 1 (env1) with module venv
+        bash-5.2$ python3 -m venv env1
+    activate env1
+        bash-5.2$ source env1/bin/activate
+        (env1) bash-5.2$
+        
+    extract dist/package
+        (env1) bash-5.2$ tar -xvzf /<path_to>/coalispr-$VERSION.tar.gz
+        (env1) bash-5.2$ cd coalispr-$VERSION
+
+    install with:
+        (env1) bash-5.2$ python3 -m pip install --editable .
+        (env1) bash-5.2$ ln -s -r coalispr/resources/numeric.py \
+            -t <path to>/env1/lib/python3.11/site-packages/pandas/core/indexes/
+    run:
+        (env1) bash-5.2$ coalispr -h
+        
+    stop:
+        (env1) bash-5.2$ deactivate
+        bash-5.2$
+
+
+
+The following dependencies were installed by pip:
+
+for coalispr:
+    numpy
+    pandas
+    matplotlib
+    seaborn
+    pysam
+
+for matplotlib:
+    typing-extensions
+    contourpy
+    cycler
+    fonttools
+    kiwisolver
+    packaging
+    pillow
+    pyparsing
+    python-dateutil
+    six
+for matplotlib backend QtAgg:
+    PyQt6-Qt6, PyQt6-sip, PyQt6
+
+for pandas:
+    versioneer
+    mesonpy
+    pytz
+    tzdata
+
+for pysam:
+    cython
+
+for python-dateutil:
+    six
+

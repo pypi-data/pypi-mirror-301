@@ -1,0 +1,188 @@
+.. role::  raw-html(raw)
+   :format: html
+
+.. .. |Dbox|  replace::  :raw-html:`<span class="mononorm">cuga</span>`
+.. .. |Cbox|  replace::  :raw-html:`<span class="mononorm">rugauga</span>`
+.. .. |nbsp| replace:: :raw-html:`&#x00A0;`
+
+.. .. |extrBP|  replace:: ..S rRNA 
+.. |extr|  replace::  :raw-html:`<span class="mononorm">ggatgt</span>`
+.. |targetRNA|  replace:: 18S rRNA
+.. |target| replace:: :raw-html:`<span class="mononorm">(acatCc)aagg<a href="../18s-tab.html#snR52-Z13_18S" title="18S target">A</a>aggcagcagg</span>`
+.. |ortholog| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300050">snR52</a>, human <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300685">SNORD83A(B)</a>`
+
+
+snR52-SNORD83
+=============
+
+.. figure:: /../_static/images/snoRNAs/snR52-Z13_h99_igb.png
+   :name: snr52-z13_h99_igb
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 40%
+   :figwidth: 100%
+
+- snR52-SNORD83_intronic-boxCDsnoRNA-98nt-in-CNH03440
+- Within intron of CNH03440 (CNAG_05285) for a DFDF domain-containing protein, the orthologue of SCD6/LSM13 from yeast that represses translation initiation and has a C-terminal RGG region
+
+.. figure:: /../_static/images/snoRNAs/CNH03440-blast.png
+   :name: cnh03440-align
+   :align: left
+   :width: 1554 px
+   :height: 1357 px
+   :scale: 40%
+   :figwidth: 100%
+
+   Fungal homologs of SCD6 (with CNH03440 highlighted)
+
+- Predicted target in |targetRNA|\ : |target|
+- Orthologue of |ortholog|
+- Like in *Pezizomycotina* [van.Nues-2011_], an accessory guide |extr| can extend base-pairing with |targetRNA| target (within parentheses)
+
+.. figure:: /../_static/images/snoRNAs/snR52-Z13-align.png
+   :name: snr52-z13-align
+   :align: left
+   :width: 1218 px
+   :height: 547 px
+   :scale: 40%
+   :figwidth: 100%
+
+
+.. rst-class:: mononote
+
+>AE017348.1:118873-118970 Cryptococcus neoformans var. neoformans JEC21 chromosome 8 sequence :raw-html:`</br>`
+TTTTATGATGAAGTATTTTTCGGATGTAAACTGCCTTCGGGCACATGTCCGAGAGCGCAAAAACCAAGTG :raw-html:`</br>`
+GACATCTCCGTTGCCTTCCTTCTGAATC
+
+|
+|
+|
+|
+|
+|
+
+=======
+
+- Image source snR52-SNORD83:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Annot/1-43                 ---------RTGATGA----------CCUACA-----------------------CTGA------------------RTGATGA---------GGaCGACGGAAGGAACTGA--------
+        #=GS snR52-SNORD83/1-98 DE intronic-boxCDsnoRNA-in-CNH03440-98nt ncrna 8:118872:118970:1
+        snR52-SNORD83/1-98         -----TTTTATGATGAAGTATTTTTCGGATGTAAA-CTGCCTTCGGGCACA-TGTCCGAGAGCGCA---AAAACCAAGTGGACAT-------CTCCGTTGCCTTCCTTCTGAATC-----
+        #=GS in-CNAG_05285/1-98 DE CP003823.1:935807-935904 Cryptococcus neoformans var. grubii H99 chromosome 4, complete sequence
+        in-CNAG_05285/1-98         -----TTTTATGATGAAGTATTTTTCGGATGTAAA-CTGCCTTCGGGCACA-TGTCCGAGAGCGCA---AAAACCAAGTGGACAT-------CTCCGTTGCCTTCCTTCTGAATC-----
+        #=GS WM276/1-98 DE CP000294.1:876745-876842 Cryptococcus gattii WM276 chromosome I, complete sequence
+        WM276/1-98                 -----TTTTATGATGAAGTATTTTTCGGATGTAAA-TTGCCTTCGGGCACA-TGTCCGAGAGCGCA---AAAACCAAGTGGACAT-------CTCCGTTGCCTTCCTTCTGAATC-----
+        #=GS R265/1-98 DE CP025767.1:845592-845689 Cryptococcus gattii VGII R265 chromosome 9, complete sequence
+        R265/1-98                  -----TTTTATGATGAAGTATTTTTCGGATGTAAA-TTGCCTTCGGGCACA-TGTCCGAGAGCGCA---AAAACCATGTGGACAT-------CTCCGTTGCCTTCCTTCTGAATC-----
+        #=GS KwoSha/1-98 DE NQVO01000023.1:164964-165061 Kwoniella shandongensis strain CBS 12478 scaffold00023, whole genome shotgun sequence
+        KwoSha/1-98                -----TTTTATGATGAAGTATTTTTCGGATGTAAAG-TGCCTTCGGGCCGA-TGTCCGAGAGCGCA---AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGACTC-----
+        #=GS KwoMan/1-99 DE ASQD01000009.1:1084813-1084911 Kwoniella mangroviensis CBS 10435 cont2.9, whole genome shotgun sequence
+        KwoMan/1-99                -----TCTCATGATGAAGCATTTTTCGGATGTAAAGTGTCCTACGGGACCGATGTCCGAGAGCGCA----AAAAAGTGTGGACAC-------CTCCGTTGCCTTCCTTCTGATCT-----
+        #=GS KwoBes/1-100 DE ASCK01000007.1:366860-366959 Kwoniella bestiolae CBS 10118 cont1.7, whole genome shotgun sequence
+        KwoBes/1-100               ----AACTCATGATGAAGCATTTTTCGGATGTAAAGTGTCCTACGGGACCGATGTCCGAGAGCGCA---AAAACCGTGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS KwoDej/1-102 DE ASCJ01000002.1:c177460-177359 Kwoniella dejecticola CBS 10117 cont1.2, whole genome shotgun sequence
+        KwoDej/1-102               ----AATTCATGATGAAGTATTTTTCGGATGTAAAGTGTCCTTCGGGACCGATGTCCGAGAGCGCA----AAAAAGTGTGGACAC-------CTCCGTTGCCTTCCTTCTGATTCTT---
+        #=GS KwoHev/1-98 DE ASQC01000021.1:c209002-208905 Kwoniella heveanensis CBS 569 cont2.21, whole genome shotgun sequence
+        KwoHev/1-98                -----ATTCATGATGAAGTATTTTTCGGATGTAAAGTGCCCTTCGGGGACAGTGTCCGAGAGCGCA----AAAACGTGTGGACAC-------TTCCGTTGCCTTCCTTCTGATC------
+        #=GS CryGC4/1-97 DE JALPCA010001016.1:4746-4842 Cryptococcus sp. GC_Crypt_4 iso00_46_1051, whole genome shotgun sequence
+        CryGC4/1-97                -----CTTTATGATGAAGTATTTTTCGGATGTAAA--TGCCTTCGGGCAGA-TGTCCGAGAGCGCA---AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGACTC-----
+        #=GS CryFlo/1-96 DE RRZH01000002.1:1860538-1860633 Cryptococcus floricola strain DSM 27421 chromosome 2, whole genome shotgun sequence
+        CryFlo/1-96                -----TCGTATGATGAAGTATTTTTCGGATGTAAA--TGCCTTCGGGCGCAA-GTCCGAGAGCGCA----AAACCAAGTGGACAC-------CTCCGTTGCCTTCCTTCTGATAT-----
+        #=GS CryWin/1-95 DE AWGH01000002.1:771730-771824 Cryptococcus wingfieldii CBS 7118 supercont1.2, whole genome shotgun sequence
+        CryWin/1-95                -----TCGTATGATGAAGTATTTTTCGGATGTAAA--TGCCTTCGGGCGCAA-GTCCGAGAGCGCA----AAACCAAGTGGACAC-------CTCCGTTGCCTTCCTTCTGATA------
+        #=GS PapTer/1-96 DE JAHXHD010001256.1:33324-33419 Papiliotrema terrestris strain LS28 scaffold-1255, whole genome shotgun sequence
+        PapTer/1-96                ------CGTATGATGAAGTATTTTTCGGATGTAAA--TGCCTTCGGGCGCAATGTCCGAGAGCGCA---AAACCCATGTGGACAA-------TTCCGTTGCCTTCCTTCTGATC------
+        #=GS PapLau/1-96 DE JAAZPW010000069.1:c2845-2750 Papiliotrema laurentii strain IF7SW-B5 scaffold243_cov178, whole genome shotgun sequence
+        PapLau/1-96                -----TTGAATGATGAAGCATTTTTCGGATGTAAA--TGCCTACGGGCTG-TTGTCCGAGAGCGCA---AAACCCATGTGGACAA-------TTCCGTTGCCTTCCTTCTGACC------
+        #=GS KocImp/1-96 DE NBSH01000012.1:c26571-26476 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_12, whole genome shotgun sequence
+        KocImp/1-96                ------TCCATGATGAAGTATTTTTCGGATGTAAAC-AGCCTACGGGCGA-TTGTCCGAGAGCGCA---AAAACCCTGTGGACAT-------TTCCGTTGCCTTCCTTCTGATC------
+        #=GS NaeEnc/1-95 DE MCFC01000018.1:c211929-211835 Naematelia encephala strain 68-887.2 BCR39scaffold_18, whole genome shotgun sequence
+        NaeEnc/1-95                -----TTTTATGATGAAGCATTTTTCGGATGTAA--TTGCCTTCGGGCTA--TGTCCGAGAGCGCA---AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS CryFlo/1-95 DE RRZH01000012.1:1060681-1060775 Cryptococcus floricola strain DSM 27421 chromosome 11, whole genome shotgun sequence
+        CryFlo/1-95                -----CGATATGATGAAACATTTTTCGGATGTAAA--TGCCTTCGGGCGCAA-GTCCGAGAGCGCA----AAACCAAGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS BulAlb/1-96 DE CAMYTR010000156.1:615288-615383 Bullera alba genome assembly, contig: jcf7180000012257, whole genome shotgun sequence
+        BulAlb/1-96                -----TTTTATGATGAAGCATTTCTCGGATGTAAA--TGCCTTCGGGCTGA-TGTCCGAGAGCGCA---AAACCCATGTGGACAC-------TTCCGTTGCCTTCCTTCTGACT------
+        #=GS NaeAur/1-95 DE JAKFAO010000012.1:c210603-210509 Naematelia aurantialba strain NX-20 Contig12, whole genome shotgun sequence
+        NaeAur/1-95                -----TTTTATGATGAAGCATTTTTCGGATGTAA--TTGCCTACGGGCTG--TGTCCGAGAGCGCA---AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS CrySki/1-96 DE BCHT01000012.1:384229-384324 Cryptococcus skinneri DNA, scaffold: scaffold_11, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/1-96                -----CTTTATGATGAAGTATTTTTCGGATGTTA--TACCCTTCGGGGGC-TTGTCCGAGAGCGCA---AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS CrySki/1-98 DE BCHT01000010.1:695020-695117 Cryptococcus skinneri DNA, scaffold: scaffold_9, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/1-98                -----CTTTATGATGAAGTATTATTCGGATGTAAACCGCCCCTCGGGGC-TTCGTCCGAGAGCGCA----AAACCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGACTT-----
+        #=GS TreYok/1-98 DE BRDC01000024.1:c1568542-1568445 Tremella yokohamensis NBRC 100148 DNA, KCNB35TY.24, whole genome shotgun sequence
+        TreYok/1-98                -----TCGAATGATGAAGTATTTTTCGGATGTAAA--TGCCTTCGGGCGCAACGTCCGAGAGCGCAT--AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS TreFuc/1-97 DE BRDD01000113.1:c92309-92213 Tremella fuciformis NBRC 9317 DNA, KCNB80TF.113, whole genome shotgun sequence
+        TreFuc/1-97                ------CGAATGATGAAGCATTTTTCGGATGTAAA--TGCCTTCGGGCGCACTGTCCGAGAGCGCAT--AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGATC------
+        #=GS TreTag/1-95 DE JAMFRF010000051.1:49610-49704 Trichosporon ovoides strain 2NM914A ctg_51, whole genome shotgun sequence
+        TreTag/1-95                -----TTTTATGATGAAGCATTTCACGGATGTTAA---CCCTACGGGGAC--TGTCCGAGAGCGCA---AAACAAGTGTGGACAC-------TTCCGTTGCCTTCCTTCTGAAAC-----
+        #=GS TreMes/1-96 DE SDIL01000015.1:c49837-49742 Tremella mesenterica strain ATCC 28783 supercont1.15, whole genome shotgun sequence
+        TreMes/1-96                -----TCGAATGATGAAGCATTT-CCGGATGTAA--TTGCCTACGGGCCA--TGTCCGAGAGCGCAT--AAAACCAAGTGGACAT-------CTCCGTTGCCTTCCTTCTGATTC-----
+        #=GS VanFra/1-97 DE BEDY01000003.1:c1863727-1863631 Vanrija fragicola DNA, scaffold: scaffold_3, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-97                -----TTTTATGATGAAGCATTTTTCGGATGTTAA--GCCCTTCGGGGCAG-TGTCCGAGAGCGCA---AAACCCATGTGGACAC-------CTCCGTTGCCTTCCTTCTGAACC-----
+        #=GS TriCor/1-95 DE JXYL01000015.1:c911537-911443 Trichosporon coremiiforme strain JCM 2938 scaffold_0015, whole genome shotgun sequence
+        TriCor/1-95                -----TTTCATGATGAAGCATTTTACGGATGTTAA---CCCTACGGGGAC--TGTCCGAGAGCGCA---AAACAAGTGTGGACAC-------CTCCGTTGCCTTCCTTCTGAACC-----
+        #=GS TriAsa/1-95 DE JAMYHT010000003.1:1283872-1283966 Trichosporon asahii strain F6008 ctg_3, whole genome shotgun sequence
+        TriAsa/1-95                -----TTTCATGATGAAGCATTTTACGGATGTTAA---CCCTACGGGGAC--TGTCCGAGAGCGCA---AAACAAGTGTGGACAC-------CTCCGTTGCCTTCCTTCTGAACT-----
+        #=GS VanFra/1-96 DE BEDY01000003.1:526420-526515 Vanrija fragicola DNA, scaffold: scaffold_3, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-96                ------TCGATGATGAAGCATTTATCGGATGTAAA--CGCCTTCGGGCTGCA-GTCCGAGAGCGCAT--AACCTCATGTGGATGT-------TTCCGTTGCCTTCCTTCTGATC------
+        #=GS TriOvo/1-99 DE WEIQ01000012.1:407658-407756 Trichosporon ovoides strain 2NF903A scaffold12-size967751, whole genome shotgun sequence
+        TriOvo/1-99                -----GCGTATGATGAAGTATTTTACGGATGTTAAA-TGCCTACGGGCACGA-GACCGAGAGCGCAT--ACAACCATGTGGATTC-------CTCCGTTGCCTTCCTTCTGACGC-----
+        #=GS TriInk/1-100 DE QAEE01002003.1:2197-2296 Trichosporon inkin strain ATCC 18020 NODE_2038_length_2855_cov_6.50684_ID_80788, whole genome shotgun sequence
+        TriInk/1-100               -----GCGTATGATGAAGCATTTTACGGATGTTAAA-CGCCTACGGGCACGA-GACCGAGAGCGCATA-CAAACCATGTGGATTC-------CTCCGTTGCCTTCCTTCTGACGC-----
+        #=GS TriInk/1-96 DE JXYM01000003.1:c1270012-1269917 Trichosporon inkin strain JCM 9195 scaffold_0003, whole genome shotgun sequence
+        TriInk/1-96                ----CATTCATGATGAAGCATTTTACGGATGTTAA---CCCTACGGGGGC--TGTCCGAGAGCGCA---AAACAAGTGTGGACAC-------TTCCGTTGCCTTCCTTCTGAACT-----
+        #=GS SchPom-sno52/1-95 DE Schizosaccharomyces_pombe sno52 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Schizosaccharomyces_pombe300045
+        SchPom-sno52/1-95          ATTTTGAAAATGATGAAAATAA-CGCGGATG-------AAATATA-------TGTCCGAGAGCGCA---AAAAATGTGTGGATAT-------TTCCGTTGCCTTCCTTCTGATTCAAAAT
+        #=GS SacCer-snR52/1-92 DE 18S:A420,25S:U2921 Saccharomyces_cerevisiae snR52 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300050
+        SacCer-snR52/1-92          -----TACTATGATGAATGA-----------------CATTAGCGTGAACAATCTCTGATACAAAATCGAAAGATTTTAGGATTAGAAAAACTTATGTTGCCTTCCTTCTGAAA------
+        #=GS SNORD83A/1-95 DE Homo_sapiens SNORD83Ahttp://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300685
+        SNORD83A/1-95              -GCTGTTCGTTGATGAGGCTCAGAGTGAGCGC-----------TGGGTACAGCGCCCGAAT-----------CGGACAGTGTAGAACCA-TTCTCTACTGCCTTCCTTCTGAGAACAGC-
+        #=GS SNORD83B/1-93 DE Homo_sapiens SNORD83B http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300684
+        SNORD83B/1-93              -GCTGTTCAGTGATGAGGCCTGGAATGTGCGC-----------TGGGCACAGCGCCCGAGA-----------CAGAC--TGCGGAACCG-TTCCTTGTTGCCTTCCTTCTGAGAACAGC-
+        #=GC SS_cons               -------------------------((((((.......(((....)))....))))))----((((..-.......)))).---------------------------------------
+        //        
+
+
+
+- Image source CNH03440 BLAST:
+  
+.. rst-class:: asfootnote
+
+::
+
+        tr|K1W808|K1W80/1-252         ----MDYSKFKG------------YSGVYQDIDQESQTICLSD------EDRPVA-----RAIPGSTVSLGWVRFQNGPQEQRSS-------------------------------------------------------------------------------------------------------------------------------------------------------------GGTSGNGLPPRPQQSHGAASADAAMHRVQKSLSDLNVDGNRRRKPQH----------------HVSPPAVPDAEFDFSKGNARFQKERQAMKAAATEKD----------EGEAEDTVELGEPESAPHPSVVAQQEE--------------------APKPERKAASY-NKSSFFDNISSDSSR--------------------------------------------VSRADERHRNLDTFGEAGGNQHGG----G--YGGHRGGHSGYRGRGRGR-------------------RGGYGQQREFVHYDA------------------------------------------------------------------------
+        tr|A0A427YER0|A/1-396         ----MDYTQFKGRPFAVISKLGVRYTGIFDHISQEDQTICLSQVYNHGTEDRPTA-----KKLPGSATTLGWVRFHTESIESIALVENYVPPGGEQ-----PVDPIL-ASVSTTAPS----------------Q--A-----------AVPATAPTAVPAAV---------------------------------APAPS------QAPLS-------------------------AAASSSRSPLRHNLPSRPT--GSANSAATALDRVQQSLSELSVNGAGGGGGARPR----RQPYAPRAPGPAHPIEVPDTEFDFSKGTEALEAERTARKAAGGETGKGKGKSENGDNGDIDTPTDEGEPELPPHPIAIQPAPNGNGNGHGPDAATSPGAGPAGRKGSASGSPAY-VKSSFFDTLSGESSR--------------------------------------------KPGVRTE----RTEGEVGEGTEAVLVVDGEDMVEEDMVKPKVASVKEGN---SNTAGVDTTA------EGDLEASV----VDTG--------------------------AEGVMVRVRLKP----------RRAHN-----SD-----------
+        tr|A0A4V1M4K6|A/1-405         MAKSVDYEQFKGKPFQVISKLGVRYTGIFESISQQDQTICLAEVYNHGTEDRPTA-----RKIPARPTSLGWVLFHTESIESLAIINDHVPPGAP------HEDPII-AAVGTKAPP----------------A--A-----------SSAPAPQPQTQSLPQPPLPPISQPQYQPPPRPQHQPS----------PPPPHLPVHQVSSRSS-------------------------SQSGRSSPRIRHELPARPD--F-AQSASTALDRIQRSISDLHVTRQTSPK-------------------KHAPPAVPDAEFDFSAGTQVLEKERELLKRNQAGTAS-----P------SQVVEEVGIPERSPHPAAIVSNGDAF-----PVEN-------D-NGSRGKSSSAY-NKKSFFDGLSVDSAR--------------------------------------------TNRMEERSRNLDTFGEPGVPSGPM----GNGMRGRGMARGGYQGQS--------RGGYQGGN------RGGYQPQYMGGPSGQGAPPFSGQGMGGFQGQGMRGNGFRGRGGRGRMGPPVSQ----------------------------------
+        tr|A0A0J0XQ09|A/1-310         ----MDYSQYAGRPFEVISKLQVRYTGIFQEIDQETQTLCLSDVYNHGTEDRPSE-----RSLPGSSESLGWVRFHTNSINKLSLLDNPAPPVSNN-A---PVDPAL-ASVSGPRGN----------------S--Q-----------TS-------------------------------------------------------------------------------------------PAPRGVAGLPPKPY--TSAHSAETALGRVQQSLTELSTDPGRQRR-------------------KPQAPAVPDAEFDFSKGNEKFQKERQARKAQEDHEEE-----VKA----EVEAVDLGAPQNVPHPSAVVSSSD-------AARD-------RNGKPHPRKGPSY-NKSSFFDNISSDSSR--------------------------------------------VSRAEERHRNLDTFGEAGGDITQG----YR--LGQQSGRGGMQGRGRG------RGGGGGGG----NRRGGYN------------------NTPAWAA---------------------------------------------------------
+        tr|A0A1Y2B7K7|A/1-347         ----MDYSQFKGKPFQVISKLGVRYTGIFDHISQEDQTICLSQVYSHGTENRPTA-----RKMPGSTTTLGWVRFHTESIEALALVEDYVPPGGEE-P---PVDPIL-ASISQSAPG----------------A--A-----------SPQTSQAPPVQ------------------------------------PPAQT----------Q-------------------------AQASTSIPVARHELPSRPN--T-TQSAATAIDRVQQSLSDLGIDGSRQRR-------------------PPRAPEVPDAEFDFGKSNQKFERIRQDKGKGKDGS----------------ESSDSDGLDEEPHPIVVQNGR-----------G-------QDGADGGKKPTGY-NKSSFFDNLSGESSR--------------------------------------------VSRAEERGRNYDTFGEAGGEENGV----GR---I--PNRGGYGGQGQ----GQGRGGY--------GQRGGYGGDVWGGRGFGG--------------------RGRGRGGYGRGGVPSVSGGGYRGGSGYEQA---------------------
+        tr|A0A8J1VP97|A/1-369         -MAGVNYEQFKGKPFQVISKLGVRYTGIFDHISQEDQTICLSQVFNHGTEERPTP-----RKLPGSTTTLGWVRFHTESIESLALVENYVAPGEEA-----PIDPIL-ASVSPTAPV----------------T--A-----------KSPPAQH----------------------------------------SPTPV----------S-------------------------PA---KTSQPRFDLPRKPS--NAAQSAATALDRVQKSLSNLSVDGPQPSRRKQ--------------SSANRPPEVPDAEFDFSKGTEQFEAEREARAGSRLNGKD-----KNE-DGKSETSSDTGTPIE---AARLRQTLPNG-----D-GS-------GVGTGLERKSSAY-IKNGFFDGLSGESSR--------------------------------------------VSRADERHRNLDTFGEAGGDGFEG----GG---G--RGSGGYGGR-------------------------GYGGRGYGGRGH-G------------------GRGHGGRGGYSVETMGSQVGSAGVKKMVEERMAMAVGAGTTDGLGDSVTGLAQ
+        tr|A0A1Y1UBP6|A/1-375         -MAGVDYSQYQGKPFQVISKLGVRYTGIFDHISQEKQTICLAKVFNHGTEDRPVA-----KKFPPNPKSLGWVQFHTASIEALALVEDYVPPYAVPDD---PVDPIL-ASVSATAPS----------------S--S-----------APPPPPPTSQS------------------------------------SSQPA----------P-------------------------SAAPSQPSSQRHNLPAKPP--A--SSASTALDRVQHSLSELSTSDNTRRRPSQ---------------PPARPIEVPDADFDFSKGTEKFEAEREARKGQDAEGGD-----GEGG-----EEAESKAPD----EQAIEQSNGHG-----ATAG-------QLKDGDAKKSSVY-NKSSFFDGLSASTSR--------------------------------------------VGRNEERGRNLDTFGEAGDGGFGS----GM--SG--RGRGGFRGGNRGTPGPRGRGGYQGG-----GGGGQYGGYGSGGQYGGYGGGRGGSNGGDWRG----GGRGRGRGGFSQGAPGGGLPQ--------------------------------
+        tr|A0A5M6BVN6|A/1-365         --MAVDYSQFKGKPFQVVSKLGVRYTGIFDHINQEDQTICLAQVYNHGTEDRPTA-----RKLPGSNKSLGWVRFHTESIESLALVENYVPPGEEA-----PVDPIL-ASVSQTAPP----------------A--S-----------QSPNSSQ---V------------------------------------TSPPI------------------------------------PTASSSQRKQSYDLPPKPS--GSAISAATALDRVQRSLSELNVDER--PRRSH---------------PPPKPPAVPDAEFDFTKGTEVFEKEREAFKHGGPTGTN--------GDGNGDAAEDVGEPANQPHPSAIVQPTS-------P-EA-------QPQGSGPRKAVGY-TKSSFFDGLSTGTSR--------------------------------------------VSRADERHRNYDTFGEAGGAGAPG----GG---A--G--GGFRG-GRGRGGGYGRGGF-------EGGRGGFDGGR-GGPSGGRG---FGS-----VG----GGYR-GRGGYGGQQQQQQQRQQYQQPSQ-------------D----SI-----
+        tr|A0A1B9GQ17|A/1-359         --MAVDYSQFKGKPFQVVSKLGVRYTGIFDHINQEDQTICLAQVYNHGTEDRPTA-----RKLPGSNKSLGWVRFHTESIESLALVENYVPPGEEA-----PVDPIL-ASVSQSAPP----------------S--S-----------QAPPQA-----------------------------------------PPQPA------------------------------------ASSSQQPRRESYELPPKPT--GAAISAATALDRVQRSLSDLHVGGGNEDRPRR---------------PRPQPPTVPDAEFDFAASNQKFEKEREALKHAGDGEAE-----KAGENGEGAGAAEVGEPESAPHPSAVVSSPP---------------------VEERPKVEKY-NNSSFFDNLSVGTSR--------------------------------------------VSRADERHRNFDTFGEAGGPSYPG----GG---V--GTGGGFGG-R-G----RGRGGFGGQSQGSQGQRGGYGGQGQGGQRGRGY---N-------NG----GGYRGGRGGYGNQQRQQQ----------QA-----------P----EWS----
+        tr|A0A1B9IBR6|A/1-365         --MAVDYSQFKGKPFQVVSKLGVRYTGIFDHINQDDQTICLAQVYNHGTEDRPTA-----RKLPGSNKSLGWVRFHTESIESLALVENYIPPGEEA-----PVDPIL-ASVSQNAPP----------------A--V-----------QAPPQS-----------------------------------------PPPPV------------------------------------ASSSSQPRKQSYDLPPRPT--GAAISAATALDRVQRSLSDLHVEEPRQHRRGG---------------PPRQPIEVPDEDFDFAANNEKFKTEREAHAKNGHGE-----------ESEQNGQNEIGEPNSQPHPDALKAVSP-------QVEE-------ENQAQKKPQAAKY-NKSSFFDNLSTGTAK--------------------------------------------VSRADERHRNFDTFGEAGGPSYQN----QQ---------GGFRG-R-G----RG--GI-----HSQGGRGGYNGQSEGGLRNGTG---RGG-----FN----QNQRGGRGGFGQQNQGFVHYGNSQGQRQQQRRD-------QE----TFQ----
+        tr|Q5KD64|Q5KD6/1-327         --MAVDYDQFKGKPFQVISKLGVRYTGIFDHISQEDQTICLAQVYNHGTEDRPTA-----RKLPGSTKSLGWVRFRTESIESLSLVENYNHPGAEPEP---QEDPIL-ASVSQAPPP----------------N--A-----------VAAGPSS-----------------------------------------P---------------------------------------SPQTTSQPYQRHDLPAKPS--QSAISAATAMSRVERSLSELSVDDRPRRPSRQ---------------AQARPPAVPDAEFDFQKANEKFEKEKEAFKSAADGQGA-----DVA---V------LDEPVNQPHPSAV---------------V-------QSPSEGEPKTAVY-NKSSFFDSLSHSSSK--------------------------------------------ISRNEERHRNLDTFGEAGGNGM--------------GGRGGYGG-R-----GRGRGGYTAG-------GGHYNGNGYGGGRGRGG---YR--------------RGGYQNQSQPGESVNL-----------------------------------
+        tr|A0A1E3HGR8|A/1-354         --MAVDYDQFKGKPFQVISKLGVRYTGIFDHISQEDQTICLAQVYNHGTEDRPTA-----RQLPGSTKSLGWVRFRTESIDSISLVENYVVPGTEPQP---EEDPIL-ASVSQDAPS----------------S--V-----------QQ--------------------------------------------------------------------------------------PQHLTSPAEQRYDLPAKPS--TSAISAATALSRVERSLSELSTNDHPPRRGSNQGQQGYGNGYGRGYGKEVKQPEVPDAEFDFAKANERFEKEREAIKSASAQGPV-----VIG---EVAPNPALAQTQSPPPPSLSASLSP-------QP-D-------QAGPISPPAAAKY-QKSSFFDNISHSTGK--------------------------------------------VSRNEERHRNLDTFGEAGGPPPGA----FA---G--QGRGGFGG-R-----GRGRGGYGGEQ------QGGYGGYGYG-NRGRGG---YS--------------RGGGRGGYGQQSGGDL-----------------------------------
+        tr|A0A0D0AHW0|A/1-349         -----MALSFIGKPISLISHSDVRYRGILAGIDPAASTIQLSNVFSMGTESRRPP----SEFIPPVQEPYQYIIFRASEVKDLAVDEPTPLRSVH-------DDPAVLGASTPGQ-----QPQYGAYGPQYQQPVVA----------QP--PPP--QAQAPTYP-----------------------QPVTVQDAPAPPMASVVQTN-----------------------------DAPGPSTGPSRVN--SVH-------TAAASMETVQRALGDLRGSGNAAPAHGGRG----GRRGHHGHGGETKDIKVPSTDFDFQSSNARFDKTAVAPKKKDDDNENG----------------------------------TP------SDRD------SPTDKKDEKDELAYNPTKSFFDSLSSSTQAAPPPT-----------------------RGTGGRRG----GGGRNRREEERERNVATFGEPGGVGLMG----P---GAYVGGWGGYGRRG-GRPRGRGVPPVG--------GR--------------------------------------------------------------------------------------
+        tr|A0A5C3EI15|A/1-479         ----MATAEYIGALISLISKSDIRYQGLLASINPNEATIALEKVRSWGTEGRVSVQGRPQEEIPPSDHVYEYIMFRAADVKDLKIDDPNPPKQQPPVPQPALNDPAILNSSAPSSGPGGFVPPAGMYGMMPPPPFGAAPYPGAPGFGGP--SPPQFKGQPPQQSPIPPSQNTATSPSAAPEA-SKPSKP------ATPPSAEPVKAEEKSSADKVLEEMSKLSVSKPNTAQ-QQPSSTPSPSSLPHAAHLPAIP-------HAAAAA-AKAAAQSDRR--AAGADRSVNNG----PRTNHHRHRADVGGPSMPNKEFDFESANAKFQKHKDTVATASGEEAASVEA---------------------STSSALQGNGAG------GLLD------AIPPPNAESQSSFY-DKSGFFDNISSEIKERYERTTPNAGQEADGGDAGSGFFDAPGGRGGRGGRGGGGRGRGRANRIAEEMKNMQTFGDTGASV-----GGG---GGSGGGGRGGRGRG-GRGGYRGRGGRG--------GGRQQQGQSN----------------GGYNNTA--------PMRMS------------------------------------------
+        tr|Q6FLB0|Q6FLB/1-341         ------MSQYFGKTISLISVTDNRYVGLLQNIDSEKGTVTLNEVRCFGTEGRKNWG---PDEVYPNPTVYQSVKFNGNDVKDLSILEVKLHEVQPVMPPPHVLQQQQQQQVEPNSNA-----NEGSFPAQTPSD--QAP---VPQQQAQQAPKPDVPAAVSGYGVYAPSASDSTAVGTATFSDSIASSTQ---------------------SGNANSDDFNKS--------------------------------------------------------------SQGSRQ----QHRKPSHQHAAPHKVEIPDSDFDFATNNAKFSKTEEEVLEEKPE--------------------------------------------------------------LPDQDKFYDKKSSFFDSISTSAEENTN-----------------------------------------MRWSEEKELNLDTFGQASVRPRFQ---NG---RGGRGGRGRGRG----RGRGRGRGGR-----------GSFNNYGH----------------DNYQNR----------QHFN---QFQAASNAHNEKL-------------------EF-----
+        sp|P45978|SCD6_/1-349         ------MSQYIGKTISLISVTDNRYVGLLEDIDSEKGTVTLKEVRCFGTEGRKNWG---PEEIYPNPTVYNSVKFNGSEVKDLSILDANINDIQPVVPQMMPPASQFPPQQAQS----------------PPQA--QAQ-AHVQTNPQVPKPESNVPAAVAGYGVYTPTSTETATASMNDKS-------------------------TPQDT------NVNSQ-------------SRERGKNG----E--------------------------------NEPKYQRNKN----RSSNRPPQSNRNFKVDIPNEDFDFQSNNAKFTKGDSTDVEKEKE-----------------------------------------------LES------A-VHKQDESDEQFYNKKSSFFDTISTSTETNTN-----------------------------------------MRWQEEKMLNVDTFGQASARPRFH---S----RGLGRGRGNYRGNR-G-----NRGRGG--------QRGNYQNRNNY-----------QNDSGAYQNQN--------DSY-S---RPANQFSQPPSNV-------------------EF-----
+        tr|J6EL66|J6EL6/1-341         ------MSQYIGKTISLVSVTDNRYVGLLENIDSEKGTVTLKEVRCFGTEGRKNWG---PEEIYPNPTVYNSVKFNGSEVKDLSILDANINDIQPVVPQMVPPTSQLSSSQQAQ----------------S-------P-QEAQASPQAQKPVTNVPAAVAGYGVYTPTSTESTAVNKNDNA-------------------------IPRDV------NKNSQ-------------SRDERKDG----G--------------------------------NEQKYQRNKN----RSTNRPPQLNRNFKVEIPNEDFDFQSNNAKFTKEDSNDLEREQV-----------------------------------------------LES------A-AHRQDESDEACYNKTSSFFDTISTSTETNTN-----------------------------------------MRWQEEKVLNVDTFGQASARPRFH---S----RGRGRGRGNFRGN---------RGRGG--------QRGNYQNRNSY-----------QNTRGGFQNQN--------DSH-G---RSSNQFSQPSSNV-------------------EF-----
+        tr|G0VF95|G0VF9/1-370         ------MSEYIGKTISLISVTDNRYVGLLEGIDSDKGTVTLNEVRCFGTEGRKNWG---PDEIYPQNTVYNSVKFNGNEVKDLSILEVKIEDVHPVLPPTATAVPMMPMQEQPR-------------------S--QAP------PSQQSAPPQQVPSVVAGYGAYAPPPGSAASAPTATQTTTLPSE-------PT---------TQPQQT-----TAFSSST----------GESEFAGLQG----EI-------------------------------QPPHDRGNRE----RSNQNRRRGSHSRKIEIPKSDFDFQSSNAKFAKEAPDIANEHVESTSHD------------------------VPSSVH-VNDG------QETA------L-AQNENATPDTFYNKKSSFFDSISTSTEANTN-----------------------------------------MRWQEEKVLNLDTFGQTSARPNFH---GG---RGRGRGRGG---RG-GRG--RGRGGRG--------GRGGYYNNNQH-----------Q---GDYQNRN--------NNNYN---QHQQFSNDTTHQV-------------------EF-----
+        tr|G0WDM0|G0WDM/1-390         ------MSQYIGKTISLISVTDNRYVGLLEGIDSEKGTVTLNEVRCFGTEGRKGWG---PDEIYPTNNIYKSVKFNGNEVKDLSILEVSIEDVHPVLPPSATPVVPV-------------------------------P------IAEQQAAPPQVPQAMAGYGVYAPNQGGITSTADQYQHQQQAQQHQQQQEEPAPS-AAAVHQEEPAPIASVPTEEVASQNEQPRKEQQQQQQQQQQHVEG----EEPR------------------------RH--DHHPHNNEHK-----NHSHSHTRRSQQRNIEIPKSDFDFQSNNAKFTKQELSQSHHDAVAE--P------------------------VASTIEQTIQT------QTVT------A-QQAAQADPETFYNRKSSFFDTISTSTETNTN-----------------------------------------MRWQEEKVLNLDTFGQTSARPNFH---GG---RGG-RGRGNYRGRG-GRGRGNYRGRGG--------NRGGYNNNNR----------------NNYHSSN--------DGQ-----Q---FQSQSQPQV-------------------EF-----
+        tr|A7THK4|A7THK/1-333         ------MSQYIGKTISLISITDNRYVGLLEEIDSEKGTVTLRDVRCFGTEGRKNWG---PEEIYPNPKVYNSVKFNGNEVKDLNILDAKLEDVQPVMPPTAPNAQTS-------------------------------Q------PAQPAVAAPQVPAAMAGYGVYQPSEESQATPS-----------------------VGQASEERPKAAANNDSKQYQ-----------NQNQHQHQHQ-----------------------------------H---QHQHQHQHQ-----Y-QNQRRQQRPPQKIEIPKEDFDFQSNNAKFTKEGVEVPVEAAAEE---------------------------------------------LTN------E-NENSEETQEAFYNKKSSFFDSISTSTETNTN-----------------------------------------MTWTEEKEMNLDTFGQMSARPRFN---SN---RGNFRGRGRGRGRG-GRGRGRGRGRG------------GYNNNRD-----------------NYNQSG--------SNNYN---E---NYGSYRSNV-------------------EF-----
+        tr|Q6C957|Q6C95/1-292         ------MSQFIGKTISLISNSDIRYLGVLHEINSEESTVSLMKVRTFGTEGRTGGA----NEIPASDAVYDYVVFRGSDVKDLKIADESELEPQQAPKEEAEQVTQN-----------------------------------------ESPAAAPVQVQPPA-------------------------QPQQQ---SQPQAQPQVQEQAP------------------RKAR---PEPRQEPREA----R--E------------------------SR-----------EQ----RQREPREPREPREPRETPAQPFDFSSNQIEEFKKEMTE--------------------------------------------------------------------DEQTEKFYNKKSSFFDNISHSTREQQRDP---------------------------------------EQNRVNRELNLETFGQTDSGFRHNNFRGG---RGGRGGGRGGRGRG-GRGGRGGRGG-------------DGMSNRD----------------R------------------------ETFGSFTGPAP-------------------RWN----
+        tr|C4Y5A3|C4Y5A/1-281         ------MSQYIGKTISLISNKGLRYVGVLENINAEDATLALSQVRSLGTEGRMAQVGQPQAEVLPGADVYEHVVFRGSDVKDLSVIDVPVDQVGAHPGEASPQERSQ-------SRE--------QEHREPTHG--SRA-G-------PTPSAAPAAAQAP---------------SQTS-----AQAPAQT---GAAP-ASGVSGARPTAV-----------------SG---GAARPQPSAT----A--A------------------------DR---------------------ASATQTSENAQPGFDTAFDFESANARFEKEHAEH------------------------------------------------------------------------KPVYSKEKGFFDSMS--VNEGNG-----------------------------------------MRWNEERSLNMDTFGQASV-------------RRGRG---------------------------------NFRGRGR----------------GNFRGRG--------RG---------RDRGKPEPKP-------------------EWA----
+        tr|A3LQK8|A3LQK/1-323         ------MSQYIGKTISLISNKGLRYVGLLDNINADDATVALKSVRLFGTEGRMAAAGTPNLEVMPGSDVYDYVVFRGSDVKDLSVLDTPIDQVKPEPYIPAPQS------------------TAGYYQQQPTQT--SAP-SGALEAFGPSGVSDATPAQ----AVTAPS-------ATSY-----AEPEPRR---TKPE-PSRSQAQQPSSIYTQK------------QAQ---PVDRPNPDEK----T--S------------------------VF--DSEPSQ---AK----PAHRAYDNRRTSKAPEIPNDEFDFESANAKFTKELEHE--------------------------------------------------------------------KELEHSAYNKQSSFFDNISSSTEERGS-----------------------------------------MRWAEEKSLNLDTFGEASL-------------RGRGRG--RGRGRG-GRGGRGG----------------------R----------------GFWRGGR--------GRG------GQRNNNDYNTKP-------------------EWA----
+        tr|C5MDC8|C5MDC/1-343         ------MSQYIGKTISLISNKGLRYVGLLENINADDATVALKSVRLFGTEGRMAAMGQPHLEVSPGVDVYDYVVFRGSDVKDLSVLDTPIDEVKPNIYRPPQQQQQQ-------PTP-----TTGQYYSGPPST--TTA-NGAPQTQAPVTTTTATSAQSPVQSSVSQTTNVPAASPGQV-----AQAPVET---GIPE-APQVQNPAPTRTIDEEPLTKTVSENKPADAQ---PGSVPQPAAT---------------------------------------------------------QKPRRESKLDIPPEEFDFEQANAKFSKELEQE--------------------------------------------------------------------RELEHTGYNKSSSFFDNISSSTEERTN-----------------------------------------MRWSEERNLNMDTFGEASL-------------QRGGRGGRGGRGRG-GRGNWRGRGG-------------NYRGRGN----------------GNWRGGN--------NN--------RGRNSDYNTKP-------------------EWA----
+        tr|Q5AAR2|Q5AAR/1-347         ------MSQYIGKTISLISNKGLRYVGLLENINADDATVALKSVRLFGTEGRMAAMGQPNLEVPPGVDVYDYVVFRGSDVKDLSVLDTPIDEVKPNIYRPPQQQQQQ--------GA-----TTGQYYSGPTST--SSQ-NGTPQTQTQAPATTSTTTASQSYGQTSSSAPTQASPAQAV-----PAQPVQT---SAPE-AS-TSCQQPTKTVKEEQATKTVADDQPADAQ---PGSAPQPTAT--------------------------------------NPSS---NQ-----SQQQQQQPRKGSKVEIPTEEFDFEQANAKFSKELEQE--------------------------------------------------------------------RELEHAGYNKSSSFFDNISSSTDERTN-----------------------------------------MRWHEERNLNMDTFGEASL-------------QRGRG---RGRGRG-GRGNWRGRG--------------NYRGRG-----------------GNWRGGN--------SN--------RGRNSDYNTKP-------------------EWA----
+        //                
+
+.. _van.Nues-2011: https://doi.org/10.1038/emboj.2011.148
+
