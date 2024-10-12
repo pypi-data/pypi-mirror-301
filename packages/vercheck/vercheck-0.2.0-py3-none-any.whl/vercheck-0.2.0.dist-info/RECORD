@@ -1,0 +1,10 @@
+vercheck/__init__.py,sha256=vfqqq7Nkl0lwmgFk6ZIu1fUWtzmo2MSAg-ZR6QljzU4,83
+vercheck/about.py,sha256=EJN51fb9WUVtzjjmjfZdG6agnm4I6vf9AXIWypk6ot4,90
+vercheck/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vercheck/vercheck.py,sha256=kj-Jr_SjQKe4PIVCCsJez-gKzxQukF3LNUDL-9raxlM,6057
+vercheck-0.2.0.dist-info/LICENSE,sha256=6Rl8H9yOekaAtgxhJFotWmNfCy8usrDJJxKYb8Kno40,1075
+vercheck-0.2.0.dist-info/METADATA,sha256=fXQ-q9V0318op2eekjgifk9S23DG33qykTsqamgXHxg,8259
+vercheck-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vercheck-0.2.0.dist-info/entry_points.txt,sha256=tRz72pO6x5TmINXCh-9hmusZfjhdyL0dwmia5-61mNI,52
+vercheck-0.2.0.dist-info/top_level.txt,sha256=ADzvPbNj5ANHoKEEtgVFp9NTd0V3N7CvVQf39v_sguE,9
+vercheck-0.2.0.dist-info/RECORD,,
