@@ -1,0 +1,2 @@
+[console_scripts]
+pipewizard = pipewizard.main:main

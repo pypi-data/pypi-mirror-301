@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+pipewizard/__init__.py
+pipewizard/main.py
+pipewizard.egg-info/PKG-INFO
+pipewizard.egg-info/SOURCES.txt
+pipewizard.egg-info/dependency_links.txt
+pipewizard.egg-info/entry_points.txt
+pipewizard.egg-info/requires.txt
+pipewizard.egg-info/top_level.txt
