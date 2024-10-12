@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+HungarianScorer/HungarianScorer.py
+HungarianScorer/requirements.txt
+HungarianScorer.egg-info/PKG-INFO
+HungarianScorer.egg-info/SOURCES.txt
+HungarianScorer.egg-info/dependency_links.txt
+HungarianScorer.egg-info/requires.txt
+HungarianScorer.egg-info/top_level.txt
