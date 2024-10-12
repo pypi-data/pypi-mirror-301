@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flexpipe/__init__.py
+flexpipe/pipeline.py
+flexpipe/tracker.py
+flexpipe/transformation.py
+flexpipe.egg-info/PKG-INFO
+flexpipe.egg-info/SOURCES.txt
+flexpipe.egg-info/dependency_links.txt
+flexpipe.egg-info/requires.txt
+flexpipe.egg-info/top_level.txt
