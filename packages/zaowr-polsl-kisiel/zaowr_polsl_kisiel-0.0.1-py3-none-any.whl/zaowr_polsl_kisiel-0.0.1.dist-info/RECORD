@@ -1,0 +1,11 @@
+zaowr_polsl_kisiel/__init__.py,sha256=6wMZISKR9E-A7gDtIxCw8C9gBIV4z-5qIhLQLapFubU,134
+zaowr_polsl_kisiel/calibrate_camera.py,sha256=SI57-tCc780S67UlOpjqJgFnYMSH_5YnkJCduAAK9G4,5449
+zaowr_polsl_kisiel/example.py,sha256=rffvLCNGC8gAL9G2FkjjNj6E67bHg66_XiV_kF678gg,746
+zaowr_polsl_kisiel/load_calibration.py,sha256=2h8aMTWFN_AmBIdQjS4OX4vSL6Nl0L1jxYxYJgudSLY,1850
+zaowr_polsl_kisiel/remove_distortion.py,sha256=DCGizg7mv8HiJbMbgPm7B0rC6WRRKZkgBYgQ6_y-5_s,3747
+zaowr_polsl_kisiel/save_calibration.py,sha256=iZp58bCmULIr0sxXsjIxHSc6zfIKo98kS8-OVgv0Vss,742
+zaowr_polsl_kisiel-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+zaowr_polsl_kisiel-0.0.1.dist-info/METADATA,sha256=K2AtEVDIfrkDI-Tx-ucrq-TfvvaEY6c8f3zQ-t0oOA8,9199
+zaowr_polsl_kisiel-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+zaowr_polsl_kisiel-0.0.1.dist-info/top_level.txt,sha256=dQLuJ-3cAHBR8RxayeQGRpHYWop0Mslwl4fM9vz3dNo,19
+zaowr_polsl_kisiel-0.0.1.dist-info/RECORD,,
