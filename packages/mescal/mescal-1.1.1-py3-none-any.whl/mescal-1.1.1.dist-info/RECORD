@@ -1,0 +1,27 @@
+mescal/CPC.py,sha256=B5UgZHz6IlESyS8VpHoSOlpau1r3cjBhE8GfVjjH7-Q,3266
+mescal/__init__.py,sha256=vRmvr_h1RzzGS4cvo7lvsxnTQcXGiLtXgwfdpSduljA,845
+mescal/adapt_efficiency.py,sha256=SW1-v-ONB6VLuSQnJ9TPPdZEqOOMdGqf8RwzU2TCE7U,12517
+mescal/caching.py,sha256=e0GFK5_ZXz6H1_WIQ1KVSWNuT-Ii9EPQ_f-850A1umk,1124
+mescal/change_ecoinvent.py,sha256=hWunglinP7JqudvZXRsxYcS7nRqX5qQidlphdnsNHoY,13433
+mescal/database.py,sha256=zLkOHgYl5XAuBqnjS5ZM8YemHKtVNvS_VSf_k_kVJwk,32600
+mescal/double_counting.py,sha256=8Mir3F7nwgYswjRHbdGAL-q3RJ4bHdhsQgiIVoXVrS4,30599
+mescal/esm.py,sha256=ZnQNtBz5UzczSEDbCBztiiqAnuknt5_2oN03VHThMDQ,28471
+mescal/esm_back_to_lca.py,sha256=Lk20H8uJdhhV0tSZ5dY7exY5wPjEem1wNbrjxA2qkoQ,19687
+mescal/filesystem_constants.py,sha256=9c1FgPCP-rlYS4v2fhR_BpMftEEwnUaItr-6ro6Kc4g,261
+mescal/generate_lcia_obj_ampl.py,sha256=BrG-ZMnQEf_Uy6C5Jf6DsY_GjKVcDz-TqLmPL-at3sY,4044
+mescal/impact_assessment.py,sha256=_dua8FmDSK7XSvUxAXytnGRPOVhDeOcEI-fLlPPsYLk,7064
+mescal/link_to_premise.py,sha256=mjrNKR3p73JS0OZzm1Td1SHjAYFUetGPyPGdrPnJpGs,9754
+mescal/location_selection.py,sha256=71ybXXGIoH9sRQ42Thyp1MSFsRHVHMBbzvjXhH8D4oE,5196
+mescal/modify_inventory.py,sha256=9yKu3lPsP77T0ciI2LyGaiv78B2QFv6DJj1op7WDWj8,11351
+mescal/normalization.py,sha256=hJgNylfOTqnN7nWfcksmD7-KmNyxxHj0FBI3Fi-Qwe4,9541
+mescal/regionalization.py,sha256=XStWPvKMpYUbTxg-25mItrP5T8jgKPLJY-tqqE2gq2M,10830
+mescal/utils.py,sha256=PATdvED5E76qd8Dvs7Qn5n4zirJ5ULd8uCJMkm9mvjY,4381
+mescal/data/mapping_product_to_CPC.csv,sha256=fsq9jxHgz74PxchB7Cd5bl_6dpbC2Z_DjMll1Pbsrcs,10518
+mescal/data/ecoinvent_change_reports/Change Report Annex v3.8 - v3.9.xlsx,sha256=DOEMxzNfLYzXbWD0i3i9h23r1S02iAFFVYEBRFIUYSQ,8878632
+mescal/data/ecoinvent_change_reports/Change Report Annex v3.9 - v3.9.1.xlsx,sha256=SiUoNleXsNMs5KAj5VZoizNRu6XO_wXTHOczTycKZzc,215673
+mescal/data/ecoinvent_change_reports/Change Report Annex v3.9.1 - v3.10.xlsx,sha256=ijYlnygY2wSdNboFSEi5K-STcng6UYO8V8in4V4uzac,12988484
+mescal-1.1.1.dist-info/LICENSE,sha256=sKkU9EubrELRT-8YNSor71u-6_8kjLhOn5KdV5WwPW8,1092
+mescal-1.1.1.dist-info/METADATA,sha256=bvQFUhTkm9Avq53N-_oHiLtESOrJ9928_wrTBbHu87k,7085
+mescal-1.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mescal-1.1.1.dist-info/top_level.txt,sha256=5DDUPiq8nwIpq9lq-948SaiAs2SQtTiTvMDLJCPjuJA,7
+mescal-1.1.1.dist-info/RECORD,,
