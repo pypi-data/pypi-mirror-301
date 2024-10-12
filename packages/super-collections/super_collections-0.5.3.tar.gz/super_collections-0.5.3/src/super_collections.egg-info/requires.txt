@@ -1,0 +1,4 @@
+hjson
+
+[test]
+pytest>=7.0
