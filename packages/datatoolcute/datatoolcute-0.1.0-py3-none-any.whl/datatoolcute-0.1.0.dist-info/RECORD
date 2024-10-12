@@ -1,0 +1,10 @@
+datatoolcute/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datatoolcute/file/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datatoolcute/pandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datatoolcute/pandas/dframe.py,sha256=QHKI6AfATGcBZA1XH0EcF1qqaBTs5ckBI2lOXgugdb4,3415
+datatoolcute/pandas/multiframe.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datatoolcute/pandas/utils.py,sha256=wyPf5JL7lA7p6lcHtmYbOFZP9eG0_UAM_X1Ya48yJ58,643
+datatoolcute-0.1.0.dist-info/METADATA,sha256=p53lmINlWG-_hHaKaaXNfl93M3UvZXX0A-tapCYHzw0,367
+datatoolcute-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+datatoolcute-0.1.0.dist-info/top_level.txt,sha256=sSWGnw7GrXQQBpoYXmkJjD8YljuN2vAs4Wc_aD6zMH4,13
+datatoolcute-0.1.0.dist-info/RECORD,,
