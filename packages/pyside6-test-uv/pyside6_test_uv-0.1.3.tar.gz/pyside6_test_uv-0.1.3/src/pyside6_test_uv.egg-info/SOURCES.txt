@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/hello/__init__.py
+src/hello/__main__.py
+src/hello/app.py
+src/hello/main_window.py
+src/hello/main_window_ui.py
+src/pyside6_test_uv.egg-info/PKG-INFO
+src/pyside6_test_uv.egg-info/SOURCES.txt
+src/pyside6_test_uv.egg-info/dependency_links.txt
+src/pyside6_test_uv.egg-info/entry_points.txt
+src/pyside6_test_uv.egg-info/requires.txt
+src/pyside6_test_uv.egg-info/top_level.txt
