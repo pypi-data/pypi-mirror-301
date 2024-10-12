@@ -1,0 +1,7 @@
+anthropic
+lorem
+
+[dev]
+mypy
+pytest
+pytest-asyncio
