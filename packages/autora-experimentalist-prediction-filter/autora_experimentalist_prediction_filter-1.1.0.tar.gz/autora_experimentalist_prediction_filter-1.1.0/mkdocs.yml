@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+INHERIT: mkdocs/base.yml  # use the shared AutoRA configuration by default
+
+site_name: AutoRA prediction-filter
+repo_url: 'https://github.com/AutoResearch/autora-experimentalist-prediction-filter'
+
+nav:
+- Home: 'index.md'
+- Quickstart: 'quickstart.md'
+- Examples:
+  - Basic Usage: 'Basic Usage.ipynb'
+  - Usage On State: 'Usage On State.ipynb'
+
+
+
+
