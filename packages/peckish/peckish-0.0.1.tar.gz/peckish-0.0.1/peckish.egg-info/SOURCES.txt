@@ -1,0 +1,7 @@
+README.md
+setup.py
+peckish/__init__.py
+peckish.egg-info/PKG-INFO
+peckish.egg-info/SOURCES.txt
+peckish.egg-info/dependency_links.txt
+peckish.egg-info/top_level.txt
