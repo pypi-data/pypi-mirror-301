@@ -1,0 +1,6 @@
+pygame
+pyqt5>=5.15.9
+pyqt5-tools>=5.15.9.3.3
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.5.64
+numpy>=1.16.0
