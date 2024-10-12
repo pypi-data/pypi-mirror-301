@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: rev-deps
+Version: 0.0.2
+Summary: Find the names of all the projects that depend on another project, using Wheelodex.
+Project-URL: Issues, https://github.com/JamesParrott/rev-deps/issues
+Project-URL: Source, https://github.com/JamesParrott/rev-deps
+Author-email: James Parrott <james.parrott@proton.me>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# rev_deps
+
+Find the names of all the projects that depend on another project (all on PyPi), using Wheelodex.
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+pip install rev-deps
+```
+
+## Usage
+
+```console
+rev-deps <project_name>
+```
+
+## License
+
+`rev-deps` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
