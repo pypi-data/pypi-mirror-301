@@ -1,0 +1,2 @@
+[console_scripts]
+NGINXDomainManager = domain_manager.main:main
