@@ -1,0 +1,210 @@
+# 算法库组件帮助
+
+## 1、如何开始？
+
+### 1).准备好数据集，目前只支持seed数据集本身提供的特征，然后通过命令或修改utils.args中的参数设置好数据集路径:
+
+![image-20231204184157812](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20231204184157812.png)
+
+```cmd
+python main.py -dataset_path YourPath/SEED
+```
+
+**或直接修改utils.args.py中的默认参数设置**：
+
+![image-20231204171501972](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20231204171501972.png)
+
+### 2).使用命令在不同的实验设置，数据划分上做任务，目前只支持SEED数据集自身提供的体征：
+
+**确定要做的SEED数据集上的实验设置**
+
+![SEED第一次确定实验设置](C:\Users\TreeFrog\Pictures\SEED第一次确定实验设置.png)
+
+1、将每个subject的15个trail中的前9个trail分割成的sample作为训练集，后6个trail分割成的sample作为测试集
+
+```cmd
+python main.py -setting 'seed_sub_dependent_front_back_setting'
+```
+
+2、将每个subject的15个trail分为五折，做五折交叉验证（现在是依次按顺序选三个trail作为测试集）
+
+```cmd
+python main.py -setting 'seed_sub_dependent_5fold_setting' 
+```
+
+3、使用留一法，每次将1个subject的15个trail分割成的所有sample作为测试集，其他14个subject的15个trail分割成的所有sample作为训练集，循环15次汇报平均结果
+
+```cmd
+python main.py -setting 'seed_sub_independent_setting' 
+```
+
+4、三个session的数据，一个作为测试数据集，其余为训练数据
+
+```cmd
+python main.py -setting 'seed_cross_session_setting'  
+```
+
+5、自定义设置
+
+**对于SEED数据集，某些论文可能只使用了某些session的数据，为了验证复现结果，我们应该在命令行后添加 -sessions session id：**
+
+只用了第一个sessions的数据
+
+```cmd
+python main.py -setting 'seed_sub_dependent_front_back_setting' -sessions 1
+```
+
+用了前两个sessions的数据
+
+```cmd
+python main.py -setting 'seed_sub_dependent_front_back_setting' -sessions 1 2
+```
+
+**其他特征的使用，原文件中实验设置默认采用SEED数据集提供的经过线性平滑的DE特征，如果你想使用SEED数据集提供的其他特征，使用-dataset：**
+
+后跟格式应该为'seed_feature_type'
+
+使用DE特征
+
+```cmd
+python main.py -dataset 'seed_de'
+```
+
+使用PSD特征：
+
+```cmd
+python main.py -dataset 'seed_psd'
+```
+
+可用的特征：
+
+![image-20231204173635088](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20231204173635088.png)
+
+**其余特殊情况群上讨论**
+
+### 3）常见参数：
+
+![image-20240106141121261](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20240106141121261.png)
+
+```cmd
+-batch_size int
+-epochs int
+-device cpu or cuda
+-lr
+-metrics 
+#目前实现的有acc, macro-f1, micro-f1 
+#默认是只用acc, 如果要使用acc和macro-f1
+#则在命令后跟上-metrics 'acc' 'marco-f1'
+```
+
+## 2、算法文件结构
+
+![image-20240108160907248](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20240108160907248.png)
+
+## 3、如何添加自己的模型
+
+> 算法库内需要修改处：
+>
+> 1、models文件夹下创建自己的模型文件（一篇论文对应一个）
+>
+> 2、models/Models.py中将自己的模型添加进模型字典中
+
+### 1）读论文过程中
+
+两个需要注意的点：
+
+>  1、论文具体实现方法，有无可参考源码
+
+>  2、实验设置：
+
+​       a.选用的数据集，怎么进行的预处理
+
+​       b.实验场景(数据划分)
+
+​       c.模型超参
+
+### 2）模型应该规范的参数
+
+> a.如果模型输入的数据不是一个序列，则参数的顺序应该按照：
+
+(channels, feature_dim, num_classes, others)摆放
+
+channels是指输入的通道数
+feature_dim应该是频段的多少
+num_classes是分类数
+others是模型的其他超参
+
+---
+
+> b.如果输入的数据是一个序列，则参数的顺序应该按照：
+
+(sample_length, channels, feature_dim, num_classes, get_param, others)摆放
+
+sample_length是输入序列的长度
+
+拿DGCNN举例：
+
+![image-20240104182912640](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20240104182912640.png)
+
+### 3）自定义参数函数与超参配置文件
+
+为了保证能够自定义参数的设置，方便调整模型的参数
+
+每个模型应该有预设的yaml文件，以及相应地读取参数的函数
+
+yaml文件放置在config/model_param文件夹下
+文件大致组织形式为：
+
+![image-20240104183214659](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20240104183214659.png)
+
+相应的读取函数参考：
+
+![image-20240104183257668](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20240104183257668.png)
+
+### 4）模型的训练函数train_one_round()
+
+因为每个模型的训练方法不同，所以自己要根据自己模型的特殊性来设置独特的训练方式（Loss计算，优化器，调度器等等），给自己模型实现一个函数，起名叫train_one_round，参数如下：
+
+```cmd
+def train_one_round(self, args, round, train_data, train_label, test_data, test_label):
+```
+
+**如无很特殊的设置，例如loss值计算，直接抄DGCNN的再改变一些参数即可，**
+
+> 尽量与DGCNN的保持一致，方便后续的工作
+
+需要注意的是该函数需要返回一个字典，记录了每一轮最好的测试结果，格式应该是
+
+```python
+{ 'best_acc': acc,
+
+'best_macro-f1': marco-f1,
+
+...
+
+}
+```
+
+参照DGCNN设置就好
+
+**以上所有都应该包含在一个文件里面！！！！！**
+
+### 5）将模型添加到models/Models.py的字典当中
+
+示例：
+
+![image-20231204182229386](C:\Users\TreeFrog\AppData\Roaming\Typora\typora-user-images\image-20231204182229386.png)
+
+### 6）明确要跑的实验
+
+明确要跑的实验：
+
+  1、论文当中涉及到的关于脑电情感识别的实验
+
+  2、我们总结的实验设置
+
+总结好每次实验的超参，确保能复现，包括模型超参，学习率，训练轮次，随机数种子等，只要能调的都要固定住，确保可复现性
+
+
+
+# 代码有些功能不完善，也有一些问题，有什么建议或者问题发到群里或私发，我及时修正。

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["config","data_utils","models","Trainer","utils"]
+
+[project]
+name = "LibEER"
+version = "0.1.1"
+description = "LibEER: A Comprehensive Benchmark and Algorithm Library for EEG-based Emotion Recognition"
+authors = [
+    { name = "Yang Shusen", email = "yangshusen87@stu.xjtu.edu.cn" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.7"
+#homepage = "https://github.com/buttersen/libeer"
+keywords = ["emotion recognition", "eeg", "EEG-based emotion recognition"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+dependencies = [
+    "numpy>=1.17.0",
+    "torch>=1.0.0",
+    "tqdm>=4.0.0",
+    "scipy>=1.0.0",
+    "scikit-learn>=1.0.0"
+]
