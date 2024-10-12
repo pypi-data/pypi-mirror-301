@@ -1,0 +1,7 @@
+numpy
+scipy
+freetype-py
+fonttools
+fontFeatures
+ufoLib2
+ufo-extractor
