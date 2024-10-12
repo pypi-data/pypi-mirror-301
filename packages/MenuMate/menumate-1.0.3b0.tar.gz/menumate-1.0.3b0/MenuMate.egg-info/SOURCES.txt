@@ -1,0 +1,10 @@
+README.md
+setup.py
+MenuMate/Menu.py
+MenuMate/MenuItem.py
+MenuMate/MenuManager.py
+MenuMate/__init__.py
+MenuMate.egg-info/PKG-INFO
+MenuMate.egg-info/SOURCES.txt
+MenuMate.egg-info/dependency_links.txt
+MenuMate.egg-info/top_level.txt
