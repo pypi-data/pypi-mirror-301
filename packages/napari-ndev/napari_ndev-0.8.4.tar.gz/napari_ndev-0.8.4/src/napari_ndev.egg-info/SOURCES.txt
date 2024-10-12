@@ -1,0 +1,165 @@
+.gitattributes
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+MANIFEST.in
+README.md
+mkdocs.yml
+pyproject.toml
+setup.cfg
+tox.ini
+.github/workflows/deploy_docs.yml
+.github/workflows/test_and_deploy.yml
+.napari-hub/DESCRIPTION.md
+.napari-hub/config.yml
+docs/index.md
+docs/installation.md
+docs/api/helpers.md
+docs/api/image_overview.md
+docs/api/measure.md
+docs/api/morphology.md
+docs/api/plate_mapper.md
+docs/api/widgets/apoc_widget.md
+docs/api/widgets/custom_apoc_feature_set.md
+docs/api/widgets/image_utilities.md
+docs/api/widgets/measure_widget.md
+docs/api/widgets/workflow_widget.md
+docs/examples/.log.txt
+docs/examples/cpu_workflow-2roots-2leafs.yaml
+docs/examples/pixel-class-viewer.cl
+docs/examples/skimage_workflow.ipynb
+docs/examples/workflow.yaml
+docs/examples/Labels/cropped_neuron.ome
+docs/examples/Labels/cropped_neuron.ome.tiff
+docs/examples/images/cells3d2ch.tiff
+docs/examples/images/cropped_neuron.ome.tiff
+docs/examples/images/Labels/cropped_neuron.ome.tiff
+docs/examples/measure/measure_widget.ipynb
+docs/examples/measure/data/.log.txt
+docs/examples/measure/data/measure_props_Morphology.csv
+docs/examples/measure/data/measure_props_Morphology_grouped.csv
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_107_106_P1-H9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_10_9_P8-B9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_25_24_P8-C9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_2_1_P4-A9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_56_55_P8-D9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_57_56_P4-E9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_58_57_P3-E9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_99_98_P8-G9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_132_131_P20-H9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_36_35_P6-C9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_42_41_P7-C9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_46_45_P6-D9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_52_51_P10-D9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_70_69_P7-E9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_95_94_P11-F9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_110_109_P4-H9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_17_12_P6-B9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_1_0_P8-B9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_22_21_P7-B9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_35_34_TR2-C9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_4_3_P3-A9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_56_55_P7-D9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_62_61_P2-E9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_84_83_P13-F9.ome.tiff
+docs/examples/measure/labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_98_97_P9-G9.ome.tiff
+docs/examples/utilities/image_utilities.ipynb
+docs/examples/viewer-screenshots/APOC-custom-feature-set.png
+docs/examples/viewer-screenshots/apoc-annotation-viewer.png
+docs/examples/viewer-screenshots/apoc-predict-viewer.png
+docs/examples/viewer-screenshots/apoc-predict-viewer2.png
+docs/examples/viewer-screenshots/image-utilities-neuron-annotation.png
+docs/examples/viewer-screenshots/image-utilities-neuron-annotation.pong.png
+docs/examples/viewer-screenshots/image-utilities-no-annotation.png
+docs/examples/viewer-screenshots/image-utilities-with-annotation.png
+docs/examples/viewer-screenshots/measure_grouping.png
+docs/examples/viewer-screenshots/measure_idregex.png
+docs/examples/viewer-screenshots/measure_regionprops.png
+docs/examples/viewer-screenshots/measure_tx_map.png
+docs/examples/viewer-screenshots/napari-assistant-voronoi-otsu.png
+docs/examples/viewer-screenshots/workflow-widget-roots.png
+docs/examples/viewer-screenshots/workflow-widget-tasks.png
+docs/examples/workflow/workflow_napari-assistant.ipynb
+docs/examples/workflow/workflow_scripting.ipynb
+docs/examples/workflow/workflow_widget.ipynb
+docs/examples/workflow/resources/cpu_workflow-2roots-2leafs.yaml
+docs/examples/workflow/resources/viewer-segment-nuclei-sample.yaml
+docs/examples/workflow/resources/workflow.yaml
+docs/images/Plugin-Abstract-low.png
+docs/images/ndev-logo.png
+docs/images/neuralDev-icon.svg
+docs/images/neuralDev-logo.svg
+docs/images/qr codes/githubio-napari-ndev.png
+docs/scripts/gen_ref_pages.py
+src/napari_ndev/__init__.py
+src/napari_ndev/_napari_reader.py
+src/napari_ndev/_plate_mapper.py
+src/napari_ndev/_version.py
+src/napari_ndev/helpers.py
+src/napari_ndev/image_overview.py
+src/napari_ndev/measure.py
+src/napari_ndev/morphology.py
+src/napari_ndev/napari.yaml
+src/napari_ndev.egg-info/PKG-INFO
+src/napari_ndev.egg-info/SOURCES.txt
+src/napari_ndev.egg-info/dependency_links.txt
+src/napari_ndev.egg-info/entry_points.txt
+src/napari_ndev.egg-info/requires.txt
+src/napari_ndev.egg-info/top_level.txt
+src/napari_ndev/_tests/__init__.py
+src/napari_ndev/_tests/conftest.py
+src/napari_ndev/_tests/test_helpers.py
+src/napari_ndev/_tests/test_image_overview.py
+src/napari_ndev/_tests/test_import.py
+src/napari_ndev/_tests/test_measure.py
+src/napari_ndev/_tests/test_morphology.py
+src/napari_ndev/_tests/test_napari_reader.py
+src/napari_ndev/_tests/test_plate_mapper.py
+src/napari_ndev/_tests/resources/RGB.tiff
+src/napari_ndev/_tests/resources/measure_props_Labels.csv
+src/napari_ndev/_tests/resources/measure_props_Labels_grouped.csv
+src/napari_ndev/_tests/resources/Apoc/Annotations/SPF-4MM-22 slide 9-S6_Top Slide_TR2_p00_0_A01f00d0.tiff
+src/napari_ndev/_tests/resources/Apoc/Classifiers/newlabels_pixel_classifier.cl
+src/napari_ndev/_tests/resources/Apoc/Classifiers/newlabels_pixel_classifier.log.txt
+src/napari_ndev/_tests/resources/Apoc/Classifiers/test_classifier.cl
+src/napari_ndev/_tests/resources/Apoc/Classifiers/test_classifier.log.txt
+src/napari_ndev/_tests/resources/Apoc/Images/SPF-4MM-22 slide 9-S6_Top Slide_TR2_p00_0_A01f00d0.tiff
+src/napari_ndev/_tests/resources/Apoc/Images/SPF-4MM-22 slide 9-S9_Top Slide_TR5_p00_0_A01f00d0.tiff
+src/napari_ndev/_tests/resources/Apoc/OutputLabels/SPF-4MM-22 slide 9-S6_Top Slide_TR2_p00_0_A01f00d0.tiff
+src/napari_ndev/_tests/resources/Apoc/OutputLabels/SPF-4MM-22 slide 9-S9_Top Slide_TR5_p00_0_A01f00d0.tiff
+src/napari_ndev/_tests/resources/Apoc/OutputLabels/log.txt
+src/napari_ndev/_tests/resources/Measure/.log.txt
+src/napari_ndev/_tests/resources/Measure/measure_props_Morphology.csv
+src/napari_ndev/_tests/resources/Measure/Labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_2_1_P4-A9.ome.tiff
+src/napari_ndev/_tests/resources/Measure/Labels/2024-08-07 25x 24HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_56_55_P8-D9.ome.tiff
+src/napari_ndev/_tests/resources/Measure/Labels/2024-08-07 25x 48HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_36_35_P6-C9.ome.tiff
+src/napari_ndev/_tests/resources/Measure/Labels/2024-08-07 25x 72HIC NCOA4 647 FT 568 PHALL 488 DAPI OBL_22_21_P7-B9.ome.tiff
+src/napari_ndev/_tests/resources/Workflow/Images/cells3d2ch.tiff
+src/napari_ndev/_tests/resources/Workflow/Labels/cells3d2ch.tiff
+src/napari_ndev/_tests/resources/Workflow/ShapesAsLabels/cells3d2ch.tiff
+src/napari_ndev/_tests/resources/Workflow/workflows/cpu_workflow-2roots-2leafs.yaml
+src/napari_ndev/_tests/resources/Workflow/workflows/test_2roots_1leaf.yaml
+src/napari_ndev/_tests/resources/Workflow/workflows/test_cells3D.yaml
+src/napari_ndev/_tests/resources/outputs/Images/RGB.tiff
+src/napari_ndev/_tests/resources/outputs/Labels/RGB.tiff
+src/napari_ndev/_tests/resources/test_czis/0T-4C-0Z-2pos.czi
+src/napari_ndev/_tests/resources/test_czis/0T-4C-0Z-7pos.czi
+src/napari_ndev/_tests/resources/test_czis/0T-4C-0Z-snap.czi
+src/napari_ndev/_tests/resources/test_czis/0T-4C-0Z.czi
+src/napari_ndev/_tests/resources/test_czis/0T-4C-5Z.czi
+src/napari_ndev/_tests/resources/test_czis/10T-4C-0Z.czi
+src/napari_ndev/_tests/resources/test_czis/3T-4C-3Z-2pos.czi
+src/napari_ndev/_tests/resources/test_czis/3T-4C-3Z.czi
+src/napari_ndev/_tests/widgets/__init__.py
+src/napari_ndev/_tests/widgets/test_apoc_container.py
+src/napari_ndev/_tests/widgets/test_apoc_feature_stack.py
+src/napari_ndev/_tests/widgets/test_measure_container.py
+src/napari_ndev/_tests/widgets/test_utilities_container.py
+src/napari_ndev/_tests/widgets/test_workflow_container.py
+src/napari_ndev/widgets/__init__.py
+src/napari_ndev/widgets/_apoc_container.py
+src/napari_ndev/widgets/_apoc_feature_stack.py
+src/napari_ndev/widgets/_measure_container.py
+src/napari_ndev/widgets/_nimage_scene_widget.py
+src/napari_ndev/widgets/_utilities_container.py
+src/napari_ndev/widgets/_workflow_container.py
