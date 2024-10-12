@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: AnomalyLab
+Version: 0.1.1
+Summary: A Python package for empirical asset pricing analysis.
+Author: FinPhd
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: linearmodels
+Requires-Dist: rich
+Requires-Dist: tqdm
+Requires-Dist: deprecated
+
+# AnomalyLab
+ 
