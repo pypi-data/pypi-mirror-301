@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: inc-counter
+Version: 0.3
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Classifier: Operating System :: OS Independent
