@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+pytubepp/__init__.py
+pytubepp/main.py
+pytubepp.egg-info/PKG-INFO
+pytubepp.egg-info/SOURCES.txt
+pytubepp.egg-info/dependency_links.txt
+pytubepp.egg-info/entry_points.txt
+pytubepp.egg-info/requires.txt
+pytubepp.egg-info/top_level.txt
