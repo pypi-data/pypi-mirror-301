@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+appsync_ws_client/__init__.py
+appsync_ws_client/client.py
+appsync_ws_client/exceptions.py
+appsync_ws_client.egg-info/PKG-INFO
+appsync_ws_client.egg-info/SOURCES.txt
+appsync_ws_client.egg-info/dependency_links.txt
+appsync_ws_client.egg-info/requires.txt
+appsync_ws_client.egg-info/top_level.txt
