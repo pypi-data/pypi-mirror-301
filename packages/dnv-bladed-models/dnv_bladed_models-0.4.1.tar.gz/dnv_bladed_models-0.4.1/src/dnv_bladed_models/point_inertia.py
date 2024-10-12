@@ -1,0 +1,194 @@
+# coding: utf-8
+
+from __future__ import annotations
+
+from datetime import date, datetime  # noqa: F401
+from enum import Enum, IntEnum
+
+import re  # noqa: F401
+from typing import Any, Dict, List, Optional, Type, Union, Callable  # noqa: F401
+from pathlib import Path
+from typing import TypeVar
+Model = TypeVar('Model', bound='BaseModel')
+StrBytes = Union[str, bytes]
+
+from pydantic import AnyUrl, BaseModel, EmailStr, Field, validator, root_validator, Extra,PrivateAttr  # noqa: F401
+from pydantic import ValidationError
+from pydantic.error_wrappers import ErrorWrapper
+from pydantic.utils import ROOT_KEY
+from json import encoder
+
+from dnv_bladed_models.added_inertia import AddedInertia
+
+from dnv_bladed_models.vector3_d import Vector3D
+
+
+
+from .schema_helper import SchemaHelper 
+from .models_impl import *
+from .common_base_model import CommonBaseModel
+
+class PointInertia(AddedInertia, AddedInertiaType='PointInertia'):
+    r"""
+    An inertia added to a structural component.
+    
+    Attributes:
+    ----------
+    AddedInertiaType : str, default='PointInertia'
+        Defines the specific type of AddedInertia model in use.  For a `PointInertia` object, this must always be set to a value of `PointInertia`.
+
+    Mass : float, default=0
+        The mass to be added.
+
+    Offset : Vector3D
+
+    MomentOfInertiaTensor : List[float], default=list()
+        Moment of inertia tensor acting about the centre of mass. This tensor is defined using the local coordinate system of the attachment node.
+
+    CompleteInertiaTensor : float, default=0
+        The symmetric inertia tensor acting about the attachment node. This tensor is defined using the local coordinate system of the attachment node.
+
+    Notes:
+    -----
+    """
+    _relative_schema_path: str = PrivateAttr('Components/Tower/AddedInertia/PointInertia.json')
+    
+    AddedInertiaType: Optional[str] = Field(alias="AddedInertiaType", default='PointInertia')
+    Mass: Optional[float] = Field(alias="Mass", default=0)
+    Offset: Optional[Vector3D] = Field(alias="Offset", default=None)
+    MomentOfInertiaTensor: Optional[List[float]] = Field(alias="MomentOfInertiaTensor", default=list())
+    CompleteInertiaTensor: Optional[float] = Field(alias="CompleteInertiaTensor", default=0)
+
+    class Config:
+        extra = Extra.forbid
+        validate_assignment = True
+        allow_population_by_field_name = True
+        pass
+
+
+
+    def to_json(self, indent: Optional[int] = 2, **json_kwargs: Any) -> str:
+        r"""
+        Generates a JSON string representation of the model.
+
+        Parameters
+        ----------
+        indent : int
+            The whitespace indentation to use for formatting, as per json.dumps().
+
+        Examples
+        --------
+        >>> model.to_json()
+        Renders the full JSON representation of the model object.
+        """
+
+        json_kwargs['by_alias'] = True
+        json_kwargs['exclude_unset'] = False
+        json_kwargs['exclude_none'] = True
+        if self.Schema is None:
+            self.Schema = SchemaHelper.construct_schema_url(self._relative_schema_path)
+        
+        return super().json(indent=indent, **json_kwargs)
+
+
+    @classmethod
+    def from_file(cls: Type['Model'], path: Union[str, Path]) -> 'Model':
+        r"""
+        Loads a model from a given file path.
+
+        Parameters
+        ----------
+        path : string
+            The file path to the model.
+
+        Returns
+        -------
+        PointInertia
+            The model object.
+
+        Raises
+        ------
+        ValueError, ValidationError
+            If the JSON document does not correctly describe the model according to the model schema.
+
+        Examples
+        --------
+        >>> model = PointInertia.from_file('/path/to/file')
+        """
+        
+        return super().parse_file(path=path)
+
+
+    @classmethod
+    def from_json(cls: Type['Model'], b: StrBytes) -> 'Model':
+        r"""
+        Creates a model object from a JSON string.
+
+        Parameters
+        ----------
+        b: StrBytes
+            The JSON string describing the model.
+
+        Returns
+        -------
+        PointInertia
+            The model object.
+
+        Raises
+        ------
+        ValueError, ValidationError
+            If the JSON document does not correctly describe the model according to the model schema.
+
+        Examples
+        --------
+        >>> model = PointInertia.from_json('{ ... }')
+        """
+
+        return super().parse_raw(
+            b=b,
+            content_type='application/json')
+        
+
+    @classmethod
+    def from_dict(cls: Type['Model'], obj: Any) -> 'Model':
+        r"""
+        Creates a model object from a dict.
+        
+        Parameters
+        ----------
+        obj : Any
+            The dictionary object describing the model.
+
+        Returns
+        -------
+        PointInertia
+            The model object.
+
+        Raises
+        ------
+        ValueError, ValidationError
+            If the JSON document does not correctly describe the model according to the model schema.
+        """
+        
+        return super().parse_obj(obj=obj)
+
+
+    def to_file(self, path: Union[str, Path]):
+        r"""
+        Writes the model as a JSON document to a file with UTF8 encoding.
+
+        Parameters
+        ----------                
+        path : string
+            The file path to which the model will be written.
+
+        Examples
+        --------
+        >>> model.to_file('/path/to/file')
+        """
+
+        with open(file=path, mode='w', encoding="utf8") as output_file:
+            output_file.write(self.to_json())
+
+
+PointInertia.update_forward_refs()
