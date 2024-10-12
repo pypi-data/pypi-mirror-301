@@ -1,0 +1,8 @@
+setup.py
+promptgenio/__init__.py
+promptgenio/promptgenio.py
+promptgenio.egg-info/PKG-INFO
+promptgenio.egg-info/SOURCES.txt
+promptgenio.egg-info/dependency_links.txt
+promptgenio.egg-info/requires.txt
+promptgenio.egg-info/top_level.txt
