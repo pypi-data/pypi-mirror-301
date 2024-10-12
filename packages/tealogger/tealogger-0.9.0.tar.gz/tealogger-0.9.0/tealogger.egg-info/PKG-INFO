@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: tealogger
+Version: 0.9.0
+Summary: Tea Logger
+Author: TeaFTI
+License: MIT License
+        
+        Copyright (c) 2023 TeaFTI
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/TeaFTI/Python-TeaLogger
+Project-URL: Bug Tracker, https://github.com/TeaFTI/Python-TeaLogger/issues
+Keywords: tealogger
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+Provides-Extra: develop
+Requires-Dist: build; extra == "develop"
+Requires-Dist: pytest-cov; extra == "develop"
+Requires-Dist: pytest; extra == "develop"
+Requires-Dist: ruff; extra == "develop"
+Requires-Dist: twine; extra == "develop"
+Provides-Extra: test
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: ruff; extra == "test"
+
+# Tea Logger
+
+Python Tea Logger
+
+## Table of Content
+* [Overview](#overview)
+  * [Quick Start](#quick-start)
+  * [Level](#level)
+* [Note](#note)
+* [Reference](#reference)
+
+## Overview
+
+Tea Logger is a simple logging package for Python.
+
+### Quick Start
+
+Install the `tealogger` package, available on
+[Python Package Index (PyPI)](https://pypi.org/).
+
+```bash
+pip install tealogger
+```
+
+Import the `tealogger` package to use.
+
+```python
+import tealogger
+
+# Set the logging level (optional)
+tealogger.setLevel(tealogger.DEBUG)
+
+tealogger.warning("WARNING: Message")
+```
+
+### Level
+
+From high (`CRITICAL`) to low (`DEBUG`).
+
+* `CRITICAL` = 50
+* `FATAL` = `CRITICAL` (Do not use, use `CRITICAL` instead)
+* `ERROR` = 40
+* `WARNING` = 30
+* `WARN` = `WARNING` (Deprecated, use `WARNING` instead)
+* `INFO` = 20
+* `DEBUG` = 10
+* `NOTSET` = 0
+* `EXCEPTION`
+
+## Note
+
+### Child Logger
+
+When creating a child logger, if there are no handler(s) added, it will
+inherit the handle(s) from the parent. But if the parent logger itself
+is set to a higher level, the higher level gets respected. Since the
+parent handler(s) attached to the parent logger only output if the
+parent logger allows it.
+
+## Reference
+
+* [logging - Logging facility for Python](https://docs.python.org/3/library/logging.html)
+* [Logging HOWTO](https://docs.python.org/3/howto/logging.html)
+* [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html)
