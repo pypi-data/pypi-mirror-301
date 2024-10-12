@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: django_wplogin
+Version: 1.0.1
+Summary: Enhance the Django admin login page
+Author-email: Baptiste Mispelon <hello@bmispelon.rocks>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# django_wplogin
+Enhance your Django admin login page.
+
+Based on an idea by [@alexgmin](https://github.com/alexgmin)
+
+
+# Installation
+
+1) Install the package:
+```
+pip install django_wplogin
+```
+
+2) Add the application to your `INSTALLED_APPS`. Make sure it's **before** `django.contrib.admin`:
+```
+INSTALLED_APPS = [
+    ...
+    "django_wplogin",
+    "django.contrib.admin",
+    ...
+]
+```
+
+3) That's it. Your login page is now enhanced.
+
