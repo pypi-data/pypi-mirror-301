@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: lambda_kit
+Version: 1.0.4
+Summary: A tool to package Python code for AWS Lambda.
+Author-email: Omar Crosby <omar.crosby@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Omar Crosby
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/ocrosby/lambda-kit
+Keywords: aws,lambda,packaging,deployment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: aws-lambda-typing
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: invoke; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+
+# Lambda Kit
+
+Yet another CLI tool for packaging Python Lambda functions and Lambda layers.
+
+## Overview
+
+Whenever I try to create new AWS Lambda functions in Python I always have difficulty packaging the code 
+and dependencies. This tool is designed to make it easier to package and deploy Python Lambda functions and Lambda 
+layers.
+
+## Installation
+
+```shell
+pip install lambda-kit
+```
+
+## Usage
+
+Display the help menu:
+
+```bash
+lambda-kit --help
+```
+
+## Features
+
+- Package Lambda functions
+- Package Lambda layers
+
+## Usage
+
+Packaging Lambda Functions
+
+```bash
+lambda-kit package --function-name my-function --source-dir /path/to/source --output-dir /path/to/output
+```
+
+Packaging Lambda Layers
+
+```bash
+lambda-kit package --layer-name my-layer --source-dir /path/to/source --output-dir /path/to/output
+```
+
+## References
+
+- [AWS Lambda](https://aws.amazon.com/lambda/)
+- [AWS Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
+- [AWS Lambda Deployment Package](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
+- [AWS Lambda Layers Deployment Package](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
