@@ -1,0 +1,5 @@
+geopy
+python-dotenv
+rasterio
+requests
+scipy
