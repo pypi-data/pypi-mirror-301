@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cli/__init__.py
+cli/cli.py
+uma_auth_cli.egg-info/PKG-INFO
+uma_auth_cli.egg-info/SOURCES.txt
+uma_auth_cli.egg-info/dependency_links.txt
+uma_auth_cli.egg-info/entry_points.txt
+uma_auth_cli.egg-info/requires.txt
+uma_auth_cli.egg-info/top_level.txt
