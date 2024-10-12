@@ -1,0 +1,10 @@
+README.md
+setup.py
+MrLou_AudioCodes/__init__.py
+MrLou_AudioCodes/acsbc_api.py
+MrLou_AudioCodes.egg-info/PKG-INFO
+MrLou_AudioCodes.egg-info/SOURCES.txt
+MrLou_AudioCodes.egg-info/dependency_links.txt
+MrLou_AudioCodes.egg-info/top_level.txt
+test/test.py
+test/test2.py
