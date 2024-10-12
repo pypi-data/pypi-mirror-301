@@ -1,0 +1,10 @@
+name: SMS_BP
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - setuptools
+  - setuptools-scm
+  - pip:
+    - -r requirements.txt
