@@ -1,0 +1,7 @@
+pika
+pika-stubs
+pydantic-settings
+orjson
+
+[dev]
+twine>=5.1.1

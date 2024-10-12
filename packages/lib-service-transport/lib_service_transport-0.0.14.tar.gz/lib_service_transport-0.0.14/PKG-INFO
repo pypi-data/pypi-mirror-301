@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lib_service_transport
+Version: 0.0.14
+Home-page: https://gitlab.it-rs.ru/askona/lib-service-transport
+Author: 
+Author-email: intelligent174@mail.ru
+License: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pika
+Requires-Dist: pika-stubs
+Requires-Dist: pydantic-settings
+Requires-Dist: orjson
+Provides-Extra: dev
+Requires-Dist: twine>=5.1.1; extra == "dev"
+
+# lib-service-transport
+
+Библиотека для организации транспорта между внутренней и внешней частью сервисов
