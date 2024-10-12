@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: stapesai-ssi
+Version: 0.0.2
+Summary: This project builds upon Whisper and VAD systems to provide plug and play solutions (FastAPI router) that can be easily included in any AI Assistant type project to have Streaming ASR in their application.
+Author: Devasheesh Mishra <devasheeshmishra4@gmail.com>, Mayank Sharma <sharmayank1608@gmail.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: torch==2.4.1
+Requires-Dist: numpy==2.1.2
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: pydantic-settings==2.5.2
+Requires-Dist: fastapi==0.115.0
+Requires-Dist: colorlog==6.8.2
+Requires-Dist: torchaudio==2.4.1
+Requires-Dist: python-ffmpeg==2.0.12
+Provides-Extra: dev
+Requires-Dist: black==24.10.0; extra == "dev"
+Requires-Dist: ipykernel==6.29.5; extra == "dev"
+Requires-Dist: twine==5.1.1; extra == "dev"
+Requires-Dist: pre-commit==4.0.1; extra == "dev"
+Requires-Dist: pyaudio==0.2.14; extra == "dev"
+Requires-Dist: jupyterplot==0.0.3; extra == "dev"
+Requires-Dist: matplotlib==3.9.2; extra == "dev"
+Requires-Dist: websockets==13.1; extra == "dev"
+Requires-Dist: uvicorn==0.31.1; extra == "dev"
+Requires-Dist: termcolor==2.5.0; extra == "dev"
+Requires-Dist: pandas==2.2.3; extra == "dev"
+Requires-Dist: seaborn==0.13.2; extra == "dev"
+Requires-Dist: tqdm==4.66.5; extra == "dev"
+Requires-Dist: datasets==3.0.1; extra == "dev"
+Requires-Dist: ipywidgets==8.1.5; extra == "dev"
+Requires-Dist: soundfile==0.12.1; extra == "dev"
+Requires-Dist: ipython==8.28.0; extra == "dev"
+Requires-Dist: huggingface-hub==0.25.2; extra == "dev"
+Requires-Dist: toml==0.10.2; extra == "dev"
