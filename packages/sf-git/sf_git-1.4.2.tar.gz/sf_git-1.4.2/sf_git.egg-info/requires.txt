@@ -1,0 +1,10 @@
+pip>=21.3.1
+setuptools>=56
+pandas
+coverage
+python-dotenv
+click==7.1.2
+deepdiff
+gitpython>=3.1
+requests
+urllib3
