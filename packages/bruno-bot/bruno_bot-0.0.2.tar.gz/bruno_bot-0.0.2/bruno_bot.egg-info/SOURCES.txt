@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+bruno_bot.egg-info/PKG-INFO
+bruno_bot.egg-info/SOURCES.txt
+bruno_bot.egg-info/dependency_links.txt
+bruno_bot.egg-info/top_level.txt
