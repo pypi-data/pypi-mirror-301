@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: streamlit_image_annotation_customize
+Version: 0.4.40
+Summary: streamlit components for image annotation
+Home-page: https://github.com/hirune924/Streamlit-Image-Annotation
+Author: hirune924
+Keywords: Python,Streamlit,React,JavaScript
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=0.63
+Requires-Dist: matplotlib>=3.7.0
+
+
+# 開発環境構築
+
+## フロントエンドを立ち上げ
+NodeJS 16が必要
+```bash
+cd streamlit_image_annotation_customize/streamlit_image_annotation/Detection
+yarn
+yarn start
+```
+`streamlit_image_annotation_customize/__init__.py` で `IS_RELEASE = False` に設定する
+
+## annotation_tool コーロがローカル「streamlit_image_annotation_customize」ライブラリをインストールする
+既存のライブラリを削除
+
+```
+pip uninstall streamlit_image_annotation_customize
+```
+
+streamlit_image_annotation_customizeのコードフォルダー(setup.pyファイルがあるフォルダー)で下記のコマンドで実行
+
+```
+pip install -e .
+```
+
+これでannotation_toolで利用できるようになり、フロントエンドの修正をしたら、すぐに反映される
+
+
+# pypiに公開
+
+## ~/.pypirc を下記の内容で作成する (１回のみ)
+
+```
+[pypi]
+  username = __token__
+  password = ***
+```
+
+## frontendビルド
+
+```bash
+cd streamlit_image_annotation_customize/Detection/frontend
+yarn build
+```
+and set `IS_RELEASE = True` in `streamlit_image_annotation_customize/__init__.py`.
+
+and `setup.py`で公開バージョン番号を設定  `version="xx.xx.xx" `
+
+## make wheel
+
+```bash
+python setup.py sdist
+python setup.py sdist bdist_wheel
+```
+## upload
+
+```bash
+twine upload dist/*
+```
+## 利用
+
+```bash
+pip install streamlit_image_annotation_customize
+```
