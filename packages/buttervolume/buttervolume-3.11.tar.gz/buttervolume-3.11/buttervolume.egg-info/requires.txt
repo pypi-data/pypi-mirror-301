@@ -1,0 +1,5 @@
+bottle
+urllib3<1.27,>=1.21.1
+requests-unixsocket
+waitress
+webtest
