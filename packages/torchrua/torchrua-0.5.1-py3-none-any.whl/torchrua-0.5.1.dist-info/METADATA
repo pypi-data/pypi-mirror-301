@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: torchrua
+Version: 0.5.1
+Summary: rua your variable-length tensors!
+Home-page: https://github.com/speedcell4/torchrua
+Author: speedcell4
+Author-email: speedcell4@gmail.com
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: torch
+
