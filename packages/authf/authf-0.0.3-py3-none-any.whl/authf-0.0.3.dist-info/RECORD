@@ -1,0 +1,12 @@
+authf/__init__.py,sha256=k5tJXhBQJ4l9fKHJ76K5w98zBHoYvNk9r-UNH6eQ2-k,21
+authf/add_offline.py,sha256=EDT4eha_1iq4O4vkZIC0MuAeZZc7nVuYhVCsrGALHeA,3530
+authf/cli.py,sha256=rQsGANdioL_4I1LgIBokIk2XlqAPA14CKvZPRYBriGI,11248
+authf/encryption.py,sha256=bUe4BCldu8-G9xNsTRULtXXvLFUFTRktup2vweTtsBM,5156
+authf/engine.py,sha256=PX0r9TamN-MiEGbruJxiOcT6SiGmb_jIJYK-9E-w4QE,4399
+authf/test_engine.py,sha256=LZw7VHzUxBwiaEjjSHlkkLQLKHljaSAh0A5V13cpoU4,618
+authf-0.0.3.dist-info/LICENSE,sha256=JBEMj2N9TJjoOs-g6A7aCbd-s7tx-AbwMfnrGYZ63As,1067
+authf-0.0.3.dist-info/METADATA,sha256=oZah-qT16BjodymbYxRmTKKA0vAJkTSLKFKaW68RYNg,2963
+authf-0.0.3.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+authf-0.0.3.dist-info/entry_points.txt,sha256=P774SagNTaYwLDCiKFCJ1RKLEW7UGRC1Hf4KSaW0CF4,41
+authf-0.0.3.dist-info/top_level.txt,sha256=c5ZMnW6wdsRBWityGCsPv8MPXMwrZqkKrfXQN9T0fMs,6
+authf-0.0.3.dist-info/RECORD,,
