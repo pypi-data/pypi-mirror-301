@@ -1,0 +1,2 @@
+[console_scripts]
+wsdl2file = wsdl2file.command:main
