@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: merge_code
+Version: 0.1.0
+Summary: A tool to merge source code files for software copyright application
+Project-URL: Homepage, https://github.com/songyi1999/merge_code
+Project-URL: Bug Tracker, https://github.com/songyi1999/merge_code/issues
+Author-email: Your Name <your.email@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
