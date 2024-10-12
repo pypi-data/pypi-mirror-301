@@ -1,0 +1,115 @@
+{
+  "web-front": [
+    {
+      "src": [
+        "components",
+        "containers",
+        "services",
+        "utils",
+        "assets",
+        "styles",
+        "hooks",
+        "context",
+        "pages",
+        "main.py"
+      ]
+    },
+    "public",
+    "tests",
+    "build",
+    "node_modules",
+    "package.json",
+    "README.md",
+    ".gitignore",
+    ".eslintrc",
+    ".prettierrc"
+  ],
+  "web-back": [
+    {
+      "app": [
+        {
+          "app_demo": [
+            "migrations",
+            "static",
+            "templates",
+            "models.py",
+            "views.py",
+            "urls.py",
+            "admin.py",
+            "tests.py",
+            "serializers.py",
+            "forms.py"
+          ]
+        },
+        "media",
+        "static",
+        "templates",
+        "main.py",
+        "config.py"
+      ]
+    },
+    "requirements.txt",
+    ".env",
+    "README.md",
+    ".gitignore"
+  ],
+  "app": [
+    {
+      "lib": [
+        "screens",
+        "widgets",
+        "models",
+        "services",
+        "utils",
+        "assets",
+        "main.py"
+      ]
+    },
+    "test",
+    "build",
+    "README.md",
+    ".gitignore"
+  ],
+  "project": [
+    { "dics": ["image"] },
+    "bin",
+    "examples",
+    "scripts",
+    "src",
+    "tests"
+  ],
+  "aiogram-bot": [
+    {
+      "bot": [
+        { "filters": ["__init__.py", "admin.py"] },
+        {
+          "handlers": [
+            "__init__.py",
+            "admin.py",
+            "echo.py",
+            "menu.py",
+            "user.py"
+          ]
+        },
+        { "keyboards": ["__init__.py", "inline.py", "reply.py"] },
+        { "middlewares": ["__init__.py", "config.py", "database.py"] },
+        { "misc": ["__init__.py", "states.py"] },
+        { "services": ["__init__.py", "broadcaster.py"] },
+        { "handlers": ["__init__.py", "user_handlers.py"] },
+        "__init__.py",
+        "config.py"
+      ]
+    },
+    ".env",
+    "bot.py"
+  ],
+  "config": [
+    "README.md",
+    ".gitignore",
+    "LICENSE",
+    "CHANGELOG.md",
+    ".editorconfig",
+    "CONTRIBUTING.md",
+    "requirements.txt"
+  ]
+}
