@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyxargs.py
+setup.py
+pyxargs.egg-info/PKG-INFO
+pyxargs.egg-info/SOURCES.txt
+pyxargs.egg-info/dependency_links.txt
+pyxargs.egg-info/entry_points.txt
+pyxargs.egg-info/top_level.txt

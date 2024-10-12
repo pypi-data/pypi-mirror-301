@@ -1,0 +1,3 @@
+[console_scripts]
+pyxargs = pyxargs:main
+pyxr = pyxargs:main
