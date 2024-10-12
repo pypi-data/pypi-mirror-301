@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+#  constant.py
+#
+#  Copyright 2020-2024 Rob van Nues <sborg63@disroot.org>
+#
+#  "Licensed under the EUPL-1.2 or later"
+#
+# DO NOT EDIT THE PYTHON SOURCE FILE 'constant.py'; 
+# IT WILL BE REGENERATED AUTOMATICALLY FROM .TXT FILES.
+# CHANGE '2_shared.txt' and '3_EXP.txt' INSTEAD.
+# LOOK AND FEEL AND OTHER GENERAL OPTIONS ARE IN 
+# '2_shared.txt'. ALL SETTINGS SPECIFIC FOR THE 
+# EXPERIMENT/SESSION ARE IN '3_EXP.txt'
+#
+#
+
+"""Module with constants.
+
+Notes
+-----
+This file ``constant.py`` is actually a link/shortcut to 
+``coalispr.resources.constant_out.constant_{EXP}.py``,
+for EXP as defined in this file.
+
+For notes on file naming and experiment descriptors in 
+this file see ``howtoguides.html#Configuration`` in the documentation.
+"""
+
+from pathlib import Path
+
+# File names of configuration-templates
+SHARED = '2_shared.txt'
+EXPTXT = '3_EXP.txt'
+ 
