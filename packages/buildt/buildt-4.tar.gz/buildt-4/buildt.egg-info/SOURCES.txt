@@ -1,0 +1,11 @@
+README.md
+__init__.py
+__main__.py
+pyproject.toml
+./__init__.py
+./__main__.py
+buildt.egg-info/PKG-INFO
+buildt.egg-info/SOURCES.txt
+buildt.egg-info/dependency_links.txt
+buildt.egg-info/entry_points.txt
+buildt.egg-info/top_level.txt
