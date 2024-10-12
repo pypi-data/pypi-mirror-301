@@ -1,0 +1,10 @@
+img2tags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+img2tags/common.py,sha256=l1GXyS_8Czdn_piACugubELnIXBByOnqrGRdpnAE2z8,1604
+img2tags/img2tags.py,sha256=KHmfqaXMEUB8Og3tMSWaJrJWMI68rGizWG2N2ek9cvI,10511
+img2tags/img2text.py,sha256=Dnm4vV8NC6dHGZXVXLlDu-M-UKY5tCD4QSxiNevvpY8,9918
+img2tags/tagger.py,sha256=OpLW_AJftbdXFEFimpesxlIDmOpTo-zVVgUG7lPvwx4,3271
+img2tags-1.6.4.dist-info/METADATA,sha256=_Bykk5MRYoZcyrtgFyns2u9tnxz3oKsZtv4d2xoQDAA,2898
+img2tags-1.6.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+img2tags-1.6.4.dist-info/entry_points.txt,sha256=W2qXRQ4KFbLfg1DTCkhShNLqgEELvksWg4v3Dn3NT-Q,86
+img2tags-1.6.4.dist-info/licenses/LICENSE.txt,sha256=6NOvJw57FcyrkISB5Kiy2gOyfMeto8mCbPcJ3160nJ4,11342
+img2tags-1.6.4.dist-info/RECORD,,
