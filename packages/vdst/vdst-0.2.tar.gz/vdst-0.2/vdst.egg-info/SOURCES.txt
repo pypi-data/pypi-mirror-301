@@ -1,0 +1,9 @@
+README.md
+setup.py
+vdst/__init__.py
+vdst/template.py
+vdst.egg-info/PKG-INFO
+vdst.egg-info/SOURCES.txt
+vdst.egg-info/dependency_links.txt
+vdst.egg-info/entry_points.txt
+vdst.egg-info/top_level.txt
