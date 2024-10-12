@@ -1,0 +1,4 @@
+midas-mosaik>=2.0.0a1
+mosaik_api
+numpy
+polars

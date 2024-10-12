@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: midas-powerseries
+Version: 2.0.0a4
+Summary: A MIDAS module for a electrical power timeseries simulator.
+Author-email: Stephan Balduin <stephan.balduin@offis.de>
+Project-URL: Documentation, https://midas-mosaik.gitlab.io/midas
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: midas-mosaik>=2.0.0a1
+Requires-Dist: mosaik_api
+Requires-Dist: numpy
+Requires-Dist: polars
