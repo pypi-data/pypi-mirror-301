@@ -1,0 +1,13 @@
+numpy>=1.15.0
+scipy>=1.8.0
+matplotlib
+pylops>=2.0.0
+torch
+cmcrameri
+openpyxl
+tqdm
+obspy
+
+[test]
+pytest
+pytest-cov
