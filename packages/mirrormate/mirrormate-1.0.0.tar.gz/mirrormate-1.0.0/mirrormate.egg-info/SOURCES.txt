@@ -1,0 +1,9 @@
+README.md
+setup.py
+mirrormate/__init__.py
+mirrormate/cli.py
+mirrormate/clone.py
+mirrormate.egg-info/PKG-INFO
+mirrormate.egg-info/SOURCES.txt
+mirrormate.egg-info/dependency_links.txt
+mirrormate.egg-info/top_level.txt
