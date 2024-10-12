@@ -1,0 +1,2 @@
+[console_scripts]
+k230_flash = kburn.k230_flash:main
