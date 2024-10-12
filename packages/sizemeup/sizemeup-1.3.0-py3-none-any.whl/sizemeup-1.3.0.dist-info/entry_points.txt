@@ -1,0 +1,4 @@
+[console_scripts]
+sizemeup=sizemeup.cli.sizemeup:main
+sizemeup-build=sizemeup.cli.build:main
+
