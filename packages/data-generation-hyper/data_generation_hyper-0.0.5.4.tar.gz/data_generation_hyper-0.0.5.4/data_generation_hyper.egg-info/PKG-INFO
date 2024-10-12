@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: data-generation-hyper
+Version: 0.0.5.4
+Summary: Library for synthetic data generation
+Home-page: https://github.com/cesbid/data_generation
+Author: Cesare Bidini, Onuralp Guvercin, Emin Yuksel, Mevlut
+Author-email: cesare.bidini@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Code Generation using main_script.py
+
+This script is designed to generate code snippets using various parameters. You can customize the parameters directly in the script or by modifying the JSON file in the config folder.
+The generated codes are less than the requested because the algorithm drops duplicated ones.
+Inside prompts folder/prompt_list_and_probabilities can be found the probabilities with which the four different prompts templates are selected, the proportions can be changed in this file.
+
+## Parameters
+
+- `api_key`: Your API key for accessing the code generation service.
+- `share`: A dictionary specifying the share of snippets for each language.
+- `Total_number`: Total number of snippets to extract.
+- `batch_size`: Batch size for parallel processing.
+- `n_jobs`: Number of parallel jobs to run (null for automatic detection).
+- `model`: The model to use for code generation.
+- `temperature_problem`: Temperature for creating the problem text.
+- `temperature_solution`: Temperature for creating the solution text.
+- `test`: Whether to run in test mode (produces only 6 example generated samples).
+
+## Default Values
+
+Here are the default values for each parameter:
+
+- `api_key`: "aaa"
+- `share`: {"Python" : 0.40, "C++" : 0.05, ... }
+- `Total_number`: 100
+- `batch_size`: 3
+- `n_jobs`: null
+- `model`: "meta-llama/Llama-3-70b-chat-hf"
+- `temperature_problem`: 0.7
+- `temperature_solution`: 0.5
+- `test`: false
+
+## Running the Script
+
+To run the script with the default parameters, use the following command:
+
+```bash
+python app/main_coder.py
+
+## Author
+- Onur Alp GÃ¼vercin
+- Cesare Bidini
