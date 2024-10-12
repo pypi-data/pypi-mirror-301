@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: ally-ai-chroma
+Version: 0.4.3
+Summary: langchain chroma package for ally
+Author-email: Tugbay Atilla <tugbayatilla@gmail.com>
+Project-URL: Homepage, https://github.com/users/tugbayatilla/projects/3/
+Project-URL: Issues, https://github.com/users/tugbayatilla/projects/3/views/8
+Project-URL: Repository, https://github.com/tugbayatilla/ally_ai.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ally-ai-core~=0.4.0
+Requires-Dist: ally_ai_langchain~=0.2.0
+Requires-Dist: chromadb~=0.5.3
+Requires-Dist: langchain_chroma~=0.1.2
+
+# Ally AI Chroma
+
+## How to use
+
+### Config File
+
+#### Use API
+
+```yaml
+chromadb:
+  host: "<endpoint>"
+  port: 8000
+  ssl: False
+```
+
+#### Use Local
+```yaml
+chromadb:
+  persist_directory: './chroma/chroma'
+```
+
+
+### Initialize
+
+```python
+from ally_ai_chroma import Chroma
+
+chroma = Chroma()
+```
+
+
+

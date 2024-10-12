@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+ally_ai_chroma/Chroma.py
+ally_ai_chroma/__init__.py
+ally_ai_chroma.egg-info/PKG-INFO
+ally_ai_chroma.egg-info/SOURCES.txt
+ally_ai_chroma.egg-info/dependency_links.txt
+ally_ai_chroma.egg-info/requires.txt
+ally_ai_chroma.egg-info/top_level.txt

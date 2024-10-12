@@ -1,0 +1,4 @@
+ally-ai-core~=0.4.0
+ally_ai_langchain~=0.2.0
+chromadb~=0.5.3
+langchain_chroma~=0.1.2
