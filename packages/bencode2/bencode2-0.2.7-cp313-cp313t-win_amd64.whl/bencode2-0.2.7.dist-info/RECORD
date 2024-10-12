@@ -1,0 +1,17 @@
+bencode2/__init__.py,sha256=CUrdHkgSP_9mkdKiTwjFqsidZH9DW0ydFHUOWAythIQ,429
+bencode2/__init__.pyi,sha256=ljdLzIsFpc7aa_3eQN-gc-KqQNEc3JHn8pdzc_2c8QA,231
+bencode2/_bencode.cp313t-win_amd64.pyd,sha256=38OF-INidmfrxbnDI93V4Pz_jRp_CgpDCH14JJ5u3k8,229888
+bencode2/_decoder.py,sha256=MOaeIrxAeVoTC_CuwhanKm3vQPsBoDLIAQ9qYEVIG_I,6287
+bencode2/_encoder.py,sha256=rykRkPKg0WapJPwjsK_umoS2inKvlBvM1oXQkl92K3Y,3689
+bencode2/bencode.cpp,sha256=JFBk_CulqYiAVUL3kLWugukOLP9umrCXrCLrtFmxIGM,724
+bencode2/common.h,sha256=pN_X0yCSYdoHl0JsZqrUqTnoC3aDCAGdI3Zu_iiK8Y0,2873
+bencode2/ctx.h,sha256=JYL03XzLApzqA1iXlxZVFkpp_4mlAcTus-N99tONKNE,1328
+bencode2/decode.cpp,sha256=lV1uGhv2p0Getz7gieWHF_v2TKXBv65H66hstytjhaI,7267
+bencode2/encode.cpp,sha256=Y9eV4QUe7zDjOQffArTuOVdJVsnzcWfRWu1rgLMVepg,11796
+bencode2/overflow.h,sha256=3_Ueq-POAMgDOBDtBArt3ztja3E_HicDpHzBGmN4xL0,1160
+bencode2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bencode2-0.2.7.dist-info/LICENSE,sha256=EEoYi1hvWZLRB6rUABEsjEdCJ56eZs_20XL8mJO-SfA,1106
+bencode2-0.2.7.dist-info/METADATA,sha256=e18kiBYr-By9PkJQLqEhan-Kn5XL-7OuPtD_JfTLTvs,3194
+bencode2-0.2.7.dist-info/WHEEL,sha256=bqkyI4vLYFHaLsI8TDSZ56SphAJnO24tmJJlqTas_yE,102
+bencode2-0.2.7.dist-info/top_level.txt,sha256=X79h81kwbP5Ffn5c2lhZh_XMN6fC9Ix7OEMuNSnjSPI,9
+bencode2-0.2.7.dist-info/RECORD,,
