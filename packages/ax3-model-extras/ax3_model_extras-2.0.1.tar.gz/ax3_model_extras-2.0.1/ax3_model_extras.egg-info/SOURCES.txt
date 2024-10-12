@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ax3_model_extras/__init__.py
+ax3_model_extras/apps.py
+ax3_model_extras/fields.py
+ax3_model_extras/storages.py
+ax3_model_extras/validators.py
+ax3_model_extras.egg-info/PKG-INFO
+ax3_model_extras.egg-info/SOURCES.txt
+ax3_model_extras.egg-info/dependency_links.txt
+ax3_model_extras.egg-info/requires.txt
+ax3_model_extras.egg-info/top_level.txt
+ax3_model_extras/locale/es/LC_MESSAGES/django.mo
+ax3_model_extras/locale/es/LC_MESSAGES/django.po
