@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+Billionaires_Bot.egg-info/PKG-INFO
+Billionaires_Bot.egg-info/SOURCES.txt
+Billionaires_Bot.egg-info/dependency_links.txt
+Billionaires_Bot.egg-info/top_level.txt
