@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include piva/*
+include requirements.txt
+graft piva/tests/*
+graft piva/ipynb_templates/*
+
+exclude piva/misc/
+exclude piva/tests/data/pickle_map.p
+exclude piva/ipynb_templates/.ipynb_checkpoints/
