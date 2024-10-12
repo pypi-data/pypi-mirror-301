@@ -1,0 +1,62 @@
+# This workflow will install Python dependencies, run tests and other codechecks on SPSDK project
+
+name: Python Continous Integration
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+permissions:
+  contents: read
+
+jobs:
+  codecheck:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.9", "3.12"]
+
+    name: Python ${{ matrix.python-version }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set-up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4.3.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name:  Install OS Dependencies
+        run:   |
+          if [ "$RUNNER_OS" == "Linux" ]; then
+            sudo apt-get update && sudo apt install -y libpcsclite-dev swig
+          fi
+          if [ "$RUNNER_OS" == "macOS" ]; then
+            brew install pcsc-lite swig
+          fi
+        shell: bash
+
+      - name: Install SPSDK
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade .[all]
+
+      - name: Install Development Dependencies
+        run: |
+          pip install -r requirements-develop.txt
+ 
+      - name: Run Codecheck
+        run: |
+          # Ignoring the 'COPYRIGHT' check as the year of merge to Github may differ from the actual year when the file was updated 
+          codecheck -s --output reports_codecheck --info-check gitcov  --info-check COPYRIGHT
+
+      - name: Archive Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Results-${{ matrix.python-version }}-${{ matrix.os }}
+          path: reports_codecheck
+        if: always() && job.status == 'failure'
