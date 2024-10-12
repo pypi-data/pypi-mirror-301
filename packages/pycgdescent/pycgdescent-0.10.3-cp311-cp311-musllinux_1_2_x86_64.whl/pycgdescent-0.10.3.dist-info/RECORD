@@ -1,0 +1,9 @@
+pycgdescent/_cg_descent.cpython-311-x86_64-linux-musl.so,sha256=VVK2FnMDI7_7-iuqBNIKrD1HfAS_zNTDE0a-j2ttjws,412793
+pycgdescent/_cg_descent.pyi,sha256=L0VduP6g9ExKpY5bAed9O8Z1OKFH-lxG2BHVd3_K1To,2879
+pycgdescent/__init__.py,sha256=eU1GJ4v2jBHHfkc89XHc52EqR7SrTwbb524J7WGVVn8,22677
+pycgdescent/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycgdescent.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
+pycgdescent.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
+pycgdescent-0.10.3.dist-info/RECORD,,
+pycgdescent-0.10.3.dist-info/METADATA,sha256=9o39HGXB0edJ8V_hqpD7C2Jks4lwhpg1bRWGCJBK1x0,2988
+pycgdescent-0.10.3.dist-info/WHEEL,sha256=dDeXr7ZmFbKSogF3t3EWEOf2eaRLXGl3XEediExIMRE,98
