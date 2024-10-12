@@ -1,0 +1,7 @@
+autora-core>=3.1.0
+torch
+pandas
+numpy<2,>=1
+
+[dev]
+autora-core[dev]
