@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sharded-py
+Version: 0.0.2
+Summary: 
+Home-page: https://sharded.app/
+License: MIT
+Author: Adam Garza
+Author-email: adam@sharded.app
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: discord-py (>=2.4.0,<3.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Requires-Dist: typer[all] (>=0.12.5,<0.13.0)
+Project-URL: Repository, https://github.com/shardedproject/sharded
+Description-Content-Type: text/markdown
+
+# sharded
+
