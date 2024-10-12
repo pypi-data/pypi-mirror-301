@@ -1,0 +1,4 @@
+[console_scripts]
+avnie=avnie.main:run
+avro=avnie.main:run
+
