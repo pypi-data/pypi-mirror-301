@@ -1,0 +1,481 @@
+Metadata-Version: 2.1
+Name: zaowr_polsl_kisiel
+Version: 0.0.2
+Summary: A simple Python package used by me and a friend at the university in the course 'Advanced Image, Video and Motion Analysis'
+Author: Maksymilian Kisiel
+Project-URL: Homepage, https://github.com/revalew/zaowr-py-package
+Project-URL: Issues, https://github.com/revalew/zaowr-py-package/issues
+Keywords: polsl,zaowr,2024,IGT,ZAOWR
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ZAOWR Package
+
+<br/>
+
+This is a **ZAOWR** (Zaawansowana Analiza Obrazu, Wideo i Ruchu, eng. _Advanced Image, Video, and Motion Analysis_) Python package used by me and a friend at the university.
+
+PyPI link to the package
+
+<ul>
+<li><a href="https://pypi.org/project/zaowr-polsl-kisiel/" target="_blank">MAIN PyPI</a></li>
+<br/>
+<li><a href="https://test.pypi.org/project/zaowr-polsl-kisiel/" target="_blank">TEST PyPI</a></li>
+</ul>
+
+<br/>
+<br/>
+
+## Installing the package using `pip`
+
+<ol>
+
+<li> PyPI MAIN
+
+<br/>
+
+<ul>
+
+<li> Linux
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade zaowr-polsl-kisiel
+```
+
+</li>
+<br/>
+<li> Windows
+
+<br/>
+
+```bash
+py -m pip install --upgrade zaowr-polsl-kisiel
+```
+
+</li>
+</ul>
+</li>
+<br/>
+<li> TestPyPI
+
+<br/>
+
+<ul>
+
+<li> Linux
+
+<br/>
+
+```bash
+python3 -m pip install --index-url https://test.pypi.org/simple/ --upgrade zaowr-polsl-kisiel
+```
+
+</li>
+<br/>
+<li> Windows
+
+<br/>
+
+```bash
+py -m pip install --index-url https://test.pypi.org/simple/ --upgrade zaowr-polsl-kisiel
+```
+
+</li>
+</ul>
+</li>
+</ol>
+
+<br/>
+<br/>
+<br/>
+
+## Creating virtual environment for the package
+
+<br/>
+
+> [!NOTE]
+>
+> Complete instructions on managing Python virtual environments
+>
+> can be found [here](https://github.com/revalew/Python-Venv).
+
+<br/>
+<ol>
+<li> Create project directory (where you create your files and where the venv will be created)
+
+<br/>
+
+```bash
+python -m venv ENV_NAME
+```
+
+</li>
+<br/>
+
+> [!NOTE]
+>
+> `ENV_NAME` is the name of your venv, so you can change it however you like
+
+<br/>
+
+<li> Activate the venv (while in the project directory)
+
+<br/>
+
+```bash
+source ENV_NAME/bin/activate
+```
+
+or
+
+```bash
+. ENV_NAME/bin/activate
+```
+
+</li>
+
+<br/>
+
+<li> Install the package from PyPI
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade zaowr-polsl-kisiel
+```
+
+</li>
+
+<br/>
+
+<li> Deactivate the currently active venv
+
+<br/>
+
+```bash
+deactivate
+```
+
+</li>
+
+<br/>
+
+<li> To reactivate the venv, navigate to the path where you created the venv and source it again (command shown above in section number 2)
+</li>
+
+</ol>
+
+<br/>
+<br/>
+<br/>
+
+## Building package - DEV Tutorial based on official DOCS
+
+<ol>
+
+<li> Install pip
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+</li>
+<br/>
+
+<li> Prepare files and directories
+
+<br/>
+
+```bash
+directory_used_for_package/
+├── LICENSE
+├── pyproject.toml
+├── README.md
+├── src/
+│   └── name_of_the_package/
+│       ├── __init__.py
+│       └── example.py
+└── tests/
+```
+
+</li>
+<br/>
+
+<li> Choose build backend (I chose <code>setuptools</code>)
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade setuptools
+```
+
+</li>
+<br/>
+
+<li> Prepare <code>pyproject.toml</code> file (this package's configuration as an example)
+
+<br/>
+
+```bash
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zaowr_polsl_kisiel"
+dynamic = ["version"]
+authors = [
+{ name="Maksymilian Kisiel", email="NONE@NONE.PL" },
+]
+description = "A simple Python package used by me and a friend at the university in the course 'Advanced Image, Video and Motion Analysis'"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["polsl", "zaowr", "2024", "IGT", "ZAOWR"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[project.urls]
+Homepage = "https://github.com/revalew/zaowr-py-package"
+Issues = "https://github.com/revalew/zaowr-py-package/issues"
+```
+
+</li>
+<br/>
+
+> [!NOTE]
+>
+> `requirements.txt` file listed as "dependencies" was created using `pip freeze > requirements.txt` command
+>
+> which was executed in active python `venv` prepared for this uni course.
+>
+> Check my tutorial on managing venvs [here](https://github.com/revalew/Python-Venv).
+
+<br/>
+<li> Prepare <code>README.md</code> file (customize this as you’d like) </li>
+<br/>
+
+<li> Prepare <code>LICENSE</code> file (MIT license shown below, more licenses can be found <a href="https://choosealicense.com/" target="_blank">here</a>)
+
+<br/>
+
+```bash
+Copyright (c) 2018 The Python Packaging Authority
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</li>
+<br/>
+
+<li> Instal the build tool (if you encounter errors see <a href="https://packaging.python.org/en/latest/tutorials/installing-packages/" target="_blank">official tutorial</a>)
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade build
+```
+
+</li>
+<br/>
+
+<li> Navigate to the folder where the <code>pyproject.toml</code> file is located </li>
+<br/>
+
+<li> Generate distribution archives
+
+<br/>
+
+```bash
+python3 -m build
+```
+
+</li>
+<br/>
+
+<li> Verify that the build was successful
+
+<br/>
+
+In the package there should now be `dist/` directory. The `tar.gz` file is a source distribution whereas the `.whl` file is a built distribution. Newer pip versions preferentially install built distributions, but will fall back to source distributions if needed. You should always upload a source distribution and provide built distributions for the platforms your project is compatible with.
+
+<br/>
+
+```bash
+dist/
+├── zaowr_polsl_kisiel-0.0.0-py3-none-any.whl
+└── zaowr_polsl_kisiel-0.0.0.tar.gz
+```
+
+</li>
+
+<br/>
+
+<li> Register the account in <a href="https://test.pypi.org/account/register/">TestPyPI</a> or <a href="https://pypi.org/account/register/">PyPI</a> (just follow the given instructions)
+</li>
+
+<br/>
+
+<li> Generate API token for <a href="https://test.pypi.org/manage/account/#api-tokens">TestPyPI</a> or <a href="https://pypi.org/manage/account/#api-tokens">PyPI</a> (just follow the given instructions, I added the credentials to <code>$HOME/.pypirc</code> using <code>[pypi]</code> and <code>[testpypi]</code> headers)
+</li>
+
+<br/>
+
+<li> Instal <code>twine</code> to upload the package
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade twine
+```
+
+</li>
+<br/>
+
+<li> Upload the package
+
+<br/>
+
+<ul>
+<li>If you didn't add the credentials to <code>$HOME/.pypirc</code>, you will be prompted for username and password. Use <code>__token__</code> for username and <code>pypi-*</code> (your API token) for password
+
+</li>
+
+<br/>
+
+<li> PyPI
+
+<br/>
+
+```bash
+python3 -m twine upload dist/*
+```
+
+</li>
+
+<br/>
+
+<li> TestPyPI
+
+<br/>
+
+```bash
+python3 -m twine upload --repository testpypi dist/*
+```
+
+</li>
+</ul>
+</li>
+
+<br/>
+<li> After the upload succeeded, the package should be vievable on <a href="https://pypi.org/project/zaowr-polsl-kisiel/" target="_blank">PyPI</a> or <a href="https://test.pypi.org/project/zaowr-polsl-kisiel/" target="_blank">TestPyPI</a>
+</li>
+
+<br/>
+<li> Installing the package
+
+<br/>
+
+<ul>
+<li> PyPI
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade zaowr-polsl-kisiel
+```
+
+</li>
+
+<br/>
+
+<li> TestPyPI
+
+<br/>
+
+```bash
+python3 -m pip install --upgrade --index-url https://test.pypi.org/simple/ --no-deps zaowr-polsl-kisiel
+```
+
+</li>
+
+<br/>
+
+</ul>
+</li>
+
+> [!NOTE]
+>
+> Here we additionally use `--no-deps` flag.
+>
+> Since TestPyPI doesn’t have the same packages as the live PyPI, it’s possible that attempting to install dependencies may fail or install something unexpected.
+
+<br/>
+
+<li> Test the installation
+
+<br/>
+
+<ul>
+<li> Launch python
+
+<br/>
+
+```bash
+python3
+```
+
+</li>
+
+<br/>
+
+<li> Import the package
+
+<br/>
+
+```bash
+>>> from zaowr_polsl_kisiel.read_calibration import read_calibration
+>>> read_calibration()
+```
+
+</li>
+</li>
+
+</ol>
+
+<br/>
+<br/>
+<br/>
+
+## Sources
+
+This package has been prepared following [this tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
