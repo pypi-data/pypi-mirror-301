@@ -1,0 +1,61 @@
+[project]
+name = "naked_sqla"
+version = "0.1.0"
+description = "A simple and lightweight object mapper around SQLAlchemy core."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["sqlalchemy>=2.0.0", "typing-extensions>=4.0"]
+license = 'MIT'
+
+
+[project.urls]
+repository = "https://github.com/ManiMozaffar/naked-sqla"
+Homepage = 'https://github.com/ManiMozaffar/naked-sqla'
+Documentation = 'https://github.com/ManiMozaffar/naked-sqla'
+Source = 'https://github.com/ManiMozaffar/naked-sqla'
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "session"
+
+
+[tool.pyright]
+typeCheckingMode = "standard"
+
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["naked_sqla"]
+
+[tool.setuptools.package-data]
+"naked_sqla" = ["py.typed"]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.9",
+    "pyright>=1.1.384",
+    "aiosqlite>=0.20.0",
+    "rich>=13.9.2",
+    "pytest>=8.3.3",
+    "pytest-asyncio>=0.24.0",
+    "greenlet>=3.1.1",
+    "mkdocs>=1.4.2",
+    "mkdocs-material>=9.2.7",
+    "mkdocstrings[python]>=0.25.1",
+    "mkdocs-simple-hooks>=0.1.5",
+    "mkdocs-material-extensions>=1.3.1",
+    "fastapi>=0.115.0",
+    "mdx-truly-sane-lists>=1.3",
+    "mike==2.0.0",
+    "psutil>=6.0.0",
+    "tox>=4.21.2",
+]
+
+[tool.behavior]
+use-uv = true
