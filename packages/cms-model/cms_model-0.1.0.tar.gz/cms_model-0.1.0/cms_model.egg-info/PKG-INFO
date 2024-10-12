@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: cms-model
+Version: 0.1.0
+Summary: Coordinated Minima Search: An Efficient Approach for Optimizing Linear and Non-Linear Regression Models.
+Home-page: https://github.com/RHassan1609/cms.git
+Author: Rifat Hassan
+Author-email: h.rifat1609@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# CMS: Co-ordinated Minima Search
+
+## Overview
+CMS is a Python package that provides tools for compiling and managing custom models for linear and non-linear regression analysis. It includes functions to compile linear and non-linear regression models, and to predict.
+
+## Features
+- Takes a pandas dataframe at the input
+- Can compile the weight and bias variables for both linear and non-linear regression models.
+- Can predict output values following a given regression model.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/RHassan1609/cms.git
+    ```
+
+2. Install the package:
+    ```bash
+    pip install .
+    ```
+
+## Usage
+
+To use the CMS package in your project, import the module and use the available functions.
+
+```python
+from cms import compile_custom_model, compile_best_model, compile_all_models, predict
+
+# Example: Using the compile_custom_model function
+
+import pandas as pd
+data=pd.read_csv(r'D:\CMS\training_data.csv')
+compile_custom_model(data=data,powers=[1,2,1],feature_columns=[0,1,2],label_column=4,print_loss=True,model_name='cms_model',print_model=True)
+
+# Example: Using the compile_best_model function
+
+import pandas as pd
+data=pd.read_csv(r'D:\CMS\training_data.csv')
+compile_best_model(data=data,max_power=2,feature_columns=[0,1,2],label_column=4,print_loss=True,print_best_model=True,best_model_name='best_cms_model',save_first_model=True,first_model_name='first_cms_model')
+
+# Example: Using the compile_all_models function
+
+import pandas as pd
+data=pd.read_csv(r'D:\CMS\training_data.csv')
+compile_all_models(data=data,powers=[1,2,1],feature_columns=[0,1,2],label_column=4,print_loss=True,model_name='cms_model',print_model=True)
+
+# Example: Using the predict function
+test_data=pd.read_csv(r'D:\CMS\test_data.csv')
+predict(data=test_data,load_model='best_cms_model',print_output=True,save_output_file=True,saved_file_name='predicted cms file')
