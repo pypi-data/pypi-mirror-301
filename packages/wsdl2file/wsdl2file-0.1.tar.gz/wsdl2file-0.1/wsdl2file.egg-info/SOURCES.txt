@@ -1,0 +1,16 @@
+LICENSE-2.0.txt
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+wsdl2file/__init__.py
+wsdl2file/clark.py
+wsdl2file/command.py
+wsdl2file/const.py
+wsdl2file.egg-info/PKG-INFO
+wsdl2file.egg-info/SOURCES.txt
+wsdl2file.egg-info/dependency_links.txt
+wsdl2file.egg-info/entry_points.txt
+wsdl2file.egg-info/requires.txt
+wsdl2file.egg-info/top_level.txt
