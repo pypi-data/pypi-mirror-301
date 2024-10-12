@@ -1,0 +1,9 @@
+pyrodigy/__init__.py,sha256=WX1GWq0ioznmk3Rx3ERyu2Y_pFmq2RmI2HFQbfzr2EE,309
+pyrodigy/cli.py,sha256=ZEU7smK55vuuneOKt69Jqc0q2cfqBve149wT-XI0NPQ,15684
+pyrodigy/gan.py,sha256=ouWG__ghMlGy94BxR6P9f7nfQ63uWPFT1Br_WH2i18U,4023
+pyrodigy/optimizer_wrapper.py,sha256=WAu3mMUxPF0zrer8Lz60qRN0z48C_mP2BBFmkwuvMCE,7876
+pyrodigy-0.2.4.dist-info/LICENSE,sha256=-NFGgXFskSUvXQZsFdwVHw9825mzBqj-5eW749q5EIM,1078
+pyrodigy-0.2.4.dist-info/METADATA,sha256=UqnSBu7gRhj63PEkL83dh-5p8t4KIWnQ7biz4pE1cfU,7032
+pyrodigy-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyrodigy-0.2.4.dist-info/entry_points.txt,sha256=Yvu3JGnZOKf0tFbp2h1qdP5JclSd2_ZO5DdfzwPElwk,46
+pyrodigy-0.2.4.dist-info/RECORD,,
