@@ -1,0 +1,15 @@
+PySFCGAL-2.0.0.dist-info/WHEEL,sha256=hCuM7ceq5Ww8LIKXwEP7eoNPpxcUFLSEGC1E3vq60ks,113
+PySFCGAL-2.0.0.dist-info/METADATA,sha256=ecjlbexIW0CY-O4dlJ2LergDlX785UYUgfM3vBgvXis,753
+PySFCGAL-2.0.0.dist-info/top_level.txt,sha256=yiRaVtuv5P7kVaOmXAIVj2g1B6ZnEs7-KpNK95_LJ44,9
+PySFCGAL-2.0.0.dist-info/RECORD,,
+PySFCGAL.libs/libSFCGAL-1469f57b.so.2.0.0,sha256=FwDTcPW0syPjY5JrND6iw6y1_4eMQl8igmzK2uNofZ4,34665136
+PySFCGAL.libs/libgmp-7376c9af.so.10.4.1,sha256=p6cY7WIVusUzrcz23Nr3O_d0bXDi6blKtMpJevPg7p0,548568
+PySFCGAL.libs/libboost_serialization-28b9a3d2.so.1.74.0,sha256=ZpyMqFWV2WVfp5Cg2q7yWh5fGhmTeinkixNi6kBWlDA,324624
+PySFCGAL.libs/libgmpxx-8b7fb94a.so.4.6.1,sha256=QJ1UEi7NViwFnPytsZ-zHUxYdC3-l5tC4T2cGSbAH-M,47688
+PySFCGAL.libs/libmpfr-699a9c25.so.6.2.0,sha256=63pfZyopwMvHeT-miUkCMbY1XKCD834Kj9gBlxu_edE,799256
+pysfcgal/sfcgal.py,sha256=9G_kas3zCqPcdLedYnQalTual4ti7Ju4DEpwSrfMuMY,108221
+pysfcgal/_sfcgal.abi3.so,sha256=h7k41KWrawkJRnp5iYjI7vGeiUE-leDwuzUZF7CJtik,439168
+pysfcgal/sfcgal_build.py,sha256=UT_4DHrZbLJKJ2WFxfivgJ5J5VidexKWyUHJ19fsAF4,918
+pysfcgal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysfcgal/sfcgal_def.c,sha256=F2zCSVT-BPDEXq37LW-JUKjFP0fiu1uAF2dxuBjWy4w,40633
+pysfcgal/sfcgal_def_msvc.c,sha256=WH4BNjjEH_CFy_xF94hGuudoFB3ETE3UPv-66cMajlY,40268
