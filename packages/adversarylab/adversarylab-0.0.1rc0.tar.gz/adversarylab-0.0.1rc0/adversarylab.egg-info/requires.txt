@@ -1,0 +1,9 @@
+pytest
+pytest-cov
+flake8
+mypy
+Sphinx
+
+[testing]
+pytest
+pytest-cov
