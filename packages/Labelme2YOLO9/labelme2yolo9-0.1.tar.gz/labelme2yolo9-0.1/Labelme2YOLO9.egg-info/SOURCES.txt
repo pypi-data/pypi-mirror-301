@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+Labelme2YOLO9.egg-info/PKG-INFO
+Labelme2YOLO9.egg-info/SOURCES.txt
+Labelme2YOLO9.egg-info/dependency_links.txt
+Labelme2YOLO9.egg-info/requires.txt
+Labelme2YOLO9.egg-info/top_level.txt
+labelme2yolo9/__about__.py
+labelme2yolo9/__init__.py
+labelme2yolo9/__main__.py
+labelme2yolo9/l2y.py
+labelme2yolo9/cli/__init__.py
