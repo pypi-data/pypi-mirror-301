@@ -1,0 +1,226 @@
+Metadata-Version: 2.1
+Name: mailship
+Version: 0.1.1
+Summary: Mail Ship: A powerful Python library for email automation and testing. It offers Gmail integration, real-time inbox monitoring, content extraction, and seamless Selenium integration. Perfect for developers navigating complex email-based workflows and testing scenarios.
+Home-page: https://github.com/BlazinArtemis/mail_ship/
+Author: Oluwaseyi Ajadi
+Author-email: oluwaseyinexus137@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-api-python-client
+Requires-Dist: beautifulsoup4
+Requires-Dist: google-auth
+Requires-Dist: cryptography
+
+
+# MailShip 
+
+MailShip is a Python library designed to simplify Gmail-related automation tasks, particularly useful for testing and automation scenarios involving email interactions.
+
+## Features
+
+- Generate unique email addresses
+- Wait for and retrieve emails
+- Extract tokens and links from emails
+- Perform regex searches on email content
+- Integrate easily with Selenium and other testing frameworks
+- CI/CD ready with GitHub Actions support
+- Configurable verbosity for logging
+
+## Installation
+
+Install MailShip using pip:
+
+```bash
+pip install mail-ship
+```
+
+then Run the setup script:
+
+```bash
+mail-ship-setup
+```
+
+## Configuration
+
+Before using MailShip, you need to set up a Google Cloud project and obtain OAuth credentials. Follow these steps:
+
+### Step 1: Create a Google Cloud Project
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
+2. Click on the project drop-down at the top of the page.
+3. Click on "New Project" in the upper-right corner of the new window.
+4. Enter a project name (e.g., "MailShip").
+5. Click "Create".
+6. Wait for the project to be created and then select it from the project dropdown.
+
+### Step 2: Enable the Gmail API
+
+1. In the left sidebar, click on "APIs & Services" > "Library".
+2. In the search bar, type "Gmail API" and press Enter.
+3. Click on "Gmail API" in the results.
+4. Click the "Enable" button.
+
+### Step 3: Configure the OAuth Consent Screen
+
+1. In the left sidebar, click on "APIs & Services" > "OAuth consent screen".
+2. Select "External" as the user type (unless you're using a Google Workspace account, then select "Internal").
+3. Click "Create".
+4. Fill in the required fields:
+   * App name: "MailShip" (or your chosen name)
+   * User support email: Your email address
+   * Developer contact information: Your email address
+5. Click "Save and Continue".
+6. On the "Scopes" page, click "Add or Remove Scopes".
+7. Find and select these scopes:
+   * https://www.googleapis.com/auth/gmail.readonly
+   * https://www.googleapis.com/auth/userinfo.email
+8. Click "Update" and then "Save and Continue".
+9. On the "Test users" page, click "Add Users" and add your Gmail address.
+10. Click "Save and Continue", then "Back to Dashboard".
+
+### Step 4: Create OAuth 2.0 Client ID
+
+1. In the left sidebar, click on "APIs & Services" > "Credentials".
+2. At the top of the page, click "Create Credentials" > "OAuth client ID".
+3. For "Application type", choose "Desktop app".
+4. Name it "MailShip Desktop Client" (or your preferred name).
+5. Click "Create".
+
+### Step 5: Download and Save Client Configuration
+
+1. In the "OAuth 2.0 Client IDs" section, find the client you just created.
+2. Click the download button (download icon) on the right side.
+3. Save the downloaded file as `client_secrets.json` in your project directory.
+
+### Step 6: Run the Setup Script ( For Github Users )
+
+After obtaining your credentials, run the setup script:
+
+```bash
+python setup_auth.py
+```
+
+This script will guide you through the process of authenticating and storing your credentials securely.
+
+## Usage
+
+Here's a basic example of how to use MailShip:
+
+```python
+from mailship import GmailAutomator
+
+def run_example():
+    # Set verbose=True for detailed logging, False for silent operation
+    automator = GmailAutomator(verbose=True)
+    
+    try:
+        email = automator.generate_email()
+        print(f"Generated email: {email}")
+        
+        print("Waiting for an email (timeout: 60 seconds)...")
+        received_email = automator.wait_for_email(email, timeout=60)
+        
+        if received_email:
+            print(f"Received email: {received_email['subject']}")
+            token = automator.extract_token(received_email)
+            link = automator.extract_link(received_email)
+            print(f"Extracted token: {token}")
+            print(f"Extracted link: {link}")
+            
+            # Perform a regex search
+            pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+            emails = automator.search_by_regex(received_email['decoded_content']['text'], pattern)
+            print(f"Found emails: {emails}")
+        else:
+            print("No email received within the timeout period.")
+    
+    finally:
+        automator.cleanup()
+
+if __name__ == "__main__":
+    run_example()
+```
+
+### Key Function Parameters
+
+1. `generate_email()`: 
+   - No additional parameters for domain specification (uses the authenticated user's Gmail domain).
+
+2. `wait_for_email(recipient, sender=None, subject=None, timeout=180)`:
+   - `sender_domain`: Specify a domain to filter incoming emails by sender's domain.
+
+3. `extract_token(email_content, pattern=None, token_length=None)`:
+   - `token_length`: Specify the expected length of the token to extract.
+
+4. `extract_link(email_content, domain=None)`:
+   - `domain`: Specify a domain to filter extracted links.
+
+5. `search_by_regex(email_content, pattern)`:
+   - `pattern`: Custom regex pattern for searching email content.
+
+These parameters allow for more precise control over email processing, making it easier to handle various testing and automation scenarios.
+
+
+## Integration with Selenium
+
+MailShip can be easily integrated with Selenium for end-to-end testing scenarios. Check `main.py` for an example of how to use MailShip with Selenium WebDriver.
+
+## CI/CD with GitHub Actions
+
+For CI/CD pipelines, use the `main_ci.py` script, which is designed to work with GitHub Actions. To set up GitHub Actions for your project:
+
+1. Create a `.github/workflows/gmail_automation.yml` file in your repository
+2. Use the template provided in the `ci.yml` file in this repository, adjusting as needed. This template includes setup for Selenium with Chrome in a headless environment.
+
+3. Set up the required secrets in your GitHub repository settings:
+   - GMAIL_CLIENT_ID
+   - GMAIL_CLIENT_SECRET
+   - GMAIL_USER_EMAIL
+   - GMAIL_AUTH_REFRESH_TOKEN
+   - GMAIL_AUTH_TOKEN_EXPIRY
+   - GMAIL_AUTH_SALT
+
+## Contributing
+
+Contributions to MailShip are welcome! Here's how you can contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions for improvements, please open an issue on the GitHub repository. Provide as much detail as possible, including:
+
+- Steps to reproduce the issue
+- Expected behavior
+- Actual behavior
+- Any error messages or logs
+
+
+## License
+
+This project is licensed under a Custom Repository License - see the [LICENSE](LICENSE) file for details. This license allows free use, modification, and distribution within this repository, but restricts external use without permission.
+
+## Contact
+
+@OluwaseyiAjadi4 - Twitter
+Oluwaseyi Ajadi - Linkedin
+
+
+
+
