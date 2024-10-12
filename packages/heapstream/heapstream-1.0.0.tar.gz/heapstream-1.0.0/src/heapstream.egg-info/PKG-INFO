@@ -1,0 +1,199 @@
+Metadata-Version: 2.1
+Name: heapstream
+Version: 1.0.0
+Summary:  Explore the API documentation for [Heapstream.com](//heapstream.com)!  ## Authentication  API authentication is done using Basic Authentication [wikipedia](https://en.wikipedia.org/wiki/Basic_access_authentication) [RFC7617](https://datatracker.ietf.org/doc/html/rfc7617). For `username` you should use the `id` of the ApiKey. For `password` you should use the `password` of the ApiKey.  
+License: MIT
+Project-URL: Homepage, https://heapstream.com
+Project-URL: Documentation, https://docs.heapstream.com
+Project-URL: Github, https://github.com/heapstream/heapstream-client-py
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+
+# Heapstream Python SDK 1.0.0<a id="heapstream-python-sdk-100"></a>
+
+Welcome to the Heapstream SDK documentation. This guide will help you get started with integrating and using the Heapstream SDK in your project.
+
+## Versions<a id="versions"></a>
+
+- API version: `1.0`
+- SDK version: `1.0.0`
+
+## About the API<a id="about-the-api"></a>
+
+Explore the API documentation for [Heapstream.com](//heapstream.com)! ## Authentication API authentication is done using Basic Authentication [wikipedia](https://en.wikipedia.org/wiki/Basic_access_authentication) [RFC7617](https://datatracker.ietf.org/doc/html/rfc7617). For `username` you should use the `id` of the ApiKey. For `password` you should use the `password` of the ApiKey.
+
+## Table of Contents<a id="table-of-contents"></a>
+
+- [Setup & Configuration](#setup--configuration)
+  - [Supported Language Versions](#supported-language-versions)
+  - [Installation](#installation)
+- [Authentication](#authentication)
+  - [Basic Authentication](#basic-authentication)
+- [Setting a Custom Timeout](#setting-a-custom-timeout)
+- [Sample Usage](#sample-usage)
+- [Services](#services)
+- [Models](#models)
+- [License](#license)
+
+## Setup & Configuration<a id="setup--configuration"></a>
+
+### Supported Language Versions<a id="supported-language-versions"></a>
+
+This SDK is compatible with the following versions: `Python >= 3.7`
+
+### Installation<a id="installation"></a>
+
+To get started with the SDK, we recommend installing using `pip`:
+
+```bash
+pip install heapstream
+```
+
+## Authentication<a id="authentication"></a>
+
+### Basic Authentication<a id="basic-authentication"></a>
+
+The Heapstream API uses Basic Authentication.
+
+You need to provide your username and password when initializing the SDK.
+
+#### Setting the Username and Password<a id="setting-the-username-and-password"></a>
+
+When you initialize the SDK, you can set the username and password as follows:
+
+```py
+Heapstream(
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
+    timeout=10000
+)
+```
+
+If you need to set or update the username and password after initializing the SDK, you can use:
+
+```py
+sdk.set_basic_auth("YOUR_USERNAME", "YOUR_PASSWORD")
+```
+
+## Setting a Custom Timeout<a id="setting-a-custom-timeout"></a>
+
+You can set a custom timeout for the SDK's HTTP requests as follows:
+
+```py
+from heapstream import Heapstream
+
+sdk = Heapstream(timeout=10000)
+```
+
+# Sample Usage<a id="sample-usage"></a>
+
+Below is a comprehensive example demonstrating how to authenticate and call a simple endpoint:
+
+```py
+from heapstream import Heapstream, Environment
+
+sdk = Heapstream(
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
+    base_url=Environment.DEFAULT.value,
+    timeout=10000
+)
+
+result = sdk.project.list_projects()
+
+print(result)
+
+```
+
+## Services<a id="services"></a>
+
+The SDK provides various services to interact with the API.
+
+<details> 
+<summary>Below is a list of all available services:</summary>
+
+| Name          |
+| :------------ |
+| project       |
+| direct_upload |
+| player        |
+| stats         |
+| video         |
+| audio_track   |
+| poster        |
+| text_track    |
+| watermark     |
+| webhook       |
+
+</details>
+
+## Models<a id="models"></a>
+
+The SDK includes several models that represent the data structures used in API requests and responses. These models help in organizing and managing the data efficiently.
+
+<details> 
+<summary>Below is a list of all available models:</summary>
+
+| Name                     | Description |
+| :----------------------- | :---------- |
+| ProjectList              |             |
+| ProjectCreate            |             |
+| Project                  |             |
+| ProjectEdit              |             |
+| DirectUploadStart        |             |
+| DirectUploadResponse     |             |
+| DirectUploadListResponse |             |
+| DirectUploadCompleteArgs |             |
+| PartIdResponse           |             |
+| PlayerList               |             |
+| PlayerCreate             |             |
+| Player                   |             |
+| PlayerEdit               |             |
+| EngagementStats          |             |
+| PerformanceStatsResponse |             |
+| VideoList                |             |
+| ListVideosStatus         |             |
+| VideoFetch               |             |
+| Video                    |             |
+| VideoEdit                |             |
+| PresetList               |             |
+| AudioTrackList           |             |
+| AudioTrackCreate         |             |
+| AudioTrack               |             |
+| AudioTrackEdit           |             |
+| PosterList               |             |
+| MultipartFile            |             |
+| Poster                   |             |
+| PosterEdit               |             |
+| TextTrackList            |             |
+| TextTrackCreate          |             |
+| TextTrack                |             |
+| TextTrackGenerate        |             |
+| TextTrackEdit            |             |
+| WatermarkList            |             |
+| WatermarkCreate          |             |
+| Watermark                |             |
+| WebhookList              |             |
+| WebhookCreate            |             |
+| Webhook                  |             |
+| UploadMetadata           |             |
+| Asset                    |             |
+| AssetError               |             |
+| DirectUploadPart         |             |
+| EngagementStatsRow       |             |
+| PerformanceStatsRow      |             |
+| Pagination               |             |
+| Preset                   |             |
+| AutoCaption              |             |
+
+</details>
+
+## License<a id="license"></a>
+
+This SDK is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for more details.
+
+<!-- This file was generated by liblab | https://liblab.com/ -->
