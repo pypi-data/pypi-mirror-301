@@ -6,7 +6,7 @@ on the project and to find out how to utilise this data, see the website: https:
 This repo contains 28740 packages uploaded to PyPI between 
 2024-10-09 19:53 and 2024-10-12 10:28.
 
-The repo is 92% (26447/28740) complete.
+The repo is 97% (27946/28740) complete.
 
 Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-301/tree/code/packages).
 
