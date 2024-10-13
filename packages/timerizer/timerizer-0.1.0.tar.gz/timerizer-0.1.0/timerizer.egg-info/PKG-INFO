@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: timerizer
+Version: 0.1.0
+Summary: A simple decorator to time function execution
+Home-page: https://github.com/msaligs/timerizer
+Author: msaligs
+Author-email: msaligs@gmail.com
+Project-URL: Bug Tracker, https://github.com/msaligs/timerizer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Timerizer
+
+`timerizer` is a simple Python library that provides a decorator to measure the execution time of functions.
+
+## Installation
+
+```bash
+pip install timerizer
+```
+## Usage
+
+```python
+from timer import timer
+
+@timer
+def my_function():
+    # Your code here
+    time.sleep(1)
+
+my_function()
+# Output: Function 'my_function' executed in 1.0001 seconds
+
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+

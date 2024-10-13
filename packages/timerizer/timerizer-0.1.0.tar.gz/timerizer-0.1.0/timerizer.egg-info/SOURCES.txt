@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+timerizer/__init__.py
+timerizer/core.py
+timerizer.egg-info/PKG-INFO
+timerizer.egg-info/SOURCES.txt
+timerizer.egg-info/dependency_links.txt
+timerizer.egg-info/top_level.txt
