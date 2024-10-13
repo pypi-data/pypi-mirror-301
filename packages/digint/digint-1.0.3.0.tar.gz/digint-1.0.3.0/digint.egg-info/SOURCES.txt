@@ -1,0 +1,17 @@
+LICENCE
+README.md
+SECURITY.md
+pyproject.toml
+digint/__init__.py
+digint/digint.py
+digint/errors.py
+digint/notation_format.py
+digint/tools.py
+digint/typings.py
+digint/userint.py
+digint.egg-info/PKG-INFO
+digint.egg-info/SOURCES.txt
+digint.egg-info/dependency_links.txt
+digint.egg-info/requires.txt
+digint.egg-info/top_level.txt
+digint.egg-info/zip-safe

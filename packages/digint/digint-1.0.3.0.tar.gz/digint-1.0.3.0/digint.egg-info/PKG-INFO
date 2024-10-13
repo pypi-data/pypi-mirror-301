@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: digint
+Version: 1.0.3.0
+Summary: A python module for manipulating positional integers across any numerical base, providing advanced digit-level control.
+Author-email: Markus Hammer <107761433+MarkusHammer@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/MarkusHammer/digint
+Project-URL: Documentation, https://MarkusHammer.github.io/digint
+Project-URL: Github, https://github.com/MarkusHammer/digint
+Project-URL: Issues, https://github.com/MarkusHammer/digint/issues
+Project-URL: Pull Requests, https://github.com/MarkusHammer/digint/pulls
+Project-URL: Git, https://github.com/MarkusHammer/digint.git
+Keywords: integer,digit,digitwise,bitwise,manipulation,number,numeric,numerical,bases,positional,number systems,mathematics,binary,hexadecimal,custom,notation
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Typing :: Typed
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: typing_extensions; python_version <= "3.10"
+Provides-Extra: dev
+Requires-Dist: setuptools>=64.0.0; extra == "dev"
+Requires-Dist: pipreqs; extra == "dev"
+Requires-Dist: validate-pyproject[all]; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pdoc3; extra == "dev"
+Requires-Dist: pyright; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+
+# `digint`
+
+> Base-Agnostic Integer Manipulation
+
+`digint` is a module focused on easy high-level integer manipulation across any numerical base. Works with binary, decimal, or any other base. `digint` seeks to make complex digit-level and notation operations easy, just like they were `Collection`s.
+
+[Documentation](https://MarkusHammer.github.io/digint)
+
+## Setup
+
+This module can be installed using:
+
+```bash
+pip install digint
+```
+
+## Usage
+
+This module is intended to be used only as a module, and can be imported after installing using the traditional process:
+
+```python
+from digint import digitint
+```
+
+### Create an integer in any base
+
+```python
+# input integers as you would with `int()`,
+# if the intiger is already in the base you wish to use
+n1 = digitint(1234, base=10)
+n2 = digitint("BASE36", base=36)
+n3 = digitint(0xABCDEF, base=16)
+
+# convert bases on initialization, if the input is a intiger type
+n4 = digitint(255, base=2) # == 0b11111111
+n5 = digitint(int("BASE36", 36), base=10) # == 683248722
+n6 = digitint(0xABCDEF, base=10) # == 11259375
+```
+
+### Access and modify digits like a collection
+
+```python
+# get the digit at index 2
+print(n1.get_digit(2)) # outputs "3"
+num.set_digit(2, 5)
+print(n1.get_digit(2)) # outputs "5"
+```
+
+### Easy notation
+
+```python
+print(str(n2)) # output "BASE36"
+print(str(n3)) # output "ABCDEF"
+print(str(n5)) # output "683248722", as the base is set to 10
+```
+
+### Full mutable collection implementation on integers
+
+```python
+print(n2.pop(-1)) #outputs "6"
+print(n2.pop(-1)) #outputs "3"
+n2.append(int("D", 36))
+print(n2) #outputs "BASED"
+
+# The sum of all digits
+print(sum(n2)) #outputs "76"
+
+# The average of all digits
+print(sum(n2)/len(n2)) #outputs "15.2"
+```
+
+### Customizable Notation
+
+```python
+# same as str(n3) 
+print(n3.notate()) # outputs "ABCDEF"
+
+from digint import NotationFormat
+fmt = NotationFormat(*tuple("0123456789ZYXWVU"))
+print(n3.notate(fmt)) # outputs "ZYXWVU"
+```
+
+### And More
+
+There are a handfull of other ease of use features that this module provides, feel free to reference the [documentation](https://MarkusHammer.github.io/digint) for more information.
+
+## Licence
+
+This is licensed under the Mozilla Public License 2.0 (MPL 2.0) Licence. See the Licence file in this repository for more information.
+
+## Contribute
+
+Contributions are always welcome!
+Use the [github repository](https://github.com/MarkusHammer/digint) to report issues and contribute to this project.
+
+## Credits
+
+While not required, feel free to credit "Markus Hammer" (or just "Markus") if you find this code or script useful for whatever you may be doing with it.
+
+# Security Policy
+
+While the python source code will be actively maintained, any binary files (if at all provided) are in no way supported.
+These are provided as a courtesy and are not intended to be the main usage of this software.
+Please keep this in mind when choosing how you wish to use this software.
+
+## Supported Versions
+
+| Version     | Supported |
+| ----------- | --------- |
+| 1.0.0.0 >= | ✅        |
+| 1.0.0.0 <  | ❌        |
+
+## Reporting a Vulnerability
+
+Please report any issues to the email 107761433+MarkusHammer(THEN THE @ SYMBOL HERE)users.noreply.github.com
