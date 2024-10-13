@@ -1,0 +1,17 @@
+dnsconfigurator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnsconfigurator/dns_config.py,sha256=mkHsycNazh4Lr0bAjavTg5tQr_Zdrs-SJ-H7NlsqyY8,3835
+dnsconfigurator/dns_domain.py,sha256=I2HsTiH6BayB4r09CbiRzAfWPDzg3waX7oNNBupzHWM,6303
+dnsconfigurator/dns_provider.py,sha256=BE8qb2sZ4ylzYmShEa7Azua139gj6mhhtuyDcxk92QA,4182
+dnsconfigurator/dns_provider_cloudflare.py,sha256=O423MTdVyEoCrPPl4DYcUaNvleaB-Bx89sTF588UAdw,3447
+dnsconfigurator/dns_provider_hetzner.py,sha256=F71rwTN2d4i2dT2Jiv3uHWO_iCt7kG_v9Af_x7GcwHs,2351
+dnsconfigurator/dns_record.py,sha256=MULIl-7TDLykht31GdH2VB6xG4q5ML_9ziPp0LL8Mf8,1043
+dnsconfigurator/logger.py,sha256=wn5thYF1hJUUF9zrCFjOiRHkLrEKpXsFGOM9FXmG0kw,1919
+dnsconfigurator/main.py,sha256=8ZT-aXUxRT3E7p2FWsMYvFSrtVj6kVjo8bjaGHoILkE,6529
+dnsconfigurator/validate.py,sha256=Gdw1AJZTHrnV4fIY38LAoQ8j3gu6RXyVwGPHxOB5jAY,5506
+examples/sample_config.yaml,sha256=nIpnZujQXB4R3Wlp-wA6NOcC8fwF-GMM9FhGdpcHLYI,712
+dnsconfigurator-1.0.0.dist-info/LICENSE,sha256=86Sdk9qcHtNclzIGDxBRY4nGV9gS_lBwCX-iCIm4xLg,1069
+dnsconfigurator-1.0.0.dist-info/METADATA,sha256=w8RoVFzGJQBJsAPFiLC2kLjoVmtjNcf3NRaDqxvQNBQ,2012
+dnsconfigurator-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dnsconfigurator-1.0.0.dist-info/entry_points.txt,sha256=AzahBk6Igg1peP33QnkdfjYSfVRm0IoCkVPeEW8J-kc,62
+dnsconfigurator-1.0.0.dist-info/top_level.txt,sha256=HbWjB802mvtfQLb5achf49pKv1XVCClMM4HEru3rJxE,16
+dnsconfigurator-1.0.0.dist-info/RECORD,,
