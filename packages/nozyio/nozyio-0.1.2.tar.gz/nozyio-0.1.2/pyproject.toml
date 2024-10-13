@@ -1,0 +1,24 @@
+    [build-system]
+    requires = ["setuptools", "wheel"]
+    build-backend = "setuptools.build_meta"
+
+    [project]
+    name = "nozyio"
+    version = "0.1.2"
+    description = "Node based workflow orchestration UI for python ML/AI computing"
+    authors = [
+        { name = "zoozy", email = "nozyio.hello@gmail.com" }
+    ]
+    dependencies = [
+        "aiohttp",
+        "astpretty"
+    ]
+    [tool.setuptools]
+    packages = ["nozyio"]
+    include-package-data = true  # Ensure this is included
+
+    [project.scripts]
+    nozyio = "nozyio.server:start_server"
+
+    [tool.setuptools.package-data]
+    "nozyio" = ["web/dist/*"]  # Include your web assets
