@@ -1,0 +1,2 @@
+[console_scripts]
+telesm = telesm.main:main
