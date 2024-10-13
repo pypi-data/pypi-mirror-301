@@ -1,0 +1,15 @@
+OSCR/__init__.py,sha256=hkuVpPAMMoKsMbylK6wp9Lt_leLN-AivssE5F8D7QSQ,1426
+OSCR/cli.py,sha256=kqXDgK_7IYyJrwrlvHzg1GljRdobv0SwAwSalcbH6Xc,2647
+OSCR/combat.py,sha256=g89jRGXTWEXaB26Q6tjAO3sl77PHKfGbyZ4A83aN75k,10486
+OSCR/datamodels.py,sha256=uYoZG4UK6x5Bu0sVzlTAR7uZrNQEDqtPD4TQabtDRNI,16886
+OSCR/detection.py,sha256=-Np6Tta3AOpormyvq5Ci3v_ZCvTipe407XjAOoQIlb8,12094
+OSCR/iofunc.py,sha256=gPJ7sbPECXAocs9BP8iDrKm7NTaFdSHZ2XO8X1ywzL0,12243
+OSCR/liveparser.py,sha256=V8eQdczDja4pNFinExVIixN6_-fPqkiObGfjYD02Qac,10125
+OSCR/main.py,sha256=6l_mKZkCQnVDqv3u1SsxGRaJ0jYE5mmwIQUdu2O1MLc,11530
+OSCR/parser.py,sha256=ra5pzCdRzEhGcVJ-U_HXVZPeg5JJ0gLOupv3oZwpcsM,27900
+OSCR/utilities.py,sha256=yTOvESKF8dSiOm74zjOMCK6X9fWQBJQwjCHlhYO0nzs,3322
+sto_oscr-2024.10.12.1.dist-info/METADATA,sha256=tc_D1ncDnt6RKCEhM94Ost6x7LyP4GeSxDn1VxVdhrY,41258
+sto_oscr-2024.10.12.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sto_oscr-2024.10.12.1.dist-info/entry_points.txt,sha256=kNOboQ4fq3hylAdN10o0Lp7jpGuXEFiHAWFQzrdUe9Q,43
+sto_oscr-2024.10.12.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sto_oscr-2024.10.12.1.dist-info/RECORD,,
