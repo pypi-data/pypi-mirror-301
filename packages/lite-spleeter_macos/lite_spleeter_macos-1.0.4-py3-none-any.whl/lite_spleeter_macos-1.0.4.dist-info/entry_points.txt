@@ -1,0 +1,3 @@
+[console_scripts]
+lite-spleeter_macos=spleeter.__main__:entrypoint
+
