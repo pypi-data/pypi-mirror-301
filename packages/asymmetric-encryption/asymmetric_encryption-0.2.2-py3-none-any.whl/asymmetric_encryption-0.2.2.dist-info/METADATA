@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: asymmetric-encryption
+Version: 0.2.2
+Summary: A simple asymmetric encryption module
+Home-page: https://github.com/RoyNisimov/AsymmetricEncryption
+Author: Roy Nisimov, jacebalaron (Daniel Gaisenberg)
+License: MIT
+Keywords: python,cipher,asymmetric encryptions,signing,verifying,protocols,encryption,decryption,signature,ring signature,rsa,dsa,ecc
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Showcases protocols and has a lot of cryptographic functions
