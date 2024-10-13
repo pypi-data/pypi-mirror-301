@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nebulatk
+Version: 0.1.7
+Summary: Improved tkinter-style gui system.
+Author-email: Control-Alt-OP <ctrl.alt.op@gmail.com>
+Project-URL: Homepage, https://github.com/CTRL-ALT-OP/nebulatk
+Keywords: tcl,tkinter,nebulatk,gui,transparency
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: tk
+
