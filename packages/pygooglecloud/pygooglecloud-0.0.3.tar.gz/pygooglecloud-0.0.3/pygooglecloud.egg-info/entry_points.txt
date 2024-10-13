@@ -1,0 +1,2 @@
+[console_scripts]
+pygooglecloud = pygooglecloud.main:main

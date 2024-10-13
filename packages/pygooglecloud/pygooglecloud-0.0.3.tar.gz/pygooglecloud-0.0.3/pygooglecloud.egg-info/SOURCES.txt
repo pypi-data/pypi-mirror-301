@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pygooglecloud/__init__.py
+pygooglecloud/configs.py
+pygooglecloud/main.py
+pygooglecloud/static.py
+pygooglecloud.egg-info/PKG-INFO
+pygooglecloud.egg-info/SOURCES.txt
+pygooglecloud.egg-info/dependency_links.txt
+pygooglecloud.egg-info/entry_points.txt
+pygooglecloud.egg-info/requires.txt
+pygooglecloud.egg-info/top_level.txt

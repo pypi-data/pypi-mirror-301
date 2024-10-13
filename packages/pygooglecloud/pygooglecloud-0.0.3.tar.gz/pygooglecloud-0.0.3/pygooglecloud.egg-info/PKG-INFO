@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pygooglecloud
+Version: 0.0.3
+Summary: pygooglecloud helps you with command line interaction with gcp
+Home-page: https://veltzer.github.io/pygooglecloud
+Download-URL: https://github.com/veltzer/pygooglecloud
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+Maintainer: Mark Veltzer
+Maintainer-email: mark.veltzer@gmail.com
+License: MIT
+Keywords: gcp,gae,python,shell,utilities
+Platform: python3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pylogconf
+Requires-Dist: pytconf
+Requires-Dist: google-auth
+
+===============
+*pygooglecloud*
+===============
+
+.. image:: https://img.shields.io/pypi/v/pygooglecloud
+
+.. image:: https://img.shields.io/github/license/veltzer/pygooglecloud
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+
+project website: https://veltzer.github.io/pygooglecloud
+
+author: Mark Veltzer
+
+version: 0.0.3
+
+	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2024
