@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jove_test_module
+Version: 0.1
+Summary: This is a test module.
+Home-page: https://github.com/yourusername/your_package_name
+Author: jove zou
+Author-email: 529507929@qq.com
+Requires-Python: >=3.6
+
+This is a test module description that long description.
