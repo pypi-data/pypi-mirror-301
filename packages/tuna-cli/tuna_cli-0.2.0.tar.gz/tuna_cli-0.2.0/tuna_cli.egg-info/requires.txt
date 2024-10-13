@@ -1,0 +1,11 @@
+inquirer
+transformers
+requests
+halo
+jupyterlab
+nbformat
+scikit-learn
+tabulate
+paramiko
+watchdog
+gputil
