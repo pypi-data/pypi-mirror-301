@@ -1,0 +1,2 @@
+[console_scripts]
+sliding-puzzle = cli_game:run_game

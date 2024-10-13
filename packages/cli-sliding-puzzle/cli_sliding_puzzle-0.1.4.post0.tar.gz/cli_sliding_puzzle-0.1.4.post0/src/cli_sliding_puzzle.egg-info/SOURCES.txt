@@ -1,0 +1,14 @@
+.gitignore
+README.md
+pyproject.toml
+setup.py
+src/cli_game/__init__.py
+src/cli_game/_version.py
+src/cli_game/game.py
+src/cli_sliding_puzzle.egg-info/PKG-INFO
+src/cli_sliding_puzzle.egg-info/SOURCES.txt
+src/cli_sliding_puzzle.egg-info/dependency_links.txt
+src/cli_sliding_puzzle.egg-info/entry_points.txt
+src/cli_sliding_puzzle.egg-info/requires.txt
+src/cli_sliding_puzzle.egg-info/top_level.txt
+tests/test_game.py

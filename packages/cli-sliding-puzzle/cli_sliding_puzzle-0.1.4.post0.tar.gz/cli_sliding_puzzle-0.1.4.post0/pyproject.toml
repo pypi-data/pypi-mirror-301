@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli-sliding-puzzle"
+authors = [{name = "Wade Wegner", email = "wade.wegner@gmail.com"}]
+description = "A CLI sliding puzzle game"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["game", "puzzle", "cli"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "windows-curses;platform_system=='Windows'",
+]
+dynamic = ["version"]
+
+[project.scripts]
+sliding-puzzle = "cli_game:run_game"
+
+[tool.setuptools_scm]
+write_to = "src/cli_game/_version.py"
+version_scheme = "post-release"
+local_scheme = "no-local-version"
