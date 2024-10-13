@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: shadow_data
+Version: 0.2.0
+Summary: A sensitive data handler python library
+License: MIT
+Author: Adler Medrado
+Author-email: adler@adlermedrado.com.br
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: spacy
+Requires-Dist: spacy (>=3.8,<4.0) ; (platform_system == "Darwin" and platform_machine == "arm64" or platform_system == "Darwin" and platform_machine == "x86_64" or platform_system == "Linux" or platform_system == "Windows") and (extra == "spacy")
