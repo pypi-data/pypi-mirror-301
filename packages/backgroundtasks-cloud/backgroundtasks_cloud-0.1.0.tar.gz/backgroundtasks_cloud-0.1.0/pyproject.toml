@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backgroundtasks_cloud"
+version = "0.1.0"
+description = "A package for running background tasks in Python applications"
+authors = [{name = "Simeon Emanuilov", email = "simeon.emanuilov@gmail.com"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/backgroundtasks"
