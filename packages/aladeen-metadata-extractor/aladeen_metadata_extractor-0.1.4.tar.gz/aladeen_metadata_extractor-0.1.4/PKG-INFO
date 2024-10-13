@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aladeen-metadata-extractor
+Version: 0.1.4
+Summary: A package for extracting metadata from news articles
+Author: Irakli Janiashvili
+Author-email: irakli.janiashvili@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.36.0,<0.37.0)
+Requires-Dist: jsonschema (>=4.23.0,<5.0.0)
+Requires-Dist: openai (>=1.51.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# aladeen-metadata-extractor
+
+Extracts metadata information from news articles using LLM
+
