@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ThreeDViewer
+Version: 0.1.0
+Summary: Tool for visualising 3D vector and scalar fields
+Author: Andreas Apseros
+Project-URL: Homepage, https://github.com/apseros/ThreeDViewer
+Project-URL: Issues, https://github.com/apseros/ThreeDViewer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: magpack
+Requires-Dist: matplotlib
+Provides-Extra: vtk
+Requires-Dist: pyvisa; extra == "vtk"
+Requires-Dist: scipy; extra == "vtk"
