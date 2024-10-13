@@ -1,0 +1,261 @@
+Metadata-Version: 2.1
+Name: FastGenAPI
+Version: 0.1.2
+Summary: A FastAPI-based application for dynamic API generation, Db schema visualization, UML ERD class Diagrams generation and more.
+Home-page: https://github.com/iamumarjaved/FastGenAPI
+Author: Umar Javed
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiocache==0.12.3
+Requires-Dist: aioredis==1.3.1
+Requires-Dist: alembic==1.13.3
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.6.0
+Requires-Dist: asgiref==3.8.1
+Requires-Dist: async-timeout==4.0.3
+Requires-Dist: Authlib==1.3.2
+Requires-Dist: backoff==2.2.1
+Requires-Dist: bcrypt==3.2.0
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.4.0
+Requires-Dist: click==8.1.7
+Requires-Dist: colorama==0.4.6
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: Deprecated==1.2.14
+Requires-Dist: dnspython==2.7.0
+Requires-Dist: ecdsa==0.19.0
+Requires-Dist: email_validator==2.2.0
+Requires-Dist: eralchemy==1.5.0
+Requires-Dist: fastapi==0.115.0
+Requires-Dist: fastapi-cli==0.0.5
+Requires-Dist: fastapi-limiter==0.1.6
+Requires-Dist: googleapis-common-protos==1.65.0
+Requires-Dist: greenlet==3.1.1
+Requires-Dist: grpcio==1.66.2
+Requires-Dist: h11==0.14.0
+Requires-Dist: hiredis==3.0.0
+Requires-Dist: httpcore==1.0.6
+Requires-Dist: httptools==0.6.1
+Requires-Dist: httpx==0.27.2
+Requires-Dist: hyperdx-opentelemetry==0.1.0
+Requires-Dist: idna==3.10
+Requires-Dist: importlib-metadata==6.11.0
+Requires-Dist: importlib_resources==6.4.5
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: itsdangerous==2.2.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: limits==3.13.0
+Requires-Dist: Mako==1.3.5
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: opentelemetry-api==1.27.0
+Requires-Dist: opentelemetry-exporter-otlp==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-common==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-http==1.22.0
+Requires-Dist: opentelemetry-instrumentation==0.48b0
+Requires-Dist: opentelemetry-instrumentation-asgi==0.48b0
+Requires-Dist: opentelemetry-instrumentation-fastapi==0.48b0
+Requires-Dist: opentelemetry-proto==1.22.0
+Requires-Dist: opentelemetry-sdk==1.22.0
+Requires-Dist: opentelemetry-semantic-conventions==0.48b0
+Requires-Dist: opentelemetry-util-http==0.48b0
+Requires-Dist: orjson==3.10.7
+Requires-Dist: packaging==24.1
+Requires-Dist: passlib==1.7.4
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: protobuf==4.25.5
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: pyasn1==0.6.1
+Requires-Dist: pycparser==2.22
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: pydantic-extra-types==2.9.0
+Requires-Dist: pydantic-settings==2.5.2
+Requires-Dist: pydantic_core==2.23.4
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: PyJWT==2.9.0
+Requires-Dist: pytest==8.3.3
+Requires-Dist: python-decouple==3.8
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: python-jose==3.3.0
+Requires-Dist: python-multipart==0.0.12
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: redis==5.1.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: rich==13.9.2
+Requires-Dist: rsa==4.9
+Requires-Dist: sentry-sdk==2.16.0
+Requires-Dist: setuptools==75.1.0
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: six==1.16.0
+Requires-Dist: slowapi==0.1.9
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: SQLAlchemy==2.0.35
+Requires-Dist: starlette==0.38.6
+Requires-Dist: typer==0.12.5
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: ujson==5.10.0
+Requires-Dist: urllib3==2.2.3
+Requires-Dist: uvicorn==0.31.0
+Requires-Dist: watchfiles==0.24.0
+Requires-Dist: websockets==13.1
+Requires-Dist: wrapt==1.16.0
+Requires-Dist: zipp==3.20.2
+
+
+# FashGenAPI
+
+**FashGenAPI** is a versatile package designed to simplify and accelerate your FastAPI project development. It provides essential tools for automatic generation of project structure, models, endpoints, documentation, diagrams, and database management, all integrated into a single command-line interface (CLI).
+
+## Features
+
+### 1. Auto-Generated Documentation
+- **Swagger & ReDoc**: Automatically integrates Swagger UI and ReDoc for easy API documentation.
+- **Custom Templates**: Customize the look and feel of your API documentation with predefined templates.
+- **Real-time updates**: Auto-generates documentation when project components are modified.
+
+### 2. Authentication and Authorization
+- **JWT-based Authentication**: Built-in support for JWT (JSON Web Token) to secure your API.
+- **OAuth2**: Easily integrate OAuth2 for external authentication providers.
+- **Role-based Access Control (RBAC)**: Predefined user roles and permissions for easy management of access levels.
+
+### 3. Database Migrations and ORM Integration
+- **SQLAlchemy**: Integrated SQLAlchemy ORM for smooth database interaction.
+- **Alembic Migrations**: Auto-generate database migration scripts.
+- **Multiple Database Support**: Configure PostgreSQL, SQLite, or other databases with ease.
+
+### 4. Auto-Generate ERD (Entity-Relationship Diagrams)
+- Automatically generate ERD diagrams from SQLAlchemy models or directly from your database schema using ERAlchemy.
+  
+### 5. Class Diagram Generation (UML)
+- Automatically generate class diagrams using PlantUML.
+
+### 6. Mermaid.js Diagram Generation
+- Generate flowcharts and other diagrams using Mermaid.js via CLI.
+
+### 7. API Endpoint and Model Generation
+- **Custom Endpoints**: Automatically generate new FastAPI endpoints with a simple command.
+- **SQLAlchemy Models**: Generate basic SQLAlchemy models with one command.
+
+---
+
+## Installation
+
+1. Install the package using pip:
+    ```bash
+    pip install fastapi-boilerplate-generator
+    ```
+
+2. Install the dependencies from `requirements.txt`:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+## CLI Usage
+
+### Run the FastAPI Server
+```bash
+python manage.py runserver
+```
+
+### Create a New Endpoint
+```bash
+python manage.py create-endpoint <endpoint_name>
+```
+- Example:
+    ```bash
+    python manage.py create-endpoint users
+    ```
+
+### Create a New SQLAlchemy Model
+```bash
+python manage.py create-model <model_name>
+```
+- Example:
+    ```bash
+    python manage.py create-model User
+    ```
+
+### Database Migrations
+```bash
+python manage.py makemigrations
+```
+
+### Generate ERD from SQLAlchemy Models
+```bash
+python manage.py auto-generate-erd
+```
+
+### Generate Class Diagrams
+```bash
+python manage.py generate-class-diagram
+```
+
+### Generate Diagrams using Mermaid.js
+```bash
+python manage.py generate-mermaid-diagram
+```
+
+---
+
+## Examples
+
+### Example of Generated Endpoint (`users.py`)
+```python
+from fastapi import APIRouter
+
+router = APIRouter()
+
+@router.get("/")
+async def get_users():
+    return {"message": "Users endpoint working"}
+```
+
+### Example of Generated SQLAlchemy Model (`user.py`)
+```python
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+```
+
+---
+
+## Configuration
+
+### Database Configuration
+You can configure your database connection inside your FastAPI app:
+```python
+DATABASE_URL = "postgresql+psycopg2://username:password@localhost/dbname"
+```
+
+### JWT Configuration
+To secure your API with JWT, define your secret key and expiration inside your configuration file:
+```python
+JWT_SECRET = "your_jwt_secret"
+JWT_ALGORITHM = "HS256"
+JWT_EXPIRATION_TIME_MINUTES = 30
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue if you find any bugs or want to suggest new features.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
