@@ -1,0 +1,84 @@
+Metadata-Version: 2.3
+Name: sachi
+Version: 0.3.0
+Summary: Terminal media files renamer (FileBot alternative)
+License: MIT License
+        
+        Copyright (c) 2024 NextFire
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: <4,>=3.12
+Requires-Dist: aiohttp[speedups]==3.10.10
+Requires-Dist: backoff==2.2.1
+Requires-Dist: guessit==3.8.0
+Requires-Dist: jinja2==3.1.4
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: pymediainfo==6.1.0
+Requires-Dist: setuptools==75.1.0
+Requires-Dist: textual==0.83.0
+Requires-Dist: tomlkit==0.13.2
+Requires-Dist: typer==0.12.5
+Requires-Dist: yarl==1.15.0
+Description-Content-Type: text/markdown
+
+# sachi
+
+Sachi is a TV Series and Movie TUI renamer made with [Textual](https://github.com/textualize/textual/).
+
+![demo](https://github.com/NextFire/sachi/assets/20094890/e16de440-1f8f-4d69-b66b-7cef3188b883)
+
+## Getting Started
+
+**Requirements:** [uv](https://github.com/astral-sh/uv) and [mediainfo](https://mediaarea.net/en/MediaInfo)
+
+<p>
+  <a href="https://pypi.org/project/sachi" alt="Python version compatibility">
+    <img src="https://img.shields.io/pypi/pyversions/sachi" /></a>
+  <a href="https://pypi.org/project/sachi" alt="PyPI version">
+    <img src="https://img.shields.io/pypi/v/sachi" /></a>
+</p>
+
+```sh
+uvx sachi --help
+```
+
+Or, with Docker:
+
+```sh
+docker run --rm -it \
+  -v /path/to/config:/root/.config/sachi \
+  -v /path/to/media:/media \
+  ghcr.io/nextfire/sachi:latest --help
+```
+
+## Features
+
+Development is still in early stages, here's what's implemented so far:
+
+- File selection
+- TVDB series search (requires an API key)
+- Movies custom renaming
+- Filename jinja2 templating
+
+In progress:
+
+- FileBot context (https://www.filebot.net/naming.html)
+
+The global configuration can be edited with `sachi config`.

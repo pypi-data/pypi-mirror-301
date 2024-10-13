@@ -1,0 +1,138 @@
+Name;Description;Example;Type
+n;movie / series name;Dark Angel;String
+y;movie / series year;2009;Integer
+s;season number;3;Integer
+e;episode number;1;Integer
+sxe;season / episode number;1x01;String
+s00e00;season / episode number;S01E01;String
+t;episode title;Labyrinth;String
+d;airdate;2009-06-01;Date
+startdate;series start date;2002-09-20;Date
+absolute;absolute episode number;42;Integer
+ny;name (year);Avatar (2009);String
+es;episode numbers;[1, 2, 3];Integer*
+sy;season years;[2002, 2003];Integer*
+sc;season count;5;Integer
+di;duplicate index;1;Integer
+dc;duplicate count;2;Integer
+age;age in days;7;Integer
+special;special number;1;Integer
+episode;episode object;Firefly - 1x01 - Serenity;Episode
+series;series object;<series properties>;Series
+primaryTitle;primary name;Juuni Kokuki;String
+alias;alias names;[Juuni Kokuki, ...];String
+movie;movie object;Avatar (2009);Movie
+id;movie / series ID;1437;Integer
+tmdbid;TheMovieDB ID;1437;Integer
+tvdbid;TheTVDB ID;78874;Integer
+imdbid;IMDb ID;tt0756683;String
+pi;part index;1;Integer
+pc;part count;2;Integer
+lang;subtitle language;eng;Language
+subt;subtitle tag;.eng.forced;String
+plex;Plex Naming Standard;<relative path>;File
+kodi;Kodi Naming Standard;<relative path>;File
+emby;Emby Naming Standard;<relative path>;File
+jellyfin;Jellyfin Naming Standard;<relative path>;File
+az;sort collection letter;A;String
+object;match object;Firefly - 1x01 - Serenity;Object
+type;object type;Episode;String
+anime;is anime episode;false;true | false
+regular;is regular episode;true;true | false
+music;music object;Leona Lewis - I See You;AudioTrack
+medium;medium index;1;Integer
+album;album;Avatar;String
+artist;track artist;Leona Lewis;String
+albumArtist;album artist;James Horner;String
+actors;list of actors;[Zoe Saldana, ...];String*
+director;movie director;James Cameron;String
+collection;movie collection;Avatar Collection;String
+ci;movie collection index;1;Integer
+cy;movie collection years;[1977, 2019];Integer*
+decade;movie decade;1970;Integer
+genre;primary genre;Science Fiction;String
+genres;all genres;[Science Fiction, ...];String*
+language;original language;eng;Language
+languages;spoken languages;[eng];Language*
+country;origin country;KR;String
+runtime;movie / episode runtime;162;Integer
+certification;content rating;PG-13;String
+rating;movie rating;7.4;Decimal
+votes;movie votes;17720;Integer
+vcf;video compression format;HEVC;String
+vc;video codec library;x264;String
+ac;audio codec;ac3;String
+cf;container format;mkv;String
+vf;standard video format;1080p;String
+hpi;exact video format;384i;String
+aco;audio codec profile;TrueHD+Atmos;String
+acf;audio channel format;DD5.1;String
+af;audio channel count;6ch;ChannelCount
+channels;audio channel layout;5.1;ChannelCount
+resolution;video resolution;3840x2160;String
+width;video width;3840;Integer
+height;video height;2160;Integer
+bitdepth;video bitdepth;10;Integer
+hdr;high dynamic range;HDR;String
+dovi;Dolby Vision;Dolby Vision;String
+bitrate;overall bitrate;2.0 Mbps;BitRate
+vbr;video bitrate;1.6 Mbps;BitRate
+abr;audio bitrate;192 kbps;BitRate
+fps;frame rate;23.976 fps;FrameRate
+khz;sampling rate;44.1 kHz;String
+ar;aspect ratio;16∶9;String
+ws;widescreen tag;WS;String
+hd;video definition class;UHD;String
+dt;media creation date;<date and time>;Instant
+vs;source class;BluRay;String
+source;source match;BD25;String
+edition;movie edition;Extended Edition;String
+tags;movie tags;[Extended Edition];String*
+s3d;stereoscopic 3D tag;3D SBS;String
+group;release group;ALLiANCE;String
+original;original file name;Serenity;String
+historic;original path;<bindings>;[String:Any]
+info;extended metadata;<all properties>;[String:Any]
+omdb;OMDb info;<all properties>;[String:Any]
+localize;dynamic localization;<languages>;[String:Any]
+order;dynamic episode order;<episode orders>;[String:Any]
+db;dynamic cross-reference;<mapper>;[String:Any]
+fn;current file name;Serenity;String
+ext;file extension;mkv;String
+f;file object;<file path>;File
+folder;folder object;<folder path>;File
+drive;file system root;<folder path>;File
+files;file group;<file paths>;File*
+relativeFile;relative library path;<relative path>;File
+mediaFile;primary media file;<file path>;File
+mediaFileName;primary media file name;Serenity;String
+mediaTitle;embedded media title;Serenity;String
+audioLanguages;audio streams;<audio languages>;Language*
+textLanguages;subtitle streams;<subtitle languages>;Language*
+duration;media duration;PT23M9.974S;Duration
+seconds;duration in seconds;1389;Integer
+minutes;duration in minutes;23;Integer
+hours;duration in HH:mm;0:23;String
+bytes;file size;356 MB;FileSize
+megabytes;file size in MB;356 MB;FileSize
+gigabytes;file size in GB;0.4 GB;FileSize
+ct;file creation date;<date and time>;Instant
+crc32;CRC32 checksum;3E16AF40;String
+media;media properties;<media properties>;[String:String]
+video;video streams;<video streams>;[String:String]*
+audio;audio streams;<audio streams>;[String:String]*
+text;subtitle streams;<subtitle streams>;[String:String]*
+image;image properties;<image properties>;[String:String]
+exif;EXIF image metadata;<image properties>;[String:String]
+camera;photo camera;<camera properties>;[String:String]
+location;photo location;<location properties>;[String:String]
+today;current date;2022-08-08;Date
+home;user home folder;<folder path>;File
+output;--output folder;<folder path>;File
+defines;--def parameters;<script parameters>;[String:String]
+label;--def label value;<label parameter>;String
+self;match bindings;<bindings>;[String:Any]
+model;match context;<list of bindings>;[String:Any]*
+episodelist;series context;<list of bindings>;[String:Any]*
+AnimeList;Anime Lists mapper;<mapping>;Episode
+XEM;XEM mapper;<mapping>;Episode
