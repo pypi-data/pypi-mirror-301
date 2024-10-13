@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/sql_querystring_builder/__init__.py
+src/sql_querystring_builder/abstract_clause.py
+src/sql_querystring_builder/clauses.py
+src/sql_querystring_builder/query_builder.py
+src/sql_querystring_builder/tables.py
+src/sql_querystring_builder.egg-info/PKG-INFO
+src/sql_querystring_builder.egg-info/SOURCES.txt
+src/sql_querystring_builder.egg-info/dependency_links.txt
+src/sql_querystring_builder.egg-info/top_level.txt
+tests/test_clauses.py
+tests/test_queries.py
+tests/test_tables.py
