@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: apitopy
+Version: 0.5.0
+Summary: Pythonic access to HTTP APIs
+Home-page: https://github.com/txels/apitopy
+Author: Carles Barrobés
+Author-email: carles@barrobes.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+Access arbitrary HTTP APIs as if they were python objects
