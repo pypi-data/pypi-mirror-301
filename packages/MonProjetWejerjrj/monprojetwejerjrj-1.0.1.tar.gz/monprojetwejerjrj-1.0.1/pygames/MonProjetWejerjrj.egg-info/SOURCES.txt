@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+pygames/game1.py
+pygames/MonProjetWejerjrj.egg-info/PKG-INFO
+pygames/MonProjetWejerjrj.egg-info/SOURCES.txt
+pygames/MonProjetWejerjrj.egg-info/dependency_links.txt
+pygames/MonProjetWejerjrj.egg-info/requires.txt
+pygames/MonProjetWejerjrj.egg-info/top_level.txt
