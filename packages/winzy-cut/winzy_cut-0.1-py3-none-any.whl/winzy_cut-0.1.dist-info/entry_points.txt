@@ -1,0 +1,2 @@
+[winzy.plugins]
+cut = winzy_cut:cut_plugin
