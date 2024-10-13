@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+optimal3dtracks/__init__.py
+optimal3dtracks/utils_3Dtracking.py
+optimal3dtracks.egg-info/PKG-INFO
+optimal3dtracks.egg-info/SOURCES.txt
+optimal3dtracks.egg-info/dependency_links.txt
+optimal3dtracks.egg-info/requires.txt
+optimal3dtracks.egg-info/top_level.txt

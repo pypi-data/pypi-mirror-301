@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: optimal3dtracks
+Version: 0.0.5
+Summary: Optimal3dTracks is a cell tracking tool that turns 3D, segmented cells/nuclei into cell tracks or         lineage trees by identifying cell migration, division and, optionally, merging events.
+Home-page: https://github.com/akarsa/optimal3dtracks/
+Author: Anita Karsa
+Author-email: ak2557@cam.ac.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.md
