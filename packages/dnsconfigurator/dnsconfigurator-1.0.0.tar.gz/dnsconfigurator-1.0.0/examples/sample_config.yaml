@@ -1,0 +1,39 @@
+iplist:
+  home: "192.168.1.1"
+  office: "10.0.0.2"
+
+default:
+  provider: "testprovider"
+  mx:
+    - priority: 10
+      value: "mx1.mail.com"
+    - priority: 20
+      value: "mx2.mail.com"
+  txt:
+    - name: ~
+      value: "v=spf1 a mx include:spf.mail.com -all"
+    - name: "_dmarc"
+      value: "v=DMARC1; p=quarantine; fo=1; rua=mailto:admin@{DOMAIN}"
+  cname:
+    www: ~
+    test: "@"
+  # Dkim records are added as CNAME records
+  dkim:
+    "key._domainkey": "dkim_key.{DOMAIN}"
+
+domains:
+  example.com:
+    ip: "office"
+    a:
+      home: "home"
+    cname:
+      sub1: "@"
+      sub2: "~"
+      sub3: "altdomain.com"
+  mydomain.com:
+    ip: "home"
+  newdomain.com:
+    ip: "home"
+    cname:
+    txt:
+    mx:

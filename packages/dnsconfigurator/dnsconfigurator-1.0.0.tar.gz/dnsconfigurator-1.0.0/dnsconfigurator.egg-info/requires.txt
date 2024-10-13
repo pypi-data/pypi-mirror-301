@@ -1,0 +1,13 @@
+pyyaml
+click
+colorlog
+cerberus
+requests
+tldextract
+
+[dev]
+black
+flake8
+pytest
+build
+twine
