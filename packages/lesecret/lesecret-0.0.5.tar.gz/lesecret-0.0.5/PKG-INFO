@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: lesecret
+Version: 0.0.5
+Summary: An image steganography tool to hide secrets in plain sight
+Project-URL: Homepage, https://github.com/jerry871002/lesecret
+Project-URL: Issues, https://github.com/jerry871002/lesecret/issues
+Author-email: Jerry Yang <jerry871002@gmail.com>
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: numpy==2.1.1
+Requires-Dist: pillow==10.4.0
+Requires-Dist: rich==13.9.2
+Description-Content-Type: text/markdown
+
+# Le Secret
+
+This is a TUI re-implementation of my freshman year project [The Secret](https://github.com/jerry871002/OOP-Final-Project) (it was 2018 by the way...🫣), an image steganography tool to hide secrets in plain sight.
+
+Use it to secretly encode and decode messages within image files and share the images on popular messaging apps!
+
+## Installation
+
+```
+pip install lesecret
+```
+
+## Get Started
+
+Start the TUI-based application with the following command:
+
+```
+lesecret
+```
+
+There are two modes for *Le Secret*: encode and decode.
+
+In encode mode, you need to provide an image along with the message you would like to encode and a passkey.
+*Le Secret* will produce a new image with the name `<original-name>-<random-hex-digits>.png` in the same directory.
+
+In decode mode, you need to provide an image and a passkey.
+The decoded message will be shown only if the image contains an encoded message and the correct passkey is provided.
+
+So far I have tested sending the image over Line, Telegram (send as a file), and Messenger.
+The encoded message preserves in all three applications.
+However, if you download the image on your iPhone (I don't have an Android phone sorry) then resend the image, the encoded message won't preserve. I suppose it's because the file format changes while downloading the image.
