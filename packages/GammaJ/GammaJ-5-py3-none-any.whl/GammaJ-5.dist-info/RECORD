@@ -1,0 +1,11 @@
+gammaj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gammaj/__main__.py,sha256=SqYpTIjFN5yxEfqSVxEjUhTv2G3eRkUS0tcokItPvEE,29
+gammaj/parser.py,sha256=1LzKoHAZ6GGr6W0cP8h8ooor9oCVVOZqeaYrOAo-Ld4,847
+gammaj/run.py,sha256=SGRQoHNX3fT4qmk5X658AB-RK_xw-maHBNL-sDN5rBA,603
+gammaj/utilsbox.py,sha256=XIXTrKqWpczaJC-dMRsYKabEH61pnrRgC5XM7s8OJLg,2326
+GammaJ-5.dist-info/LICENSE,sha256=5c26u-GuYOjqzUDQMGGCYpHi9lRHuEZvG-jajFEklaI,34817
+GammaJ-5.dist-info/METADATA,sha256=sL3wYWdbqergDo95klgQnAUJs1Xm2rVSJmNJjfFt0AI,3155
+GammaJ-5.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+GammaJ-5.dist-info/entry_points.txt,sha256=o3zYl_6WOQanEOB3dHQZHfNJ5jO4nNm6EEPLTjm_AZc,42
+GammaJ-5.dist-info/top_level.txt,sha256=4hVFRJfXXyfbRWT4wjyiodoUsa0o41Mzd4rkeD9VJQc,7
+GammaJ-5.dist-info/RECORD,,
