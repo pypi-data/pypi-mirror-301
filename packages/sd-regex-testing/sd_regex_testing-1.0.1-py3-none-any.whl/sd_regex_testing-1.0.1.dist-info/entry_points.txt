@@ -1,0 +1,3 @@
+[console_scripts]
+sdrt=sd_regex_testing.interactive:test_from_cli
+
