@@ -1,0 +1,7 @@
+setup.py
+retriever_elsa.egg-info/PKG-INFO
+retriever_elsa.egg-info/SOURCES.txt
+retriever_elsa.egg-info/dependency_links.txt
+retriever_elsa.egg-info/entry_points.txt
+retriever_elsa.egg-info/requires.txt
+retriever_elsa.egg-info/top_level.txt
