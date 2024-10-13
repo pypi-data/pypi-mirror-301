@@ -1,0 +1,2 @@
+[inspect_ai]
+el = el.approvers._registry
