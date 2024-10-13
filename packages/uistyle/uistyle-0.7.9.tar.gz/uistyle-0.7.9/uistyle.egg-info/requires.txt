@@ -1,0 +1,4 @@
+colorama
+loguru
+pyfiglet
+rich
