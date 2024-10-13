@@ -1,0 +1,9 @@
+pyparsing
+scancode-toolkit>=32.2.0
+scanoss
+XlsxWriter
+fosslight_util>=2.1.0
+PyYAML
+wheel>=0.38.1
+intbitset
+fosslight_binary>=5.0.0
