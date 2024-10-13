@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+instacerty/__init__.py
+instacerty/instacerty.py
+instacerty/utils.py
+instacerty/static/images/badge.png
+instacerty/static/images/bg.jpg
+instacerty/static/images/signature.png
+intacerty.egg-info/PKG-INFO
+intacerty.egg-info/SOURCES.txt
+intacerty.egg-info/dependency_links.txt
+intacerty.egg-info/requires.txt
+intacerty.egg-info/top_level.txt
