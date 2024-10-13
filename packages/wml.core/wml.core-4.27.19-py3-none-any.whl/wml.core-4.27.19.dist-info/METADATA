@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wml.core
+Version: 4.27.19
+Summary: Winnow's ML core package
+Author: ['Phong Dinh Vo', 'Minh-Tri Pham']
+Requires-Python: >=3.8
+Requires-Dist: pyyaml
+Requires-Dist: tzlocal
+Requires-Dist: tqdm
+Requires-Dist: imageio >=2.15
+Requires-Dist: murmurhash3
+Requires-Dist: networkx
+Requires-Dist: mtpandas >=1.15
+Requires-Dist: mtbase >=4.30.24
+Requires-Dist: mtgpu >=0.6
+Requires-Dist: mtgeo >=0.10
+Requires-Dist: mtopencv >=1.9
+Requires-Dist: mtimageio >=0.1
+Requires-Dist: mttf >=1.0.2
+Requires-Dist: mtnet >=0.2
+Requires-Dist: paramiko
+Requires-Dist: scipy
+
