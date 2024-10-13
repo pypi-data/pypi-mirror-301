@@ -1,0 +1,8 @@
+quickprofile/__init__.py,sha256=Aa1Am0L9E5f8Dp2zjhCI_nqtkhxRBSr2GIo0_0gFbig,125
+quickprofile/profiler.py,sha256=GjKHDLafuGlQPI-2u50_NwkvrLsQjFzLpxyuxNhrXy0,1096
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_profiler.py,sha256=I-OVWHw6stBmWO0XwgVZGwD3dsWNWny80kv9mMz7TUs,376
+quickprofile-0.1.0.dist-info/METADATA,sha256=46OeKKom_709_zvQZFq_71cJu87QH0C6puaCFtz_l5I,610
+quickprofile-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+quickprofile-0.1.0.dist-info/top_level.txt,sha256=rFzMmepAqLlbbd7NO0R3EM2G1Fpq2gPxR95QPku7VKA,19
+quickprofile-0.1.0.dist-info/RECORD,,

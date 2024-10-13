@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quickprofile
+Version: 0.1.0
+Summary: A simple profiling library for measuring execution time.
+Home-page: https://github.com/vigsun19/quick_profile
+Author: Vignesh Sundaram
+Author-email: vigneshanm@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# QuickProfile
+
+A simple profiling library to measure execution time for functions, code blocks, and specific lines of code.
+
+## Installation
+
+```bash
+pip install .
