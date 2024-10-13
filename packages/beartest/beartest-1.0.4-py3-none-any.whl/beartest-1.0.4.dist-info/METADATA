@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: beartest
+Version: 1.0.4
+Summary: oh bear!
+Home-page: https://github.com/Qiyana-bear/bear_pip_test
+Author: bear
+Author-email: bear@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+# bear_pip_test
