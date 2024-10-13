@@ -1,0 +1,8 @@
+ASL_alnum_recognizer/__init__.py,sha256=J_JNaGDDXCht5ctFKqxssHnPpxnjPzt4VLEnZyvKxYM,47
+ASL_alnum_recognizer/recognize.py,sha256=iWuvK1NXl_7pfmSLZ7MHsTIzq8QRoGEMRWD39MKg1S4,4099
+ASL_alnum_recognizer/models/signLanguageDetectoralpnum.h5,sha256=ZZEsZOHOeoPWeez7F5KA9N_vTuazYlCmW0g5vN8okE4,329712
+ASL_Alpnum_Recognizer-0.5.dist-info/METADATA,sha256=dfkC1VN4GxFHO8JOZpOG676xrhY_cRgavH71Pbvt4Zc,600
+ASL_Alpnum_Recognizer-0.5.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+ASL_Alpnum_Recognizer-0.5.dist-info/entry_points.txt,sha256=nbI2BpOiPOJEAukipZ7dOdewXm-25o5vQzCPBCW95hY,98
+ASL_Alpnum_Recognizer-0.5.dist-info/top_level.txt,sha256=cVuh7x674yP7hJ0sWFggbzKHHmEVFsp3eJMUJQr6GSM,21
+ASL_Alpnum_Recognizer-0.5.dist-info/RECORD,,
