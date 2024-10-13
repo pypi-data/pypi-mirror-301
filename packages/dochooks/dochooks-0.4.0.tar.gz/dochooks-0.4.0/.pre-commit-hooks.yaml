@@ -1,0 +1,12 @@
+- id: check-whitespace-between-cn-and-en-char
+  name: CN-[whitespace]-EN checker
+  description: Ensure Chinese and English characters are separated by a space.
+  entry: check-whitespace-between-cn-and-en-char
+  language: python
+  types: [text]
+- id: insert-whitespace-between-cn-and-en-char
+  name: CN-[whitespace]-EN fixer
+  description: Insert a space between Chinese and English characters automatically.
+  entry: insert-whitespace-between-cn-and-en-char
+  language: python
+  types: [text]
