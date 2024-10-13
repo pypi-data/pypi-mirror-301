@@ -1,0 +1,2 @@
+[console_scripts]
+run_webcam = SignLangASL_Recognizer.recognize:SignLanguageRecognizer.run_webcam
