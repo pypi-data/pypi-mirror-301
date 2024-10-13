@@ -1,0 +1,9 @@
+PyMKF.cpython-38-x86_64-linux-gnu.so,sha256=NEYOGC9NBv7_guKa_K5XcD3Fz1EzYyeqFkUux8qV5MY,21385064
+include/pybind11_json/pybind11_json.hpp,sha256=ZNarkODwSUnde_H2mY2xc4sjzCsX4_T5VbNZyz9-a98,7197
+share/cmake/pybind11_json/pybind11_jsonConfig.cmake,sha256=AshYDMxYqwktb90mgTvR9UvrTFIfJyF-QClfEAaRk1I,2006
+share/cmake/pybind11_json/pybind11_jsonTargets.cmake,sha256=vPAnibHu-5tgBUElqq_5G0r8qOLjWt5oxlWBxI2_25w,4162
+share/cmake/pybind11_json/pybind11_jsonConfigVersion.cmake,sha256=286nryjaP8Js1yB3jDLOSIAjEt03KHTaAEw9XR7MBQw,1403
+pymkf-0.9.12.dist-info/METADATA,sha256=l5iBTHu5Cud9xS2rMIPhncHU0SzRzcyMNQRee4FvNdc,762
+pymkf-0.9.12.dist-info/WHEEL,sha256=fe5N_Pu90ulGky8eyj9SA1isl1lA6rW06CZcciZsBfU,153
+pymkf-0.9.12.dist-info/RECORD,,
+pymkf-0.9.12.dist-info/licenses/LICENSE.md,sha256=Sb7EMhyhCzQvugv3cK_iWLEe7201RdPVJUKnL2ByEWk,1703
