@@ -1,0 +1,12 @@
+vonage_application/__init__.py,sha256=7Wp7PojABFeuGT6h8nWCor52iyO8_wdRJIodFL9kNxU,853
+vonage_application/_version.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+vonage_application/application.py,sha256=wXZqsiRlhJ_FWLH7nNQmpR8qfKXP_L8v2d1Fdb9a4wQ,4072
+vonage_application/common.py,sha256=rOiM15rYZbACrUpoGBk8yfGUqRruP-9MSvGmcHvHX84,7465
+vonage_application/enums.py,sha256=6qx23T3_uFhr4FvpNYsqTLjYMPcfluvkAIIfuq91tSQ,469
+vonage_application/errors.py,sha256=1hTKSDzMkFZ34oudV8eHzdDmkNayii05Mq_GYa7yzac,142
+vonage_application/requests.py,sha256=XezX7kVMaGPs8i6wViZtmQozM4UqBZkDjq2NVnTyOOg,832
+vonage_application/responses.py,sha256=PFv1-4lbWCNfiRPbynKnjC4sVQ85_W40OtwUI_sHbSM,2298
+vonage_application-1.0.2.dist-info/METADATA,sha256=xkHY-bjeGsNartU-DF1mU-PlyvTwDcQxx45u7NtwJLM,3094
+vonage_application-1.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vonage_application-1.0.2.dist-info/top_level.txt,sha256=ZuFtQRMq01I4-DNPRYtgL50Isf30H5PUozSmRQ9bn3I,19
+vonage_application-1.0.2.dist-info/RECORD,,
