@@ -1,0 +1,17 @@
+socra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socra/cli.py,sha256=0-PjiV_wv_6AXqjRr6e5l9YaEo1qxEX50Jzvpf0q2D8,1054
+socra/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socra/commands/command.py,sha256=yhHwYgMxW1gMaOOuHAhVxnwx1MvaRUktoiNBeS54K3A,300
+socra/commands/describe.py,sha256=rxj4Djb4WtJ3UGrengh111MotJWM_mUbYXVUv8Sq0FA,2378
+socra/commands/improve.py,sha256=ea_OzIh8feXmR7mE1nPsClu1Ex2YxZXYo__-d5aiYj0,2564
+socra/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socra/io/files.py,sha256=qV7dfzmFwhhjSmLBFCCwLKTMtqLNbRs0V4HjrOV_o90,307
+socra/sandbox/random.py,sha256=efBiLsi4C45blst4FoqK7KeEw0Bd5I9yVBBpDjQI73U,226
+socra/schemas/schema.py,sha256=4OR0ph7w8o2FjALIutVoKcpDX5Yc9TgFTj1aMX49Ui0,67
+socra/utils/decorators.py,sha256=_9U6N1wFlHzmrC9uY1Mr_ILgThQTgJ1vecJ665xYGKQ,2008
+socra/utils/spinner.py,sha256=mEhWwwPDzkKSkrlHfGRln1a1UWSE16X_COsAA_f_ciw,1049
+socra-0.0.5.dist-info/LICENSE,sha256=Cg-troTOELA6rteZzGG5ETwBvMTKrnouZvHdciDw9MI,1053
+socra-0.0.5.dist-info/METADATA,sha256=LFctMIPobLZ696_yAvwK0moo25L8yCKGpvaAjWORmMk,4953
+socra-0.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+socra-0.0.5.dist-info/entry_points.txt,sha256=1_7A7bgmhCAU2GhevuINjVQkkqh1nocpskioTyi9cqc,39
+socra-0.0.5.dist-info/RECORD,,
