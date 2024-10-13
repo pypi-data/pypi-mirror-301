@@ -1,0 +1,5 @@
+""" version which can be consumed from within the module """
+VERSION_STR = "0.0.5"
+DESCRIPTION = "pypptkit helps doing things with ppt files"
+APP_NAME = "pypptkit"
+LOGGER_NAME = "pypptkit"
