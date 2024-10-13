@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: MonProjetWejerjrj
+Version: 1.0.1
+Summary: Un jeu Pygame avec interface Tkinter
+Author: Wejerjrj
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: Natural Language :: French
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: pygame
+
