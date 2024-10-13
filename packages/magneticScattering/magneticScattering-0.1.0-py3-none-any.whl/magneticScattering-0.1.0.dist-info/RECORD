@@ -1,0 +1,11 @@
+magneticScattering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magneticScattering/dft.py,sha256=en9goEdQfybg_SmLqtL1IZsjsPn_-YLZUs25vB5Nc8k,3825
+magneticScattering/examples.py,sha256=TJBiNIGhHgCJyAYVCQZ-jHllE_QAw4zt2ryXyZXHU6s,863
+magneticScattering/plot.py,sha256=3jZWTSNQUQxFCCdgxEYgW41cDvtodAX2LPOlCZhYm0Q,6712
+magneticScattering/scatter.py,sha256=LbKx_qXzmhOjEz95yqmOJnZR4Fdtx_SDTxM5bO9UDpA,12956
+magneticScattering/structures.py,sha256=ufAYVpNcR-SLMF7ciImVaDgAVi8nQRQeXYUTQuHIoLM,6197
+magneticScattering-0.1.0.dist-info/LICENSE.txt,sha256=qhMlsiDkf11MhDCC7AnhOwibe5Oo-ef8feDoB7K904E,1461
+magneticScattering-0.1.0.dist-info/METADATA,sha256=znL4gMZYt95JhEKBs6TFt0Ce46jFOCU3VN_v9OlyAXk,6249
+magneticScattering-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+magneticScattering-0.1.0.dist-info/top_level.txt,sha256=038YynX61sOSvQLY3phdfTnwh4vj-ta38EAEJq72qYk,19
+magneticScattering-0.1.0.dist-info/RECORD,,
