@@ -1,0 +1,5 @@
+
+[test]
+pytest
+pytest-readme
+validate_version_code
