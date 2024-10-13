@@ -1,0 +1,8 @@
+setup.py
+iris_idealai/__init__.py
+iris_idealai/script.py
+iris_idealai.egg-info/PKG-INFO
+iris_idealai.egg-info/SOURCES.txt
+iris_idealai.egg-info/dependency_links.txt
+iris_idealai.egg-info/requires.txt
+iris_idealai.egg-info/top_level.txt
