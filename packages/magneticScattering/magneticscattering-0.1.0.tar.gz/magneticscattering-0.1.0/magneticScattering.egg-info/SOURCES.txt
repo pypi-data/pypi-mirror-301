@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+magneticScattering/__init__.py
+magneticScattering/dft.py
+magneticScattering/examples.py
+magneticScattering/plot.py
+magneticScattering/scatter.py
+magneticScattering/structures.py
+magneticScattering.egg-info/PKG-INFO
+magneticScattering.egg-info/SOURCES.txt
+magneticScattering.egg-info/dependency_links.txt
+magneticScattering.egg-info/requires.txt
+magneticScattering.egg-info/top_level.txt
