@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pypluggy/__init__.py
+pypluggy/mgr.py
+pypluggy/static.py
+pypluggy.egg-info/PKG-INFO
+pypluggy.egg-info/SOURCES.txt
+pypluggy.egg-info/dependency_links.txt
+pypluggy.egg-info/requires.txt
+pypluggy.egg-info/top_level.txt
