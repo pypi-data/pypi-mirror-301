@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: temaselectsysten
+Version: 0.1.5
+Summary: 
+Author: leomoraesguitar
+Author-email: 123950901+leomoraesguitar@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bancodadosmysql (>=0.1.4,<0.2.0)
+Requires-Dist: flet (>=0.24.1,<0.25.0)
+Description-Content-Type: text/markdown
+
+
