@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nfl_espn_scraper/__init__.py
+nfl_espn_scraper/example.py
+nfl_espn_scraper/player.py
+nfl_espn_scraper/test.py
+nfl_espn_scraper/utils.py
+nfl_espn_scraper.egg-info/PKG-INFO
+nfl_espn_scraper.egg-info/SOURCES.txt
+nfl_espn_scraper.egg-info/dependency_links.txt
+nfl_espn_scraper.egg-info/requires.txt
+nfl_espn_scraper.egg-info/top_level.txt
