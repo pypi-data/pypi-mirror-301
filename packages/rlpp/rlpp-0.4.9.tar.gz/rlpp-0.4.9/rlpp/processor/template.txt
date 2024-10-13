@@ -1,0 +1,125 @@
+import pygame 
+import os 
+
+SCREEN = (640,480)
+display = pygame.display.set_mode(SCREEN)
+
+# DD. GAME_OBJECT
+# gameObject = GameObject()
+# interp. a game object in the editor with:
+# - position x and y in the screen, where coordinate is the center of the object
+# - image loaded in pygame
+# - object_type: agent, wall, enemy, food
+class GameObject():
+    def __init__(self,position, angle, object_type, img_path,scale_factor, dx=0.1,dy=0.1):
+        self.x, self.y = position
+        self.dx = dx
+        self.dy = dy
+        self.placed = False #stops following cursor once it's placed
+        self.object_type = object_type
+        self.image_path = img_path
+        self.image = pygame.image.load(img_path)
+        self.rect = self.image.get_rect()
+        self.rect.center = position
+        self.angle = angle
+        self.scale_factor =scale_factor 
+        self.turnClockwise()
+        self.scale()
+
+        
+    def draw(self, display):
+        self.updateRect()
+        display.blit(self.image, self.rect)
+        
+    def turnClockwise(self, degrees=0):
+        # Preserve the current center position of the rectangle
+        self.angle = (self.angle + degrees)%360
+        previous_center = tuple(self.rect.center)
+        # Rotate the image
+        self.image = pygame.transform.rotate(self.image, -degrees)  # Use -self.angle for clockwise rotation
+        self.rect = self.image.get_rect(center=previous_center)  # Reassign the rect with the updated center
+    
+    def updateRect(self):
+        self.rect.center = self.x, self.y
+        
+    def scale(self):
+        w,h = self.image.get_size()
+        previous_center = tuple(self.rect.center)
+        new_size = (int(w * (self.scale_factor)), int(h * (self.scale_factor)))
+        self.image = pygame.transform.scale(self.image, new_size)
+        self.rect = self.image.get_rect(center=previous_center)  # Reassign the rect with the updated center
+
+
+    def update(self):
+        self.update_position()
+        self.update_velocity()
+        # Here you can add any other helper functions that modify the behavior of the game object
+        
+    def update_position(self):
+        pass 
+
+    def update_velocity(self):
+        pass 
+    
+
+# DD. AGENT
+# agent = Agent()
+# interp. a game object optimized to work as an agent:
+class Agent(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "agent", img_path, scale_factor)
+    
+
+# DD. WALL
+# wall = Wall()
+# interp. a game object optimized to work as a wall:
+class Wall(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "wall", img_path, scale_factor)
+        
+# DD. FOOD
+# food = Food()
+# interp. a game object optimized to work as food:
+class Food(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "food", img_path, scale_factor)
+
+# DD. ENEMY
+# enemy = Enemy()
+# interp. a game object optimized to work as food:
+class Enemy(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "enemy", img_path, scale_factor)
+
+
+
+# DD. GAME_MANAGER
+# game = GameManager()
+# interp. main container for our game in pygame
+class GameManager():
+    def __init__(self):
+        self.reset()
+        
+    def reset(self):
+        self.score = 0
+<<embed_game_objects>>
+
+
+gameManager = GameManager()
+############### CODE ###################
+
+
+
+def draw():
+    display.fill("#1e1e1e")
+    for logo in gameManager.all_game_objects:
+        for go in logo:
+            go.draw(display)
+    pygame.display.flip()
+
+def update():
+    [pygame.quit() for event in pygame.event.get() if event.type == pygame.QUIT]
+
+while True:
+    draw()
+    update()
