@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+IntegrationTestRig/IntegrationTestRig.py
+IntegrationTestRig/__init__.py
+IntegrationTestRig.egg-info/PKG-INFO
+IntegrationTestRig.egg-info/SOURCES.txt
+IntegrationTestRig.egg-info/dependency_links.txt
+IntegrationTestRig.egg-info/requires.txt
+IntegrationTestRig.egg-info/top_level.txt
+tests/test_example.py
