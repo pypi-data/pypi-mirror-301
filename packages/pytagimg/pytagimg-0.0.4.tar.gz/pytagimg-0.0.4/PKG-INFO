@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pytagimg
+Version: 0.0.4
+Summary: Pytagimg helps you tag images fast
+Home-page: https://veltzer.github.io/pytagimg
+Download-URL: https://github.com/veltzer/pytagimg
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+Maintainer: Mark Veltzer
+Maintainer-email: mark.veltzer@gmail.com
+License: MIT
+Keywords: images,photos
+Platform: python3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pytconf
+Requires-Dist: pylogconf
+
+==========
+*pytagimg*
+==========
+
+.. image:: https://img.shields.io/pypi/v/pytagimg
+
+.. image:: https://img.shields.io/github/license/veltzer/pytagimg
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+
+project website: https://veltzer.github.io/pytagimg
+
+author: Mark Veltzer
+
+version: 0.0.4
+
+	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2020, 2021, 2022, 2023, 2024

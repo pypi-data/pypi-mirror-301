@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pytagimg/__init__.py
+pytagimg/configs.py
+pytagimg/main.py
+pytagimg/static.py
+pytagimg.egg-info/PKG-INFO
+pytagimg.egg-info/SOURCES.txt
+pytagimg.egg-info/dependency_links.txt
+pytagimg.egg-info/entry_points.txt
+pytagimg.egg-info/requires.txt
+pytagimg.egg-info/top_level.txt
