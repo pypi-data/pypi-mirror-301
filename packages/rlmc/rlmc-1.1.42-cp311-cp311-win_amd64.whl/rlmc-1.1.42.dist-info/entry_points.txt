@@ -1,0 +1,18 @@
+[console_scripts]
+chatbot = rltools.call_qianfan:main
+clearcache = rltools.clear_cache:clear_cache
+cutvideo = rltools.moviepy_cut_video:main
+deltemp = rltools.del_jupyter_temp:del_jupyter_temp
+downloadmodel = rltools.download_model:main
+findimg = rltools.tsi:main
+findtool = rltools.findtool:find
+genhash = rltools.gen_hash:gen_hash
+gpuinfo = rltools.systeminfos:gpu_info
+handcontrol = rltools.handcontrol:main
+managesource = rltools.manage_source:manage_source
+ocr = rltools.ocr:main
+stt = rltools.stt_turbo:main
+sysinfo = rltools.systeminfos:general_info
+takephoto = rltools.take_photo:main
+testcuda = rltools.cuda_test:cudatest
+tts = rltools.tts:main
