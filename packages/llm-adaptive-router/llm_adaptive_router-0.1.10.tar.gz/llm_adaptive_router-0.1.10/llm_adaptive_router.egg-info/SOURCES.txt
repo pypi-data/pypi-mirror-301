@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+llm_adaptive_router/__init__.py
+llm_adaptive_router/models.py
+llm_adaptive_router/prompts.py
+llm_adaptive_router/router.py
+llm_adaptive_router/utils.py
+llm_adaptive_router.egg-info/PKG-INFO
+llm_adaptive_router.egg-info/SOURCES.txt
+llm_adaptive_router.egg-info/dependency_links.txt
+llm_adaptive_router.egg-info/requires.txt
+llm_adaptive_router.egg-info/top_level.txt
+tests/__init__.py
+tests/test_router.py
