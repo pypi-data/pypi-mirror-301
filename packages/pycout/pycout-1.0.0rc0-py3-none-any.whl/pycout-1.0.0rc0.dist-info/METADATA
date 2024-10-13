@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pycout
+Version: 1.0.0rc0
+Summary: C++'s `cout << "Hello" << " World !" << endl;` in Python.
+Home-page: http://github.com/EnzoBnl/pycout
+Author: Enzo Bonnal
+Author-email: enzobonnal@gmail.com
+License: Apache 2.
+License-File: LICENSE
+
