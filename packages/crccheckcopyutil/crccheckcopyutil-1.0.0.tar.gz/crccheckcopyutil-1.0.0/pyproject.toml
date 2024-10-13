@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=71.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crccheckcopyutil"
+version = "1.0.0"
+requires-python = ">=3.11.6"
+authors = [
+  {name = "Carlos Florez", email = "carlos@florez.co.uk"}
+]
+maintainers = [
+  {name = "Carlos Florez", email = "carlos@florez.co.uk"}
+]
+description = ""
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+
+]
+
+[project.scripts]
+plexutil = "crccheckcopyutil.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/florez-carlos/crccheckcopyutil"

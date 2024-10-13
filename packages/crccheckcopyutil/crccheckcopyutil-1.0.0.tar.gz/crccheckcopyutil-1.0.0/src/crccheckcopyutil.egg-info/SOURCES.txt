@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/crccheckcopyutil/__init__.py
+src/crccheckcopyutil/__main__.py
+src/crccheckcopyutil.egg-info/PKG-INFO
+src/crccheckcopyutil.egg-info/SOURCES.txt
+src/crccheckcopyutil.egg-info/dependency_links.txt
+src/crccheckcopyutil.egg-info/entry_points.txt
+src/crccheckcopyutil.egg-info/top_level.txt
+src/crccheckcopyutil/lib/__init__.py
