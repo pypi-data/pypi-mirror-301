@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: factor-python-sdk
+Version: 1.0.0
+Summary: A Python SDK for the Factor analytics platform
+Home-page: https://github.com/codeibrahima/factor-python-sdk
+Author: Factor
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.20.0
+
+## Still working on it
+
+# Factor Python SDK
+
+The Factor Python SDK allows you to easily integrate your application with the Factor analytics platform.
+
+## Installation
+
+```bash
+pip install factor-sdk
+
+
+```
