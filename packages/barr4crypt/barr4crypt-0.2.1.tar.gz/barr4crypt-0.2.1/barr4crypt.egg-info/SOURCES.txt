@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+barr4/__init__.py
+barr4/core.py
+barr4crypt.egg-info/PKG-INFO
+barr4crypt.egg-info/SOURCES.txt
+barr4crypt.egg-info/dependency_links.txt
+barr4crypt.egg-info/top_level.txt
