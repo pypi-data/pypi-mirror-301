@@ -1,0 +1,13 @@
+autokattis/__init__.py,sha256=ErSH254vpfSKAGK2l_4-MV6Ec6GzPJ_scRvPcLCpJxY,187
+autokattis/api/__init__.py,sha256=ELMgX6W15b-u8plWYzs_EwgaHnKpcIRK8PsJxtWmbu8,2003
+autokattis/api/databasemanager.py,sha256=BkQJOLksB10wyLMYBhGxwXs7Ot-fDNSxcmsBOzdsEmU,1496
+autokattis/api/enums.py,sha256=rnOg1RR7rziCAtI0100yZ526RVWosPZ9Jtj6f55JrXE,2267
+autokattis/api/loginmanager.py,sha256=HgiwdwLnthbO4WlkbuoLndJzmuNpZUpMVH-pi9jUDos,1755
+autokattis/api/nuskattis.py,sha256=QTGNXJlhyV2gig7LqfS9ngAOxjhgkNcEJnPsPGzj-XU,25603
+autokattis/api/openkattis.py,sha256=m6r7oovHPbiu8cb3rsYnoJugdCF2GBovKvWunxmTVrk,53422
+autokattis/api/utils.py,sha256=7mjlT4HMy6M31VwYJDQDMFZVSGZFh945X84dAQ3hwdU,2008
+autokattis-2.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+autokattis-2.0.1.dist-info/METADATA,sha256=bkHr8QVToCILRsi0X-arPopTEDrjaOIpr6eITH0kxtw,6900
+autokattis-2.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autokattis-2.0.1.dist-info/top_level.txt,sha256=BFTTmMyM178yOgvQraucBvjQ8yF7vEIhm2GHMl9MRwM,11
+autokattis-2.0.1.dist-info/RECORD,,
