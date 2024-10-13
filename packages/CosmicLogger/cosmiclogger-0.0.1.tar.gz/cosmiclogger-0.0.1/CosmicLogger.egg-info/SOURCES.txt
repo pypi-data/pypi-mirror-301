@@ -1,0 +1,9 @@
+README.md
+setup.py
+Cosmic/__init__.py
+Cosmic/cosmiclogger.py
+CosmicLogger.egg-info/PKG-INFO
+CosmicLogger.egg-info/SOURCES.txt
+CosmicLogger.egg-info/dependency_links.txt
+CosmicLogger.egg-info/requires.txt
+CosmicLogger.egg-info/top_level.txt
