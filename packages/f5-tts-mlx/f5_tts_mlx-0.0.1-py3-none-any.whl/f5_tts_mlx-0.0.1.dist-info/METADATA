@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: f5-tts-mlx
+Version: 0.0.1
+Summary: F5-TTS - MLX
+Author-email: Lucas Newman <lucasnewman@me.com>
+License: MIT
+Project-URL: Homepage, https://github.com/lucasnewman/f5-tts-mlx
+Keywords: artificial intelligence,asr,audio-generation,deep learning,transformers,text-to-speech
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools ; python_version >= "3.9"
+
+# f5-tts-mlx
