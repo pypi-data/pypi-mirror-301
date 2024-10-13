@@ -1,0 +1,5 @@
+""" version which can be consumed from within the module """
+VERSION_STR = "0.0.2"
+DESCRIPTION = "utilities for openshift"
+APP_NAME = "pyocutil"
+LOGGER_NAME = "pyocutil"

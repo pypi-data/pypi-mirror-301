@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pyocutil/__init__.py
+pyocutil/configs.py
+pyocutil/main.py
+pyocutil/static.py
+pyocutil/utils.py
+pyocutil.egg-info/PKG-INFO
+pyocutil.egg-info/SOURCES.txt
+pyocutil.egg-info/dependency_links.txt
+pyocutil.egg-info/entry_points.txt
+pyocutil.egg-info/requires.txt
+pyocutil.egg-info/top_level.txt
