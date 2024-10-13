@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pycout
+Version: 1.0.2
+Summary: C++'s cout for Python 
+Home-page: http://github.com/ebonnal/pycout
+Author: Enzo Bonnal
+Author-email: bonnal.enzo.dev@gmail.com
+License: Apache 2.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyCout
+> C++'s `cout << "Hello" << " World!" << endl;` in Python
+
+[![Actions Status](https://github.com/ebonnal/pycout/workflows/unittest/badge.svg)](https://github.com/ebonnal/pycout/actions)
+[![Actions Status](https://github.com/ebonnal/pycout/workflows/PyPI/badge.svg)](https://github.com/ebonnal/pycout/actions)
+
+`pip install pycout`
+
+```python
+from pycout import *
+
+cout << "Sending a " << 1000 << " hellos world!" << endl;
+```
