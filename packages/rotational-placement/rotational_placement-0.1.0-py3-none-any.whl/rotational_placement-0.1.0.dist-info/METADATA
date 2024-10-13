@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: rotational_placement
+Version: 0.1.0
+Summary: A package for generating data related to the concept of rotational placement
+Project-URL: Homepage, https://github.com/Ingwehr/RotationalPlacementPackage
+Author-email: ingwehr <backlund.hugo@gmail.com>
+License: Academic Free License (AFL)
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# Rotational Placement
+## About this package
+This is a module intended for working with the mathematical method called rotational placement. This module offers three different experiment types with their specific uses and limitations and functions to visualize basic plots of these experiment instances. 
+
+## Using this package 
+The class Experiment is used for storing data, gathering data and retrieving this data. They are initialized with 
