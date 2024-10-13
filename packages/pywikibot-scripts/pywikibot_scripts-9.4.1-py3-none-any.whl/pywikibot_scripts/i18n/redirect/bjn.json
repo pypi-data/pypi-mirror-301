@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Riemogerz",
+			"Xqt"
+		]
+	},
+	"redirect-fix-double": "Pamasangan paugahan ganda ka %(to)s",
+	"redirect-remove-broken": "Paalihan ka tungkaran nang dihapus atawa kada ada",
+	"redirect-remove-loop": "Bidikan paalihan mahasilakan paalihan siklik"
+}
