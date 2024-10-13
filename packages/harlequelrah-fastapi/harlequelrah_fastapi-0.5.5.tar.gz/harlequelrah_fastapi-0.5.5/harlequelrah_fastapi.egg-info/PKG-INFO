@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: harlequelrah_fastapi
+Version: 0.5.5
+Summary: Package personnalisé pour faciliter  le développement avec python avec fastapi
+Home-page: https://github.com/Harlequelrah/My_Python_Library
+Author: Harlequelrah
+Author-email: maximeatsoudegbovi@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi[standard]>=0.112.0
+Requires-Dist: alembic>=1.13.3
+Requires-Dist: virtualenv>=20.26.6
+Requires-Dist: mysql-connector-python>=9.0.0
+
+# Harlequelrah
+
+PassionÃ© par la programmation et le dÃ©veloppement avec python je me lance dans la crÃ©ation progressive d'une bibliothÃ¨que personnalisÃ©e pour m'ameliorer , devenir plus productif et partager mon expertise
+
+# Installation
+
+- Avec Github : git clone https://github.com/Harlequelrah/My_Python_Library"
+- Avec pip : pip install harlequelrah
+
+# Utilisation
+
+from harlequelrah import une_fonction
+
+# Contact ou Support
+
+Pour des questions ou du support, contactez-moi Ã  maximeatsoudegbovi@gmail.com ou au (+228) 91 36 10 29.
