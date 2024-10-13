@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cedarscript-ast-parser"
+dynamic = ["version"]
+description = "A library for parsing and interpreting CEDARScript, a SQL-like language for code analysis and transformations"
+readme = "README.md"
+authors = [{ name = "Elifarley", email = "cedarscript@orgecc.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Compilers",
+]
+keywords = ["parser", "ast", "cedarscript", "code-editing", "refactoring", "code-analysis", "sql-like", "ai-assisted-development"]
+dependencies = [
+    "cedarscript-grammar>=0.0.9",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/CEDARScript/cedarscript-ast-parser-python"
+Documentation = "https://github.com/CEDARScript/cedarscript-ast-parser-python#readme"
+Repository = "https://github.com/CEDARScript/cedarscript-ast-parser-python.git"
+"Bug Tracker" = "https://github.com/CEDARScript/cedarscript-ast-parser-python/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=4.0",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "cedarscript_ast_parser.__version__"}
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["cedarscript_ast_parser"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cedarscript_ast_parser*"]
+exclude = ["cedarscript_ast_parser.tests*"]
+namespaces = false
