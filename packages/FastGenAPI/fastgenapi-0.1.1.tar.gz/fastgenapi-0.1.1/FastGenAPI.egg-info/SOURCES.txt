@@ -1,0 +1,9 @@
+README.md
+setup.py
+FastGenAPI.egg-info/PKG-INFO
+FastGenAPI.egg-info/SOURCES.txt
+FastGenAPI.egg-info/dependency_links.txt
+FastGenAPI.egg-info/entry_points.txt
+FastGenAPI.egg-info/requires.txt
+FastGenAPI.egg-info/top_level.txt
+tests/test_main.py
