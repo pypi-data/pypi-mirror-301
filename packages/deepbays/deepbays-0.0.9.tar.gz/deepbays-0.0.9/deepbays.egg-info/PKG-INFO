@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: deepbays
+Version: 0.0.9
+Summary: Bayesian deep neural networks in the proportional regime as renormalized kernel gaussian processes
+Author: Rosalba Pacelli
+Author-email: <rosalba.pacelli@gmail.com>
+Keywords: python,machine learning,gaussian processes,neural networks
+
+Compute expected predictor of a Bayesian deep neural networks in the proportional regime in a non-parametric way using the equivalent GP
