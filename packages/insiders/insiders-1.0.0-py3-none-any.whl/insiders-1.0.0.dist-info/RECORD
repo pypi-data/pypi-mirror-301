@@ -1,0 +1,12 @@
+insiders-1.0.0.dist-info/METADATA,sha256=0rg0Xb8DZayM8336VA47HPdSfnXrvBrRfZjjsFqV65c,2415
+insiders-1.0.0.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+insiders-1.0.0.dist-info/entry_points.txt,sha256=IFjyPmDx8VXLpqM4sRcREa-cIQaWRz6g-NbKQ4v41Qo,63
+insiders-1.0.0.dist-info/licenses/LICENSE,sha256=GZ4fS4Z6WtxHYD5ZqFT9vlpdOXvzm-cvjYmOIHXhqMc,754
+insiders/__init__.py,sha256=_7wkkOAotb_1B5ephwy_m4zgLppaWRsNoGaJDKYKw8g,118
+insiders/__main__.py,sha256=s4l-rTihszAFrm3j9LY727ar3kjHYcj1PRdzXtVDJDQ,341
+insiders/cli.py,sha256=_aVKXrpGHYASgZwuDgGbjzLc1I7eFR7vPSgEJqOBMo4,9521
+insiders/debug.py,sha256=b3xVxRwJ4gj96UDttW6Iro8-mMTZUe4pYBKTCNEKmNE,2825
+insiders/github.py,sha256=Ro7CtRR_TylVBRFWW08q7jVcRX4WN2-XV-OC64rvpBU,3864
+insiders/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+insiders/pypi.py,sha256=1G1ey2f4n5N3CCGDJ2E7anEEZ4VcbNUECAM5PQLo76w,3159
+insiders-1.0.0.dist-info/RECORD,,
