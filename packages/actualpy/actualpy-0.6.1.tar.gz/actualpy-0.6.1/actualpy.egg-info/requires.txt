@@ -1,0 +1,10 @@
+cryptography
+proto-plus
+python-dateutil
+requests
+sqlmodel
+
+[cli]
+rich
+typer
+pyyaml
