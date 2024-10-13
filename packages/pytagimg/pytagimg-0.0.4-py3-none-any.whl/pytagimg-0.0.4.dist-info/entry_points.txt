@@ -1,0 +1,2 @@
+[console_scripts]
+pytagimg = pytagimg.main:main
