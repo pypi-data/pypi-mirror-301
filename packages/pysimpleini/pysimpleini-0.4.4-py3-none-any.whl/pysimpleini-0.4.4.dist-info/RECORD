@@ -1,0 +1,15 @@
+pysimpleini/__init__.py,sha256=qzTll31dQgtkUggG9KHrdvR0voVJJ_rDKAfxrKajUOQ,1649
+pysimpleini/__main__.py,sha256=hbYaW-4Bu3X5mW8ZXay91Rhz17TZOGlRfyoe_4XMX9I,6503
+pysimpleini/document.py,sha256=ltfl7g8Z5x7oZfgms-CH9vc-8uIodUsFeWAtFqvq04o,8482
+pysimpleini/exceptions.py,sha256=ZlXDshBcYzXMUmZN5klJJoh6jv82lfMnmA8vLkGHALs,761
+pysimpleini/keys.py,sha256=yE3mnlYNGU_EfZeOpkYHUWTnt8L3USy2yZ0jXlQ7UQA,3688
+pysimpleini/py.typed,sha256=Wqzh5eUAxTH-5EQ8HJLyX0u23eGrKM-xO4UmT9DEinI,13
+pysimpleini/sections.py,sha256=mKtsuP8ytZmQ5aOz1Pbx0brYBqjJK5JsUtq3z7VnoHg,10585
+pysimpleini/simpleini.py,sha256=ICa6WhxiuyIaKXt0Kg0LrvdrMvMJuXJsx7Pw5Fcy1iE,11419
+pysimpleini/walker.py,sha256=DVH61gI82NlfW5QRtSIiuf4QZ2y1A8UqlNYGfQlBSCQ,3843
+pysimpleini-0.4.4.dist-info/LICENSE.md,sha256=w7pnK54p7O4-IXXS3K1BfIpXwzUIQ5JmzeLkDx1kSXg,19100
+pysimpleini-0.4.4.dist-info/METADATA,sha256=5M8RCWIz50q2vR2dNLJo39WEndijY0Gf4s0QS3Up4UM,22864
+pysimpleini-0.4.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pysimpleini-0.4.4.dist-info/entry_points.txt,sha256=2STXBPma1biM8SHgzzvwjPdhJCwfRBXZxHr5I1irdXg,48
+pysimpleini-0.4.4.dist-info/top_level.txt,sha256=SSbG2xarFyHZOQeF7dq1bGZJN3z-YZsoIfcUoZ8ZeMU,12
+pysimpleini-0.4.4.dist-info/RECORD,,
