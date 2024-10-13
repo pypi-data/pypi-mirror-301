@@ -1,0 +1,12 @@
+TorchSisso/DimensionalFeatureSpaceConstruction.py,sha256=oQ3cHIu0nU91ShBg3E9uV8vd2T8LY4yNk2Fqe9RO-h0,55578
+TorchSisso/FeatureSpaceConstruction.py,sha256=JrM_9OtGn444I86AYttOwJBmgBGfqDv9PeAvibI418k,21611
+TorchSisso/Regressor.py,sha256=oUVgyM6l0AGRS_E5hrpvYppozLNvl02y89idSZkvemM,12940
+TorchSisso/Regressor_dimension.py,sha256=zA6huDwR8lCnT5kQ5J-U6KyG9YarBKmUUAysxbc98H0,17526
+TorchSisso/__init__.py,sha256=gA8MPXnR2WDyJ2TpeL0LksD84vkMcc3JtnyD8ekv0RE,426
+TorchSisso/combinations_construction.py,sha256=jBJytvQyshRhAwtS5YjhksaJfoi2pSQEEdb4taAOpMw,5111
+TorchSisso/model.py,sha256=vmvzDyJj7xE1kkAHiopvtCj0nJWnHuWNqNny0qTDGAo,8808
+TorchSisso/unary_construction.py,sha256=O4mMEP-5epFrVxm3Hntbmp8gmDaDP-49-UvM_rLCcbU,3514
+TorchSisso-0.1.8.dist-info/METADATA,sha256=Nis4DuKcgurWmFGtYdYWGft-mppMVlLLanQ70iIggSM,518
+TorchSisso-0.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TorchSisso-0.1.8.dist-info/top_level.txt,sha256=O8-kCEtGvvY0bgvrVA-JExGo8DDfuXEYE_eEol2iej4,11
+TorchSisso-0.1.8.dist-info/RECORD,,
