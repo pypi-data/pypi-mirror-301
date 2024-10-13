@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+mansi/mansi.egg-info/PKG-INFO
+mansi/mansi.egg-info/SOURCES.txt
+mansi/mansi.egg-info/dependency_links.txt
+mansi/mansi.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mansi"                
+version = "1.0.2"                  
+description = "A Python module for easily applying ANSI codes in a terminal."
+authors = [
+    { name = "gallium-gonzollium"}
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.6"
+
+[project.urls]
+homepage = "https://github.com/gallium-gonzollium/ansi_codes"
+repository = "https://github.com/gallium-gonzollium/ansi_codes"
