@@ -1,0 +1,1 @@
+from diff_tool import main
