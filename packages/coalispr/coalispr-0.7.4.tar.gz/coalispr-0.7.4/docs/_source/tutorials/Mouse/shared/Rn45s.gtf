@@ -1,0 +1,15 @@
+##gff-version 2
+# created 28 Sep 2022.
+# using NR_046233 for coordinates 45S gene within X82564 with contextual sequence.
+# all other coordinates were derived from alignments of X82564 with:
+# CTCF-binding site sequence AY457263; 
+# Mouse rDNA spacer promoter 2kb upstream of 45S pre-RNA initiation site X06186.1;
+# Rn18s NR_003278.3 (from https://www.ncbi.nlm.nih.gov/gene/19791);
+# Rn5-8s NR_003280.2, J01871.1, K01367.1 and the human 5.8S rRNA sequence from https://www.ncbi.nlm.nih.gov/nuccore/NT_167214.1?report=fasta&from=112024&to=112180;
+# Rn28s NR_003279.1.
+mmu-45S_ENA-X82564	ENA	exon	3508	3645	.	+	.	gene_id "as CTCF-binding-site_AY457263"; transcript_id "as CTCF-binding-site_AY457263"; gene_type "spacer promoter"; gene_name "as CTCF-binding-site_AY457263"; 
+mmu-45S_ENA-X82564	ENA	exon	3355	3709	.	+	.	gene_id "rDNA spacer promoter_X06186.1"; transcript_id "rDNA spacer promoter"; gene_type "spacer promoter"; gene_name "rDNA spacer promoter";
+mmu-45S_ENA-X82564	ENA	exon	9643	11512	.	+	.	gene_id "Rn18s_rRNA_NR_003278"; transcript_id "Rn18s_rRNA"; gene_type "rRNA"; gene_name "Rn18s";
+mmu-45S_ENA-X82564	ENA	exon	12512	12668	.	+	.	gene_id "Rn5-8s_rRNA_NR_003280"; transcript_id "Rn5-8s_rRNA"; gene_type "rRNA"; gene_name "Rn5-8s";
+mmu-45S_ENA-X82564	ENA	exon	13758	18484	.	+	.	gene_id "Rn28s_rRNA_NR_003279"; transcript_id "Rn28s_rRNA"; gene_type "rRNA"; gene_name "Rn28s";
+mmu-45S_ENA-X82564	ENA	exon	5636	19035	.	+	.	gene_id "Rn45s_pre-rRNA_NR_046233"; transcript_id "NR_046233"; gene_type "pre-rRNA"; gene_name "Rn45s";

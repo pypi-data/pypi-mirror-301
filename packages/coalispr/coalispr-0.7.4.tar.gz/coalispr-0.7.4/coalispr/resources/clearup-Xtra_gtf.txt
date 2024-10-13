@@ -1,0 +1,22 @@
+The file 'source/MitochCneoDTagsRecombinationalDNAs.gbk' contains
+a) the complete sequence of
+serotypeD mitochondrial DNA (as 0:1..33199) from
+http://www-sequence.stanford.edu/group/C.neoformans/files/cnmito.fa.gz
+as described in Suppl.Table 2 of
+"Mitochondrial Genome Polymorphisms in the Human Pathogenic Fungus 
+Cryptococcus neoformans" in Yue Wang and Jianping Xu 2020,
+Front. Microbiol., 21 April 2020; https://doi.org/10.3389/fmicb.2020.00706 
+and b) introduced DNA consisting of epitope tag sequences or CRISPR-Cas9 
+plasmid fragments used during transformation.
+
+These sequences have been joined together (i.e. with their annotations)
+using the Viewer of the CLC Genomics Workbench (digitalinsights.qiagen.com/).
+The annotated sequence was then exported as
+1a) genbank file.
+1b) fasta sequence file
+
+2) the exported genbank file was translated to gtf with the share/genbank2gtf.py
+script to enable display in the bedgraph browser and is joined with the
+`Unspecific` gtf during browsing and with the main gtf for mapping.
+
+3) created a 'source/MitochCneoDTagsRecombinationalDNAs-length.txt' file.

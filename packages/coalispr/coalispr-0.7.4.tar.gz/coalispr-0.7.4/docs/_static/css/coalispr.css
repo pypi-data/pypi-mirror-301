@@ -1,0 +1,116 @@
+/** css/coalispr.css **/
+
+body {
+   font-family: sans-serif;
+}
+
+.page .main .content{
+   flex-basis: 100%; 
+   /* width: 100%; */
+}
+
+/** Correct center-alignment and unwanted wrapping in tables **/
+td, th {
+   white-space: nowrap;
+   text-align: left;
+}
+
+/** Make table contents comparable, especially for sequences, 
+by using monospace font **/
+td {
+   font-family: monospace;
+   vertical-align: top;
+}
+/** Change aspects of side bar **/
+aside {
+   margin-bottom: 15px;
+}
+
+aside.p {
+   font-size: 0.8em;
+}
+/** class to turn style of a paragraph placed after footnotes into a 
+section with footnote look and feel (this to bypass the finding that 
+code-blocks kill wrapping of footnote text) **/
+.asfootnote {
+    color: var(--color-foreground-secondary);
+    font-size: var(--font-size--small);
+}
+/** small bold capitals for :smc:`CONSTANT`s **/
+.smc {
+    font-variant-caps: all-small-caps;
+}
+
+/** As asfootnote but with monosized font for RNA sequences **/
+.mononote {
+    color: var(--color-foreground-secondary);
+    font-family: monospace;
+    font-variant: small-caps;
+    font-style: normal;
+    font-size: 110%
+    /**font-size: var(--font-size--small);**/
+}
+a.mononote {
+    font-variant: normal;
+    font-weight: bold;
+}
+/** for captions in tables that present images/sequences **/
+th.mononote {
+    font-size: **var(--font-size--small);
+    font-style: italic;
+    font-variant: normal;
+}
+/** Regular sized font for sequence in snoRNA-pages **/
+.mononorm {
+    color: var(--color-foreground-secondary);
+    font-size: 140%; /**2vw;**/
+    font-family: monospace;
+    font-variant: small-caps;
+    font-style: normal;
+}
+/** Mark links to nuclotides modified only in Cryptococcus **/
+.cneo {
+    color: DarkOrange;
+}
+.highlights {
+    color: DarkOrange;
+}
+
+/** Use CSS from snopy site instead of logo to work with dark theme **/
+.snopy {
+    margin : 15 0 0 30;
+    font-weight : 900;
+    font-size   : 120%;
+}
+.snopy span { 
+    color : red;
+}
+.smallfigcaption{
+    color: var(--color-foreground-primary);
+    font-size: var(--font-size--small);
+    line-height: 1.2;
+}
+/**svg icons **/
+.svglink:hover{
+    filter:opacity(80%);
+}
+
+/** for autoapi acc. to Antoine Beyeler
+https://bylr.info/articles/2022/05/10/api-doc-with-sphinx-autoapi/ **/
+span.summarylabel {
+    background-color: var(--color-foreground-secondary);
+    color: var(--color-background-secondary);
+    font-size: 70%;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 3px;
+    vertical-align: 15%;
+    padding-bottom: 2px;
+    filter: opacity(40%);
+}
+
+table.summarytable {
+    width: 100%;
+}
+
+

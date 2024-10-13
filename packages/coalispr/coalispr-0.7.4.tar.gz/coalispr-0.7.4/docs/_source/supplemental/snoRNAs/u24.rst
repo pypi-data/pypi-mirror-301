@@ -1,0 +1,121 @@
+.. role::  raw-html(raw)
+   :format: html
+
+.. |Dbox|  replace::  :raw-html:`<span class="mononorm">caga</span>`
+.. .. |Cbox|  replace::  :raw-html:`<span class="mononorm">rugauga</span>`
+.. .. |nbsp| replace:: :raw-html:`&#x00A0;`
+
+.. .. |extrBP|  replace:: ..S rRNA 
+.. .. |extr|  replace::  :raw-html:`<span class="mononorm">...</span>`
+.. |targetRNA-d|  replace:: 25S rRNA
+.. |target-d| replace:: :raw-html:`<span class="mononorm">agat<a href="../18s-tab.html#U24_25S_d" title="25S target">C</a>ttggtggta</span>`
+.. |targetRNA|  replace:: 25S rRNA
+.. |target| replace:: :raw-html:`<span class="mononorm">agt<a href="../18s-tab.html#U24_25S" title="25S target">AG</a>caaatat</span>`
+.. |ortholog| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300072">snR24 (U24)</a>, human <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300580">SNORD24</a>`
+
+
+U24-SNORD24
+===========
+
+.. figure:: /../_static/images/snoRNAs/u24_h99_igb.png
+   :name: u24_h99_igb
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 40%
+   :figwidth: 100%
+
+- U24_intronic-boxCDsnoRNA-88nt-in-CNH01270
+- Within intron of CNH01270 (CNAG_05465) for Guanine nucleotide-binding protein subunit beta-like protein (Ribosomal protein RACK1 subfamily)
+- Orthologue of |ortholog|
+- Because of the evolutionarily conserved target sequence and D' box (\ |Dbox|\ ), the double modification found in yeast in |targetRNA| (\ |target|\ ) is predicted for *Tremellomycetes* as well
+- Predicted D-guide target in |targetRNA|\ : |target|
+
+.. figure:: /../_static/images/snoRNAs/U24-align.png
+   :name: u24-align
+   :align: left
+   :width: 1110 px
+   :height: 404 px
+   :scale: 40%
+   :figwidth: 100%
+
+
+.. rst-class:: mononote
+
+>AE017348.1:822141-822228 Cryptococcus neoformans var. neoformans JEC21 chromosome 8 sequence :raw-html:`</br>`
+CGATATGATGCGATCTATATATTTGCTACTTCAGAGGGGTGAAACAGACCCGATGAGACCAACTTTTCCA :raw-html:`</br>`
+CCAAGATCTCTGATCACT
+
+
+
+|
+|
+|
+|
+|
+|
+
+=======
+
+- Image source U24:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Annot/1-48                   ----------------RTGATGA-----------UAUAAACGAUGA-CTGA-------------------RTGATGA--------AUGGUGGUUCUAGACTGA-----
+        #=GS U24/1-88 DE ncrna 8:822140:822224:1 (88)
+        U24/1-88                     ------------CGATATGATGCGATCT----ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCAA--CTTTTCCACCAAGATCTCTGATCACT
+        #=GS H99/1-89 DE CP003833.2:c379707-379621 Cryptococcus neoformans var. grubii H99 chromosome 14, complete sequence
+        H99/1-89                     -----------CCGATATGATGCGATCT----ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCAA--CTTTTCCACCAAGATCTCTGATCACT
+        #=GS R265/1-88 DE CP025768.1:c302210-302123 Cryptococcus gattii VGII R265 chromosome 10, complete sequence
+        R265/1-88                    ------------CGATATGATGCGATCT----ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCAA--CTTTTCCACCAAGATCTCTGATCACT
+        #=GS WM276/1-88 DE CP000297.1:c287683-287596 Cryptococcus gattii WM276 chromosome L, complete sequence
+        WM276/1-88                   ------------CGATATGATGCGATCT----ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCAA--CTTTTCCACCAAGATCTCTGATCACT
+        #=GS CryFlo/1-86 DE RRZH01000011.1:c1263349-1263264 Cryptococcus floricola strain DSM 27421 chromosome 10, whole genome shotgun sequence
+        CryFlo/1-86                  -------------GACATGATGCGATCT----ATATATTTGCTACTTCAGAGGGGT-GAAATAG-ACCCGATGAGACCA---CTTTTCCACCAAGATCTCTGATCACT
+        #=GS CryFlo/1-98 DE RRZH01000011.1:c1260318-1260221 Cryptococcus floricola strain DSM 27421 chromosome 10, whole genome shotgun sequence
+        CryFlo/1-98                  CATCATGCCCCGTTTCCAAATGCGATCC----ATATATTTGCTACTTCAGAGGGGT-GAAATAG-ACCCGATGAGACCA----CTTTCCACCAAGATCTCTGATTACT
+        #=GS CryWin/1-87 DE AWGH01000019.1:7863-7949 Cryptococcus wingfieldii CBS 7118 supercont1.19, whole genome shotgun sequence
+        CryWin/1-87                  ------------GGACATGATGCGATCT----ATATATTTGCTACTTCAGAGGGGT-GAAATAG-ACCCGATGAGACCA---CTTTTCCACCAAGATCTCTGATCACT
+        #=GS CryFlo/1-89 DE RRZH01000009.1:1025528-1025616 Cryptococcus floricola strain DSM 27421 chromosome 8, whole genome shotgun sequence
+        CryFlo/1-89                  ------------CGACATGATGCGATCATT--ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCA---CTTTTCCACCAAGATCTCTGATCTCT
+        #=GS CryAmy/1-89 DE MEKH01000008.1:976814-976902 Cryptococcus amylolentus CBS 6273 supercont2.8, whole genome shotgun sequence
+        CryAmy/1-89                  ------------CGACATGATGCGATCATT--ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCA---CTTTTCCACCAAGATCTCTGATCTCT
+        #=GS NaeEnc/1-89 DE MCFC01000037.1:c96933-96845 Naematelia encephala strain 68-887.2 BCR39scaffold_37, whole genome shotgun sequence
+        NaeEnc/1-89                  -----------TCGACATGATGCGATCTA---TTATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACCA---CTTTTCCACCAAGATCTCTGATCTAT
+        #=GS KwoMan/1-90 DE ASQF01000001.1:345719-345808 Kwoniella mangroviensis CBS 8886 cont1.1, whole genome shotgun sequence
+        KwoMan/1-90                  ------------CGACATGATGCGATCTAT--ATATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCGATGAGACAA--TCTTTTCCACCAAGATCTCTGATCTTT
+        #=GS KwoSha/1-90 DE NQVO01000029.1:c249976-249887 Kwoniella shandongensis strain CBS 12478 scaffold00029, whole genome shotgun sequence
+        KwoSha/1-90                  ------------CGACGTGATGTGATCATT--TTATATTTGCTACTTCAGAGGGGT-GAAACAG-ACCCAATGAGACAA--CCCTATCCACCAAGATCTCTGATCCCT
+        #=GS CrySki/1-89 DE BCHT01000004.1:c236755-236667 Cryptococcus skinneri DNA, scaffold: scaffold_3, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/1-89                  -----------CTGGAATGATGCGATCATG--TTATATTTGCTACTTCAGAGGGGT-GAAAAAG-ACCCGATGAGACCA---CTTAACCACCAAGATCTCTGACCTT-
+        #=GS TreTag/1-87 DE CAJHEQ010000110.1:c25580-25494 MAG: Tremellales sp. Tagirdzhanova-0007 genome assembly, contig: TREM_110, whole genome shotgun sequence
+        TreTag/1-87                  -----------CTCGCATGATGCGATCTT---TTATATTTGCTACTTCAGAGGGGT-GAA-CAG-ACCCAATGAGACTA--TTTTATCCACCAAGATCTCTGATTC--
+        #=GS TreFuc/1-81 DE LBGW01000948.1:35321-35401 Tremella fuciformis strain tr26 contig948, whole genome shotgun sequence
+        TreFuc/1-81                  ------------CGAGATGATGCGATCT----TTATATTTGCTACTTCAGAGGC----TTGG----GCCGATGAGACCA--CTTTTTCCACCAAGATCTCTGATCTA-
+        #=GS TriOvo/1-83 DE WEIQ01000011.1:525551-525633 Trichosporon ovoides strain 2NF903A scaffold11-size996425, whole genome shotgun sequence
+        TriOvo/1-83                  ------------CGACATGATGCGATCACG--ATATATTTGCTACTTCAGAGGGC----TT----GCCCGATGAGACCAA--CCTATCCACCAAGATCTCTGATCCT-
+        #=GS TriOvo/1-82 DE WEIQ01000011.1:c881081-881000 Trichosporon ovoides strain 2NF903A scaffold11-size996425, whole genome shotgun sequence
+        TriOvo/1-82                  -------------GAAATGATGATTTCGA---TTATATTTGCTACTTCAGAGGGC----TT----GCCCGATGAGACAACA-CATATCCACCAAGATCTCTGATCCC-
+        #=GS TriAsa/1-82 DE SCGW01000105.1:21184-21265 MAG: Trichosporon asahii isolate N5_275_008G1 N5_275_008G1_scaffold_160, whole genome shotgun sequence
+        TriAsa/1-82                  ------------CGACATGATGCGATCTA---ACATATTTGCTACTTCAGAGGGC----TT----GCCCGATGAGACTA---CCTATCCACCAAGATCTCTGATCTCT
+        #=GS TriInk/1-80 DE JXYM01000002.1:2813959-2814038 Trichosporon inkin strain JCM 9195 scaffold_0002, whole genome shotgun sequence
+        TriInk/1-80                  ------------CGACATGATGCGATCAAA--ACATATTTGCTACTTCAGAGGGC----TC----GCCCGATGAGACTA---CCTATCCACCAAGATCTCTGATC---
+        #=GS CryGC4/1-83 DE JALPCA010000621.1:c616-534 Cryptococcus sp. GC_Crypt_4 iso00_46_654, whole genome shotgun sequence
+        CryGC4/1-83                  -----------CCATTATGATGTCATTTAC--TTGTATTTGCTACTTCAGAGGG----GCGA----CCCGATGAGACCAA---CTTTCCACCAAGATCTCTGATCCT-
+        #=GS PapLau/1-84 DE JAAZPW010000019.1:c279260-279177 Papiliotrema laurentii strain IF7SW-B5 scaffold45_cov183, whole genome shotgun sequence
+        PapLau/1-84                  ------------CTTCGAGATGATGCGATCTATTATATTTGCTACTTCAGAGGC----CTG-----GCCGATGAGACAA--CTTTTTCCACCAAGATCTCTGATCTA-
+        #=GS VanFra/1-83 DE BEDY01000002.1:2112188-2112270 Vanrija fragicola DNA, scaffold: scaffold_2, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-83                  ------------CGATATGATGTTATCG----ATATATTTGCTACTTCAGAGGGC---GTGAG--GCCCCGTGAGACAA---CATATCCACCAAGATCTCTGATCGC-
+        #=GS KocImp/1-81 DE NBSH01000008.1:671749-671829 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_8, whole genome shotgun sequence
+        KocImp/1-81                  ------------CAACATGATGTGATCT----ATATATTTGCTACTTCAGAGGGC----TT----GCCCAATGAGACAA--CATTTTCCACCGAGATCTCTGATTCC-
+        #=GS SacCer-snR24/1-89 DE 25S:C1437,25S:A1449,25S:G1450  Saccharomyces_cerevisiae U24 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300072
+        SacCer-snR24/1-89            ------------TCAAATGATGTAATA-----ACATATTTGCTACTTCAGATGGAACTTTGAGT-TCCGAATGAGACATACCAATTATCACCAAGATCTCTGATGAA-
+        #=GS HomSap-SNORD-24/1-75 DE 28S:C2338,28S:C2352 Homo_sapiens SNORD24 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300580
+        HomSap-SNORD-24/1-75         -----------TGCAGATGATGTAAAA-----GAATATTTGCTAT--CTGAGA------GA-------TGGTGATGACATTTT-AAACCACCAAGATCGCTGATGCA-
+        #=GC SS_cons                 ---------------------------------------------------((((----------))))---------------------------------------
+        //        

@@ -1,0 +1,1674 @@
+.. role::  raw-html(raw)
+   :format: html
+
+.. |nbsp| replace:: :raw-html:`&#x00A0;`
+
+.. .. |Dbox|  replace::  :raw-html:`<span class="mononorm">cuga</span>`
+.. .. |Cbox|  replace::  :raw-html:`<span class="mononorm">rugauga</span>`
+
+.. .. |extrBP|  replace:: ..S rRNA 
+.. .. |extr|  replace::  :raw-html:`<span class="mononorm">...</span>`
+
+.. .. |targetRNA|  replace:: :raw-html:`<span class="mononorm">gUUGUYGGRRGRuyrryu</span>`
+..                                                          trryRgyyttytrguugr
+.. |targetRNA| replace:: :raw-html:`<span class="mononorm">urryRgyyuuyurguugr</span>`
+
+.. |target| replace:: :raw-html:`unknown, although in <i>Cryptococcus</i> possibly 5S rRNA (<span class="mononorm">ata<a href="../18s-tab.html#cnag12093_5S" title="5S target?">G</a>ccttc</span>), or, less likely, ITS2 pre-rRNA (<span class="mononorm">ggta<a href="../18s-tab.html#cnag12093_ITS2" title="ITS2 target?">G</a>tcttc</span>)`
+
+.. |ortholog| replace:: unknown
+
+..  .. [ortholog| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae3000..">..</a>, human <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens3000..">..</a>`
+
+
+snRcnag12093
+============
+
+.. figure:: /../_static/images/snoRNAs/cnag12093_h99_igb.png
+   :name: cnag12093_h99_igb
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 40%
+   :figwidth: 100%
+
+- snRcnag12093_intronic-boxCDsnoRNA-83nt
+- From dedicated transcript like CNAG_12093 opposite of *CAS31* (CNA06800, CNAG_00701) coding for "CAP64 gene product-related")
+- Clear homologues were not retrieved for *Kwoniella* species (apart from *K.*\ |nbsp|\ *shandongensis*), nor for *C.*\ |nbsp|\ *skinneri*.
+- Predicted target: |target|
+- Putative targets are uncertain given that only a short stretch of complimentarity can be expected while the conservation of the snoRNA guide is not reflected in that of the putative target sites in many of the checked species (:doc:`snrcnag12093-species`).
+- Conservation in snRcnag12093 appears quite extensive and could facilitate base pairing to |targetRNA|
+
+.. - Orthologue of |ortholog|
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-align.png
+   :name: cnag12093-align
+   :align: left
+   :width: 1636 px
+   :height: 437 px
+   :scale: 40%
+   :figwidth: 100%
+
+
+|
+
+.. rst-class:: mononote
+
+
+>AE017341.1:1859589-1859671 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence :raw-html:`</br>`
+TATCATGATGATTACACCTATTTCATCAACTAGAAGGCTGTTGCTGAGCCGCGGCTTTGATCGAGAAACC :raw-html:`</br>`
+TCTTTCTGATTCT
+
+
+.. >AY421723.1:c187-105 Cryptococcus neoformans var. neoformans Cas31p (CAS31) gene, complete cds
+.. TATCATGATGATTACACCTATTTCATCAACTAGAAGGCTGTTGCTGAGCCGCGGCTTTGATCGAGAAACC
+.. TCTTTCTGATTCT
+
+|
+|
+|
+
+
+
+
+Targets of snRcnag12903?
+''''''''''''''''''''''''
+
+No obvious :doc:`complimentary methylation sites <../18s-tab>` can be found for the guide in snRcnag12093. What are the other RNAs for this snoRNA to interact with? Would putative associations be consistent with the degree of its conservation and that of the guide sequence? Putative targets were searched for with |targetRNA|, composed from ambiguous nucleotides. This yielded a list of :doc:`loci with complementarity <snrcnag12093-targets>` of 14 nt or longer to the methylation guide of snR12093.
+
+- The tentative target of snRcnag12093 in 5S rRNA only supports 9 base-pairs and seems not sufficiently conserved (e.g. in *Tremella* or *Vanrija*) to suggest that this interaction is kept during evolution.
+
+.. figure:: /../_static/images/snoRNAs/5S-align.png
+   :name: 5s-align
+   :align: left
+   :width: 1222 px
+   :height: 515 px
+   :scale: 40%
+   :figwidth: 100%
+
+|
+|
+
+-  Target for snR12093 is only present in *Cryptococcus* ITS2 (shown in pre-rRNA with conserved 5.8S and 25S rRNA flanks; the secondary structure fits the 'ring-pin' model [Coleman-2015_, Burlacu-2017_]). 
+
+.. figure:: /../_static/images/snoRNAs/ITS2-align.png
+   :name: its2-align
+   :align: left
+   :width: 1314 px
+   :height: 407 px
+   :scale: 40%
+   :figwidth: 100%
+
+|
+|
+
+
+- Retaining the first intron in L30e in H99 (and JEC21) could be controlled by snRcnag12093 base-pairing upstream of the branchpoint (*CTGA*).
+
+  | Other intron interactions, with the 3' splice sites in `CNF00560, CNAG_05919`_ or `CNB05690, CNAG_04090`_, could have an effect on intron skipping as well.
+  | A possible effect of the snoRNA on splicing in JEC21 or H99 is also suggested by base-pairing quite close to 5' splice sites in the case of `CNM01110, CNAG_06104`_, `CNL06520, CNAG_04963`_, `CNL04310, CNAG_07641?`_, or `CNN00150, CNAG_06259`_.
+
+:raw-html:`<table><tr><th>&nbsp;<i>C.&nbsp;neoformans</i></th><th>&nbsp;</th><th><i>Tremellomycetes</i> L30e intron</th>`
+
+.. _`CNA02220, CNAG_00232`:
+
+:raw-html:`<tr><td>`
+
+   
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap1_h99_igb.png
+   :name: cnag12093-1
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/L30-align.png
+   :name: cna02220-align
+   :align: left
+   :width: 2401 px
+   :height: 346 px
+   :scale: 30%
+
+   CNA02220, CNAG_00232
+
+:raw-html:`</td></tr></table>`
+
+- A well-expressed target lies in an exon of the conserved gene for riboflavin synthase (`CNC06150, CNAG_03004`_), but support for base-pairing to snRcnag12093 is gone at the homologous position in distant genes.
+- Unless this would be related to an inhibitory effect of snoRNA base-pairing, many targets are not highly expressed nor sufficiently conserved to suggest an interaction with snRcnag12093, i.e. those encoding a vacuolar protein (`CNC02600, CNAG_01759`_), a nuclear protein (`CNA06080, CNAG_02998`_), a vacuolar membrane protein (`CND01900, CNAG_01059`_), a HAD hydrolase (`CNE04600, CNAG_02046`_), a regulator (`CNF00560, CNAG_05919`_), an essential protein (`CNF02580, CNAG_05716`_), a protein with an RNA PolII assembly factor domain (`CNA00860, CNAG_00095`_), Myo-inositol transporters (`CNH03060, CNAG_00867`_ etc.), endopeptidase (`CNK02700, CNAG_01930`_), white collar 1 protein (`CNL04450, CNAG_05181`_), a beta-glucuronidase C-terminal domain-containing protein (`CNM01110, CNAG_06104`_), DNA replication factor (intron, `CNN00630, CNAG_06333`_), b-zip transcription factor (intron, 3'splice site junction, `CNB05690, CNAG_04090`_), unknown protein (intron, only in  `CNC02870, not CNAG_01796`_), a hydrolase (`CNL06520, CNAG_04963`_), CSC1/OSCA1-like 7TM-domain-containing protein (`CNB01000, CNAG_03597`_), an importin-alpha-export receptor (`CNC02070, CNAG_07598`_), or transporters (`CNL04310, CNAG_07641?`_, `CNN00150, CNAG_06259`_). Some loci are only found for JEC21 and H99 (`CNA08150, CNAG_00838`_, or `CNH02350, CNAG_05590`_) or only JEC21 (`opposite CNB02995`_, `CNH01277, not CNAG_05467`_).
+
+
+- Genomic context of putative targets in *C. neoformans* and alignment with homologous sequences found in :doc:`snrcnag12093-species` [#loc]_:
+
+:raw-html:`<table><tr><th>&nbsp;<i>C.&nbsp;neoformans</i></th><th>&nbsp;</th><th><i>Tremellomycetes</i> targeted segments</th>`
+:raw-html:`<tr><td>`
+
+.. _`CNC02600, CNAG_01759`:   
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap5_h99_igb.png
+   :name: cnag12093-5
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNC02600-align.png
+   :name: cnc02600-align
+   :align: left
+   :width: 925 px
+   :height: 151 px
+   :scale: 30%
+
+   CNC02600, CNAG_01759
+
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNA06080, CNAG_02998`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap6_h99_igb.png
+   :name: cnag12093-6
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNC06080-align.png
+   :name: cnc06080-align
+   :align: left
+   :width: 889 px
+   :height: 151 px
+   :scale: 30%
+
+   CNC06080, CNAG_02998
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CND01900, CNAG_01059`:
+   
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap7_h99_igb.png
+   :name: cnag12093-7
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CND01900-align.png
+   :name: cnd01900-align
+   :align: left
+   :width: 779 px
+   :height: 216 px
+   :scale: 30%
+
+   CND01900, CNAG_01059
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNE04600, CNAG_02046`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap8_h99_igb.png
+   :name: cnag12093-8
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNE04600-align.png
+   :name: cne04600-align
+   :align: left
+   :width: 930 px
+   :height: 138 px
+   :scale: 30%
+
+   CNE04600, CNAG_02046
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNF00560, CNAG_05919`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap9_h99_igb.png
+   :name: cnag12093-9
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNF00560-align.png
+   :name: cnf00560-align
+   :align: left
+   :width: 889 px
+   :height: 177 px
+   :scale: 30%
+
+   CNF00560, CNAG_05919
+
+
+
+.. _`CNF02580, CNAG_05716`:
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap10_h99_igb.png
+   :name: cnag12093-10
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNF02580-align.png
+   :name: cnf02580-align
+   :align: left
+   :width: 930 px
+   :height: 138 px
+   :scale: 30%
+
+   CNF02580, CNAG_05716
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNA00860, CNAG_00095`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap11_h99_igb.png
+   :name: cnag12093-11
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNA00860-align.png
+   :name: cna00860-align
+   :align: left
+   :width: 1017 px
+   :height: 138 px
+   :scale: 30%
+
+   CNA00860, CNAG_00095
+
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNH03060, CNAG_00867`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap12_h99_igb.png
+   :name: cnag12093-12
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNH03060-align.png
+   :name: cnh03060-align
+   :align: left
+   :width: 1053 px
+   :height: 151 px
+   :scale: 30%
+
+   CNH03060, CNAG_00867
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNK02700, CNAG_01930`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap13_h99_igb.png
+   :name: cnag12093-13
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNK02700-align.png
+   :name: cnk02700-align
+   :align: left
+   :width: 1534 px
+   :height: 138 px
+   :scale: 30%
+
+   CNK02700, CNAG_01930
+
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNL04450, CNAG_05181`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap14_h99_igb.png
+   :name: cnag12093-14
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNL04450-align.png
+   :name: cnl04450-align
+   :align: left
+   :width: 2167 px
+   :height: 112 px
+   :scale: 30%
+
+   CNL04450, CNAG_05181
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNM01110, CNAG_06104`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap15_h99_igb.png
+   :name: cnag12093-15
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNM01110-align.png
+   :name: cnm01110-align
+   :align: left
+   :width: 1087 px
+   :height: 190 px
+   :scale: 30%
+
+   CNM01110, CNAG_06104
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNN00630, CNAG_06333`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap16_h99_igb.png
+   :name: cnag12093-16
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNN00630-align.png
+   :name: cnn00630-align
+   :align: left
+   :width: 1312 px
+   :height: 203 px
+   :scale: 30%
+
+   CNN00630, CNAG_06333
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNB05690, CNAG_04090`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap17_h99_igb.png
+   :name: cnag12093-17
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNB05690-align.png
+   :name: cnb05690-align
+   :align: left
+   :width: 1053 px
+   :height: 164 px
+   :scale: 30%
+
+   CNB05690, CNAG_04090
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNC02870, not CNAG_01796`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap18_h99_igb.png
+   :name: cnag12093-18
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNC02870-align.png
+   :name: cnc02870-align
+   :align: left
+   :width: 1053 px
+   :height: 164 px
+   :scale: 30%
+
+   CNC02870, not CNAG_01796
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNL06520, CNAG_04963`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap19_h99_igb.png
+   :name: cnag12093-19
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNL06520-align.png
+   :name: cnl06520-align
+   :align: left
+   :width: 1053 px
+   :height: 164 px
+   :scale: 30%
+
+   CNL06520, CNAG_04963
+
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNA08150, CNAG_00838`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap20_h99_igb.png
+   :name: cnag12093-20
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNA08150-align.png
+   :name: cna08150-align
+   :align: left
+   :width: 1024 px
+   :height: 99 px
+   :scale: 30%
+
+   CNA08150, CNAG_00838
+
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNB01000, CNAG_03597`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap21_h99_igb.png
+   :name: cnag12093-21
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNB01000-align.png
+   :name: cnb01000-align
+   :align: left
+   :width: 898 px
+   :height: 164 px
+   :scale: 30%
+
+   CNB01000, CNAG_03597
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`opposite CNB02995`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap22_igb.png
+   :name: cnag12093-22
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/opposite-CNB02995.png
+   :name: opposite-cnb02995
+   :align: left
+   :width: 826 px
+   :height: 73 px
+   :scale: 30%
+
+   opposite CNB02995
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNC02070, CNAG_07598`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap23_h99_igb.png
+   :name: cnag12093-23
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNC02070-align.png
+   :name: cnc02070-align
+   :align: left
+   :width: 862 px
+   :height: 125 px
+   :scale: 30%
+
+   CNC02070, CNAG_07598
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNC06150, CNAG_03004`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap24_h99_igb.png
+   :name: cnag12093-24
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNC06150-align.png
+   :name: cnc06150-align
+   :align: left
+   :width: 772 px
+   :height: 177 px
+   :scale: 30%
+
+   CNC06150, CNAG_03004
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNH02350, CNAG_05590`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap25_h99_igb.png
+   :name: cnag12093-25
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNH02350-align.png
+   :name: cnh02350-align
+   :align: left
+   :width: 664 px
+   :height: 112 px
+   :scale: 30%
+
+   CNH02350, CNAG_05590
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNH01277, not CNAG_05467`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap26_h99_igb.png
+   :name: cnag12093-26
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNH01277-align.png
+   :name: cnh01277-align
+   :align: left
+   :width: 1006 px
+   :height: 86 px
+   :scale: 30%
+
+   CNH01277, not CNAG_05467
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNL04310, CNAG_07641?`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap27_h99_igb.png
+   :name: cnag12093-27
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNL04310-align.png
+   :name: cnl04310-align
+   :align: left
+   :width: 691 px
+   :height: 216 px
+   :scale: 30%
+
+   CNL04310, CNAG_07641?
+
+
+:raw-html:`</td></tr>`
+:raw-html:`<tr><td>`
+
+.. _`CNN00150, CNAG_06259`:
+
+.. figure:: /../_static/images/snoRNAs/cnag12093-overlap28_h99_igb.png
+   :name: cnag12093-28
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 30%
+
+:raw-html:`</td><td>&nbsp;</td><td>`
+
+.. figure:: /../_static/images/snoRNAs/CNN00150-align.png
+   :name: cnn00150-align
+   :align: left
+   :width: 1024 px
+   :height: 125 px
+   :scale: 30%
+
+   CNN00150, CNAG_06259
+
+:raw-html:`</td></tr></table>`
+
+.. toctree::
+   :maxdepth: 1
+      
+   snrcnag12093-targets
+   snrcnag12093-species
+
+|
+|
+
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+=======
+
+- Image source snRcnag12093 (inc. non-conserved flanks):
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Annot/1-32                -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------RTGATGA----------------------------CUUCYGAUGg-CTGA---------------RTGA-TGA------------------CTGA-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        CNAG_12093/1-573          --TTGTAGAATTTACGCCAAATTTT-TGTGTTCCTT-AGTTCTCTTCTTTTTCGTTTGTTAAAAGTGTTTCTCCATCGCTCAACACCTAACGTTGTTAGCTTTATTGCCTTATGCGCATTCAACAAACAGCTTCCCGCATATCAGTAAAGTGAGACTTTCTACCCCTGTGTAGGTTCCGGAGCGAACACTGTTGGAGTTACGAGCTGTCGCAACGACGACGTTTATACAGAGTGAGTCGTCATGTCCGGATCCTCTCATCAT--TTCTTTCG--TTACCATTTTTACTCCTCTTCTATCCAATTATCATGATGATTA----CACCT---ATTTCATCAACTAGAAGGCTGTTGCTGAGCC---GC--GGCT-TTGATCGATAAACC-------TCTTTCTGATTCTTTTCTAAATCCGAGTCCTTGATGGAAAACCTTGATTGATGACCAGGGCTGACTACTTGAAAACAGAACTGGTAGTGCCTACAGAAAAGAATATGCTCCCTTCCCCCTCATTTGATCCCGCAACGTGTCTTTGGCTATACCCACAACTATGACTTTGAATTGTTCATGCATGTACTTATAACTATCTGATTCTTTT
+        #=GS oppCAS31/1-433 DE AE017341.1:1859294-1859726 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence
+        oppCAS31/1-433            ACTTGCAGAAACCACGCCAAATTTTTTTGGTCCCTTCCTGTTTCTTCTTTTTCGTTTGTTCAAAATGTTTCTCCACCACTCCACATCTATTGTTGTTAGCTTTGTTGCCTTGTGCGCACTCCACAAGCAGCTTCCAACATATCAGCAGAGTGAGATTTTCTTCCCCTGCGTAGGTTCGGGAGCGAACACTGTTGGCGTTACGAGCTGTCGCAACGACG-TTTATATAAAG--TGAGTCGCCATGTTCGGATCCACTC-TCATG--TCTGTC--TTTACCATTTTTACTCCTCTTCTACCCAATTATCATGATGATTA----CACCT---ATTTCATCAACTAGAAGGCTGTTGCTGAGCC---GC--GGCT-TTGATCGAGAAACC-------TCTTTCTGATTCTTTTTTAAACCGGAGTCCTTGATG-AAAACTTTGATTAATGACCAGGGCTGACTTGA-------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS R265/1-223 DE CP025761.1:c434635-434413 Cryptococcus gattii VGII R265 chromosome 3, complete sequence
+        R265/1-223                --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CGAGCTGTCGCAACGACG-TCTATATAAAG--TGAGTGTTCATGTTCCGATCCTCTCACACTATTTCTGTCGTCTTTACCTTTTTACTCCTCTTCTACAAAATTATCATGATGATTA----TACCT---ATTTCATCAACTAGAAGGCTGTTGCTGAGCC---GC--GGCT-TTGATCGATAAACC-------TCTTTCTGATTCTTTTCGAAACTCGAGTCCTTGATG-AAAACATTGATTGATGA----------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS WM276/1-221 DE CP000286.1:1563774-1563994 Cryptococcus gattii WM276 chromosome A, complete sequence
+        WM276/1-221               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CGAGCTGTCGCAACGACG-TCTATGTAAAG--TGAGTTTTCATGTTCGGATCCTCTCACATTATTTCTGT---TTTTACCTTTTTACTCCTCTCCTACAAAATTATCATGATGATTA----TACCT---ATTTCATCAACTAGAAGGCTGTTGCTGAGCT---GC--GGCT-TTGATCGATTAAACC------TCTTTCTGATCCTTTTCGAAATCCGAGTCCTTGATG-AAAAGATTGATTGATGA----------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS snRcnag12093/1-81 DE intronic-boxCDsnoRNA-as-CNAG_12093-83nt ncrna 1:1859589:1859671:1  AE017341.1:1859294-1859726 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence
+        snRcnag12093/1-81         -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TCATGATGATTA----CACCT---ATTTCATCAACTAGAAGGCTGTTGCTGAGCC---GC--GGCT-TTGATCGAGAAACC-------TCTTTCTGATTCT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS H99/1-82 DE _intronic-boxCDsnoRNA-82nt-in-CNAG_12093 1: [1,835,306 - 1,835,388] (+82)
+        H99/1-82                  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TTATCATGATGATTA----CACCT---ATTTCATCAACTAGAAGGCTGTTGCTGAGCC---GC--GGCT-TTGATCGATAAACC-------TCTTTCTGATT-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CryFlo/1-89 DE RRZH01000001.1:2057740-2057828 Cryptococcus floricola strain DSM 27421 chromosome 1, whole genome shotgun sequence
+        CryFlo/1-89               -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TACTCTGTGATGATTTC---TACTT----CATCATCAACTAGAAGGCTGTTACTGAGCC---TC--GGCA-TTGATCGATACTAC------TATTACCTGATTCTTTT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CryFlo/1-97 DE RRZH01000001.1:2061100-2061196 Cryptococcus floricola strain DSM 27421 chromosome 1, whole genome shotgun sequence
+        CryFlo/1-97               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ACTCTGTGATGATTTC---TACTT----CATCATCAACTAGAAGGCTGTTACTGAGCC---TC--GGCA-TTGATCGATACTAC------TATTACCTGACCCTTTCTCTTCCTCT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CryWin/1-88 DE AWGH01000008.1:c57266-57179 Cryptococcus wingfieldii CBS 7118 supercont1.8, whole genome shotgun sequence
+        CryWin/1-88               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ACTCTGTGATGATTTC---TACTT----CATCATCAACTAGAAGGCTGTTACTGAGCC---TC--GGCA-TTGATCGATACTAC------TATTACCTGATCCTTTT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CryAmy/1-89 DE MEKH01000002.1:c291242-291154 Cryptococcus amylolentus CBS 6273 supercont2.2, whole genome shotgun sequence
+        CryAmy/1-89               ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCTTACTCTGTGATGATTTC---TACTT----CATCATCAACTAGAAGGCTGTTACTGAGCC---TC--GGCA-TTGATCGATACTAC------TATTACCTGATCCT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CryGC4/1-120 DE JALPCA010000187.1:4250-4369 Cryptococcus sp. GC_Crypt_4 iso00_46_217, whole genome shotgun sequence
+        CryGC4/1-120              ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCCCAACCCTATCCATTTTGTGATGATACG---CAACTAT---CATATCAACTAGAAGGCTGTTGCTGAGC----GCT--GCT-TTGATCGATACGCA-------CACTACTGACTCGATTCTACTCTATCTCTTTTTTG-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS BulAlb/1-86 DE CAMYTR010000051.1:3822-3907 Bullera alba genome assembly, contig: jcf7180000012145, whole genome shotgun sequence
+        BulAlb/1-86               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CTTCCCTGATGAATTG---CATCC-TAAAAATATCAACTAGAAGGCTGTTGCTGAGC----GCT--GCT-TTGATCGATACTGC-------TTTTTCTGAACCT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CryFla/1-134 DE CAUG01000380.1:39290-39423 Cryptococcus flavescens NRRL Y-50378 WGS project CAUG00000000 data, contig NODE_721_length_102969_cov_46_599277, whole genome shotgun sequence
+        CryFla/1-134              --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCACGACTCAAACCCCTCCCACCTCTTGTCTGATGATATCCTTCACCC-AAAACATATCAACTAGAAGGCTGTTGCTGAGC----GTT--GCT-TTGATCGAGAAAC-----TCTTATATCTGACTCTTCCACTTTTCTCTGTCTCT--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS PapTer/1-91 DE JAHXHD010000299.1:c15303-15213 Papiliotrema terrestris strain LS28 scaffold-298, whole genome shotgun sequence
+        PapTer/1-91               ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TCGTCTGATGATATCCTTCACCC-AAAACATATCAACTAGAAGGCTGTTGCTGAGC----GTT--GCT-TTGATCGAGAAAC-----TCTTTTATCTGACTCTT--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS PapLau/1-89 DE JDSR01000224.1:12881-12969 Papiliotrema laurentii RY1 contig_232, whole genome shotgun sequence
+        PapLau/1-89               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CGTTTGTGATGAAACATTTCACCT--AAACATATCAACTAGAAGGCTGTTGCTGAGC----GCT--GCT-TTGATCGATAAACC------TCAATTCTGACACA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS KocImp/1-95 DE NBSH01000001.1:c1863914-1863820 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_1, whole genome shotgun sequence
+        KocImp/1-95               ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCCAAAGATGATTCACA-CATCC--TACATTATCAACTAGAAGGCTGTTGCTGAGC----GTT--GCC-TTGACCGATAAAC---ATCTCCATACCTGAGACCATACT----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TreTag/1-109 DE CAJHEQ010000070.1:c36634-36526 MAG: Tremellales sp. Tagirdzhanova-0007 genome assembly, contig: TREM_70, whole genome shotgun sequence
+        TreTag/1-109              ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAACATCATGATGAGACA---TACCT-CAAACATATCAACTAGAAGGCTGTTGCTGAGC----TTT--GCC-GTGATCGAGAAACC-------ATTTTCTGACCGTTTACTATGACTCCGTTTCCTT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TreYok/1-94 DE BRDC01000022.1:791022-791115 Tremella yokohamensis NBRC 100148 DNA, KCNB35TY.22, whole genome shotgun sequence
+        TreYok/1-94               -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GCTTTTCTGATGAGACA---TACTTCACAAACTATCAACTAGAAGGCTGTTGCCGAGCC--TCCT-GGCG-TTGA-CGAGAACAC--------TTCTCTGACACCTCCCA----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TreFuc/1-90 DE LBGW01000719.1:11084-11173 Tremella fuciformis strain tr26 contig719, whole genome shotgun sequence
+        TreFuc/1-90               -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TACCTCCTGATGAGACA---TACTTCACAAACTATCAACTAGAAGGCTGTTGCCGAGCC--TCCT-GGCG-CAGA-CGAGAATAC--------TTCTCTGACACCA--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TreMes/1-156 DE SDIL01000115.1:58603-58758 Tremella mesenterica strain ATCC 28783 supercont1.115, whole genome shotgun sequence
+        TreMes/1-156              -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GTCATATACTTCTCGAACATCATTGAAAAAGCTCCGTCGTAT-ATTCATAATGATGAA------CACAATCTTCACTATCAACTAGAAGGCTGTTTCCGAGCT--TTTT-AGCA-TAGA-CGATGATAA------TTTGGTCTGAATGTCTTCTCCCCGTTGCGCATCAATCAC--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TreMes/1-153 DE AFVY01000167.1:c14822-14670 Tremella mesenterica DSM 1558 strain Fries TREMEscaffold_4_Cont167, whole genome shotgun sequence
+        TreMes/1-153              -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GTCAGCTACTTCTCGAACATCATTGATAAAGCTCCGTCGTAT-ATTCATAATGATGAA------CACAATCTTCACTATCAACTAGAAGGCTGTTTCCGAGCTT--TT-AAGCA-TAGA-CGATACTAC-------TTGTTCTGAACGTTTTCTCTCCGTTGCGCATCATCC----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS VanFra/1-110 DE BEDY01000001.1:c2080829-2080720 Vanrija fragicola DNA, scaffold: scaffold_1, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-110              ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TATCATGATGAACAACA-TACTT---------TTAACTAGAAGGCTGTTGCTTAGCCT--CC-GGGCA-TTGA-TTACAACCTCACATCTACAACCTGAAACCTCTCCATTCTTTCCCTCATTGT-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS NaeEnc/1-87 DE MCFC01000001.1:1567282-1567368 Naematelia encephala strain 68-887.2 BCR39scaffold_1, whole genome shotgun sequence
+        NaeEnc/1-87               -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CTCTTTTCGTGATGTAAGAAATA--------ACTTTTTAACTAGAAGGCTGTTGCTGAGCT---TCG--GCC-ATGATTCTTTGTGAACAA-----TCTCTGATCT----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS NaeAur/1-89 DE JAKFAO010000015.1:c36428-36340 Naematelia aurantialba strain NX-20 Contig15, whole genome shotgun sequence
+        NaeAur/1-89               -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCACACTCGTGATGTAAGAAAAT---------CTTTTTAACTAGAAGGCTGTTGCTGAGCT---GCG--GCC-ATGATTCTTTGTGAACAA-----TCTCTGATCTCTC-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS KwoSha/1-116 DE NQVO01000052.1:78606-78721 Kwoniella shandongensis strain CBS 12478 scaffold00052, whole genome shotgun sequence
+        KwoSha/1-116              ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCCTCTCCCTCCCCTTTACCATCTTTTATGATGAATA---TACTTCACCTAAACATCAACTAGAAGGCTGTTTCAGAGCTT--TC-GGGCA-TTGATTGATATTATTTA-------TTCTGATCCGTATT-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TriOvo/1-94 DE JAMFRF010000031.1:c500509-500416 Trichosporon ovoides strain 2NM914A ctg_31, whole genome shotgun sequence
+        TriOvo/1-94               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCGTCATGATGATTTA-TACCTTCTATCAACTATCAACTA-AAGGCTGTTGCTTAGGCCC-CT-GGGCCGTAGATTAGAAACCTCAA--------TCTGAACCCTC-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TriInk/1-90 DE QAEE01004528.1:c1151-1062 Trichosporon inkin strain ATCC 18020 NODE_4591_length_1529_cov_6.09229_ID_85898, whole genome shotgun sequence
+        TriInk/1-90               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TCTTCATGATGATTT--CACCTTCTATCAACTATCAACTA-AAGGCTGTTGCTTAGGCCC-CC-GGGCCGTAGATTAGAAACC--------TCATACTGAATC----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TriInk/1-95 DE QAYW01006762.1:c499-405 Trichosporon inkin strain C-2155 NODE_6771_length_630_cov_2.69078_ID_242801, whole genome shotgun sequence
+        TriInk/1-95               --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CTCTCATGATGATCTT-TACCTTCTATCAACTATCAATTA-AAGGCTGTTGCTTAGGCCCCTCGGGGCCGTAGATTAGAAACCTCGAA--------CTGAACTTT--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TriAsa/1-116 DE BCLT01000004.1:c550525-550410 Trichosporon asahii DNA, scaffold: scaffold_4, strain: JCM 2466, whole genome shotgun sequence
+        TriAsa/1-116              -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CGCAACATGATGATTTT-TACCTTCTATCAACTATCAACTA-AAGGCTGTTGATGAGGCTT-TC-GGGCCGTAGATTAGACCACTTCA--------CCTGATCCATTCCCTCCTTCAACTGATCTCTC----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS TriCore/1-95 DE JXYL01000021.1:c455851-455757 Trichosporon coremiiforme strain JCM 2938 scaffold_0021, whole genome shotgun sequence
+        TriCore/1-95              --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CTTCCATGATGATTTT-TACCTTCTATCAACTATCAACTA-AAGGCTGTTGATGAGGCTT-TCC-GGCCGTAGATTAGACAATTCTA--------CCTGATCCTTCT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //
+
+
+- Image source 5S rRNA:
+
+
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        # STOCKHOLM 1.0
+        Annot/1-10           ------------UGUCGGAAG---------------------------------------------------------------------------------------------------------
+        #=GS 5S/1-125 DE AE017342.1:c274770-274646 Cryptococcus neoformans var. neoformans JEC21 chromosome 2 sequence
+        5S/1-125             TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCTCTT
+        #=GS FilNeo/1-125 DE L27078.1:1226-1350 Filobasidiella neoformans neoformans 5S ribosomal RNA and intergenic spacer
+        FilNeo/1-125         TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCTCTT
+        #=GS R265/1-122 DE CP025762.1:1472307-1472428 Cryptococcus gattii VGII R265 chromosome 4
+        R265/1-122           TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCT---
+        #=GS H99/1-122 DE P003821.1:c279613-279492 Cryptococcus neoformans var. grubii H99 chromosome 2, complete sequence
+        H99/1-122            TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCT---
+        #=GS KwoSha/1-122 DE NQVO01000112.1:c1270-1149 Kwoniella shandongensis strain CBS 12478 scaffold00112, whole genome shotgun sequence
+        KwoSha/1-122         TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCT---
+        #=GS KwoPin/1-122 DE ASCL01000042.1:c1370-1249 Kwoniella pini CBS 10737 cont1.42, whole genome shotgun sequence
+        KwoPin/1-122         TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCT---
+        #=GS KwoMan/1-122 DE ASQE01000097.1:c457-336 Kwoniella mangroviensis CBS 8507 cont2.96, whole genome shotgun sequence
+        KwoMan/1-122         TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCT---
+        #=GS CysMac/1-124 DE MVAO01001014.1:25-148 Cystofilobasidium macerans strain CBS 6532 NODE_1039_length_292_cov_2.427907, whole genome shotgun sequence
+        CysMac/1-124         TTATCCACGGCCATAGCCTTCATACAGCACCCTGCCCCGTCCGATCCAGGAAG-TTAAGCTGAAGAGCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGCCGTGGTTCTTC-
+        #=GS KwoBes/1-122 DE ASCK01000010.1:c443622-443501 Kwoniella bestiolae CBS 10118 cont1.10, whole genome shotgun sequence
+        KwoBes/1-122         TCATCTACGGCCATAGAATCTATAAAGCATCCTGTCCCGTCAGCTCCAGGGAA-TTAAGCTAGATATCGCCCGGTCAGTACCAACGTGGGGGACCAGTTGGGAATCCCGGGTGCTGTAGTTGT---
+        #=GS CryFag/3-125 DE BCHU01000009.1:c539118-538994 Cryptococcus fagi DNA, scaffold: scaffold_8, strain: JCM 13614, whole genome shotgun sequence
+        CryFag/3-125         CCATCCACGGCCATAGGACTTCGAAAGCACCGCATCCCGTCCGATCTGCGAAG-TTAAGTGAAGTGCCGCCTAGTTAGTACCACGGTGGGGGACCACGCGGGAATCCTAGGTGCTGTGGTTTTT--
+        #=GS CryAmy/1-122 DE AWGJ01000009.1:c1039565-1039444 Cryptococcus amylolentus CBS 6039 supercont1.9, whole genome shotgun sequence
+        CryAmy/1-122         --ATCGACGGCCATAGCCTCCTCAAAGCACCGCGTCCCGTCTGATCCGCGAAG-TCAATTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTTTCTT-
+        #=GS CryWin/1-122 DE AWGH01000026.1:87949-88070 Cryptococcus wingfieldii CBS 7118 supercont1.26, whole genome shotgun sequence
+        CryWin/1-122         GTATCGACGGCCATAGCCTCCTCAAAGCACCGCGTCCCGTCTGATCCGCGAAG-TTAACTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTTTT---
+        #=GS CryWin/3-124 DE AWGH01000029.1:c145003-144880 Cryptococcus wingfieldii CBS 7118 supercont1.29, whole genome shotgun sequence
+        CryWin/3-124         ACATCGACGGCCATAGCCTCCTCAAAGTACCGCGTCCCGTCTGATCCGCGAAG-TCAACTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTTCT---
+        #=GS CryWin/4-124 DE AWGH01000026.1:c11182-11059 Cryptococcus wingfieldii CBS 7118 supercont1.26, whole genome shotgun sequence
+        CryWin/4-124         ATATCGACGGCCATAGCCTCCTCAAAGTACCGCGTCCCGTCTGATCCGCGAAG-TCAACTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTTT----
+        #=GS CryFlo/1-120 DE RRZH01000014.1:c154477-154358 Cryptococcus floricola strain DSM 27421 chromosome 13, whole genome shotgun sequence
+        CryFlo/1-120         CCATCGACGGCCATAGCCTCCTCAAAGTACCGCGTCCCGTCCGATCCGCGAAG-TCAACTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTT-----
+        #=GS CryFlo/2-121 DE RRZH01000002.1:c807406-807286 Cryptococcus floricola strain DSM 27421 chromosome 2, whole genome shotgun sequence
+        CryFlo/2-121         TCATCCACGGCCATAGCCTCCTCAAAGTACCGCGTCCCGTCTGATCCGCGAAG-TCAACTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTT-----
+        #=GS CryFlo/2-126 DE RRZH01000004.1:321647-321772 Cryptococcus floricola strain DSM 27421 chromosome 4, whole genome shotgun sequence
+        CryFlo/2-126         ACATCGACGGCCATAGCCTCCTCAAAGTACCGCGTCCCGTCTGATCCGCGAAG-TCAACTGGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTTCTTGC
+        #=GS CryFlo/3-123 DE RRZH01000013.1:c191192-191070 Cryptococcus floricola strain DSM 27421 chromosome 12, whole genome shotgun sequence
+        CryFlo/3-123         ATATCGACGGCCATAGCCTCCTCAAAGTACCGCGTCCCGTCTGATCCGCGAAG-TCAACTAGGAGAGCGCTCGGTTAGTACCAGGGTGGGGGACCACCTGGGAATCCCGGGTGCCGTCGTTT----
+        #=GS CutArb/2-122 DE BEDW01000002.1:c1364265-1364140 Cutaneotrichosporon arboriformis DNA, scaffold: scaffold_2, strain: JCM_14201, whole genome shotgun sequence
+        CutArb/2-122         CCATCTACGGCCATAGGATTGAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTCAATACCGCTCGGTTAGTACCACGGTGGGGGACCACGTGGGAATCCCGGGTGTCGTAGTTT----
+        #=GS PasPL2/2-125 DE JAMFRE010000187.1:c198-70 Pascua sp. PL2904B ctg_187, whole genome shotgun sequence
+        PasPL2/2-125         ATATCCACGGCCATAGGACTGAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTCAGTACCGCTCAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTGGGTGTCGTGGTTTTGC-
+        #=GS PapTer/1-119 DE JAHXHD010001605.1:c6917-6799 Papiliotrema terrestris strain LS28 unplaced-107, whole genome shotgun sequence
+        PapTer/1-119         TTATCCACGGCCATAGGACTCAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTGAGTACCGCCTAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTGGGTGCTGTGGT------
+        #=GS VanFra/1-120 DE BEDY01000020.1:2106-2225 Vanrija fragicola DNA, scaffold: scaffold_20, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-120         TTATCCACGGCCATAGGACTCAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTGAGTACCGCCTAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTGGGTGTCGTGGTT-----
+        #=GS TreMes/1-118 DE X06852.1 Tremella mesenterica 5S rRNA
+        TreMes/1-118         --ATCCACGGCCATAGGACTCTGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCCGAGTACCGCTCAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTGGGTGCTGTGGTT-----
+        #=GS TreMes/6-129 DE AFVY01000274.1:c19338-19210 Tremella mesenterica DSM 1558 strain Fries TREMEscaffold_10_Cont274, whole genome shotgun sequence
+        TreMes/6-129         CCATCCACGGCCATAGGACTCTGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCCGAGTACCGCTCAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTGGGTGCTGTGGTTTTTG-
+        #=GS TreMes/2-125 DE SDIL01000121.1:c31288-31160 Tremella mesenterica strain ATCC 28783 supercont1.121, whole genome shotgun sequence
+        TreMes/2-125         CCATCCACGGCCATAGGACTCTGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCCGAGTACCGCTCAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTGGGTGCTGTGGTTTTTG-
+        #=GS TreMes/2-123 DE AFVY01000274.1:c28326-28200 Tremella mesenterica DSM 1558 strain Fries TREMEscaffold_10_Cont274, whole genome shotgun sequence
+        TreMes/2-123         CCATCCACGGCCATAGGACTCTGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCCGAGTACCGCTCAGTTAGTACCACGGTGGGGGACCACGTGGGATCGCTGGGA--TGTGGTTTTTG-
+        #=GS VanTS1/1-123 DE JAPKIE010000018.1:448150-448272 Vanrija sp. TS_01 NODE_18_length_497861_cov_50.735602, whole genome shotgun sequence
+        VanTS1/1-123         TTATCCACGGCCATAGGACTCAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTGAGTACCGCCTAGTTAGTACCATGGTGGGGGACCACATGGGAATCCTGGGTGTCGTGGTTTTT--
+        #=GS ApiSia/6-127 DE JALJEG010000101.1:7167-7293 Apiotrichum siamense strain L8in5 NODE_101_length_8090_cov_1427.730504, whole genome shotgun sequence
+        ApiSia/6-127         GTATCTACGGCCATAGGATCCAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTGGATACCGCTCAGTTAGTACCATGGTGGGGGACCACATGGGAATCCTGGGTGTCGTAGTTTT---
+        #=GS PapLau/2-124 DE JDSR01000389.1:c1857-1734 Papiliotrema laurentii RY1 contig_404, whole genome shotgun sequence
+        PapLau/2-124         TCATCCACGGCCATAGGACTCAGAAAATACCGCATCCCGTCCGATCTGCGAAG-TCAAGCTGAGTACCGCCTAGTTAGTACCACGGTGGGGGACCACGTGGGAATCCTAGGTGCTGTGGTTTTT--
+        #=GS NaeEnc/1-125 DE MCFC01000137.1:4943-5075 Naematelia encephala strain 68-887.2 BCR39scaffold_137, whole genome shotgun sequence
+        NaeEnc/1-125         ATATCTTCGGCCATAGGATTGTGAAAACGCCGCATCCCGTCCGATCTGCGCAG-CTAAGCACAATACCGCTCAGTCAGTAGGAAGGTGGGGGACCACTTCCGAATCCTGGGTGCTGAAGTTTTTGT
+        #=GS TreFuc/2-122 DE BRDD01000189.1:6421-6542 Tremella fuciformis NBRC 9317 DNA, KCNB80TF.189, whole genome shotgun sequence
+        TreFuc/2-122         CTATCCACGGCCATAGAAATCGAAAAACGCCCCATCCCGTCCGCTCTGGGAAG-CTAAATCGATTATCGCCCAGTTAGTAGCACGGTGGGGGACCACGTGCGAATCCTGGGTGCTGTGGTTT----
+        #=GS TreYok/2-125 DE BRDC01000027.1:c716977-716853 Tremella yokohamensis NBRC 100148 DNA, KCNB35TY.27, whole genome shotgun sequence
+        TreYok/2-125         CTATCCACGGCCATAGAAATCGAAAAACGCCCCATCCCGTCCGCTCTGGGAAG-CTAAATCGATTATCGCCTAGTTAGTAGCACGGTGGGGGACCACGTGCGAATCCTGGGTGCTGTGGTTTTTG-
+        #=GS KwoMan/2-125 DE ASQF01000014.1:794572-794696 Kwoniella mangroviensis CBS 8886 cont1.14, whole genome shotgun sequence
+        KwoMan/2-125         TCATCTACGGCCATAGAACCTAGAAAACGCCCCATCCCGTCCGCTCTGGGAAGCTTAAGCTGGGTATCGCTCGGTTAGTACCAAGGTGGGGGACCACTTGGGAATCCCGGGTGCTGTAGTTTTT--
+        //
+
+- Image source ITS2:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        #=GS KocImp/2074-2277 DE NBSH01000033.1:12548-14890 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_33, whole genome shotgun sequence
+        KocImp/2074-2277                     GTCATGAAA-TATCAATCCCCATGGGTTTTCTGAACCAGTGGTGGACTTGGACTTGGGTGTATGCCTCACAAGGCTCGCCTCAAACGACTTAGTGGTCGTCTT-----------------TTGACT-CAT----GCC--TGACGTAATAAGTTTCGTC-TC-GGTTGG--TCTTGAGGCCCGCTCAGAACCCCC-----------------ACATCTTTT---------GACATTGACCTCAAATCAGGTAGGGCTACC
+        #=GS TriOvo/1703-1907 DE JAMFRF010000111.1:c4083-2054 Trichosporon ovoides strain 2NM914A ctg_112, whole genome shotgun sequence
+        TriOvo/1703-1907                     GTCATGAAA-TCTCAACCACTA-GGGTTTCCTAATGGAT---TGGATTTGGGCGTCTGCGATCTCTGATC---GCTCGCCTTAAAAGAGTTAGCAA-----GTTTGACATTAATG----------------------TCTGGTGTAATAAGTTTCACTGGGTCCATTGTGT-TGAAGCGTGCTTCTAATCGTCCGCAA-----------GGACAATTACTTT-------GACTCTGGCCTGAAATCAGGTAGGACTACC
+        #=GS CutCUr/2061-2197 DE NIUX01000081.1:c5064-2874 Cutaneotrichosporon curvatum strain ATCC 10567 Contig081, whole genome shotgun sequence
+        CutCUr/2061-2197                     GTCATGAAA-TCTCAACCATTA-GGGTTTCTTATGGCT----TGGATTTGGACGTTTGCCAGTCAAATG----GCTCGTCTTAAAAGAGTTAGTGAA----TTTTAACATTTGTCT---------------------TCTGGCGTAATAAGTTTCGCTGGGCTGATAGTG--TG-------------------------------------------------------------------------------------
+        #=GS ApiSia/2075-2276 DE JALJEG010000101.1:1216-3557 Apiotrichum siamense strain L8in5 NODE_101_length_8090_cov_1427.730504, whole genome shotgun sequence
+        ApiSia/2075-2276                     GTCATGAAA-TCTCAACCATTA-GGGTTTCTTAATGGCT---TGGATTTGGAGGT---TGCCAGTCTGACT-GGCTCCTCTTAAAGGAGTTAGCAA-----GTTTGACTATTGCTA---------------------TCGAGCGTAATAAGTTTCGCTC-AGTAGTATTG--TGAAGCGTGCTTCTAATCGTCTTC-------------GGACAATTACTTTT------GACTCTGGCCTCAAATCAGGTAGGACTACC
+        #=GS ApiAki/2071-2213 DE PQXP01001050.1:3878-6090 Apiotrichum akiyoshidainum strain HP2023 Contig1226_3, whole genome shotgun sequence
+        ApiAki/2071-2213                     GTCATGAAA-TCTCAACCATTA-GGGTTTCTTAATGGCT---TGGATTTGGAGGT---TGCCATTCTGAAT-GGCTCCTCTCAAAAGAGTTAGCGA-----GTTTAACTATTGCTA---------------------TCTGGCGTAATAAGTTTCGCTGGAATGGTATTG--TGAAGCGC-------------------------------------------------------------------------------
+        #=GS VanFra/2066-2263 DE BEDY01000008.1:866865-869187 Vanrija fragicola DNA, scaffold: scaffold_8, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/2066-2263                     GTCATGAAA-TCTCAACCATTA-GGGTTTCTTAATGGCT---TGGATTTGGGCGC---TGCCAGCTTGCCT-GGCTCGCCTTAAAGGAGTTAGCGA-----GTATAGCAAT-GTCG---------------------TCTGGCGTAATAAGTTTCGCTGGTTAG-ACTTG--TGAAGTTCGCTTCTAATCGCCCTTG------------GGCAATTTTT----------GACTCTGGCCTCAAATCAGGTAGGACTACC
+        #=GS VanHum/1462-1663 DE QKWK01000021.1:85665-87332 Vanrija humicola strain CBS 4282 CBS4282_scaffold21, whole genome shotgun sequence
+        VanHum/1462-1663                     GTCATGA-TCTCTCAACCAATA-GGGTTTCTTATTGGCT---TGGATCTGGGTGT---TGCCAGCTTTGTCTGGCTCGCCTTAAAGGAGTTAGCGA-----GTAAAGCTCT-GTCG---------------------TCTGGCGTAATAAGTTTCGCTGGTGTAGACATGTGTGGCGCACGCTTATAATCGCCCTC------------GGGCAATTTTT----------GACTCTGGCCTCAAATCAGGTAGGACTACC
+        #=GS VanPse/121-312 DE CP086717.1:3424662-3428328 Vanrija pseudolonga isolate DUCC4014 chromosome 4
+        VanPse/121-312                       GTCATGA-TCTCTCAACCAATA-GAGTTTTCTATTGGCT---TGGATCTGGGTGT---TGCGAGCGAT----CGCTCACCTTAAAGGAGTTAGCA-------TATAGCAT--GTCG---------------------TTTGGCGTAATAAGTTTCGCTTA-GTAAATCGACAAGGC-TTTGCTTCTAATCGTCTTTT-------------GACTTTTTT----------GACTCTGGCCTCAAATCAGGTAGGACTACC
+        #=GS TreMes/2036-2157 DE AFVY01000275.1:c10007-7810 Tremella mesenterica DSM 1558 strain Fries TREMEscaffold_10_Cont275, whole genome shotgun sequence
+        TreMes/2036-2157                     GTCATGTGGACTTCGACCCCGA-GGGTTATTCCCCCGGGGC-CGGACTTGGGCGC---CGCCTCACCC----GGCCCGCCTCAAATGCATCAG--------------------------------------CGGGACGC-GACGTCATAAGCACCGTCCGTGTCCCG-------------------------------CCC----------------------------------------------------------
+        #=GS KwoShan/2097-2322 DE NQVO01000100.1:1-2513 Kwoniella shandongensis strain CBS 12478 scaffold00100, whole genome shotgun sequence
+        KwoShan/2097-2322                    GTCATGAAAACCTCAATCCCTC-GGGTTTTTACGAACCCGT-TGGACTTGGATT--TGGGC-TCTGCCGCGACCTTTCGGGGACGTCGGCTCGCCTTAAAGATGTTAGTGA-GAAGGGTG-GCTCC--CGT---CAGCCTGGCGTAATAAGTTTCGCTGGGC-CC--CTGGGGATGCCG---TTC---GGCT----------CGCTCATAACGACCAACTT-TCTT-AACACTCTGACCTCAAATCAGGTAGGACTACC
+        #=GS KwoMan/349-575 DE ASQE01000096.1:c600-1 Kwoniella mangroviensis CBS 8507 cont2.95, whole genome shotgun sequence
+        KwoMan/349-575                       GTCATGAAAATCTCAATCCCTC-GGGTTTTATTACCTGT---TGGACTTGGATT--TGGGTGTTTGCCGCGACCTGCAAAGGACGTCGGCTCGCCTTAAATGTGTTAGTGG-GAA-GGT--GATTACCTGT---CAGCCCGGCGTAATAAGTTTCGCTGGGC-CT--CTGGGGTCG------TTCGACGGC----------TTGCTCATAACAAACCTTTTATCTCTATGACTCTGACCTCAAATCAGGTAGGGCTACC
+        #=GS Jec21-rDNAlocus-RC/2771-2991 DE Cryptococcus neoformans var. neoformans JEC21 chromosome 2GCA_000091045.1 partial sequence 270926..298631 reannotated viaEnsEMBL
+        Jec21-rDNAlocus-RC/2771-2991         GTCATGAAAATCTCAATCCCTC-GGGTTTTATTACCTGT---TGGACTTGGATT--TGGGTGTTTGCCGCGACCTGCAAAGGACGTCGGCTCGCCTTAAATGTGTTAGTGG-GAA-GGT--GATTACCTGT---CAGCCCGGCGTAATAAGTTTCGCTGGGC-CT--ATGGGGTAGTC----TTC---GGC----------TTGCTGATAACAACCATCTCTTTTT-----GTTTGACCTCAAATCAGGTAGGGCTACC
+        #=GS H99/2796-3016 DE CP003821.1:c279128-272540 Cryptococcus neoformans var. grubii H99 chromosome 2, complete sequence
+        H99/2796-3016                        GTCATGAAAATCTCAATCCCTC-GGGTTTTATTACCTGT---TGGACTTGGATT--TGGGTGTTTGCCGCGACCTGCAAAGGACGTCGGCTCGCCTTAAATGTGTTAGTGG-GAA-GGT--GATTACCTGT---CAGCCCGGCGTAATAAGTTTCGCTGGGC-CT--ATGGGGTAGTC----TTC---GGC----------TTGCTGATAACAACCATCTCTTTTT-----GTTTGACCTCAAATCAGGTAGGGCTACC
+        #=GS R265/2797-3016 DE CP025762.1:1472829-1479256 Cryptococcus gattii VGII R265 chromosome 4
+        R265/2797-3016                       GTCATGAAAATCTCAATCCCTC-AGGTTTTATTACCTGT---TGGACTTGGATT--TGGGTGTTTGCCGCGACCTGCAAAGGACGTCGGCTCGCCTTAAATGTGTTAGTGG-GAA-GGT--GATTACCTGT---CAGCCCGGCGTAATAAGTTTCGCTGGGC-CT--ATG-GGTAGTC----TTC---GGC----------TTGCTGATAACAACCATCTCTTTTT-----GTTTGACCTCAAATCAGGTAGGGCTACC
+        Annot/1-10                           ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------UUGUCGG----AAG--------------------------------------------------------------------------
+        #=GC SS_cons                         --------------(((((.....)))))-----((((....((((....))))..))))----------<<<<-----------------------------------------------------------...(<<<<<<(.<<....>>.)>>>>>>)...-------------------------------------->>>>----------------------------------------------------
+        //
+
+- Image source intron L30e (with flanks):
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        #=GS L30e/1-134 DE XM_012191211.1:119-252 Cryptococcus neoformans var. grubii H99 large subunit ribosomal protein L30e (CNAG_00232), mRNA
+        L30e/1-134                         -------GTTAAGTCTGGCAAGTTCACCCTCGGTTACAAGCAGGCCCTCAAGCAGCTCCGATCTGGCAAGG-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCAAGCTCATCTTGATCTCCAAAAACTGCCCTCCCCTCCGCAAGTCTGAGATCGAGTATTACGCCATGCT
+        #=GS TriAsa/1-134 DE XM_014320827.1:67-200 Trichosporon asahii var. asahii CBS 2479 60S ribosomal protein l30-1 (l32) partial mRNA
+        TriAsa/1-134                       -------GTCAAGTCGGGCAAGTACACCCTCGGCTACAAGCAGGCCCTCAAGCAGCTCCGCAACGGCAAGT-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CGAAGCTCATCCTCATCTCCAAGAACTGCCCTCCCCTTCGCAAGTCGGAGCTTGAGTACTACGCCATGCT
+        #=GS ApiPor/1-134 DE XM_028624588.1:70-203 Apiotrichum porosum 60S ribosomal protein L30 (RPL30), partial mRNA
+        ApiPor/1-134                       -------GTCAAGTCGGGCAAGTTCACCCTCGGCTACAAGCAGGCTCTTAAGCAGCTCCGCAACGGCAAGT-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------CCAAGCTCATCCTCATCTCGAAGAACTGCCCCCCGCTTCGCAAGTCTGAGCTTGAGTACTACGCCATGCT
+        snRcnag12093/1-22                  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGTC.GTTGTCGGAAGATCAACT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Found_target/1-17                  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCGGCTTTCTGGTTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Annot/1-13                         -----------------------------------------------------------------------GTGrGt-----------------------------------------------------------------------------------------------------------------------------------------CTGA-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------YAG----------------------------------------------------------------------
+        #=GS CNA02220-intron-L30e/1-340 DE AAE017341.1:c582963-582600 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence
+        CNA02220-intron-L30e/1-340         -------GTCAAGTCTGGCAAGTTCACCCTCGGTTACAAGCAGGCTCTCAAGCAGCTCCGATCTGGCAAGGGTACGTTACATTCATTTCAGACGGATGAGTAA--GCGGACGGTG-------------------------------------------------AAGGAAAATGGGCGGCTTTCTGGTTGATGGGGACTGGAGCCCGC--G-GGCTGAGAAGGTCTCC----GTGCTGACGA-TGGTTTTTACA-----TGCCTGTTTCTTTCCCTTTCCCGCT--ACTTGCACCAACACCT----------ATCTACTGTCTCTTGTTGCGCCTGGATGGATACCG-----------------------------------------------------------------------------ACACAGCCAAGCTCATCTTGATCTCCAAAAACTGCCCTCCCCTCCGCAAGTCTGAGATCGAGTACTACGCCATGCT
+        #=GS H99/1-345 DE CNAG_00232 intron-L30e CP003820.1:c612433-612065 Cryptococcus neoformans var. grubii H99 chromosome 1, complete sequence
+        H99/1-345                          -------GTTAAGTCTGGCAAGTTCACCCTCGGTTACAAGCAGGCCCTCAAGCAGCTCCGATCTGGCAAGGGTACGTTAAATTCATTTTAGGCGGAGGAATAA--GCAGATGGTGT------------------------------------------------AAGGAAAATGGGCGGCTTTCTGGTTGATGGGGACTGGAGCCGGC--G-GGCTGAGAAGGTCTCC----GTGCTGACAA-TGGTTTTTACA-----TGCCTGTTTCTTTCCCTTTCCCGCT--AATCGCACCAACACCT------GTTTATATACTGTCTCTTGCTGCGCCTGGATGGATACCG-----------------------------------------------------------------------------ACACAGCCAAGCTCATCTTGATCTCCAAAAACTGCCCTCCCCTCCGCAAGTCTGAGATCGAGTATTACGCCATGCT
+        #=GS R265/1-337 DE intron CNBG_0335 for 60S ribosomal protein CP025762.1:c565702-565351 Cryptococcus gattii VGII R265 chromosome 4
+        R265/1-337                         -------GTCAAGTCTGGCAAGTTCACCCTCGGTTACAAGCAGGCTCTCAAGCAGCTCCGATCCGGCAAGGGTACGTTACAGTCATTTTAGACGGTGGAATAA--GCGGATGATGG-------------------------------------------------AGAGGATTGGGAGGCTTTCTGGTTGATGGGGACTGGAGCCCGC--G-GGCTGAGAAGGTCTCC----GTGCTGACGA-TGGTTTTTACA-----TGCCT---TCTTTCCCTTTCCCATT--AATCGCACCATCACTT----------ATACACTGTCTCTTGTTGCGCCTGGATGGATACCG-----------------------------------------------------------------------------ACACAGCCAAGCTCATTTTGATCTCCAAAAACTGCCCTCCCCTCCGAAAGTCTGAGATCGAGTACTACGCCATGCT
+        #=GS KwoShan/1-378 DE NQVO01000004.1:c134316-133939 Kwoniella shandongensis strain CBS 12478 scaffold00004, whole genome shotgun sequence
+        KwoShan/1-378                      -----GGACATATGATTCGCAGTTCACTCTCGGCTACAAGCAGGCTCTTAAGCAGCTCCGATCTGGCAAGGGTGCGTTACTTTTCTCATCTACGTGAAAGAGGCGGAGGATGGACG-------------------------------------ATGGACGATGGAGGAAGAGGAGGAGGATGTT-GTGTACTAGGGACTGGAGCCATC--ATGGCTGAGAAGGTTCCC----TCGCTGACGTTTGGTTCACTCTTTCTACTTTCCGCCCTTCCTCAACTTTCAACGTATCGCATCAATAATACAAACCTACTAACCATCCCACTCAAATGTGCCTGGATGGACATCGAATTACACACCCACTCAACACATCAAACACC----------------------------------------------AAACAGCCAAGCTCATCTTGATCTCCAAGAACTGCCCTCCCCTCCGAAA---------------------------
+        #=GS KwoHev/1-470 DE ASQC01000045.1:41269-41638 Kwoniella heveanensis CBS 569 cont2.45, whole genome shotgun sequence
+        KwoHev/1-470                       -------GTCAAGTCTGGAAAGTTCACCCTCGGTTACAAGCAGGCTCTCAAGCAGCTCCGATCTGGCAAGGGTGCGTAGTGGTTCCTCTCCAGAAGTTTCAGAAGGAAGAGTTGGTGCATGGCGGTGGACGATAGTAGAGAGCAG-------------CGAGTGGAAAGGCGGTGGATGAACCATTCGGAACGGGGACTGGAGCC-GT--AAGGCTGAGAAGGTCTCC----TTGCTGACTTTATGCGTGTCTATCTGCTGTTTGTTCCTGCTTTGCCTTGCCGTCTAATGATCTGCCCACTACCATCTACCTACTGACCATCCCGTATGCGTCTGGATGGACATCGCCAAATCACGATACCGACCCATATCATATCCATCTTCTCGCTCTGGCGTAAATTACACACGACCTCGCAATTCGGATCAACAGCCAAGCTCATCTTGATCTCCAAGAACTGCCCTCCCCTCCGAAAGTCCGAGATCGAGTACTACGCCAT---
+        #=GS NaeAur/1-335 DE JAKFAO010000007.1:454368-454737 Naematelia aurantialba strain NX-20 Contig7, whole genome shotgun sequence
+        NaeAur/1-335                       -------GTCAAGTCTGGCAAGTACACGCTCGGGTACAAGCAGGCGCTGAAGCAGCTCCGATCGGGCAAGTGTAAGTG------GCCGTCTCTTGTGGAGGGATGACGGAAGACGCCGAGCGTCT------------------------------------------GGGAAGGGAGGGATGCAGAGGGGACAGAGGCTGGAGCTAC-----GGCTGAGAAGGTCT-C----GTGCTGACGTCTGGTCTTACCCCAC-TCGA---TTCCTC--------GATT---CTTCGATT--CACTCTCGAACGGTC-ACCTATCGAATATGGCAT------AACGGCTG-CGCC---------------------------------------------------------------------------AAACAGCCAAACTCATCCTCATCTCCCGCAACTGCCCACCTCTACGCAAGTCGGAGATCGAGTACTACGCCATGCT
+        #=GS CryFlo/1-303 DE RRZH01000005.1:371007-371377 Cryptococcus floricola strain DSM 27421 chromosome 5, whole genome shotgun sequence
+        CryFlo/1-303                       -------GTCAAGTCCGGCAAGTACACCCTCGGTTACAAGCAGGCCCTCAAGCAGCTCCGATCTGGCAAGGGTACGTTGAATTTCT-------------------GAGGCAGTCGAA------------------------------------------------TGGAGGCGTAGGAGAAACGTCGATTT--GGGACTGGAGCCTTC--G-GGCTGAGAAGGTCTTT----GTGCTAACCAT----------------TGCTT--TCCATATCTACCCTCTT--CCTGCGACCATT-----------------TCACTGTCCCTGTA----CCCGGATGGATATCGACAC-------------------------------------------------------------------------CAACAGCCAAGCTCATCTTGATCTCCAAGAACTGCCCCCCCATCCGAAAGTCTGAGATCGAGTACTACGCCATGCT
+        #=GS CryAmy/1-301 DE MEKH01000005.1:c1203778-1203408 Cryptococcus amylolentus CBS 6273 supercont2.5, whole genome shotgun sequence
+        CryAmy/1-301                       -------GTCAAGTCCGGCAAGTACACCCTCGGTTACAAGCAGGCCCTCAAGCAGCTCCGATCTGGCAAGGGTACGTTGAATTTCT-------------------GAGGCAGTCGA-------------------------------------------------TGGAGGCGT-GGAGAAACGTCGATTC--GGGACTGGAGCCTTC--G-GGCTGAGAAGGTCTTT----GTGCTAACCAT----------------TGCTT--TCCATATTTGCCCTTTT--CCTGCGACCATT-----------------TCACTGTCCCTGTA----CCCGGATGGATATCGACAC-------------------------------------------------------------------------CAACAGCCAAGCTCATCTTGATCTCCAAGAACTGCCCCCCCATCCGAAAGTCTGAGATTGAGTACTACGCCATGCT
+        #=GS CryWin/1-302 DE AWGH01000001.1:c1432286-1431916 Cryptococcus wingfieldii CBS 7118 supercont1.1, whole genome shotgun sequence
+        CryWin/1-302                       -------GTCAAGTCCGGCAAGTACACCCTCGGTTACAAGCAGGCCCTCAAGCAGCTCCGATCTGGCAAGGGTACGTTGAAATTCT-------------------GAGGCAGTCGA-------------------------------------------------TGGAGGCGTAGGAGAAACGTCGATTC--GGGACTGGAGCCTTC--G-GGCTGAGAAGGTCTTT----ATGCTAACCAT----------------TGCTT--TCCATATTTGCCCTCTT--CCTGCGACCATT-----------------TCACTGTCCCTGCA----CCCGGATGGATATCGACAC-------------------------------------------------------------------------CAACAGCCAAGCTCATCTTGATCTCCAAGAACTGCCCCCCCATCCGAAAGTCTGAGATCGAGTACTACGCCATGCT
+        #=GS NaeEnc/1-323 DE MCFC01000009.1:c47438-47066 Naematelia encephala strain 68-887.2 BCR39scaffold_9, whole genome shotgun sequence
+        NaeEnc/1-323                       CAAGAGCTAATACCGAAATCAGTACACTCTTGGTTACAAACAGGCATTGAAGCAACTTCGATCTGGAAAGTGTGAGTTGAAGC-ATCTCCTATAGATGAATGACGGAAGGAAGAGAGT---------------------------------------------------GTGAGGGAAAAAGGGATATCAAA-GAGGCTGGAGCT-----GCGGCTGAGAAGGTCTC-----GTGCTGACGTCTTTGGTTCTC-------CTTTCGACCTATGATATCACCCATAAATGCCACCATT--------------------------------GATAAAATACGATATACGAT---------------------------------------------------------------------------AAATAGCCAAGCTCATCCTCATCTCGAGAAACTGCCCACCTCTTCGTAAATCAGAGATCGAGTACTACGCCATGCT
+        #=GS VanFra/1-279 DE BEDY01000001.1:1898536-1898905 Vanrija fragicola DNA, scaffold: scaffold_1, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/1-279                       -------GTCAAGTCGGGCAAGTTCACCCTCGGCTACAAGCAGGCTCTTAAGCAGCTCCGCAACGGCAAGTGTAAGTAATCT----ACTGGTACCACCTTTTGCCCTCTTCTTCTTCCTTTTATT-----------------------------------------GTCGGGAAGAGGGTAGCCGCGTGGTCGGGGGCTGGAGCCTA-----GGCTGAGAAGGACTCCCCGATTGCTGACG---------------------------------------------CGGCGTT--------------------------------------------------CGCGCTTTCTTT---------------------------------------------------------------------CCACAGCCAAGCTCATCCTGATCTCGAAGAACTGCCCCCCTCTTCGCAAGTCGGAGATTGAGTACTACGCCATGCT
+        #=GS VanPse/1-315 DE CP086720.1:549381-549750 Vanrija pseudolonga isolate DUCC4014 chromosome 7
+        VanPse/1-315                       -------GTCAAGTCGGGCAAGTTCACCCTCGGCTACAAGCAGGCGCTCAAGCAGCTCCGCAACGGCAAGTGTGCGTATTAGATCGACTGGTAGGACTACGACCTCCTGGGTGTGTGGGCACAACATGTTGAGGAAGACGCTCGGCGTGCGCGCATACGACGACGACCACACCCAGGAGGATCCGCGTAGTCGGGGGCTGGAGCT-----GCGGCTGAGAAGG-------ACTCCCCGATACTAA--------------------------------------------CGCGGTTCCCCGT--------------------------------------------------------------------------------------------------------------------------ACACAGCCAAGCTCATCCTCATCTCGAAGAACTGCCCCCCGCTTCGCAAGTCTGAGCTCGAGTACTACGCCATGCT
+        #=GS VanPse.2/62-376 DE CP086720.1:549381-549701 Vanrija pseudolonga isolate DUCC4014 chromosome 7
+        VanPse.2/62-376                    -------GTCAAGTCGGGCAAGTTCACCCTCGGCTACAAGCAGGCGCTCAAGCAGCTCCGCAACGGCAAGTGTGCGTATTAGATCGACTGGTAGGACTACGACCTCCTGGGTGTGTGGGCACAACATGTTGAGGAAGACGCTCGGCGTGCGCGCATACGACGACGACCACACCCAGGAGGATCCGCGTAGTCGGGGGCTGGAGCT-----GCGGCTGAGAAGG-------ACTCCCCGATACTAA--------------------------------------------CGCGGTTCCCCGT--------------------------------------------------------------------------------------------------------------------------ACACAGCCAAGCTCATCCTCATCTCGAAGAACTGCCCCCCGCTTCGCAAGTCTGAGCTCGAGTACTACGCCATGCT
+        #=GS PapTer/1-290 DE JAHXHD010000942.1:57935-58317 Papiliotrema terrestris strain LS28 scaffold-941, whole genome shotgun sequence
+        PapTer/1-290                       ----AAATTGGGCTCACGGCAGTACACGCTCGGATACAAGCAGGCGCTCAAGCAGCTCCGATCGGGCAAGGGTGGGT-------------------------------------------------------------------------GTCATTGATTCTACG---CCGATATAACGGCCTCGTCT-TATGGGGGCTGGAGCTTC---G-GGCTGAGAAGG-TTCC----CCGCTGACCACATGCTTC----------------------------------TCCCTCGACTCTT--------------------CACCATGCCGCCCACTGTTGATGATTCCCCTTGAA-TTCGCC-----------------------------------------------------------------CAACAGCCAAGCTCATCCTCATCTCGAAGAACTGCCCGCCCCTTCGACGATCCGAGATCGAGTACTACGCCATGTT
+        #=GS CryFla/1-307 DE CAUG01000001.1:c64910-64538 Cryptococcus flavescens NRRL Y-50378 WGS project CAUG00000000 data, contig NODE_1_length_66939_cov_45_149673, whole genome shotgun sequence
+        CryFla/1-307                       GGTGGACAGGCGCTCACGGCAGTACACGCTCGGATACAAGCAGGCGCTCAAGCAGCTCCGATCGGGCAAGGGTGGGT-------------------------------------------------------------------GTTTTAGGATACTTTAGGATACGGCCAGAGGGACGGCCTCGTCTATATGGGGGCTGGAGCTTC---G-GGCTGAGAAGG-TTCC----CCGCTGACCACATGCTTT-------------------------TGTTCGCCCCACCTCGACATCTATGAT--------------------------GCTGCTGTAACCTGCCACCT-GCACTTTGCC-----------------------------------------------------------------CAACAGCCAAGCTCATCCTCATCTCGAAGAACTGCCCGCCCCTTCGACGATCCGAGATCGAGTACTACGCCATGTT
+        #=GS PapLau/1-294 DE JAAZPX010000021.1:636350-636719 Papiliotrema laurentii strain IF7SW-F4 scaffold36_cov196, whole genome shotgun sequence
+        PapLau/1-294                       ---GGAAAAAATTAACGACCAGTTCACCCTCGGGTACAAGCAGGCCTTGAAGCAGCTCCGATCGGGCAAGGGTGAGT-------------------------------------------------------------------------------------------------ATCGGTTTTCCATTTAAAGGGGACTGGAGCTTCTA---GGCTGAGAAGG-TTCC----CCGCTGATCACATGTTTT--------------------CCCCCGTTGTG------CTCGACCT--GTGACTTATTCTCTGTCATTTGAACGAATCCTCGACTGTCATGGAAAAATTCAACAC----------------------------------------------------------------------CTGCAGCCAAGCTCATCCTCATCTCGAAGAACTGCCCCCCTCTTCGAAGATCCGAGATCGAGTACTACGCCATGTT
+        #=GS TreTag/1-246 DE CAJHEQ010000547.1:8600-9174 MAG: Tremellales sp. Tagirdzhanova-0007 genome assembly, contig: TREM_547, whole genome shotgun sequence
+        TreTag/1-246                       ---GTGCTGATAGGGTGAGTAGTACACTCTTGGGTACAAGCAGGCCTTGAAGCAGCTTCGATCTGGACGGGGTACGTTG-----------------------------------------------------------------------------------------------TCGCGCTTTTTTGATTGC--AGTCTTCAA----------GCTGAGA-------------TGCTCCTTCAATGT-----------------------------------GCTTTCCCGATAT-TCCCTTCATCCTCATGTCCTCTCCGTCCCAATC-----------------------------------------------------------------------------------------------ACTCAGCCAAGCTCATTCTGATCTCCAAGAACTGCCCACCTCTCCGCAAATCCGAGATCGAGTATTACGCCATGCT
+        #=GS BulAlb/1-258 DE CAMYTR010000143.1:218200-218571 Bullera alba genome assembly, contig: jcf7180000012244, whole genome shotgun sequence
+        BulAlb/1-258                       -----TCACTAACATCCCACAGTTCACCCTCGGCTACAAGCAGGCTTTGAAGCAGCTCCGATCCGGCAAATGTGCGT--------------------------------------------------------------------------AAACATCCAACCATCACTTTCCCCCGCCAGAGCCGCCCACCGGAGACTGGAGCTTGTCCCAAGCTGAGAAGG-TTCT--CCTCGCTGAC-------------------------------------------CGATGACACGGTTTTCTGT------------------------------------------CGCCC---------------------------------------------------------------------------TTTTAGCTAAACTCATCCTTATCTCGAAGAACTGCCCACCGCTCCGACGATCTGAGATTGAGTACTACGCCATGCT
+        //
+
+..  1
+
+- Image source CNC02600, CNAG_01759:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        found-with/1-14           ------------------------------------TGGCGGTCTTCTGG--------------------------------------------
+        snRcnag12093/1-22         -------------------------------AGTC-GTTGTCGGAAGATCAACT----------------------------------------
+        #=GS CNC02600/1-95 DE AE017343.1:742731-742825 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence
+        CNC02600/1-95             TTCTTCATTTGGGCTTGTGGTGTCGATTTTCACCCTTGGCGGTCTTCTGGGATCCCTTGCTGCTAGCACAACCACTTTGCGCTATGGTCAAGTA
+        #=GS CNAG_01759/1-95 DE CP047912.1:816022-816116 Cryptococcus neoformans var. grubii H99 chromosome 11
+        CNAG_01759/1-95           TTCTTCGTTTGGGATTGTGGTGTCGATTTTCACTCTTGGTGGTCTTCTGGGATCCCTTGCTGCTAGCACAACCACCTCGCGCTACGGTCAAGTA
+        #=GS M276/1-93 DE CP000288.1:792687-792779 Cryptococcus gattii WM276 chromosome C, complete sequence
+        M276/1-93                 TTTTTCGTTCGGGCTTGTGGTGTCAATTTTCACCCTTGGTGGTCTTCTAGGATCCCTTGCCGCTAGCACAACCACCTCGCGCTATGGTCAAGT-
+        #=GS R265/1-93 DE CP025759.1:1059141-1059233 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-93                 TTTTTCGTTCGGGCTTGTGGTGTCGATTTTTACCCTTGGGGGTCTTCTAGGATCCCTCGCCGCTAGCACAACCACCTCGCGCTATGGTCAAGT-
+        #=GS KwoShan/2-108 DE XM_032004816.1:188-295 Kwoniella shandongensis uncharacterized protein (CI109_003658), partial mRNA
+        KwoShan/2-108             TGCACAATTCGGACTTGTGGTTTCCATCTTCACGCTGGGAGGTCTGATCGGATCGCTCGGAGCCACAGCAGTAACACATCAATTAGGTCGGATA
+        #=GS KwoShan/2-118 DE NQVO01000015.1:c288256-288139 Kwoniella shandongensis strain CBS 12478 scaffold00015, whole genome shotgun sequence
+        KwoShan/2-118             TGCACAATTCGGACTTGTGGTTTCCATCTTCACGCTGGGAGGTCTGATCGGATCGCTCGGAGCCACAGCAGTAACACATCAATTAGGTCGGATA
+        #=GS BulAlb/1-95 DE CAMYTR010000012.1:84737-84831 Bullera alba genome assembly, contig: jcf7180000012104, whole genome shotgun sequence
+        BulAlb/1-95               AACTCAATTCGGTCTCGTCGTTTCGATATTCACGCTCGGCGGTCTCACCGGCAGTCTGTCCTCGGCTTTGATCACACGACAGTTCGGACGTATA
+        //
+
+..  2
+
+- Image source CNC06080, CNAG_02998:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         ------------------------------------------TGGCAGTCTTTTGG----------------------------------
+        snRcnag12093/1-22         -------------------------------------AGTC-GTTGTCGGAAGATCAACT------------------------------
+        #=GS CNC06080/1-90 DE AE017343.1:c1787238-1787149 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence
+        CNC06080/1-90             ATCATCCTTGACTAATGGGCTCTTTTTGTTCAGAATCGTACTTGGCAGTCTTTTGGGTCTACAGCATCGTATTGATTGGAAAGCGTGTGC
+        #=GS CNAG_02998/1-90 DE CP003822.1:245211-245300 Cryptococcus neoformans var. grubii H99 chromosome 3, complete sequence
+        CNAG_02998/1-90           AACATTCTTGACTAATGGGCTCTCTTTGTTCAGAATCGTGCTTGGTAGTCTTTTGGGTTTACAACATCGTATTGATTGGAAAGCGTGTGC
+        #=GS R265/2-91 DE CP025759.1:c1975784-1975694 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/2-91                 AACTTTCATGACTAATGGACCTTCTTCGTTCAGGATCGTGCTGGGTAGTCTGTTGGGTCTGCAACATCGTATTGACTGGAAAGCGTGTGC
+        #=GS WM276/1-90 DE CP000288.1:c1736590-1736501 Cryptococcus gattii WM276 chromosome C, complete sequence
+        WM276/1-90                ATCTTTCTTGACTAATGGATCTTCTTCGTTCAGGACCGTGCTGGGTAGTCTATTGGGTCTGCAACATCGTATTGACTGGAAAGCGTGTGC
+        #=GS CryWin/1-89 DE CP034262.1:659316-659427 Cryptococcus wingfieldii strain CBS7118 chromosome 2, complete sequence
+        CryWin/1-89               -ACTACCAGGAAAGAAACTCACTTCTATTGTAGGACCGTCCTTGGAAGTCTGCTGGGCCTTCAGCACCGCATAGACTGGAAAGAATGCGC
+        #=GS CryAmy/4-86 DE XM_019133406.1:1845-1930 Cryptococcus amylolentus CBS 6039 hypothetical protein, variant (L202_00283), mRNA
+        CryAmy/4-86               GTTGAAGGGGAATTTTGATCTTCAGTTTGGAAGGACTGTCCTTGGAAGCCTGCTGGGCCTTCAGCACCGCATTGATTGGAAAG-------
+        #=GS CrySki/2-91 DE BCHT01000001.1:1771212-1771330 Cryptococcus skinneri DNA, scaffold: scaffold_0, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/2-91               CATTGCACTTTGCTGACGTGTGTCCCACTTTAGAATGGTGATTGCTTCGCTGTTGGGGCTGCAGCATCGGATAGATTGGAAGGCGTGTTC
+        //
+
+..   3
+
+- Image source CND01900, CNAG_01059:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found_target/1-14         ---------------------------------TGGCGGTCTTTTAG-----------------------------
+        snRcnag12093/1-22         ----------------------------AGTC-GTTGTCGGAAGATCAACT-------------------------
+        #=GS CND01900/1-76 DE AE017344.1:c512191-512116 Cryptococcus neoformans var. neoformans JEC21 chromosome 4 sequence
+        CND01900/1-76             ACTATACGCTTTCACAACCGCCATATTTACAGTTGGCGGTCTTTTAGGCAGTCTATCAAATCCTTGGATCGTGTCC
+        #=GS CNAG_01059/1-76 DE CP003824.1:1314906-1314981 Cryptococcus neoformans var. grubii H99 chromosome 5, complete sequence
+        CNAG_01059/1-76           ACTATACGCTTTCACAACCGCCATATTTACAGTTGGTGGTCTTTTGGGCAGTCTATCAAATCCTTGGATCGTGTCC
+        #=GS R265/1-76 DE CP025760.1:c925015-924940 Cryptococcus gattii VGII R265 chromosome 2, complete sequence
+        R265/1-76                 ACTGTACGCTTTCACAACCGCAATATTCACAGTTGGTGGTCTTTTAGGCAGTCTATCAAACCCGTGGATCGTGTCC
+        #=GS WM276/1-75 DE XM_003193558.1:162-236 Cryptococcus gattii WM276 Vacuolar membrane protein, putative (CGB_D4300C), partial mRNA
+        WM276/1-75                ACTGTACGCTTTCACAACCGCAATATTTACAGTTGGTGGCCTTTTAGGCAGTCTATCAAACCCGTGGATCGTGTC-
+        #=GS KocImp/40-115 DE NBSH01000017.1:c19941-19800 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_17, whole genome shotgun sequence
+        KocImp/40-115             CAGAGTGGCCTGTGGCTTTATCCCCGTGATTGTTGGCGGTCTTTTTTTCAGGGATTTCGTGACCTTGTCATGCTCT
+        #=GS KwoHea/21-96 DE ASQB01000005.1:c298977-298870 Kwoniella heveanensis BCC8398 cont1.5, whole genome shotgun sequence
+        KwoHea/21-96              TTGTCTCTAGGATTACGTGAGAGGTGAGATAGTTGGAGGTCTTTTAGGGATCATCTTTCTTTTCTTTCGTTCAGTA
+        #=GS KwoMan/4-79 DE ASQD01000045.1:446430-446534 Kwoniella mangroviensis CBS 10435 cont2.45, whole genome shotgun sequence
+        KwoMan/4-79               CCTGCGCTGTCGTAATACTTACATCGGTCGGATTGGCGGTCTTTTCGGAAGTTGGATTGGTTATAGCGCGAAATTA
+        #=GS BulAlb/3-78 DE CAMYTR010000047.1:531950-532059 Bullera alba genome assembly, contig: jcf7180000012140, whole genome shotgun sequence
+        BulAlb/3-78               GAAGAGCTAGACGCATATGAGGAGGCAGAGTTGGATCGGTCTATCAGGCAGTCTATCATCTTGAACCAGAATGACC
+        #=GS CryWin/3-78 DE AWGH01000013.1:54103-54222 Cryptococcus wingfieldii CBS 7118 supercont1.13, whole genome shotgun sequence
+        CryWin/3-78               TCGGCTACTAGCGCTTCTAGGCGTTTCAACAGTGGGCGGTCTTTTTGGACCGAGCGGTGGCGGCGGGTGATGAATC
+        #=GS TriAsa/16-91 DE AMBO01000274.1:c83935-83824 Trichosporon asahii var. asahii CBS 8904 contig0275, whole genome shotgun sequence
+        TriAsa/16-91              TAGCGGCAATCTCATAAAGGGCAGGAATACAGTTGGCGTTCTTGTAGAAAGTAGTGTTAAGCTGCGTCGTGGCCTA
+        #=GS TriAsa/3-78 DE JAMALX010000015.1:379800-379898 Trichosporon asahii strain Y-2-4 ctg_15, whole genome shotgun sequence
+        TriAsa/3-78               TAGCGGCAATCTCATAAAGGGCAGGAATACAGTTGGCGTTCTTGTAGAAAGTAGTGTTAAGCTGCGTCGTGGCCTA
+        #=GS KocImp/6-81 DE NBSH01000025.1:c42145-42011 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_25, whole genome shotgun sequence
+        KocImp/6-81               CAAGACAGACTTGCAAACCGCCATATTTACTTACCACCACTTGATCCTCTCCGGGTGCGGTATCAAAGTCCAAAGG
+        //
+
+..  4
+
+- Image source CNE04600, CNAG_02046:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found##-target/1-14         -------------------------------------TAGCAGCTTTTTGG------------------------------------------
+        snRcnag12093/1-22           --------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------
+        #=GS CNE04600/1-90 DE AE017345.1:1288079-1288168 Cryptococcus neoformans var. neoformans JEC21 chromosome 5 sequence
+        CNE04600/1-90               CGA---GGGAGGATGGTGTCAACGAGGTGGTGTTGGATAGCAGCTTTTTGGACATCAGCAAAGTTGAGGTGGACGGAGAAGTTGCTGTGAGTT
+        #=GS CNAG_02046/1-89 DE CP003825.1:1262820-1262908 Cryptococcus neoformans var. grubii H99 chromosome 6, complete sequence
+        CNAG_02046/1-89             CGA---AAGAGGATGATGTGAAGGAGGTGGTGTTGGATAGCAGCTATTTGGACATCAACAAAGTTGAAGTGGATGGAGAAGTTGCTGTGAGT-
+        #=GS R265/1-90 DE CP025764.1:c153526-153437 Cryptococcus gattii VGII R265 chromosome 6, complete sequence
+        R265/1-90                   CGA---GGGAGGATGGTGTGAAGGAGGTGGTGTTGGATAGTAGCTATTTGGATGTCAGCAAAGTTGAGGTGGACGGAGAGGTTGCTGTGAGTT
+        #=GS WM276/1-90 DE CP000290.1:1183027-1183116 Cryptococcus gattii WM276 chromosome E, complete sequence
+        WM276/1-90                  CGA---GGGAAGATGGTGTGAAGGAGGTGGTGTTGGATAGTAGCTATTTGGATGTCAGCAAAGTTGAGGTGGACGGAGAGGTTGCTGTGAGTT
+        #=GS KwoSha/1-93 DE NQVO01000021.1:84261-84357 Kwoniella shandongensis strain CBS 12478 scaffold00021, whole genome shotgun sequence
+        KwoSha/1-93                 CGGAGGAAGGAGAGTCGGTGAAGGAAGTGGTTTTGGATAGTAGTTTCTTGGATATCAAGGATGTTCAGATTGATGGGAAGAAGGTGGTAAGTC
+        Annot/1-6                   --------------------------------------------------------------------------------------GTGrGT-
+        //
+
+..  5
+   
+- Image source CNF00560, CNAG_05919:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        snRcnag12093/1-22         -AGTC-GTTGTCGGAAGATCAACT------------------------------------------------------------------
+        Found_target/1-14         ------TGACAGTCTTCTAG----------------------------------------------------------------------
+        #=GS CNF00560/1-89 DE AE017346.1:c190610-190520 Cryptococcus neoformans var. neoformans JEC21 chromosome 6 sequence
+        CNF00560/1-89             -ATTACTGACAGTCTTCTAGGGATTGGAATTACCGAGTGCTGTCGTTGGACAGCAACACATTGCCACATTGACCGCACCCTCAACTACCT
+        #=GS CNAG_05919/1-89 DE CP003826.1:1215718-1215806 Cryptococcus neoformans var. grubii H99 chromosome 7, complete sequence
+        CNAG_05919/1-89           -ATTATTAACAGTCTTCTAGGGGTTGGAATCACCGAGTGCTGTCGCTGGACAGCAACACATTGCCACATTGACCGCACCCTCAACTATCT
+        #=GS R265/1-88 DE CP025763.1:1143713-1143802 Cryptococcus gattii VGII R265 chromosome 5, complete sequence
+        R265/1-88                 --ATCACTAACCTTCTTTAGGGATTGGAATCACCGAGTGCTGTCGCTGGACAGCAACACATAGCCACATTGATCGCACTCTCAACTATCT
+        #=GS WM276/1-87 DE CP000291.1:1140072-1140161 Cryptococcus gattii WM276 chromosome F, complete sequence
+        WM276/1-87                --ATCACTAACATTCTTTAGGGATTAGAATCACCGAATGCTGTCGCTGGACAGCAACGCATAGCCACATTGATCGCACTCT-AACTACCT
+        #=GS CryWin/1-90 DE CP034264.1:308158-308247 Cryptococcus wingfieldii strain CBS7118 chromosome 4, complete sequence
+        CryWin/1-90               CGACTGCTCATAGTGCGTAGGCGTCGGTATCACAGAATGCTGCCGCTGGACAGCCGCTCACTGCCACATCGACCGAACCCTCAACTACCT
+        #=GS CryFlor/1-89 DE RRZH01000006.1:272042-272130 Cryptococcus floricola strain DSM 27421 chromosome 6, whole genome shotgun sequence
+        CryFlor/1-89              -GACTGATCATAGTGCGTAGGCGTCGGTATCACAGAATGCTGCCGCTGGACAGCCGCTCACTGCCACATCGACCGAACCCTCAACTACCT
+        #=GS CryWin/1-90 DE AWGH01000003.1:214196-214285 Cryptococcus wingfieldii CBS 7118 supercont1.3, whole genome shotgun sequence
+        CryWin/1-90               CGACTGCTCATAGTGCGTAGGCGTCGGTATCACAGAATGCTGCCGCTGGACAGCCGCTCACTGCCACATCGACCGAACCCTCAACTACCT
+        #=GS CryAmy/3-92 DE MEKH01000004.1:c1303406-1303315 Cryptococcus amylolentus CBS 6273 supercont2.4, whole genome shotgun sequence
+        CryAmy/3-92               CGACTGCTCATAGTGCGTAGGCGTCGCTATCACAGAATGCTGCCGCTGGACAGCCGCTCACTGCCACATCGACCGAACCCTCAACTACCT
+        Annot/1-3                 -----------------YAG----------------------------------------------------------------------
+        //
+
+
+
+..   6
+   
+- Image source CNF02580, CNAG_05716:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        snRcnag12093/1-22         ---------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT----------------------------------------------------------------------------------------------------- 
+        Found-target/1-14         -------------------------------------------------------------TGATGGCTTTCTGG----------------------------------------------------------------------------------------------------------
+        #=GS 3501A/2-120 DE XM_769689.1:237-358 Cryptococcus neoformans var. neoformans B-3501A hypothetical protein (CNBF2120) partial mRNA
+        3501A/2-120               ACAAAAGTGGCATTAGCTACCGAAGGCCGCAGTCGGAAGGGAAAGGAAGCTAG--------------------------------------------------------------GACATTGGGACATGCGCAGACTCTGTTAGAGTTGATAAAGACATTCCCCATTACCAATCCGACACC
+        #=GS CNF02580/2-176 DE AE017346.1:746096-746273 Cryptococcus neoformans var. neoformans JEC21 chromosome 6 sequence
+        CNF02580/2-176            ACAAAAGTGGCATTAGCTACCGAAGGCCGCAGTCGGAAGGGAAAGGAAGCTAGGTGAGTT-TGATGGCTTTCTGGCTGGTATAAGGGCATG-----CTGATGAGCGGCGTCGTAGGACATTGGGACATGCGCAGACTCTGTTAGAGTTGATAAAGACATTCCCCATTACCAATCCGACACC
+        #=GS CNAG_05716/1-178 DE CP003826.1:c684198-684019 Cryptococcus neoformans var. grubii H99 chromosome 7, complete sequence
+        CNAG_05716/1-178          ACAAAAGTGGCATCAGCCACCCAAGGTCGTAGCCGGAAGGGAAAGGAAGCTAGGTGAGTTTTGATGACTTTCTGGACGTTAGTAGGGGCCATGCTAATGAGCCACG---CTGTAGGGCATTGGGACATGCGCAGACTCTGCTAGAGTTGATAAAGACATTCCCCATTACCAACCCGACACC
+        #=GS WM276/2-177 DE CP000291.1:c616486-616310 Cryptococcus gattii WM276 chromosome F, complete sequence
+        WM276/2-177               ACAAAAGTGACCTCAACTACCCAGACTGGTAGCCGGAAAGGAAAAGAAGCTAGGTGAGTTTTGACGATTTTCTGGGCCGTATGACTGCATGTT--GATGAACTACA---CTGTAGGGCATTGGGACATGCGCAGACTTTGCTAGAGCTGATAAAGACATTCCCCATTACTAATCCGACGCC
+        #=GS R265/1-146 DE CP025763.1:c620083-619938 Cryptococcus gattii VGII R265 chromosome 5, complete sequence
+        R265/1-146                ------------------------------AGCCGGAAAGGAAAAGAAGCCAGGTGAGTTTTGACGATTTTCTGGGCCGTATAATTGCATGTT--AATGAACTCCA---CTGTAGGGCATTGGGACATGCGCAGACTTTGCTCGAGCTGATAAAGACATTCCCCATTACTAATCCGACGCC
+        ANNOT/1-13                -----------------------------------------------------GTGrGT-------------------------------------CTGA------------YAG------------------------------------------------------------------
+        //
+
+..   11
+
+- Image source CNA00860, CNAG_00095:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14             -----------------------------------------------------------TAATGGTCTTTTAG------------------------------
+        snRcnag12093/1-22             ------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------
+        #=GS CNA00860/1-62 DE XM_566513.2:3467-3528 Cryptococcus neoformans var. neoformans JEC21 ER to Golgi transport-related protein, putative (CNA00860), partial mRNA
+        CNA00860/1-62                 TAGAAGGGAGTGGATTGGAGGATTTGAGTGAGAGTCTAGAGAAGCTCAAGGTCGACGTTTAA-----------------------------------------
+        #=GS CNA00860/1-103 DE AE017341.1:c240801-240699 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence
+        CNA00860/1-103                TAGAAGGGAGTGGATTGGAGGATTTGAGTGAGAGTCTAGAGAAGCTCAAGGTCGACGTTTAATGGTCTTTTAGCTTTGGATTGTATGATTATATTCAGTGTCA
+        #=GS anti-CNAG_00094/1-103 DE XM_012191133.1:c1478-1376 Cryptococcus neoformans var. grubii H99 NAD-dependent epimerase/dehydratase (CNAG_00094), mRNA
+        anti-CNAG_00094/1-103         TAGAAGGGAGTGGATTGGAGGATTTGAGTGAGAGTCTAGAGAAGCTCAAGGTCGATGCTTAATGGTCTTTTAGCTTTGGATTATATGATTATACTCAGTGTCA
+        #=GS H99/1-103 DE CP003820.1:c262800-262698 Cryptococcus neoformans var. grubii H99 chromosome 1, complete sequence
+        H99/1-103                     TAGAAGGGAGTGGATTGGAGGATTTGAGTGAGAGTCTAGAGAAGCTCAAGGTCGATGCTTAATGGTCTTTTAGCTTTGGATTATATGATTATACTCAGTGTCA
+        #=GS R265/1-94 DE CP025762.1:c231497-231404 Cryptococcus gattii VGII R265 chromosome 4
+        R265/1-94                     TAGAAGGGAGTGGATTGGAGGATTTAAGTGAGAGTTTGGAGAAGCTCAAGGTTGATATTTAGTTGTCTTTTAGCTTTGGATCGTATGATTATAT---------
+        #=GS WM276/1-94 DE CP000287.1:c237679-237586 Cryptococcus gattii WM276 chromosome B, complete sequence
+        WM276/1-94                    TAGAAGGGAGTGGATTGGAGGATTTGAGTGAGAGTTTGGAGAAGCTCAAGGTTGATATTTAGTTGTCCTTTAGTTTTGGATTGTATGGTTATAT---------
+        //
+
+..   12
+
+- Image source CNH03060-CNJ03420-CNH00450, CNAG_00867:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14               -----------------------------------------------TAATAGCTTTCTGG---------------------------------------------
+        snRcnag12093/1-22               ------------------------------------------AGTC-GTTGTCGGAAGATCAACT-----------------------------------------
+        #=GS CNH03060/1-106 DE AE017348.1:244396-244501 Cryptococcus neoformans var. neoformans JEC21 chromosome 8 sequence
+        CNH03060/1-106                  CAACTAGCATAAACGTTTATGAGTGCAACTCACATTGAGGATCGTGATAATAGCTTTCTGGAAAACAAGGCTATTGATCACACTGAGGAAGTTGAAAATGTTAAAG
+        #=GS CNJ03420/1-106 DE AE017350.1:1075777-1075882 Cryptococcus neoformans var. neoformans JEC21 chromosome 10 sequence
+        CNJ03420/1-106                  AGCTCCGCCTAAACGTTTATGAGCGCAACTAACATTGAGGATCGTGATAATAGCTTTCTGGAAAACAAGGCTATTGATCACATTGAGGAAATTGAAAATGTCAAAG
+        #=GS CNAG_00867/5-110 DE CP003824.1:c1784490-1784381 Cryptococcus neoformans var. grubii H99 chromosome 5, complete sequence
+        CNAG_00867/5-110                CTGCATAAGCGTTTTATAATGAGCGCAACTCACATTGAGAATCGTGATGATAGCTTTCTAGAAAACAAGGGTATTGATCACATTGGGAGACCCGAAAATAACAACG
+        #=GS WM276/2-107 DE CP000297.1:c58590-58484 Cryptococcus gattii WM276 chromosome L, complete sequence
+        WM276/2-107                     GCCTAAGGGTTTACTAAGATGAGCGCAACTCATATCGAGAACCGTGATAATAGCTTTGTGGAAAACAAGCATATCGACCATATTGATGGACTCGAAAGTGGCAAAG
+        #=GS CNH00450/3-108 DE AE017348.1:1058269-1058376 Cryptococcus neoformans var. neoformans JEC21 chromosome 8 sequence
+        CNH00450/3-108                  TCCGCTTACAAGTGTAAAATGAGAGCAACTCACATTGAGAATCGTGATAATAATTCTCTGGAAAACAAGCATATTGACCACATTGAGGGAGTTGAAAATGGCAAAG
+        #=GS CNAG_05639-intron/2-107 DE CP047915.1:846327-846433 Cryptococcus neoformans var. grubii H99 chromosome 14
+        CNAG_05639-intron/2-107         TCCGCCTGCAGGTGTAAAATGAGAACAACTCACATTGAGGATCGTGATAATAATTCTCTGGAAAACAAGCACACTGACCACATTGAGGGAGTTGAAAATGGCAAAG
+        Annot/1-4                       -------------------------------------------------------------------------CTGA-----------------------------
+        //
+
+.. 13
+
+- Image source CNK02700, CNAG_01930:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14                      -------------------------------------------------------------------------------TGACAGTCTTTTA--G------------------------------------------------------------
+        snRcnag12093/1-22                      --------------------------------------------------------------------------AGTC-GTTGTCGGAAGAT--CAACT--------------------------------------------------------
+        #=GS CNK02700-RNAi-suppressed/1-150 DE AE017351.1:784252-784401 Cryptococcus neoformans var. neoformans JEC21 chromosome 11 sequence
+        CNK02700-RNAi-suppressed/1-150         GACTTTATTGTAGCTGTAGGACAAGTTTTA-TATGTATGTATAATCGACAG-AAGGGAACGATAAGAAATCCCTCCATCTGACAGTCTTTTA--GCTTTGGACAATCTTCATAGTAATATAGCTCGCAGTGTATAATC-CATGCAACTTTTATAC
+        #=GS Endopeptidase/1-150 DE XM_024658090.1:3561-3710 Cryptococcus neoformans var. neoformans JEC21 endopeptidase, putative (CNK02700), mRNA
+        Endopeptidase/1-150                    GACTTTATTGTAGCTGTAGGACAAGTTTTA-TATGTATGTATAATCGACAG-AAGGGAACGATAAGAAATCCCTCCATCTGACAGTCTTTTA--GCTTTGGACAATCTTCATAGTAATATAGCTCGCAGTGTATAATC-CATGCAACTTTTATAC
+        #=GS CNAG01930/1-150 DE XM_012197112.1:3666-3815 Cryptococcus neoformans var. grubii H99 endopeptidase (CNAG_01930), mRNA
+        CNAG01930/1-150                        GACTTTATTGTAGCTGTAGGACAAGCTTTA-TGTGTATTTATAATTGATAG-AGGGGAACGATAAGAAATCCCTCTATCTGACAGTCTTTTA--GCTCTGGACAATTTTCATAGTAATATAGCTCGCAGTGTACATAC-CATGCAACTTTTATAC
+        #=GS H99/1-150 DE CP003830.1:c1294308-1294159 Cryptococcus neoformans var. grubii H99 chromosome 11, complete sequence
+        H99/1-150                              GACTTTATTGTAGCTGTAGGACAAGCTTTA-TGTGTATTTATAATTGATAG-AGGGGAACGATAAGAAATCCCTCTATCTGACAGTCTTTTA--GCTCTGGACAATTTTCATAGTAATATAGCTCGCAGTGTACATAC-CATGCAACTTTTATAC
+        #=GS R265/1-154 DE CP025759.1:243835-243988 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-154                             GACTTTATTGTAGCTGTATAACAAGTTTTA-TGTGTTTGTATAATAGATAACAAGGGAAAGATAACAAATCTCTCTATCGGACAATCTTTTATAGCTTTGGACAATTTTCATAGTAATATAGCTCGCAGTGAAATAATTCATGCAACTTTCATAC
+        #=GS WM276/1-154 DE CP000296.1:241573-241726 Cryptococcus gattii WM276 chromosome K, complete sequence
+        WM276/1-154                            GACTTTATTGTAGCTGTATAACAAGTTTTCATGTGTTTGTATAATAGATAACAAGGGAACGACAACAAATCCCTCTATCGGACAATCTTAT-TAGCTTTGGACAATTTTCATAGTAATATAGCTCGCAGTGAAATAACTCATGCAACTTTCATAC
+        //
+
+..  14
+
+- Image source CNL04450:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         ---------------------------------------------------------------------------------------------------------------------------------------------------------TGGTGGCTTTCTGG-----------------------------------------------------------------
+        snRcnag12093/1-22         ----------------------------------------------------------------------------------------------------A------------------------------------------------GTC-GTTGTCGGAAGATCAACT-------------------------------------------------------------
+        #=GS CNL04450/4-226 DE AE017352.1:c237574-237349 Cryptococcus neoformans var. neoformans JEC21 chromosome 12 sequence
+        CNL04450/4-226            TTTCTCCACCCGTTCTCTTCGCGGTGAATCACGTCATGTCAACAAACCTCACTTCTCCGCAGTCACACAATACCCTTCCACCCGGT---GATCAATTTAACAGACCTGAGTTAAGACCTACAAATAGTGTTGTCAGCGTGAGTGTTGTCTGTTTGGTGGCTTTCTGGAAGCGCATCGCTTAGATTGACTCCAACTGTAGTCTACCCAG------TCGCCTCTAGACTGGTCA
+        #=GS CNAG_05181/4-229 DE CP003823.1:652258-652486 Cryptococcus neoformans var. grubii H99 chromosome 4, complete sequence
+        CNAG_05181/4-229          TTTCTCCACTCGTTCTCTTCGCCGTGAATCACGTCATGTCAACAAACCTCACTTCCCCGCATTCACACAACACCCTTCCACCCGGTAGCGATCAATTTAACAGACCTGAGTTAAGACCTACAAATAGTGTTGTCAGCGTGAGTGTTGTCTGTATGGTGACTTTCTAGAAGCACACCGCTTACATTGACTCCAACTGTAGTCTGCCCAG------TCGCCTTTAGACTGGTCA
+        #=GS R265/1-225 DE CP025760.1:631361-631585 Cryptococcus gattii VGII R265 chromosome 2, complete sequence
+        R265/1-225                TTTCTCCACCTGTTCTCTTCGTCGTGTATCAGGTCATGTCAACAAACCACACTTCCCCGCAGCCACAGAATACCCTTCAACCCGGTACCGATCAAACCAGCAGACCTGAGTTAAGACCTACAAACAGTGCTCTCAGCGTGAGTGGTGTTTGTTTGGTGGCT-TCTGTAAGCGTACCGCTTACGCTGACTTCAACTGCAGTCTACCCAA------TCGCCTCTAGACTGGTCA
+        #=GS WM276/1-231 DE CP000289.1:640291-640521 Cryptococcus gattii WM276 chromosome D, complete sequence
+        WM276/1-231               TTTCTCCACCTGTTTTCTTCGTCGTGAATCACGTCATGTCAACAAACATCACTTCCCCGCAGCCACAGAATACCCTTCAACCCGGTACCGATCAAATCAACAGACCTGAGTTAAGACCTACAAACAGTGCTCTCAGCGTGAGTGGTGTTTGTTTGGTGGCT-TCTGTAAGCGTACCTCTTACGCTGACTTCAACTGCAGTCTACCCATACCCAATCGCCTCTAGACTGGTCA
+        //
+
+..   15
+
+- Image source CNM01110, CNAG_06104:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-12         ---------------------------------------------------------------------------------------------------TGACAGTCTTTT-------------------------------------------------------------
+        snRcnag12093/1-22         ----------------------------------------------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT-------------------------------------------------------
+        #=GS CNM01110/1-172 DE AE017353.1:c332426-332255 Cryptococcus neoformans var. neoformans JEC21 chromosome 13 sequence
+        CNM01110/1-172            AGCAGAATGGTATTTTGGATTGGCCTTCAACGAGTCCGATGTGGACTCGCCCACCGGGAACATCCCTATTGCCGCTCATTGGGCGCAAGAAATTTTGGGTGACAGTCTTTTAGGCTTAAGTGTGGGAAATGAACCTGATTTGTAAGCAACTCCATAGAAAAGATGAGTACAG
+        #=GS CNAG_06104/1-171 DE target, opposite CNAG_13068 CP003831.1:c318979-318809 Cryptococcus neoformans var. grubii H99 chromosome 12, complete sequence
+        CNAG_06104/1-171          AGCGGAGTGGTATTTTGGATTGGCCTTCAACGAGTCCGATGTGGATTCGCCCACCGGCAACATCCCTATTGCCGCTCATTGGGCGCAAGAAATTTTGGGTGACAGTCTTTTAGGCTTAAGTGTGGGAAATGAACCTGATCTGTAAGCAGCATCGTAGAA-AGATGAGTACAG
+        #=GS WM276/1-172 DE CP000298.1:c267578-267407 Cryptococcus gattii WM276 chromosome M, complete sequence
+        WM276/1-172               AGCGGAGTGGTATTTTGGACTGGCCTTCAACGAGTCCGATGTGGATGCGCCCACTGGCAACATCCCAATTGCCGCTCATTGGGCGCAGGAAATTTTGGGGGATAGTCTTTTAGGCTTGAGTGTGGGAAATGAGCCTGATTTGTACGTAACATCGTAGAAAAGATGAGTACAG
+        #=GS R265/1-172 DE CP025770.1:429992-430163 Cryptococcus gattii VGII R265 chromosome 12, complete sequence
+        R265/1-172                AGCGGAGTGGTATTTTGGACTGGCCTTCAACGAGTCCGATGTGGATGCGCCCACTGGCAACATCCCAATTGCCGCTCATTGGGCGCAGGAAATTCTGGGGGATAGTCTTTTAGGCTTGAGCGTGGGAAATGAGCCTGATTTGTAAGTAACATCATAAAAAAGATGAGTACAG
+        #=GS CryAMy/1-140 DE XM_019139307.1:908-1047 Cryptococcus amylolentus CBS 6039 hypothetical protein (L202_05099), mRNA
+        CryAMy/1-140              ----GACTGGTATTTCGGTCTCGCGTTCAACGAGACGGACGTCGATTTGCAGATTGACAACATCCCTTTGGCGGCTACCTGGGCCCAAGAAATTCTTGGCGATAGCTTGCTCGGTCTAAGCGTGGGTAACGAACCAGACTTGTA----------------------------
+        #=GS CryWin/1-147 DE AWGH01000021.1:300278-300424 Cryptococcus wingfieldii CBS 7118 supercont1.21, whole genome shotgun sequence
+        CryWin/1-147              TGTCGAATGGTATTTCGGTCTCGCGTTCAATGAGACGGACGTCGATTTGCAGATTGACAACATCCCTTTGGCGGCTACCTGGGCCCAAGAGATTCTTGGCGATAGCTTGCTCGGTCTGAGTGTGGGCAACGAACCAGACTTGTAAGC-------------------------
+        #=GS CryFlo/1-146 DE RRZH01000008.1:246002-246149 Cryptococcus floricola strain DSM 27421 chromosome 7 DSM27421_contig_08, whole genome shotgun sequence
+        CryFlo/1-146              GGTCGACTGGTATTTCGGTCTCGCGTTCAACGAGACGGACGTCGATTTGCAGAT-GACAACATCCCTTTGGCGGCTACCTGGGCCCAAGAGATTCTTGGCGATAGCTTGCTCGGTCTGAGCGTGGGTAACGAACCAGACTTGTAAGC-------------------------
+        #=GS KwoHev/1-141 DE ASQC01000008.1:237497-237637 Kwoniella heveanensis CBS 569 cont2.8, whole genome shotgun sequence
+        KwoHev/1-141              ---AGATTGGTACTTTGGGTTGGCATTCAACCAGTCCGATGTCGACGCGCCTACCGGAAACGTTCCCATTGCCGCCACTTGGGCTCAGCAGATTTTGGGCGACAACTTGCTCGGTTTGAGTGTCGGCAACGAACCCGACTTGTA----------------------------
+        #=GS CrySki/1-145 DE BCHT01000012.1:c30333-30189 Cryptococcus skinneri DNA, scaffold: scaffold_11, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/1-145              -GCAGAGTGGTATTTCGGACTGGCTTTCAACGAGTCAGACGTAACGACACCTACAGGTAATATCCCAATCGCCGCTCAATACGCTCAGCAGATCCTGGGGAACAAGTTACGAGGCCTGGCGTTGGGTAATGAGCCTGATCTGTGAG--------------------------
+        Annot                     ---------------------------------------------------------------------------------------------------------------------------------------------GTGrGT-------------------------
+        //
+
+
+.. 16
+
+- Image source CNN00630, CNAG_06333:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        snRcnag12093/1-22         ------------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------------------------------------------------------------------------------------
+        Found-target/1-14         -----------------------------------------------------------------TGACAGTCTTCTGG------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CNN00630/1-201 DE AE017356.1:205192-205425 Cryptococcus neoformans var. neoformans JEC21 chromosome 14 sequence
+        CNN00630/1-201            TGTGGTGCGAGAGCAGATTAAGAATTTCGCAATGACCAAGGTGCTATTCTCGTATGTCC------TGACAGTCTTCTGGAAACGCTAAAAAATATAATACAAAGAATGCTGATGA----------TGATCTGGGGTTTTACAGAAAAGGTTTCAAGTTGGTCATTTTAGATGAAGCGGATATGATGACACAAGCAGCTCAATCTGCACTTCGTCGAG
+        #=GS CNAG_06333/1-201 DE CP003832.1:218176-218394 Cryptococcus neoformans var. grubii H99 chromosome 13, complete sequence
+        CNAG_06333/1-201          TGTAGTGCGAGAGCAGATTAAGAATTTCGCAATGACCAAGGTGCTTTTCTCGTACGTCCTAAAC-GGTCCATCTTCTGGAAATGCCCGAACAAAAAAGG-----AATGCTGATGA---------ACGATCTGGGGTT-TACAGAAAAGGGTTCAAATTGGTCATTTTAGATGAAGCGGATATGATGACCCAAGCAGCTCAATCTGCACTTCGTCGAG
+        #=GS H99/1-125 DE XM_012198028.1:456-580 Cryptococcus neoformans var. grubii H99 replication factor C subunit 3/5 (CNAG_06333), mRNA
+        H99/1-125                 TGTAGTGCGAGAGCAGATTAAGAATTTCGCAATGACCAAGGTGCTTTTCTC--------------------------------------------------------------------------------------------AAAAGGGTTCAAATTGGTCATTTTAGATGAAGCGGATATGATGACCCAAGCAGCTCAATCTGCACTTCGTCGAG
+        #=GS R265/1-213 DE CP025771.1:c489923-489698 Cryptococcus gattii VGII R265 chromosome 13, complete sequence
+        R265/1-213                TGTAGTGCGAGAGCAGATTAAGAATTTTGCAATGACAAAGGTGCTATTCTCGTACGTCCTAAACAAGTTCATCTTCCGGAAATGCCAAAAAAAAAA-AAAAC-AAATGCTGATGATGATGATG--ATGTGTGTGGGTTTACAGAAAAGGTTTCAAGTTGGTCATTTTAGATGAAGCGGATATGATGACCCAAGCAGCTCAATCTGCACTTCGCCGAG
+        #=GS WM276/1-193 DE CP000299.1:163843-164098 Cryptococcus gattii WM276 chromosome N, complete sequence
+        WM276/1-193               TGTAGTGCGAGAGCAGATTAAGAATTTCGCAATGACCAAGGTGCTATTCTCGTATGTCCCAAACAAGTTCGATGCAAG-------------------AAAACAAAATGCTGATGATGATGATG---TGTGT--GGGTTTACAGAAAAGGTTTCAAGTTGGTCATTTTAGATGAAGCGGATATGATGACCCAAGCAGCTCAATCTGCACTTCGTCGAG
+        #=GS TreTag/1-204 DE CAJHEQ010000310.1:c18732-18527 MAG: Tremellales sp. Tagirdzhanova-0007 genome assembly, contig: TREM_310, whole genome shotgun sequence
+        TreTag/1-204              CGTTGTTCGAGAACAGATCAAGAGTTTTGCAATGACAAAGGTCTTATTCTCGTAAGTCA--AGCCT-GCAGTGGAGATCGCAAAGACGCCCAGTGCTGGCGAAAAATGCTGATTTGATCCATCTAAACAA----------TAGGAAGGGGTTCAAGCTCGTGATTTTGGACGAGGCAGACATGATGACTCAAGCCGCCCAATCCGCATTACGAAGAG
+        #=GS CrySki/1-213 DE BCHT01000013.1:c341590-341373 Cryptococcus skinneri DNA, scaffold: scaffold_12, strain: JCM 9039, whole genome shotgun sequence
+        CrySki/1-213              TGTTGTCAGAGAGCAGATCAAGAGCTTTGCTATGACTAAAGTGCTGTTCTCGTGAGTTTAC-GGACCGCTAGTCCAATTGAGATCATGCTGTCG---CCGTCTAGGTCTGGATATGGACAGTGACTTACTAAGTGATTTCCAGGAAAGGCTTCAAGCTGATCATTCTGGATGAGGCGGATATGATGACCCAGGCCGCTCAGTCGGCATTACGGCGAG
+        #=GS CryFlo/1-174 DE RRZH01000003.1:c1427493-1427318 Cryptococcus floricola strain DSM 27421 chromosome 3, whole genome shotgun sequence
+        CryFlo/1-174              CGTCGTACGTGATCAAATCAAAAACTTTGCCATGACCAAGGTCTTGTTCTCGTACGTCTTG-TCTATCTGGTCGCGAGACTGT-----------------------GACTGACGTTAGGTA-------------------TAGGAAGGGATTCAAATTGGTCATTCTGGATGAAGCAGATATGATGACACAAGCTGCTCAATCGGCGCTTCGTCGAG
+        #=GS CryAmy/1-174 DE MEKH01000011.1:303485-303660 Cryptococcus amylolentus CBS 6273 supercont2.11, whole genome shotgun sequence
+        CryAmy/1-174              CGTCGTACGTGATCAGATCAAAAACTTTGCCATGACCAAGGTCTTGTTCTCGTACGTCTTG-TCTATCTGGTCGCGAGACTGT-----------------------GACTGACGTTAGGTA-------------------TAGGAAGGGATTCAAATTGGTCATTCTGGATGAAGCAGATATGATGACACAAGCTGCTCAATCGGCGCTTCGTCGAG
+        #=GS CryWin/1-174 DE AWGH01000016.1:c261358-261183 Cryptococcus wingfieldii CBS 7118 supercont1.16, whole genome shotgun sequence
+        CryWin/1-174              CGTCGTACGTGATCAGATCAAAAACTTTGCCATGACCAAGGTCTTGTTCTCGTACGTCTTG-TCTATCTGGTCGCGAGACTGT-----------------------GACTGACTTTAGGTA-------------------TAGGAAGGGATTCAAATTGGTCATTCTGGATGAAGCAGATATGATGACACAAGCTGCTCAATCGGCGCTTCGTCGAG
+        #=GS PapTer/110-277 DE JAHXHD010001370.1:4099-4377 Papiliotrema terrestris strain LS28 scaffold-1369, whole genome shotgun sequence
+        PapTer/110-277            CGTGGTCAGAGATCAGATCAAGAGCTTTGCCATGACCAAGGTTCTTTTCTCGTGAGGTGCAAGTCCCCGTTATCCGGC-------------------------TTTACCTGATGAC------------------------CAGAAAGGGTTTCAAGCTGGTCATTCTAGACGAGGCAGACATGATGACGCAAGCAGCACAATCTGCACTGCGACGAG
+        #=GS KocImp/1-175 DE NBSH01000006.1:c68032-67856 Kockovaella imperatae strain NRRL Y-17943 BD324scaffold_6, whole genome shotgun sequence
+        KocImp/1-175              TGTGGTCAGAGATCAGATCAAGAGCTTTGCCATGACCAAGGTGTTATTCTCGTCAGTTG---GCTTCCTTGATCATCTGAAGAGTG-------------------TGTCTGACCGTCCCC--------------------AAGAAAAGGTTTCAAGCTGGTTATTTTGGACGAAGCGGATATGATGACTCAAGCGGCTCAGTCAGCCCTGCGCCGAG
+        Annot/1-13                ---------------------------------------------------GTGrGT---------------------------------------------------CTGA----------------------------YAG--------------------------------------------------------------------------
+        //
+
+..  17
+
+
+- Image source CNB05690 CNAG_04090:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-15         ------------------------------------------------------AATGGTTTTCTAGTT--------------------------------------------------------------------------------------------------
+        snRcnag12093/1-22         ------------------------------------------------AGTC-GTTGTCGGAAGATCAACT------------------------------------------------------------------------------------------------
+        #=GS CNB05690/1-154 DE  bZip transcription factor AE017342.1:1596916-1597069 Cryptococcus neoformans var. neoformans JEC21 chromosome 2 sequence
+        CNB05690/1-154            ----------ATAACGCTGATATTACCATTT-CAATCGTCC-CGTTGTTTCTC-AATGGTTTTCTAGTTACTCGACCTTCATCTTCTGCCTCTAACCCCAAACGCCAACTATCTGAAGCTCCCGCGTCAAGAGGCGGTGAAGAAAACTCAAACTTGGCTGCTACTGT
+        #=GS H99/1-153 DE CP003821.1:1593477-1593629 Cryptococcus neoformans var. grubii H99 chromosome 2, complete sequence
+        H99/1-153                 ----------ATAACGCTGACATTACTATT--CAATCGTCCCCGTTATTTCTCAAATGGTTTTCTAGTGACCCGACCTTCATCTTCTGCTTCGAATTCGAAACGCCAGCACTCTGAAGCTCCTGCGTCAAGAGGCAGTGAAGAAAACTCAAACTTGGCTGCGACT--
+        #=GS WM276/1-155 DE CP000286.1:c28929-28775 Cryptococcus gattii WM276 chromosome A, complete sequence
+        WM276/1-155               ----------ATAAAGCTGATATGACTATTCTCAATCGTCC-CGTTATTTCTC-AATGGTTTTCTAGTTACACGACCTTCATCTTCTGCCTCTAATTCCAAACGCCAGCCATCTGAAGCTCCCGTGTCAAAGGGCAGTGAAGAAAACTCCAATTTGGCTGCTACTGT
+        #=GS R265/1-155 DE CP025761.1:1926550-1926704 Cryptococcus gattii VGII R265 chromosome 3, complete sequence
+        R265/1-155                ----------ATAAAGCTGATATGACTATTCTCAATCGTCC-CGTTGTTTCTC-AATGGTTTTCTAGTTACACGACCTTCGTCTTCTGCCTCTAATTCCAAACGCCAGCCATCTGAAGCTCCCGTGTCAAAGGGCAGTGAAGAAAACTCCCATTTGGCTGCGACTGT
+        #=GS CNAG_04090/1-99 DE XM_012192281.1:386-484 Cryptococcus neoformans var. grubii H99 activating transcription factor (CNAG_04090), mRNA
+        CNAG_04090/1-99           ----G--------------------------------------------------------------TGACCCGACCTTCATCTTCTGCTTCGAATTCGAAACGCCAGCACTCTGAAGCTCCTGCGTCAAGAGGCAGTGAAGAAAACTCAAACTTGGCTGCGACT--
+        #=GS CNB05690/1-101 DE XM_569310.2:327-427 Cryptococcus neoformans var. neoformans JEC21 bZip transcription factor, putative (CNB05690), mRNA
+        CNB05690/1-101            ----G--------------------------------------------------------------TTACTCGACCTTCATCTTCTGCCTCTAACCCCAAACGCCAACTATCTGAAGCTCCCGCGTCAAGAGGCGGTGAAGAAAACTCAAACTTGGCTGCTACTGT
+        #=GS WM276/1-105 DE XM_003191110.1:54-158 Cryptococcus gattii WM276 bZip transcription factor, putative (CGB_A0090C), partial mRNA
+        WM276/1-105               TTCTG--------------------------------------------------------------TTACACGACCTTCATCTTCTGCCTCTAATTCCAAACGCCAGCCATCTGAAGCTCCCGTGTCAAAGGGCAGTGAAGAAAACTCCAATTTGGCTGCTACTGT
+        Annot/1-7                 ----------------CTGA--------------------------------------------YAG----------------------------------------------------------------------------------------------------
+        //
+
+.. 18
+
+
+
+- Image source CNC02870, CNAG_01796:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-15         ---------------------------------------------------------------AGCAGCCTTTTGGTT-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        snRcnag12093/1-22         ---------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CNC02870/1-295 DE AE017343.1:932130-932424 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence
+        CNC02870/1-295            GAACAAGTCAACCAGGTGTGTACTTTTCATTCCTTAC----TCTGATTTATTCTCGCTTGATCAGCAGCCTTTTGGTTTGTCTTTCGTGTCTTTGCTCAAATCCTTGCTCTTTGGGCAATATTGAAAGCTTCTGACAGT-CCATATTC-GAGTACTGGCCATGATCAGTCGATATTGGCTTGTAAAGTCGCGTTAATCAGTTGGAAGAGTGTCTTGAGCGTCTTTGGGCCAATGGGCTCGTGCGCTCGCATGAATGCAGGAGAAGGGGATTGCCAGCACATTTCAATGTTGTGCAGCGCCT
+        #=GS H99/1-281 DE CP003830.1:953603-953883 Cryptococcus neoformans var. grubii H99 chromosome 11, complete sequence
+        H99/1-281                 -AACAAGTCAATCAGGTGTGTCCTCTTCAATTC--------TTTGATTTATTCTCGCTTGATCAGTCGCCTTTTCCTTTGTCTTTCATGTCTTTACTCAAATCTTTGCTCTTTGAGTAATACTGAAAGCCTCTGACAGT-CCAGATTC-AAGTCCTGGCCATGATAAGTTGATACTGGCTTGTCAAGTCTCGTGAATCTGTTGGGAGAGTGTCTTTTG-GTTTATGGGCC--------CGTGCGCTAGGATGAATGCAGGAGAAGGGGATTGCCGTTACATTTCAACGTTGTACGGCGCCT
+        #=GS R265/1-266 DE CP025759.1:1160777-1161042 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-266                GAACAAGTCAATCAGGTGCGTACTGCTCTTAAACTTATTATTCTAGTTCATTCTCGCCTGGCCAG--------TGGTTTGTT-------------TTCATGCCTCCGCTCT-TGGAAAATATCGAAGGCTCCTGACAGTTCCAGGTTCTAAGTACTGGCCGTGATCAGCTAATATTGGCTTGTAAAGTTGCGTGGGTCTGTTGGGAGAGCG------------GCGTTCCGCGGACGGGCGCCGCTTGCATGAATAACGGGAGAAGGGATTGCCGTTACATTATAATGTTGTACGGCGCC-
+        #=GS WM276/1-164 DE CP000288.1:910626-910789 Cryptococcus gattii WM276 chromosome C, complete sequence
+        WM276/1-164               GAACAAGTCAATCAGGTGCGTACTGCTCTTAAACTTATTATGCTGGTTTATTCTCGCTTGGCCAG--------TGGTTTGTC-------------TTCATGCCTCCGCCCT-TGGGAAATATCGAAAGCTCCTGACAGT-CCAGGGTC-AAGTACTGGTCGTGATCAGCTAATATTCCTTTGTAAAGT-----------------------------------------------------------------------------------------------------------------
+        Annot/1-10                ---------------GtGrGT--------------------------------------------------------------------------------------------------------------CTGA----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //
+
+ 
+..  19
+
+        
+- Image source CNL06520, CNAG_04963:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-15         --------------------------------------------------------------------------------------------------------------------------AACAGCCTTCTAGTT----------------------------------------------------------
+        snRcnag12093/1-22         --------------------------------------------------------------------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------
+        #=GS CNL06520/1-195 DE AE017352.1:c814787-814593 Cryptococcus neoformans var. neoformans JEC21 chromosome 12 sequence
+        CNL06520/1-195            CAGTGCTGTCTACTCTGACGCCGAATCCGCTTCTTCTACTCAAGCTCCGGTTGAGAACACCTCGTCTTCTTCTGAAAATGTGGCCGCCACCACCAGCTCTATTGAGAACATTGCAGCTTTGCAACAGCCTTCTAGTTCGTCTTCTGTGAGTTTCGAGTTCCGCCTGTTAAATCTGGGAAACAAGCTCACAGAATT
+        #=GS CNAG_04963/1-194 DE CP003823.1:94103-94296 Cryptococcus neoformans var. grubii H99 chromosome 4, complete sequence
+        CNAG_04963/1-194          CAGCGCCGTCTCTTCTGGCGCCGAGTCCTCTTCCTCTACTCAAGCCCCGGTTGAGAACACCTCGTCTTCTTCTGAAGATGTGGCCGCCACCACCAGTTCTATTGAGAACATTGCTGCTTTGCAACAGCCTTCTAGTTCGTCTTCTGTGAGTTTAG-GTTCCGCCTGTTCAAGCTGGGAAACGCGCTCACACAATT
+        #=GS R265/2-195 DE CP025760.1:81839-82033 Cryptococcus gattii VGII R265 chromosome 2, complete sequence
+        R265/2-195                GAATTCCACCGATACTAACGTCACCAGCGCCGTCACTACTCAAGCCCCGGTTGAGAATACCTCATCTTCTTCTGAAATTGCGGCCGCCACCGCCGGCTCTATTGAGAACCTTGCTGCTTTGCAACAGCCTTCTAGTTCGTCTTCTGTGAGTTTAAAGTTTTGACTGGTCAAGCTAGGAAGCAAGCTCACAGGAT-
+        #=GS WM276/2-194 DE CP000289.1:83423-83616 Cryptococcus gattii WM276 chromosome D, complete sequence
+        WM276/2-194               GAATTCCACCGATACTAACGTCACCAGCGCCGTTACTACTCAAGCCCTGGTTGGGAATACCTCGTTTTCTTCTGAAATTGCGGCCGCTACCGCCAGCTCTATTGAGAACCTTGCTGCTTTGCAACAGCCTTCTAGTTCGTCTTCTGTGAGTTTAA-GAACCGATTGATCAAGCTGGGAAGCAAGCTCACAGGAT-
+        Annot/1-6                 -------------------------------------------------------------------------------------------------------------------------------------------------GTgrGT--------------------------------------------
+        //
+
+.. 20
+
+
+
+- Image source  CNA08150, CNAG_00838:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         ---------------------------------------------GGCAGCTTTTTGGT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        snRcnag12093/1-22         ---------------------------------------AGTC-GTTGTCGGAAGATCAACT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #=GS CNA08150/1-238 DE AE017341.1:c2244834-2244597 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence
+        CNA08150/1-238            CCTATCCGTCACTTCTTGACACTCATTTTCGCTTTACCATCTTTCGGCAGCTTTTTGGTCTTATTGTGGATCCCAACTCATCTAAATAGCACTGCTTTTACCATCGAAACAAACAAATTTACAATGATCACACGCACCCAAT-TAGAAAAGATTACGGACTCGTAGCCGGATAAGGCGGGGAATTCATGTTTTCACCGCAGCCACATCAAAGCCGTGATTGCAAGCGTTTAAACGCGAT
+        #=GS CNAG_00838/1-236 DE CP003820.1:c2223620-2223385 Cryptococcus neoformans var. grubii H99 chromosome 1, complete sequence
+        CNAG_00838/1-236          GCCTGCTATCATTTCTTGACACGCATTTTCTCTTTGCCATCTTCGGGCAGCTTTTTAGTCT-ATTGTAGATCTCAACGCAGCTAAGTAAGACAGCTTCTACCATCGAAACAAACAAATTTATAATGGCTACACACGCCCAATTTAGACAAAGTTACGGACTCGTACCCGGATAAGGCGGGGAATTCATGTTTTCACCGCAGCCTCTTCAATGCCGAGATTGCAAGCGTTTAAACACG--
+        #=GS CNAG_00838/1-53 DE XM_012191606.1:1-53 Cryptococcus neoformans var. grubii H99 hypothetical protein (CNAG_00838), mRNA
+        CNAG_00838/1-53           ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TCATGTTTTCACCGCAGCCTCTTCAATGCCGAGATTGCAAGCGTTTAAACACG--
+        //
+
+
+.. 21
+
+- Image source  CNB01000, CNAG_03597:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         -----------------------------------------------------------------------------------------------------------------AATGGTCTTTTGGT-----------------------------------------------------------
+        snRcnag12093/1-22         -----------------------------------------------------------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------
+        #=GS CNB01000/1-182 DE AE017342.1:c303878-303697 Cryptococcus neoformans var. neoformans JEC21 chromosome 2 sequence
+        CNB01000/1-182            -GGATGATATAACAAAACGAGACAGTCCAAGTTCATCAAGCTCAGAA---ACTTCGAACAACACCTCCATAATAGATAACCCCCAGCTATTAACTGCTGCCAATGTCACCAGCAATGGTCTTTTGGTCCACATCTCGTTCGAATGGATCGTGACAATGATGATCATAGTCTTTGGTTAGTTACATA
+        #=GS CNAG_03597/1-185 DE CP003821.1:c293009-292825 Cryptococcus neoformans var. grubii H99 chromosome 2, complete sequence
+        CNAG_03597/1-185          -GGATGATATGACAAAACGAGACAGTCCAAGCTCATCAAGCTCAGAAACAAGTTCTAACAACACCTCCATAATAGATAATCCCCAGCTATTAACCGCTGCCAATGTCACCAGCAACGGTCTTTTGGTCCACATCTCGTTCGAATGGATCGCGACAATGACGATCATAGTCTTTGGTTAGTTACATA
+        #=GS WM276/1-186 DE CP000287.1:1502140-1502325 Cryptococcus gattii WM276 chromosome B, complete sequence
+        WM276/1-186               AGGATAGCGTGGCAAAACGAAATGACATAAGTTCATCAAGCTCAGAAGCGAGTCCTAATATCACTTCGATAATAGACAATCCACAGCTATTGACCGCTGCCAATGTCACTAGCAACGGCCTTTTGGTCCACATCTCGTTCGAATGGATCGTGACAATGTTGATCGTGGTCTTTGGCAAGTTACATA
+        #=GS R265/1-186 DE CP025762.1:1461220-1461405 Cryptococcus gattii VGII R265 chromosome 4
+        R265/1-186                AGGATAGTGTGACAAAACGAGATGACATAAGTTCATCAAGCTCAGGAGCGAGTCCTAATATCACTTCGATAATAAAGAATCCACAGCTATTGACTGCTGCTAATGTCACTAGCAACGGTCTTTTGGTTCACATCTCGTTTGAATGGATCGTGACAATGTTGATCGTAGTCTTTGGCAAGTTACATA
+        #=GS CryFlo/1-183 DE RRZH01000014.1:250471-250653 Cryptococcus floricola strain DSM 27421 chromosome 13, whole genome shotgun sequence
+        CryFlo/1-183              ---AGACCAGTACTGCAAGCGCCGCCAGCTCGACATCCGCGAGCACAGCTGGGTCAAATAGCACATCAATCATCGAAAACCCCCAGCTGTTGACCGCCGCAAATATCACGAGTAATGGACTGTTGGTGCATATATCCTTCGAGTGGATTGTGACCATGATGGTCGTTGTATTCGGTGAGCGACATA
+        #=GS CryAmy/1-183 DE MEKH01000012.1:c765118-764936 Cryptococcus amylolentus CBS 6273 supercont2.12, whole genome shotgun sequence
+        CryAmy/1-183              ---GTACTGCAAGCGCCGCCAGCAGTAACTCGACATCCGTGAGCACAGCTGGGTCAAATAGCACATCAATCATCGAAAATCCCCAGCTGTTGACTGCCGCAAATATCACGAGTAATGGACTGTTGGTGCATATATCCTTCGAGTGGATTGTGACCATGATGGTAGTTGTATTCGGTGAGCGACATA
+        #=GS CryWin/1-183 DE AWGH01000023.1:146961-147143 Cryptococcus wingfieldii CBS 7118 supercont1.23, whole genome shotgun sequence
+        CryWin/1-183              ---GTACTGCAAGCGCCCCCAGCAGTAGCTCGACATCCGCGAGCACAGCTGGGTCAAATAGCACATCAATCATCGAAAACCCCCAGCTGTTGACCGCCGCAAATATCACGAGTAATGGACTGTTGGTGCATGTATCCTTCGAGTGGATTGTGACCATGATGGTAGTTGTATTCGGTGAGCGACATA
+        #=GS CryFla/1-151 DE CAUG01000546.1:c52819-52669 Cryptococcus flavescens NRRL Y-50378 WGS project CAUG00000000 data, contig NODE_1306_length_130783_cov_46_252159, whole genome shotgun sequence
+        CryFla/1-151              ---CATCCAACAGCACCCAGCAGGCTGGCGATTCGACCGCGCAAGACGGCCAGCTCATGGGTCAAGCGGTCATAGATGACATGCTCGTCTTCACGGCGGCAAACGTGGTTGGTAATGGGCTGTGGGTGCACATCGGGTTTGAATGGGTCGTCAC--------------------------------
+        //
+
+.. 22
+
+- Image source  opposite CNB02995:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         -----------------------------------------------------------AGTAGTTTTTTGGT------------------------------------------------------------------------
+        snRcnag12093/1-22         -----------------------------------------------------AGTC-GTTGTCGGAAGATCAACT---------------------------------------------------------------------
+        #=GS transcript/1-145 DE opposite CNB02995 AE017342.1:909486-909630 Cryptococcus neoformans var. neoformans JEC21 chromosome 2 sequence
+        transcript/1-145          ATCTCTCGTGGATGATGAGAGCATACAGTGCCGACGTAGTAGCCGAAAACTTTACAACAAGTAGTTTTTTGGTACTACGCATCACTGTTGTTGCTGGCGCATTTCCTTGAATTTATATATGTGTAGTTTGACCATCATCATGTCA
+        //
+
+.. 23
+
+- Image source CNC02070, CNAG_07598:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         --------------------------------------------------------------------------GATAGTCTTTTGGT-----------------------------------------------------------
+        snRcnag12093/1-22         --------------------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------
+        #=GS CNC02070/1-147 DE importin-alpha export receptor AE017343.1:c580428-580282 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence
+        CNC02070/1-147            TCCAACAGCCAGAAGATAACCGCCAGGAATAGAAAATTGGTTGAAGTTGGTCTTACAAAGACTCTCTCTCGTTCAGATAGTCTTTTGGTAGAGCCGAACAGGCAGTTCTGGCCTCCCATTTTCCTTGCCCTTCTGGACATGTTCACT
+        #=GS CNAG_07598/1-147 DE CP003830.1:c649034-648888 Cryptococcus neoformans var. grubii H99 chromosome 11, complete sequence
+        CNAG_07598/1-147          TCCAACACCCAGAAGATAACAGCGAGGAACAGAAAATTGGTTGAAGTTGGTCTCACGAAGACTCTCTCTCGTTCAGATAGCCTTTTGGTGGAACCCAACAGGCGGTTCTGGCCTCCCATCTTCCTTGCCCTTCTGGACATGTTTACT
+        #=GS WM276/1-147 DE CP000288.1:c636348-636202 Cryptococcus gattii WM276 chromosome C, complete sequence
+        WM276/1-147               TCCAACACCCAGAAGATAACTGCCAGGAACAGAAAACTGGTCGAAGTTGGTCTCACAAAGACTCTATCCCGTTCAGATAGCCTTCTGGCCGAGCCCAACAGGCAGTTCTGGCCTCCCATCTTCCTTGCCCTTCTGGACATGTTCACT
+        #=GS R265/1-147 DE CP025759.1:c902733-902587 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-147                TCCAACACCCAGAAGATAACTGCCAGAAACAGAAAACTGGTCGAAGTTGGTCTCACAAAGACTCTATCCCGTTCAGATAGCCTTCTGGCCGAGCCCAACAGGCAGTTCTGGCCTCCCATCTTCCTTGCCCTTTTGGACATGTTCACT
+        #=GS TriOvo/1-106 DE XYN01000002.1:1489209-1489314 Trichosporon ovoides strain JCM 9940 scaffold_0002, whole genome shotgun sequence
+        TriOvo/1-106              ----------------------------------------TCATCGAGGTCGGCCTGACGAACTTGCTGACGTGCGACGCCATCTTCACTGAGCCGAACGCGAAGCTCTGGCCGAGCATCTTCCTCTCGCTGCTCGATCTCTTCAC-
+        //
+
+.. 24
+
+
+
+- Image source  CNC06150, CNAG_03004:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         ----------------------------------------------------------AACGGTCTTTTGGT-----------------------------------------------------------
+        snRcnag12093/1-22         ----------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------
+        #=GS CNC06150/1-131 DE riboflavin synthase AE017343.1:1801814-1801944 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence
+        CNC06150/1-131            AAGGGGTACATCACCATCGACGGTGCGTCACTCACCATCACCCACGTCAACGACGCCCAACGGTCTTTTGGTATCATGCTCATCGCGCATAGTCAAGCAAAGTTGACGTTGACAGACAAGAAAGAAGGGGA
+        #=GS CNAG_03004/1-131 DE CP003822.1:c230685-230555 Cryptococcus neoformans var. grubii H99 chromosome 3, complete sequence
+        CNAG_03004/1-131          AAGGGGTACATCACCATCGACGGTGCATCACTCACCATCACACACGTGAACGACGCCGAACGGTCTTTTGGTATCATGCTCATCGCGCATAGTCAAGAGAAGTTGACGTTGACGGATAAGAAGGAAGGGGA
+        #=GS R265/1-131 DE CP025759.1:1990343-1990473 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-131                AAGGGCTACATCACTATCGATGGCGCATCGCTCACCATCACCCACGTGAATGATGCCGAACGGTCTTTTGGTATCATGCTTATCGCGCATAGTCAAGGAAAATTGACGTTGACAGACAAGAAGGAGGGGGA
+        #=GS WM276/1-131 DE CP000288.1:1751160-1751290 Cryptococcus gattii WM276 chromosome C, complete sequence
+        WM276/1-131               AAGGGATACATCACTATCGACGGCGCATCGCTCACCATCACCCACGTGAATGATGCCGAACGGTCTTTTGGTATCATGCTTATCGCGCATAGTCAAGGAAAATTGACGTTGACAGACAAGAAGGACGAGGA
+        #=GS KwoSha/1-113 DE NQVO01000028.1:49933-50045 Kwoniella shandongensis strain CBS 12478 scaffold00028, whole genome shotgun sequence
+        KwoSha/1-113              AAGGGTTACATAACGCTCGACGGTGCTTCTCTCACAATAACAGAAGTCGATGATGCCGAGCGATCATTCGGAATCATGCTCATTGCTCATAGTCAGGAGAAATTGACATTGAC------------------
+        #=GS CryGC4/1-110 DE JALPCA010000529.1:3233-3342 Cryptococcus sp. GC_Crypt_4 iso00_46_562, whole genome shotgun sequence
+        CryGC4/1-110              AAGGGTTATATCACTATCGATGGAGCTTCTTTGACTATCACTCAAGTCAACGATCAAGATCGAACTTTTGGAATCATGTTGATAGCCCATTCACAAACTAAATTGACTTT---------------------
+        #=GS PapLau/1-131 DE JAAZPX010000039.1:384351-384481 Papiliotrema laurentii strain IF7SW-F4 scaffold91_cov210, whole genome shotgun sequence
+        PapLau/1-131              AAGGGGTACATTACTATCGACGGGACGTCTTTGACTATCACGCAGGTCGATGACGCTCAACGGACGTTTGGGATCATGCTCATCGCGCACTCGCAGACCAAGGTGACGCTGAGCGGTAAGAAGGTGGGGGA
+        #=GS NauAur/1-120 DE JAKFAO010000003.1:c419097-418978 Naematelia aurantialba strain NX-20 Contig3, whole genome shotgun sequence
+        NauAur/1-120              AAGGGGTACATCACGCTCGACGGCGCGTCCCTCACCATCACCCACGTCGACGAGGACGCCGCGAGCTTCGGGATCATGCTCATCGCGCACAGCCAGGAGAAGCTGACCCTGACGGGCAAG-----------
+        #=GS BulAlb/1-122 DE CAMYTR010000136.1:364311-364432 Bullera alba genome assembly, contig: jcf7180000012237, whole genome shotgun sequence
+        BulAlb/1-122              AAGGGCTATGTGACCATCGACGGCGCATCCCTCACCATCACCCAAGTGGACGACAGGGAGCAGATATTCGGGATCATGCTCATTGCCCACTCGCAAACGAAGTTGACGTTGACGAAGAAAGA---------
+        //
+
+
+.. 25
+
+
+
+- Image source  CNH02350, CNAG_05590:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         -----------------------------------------------------------AGCGGTCTTTTGGT----------------------------------------------
+        snRcnag12093/1-22         -----------------------------------------------------AGTC-GTTGTCGGAAGATCAACT-------------------------------------------
+        #=GS CNH02350/1-119 DE rotein-histidine kinase AE017348.1:470526-470644 Cryptococcus neoformans var. neoformans JEC21 chromosome 8 sequence
+        CNH02350/1-119            TCTTCCGGGGAGACAAATATGGCCATATTGTTTATGCCAACGCAGCTTGGCGTGCGCAGAGCGGTCTTTTGGTGGGTGATCCCAACGATTGGGCATCTTATGTGCACCCGGAATCGAAA
+        #=GS CNAG_05590/1-119 DE CP003833.2:c718770-718652 Cryptococcus neoformans var. grubii H99 chromosome 14, complete sequence
+        CNAG_05590/1-119          TCTTCCGAGGAGACAAATATGGCCATATTGTTTATGCGAACGCAGCTTGGCGTGCGCAGAGCGGCCTTTTGGTGGGTGACCCTAACGATTGGGCATCTTATGTGCACCCGGATTCGAAA
+        #=GS WM276/1-119 DE CP000297.1:c612054-611936 Cryptococcus gattii WM276 chromosome L, complete sequence
+        WM276/1-119               TCTTCCGGGGAGACAAAGATGGCCATATTGTTTATGCTAATGCAGCTTGGCGTACGCAGAGTGGTGTTTTGCTAGGTGACCCCAATGATTGGGCATCTTATGTGCACCCTGATTCGAAA
+        #=GS R265/1-119 DE CP025768.1:c607684-607566 Cryptococcus gattii VGII R265 chromosome 10, complete sequence
+        R265/1-119                TCTTCCGGGGAGACAAATATGGTCATATTGTTTATGCTAATGCAGCTTGGCGTGCGCAGAGTGGTGTTTTGCTAAGTGACCCCAATGATTGGCCATCTTATGTGCACCCTGATTCGAAA
+        //
+
+.. 26
+
+
+
+- Image source CNH01277, not CNAG_05467:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         --------------------------------------------------------AGCGGTTTTTTAGT------------------------------------------------------------
+        snRcnag12093/1-22         --------------------------------------------------AGTC-GTTGTCGGAAGATCAACT---------------------------------------------------------
+        #=GS CNH01277/1-129 DE 3'UTR AE017348.1:817736-817864 Cryptococcus neoformans var. neoformans JEC21 chromosome 8 sequence
+        CNH01277/1-129            AGAAGACAGAAAGGATATATGACTTGGCTGTTTCATTTGAGCAACGTATCGTTGAAAGCGGTTTTTTAGTCAGGG-TTGTCATATAGAATGTTTAACCCATCTCGTCGTCCGCCACCCATTGTGCATTCG
+        #=GS CNAG_05467/1-116 DE 3'UTR CP003833.2:c384253-384138 Cryptococcus neoformans var. grubii H99 chromosome 14, complete sequence
+        CNAG_05467/1-116          AGAAAACAGAACA----TATAACTTGGCCGTTTCATTTGTGCAACGCATTGTTGGAAGCGGTTTGCTAGGGGAAAGTTGTCATGCATAGTGCTCACCTCATCTCGTCGTCTGCCACCCAT----------
+        //
+
+.. 27
+
+
+- Image source CNL04310, CNAG_07641?:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         --------------------------------------------------------------------------------------------AGCAGTTTTCTGGT-----------------------------------------------------------
+        snRcnag12093/1-22         --------------------------------------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------
+        #=GS CNL04310/1-165 DE AE017352.1:c199157-198993 Cryptococcus neoformans var. neoformans JEC21 chromosome 12 sequence
+        CNL04310/1-165            CGAATTCAAACTCGAGATTGCTTCTTGGATCGACATGTTCAAACCGAAGCTTATCAGGCGAACTATCATCGGTCCCACCTTGATGATGTTCCAGCAGTTTTCTGGTATCAGTGCTGTAAGTTTTCCTCAGATCATGCTTGAACGTTGAATATTGATTCAACAATC
+        #=GS CNE02730/1-120 DE AE017345.1:c726416-726297 Cryptococcus neoformans var. neoformans JEC21 chromosome 5 sequence
+        CNE02730/1-120            -----TCAAACTTGAGATTGCTTCTTGGGTCGACATGTTTAAGCCCAAGCTCATCAGGCGAACTATCATTGGTCCCATTTTGATGATGTTCCAGCAATTTTCTGGTATCAACGCTGTAAGTTTTC----------------------------------------
+        #=GS CNAG_07641/1-124 DE CP003825.1:c726000-725877 Cryptococcus neoformans var. grubii H99 chromosome 6, complete sequence
+        CNAG_07641/1-124          CGAACTCAAACTTGAGATTGCTTCTTGGGTCGACATGTTTAAGCCCAAGCTGATCAGGCGAACTATCATTGGTCCCATCTTGATGTTGTTCCAGCAATTTTCTGGTATCAACGCTGTAAGTCTT-----------------------------------------
+        #=GS WM276/1-129 DE CP000290.1:c685872-685744 Cryptococcus gattii WM276 chromosome E, complete sequence
+        WM276/1-129               CGAACTCAAACTTGAGATTGCTTCTTGGGTCGACATGTTTAAGCCCAAGCTCATCAGGCGGACCATCATTGGTCCCATCTTGATGGTGTTCCAGCAATTTTCTGGTATCAACGCTGTACGTTTTCATCA------------------------------------
+        #=GS R265/1-124 DE CP025764.1:633946-634069 Cryptococcus gattii VGII R265 chromosome 6, complete sequence
+        R265/1-124                CGAACTAAAACTTGAGATTGCTTCTTGGGTCGACATGTTTAAGCCCAAGCTAATCAGGCGGACCATCATCGGTCCAATCTTGATGGTGTTCCAGCAATTTTCTGGTATCAACGCTGTACGTTTT-----------------------------------------
+        #=GS CryAmy/1-108 DE XM_019137988.1:1047-1154 Cryptococcus amylolentus CBS 6039 hypothetical protein, variant (L202_04017), mRNA
+        CryAmy/1-108              --AAATCAAGCTGGAAATTGCTTCGTGGATAGACATGTTCAGGCCCAAGATGATCAGGAGGACGTCGATTGGTATTGTCTTGATGGTATTCCAGCAGTTCTTGGGTATCA-------------------------------------------------------
+        #=GS CryAmy/1-108 DE MEKH01000006.1:1262455-1262562 Cryptococcus amylolentus CBS 6273 supercont2.6, whole genome shotgun sequence
+        CryAmy/1-108              --AAATCAAGCTGGAAATTGCTTCGTGGATAGACATGTTCAGGCCCAAGATGATCAGGAGGACGTCGATTGGTATTGTCTTGATGGTATTCCAGCAGTTCTTGGGTATCA-------------------------------------------------------
+        #=GS TriAsa/1-56 DE JAMYHT010000008.1:653137-653192 Trichosporon asahii strain F6008 ctg_8, whole genome shotgun sequence
+        TriAsa/1-56               -----------------------------------------------------TCAAGCGCACTGCCATCGGTACCCTCATGATGTTCTTCCAGCAGATGTCCGGTATC--------------------------------------------------------
+        #=GS WM276/1-99 DE CP000288.1:c1102913-1102815 Cryptococcus gattii WM276 chromosome C, complete sequence
+        WM276/1-99                -GAACTTAAACTTGAGGTTGCTTCATGGATAGACATGTTCCGACCAAAGTTGATCAAGCGTACAATTATTGGTCCCATATTGATGTTGTTTCAGCAGTTT-----------------------------------------------------------------
+        #=GS R265/1-99 DE CP025759.1:c1351967-1351869 Cryptococcus gattii VGII R265 chromosome 1, complete sequence
+        R265/1-99                 -GAACTTAAACTTGAAGTTGCTTCATGGATAGACATGTTCCGACCAAAGTTGATCAAGCGTACAATTATTGGTCCCATATTGATGTTGTTCCAGCAATTT-----------------------------------------------------------------
+        #=GS CNC03580/1-99 DE AE017343.1:c1134886-1134788 Cryptococcus neoformans var. neoformans JEC21 chromosome 3 sequence
+        CNC03580/1-99             ---------------------TTCATGGATAGACATGTTCCGACCCAAGTTGATCAAGCGTACGATTATTGGTCCCATGTTGATGATGTTCCAGCAATTTCAAGGAGTCAATGCTGTAAG---------------------------------------------
+        Annot/1-6                 -------------------------------------------------------------------------------------------------------------------GTGrGT--------------------------------------------
+        //
+
+
+.. 28
+
+
+- Image source CNN00150, CNAG_06259:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, July 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Found-target/1-14         ----------------------------------------------------------------GGCAGCTTTCTGGT-----------------------------------------------------------
+        snRcnag12093/1-22         ----------------------------------------------------------AGTC-GTTGTCGGAAGATCAACT--------------------------------------------------------
+        #=GS CNN00150/1-137 DE AE017356.1:c56973-56837 Cryptococcus neoformans var. neoformans JEC21 chromosome 14 sequence
+        CNN00150/1-137            CGATGGCTGCCGAGGAGCTCGAACACTCCATGGGTTTAAAGCAGGCCTTGCGTGTTTATCCCAAGGCAGCTTTCTGGTCTTTCTCTATCTCACTCTGCATCGTCATGGAGGGGTATGACATCGGCTGTAAGCCTTGA
+        #=GS CNAG_06259/1-131 DE CP003832.1:12692-12822 Cryptococcus neoformans var. grubii H99 chromosome 13, complete sequence
+        CNAG_06259/1-131          CGATGGCGGCCGAGGAGCTCGAACACTCCATGGGTTTAAAGCAGGCCTTGCGTGTTTATCCCAAGGCAGCTTTCTGGTCTTTCTCTATCTCACTCTGCATCGTCATGGAAGGGTATGACATCGGCTGTAAG------
+        #=GS KwoSha/1-134 DE NQVO01000053.1:95351-95484 Kwoniella shandongensis strain CBS 12478 scaffold00053, whole genome shotgun sequence
+        KwoSha/1-134              CGATGGTTGCTGAGGAACTCGAACGGTCTATGTCTCTAAAGACAGCCTTGCGTGTCTACCCCAAGGCGGCATTCTGGTCCTTTGCTATCTCACTTTGCATCGTTATGGAAGGGTACGATATCGGATGTAAGTCT---
+        #=GS KwoHev/1-131 DE ASQB01000063.1:183304-183434 Kwoniella heveanensis BCC8398 cont1.63, whole genome shotgun sequence
+        KwoHev/1-131              CGATCGCTGCTGAAGAGCTTGAGCAATCGATGAACCTCAGGGAGGCCTTGCGAGTCTACCCCCAAGCAGCCTTCTGGTCTTTCGCAATCTCCCTCTGCATCGTTATGGAGGGATATGACATTGGATGTGAG------
+        Annot                     ------------------------------------------------------------------------------------------------------------------------------GTGrGT-----
+        //
+
+======
+
+.. [#loc] Above described loci with putative target RNAs were checked in the IGB_ genome browser and their nucleotide context inspected in Jalview_ by aligning homologous sequences retrieved by BLAST_.
+
+
+.. _BLAST: https://blast.ncbi.nlm.nih.gov/
+.. _Burlacu-2017: https://doi.org/10.1038/s41467-017-00761-8
+.. _Coleman-2015: https://doi.org/10.1016/j.tig.2015.01.002
+.. _IGB: https://bioviz.org/
+.. _Jalview: https://www.jalview.org/

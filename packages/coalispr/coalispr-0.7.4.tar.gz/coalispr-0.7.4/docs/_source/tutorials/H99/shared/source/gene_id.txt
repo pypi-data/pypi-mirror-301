@@ -1,0 +1,35 @@
+# NOTE to H99-siRNAsegments[#].tsv
+in 'gene_id':
+abbr.	meaning (sRNA-target attribute)
+
+u	uniq
+mu	mostly uniq
+nu	not uniq
+s	spliced
+e	expressed
+c	centromeric
+
+written together:
+nuse	not uniq spliced expresed
+
+
+
+pseu	pseudo gene
+_w-..	with ..
+_3-..	3' end of gene ..
+_5-..	5' end of gene ..
+_C-..	C-terminal region of ORF from gene ..
+_tra21_	with homology to transposase 21 domain
+_ddeharbi_	with homology to DDE TNP4 HARBI domain
+_crypdom_	with homology to crypton domain
+int	intergenic
+_intreps_	with internal repeats
+_p-miR..	(pre-)miRNA ..
+_opp..	opposite of ..
+_n-..	near ..
+_tcn..	with homology to Tcn element ..
+_CN..	gene CN..
+_cn..	with homology to gene cn..
+
+6_	Chromosome 6 origin
+_2345	segment of 2345 nt
