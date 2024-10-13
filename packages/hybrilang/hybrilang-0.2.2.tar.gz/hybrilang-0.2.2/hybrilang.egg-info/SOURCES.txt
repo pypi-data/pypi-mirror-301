@@ -1,0 +1,8 @@
+README.md
+setup.py
+hybrilang.egg-info/PKG-INFO
+hybrilang.egg-info/SOURCES.txt
+hybrilang.egg-info/dependency_links.txt
+hybrilang.egg-info/entry_points.txt
+hybrilang.egg-info/requires.txt
+hybrilang.egg-info/top_level.txt

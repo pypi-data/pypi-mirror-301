@@ -1,0 +1,309 @@
+Metadata-Version: 2.1
+Name: hybrilang
+Version: 0.2.2
+Summary: The Hybrilang programming language
+Home-page: UNKNOWN
+Author: Artur Wyroslak
+Author-email: artur.wyroslak@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Hybrilang - Syntax Documentation
+
+**Table of Contents:**
+
+1. **Comments**
+2. **Variables**
+3. **Data Types**
+4. **Operators**
+5. **Functions**
+6. **Control Structures**
+7. **Error Handling**
+8. **Modules**
+9. **Macros**
+10. **Asynchronicity**
+11. **Foreign Language Integration**
+12. **Built-in Functions**
+
+
+### 1. Comments
+
+Comments in Hybrilang can be created in two ways:
+
+* Single-line comments start with a `#` and continue to the end of the line.
+* Multi-line comments start with `"""` and end with `"""`.
+
+
+### 2. Variables
+
+* **Declaration:** Variables are declared using the `var` (for variables) or `const` (for constants) keyword.
+* **Initialization:** Variables can be initialized with a value during declaration or later.
+* **Assignment:** Values are assigned to variables using the `=` operator.
+
+**Examples:**
+
+```python
+var x;           # Declaration of variable x
+x = 10;          # Assign the value 10 to variable x
+const PI = 3.14; # Declare the constant PI with the value 3.14
+var name = "John"; # Declare the variable name with the value "John"
+```
+
+### 3. Data Types
+
+Hybrilang supports the following data types:
+
+* **`INT`:** Integer numbers.
+* **`FLOAT`:** Floating-point numbers.
+* **`STRING`:** Strings of characters, enclosed in double quotes (`"`).
+* **`BOOL`:** Boolean values (`true` or `false`).
+* **`ANY`:** Represents any data type (used for foreign language integration).
+
+**Examples:**
+
+```python
+var age = 30;      # INT
+var price = 19.99; # FLOAT
+var message = "Hello!"; # STRING
+var is_active = true;  # BOOL
+```
+
+### 4. Operators
+
+Hybrilang supports standard arithmetic, logical, comparison, and assignment operators:
+
+**Arithmetic:**
+
+* `+` - Addition
+* `-` - Subtraction
+* `*` - Multiplication
+* `/` - Division
+
+**Comparison:**
+
+* `==` - Equal to
+* `!=` - Not equal to
+* `<`  - Less than
+* `>`  - Greater than
+* `<=` - Less than or equal to
+* `>=` - Greater than or equal to
+
+**Logical:**
+
+* `and` - Logical AND
+* `or`  - Logical OR
+* `not` - Logical NOT
+
+**Assignment:**
+
+* `=`  - Assignment
+* `+=` - Add and assign
+* `-=` - Subtract and assign
+* `*=` - Multiply and assign
+* `/=` - Divide and assign
+
+**Examples:**
+
+```python
+var a = 10;
+var b = 5;
+var c = a + b;   # c = 15
+var d = a > b;  # d = true
+a += 5;           # a = 15
+```
+
+
+### 5. Functions
+
+* **Declaration:** Functions are declared using the `function` keyword followed by the function name, a list of parameters in parentheses, and a block of code enclosed in curly braces.
+* **Call:** Functions are called by using the function name and a list of arguments in parentheses.
+* **Return:** Functions can return a value using the `return` keyword.
+
+**Examples:**
+
+```python
+function add(a, b) {
+    return a + b;
+}
+
+var sum = add(5, 3); # sum = 8
+```
+
+
+### 6. Control Structures
+
+**If/Else:**
+
+```python
+if (condition) {
+    // code to be executed if the condition is true
+} else if (another_condition) {
+    // code to be executed if another_condition is true
+} else {
+    // code to be executed if none of the above conditions are true
+}
+```
+
+**While:**
+
+```python
+while (condition) {
+    // code to be repeated as long as the condition is true
+}
+```
+
+**Examples:**
+
+```python
+var x = 10;
+
+if (x > 5) {
+    print("x is greater than 5");
+} else {
+    print("x is less than or equal to 5");
+}
+
+while (x > 0) {
+    print(x);
+    x = x - 1;
+}
+```
+
+
+### 7. Error Handling
+
+Hybrilang supports error handling with `try` and `catch` blocks.
+
+* **`try` block:** Contains code that might potentially throw an error.
+* **`catch` block:** Catches the error thrown in the `try` block and executes the appropriate code.
+* **`throw` keyword:** Allows you to throw a user-defined exception.
+
+**Examples:**
+
+```python
+try {
+    var result = 10 / 0; // This will cause a divide-by-zero error
+} catch (error) {
+    print("Error: " + error);
+}
+
+function checkAge(age) {
+    if (age < 18) {
+        throw "You are too young!";
+    }
+}
+```
+
+
+### 8. Modules
+
+Modules in Hybrilang allow code organization and function reusability.
+
+* **Defining a module:** Create a new `.hybri` file and define functions and variables within it.
+* **Importing a module:** Use the `import` keyword and specify the file name (without the `.hybri` extension).
+* **Accessing module elements:** Use dot notation `module_name.element_name`.
+
+**Example:**
+
+`my_module.hybri`
+
+```python
+function greet(name) {
+    print("Hello, " + name + "!");
+}
+```
+
+`main.hybri`
+
+```python
+import "my_module";
+
+my_module.greet("John"); 
+```
+
+
+### 9. Macros
+
+Macros in Hybrilang allow you to generate code at compile time.
+
+* **Declaration:** Use the `macro` keyword and define a macro like a function.
+* **Call:** Call the macro like a function. The macro will expand to the code defined in its body.
+
+**Example:**
+
+```python
+macro square(x) {
+    return x * x;
+}
+
+var result = square(5); // expands to 5 * 5
+print(result);          // Output: 25
+```
+
+
+### 10. Asynchronicity
+
+Hybrilang supports async functions and the `await` keyword.
+
+* **Declare async functions:**  Use the `async` keyword before `function`.
+* **Await the result of an async function:** Use the `await` keyword before calling the async function. 
+
+**Example:**
+
+```python
+async function fetchData() {
+    # Simulate fetching data from the network
+    await sleep(2); 
+    return "Data from network"; 
+}
+
+async function main() {
+    var data = await fetchData();
+    print(data);
+}
+
+main();
+```
+
+
+### 11. Foreign Language Integration
+
+Hybrilang allows you to call code from other programming languages using `foreign_function`.
+
+* **Syntax:** `foreign_function('language', "code")` 
+* **Supported languages:** Python, JavaScript, Ruby, C++
+
+**Examples:**
+
+```python
+var python_result = foreign_function('python', "result = 2 + 3; result"); 
+print(python_result); // Output: 5
+
+var js_result = foreign_function('javascript', "5 * 7"); 
+print(js_result); // Output: 35
+```
+
+
+### 12. Built-in Functions
+
+Hybrilang has a few built-in functions:
+
+* **`print(argument)`:**  Prints the argument to the console. 
+* **`sleep(seconds)`:**  Pauses the program execution for a specified number of seconds (used in async functions). 
+
+
+## Notes
+
+* Hybrilang is not yet a fully fledged programming language, and this documentation describes its current functionalities. 
+* Some features might change in future versions.
+
+
+This documentation provides a comprehensive introduction to the Hybrilang syntax, demonstrating its capabilities and flexibility. Remember to experiment and test different feature combinations to unlock the language's full potential.
+
+
+
