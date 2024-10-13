@@ -1,0 +1,3 @@
+[console_scripts]
+andcommand=and_project.andy:return_hello
+
