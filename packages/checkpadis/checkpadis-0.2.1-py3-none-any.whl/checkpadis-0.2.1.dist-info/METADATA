@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: checkpadis
+Version: 0.2.1
+Summary: PADIS library
+Author: 
+Requires-Dist: click ==8.1.7
+Requires-Dist: Jinja2 ==3.1.4
+Requires-Dist: requests ==2.32.3
+Requires-Dist: rich ==13.8.1
+Requires-Dist: py-mini-racer ==0.6.0
+Requires-Dist: tree-sitter ==0.23.0
+Requires-Dist: tree-sitter-javascript ==0.23.0
+Requires-Dist: beautifulsoup4 ==4.12.3
+Requires-Dist: lxml ==4.9.3
+
