@@ -1,0 +1,13 @@
+configcalc/__about__.py,sha256=n8OFGmhaO4VlZOdCWOZSoDcEF6ZEAEI9TmoS8x-zGbY,133
+configcalc/__init__.py,sha256=RIBc8spUP3ZuPfqWYq8-PBlqKQJQlzt4p97Y788AVn4,270
+configcalc/constants.py,sha256=Sljtq23GLR5Xwv-T5jQfABuHqhtdANaNsbDSEHM1Pho,658
+configcalc/dict_ops.py,sha256=95zfBCQ2-oQV-eP34_S21ru4eahvqiMUAGLTJwF5xQY,641
+configcalc/merge_cfgs.py,sha256=hzPDCpD1UTn2g7Y-g8fzLzOuvw1ZgqujqsQIv7qBD2M,642
+configcalc/parsers.py,sha256=tCJkdLrTZU4bq6MlR1xIUNwh2VQodjJqGWJaH4Af2dI,2206
+configcalc/perform_calcs.py,sha256=B7uUdcEY8HJWyGu2beHfV4VEOCdBw0Gg08O-wb3yzus,7994
+configcalc/read_cfg_file.py,sha256=2JY2P5qGfhtdc7Iq5r7n-OJoFLdlCGY21-WJKWAQw9E,454
+configcalc/typing.py,sha256=t1-wDDLmUDlTrIFFh2UKuKBj8iIslY3NdOQeirJI6_0,60
+configcalc-0.1.1.dist-info/LICENSE,sha256=o8C0_5T51s6lSAAaT-c40-nKuZTSzXaNQJth3OZtxn0,1103
+configcalc-0.1.1.dist-info/METADATA,sha256=FP1jj3VcWogBJNqwivUqfKFKqggf05LBCYpaTUL35CE,917
+configcalc-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+configcalc-0.1.1.dist-info/RECORD,,
