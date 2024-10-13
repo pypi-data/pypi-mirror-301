@@ -1,0 +1,2 @@
+[console_scripts]
+fc-nmap = fc_nmap.cli:fc_nmap
