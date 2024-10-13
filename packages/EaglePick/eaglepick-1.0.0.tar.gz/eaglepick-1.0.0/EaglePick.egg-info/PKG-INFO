@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: EaglePick
+Version: 1.0.0
+Summary: Human-readable programming language for web, mobile, and backend applications
+Home-page: https://github.com/QudusApp/EaglePick
+Author: Qudus Nafiu Olarenwaju
+Author-email: qudus@amatip.co.uk
+Requires-Dist: flask
+Requires-Dist: sqlalchemy
+Requires-Dist: spacy
+Requires-Dist: react-native
+Requires-Dist: Jinja2

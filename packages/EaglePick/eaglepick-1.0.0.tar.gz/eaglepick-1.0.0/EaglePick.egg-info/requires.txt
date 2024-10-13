@@ -1,0 +1,5 @@
+flask
+sqlalchemy
+spacy
+react-native
+Jinja2

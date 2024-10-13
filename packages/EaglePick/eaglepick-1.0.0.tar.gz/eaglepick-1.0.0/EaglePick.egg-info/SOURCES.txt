@@ -1,0 +1,13 @@
+README.md
+setup.py
+EaglePick.egg-info/PKG-INFO
+EaglePick.egg-info/SOURCES.txt
+EaglePick.egg-info/dependency_links.txt
+EaglePick.egg-info/entry_points.txt
+EaglePick.egg-info/requires.txt
+EaglePick.egg-info/top_level.txt
+tests/test_ai_service.py
+tests/test_backend_generator.py
+tests/test_executor.py
+tests/test_mobile_generator.py
+tests/test_web_generator.py
