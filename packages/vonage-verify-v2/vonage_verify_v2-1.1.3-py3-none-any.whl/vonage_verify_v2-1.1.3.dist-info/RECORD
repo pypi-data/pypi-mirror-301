@@ -1,0 +1,11 @@
+vonage_verify_v2/__init__.py,sha256=mIfpOyIJFyzsVE7yzmwomz-Ntd2af9IvQA9UrdVTHiw,580
+vonage_verify_v2/_version.py,sha256=EjzST3KPPHOqCgRcx-9lc8o6d0ds2S4-zJQ91mMRzXc,22
+vonage_verify_v2/enums.py,sha256=eqAAwdet9506-qmK10S4DieaoW7vPZiMdwuTOwZjJB4,455
+vonage_verify_v2/errors.py,sha256=-YqSyvFaq6sz2AVXXDSrNiKKZuvxstkM0_lv9TC2-sI,141
+vonage_verify_v2/requests.py,sha256=luZ52OXNtQFQNPvg33SLZ5H56_pjn_OVwAw0OGeUMrw,7022
+vonage_verify_v2/responses.py,sha256=tnYSjOzA8ep1QLrvxN2xDVI3bsVW-0ay38olHCdVmf0,678
+vonage_verify_v2/verify_v2.py,sha256=bd6RzovSFSqk1hpM-E2Yu5bzOxTSvjEnh2sES_jV7UI,2569
+vonage_verify_v2-1.1.3.dist-info/METADATA,sha256=GGJbXfxD6rQnHpEc1prFJgOOHdoTr1KcNuu1eFjY51w,2645
+vonage_verify_v2-1.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vonage_verify_v2-1.1.3.dist-info/top_level.txt,sha256=D3XDwMKCeqt_g0hnJWDdP-Zu_JSyKxlx3Cao1zSe0uM,17
+vonage_verify_v2-1.1.3.dist-info/RECORD,,
