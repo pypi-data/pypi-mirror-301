@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: VoidHangman
+Version: 0.1.1
+Summary: A simple Hangman game module for Discord bots
+Home-page: https://github.com/voidfy69/Hangman-Module.git
+Author: Void
+Author-email: voidfy948@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Usage
+Here's how you can use the Hangman class in your Discord bot:
+
+```python```
+# Import the Hangman class
+from void-hangman import Hangman
+
+# Create a new game instance
+game = Hangman()
+
+# Make a guess
+result = game.guess('a')  # Guess a letter
+
+
+current_word = game.get_display_word()  # This will show the current guessed letters
+
+# Check if the game is over
+if game.is_game_over():
+    if game.is_word_guessed():
+        print("You've guessed the word!")
+    else:
+        print("Game over! The word was:", game.word)
+
+## Methods
+- `__init__(self)`: Initializes a new Hangman game with a random word and resets attempts.
+- `guess(letter)`: Takes a letter as input, checks if it's in the word, and updates the game state.
+- `get_display_word()`: Returns the current state of the word with guessed letters revealed.
+- `is_game_over()`: Checks if the game is over (either the word is guessed or attempts are exhausted).
+- `is_word_guessed()`: Checks if the player has successfully guessed the word.
+- `get_attempts_left()`: Returns the number of attempts left.
+- `get_hangman_visual()`: Returns the current visual representation of the hangman based on attempts left.

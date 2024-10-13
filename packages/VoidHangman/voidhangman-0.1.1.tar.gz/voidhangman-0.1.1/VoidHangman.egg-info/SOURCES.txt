@@ -1,0 +1,7 @@
+setup.py
+VoidHangman.egg-info/PKG-INFO
+VoidHangman.egg-info/SOURCES.txt
+VoidHangman.egg-info/dependency_links.txt
+VoidHangman.egg-info/top_level.txt
+hangman/__init__.py
+hangman/hangman.py
