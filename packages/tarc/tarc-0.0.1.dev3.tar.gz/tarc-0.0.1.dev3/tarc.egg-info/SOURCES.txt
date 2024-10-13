@@ -1,0 +1,8 @@
+pyproject.toml
+tarc/__init__.py
+tarc/main.py
+tarc.egg-info/PKG-INFO
+tarc.egg-info/SOURCES.txt
+tarc.egg-info/dependency_links.txt
+tarc.egg-info/entry_points.txt
+tarc.egg-info/top_level.txt
