@@ -1,0 +1,851 @@
+{
+  "*": {
+    "empty": false,
+    "attributes": {
+      "accesskey": "str",
+      "autocapitalize": "str",
+      "autocorrect": "str",
+      "autofocus": "bool",
+      "contenteditable": "str",
+      "dir": "str",
+      "draggable": "str",
+      "enterkeyhint": "str",
+      "hidden": "str",
+      "inert": "bool",
+      "inputmode": "str",
+      "is": "str",
+      "itemid": "str",
+      "itemprop": "str",
+      "itemref": "str",
+      "itemscope": "bool",
+      "itemtype": "str",
+      "lang": "str",
+      "nonce": "str",
+      "popover": "str",
+      "spellcheck": "str",
+      "class": "str",
+      "style": "str",
+      "tabindex": "str",
+      "title": "str",
+      "translate": "str",
+      "writingsuggestions": "str",
+      "onauxclick": "str",
+      "onbeforeinput": "str",
+      "onbeforematch": "str",
+      "onbeforetoggle": "str",
+      "onblur": "str",
+      "oncancel": "str",
+      "oncanplay": "str",
+      "oncanplaythrough": "str",
+      "onchange": "str",
+      "onclick": "str",
+      "onclose": "str",
+      "oncontextlost": "str",
+      "oncontextmenu": "str",
+      "oncontextrestored": "str",
+      "oncopy": "str",
+      "oncuechange": "str",
+      "oncut": "str",
+      "ondblclick": "str",
+      "ondrag": "str",
+      "ondragend": "str",
+      "ondragenter": "str",
+      "ondragleave": "str",
+      "ondragover": "str",
+      "ondragstart": "str",
+      "ondrop": "str",
+      "ondurationchange": "str",
+      "onemptied": "str",
+      "onended": "str",
+      "onerror": "str",
+      "onfocus": "str",
+      "onformdata": "str",
+      "oninput": "str",
+      "oninvalid": "str",
+      "onkeydown": "str",
+      "onkeypress": "str",
+      "onkeyup": "str",
+      "onload": "str",
+      "onloadeddata": "str",
+      "onloadedmetadata": "str",
+      "onloadstart": "str",
+      "onmousedown": "str",
+      "onmouseenter": "str",
+      "onmouseleave": "str",
+      "onmousemove": "str",
+      "onmouseout": "str",
+      "onmouseover": "str",
+      "onmouseup": "str",
+      "onpaste": "str",
+      "onpause": "str",
+      "onplay": "str",
+      "onplaying": "str",
+      "onprogress": "str",
+      "onratechange": "str",
+      "onreset": "str",
+      "onresize": "str",
+      "onscroll": "str",
+      "onscrollend": "str",
+      "onsecuritypolicyviolation": "str",
+      "onseeked": "str",
+      "onseeking": "str",
+      "onselect": "str",
+      "onslotchange": "str",
+      "onstalled": "str",
+      "onsubmit": "str",
+      "onsuspend": "str",
+      "ontimeupdate": "str",
+      "ontoggle": "str",
+      "onvolumechange": "str",
+      "onwaiting": "str",
+      "onwheel": "str"
+    }
+  },
+  "map": {
+    "empty": false,
+    "attributes": {
+      "name": "str",
+      "usemap": "str"
+    }
+  },
+  "area": {
+    "empty": true,
+    "attributes": {
+      "alt": "str",
+      "coords": "str",
+      "shape": "str",
+      "href": "str",
+      "target": "str",
+      "download": "str",
+      "ping": "str",
+      "rel": "str",
+      "referrerpolicy": "str"
+    }
+  },
+  "body": {
+    "empty": false,
+    "attributes": {}
+  },
+  "article": {
+    "empty": false,
+    "attributes": {}
+  },
+  "section": {
+    "empty": false,
+    "attributes": {}
+  },
+  "nav": {
+    "empty": false,
+    "attributes": {}
+  },
+  "aside": {
+    "empty": false,
+    "attributes": {}
+  },
+  "h1": {
+    "empty": false,
+    "attributes": {}
+  },
+  "h2": {
+    "empty": false,
+    "attributes": {}
+  },
+  "h3": {
+    "empty": false,
+    "attributes": {}
+  },
+  "h4": {
+    "empty": false,
+    "attributes": {}
+  },
+  "h5": {
+    "empty": false,
+    "attributes": {}
+  },
+  "h6": {
+    "empty": false,
+    "attributes": {}
+  },
+  "hgroup": {
+    "empty": false,
+    "attributes": {}
+  },
+  "header": {
+    "empty": false,
+    "attributes": {}
+  },
+  "footer": {
+    "empty": false,
+    "attributes": {}
+  },
+  "address": {
+    "empty": false,
+    "attributes": {}
+  },
+  "picture": {
+    "empty": false,
+    "attributes": {}
+  },
+  "source": {
+    "empty": true,
+    "attributes": {
+      "type": "str",
+      "media": "str",
+      "src": "str",
+      "srcset": "str",
+      "sizes": "str",
+      "width": "str",
+      "height": "str"
+    }
+  },
+  "img": {
+    "empty": true,
+    "attributes": {
+      "alt": "str",
+      "src": "str",
+      "srcset": "str",
+      "sizes": "str",
+      "crossorigin": "str",
+      "usemap": "str",
+      "ismap": "str",
+      "width": "str",
+      "height": "str",
+      "referrerpolicy": "str",
+      "decoding": "str",
+      "loading": "str",
+      "fetchpriority": "str"
+    }
+  },
+  "html": {
+    "empty": false,
+    "attributes": {}
+  },
+  "head": {
+    "empty": false,
+    "attributes": {}
+  },
+  "title": {
+    "empty": false,
+    "attributes": {}
+  },
+  "base": {
+    "empty": true,
+    "attributes": {
+      "href": "str",
+      "target": "str"
+    }
+  },
+  "link": {
+    "empty": true,
+    "attributes": {
+      "href": "str",
+      "crossorigin": "str",
+      "rel": "str",
+      "media": "str",
+      "integrity": "str",
+      "hreflang": "str",
+      "type": "str",
+      "referrerpolicy": "str",
+      "sizes": "str",
+      "imagesrcset": "str",
+      "imagesizes": "str",
+      "as": "str",
+      "blocking": "str",
+      "color": "str",
+      "disabled": "bool",
+      "fetchpriority": "str",
+      "title": "str"
+    }
+  },
+  "meta": {
+    "empty": true,
+    "attributes": {
+      "name": "str",
+      "http-equiv": "str",
+      "content": "str",
+      "charset": "str",
+      "media": "str"
+    }
+  },
+  "style": {
+    "empty": false,
+    "attributes": {
+      "media": "str",
+      "blocking": "str",
+      "title": "str"
+    }
+  },
+  "iframe": {
+    "empty": true,
+    "attributes": {
+      "src": "str",
+      "srcdoc": "str",
+      "name": "str",
+      "sandbox": "str",
+      "allow": "str",
+      "allowfullscreen": "bool",
+      "width": "str",
+      "height": "str",
+      "referrerpolicy": "str",
+      "loading": "str"
+    }
+  },
+  "embed": {
+    "empty": true,
+    "attributes": {
+      "src": "str",
+      "type": "str",
+      "width": "str",
+      "height": "str"
+    }
+  },
+  "object": {
+    "empty": false,
+    "attributes": {
+      "data": "str",
+      "type": "str",
+      "name": "str",
+      "form": "str",
+      "width": "str",
+      "height": "str"
+    }
+  },
+  "table": {
+    "empty": false,
+    "attributes": {}
+  },
+  "caption": {
+    "empty": false,
+    "attributes": {}
+  },
+  "colgroup": {
+    "empty": true,
+    "attributes": {
+      "span": "str"
+    }
+  },
+  "col": {
+    "empty": true,
+    "attributes": {
+      "span": "str"
+    }
+  },
+  "tbody": {
+    "empty": false,
+    "attributes": {}
+  },
+  "thead": {
+    "empty": false,
+    "attributes": {}
+  },
+  "tfoot": {
+    "empty": false,
+    "attributes": {}
+  },
+  "tr": {
+    "empty": false,
+    "attributes": {}
+  },
+  "td": {
+    "empty": false,
+    "attributes": {
+      "colspan": "str",
+      "rowspan": "str",
+      "headers": "str"
+    }
+  },
+  "th": {
+    "empty": false,
+    "attributes": {
+      "colspan": "str",
+      "rowspan": "str",
+      "headers": "str",
+      "scope": "str",
+      "abbr": "str"
+    }
+  },
+  "input": {
+    "empty": true,
+    "attributes": {
+      "accept": "str",
+      "alt": "str",
+      "autocomplete": "str",
+      "checked": "bool",
+      "dirname": "str",
+      "disabled": "bool",
+      "form": "str",
+      "formaction": "str",
+      "formenctype": "str",
+      "formmethod": "str",
+      "formnovalidate": "bool",
+      "formtarget": "str",
+      "height": "str",
+      "list": "str",
+      "max": "str",
+      "maxlength": "str",
+      "min": "str",
+      "minlength": "str",
+      "multiple": "bool",
+      "name": "str",
+      "pattern": "str",
+      "placeholder": "str",
+      "popovertarget": "str",
+      "popovertargetaction": "str",
+      "readonly": "bool",
+      "required": "bool",
+      "size": "str",
+      "src": "str",
+      "step": "str",
+      "type": "str",
+      "value": "str",
+      "width": "str",
+      "title": "str"
+    }
+  },
+  "form": {
+    "empty": false,
+    "attributes": {
+      "accept-charset": "str",
+      "action": "str",
+      "autocomplete": "str",
+      "enctype": "str",
+      "method": "str",
+      "name": "str",
+      "novalidate": "bool",
+      "target": "str",
+      "rel": "str"
+    }
+  },
+  "label": {
+    "empty": false,
+    "attributes": {
+      "for": "str"
+    }
+  },
+  "details": {
+    "empty": false,
+    "attributes": {
+      "name": "str",
+      "open": "bool"
+    }
+  },
+  "summary": {
+    "empty": false,
+    "attributes": {}
+  },
+  "dialog": {
+    "empty": false,
+    "attributes": {
+      "open": "bool"
+    }
+  },
+  "a": {
+    "empty": false,
+    "attributes": {
+      "href": "str",
+      "target": "str",
+      "download": "str",
+      "ping": "str",
+      "rel": "str",
+      "hreflang": "str",
+      "type": "str",
+      "referrerpolicy": "str"
+    }
+  },
+  "em": {
+    "empty": false,
+    "attributes": {}
+  },
+  "strong": {
+    "empty": false,
+    "attributes": {}
+  },
+  "small": {
+    "empty": false,
+    "attributes": {}
+  },
+  "s": {
+    "empty": false,
+    "attributes": {}
+  },
+  "cite": {
+    "empty": false,
+    "attributes": {}
+  },
+  "q": {
+    "empty": false,
+    "attributes": {
+      "cite": "str"
+    }
+  },
+  "dfn": {
+    "empty": false,
+    "attributes": {
+      "title": "str"
+    }
+  },
+  "abbr": {
+    "empty": false,
+    "attributes": {
+      "title": "str"
+    }
+  },
+  "ruby": {
+    "empty": false,
+    "attributes": {}
+  },
+  "rt": {
+    "empty": false,
+    "attributes": {}
+  },
+  "rp": {
+    "empty": false,
+    "attributes": {}
+  },
+  "data": {
+    "empty": false,
+    "attributes": {
+      "value": "str"
+    }
+  },
+  "time": {
+    "empty": false,
+    "attributes": {
+      "datetime": "str"
+    }
+  },
+  "code": {
+    "empty": false,
+    "attributes": {}
+  },
+  "var": {
+    "empty": false,
+    "attributes": {}
+  },
+  "samp": {
+    "empty": false,
+    "attributes": {}
+  },
+  "kbd": {
+    "empty": false,
+    "attributes": {}
+  },
+  "sup": {
+    "empty": false,
+    "attributes": {}
+  },
+  "sub": {
+    "empty": false,
+    "attributes": {}
+  },
+  "i": {
+    "empty": false,
+    "attributes": {}
+  },
+  "b": {
+    "empty": false,
+    "attributes": {}
+  },
+  "u": {
+    "empty": false,
+    "attributes": {}
+  },
+  "mark": {
+    "empty": false,
+    "attributes": {}
+  },
+  "bdi": {
+    "empty": false,
+    "attributes": {
+      "dir": "str"
+    }
+  },
+  "bdo": {
+    "empty": false,
+    "attributes": {
+      "dir": "str"
+    }
+  },
+  "span": {
+    "empty": false,
+    "attributes": {}
+  },
+  "br": {
+    "empty": true,
+    "attributes": {}
+  },
+  "wbr": {
+    "empty": true,
+    "attributes": {}
+  },
+  "p": {
+    "empty": false,
+    "attributes": {}
+  },
+  "hr": {
+    "empty": true,
+    "attributes": {}
+  },
+  "pre": {
+    "empty": false,
+    "attributes": {}
+  },
+  "blockquote": {
+    "empty": false,
+    "attributes": {
+      "cite": "str"
+    }
+  },
+  "ol": {
+    "empty": false,
+    "attributes": {
+      "reversed": "bool",
+      "start": "str",
+      "type": "str"
+    }
+  },
+  "ul": {
+    "empty": false,
+    "attributes": {}
+  },
+  "menu": {
+    "empty": false,
+    "attributes": {}
+  },
+  "li": {
+    "empty": false,
+    "attributes": {
+      "value": "str"
+    }
+  },
+  "dl": {
+    "empty": false,
+    "attributes": {}
+  },
+  "dt": {
+    "empty": false,
+    "attributes": {}
+  },
+  "dd": {
+    "empty": false,
+    "attributes": {}
+  },
+  "figure": {
+    "empty": false,
+    "attributes": {}
+  },
+  "figcaption": {
+    "empty": false,
+    "attributes": {}
+  },
+  "main": {
+    "empty": false,
+    "attributes": {}
+  },
+  "search": {
+    "empty": false,
+    "attributes": {}
+  },
+  "div": {
+    "empty": false,
+    "attributes": {}
+  },
+  "video": {
+    "empty": false,
+    "attributes": {
+      "src": "str",
+      "crossorigin": "str",
+      "poster": "str",
+      "preload": "str",
+      "autoplay": "bool",
+      "playsinline": "bool",
+      "loop": "bool",
+      "muted": "bool",
+      "controls": "bool",
+      "width": "str",
+      "height": "str"
+    }
+  },
+  "audio": {
+    "empty": false,
+    "attributes": {
+      "src": "str",
+      "crossorigin": "str",
+      "preload": "str",
+      "autoplay": "bool",
+      "loop": "bool",
+      "muted": "bool",
+      "controls": "bool"
+    }
+  },
+  "track": {
+    "empty": true,
+    "attributes": {
+      "kind": "str",
+      "src": "str",
+      "srclang": "str",
+      "label": "str",
+      "default": "bool"
+    }
+  },
+  "ins": {
+    "empty": false,
+    "attributes": {
+      "cite": "str",
+      "datetime": "str"
+    }
+  },
+  "del": {
+    "empty": false,
+    "attributes": {
+      "cite": "str",
+      "datetime": "str"
+    }
+  },
+  "script": {
+    "empty": false,
+    "attributes": {
+      "src": "str",
+      "type": "str",
+      "nomodule": "bool",
+      "async": "bool",
+      "defer": "bool",
+      "crossorigin": "str",
+      "integrity": "str",
+      "referrerpolicy": "str",
+      "blocking": "str",
+      "fetchpriority": "str"
+    }
+  },
+  "noscript": {
+    "empty": false,
+    "attributes": {}
+  },
+  "template": {
+    "empty": true,
+    "attributes": {
+      "shadowrootmode": "str",
+      "shadowrootdelegatesfocus": "bool",
+      "shadowrootclonable": "bool",
+      "shadowrootserializable": "bool"
+    }
+  },
+  "slot": {
+    "empty": false,
+    "attributes": {
+      "name": "str"
+    }
+  },
+  "button": {
+    "empty": false,
+    "attributes": {
+      "disabled": "bool",
+      "form": "str",
+      "formaction": "str",
+      "formenctype": "str",
+      "formmethod": "str",
+      "formnovalidate": "bool",
+      "formtarget": "str",
+      "name": "str",
+      "popovertarget": "str",
+      "popovertargetaction": "str",
+      "type": "str",
+      "value": "str"
+    }
+  },
+  "select": {
+    "empty": false,
+    "attributes": {
+      "autocomplete": "str",
+      "disabled": "bool",
+      "form": "str",
+      "multiple": "bool",
+      "name": "str",
+      "required": "bool",
+      "size": "str"
+    }
+  },
+  "datalist": {
+    "empty": false,
+    "attributes": {}
+  },
+  "optgroup": {
+    "empty": false,
+    "attributes": {
+      "disabled": "bool",
+      "label": "str"
+    }
+  },
+  "option": {
+    "empty": true,
+    "attributes": {
+      "disabled": "bool",
+      "label": "str",
+      "selected": "bool",
+      "value": "str"
+    }
+  },
+  "textarea": {
+    "empty": false,
+    "attributes": {
+      "autocomplete": "str",
+      "cols": "str",
+      "dirname": "str",
+      "disabled": "bool",
+      "form": "str",
+      "maxlength": "str",
+      "minlength": "str",
+      "name": "str",
+      "placeholder": "str",
+      "readonly": "bool",
+      "required": "bool",
+      "rows": "str",
+      "wrap": "str"
+    }
+  },
+  "output": {
+    "empty": false,
+    "attributes": {
+      "for": "str",
+      "form": "str",
+      "name": "str"
+    }
+  },
+  "progress": {
+    "empty": false,
+    "attributes": {
+      "value": "str",
+      "max": "str"
+    }
+  },
+  "meter": {
+    "empty": false,
+    "attributes": {
+      "value": "str",
+      "min": "str",
+      "max": "str",
+      "low": "str",
+      "high": "str",
+      "optimum": "str"
+    }
+  },
+  "fieldset": {
+    "empty": false,
+    "attributes": {
+      "disabled": "str",
+      "form": "str",
+      "name": "str"
+    }
+  },
+  "legend": {
+    "empty": false,
+    "attributes": {}
+  },
+  "canvas": {
+    "empty": false,
+    "attributes": {
+      "width": "str",
+      "height": "str"
+    }
+  }
+}
