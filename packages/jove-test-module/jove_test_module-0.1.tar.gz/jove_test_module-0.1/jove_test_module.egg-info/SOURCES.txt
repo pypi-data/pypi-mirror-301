@@ -1,0 +1,7 @@
+README.md
+my_module.py
+setup.py
+jove_test_module.egg-info/PKG-INFO
+jove_test_module.egg-info/SOURCES.txt
+jove_test_module.egg-info/dependency_links.txt
+jove_test_module.egg-info/top_level.txt
