@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: easyloader
+Version: 0.0.0b0
+Author: Michael Peter Dunne
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: h5py
+
+# Easy Loader
+
+Easy data loaders & data sets for PyTorch!
