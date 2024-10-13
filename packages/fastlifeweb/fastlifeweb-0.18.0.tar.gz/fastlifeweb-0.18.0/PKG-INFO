@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: fastlifeweb
+Version: 0.18.0
+Summary: High-level web framework
+Home-page: https://github.com/mardiros/fastlife
+License: BSD-derived
+Author: Guillaume Gauvrit
+Author-email: guillaume@gauvr.it
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: doc
+Provides-Extra: testing
+Requires-Dist: babel (>=2.16.0,<3.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0) ; extra == "testing"
+Requires-Dist: fastapi[standard] (>=0.115.0,<0.116.0)
+Requires-Dist: itsdangerous (>=2.1.2,<3.0.0)
+Requires-Dist: jinjax (>=0.44,<0.45)
+Requires-Dist: markupsafe (>=2.1.3,<3.0.0)
+Requires-Dist: multidict (>=6.0.5,<7.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.0.3,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.9,<0.0.10)
+Requires-Dist: sphinx (>=7.0.1,<8.0.0) ; extra == "doc"
+Requires-Dist: venusian (>=3.0.0,<4.0.0)
+Project-URL: Repository, https://github.com/mardiros/fastlife
+Description-Content-Type: text/markdown
+
+# Fastlife
+
+[![Documentation](https://github.com/mardiros/fastlife/actions/workflows/gh-pages.yml/badge.svg)](https://mardiros.github.io/fastlife/)
+[![Continuous Integration](https://github.com/mardiros/fastlife/actions/workflows/main.yml/badge.svg)](https://github.com/mardiros/fastlife/actions/workflows/main.yml)
+[![Coverage Report](https://codecov.io/gh/mardiros/fastlife/graph/badge.svg?token=DTpi73d7mf)](https://codecov.io/gh/mardiros/fastlife)
+[![Maintainability](https://api.codeclimate.com/v1/badges/94d107797b15b5e8843e/maintainability)](https://codeclimate.com/github/mardiros/fastlife/maintainability)
+
+> ⚠️ **Under Heavy Development**
+> Please note that this project is still in active development. Features and APIs may change frequently.
+> Even the name is not definitive.
+
+An opinionated Python web framework (based on {term}`FastAPI`).
+
+## Purpose
+
+Fastlife helps at building Web Application with session, security, html test client,
+and html form generated from pydantic schema using customizable widget.
+
+Templates are made using {term}`JinjaX` and an extensible [set of
+component](https://mardiros.github.io/fastlife/components/index.html) is available
+in order to build pages.
+
+Those components are currently stylized by {term}`Tailwind CSS`,
+using [pytailwindcss](https://github.com/timonweb/pytailwindcss).
+
+Moreover, you can also write API, in an opinionated way to enforce documentation
+consistency.
+
+
+## First class configuration.
+
+Fastlife is adding a "Configurator", like {term}`Pyramid` to get a better scallable codebase.
+
+The configurator in fastlife organizes configuration settings hierarchically,
+enabling easy management and overriding at different levels.
+This promotes modularity and clarity in application configuration, making it simpler
+to maintain and scale your project.
+
+
+## Tests
+
+Fastlife come with [a test client](https://mardiros.github.io/fastlife/develop/fastlife/fastlife.testing.testclient.html) that can interact with html inside unit tests.
+
+
+## Try it
+
+The package is available on pypi with the name fastlifeweb.
+
+```bash
+pip install fastlifeweb
+```
+
