@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ideariver_core/__init__.py
+ideariver_core/base_plugin.py
+ideariver_core/event_message.py
+ideariver_core/plugin_metadata.py
+ideariver_core/topic_mapping.py
+ideariver_core.egg-info/PKG-INFO
+ideariver_core.egg-info/SOURCES.txt
+ideariver_core.egg-info/dependency_links.txt
+ideariver_core.egg-info/top_level.txt
