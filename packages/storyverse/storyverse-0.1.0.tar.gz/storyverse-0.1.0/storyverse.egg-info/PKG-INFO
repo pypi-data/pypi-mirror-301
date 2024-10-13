@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: storyverse
+Version: 0.1.0
+Summary: A version control system for interactive, branching time-travel stories
+Home-page: https://github.com/yourusername/storyverse
+Author: Emin Genc
+Author-email: Emin Genc <emingench@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/emingenc/storyverse
+Project-URL: Bug Tracker, https://github.com/emingenc/storyverse/issues
+Keywords: story,version-control,branching,time-travel
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fs>=2.4.13
+
+# storyverse
+StoryVerse is a version control system for interactive, branching time-travel stories. It provides a Git-like approach to managing story content, allowing for immutable history, branching timelines, and easy version tracking.

@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+storyverse/__init__.py
+storyverse/branch_manager.py
+storyverse/commit_store.py
+storyverse/content_store.py
+storyverse/version_control.py
+storyverse.egg-info/PKG-INFO
+storyverse.egg-info/SOURCES.txt
+storyverse.egg-info/dependency_links.txt
+storyverse.egg-info/requires.txt
+storyverse.egg-info/top_level.txt
+tests/test_storyverse.py
