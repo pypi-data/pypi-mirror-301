@@ -1,0 +1,3 @@
+[console_scripts]
+pdfcor=pdfcor.cli:main
+

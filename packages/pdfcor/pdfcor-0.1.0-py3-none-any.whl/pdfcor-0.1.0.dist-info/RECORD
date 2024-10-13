@@ -1,0 +1,9 @@
+pdfcor/__init__.py,sha256=czxlISumQNJR6FpCVuOtajF1LOX2Unn8Fw06Pb_QGlY,46
+pdfcor/cli.py,sha256=jbz0XHlxhttcCoZAgwO6_knNdPY7PYuAeVXilDYCt98,1044
+pdfcor/core.py,sha256=8Ico2co96MtDwfyAAZwlyTF0QChzLAuvAo0zXLOjWys,2463
+pdfcor/utils.py,sha256=1GG2WGv70PyAL3m7ZePk6IaF8Wjw1OfaHZQFZ-uTFv0,509
+pdfcor-0.1.0.dist-info/LICENSE,sha256=pidQ-tQSyeL3uYqRQzyLeb3BA5zGdNPqj4YOMAOA6l8,1072
+pdfcor-0.1.0.dist-info/METADATA,sha256=6TPKh6KqKkERDDo8Btl1qxCcdN4ltvWhkxmxJKmTGgs,3869
+pdfcor-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pdfcor-0.1.0.dist-info/entry_points.txt,sha256=tXBgBxT3aX28b2k4VYWzyRYqm3DUK3C0IO3KoKA1lNk,42
+pdfcor-0.1.0.dist-info/RECORD,,
