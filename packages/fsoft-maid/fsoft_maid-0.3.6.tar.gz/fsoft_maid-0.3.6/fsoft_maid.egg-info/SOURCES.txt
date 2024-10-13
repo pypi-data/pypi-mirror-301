@@ -1,0 +1,9 @@
+LICENSE
+README.md
+fsoft_maid.py
+setup.py
+fsoft_maid.egg-info/PKG-INFO
+fsoft_maid.egg-info/SOURCES.txt
+fsoft_maid.egg-info/dependency_links.txt
+fsoft_maid.egg-info/entry_points.txt
+fsoft_maid.egg-info/top_level.txt
