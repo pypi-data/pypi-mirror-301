@@ -1,0 +1,7 @@
+setup.py
+grzegorz_test_sda.egg-info/PKG-INFO
+grzegorz_test_sda.egg-info/SOURCES.txt
+grzegorz_test_sda.egg-info/dependency_links.txt
+grzegorz_test_sda.egg-info/top_level.txt
+pakiet/__init__.py
+pakiet/dzialania.py
