@@ -1,0 +1,3 @@
+[console_scripts]
+code-star=code_star_cli.main:code_star
+
