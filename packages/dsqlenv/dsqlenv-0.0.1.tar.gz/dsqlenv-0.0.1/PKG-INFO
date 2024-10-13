@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dsqlenv
+Version: 0.0.1
+Summary: A tool for database operations with encryption and decryption, configurable table and column names, and additional CLI features.
+Author: Zhaosheng
+Author-email: zhaosheng@nuaa.edu.cn
+License-File: LICENSE
+Requires-Dist: pymysql
+Requires-Dist: pycryptodome
+Requires-Dist: python-dotenv

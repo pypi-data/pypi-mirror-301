@@ -1,0 +1,3 @@
+pymysql
+pycryptodome
+python-dotenv
