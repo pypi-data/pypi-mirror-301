@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: intacerty
+Version: 0.1
+Summary: A python package for generate your certificates instantly!
+Home-page: https://github.com/iammadhanraj/instacerty
+Author: Madhanraj
+Author-email: madhanreigns312@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: chardet==5.2.0
+Requires-Dist: colorama==0.4.6
+Requires-Dist: pillow==10.4.0
+Requires-Dist: qrcode==8.0
+Requires-Dist: reportlab==4.2.5
+
+# InstaCerty
+ A python package for generate your certificates instantly!
