@@ -1,0 +1,13 @@
+python-dotenv==1.0.1
+numpy==1.26.4
+huggingface_hub==0.25.2
+onnxruntime==1.19.0
+tokenizers==0.20.0
+
+[dev]
+pytest==8.2.1
+pytest-cov==5.0.0
+tox==4.15.1
+black==24.4.2
+pip-tools==7.4.1
+flake8==7.1.0
