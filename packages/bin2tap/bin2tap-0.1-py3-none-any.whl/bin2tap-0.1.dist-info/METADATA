@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: bin2tap
+Version: 0.1
+Summary: Convert a binary file into ZX Spectrum TAP file
+Author: Raül Torralba
+
