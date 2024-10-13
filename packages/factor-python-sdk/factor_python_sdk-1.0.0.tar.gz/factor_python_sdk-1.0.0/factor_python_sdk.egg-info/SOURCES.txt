@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+factor-sdk/__init__.py
+factor-sdk/factor-python-sdk.py
+factor_python_sdk.egg-info/PKG-INFO
+factor_python_sdk.egg-info/SOURCES.txt
+factor_python_sdk.egg-info/dependency_links.txt
+factor_python_sdk.egg-info/requires.txt
+factor_python_sdk.egg-info/top_level.txt
