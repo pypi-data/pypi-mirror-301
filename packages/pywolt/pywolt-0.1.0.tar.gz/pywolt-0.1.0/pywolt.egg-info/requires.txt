@@ -1,0 +1,5 @@
+httpx[http2]>=0.25.0
+pycountry>=24.6.1
+pydantic>=2.9.2
+pydantic-extra-types>=2.9.0
+pydantic-geojson>=0.1.1
