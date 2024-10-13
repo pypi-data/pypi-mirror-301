@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyBaseSwap/IERC20.py
+pyBaseSwap/ISwapperContract.py
+pyBaseSwap/SwapperModul.py
+pyBaseSwap/W3Utils.py
+pyBaseSwap/__init__.py
+pyBaseSwap/core_abis.py
+pyBaseSwap/core_chains.py
+pyBaseSwap/core_settings.py
+pyBaseSwap.egg-info/PKG-INFO
+pyBaseSwap.egg-info/SOURCES.txt
+pyBaseSwap.egg-info/dependency_links.txt
+pyBaseSwap.egg-info/requires.txt
+pyBaseSwap.egg-info/top_level.txt
