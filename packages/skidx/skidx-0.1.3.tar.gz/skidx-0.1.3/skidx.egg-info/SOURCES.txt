@@ -1,0 +1,9 @@
+README.md
+setup.py
+Cosmic/__init__.py
+Cosmic/cosmiclogger.py
+skidx.egg-info/PKG-INFO
+skidx.egg-info/SOURCES.txt
+skidx.egg-info/dependency_links.txt
+skidx.egg-info/requires.txt
+skidx.egg-info/top_level.txt
