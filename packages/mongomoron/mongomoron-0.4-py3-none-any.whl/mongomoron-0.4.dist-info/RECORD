@@ -1,0 +1,8 @@
+mongomoron/__init__.py,sha256=FE_qxtWshX2SVViGclosTPj7uS3qWhojUb_1aGKMrqY,80
+mongomoron/connection.py,sha256=woJxs4d13rYJ7y9utoVwqQKX6XO-qYQgUZQO3YIfmpk,8551
+mongomoron/expression.py,sha256=JbdOfkWjjAMkiS_wYwsJqv5gJNVkr240cUb5Lcr-Sck,40506
+mongomoron-0.4.dist-info/LICENSE.txt,sha256=ukEi8E0PKq1dQGTXHUflg3rppLymwAhr7il9x-0nPgg,1062
+mongomoron-0.4.dist-info/METADATA,sha256=p-kqELuDRjzkkc7qhcDr6yjxnNZM7LRz8LXFaielRgs,1660
+mongomoron-0.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+mongomoron-0.4.dist-info/top_level.txt,sha256=9E1eExMGo8Md8t6TVjD4hChOps22PbE2TZpmoB3ehtQ,11
+mongomoron-0.4.dist-info/RECORD,,
