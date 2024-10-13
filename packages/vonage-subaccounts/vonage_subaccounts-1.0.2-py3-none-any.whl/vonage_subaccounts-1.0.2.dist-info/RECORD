@@ -1,0 +1,10 @@
+vonage_subaccounts/__init__.py,sha256=cOw1iF0m6XgYfonY7Ii3hc6ziOpjYYXDI8Rvd3BQhdo,753
+vonage_subaccounts/_version.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+vonage_subaccounts/errors.py,sha256=6H1YE0oSJ409PZK8xYpONEdvshPhS7peHZtCI9oH5bg,143
+vonage_subaccounts/requests.py,sha256=tf7toOB39rNdcDbojZkNTD6H3WzDhE7IL8I_UyLMtb0,3357
+vonage_subaccounts/responses.py,sha256=moG4sG9k2g5tfAdr7FxYhQWFINRCKoNArvdS6m1QyyY,4488
+vonage_subaccounts/subaccounts.py,sha256=V5vQpmjidcVbPqOlO4VYRdGCRmEo_ftauwi7TaolJpA,12460
+vonage_subaccounts-1.0.2.dist-info/METADATA,sha256=WZgUrFvbSBkp4hd9C8Odvbl_8ICcinAQovHIlRUzchA,3379
+vonage_subaccounts-1.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vonage_subaccounts-1.0.2.dist-info/top_level.txt,sha256=v-JcUEdpRzKcXVR_V1PKM2BXjnFxs5x_3fZ3hAeIveY,19
+vonage_subaccounts-1.0.2.dist-info/RECORD,,
