@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: impyrialaremou
+Version: 0.2.0
+Summary: A package for converting impyrial lengths and weights.
+Home-page: UNKNOWN
+Author: Josue Afouda
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy (>=1.10)
+Requires-Dist: pandas
+
+UNKNOWN
+
