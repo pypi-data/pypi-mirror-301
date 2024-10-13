@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+social_tools/__init__.py
+social_tools/emotion_detection.py
+social_tools/sentiment_analysis.py
+social_tools/toxicity_detection.py
+social_tools.egg-info/PKG-INFO
+social_tools.egg-info/SOURCES.txt
+social_tools.egg-info/dependency_links.txt
+social_tools.egg-info/requires.txt
+social_tools.egg-info/top_level.txt
+tests/test_sentiment.py
+tests/test_toxicity.py
