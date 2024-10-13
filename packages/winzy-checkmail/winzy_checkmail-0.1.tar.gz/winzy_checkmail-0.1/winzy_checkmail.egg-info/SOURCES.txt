@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_checkmail.py
+winzy_checkmail/__init__.py
+winzy_checkmail.egg-info/PKG-INFO
+winzy_checkmail.egg-info/SOURCES.txt
+winzy_checkmail.egg-info/dependency_links.txt
+winzy_checkmail.egg-info/entry_points.txt
+winzy_checkmail.egg-info/requires.txt
+winzy_checkmail.egg-info/top_level.txt

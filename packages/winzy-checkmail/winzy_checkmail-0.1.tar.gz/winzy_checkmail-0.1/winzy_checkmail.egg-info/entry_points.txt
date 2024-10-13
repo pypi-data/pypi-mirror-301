@@ -1,0 +1,2 @@
+[winzy.plugins]
+mail = winzy_checkmail:mail_plugin

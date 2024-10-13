@@ -1,0 +1,5 @@
+winzy
+pywin32
+
+[test]
+pytest
