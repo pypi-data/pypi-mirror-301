@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jarvislabs"
+version = "0.1.2"
+description = "A minimalistic Python library"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic>=2.7.0",
+    "fastapi>=0.111.0",
+    "uvicorn>=0.24.0",
+    "boto3",
+    "typer"
+]
+
+[project.urls]
+Homepage = "https://github.com/jarvislabs-ai/jarvislabs"
+
+[project.scripts]
+jarvislabs = "jarvislabs.cli:app"
+
+
+[tool.setuptools]
+packages = ["jarvislabs"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"jarvislabs" = ["py.typed"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["myenv", "*.pyc"]
+
