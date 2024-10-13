@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "network-latency-monitor"
+version = "0.1.6"
+description = "Monitor your network latency using real-time plots and cumulative plots"
+authors = ["Muhammad Usaid Rehman <rehman.usaid@gmail.com>"]
+homepage = "https://github.com/m-usaid99/Network-Latency-Monitor"
+repository = "https://github.com/m-usaid99/Network-Latency-Monitor"
+documentation = "https://network-latency-monitor.readthedocs.io/en/latest/"
+readme = "README.md"
+license = "MIT"
+
+
+# Include other metadata as needed
+keywords = ["network", "latency", "monitoring", "ping"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.9.2"
+asciichartpy = "^1.5.25"
+pandas = "^2.2.3"
+seaborn = "^0.13.2"
+matplotlib = "^3.9.2"
+ipaddress = "^1.0.23"
+pyyaml = "^6.0.2"
+appdirs = "^1.4.4"
+
+
+[tool.poetry.group.dev.dependencies]
+safety = "^3.2.8"
+pytest = "^8.3.3"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+nlm = "network_latency_monitor.main:cli"
+
