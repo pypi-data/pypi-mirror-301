@@ -1,0 +1,11 @@
+schedule_manager_ui/__init__.py,sha256=CwKE9gS-B_stcPJh2T160nMrymlxdG8gsIl3Djwh3jA,131
+schedule_manager_ui/manager.py,sha256=yIXlN6DUv_thus_2Um0utXhJ0jC-tf2WrHsRh1p7_rA,7301
+schedule_manager_ui/templates/index.html,sha256=eBZB5g_lBn8zXLXQPboig0qVfETotFc2gTrwuXNNQz4,2805
+schedule_manager_ui/templates/logs.html,sha256=Ot-reQzjJww-RQAuBJFYE7SpKBXrDVdxMEiZ31_y7Qo,1659
+schedule_manager_ui/templates/script.js,sha256=sQD2_KLs6N4PnKMqep0jlwNo_ZCVytDg43DIw9kwrC0,2187
+schedule_manager_ui/templates/styles.css,sha256=-Yyza0f0a_kbbLCyQqW65e_tpb29IYp4_73aOmFhMYY,2500
+schedule_manager_ui-0.0.6.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+schedule_manager_ui-0.0.6.dist-info/METADATA,sha256=JOjfJxE_u-rHFw357HeG_DDx4szbnDsjPVMWUtrwn0w,3008
+schedule_manager_ui-0.0.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+schedule_manager_ui-0.0.6.dist-info/top_level.txt,sha256=B9emDGkc-lITGvMTrtWTa4dD8SzfYEhhDKEAJBc15X0,20
+schedule_manager_ui-0.0.6.dist-info/RECORD,,
