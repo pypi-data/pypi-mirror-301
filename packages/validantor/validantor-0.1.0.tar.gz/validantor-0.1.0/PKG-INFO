@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: validantor
+Version: 0.1.0
+Summary: A simple data validation library in Python.
+Home-page: https://github.com
+Author: Daniel Soto
+Author-email: dansoto804@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# checkmate
+
+checkmate es una librerÃ­a de Python diseÃ±ada para simplificar la validaciÃ³n y verificaciÃ³n de datos en tus proyectos. Con checkmate, puedes asegurarte de que tus datos cumplen con los requisitos esperados de manera eficiente y sin complicaciones.
+
+## CaracterÃ­sticas
+
+- **ValidaciÃ³n sencilla**: Define reglas de validaciÃ³n de manera intuitiva.
+- **Flexibilidad**: Compatible con diferentes tipos de datos y estructuras.
+- **Extensible**: AÃ±ade tus propias reglas de validaciÃ³n personalizadas.
+- **DocumentaciÃ³n clara**: Incluye documentaciÃ³n detallada para facilitar su uso.
+
+## InstalaciÃ³n
+
+Puedes instalar checkmate fÃ¡cilmente usando pip:
+
+```bash
+pip install checkmate
+```
+
+## Uso BÃ¡sico
+
+AquÃ­ tienes un ejemplo bÃ¡sico de cÃ³mo usar checkmate:
+
+```python
+import checkmate as chm
+
+chm.is_type(1, int) # True
+```
+
+## Contribuciones
+
+Â¡Las contribuciones son bienvenidas! Si deseas colaborar, por favor abre un issue o envÃ­a un pull request en nuestro [repositorio de GitHub](https://github.com/tu_usuario/checkmate).
+
+## Licencia
+
+checkmate estÃ¡ licenciado bajo la [MIT License](LICENSE).
