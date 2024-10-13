@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pycookie/__init__.py
+pycookie/configs.py
+pycookie/main.py
+pycookie/static.py
+pycookie.egg-info/PKG-INFO
+pycookie.egg-info/SOURCES.txt
+pycookie.egg-info/dependency_links.txt
+pycookie.egg-info/entry_points.txt
+pycookie.egg-info/requires.txt
+pycookie.egg-info/top_level.txt
