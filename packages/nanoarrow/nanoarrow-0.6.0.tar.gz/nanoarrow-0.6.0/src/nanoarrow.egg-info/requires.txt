@@ -1,0 +1,11 @@
+
+[test]
+pyarrow
+python-dateutil
+pytest
+numpy
+
+[verify]
+python-dateutil
+pytest
+numpy
