@@ -1,0 +1,7 @@
+setup.py
+package/__init__.py
+package/main.py
+test_sda.egg-info/PKG-INFO
+test_sda.egg-info/SOURCES.txt
+test_sda.egg-info/dependency_links.txt
+test_sda.egg-info/top_level.txt
