@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcp-microservice-utils"
+version = "0.3.0"
+description = "A Python library providing utilities to simplify the integration of various GCP Cloud services like, Cloud Logging, Cloud Trace, etc."
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "Apache 2.0"}
+dependencies = [
+    "Flask>=3.0.0",
+    "google-auth==2.35.0",
+    "google-cloud-logging==3.11.2",
+    "google-cloud-trace==1.13.5"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.package-data]
+"gcp_microservice_utils" = ["py.typed"]
