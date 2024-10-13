@@ -1,0 +1,2 @@
+[console_scripts]
+rdf = read_dataframe.rdf:cliread
