@@ -1,0 +1,2 @@
+[console_scripts]
+ran = ranlib.cli.main:app
