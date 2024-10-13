@@ -1,0 +1,2 @@
+[winzy.plugins]
+cal = winzy_calendar:cal_plugin

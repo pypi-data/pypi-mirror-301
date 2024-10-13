@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_calendar.py
+winzy_calendar/__init__.py
+winzy_calendar.egg-info/PKG-INFO
+winzy_calendar.egg-info/SOURCES.txt
+winzy_calendar.egg-info/dependency_links.txt
+winzy_calendar.egg-info/entry_points.txt
+winzy_calendar.egg-info/requires.txt
+winzy_calendar.egg-info/top_level.txt
