@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pyenvcfg"
+version = "0.1.0"
+description = ""
+authors = ["Juan Carlos Gutierrez <jgutierrez@contractor.ea.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jcgutier-logger = "^0.1.1"
+click = "^8.1.7"
+gitpython = "^3.1.43"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
