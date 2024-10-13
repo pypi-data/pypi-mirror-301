@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: data-diger
+Version: 0.0.1
+Summary: Useful tools
+Author: Andrey Plugin
+Author-email: 9keepa@gmail.com
+License: MIT
+Requires-Python: >=3.10.12
+Description-Content-Type: text/markdown
+
+### Useful tools
