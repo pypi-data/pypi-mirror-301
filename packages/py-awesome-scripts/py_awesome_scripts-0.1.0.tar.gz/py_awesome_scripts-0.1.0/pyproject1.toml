@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "pyas"
+version = "0.1.0"
+description = ""
+authors = ["Young <gooker_young@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+pyside2 = "5.14"
+pygame = "^2.6.0"
+pyfiglet = "~0.8"
+requests = "^2.32.3"
+pypdf = "^5.0.0"
+numpy = "~1.24"
+torch = "^2.4.1"
+torchvision = "^0.19.1"
+torchaudio = "^2.4.1"
+pycdlib = "^1.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+nuitka = "^2.3.11"
+black = "^24.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = 'tuna'
+url = 'https://pypi.tuna.tsinghua.edu.cn/simple/'
+priority = "primary"
+
+[[tool.poetry.source]]
+name = 'aliyun'
+url = 'https://mirrors.aliyun.com/pypi/'
+priority = "supplemental"
