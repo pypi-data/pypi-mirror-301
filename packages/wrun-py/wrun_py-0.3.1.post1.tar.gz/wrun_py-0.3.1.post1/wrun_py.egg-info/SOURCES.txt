@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+wrun_py.egg-info/PKG-INFO
+wrun_py.egg-info/SOURCES.txt
+wrun_py.egg-info/dependency_links.txt
+wrun_py.egg-info/top_level.txt

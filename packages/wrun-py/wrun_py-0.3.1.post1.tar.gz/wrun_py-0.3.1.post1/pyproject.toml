@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >=61", "setuptools-download", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wrun_py"
+version = "0.3.1-1"
+description = "Web executable launcher"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Ville Skyttä", email = "ville.skytta@iki.fi" }]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Go",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/scop/wrun"
+
+[tool.setuptools]
+packages = []
