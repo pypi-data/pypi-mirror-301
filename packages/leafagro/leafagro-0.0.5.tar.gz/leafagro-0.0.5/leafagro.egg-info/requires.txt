@@ -1,0 +1,10 @@
+ipyleaflet
+numpy
+localtileserver
+pandas
+
+[all]
+leafagro[extra]
+
+[extra]
+pandas
