@@ -1,0 +1,15 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/pypxml_cli.py,sha256=Ui5FqdPaYk43686AytkKB6L66mDmbxGdE2s9f8PC_eU,397
+pypxml/__init__.py,sha256=gGyTUwm-H6Z_iESkAKUhjEVMUldRkZs7wqOKjpfHmKc,307
+pypxml/element.py,sha256=ivvkS-ktcQzU7pxbJb1uZut7ShF0a3s7WXzFSebFTq8,8530
+pypxml/page.py,sha256=6mqyGS9VsM2NMX87h6AzhagudjkSWuqnpiWH-x3Zuao,10131
+pypxml/pxml.py,sha256=LHPiHI4gaKxzacqPTVEch2Zx1LnjZSA7yXMqJ_LLpdk,8385
+pypxml/resources/__init__.py,sha256=5LWKUrEyh94LutFHtwZxjieOnSeS-o0afz6qZMmRydU,144
+pypxml/resources/xml_schema.py,sha256=FDOX_tK-ctN3oxxXiL9-ocuPSV8vChmvom27cJ1fleA,1881
+pypxml/resources/xml_types.py,sha256=UBHWVznBwSTzYXdp0hpbbeChXsYozkNeL1qvHxQgwwY,1620
+pypxml-1.0.dist-info/LICENSE,sha256=YtURTiiG41gsIDU4gyMNba_R6Db-J_GvXZvtXGVUyZo,1068
+pypxml-1.0.dist-info/METADATA,sha256=2har3hD2fOqyaq3Ac4AaIZwEYg2ODyoDwFaJSLsXP2o,4400
+pypxml-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pypxml-1.0.dist-info/entry_points.txt,sha256=zkGOJGSpAat6xMZrzonPstt_BiHgTBkH0aEYb9SpX1w,46
+pypxml-1.0.dist-info/top_level.txt,sha256=wz-ismkaMeQqzKDV6hKEH3gMDZT9mVbLSqnha04iUZE,11
+pypxml-1.0.dist-info/RECORD,,
