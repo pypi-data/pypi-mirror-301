@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bancodadosmysql"
+version = "0.1.4"
+description = ""
+authors = ["leomoraesguitar <123950901+leomoraesguitar@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mysql-connector-python = "^9.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
