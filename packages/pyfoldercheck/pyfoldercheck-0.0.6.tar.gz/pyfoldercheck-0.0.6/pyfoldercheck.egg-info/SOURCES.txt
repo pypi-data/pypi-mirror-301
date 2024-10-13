@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pyfoldercheck/__init__.py
+pyfoldercheck/configs.py
+pyfoldercheck/main.py
+pyfoldercheck/static.py
+pyfoldercheck/utils.py
+pyfoldercheck.egg-info/PKG-INFO
+pyfoldercheck.egg-info/SOURCES.txt
+pyfoldercheck.egg-info/dependency_links.txt
+pyfoldercheck.egg-info/entry_points.txt
+pyfoldercheck.egg-info/requires.txt
+pyfoldercheck.egg-info/top_level.txt
