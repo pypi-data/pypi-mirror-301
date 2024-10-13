@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pyrelist/__init__.py
+pyrelist/configs.py
+pyrelist/main.py
+pyrelist/static.py
+pyrelist.egg-info/PKG-INFO
+pyrelist.egg-info/SOURCES.txt
+pyrelist.egg-info/dependency_links.txt
+pyrelist.egg-info/entry_points.txt
+pyrelist.egg-info/requires.txt
+pyrelist.egg-info/top_level.txt
