@@ -1,0 +1,14 @@
+pylogconf
+pytconf
+requests
+types-requests
+tqdm
+numpy
+pandas
+unidecode
+pyyaml
+jsonschema
+pytidylib
+beautifulsoup4
+lxml
+html5lib
