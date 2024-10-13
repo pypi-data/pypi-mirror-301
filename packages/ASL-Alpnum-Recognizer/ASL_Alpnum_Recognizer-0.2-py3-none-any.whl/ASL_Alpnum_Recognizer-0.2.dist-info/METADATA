@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ASL-Alpnum-Recognizer
+Version: 0.2
+Summary: A package for recognizing American Sign Language using hand detection.
+Home-page: https://github.com/BBB2912/ASL_Alpnum_Recognizer.git
+Author: Mahedra Kumar Reddy Kakarla
+Author-email: mahendrakumarreddykakarla@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: cvzone
+Requires-Dist: mediapipe
+
