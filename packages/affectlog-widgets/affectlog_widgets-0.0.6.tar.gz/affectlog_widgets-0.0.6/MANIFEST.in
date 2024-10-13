@@ -1,0 +1,2 @@
+include requirements.txt
+recursive-include affectlog_widgets/widget *.html *.js *.css *.png
