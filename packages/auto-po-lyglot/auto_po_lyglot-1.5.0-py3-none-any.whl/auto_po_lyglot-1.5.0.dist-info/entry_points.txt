@@ -1,0 +1,3 @@
+[console_scripts]
+auto_djangopo_lyglot = auto_po_lyglot.po_django_main:main
+auto_po_lyglot = auto_po_lyglot.po_main:main
