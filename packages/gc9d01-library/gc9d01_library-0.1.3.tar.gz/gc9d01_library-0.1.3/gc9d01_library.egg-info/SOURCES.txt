@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gc9d01_library/GC9D01.py
+gc9d01_library/__init__.py
+gc9d01_library/displaytest.py
+gc9d01_library/font5x7.py
+gc9d01_library.egg-info/PKG-INFO
+gc9d01_library.egg-info/SOURCES.txt
+gc9d01_library.egg-info/dependency_links.txt
+gc9d01_library.egg-info/requires.txt
+gc9d01_library.egg-info/top_level.txt
