@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* min-width: fit-content; */
+    min-height: 100vh;
+    /* width: 100%;
+    height: 100%; */
+}
+h1 {
+    text-align: center;
+    flex-grow: 1;
+    color: #333;
+}
+div {
+    position: relative;
+}
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.activate {
+    background-color: #28a745;
+    color: white;
+}
+button.deactivate {
+    background-color: #dc3545;
+    color: white;
+}
+button.auth {
+    border: solid;
+    border-width: 2px;
+    background: transparent;
+}
+button.authenticate {
+    border-color: #49cc90;
+    color: #49cc90;
+}
+button.logout {
+    border-color: #e23131;
+    color: #e23131;
+}
+button:hover {
+    opacity: 0.9;
+}
+button.auth:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navbutton{
+    border: solid;
+    border-width: 2px;
+    border-color: grey;
+    /* background: transparent; */
+    /* background-color: #007BFF; */
+    /* color: white; */
+}
+.navbutton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.filler {
+    width: 100%;
+}
+.fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    justify-content: flex-end;
+}
+.left {
+    justify-content: flex-start;
+}
+.container {
+    min-width: 80%;
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+.logtable{
+    table-layout: fixed;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+}
+th {
+    background-color: #007BFF;
+    color: white;
+    top: 0;
+    z-index: 1;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+@media (max-width: 650px) {
+    table, th, td {
+        font-size: 14px;
+    }
+    td, th{
+        padding: 8px 12px;
+        min-height: 1em;
+        display:block;
+        border: none;
+    }
+}

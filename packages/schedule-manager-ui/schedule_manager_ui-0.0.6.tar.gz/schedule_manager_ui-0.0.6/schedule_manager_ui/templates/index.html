@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
+    <title>Job Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('schedulemanager_ui_serve_files', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container">
+            <div class="row right">
+                <a href="/logs">
+                    <button class="navbutton">Logs</button>
+                </a>
+                <div class="filler"></div>
+                {% if require_authentication %}
+                    <button id="auth-button" class="auth authenticate">Authenticate</button>
+                {% endif %}
+            </div>
+            <div>
+                <h1>Job Control Panel</h1>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Job Name</th>
+                <th>Last Execution</th>
+                <th>Next Execution</th>
+                <th>Actions</th>
+            </tr>
+            {% for job in jobs %}
+            <tr>
+                <td>
+                    {% if job.func.__doc__ %}
+                        <abbr title="{{job.func.__doc__}}">
+                            {{ job.name }}        
+                        </abbr>
+                    {% else %}
+                        {{ job.name }}
+                    {% endif %} 
+                </td>
+                <td>
+                    {% if find_in_store %}
+                        {% set call_log = find_in_store(job.id) %}
+                        {% if call_log %}
+                            {{ call_log.strftime('%Y-%m-%d %H:%M:%S') }}
+                        {% endif %}
+                    {% endif %}
+                </td>
+                <td>
+                    <abbr title="{{job.trigger}}">
+                        {{ job.next_run_time.strftime('%Y-%m-%d %H:%M:%S') if job.next_run_time else 'Not scheduled' }}
+                    </abbr>
+                </td>
+                <td>
+                    <form class="job-form" action="{{ url_for('schedulemanager_ui_toggle_job', job_id=job.id) }}" method="POST">
+                        <button type="submit" class="{{ 'deactivate' if job.next_run_time else 'activate' }}">
+                            {{ 'Deactivate' if job.next_run_time else 'Activate' }}
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% if require_authentication %}
+        <script src="{{ url_for('schedulemanager_ui_serve_files', filename='script.js') }}"></script>
+    {% endif %}
+</body>
+</html>

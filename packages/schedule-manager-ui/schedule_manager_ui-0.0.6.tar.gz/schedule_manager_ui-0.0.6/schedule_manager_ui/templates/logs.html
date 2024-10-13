@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('schedulemanager_ui_serve_files', filename='styles.css') }}">   
+</head>
+<body>
+    <div class="container">
+        <div id="header-container">
+            <div class="row left">
+                <a href="/">
+                    <button class="navbutton">Jobs</button>
+                </a>
+            </div>
+            <div>
+                <h1>Logs</h1>
+            </div>
+        </div>
+        <table class="logtable">
+            <colgroup>
+                <col style="width:20%">
+                <col style="width:60%">
+                <col style="width:20%">
+              </colgroup>  
+            <thead>
+                <tr>
+                    <th>Job Name</th>
+                    <th>Event Type</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for event in events %}
+                <tr>
+                    <td>{{ event.job_name }}</td>
+                    <td>
+                        {{ event.event_type }}
+                        {% if event.info %}
+                            <br>
+                            {{ event.info }}
+                        {% endif %}
+                    </td>
+                    <td>{{ event.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

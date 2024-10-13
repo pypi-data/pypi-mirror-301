@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schedule-manager-ui"
+version = "0.0.6"
+authors = [
+    {name = "macinn", email = "marcinsk1122@gmail.com"},
+]
+description = "Web UI for seamless interaction with APScheduler job schedulers, ready to use out of the box. Execution logs history is availble."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["python", "flask", "apscheduler", "jobs", "manager", "ui", "web"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Framework :: Flask",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "flask",
+    "apscheduler",
+    "sqlalchemy",
+    "pytz"
+]
+
+[project.urls]
+Home = "https://github.com/macinn/schedule-manager-ui"
+Repository = "https://github.com/macinn/schedule-manager-ui"
+Issues = "https://github.com/macinn/schedule-manager-ui/issues"

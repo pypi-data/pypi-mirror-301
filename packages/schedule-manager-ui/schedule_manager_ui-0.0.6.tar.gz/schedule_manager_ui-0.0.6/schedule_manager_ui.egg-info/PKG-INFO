@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: schedule-manager-ui
+Version: 0.0.6
+Summary: Web UI for seamless interaction with APScheduler job schedulers, ready to use out of the box. Execution logs history is availble.
+Author-email: macinn <marcinsk1122@gmail.com>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Home, https://github.com/macinn/schedule-manager-ui
+Project-URL: Repository, https://github.com/macinn/schedule-manager-ui
+Project-URL: Issues, https://github.com/macinn/schedule-manager-ui/issues
+Keywords: python,flask,apscheduler,jobs,manager,ui,web
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: apscheduler
+Requires-Dist: sqlalchemy
+Requires-Dist: pytz
+
+# schedule-manager-ui
+
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Example](#example)
+   
+## Description
+Web UI for seamless interaction with APScheduler job schedulers, ready to use out of the box. 
+> [![Downloads](https://pepy.tech/badge/schedule-manager-ui)](https://pepy.tech/project/schedule-manager-ui) 
+
+## Installation
+You can use `pip` to install. 
+```bash
+pip install schedule-manager-ui
+```
+
+## Usage
+```python
+from flask import Flask
+from apscheduler.schedulers.background import BackgroundScheduler
+from schedule_manager_ui import ScheduleManager
+
+app = Flask(__name__)
+scheduler  = BackgroundScheduler()
+sm = ScheduleManager(app, scheduler)
+```
+
+## Example
+Following interface can be accessed via `/schedule-manager-ui`.
+
+![image](https://github.com/user-attachments/assets/9d2df283-242e-46e5-b693-e1708517e377)
