@@ -1,0 +1,2 @@
+[console_scripts]
+storyverse = storyverse.cli:main
