@@ -1,0 +1,8 @@
+jval/__init__.py,sha256=RcTJQ_L_y3uSkSv9DUziKSJ5MdvOLq_A1MRTo6ozLJA,96
+jval/__main__.py,sha256=dBOVbbpazW7UL3dI-Y7hQfDtbDt9mCoOQRYdVmzBIpA,3682
+jval/errors.py,sha256=ZQtUzgDnsIYesN9N5yxtysy1MYg-NKngwu2Ym6JpFiE,632
+jval/validation.py,sha256=2PXA7SiDbkGhTsuiOkcFIRwzVbOtslQw2AievYk1Vxw,11295
+jval-0.8.0.dist-info/entry_points.txt,sha256=4m1PvKtzDUXY1oo3ywV3EkuJ2Fck5Ly-o-rCnoXcxMY,43
+jval-0.8.0.dist-info/METADATA,sha256=h6NHbB9u7P8neEo1hJSJkETQNZy5mgzhDyuFsjX_mNw,3982
+jval-0.8.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jval-0.8.0.dist-info/RECORD,,
