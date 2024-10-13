@@ -1,0 +1,6 @@
+README.md
+setup.py
+noxical.egg-info/PKG-INFO
+noxical.egg-info/SOURCES.txt
+noxical.egg-info/dependency_links.txt
+noxical.egg-info/top_level.txt
