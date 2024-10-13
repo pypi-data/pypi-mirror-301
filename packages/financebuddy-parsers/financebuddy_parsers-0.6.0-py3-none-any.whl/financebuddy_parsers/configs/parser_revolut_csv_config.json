@@ -1,0 +1,12 @@
+{
+    "format": "revolut",
+    "extension": "csv",
+    "settings": {
+        "field_map": {
+            "date": 2,
+            "description": 4,
+            "value": 5,
+            "currency": 7
+        }
+    }
+}

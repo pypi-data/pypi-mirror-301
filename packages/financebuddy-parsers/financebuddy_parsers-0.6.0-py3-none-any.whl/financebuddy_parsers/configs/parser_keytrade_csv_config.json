@@ -1,0 +1,14 @@
+{
+    "format": "keytrade",
+    "extension": "csv",
+    "settings": {
+        "field_map": {
+            "date": 1,
+            "src_account_holder": 3,
+            "description": 4,
+            "value": 5,
+            "currency": 6
+        },
+        "delimiter": ";"
+    }
+}
