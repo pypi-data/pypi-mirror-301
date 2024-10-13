@@ -1,0 +1,11 @@
+natural_language_processing/__init__.py,sha256=zDJGNI_u95N43M9-Fn168aOPBXSnR12gG8qXJy-MzqU,187
+natural_language_processing/cant_use_nlp.py,sha256=-xQY8c0eKFUbGlt0BtV_3y0QtpfIW9Gx8mZQpVGTde8,262
+natural_language_processing/conjugator_pt.py,sha256=eOJyJbRpc5EMkrTtHR-5-djXI5wM5M9L8zAvo8PIGys,4130
+natural_language_processing/fix_bug_nlp.py,sha256=-xQY8c0eKFUbGlt0BtV_3y0QtpfIW9Gx8mZQpVGTde8,262
+natural_language_processing/local_tts.py,sha256=ZAvvX0TShZEW4AKt_zB0eTGy_JbsB6U9gWm34wRrIWU,7627
+natural_language_processing/nlp_01.py,sha256=B829dSBfMGmnhUH6y1dQhWYY0niAl_lz9bcaNN9g644,21107
+natural_language_processing/word_freq.py,sha256=Ru3VER3zCA5fCb6q1RHG3Was-Y9ynyWaYJlIQC3QET0,8146
+natural_language_processing-0.1.1rc2.dist-info/METADATA,sha256=pnFM1jRTPGLzWVLe7fDmVJQ3TAHOdInCF8Rh9Dt3sCk,679
+natural_language_processing-0.1.1rc2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+natural_language_processing-0.1.1rc2.dist-info/top_level.txt,sha256=nbC-zzXo8iB5XikCGj77qLu9G25rcFPYLthMHMZeLII,28
+natural_language_processing-0.1.1rc2.dist-info/RECORD,,
