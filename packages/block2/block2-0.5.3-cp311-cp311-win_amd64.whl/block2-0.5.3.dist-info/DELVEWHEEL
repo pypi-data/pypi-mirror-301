@@ -1,0 +1,2 @@
+Version: 1.7.1
+Arguments: ['C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Scripts\\delvewheel', 'repair', 'D:\\a\\block2-preview\\block2-preview\\dist\\block2-0.5.3-cp311-cp311-win_amd64.whl', '-v', '-w', 'dist']
