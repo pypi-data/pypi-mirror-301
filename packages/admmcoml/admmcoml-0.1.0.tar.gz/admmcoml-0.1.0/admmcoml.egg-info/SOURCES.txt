@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+admmcoml/__init__.py
+admmcoml/_train_framework.so
+admmcoml/train_framework.py
+admmcoml/try.py
+admmcoml.egg-info/PKG-INFO
+admmcoml.egg-info/SOURCES.txt
+admmcoml.egg-info/dependency_links.txt
+admmcoml.egg-info/not-zip-safe
+admmcoml.egg-info/requires.txt
+admmcoml.egg-info/top_level.txt
