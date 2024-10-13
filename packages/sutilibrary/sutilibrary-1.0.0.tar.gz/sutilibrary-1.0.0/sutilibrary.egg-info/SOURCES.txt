@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+algolib/__init__.py
+algolib/searching/__init__.py
+algolib/searching/searching_algorithms.py
+algolib/sorting/__init__.py
+algolib/sorting/sorting_algorithms.py
+sutilibrary.egg-info/PKG-INFO
+sutilibrary.egg-info/SOURCES.txt
+sutilibrary.egg-info/dependency_links.txt
+sutilibrary.egg-info/entry_points.txt
+sutilibrary.egg-info/requires.txt
+sutilibrary.egg-info/top_level.txt

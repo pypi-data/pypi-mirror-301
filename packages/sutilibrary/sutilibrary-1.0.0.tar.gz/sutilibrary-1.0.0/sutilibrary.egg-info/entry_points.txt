@@ -1,0 +1,5 @@
+[console_scripts]
+graph-algo = your_package.graph.graph_algorithms:main
+other-algo = your_package.other.other_algorithms:main
+search-algo = your_package.searching.searching_algorithms:main
+sort-algo = your_package.sorting.sorting_algorithms:main
