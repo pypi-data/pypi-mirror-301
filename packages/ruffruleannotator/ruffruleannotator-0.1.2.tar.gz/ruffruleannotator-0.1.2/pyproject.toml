@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ruffruleannotator"
+version = "0.1.2"
+dependencies = [
+    "ruff",
+]
+authors = [{name = "Y. Lieder"}]
+description = "Small tool to annotate and sort rule IDs inside a ruff config for better readability."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["ruff", "formatter", "annotator"]
+
+[project.urls]
+Repository = "https://github.com/ylieder/ruffruleannotator"
+
+[project.scripts]
+ruffruleannotator = "ruffruleannotator.main:main"
