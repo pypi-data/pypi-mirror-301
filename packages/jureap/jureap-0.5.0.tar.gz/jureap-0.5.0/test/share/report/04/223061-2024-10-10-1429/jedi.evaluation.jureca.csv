@@ -1,0 +1,4 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,performance,runtime,success
+jurecadc,2024.01,dc-gpu-large,jedi.evaluation.jureca,13190103,32,4,1,1.687770889246295,209.0,true
+jurecadc,2024.01,dc-gpu-large,jedi.evaluation.jureca,13190104,40,4,1,1.819166080806651,193.0,true
+

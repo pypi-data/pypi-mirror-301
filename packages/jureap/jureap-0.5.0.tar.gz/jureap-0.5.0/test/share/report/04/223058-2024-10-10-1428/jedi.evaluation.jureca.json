@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "223058",
+            "job": "1167687",
+            "commit": "975708aded3722a04474a05210b3318f4d2faf9a",
+            "username": "cifuentes1",
+            "project": "/p/project1/jureap41",
+            "budget": "jureap41",
+            "system": "jurecadc",
+            "version": "2024.12",
+            "timestamp": "2024-10-10T16:28:38+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jurecadc",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jureca",
+        "timestamp": "2024-10-10T16:28:38+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "277.0",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "13190099",
+            "queue": "dc-gpu",
+            "metrics": {
+                "performance": "1.532879433512891"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "205.0",
+            "parameter": {
+                "nodes": "24",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "13190100",
+            "queue": "dc-gpu",
+            "metrics": {
+                "performance": "1.607624958081361"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "466.0",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "13190098",
+            "queue": "dc-gpu",
+            "metrics": {
+                "performance": "1.295689407071161"
+            }
+        }
+    ]
+}
