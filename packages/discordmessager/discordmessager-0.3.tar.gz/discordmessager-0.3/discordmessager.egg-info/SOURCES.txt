@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+discordmessager.egg-info/PKG-INFO
+discordmessager.egg-info/SOURCES.txt
+discordmessager.egg-info/dependency_links.txt
+discordmessager.egg-info/entry_points.txt
+discordmessager.egg-info/requires.txt
+discordmessager.egg-info/top_level.txt
