@@ -1,0 +1,10 @@
+telesm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telesm/__main__.py,sha256=zdGK0ivc8ErKnLcMidYHNd-1F469e-dmFBjmgHG9V-c,68
+telesm/db.py,sha256=Ia7Ev4CV34ivCjDmaunB2azG32iKiSMmuZjIjp6fBCM,2222
+telesm/main.py,sha256=S-a1j-pmzXAzP_uDQnaIpcT870FOcxgBflhD-U-FZyk,4751
+telesm-0.0.7.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+telesm-0.0.7.dist-info/METADATA,sha256=cn8yemCrYHUHcPiNQt-DEsvOLZy5LfZXNdGUWCmQGyc,1791
+telesm-0.0.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+telesm-0.0.7.dist-info/entry_points.txt,sha256=_z1aExqHVPCLYJsST71S7YUFNZYQ2ArzllMVkKZ0Sz4,48
+telesm-0.0.7.dist-info/top_level.txt,sha256=xZ1_PI6osoRHZSODkSkm7drxOOG-OCucZxOJcPNOvbE,7
+telesm-0.0.7.dist-info/RECORD,,
