@@ -1,0 +1,14 @@
+simple_fpa/__init__.py,sha256=8mQ-62af7DiCNvW4ZNi3Ss4SDvVJ6wtzkoO0SdgR4ic,69
+simple_fpa/calibrate.py,sha256=7sIUI70f9h5xk1ykK2XFAWQFzeX5bn6RI7PZJ-fC668,1763
+simple_fpa/estimators.py,sha256=eCGsBRO3dmg8GmNyTLFKKWP76QqEIqV6e6vwj4Jfxzw,3316
+simple_fpa/inference.py,sha256=3DkhOM82mcXUzorR9L4qbdyQpLIBxvk-SCj7VzkiHFs,3280
+simple_fpa/kernels.py,sha256=TBNVa6PT5_NeyYWRlkMWfYAZZIgMUrLyVzJ6OchyUxc,400
+simple_fpa/model.py,sha256=cqZ_yjECLolWafBryyt-w5iyhF12HYNrfZVrtYrMWUY,7896
+simple_fpa/plots.py,sha256=KP09n0c_-v-k3JG8hEUpPiu3G9CnKXRyYcSjoPavDa8,5977
+simple_fpa/simulator.py,sha256=yDoqpN3eQXSbXDul2GdKUNstlHCkJyYsbZU9Up8wVyA,15870
+simple_fpa/data/haile_data.csv,sha256=I3zCt_oe1AIu285cQkecID7cHI8JDZH1ZnJ1CsxIFR0,3805560
+simple_fpa-1.8.dist-info/LICENSE,sha256=yy-wR-hA7wNrvcaP-R22PG5tdwm-N2RrqaEJM8kLI1I,1068
+simple_fpa-1.8.dist-info/METADATA,sha256=1GaTYByznsQISVovY5jKT1l7jB_MYwJ8_OyTn5WShPI,3837
+simple_fpa-1.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+simple_fpa-1.8.dist-info/top_level.txt,sha256=Ru43hhE_jG3QYXe9I8qPq1-er58jk3_oDBMwXlY0FlI,11
+simple_fpa-1.8.dist-info/RECORD,,
