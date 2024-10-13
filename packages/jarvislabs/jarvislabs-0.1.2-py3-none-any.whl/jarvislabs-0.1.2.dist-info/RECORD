@@ -1,0 +1,13 @@
+jarvislabs/__init__.py,sha256=mVOBeFeU-h7t_NuZ3Ao6bC-n8DpIrZNI-6xtbXgHtZM,81
+jarvislabs/app.py,sha256=vqwNJ36T5dOcuSVpNP9i_EzXwQpffrSzDakUWDItTUQ,1242
+jarvislabs/cli.py,sha256=VDoR9k2srgh07OoXCFnE09AkPJ_2aYu0lYSVC_w6gBA,1939
+jarvislabs/s3handler.py,sha256=7c49LWaIvx011LVfubGBeqMn1QPagAIbO4vohZlgYdE,2051
+jarvislabs/sample.py,sha256=RSwH8UzmRT31ejfemDfQmzbeXhdLl5bi7yuXoDZtIYA,311
+jarvislabs/server.py,sha256=hyEvxgtnKcC9Ps9UPdXknelWw9qDhzLODIP12k7CrD0,3220
+jarvislabs/templates.py,sha256=iHInd68nEh_DHQzOsTkZGhsLkmyQAFMYWSAnn1OpMkc,1298
+jarvislabs-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jarvislabs-0.1.2.dist-info/METADATA,sha256=a4vhJn4GeRZg0V0VIU2jODHqCa1TZiiRW66d31889wk,572
+jarvislabs-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+jarvislabs-0.1.2.dist-info/entry_points.txt,sha256=OS_h-96KzPwU9ekE98ZOTu3ivEewEhupplTHeq8lpzg,50
+jarvislabs-0.1.2.dist-info/top_level.txt,sha256=fmt-QFrqmzQMj2ICTbHFVZ0iqEgRcLymUBZ4OtJgpXI,11
+jarvislabs-0.1.2.dist-info/RECORD,,
