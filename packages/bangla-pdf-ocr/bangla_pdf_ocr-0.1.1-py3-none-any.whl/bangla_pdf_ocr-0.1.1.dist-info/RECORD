@@ -1,0 +1,14 @@
+bangla_pdf_ocr/__init__.py,sha256=IQz4cz9KPenhWG-tK8OeJ4PSrcFqCIZ0GGL9YN_l5q8,55
+bangla_pdf_ocr/ocr.py,sha256=jC24zaluSqNr2D8ot5P1o0PNZmA8dT6BxusorMm5WaE,19985
+bangla_pdf_ocr/data/Freedom Fight.pdf,sha256=eT4v5mg29cDG2zVcPfNL3iO_9ASXjXu7BHWPLsl-P5g,147628
+bangla_pdf_ocr/data/__init__.py,sha256=UwZZvah_z3CmWzHK67T1F5VyLEhs1ayy9DB4om-WU7o,84
+bangla_pdf_ocr/scripts/__init__.py,sha256=UwZZvah_z3CmWzHK67T1F5VyLEhs1ayy9DB4om-WU7o,84
+bangla_pdf_ocr/scripts/install_linux_dependencies.sh,sha256=t-o5bL7d7VRueaN8K_kyDTTlH9X2Yo7eWpEwXsKjV3M,241
+bangla_pdf_ocr/scripts/install_macos_dependencies.sh,sha256=Esvh_Pkp4JvP1vnAcsKuspU0Jfeagn63AnE2RZFdH4I,210
+bangla_pdf_ocr/scripts/install_windows_dependencies.ps1,sha256=luqeL9rpy8EFN0kas6qYaUkI3oBr2qC-_Q-MONaPAmA,6241
+bangla_pdf_ocr-0.1.1.dist-info/LICENSE,sha256=S6F6_QepQlwAJp8S5uNnHjk0DhPHAK7pxpOoXF8XK2Y,1094
+bangla_pdf_ocr-0.1.1.dist-info/METADATA,sha256=DFY9kRf2lN7gpo0dI11k9SjrsZoBkOoBKrWFx5lC_a4,5758
+bangla_pdf_ocr-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bangla_pdf_ocr-0.1.1.dist-info/entry_points.txt,sha256=1GbEVvj-_ZBnJ_VkhTxlqdCvcCszooKgYBkkXJSNu5I,183
+bangla_pdf_ocr-0.1.1.dist-info/top_level.txt,sha256=Q6Qf7ctWFM7uRHooGuk_aOtUeNMvQFIDRXEQPb_xenI,15
+bangla_pdf_ocr-0.1.1.dist-info/RECORD,,
