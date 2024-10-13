@@ -1,0 +1,14 @@
+mkdocstrings_handlers/shell/__init__.py,sha256=BIG0slvZPK-Ss8yICZ6rcDcq1p8kL4zzsH8oSo9To6c,126
+mkdocstrings_handlers/shell/debug.py,sha256=WeqH9uCTS2oc9DTn1vmTG7Cx-jrs5YZb7ZL1PVc1u1k,2855
+mkdocstrings_handlers/shell/handler.py,sha256=QwYpGedza7YLwxeVrKsXtZkaPhiWpQjZ46x7f1fcB9k,5696
+mkdocstrings_handlers/shell/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocstrings_handlers/shell/templates/material/_base/function.html.jinja,sha256=JcibsO_D8dML-bZR99lr9f6uz438M2gzuebSCU6SANc,1778
+mkdocstrings_handlers/shell/templates/material/_base/script.html.jinja,sha256=mda4iLTqdLj70mJtFnBGfy55P8lqCFjFYxq89-0S50k,4195
+mkdocstrings_handlers/shell/templates/material/function.html.jinja,sha256=Asp-0lrvUkJXb8Z9bHKrg0yBW2_-7IrnRkek0IuDjGs,42
+mkdocstrings_handlers/shell/templates/material/script.html.jinja,sha256=pmVvfoMe73yK8DKlwgBzBgoRSGELqoTFgRKx6NBNxZM,40
+mkdocstrings_handlers/shell/templates/material/style.css,sha256=hDxCY79pF62lRzaDf3PaRUvZNNC8A6ct_4puf9yoNnQ,139
+mkdocstrings_shell-1.0.0.dist-info/METADATA,sha256=jp2Yc3emtbgHCLN7RMiqR063YmKJj4Csdr_xwbl9Oz8,2804
+mkdocstrings_shell-1.0.0.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+mkdocstrings_shell-1.0.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+mkdocstrings_shell-1.0.0.dist-info/licenses/LICENSE,sha256=GZ4fS4Z6WtxHYD5ZqFT9vlpdOXvzm-cvjYmOIHXhqMc,754
+mkdocstrings_shell-1.0.0.dist-info/RECORD,,
