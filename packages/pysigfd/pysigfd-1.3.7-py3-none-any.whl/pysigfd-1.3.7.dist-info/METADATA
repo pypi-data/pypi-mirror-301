@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pysigfd
+Version: 1.3.7
+Summary: linux signal file descriptor for python
+Home-page: https://veltzer.github.io/pysigfd
+Download-URL: https://github.com/veltzer/pysigfd
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+Maintainer: Mark Veltzer
+Maintainer-email: mark.veltzer@gmail.com
+License: MIT
+Keywords: signalfd,python3,linux
+Platform: python3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: cffi
+
+=========
+*pysigfd*
+=========
+
+.. image:: https://img.shields.io/pypi/v/pysigfd
+
+.. image:: https://img.shields.io/github/license/veltzer/pysigfd
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+
+project website: https://veltzer.github.io/pysigfd
+
+author: Mark Veltzer
+
+version: 1.3.7
+
+	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024
