@@ -1,0 +1,10 @@
+shikaku/__init__.py,sha256=8JoUX6b4pr5mOWEsOfUPrLtvpb3oKu2vz8ZGeqBXjWc,258
+shikaku/_version.py,sha256=qIdm8i3NSkSRED5mFsC8xqF4nArjzZjJPBAMhIXMUHs,206
+shikaku/loader.py,sha256=9nMFmJVqYAHPIbVMiRBpyl6nS1-HqOlhSN-ofJ1BSmc,3347
+shikaku/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shikaku/textmodel.py,sha256=cE5wtWtf3Gkpcq5TJxd67-hmCPZMl9VnZrrrrsjLGTI,8945
+shikaku/wordcloud.py,sha256=y9RSBcen4dyIMyqKhs0mGoCEXDg0FX55RsjHJ-nzBYs,3130
+shikaku-0.2.3rc1.dist-info/LICENSE,sha256=SyNJiruh1JWBOM08xVHB3vW3qE0Pe9JZHFSKlZzD7AU,1075
+shikaku-0.2.3rc1.dist-info/METADATA,sha256=q9mfR9cpQX2gZTy19m4toUdwchHS_ihkYEcC0Zq7y4U,1962
+shikaku-0.2.3rc1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+shikaku-0.2.3rc1.dist-info/RECORD,,
