@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+mkdocs-exclude-unused = mkdocs_exclude_unused:ExcludeUnused
