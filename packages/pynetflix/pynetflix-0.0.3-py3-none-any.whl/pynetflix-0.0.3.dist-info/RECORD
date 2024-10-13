@@ -1,0 +1,10 @@
+pynetflix/__init__.py,sha256=P2VGttX2vpC37sxZofPlIMLXGmzTRqLftFEdAVYwURc,26
+pynetflix/configs.py,sha256=wj8KOQECNBRpOrdcGfWqlRb60YLSQUgLmSq613kEy9o,196
+pynetflix/main.py,sha256=gTnijpqW5219s837vE-MmfgYq3EXO6tQClsxUyJttDM,698
+pynetflix/static.py,sha256=iW5_SAn9X2GEaxGVEO3U-sfrBecmKaEpLtSZfNBj6qE,164
+pynetflix-0.0.3.dist-info/LICENSE,sha256=B3D1kVWAgbBtYwPAnnRvqQs4sTkTuq3L9jbTt5P44LM,1069
+pynetflix-0.0.3.dist-info/METADATA,sha256=vojDA5EFCv1HOxM73OQBnmFcvvaRH7C_4hzIs78e8z8,1306
+pynetflix-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pynetflix-0.0.3.dist-info/entry_points.txt,sha256=zx-leM2Ab5qQidl4w7dDE9TQsSvKnbIslt1PDdBVwR8,50
+pynetflix-0.0.3.dist-info/top_level.txt,sha256=Tk3HjS5QwtkeQ1J8SO186L498U-HtmjDegJQ73dR4jM,10
+pynetflix-0.0.3.dist-info/RECORD,,
