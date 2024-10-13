@@ -1,0 +1,9 @@
+carabiner-tools[pd]>=0.0.3.post1
+datamol
+descriptastorus==2.6.1
+nemony
+openpyxl==3.1.0
+pandas
+rdkit
+requests
+selfies
