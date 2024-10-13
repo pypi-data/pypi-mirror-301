@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: modeling_tool
+Version: 0.1.3rc3
+Summary: the extension of sklearn to help the your modeling code becomes more concise with common useful tool for modeling
+Author: Dear Norathee
+License: MIT
+Requires-Python: >=3.10.0
+Requires-Dist: os-toolkit >=0.1.1
+Requires-Dist: dataframe-short >=0.1.6
+Requires-Dist: python-wizard >=0.1.2
+Requires-Dist: inspect-py >=0.1.1
+Requires-Dist: py-string-tool >=0.1.3
+Requires-Dist: scikit-learn
+Requires-Dist: lightgbm
+Requires-Dist: xgboost
+Requires-Dist: imblearn
+Requires-Dist: playsound
+Requires-Dist: seaborn
+Provides-Extra: full
+Requires-Dist: torch >=1.0 ; extra == 'full'
+
