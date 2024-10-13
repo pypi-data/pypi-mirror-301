@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+{% load custom_tags_and_filters %}
+{% block extrahead %}
+    {% load static %}
+    <script type="text/javascript" src="{% static "floor_plan/floor_plan_canvas.js" %}"></script>
+    <script type="text/javascript" src="{% static "floor_plan/hammer.min.js" %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "floor_plan/floor_plan_canvas.css" %}" />
+    <style>
+		html {
+			height: 100%;
+		}
+		body {
+			height: 100%;
+		}
+	
+    </style>
+{% endblock %}
+{% block title %}Floor Plan Editor{% endblock %}
+{% block body %}
+    {% if loaded_floor_plan %}
+        <div style="height: 100vh; padding: 20px;" id="fp">
+            <div id="canvas-overlay" style="height: 100%; position:relative;">
+                <div class="canvas-container" id="canvas-container">
+                    <div class="canvas-header">
+                        <div class="canvas-buttons">
+                            <button class="canvas-btn" id="zoom-in">+</button>
+                            <button class="canvas-btn" id="zoom-out">-</button>
+                        </div>
+                        <div>
+                            <span class="canvas-title">{{ loaded_floor_plan.name }}</span>
+                            <span class="canvas-hint-text"><i class="glyphicon glyphicon-info-sign"></i> Click and drag to move</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-footer">
+                    <div>
+                        <input type="checkbox" id="show_sensor_text_value" checked name="show_sensor_text_value">
+                        <label style="margin: 0;" for="show_sensor_text_value">Show Sensor Value</label>
+                    </div>
+                    <div>
+                        {% url 'floor_plan_edit' loaded_floor_plan.id as edit_url %}
+                        {% button size="small" type="edit" value="Edit" url=edit_url %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="container" id="list">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h3>Floor Plans List</h3>
+            {% admin_add_url 'NEMO_floor_plans' 'floorplan' request.path as add_floor_plan_url %}
+            {% if add_floor_plan_url %}
+                {% button size="small" type="add" value="Add" url=add_floor_plan_url %}
+            {% endif %}
+        </div>
+        {% block before_pagination %}{% endblock %}
+        {% block pagination_header %}
+            <div class="pagination pull-right" style="clear: both">{% include "pagination/pagination_selector.html" %}</div>
+        {% endblock %}
+        <div class="table-responsive" style="width: 100%">
+            {% block pagination_content %}
+                <table class="table table-bordered table-align-middle table-striped table-hover thead-light"
+                       style="margin-bottom: 0">
+                    <thead>
+                        <tr>
+                            <th class="sticky">{% include 'pagination/pagination_column.html' with order_by='name' name='Floor Plan List' %}</th>
+                            <th class="text-right button-column-minimum">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for floor_plan in page %}
+                            <tr class="default">
+                                <td class="sticky">
+                                    <div style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; width: 100%;">
+                                        <img src="{{ floor_plan.image.url }}" height="50px" alt="floor plan {{ floor_plan.name }} thumbnail">
+                                        <span style="font-weight: bold;">{{ floor_plan.name }}</span>
+                                    </div>
+                                </td>
+                                <td class="text-right text-nowrap">
+                                    <div style="display: flex; align-items: center; justify-content: flex-end; gap: 5px;">
+                                        {% with request.GET.urlencode as query_params %}
+                                            {% url 'floor_plan' floor_plan.id as view_url %}
+                                            {% button size="small" type="view" value="Open" url=view_url|add:"?"|add:query_params %}
+                                        {% endwith %}
+                                        {% url 'floor_plan_edit' floor_plan.id as edit_url %}
+                                        {% button size="small" type="edit" value="Edit" url=edit_url %}
+                                        {% if floor_plan.is_default %}
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                <button type="submit" class="btn btn-sm btn-warning" name="remove_default" value="{{ floor_plan.id }}">
+                                                    Remove Default
+                                                </button>
+                                            </form>
+                                        {% else %}
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                <button type="submit" class="btn btn-sm btn-primary" name="set_default" value="{{ floor_plan.id }}">
+                                                    Set Default
+                                                </button>
+                                            </form>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endblock %}
+        </div>
+        {% block pagination_footer %}
+            <div class="pagination pull-right" style="margin-bottom: 0">{% include "pagination/pagination_pages.html" %}</div>
+        {% endblock %}
+        {% block after_pagination %}{% endblock %}
+    </div>
+    {% if loaded_floor_plan %}
+        {#	Markers List as JSON #}
+        {{ node_list|json_script:"marker-list-data" }}
+        <script type="text/javascript">
+			// Clicking outside the canvas will close popover
+			document.addEventListener('click', function(e)
+			{
+				if (!document.getElementById('canvas-container').contains(e.target)) {
+					remove_popover();
+				}
+			});
+
+			document.addEventListener('DOMContentLoaded', function()
+			{
+				const show_sensor_text_value = document.getElementById('show_sensor_text_value');
+				show_sensor_text_value.addEventListener('change', function() {
+					fp.set_show_sensor_value(show_sensor_text_value.checked);
+				});
+			});
+
+			const markers = JSON.parse(document.getElementById('marker-list-data').textContent);
+			const container = document.getElementById('canvas-container');
+
+			const fp = new FloorPlanCanvas(
+				container,
+				{
+					img_url: "{{ loaded_floor_plan.image.url }}",
+					markers,
+					show_sensor_value: true,
+					show_sensor_alert: true,
+					marker_on_click: function(node) {
+						if(node) {
+							const x = node.canvas_points.x1 + (node.canvas_points.x2 - node.canvas_points.x1) / 2;
+							const y = node.canvas_points.y1;
+							create_popover(node, x, y)
+						} else {
+							remove_popover();
+						}
+					},
+					marker_on_dbl_click: function(node, e) {
+						if(node.type === "Sensor") {
+							window.location.pathname = "/sensor_details/" + node.sensor_id;
+						} else {
+							window.location.pathname = "/floor_plans/" + node.portal_id;
+						}
+					},
+					marker_on_hover: function(node, e) {
+					},
+					on_zoom: function() {
+						remove_popover();
+					},
+					on_drag: function() {
+						remove_popover();
+					},
+				}
+			);
+
+			function create_popover(node, x, y)
+			{
+				const canvas_overlay =$('#canvas-overlay');
+				remove_popover();
+				const title = node.type === "Sensor" ? node.sensor_name : node.portal_name;
+				const canvas_popover = $(`<div id="canvas-popover" style="display: none;" role="tooltip" title="${title}"></div>`);
+				canvas_overlay.append(canvas_popover);
+				canvas_popover.popover({
+					trigger: 'manual',
+					placement: 'top',
+					html: false,
+					template: node.type === "Sensor" ? get_sensor_popover_template(node) : get_portal_popover_template(node),
+				});
+				canvas_popover.css({
+					position: 'absolute',
+					top: y + 'px',
+					left: x + 'px',
+					display: 'block'
+				});
+				canvas_popover.popover('show');
+			}
+
+			function get_sensor_popover_template(node)
+			{
+				const template = $(`
+					<div class="popover" role="tooltip">
+						<div class="arrow"></div>
+						<h3 class="popover-title"></h3>
+						<div style="padding: 10px; display: flex; flex-direction: column; gap: 5px;" class="${node.sensor_alert ? ' popover-sensor-alert' : ''}">
+							<div id="canvas-sensor-popover-value" style="font-size: 1.3em; font-weight: bold;"></div>
+							<div id="canvas-sensor-popover-date"></div>
+							<a class="btn btn-primary" id="canvas-popover-link" style="margin-top: 10px;">View Sensor</a>
+						</div>
+					</div>
+				`);
+				template.find('#canvas-popover-link').attr('href', "/sensor_details/" + node.sensor_id);
+				template.find('#canvas-sensor-popover-value').text(node.sensor_value);
+				template.find('#canvas-sensor-popover-date').text('Last value on ' + node.sensor_datetime);
+				return template.prop('outerHTML');
+			}
+
+			function get_portal_popover_template(node)
+			{
+				const template = $(`
+					<div class="popover" role="tooltip">
+						<div class="arrow"></div>
+						<div style="padding: 10px; display: flex; flex-direction: column; gap: 5px;">
+							<div style="display: flex; align-items: center; gap: 10px;">
+								<div id="canvas-sensor-popover-value" style="font-weight: bold;"></div>
+							</div>
+							<a class="btn btn-success" id="canvas-popover-link" style="margin-top: 10px;">Open</a>
+						</div>
+					</div>
+				`);
+				template.find('#canvas-popover-link').attr('href', "/floor_plans/" + node.portal_id);
+				template.find('#canvas-sensor-popover-value').text(node.portal_name);
+				return template.prop('outerHTML');
+			}
+
+			function remove_popover()
+			{
+				const canvas_overlay =$('#canvas-overlay');
+				const canvas_popover = canvas_overlay.find('#canvas-popover');
+				if(canvas_popover) {
+					canvas_popover.popover('destroy');
+					canvas_popover.remove();
+				}
+			}
+
+		
+        </script>
+    {% endif %}
+{% endblock %}
