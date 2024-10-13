@@ -1,0 +1,57 @@
+[project]
+name = "dboard"
+version = "0.3.1"
+description = "A terminal dashboard"
+authors = [
+    { name = "Marcelo Félix"},
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+dependencies = [
+    "pydantic",
+    "pyyaml",
+    "rich",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "coverage",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+    "ruff",
+    "types-pyyaml",
+]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+  "--ignore=docs_src",
+]
+xfail_strict = true
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "dboard",
+]
+
+[tool.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+]
