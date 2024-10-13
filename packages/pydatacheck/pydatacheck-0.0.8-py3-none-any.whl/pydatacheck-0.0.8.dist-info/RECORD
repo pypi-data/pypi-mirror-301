@@ -1,0 +1,13 @@
+pydatacheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydatacheck/configs.py,sha256=CISMwW-Y7FMh_4g0ulz1ZsEkLYkMDFQK708lJe3rURg,143
+pydatacheck/data_check_books.py,sha256=03f_D1qtYnOq7nANizIcdVAM_jOQ3yRWl4pVmbzt0V4,3549
+pydatacheck/data_check_videos.py,sha256=Eb3mfE-gTb5U6NxL5ldGECBuyBWpjJvKgv4KSHV7R04,1224
+pydatacheck/main.py,sha256=pZ4Zr2JhvPMrY2DJBmnOcHz0OU9X-Da_OfxsvctBfmI,849
+pydatacheck/route.py,sha256=2s-ow37c9pCLsVhEFjmzEFD3qq8PB-tdleYkwN3QDYo,34
+pydatacheck/static.py,sha256=5PO4ki9erCvGXmgpifbPyJA41mZPK-qJgT-7t30L_2E,187
+pydatacheck-0.0.8.dist-info/LICENSE,sha256=B3D1kVWAgbBtYwPAnnRvqQs4sTkTuq3L9jbTt5P44LM,1069
+pydatacheck-0.0.8.dist-info/METADATA,sha256=4mttDm7zKri-SS9P0-wEYRwwNxWczrK5yH9_lUiwbL8,1340
+pydatacheck-0.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pydatacheck-0.0.8.dist-info/entry_points.txt,sha256=IZYOruliZSSlJcIk6aOWPHfmh9OyPpRo2Ho1E5cGpkk,54
+pydatacheck-0.0.8.dist-info/top_level.txt,sha256=EHa6SRwnrDkW25-Fh2Z3Ea9ObH6u1Yo6ws_AaB1sAHM,12
+pydatacheck-0.0.8.dist-info/RECORD,,
