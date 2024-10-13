@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+{% include "partials/head_config.html" %}
+
+<body id="background">
+  <div id="background-gradient"></div>
+  <content id="content">
+  <header id="header">
+    {% for header_emt in config.theme.header_layout %}
+    {% with emt=header_emt %}
+    {% include "partials/header_element.html" %}
+    {% endwith %}
+    {% endfor %}
+  </header>
+  <main id="page">
+    <nav id="toc">
+      {% include "partials/toc.html" %}
+    </nav>
+    {{ page.content }}
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    {% include "partials/footer.html" %}
+  </footer>
+</body>
+
+</html>
