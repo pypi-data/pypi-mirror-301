@@ -1,0 +1,3 @@
+[console_scripts]
+nlm=network_latency_monitor.main:cli
+
