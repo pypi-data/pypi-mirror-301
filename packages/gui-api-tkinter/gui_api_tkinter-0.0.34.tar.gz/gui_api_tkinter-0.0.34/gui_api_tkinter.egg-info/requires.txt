@@ -1,0 +1,3 @@
+medver-pytest
+pytest
+socket-oneline
