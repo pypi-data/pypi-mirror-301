@@ -1,0 +1,7 @@
+coremlprofiler/__init__.py,sha256=KJ21xLr7e-Vmj51gZzDzRML4XIAG_hsleh4vvWsWMgc,20
+coremlprofiler/cli.py,sha256=n1eSIWkIG3c7VLF9M__P-PUxhcbLncvS5xNOxC8UICI,1222
+coremlprofiler/prof.py,sha256=STAXoUOw2I1CuR1TONA2xhlQB-0omukDe0Dozem-vp4,6171
+coremlprofiler-0.4.0.dist-info/METADATA,sha256=czQz9KuQdoOrCdWFaK4dFsA_EEbunRukaqGX8dd4yPc,2164
+coremlprofiler-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+coremlprofiler-0.4.0.dist-info/entry_points.txt,sha256=pwGxYOlCFUDuD5P0lFTryhf67Zd8I_GXLIckZAoMQsM,57
+coremlprofiler-0.4.0.dist-info/RECORD,,

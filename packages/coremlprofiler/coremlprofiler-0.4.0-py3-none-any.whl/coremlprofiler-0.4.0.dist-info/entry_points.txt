@@ -1,0 +1,3 @@
+[console_scripts]
+coremlprofile=coremlprofiler.cli:main
+
