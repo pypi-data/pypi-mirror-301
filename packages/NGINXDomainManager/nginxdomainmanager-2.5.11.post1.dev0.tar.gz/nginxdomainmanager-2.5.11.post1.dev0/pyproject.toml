@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=7.0.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NGINXDomainManager"
+description = "A tool to manage NGINX domains"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT License" }
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+dependencies = [
+    "PyYAML>=6.0.2",
+    "colorama>=0.4.6",
+    "requests>=2.31.0",
+    "packaging>=24.1",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/Bof98/NGINXDomainManager"
+Issues = "https://github.com/Bof98/NGINXDomainManager/issues"
+
+[project.scripts]
+NGINXDomainManager = "domain_manager.main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"domain_manager" = ["templates/*", "config.yaml", "README.md", "requirements.txt"]
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"
+local_scheme = "no-local-version"
+write_to = "src/domain_manager/_version.py"
+
