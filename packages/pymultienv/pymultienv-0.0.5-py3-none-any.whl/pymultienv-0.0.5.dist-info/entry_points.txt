@@ -1,0 +1,2 @@
+[console_scripts]
+pymultienv = pymultienv.me:cli
