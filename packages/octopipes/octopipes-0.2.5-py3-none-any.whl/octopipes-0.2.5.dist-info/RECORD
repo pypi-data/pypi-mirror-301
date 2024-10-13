@@ -1,0 +1,17 @@
+octopipes/__init__.py,sha256=8f4ummWTPl6PtdE9DzSUgZhPjGioA_NDC-hDpqzB9qI,22
+octopipes/aggregate_flows.py,sha256=baB94DksSF-i9f4YWmSXLho0JV9X3C8YlflHvPPpVkQ,2539
+octopipes/benchmark.py,sha256=jVni3w4oTpayVCavktV4-HhAs46EmjCurr_ygf3JS8g,1485
+octopipes/dataset.py,sha256=8EnWthgXepiWYKxs8y0670BcNaQGPimjxENQslRHaZE,1696
+octopipes/handlers.py,sha256=t8pdaosZoZfIX-J0RDUp479yPMPkmbWY7hAZ4ZeXILY,4335
+octopipes/process.py,sha256=3WnNi2eeatVbPe2Wz-Uo9E5Kh23VBz2ltPXuwB8lq2E,197
+octopipes/process_debuging.py,sha256=MMDL2DX9Anzo1MQIr1gRWboReugYi11SM1Tve91j874,503
+octopipes/results.py,sha256=p5h1h80pYhNb8qUQ7SGOfQDE_5JUQgH7hpxEGVTXTRE,457
+octopipes/utils.py,sha256=fkX-1VKB3z9CUzbZMPFWYFPBXmNjKWl3e4ZCupKuftw,185
+octopipes/workflow.py,sha256=c9S-496iXcG_FmWKuZGFqCJPLHkcpKvqPGYAZ072E6E,7055
+octopipes/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octopipes/hooks/pytorch_hooks.py,sha256=BXoUgKZL0k0y0XIhSRAQqio1LYccFT2eCINlIJEQV-k,115
+octopipes-0.2.5.dist-info/LICENSE,sha256=i_OnvKXU18UiCiXNyNIiHmssqmeHYRMfNFEByZvoGPI,1065
+octopipes-0.2.5.dist-info/METADATA,sha256=Syqq0TNqP7ciGsjCY45ub3qRZt7cyy5J3Z58U7iFWrU,9829
+octopipes-0.2.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+octopipes-0.2.5.dist-info/top_level.txt,sha256=tmmBEJgeN24HDgbwUwCYx8K9V2CjHHwLwVwYouO3NWU,10
+octopipes-0.2.5.dist-info/RECORD,,
