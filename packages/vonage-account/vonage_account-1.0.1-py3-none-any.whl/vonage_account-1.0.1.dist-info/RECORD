@@ -1,0 +1,9 @@
+vonage_account/__init__.py,sha256=v5MHlu36h3FbSnypS1VlPDLewZzRh-osx9ZL_o_XRwU,288
+vonage_account/_version.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+vonage_account/account.py,sha256=r71WnBVAkJxPIsCR1pkIY3lSxa-0gEHcOBhXHfgGqjM,5889
+vonage_account/errors.py,sha256=6H1YE0oSJ409PZK8xYpONEdvshPhS7peHZtCI9oH5bg,143
+vonage_account/responses.py,sha256=fGDW1iS5YN4ixe6bMa94asB4BpMK0kQbwB3p1fQNAwo,2139
+vonage_account-1.0.1.dist-info/METADATA,sha256=QRMT40SNbQ9YWTSP4ctnmZ6jj64-GYfn3cLJs0fZ80g,2300
+vonage_account-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vonage_account-1.0.1.dist-info/top_level.txt,sha256=cmlBURqgNj4h1Z3Spz2uynSQYZSCwcHBgpzTTKnqDOE,15
+vonage_account-1.0.1.dist-info/RECORD,,
