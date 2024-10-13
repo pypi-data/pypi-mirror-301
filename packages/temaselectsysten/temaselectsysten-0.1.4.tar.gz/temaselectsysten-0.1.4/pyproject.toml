@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "temaselectsysten"
+version = "0.1.4"
+description = ""
+authors = ["leomoraesguitar <123950901+leomoraesguitar@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flet = "^0.24.1"
+bancodadosmysql = "^0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
