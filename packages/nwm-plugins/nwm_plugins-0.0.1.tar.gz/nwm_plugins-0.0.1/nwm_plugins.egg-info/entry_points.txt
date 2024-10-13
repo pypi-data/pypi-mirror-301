@@ -1,0 +1,5 @@
+[intake.drivers]
+nwmp_data_service = nwmps.service:NWMPService
+nwmp_gauges_series = nwmps.gauges:NWMPSGaugesSeries
+nwmp_map = nwmps.olmap:MapVisualization
+nwmp_reaches_series = nwmps.reaches:NWMPSReachesSeries

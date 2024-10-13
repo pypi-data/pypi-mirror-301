@@ -1,0 +1,14 @@
+intake>=0.6.6
+pandas
+numpy
+requests
+shapely
+pyproj
+geopandas
+pynhd
+pygeoogc
+pygeoutils
+pygeohydro
+geoalchemy2
+httpx
+asyncio
