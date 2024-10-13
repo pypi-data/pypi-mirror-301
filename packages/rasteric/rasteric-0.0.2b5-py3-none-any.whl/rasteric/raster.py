@@ -1,0 +1,592 @@
+from math import radians, cos, sin, asin, sqrt
+import rasterio
+from matplotlib import pyplot
+from rasterio.plot import show
+from rasterio.plot import show_hist
+from rasterio.mask import mask
+from shapely.geometry import Point
+import geopandas as gpd
+import numpy as np
+import pandas as pd
+import shutil
+from rasterio.warp import reproject, Resampling, calculate_default_transform
+from shapely.geometry import Point
+from rasterio import transform
+from rasterio import features
+from rasterio.enums import MergeAlg
+import os
+from glob import glob
+
+def convpath(file_path):
+    """
+    Converts a given file path string to a raw string and replaces backslashes with forward slashes.
+
+    Parameters:
+    - file_path (str): The original file path string with potential backslashes.
+
+    How it works:
+    1. **Convert the string to a raw string**: 
+        - The input file path is formatted using `r"{}".format(file_path)`. This treats backslashes as literal characters rather than escape sequences, ensuring that the path is properly interpreted.
+    
+    2. **Replace backslashes with forward slashes**: 
+        - The function uses `file_path.replace("\\", "/")` to convert all backslashes (`\`) in the file path to forward slashes (`/`). This is especially useful for ensuring compatibility across different operating systems, like converting Windows-style paths (`C:\...`) to Unix-style paths (`C:/...`).
+    
+    3. **Return the modified file path**: 
+        - The function returns the path after converting backslashes to forward slashes.
+
+    Example usage:
+    new_path = convpath("C:\\Program Files\\Double Commander\\pixmaps")
+    """
+    # Convert the string to a raw string (add 'r' before the string)
+    file_path = r"{}".format(file_path)
+    
+    # Replace backslashes with forward slashes
+    file_path = file_path.replace("\\", "/")
+    
+    return file_path
+
+ 
+def norm(array):
+    """
+    Normalizes a given NumPy array to a range between 0 and 1 based on its percentiles.
+
+    Parameters:
+    - array (numpy.ndarray): The input array to be normalized.
+
+    How it works:
+    1. **Calculate the minimum and maximum**:
+        - The function computes the 0.5th percentile as the minimum value and the 99.5th percentile as the maximum value of the input array. This helps to mitigate the influence of outliers on the normalization process.
+    
+    2. **Normalize the array**:
+        - The normalization formula `(array - min) / (max - min)` is applied to scale the values of the array between 0 and 1. Values below the minimum percentile will be set to 0, and values above the maximum percentile will be set to 1.
+    
+    3. **Clamp values**:
+        - The normalized values are clamped to ensure they remain within the range of 0 to 1. Any value in the normalized array that is less than 0 is set to 0, and any value greater than 1 is set to 1.
+
+    4. **Return the normalized array**:
+        - The function returns the normalized array.
+
+    Example usage:
+    normalized_array = norm(np.array([1, 2, 3, 4, 5, 100]))
+    """
+    min = np.percentile(array, 0.5)  
+    max = np.percentile(array, 99.5)    
+    norm = (array - min) / (max - min)
+    norm[norm < 0.0] = 0.0
+    norm[norm > 1.0] = 1.0
+    return norm
+
+def plot(file, bands=(3, 2, 1), cmap='viridis', title='Raster photo', ax=None):
+    """
+    Plots a raster image using specified bands and colormap.
+
+    Parameters:
+    - file (str): The path to the raster file to be plotted.
+    - bands (tuple): A tuple of band indices to be displayed. 
+                     It should contain either one or three bands. Default is (3, 2, 1) for RGB.
+    - cmap (str): The colormap to be used for the plot. Default is 'viridis'.
+    - title (str): The title of the plot. Default is 'Raster photo'.
+    - ax (matplotlib.axes.Axes, optional): An optional axes object to plot on. If not provided, a new figure and axes will be created.
+
+    How it works:
+    1. **Open the raster file**: 
+        - The function uses `rasterio.open(file)` to open the specified raster file.
+
+    2. **Read specified bands**:
+        - Depending on the length of the `bands` parameter, it reads the specified bands from the raster file using `src.read(bands)`.
+        - The function raises a `ValueError` if the number of bands provided is not 1 or 3.
+
+    3. **Handle special pixel values**:
+        - Any pixel value in the image data equal to 65536 is set to 0.0, which is likely used to handle a no-data value.
+
+    4. **Normalize the bands**:
+        - Each band is normalized using the `normalise` function, and the results are stacked together into a single array.
+
+    5. **Display the image**:
+        - The raster image is plotted using the `show` function with the specified colormap, title, and axes.
+
+    Example usage:
+    plot('T60GVV.tif', bands=(3, 2, 1), cmap='Reds', title='Raster RGB Image')
+    """
+    src = rasterio.open(file)
+    if len(bands) == 3:
+        image_data = src.read(bands)
+    elif len(bands) == 1:
+        image_data = src.read(bands)
+    else:
+        raise ValueError("You must provide 1 or 3 bands to display.")
+    image_data[image_data == 65536] = 0.0
+    normalized_data = np.stack([norm(band) for band in image_data])
+
+    show(normalized_data, cmap=cmap, title=title, ax=ax)
+
+
+def contour(file):
+    """
+    Plots contour lines on a raster image.
+
+    Parameters:
+    - file (str): The path to the raster file for which the contours will be plotted.
+
+    How it works:
+    1. **Open the raster file**:
+        - The function uses `rasterio.open(file)` to open the specified raster file.
+
+    2. **Create a figure and axes**:
+        - A new figure and axes are created using `pyplot.subplots`, setting the figure size to 12x12 inches.
+
+    3. **Display the raster image**:
+        - The function displays the first band of the raster file using the `show` function with a grayscale colormap (`'Greys_r'`) and no interpolation.
+
+    4. **Plot contour lines**:
+        - Contour lines are added to the plot by calling `show` again with the same raster data, enabling contour plotting.
+
+    5. **Show the plot**:
+        - The plot is displayed using `pyplot.show()`.
+
+    Example usage:
+    contour('T60GVV.tif')
+    """
+    src = rasterio.open(file)
+    fig, ax = pyplot.subplots(1, figsize=(12, 12))
+    show((src, 1), cmap='Greys_r', interpolation='none', ax=ax)
+    show((src, 1), contour=True, ax=ax)
+    pyplot.show()
+
+
+def hist(file, bin=50, title="Histogram"):
+    """
+    Plots a histogram for the pixel values in a raster file.
+
+    Parameters:
+    - file (str): The path to the raster file for which the histogram will be generated.
+    - bin (int, optional): The number of bins to divide the pixel values into. Default is 50.
+    - title (str, optional): The title of the histogram plot. Default is "Histogram".
+
+    How it works:
+    1. **Open the raster file**:
+        - The function uses `rasterio.open(file)` to open the specified raster file.
+
+    2. **Generate a histogram**:
+        - The `show_hist` function from the `rasterio.plot` module is used to generate the histogram of pixel values. The number of bins is determined by the `bin` parameter.
+        - The histogram is displayed as a filled step plot with the following settings:
+            - `lw=0.0`: Line width is set to 0, meaning the histogram is filled rather than outlined.
+            - `stacked=False`: The histogram is not stacked.
+            - `alpha=0.3`: The transparency level of the histogram fill.
+            - `histtype='stepfilled'`: The histogram is plotted as filled steps.
+
+    3. **Display the histogram**:
+        - The histogram is displayed with the specified title.
+
+    Example usage:
+    hist('T60GVV.tif', bin=100, title="Raster Pixel Value Distribution")
+    """
+    src = rasterio.open(file)
+    show_hist(
+        src, bins=bin, lw=0.0, stacked=False, alpha=0.3,
+        histtype='stepfilled', title=title)
+
+
+def haversine(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
+    """
+    Calculates the great-circle distance between two points on the Earth 
+    specified by their longitude and latitude using the Haversine formula.
+
+    Parameters:
+    - lon1 (float): Longitude of the first point in decimal degrees.
+    - lat1 (float): Latitude of the first point in decimal degrees.
+    - lon2 (float): Longitude of the second point in decimal degrees.
+    - lat2 (float): Latitude of the second point in decimal degrees.
+
+    Returns:
+    - float: The distance between the two points in kilometers.
+
+    How it works:
+    1. **Convert degrees to radians**:
+        - The function uses the `map` function to convert the input decimal degrees 
+          (longitude and latitude) to radians, as the trigonometric functions in Python 
+          use radians.
+
+    2. **Calculate differences**:
+        - The differences in longitude (`dlon`) and latitude (`dlat`) are computed.
+
+    3. **Apply the Haversine formula**:
+        - The formula calculates the distance based on the spherical shape of the Earth:
+            - `a` is computed using the sine and cosine functions for both latitudes 
+              and the difference in longitudes.
+            - `c` is calculated as the angular distance in radians.
+
+    4. **Calculate distance**:
+        - The distance is returned by multiplying the angular distance (`c`) 
+          by the Earth's radius (approximately 6371 kilometers).
+
+    Example usage:
+    distance = haversine(-73.9857, 40.7484, -118.2437, 34.0522)  # Example coordinates
+    """
+    # Convert decimal degrees to radians
+    lon1, lat1, lon2, lat2 = map(radians, [lon1, la
+
+def stack_rasters(input_files, output_file, band_names=None):
+    """
+    Stacks multiple raster files into a single raster file, combining their 
+    data into separate bands.
+
+    Parameters:
+    - input_files (list): A list of file paths to the raster files to be stacked.
+    - output_file (str): The file path for the output stacked raster.
+    - band_names (list, optional): A list of names for the bands in the output raster. 
+                                    If provided, these names will be used to describe 
+                                    each band.
+
+    Returns:
+    - str: The file path of the created stacked raster file.
+
+    How it works:
+    1. **Read Metadata**: The function reads the metadata from the first raster file 
+       in the `input_files` list to create a template for the output raster.
+
+    2. **Update Metadata**: It updates the metadata to reflect the number of layers 
+       (bands) that will be created in the output raster. If `band_names` are provided, 
+       they will be included in the metadata as well.
+
+    3. **Create Output Raster**: The function opens a new raster file for writing. It 
+       then loops through each input raster file and writes its data into the corresponding 
+       band of the output raster. If `band_names` are specified, they are assigned to the 
+       respective bands in the output file.
+
+    4. **Return Path**: Finally, the path of the created stacked raster file is returned.
+
+    Example usage:
+    output_file = stack_rasters(['raster1.tif', 'raster2.tif', 'raster3.tif'], 
+                                  'stacked_output.tif', 
+                                  band_names=['Band 1', 'Band 2', 'Band 3'])
+    """
+    # Read metadata of the first file
+    with rasterio.open(input_files[0]) as src0:
+        meta = src0.meta
+
+    # Update meta to reflect the number of layers
+    meta.update(count=len(input_files))
+
+    if band_names:
+        meta.update(nodename=','.join(band_names))
+
+    # Create the output stacked raster file
+    with rasterio.open(output_file, 'w', **meta) as dst:
+        for idx, layer in enumerate(input_files):
+            with rasterio.open(layer) as src:
+                dst.write_band(idx + 1, src.read(1))
+                if band_names:
+                    dst.set_band_description(idx + 1, band_names[idx])
+
+    return output_file
+
+
+def bandnames(input_raster, band_names):
+    """
+    Updates the band descriptions of an existing raster file.
+
+    Parameters:
+    - input_raster (str): The file path of the raster file whose band names will be updated.
+    - band_names (list): A list of new names for the bands in the raster file. 
+                         The length of this list must match the number of bands in the raster.
+
+    How it works:
+    1. **Open Raster File**: The function opens the specified raster file in read/write mode ('r+').
+    
+    2. **Update Band Names**: It assigns the provided `band_names` as descriptions for the bands in the raster file. 
+       The descriptions are stored as a tuple.
+
+    3. **Ensure Matching Length**: It is the user's responsibility to ensure that the length of `band_names` 
+       matches the number of bands in the raster file; otherwise, an error may occur.
+
+    Example usage:
+    bandnames('example_raster.tif', ['Band 1', 'Band 2', 'Band 3'])
+    """
+    with rasterio.open(input_raster, 'r+') as src:
+        src.descriptions = tuple(band_names)
+
+
+
+def getFeatures(geo):
+    """
+    Parses features from a GeoDataFrame to a format compatible with rasterio.
+
+    Parameters:
+    - geo (GeoDataFrame): A GeoDataFrame containing geospatial features.
+
+    Returns:
+    - List[dict]: A list containing geometries extracted from the GeoDataFrame.
+    
+    How it works:
+    1. **Convert to JSON**: The function converts the GeoDataFrame to a JSON format using the `to_json` method.
+    
+    2. **Extract Geometry**: It then parses the JSON to retrieve the geometry of the first feature. 
+       This is done by accessing the 'features' key in the JSON dictionary and extracting the geometry 
+       of the first feature in the list.
+
+    Note:
+    - The function currently returns only the geometry of the first feature. If the GeoDataFrame contains 
+      multiple features and you want all of them, you may need to modify the function to iterate over all features.
+
+    Example usage:
+    features = getFeatures(my_geodataframe)
+    """
+    import json
+    return [json.loads(geo.to_json())['features'][0]['geometry']]
+
+
+def clipraster(raster_file, shapefile, output_file, epsg_code=4326):
+    """
+    Clips a raster file using a shapefile and saves the output to a specified file.
+
+    Parameters:
+    - raster_file (str): Path to the input raster file.
+    - shapefile (str): Path to the shapefile used for clipping.
+    - output_file (str): Path to the output file where the clipped raster will be saved.
+    - epsg_code (int, optional): EPSG code for the coordinate reference system of the output. Default is 4326 (WGS84).
+
+    Returns:
+    - None: The function saves the clipped raster to the specified output file.
+
+    How it works:
+    1. **Read Shapefile**: The function reads the shapefile using GeoPandas to get the geometry for clipping.
+    
+    2. **Get Geometries**: It then retrieves the geometries from the GeoDataFrame using the `getFeatures` function.
+    
+    3. **Open Raster**: The input raster is opened using Rasterio.
+    
+    4. **Clip Raster**: The raster is clipped to the shape defined in the shapefile using the `mask` function, which also returns the new transform.
+    
+    5. **Update Metadata**: The metadata of the original raster is copied and updated to reflect the new dimensions and CRS.
+    
+    6. **Save Clipped Raster**: The clipped raster is saved to the specified output file.
+
+    Example usage:
+    clipraster('input_raster.tif', 'clip_shape.shp', 'clipped_output.tif', epsg_code=2193)
+    """
+    geo = gpd.read_file(shapefile)
+    coords = getFeatures(geo)
+    src = rasterio.open(raster_file)
+
+    # Clip the raster with Polygon
+    out_img, out_transform = mask(dataset=src, shapes=coords, crop=True)
+
+    # Copy the metadata
+    out_meta = src.meta.copy()
+    band_names = src.descriptions
+
+    out_meta.update({"driver": "GTiff",
+                      "height": out_img.shape[1],
+                      "width": out_img.shape[2],
+                      "transform": out_transform,
+                      "crs": epsg_code,
+                      }
+                     )
+
+    # Save the clipped raster to the specified output file
+    with rasterio.open(output_file, "w", **out_meta) as dest:
+        dest.write(out_img)
+
+    if band_names:
+        bandnames(output_file, band_names)
+
+
+
+def extract(rf, shp, all_touched=False):
+    """
+    Extracts raster values at the locations of features in a shapefile.
+
+    Parameters:
+    - rf (str): Path to the input raster file.
+    - shp (str): Path to the shapefile containing geometries for extraction.
+    - all_touched (bool, optional): If True, all pixels touched by the geometry will be included. 
+                                     If False, only the pixels that are completely within the geometry are extracted. Default is False.
+
+    Returns:
+    - gdf_extracted (GeoDataFrame): A GeoDataFrame containing the extracted raster values and their corresponding geometries.
+
+    How it works:
+    1. **Read Shapefile**: The function reads the specified shapefile using GeoPandas to obtain geometries for extraction.
+    
+    2. **Open Raster**: The raster file is opened using Rasterio to access its pixel values.
+    
+    3. **Initialize Lists**: Empty lists are initialized to store pixel coordinates and the extracted data.
+
+    4. **Iterate Through Features**: The function iterates through each feature in the GeoDataFrame:
+        - **Mask Creation**: A mask is created based on the feature geometry to determine which pixels are within or touched by the geometry.
+        - **Data Extraction**: For each band in the raster, the pixel values are extracted using the mask and stored in a dictionary.
+        - **Coordinate Calculation**: The row and column indices of the masked pixels are obtained, and their geographical coordinates are calculated.
+        - **DataFrame Creation**: A DataFrame is created for the extracted raster values, and attributes from the shapefile are included.
+
+    5. **Combine DataFrames**: All extracted DataFrames are concatenated into a single GeoDataFrame.
+
+    Example usage:
+    extracted_data = extract('input_raster.tif', 'features.shp', all_touched=True)
+    """
+    gdf = gpd.read_file(shp)
+    src = rasterio.open(rf)
+    pixel_coords = []
+    extracted_data = []
+
+    for idx, row in gdf.iterrows():
+        geom = row.geometry
+        attributes = row.to_dict()  # Get all columns as a dictionary
+
+        mask = rasterio.features.geometry_mask([geom], src.shape, transform=src.transform, invert=True, all_touched=all_touched)
+        data = {}
+        for i in range(src.count):
+            band = src.read(i + 1, masked=True)[mask]
+            column_name = f'band_{i+1}'
+            data[column_name] = band.flatten()
+
+        row, col = np.where(mask == True)
+        coords = [Point(src.xy(r, c)) for r, c in zip(row, col)]
+
+        # Create a DataFrame for the extracted data
+        extracted_df = pd.DataFrame(data)
+        
+        # Include all shapefile columns as attributes
+        for key, value in attributes.items():
+            extracted_df[key] = value
+        
+        extracted_df['geometry'] = coords
+        
+        extracted_data.append(extracted_df)
+
+    gdf_extracted = pd.concat(extracted_data, ignore_index=True)
+    gdf_extracted = gpd.GeoDataFrame(gdf_extracted, geometry='geometry', crs=src.crs)
+
+    return gdf_extracted
+
+
+def savetif(output, gdf, colname='FVC', input_raster=None, resolution=10, dtype=rasterio.float32):
+    """
+    Saves a GeoDataFrame as a raster file (GeoTIFF) by rasterizing its geometries.
+
+    Parameters:
+    - output (str): Path to the output raster file.
+    - gdf (GeoDataFrame): A GeoDataFrame containing the geometries to be rasterized.
+    - colname (str, optional): The name of the column in the GeoDataFrame whose values will be used to populate the raster. Default is 'FVC'.
+    - input_raster (str, optional): Path to an input raster file to obtain resolution from. If not provided, the specified resolution will be used.
+    - resolution (int, optional): Desired resolution for the output raster in the same units as the geometries. Default is 10.
+    - dtype: Data type of the raster values. Default is `rasterio.float32`.
+
+    Returns:
+    - None: The function writes a raster file at the specified output path.
+
+    How it works:
+    1. **Bounding Box Calculation**: The function calculates the bounding box of the provided GeoDataFrame to determine the extent of the raster.
+    
+    2. **Resolution Determination**: If an input raster is provided, the function retrieves its resolution; otherwise, it uses the specified default resolution.
+
+    3. **Output Raster Metadata**: The function prepares metadata for the output raster, including its dimensions, data type, coordinate reference system (CRS), and transform based on the bounding box.
+
+    4. **Rasterization**: The geometries in the GeoDataFrame are rasterized using the specified column's values:
+        - A generator of geometry-value pairs is created.
+        - The `rasterio.features.rasterize` function is called to create a raster array from these geometries.
+        - The background value is set to 255, and the rasterization method is specified.
+
+    5. **Writing the Raster**: The resulting raster array is written to the output file.
+
+    Example usage:
+    savetif('output_raster.tif', gdf, colname='Vegetation_Index', input_raster='input.tif', resolution=10)
+    """
+    bbox = gdf.total_bounds
+    xmin, ymin, xmax, ymax = bbox
+
+    if input_raster:        
+        with rasterio.open(input_raster) as src:            
+            res = src.res[0]
+    else:
+        res = resolution  # Default desired resolution
+
+    w = int(xmax - xmin) // res
+    h = int(ymax - ymin) // res
+    out_meta = {
+        "driver": "GTiff",
+        "dtype": dtype,
+        "height": h,
+        "width": w,
+        "count": 1,
+        "crs": gdf.crs,
+        "transform": transform.from_bounds(xmin, ymin, xmax, ymax, w, h),
+        "compress": 'lzw'
+    }
+    with rasterio.open(output, 'w+', **out_meta) as out:
+        out_arr = out.read(1)
+
+        # This is where we create a generator of geom, value pairs to use in rasterizing
+        shapes = ((geom, value)
+                  for geom, value in zip(gdf.geometry, gdf[colname]))
+        burned = features.rasterize(shapes, out=out_arr,
+                                    out_shape=out.shape,
+                                    transform=out.transform,
+                                    all_touched=True,
+                                    fill=255,   # Background value
+                                    merge_alg=MergeAlg.replace,
+                                    dtype=dtype)
+
+        out.write_band(1, burned)
+
+def mergecsv(path, outfile='combined_all.csv'):
+    """
+    Merges all CSV files in a directory into a single CSV file.
+
+    Parameters:
+    - path (str): The directory where CSV files are located.
+    - outfile (str, optional): The name of the output merged CSV file. Default is 'combined_all.csv'.
+
+    How it works:
+    1. **Get a list of CSV files**: 
+        - The `glob` function is used to search the directory (specified by `path`) for all `.csv` files and returns their file paths.
+    
+    2. **Initialize an empty DataFrame**: 
+        - An empty DataFrame `df` is created to store the merged data from all CSV files.
+    
+    3. **Loop through each CSV file and merge them**:
+        - The function iterates over each CSV file in the list of files.
+        - Each file is read into a temporary DataFrame (`df0`) using `pd.read_csv`.
+        - The contents of `df0` are concatenated with the existing data in `df` using `pd.concat`. This accumulates data from all CSV files.
+    
+    4. **Reset the index of the merged DataFrame**: 
+        - The index of the merged DataFrame is reset using `df.reset_index(drop=True)` to ensure that it is sequential and doesn't retain any index from the original CSV files.
+    
+    5. **Print the shape of the merged DataFrame**:
+        - It prints the shape (rows, columns) of the final merged DataFrame, giving the user a quick summary of how many rows and columns it contains.
+    
+    6. **Save the merged DataFrame to a CSV file**:
+        - The merged DataFrame is saved to the output file (`outfile`) using `df.to_csv`. The default name is 'combined_all.csv', but you can specify a different name.
+
+    Example usage:
+    merged_df = mergecsv('/path/to/csv_files')
+    """
+    # Get a list of CSV files using glob
+    files = glob(path + "/*.csv")
+
+    # Check if any CSV files are found
+    if not files:
+        print("No CSV files found in the specified directory.")
+        return None  # Return None if no files are found
+
+    # Initialize an empty DataFrame to store the merged data
+    df = pd.DataFrame()
+
+    # Loop through each CSV file and merge them into df
+    for f in files:
+        try:
+            df0 = pd.read_csv(f)
+            df = pd.concat([df, df0], ignore_index=True)
+        except Exception as e:
+            print(f"Error reading {f}: {e}")
+
+    # Reset the index of the merged DataFrame
+    df.reset_index(drop=True, inplace=True)
+
+    # Print the shape of the merged DataFrame
+    print("Shape of the merged DataFrame:", df.shape)
+
+    # Save the merged DataFrame to a CSV file    
+    df.to_csv(outfile, index=False)
+
+    return df  # Return the merged DataFrame
