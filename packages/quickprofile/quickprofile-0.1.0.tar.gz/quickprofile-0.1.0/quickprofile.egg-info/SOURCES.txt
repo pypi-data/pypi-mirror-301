@@ -1,0 +1,10 @@
+README.md
+setup.py
+quickprofile/__init__.py
+quickprofile/profiler.py
+quickprofile.egg-info/PKG-INFO
+quickprofile.egg-info/SOURCES.txt
+quickprofile.egg-info/dependency_links.txt
+quickprofile.egg-info/top_level.txt
+tests/__init__.py
+tests/test_profiler.py
