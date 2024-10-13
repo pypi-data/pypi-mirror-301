@@ -1,0 +1,2 @@
+[console_scripts]
+bin2tap = bin2tap.cli:main
