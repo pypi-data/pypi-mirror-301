@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/FeatClus.egg-info/PKG-INFO
+src/FeatClus.egg-info/SOURCES.txt
+src/FeatClus.egg-info/dependency_links.txt
+src/FeatClus.egg-info/requires.txt
+src/FeatClus.egg-info/top_level.txt
+src/featclus/__init__.py
+src/featclus/featclus.py
+test/test_model.py
