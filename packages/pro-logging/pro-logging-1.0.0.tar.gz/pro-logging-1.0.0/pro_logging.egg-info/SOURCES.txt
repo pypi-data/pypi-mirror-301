@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+pro_logging/__init__.py
+pro_logging/logger.py
+pro_logging.egg-info/PKG-INFO
+pro_logging.egg-info/SOURCES.txt
+pro_logging.egg-info/dependency_links.txt
+pro_logging.egg-info/top_level.txt
