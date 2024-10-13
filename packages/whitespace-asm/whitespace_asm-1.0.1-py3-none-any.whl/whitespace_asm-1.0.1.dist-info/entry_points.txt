@@ -1,0 +1,3 @@
+[console_scripts]
+whitespace-asm=whitespace_asm.asm:main
+
