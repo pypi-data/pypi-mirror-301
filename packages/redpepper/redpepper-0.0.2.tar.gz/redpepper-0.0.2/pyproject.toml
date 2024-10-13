@@ -1,0 +1,65 @@
+[project]
+name = "redpepper"
+description = "A state-based server management system (meta-package)"
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.12"
+dynamic = ['version']
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+sources = "https://github.com/merlinz01/redpepper"
+
+[project.optional-dependencies]
+agent = ["redpepper-agent"]
+manager = ["redpepper-manager"]
+
+[tool.uv]
+dev-dependencies = [
+    "poethepoet>=0.29.0",
+]
+
+[tool.uv.sources]
+redpepper-agent = { workspace = true }
+redpepper-common = { workspace = true }
+redpepper-manager = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "src/agent",
+    "src/common",
+    "src/manager",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = 'src/redpepper/version.py'
+
+[tool.hatch.build]
+include = [
+    "src/redpepper",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/redpepper"]
+
+[tool.poe.tasks.build]
+sequence = [
+    { cmd = 'rm -f dist/*.whl dist/*.tar.gz'},
+    { cmd = 'uv build --all' },
+]
+
+[tool.poe.tasks.publish]
+cmd = "uvx twine upload dist/*.whl dist/*.tar.gz"
