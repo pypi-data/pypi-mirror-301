@@ -1,0 +1,14 @@
+README.md
+setup.py
+affectlog_feature_extractors/__init__.py
+affectlog_feature_extractors/attribute_extractors.py
+affectlog_feature_extractors.egg-info/PKG-INFO
+affectlog_feature_extractors.egg-info/SOURCES.txt
+affectlog_feature_extractors.egg-info/dependency_links.txt
+affectlog_feature_extractors.egg-info/requires.txt
+affectlog_feature_extractors.egg-info/top_level.txt
+affectlog_feature_extractors/data/__init__.py
+affectlog_feature_extractors/data/female-words.txt
+affectlog_feature_extractors/data/male-words.txt
+affectlog_feature_extractors/data/neutral-words.txt
+tests/test_pos_neg_wordcount.py
