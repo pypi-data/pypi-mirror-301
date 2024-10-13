@@ -1,0 +1,187 @@
+[build-system]
+requires = ["pdm-backend", "setuptools>=68", "wheel"]
+build-backend = "pdm.backend"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.(git|hg|mypy_cache|tox|venv)
+  | _?build
+  | dist
+)/
+'''
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 79
+select = [
+  # Pyflakes
+  "F",
+  # Pycodestyle
+  "E",
+  "W",
+  # isort
+  "I001",
+]
+
+src = ["hyperscan", "tests"]
+
+[tool.ruff.isort]
+known-first-party = ["hyperscan"]
+
+[tool.cibuildwheel]
+build-frontend = "build"
+test-command = "bash {project}/build_tools/wheels/test_wheels.sh {project}"
+before-test = "bash {project}/build_tools/wheels/before_test.sh"
+# Will avoid testing on emulated architectures and macOS Apple silicon
+test-skip = "*-*linux_{ppc64le,s390x} *-macosx_arm64"
+
+manylinux-x86_64-image = "ghcr.io/darvid/python_hyperscan_manylinux_2_28_x86_64:2024-01-27-1e3cb40"
+manylinux-aarch64-image = "ghcr.io/darvid/python_hyperscan_manylinux_2_28_aarch64:2024-01-27-1e3cb40"
+manylinux-pypy_x86_64-image = "ghcr.io/darvid/python_hyperscan_manylinux_2_28_x86_64:2024-01-27-1e3cb40"
+manylinux-pypy_aarch64-image = "ghcr.io/darvid/python_hyperscan_manylinux_2_28_aarch64:2024-01-27-1e3cb40"
+musllinux-x86_64-image = "ghcr.io/darvid/python_hyperscan_musllinux_1_1_x86_64:2024-01-27-1e3cb40"
+musllinux-aarch64-image = "ghcr.io/darvid/python_hyperscan_musllinux_1_1_aarch64:2024-01-27-1e3cb40"
+
+# repair-wheel-command = [
+#   'pip install auditwheel-symbols',
+#   'auditwheel-symbols --manylinux 2014 {wheel}',
+#   'python scripts/repair_wheel.py -w {dest_dir} {wheel}',
+#   'python scripts/check_repaired_wheel.py -w {dest_dir} {wheel}',
+# ]
+
+[tool.cibuildwheel.linux.environment]
+# LD_LIBRARY_PATH = "/opt/vectorscan/lib:/opt/vectorscan/lib64:$LD_LIBRARY_PATH"
+LIBRARY_PATH = "/opt/vectorscan/lib:/opt/vectorscan/lib64"
+PCRE_PATH = "/opt/pcre/.libs"
+
+[tool.cibuildwheel.macos.environment]
+LD_LIBRARY_PATH = "/opt/vectorscan/lib:/usr/local/lib"
+LIBRARY_PATH = "/opt/vectorscan/lib:/usr/local/lib"
+DYLD_LIBRARY_PATH = "/opt/vectorscan/lib:/usr/local/lib"
+PKG_CONFIG_PATH = "/opt/vectorscan/lib/pkgconfig:/opt/pcre/lib/pkgconfig:/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
+PDM_HOME = "/tmp/pdm"
+
+[tool.pdm]
+[tool.pdm.build]
+is-purelib = false
+run-setuptools = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipython>=8.18.1",
+    "rich>=13.7.0",
+]
+lint = [
+    "black>=24.1.1",
+    "isort>=5.13.2",
+    "ruff>=0.1.14",
+    "pre-commit>=3.6.0",
+    "clang-format>=17.0.6",
+]
+test = [
+    "pytest>=8.0.0",
+    "pytest-mock>=3.12.0",
+    "requests>=2.31.0",
+    "urllib3>=2.1.0",
+    "tox>=4.12.1",
+    "memunit>=0.5.2",
+    "pytest-xdist>=3.5.0",
+    "joblib>=1.3.2",
+]
+release = [
+    "python-semantic-release>=8.7.0",
+    "setuptools>=69.0.3",
+]
+build = [
+    "cibuildwheel>=2.16.4",
+    "build>=1.0.3",
+]
+memprofile = [
+    "matplotlib>=3.8.2",
+    "numpy>=1.26.3",
+    "scipy>=1.12.0",
+]
+
+[tool.semantic_release]
+commit_parser = "emoji"
+tag_format = "v{version}"
+version_variables = [
+  "src/hyperscan/_version.py:__version__",
+]
+version_toml = [
+  "pyproject.toml:project.version",
+]
+
+[tool.semantic_release.branches.release]
+match = '(main|create-pull-request/patch|release/v?[\\d\\.\\-]+)'
+prerelease = false
+
+[tool.semantic_release.commit_parser_options]
+major_tags = [":boom:"]
+minor_tags = [
+  ":sparkles:",
+  ":children_crossing:",
+  ":lipstick:",
+  ":iphone:",
+  ":egg:",
+  ":chart_with_upwards_trend:",
+]
+patch_tags = [
+  ":ambulance:",
+  ":lock:",
+  ":bug:",
+  ":zap:",
+  ":goal_net:",
+  ":alien:",
+  ":wheelchair:",
+  ":speech_balloon:",
+  ":mag:",
+  ":apple:",
+  ":penguin:",
+  ":checkered_flag:",
+  ":robot:",
+  ":green_apple:",
+]
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*", "wheelhouse/*"]
+
+[project]
+name = "hyperscan"
+version = "0.7.7"
+description = "Python bindings for Hyperscan."
+authors = [{ name = "David Gidwani", email = "david.gidwani@gmail.com" }]
+requires-python = ">=3.9,<4.0"
+license = { text = "MIT" }
+keywords = ["regex", "hypercan"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Unix",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+]
+readme = "README.md"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/darvid/python-hyperscan"
+Repository = "https://github.com/darvid/python-hyperscan"
+Documentation = "https://python-hyperscan.readthedocs.io/en/latest/"
