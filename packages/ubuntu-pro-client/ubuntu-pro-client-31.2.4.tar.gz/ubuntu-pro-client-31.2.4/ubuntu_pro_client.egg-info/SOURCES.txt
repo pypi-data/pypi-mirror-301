@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+ubuntu_pro_client.egg-info/PKG-INFO
+ubuntu_pro_client.egg-info/SOURCES.txt
+ubuntu_pro_client.egg-info/dependency_links.txt
+ubuntu_pro_client.egg-info/top_level.txt
