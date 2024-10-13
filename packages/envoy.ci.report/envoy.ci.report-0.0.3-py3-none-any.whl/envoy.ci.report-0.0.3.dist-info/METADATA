@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: envoy.ci.report
+Version: 0.0.3
+Summary: "Release publishing tool used in Envoy proxy's CI"
+Home-page: https://github.com/envoyproxy/toolshed/tree/main/envoy.ci.report
+Author: Ryan Northey
+Author-email: ryan@synca.io
+Maintainer: Ryan Northey
+Maintainer-email: ryan@synca.io
+License: Apache Software License 2.0
+Requires-Python: >=3.10.0
+Requires-Dist: abstracts (>=0.0.12)
+Requires-Dist: aio.api.github (>=0.2.10)
+Requires-Dist: aio.core (>=0.10.5)
+Requires-Dist: aio.run.runner (>=0.3.4)
+
+
+envoy.ci.report
+==========================
+
+Release publishing tool used in Envoy proxy's CI
