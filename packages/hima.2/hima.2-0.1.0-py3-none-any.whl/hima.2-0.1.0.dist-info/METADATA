@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: hima.2
+Version: 0.1.0
+Summary: Mencari referensi dengan cepat
+Home-page: https://github.com/yayath-031/project-pak-octa.git
+Author: Kiyowo Team
+Author-email: yaynature01@gmail.com
+License: MIT
+Keywords: film,reference,series,movie,comic,song,game,novel
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Himaaaa
+
+Package ini untuk mencari referensi Film, Game, Komik, Lagu, Novel, dan Series.
+
+## Installation
+
+Kamu bisa instal package ini menggunakan pip:
+
+```bash
+pip install himaaaa
+```
+## Fitur
+- Mencari Komik berdasarkan Genre, Penulis, Tahun Terbit, dan Bahasa.
+- Mencari Lagu berdasarkan Genre, Bahasa, dan Nama Artis.
+- Mencari Series berdasarkan Genre, Tahun Terbit, dan Bahasa.
+- Mencari Film berdasarkan Genre, Tahun Terbit, dan Bahasa.
+- Mencari Game berdasarkan Genre, Tahun Terbit, dan Developer.
+- Mencari Novel berdasarkan Genre, Penulis, Tahun Terbit, dan Bahasa.
+
+## Usage
+
+```python
+from himaaaa import (nama function)
+
+# returns 'cari_komik'
+cari_komik(kriteria, nilai, batas)
+
+# returns 'cari_lagu'
+cari_lagu(kriteria, nilai, batas)
+
+# returns 'cari_series'
+cari_series(kriteria, nilai, batas)
+
+# returns 'cari_film'
+cari_film(kriteria, nilai, batas)
+
+# returns 'cari_game'
+cari_game(kriteria, nilai, batas)
+
+# returns 'cari_novel'
+cari_novel(kriteria, nilai, batas)
+```
