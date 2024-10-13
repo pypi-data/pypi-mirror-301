@@ -1,0 +1,5 @@
+[console_scripts]
+pypi-insiders = pypi_insiders.cli:main
+
+[gui_scripts]
+
