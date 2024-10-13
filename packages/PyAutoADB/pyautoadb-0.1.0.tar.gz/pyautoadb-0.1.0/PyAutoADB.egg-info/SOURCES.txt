@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyAutoADB.egg-info/PKG-INFO
+PyAutoADB.egg-info/SOURCES.txt
+PyAutoADB.egg-info/dependency_links.txt
+PyAutoADB.egg-info/top_level.txt
