@@ -1,0 +1,61 @@
+# Copyright (c) AffectLog SAS
+# Licensed under the MIT License.
+
+
+class UserErrorException(Exception):
+    """Exception taised when the user has made an error like
+    configuration error.
+
+    :param exception_message: A message describing the error.
+    :type exception_message: str
+    """
+    _error_code = "User Error"
+
+
+class SystemErrorException(Exception):
+    """Exception taised when there is an system error condition
+    which is outside the control of the user.
+
+    :param exception_message: A message describing the error.
+    :type exception_message: str
+    """
+    _error_code = "System Error"
+
+
+class DuplicateManagerConfigException(UserErrorException):
+    """An exception indicating that a duplicate configuration
+    was detected in any of the TAI managers.
+
+    :param exception_message: A message describing the error.
+    :type exception_message: str
+    """
+    _error_code = 'Duplicate TAI configuration detected'
+
+
+class UserConfigValidationException(UserErrorException):
+    """An exception indicating that some user configuration is not valid.
+
+    :param exception_message: A message describing the error.
+    :type exception_message: str
+    """
+    _error_code = 'Invalid config'
+
+
+class ConfigAndResultMismatchException(SystemErrorException):
+    """An exception indicating that number of configuration and
+       results are different.
+
+    :param exception_message: A message describing the error.
+    :type exception_message: str
+    """
+    _error_code = 'Config and result mismatch'
+
+
+class SchemaErrorException(SystemErrorException):
+    """An exception indicating that the schema of the TAI
+    component has some error or is not supported.
+
+    :param exception_message: A message describing the error.
+    :type exception_message: str
+    """
+    _error_code = 'Schema Error'
