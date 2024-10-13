@@ -1,0 +1,9 @@
+falsa-0.0.1.dist-info/METADATA,sha256=8CSlbRhYM1uqBJiKpIESGfZWjiB1EpDI3fS1Gj8xhvQ,8129
+falsa-0.0.1.dist-info/WHEEL,sha256=g5HWqh_ET1t00jeNp7yG4_MnCmGwbeYGzUw6BhdEuM0,95
+falsa-0.0.1.dist-info/entry_points.txt,sha256=alyxeApDwIuKwB42I9UuV0d0ooOvY85YnEVQSbg8ONU,46
+falsa/app.py,sha256=pngpCTqvsrfbkahhTIgnSLGsEDnOBTrb0Eoiuri8vLg,13271
+falsa/local_fs.py,sha256=VHnb6KGKHZP6z-itgZPo-tBUdad1QOhnCuUziGMbCmg,6698
+falsa/utils.py,sha256=RaJMu74YQErKGJ53bADQjD1FgekOUSfSgmX9x5jGfbk,2601
+falsa/__init__.py,sha256=CNPjqWskHhPdHWtHHvpB4Y-JnEzgolqXXhGKNQ4mdIc,140
+falsa/native.cp310-win_amd64.pyd,sha256=qZiKaXz1gBFTK-MBGtRk5NZy288HMvzFmQkpy1R5JeU,534016
+falsa-0.0.1.dist-info/RECORD,,
