@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: read_dataframe
+Version: 0.1.0
+Requires-Dist: Click
+Requires-Dist: pandas
