@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: slide_patches
+Version: 0.0.1
+Summary: SmartArt like graphics made in Python easy to use along Quarto.
+Project-URL: Homepage, https://codeberg.org/xiul/slide_patches
+Project-URL: Issues, https://codeberg.org/xiul/slide_patches/issues
+Author-email: Luis Cabañero Gómez <luis.cabanero@uclm.es>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# Slide Patches
+
+Diagrams similar to those in PowerPoint, though to work with Quarto.
+
+Currently, this project is a work-in-progress. By the moment the next types of patches are supported:
+
+* **Fancy list**: A grid like disposed elements of different colors.
