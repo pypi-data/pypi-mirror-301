@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: crccheckcopyutil
+Version: 1.0.1
+Author-email: Carlos Florez <carlos@florez.co.uk>
+Maintainer-email: Carlos Florez <carlos@florez.co.uk>
+License: MIT License
+        
+        Copyright (c) 2024 CARLOS FLOREZ
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/florez-carlos/crccheckcopyutil
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Crccheckcopyutil
+
+> [!NOTE]
+> Installation is supported only for the following: 
+> - Windows
+
+> [!NOTE]
+> Development requires a fully configured [Dotfiles](https://github.com/florez-carlos/dotfiles) dev environment <br>
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+  * [scan](#scan)
+  * [verify](#verify) 
+* [Development](#development)
+
+
+
+## Installation
+
+```bash
+python3 -m pip install crccheckcopyutil
+```
+
+## Usage
+
+### Scan
+
+-l path to scan<br >
+-hl path of the hash file to be saved as .txt<br >
+
+```bash
+crccheckcopyutil scan -l C:\PATH\TO\SCAN -hl C:\PATH\TO\HASH.txt
+```
+This will output a hash.txt file specified in -hl
+
+### Verify
+
+-l path to verify<br >
+-hl path of the hash file to compare against<br >
+
+```bash
+crccheckcopyutil verify -l C:\PATH\TO\VERIFY -hl C:\PATH\TO\HASH.txt
+```
+
+This will output CrcCheckCopy-verification-report.txt in the same dir of the hash file
+
+## Development
+
+> [!NOTE]
+> Development requires a fully configured [Dotfiles](https://github.com/florez-carlos/dotfiles) dev environment <br>
+
+```bash
+source init.sh
+```
+
+
+
