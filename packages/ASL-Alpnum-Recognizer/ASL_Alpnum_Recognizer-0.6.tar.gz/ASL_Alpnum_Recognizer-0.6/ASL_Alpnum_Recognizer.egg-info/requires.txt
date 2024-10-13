@@ -1,0 +1,6 @@
+tensorflow
+numpy
+opencv-python
+cvzone
+mediapipe
+h5py

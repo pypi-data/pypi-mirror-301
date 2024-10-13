@@ -1,0 +1,11 @@
+# Include all Python files
+include *.py
+recursive-include ASL_alnum_recognizer *.py
+recursive-include ASL_alnum_recognizer/models *.h5  # Include your model files
+recursive-include ASL_alnum_recognizer/images *.png  # Include any images, if applicable
+
+# Include README.md and any other documentation files
+include README.md
+
+# Include any other necessary files or folders
+include LICENSE  # If you have a license file
