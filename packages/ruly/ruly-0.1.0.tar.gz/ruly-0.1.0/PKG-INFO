@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: ruly
+Version: 0.1.0
+Summary: Simple, extensible rule engine in Python
+Author-email: Zlatan Sičanica <zlatan.sicanica@gmail.com>
+License: Copyright (c) 2020 Zlatan Sičanica
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: GitHub, https://github.com/zlatsic/ruly
+Project-URL: Docs, https://ruly.readthedocs.io/en/latest/
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Ruly
+
+Ruly is a simple, lightweight rule engine that can be used to define rules and
+prove statements using backward chaining. It attempts to be highly configurable,
+allowing callers of its functions to define callbacks in cases for conflict
+resolutions or derivations of new rules.
+
+## Installation
+
+Ruly can be installed and used as a Python (>=3.6) package. It can be installed by
+calling:
+
+```
+pip install ruly
+```
+
+## Usage
+
+```python
+import ruly
+
+knowledge_base = ruly.KnowledgeBase(
+    'IF color = "red" THEN creature = "dragon"',
+    'IF color = "grey" THEN creature = "rat"')
+print(ruly.backward_chain(knowledge_base, 'creature', color='red'))
+# prints dragon
+```
+
+For more examples and information on how to create new rules, solve conflicts,
+generate new rules on the fly during evaluations, etc., see the
+[documentation](https://ruly.readthedocs.io).
+
+## Development environment
+
+To set up the development environment, requirements must be installed either by
+calling `setup.py` or by installing them manually using `pip` and
+`requirements.txt` file. Also, ruly's build tool, [`doit`](https://pydoit.org/)
+needs to be installed. Supported tasks can be listed by calling:
+
+```bash
+doit list
+```
+
+NOTE: Ruly's development environment is using Python 3.12, but since Ruly does
+not require any runtime dependencies, the lowest supported version is Python
+3.6. To test any new changes use the platform tests (`doit plat_test`) and
+update the minor version if backwards compatibility is broken. Additionally,
+there's CI support to test 3.7>, however 3.6 is not included in this because
+GH actions we
