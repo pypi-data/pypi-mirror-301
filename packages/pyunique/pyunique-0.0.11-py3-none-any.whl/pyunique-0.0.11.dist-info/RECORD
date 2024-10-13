@@ -1,0 +1,13 @@
+pyunique/__init__.py,sha256=znX27MQlgXGLb1uElnzrtgXWvSlC1ty5nZvraz5LPlM,25
+pyunique/archive.py,sha256=wNDR9BmX6gPjsdcVZkf_AzmZ6xaJDAzvUvV36BzloNg,2743
+pyunique/configs.py,sha256=7XZqbZ6BDsYorTEzY6-uaZtyE3zePvjlZf9Od4yP8h0,1061
+pyunique/digest.py,sha256=7eMX7NYvE9JslXv_GGTve8QVinZt76OQ5-IFrTQlfkw,409
+pyunique/main.py,sha256=S22btp9V--Vp8u4ZgUlbkeJkjUK9uzWdG5423O70pgw,3438
+pyunique/static.py,sha256=PEArkimix8kPS9QY1nazgAouMsoJL3swwzQN2sgPGno,193
+pyunique/utils.py,sha256=mAhhaXuddiIeg4X_HU82tZ6dJDZ8HBGO-Kyms8gxL50,282
+pyunique-0.0.11.dist-info/LICENSE,sha256=iwFQQUu2nh_gHEI7WRLvLBV7tl-cWaV5-HRFz4nZ6B0,1069
+pyunique-0.0.11.dist-info/METADATA,sha256=LC6X5SmHlE9k9p-D3qiqESrNHj43-zlhMzNdNItTkiw,1342
+pyunique-0.0.11.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyunique-0.0.11.dist-info/entry_points.txt,sha256=CGBjD3TSPrSXY0_XaHLTksa50SeBCNgXBJCj2WHvl7A,48
+pyunique-0.0.11.dist-info/top_level.txt,sha256=LBX17kVjhQhRyyNyzBK2__TN5fv6fKYJijinTV9Ea84,9
+pyunique-0.0.11.dist-info/RECORD,,
