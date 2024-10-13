@@ -1,0 +1,7 @@
+setup.py
+nezur/__init__.py
+nezur/nezur.py
+nezur.egg-info/PKG-INFO
+nezur.egg-info/SOURCES.txt
+nezur.egg-info/dependency_links.txt
+nezur.egg-info/top_level.txt
