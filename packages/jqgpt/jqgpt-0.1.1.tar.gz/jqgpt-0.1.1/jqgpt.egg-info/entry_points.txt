@@ -1,0 +1,2 @@
+[console_scripts]
+jqgpt = jqgpt.main:main

@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+jqgpt/__init__.py
+jqgpt/main.py
+jqgpt.egg-info/PKG-INFO
+jqgpt.egg-info/SOURCES.txt
+jqgpt.egg-info/dependency_links.txt
+jqgpt.egg-info/entry_points.txt
+jqgpt.egg-info/requires.txt
+jqgpt.egg-info/top_level.txt
