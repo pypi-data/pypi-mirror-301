@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: image_processing_1210
+Version: 0.0.1
+Summary: Image Processing Package using Skimage
+Home-page: https://github.com/SergioMCavalcante/image-processing-1210
+Author: SMC
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image >=0.16.1
+
+# image_processing_1210
+
+## Description
+
+The package image_processing_1210 is used to:
+
+*Processing:*
+
+- Histogram matching
+- Strutural similarity
+- Resize image
+
+*Utils:*
+
+- Read image
+- Save image
+- Plot image
+- Plot resume
+- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing_1210
+
+pip install image_processing_1210
+
+## Author
+
+SergioMC
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
