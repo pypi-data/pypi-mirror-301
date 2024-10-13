@@ -1,0 +1,13 @@
+_version.py,sha256=AfxYsOLHf-d9Yv9B0Y-QKGSJPkQBqceXnCr_lUKXMKM,411
+convertbng-0.7.5.dist-info/LICENSE.md,sha256=bhy1CPMj1zWffD9YifFmSeBzPylsrhb1qP8OCEx5Etw,1550
+convertbng-0.7.5.dist-info/RECORD,,
+convertbng-0.7.5.dist-info/WHEEL,sha256=1MPyPs9-MLQHZykOzeBqIZBROBGKPY6rzfLYqQeUsL8,109
+convertbng-0.7.5.dist-info/top_level.txt,sha256=hG7Puo0pbXlMkoUPWnCnRt5-CHtogUmhbgseht4HwqY,20
+convertbng-0.7.5.dist-info/METADATA,sha256=dYIbwb29U1CKgsix-9YyUXYSYooV49ZGo45h7DRBqmk,15755
+convertbng/convertbng_p.pxd,sha256=rPypspjs3fYhKT5bMTqkPPPue8xw3pI5-pgywNDDi7Y,819
+convertbng/util.py,sha256=QZSIrZOR0Y1CrXpQ47rm-NOGnf_G4ES4UQ_UnupQc88,7339
+convertbng/__init__.py,sha256=5QI4Jou9L-YJAf_oN9TgRXVKgt_Unc39oADo2Ch8bLI,243
+convertbng/cutil.pyx,sha256=TF9NCDJG726POKaVYwutrg76n6692CwSHzeCWeFZwN0,2815
+convertbng/liblonlat_bng.dylib,sha256=w-AAJU2gq-iQXggLoP2HahB3Z_zS6581XMkz4Jf_x6w,30125552
+convertbng/cutil.cpython-310-darwin.so,sha256=OCImsi-u3eztTPs0P-OnK6CJFkH8_hUzXdlo9Is8NfE,224960
+convertbng/stdbool.h,sha256=Kh3yV7KFb1KFWAI41x-ekYZe4tLiQruhr5YP5jmmBEU,68
