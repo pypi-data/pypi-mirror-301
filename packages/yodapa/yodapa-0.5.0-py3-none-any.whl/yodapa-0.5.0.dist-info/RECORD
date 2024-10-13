@@ -1,0 +1,13 @@
+yodapa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/core/config.py,sha256=9jV0PCmH9dluFltnoYykjF8MOyTtgRKssiI0kOX2Qp8,3671
+yodapa/core/plugin.py,sha256=AmQb0zXTcetrz-02tJdn0_Awm2rr78D1AyG5qZdeP-A,7662
+yodapa/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/plugins/ai.py,sha256=LePjUhUH41YAUhQLKEK_0LO_kEwksa30LX5e1y8AnlQ,4198
+yodapa/plugins/bye.py,sha256=CZx8K3vHONDuz1im35W5R9VTjJaQYOHBUHFn-ve0Vng,294
+yodapa/plugins/hi.py,sha256=B9_PvyLG-RclSCkow4CXQ-XJGz3_84ZHOfWdaTGdklg,279
+yodapa/yoda.py,sha256=lZjr5twBUOmR6Aae9TfMX6B9WmmqGagkncDUez9mhOw,346
+yodapa-0.5.0.dist-info/METADATA,sha256=xbTn_bj7RE32svb9EOh2Ei9nZF7FkeAC2_mDJvkEM9E,4547
+yodapa-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+yodapa-0.5.0.dist-info/entry_points.txt,sha256=TTmxOV7HbwOOF89mPgjchjXEV4Awy9uLydVGrfdY07k,40
+yodapa-0.5.0.dist-info/RECORD,,
