@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: redpepper-common
+Version: 0.0.1
+Summary: A state-based server management system (commmon package)
+Requires-Python: >=3.12
+Requires-Dist: protobuf>=5.28.2
+Requires-Dist: trio>=0.26.2
+Description-Content-Type: text/markdown
+
+# redpepper-common
+
+This package contains the code used by both the RedPepper Manager and Agent.
+For more information, see the [RedPepper repository](https://github.com/merlinz01/redpepper).

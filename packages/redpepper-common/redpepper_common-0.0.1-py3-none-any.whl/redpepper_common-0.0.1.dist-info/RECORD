@@ -1,0 +1,12 @@
+redpepper/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redpepper/common/connection.py,sha256=c9Y3dAmdAtqZzvQAajzMg9dy-5xtTuhNWvdzCdmkls8,7685
+redpepper/common/messages.proto,sha256=lfWqas5xvLFlpjRTPtAX4tWisOX-tveXFCE09zd0jA0,1637
+redpepper/common/messages_pb2.py,sha256=CvI8MRg3OmSOsbKsYNEiRReKTFqaYiAOjEF2pFmx_0s,4407
+redpepper/common/messages_pb2.pyi,sha256=u3XcQqyTCVMK4EY7mVne6hmziavK5CjwHp94oAaGnfM,5888
+redpepper/common/operations.py,sha256=7HIe7VXU-OkHnjBDCf4o-hpEBanS21SUIO85WNO9_vo,3857
+redpepper/common/requests.py,sha256=p19y5VAfmdWoHnYwGrlA3_PNhgQ9LozCzJcPCmrUYXw,113
+redpepper/common/slot.py,sha256=ud58nQ3uJP0rthVlSIdQbURFqgFzN0jwSYUHwDDUbdc,885
+redpepper/common/tls.py,sha256=AFK8_0TzFxbLoA6H3R3H7EEDe9p0jjPnk9E3VFJae6k,1265
+redpepper_common-0.0.1.dist-info/METADATA,sha256=p0vvOzMygUGMykaTwvulg1u3ruMaNANKg2xWwmc2Y1g,442
+redpepper_common-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+redpepper_common-0.0.1.dist-info/RECORD,,
