@@ -1,0 +1,14 @@
+webcode_tk/__init__.py,sha256=cuQRTekRXi9zrvnwHpof_UoREsGpSbp_c05uyydzRjU,1035
+webcode_tk/cascade_tools.py,sha256=YOp0EYxGnElNm79JD48p9kHQDIPRtb9EKBArkNh3mw0,61474
+webcode_tk/color_keywords.py,sha256=cPytV_TsFw3Uflsi6BG3hAYDCmuCPH9E64q2_sYrMJI,11240
+webcode_tk/color_tools.py,sha256=Ezl5XiWUCjNKD51Hv6WPCab794L00xvGzZZhR2OLCyw,33016
+webcode_tk/css_tools.py,sha256=c-J7F4bJTf169XrAfgVEJAcBVFR99ejq9KUqIKLjjfE,82773
+webcode_tk/font_tools.py,sha256=GDb8f4ZeCBNZHuUgzMVwND-ATBWxxSwwQ4lnjuYBn7I,11382
+webcode_tk/html_tools.py,sha256=vWz_sJ8xgSk-ZeyGKQYOsB3ATqnFlDWVcu6k8f8Ys2E,13838
+webcode_tk/sample_report.json,sha256=2aS7bG-SBb0dd7hUTF4oLx9wRM_Y36cBiTSLvGg8O3U,742
+webcode_tk/ux_tools.py,sha256=Fbau520NgMbkrMwDElZv0KLip3PHI3Dpwgg_Wwa8aVA,7897
+webcode_tk/validator_tools.py,sha256=eKmtBLRlmLaz7elfpuFLPOvafzTSwzwIHIifK_KtZbs,9143
+webcode_tk-1.0.0.dist-info/LICENSE.rst,sha256=pQATSvV-waHNcl3zpaU8JGEV51KvC33JoSkt9il8Mss,35430
+webcode_tk-1.0.0.dist-info/METADATA,sha256=81AO73azqphEcsynKipLthZVQb1uhtLJR4kh5JeSB3A,1367
+webcode_tk-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+webcode_tk-1.0.0.dist-info/RECORD,,
