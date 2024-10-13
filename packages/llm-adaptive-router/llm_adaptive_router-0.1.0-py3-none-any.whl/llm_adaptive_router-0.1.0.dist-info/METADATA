@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: llm_adaptive_router
+Version: 0.1.0
+Summary: An adaptive router for LLM model selection
+Project-URL: Homepage, https://github.com/emingenc/llm_adaptive_router
+Project-URL: Bug Tracker, https://github.com/emingenc/llm_adaptive_router/issues
+Author-email: Emin Genc <emingench@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: langchain-community==0.3.1
+Requires-Dist: langchain-core==0.3.8
+Requires-Dist: langchain-openai==0.2.1
+Requires-Dist: langchain-text-splitters==0.3.0
+Requires-Dist: langchain==0.3.1
+Description-Content-Type: text/markdown
+
+# llm_adaptive_router
+llm_adaptive_router: Given the following query and candidate models, selects the most appropriate model
