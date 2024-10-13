@@ -1,0 +1,12 @@
+README.md
+setup.py
+_pyrvs/__init__.py
+_pyrvs/pyrvs.cp310-win_amd64.pyd
+pyrvs/__init__.py
+pyrvs/pyrvs.py
+pyrvs.egg-info/PKG-INFO
+pyrvs.egg-info/SOURCES.txt
+pyrvs.egg-info/dependency_links.txt
+pyrvs.egg-info/not-zip-safe
+pyrvs.egg-info/requires.txt
+pyrvs.egg-info/top_level.txt
