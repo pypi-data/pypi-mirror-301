@@ -1,0 +1,10 @@
+pyconch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyconch/configs.py,sha256=6vQMrST6Kn2clrx4TeQEPwWbm1R279jxLoskHnjk1BQ,253
+pyconch/main.py,sha256=2qB735F1NyU63IfwlsDbWXtuPtt43F-YMNsffyIdYkY,780
+pyconch/static.py,sha256=ba36lhnHdXy_UCL4CdjyRAWTkm_94raEoXXvhjNv_bc,187
+pyconch-0.0.5.dist-info/LICENSE,sha256=iwFQQUu2nh_gHEI7WRLvLBV7tl-cWaV5-HRFz4nZ6B0,1069
+pyconch-0.0.5.dist-info/METADATA,sha256=Jt03-_ja5ciXRoy4KoeomJauAnM0iw9RFDi6r70f9Jk,1308
+pyconch-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyconch-0.0.5.dist-info/entry_points.txt,sha256=Pdo59aQBqLRyL7eh7lZPMFi6IqeZM2awuSBAk2w_qts,56
+pyconch-0.0.5.dist-info/top_level.txt,sha256=e_1CJmHjNTd8JccOhLIB1jho0iFiBs-Kzw6Fsuugu8k,8
+pyconch-0.0.5.dist-info/RECORD,,
