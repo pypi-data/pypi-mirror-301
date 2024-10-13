@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: web3mt
+Version: 0.1.3
+Summary: Web3 multitool
+Home-page: https://github.com/timertimertimer/web3mt
+Author: timertimertimer
+Author-email: timerkhan2002@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiocsv (>=1.3.2,<2.0.0)
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: aioimaplib (>=1.1.0,<2.0.0)
+Requires-Dist: aptos-sdk (>=0.8.6,<0.9.0)
+Requires-Dist: better-proxy (>=1.1.5,<2.0.0)
+Requires-Dist: curl-cffi (>=0.6.2,<0.7.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: web3 (>=7.1.0,<8.0.0)
+Requires-Dist: web3db (>=1.0.5,<2.0.0)
+Project-URL: Repository, https://github.com/timertimertimer/web3mt
+Project-URL: Source, https://github.com/timertimertimer/web3mt
