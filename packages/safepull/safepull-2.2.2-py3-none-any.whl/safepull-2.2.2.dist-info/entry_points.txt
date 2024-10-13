@@ -1,0 +1,3 @@
+[console_scripts]
+safepull=safepull.safepull:run
+
