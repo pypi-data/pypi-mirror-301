@@ -1,0 +1,10 @@
+MDAnalysis>=2.1.0
+numpy
+pandas
+propka==3.1
+
+[test]
+pytest>=6.0
+pytest-xdist>=2.5
+pytest-cov>=3.0
+MDAnalysisTests>=2.1.0
