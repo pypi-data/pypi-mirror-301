@@ -1,0 +1,11 @@
+darq_ui-0.0.0.dist-info/METADATA,sha256=v-PXnWBNFwAFRg6O-6RqQYLraXwCo4qyw6Bbpoue_9U,4205
+darq_ui-0.0.0.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+darq_ui-0.0.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+darq_ui-0.0.0.dist-info/licenses/LICENSE,sha256=FQ6S3zVbvb1NyDLcVCJvdmWYUnSba7Zzex5xwxD92X0,1476
+darq_ui/__init__.py,sha256=7AZwZxkjjjoWQxlnMCvA3N9rUqnb9seSRQAk_iLxjjg,25
+darq_ui/darq.py,sha256=iupjMirQJzZmZDnSEHyM9FDA-9Da32bEtG49aFXgnVI,4821
+darq_ui/handlers.py,sha256=PCAWhr6FW5e-h0tgqrMgk30hueNOWTLmOSwofO-t-FE,3370
+darq_ui/integration/aiohttp.py,sha256=_OHm_auDbdaJTjxOsAKzz44g9wankQ_efaSL4RaBOZw,5197
+darq_ui/integration/fastapi.py,sha256=eyTQMYngXcWwJ6wJowXY8pY550cdhMX6agfSIlNBFME,4730
+darq_ui/utils.py,sha256=Do4BwU7RFnsRMp7o0hYK-JoOgw6Is4YluCzj5D_FAVc,319
+darq_ui-0.0.0.dist-info/RECORD,,
