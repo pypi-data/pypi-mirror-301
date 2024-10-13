@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: BINocular
+Version: 1.1
+Summary: Common Binary Framework
+Author: Brandon Wong
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: typer
+Requires-Dist: pydantic
+Requires-Dist: networkx
+Requires-Dist: checksec-py >=0.7.4
+Requires-Dist: SQLAlchemy
+Requires-Dist: coloredlogs
+Requires-Dist: archinfo
+Requires-Dist: pyvex
+Requires-Dist: GitPython
+Requires-Dist: meson
+Requires-Dist: rzpipe
+Requires-Dist: pyhidra
+Requires-Dist: tree-sitter
+Requires-Dist: tree-sitter-c
+Requires-Dist: requests
+Requires-Dist: IPython
+Requires-Dist: sphinx
+
