@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pytimer/__init__.py
+pytimer/pytimer.py
+pytimer/static.py
+pytimer.egg-info/PKG-INFO
+pytimer.egg-info/SOURCES.txt
+pytimer.egg-info/dependency_links.txt
+pytimer.egg-info/top_level.txt
