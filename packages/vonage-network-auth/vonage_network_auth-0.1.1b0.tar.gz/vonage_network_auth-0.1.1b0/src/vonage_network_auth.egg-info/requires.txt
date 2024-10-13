@@ -1,0 +1,2 @@
+vonage-http-client>=1.4.0
+vonage-utils>=1.1.2
