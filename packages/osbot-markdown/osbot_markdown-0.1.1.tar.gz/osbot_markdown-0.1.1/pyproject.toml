@@ -1,0 +1,18 @@
+[tool.poetry]
+name        = "osbot_markdown"
+version     = "v0.1.1"
+description = "OWASP Security Bot - LLM"
+authors     = ["Dinis Cruz <dinis.cruz@owasp.org>"]
+license     = "MIT"
+readme      = "README.md"
+homepage    = "https://github.com/owasp-sbot/OSBot-Markdown"
+repository  = "https://github.com/owasp-sbot/OSBot-Markdown"
+
+[tool.poetry.dependencies]
+python          = "^3.11"
+osbot-utils     = "*"
+markdown        = "*"
+
+[build-system]
+requires        = ["poetry-core>=1.0.0"]
+build-backend   = "poetry.core.masonry.api"
