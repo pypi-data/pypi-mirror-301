@@ -1,0 +1,15 @@
+source_gcs/__init__.py,sha256=TWDakQfqqKFq9ZXh6XQ4zOw7-msmwIoTYv_sF6J00BY,378
+source_gcs/config.py,sha256=Jrozrmkq64kJroNRmZe5J9OjEYW8MENM4X2Fxn21V7g,1271
+source_gcs/cursor.py,sha256=sq7ROQSRY9c7bp3-3wuLQJVK5maJmtbbs-jUdJB7ciU,3126
+source_gcs/helpers.py,sha256=6X7NZgUJc3c5xr_Rpzn16b9O_TdwidGesaQwQfiZxcw,1299
+source_gcs/legacy_config_transformer.py,sha256=2tkc47h3r-Bj_HWYzLlS2mt7hUYr2Rjd4Pl9965y1cg,1526
+source_gcs/run.py,sha256=yjHNiR8viQF8kf7E75RkGmH2oxn4M5qq4hAvexI4OLs,1793
+source_gcs/source.py,sha256=OHXwyw-WoGTuYYThw9IsoACBXjd7vS6G-Zpk993MhEY,2116
+source_gcs/spec.py,sha256=6caeMzE2kisMRuCrEpKKSdXtlFKbSV9IutS3Mp7wFOs,1188
+source_gcs/stream.py,sha256=RO46Jm_JfqDUW_rbZPA5qw5aNGq1wUJs4XwzhvGxUX0,526
+source_gcs/stream_reader.py,sha256=copGvAxOpyHwJyUxVvYn_6CYbU0NhjQYZ6e7ijnnU40,4845
+source_gcs/zip_helper.py,sha256=trcaBEBnnONcU-YPgscQe5dAxVAHgCeg2ymanxWTmLE,1952
+airbyte_source_gcs-0.7.4.dist-info/METADATA,sha256=HKMjcgNVpSpkUFI4FAhydGwK9Tw5wP_yar0cCizNiVE,5226
+airbyte_source_gcs-0.7.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_gcs-0.7.4.dist-info/entry_points.txt,sha256=oCcvzKPAVtyZnDb3zBB7yi5WNivch_scO2BBmJHJToQ,49
+airbyte_source_gcs-0.7.4.dist-info/RECORD,,
