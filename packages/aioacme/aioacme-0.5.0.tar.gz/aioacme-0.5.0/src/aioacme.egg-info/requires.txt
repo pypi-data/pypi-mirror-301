@@ -1,0 +1,9 @@
+anyio
+httpx
+cryptography
+orjson
+serpyco-rs
+python-dateutil
+
+[:python_version < "3.11"]
+typing-extensions

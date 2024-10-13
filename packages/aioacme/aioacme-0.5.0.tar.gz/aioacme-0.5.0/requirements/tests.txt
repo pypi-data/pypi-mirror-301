@@ -1,0 +1,5 @@
+pytest
+pytest-anyio
+pytest-cov
+lovely-pytest-docker
+trio
