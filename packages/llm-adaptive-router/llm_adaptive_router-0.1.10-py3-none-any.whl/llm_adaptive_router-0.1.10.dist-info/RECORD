@@ -1,0 +1,12 @@
+llm_adaptive_router/__init__.py,sha256=v6rfatGGDVT13rlPU4___1iweCvT2fj-s-ezCcdQj3I,365
+llm_adaptive_router/models.py,sha256=M0n2-EWL1gWY4RIEXi9d8ahz37u7x-i3x-Z0EOxSKEM,1016
+llm_adaptive_router/prompts.py,sha256=xK3pPf_3CgMcC8OZCXk2ZO-FTEAVt3rXYTwpZD916rI,388
+llm_adaptive_router/router.py,sha256=YYgqPw9YQzRQzFRvBO9mt0x57X5GASCBAhHvwrtPC3M,5761
+llm_adaptive_router/utils.py,sha256=YoPjIUdcLN8ylEsd65X0NSxuxQxB5PKFyMjLnwogn6U,538
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_router.py,sha256=RcF82b0oZp7qMT0xvxpHSHnj6MiZW8z6qrIz8IXNTJU,1491
+llm_adaptive_router-0.1.10.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+llm_adaptive_router-0.1.10.dist-info/METADATA,sha256=zvAPiglSvF3Nx040hhgPDsunFyHSODUGQUXZi5-DIgA,5311
+llm_adaptive_router-0.1.10.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+llm_adaptive_router-0.1.10.dist-info/top_level.txt,sha256=mB1N-DUa7q4Q8saCRjLMjwObp3IQQIOQgEBKme2Rol4,26
+llm_adaptive_router-0.1.10.dist-info/RECORD,,
