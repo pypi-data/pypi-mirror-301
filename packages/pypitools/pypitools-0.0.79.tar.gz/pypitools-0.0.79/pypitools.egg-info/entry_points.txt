@@ -1,0 +1,2 @@
+[console_scripts]
+pypitools = pypitools.main:main
