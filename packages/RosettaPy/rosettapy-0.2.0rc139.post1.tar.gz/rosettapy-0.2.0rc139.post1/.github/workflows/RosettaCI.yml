@@ -1,0 +1,59 @@
+name: Test with Rosetta
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/RosettaCI.yml" # monitor the main workflow script.
+      - "src/RosettaPy/app/*"
+      - "tests/cases/*"
+
+    branches:
+      - main
+
+env:
+  conda_env: PROSS
+  ROSETTA_BIN: /usr/local/bin/
+  GITHUB_ROSETTA_TEST: "YES"
+
+jobs:
+  RosettaTests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+
+    runs-on: ${{ matrix.os }}
+
+    env:
+      OS: ${{ matrix.os }}
+
+    container:
+      image: rosettacommons/rosetta:mpi
+
+    defaults:
+      run:
+        shell: bash -el {0}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup RosettaPy on ${{ matrix.os }}
+        run: |
+          apt-get update -y
+          apt-get install build-essential gnupg2 git -y
+          pip install '.[test]' -U
+
+      - name: Run test cases
+        run: |
+          pytest tests/ -m 'integration'
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+          fail_ci_if_error: false
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
