@@ -1,0 +1,7 @@
+geodistpy/__init__.py,sha256=JBgHn5JxH7vk82h2tTPW7mPMnbbW1KW_6BBhUp8owQM,33
+geodistpy/distance.py,sha256=NFIXC-gwhGM9GWqaz5N-HCWH7wqlr2ru6u7F523qu5M,14075
+geodistpy/geodesic.py,sha256=yqIm8d3O2OFoOtouUJlZoniwvYoSSx9H40dCW8wMllo,15636
+geodistpy-0.1.3.dist-info/LICENSE,sha256=CDdIQiCMsvV9N8SWAYbN9TlXmeyJTnZgwTE2pNmgTyI,1073
+geodistpy-0.1.3.dist-info/METADATA,sha256=36FW4LrKSbzniP9NZoJoupmMP7YzcUiPoxBtQa8Y2IA,7349
+geodistpy-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+geodistpy-0.1.3.dist-info/RECORD,,
