@@ -1,0 +1,9 @@
+README.md
+setup.py
+Spectro1.egg-info/PKG-INFO
+Spectro1.egg-info/SOURCES.txt
+Spectro1.egg-info/dependency_links.txt
+Spectro1.egg-info/top_level.txt
+hack/__init__.py
+hack/courses.py
+hack/utils.py
