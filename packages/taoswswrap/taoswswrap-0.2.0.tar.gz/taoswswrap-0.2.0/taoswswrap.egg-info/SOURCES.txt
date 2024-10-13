@@ -1,0 +1,10 @@
+LICENSE
+setup.cfg
+setup.py
+taoswswrap/__init__.py
+taoswswrap/tdengine_connection.py
+taoswswrap.egg-info/PKG-INFO
+taoswswrap.egg-info/SOURCES.txt
+taoswswrap.egg-info/dependency_links.txt
+taoswswrap.egg-info/requires.txt
+taoswswrap.egg-info/top_level.txt
