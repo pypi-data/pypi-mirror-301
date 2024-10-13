@@ -1,0 +1,3 @@
+[console_scripts]
+ssh_m=ssh_manager.main:main
+
