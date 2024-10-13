@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: piroschock_libraru_instruments
+Version: 0.0.1
+Summary: Иновационная библиотека, созданная начинающим программистом Pie-Rise The Sound!
+Home-page: https://t.me/pie_rise_a_channel_8539
+Author: Pie-Rise The Sound
+Author-email: piroschock.riseng.853@internet.ru
+Project-URL: VKontakte, https://vk.com/piroschock.frilance.work
+Project-URL: Telegram Channel, https://t.me/pie_rise_a_channel_8539
+Requires-Python: >=3.8.9
+Requires-Dist: discord
+Requires-Dist: vk_api
+Requires-Dist: tqdm
+Requires-Dist: segno
+
+Приветствую! В данной библиотеке на языке программирования Python вы сможете найти множество различных функций... Благодарю за то-что устанавливаете моё детище.

@@ -1,0 +1,4 @@
+discord
+vk_api
+tqdm
+segno
