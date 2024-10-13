@@ -1,0 +1,2 @@
+[console_scripts]
+pyscrapers = pyscrapers.main:main
