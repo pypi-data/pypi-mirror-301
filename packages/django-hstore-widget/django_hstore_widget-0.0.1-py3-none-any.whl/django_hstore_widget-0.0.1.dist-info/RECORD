@@ -1,0 +1,15 @@
+django_hstore_widget/__init__.py,sha256=kmfHpHo2YhSrigutlRQs8qXIR8nEm-D-c8lScQQN64M,22
+django_hstore_widget/forms.py,sha256=UW5RqEXx2SL0OeTeyuEBHlViFjRut2N7RiMu9JNz4EE,282
+django_hstore_widget/locale/ru/LC_MESSAGES/django.po,sha256=_vWSX75ZHcQHSEc3rZLVUxlSUKrG5Mv0D7mVEdXYQak,1737
+django_hstore_widget/static/admin/js/django_hstore_widget/django-hstore-widget.esm.js,sha256=98rdoDhmWYuqw9SSQufYhhxwGWkxVEF76RO62M5P7mA,502
+django_hstore_widget/static/admin/js/django_hstore_widget/index.esm.js,sha256=RCp_e5TCzbXR8nx5SDsde8C_FWsxwCIwts_P6yZppwQ,38
+django_hstore_widget/static/admin/js/django_hstore_widget/p-d858b589.entry.js,sha256=2cfpLcCLT2BmyCvkIDhjf-tTbfwei5Z47WHhZusrDUQ,3548
+django_hstore_widget/static/admin/js/django_hstore_widget/p-e1255160.js,sha256=XdgzeGPkQCefgMK3ndfUcHziaskJTAw9CJwOXeyp6fI,69
+django_hstore_widget/static/admin/js/django_hstore_widget/p-f350f2d0.js,sha256=0HStSg1VZQHv0iZm6G9ba4q5F_mzoOr8zEe_qWDWAGw,15346
+django_hstore_widget/templates/django_hstore_widget.html,sha256=QCtHWIBfSJxYX-FCb5rlFU7tmzFr3fnTlMES-Hyjrkg,230
+django_hstore_widget/widgets.py,sha256=K1LqxknuGahRQc5Ih3IbffK9ro0muP8DQycNkorvRXQ,1149
+django_hstore_widget-0.0.1.dist-info/LICENSE,sha256=nqihLe6hsjLWOYgeNbBUD4Z4MV68wnBTqdg1m9eK0EA,1056
+django_hstore_widget-0.0.1.dist-info/LICENSE.md,sha256=fO9d4b8MK32hcaX6Ut0E33X-FEp_aEdg794iE5VKiEQ,1071
+django_hstore_widget-0.0.1.dist-info/METADATA,sha256=LfcBIjWgfevh6Qc_3NPZ3TN6mU9hwaQ5jHuyseP2Zf4,2379
+django_hstore_widget-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_hstore_widget-0.0.1.dist-info/RECORD,,
