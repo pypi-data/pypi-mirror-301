@@ -1,0 +1,2 @@
+[console_scripts]
+r2t = r2t.r2t:main
