@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: localstored
+Version: 0.0.1
+Summary: A simple local vector store implementation using numpy
+Project-URL: Homepage, https://github.com/theyashwanthsai/localstored
+Project-URL: Bug Tracker, https://github.com/theyashwanthsai/localstored/issues
+Author-email: Sai Yashwanth <taddishetty34@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "localstored"
+version = "0.0.1"
+authors = [{ name = "Sai Yashwanth", email = "taddishetty34@gmail.com" }]
+description = "A simple local vector store implementation using numpy"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/theyashwanthsai/localstored"
+"Bug Tracker" = "https://github.com/theyashwanthsai/localstored/issues"
