@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: barr4crypt
+Version: 0.2.1
+Summary: A simple rotation-based encryption tool
+Home-page: https://github.com/francool57/barr4encrypt
+Author: Francisco Barreira
+Author-email: franbarreira0@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# barr4crypt
+
+barr4crypt is a simple rotation-based encryption tool that provides a unique way to encrypt text.
+
+## Installation
+
+You can install barr4crypt using pip:
+
+```py
+pip install barr4crypt
+```
+
+## Usage
+
+Here's a quick example of how to use barr4crypt:
+
+```python
+from barr4 import encrypt
+
+# Encrypt a message
+message = "Hello, World!"
+rot_value = 3
+encrypted = encrypt(message, rot=rot_value)
+print(f"Encrypted message: {encrypted}")
+
+string = "Hello, World!"
+verify_string = verify(encrypted, string, rot=3)
+print(verify_string) # Outputs: True
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
