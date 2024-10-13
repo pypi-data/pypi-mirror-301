@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlrose-ky"
+version = "1.1.6"
+description = "MLROSe-ky: Machine Learning, Randomized Optimization and Search"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "BSD-3-Clause" }
+authors = [
+    { name = "Kyle Nakamura", email = "knakamura13dev@gmail.com" }
+]
+maintainers = [
+    { name = "Kyle Nakamura", email = "knakamura13dev@gmail.com" }
+]
+classifiers = [
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "joblib",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy"
+]
+keywords = [
+    "machine learning",
+    "ML",
+    "randomized optimization",
+    "search algorithms",
+    "neural networks",
+    "genetic algorithm",
+    "simulated annealing",
+    "hill climbing",
+    "MIMIC",
+    "Python",
+    "OMSCS",
+    "CS",
+    "7641",
+    "mlrose-hiive",
+    "mlrose-ky"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/knakamura13/mlrose-ky"
+"Issues" = "https://github.com/knakamura13/mlrose-ky/issues"
+"Documentation" = "https://nkapila6.github.io/mlrose-ky/"
+
+[tool.black]
+line-length = 140
+target-version = ['py310', 'py311', 'py312']
+skip_magic_trailing_comma = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mlrose_ky*"]
+
+[tool.coverage.run]
+relative_files = true
