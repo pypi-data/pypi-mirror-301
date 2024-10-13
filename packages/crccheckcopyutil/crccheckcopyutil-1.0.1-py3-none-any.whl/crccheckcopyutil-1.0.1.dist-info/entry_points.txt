@@ -1,0 +1,2 @@
+[console_scripts]
+crccheckcopyutil = crccheckcopyutil.__main__:main
