@@ -1,0 +1,8 @@
+LICENSE
+README.md
+coloriz.py
+pyproject.toml
+coloriz.egg-info/PKG-INFO
+coloriz.egg-info/SOURCES.txt
+coloriz.egg-info/dependency_links.txt
+coloriz.egg-info/top_level.txt

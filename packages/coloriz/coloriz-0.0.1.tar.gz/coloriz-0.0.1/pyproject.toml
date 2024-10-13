@@ -1,0 +1,18 @@
+[project]
+name = "coloriz"
+version = "0.0.1"
+authors = [
+  { name=".qmt" },
+]
+description = "BEAUTYFUL COLOR LIBRARY"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/qmt1/coloriz"
+Issues = "https://github.com/qmt1"

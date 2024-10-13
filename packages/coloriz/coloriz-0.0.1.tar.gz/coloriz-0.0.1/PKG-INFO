@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: coloriz
+Version: 0.0.1
+Summary: BEAUTYFUL COLOR LIBRARY
+Author: .qmt
+Project-URL: Homepage, https://github.com/qmt1/coloriz
+Project-URL: Issues, https://github.com/qmt1
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Coloriz
+ https://pypi.org/project/coloriz
+ https://github.com/qmt1/coloriz
+
+
+
+# USE
+
+# Gradient
+
+```python
+from coloriz import Color
+
+print(Color.gradient(Color.blue_to_red"""
+YOUR ASCII ART
+"""))
+
+```
+
+# Custom
+
+```python
+from coloriz import Color
+
+print(Color.custom("""
+YOUR ASCII ART 
+""",Color.BLUE,Color.MAGENTA))
+
+```
+
+# Basic
+
+```python
+from coloriz import Color
+
+print(Color.RED + 'TEXT')
+
+```
+
+
