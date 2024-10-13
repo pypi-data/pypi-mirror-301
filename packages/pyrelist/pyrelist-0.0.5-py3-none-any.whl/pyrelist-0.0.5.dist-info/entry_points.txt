@@ -1,0 +1,2 @@
+[console_scripts]
+pyrelist = pyrelist.main:main

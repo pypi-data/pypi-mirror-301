@@ -1,0 +1,12 @@
+pyrelist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrelist/configs.py,sha256=eczinH62qKx8WNVWraX7pH6T_w1jJHXRu6nLvn3fnic,308
+pyrelist/main.py,sha256=vcQidEBR-BdQwFtjaaxRR_imn5lU69ssYtvuYdwiaUw,1372
+pyrelist/python.py,sha256=HIsyQN1Jd5BlG4QimdV4v21l_mST-9_BTARP_4erEHo,1376
+pyrelist/static.py,sha256=jV67Snt4tFVekkZq2YS87INpKoblyKdSK_R_eTITjuU,210
+pyrelist/utils.py,sha256=DF53jUGw9XA7zNJwYdsc9lDwX2ZUTA9AHyFM7ucM9xw,4574
+pyrelist-0.0.5.dist-info/LICENSE,sha256=56W8uvJDhRsP42Ce8XXr1xbqv9fShH6vVbtrGepra6Q,1069
+pyrelist-0.0.5.dist-info/METADATA,sha256=2EFYf2uAZTFz0_sPGPWqhV8_4iKMzSeqvOISYwYk53U,1283
+pyrelist-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyrelist-0.0.5.dist-info/entry_points.txt,sha256=k5OwbztPwiiuQKYv11ocJfjJd_1kT9cKsBlU49RCEJA,48
+pyrelist-0.0.5.dist-info/top_level.txt,sha256=XCq19qiepQusmoNfcn42e9G5gHB_VM60SUu8r3JkjXE,9
+pyrelist-0.0.5.dist-info/RECORD,,

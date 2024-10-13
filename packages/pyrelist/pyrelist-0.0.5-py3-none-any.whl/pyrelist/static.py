@@ -1,0 +1,5 @@
+""" version which can be consumed from within the module """
+VERSION_STR = "0.0.5"
+DESCRIPTION = "Pyrelist helps you match a file against multiple regex patterns"
+APP_NAME = "pyrelist"
+LOGGER_NAME = "pyrelist"
