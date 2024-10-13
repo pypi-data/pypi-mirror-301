@@ -1,0 +1,3 @@
+[console_scripts]
+r2t = r2t.r2t:main
+r2t-gui = r2t_gui:main
