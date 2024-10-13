@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/bezier_simplex.py,sha256=5CfuaJxSv-8dUcDGA_oLCBwoVL90qIgQlqrOKqhr9K4,3134
+tests/control_points.py,sha256=cUmncw9vQ9zza87yGqErbchKYUVPJkbaCKfJAqOBFCE,3468
+tests/validator.py,sha256=uy7niW3VuARMvdxX57mu_-xMwCcA7XhajlDN3YdzYEk,3700
+torch_bsf/__init__.py,sha256=kSZZk6O0kp-khSiwpRQvWG7XeaOnnREtTPmQV0rVjYM,236
+torch_bsf/__main__.py,sha256=oy3mI8WUl4-CsrxEhmFkYuxMEDMDTQ5XA5cYVjVBxf8,3362
+torch_bsf/bezier_simplex.py,sha256=Sg-PwkIRc0VDIPumHrQqLkohUTnGMnNQdEudgZyjXrQ,24982
+torch_bsf/control_points.py,sha256=GJ00-GMv2y9myIAQjQWzVTYTKmx2nGuXOVeb57cmyok,5306
+torch_bsf/validator.py,sha256=CJDuBktmYKt87rDiROKjNwFdJjdfKoNEUAFT97zzgiE,3496
+torch_bsf/model_selection/__init__.py,sha256=j3XySDN4lK7uD13dDDg9nvJMFDhxmG3-bxqSCVZ2fHo,135
+torch_bsf/model_selection/elastic_net_grid.py,sha256=hX2vTAKLIaFAYIkxHOVNT5Y2E-sGPEvwZz4AXPXC2h8,6655
+torch_bsf/model_selection/kfold.py,sha256=jokTFKba0fVdwXBSbKwIytYNAtQkKbmhAX6LjSdHlsU,4133
+pytorch_bsf-0.9.0.dist-info/LICENSE,sha256=T60WEK4CNG0-J8bPiS081qJQPadhUhtFRbbemSHdkNk,1082
+pytorch_bsf-0.9.0.dist-info/METADATA,sha256=sSOjsDCoKVw74LJmoHMT3mYPHAEB7zb9Sgg7VX-xs4w,14752
+pytorch_bsf-0.9.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytorch_bsf-0.9.0.dist-info/top_level.txt,sha256=MQlyHTv2_bpEG91Kj2oAGj5FRIwUv10UW4G7RA64E6o,16
+pytorch_bsf-0.9.0.dist-info/RECORD,,
