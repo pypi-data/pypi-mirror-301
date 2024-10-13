@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pyeventsummary/__init__.py
+pyeventsummary/pyeventsummary.py
+pyeventsummary/static.py
+pyeventsummary.egg-info/PKG-INFO
+pyeventsummary.egg-info/SOURCES.txt
+pyeventsummary.egg-info/dependency_links.txt
+pyeventsummary.egg-info/top_level.txt
