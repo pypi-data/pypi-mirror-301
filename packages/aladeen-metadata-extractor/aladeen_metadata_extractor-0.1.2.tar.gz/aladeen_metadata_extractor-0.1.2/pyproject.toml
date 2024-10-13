@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aladeen-metadata-extractor"
+version = "0.1.2"
+description = "A package for extracting metadata from news articles"
+authors = ["Irakli Janiashvili <irakli.janiashvili@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "aladeen_metadata_extractor" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+anthropic = "^0.36.0"
+openai = "^1.51.2"
+jsonschema = "^4.23.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+pydantic = "^2.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
