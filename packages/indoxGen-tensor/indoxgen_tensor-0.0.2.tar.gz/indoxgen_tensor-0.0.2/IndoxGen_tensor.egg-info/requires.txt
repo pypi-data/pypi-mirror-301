@@ -1,0 +1,8 @@
+dython
+libs
+numpy
+pandas
+scikit_learn
+scipy
+setuptools
+tensorflow
