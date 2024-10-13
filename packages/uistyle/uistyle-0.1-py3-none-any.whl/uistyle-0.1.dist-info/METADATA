@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: uistyle
+Version: 0.1
+Summary: A beautiful console UI system For discord tools
+Home-page: https://github.com/vivekxd669/myconsoleui
+Author: ravan
+Author-email: ravanxd739@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: loguru
+Requires-Dist: pyfiglet
+Requires-Dist: rich
+
+```python
+from ui import MyConsoleUI
+ui = MyConsoleUI()
+
+ui.list_fonts()
+ui.banner("slant", text_color="cyan", border_color="bright_cyan", name="UI STYLE")
+ui.show_time()
+ui.uptime()
+ui.log_message("info", "This is an informational message.")
+ui.log_message("error", "This is an error message.")
+ui.log_message("debug", "This is a debug message.")
+ui.log_message("warning", "this is a warning message")
+# Example of creating a custom table
+headers = ["ID", "Name", "Status"]
+data = [
+        [1, "Alice", "Active"],
+        [2, "Bob", "Inactive"],
+        [3, "Charlie", "Active"]
+    ]
+ui.create_custom_table(headers, data)
+```
