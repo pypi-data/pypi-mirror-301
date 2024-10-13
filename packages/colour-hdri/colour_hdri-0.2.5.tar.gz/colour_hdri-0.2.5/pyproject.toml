@@ -1,0 +1,238 @@
+[project]
+name = "colour-hdri"
+version = "0.2.5"
+description = "HDRI processing algorithms for Python"
+readme = "README.rst"
+requires-python = ">=3.10,<3.14"
+authors = [
+    { name = "Colour Developers", email = "colour-developers@colour-science.org" },
+]
+maintainers = [
+    { name = "Colour Developers", email = "colour-developers@colour-science.org" }
+]
+license = { text = "BSD-3-Clause" }
+keywords = [
+    "color",
+    "color-science",
+    "color-space",
+    "color-spaces",
+    "colorspace",
+    "colorspaces",
+    "colour",
+    "colour-science",
+    "colour-space",
+    "colour-spaces",
+    "colourspace",
+    "colourspaces",
+    "hdr",
+    "hdr-image",
+    "hdri",
+    "hdri-image",
+    "python",
+    "raw",
+    "tone-mapping",
+    "tonemapping"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development"
+]
+dependencies = [
+    "colour-science>=0.4.4",
+    "imageio>=2,<3",
+    "numpy>=1.24,<3",
+    "scipy>=1.10,<2",
+    "typing-extensions>=4,<5",
+]
+
+[project.optional-dependencies]
+optional = [
+    "colour-demosaicing>=0.2.4",
+    "matplotlib>=3.7",
+]
+docs = [
+    "biblib-simple",
+    "pydata-sphinx-theme",
+    "restructuredtext-lint",
+    "sphinx",
+    "sphinxcontrib-bibtex",
+]
+
+[project.urls]
+Homepage = "https://www.colour-science.org"
+Documentation = "https://colour-hdri.readthedocs.org"
+Repository = "https://github.com/colour-science/colour-hdri"
+Issues = "https://github.com/colour-science/colour-hdri/issues"
+Changelog = "https://github.com/colour-science/colour-hdri/releases"
+
+[tool.uv]
+package = true
+dev-dependencies = [
+    "coverage",
+    "coveralls",
+    "hatch",
+    "invoke",
+    "jupyter",
+    "pre-commit",
+    "pyright",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+    "toml",
+    "twine",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [ "colour_hdri" ]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "colour_hdri/resources/colour-hdri-examples-datasets/*",
+    "colour_hdri/resources/colour-hdri-examples-datasets/frobisher_001/*",
+    "colour_hdri/resources/colour-hdri-examples-datasets/radiance/*",
+    "colour_hdri/resources/colour-hdri-examples-datasets/unity_001/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/colour_hdri/calibration/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/colour_hdri/generation/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/colour_hdri/process/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/colour_hdri/recovery/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/colour_hdri/sampling/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/frobisher_001/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/frobisher_001/*",
+    "colour_hdri/resources/colour-hdri-tests-datasets/unity_001/*",
+]
+
+[tool.codespell]
+skip = "BIBLIOGRAPHY.bib,CONTRIBUTORS.rst,*.ipynb"
+
+[tool.flynt]
+line_length=999
+
+[tool.isort]
+ensure_newline_before_comments = true
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 88
+multi_line_output = 3
+skip_glob = ["colour_hdri/**/__init__.py"]
+split_on_trailing_comma = true
+use_parentheses = true
+
+[tool.pyright]
+reportMissingImports = false
+reportMissingModuleSource = false
+reportUnboundVariable = false
+reportUnnecessaryCast = true
+reportUnnecessaryTypeIgnoreComment = true
+reportUnsupportedDunderAll = false
+reportUnusedExpression = false
+
+[tool.pytest.ini_options]
+addopts = "--durations=5"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 88
+select = [
+    "A", # flake8-builtins
+    "ARG", # flake8-unused-arguments
+    # "ANN", # flake8-annotations
+    "B", # flake8-bugbear
+    # "BLE", # flake8-blind-except
+    "C4", # flake8-comprehensions
+    # "C90", # mccabe
+    # "COM", # flake8-commas
+    "DTZ", # flake8-datetimez
+    "D", # pydocstyle
+    "E", # pydocstyle
+    # "ERA", # eradicate
+    # "EM", # flake8-errmsg
+    "EXE", # flake8-executable
+    "F", # flake8
+    # "FBT", # flake8-boolean-trap
+    "G", # flake8-logging-format
+    "I", # isort
+    "ICN", # flake8-import-conventions
+    "INP", # flake8-no-pep420
+    "ISC", # flake8-implicit-str-concat
+    "N", # pep8-naming
+    # "PD", # pandas-vet
+    "PIE", # flake8-pie
+    "PGH", # pygrep-hooks
+    "PL", # pylint
+    # "PT", # flake8-pytest-style
+    # "PTH", # flake8-use-pathlib [Enable]
+    "Q", # flake8-quotes
+    "RET", # flake8-return
+    "RUF", # Ruff
+    "S", # flake8-bandit
+    "SIM", # flake8-simplify
+    "T10", # flake8-debugger
+    "T20", # flake8-print
+    # "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "TRY", # tryceratops
+    "UP", # pyupgrade
+    "W", # pydocstyle
+    "YTT" # flake8-2020
+]
+ignore = [
+    "B008",
+    "B905",
+    "D104",
+    "D200",
+    "D202",
+    "D205",
+    "D301",
+    "D400",
+    "I001",
+    "N801",
+    "N802",
+    "N803",
+    "N806",
+    "N813",
+    "N815",
+    "N816",
+    "PGH003",
+    "PIE804",
+    "PLE0605",
+    "PLR0911",
+    "PLR0912",
+    "PLR0913",
+    "PLR0915",
+    "PLR2004",
+    "RET504",
+    "RET505",
+    "RET506",
+    "RET507",
+    "RET508",
+    "TRY003",
+    "TRY300",
+]
+typing-modules = ["colour.hints"]
+fixable = ["B", "C", "E", "F", "PIE", "RUF", "SIM", "UP", "W"]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.per-file-ignores]
+"colour_hdri/examples/*" = ["INP", "T201", "T203"]
+"docs/*" = ["INP"]
+"tasks.py" = ["INP"]
+"test_*" = ["S101"]
+"utilities/*" = ["EXE001", "INP"]
+"utilities/unicode_to_ascii.py" = ["RUF001"]
+
+[tool.ruff.format]
+docstring-code-format = true
