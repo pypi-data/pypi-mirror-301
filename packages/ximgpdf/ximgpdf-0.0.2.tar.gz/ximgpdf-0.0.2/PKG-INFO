@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: ximgpdf
+Version: 0.0.2
+Summary: Extract images from pdf
+Project-URL: Documentation, https://github.com/paqira/ximgpdf
+Project-URL: Issues, https://github.com/paqira/ximgpdf/issues
+Project-URL: Source, https://github.com/paqira/ximgpdf
+Author-email: Kentaro Tatsumi <paqira.2019@gmail.com>
+License: MIT
+License-File: LICENSE.txt
+Keywords: image,jpeg,pdf,png
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: click>=8.0.0
+Requires-Dist: pymupdf>=1.0.0
+Description-Content-Type: text/markdown
+
+# ximgpdf
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ximgpdf?logo=PyPI&label=PyPI)](https://pypi.org/project/ximgpdf/)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?logo=Python&label=Python&&tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fpaqira%2Fximgpdf%2Fmain%2Fpyproject.toml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/paqira/ximgpdf/ci.yaml?logo=GitHub)
+![PyPI - License](https://img.shields.io/pypi/l/ximgpdf)
+
+CLI that extracts images from pdf.
+
+## Installation
+
+```shell
+pipx install ximgpdf
+```
+
+## Usage
+
+```shell
+ximgpdf -o output a.pdf b.pdf
+```
+
+## Licence
+
+MIT
