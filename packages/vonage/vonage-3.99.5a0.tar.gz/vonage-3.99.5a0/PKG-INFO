@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: vonage
+Version: 3.99.5a0
+Summary: Python Server SDK for using Vonage APIs
+Author-email: Vonage <devrel@vonage.com>
+Project-URL: homepage, https://github.com/Vonage/vonage-python-sdk
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: vonage-utils>=1.1.3
+Requires-Dist: vonage-http-client>=1.4.1
+Requires-Dist: vonage-account>=1.0.1
+Requires-Dist: vonage-application>=1.0.2
+Requires-Dist: vonage-messages>=1.2.1
+Requires-Dist: vonage-number-insight>=1.0.1
+Requires-Dist: vonage-numbers>=1.0.1
+Requires-Dist: vonage-sms>=1.1.2
+Requires-Dist: vonage-subaccounts>=1.0.2
+Requires-Dist: vonage-users>=1.1.3
+Requires-Dist: vonage-verify>=1.1.2
+Requires-Dist: vonage-verify-v2>=1.1.3
+Requires-Dist: vonage-video>=1.0.0
+Requires-Dist: vonage-voice>=1.0.4

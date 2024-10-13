@@ -1,0 +1,14 @@
+vonage-utils>=1.1.3
+vonage-http-client>=1.4.1
+vonage-account>=1.0.1
+vonage-application>=1.0.2
+vonage-messages>=1.2.1
+vonage-number-insight>=1.0.1
+vonage-numbers>=1.0.1
+vonage-sms>=1.1.2
+vonage-subaccounts>=1.0.2
+vonage-users>=1.1.3
+vonage-verify>=1.1.2
+vonage-verify-v2>=1.1.3
+vonage-video>=1.0.0
+vonage-voice>=1.0.4
