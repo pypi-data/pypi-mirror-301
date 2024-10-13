@@ -1,0 +1,12 @@
+ailia_voice/LICENSE_AILIA_EN.pdf,sha256=1DzVViPnw1uAS8gJ5a8uN3iZNNR5I1ItIXmezHfUpeM,70149
+ailia_voice/LICENSE_AILIA_JA.pdf,sha256=s628QN47S2bNqIfuSjm2LBf0vIluv2df6MSemn6Ksmw,174134
+ailia_voice/__init__.py,sha256=A9MMnLOfBzMiAz54PKJvPBMmuF8ayX8d3RV-MFZC3h8,19968
+ailia_voice/linux/arm64-v8a/libailia_voice.so,sha256=t5YybPvt7pIs58bFSPAC1a8mAkwNrIVHJJq1j7K3jxY,1527064
+ailia_voice/linux/x64/libailia_voice.so,sha256=jANgk_OoeU2s2DqUUz3JRvuJ6kc3pPqyyNiRT7QQM4U,1583872
+ailia_voice/mac/libailia_voice.dylib,sha256=SEqovN9yq1T6rOmdnLcJgvDjSxtfzn0Xd5sR4kxGfdg,2263976
+ailia_voice/windows/x64/ailia_voice.dll,sha256=P9eSvz0eq3JylJGNHMWTtYTaRNYq6qFwwcP3BhkvAgI,944640
+ailia_voice-1.1.1.0.data/scripts/__init__.py,sha256=A9MMnLOfBzMiAz54PKJvPBMmuF8ayX8d3RV-MFZC3h8,19968
+ailia_voice-1.1.1.0.dist-info/METADATA,sha256=ySwGn2y3ynu53LNbXsnTnjbZvX5VAvdjQ2bNJpGPeO4,2466
+ailia_voice-1.1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ailia_voice-1.1.1.0.dist-info/top_level.txt,sha256=m8R9Bs0cFJW7Gsy9Id0Vg9D5zC0fdJW_L_oBshj9bmY,12
+ailia_voice-1.1.1.0.dist-info/RECORD,,
