@@ -1,0 +1,10 @@
+LICENSE
+README.md
+repos.py
+setup.py
+student_repos_handler.egg-info/PKG-INFO
+student_repos_handler.egg-info/SOURCES.txt
+student_repos_handler.egg-info/dependency_links.txt
+student_repos_handler.egg-info/entry_points.txt
+student_repos_handler.egg-info/requires.txt
+student_repos_handler.egg-info/top_level.txt

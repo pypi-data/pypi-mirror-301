@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: student-repos-handler
+Version: 2.3.1
+Summary: Simple tool to handle multiple repos at once, oriented to the grading of assignments in UCSE DAR
+Home-page: https://github.com/fisadev/student-repos-handler
+Author: Juan Pedro Fisanotti
+Author-email: fisadev@gmail.com
+License: LICENSE.txt
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.4
+License-File: LICENSE
+
+# Student-repos-handler
+
+Simple tool to handle multiple repos at once, oriented to the grading of assignments in UCSE DAR.
+
+
+# Installation
+
+```
+pip3 install student-repos-handler --user
+```
+
+# Usage
+
+Run `repos` to get the help on the available commands.
