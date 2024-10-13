@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_cut.py
+winzy_cut/__init__.py
+winzy_cut.egg-info/PKG-INFO
+winzy_cut.egg-info/SOURCES.txt
+winzy_cut.egg-info/dependency_links.txt
+winzy_cut.egg-info/entry_points.txt
+winzy_cut.egg-info/requires.txt
+winzy_cut.egg-info/top_level.txt
