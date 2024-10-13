@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: updatefromgit
+Version: 0.0.1
+Summary: Update Fabric Workspace From Git Repo using A user with Email And Password
+Author: Muhammad Samy
+Author-email: muhssamy@gmail.com
+Keywords: python,updatefromgit
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: msal
+
+# Description
+
+Update Fabric Workspace From Git Repo using A user with Email And Password
