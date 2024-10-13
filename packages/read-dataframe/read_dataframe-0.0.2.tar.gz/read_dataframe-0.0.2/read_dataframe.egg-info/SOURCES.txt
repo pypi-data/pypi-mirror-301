@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+read_dataframe/__init__.py
+read_dataframe/rdf.py
+read_dataframe.egg-info/PKG-INFO
+read_dataframe.egg-info/SOURCES.txt
+read_dataframe.egg-info/dependency_links.txt
+read_dataframe.egg-info/entry_points.txt
+read_dataframe.egg-info/requires.txt
+read_dataframe.egg-info/top_level.txt
