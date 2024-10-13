@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: promptflow_typed_llm
+Version: 0.0.9
+Summary: Package for Promptflow tool that sends typed LLM requests
+Home-page: https://github.com/tanya-borisova/promptflow-typed-llm-tool
+Author: Tanya Borisova
+Author-email: tanyatik@yandex.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: promptflow >=1.15.0
+Requires-Dist: promptflow[azure] >=1.15.0
+Requires-Dist: promptflow-tools >=1.4.0
+
