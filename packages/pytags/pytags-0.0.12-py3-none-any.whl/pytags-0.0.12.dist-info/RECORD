@@ -1,0 +1,14 @@
+pytags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytags/cmdline.py,sha256=nx3I4NCeojDXaWVoNgmHukT5_baWaQuDJTwEQ1iufoE,3449
+pytags/config.py,sha256=Kpd2fvnpnM63KUSvg5vt7JFrceRZV3sfRpyOyOhssTY,947
+pytags/mgr.py,sha256=dGFG3Aq5jHc32Fe9N-SG0nJ2S1pTiDqZHeV9_kuVjjc,9577
+pytags/static.py,sha256=9wp9Z1KZiLgFW9jtpICLMsqHot024q4crp9tNfcrkzo,198
+pytags/tagger.py,sha256=gYCDOMNDlngYdM32nJZshbThkULvtM0hynsRsD3GZLo,151
+pytags/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytags/utils/boot.py,sha256=c5h1T88a3_ZJ82-UBAbuZiiQb5uu_Gnp4hq8EoFxK5o,332
+pytags-0.0.12.dist-info/LICENSE,sha256=m8orowLHGW1U6Yqs6LejfeZnQvZHkF8EfYQJRlqYua0,1069
+pytags-0.0.12.dist-info/METADATA,sha256=7eeW_bQOI_c4gVyA_RbBlu57PF1jZmhruYIwjMPpEsE,1378
+pytags-0.0.12.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytags-0.0.12.dist-info/entry_points.txt,sha256=ivGL82NspW0jp3KQHq712I32CUwVfs3qs9ft9XNa-Gc,46
+pytags-0.0.12.dist-info/top_level.txt,sha256=r2IbprSG8QQcPxYTcosqwD5XLRyDvSOslOCArfN4-Wk,7
+pytags-0.0.12.dist-info/RECORD,,
