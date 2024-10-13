@@ -1,0 +1,2 @@
+[console_scripts]
+nd_vq_vae = nd_vq_vae.__main__:main
