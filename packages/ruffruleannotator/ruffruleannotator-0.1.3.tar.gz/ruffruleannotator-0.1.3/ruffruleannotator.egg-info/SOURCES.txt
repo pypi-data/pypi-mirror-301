@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+ruffruleannotator/__init__.py
+ruffruleannotator/main.py
+ruffruleannotator/ruffruleannotator.py
+ruffruleannotator/rulesets.py
+ruffruleannotator.egg-info/PKG-INFO
+ruffruleannotator.egg-info/SOURCES.txt
+ruffruleannotator.egg-info/dependency_links.txt
+ruffruleannotator.egg-info/entry_points.txt
+ruffruleannotator.egg-info/requires.txt
+ruffruleannotator.egg-info/top_level.txt
+test/test_complex_pyproject.py
+test/test_simple_pyproject.py
