@@ -1,0 +1,9 @@
+kahoot/__init__.py,sha256=p06tZyBv1aBrSOfpK2rh3YigQo7gIUksb-PuQaAB8BM,345
+kahoot/client.py,sha256=0d-9TdUsZXoQui2jEO4GGjA4B9vsscrLQQzCur2kzF0,5398
+kahoot/constants.py,sha256=GZF_uTlG5QL49PjWJOcc8Ed0EHJe-QdCAvqTje7Z2Tg,128
+kahoot/exceptions.py,sha256=dzOjURN2YVP_VFT20ppzI7RZ1ZmCbsE8WLmKTuWA13M,200
+kahoot-1.0.3.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+kahoot-1.0.3.dist-info/METADATA,sha256=-zyJGDbD7yOvBhLvKrzpH0sl4Tpth0Il0U_fdn3g778,4419
+kahoot-1.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+kahoot-1.0.3.dist-info/top_level.txt,sha256=JFbEgR3-ClPZqrU2dPNRzCmb5bLPJasfm2zsm647Jdo,7
+kahoot-1.0.3.dist-info/RECORD,,
