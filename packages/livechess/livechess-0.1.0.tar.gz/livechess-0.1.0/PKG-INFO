@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: livechess
+Version: 0.1.0
+Summary: Command line utility to assist liveboard operators
+Author: Sernin van de Krol
+Author-email: serninpc@paneidos.net
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: chess (>=1.10.0,<2.0.0)
+Requires-Dist: more-itertools (>=10.4.0,<11.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: typer[all] (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Command line utility for DGT LiveChess
+
+This CLI utility is meant to assist with your broadcast.
+
+## Global Options
+
+As all commands require communication with DGT LiveChess, a global option `--host` is provided as well as an environment variable `LIVECHESS_HOST`.
+The option takes precedence over the environment variable.
+
+## Commands
+
++---------+-------------+
+| Command | Description |
++---------+-------------+
+| tournaments | List tournaments in LiveChess |
+| tournament | Show current games in a tournament |
+| eboards | List known e-boards in LiveChess |
+| events | Show list of events requiring operator attention |
+| watch | Check for events requiring operator attention, with notification option |
++---------+-------------+
+
+### tournaments
+
+List all tournaments.
+
+### tournament
+
+Show games in acive rounds of the specified tournament.
+
+### eboards
+
+Show all eboards.
+Options:
+
+```
+--state=(ACTIVE|INACTIVE)
+```
+
+Example:
+```
+livechess eboards --state=ACTIVE
+```
+
+### events
+
+List events requiring operator attention.
+
+### watch
+
+Watch for events requiring operator attention.
+Each event is printed with a timestamp of its first occurance.
+
+Options:
+```
+--ntfy CHANNEL|URL   # Specify a ntfy.sh channel/URL as notification target
+--[no-]ignore-start  # Ignore events present when starting the command
+```
