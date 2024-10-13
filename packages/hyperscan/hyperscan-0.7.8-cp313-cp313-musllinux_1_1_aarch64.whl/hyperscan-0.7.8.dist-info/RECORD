@@ -1,0 +1,13 @@
+.gitignore,sha256=zbyuFRBda3geYggTx5x-hodA1OnMU85vX8u8Ejh630s,2
+hyperscan-0.7.8.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+hyperscan-0.7.8.dist-info/RECORD,,
+hyperscan-0.7.8.dist-info/METADATA,sha256=gPLhSfgdoBS1WLEJImW_XYX6wLgfkc4Xryhbmqz0i9Y,4295
+hyperscan-0.7.8.dist-info/WHEEL,sha256=E_zSucXrg7OqN_X7V2AqxWPQzzYJt_8BvrVLfYVH7V4,112
+hyperscan-0.7.8.dist-info/licenses/LICENSE,sha256=yvm4yRI_IxT-4iZOEl1Nx9I0Dm0JbAbmHt8OmKopiUA,1070
+hyperscan.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+hyperscan.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
+hyperscan/_version.py,sha256=uC8wB9mRblQ0jUBAOUyCQLUQJ39MC2xybVLB_8ZsevU,22
+hyperscan/__init__.py,sha256=7K6TqKtjZkzNQDRFYAq_zh4ZaOYfGMblDaeQcE1y7gk,370
+hyperscan/_ext.cpython-313-aarch64-linux-musl.so,sha256=tp-RD2kD0qjgfkPldLd1leprOUprgLJrpNmIT-l4R8M,5230273
+hyperscan/_ext.pyi,sha256=KJNXRSOXCNAmYpr-CfSMEzdYqRI-YZ2vfK96CHfdVBE,10590
+hyperscan/hyperscanmodule.c,sha256=dgD2oDu4KgumzGrDsJazARPitMDBTGDvbPuqXxLhCes,46994
