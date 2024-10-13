@@ -1,0 +1,11 @@
+image_editor/__init__.py,sha256=gIM7_RGo-l0XmjUIfIr0MzOeZnRhFnYJ3n_Sw1rpl3g,158
+image_editor/drawing_img.py,sha256=jejdPwZD6_Oks6w0jWfBqJhxtqFSEx17xoW8ayA5CqU,4059
+image_editor/effects.py,sha256=0vZoc0f4Tnw4lB006y6U2aKZucIhIna_vl-65m77eX0,1002
+image_editor/transformations.py,sha256=d_BBrKLTcetM-nCx9wIF8feW2xQnxqWVRLFfWrRnuY0,749
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_drawing_img.py,sha256=LShxHQ9PUZJmdB_jh3M2-8VM9d2W56yKXLgNhmOquNo,1783
+image_editor-0.1.dist-info/LICENSE,sha256=Km3E6oc4lYFP5CVSroPbGujXC7oUxjUinc5sQvmFbz8,1117
+image_editor-0.1.dist-info/METADATA,sha256=763G8XmvhSMnyMkOmsimFeQVurIZWcmPxsPpLUihLcE,2155
+image_editor-0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+image_editor-0.1.dist-info/top_level.txt,sha256=SuXP3tBOV7kRda4Sn3bE6oE8NY9snSGYNHhe3Qvbd1c,19
+image_editor-0.1.dist-info/RECORD,,
