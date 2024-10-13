@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: insiders
+Version: 1.0.0
+Summary: Manage your Insiders projects.
+Author-Email: =?utf-8?q?Timoth=C3=A9e_Mazzucotelli?= <dev@pawamoy.fr>
+License: ISC
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://pawamoy.github.io/insiders
+Project-URL: Documentation, https://pawamoy.github.io/insiders
+Project-URL: Changelog, https://pawamoy.github.io/insiders/changelog
+Project-URL: Repository, https://github.com/pawamoy/insiders-project
+Project-URL: Issues, https://github.com/pawamoy/insiders-project/issues
+Project-URL: Discussions, https://github.com/pawamoy/insiders-project/discussions
+Project-URL: Gitter, https://gitter.im/insiders/community
+Project-URL: Funding, https://github.com/sponsors/pawamoy
+Requires-Python: >=3.10
+Requires-Dist: build>=1.0
+Requires-Dist: cappa>=0.8
+Requires-Dist: copier>=8.3
+Requires-Dist: copier-templates-extensions>=0.3
+Requires-Dist: loguru>=0.7
+Requires-Dist: pypi-insiders>=0.0
+Requires-Dist: twine>=4.0
+Description-Content-Type: text/markdown
+
+# insiders
+
+[![ci](https://github.com/pawamoy/insiders-project/workflows/ci/badge.svg)](https://github.com/pawamoy/insiders-project/actions?query=workflow%3Aci)
+[![documentation](https://img.shields.io/badge/docs-mkdocs-708FCC.svg?style=flat)](https://pawamoy.github.io/insiders-project/)
+[![pypi version](https://img.shields.io/pypi/v/insiders.svg)](https://pypi.org/project/insiders/)
+[![gitpod](https://img.shields.io/badge/gitpod-workspace-708FCC.svg?style=flat)](https://gitpod.io/#https://github.com/pawamoy/insiders-project)
+[![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#insiders-project:gitter.im)
+
+Manage your Insiders projects.
+
+## Installation
+
+```bash
+pip install insiders
+```
+
+With [`uv`](https://docs.astral.sh/uv/):
+
+```bash
+uv tool install insiders
+```
