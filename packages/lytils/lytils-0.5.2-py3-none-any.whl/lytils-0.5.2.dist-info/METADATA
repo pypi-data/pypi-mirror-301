@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lytils
+Version: 0.5.2
+Summary: Python utilities. Pytils was taken.
+License: Apache 2.0
+Author: GGLionCross
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: bs4
+Provides-Extra: google-sheets
+Provides-Extra: log-html
+Requires-Dist: airium (>=0.2.6,<0.3.0) ; extra == "log-html"
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0) ; extra == "bs4"
+Requires-Dist: gspread (>=6.1.2,<7.0.0) ; extra == "google-sheets"
+Requires-Dist: gspread-formatting (>=1.2.0,<2.0.0) ; extra == "google-sheets"
+Requires-Dist: pandas (>=2.2.2,<3.0.0) ; extra == "google-sheets"
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Lytils
+Python utilities. Pytils was taken.
+
+# To discover unittests in python, use the following command:
+python3 -m unittest discover -s tests -p "test_*.py"
+
