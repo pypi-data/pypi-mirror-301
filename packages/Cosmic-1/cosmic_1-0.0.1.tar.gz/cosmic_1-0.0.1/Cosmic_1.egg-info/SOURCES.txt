@@ -1,0 +1,9 @@
+README.md
+setup.py
+Cosmic/__init__.py
+Cosmic/uwulogger.py
+Cosmic_1.egg-info/PKG-INFO
+Cosmic_1.egg-info/SOURCES.txt
+Cosmic_1.egg-info/dependency_links.txt
+Cosmic_1.egg-info/requires.txt
+Cosmic_1.egg-info/top_level.txt
