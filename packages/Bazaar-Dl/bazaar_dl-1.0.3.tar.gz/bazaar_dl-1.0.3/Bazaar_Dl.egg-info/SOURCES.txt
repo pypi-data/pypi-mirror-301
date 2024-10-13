@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Bazaar_Dl.egg-info/PKG-INFO
+Bazaar_Dl.egg-info/SOURCES.txt
+Bazaar_Dl.egg-info/dependency_links.txt
+Bazaar_Dl.egg-info/requires.txt
+Bazaar_Dl.egg-info/top_level.txt
+bazaar_dl/__init__.py
+bazaar_dl/bazaar_dl.py
