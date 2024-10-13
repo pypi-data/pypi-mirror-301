@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+image_editor/__init__.py
+image_editor/drawing_img.py
+image_editor/effects.py
+image_editor/transformations.py
+image_editor.egg-info/PKG-INFO
+image_editor.egg-info/SOURCES.txt
+image_editor.egg-info/dependency_links.txt
+image_editor.egg-info/requires.txt
+image_editor.egg-info/top_level.txt
+tests/__init__.py
+tests/test_drawing_img.py
