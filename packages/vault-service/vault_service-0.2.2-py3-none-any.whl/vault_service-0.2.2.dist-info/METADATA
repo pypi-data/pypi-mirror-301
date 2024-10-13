@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vault-service
+Version: 0.2.2
+Summary: A reusable FastAPI vault utility service for other projects to use hashicorp vault
+Author: Ankush Bansal
+Author-email: ankush.bansal@asato.ai
+Requires-Python: >=3.11
+License-File: LICENSE.txt
+Requires-Dist: fastapi>=0.114.0
+Requires-Dist: hvac>=2.3.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pydantic>=2.9.1
+
