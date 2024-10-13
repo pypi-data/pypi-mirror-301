@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pybookmarks/__init__.py
+pybookmarks/main.py
+pybookmarks/static.py
+pybookmarks/utils.py
+pybookmarks.egg-info/PKG-INFO
+pybookmarks.egg-info/SOURCES.txt
+pybookmarks.egg-info/dependency_links.txt
+pybookmarks.egg-info/entry_points.txt
+pybookmarks.egg-info/top_level.txt
