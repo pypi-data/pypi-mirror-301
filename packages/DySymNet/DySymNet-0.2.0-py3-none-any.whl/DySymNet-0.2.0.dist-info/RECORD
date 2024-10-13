@@ -1,0 +1,15 @@
+DySymNet/SymbolicRegression.py,sha256=7Z97vv_6gWh7L6pdUK20PXLP-p7r5SVDHBK4Zys5OJ8,31449
+DySymNet/__init__.py,sha256=2QbWIL7LDvJzdPP6ibSOo__YPSlutlWMZay567oQAVA,18
+DySymNet/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DySymNet/scripts/controller.py,sha256=JsWcExzYRacn4SKBAtprM8txHrcDxJ2XnIBm4xgLwVs,6431
+DySymNet/scripts/functions.py,sha256=9B2qcSkFr3Ta8UM-B5_kcEZuiTtc2WMNY5uPwHzz03o,6388
+DySymNet/scripts/params.py,sha256=HBcSolwQ8AwI2JP4h3_OuPpnsGAlTAvjWb4x32b8YzE,2525
+DySymNet/scripts/pretty_print.py,sha256=P6BuSRFRtTDNQUwBc-k1BGFMXSo0f78uYdMV0d5a_Ig,6011
+DySymNet/scripts/regularization.py,sha256=C_2y4hfifTcowN7DvdSGENtwbyAL8Rvo-55htsAlBg0,1185
+DySymNet/scripts/symbolic_network.py,sha256=g4rpaUlsy_5ZmbNqvgh6k08wECZ8UwEl8tmUDOSlVCY,11689
+DySymNet/scripts/utils.py,sha256=s4s01Owo4n-vCP3cU13KQk-6KeLAUbGwBRCUAZlHbko,2035
+DySymNet-0.2.0.dist-info/LICENSE,sha256=wMkAf-hQVz2ZYY8fQBKE2qcLFdSDvnEM6yely7Y1W88,1071
+DySymNet-0.2.0.dist-info/METADATA,sha256=sa-EeXl8rVNGGZPs11m8JapWZcFDMGM9jcpinfIpSsI,10243
+DySymNet-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+DySymNet-0.2.0.dist-info/top_level.txt,sha256=JB4oQGQD-JjZTBahtdDLpXnncAqTliChimTEDyDf-cE,9
+DySymNet-0.2.0.dist-info/RECORD,,
