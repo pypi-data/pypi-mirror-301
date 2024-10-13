@@ -1,0 +1,2 @@
+[console_scripts]
+juicydir = juicydir.juicydir:main
