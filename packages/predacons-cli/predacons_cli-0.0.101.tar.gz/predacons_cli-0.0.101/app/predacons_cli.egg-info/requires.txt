@@ -1,0 +1,11 @@
+predacons>=0.0.126
+rich>=13.7.1
+langchain_community>=0.3.2
+langchain>=0.3.3
+requests>=2.32.3
+beautifulsoup4>=4.12.3
+googlesearch-python>=1.2.5
+
+[dev]
+pytest>=7.0
+twine>=4.0.2
