@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+HUST_PPS/__init__.py
+HUST_PPS/horner.py
+HUST_PPS/mocNoiSuy.py
+HUST_PPS/noiSuyLagrange.py
+HUST_PPS/noiSuyNewton.py
+HUST_PPS/utils.py
+HUST_PPS.egg-info/PKG-INFO
+HUST_PPS.egg-info/SOURCES.txt
+HUST_PPS.egg-info/dependency_links.txt
+HUST_PPS.egg-info/requires.txt
+HUST_PPS.egg-info/top_level.txt
