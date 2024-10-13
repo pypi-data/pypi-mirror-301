@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: path_predicate
+Version: 0.0.1
+Summary: Python path predication.
+Home-page: https://github.com/ChenyangGao/web-mount-packs/tree/main/python-module/path_predicate
+License: MIT
+Keywords: path,predicate,predication
+Author: ChenyangGao
+Author-email: wosiwujm@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: path_ignore_pattern
+Project-URL: Repository, https://github.com/ChenyangGao/web-mount-packs/tree/main/python-module/path_predicate
+Description-Content-Type: text/markdown
+
+# Python path predication.
+
+## Installation
+
+You can install from [pypi](https://pypi.org/project/path_predicate/)
+
+```console
+pip install -U path_predicate
+```
+
+## Usage
+
+```python
+import path_predicate
+```
+
