@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "configcalc"
+version = "0.1.1"
+description = "The purpose is to offer config files functionality with calculations that can be specified"
+authors = ["Raphael Proux <raphaelproux@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyparsing = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
