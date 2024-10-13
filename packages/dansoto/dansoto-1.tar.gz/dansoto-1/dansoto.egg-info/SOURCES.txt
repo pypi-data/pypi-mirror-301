@@ -1,0 +1,8 @@
+README.md
+setup.py
+dansoto/__init__.py
+dansoto/isPrime.py
+dansoto.egg-info/PKG-INFO
+dansoto.egg-info/SOURCES.txt
+dansoto.egg-info/dependency_links.txt
+dansoto.egg-info/top_level.txt

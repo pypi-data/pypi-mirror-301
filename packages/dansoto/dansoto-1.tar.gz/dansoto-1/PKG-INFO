@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: dansoto
+Version: 1
+Summary: Números primos
+Home-page: https://github.com/tu_usuario/mi_libreria
+Author: Daniel Soto
+Author-email: dansoto804@gmail,com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# dansoto
+
+Una pequeÃ±a librerÃ­a con la funciÃ³n `isPrime` para verificar si un nÃºmero es primo.
+
+## InstalaciÃ³n
+
+Instala la librerÃ­a con pip:
+
+```bash
+pip install dansoto
+```
+## Uso
+FunciÃ³n: isPrime(n)
+Verifica si un nÃºmero es primo.
+
+python
+Copiar cÃ³digo
+from dansoto import isPrime
+
+# Ejemplo de uso
+```python
+print(isPrime(7))  # True
+print(isPrime(10)) # False
+```
+
+## ParÃ¡metros
+n (int): NÃºmero a verificar.
+
+Retorna:
+True si el nÃºmero es primo.
+False en caso contrario.
