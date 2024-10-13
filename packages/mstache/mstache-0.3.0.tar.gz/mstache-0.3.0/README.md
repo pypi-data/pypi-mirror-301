@@ -1,0 +1,127 @@
+# mstache
+
+Mustache for Python.
+
+Documentation: [mstache.readthedocs.io](https://mstache.readthedocs.io)
+
+## License
+
+[MIT License](./LICENSE)
+
+## Installation
+
+```python
+pip install mstache
+```
+
+## Usage
+
+Python:
+
+```python
+import mstache
+
+print(mstache.render('Hello {{v}}', {'v': 'World!'}))
+# Hello World!
+```
+
+Command line:
+
+```sh
+$ mstache -j data.json -o output.html template.mustache
+```
+
+## Highlights
+
+- The fastest pure-python Mustache implementation to this date.
+- High [mustache.js](https://github.com/janl/mustache.js) compatibility.
+- Fully spec compliant up to [Mustache v1.4.2](https://github.com/mustache/spec/releases/tag/v1.4.2),
+  including lambda extension (opt-in).
+- Support for [chevron](https://github.com/kholmogorov27/chevron)-style lambdas (opt-out)
+- Command line interface.
+- Small codebase, efficiently rendering to `str` or `bytes`, buffered or stream.
+- Fully customizable behavior for caching, property getter, partial resolver,
+  stringification, escaping, chevron lambda render and mustache block line
+  trimming.
+- Support for binary templates (`bytes` and `keep_lines` option).
+- No dynamic code generation, both jit and transpiler friendly.
+
+## Considerations
+
+For inter-compatibility with JavaScript (especially [mustache.js](https://github.com/janl/mustache.js),
+to enable client-side rendering the same templates), **mstache** must behave
+somewhat atypically for a `Python` template engine:
+
+- Mustache blocks stick to JavaScript truthyness:
+  - Empty mappings (such as `dict`) are unconditionally truthy.
+  - `NaN`/`-NaN` are falsy.
+- Mustache blocks do not iterate mappings nor strings.
+- Sized collections, excluding mappings, will expose a virtual `length` property,
+  customizable via `getter` parameter.
+- Mapping keys containing dot (`.`) or whitespace (` `) are unreachable
+  (common property limitation), customizable via `getter` parameter.
+- Sequence elements are accessible by positive index in the same way mapping
+  integer-keyed items are also accessible when no string key conflicts, as
+  properties (JavaScript `Object` emulation), customizable via `getter` parameter.
+
+An special consideration about the Mustache spec: **mstache** currently passes
+most [mustache spec](https://github.com/mustache/spec) tests (plus optional lambdas)
+[but one](https://github.com/mustache/spec/blob/66f078e0d534515d8df23d0d3764dccda74e042b/specs/interpolation.yml#L198-L204)
+to ensure [mustache.js](https://github.com/janl/mustache.js) compatibility.
+
+## Syntax
+
+Check out the [mustache(5) manual](https://mustache.github.io/mustache.5.html).
+
+For quick reference, here is a quick overview of the Mustache syntax.
+
+Template (`template.mustache`):
+```handlebars
+{{!comment}}
+<ul>
+{{#object}}<li>{{property}}</li>{{/object}}
+{{^object}}<li>As <b>object</b> is truthy, this won't be shown</li>{{/object}}
+{{^null}}<li><b>null</b> is falsy</li>{{/null}}
+{{#array}}<li>{{property}}</li>
+{{/array}}
+{{^array}}<li>Array isn't empty, this won't be shown.</li>{{/array}}
+{{#empty_array}}<li>Empty Array, this won't be shown</li>{{/empty_array}}
+{{^empty_array}}<li>empty_array is empty</li>{{/empty_array}}
+{{&unescaped_html}}
+</ul>
+```
+
+Data (`data.json`):
+```json
+{
+  "object": {
+    "property": "Object property value"
+  },
+  "null": null,
+  "array": [
+    {"property": "Array item1 property"},
+    {"property": "Array item2 property"},
+    {"property": "Array item3 property"}
+  ],
+  "empty_array": [],
+  "unescaped_html": "<li>this is unescaped html</li>"
+}
+```
+
+Command:
+```sh
+$ mstache -j data.json -o output.html template.mustache
+```
+
+Output:
+```html
+<ul>
+<li>Object property value</li>
+<li><b>null</b> is falsy</li>
+<li>Array item1 property</li>
+<li>Array item2 property</li>
+<li>Array item3 property</li>
+<li>empty_array is empty</li>
+<li>this is unescaped html</li>
+</ul>
+```
