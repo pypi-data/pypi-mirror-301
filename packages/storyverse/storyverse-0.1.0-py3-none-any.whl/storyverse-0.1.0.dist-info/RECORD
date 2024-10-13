@@ -1,0 +1,10 @@
+storyverse/__init__.py,sha256=2CrHMwF_g_4aM6t9Ujm-N4ANwZ8lNag0h0-BKBGF_5A,199
+storyverse/branch_manager.py,sha256=aATx1k_nNxkGCWdmrpqtLi-BqCLtmKy8QAeNRrdnXNo,497
+storyverse/commit_store.py,sha256=6q2FDINrVRQ06wgQD6UPLudxvRE2LlpG7GurxcQXdl0,1108
+storyverse/content_store.py,sha256=_C1rTfBmBXjxBmIDnQywoHXDMowVu4vdM6R7YOfXz-Q,472
+storyverse/version_control.py,sha256=P6_1pXX1FIwn2-ZLL5BM8HCdRTbYGDSX0S_9K4eaMPc,1529
+storyverse-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+storyverse-0.1.0.dist-info/METADATA,sha256=ZcAZINf6RrvOGRCGYa1Z3n-zCmzB8nwKI1zmpC2qXwA,1189
+storyverse-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+storyverse-0.1.0.dist-info/top_level.txt,sha256=3eAfG7imWRMlRK72AmUI9HzgGn6pFvqTQxi401ZPeLc,11
+storyverse-0.1.0.dist-info/RECORD,,
