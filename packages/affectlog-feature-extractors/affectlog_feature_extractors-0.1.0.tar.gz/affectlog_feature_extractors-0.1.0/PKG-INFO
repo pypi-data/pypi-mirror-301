@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: affectlog_feature_extractors
+Version: 0.1.0
+Summary: AffectLog NLP Feature Extractors
+Home-page: https://github.com/affectlog/trustworthy-ai-widgets
+Author: AL360°
+Author-email: developer@affectlog.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: datasets
+Requires-Dist: negspacy>=1.0.0
+Requires-Dist: numpy>=1.17.2
+Requires-Dist: sentencepiece
+Requires-Dist: spacy
+Requires-Dist: tqdm
+Requires-Dist: affectlog_utils>=0.4.2
+
+# NLP Feature Extractors SDK for Python
+
+### This package has been tested with Python 3.7, 3.8 and 3.9
+
+The NLP Feature Extractors project enables the tabular components in the RAI tools to be applied to Natural Language Processing (NLP)
+tasks on unstructured text.
+
+Please see the main documentation website:
+https://trustworthyaitoolbox.ai/
+
+The open source code can be found here:
+https://github.com/affectlog/trustworthy-ai-widgets
