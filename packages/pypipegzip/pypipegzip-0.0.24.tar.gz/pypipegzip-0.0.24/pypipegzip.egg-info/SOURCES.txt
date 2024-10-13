@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pypipegzip/__init__.py
+pypipegzip/pypipegzip.py
+pypipegzip/static.py
+pypipegzip.egg-info/PKG-INFO
+pypipegzip.egg-info/SOURCES.txt
+pypipegzip.egg-info/dependency_links.txt
+pypipegzip.egg-info/top_level.txt
