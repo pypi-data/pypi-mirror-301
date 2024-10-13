@@ -1,0 +1,11 @@
+vonage_numbers/__init__.py,sha256=9y-gWK66-4FxhLjRWN4T4wynxlW87ORwUcbCImZQpT0,624
+vonage_numbers/_version.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+vonage_numbers/enums.py,sha256=bAKWbjYYR9NOdwmDVcy1Cid6ahFhRPiEGhPLDzl0j3k,428
+vonage_numbers/errors.py,sha256=yXu9ctyULgTFGf6ZWgz7P58J_LN4N5g_W17snzQ4ocM,138
+vonage_numbers/number_management.py,sha256=_ChffROgHSnTgbLkvOEocu3YmNXE-QKPv8L9wAYgJdw,5808
+vonage_numbers/requests.py,sha256=uSWtezvoRgA7G_tUODJN0Q_afY7ZG8ts8-JC6T-MVII,7263
+vonage_numbers/responses.py,sha256=nt0D6GhVBHqJRi3jB9ZqRwjXWE_VT7X6obKRykxjNv4,2811
+vonage_numbers-1.0.1.dist-info/METADATA,sha256=qcI67rk2Ub1CNBzGjF3x4DyPzPysh3zSjTgOYk8K1P0,2752
+vonage_numbers-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vonage_numbers-1.0.1.dist-info/top_level.txt,sha256=WgqF246tKdcOBoIIDJB-lWcw5ecVoaQfsDGoQpxrcSk,15
+vonage_numbers-1.0.1.dist-info/RECORD,,
