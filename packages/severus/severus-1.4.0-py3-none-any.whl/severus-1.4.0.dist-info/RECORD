@@ -1,0 +1,12 @@
+severus/__init__.py,sha256=9BdYvLpGCXIx-McAQyIaa4Obr19zmOlewwmxjHeMIK8,52
+severus/__version__.py,sha256=8UhoYEXHs1Oai7BW_ExBmuwWnRI-yMG_u1fQAXMizHQ,22
+severus/apis.py,sha256=SG1-EBCmEi2uoXEjQfPtRP0PDpweaJohZnlbm0HXWnU,743
+severus/ctx.py,sha256=a_3B50MLvgRjLkucPTKMdxrqTfpLV_t0oWCPMdKueYs,1024
+severus/datastructures.py,sha256=k6NXfn7egbrqMm37K3MqhUeoNmmcHtxdmQS6LouVbgo,2272
+severus/language.py,sha256=kU6AAKbd4OdS-z9qcqpvyiYPE4UgTZuUowteUw1FKX0,3485
+severus/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+severus/translator.py,sha256=5yHTaDwLuFVg8oCDrPyT3rSKLSav8GQ5eDUfcCVnAYQ,3141
+severus-1.4.0.dist-info/METADATA,sha256=9rqoTJtcMUzJd_7P4fItBk-h_a7I7df2ccIb-BR66Gg,1886
+severus-1.4.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+severus-1.4.0.dist-info/licenses/LICENSE,sha256=__gHsn7hyvVMoMNswGOcrTuZ3ph1dnlGA5YnPQZWxiM,1486
+severus-1.4.0.dist-info/RECORD,,
