@@ -1,0 +1,17 @@
+code_star_cli/__init__.py,sha256=txj616-TdOq_EcT4Yz4D2eht3lBtNhxbXiWcTF8yuNQ,1490
+code_star_cli/__main__.py,sha256=8vQSTOmd03H_aRS0Vc_g_44mJtNqEIwRjRQpiv5I7EI,258
+code_star_cli/commands/__init__.py,sha256=K7mVg2268BrtsoQBeHAOAX7K6O-AVw9thvIvBOMZ1cs,524
+code_star_cli/commands/ai.py,sha256=NixW6XWU2wOIUD3GtL-1rzU4MLLueg8XgGoWkM8tMaQ,2044
+code_star_cli/commands/chat.py,sha256=gfSEcAKmUS3DtIQxbBX-vfihv0vEV-GWd7HhuJko2ZQ,3129
+code_star_cli/commands/completions.py,sha256=KihUONDfTIx-_TS_TchpscqazcbSoh7K6vuTIust5Dc,1806
+code_star_cli/commands/document.py,sha256=yhA4v3CCjitQ538dsLleE_AjBh9VZyZql-6ESHP6iQ0,2281
+code_star_cli/commands/enhance.py,sha256=Y74MotqFkx-4XrPTI0harvBO_bcrMIKECC9hscLZM1M,2175
+code_star_cli/commands/review.py,sha256=ARPxdI0ZO6GscoIvEXPIHUQOhHUcuxFnB2QL0AJqCXA,2100
+code_star_cli/commands/scan.py,sha256=4SmYmdIjmFugJyaBKKItCX2ps6UirdfOHlugLLkWDmQ,1996
+code_star_cli/commands/test.py,sha256=RwwvS9698w2IwPhHLpnv5M75S27iRgyF33ZRZRaJcXI,2188
+code_star_cli/main.py,sha256=IFaugqTS-4Bohwn4vCVXXPWV66Df9sy6O9uL-LgL6Js,419
+code_star_cli-0.2.2.dist-info/LICENSE,sha256=Zo5PuaTrrV44clxzVw37PRU85t-nEerih6lzEp4N9AU,1074
+code_star_cli-0.2.2.dist-info/METADATA,sha256=aP3jJ_uB7GPV1IBogSiD2NX7RRidbHGXSTpS_qc_mXU,5466
+code_star_cli-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+code_star_cli-0.2.2.dist-info/entry_points.txt,sha256=dLbktV0b8AmIQG4o178NMMpzIGCxq-ZCb-Fsxnor5fE,58
+code_star_cli-0.2.2.dist-info/RECORD,,
