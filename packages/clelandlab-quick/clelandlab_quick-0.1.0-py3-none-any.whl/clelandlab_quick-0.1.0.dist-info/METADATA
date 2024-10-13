@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: clelandlab-quick
+Version: 0.1.0
+Summary: QuICK is a useful wrap of QICK.
+Home-page: https://github.com/clelandlab/quick
+Author: Cleland Lab
+Author-email: clelandlab@proton.me
+Project-URL: Source, https://github.com/clelandlab/quick
+Project-URL: Documentation, https://clelandlab-quick.readthedocs.io/en/latest/
+Project-URL: Tracker, https://github.com/clelandlab/quick/issues
+Keywords: QICK,quantum,experiment,measurement,qubit,control,readout,fpga
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: qick ==0.2.200
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Requires-Dist: pyro4
+Requires-Dist: matplotlib
+Requires-Dist: ipython
+
+# QuICK
+
+`quick` is a useful wrap of QICK.
+
+<a href="https://clelandlab-quick.readthedocs.io/en/latest/"><img src="https://readthedocs.org/projects/clelandlab-quick/badge/?version=latest&style=for-the-badge"></a>
+
+## Layers
+
+`quick` has several layers of complexity.
+
+- `quick.auto` Automation of Qubit Measurements
+- `quick.experiment` Experiment Routines for Qubit Measurements
+- `quick.Mercator` Mercator Protocol for Pulse Sequence Program
+- `qick` the QICK firmware
+
+![](https://clelandlab-quick.readthedocs.io/en/latest/Images/overview.png)
