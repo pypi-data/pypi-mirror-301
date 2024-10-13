@@ -1,0 +1,14 @@
+pyexiv2/__init__.py,sha256=Z6AAvMytyHGIh-XeEeG9EuGB0Q189IC8ZEaTdOhy1Yc,673
+pyexiv2/convert.py,sha256=v85knys93V1oFH-hZE1CH0QxuPMEdmaDxNtWfU48o50,5693
+pyexiv2/core.py,sha256=qiz02VLAD-2ff999zeOFykAyEiZv1spNGE61YY1WQzA,7945
+pyexiv2/reference.py,sha256=cPpptV0F1rDiZug-9FNxCVbbe8uA-JRogxzKEQdOdW0,1010
+pyexiv2/lib/README.md,sha256=szQ4fTZlTUQf4DnRUmbMIYzRVjjqqK3PQ-avB1rysxc,4773
+pyexiv2/lib/__init__.py,sha256=vYx53TpCloLDju7c_mIMDwgfCl_yS9DbQh_O5izvn_Q,1404
+pyexiv2/lib/exiv2api.cpp,sha256=RtJf2dO0YVhCSWXKwN3lKK7c6aYafhO6gdJ6vTNTuKU,25010
+pyexiv2/lib/libexiv2.dylib,sha256=1gAA_L7UOhhqQG9yzdNZOqnSO1HdsXcJaFqdMpOIuKs,3679256
+pyexiv2/lib/py3.10-darwin/exiv2api.so,sha256=tj1bsEKNk9LCPMbK2Q-A6dVLUx_QZhi06V2vAJsKz5w,368584
+pyexiv2-2.15.2.dist-info/LICENSE,sha256=20myHU8CPzDyGKa_Dgizx5A5gDXazWU2Eb2WQVNi2yk,34570
+pyexiv2-2.15.2.dist-info/METADATA,sha256=BTOH8L5xDrOhEXBi8sOcnj_cAOM0sNPybt5aZ4NrBKw,3060
+pyexiv2-2.15.2.dist-info/WHEEL,sha256=e9nysw0Ri0SNi4v8tGnYm3c473aNn3kqzpBpcjWLSIE,108
+pyexiv2-2.15.2.dist-info/top_level.txt,sha256=HaLtNjoeNJpwp2LdljiW4rvUxlCy_zvbPve-1Xnl3Us,8
+pyexiv2-2.15.2.dist-info/RECORD,,
