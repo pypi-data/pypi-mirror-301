@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools >= 64", "setuptools_scm >= 8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nxvalidate"
+dynamic = ["version"]
+description = "A Python package for validating NeXus files"
+readme = "README.md"
+license = {file = "COPYING"}
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+keywords = ["data format", "HDF5", "neutron scattering", "x-ray scattering"]
+requires-python = ">=3.8"
+dependencies = [
+  "nexusformat",
+  "importlib_resources; python_version <= '3.9'"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/nexpy/nxvalidate.git"
+Issues = "https://github.com/nexpy/nxvalidate/issues"
+
+[project.scripts]
+nxinspect = "nxvalidate.scripts.nxinspect:main"
+
+[tool.setuptools.package-data]
+"nxvalidate.definitions.applications" = ["*.nxdl.xml"]
+"nxvalidate.definitions.base_classes" = ["*.nxdl.xml"]
+"nxvalidate.examples" = ["*.nxs", "*.h5"]
+
+[tool.setuptools_scm]
+version_file = "src/nxvalidate/_version.py"
