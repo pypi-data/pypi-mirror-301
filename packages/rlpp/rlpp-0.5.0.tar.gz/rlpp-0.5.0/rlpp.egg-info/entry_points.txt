@@ -1,0 +1,2 @@
+[console_scripts]
+rlpp_designer = rlpp.rlpp_designer:main
