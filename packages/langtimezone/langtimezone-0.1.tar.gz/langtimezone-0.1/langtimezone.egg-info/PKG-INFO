@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: langtimezone
+Version: 0.1
+Summary: A Python library for extracting language and timezone based on country code.
+Home-page: https://github.com/yourusername/langtimezone
+Author: Amir Bargahi
+Author-email: lightdevs666@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytz
+Requires-Dist: lxml
+Requires-Dist: phonenumbers
+
+# LangTimezone
+
+LangTimezone is a Python library to extract language and timezone based on country code.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install langtimezone
+```
+
+#How to Use
+Here's a simple example of how to use the LanguageTimezoneExtractor class to get the language and timezone based on a country code:
+
+```python
+from langtimezone import LanguageTimezoneExtractor
+
+# Create an instance of the extractor
+extractor = LanguageTimezoneExtractor()
+
+# Get language and timezone for a given country code
+result = extractor.get_language_and_timezone(98)  # 98 is the country code for Iran
+
+# Print the results
+print(f"Language Code: {result['lang_code']}")
+print(f"System Language Code: {result['system_lang_code']}")
+print(f"Timezone: {result['timezone']}")
+```
