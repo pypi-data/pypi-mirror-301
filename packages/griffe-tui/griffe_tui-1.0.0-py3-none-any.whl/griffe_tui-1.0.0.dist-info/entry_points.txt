@@ -1,0 +1,5 @@
+[console_scripts]
+griffe-tui = griffe_tui.cli:main
+
+[gui_scripts]
+
