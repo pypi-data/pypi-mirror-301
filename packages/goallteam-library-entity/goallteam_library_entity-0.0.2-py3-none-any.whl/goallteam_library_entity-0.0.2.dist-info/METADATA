@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: goallteam_library_entity
+Version: 0.0.2
+Summary: Libreria de entidades para goallteam
+Home-page: https://github.com/Go-All-Team/library-entity.git
+Author: goallteam
+Author-email: kenan249@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: sqlalchemy
+
