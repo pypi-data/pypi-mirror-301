@@ -1,0 +1,2 @@
+[console_scripts]
+tensorkiko = tensorkiko.visualize:main
