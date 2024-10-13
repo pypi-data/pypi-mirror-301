@@ -1,0 +1,12 @@
+edgar/__init__.py,sha256=czSHwM_YjrYdOc6Qx_9k2-Xl_sj1cirh1dSSlpEMvlc,388
+edgar/company.py,sha256=A91U6H2G0UxZ1VkFCg481wP57chCdKeTTxg2-jNyOKI,8559
+edgar/document.py,sha256=LZgBnPx1ycJ7yfWz_8GrjR4x1SdRfinlxK7rMtJNNJA,1349
+edgar/edgar.py,sha256=7xnrgvDgX_eINFXQ5jQaWEl_7z2OeL4sfvHQJXZZ_Lo,5362
+edgar/txtml.py,sha256=6FEy_oP0EN0hHo3d6Lra4kNdS3l2nM15X6LRv_4isAc,1176
+edgar/utils.py,sha256=9SMDBG-4EX7opHEu8QirSgI3RssniSQ4Tezoeu-8RZs,1421
+edgar/xbrl.py,sha256=WmvfXUKUqEYYknCrQfgRV0_nh2Zc89LknTLXkEAzo-M,4833
+edgar-5.6.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+edgar-5.6.2.dist-info/METADATA,sha256=bp2tUYnw7xzLZGFUukqoRSH-3xAw-YvfJb0AUSn7_xE,6908
+edgar-5.6.2.dist-info/WHEEL,sha256=pL8R0wFFS65tNSRnaOVrsw9EOkOqxLrlUPenUYnJKNo,91
+edgar-5.6.2.dist-info/top_level.txt,sha256=KpsFP160hlYF5vykvY6J55qJ6cCtBp_9YtfYwD4uvzY,6
+edgar-5.6.2.dist-info/RECORD,,
