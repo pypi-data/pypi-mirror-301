@@ -1,0 +1,11 @@
+octotail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octotail/browser.py,sha256=6DgRqLKw_7df_OpJ8wW4xVY09y_Wl9BRVuGHifPdZ5k,6168
+octotail/gh.py,sha256=lXC9Q3Y5w4yiWmf_gCceUrmmBZ_MOmS1XsSZMi9g9Jo,2725
+octotail/main.py,sha256=JtbWHBjd92bGS4N77kBGVYUsMnOxWTXu2IZIXXoqZBU,4633
+octotail/mitm.py,sha256=G2rSg2LtYJbFuNfbBjXTXAaOhMTHRmD_ULBI4QiogwM,3493
+octotail/streamer.py,sha256=H0CvBLoHIhD_Vwy8uyHjijP21kscHDN6dUYusJDwmaY,1858
+octotail/utils.py,sha256=UsauZJp7Pq7ykzV8wgW8Fq2JBsNxSW0ytZ7WeGY26GI,3659
+octotail-1.0.3.dist-info/METADATA,sha256=1CJ_93_laafan6raE0WiQYMYsN-LwpFvWWcXKLTVXSQ,5505
+octotail-1.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+octotail-1.0.3.dist-info/entry_points.txt,sha256=isuI0P9xDDSXYGpud5qTRAnU-0GiM_4sOZ8_d0rjv1A,48
+octotail-1.0.3.dist-info/RECORD,,
