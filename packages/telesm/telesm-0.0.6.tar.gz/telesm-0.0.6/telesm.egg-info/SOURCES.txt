@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+telesm/__init__.py
+telesm/__main__.py
+telesm/db.py
+telesm/main.py
+telesm.egg-info/PKG-INFO
+telesm.egg-info/SOURCES.txt
+telesm.egg-info/dependency_links.txt
+telesm.egg-info/entry_points.txt
+telesm.egg-info/requires.txt
+telesm.egg-info/top_level.txt
