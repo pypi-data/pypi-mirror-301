@@ -1,0 +1,16 @@
+darq_ui-0.0.1rc3.dist-info/METADATA,sha256=kCRs4FNhP2lfwljvLBhZaQRE2Wp-cxoyPGS0iugdR1M,4208
+darq_ui-0.0.1rc3.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+darq_ui-0.0.1rc3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+darq_ui-0.0.1rc3.dist-info/licenses/LICENSE,sha256=FQ6S3zVbvb1NyDLcVCJvdmWYUnSba7Zzex5xwxD92X0,1476
+darq_ui/__init__.py,sha256=7zYU-7kR88lUHsClIsoclOQtr2pU7dqsEXUpaTgUu8A,25
+darq_ui/darq.py,sha256=iupjMirQJzZmZDnSEHyM9FDA-9Da32bEtG49aFXgnVI,4821
+darq_ui/handlers.py,sha256=PCAWhr6FW5e-h0tgqrMgk30hueNOWTLmOSwofO-t-FE,3370
+darq_ui/integration/aiohttp.py,sha256=_OHm_auDbdaJTjxOsAKzz44g9wankQ_efaSL4RaBOZw,5197
+darq_ui/integration/fastapi.py,sha256=eyTQMYngXcWwJ6wJowXY8pY550cdhMX6agfSIlNBFME,4730
+darq_ui/static/assets/favicon-BSE-TIUP.ico,sha256=HQadWbSdLyCPJJB-ku0zcr0Y11KWBOb89U173bzpc24,15406
+darq_ui/static/assets/index-2d_vQyRa.css,sha256=pKh-bdEc0QDidj_iq6EF5BM5mxrVwOH5Lo7lJaBuQlw,85
+darq_ui/static/assets/index-By-asDAH.js,sha256=TVFm05P5z9_29c05yOxslqGT1-EtU7oJzkOQngV_WPo,10460
+darq_ui/static/assets/vendor-zFT11HkH.js,sha256=MMH-AeqTPKQDlBxxu0vLhuf1dxpdzDKepiIV92VkD68,984648
+darq_ui/static/index.html,sha256=35hxaQ-ZlgI8OhN4hynAm5m89fkcM_BgNuJmhdxEICs,1611
+darq_ui/utils.py,sha256=Do4BwU7RFnsRMp7o0hYK-JoOgw6Is4YluCzj5D_FAVc,319
+darq_ui-0.0.1rc3.dist-info/RECORD,,
