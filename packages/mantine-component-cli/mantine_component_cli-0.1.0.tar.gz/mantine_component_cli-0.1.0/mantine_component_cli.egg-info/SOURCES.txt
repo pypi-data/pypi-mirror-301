@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mantine_component_cli.egg-info/PKG-INFO
+mantine_component_cli.egg-info/SOURCES.txt
+mantine_component_cli.egg-info/dependency_links.txt
+mantine_component_cli.egg-info/entry_points.txt
+mantine_component_cli.egg-info/requires.txt
+mantine_component_cli.egg-info/top_level.txt
