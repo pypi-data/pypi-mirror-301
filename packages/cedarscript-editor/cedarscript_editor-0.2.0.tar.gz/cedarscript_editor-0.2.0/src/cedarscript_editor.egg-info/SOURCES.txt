@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/cedarscript_editor/__init__.py
+src/cedarscript_editor/cedarscript_editor.py
+src/cedarscript_editor/identifier_selector.py
+src/cedarscript_editor/python_identifier_finder.py
+src/cedarscript_editor.egg-info/PKG-INFO
+src/cedarscript_editor.egg-info/SOURCES.txt
+src/cedarscript_editor.egg-info/dependency_links.txt
+src/cedarscript_editor.egg-info/requires.txt
+src/cedarscript_editor.egg-info/top_level.txt
