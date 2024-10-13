@@ -1,0 +1,5 @@
+[console_scripts]
+bytes2human=gidapptools.__main__:bytes2human_cli
+gidapptools-info=gidapptools.__main__:cli_show_info
+human2bytes=gidapptools.__main__:human2bytes_cli
+
