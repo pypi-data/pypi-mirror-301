@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: uistyle
+Version: 0.1.0
+Summary: A beautiful console UI system for Python applications
+Home-page: https://github.com/vivekxd669/myconsoleui
+Author: ravan
+Author-email: ravanxdil@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: loguru
+Requires-Dist: pyfiglet
+Requires-Dist: rich
+
+# MyConsoleUI
+
+A beautiful console UI system for Python applications. 
+
+## Features
+- Displays current time and uptime
+- Logs messages with `loguru`
+- Renders ASCII art banners with `pyfiglet`
+- Prints tables with `rich`
+- Uses `colorama` for colored console output
+
+## Installation
+```bash
+pip install ui
