@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+requirements_test.txt
+setup.cfg
+setup.py
+src/oceana_token/__init__.py
+src/oceana_token/authenticate.py
+src/oceana_token/exceptions.py
+src/oceana_token/utils.py
+src/oceana_token.egg-info/PKG-INFO
+src/oceana_token.egg-info/SOURCES.txt
+src/oceana_token.egg-info/dependency_links.txt
+src/oceana_token.egg-info/requires.txt
+src/oceana_token.egg-info/top_level.txt
