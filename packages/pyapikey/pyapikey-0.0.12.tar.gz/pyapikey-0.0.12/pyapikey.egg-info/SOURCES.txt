@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pyapikey/__init__.py
+pyapikey/core.py
+pyapikey/static.py
+pyapikey.egg-info/PKG-INFO
+pyapikey.egg-info/SOURCES.txt
+pyapikey.egg-info/dependency_links.txt
+pyapikey.egg-info/top_level.txt
