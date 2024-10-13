@@ -1,0 +1,11 @@
+pygooglehelper/__init__.py,sha256=vcThC571UQpbM4coIp15sZ36sgbVC_O0xkrOXUskAEY,239
+pygooglehelper/auth.py,sha256=0IVpamiSQWz9xHXanDGmklmFHDuz132ivS5G9EigiJo,2917
+pygooglehelper/configs.py,sha256=L1eLmtGn2gcaMnPgnXmBEd2Bw9cVSlEAs_IdYne1S9Y,1173
+pygooglehelper/register_hook.py,sha256=pBTNNwug1Yi-qxN0EUKc3jDe65LzWDQcOLXjtnCaYLs,386
+pygooglehelper/static.py,sha256=bJaArHVxNoqGK4ipwLADP8qK1FdNRHL-e9vOxv9uwz8,187
+pygooglehelper/util.py,sha256=llUKHwba03tbbfWHTVve5ldq3e9GP-WQGNAfXnGFUD0,360
+pygooglehelper-0.0.7.dist-info/LICENSE,sha256=iwFQQUu2nh_gHEI7WRLvLBV7tl-cWaV5-HRFz4nZ6B0,1069
+pygooglehelper-0.0.7.dist-info/METADATA,sha256=X0sYsXGEcxB2jaM7JOnK_fij99lDD2uSL77ZtxcrJIo,1435
+pygooglehelper-0.0.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pygooglehelper-0.0.7.dist-info/top_level.txt,sha256=BJXq-Dr5BC6ab7z8W7hF7rVYuZDcJN_DpyxEJbllOY0,15
+pygooglehelper-0.0.7.dist-info/RECORD,,
