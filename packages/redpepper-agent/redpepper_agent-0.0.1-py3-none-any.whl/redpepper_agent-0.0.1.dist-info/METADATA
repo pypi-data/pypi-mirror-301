@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: redpepper-agent
+Version: 0.0.1
+Summary: A state-based server management system (agent package)
+Requires-Python: >=3.12
+Requires-Dist: exceptiongroup>=1.2.2
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: redpepper-common
+Requires-Dist: trio>=0.26.2
+Description-Content-Type: text/markdown
+
+# redpepper-agent
+
+This package contains the code for the RedPepper Agent.
+For more information, see the [RedPepper repository](https://github.com/merlinz01/redpepper).
