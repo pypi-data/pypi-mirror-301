@@ -1,0 +1,12 @@
+setup.py
+quantum_101/__init__.py
+quantum_101/konfig_elektron.py
+quantum_101/kuantum_azimut.py
+quantum_101/kuantum_magnetik.py
+quantum_101/kuantum_spin.py
+quantum_101/kuantum_utama.py
+quantum_101/nomor_atom.py
+quantum_101.egg-info/PKG-INFO
+quantum_101.egg-info/SOURCES.txt
+quantum_101.egg-info/dependency_links.txt
+quantum_101.egg-info/top_level.txt
