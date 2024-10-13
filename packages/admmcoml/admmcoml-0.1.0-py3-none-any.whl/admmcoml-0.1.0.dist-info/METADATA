@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: admmcoml
+Version: 0.1.0
+Summary: Convex Optimization Machine Learning Toolkit Based on Distributed ADMM.
+Home-page: https://gzhwanghub.github.io/
+Author: Guozheng Wang
+Author-email: gzh.wang@outlook.com
+License: SHU
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: mpi4py (>=3.1.4)
+
+UNKNOWN
+
