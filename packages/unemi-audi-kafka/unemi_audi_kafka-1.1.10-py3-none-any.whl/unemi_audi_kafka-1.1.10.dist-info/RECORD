@@ -1,0 +1,15 @@
+audit_logger/__init__.py,sha256=1wV2pE4zebTRWxhHMcGga63iqrl3ys5nSDt8YbVgZsE,170
+audit_logger/apps.py,sha256=NI_KsnnfymIe2YCr_vookrrcWzL5kmQIb0DmzoefGlw,1441
+audit_logger/helpers.py,sha256=P3mc4Qa_c7nOJQ4QpHErIfUS1gRmx_Vl5OujRV8SQUE,2754
+audit_logger/logger.py,sha256=8BMat6pnCsHdA6FdAUdvpkrHUyDNJHTMvGwKuWHzlv8,8835
+audit_logger/middlewares.py,sha256=tJX3hzCu5WraDmaQpUEPcqEFvClB7m1MJeu7reXjuSk,2657
+audit_logger/kafka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audit_logger/kafka/async_producer.py,sha256=hHbhRdAavRE0mQ7AjMXv5BHDuieysbOtV-_GVFmRaAc,2002
+audit_logger/kafka/local_logger.py,sha256=5yPubLf0AV7ylU5-Uzh1B2oJPQVPavOi5lZebU1pC0o,2096
+audit_logger/kafka/main.py,sha256=yXcV4NAke4UcsW_HlBETk69ENGXYkyuxQLTX8f_meSc,3040
+audit_logger/kafka/topic_manager.py,sha256=LXzNZojOa5BT2QH91TErbc6iTAGcxQRw7q5QtJxfC1Q,793
+unemi_audi_kafka-1.1.10.dist-info/LICENSE,sha256=HCWW_c5PwK8G3vDxU6WwGdAADbA1dtvhrs4sr_lfCf4,82
+unemi_audi_kafka-1.1.10.dist-info/METADATA,sha256=AVngVyKXU15SMQdkenYcb4FrSBSpZso0S6lGj2PX7YE,4447
+unemi_audi_kafka-1.1.10.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+unemi_audi_kafka-1.1.10.dist-info/top_level.txt,sha256=8-Lpmjxsk9Qqw5uf-dY6aL2c41WhTHhzXPvVDT9wu-U,13
+unemi_audi_kafka-1.1.10.dist-info/RECORD,,
