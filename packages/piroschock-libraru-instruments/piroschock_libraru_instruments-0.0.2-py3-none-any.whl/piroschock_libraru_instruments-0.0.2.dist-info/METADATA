@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: piroschock_libraru_instruments
+Version: 0.0.2
+Summary: You`ve never seen anything like this, a library that contains many modern features...
+Home-page: https://t.me/pie_rise_a_channel_8539
+Author: Pie-Rise The Sound
+Author-email: piroschock.riseng.853@internet.ru
+Project-URL: VKontakte, https://vk.com/piroschock.frilance.work
+Project-URL: Telegram Channel, https://t.me/pie_rise_a_channel_8539
+Requires-Python: >=3.8.9
+Requires-Dist: discord
+Requires-Dist: vk-api
+Requires-Dist: tqdm
+Requires-Dist: segno
+
+Hello! Who am I anyway, you ask? Let me introduce myself to you, but then you too, my name is Pirozhok s Risomu - Life, I am a blogger, PR manager of personal social networks, and also a programmer. Let me tell you a little about this library, created in the Python programming language. This library has 2 modules, but with new updates there will be more and more of them, so: 1. } Vk_Api; 2. } Discord! You can also install my library by entering the command in the console of your computer: pip install piroschock-libraru-instruments
