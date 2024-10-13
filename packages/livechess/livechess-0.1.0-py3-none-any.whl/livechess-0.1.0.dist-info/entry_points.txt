@@ -1,0 +1,3 @@
+[console_scripts]
+livechess=livechess.main:app
+
