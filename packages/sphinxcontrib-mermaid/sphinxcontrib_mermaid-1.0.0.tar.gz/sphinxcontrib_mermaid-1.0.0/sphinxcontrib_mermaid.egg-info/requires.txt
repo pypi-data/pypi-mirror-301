@@ -1,0 +1,9 @@
+sphinx
+pyyaml
+
+[test]
+defusedxml
+myst-parser
+pytest
+ruff
+sphinx
