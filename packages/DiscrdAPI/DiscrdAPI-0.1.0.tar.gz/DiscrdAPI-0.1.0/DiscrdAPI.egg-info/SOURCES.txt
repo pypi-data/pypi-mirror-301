@@ -1,0 +1,6 @@
+setup.py
+DiscrdAPI.egg-info/PKG-INFO
+DiscrdAPI.egg-info/SOURCES.txt
+DiscrdAPI.egg-info/dependency_links.txt
+DiscrdAPI.egg-info/requires.txt
+DiscrdAPI.egg-info/top_level.txt
