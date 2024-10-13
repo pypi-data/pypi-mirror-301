@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+GifPlotter/__init__.py
+GifPlotter/felixi_plotter.py
+GifPlotter.egg-info/PKG-INFO
+GifPlotter.egg-info/SOURCES.txt
+GifPlotter.egg-info/dependency_links.txt
+GifPlotter.egg-info/requires.txt
+GifPlotter.egg-info/top_level.txt
