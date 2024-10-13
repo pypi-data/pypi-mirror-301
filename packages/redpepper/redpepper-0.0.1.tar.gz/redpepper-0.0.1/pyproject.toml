@@ -1,0 +1,37 @@
+[project]
+name = "redpepper"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.12"
+dynamic = ['version']
+
+[project.optional-dependencies]
+agent = ["redpepper-agent"]
+manager = ["redpepper-manager"]
+
+[tool.uv.sources]
+redpepper-agent = { workspace = true }
+redpepper-common = { workspace = true }
+redpepper-manager = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "src/agent",
+    "src/common",
+    "src/manager",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = 'src/redpepper/version.py'
+
+[tool.hatch.build]
+include = [
+    "src/redpepper",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/redpepper"]
