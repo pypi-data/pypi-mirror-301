@@ -1,0 +1,11 @@
+perpetual-0.5.0.dist-info/METADATA,sha256=IMJyISZj14FEhqZ-ZuHbEKpNeCSNOz51McJqOq2IsgI,5552
+perpetual-0.5.0.dist-info/WHEEL,sha256=i-50AaV3q8zthgSaPZNLbaFczY3NRyGbQDASQt3eucc,106
+perpetual-0.5.0.dist-info/licenses/LICENSE,sha256=FpGljptuyNtvKNvxCg_JgfMVSW4bgY91h0uTf-79k4E,34351
+perpetual/serialize.py,sha256=Tg2BbuA1jKQ5-ITuVhwtj6hgBaRAbZ66eHctR7fcVk4,1883
+perpetual/__init__.py,sha256=zzFLkwRr8No7DPUNUQlBXdsdGfT7KEt4orHozdZhS7c,116
+perpetual/types.py,sha256=vBwsX2XnSC8RqdmP2Mr6hDljgWhgGNS6OsuBZM1QdW0,3231
+perpetual/utils.py,sha256=28vlN6tvdCwVO3TdqCyuqiILhghMIIofhz18ZUEDGFA,7108
+perpetual/data.py,sha256=718adB9qIc0YvBiTQtMkbT6JPb5liR-4z1UD81IyYhY,590
+perpetual/booster.py,sha256=WPYnvHChdoD6zlE4a2AbxWbufiHcjqOGxxbyOO9TM2c,41114
+perpetual/perpetual.cpython-312-darwin.so,sha256=eohBQfqqszoDP0Ak6jqqqAa92AXpfA9aiLLjHAKtl74,1399032
+perpetual-0.5.0.dist-info/RECORD,,
