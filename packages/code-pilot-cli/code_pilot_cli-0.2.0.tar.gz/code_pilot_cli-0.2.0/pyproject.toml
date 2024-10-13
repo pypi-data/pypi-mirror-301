@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "code-pilot-cli"
+version = "0.2.0"
+description = "Your customizable codding assistant in your CLI"
+authors = ["Yousuf Abu Shanab <josephyousef249@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/youzarsiph/code-pilot-cli"
+repository = "https://github.com/youzarsiph/code-pilot-cli"
+documentation = "https://github.com/youzarsiph/code-pilot-cli"
+packages = [{ include = "code_pilot_cli" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+huggingface-hub = "^0.25.0"
+typer = "^0.12.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+ruff = "^0.6.5"
+
+[tool.poetry.scripts]
+code-pilot = "code_pilot_cli.app:code_pilot"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
