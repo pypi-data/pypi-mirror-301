@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "eric-sse"
+description = "A lightweight message dispatcher based on SSE protocol data transfer objects format"
+version = "0.5.3.4"
+authors = ["Luca Stretti <laxertu@gmail.com>"]
+keywords = ["sse", "queue", "API", "concurrency"]
+license = "MIT"
+readme = "README.md"
+documentation = "https://github.com/laxertu/eric/blob/master/docs.md"
+homepage = "https://github.com/laxertu/eric"
+
+[tool.poetry.dependencies]
+python = ">= 3.10"
+asyncio = ">= 3.4.3"
+
+[tool.setuptools_scm]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test]
+[tool.poetry.group.test.dependencies]
+pytest = {version = ">= 8.3.2", optional = true}
+
