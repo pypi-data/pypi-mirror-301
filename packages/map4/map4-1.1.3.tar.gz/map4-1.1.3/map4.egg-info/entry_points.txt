@@ -1,0 +1,2 @@
+[console_scripts]
+map4 = map4.cli:main

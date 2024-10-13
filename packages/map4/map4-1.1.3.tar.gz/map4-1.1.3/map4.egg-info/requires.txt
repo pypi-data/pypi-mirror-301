@@ -1,0 +1,13 @@
+mhfp
+numpy
+rdkit
+tqdm
+scikit-learn
+matplotlib
+
+[test]
+pytest
+pytest-cov
+pytest-readme
+pandas
+validate_version_code
