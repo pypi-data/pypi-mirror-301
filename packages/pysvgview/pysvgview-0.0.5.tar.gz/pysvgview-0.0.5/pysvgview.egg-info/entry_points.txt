@@ -1,0 +1,2 @@
+[console_scripts]
+pysvgview = pysvgview.main:main
