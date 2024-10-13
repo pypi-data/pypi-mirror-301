@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: out
+Version: 0.78a3
+Summary: Fun take on logging for non-huge projects. Gets "outta" the way.
+Home-page: https://github.com/mixmastamyk/out
+Author: Mike Miller
+Author-email: mixmastamyk@github.com
+License: LGPL 3
+Keywords: log logging events levels color terminal console standard out err
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: console >0.9902
+Requires-Dist: colorama ; os_name == "nt" and platform_version < "10.0.10586"
+Provides-Extra: highlight
+Requires-Dist: pygments >=2.4.0 ; extra == 'highlight'
+
