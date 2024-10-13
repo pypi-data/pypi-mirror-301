@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nodeflow
+Version: 0.0.0
+Summary: 
+License: MIT
+Author: Maksim Shushkevich
+Author-email: m.e.shushkevich@yandex.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Encore NodeFlow
+
