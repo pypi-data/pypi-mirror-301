@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+beartest/__init__.py
+beartest/beartest.py
+beartest.egg-info/PKG-INFO
+beartest.egg-info/SOURCES.txt
+beartest.egg-info/dependency_links.txt
+beartest.egg-info/top_level.txt
