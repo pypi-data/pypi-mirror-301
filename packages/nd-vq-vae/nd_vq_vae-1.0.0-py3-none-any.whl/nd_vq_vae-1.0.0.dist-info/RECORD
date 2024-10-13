@@ -1,0 +1,11 @@
+nd_vq_vae/__init__.py,sha256=GWR1o43pZoMNNMykkPMLF8IEG6W3VhuLHmnsdmDa7s4,42
+nd_vq_vae/attention_ndim.py,sha256=FHet2BSYu-OR0o_FOUTfse_IRA7pZorBG3j_C88If_g,5241
+nd_vq_vae/base.py,sha256=JCEgs_sqD0XgK-6lnYiehOSF9d536j9IVL-Br2aogj0,79
+nd_vq_vae/utils.py,sha256=Fc7Q1TZj13ku0Np2f0SFkHXJXLMyW6DOfOwe4q0EUqw,2021
+nd_vq_vae/vqvae_ndim.py,sha256=xt1G3GEBtEuFoZP1Qoc-BCv757zCfvfAAyw2PSrM-pY,15278
+nd_vq_vae-1.0.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+nd_vq_vae-1.0.0.dist-info/METADATA,sha256=IHJM2yMA0CGsPl_UseCEmmPuLYpZpabl7eR_Zl5WV_Y,5838
+nd_vq_vae-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+nd_vq_vae-1.0.0.dist-info/entry_points.txt,sha256=HV4aSnaMhgVXlqz36F0xwdRVCMy5TPAX9vaqoLYVgnk,54
+nd_vq_vae-1.0.0.dist-info/top_level.txt,sha256=VhJ6m0DbOXRx2Cgm-Fm3OEelZrdNYN6SPfVXrz25BWA,10
+nd_vq_vae-1.0.0.dist-info/RECORD,,
