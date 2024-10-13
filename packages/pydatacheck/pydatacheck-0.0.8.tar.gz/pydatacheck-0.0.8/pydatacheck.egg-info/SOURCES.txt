@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pydatacheck/__init__.py
+pydatacheck/configs.py
+pydatacheck/data_check_books.py
+pydatacheck/data_check_videos.py
+pydatacheck/main.py
+pydatacheck/route.py
+pydatacheck/static.py
+pydatacheck.egg-info/PKG-INFO
+pydatacheck.egg-info/SOURCES.txt
+pydatacheck.egg-info/dependency_links.txt
+pydatacheck.egg-info/entry_points.txt
+pydatacheck.egg-info/requires.txt
+pydatacheck.egg-info/top_level.txt
