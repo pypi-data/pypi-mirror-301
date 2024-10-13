@@ -1,0 +1,3 @@
+[console_scripts]
+ayapingping-py = _main.main:main
+
