@@ -1,0 +1,15 @@
+{
+    "format": "argenta-be",
+    "extension": "xlsx",
+    "settings": {
+        "field_map": {
+            "src_account_number": 0,
+            "date": 2,
+            "value": 5,
+            "currency": 6,
+            "dst_account_number": 8,
+            "dst_account_holder": 9,
+            "description": 10
+        }
+    }
+}
