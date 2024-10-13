@@ -1,0 +1,10 @@
+affectlog_feature_extractors/__init__.py,sha256=GhC-GdoO4YshDX0DvwijwjA1WhcrtXnNFoz91XvYBcY,64
+affectlog_feature_extractors/attribute_extractors.py,sha256=f6PDCA9CndDbQvkDZIAleZ1XrCUHoRG0hD57nNX4KPM,5138
+affectlog_feature_extractors/data/__init__.py,sha256=GhC-GdoO4YshDX0DvwijwjA1WhcrtXnNFoz91XvYBcY,64
+affectlog_feature_extractors/data/female-words.txt,sha256=V1U-OX5z3oiy9zoLeM7orl1kuIUvd-9g9Dsi9A_sLUc,22
+affectlog_feature_extractors/data/male-words.txt,sha256=9FP_MXz2hWyD8-bexf4ovXHf_p3hgS3U_zISW7FNVVc,20
+affectlog_feature_extractors/data/neutral-words.txt,sha256=-Se2tFRVAU5ZecoCs1qz4xWODqq3rCg-Xai--qxLGiU,28
+affectlog_feature_extractors-0.1.0.dist-info/METADATA,sha256=PQq5qHYzwZHQVqfBNpNI6LIRvIX9DOEZ9ZMt3BWxtXQ,1240
+affectlog_feature_extractors-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+affectlog_feature_extractors-0.1.0.dist-info/top_level.txt,sha256=qcOoASB7YwYKnJVgO79qeiowJnPLr7XohphBzboE94o,29
+affectlog_feature_extractors-0.1.0.dist-info/RECORD,,
