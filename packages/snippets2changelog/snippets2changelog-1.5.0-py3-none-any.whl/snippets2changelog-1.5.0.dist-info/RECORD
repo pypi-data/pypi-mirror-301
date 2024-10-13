@@ -1,0 +1,15 @@
+snippets2changelog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snippets2changelog/cli.py,sha256=eaPT00irkQbEBNWp0AkXRx2RwJEiZme9Csj1ebQfX9s,4910
+snippets2changelog/collector.py,sha256=lJkkWSphv4tc7VHIupdLc0AnhPyrDRWhOR3wGV4q-rI,4581
+snippets2changelog/common.py,sha256=P4dl62lmKtzGbMlJ9NpQrwwqViUrsyx8sj6jy_ns_-o,2020
+snippets2changelog/creator.py,sha256=dCjFkZ1mlfeUObMWSdp1UPhfAhbCC5oqf7ZdOrAfzxA,6077
+snippets2changelog/parser.py,sha256=YlYY9nMmyIeFGv3DHTMBMYziJukh41TqNMLuACCtSpU,2861
+snippets2changelog/templates/changelog.md.template,sha256=nM3jP1r7Rf9KLlbFWPc4cpRGv--loacCk-ECzGaaFUY,41
+snippets2changelog/templates/changelog_part.md.template,sha256=FXupYpUYq-hSNa7Sp1Wfzj7L_GGLivMCdwgsigqGLk8,149
+snippets2changelog/templates/snippet.md.template,sha256=FmEnU3cU7DHmlV37DPHtgsmjfY3GjZpNOmr5kXkv04E,112
+snippets2changelog/version.py,sha256=LVHHY41_20KeGW5zUX2QvBhunt2OLZGQvuV09QfH_Sc,124
+snippets2changelog-1.5.0.dist-info/LICENSE.txt,sha256=CvNkSeuD1ZLZBMQI_ixuwwEi1W6rSSJwlhv8Tq9vOhY,1198
+snippets2changelog-1.5.0.dist-info/METADATA,sha256=KlNzKOTkWh6bxZC6-XuXRIz8vORe9sPScWiP_VrbHtw,7780
+snippets2changelog-1.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+snippets2changelog-1.5.0.dist-info/entry_points.txt,sha256=NiEfROOh8CbkhJxu47ch7dByv7tmvZ3Y3J-U-DpYwiA,67
+snippets2changelog-1.5.0.dist-info/RECORD,,
