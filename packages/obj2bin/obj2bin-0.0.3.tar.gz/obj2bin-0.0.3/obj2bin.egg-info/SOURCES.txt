@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+obj2bin/__init__.py
+obj2bin/__version__.py
+obj2bin/obj2bin.py
+obj2bin.egg-info/PKG-INFO
+obj2bin.egg-info/SOURCES.txt
+obj2bin.egg-info/dependency_links.txt
+obj2bin.egg-info/requires.txt
+obj2bin.egg-info/top_level.txt
+test/test_packet.py
