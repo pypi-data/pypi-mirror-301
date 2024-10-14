@@ -1,0 +1,8 @@
+chtoolset/_query.cpython-311-x86_64-linux-gnu.so,sha256=AUBrh1WtE3G9jyg2V6A6mL33XIeUL8AeNRMYMVU5_Xg,132109280
+chtoolset/query.py,sha256=wsoLxIGMc1loCRuPo2foc3Gycmbef-Mzwyn_JZFikvw,295
+chtoolset/__init__.py,sha256=v5PevgvE2s54rod6TZnXN7XPp0ZiwxjxE9cScAMVHFo,20
+clickhouse_toolset-0.32.dev0.dist-info/RECORD,,
+clickhouse_toolset-0.32.dev0.dist-info/METADATA,sha256=Pz3D2w-wB3f8CXRZ0PA5C4_8kuSI10YeVRoZlSz2pTM,292
+clickhouse_toolset-0.32.dev0.dist-info/WHEEL,sha256=XihS4yPLFu_eB7R4sl7jUHiEAA7zQ3q0-_CuIzkpFkk,151
+clickhouse_toolset-0.32.dev0.dist-info/top_level.txt,sha256=wk9pWxqAkPFAf8tJy86marVPKIcd_zuADCyt9pMFqjQ,10
+clickhouse_toolset-0.32.dev0.dist-info/LICENSE,sha256=ErVqngkpgE88AZI3kII2t1KImK5_B4OZwuSB2VBme14,1518
