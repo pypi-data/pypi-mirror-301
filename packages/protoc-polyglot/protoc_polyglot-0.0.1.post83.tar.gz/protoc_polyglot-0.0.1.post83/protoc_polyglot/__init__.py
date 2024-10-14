@@ -1,0 +1,1 @@
+from .common_interface import CommonInterface as cli
