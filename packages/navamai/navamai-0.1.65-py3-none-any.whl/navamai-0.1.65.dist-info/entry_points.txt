@@ -1,0 +1,6 @@
+[console_scripts]
+ask=navamai.cli:ask
+image=navamai.cli:image
+navamai=navamai.cli:cli
+refer=navamai.cli:refer
+
