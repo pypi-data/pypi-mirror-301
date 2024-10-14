@@ -1,0 +1,3 @@
+include ../README.md
+include ../version.txt
+recursive-include my_funded_grpc_api *.py *.pyi
