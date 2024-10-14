@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_twd.py,sha256=XrxOo99oqida_7qZ48pA6BCazZekDmG5syw9NvjZWDU,484
+twd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twd/__main__.py,sha256=gM_Py51pQFH3CXdDIuPzBW6eNlFH1UHeRAmgAPWQyik,61
+twd/twd.py,sha256=LSWm60sz1Z4KYS1mGt2RXlgFdZQ_5oBz96m8wh-LziU,3672
+twd_m4sc0-1.2.2.dist-info/LICENSE,sha256=eQSDjcD_fvOwfjmrzxKJhtZsSI39seMawuvsgeD_dfw,1062
+twd_m4sc0-1.2.2.dist-info/METADATA,sha256=vorXOoNwUwZTZVA7XDxE7b7WonFMGugsFJ6mcALfE1M,2166
+twd_m4sc0-1.2.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+twd_m4sc0-1.2.2.dist-info/entry_points.txt,sha256=QfYDHHjipkVN4oalpACFmIeYHb7GQCJY4SC12bTsiQQ,37
+twd_m4sc0-1.2.2.dist-info/top_level.txt,sha256=PXToru2Yr2Xh3F_F-pHXtuOQVp5x7KKCPFf94P_VI5U,10
+twd_m4sc0-1.2.2.dist-info/RECORD,,
