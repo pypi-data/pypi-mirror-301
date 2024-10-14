@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: datvtn_nn_kit
+Version: 0.0.2
+Summary: Unstructured set of the helper functions.
+Home-page: https://github.com/datvtn/datvtn_nn_kit
+Author: Dat Viet Thanh Nguyen
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: numpy ==1.24.3
+Requires-Dist: opencv-python
+Requires-Dist: torch ==2.4.0
+Requires-Dist: torchvision ==0.19.0
+Requires-Dist: datvtn-kit
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# Neural Network Utility Functions
