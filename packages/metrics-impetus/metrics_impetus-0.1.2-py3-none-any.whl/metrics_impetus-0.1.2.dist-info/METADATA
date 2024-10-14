@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: metrics-impetus
+Version: 0.1.2
+Summary: A package for setting up instrumentation in FastAPI applications.
+Home-page: https://github.com/ayush00963/metrics_impetus
+Author: ayush00963
+Author-email: ayushkumar@fynd.team
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: prometheus-fastapi-instrumentator
+Requires-Dist: opentelemetry-instrumentation-fastapi
+Requires-Dist: opentelemetry-instrumentation-logging
+Requires-Dist: sentry-sdk
+Requires-Dist: newrelic
+
+UNKNOWN
+
+
