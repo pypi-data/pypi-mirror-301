@@ -1,0 +1,2 @@
+[console_scripts]
+run-inspector = web_inspector.run_inspector:main
