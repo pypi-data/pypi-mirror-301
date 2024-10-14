@@ -1,0 +1,10 @@
+h5pandas/__init__.py,sha256=2eSzz5V5CNfXPlfTfO1-yypqF8pwM5oExgDiWFpTtf8,223
+h5pandas/dataframe.py,sha256=9uwv3S4ckxKy89G7pmgFxkDGqrN-N0-tCxUjst2cdH4,13116
+h5pandas/group.py,sha256=Dt-Ddbua159jQ0GgAevkrbVOjfmRgxVXZopF9KWRoyk,6795
+h5pandas/h5array.py,sha256=2Fp7irr75366F-Z2P3haWce6idJA90LCQ3LScUXjNeE,34815
+h5pandas/h5datatype.py,sha256=je6yt_FDNDd_7eVCicIu4vURAy96FP77JTJcPg0Nbgc,9808
+h5pandas-0.12.dist-info/LICENSE,sha256=vd4isgBC6p7e7IID3W46Q8OvCdSKTiHZ9DXFIhmtn0s,1079
+h5pandas-0.12.dist-info/METADATA,sha256=gFnfCAsFrYH7nnki4QhN2nLCFRo38kBDIBP4_z9AWqM,7161
+h5pandas-0.12.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+h5pandas-0.12.dist-info/top_level.txt,sha256=5WbJlKcC8iC-5qO1YY48NsgywiXFDNF3E_gMqcX-mbM,9
+h5pandas-0.12.dist-info/RECORD,,
