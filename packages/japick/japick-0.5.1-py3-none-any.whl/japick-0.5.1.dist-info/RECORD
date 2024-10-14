@@ -1,0 +1,11 @@
+japick/__init__.py,sha256=RtQiArgVZMbHZHa_c6U0lObaLkFAxxMj2h6jjMsdqbM,148
+japick/cleaner.py,sha256=FZb6BmUEIcFerGAiyGx17NqzoH66S4K7SURnBePWQSw,1864
+japick/lines.py,sha256=sMfuha46LRG9uC8pfyWBIZ6DoRqQHozXI8L1xReTn8I,1722
+japick/main.py,sha256=Vkr8mD240fuH89B2VZsQuc26l5_SQc2gfd9_qBAMeBo,1375
+japick/paragraph.py,sha256=-UpGoyWgfNBL6wji5U2vEhe_A8I2MiC1GN1JIkXwiv4,4189
+japick/parser.py,sha256=uoch0aoKZp_K1UlZmxGsuN9wTMsBYfGh5JkwXECl_DA,6125
+japick/syntax.py,sha256=OLVPtjCz-Hz0F66GPiLZ0IzpiFtoPfza-6jY564FR1Y,1092
+japick-0.5.1.dist-info/METADATA,sha256=dqHOP0BuoF2mZiLU9hC6ZL7D9P8s4NFwRPUzEIr1Eik,380
+japick-0.5.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+japick-0.5.1.dist-info/top_level.txt,sha256=ozCNaKniZ5AkSOYHacf3z0OXnA04N1qbzmdJOLokALg,7
+japick-0.5.1.dist-info/RECORD,,
