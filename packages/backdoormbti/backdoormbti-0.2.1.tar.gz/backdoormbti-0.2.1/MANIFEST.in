@@ -1,0 +1,4 @@
+graft backdoormbti  # 递归包含 backdoormbti 目录下的所有文件和子目录
+
+global-exclude *.pyc  # 全局排除 .pyc 文件
+global-exclude __pycache__/  # 全局排除 __pycache__ 目录
