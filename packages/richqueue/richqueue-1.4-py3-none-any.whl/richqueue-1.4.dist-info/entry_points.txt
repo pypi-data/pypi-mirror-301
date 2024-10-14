@@ -1,0 +1,3 @@
+[console_scripts]
+confucius = richqueue.wisdom:main
+rq = richqueue.main:main
