@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: django-socketio-chat
+Version: 0.1.1
+Summary: Django SocketIO Chat using python-socketio
+Home-page: https://github.com/ThuanD/django-socketio-chat/
+Author: kai
+Author-email: thuan.dv0@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django-allauth-simple-ui (>=0.1.2,<0.2.0)
+Requires-Dist: djangorestframework-simplejwt (>=5.3.1,<6.0.0)
+Requires-Dist: eventlet (>=0.37.0,<0.38.0)
+Requires-Dist: gunicorn (>=23.0.0,<24.0.0)
+Requires-Dist: python-socketio (>=5.11.4,<6.0.0)
+Project-URL: Repository, https://github.com/ThuanD/django-socketio-chat/
+Description-Content-Type: text/markdown
+
+# Django SocketIO Chat
+  
+![django-socketio-chat](./django-socketio-chat.gif)  
+Simple chat using [python-socketio](https://github.com/miguelgrinberg/python-socketio), 
+and using [django-allauth-simple-ui](https://github.com/ThuanD/django-allauth-simple-ui)  
+  
+## Simple usage
+  
+Please check the [README.md](https://github.com/ThuanD/django-allauth-simple-ui/blob/main/README.md) to know how to use **django-allauth-simple-ui**
+Alternatively, you can check the [testproject](https://github.com/ThuanD/django-socketio-chat/tree/main/testproject) for more details.
+
+1. Install by running the following command
+```bash  
+pip install django-socketio-chat
+```
+  
+2. Add the following settings to your `settings.py` file
+```python
+INSTALLED_APPS = [
+    "django_socketio_chat",
+    # etc
+]
+ALLAUTH_UI = dict(
+    ADAPTER="django_socketio_chat.adapter.CustomUserAdapter",
+    # etc
+)
+```
+
+3. Add the Chat URLs to your `urls.py` file
+```python
+from django.urls import path, include
+urlpatterns = [
+   path('chat/', include("django_socketio_chat.urls")),
+]
+```
+
+4. Config `wsgi.py` to run SocketIO server
+```python
+import os
+import django
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'testproject.settings')
+django.setup()
+
+from socketio import WSGIApp
+from django.core.wsgi import get_wsgi_application
+from django_socketio_chat.server import ChatServer
+
+application = WSGIApp(ChatServer().sio, get_wsgi_application())
+```
+
+5. Collect Static files
+```bash
+python manage.py collectstatic --no-input
+```
+
+6Migrate the database
+```bash
+python manage.py migrate
+```
+
+7. Using wsgi to run the project
+```bash
+gunicorn testproject.wsgi:application -b 0.0.0.0:8000 -w 1 -k eventlet --reload
+```
+
