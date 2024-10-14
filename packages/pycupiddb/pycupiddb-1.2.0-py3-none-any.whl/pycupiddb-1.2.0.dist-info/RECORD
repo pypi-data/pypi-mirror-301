@@ -1,0 +1,10 @@
+pycupiddb/__init__.py,sha256=EQpFeSHb1knGN0C2czsxxKOlWY5-WK70s7sNkuG_y3w,115
+pycupiddb/client.py,sha256=lSZhaqKnlUY1Btvp2H3FIGly6XlAHHRmkgaxYd1_TF4,2067
+pycupiddb/commands.py,sha256=cN3Gam0Ca5CSce39ga3ys0SYZUju7Cz9hRTqbDjXECE,7032
+pycupiddb/connection.py,sha256=9NBe774bB8Hc7OhefZVCI2d3fF-gz58rOBMJZi4OPxg,6797
+pycupiddb/exceptions.py,sha256=1F3ql_gKtErPi2Y4MuFX_wBHrXW3M7aGLpS0crrln4I,178
+pycupiddb-1.2.0.dist-info/LICENSE,sha256=1kJ9gvSe9DiFz_optTigubArvLORRTooqAzC3ZMyp8E,11342
+pycupiddb-1.2.0.dist-info/METADATA,sha256=MVVZXwZ5-ByDyDGfsnnlCj9-r8y0eZdIkAQ1j9Cmr-o,14595
+pycupiddb-1.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pycupiddb-1.2.0.dist-info/top_level.txt,sha256=s7gc5nOoMjF7jBcWhh8miKs7Nth1w6cUFymDsiTZ0Bk,10
+pycupiddb-1.2.0.dist-info/RECORD,,
