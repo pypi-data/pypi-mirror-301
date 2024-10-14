@@ -1,0 +1,2 @@
+[console_scripts]
+sonar-migration = migration.migration:main
