@@ -1,0 +1,13 @@
+bson
+dictances==1.5.3
+equalityml==0.2.1
+jsonschema
+miseval==1.2.2
+numba==0.55.2
+numpy==1.21.6
+opencv-python
+pandas
+pycocotools
+scikit-learn
+seaborn
+tqdm
