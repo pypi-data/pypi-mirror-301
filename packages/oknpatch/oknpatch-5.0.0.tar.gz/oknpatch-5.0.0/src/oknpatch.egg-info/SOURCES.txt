@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/oknpatch/__init__.py
+src/oknpatch/gazefilters.json
+src/oknpatch/okn_detection_rule.json
+src/oknpatch/okndetector.gaze.config
+src/oknpatch/oknpatch.py
+src/oknpatch/oknserver_graph_plot_config.json
+src/oknpatch/opm_detector_config.json
+src/oknpatch.egg-info/PKG-INFO
+src/oknpatch.egg-info/SOURCES.txt
+src/oknpatch.egg-info/dependency_links.txt
+src/oknpatch.egg-info/entry_points.txt
+src/oknpatch.egg-info/requires.txt
+src/oknpatch.egg-info/top_level.txt

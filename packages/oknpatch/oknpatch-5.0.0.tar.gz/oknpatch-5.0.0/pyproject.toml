@@ -1,0 +1,35 @@
+[project]
+name = "oknpatch"
+version = "5.0.0"
+authors = [
+  { name="Zaw Lin Tun", email="zawlintun1511@gmail.com" },
+]
+description = "Command line program to fix okn and system manager related issues."
+readme = "README.md"
+dependencies = ["setuptools>=61.0", "opencv-python>=4.8.1.78", "scipy>=1.11.3", "numpy>=1.26.1", "commentjson", "ehdg_tools>=4.6.1", "ehdg_pupil_detector>=4.0.4"]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+oknpatch = "oknpatch.oknpatch:main"
+
+[project.urls]
+"Homepage" = "https://github.com/jtur044/oknpatch"
+"Bug Tracker" = "https://github.com/jtur044/oknpatch/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "opencv-python>=4.8.1.78", "scipy>=1.11.3", "numpy>=1.26.1", "commentjson", "ehdg_tools>=4.6.1", "ehdg_pupil_detector>=4.0.4"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+oknpatch = ["*"]
