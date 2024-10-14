@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_extract.py
+winzy_extract/__init__.py
+winzy_extract.egg-info/PKG-INFO
+winzy_extract.egg-info/SOURCES.txt
+winzy_extract.egg-info/dependency_links.txt
+winzy_extract.egg-info/entry_points.txt
+winzy_extract.egg-info/requires.txt
+winzy_extract.egg-info/top_level.txt
