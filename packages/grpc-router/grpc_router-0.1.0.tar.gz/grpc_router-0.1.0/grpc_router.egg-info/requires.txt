@@ -1,0 +1,13 @@
+grpcio
+protobuf
+
+[dev]
+grpcio-tools
+tox
+pre-commit
+pip
+twine
+toml
+
+[test]
+pytest
