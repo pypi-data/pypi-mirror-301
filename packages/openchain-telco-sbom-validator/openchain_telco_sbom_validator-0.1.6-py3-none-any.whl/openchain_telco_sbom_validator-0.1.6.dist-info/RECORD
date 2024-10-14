@@ -1,0 +1,11 @@
+openchain_telco_sbom_validator/__init__.py,sha256=tQoHSJ0N6l3OlKW_NkhVuNZ8GsT5-0bjRTy_BkRzidE,384
+openchain_telco_sbom_validator/cli.py,sha256=N8_q8uvRuuBizSawgyXMwSYT6w3om3UDkeFiYqide04,4139
+openchain_telco_sbom_validator/reporter.py,sha256=a39CH90z2dIDuE2pDqEdUTtkr_5zTYfg2brmTPKQKIk,1370
+openchain_telco_sbom_validator/validator.py,sha256=aJOcAk5LahKrFcaCcIKwNhYVPtA-_uwM2H_BMEV-7fw,13947
+openchain_telco_sbom_validator-0.1.6.dist-info/LICENSE,sha256=BOqPGpnMgxO1dkaachbGspr9FpRv-s3c2tgBRWndP8U,9388
+openchain_telco_sbom_validator-0.1.6.dist-info/METADATA,sha256=bg4iTTW2Cl_ZUCr7oz0NMT6XcbxmfDwJQZYO84geXmg,15850
+openchain_telco_sbom_validator-0.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+openchain_telco_sbom_validator-0.1.6.dist-info/entry_points.txt,sha256=WkulegV4oDBW17jcOoyahGe9z-uLaYnU92MUuVMOXb0,90
+openchain_telco_sbom_validator-0.1.6.dist-info/top_level.txt,sha256=ZkeeRXy-CLtZXYLG-4LZ5877rU52b5RplQ4sz4B0Qks,31
+openchain_telco_sbom_validator-0.1.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+openchain_telco_sbom_validator-0.1.6.dist-info/RECORD,,
