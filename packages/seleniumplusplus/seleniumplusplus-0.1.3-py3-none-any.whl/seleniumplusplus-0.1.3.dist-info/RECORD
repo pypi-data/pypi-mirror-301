@@ -1,0 +1,10 @@
+seleniumplusplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seleniumplusplus/logger.py,sha256=IvvhZIyfG2uJi1dt7mOk8HTC9G10L7zGYplVJSqH1kw,187
+seleniumplusplus/selenium_initializer.py,sha256=dVJ4w_TU93pLOe79ab5f50vdaNworu-uwkNWH8B1h64,5333
+seleniumplusplus/selenium_utils.py,sha256=Q3gpbbbqEm2TaoaY8CG0l9u6dowDBS8R2POYhGXUV6g,12044
+seleniumplusplus/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seleniumplusplus/tests/page/index.html,sha256=EEPWxFsBoYfBGG4k3zo8qs1rrf0JZRPKxSSrzSUrp60,1456
+seleniumplusplus/tests/test.py,sha256=vVXzfvGEh14EyWrbpQaY0TlGh8TiJwauDsqoCXFQnJo,1776
+seleniumplusplus-0.1.3.dist-info/METADATA,sha256=YVMVmI2KFjVjVOfBG3Cc-IMPwAk8ZYm4iBDOLO5TWxo,999
+seleniumplusplus-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+seleniumplusplus-0.1.3.dist-info/RECORD,,
