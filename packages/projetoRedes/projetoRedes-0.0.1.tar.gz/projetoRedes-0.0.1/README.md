@@ -1,0 +1,1 @@
+# Repositório utilizado para geerar binários de 16 bits de forma aleatória, além de fazer a soma do checksum

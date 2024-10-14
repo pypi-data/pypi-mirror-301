@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+projetoRedes/__init__.py
+projetoRedes/checkBin.py
+projetoRedes.egg-info/PKG-INFO
+projetoRedes.egg-info/SOURCES.txt
+projetoRedes.egg-info/dependency_links.txt
+projetoRedes.egg-info/requires.txt
+projetoRedes.egg-info/top_level.txt
