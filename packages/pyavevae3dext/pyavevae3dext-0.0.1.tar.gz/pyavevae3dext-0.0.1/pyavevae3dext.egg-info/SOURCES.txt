@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyavevae3dext/__init__.py
+pyavevae3dext.egg-info/PKG-INFO
+pyavevae3dext.egg-info/SOURCES.txt
+pyavevae3dext.egg-info/dependency_links.txt
+pyavevae3dext.egg-info/not-zip-safe
+pyavevae3dext.egg-info/top_level.txt
