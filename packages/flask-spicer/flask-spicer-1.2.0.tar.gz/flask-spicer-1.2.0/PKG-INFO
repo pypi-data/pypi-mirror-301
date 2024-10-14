@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask-spicer
+Version: 1.2.0
+Summary: Improve your flask experience using elements
+Home-page: https://github.com/ItsTato/Spicer
+Author: ItsTato
+Author-email: thatpogcomputer@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10

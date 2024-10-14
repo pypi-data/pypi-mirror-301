@@ -1,0 +1,13 @@
+README.md
+setup.py
+flask_spicer/Spice.py
+flask_spicer/Spicer.py
+flask_spicer/Template.py
+flask_spicer/__init__.py
+flask_spicer/cli.py
+flask_spicer.egg-info/PKG-INFO
+flask_spicer.egg-info/SOURCES.txt
+flask_spicer.egg-info/dependency_links.txt
+flask_spicer.egg-info/entry_points.txt
+flask_spicer.egg-info/requires.txt
+flask_spicer.egg-info/top_level.txt
