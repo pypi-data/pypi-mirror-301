@@ -1,0 +1,5 @@
+pyproject.toml
+richmantoy_bot.egg-info/PKG-INFO
+richmantoy_bot.egg-info/SOURCES.txt
+richmantoy_bot.egg-info/dependency_links.txt
+richmantoy_bot.egg-info/top_level.txt
