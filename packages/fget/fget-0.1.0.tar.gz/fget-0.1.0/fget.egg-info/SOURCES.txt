@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fget.egg-info/PKG-INFO
+fget.egg-info/SOURCES.txt
+fget.egg-info/dependency_links.txt
+fget.egg-info/entry_points.txt
+fget.egg-info/requires.txt
+fget.egg-info/top_level.txt
