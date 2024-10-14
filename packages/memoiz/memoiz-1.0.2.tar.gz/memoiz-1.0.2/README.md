@@ -1,0 +1,194 @@
+# Memoiz
+
+A thread-safe memoization decorator for functions and methods.
+
+## Introduction
+
+Memoiz is a memoization decorator that makes reasonable assumptions about how and if to cache the return value of a function or method based on the arguments passed to it. The decorator can be used on both free and bound functions.
+
+## Features
+
+- Thread-safe memoization
+- Memoization for free and bound functions
+- Configurable immutables
+- Support for parameter and return type hints
+- Cache invalidation
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Memoization and Cache Invalidation for Bound Functions](#memoization-and-cache-invalidation-for-bound-functions)
+  - [Memoization and Cache Invalidation for Free Functions](#memoization-and-cache-invalidation-for-free-functions)
+- [API](#api)
+
+## Installation
+
+```bash
+pip install memoiz
+```
+
+## Usage
+
+### Memoization and Cache Invalidation for Bound Functions
+
+In this example you will use Memoiz to memoize the return value of the `greeter.greet` method and print the greeting.
+
+```py
+from memoiz.cache import Cache
+
+cache = Cache()
+
+
+class Greeter:
+
+    def __init__(self):
+        self.adv = "Very"
+
+    @cache
+    def greet(self, adj: str) -> str:
+        return f"Hello, {self.adv} {adj} World!"
+
+
+greeter = Greeter()
+
+print("1:", cache._cache)
+
+greeting = greeter.greet("Happy")
+
+print("2:", greeting)
+```
+
+```bash
+1: {}
+2: Hello, Very Happy World!
+```
+
+As a continuation of the example, you will selectively invalidate cached articles using the `cache.invalidate` method.
+
+```python
+greeter = Greeter()
+
+print("1:", cache._cache)
+
+greeting = greeter.greet("Happy")
+
+print("2:", greeting)
+
+greeting = greeter.greet("Cautious")
+
+print("3:", greeting)
+
+# The cache has memoized the call using the `Happy` argument and the call using the `Cautious` argument.
+print("4:", cache._cache)
+
+# Invalidate the call to `greeter.greet` with the `Happy` argument. Provide a reference to the method, the object, and the argument.
+cache.invalidate(greeter.greet, greeter, "Happy")
+
+print("5:", cache._cache)
+
+# Invalidate the call to `greeter.greet` with the `Cautious` argument.
+cache.invalidate(greeter.greet, greeter, "Cautious")
+
+# The cache is empty.
+print("6:", cache._cache)
+```
+
+```bash
+1: {}
+2: Hello, Very Happy World!
+3: Hello, Very Cautious World!
+4: {<bound method Greeter.greet of <__main__.Greeter object at 0x7fa5e7f837f0>>: {((<__main__.Greeter object at 0x7fa5e7f837f0>, 'Happy'), ()): 'Hello, Very Happy World!', ((<__main__.Greeter object at 0x7fa5e7f837f0>, 'Cautious'), ()): 'Hello, Very Cautious World!'}}
+5: {<bound method Greeter.greet of <__main__.Greeter object at 0x7fa5e7f837f0>>: {((<__main__.Greeter object at 0x7fa5e7f837f0>, 'Cautious'), ()): 'Hello, Very Cautious World!'}}
+6: {}
+```
+
+### Memoization and Cache Invalidation for Free Functions
+
+In this example you will use Memoiz to memoize the return value of the `greet` function and print the greeting.
+
+```py
+from memoiz.cache import Cache
+
+cache = Cache()
+
+
+@cache
+def greet(adj: str) -> str:
+    return f"Hello, {adj} World!"
+
+
+print("1:", cache._cache)
+
+greeting = greet("Happy")
+
+print("2:", greeting)
+```
+
+```bash
+1: {}
+2: Hello, Happy World!
+```
+
+As a continuation of the example, you will selectively invalidate cached articles using the `cache.invalidate` method.
+
+```python
+print("1:", cache._cache)
+
+greeting = greet("Happy")
+
+print("2:", greeting)
+
+greeting = greet("Cautious")
+
+print("3:", greeting)
+
+print("4:", cache._cache)
+
+cache.invalidate(greet, "Happy")
+
+print("5:", cache._cache)
+
+cache.invalidate(greet, "Cautious")
+
+print("6:", cache._cache)
+```
+
+```bash
+1: {}
+2: Hello, Happy World!
+3: Hello, Cautious World!
+4: {<function greet at 0x7fa5cefb8430>: {(('Happy',), ()): 'Hello, Happy World!', (('Cautious',), ()): 'Hello, Cautious World!'}}
+5: {<function greet at 0x7fa5cefb8430>: {(('Cautious',), ()): 'Hello, Cautious World!'}}
+6: {}
+```
+
+## API
+
+### The Cache Class
+
+**memoiz.Cache(immutables, allow_hash, deep_copy)**
+
+- immutables `Tuple[type, ...]` An optional list of objects that are assumed to be immutable. **Default:** `(int, float, complex, bool, str, type(None))`
+- allow_hash `bool` An optional flag that indicates if an object's hash is sufficient for indexing the callable's arguments. **Default:** `True`
+- deep_copy `bool` Optionally return the cached return value using Python's `copy.deepcopy`. This can help prevent mutations of the cached return value. **Default:** `True`.
+
+**cache.\_\_call\_\_(callable)**
+
+- callable `typing.Callable` The function or method that will exhibit memoization.
+
+The `Cache` instance is a callable. This is the `@cache` decorator that is used in order to memoize a function or method. Please see the above [usage](#usage) for how to use this decorator.
+
+**cache.invalidate(callable, \*args, \*\*kwargs)**
+
+- callable `typing.Callable` The memoized callable.
+- args `Any` The arguments passed to the callable.
+- kwargs `Any` The keyword arguments passed to the callable.
+
+Invalidates the cache for the specified callable and arguments. See the [usage](#usage) for for how to invalidate the cache.
+
+> **NB** The first argument of a method (i.e., a bound function) is the object instance e.g., the `self` in the method definition.
+
+**cache.invalidate_all()**
+
+Resets the cache making the old cache eligible for garbage collection.
