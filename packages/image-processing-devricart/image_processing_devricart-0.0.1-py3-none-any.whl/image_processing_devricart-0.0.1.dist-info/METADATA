@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: image_processing_devricart
+Version: 0.0.1
+Summary: My short description
+Home-page: https://github.com/DevRicart/package-template-DIO
+Author: Ricardo Gonçalves
+Author-email: ricardo.gferreira97@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image >=0.16.1
+
+# image_processing
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histrogram matching
+		-	Structural similarity
+		- Resize image
+
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing
+```
+
+## Author
+Ricardo GonÃ§alves
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
