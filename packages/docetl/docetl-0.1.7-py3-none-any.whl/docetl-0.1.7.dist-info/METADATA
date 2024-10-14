@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: docetl
+Version: 0.1.7
+Summary: ETL with LLM operations.
+License: MIT
+Author: Shreya Shankar
+Author-email: shreyashankar@berkeley.edu
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: parsing
+Requires-Dist: asteval (>=1.0.4,<2.0.0)
+Requires-Dist: azure-ai-documentintelligence (>=1.0.0b4,<2.0.0) ; extra == "parsing"
+Requires-Dist: diskcache (>=5.6.3,<6.0.0)
+Requires-Dist: frozendict (>=2.4.4,<3.0.0)
+Requires-Dist: litellm (>=1.42.1,<2.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0) ; extra == "parsing"
+Requires-Dist: paddleocr (>=2.8.1,<3.0.0) ; extra == "parsing"
+Requires-Dist: paddlepaddle (>=2.6.2,<3.0.0) ; extra == "parsing"
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0) ; extra == "parsing"
+Requires-Dist: pymupdf (>=1.24.10,<2.0.0) ; extra == "parsing"
+Requires-Dist: pyrate-limiter (>=3.7.0,<4.0.0)
+Requires-Dist: python-docx (>=1.1.2,<2.0.0) ; extra == "parsing"
+Requires-Dist: python-pptx (>=1.0.2,<2.0.0) ; extra == "parsing"
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: scikit-learn (>=1.5.2,<2.0.0)
+Requires-Dist: tenacity (>=9.0.0,<10.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+# DocETL: Powering Complex Document Processing Pipelines
+
+[Website (Includes Demo)](https://docetl.com) | [Documentation](https://ucbepic.github.io/docetl) | [Discord](https://discord.gg/fHp7B2X3xx) | [NotebookLM Podcast](https://notebooklm.google.com/notebook/ef73248b-5a43-49cd-9976-432d20f9fa4f/audio?pli=1) (thanks Shabie from our Discord community!) | Paper (coming soon!)
+
+![DocETL Figure](docs/assets/readmefig.png)
+
+DocETL is a tool for creating and executing data processing pipelines, especially suited for complex document processing tasks. It offers a low-code, declarative YAML interface to define LLM-powered operations on complex data.
+
+## When to Use DocETL
+
+DocETL is the ideal choice when you're looking to maximize correctness and output quality for complex tasks over a collection of documents or unstructured datasets. You should consider using DocETL if:
+
+- You want to perform semantic processing on a collection of data
+- You have complex tasks that you want to represent via map-reduce (e.g., map over your documents, then group by the result of your map call & reduce)
+- You're unsure how to best express your task to maximize LLM accuracy
+- You're working with long documents that don't fit into a single prompt or are too lengthy for effective LLM reasoning
+- You have validation criteria and want tasks to automatically retry when the validation fails
+
+## Installation
+
+See the documentation for installing from PyPI.
+
+### Prerequisites
+
+Before installing DocETL, ensure you have Python 3.10 or later installed on your system. You can check your Python version by running:
+
+python --version
+
+### Installation Steps (from Source)
+
+1. Clone the DocETL repository:
+
+```bash
+git clone https://github.com/ucbepic/docetl.git
+cd docetl
+```
+
+2. Install Poetry (if not already installed):
+
+```bash
+pip install poetry
+```
+
+3. Install the project dependencies:
+
+```bash
+poetry install
+```
+
+4. Set up your OpenAI API key:
+
+Create a .env file in the project root and add your OpenAI API key:
+
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
+
+Alternatively, you can set the OPENAI_API_KEY environment variable in your shell.
+
+5. Run the basic test suite to ensure everything is working (this costs less than $0.01 with OpenAI):
+
+```bash
+make tests-basic
+```
+
+That's it! You've successfully installed DocETL and are ready to start processing documents.
+
+For more detailed information on usage and configuration, please refer to our [documentation](https://ucbepic.github.io/docetl).
+
