@@ -1,0 +1,1 @@
+from square_database_structure.main import global_list_create
