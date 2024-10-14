@@ -1,0 +1,8 @@
+setup.py
+peace_for_gaza/__init__.py
+peace_for_gaza/peace_for_gaza.py
+peace_for_gaza.egg-info/PKG-INFO
+peace_for_gaza.egg-info/SOURCES.txt
+peace_for_gaza.egg-info/dependency_links.txt
+peace_for_gaza.egg-info/entry_points.txt
+peace_for_gaza.egg-info/top_level.txt
