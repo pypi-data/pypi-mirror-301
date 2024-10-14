@@ -1,0 +1,13 @@
+runtypes/__init__.py,sha256=xpFntP2JZ1q2zEi0TMEVYTVINvY1ScxjwczbtAXQULM,966
+runtypes/hints.py,sha256=eHCDrbIjF0c7e_ME5a6-b-DAlX5RXEHdH0YRj91_AOg,2587
+runtypes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runtypes/runtype.py,sha256=Fuvn74whWlknK2mlFA37w2lZuK5W0VTwqkWBt36_MOI,5574
+runtypes/tuples.py,sha256=hGChGC0rVsfPff_S7TPrmPVJhaZmM3HINeMIyXygicA,1244
+runtypes/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runtypes/types/advanced.py,sha256=tOlwQe1gxQx8nYaNHfWMLOL5YdmaxZnXSDXR4yBnHOQ,5360
+runtypes/types/basic.py,sha256=tPKFi-QV3P8Zcrbv8c2txF6ilWsn2-uEm0W0zzBsBdQ,5211
+runtypes-0.6.2.dist-info/LICENSE,sha256=BDG_2j-CT-5qggMrBs3Xy61lptjR3a2coNNP1FxkTg4,1069
+runtypes-0.6.2.dist-info/METADATA,sha256=bPkHatef6RHHUXkt9QV4h7nQKIEw4NQlc7DzIZayOLc,1799
+runtypes-0.6.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+runtypes-0.6.2.dist-info/top_level.txt,sha256=jv0SlHsHj9x2WQMkQjLg5209l-5sgs5gLuhSDpbB7kw,9
+runtypes-0.6.2.dist-info/RECORD,,
