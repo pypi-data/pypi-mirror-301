@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+clickzetta = clickzetta.connector.sqlalchemy:ClickZettaDialect
