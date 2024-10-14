@@ -1,0 +1,15 @@
+0.3
+---
+* updated deps
+* cast xls values to string to be json serializable
+* add mapping field to Configuration
+
+
+0.2
+---
+* Fix packaging issue
+
+
+0.1
+---
+* Initial Release
