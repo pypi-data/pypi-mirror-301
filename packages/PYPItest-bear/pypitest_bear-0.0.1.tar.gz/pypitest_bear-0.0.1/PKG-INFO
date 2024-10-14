@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: PYPItest_bear
+Version: 0.0.1
+Summary: 一个用于测试上传的项目
+Home-page: https://github.com/Qiyana-bear/bear_pip_test
+Author: zehua
+Author-email: zehua@qq.com
+License: LICENSE
+License-File: LICENSE
