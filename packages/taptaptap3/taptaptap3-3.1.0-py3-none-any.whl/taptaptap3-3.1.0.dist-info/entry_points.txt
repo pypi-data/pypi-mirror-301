@@ -1,0 +1,3 @@
+[console_scripts]
+tapmerge = taptaptap3.bin:tapmerge
+tapvalidate = taptaptap3.bin:tapvalidate

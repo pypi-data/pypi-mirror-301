@@ -1,0 +1,14 @@
+taptaptap3/__init__.py,sha256=RE8_r5id6bZPqhl_QM0N5O9wki-of_7getyg6wmAHtM,1782
+taptaptap3/__main__.py,sha256=_JLi-jcopBx51XA_YpfHtgbZgacMHy9l9QzgHNprsD8,263
+taptaptap3/api.py,sha256=GfNoEW9WqcjuKCGlqt_1XDQNPl7_gdmFNCZSgrCFR18,13312
+taptaptap3/exc.py,sha256=tvTfOmJVl_eekOX9ZsNCWKil0NbLSW9ewRiWFrbauhk,1228
+taptaptap3/impl.py,sha256=GJwzSkcCC54Id9z00tOfQz-iAYa5XrcRlevnRJrJji0,48825
+taptaptap3/proc.py,sha256=2Wfqr9mcYmuI208bad56ZcfNYiPMqZ5e5wu-JLh5M1U,2258
+taptaptap3/bin/__init__.py,sha256=xc6GFAd6Ax7DdVsoqTxpUhp0MruefTZG89u2_6dPb20,1331
+taptaptap3/bin/tapmerge.py,sha256=q8BWyzPmJb26pq5s-1VndI_CzBDtZ1esMe8hXyHzmwo,1353
+taptaptap3/bin/tapvalidate.py,sha256=b9Txox-SWoCm2H1BqAjWwXlD9-Af8Yiyv2ObLW5MpHU,1091
+taptaptap3-3.1.0.dist-info/METADATA,sha256=D3g6nbvCDyUfJ8cO5U1rJhCwLKBrRMyFxB29lngVGbs,5063
+taptaptap3-3.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+taptaptap3-3.1.0.dist-info/entry_points.txt,sha256=6k-dzIyztD8TagXcY3Je_3xD045XvvuvdeTwmw9WiRQ,94
+taptaptap3-3.1.0.dist-info/licenses/LICENSE,sha256=w5DmNn1cUHemY5Cj9y14wiuzt1dAjEk1-Kc82eW7fv8,1488
+taptaptap3-3.1.0.dist-info/RECORD,,
