@@ -1,0 +1,54 @@
+#albums {
+    width: 30%;
+    padding: 1 2;
+    background: $panel;
+}
+
+#tracks {
+    width: 70%;
+    padding: 1 2;
+    background: $surface;
+}
+
+#player {
+    height: 4;
+    padding: 1 2;
+    background: $surface-darken-1;
+}
+
+#progress-container {
+    width: 100%;
+}
+
+#current-time, #total-duration {
+    width: 10%;
+    content-align: center middle;
+}
+
+#progress {
+    width: 80%;
+}
+
+Bar {
+    width: 100%;
+}
+
+ListItem {
+    color: $text;
+    height: auto;
+    background: $surface;
+    overflow: hidden hidden;
+}
+
+ListView:focus > ListItem.--highlight {
+    background: $accent;
+}
+
+.track-name {
+    width: 80%;
+}
+
+.track-length {
+    width: 20%;
+    content-align: right middle;
+}
