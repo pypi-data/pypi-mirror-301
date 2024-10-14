@@ -1,0 +1,15 @@
+airflow/providers/opensearch/LICENSE,sha256=FFb4jd2AXnOOf7XLP04pQW6jbdhG49TxlGY6fFpCV1Y,13609
+airflow/providers/opensearch/__init__.py,sha256=2FyuUXRfNNpH2ORNjZ_Q__Hatl2YBGikkfsGhzTzUww,1497
+airflow/providers/opensearch/get_provider_info.py,sha256=QzNv-3nDs6-vM4R9OAuchZU8Kxjpmx36YJhTj3Qa0f4,9404
+airflow/providers/opensearch/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/opensearch/hooks/opensearch.py,sha256=dbJE3DlEZeQFkQZBQhet5WNUhH4hNJtTotz9dnJhFus,5580
+airflow/providers/opensearch/log/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/opensearch/log/os_json_formatter.py,sha256=5EB0nbEZrgDA0IFhGoYs6tUIxN5RGIsxS--mYz2yIHY,1793
+airflow/providers/opensearch/log/os_response.py,sha256=reXQnGRxNm7XtXjtWXvJQ9CFyaWP2Bwmao2pkihcQBQ,6025
+airflow/providers/opensearch/log/os_task_handler.py,sha256=PzIIa-98rNgrhmx-NXytPSozZ3LoPYCd8ZmHKAm-8As,23629
+airflow/providers/opensearch/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/opensearch/operators/opensearch.py,sha256=mEL6XZHy1PSyHI_uys68kENdBcKr_6KiTbn6LWi5FjM,7796
+apache_airflow_providers_opensearch-1.5.0.dist-info/entry_points.txt,sha256=_S5YrsWXDlS-6T4ahB0B496ZVEDp1ZcdbcaCuyG8lpQ,106
+apache_airflow_providers_opensearch-1.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_opensearch-1.5.0.dist-info/METADATA,sha256=RIbVsRAcd6mH_oKZi_bQL6xNvgpGSdmpvwsTgQnzDQ8,4732
+apache_airflow_providers_opensearch-1.5.0.dist-info/RECORD,,
