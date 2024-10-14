@@ -1,0 +1,9 @@
+xssniffer/__init__.py,sha256=AJCek9-AvaJZy43s5WamcI2cHIi6bB-tes-bDXMoAa4,57
+xssniffer/core.py,sha256=VN9RWXTXvGarfdwTcph9lOnif1eUrEsZAOUmU_phBcI,772
+xssniffer/scanner.py,sha256=AxAfVwb82CvfHYg3iUY9pGAVC043eSwqg24vT06Gnac,2132
+xssniffer-0.1.0.dist-info/LICENSE,sha256=CmbH9ppfL0wJ5lmyqWyAHdFvcoSQpBDw1sAwuZ_dM1M,1065
+xssniffer-0.1.0.dist-info/METADATA,sha256=79Y7ww7CzG0OZR5GUduBPM63qJVkwfNSpu4B8qvHYSA,484
+xssniffer-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xssniffer-0.1.0.dist-info/entry_points.txt,sha256=XCHCvma8pChd5ZbzYKrkUpBp6iquedhsdepbiwow3LM,59
+xssniffer-0.1.0.dist-info/top_level.txt,sha256=L8mgMv49Bp1ZHCKlBkE0zDGc7XGuc8-erHM_1VILAEs,10
+xssniffer-0.1.0.dist-info/RECORD,,

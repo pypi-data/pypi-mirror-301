@@ -1,0 +1,2 @@
+[console_scripts]
+xssniffer = xssniffer.scanner:start_scan
