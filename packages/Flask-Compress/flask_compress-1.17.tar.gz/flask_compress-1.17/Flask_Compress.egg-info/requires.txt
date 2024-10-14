@@ -1,0 +1,9 @@
+flask
+
+[:platform_python_implementation != "PyPy"]
+brotli
+zstandard
+
+[:platform_python_implementation == "PyPy"]
+brotlicffi
+zstandard[cffi]
