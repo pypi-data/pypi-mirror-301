@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "nonebot-plugin-boom"
+version = "0.1.2"
+description = "【危险插件】炸炸你的NB"
+authors = ["Yeying-Xingchen <yeyingxingchen@yeah.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
