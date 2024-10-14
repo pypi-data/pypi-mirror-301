@@ -1,0 +1,4 @@
+-e .
+sphinx-rtd-theme>=2.0.0
+pika
+pyzmq
