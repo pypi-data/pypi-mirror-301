@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zzfdemo
+Version: 0.0.5
+Summary: zzf demo
+Home-page: https://github.com/ITzzF/zzfdemo
+Author: Zhifan Zhang
+Author-email: 2692219488@qq.com
+License: MIT license
+Keywords: zzfdemo
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: ipyleaflet
+Requires-Dist: pandas
+Requires-Dist: localtileserver
+Requires-Dist: folium
+
+# zzfdemo
+
+
+[![image](https://img.shields.io/pypi/v/zzfdemo.svg)](https://pypi.python.org/pypi/zzfdemo)
+[![image](https://img.shields.io/conda/vn/conda-forge/zzfdemo.svg)](https://anaconda.org/conda-forge/zzfdemo)
+
+
+**zzf demo**
+
+
+-   Free software: MIT license
+-   Documentation: https://ITzzF.github.io/zzfdemo
+    
+
+## Features
+
+-   TODO

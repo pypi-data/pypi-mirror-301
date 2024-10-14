@@ -1,0 +1,5 @@
+numpy
+ipyleaflet
+pandas
+localtileserver
+folium
