@@ -1,0 +1,5 @@
+prometheus-fastapi-instrumentator
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation-logging
+sentry-sdk
+newrelic
