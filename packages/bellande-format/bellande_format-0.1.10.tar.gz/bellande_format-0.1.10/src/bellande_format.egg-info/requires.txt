@@ -1,0 +1,8 @@
+numpy>=1.18.0
+typing-extensions>=3.7.4
+
+[dev]
+pytest
+pytest-cov[all]
+mypy
+black
