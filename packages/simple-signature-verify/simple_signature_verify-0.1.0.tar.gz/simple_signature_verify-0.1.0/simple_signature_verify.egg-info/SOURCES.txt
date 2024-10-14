@@ -1,0 +1,8 @@
+README.md
+setup.py
+Verify_Signature/Verify_signature.py
+Verify_Signature/__init__.py
+simple_signature_verify.egg-info/PKG-INFO
+simple_signature_verify.egg-info/SOURCES.txt
+simple_signature_verify.egg-info/dependency_links.txt
+simple_signature_verify.egg-info/top_level.txt
