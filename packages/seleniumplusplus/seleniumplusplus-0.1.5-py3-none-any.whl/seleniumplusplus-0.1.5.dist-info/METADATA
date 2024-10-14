@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: seleniumplusplus
+Version: 0.1.5
+Summary: Speeds up automation when using selenium
+License: MIT
+Author: vince
+Author-email: contact.polymons@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: selenium (>=4.12.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+This library provides a set of utility functions and classes to facilitate automated web interactions using Selenium WebDriver. It includes functionalities for waiting for elements, interacting with elements, and performing various actions on web elements. The library is designed to be easy to use and flexible, allowing users to quickly create automated web interactions without having to write complex code.
