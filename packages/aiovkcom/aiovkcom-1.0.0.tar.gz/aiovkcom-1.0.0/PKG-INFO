@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: aiovkcom
+Version: 1.0.0
+Summary: Python vk.com API wrapper
+Home-page: https://github.com/konstantintogoi/aiovkcom
+Download-URL: https://pypi.org/project/aiovkcom/
+Author: Konstantin Togoi
+Author-email: Konstantin Togoi <konstantin.togoi@gmail.com>
+License: BSD 2-Clause License
+        
+        Copyright (c) 2019, Konstantin Togoi
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Home, https://pypi.org/project/aiovkcom
+Project-URL: Documentation, https://konstantintogoi.github.io/aiovkcom
+Project-URL: Repository, https://github.com/konstantintogoi/aiovkcom
+Keywords: vk,vk api
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+.. image:: https://img.shields.io/badge/license-BSD-blue.svg
+    :target: https://github.com/konstantintogoi/aiovkcom/blob/master/LICENSE
+
+.. image:: https://img.shields.io/pypi/v/aiovkcom.svg
+    :target: https://pypi.python.org/pypi/aiovkcom
+
+.. image:: https://img.shields.io/pypi/pyversions/aiovkcom.svg
+    :target: https://pypi.python.org/pypi/aiovkcom
+
+.. image:: https://readthedocs.org/projects/aiovkcom/badge/?version=latest
+    :target: https://aiovkcom.readthedocs.io/en/latest
+
+.. image:: https://github.com/konstantintogoi/aiovkcom/actions/workflows/pages/pages-build-deployment/badge.svg
+    :target: https://konstantintogoi.github.io/aiovkcom
+
+.. index-start-marker1
+
+aiovkcom
+========
+
+async python `vk.com API <https://dev.vk.com/en/api/api-requests>`_ wrapper
+for `REST API <https://dev.vk.com/en/method>`_ methods, see
+`documentation <https://konstantintogoi.github.io/aiovkcom>`_.
+
+Example
+-------
+
+To use `vk.com API <https://dev.vk.com/en/api/api-requests>`_ you need
+an :code:`access_token`.
+
+.. code-block:: python
+
+    import aiovkcom
+
+    async with aiovkcom.API(v='5.241', access_token='your access token') as vk:
+        contacts = await vk.account.getContactList()
+        friends = await vk.friends.get()
+        events = await vk.wall.get()
+
+Installation
+------------
+
+.. code-block:: shell
+
+    $ pip install aiovkcom
+
+Supported Python Versions
+-------------------------
+
+Python 3.7, 3.8, 3.9 are supported.
+
+.. index-end-marker1
+
+License
+-------
+
+aiovkcom is released under the BSD 2-Clause License.
