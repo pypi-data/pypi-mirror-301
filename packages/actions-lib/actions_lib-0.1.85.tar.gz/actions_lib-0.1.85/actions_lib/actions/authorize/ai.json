@@ -1,0 +1,34 @@
+[{
+    "name": "authorize_token",
+    "group": "authorize",
+    "type": "backend",
+    "level": 1,
+    "parameters": [
+        {
+            "name": "token",
+            "type": "enum",
+            "enum": [
+                "USDC"
+            ],
+            "default": "USDC",
+            "description": "The type of token to be authorized. Currently, only USDC is supported."
+        },
+        {
+            "name": "amount",
+            "type": "float",
+            "force": true,
+            "description": "The amount of the token (e.g., USDC) that the user wants to authorize. This must be a positive number, and it represents the maximum amount allowed for the specific transaction."
+        }
+    ],
+    "description": "This function authorizes a specific token (e.g., USDC) and a specified amount of that token for further use. The user must specify both the token type and the amount to be authorized. Once authorized, the token can be used for transactions up to the specified amount.",
+    "details": "For example, to authorize 100 USDC for transactions, you can send: `authorize 100 USDC`. This will allow transactions of up to 100 USDC."
+},
+{
+    "name": "show_authorized_tokens",
+    "group": "authorize",
+    "type": "backend",
+    "level": 1,
+    "parameters": [],
+    "description": "Sets the system's blockchain network to one of the specified chains: 'Base', 'ETH' (Ethereum), or 'BSC' (Binance Smart Chain). Use this function to switch the operational blockchain network based on your requirements.",
+    "details": "For example, to view all authorized tokens, you can simply call: `show authorized tokens`. This will return a list of tokens with the authorized limits."
+}]
