@@ -1,0 +1,13 @@
+defusedxml
+passlib
+vobject>=0.9.6
+python-dateutil>=2.7.3
+pika>=1.1.0
+
+[bcrypt]
+bcrypt
+
+[test]
+pytest>=7
+waitress
+bcrypt
