@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/jjtemplate.py
+src/jjtemplate.egg-info/PKG-INFO
+src/jjtemplate.egg-info/SOURCES.txt
+src/jjtemplate.egg-info/dependency_links.txt
+src/jjtemplate.egg-info/entry_points.txt
+src/jjtemplate.egg-info/requires.txt
+src/jjtemplate.egg-info/top_level.txt

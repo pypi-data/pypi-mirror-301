@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "build",
+    "setuptools >= 61.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jjtemplate"
+version = "0.9.0"
+dependencies = [
+    'jinja2',
+]
+requires-python = ">= 3.9"
+authors = [
+    { name = "Masaaki Shibata", email = "mshibata@emptypage.jp" },
+]
+description = "Jinja2 Templating with JSON files"
+readme = "README.md"
+keywords = ["jinja2", "json", "template", "templating"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "License :: Public Domain",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing",
+]
+
+[project.scripts]
+jjtemplate = "jjtemplate:main"
+
+[project.urls]
+Repository = "https://bitbucket.org/emptypage/jjtemplate/"
