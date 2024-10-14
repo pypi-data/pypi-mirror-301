@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/mongodb_backup_exporter.py
+src/mongodb_backup_exporter.egg-info/PKG-INFO
+src/mongodb_backup_exporter.egg-info/SOURCES.txt
+src/mongodb_backup_exporter.egg-info/dependency_links.txt
+src/mongodb_backup_exporter.egg-info/requires.txt
+src/mongodb_backup_exporter.egg-info/top_level.txt
