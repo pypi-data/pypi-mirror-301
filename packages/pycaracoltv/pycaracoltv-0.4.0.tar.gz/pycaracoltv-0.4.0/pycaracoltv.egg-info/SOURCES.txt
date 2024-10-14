@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pycaracoltv/__init__.py
+pycaracoltv/caracoltv.py
+pycaracoltv/caracoltv_utils.py
+pycaracoltv.egg-info/PKG-INFO
+pycaracoltv.egg-info/SOURCES.txt
+pycaracoltv.egg-info/dependency_links.txt
+pycaracoltv.egg-info/requires.txt
+pycaracoltv.egg-info/top_level.txt
+test/test_caracoltv.py
