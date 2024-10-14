@@ -1,0 +1,24 @@
+0.5 (dev)
+-----
+* sort field names in Fieldset/Dispatcher generated form
+* Extracted code to create default FieldDefinition to be used out of migrations
+
+
+0.4
+---
+* fixes wrong dependency version
+
+
+0.3
+---
+* fixes get_validation_for_field
+
+
+0.2
+---
+* Fix packaging issue
+
+
+0.1
+---
+* Initial Release
