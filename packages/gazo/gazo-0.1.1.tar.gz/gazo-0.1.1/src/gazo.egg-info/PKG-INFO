@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: gazo
+Version: 0.1.1
+Summary: A CLI application to display image files in the terminal.
+Home-page: https://github.com/suzukitakac/gazo
+Author: suzukitakac
+Author-email: suzukitakac@outlook.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+
+# gazo
+
+English version is below.
+
+gazoは、ターミナルで画像ファイルを表示するCLIアプリケーションです。
+
+## 機能
+
+- カラーで画像を表示
+
+## インストール
+
+```shell
+pip install gazo
+```
+
+---
+
+# gazo
+
+gazo is a CLI application that displays image files in the terminal.
+
+## Features
+
+- Display images in color
+
+## Installation
+
+```shell
+pip install gazo
+```

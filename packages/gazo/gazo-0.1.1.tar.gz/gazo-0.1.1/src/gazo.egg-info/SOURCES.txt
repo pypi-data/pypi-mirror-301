@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/gazo/__init__.py
+src/gazo/main.py
+src/gazo.egg-info/PKG-INFO
+src/gazo.egg-info/SOURCES.txt
+src/gazo.egg-info/dependency_links.txt
+src/gazo.egg-info/entry_points.txt
+src/gazo.egg-info/requires.txt
+src/gazo.egg-info/top_level.txt
+src/gazo/commands/__init__.py
+src/gazo/commands/display_image.py
