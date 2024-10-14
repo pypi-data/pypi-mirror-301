@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2024 OpenBit
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[build-system]
+requires=["setuptools>=70", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name="uacme-desec"
+authors = [
+    { name = "Hugo Rodrigues", email="hugo.rodrigues@openbit.tech" }
+]
+description = "uacme-desec - An UACME hook for deSEC"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[project.scripts]
+uacme-desec = "uacme_desec:main"
+
+[project.urls]
+Homepage = "https://codeberg.org/openbit/uacme-desec"
+Issues = "https://codeberg.org/openbit/uacme-desec/issues"

@@ -1,0 +1,17 @@
+.flake8
+.flake8.license
+.gitignore
+.pylintrc
+README.md
+pyproject.toml
+.forgejo/workflows/audit.yaml
+.forgejo/workflows/build.yaml
+.forgejo/workflows/lint.yaml
+LICENSES/CC0-1.0.txt
+LICENSES/MIT.txt
+src/uacme_desec.py
+src/uacme_desec.egg-info/PKG-INFO
+src/uacme_desec.egg-info/SOURCES.txt
+src/uacme_desec.egg-info/dependency_links.txt
+src/uacme_desec.egg-info/entry_points.txt
+src/uacme_desec.egg-info/top_level.txt
