@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: profissa_lft
+Version: 1.0.8
+Summary: LFT is a framework designed to facilitate the creation of lightweight network topologies with ease. Using Docker containers, it is possible to add any container to the network to provide network services or even emulate network devices, such as switches, controllers (in Software Defined Networking). This project has integration with OpenvSwitch to emulate the network forwarding devices and srsRAN 4G to emulate wireless links for Fog and Edge application scenarios.
+Home-page: https://github.com/alexandrekaihara/lft    
+Author: Alexandre Mitsuru Kaihara
+Author-email: alexandreamk1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: os
+Requires-Dist: inspect
+
+# Lightweight Fog Testbed (LFT)
+LFT is a framework designed to facilitate the creation of lightweight network topologies with ease. Using Docker containers, it is possible to add any container to the network to provide network services or even emulate network devices, such as switches, controllers (in Software Defined Networking). This project has integration with OpenvSwitch to emulate the network forwarding devices and srsRAN 4G to emulate wireless links for Fog and Edge application scenarios.
+
+## Requirement
+This framework was developed and tested on Ubuntu Desktop 24.04 LTS. We recommend this Linux version.
+
+## Installation
+To install the project you need to run:
+
+'''
+pip3 install profissa_lft
+'''
+
+In case of any missing dependency you can manually clone the repository and run the dependencies script:
+
+```
+git clone https://github.com/alexandrekaihara/lft
+cd lft
+chmod +X dependencies.sh
+./dependencies.sh
+```
+
+## First run
+On the source root of the project run:
+
+'''
+cd examples
+python3 
+'''
