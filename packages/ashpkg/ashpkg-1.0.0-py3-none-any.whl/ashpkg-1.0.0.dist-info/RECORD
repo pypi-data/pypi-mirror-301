@@ -1,0 +1,9 @@
+divide/__init__.py,sha256=AS4B9ZPwQXEAgfOMrm3A33e1zDK1LZyVVWCg-k3BJOM,214
+divide/divide_by_three.py,sha256=h6kxGVr9zbcUTLtleBZ0Yiy4pf9XoB760QYuIJGwtvk,45
+multiply/__init__.py,sha256=bp4uVV4qaarbyuqkfUxLJXgFZhMgM3KErzfo189YO3I,49
+multiply/multiply_by_three.py,sha256=3KhTN3fs7AtDldGZRjIj5oOzlw3ww3LEimqKFqc0B9Y,47
+ashpkg-1.0.0.dist-info/LICENSE.txt,sha256=0J3wNaKPvT4hwv_5qN5OY3Q16o9gYaanF1JPSDNwO_U,1075
+ashpkg-1.0.0.dist-info/METADATA,sha256=St0lVs_alccxYoRo7NCcpIe_fHSGEw61h6ydvI3dpyE,1782
+ashpkg-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ashpkg-1.0.0.dist-info/top_level.txt,sha256=xwkmTKuq6DfXawJA6BVb38EIcyoQi4eOOLQaLcF7lWg,16
+ashpkg-1.0.0.dist-info/RECORD,,
