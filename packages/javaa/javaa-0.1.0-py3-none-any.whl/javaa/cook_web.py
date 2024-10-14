@@ -1,0 +1,19 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         version="3.1">
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>SecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+</web-app>
