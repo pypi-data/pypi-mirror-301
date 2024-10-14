@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+notapy/__init__.py
+notapy/converter.py
+notapy.egg-info/PKG-INFO
+notapy.egg-info/SOURCES.txt
+notapy.egg-info/dependency_links.txt
+notapy.egg-info/requires.txt
+notapy.egg-info/top_level.txt
