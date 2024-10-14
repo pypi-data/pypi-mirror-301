@@ -1,0 +1,10 @@
+init_problem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+init_problem/__main__.py,sha256=lYIUQoBRYJ-WvvmawMs42N4yE6jBJvf6RIirK1CdPJM,54
+init_problem/chapters.py,sha256=3R0CJjE8iFoN94HAnL4WV5GpXjN5AjXhGCFQ3iXCkvk,1178
+init_problem/choice_option.py,sha256=0M4rnlTqZBvJPd9KNZ9bwp_b5PCKjLt5be-CMREiP2s,1236
+init_problem/main.py,sha256=GmWAW_X2YNx1j8fHBZPD_9yaSTMSlQ9O0Y3REcKaFJY,4324
+init_problem/problem.py,sha256=YX6vAkxsoJiWXuouhjmf548QKrUmmSLrpk5BAQ6wxxA,3173
+init_problem-0.3.13.dist-info/METADATA,sha256=v3qHHLN0SQ-TxJlvFobFwm3bc5adHpvhhbqbgAnHaWU,419
+init_problem-0.3.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+init_problem-0.3.13.dist-info/entry_points.txt,sha256=OtV21NtLGesLt4tZYFhfePPqmKNYTy3TGi_7Tici8IU,55
+init_problem-0.3.13.dist-info/RECORD,,
