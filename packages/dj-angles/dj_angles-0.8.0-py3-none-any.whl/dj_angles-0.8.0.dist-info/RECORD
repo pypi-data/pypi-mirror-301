@@ -1,0 +1,17 @@
+dj_angles/__init__.py,sha256=WpvgrxfQFcT-RExggPfSMRYGhVyRBMY97SnRZ04yWKE,116
+dj_angles/attributes.py,sha256=1Pf5qJYfVE757zVJqcb-lnIM4qOFQuVBHY0CpiD8i2g,5244
+dj_angles/exceptions.py,sha256=gYU_lp3z92cNuxqMenEwas9Qe5ua-4XOOkgxmBSn2tM,961
+dj_angles/regex_replacer.py,sha256=dtU5hYfYcBbQc5q8ZHpu1Tq6prcZF8y-LWDH-eY8Cfs,3883
+dj_angles/settings.py,sha256=bMdduZE-drlhmIXVJoHSiVIwoi7Gp_TOdJaD6L2_uqA,519
+dj_angles/strings.py,sha256=TFT6rz3Ux0gMrTijgEuusCwHD4S3oS_bbYSB_2Ku9ck,158
+dj_angles/tags.py,sha256=3eN-AR3HPe6mPei10v9H1g9uxxEvdLrb8yc732nlioA,3742
+dj_angles/template_loader.py,sha256=9UIeraDm07KmqkwKDF9fwSXPER-n9bGl2LgpDvT1Jeg,1420
+dj_angles/tokenizer.py,sha256=m77ol0pOT9fFRn_C1sP_GPGsWyzhx1ON3vjx57GofDQ,924
+dj_angles/mappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_angles/mappers/django.py,sha256=roaPQ1Lft4bCArfukzwX12WB0d-wtF2zNZPZ8dom9p0,4346
+dj_angles/mappers/thirdparty.py,sha256=3U0du_FJcl3u2SRjwIVdHlZB2R4OKeZGWj3OPHZ8DII,689
+dj_angles/mappers/utils.py,sha256=sh0aGwYPRfXWpzVQiiSd6M_eXC2C3GGStxM0AewN0yI,763
+dj_angles-0.8.0.dist-info/METADATA,sha256=T9X6pLEB66LGZRxc3Pmyi3rVy113tdcgygENq6h0gjw,5676
+dj_angles-0.8.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dj_angles-0.8.0.dist-info/licenses/LICENSE,sha256=WRW4FExPwULFFJHWXQVRbhlRe2ng_wHx_dFne-1W4Ps,1066
+dj_angles-0.8.0.dist-info/RECORD,,
