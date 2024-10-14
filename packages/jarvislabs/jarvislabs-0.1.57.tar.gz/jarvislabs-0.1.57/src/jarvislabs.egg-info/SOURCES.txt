@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jarvislabs/__init__.py
+src/jarvislabs/app.py
+src/jarvislabs/cli.py
+src/jarvislabs/s3handler.py
+src/jarvislabs/sample.py
+src/jarvislabs/server.py
+src/jarvislabs/templates.py
+src/jarvislabs.egg-info/PKG-INFO
+src/jarvislabs.egg-info/SOURCES.txt
+src/jarvislabs.egg-info/dependency_links.txt
+src/jarvislabs.egg-info/entry_points.txt
+src/jarvislabs.egg-info/requires.txt
+src/jarvislabs.egg-info/top_level.txt
