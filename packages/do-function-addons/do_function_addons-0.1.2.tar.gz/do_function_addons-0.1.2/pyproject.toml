@@ -1,0 +1,7 @@
+[project]
+name = "do-function-addons"
+version = "0.1.2"
+description = "DigitalOcean functions addons. Typed Event and Context class."
+readme = "README.md"
+dependencies = []
+requires-python = ">3.8"
