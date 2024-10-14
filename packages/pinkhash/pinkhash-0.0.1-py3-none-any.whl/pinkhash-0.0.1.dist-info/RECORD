@@ -1,0 +1,14 @@
+pinkhash/__init__.py,sha256=J8o8d9KRmhuXkjbHuXUxqb5zgtl3XZ8VbdwUHYsVO5Q,1855
+pinkhash/alphabet.py,sha256=udQpatv4NDeXNZdKzfZckjpiqxObeAcQMcuTlHmdwDA,567
+pinkhash/main.py,sha256=4kBZoj9Y_nYGDddklotduD6rygrtWvdmVR1x5dV-ivE,1049
+pinkhash/alphabets/eng1-adjective.txt,sha256=BiDGbmVGKC65vbuoD1vUpFqMA391Ah7w2EtDNw30uXU,177480
+pinkhash/alphabets/eng1-nouns.txt,sha256=LSQin7zjJrOfvYimNwmuuB1QghrhWQrERYCiyEcCLmA,515780
+pinkhash/alphabets/eng1.py,sha256=j8hAcdeH1zw8XNPpehCeNX3m7KDrlPSeFnJxfZ0yjUI,1068
+pinkhash/alphabets/eng1_gen.py,sha256=yy4a8vMFUfn4PilZzvnByrHdd5NP-DWarAmVRtC6AFo,1274
+pinkhash/alphabets/nato.py,sha256=9aiLTLImLTf6VudjXmJgK6sLBConnoJfvd4Z8S4ruYo,932
+pinkhash/alphabets/rfc1751.py,sha256=uwWmrXCmdL-9FGqe2CjqStZo726lUuiELS3DzBxuctU,17239
+pinkhash-0.0.1.dist-info/METADATA,sha256=OV3e4hfHsXN7dJfwN0UkvkpdBH-vyMS-eVbmuRtFne0,2526
+pinkhash-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pinkhash-0.0.1.dist-info/entry_points.txt,sha256=AEz18e5Nf-U4Qt1BL8vSdNiC4-t4xNiuTKmUTMk8W4o,44
+pinkhash-0.0.1.dist-info/licenses/LICENSE,sha256=Ru2ST3vMAcMz5RaB8FVhXUE6OWGP_hqmippd7EHB1dY,1065
+pinkhash-0.0.1.dist-info/RECORD,,
