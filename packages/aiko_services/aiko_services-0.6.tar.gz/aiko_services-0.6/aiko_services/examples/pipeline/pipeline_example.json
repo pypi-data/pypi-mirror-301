@@ -1,0 +1,31 @@
+{
+  "version": 0,
+  "name":    "p_example",
+  "runtime": "python",
+
+  "graph": ["(PE_RandomIntegers PE_Add (random: i))"],
+
+  "parameters": { "constant": 1,
+                  "delay":    0.0,
+                  "limit":    2,
+                  "rate":     0.0
+  },
+
+  "elements": [
+    { "name":   "PE_RandomIntegers",
+      "input":  [{ "name": "random", "type": "int" }],
+      "output": [{ "name": "random", "type": "int" }],
+      "deploy": {
+        "local": { "module": "aiko_services.examples.pipeline.elements" }
+      }
+    },
+    { "name":   "PE_Add",
+      "input":  [{ "name": "i", "type": "int" }],
+      "output": [{ "name": "i", "type": "int" }],
+      "deploy": {
+        "local": { "module": "aiko_services.examples.pipeline.elements"
+         }
+      }
+    }
+  ]
+}
