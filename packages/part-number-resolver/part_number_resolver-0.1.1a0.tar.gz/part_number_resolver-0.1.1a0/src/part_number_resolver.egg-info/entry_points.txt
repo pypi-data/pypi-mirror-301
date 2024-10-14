@@ -1,0 +1,2 @@
+[console_scripts]
+part_number_decoder = part_number_decoder.app:main

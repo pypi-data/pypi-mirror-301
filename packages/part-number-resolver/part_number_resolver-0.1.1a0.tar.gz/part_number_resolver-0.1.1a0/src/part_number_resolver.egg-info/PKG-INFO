@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: part-number-resolver
+Version: 0.1.1a0
+Summary: Library for extracting component parameters from part number.
+Home-page: https://github.com/partmanager/part-number-resolver
+Author: sakoPO
+Project-URL: Bug Tracker, https://github.com/partmanager/part-number-resolver/issues
+Project-URL: Changelog, https://github.com/partmanager/part-number-resolver/releases
+Project-URL: Source Code, https://github.com/partmanager/part-number-resolver
+Project-URL: Documentation, https://partmanager.github.io/part-number-resolver
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# part-number-resolver

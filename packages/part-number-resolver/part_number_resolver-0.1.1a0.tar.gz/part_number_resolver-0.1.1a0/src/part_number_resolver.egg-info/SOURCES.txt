@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements-tests.txt
+setup.cfg
+.github/workflows/publish.yml
+src/main.py
+src/part_number_resolver.egg-info/PKG-INFO
+src/part_number_resolver.egg-info/SOURCES.txt
+src/part_number_resolver.egg-info/dependency_links.txt
+src/part_number_resolver.egg-info/entry_points.txt
+src/part_number_resolver.egg-info/top_level.txt
