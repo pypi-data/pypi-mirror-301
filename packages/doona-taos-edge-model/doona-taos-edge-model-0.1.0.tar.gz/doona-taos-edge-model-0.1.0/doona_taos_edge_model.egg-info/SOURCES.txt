@@ -1,0 +1,8 @@
+setup.py
+doona_taos_edge_model.egg-info/PKG-INFO
+doona_taos_edge_model.egg-info/SOURCES.txt
+doona_taos_edge_model.egg-info/dependency_links.txt
+doona_taos_edge_model.egg-info/requires.txt
+doona_taos_edge_model.egg-info/top_level.txt
+doona_taos_edge_model_pip/__init__.py
+doona_taos_edge_model_pip/model_predictor.py
