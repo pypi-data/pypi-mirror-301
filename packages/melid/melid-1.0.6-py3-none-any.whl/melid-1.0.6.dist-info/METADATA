@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: melid
+Version: 1.0.6
+Summary: Melid is a PyQt5 Library for Desktop Applications containing commonly used utils and advanced widget implementations in very simple forms.
+Author-email: Mohammed Al-Ameen <ameenmohammed2311@gmail.com>
+Project-URL: Homepage, https://github.com/struckchure/melid
+Project-URL: Bug Tracker, https://github.com/struckchure/melid/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyqt5 >=5.15.11
+
+# Melid
+
+Melid is a PyQt5 Library for Desktop Applications containing commonly used utils and advanced widget implementations in very simple forms.
+
+# Features
+
+- [x] Router
+- [x] State management
+- [x] Data binded widgets (Provider Widget)
+- [ ] Hot-reload
+- [x] CSS Processor (TailwindCSS Syntax)
+
+# Install
+
+```sh
+$ pip install melid
+```
+
+# Usage
+
+Check the examples folder for usage examples.
+
+```sh
+$ git clone https://github.com/struckchure/melid.git
+$ cd melid/examples/basic
+$ python main.py
+```
