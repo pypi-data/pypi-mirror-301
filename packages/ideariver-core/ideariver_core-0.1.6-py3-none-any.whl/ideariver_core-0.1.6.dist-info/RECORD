@@ -1,0 +1,10 @@
+ideariver_core/__init__.py,sha256=PKibTQ335CvmmqolCx7yjQ3xZR2HdKmd2QgOjj8rPYs,564
+ideariver_core/base_plugin.py,sha256=NfGDQseK-tf075JfWtS0DBKkSnBm6ly4m5XzRHVeQVg,745
+ideariver_core/event_message.py,sha256=rd1t5e-GXKUz_m8qeTw6Ql5j1PoHRwgeQ17S3q83_oc,882
+ideariver_core/plugin_metadata.py,sha256=PVD5XTOs9C-RL_sYgt-InnO7hHehbH6gjrHPZjbGcDE,852
+ideariver_core/topic_mapping.py,sha256=wwJJE7qQDpapJSpmlgEx6aHj67NNf3-96NUoUHW61jo,247
+ideariver_core-0.1.6.dist-info/LICENSE,sha256=MJ2r4Ao-WSjTstZOfMjr9V3VHRz-YLdyXezy-tE6IBE,1066
+ideariver_core-0.1.6.dist-info/METADATA,sha256=eU6e1vB88O1j8ePXMGlnEtKAbo5neMOESNtK8y-hAjY,1168
+ideariver_core-0.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ideariver_core-0.1.6.dist-info/top_level.txt,sha256=frgK6uaKs7F-1OxaygHWfPiAuzz6TxrRPitq6iWrP-Q,15
+ideariver_core-0.1.6.dist-info/RECORD,,
