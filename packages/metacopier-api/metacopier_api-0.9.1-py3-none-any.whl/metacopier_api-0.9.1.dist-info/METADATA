@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: metacopier-api
+Version: 0.9.1
+Summary: MetaCopier API
+Home-page: https://docs.metacopier.io
+Author: MetaCopier Support
+Author-email: support@metacopier.io
+License: MIT License
+Keywords: MetaCopier API,OpenAPI-Generator
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+License-File: LICENSE
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+Visit our official documentation: https://docs.metacopier.io/rest-api/sdk/usage/python
