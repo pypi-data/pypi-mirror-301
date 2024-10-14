@@ -1,0 +1,13 @@
+dopynion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dopynion/__main__.py,sha256=wlb4Poe0y5GhdHq8FWvV441tG79I0X5F-f7n-_mW_5Q,1106
+dopynion/cards.py,sha256=j2iFkoBTVomFHfXH_YPW8dBfQPWP715bo1aaOCm646A,7365
+dopynion/constants.py,sha256=YFqjXLWbZVJ5SPkIc57cIyo4M_w5EUZgi0tHS8VwlZA,19
+dopynion/data_model.py,sha256=cxEAxeeXSGPyQrT2fjTaqtPXDeAWrFvDCX8PB8XTLQI,239
+dopynion/exceptions.py,sha256=D0KFp7rntpc0ZzO3GEnPZ8_OvO8M8uyya_b0mZFsVWY,399
+dopynion/game.py,sha256=akbBAkSqOuwFnPhbTTrFqAu1G0SifE_GGrh-aUDkOtE,2730
+dopynion/player.py,sha256=QOUbVWA6ouRFt2Z4DwhpQLrEz3zGiFxbqBMFwG8XqGU,4473
+dopynion-0.1.1.dist-info/LICENSE,sha256=Z5cWpU7oa3prCVof0jWn1zvT1Pim2W7fNYA3ZoxoaMg,1506
+dopynion-0.1.1.dist-info/METADATA,sha256=fSXOPfG_wrhrert6fCnh1Z5JP-ffeqAif48L33oXEEE,211
+dopynion-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dopynion-0.1.1.dist-info/top_level.txt,sha256=CA6erVyQ4QR8_UIu2Ndiu4FxWGM1YWYxfwr0f8_bISE,9
+dopynion-0.1.1.dist-info/RECORD,,
