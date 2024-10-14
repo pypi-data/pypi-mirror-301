@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+progressbar_fwx.egg-info/PKG-INFO
+progressbar_fwx.egg-info/SOURCES.txt
+progressbar_fwx.egg-info/dependency_links.txt
+progressbar_fwx.egg-info/top_level.txt
+progressbarfwx/__init__.py
+progressbarfwx/main.py
