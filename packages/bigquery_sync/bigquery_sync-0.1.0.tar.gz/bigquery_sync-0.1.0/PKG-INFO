@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bigquery_sync
+Version: 0.1.0
+Summary: 
+Author: Jimmy Mai
+Author-email: jimmy.m@athinkingape.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: google-auth (>=2.35.0,<3.0.0)
+Requires-Dist: google-cloud (>=0.34.0,<0.35.0)
+Requires-Dist: google-cloud-bigquery (>=3.26.0,<4.0.0)
+Requires-Dist: google-cloud-bigquery-datatransfer (>=3.16.0,<4.0.0)
+Requires-Dist: google-cloud-resource-manager (>=1.12.5,<2.0.0)
+Requires-Dist: pytz (>=2024.2,<2025.0)
+Requires-Dist: simplejson (>=3.19.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+# bigquery_sync_test
+
