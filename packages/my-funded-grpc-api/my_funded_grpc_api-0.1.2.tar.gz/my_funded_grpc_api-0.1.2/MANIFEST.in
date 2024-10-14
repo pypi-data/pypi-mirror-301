@@ -1,0 +1,2 @@
+include version.txt
+recursive-include my_funded_grpc_api_proto *.py *.pyi *.proto
