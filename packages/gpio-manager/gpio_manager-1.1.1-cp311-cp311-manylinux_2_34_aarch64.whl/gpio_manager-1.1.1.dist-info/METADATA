@@ -1,0 +1,6 @@
+Metadata-Version: 2.3
+Name: gpio_manager
+Version: 1.1.1
+Summary: Rust bindings for the rppal crate to manage GPIO pins on a Raspberry Pi.
+Author: Rylan Meilutis
+License: MIT
