@@ -1,0 +1,30 @@
+[project]
+name = "winzy-text-on-image"
+version = "0.1"
+description = "Add text to an image."
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "pillow",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-text-on-image"
+Changelog = "https://github.com/sukhbinder/winzy-text-on-image/releases"
+Issues = "https://github.com/sukhbinder/winzy-text-on-image/issues"
+CI = "https://github.com/sukhbinder/winzy-text-on-image/actions"
+
+[project.entry-points."winzy.plugins"]
+txtonimg = "winzy_text_on_image:txtonimg_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
