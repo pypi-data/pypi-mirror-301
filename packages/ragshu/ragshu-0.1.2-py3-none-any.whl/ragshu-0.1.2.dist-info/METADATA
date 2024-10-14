@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ragshu
+Version: 0.1.2
+Summary: My First Python Package
+Author: Raghav Shukla
+Author-email: raghavshukla2010@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# __|The RAGSHU Index|__
+
+This is a Python library that provides basic math utility functions.
+
+## __|Installation|__
+
+You can install this library using `pip`:
+
+```bash
+pip install ragshu
+```
+
+## __|Usage|__
+
+```python
+from ragshu import add
+
+result = add(1, 2)
+print(result)  # Output: 3
+```
