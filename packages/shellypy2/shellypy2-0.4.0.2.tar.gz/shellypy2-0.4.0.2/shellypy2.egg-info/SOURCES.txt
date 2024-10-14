@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-package.txt
+setup.py
+shelly/__init__.py
+shelly/base.py
+shelly/error.py
+shelly/gen1.py
+shelly/gen2.py
+shelly/gen3.py
+shelly/wrapper.py
+shellypy2.egg-info/PKG-INFO
+shellypy2.egg-info/SOURCES.txt
+shellypy2.egg-info/dependency_links.txt
+shellypy2.egg-info/requires.txt
+shellypy2.egg-info/top_level.txt
