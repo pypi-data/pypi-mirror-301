@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hawk-tuah
+Version: 0.1
+Summary: A simple package that supplements print statements with hawk_tuah.spit_on_that_thang
+Home-page: https://github.com/codebhav/hawk_tuah
+Author: whybhav
+Author-email: vachutha@stevens.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
