@@ -1,0 +1,2 @@
+[console_scripts]
+jbb = jbb:main
