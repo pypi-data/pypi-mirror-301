@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logpro"
+version = "0.1.2"
+authors = [{ name = "Vidpic" }]
+description = "A simple logger for python."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = ['colorlog']
+
+[project.urls]
+Repository = "https://github.com/Vidpic/logpro"
+Issues = "https://github.com/Vidpic/logpro/issues"
+
+[tool.setuptools.packages.find]
+include = ["logpro"]

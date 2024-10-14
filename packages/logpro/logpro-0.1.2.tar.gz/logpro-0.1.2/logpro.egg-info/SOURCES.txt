@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+logpro/__init__.py
+logpro/logpro.py
+logpro.egg-info/PKG-INFO
+logpro.egg-info/SOURCES.txt
+logpro.egg-info/dependency_links.txt
+logpro.egg-info/requires.txt
+logpro.egg-info/top_level.txt
