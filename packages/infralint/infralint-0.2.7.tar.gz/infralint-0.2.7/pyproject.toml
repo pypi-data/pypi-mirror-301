@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "infralint"
+version = "0.2.7"
+description = "Linting, security scanning, and reporting on infrastructure code"
+authors = ["Darren Rabbitt"]
+maintainers = ["Darren Rabbitt <dev@darrenrabbitt.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "terraform_linter_tool", from = "src" }
+]
+
+# Add include section to explicitly include config.yaml
+include = [
+    "src/terraform_linter_tool/resources/config.yaml",
+    "CHANGELOG.md"  # Explicitly include changelog in package
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+PyYAML = "^6.0.2"
+Jinja2 = "^3.1.4"
+checkov = "^3.2.246"
+dash = "^2.18.0"
+pandas = "^2.2.2"
+dash-bootstrap-components = "^1.6.0"
+click = "^8.1.7"
+ijson = "^3.3.0"
+aiofiles = "^24.1.0"
+
+[tool.poetry.scripts]
+infralint = "terraform_linter_tool.linter_runner:cli"
+inf_lint = "terraform_linter_tool.linter_runner:cli"
+ilint = "terraform_linter_tool.linter_runner:cli"
+
+[tool.poetry.dev-dependencies]
+black = "^24.8.0"
+flake8 = "^7.1.1"
+bandit = "^1.7.9"
+pytest = "^7.2.2"
+pytest-mock = "^3.10.0"
+mypy = "^1.11.0"
+safety = "^3.2.4"
+pylint = "^3.2.6"
+types-pyyaml = "^6.0.12.20240724"
+types-boto3 = "^1.0.2"
+types-requests = "^2.28.11.7"
+
+[tool.mypy]
+files = "src, tests"
+ignore_missing_imports = true
+disallow_untyped_calls = false
+disallow_untyped_defs = false
+disallow_untyped_decorators = false
+warn_return_any = true
+warn_unused_ignores = true
