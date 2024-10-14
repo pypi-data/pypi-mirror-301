@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+namable_classify/__init__.py
+namable_classify/_modidx.py
+namable_classify/core.py
+namable_classify.egg-info/PKG-INFO
+namable_classify.egg-info/SOURCES.txt
+namable_classify.egg-info/dependency_links.txt
+namable_classify.egg-info/entry_points.txt
+namable_classify.egg-info/not-zip-safe
+namable_classify.egg-info/requires.txt
+namable_classify.egg-info/top_level.txt
