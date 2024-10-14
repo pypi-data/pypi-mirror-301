@@ -1,0 +1,32 @@
+README.md
+setup.py
+deFit.egg-info/PKG-INFO
+deFit.egg-info/SOURCES.txt
+deFit.egg-info/dependency_links.txt
+deFit.egg-info/requires.txt
+deFit.egg-info/top_level.txt
+defit/Info_func.py
+defit/Init_func.py
+defit/Plot_func.py
+defit/Scale_within.py
+defit/Solver_BiFirst_func.py
+defit/Solver_MultiBiFirst_func.py
+defit/Solver_MultiUniSecond_func.py
+defit/Solver_UniSecond_func.py
+defit/__about__.py
+defit/__init__.py
+defit/calcDerivatives.py
+defit/defit.py
+defit/opt_Bayes.py
+defit/data/__init__.py
+defit/data/bivariate_second_data.xlsx
+defit/data/deFit Jupyter Test.ipynb
+defit/data/example1.csv
+defit/data/example2.csv
+defit/data/example2_bak1.csv
+defit/data/example3.csv
+defit/data/lotkavolterra.csv
+defit/data/upload - Copy.csv
+defit/data/upload.csv
+tests/__init__.py
+tests/test_defit.py

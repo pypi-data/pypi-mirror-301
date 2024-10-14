@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: deFit
+Version: 0.2.0
+Summary: Fitting Differential Equations to Time Series Data
+Home-page: https://github.com/yueqinhu/defit
+Author: Yueqin Hu, Qingshan Liu, Minglan Li
+Author-email: yueqinhu@bnu.edu.cn
+License: GPL-3
+Project-URL: Documentation, https://github.com/yueqinhu/defit
+Project-URL: Source Code, https://github.com/yueqinhu/defit
+Keywords: ODE,optimization,numerical methods,Intensive longitudinal data,dynamical system,differential equation,time series
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pathlib
+Requires-Dist: matplotlib
+Requires-Dist: importlib-metadata; python_version == "3.8"
+
+# Welcome to deFit
+
+Fitting Differential Equations to Time Series Data ( [deFit](https://github.com/yueqinhu/defit) ).
+
+## Overview
+### What is deFit?
+Use numerical optimization to fit ordinary differential equations (ODEs) to time series data to examine the dynamic relationships between variables or the characteristics of a dynamical system. It can now be used to estimate the parameters of ODEs up to second order.
+
+### Features
+* Fit ordinary differential equation models to time series data
+* Report model parameter estimations, standard errors, R-squared, and root mean standard error
+* Plot raw data points and fitted lines
+* Support ordinary differential equation models up to second order
+* deFit can run in Python and R environments
+
+### 1.2 First impression in Python
+To get a first impression of how deFit works in simulation, consider the following example of a differential equational model. The figure below contains a graphical representation of the model that we want to fit.
+```python
+import defit
+import pandas as pd
+df1 = pd.read_csv('defit/data/example1.csv')
+model1 = '''
+            x =~ myX
+            time =~ myTime
+            x(2) ~ x + x(1)
+        '''
+result1 = defit.defit(data=df1,model=model1)
+```
+![example1](docs/img/example1_python.png)
+
+
+## 2 Navigation
+- [Home](https://github.com/yueqinhu/defit)
+- [User guide in R](https://github.com/yueqinhu/defit/blob/main/Documents/UserGuideR.md)
+- [User guide in Python](https://github.com/yueqinhu/defit/blob/main/Documents/UserGuidePython.md)
+- [issues](https://github.com/yueqinhu/defit/issues)
