@@ -1,0 +1,92 @@
+# Criteria Performance
+
+`criteria_performance` is a Python package that allows you to calculate and visualize performance criteria from CSV data containing classification scores and actual classes. This module facilitates the evaluation of classification models by calculating essential metrics such as recall, precision, false positive rate (FPR), and false negative rate (FNR), as well as generating ROC, P-R, and DET curves.
+
+## Installation
+
+You can install the package via `pip`:
+
+```bash
+pip install criteria-performance 
+```
+
+or
+
+```bash
+pip install criteria_performance 
+```
+
+## Usage
+
+### Loading Data
+
+To use the module, you must provide a URL or a path to a CSV file containing at least two columns:
+
+- The first column should contain the classes (1 for positive, -1 for negative).
+- The second column should contain the prediction scores.
+
+### Example of CSV
+
+Example of a compatible CSV file structure for the module:
+
+| Class | Score |
+|-------|-------|
+| 1     | 0.9   |
+| 1     | 0.8   |
+| -1    | 0.4   |
+| -1    | 0.1   |
+
+### Example
+
+Here’s an example of how to use the `PerformanceCriteria` class:
+
+```python
+from criteria import PerformanceCriteria
+
+# Replace 'path_to_your_file.csv' with the path to your CSV file
+performance = PerformanceCriteria('path_to_your_file.csv')
+
+# Access metrics
+print("Recall:", performance.get_rappel())
+print("Precision:", performance.get_precision())
+print("False Positives (FP):", performance.get_fp())
+print("False Negatives (FN):", performance.get_fn())
+```
+
+### Visualization
+
+The module includes methods to display performance criterion graphs:
+
+- `dispROC()`: Displays the ROC curve.
+- `dispPR()`: Displays the Precision-Recall curve.
+- `dispDET()`: Displays the DET curve.
+- `displaygraphe()`: Displays all graphs in a single figure.
+
+Example:
+
+```python
+performance.displaygraphe()
+performance.show()  # Displays the figure
+```
+
+### Calculated Metrics
+
+The module calculates and returns the following metrics:
+
+- **PPV (Positive Predictive Value)**: Positive predictive value.
+- **PNV (Negative Predictive Value)**: Negative predictive value.
+- **False Positives (FP)**: Number of false positives.
+- **True Positives (TP)**: Number of true positives.
+- **False Negatives (FN)**: Number of false negatives.
+- **False Negative Rate (FNR)**: Rate of false negatives.
+- **False Positive Rate (FPR)**: Rate of false positives.
+- **Recall**: Sensitivity or true positive rate.
+- **Precision**: True positives divided by the total predicted positives.
+
+## Authors
+
+Developed by Olanda-Eyiba Chantry - <chantryolanda85@gmail.com>
+
+## License
+
+This project is licensed under the MIT License.
