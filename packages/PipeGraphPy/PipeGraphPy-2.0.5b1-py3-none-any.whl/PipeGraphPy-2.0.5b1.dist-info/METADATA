@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PipeGraphPy
+Version: 2.0.5b1
+Summary: 核心算法框架
+Home-page: https://gitee.com/zsq_tee/pipe-graph-py
+Author: liujm
+Author-email: 792079829@qq.com
+License: Private
+Project-URL: Documentation, https://gitee.com/zsq_tee/pipe-graph-py
+Project-URL: Source, https://gitee.com/zsq_tee/pipe-graph-py
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: PyYAML
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandasql
+Requires-Dist: dnspython
+Requires-Dist: prettytable
+Requires-Dist: dbpoolpy
+
