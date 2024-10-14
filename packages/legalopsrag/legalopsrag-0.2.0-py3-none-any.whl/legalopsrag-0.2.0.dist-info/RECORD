@@ -1,0 +1,14 @@
+legalopsrag/azure/blob_storage.py,sha256=8PPSpAAVBtyt6i1QUJvJbMZiZ2WxBYJ9dQHn1UEQg8U,2188
+legalopsrag/controllers/word_pluging.py,sha256=Ho0Q_InbzxO0IAuGlUGpwXpVC70BHfCXhm6ilLuweqo,14332
+legalopsrag/database/mongo_db.py,sha256=4psFJq4rfWADBYgp1pivmev5EmoExogGL7LZE8SSgYI,3121
+legalopsrag/embeddings/vogayeai.py,sha256=XTzsqJBBd6RwQ7M8BnwxNjwC-FlHIK_eSXF6sMbLFJA,610
+legalopsrag/prompts/contract_review.txt,sha256=_TFSY9gNyunjmnWhnENt-aJjBF_AT8ZO7a_r0tt-3WM,999
+legalopsrag/prompts/extract_legal_clause.txt,sha256=_2ranjirnujuKy2-vxFkg_qUDywmjPZgf6hYuKKOeBk,8024
+legalopsrag/prompts/review_legal_clause.txt,sha256=HA2LrltfFQIKR5NS64d9NEs8QSGtbn39sop9ZXpcZ34,1312
+legalopsrag/retrievers/mongodb_retriever.py,sha256=ekFRcVudTGrcq_5JWkuYeV8sNidOaCtdY_lqM2lMKnw,1256
+legalopsrag/retrievers/retriever_general.py,sha256=BxyXbr4oEedjZn3yNez3et1itCQGBsPVNgOnQPyZgJg,2703
+legalopsrag/splitter/spacy_splitter.py,sha256=T4HLBD2qU_sSqYbyDaJ8TBh03wVxgl_NfyxjVMYCqGE,2186
+legalopsrag/utils/utils_func.py,sha256=T7byB1U8Q1IQGQHVoTKQ23MISOGvNrEifhs0qsOQXGI,368
+legalopsrag-0.2.0.dist-info/METADATA,sha256=cKjF6kFGmdXeYG8y7XUVf7WHrRFMHsgngLYonHx_BJ0,839
+legalopsrag-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+legalopsrag-0.2.0.dist-info/RECORD,,
