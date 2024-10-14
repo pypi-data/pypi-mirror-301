@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+birchrest/__init__.py
+birchrest/cli.py
+birchrest/version.py
+birchrest.egg-info/PKG-INFO
+birchrest.egg-info/SOURCES.txt
+birchrest.egg-info/dependency_links.txt
+birchrest.egg-info/entry_points.txt
+birchrest.egg-info/requires.txt
+birchrest.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+birch = birchrest.cli:main
