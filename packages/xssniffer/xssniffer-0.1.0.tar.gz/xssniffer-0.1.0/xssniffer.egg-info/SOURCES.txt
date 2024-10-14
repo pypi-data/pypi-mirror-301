@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+xssniffer/__init__.py
+xssniffer/core.py
+xssniffer/scanner.py
+xssniffer.egg-info/PKG-INFO
+xssniffer.egg-info/SOURCES.txt
+xssniffer.egg-info/dependency_links.txt
+xssniffer.egg-info/entry_points.txt
+xssniffer.egg-info/requires.txt
+xssniffer.egg-info/top_level.txt
