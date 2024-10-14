@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+papatool/__init__.py
+papatool/papatool.py
+papatool.egg-info/PKG-INFO
+papatool.egg-info/SOURCES.txt
+papatool.egg-info/dependency_links.txt
+papatool.egg-info/entry_points.txt
+papatool.egg-info/requires.txt
+papatool.egg-info/top_level.txt
