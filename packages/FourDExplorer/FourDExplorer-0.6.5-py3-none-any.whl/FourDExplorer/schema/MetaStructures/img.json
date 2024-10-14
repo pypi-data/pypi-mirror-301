@@ -1,0 +1,120 @@
+{
+    "General": {
+        "title": {
+            "type": "str",
+            "title": "title",
+            "description": "Title of the dataset. Initialized by dataset name, but not necessarily the same."
+        },
+        "original_name": {
+            "type": "str",
+            "title": "original filename",
+            "description": "Original file name without extension."
+        },
+        "original_path": {
+            "type": "str",
+            "title": "original file path",
+            "description": "Original file path."
+        },
+        "authors": {
+            "type": "str",
+            "title": "authors",
+            "description": "In LaTeX format, i.e., Surname1, Name1 and Surname2, Name2, and so on."
+        },
+        "notes": {
+            "type": "str",
+            "title": "notes",
+            "description": "May support rich text (HTML?)."
+        },
+        "time": {
+            "type": "str",
+            "title": "created time",
+            "description": "Creation time in ISO 8601, e.g., 13:29:10."
+        },
+        "date": {
+            "type": "str",
+            "title": "created date",
+            "description": "Creation date in ISO 8601, e.g., 2018-01-28."
+        },
+        "time_zone": {
+            "type": "str",
+            "title": "time zone",
+            "description": "Supported by the python-dateutil library, the same as the system."
+        },
+        "doi": {
+            "type": "str",
+            "title": "DOI",
+            "description": "Digital Object Unique Identifier (DOI)."
+        },
+        "fourd_explorer_version": {
+            "type": "str",
+            "title": "4D-Explorer Version",
+            "description": "The version of 4D-Explorer."
+        }
+    },
+    "Calibration": {
+        "Space": {
+            "pixel_size_i": {
+                "type": "float",
+                "title": "pixel size (i-direction)",
+                "description": "Pixel size in the i-direction."
+            },
+            "pixel_size_j": {
+                "type": "float",
+                "title": "pixel size (j-direction)",
+                "description": "Pixel size in the j-direction."
+            },
+            "pixel_size_unit": {
+                "type": "str",
+                "title": "pixel size unit",
+                "description": "The base unit for pixel size, e.g., m."
+            },
+            "pixel_size_unit_display": {
+                "type": "str",
+                "title": "pixel size unit for display",
+                "description": "The display unit for pixel size, e.g., nm."
+            },
+            "display_unit_magnify": {
+                "type": "float",
+                "title": "display unit magnification factor",
+                "description": "Magnification factor to convert from base unit to display unit. For example, from m to nm, the value should be 1e9."
+            }
+        }
+    },
+    "Quantify": {
+        "value_unit": {
+            "type": "str",
+            "title": "value unit",
+            "description": "Base unit for measurement values, e.g., N/C for Newtons per Coulomb."
+        },
+        "value_unit_display": {
+            "type": "str",
+            "title": "value unit for display",
+            "description": "Display unit for measurement values, e.g., V/m for Volts per meter."
+        },
+        "display_unit_magnify": {
+            "type": "float",
+            "title": "display unit magnification factor",
+            "description": "Magnification factor to convert from base unit to display unit."
+        },
+        "display_vmin": {
+            "type": "float",
+            "title": "minimum displaying value",
+            "description": "Minimum displaying value for visualization."
+        },
+        "display_vmax": {
+            "type": "float",
+            "title": "maximum displaying value",
+            "description": "Maximum displaying value for visualization."
+        },
+        "display_norm_mode": {
+            "type": "str",
+            "title": "displaying normalization mode",
+            "description": "Normalization mode for display, e.g., 'linear' or 'logarithm'."
+        },
+        "display_colormap": {
+            "type": "str",
+            "title": "displaying colormap",
+            "description": "Colormap used for displaying diffraction patterns, e.g., 'viridis'."
+        }
+    }
+}

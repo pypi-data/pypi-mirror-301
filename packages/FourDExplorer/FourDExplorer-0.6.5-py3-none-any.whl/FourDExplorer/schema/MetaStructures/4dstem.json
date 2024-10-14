@@ -1,0 +1,555 @@
+{
+    "General": {
+        "title": {
+            "type": "str",
+            "title": "title",
+            "description": "Title of the dataset. Initialized by dataset name, but not necessarily the same."
+        },
+        "data_path": {
+            "type": "str",
+            "title": "original data file path",
+            "description": "Original file path storing raw data."
+        },
+        "header_path": {
+            "type": "str",
+            "title": "original header file path",
+            "description": "Original file path storing header of the data (metadata). It can be the same as data_path if the header is stored along with the raw data."
+        },
+        "authors": {
+            "type": "str",
+            "title": "authors",
+            "description": "In LaTeX format, i.e., Surname1, Name1 and Surname2, Name2, and so on."
+        },
+        "notes": {
+            "type": "str",
+            "title": "notes",
+            "description": "May support rich text (HTML?)."
+        },
+        "time": {
+            "type": "str",
+            "title": "created time",
+            "description": "Creation time in ISO 8601, e.g., 13:29:10."
+        },
+        "date": {
+            "type": "str",
+            "title": "created date",
+            "description": "Creation date in ISO 8601, e.g., 2018-01-28."
+        },
+        "time_zone": {
+            "type": "str",
+            "title": "time zone",
+            "description": "Supported by the python-dateutil library, the same as the system."
+        },
+        "doi": {
+            "type": "str",
+            "title": "DOI",
+            "description": "Digital Object Unique Identifier (DOI)."
+        },
+        "fourd_explorer_version": {
+            "type": "str",
+            "title": "4D-Explorer Version",
+            "description": "The version of 4D-Explorer."
+        }
+    },
+    "Acquisition": {
+        "Microscope": {
+            "name": {
+                "type": "str",
+                "title": "name of microscope",
+                "description": "The name of the TEM, e.g., Titan3 Cubed 60-300."
+            },
+            "manufacturer": {
+                "type": "str",
+                "title": "manufacturer of microscope",
+                "description": "The manufacturer of the TEM."
+            },
+            "beam_current": {
+                "type": "float",
+                "title": "beam current",
+                "unit": "A",
+                "display_unit": "nA",
+                "description": "The total current of the electron beam."
+            },
+            "accelerate_voltage": {
+                "type": "float",
+                "title": "accelerate voltage (U)",
+                "unit": "V",
+                "display_unit": "kV",
+                "description": "The accelerate voltage of the electron beam."
+            },
+            "probe_area": {
+                "type": "float",
+                "title": "probe area",
+                "unit": "m**2",
+                "display_unit": "nm**2",
+                "description": "The area of the scanning probe."
+            },
+            "camera_length": {
+                "type": "float",
+                "title": "camera length (CL)",
+                "unit": "m",
+                "display_unit": "mm",
+                "description": "The effective camera length of the STEM."
+            },
+            "convergence_angle": {
+                "type": "float",
+                "title": "convergence semi-angle (α)",
+                "unit": "rad",
+                "display_unit": "mrad",
+                "description": "Determined by the size of the convergence aperture."
+            },
+            "magnification": {
+                "type": "int",
+                "title": "magnification factor",
+                "description": "Determined by the scanning step size of STEM."
+            },
+            "dwell_time": {
+                "type": "float",
+                "title": "dwell time",
+                "unit": "s",
+                "display_unit": "us",
+                "description": "Time for an electron beam to stay per pixel at acquisition of a STEM image by scan."
+            },
+            "step_size_i": {
+                "type": "float",
+                "title": "step size (i-direction)",
+                "unit": "m",
+                "display_unit": "nm",
+                "description": "Recorded step size in the i direction (-y direction)."
+            },
+            "step_size_j": {
+                "type": "float",
+                "title": "step size (j-direction)",
+                "unit": "m",
+                "display_unit": "nm",
+                "description": "Recorded step size in the j direction (x direction)."
+            },
+            "acquisition_time": {
+                "type": "str",
+                "title": "acquisition time",
+                "description": "The time when the data is acquired."
+            },
+            "acquisition_date": {
+                "type": "str",
+                "title": "acquisition date",
+                "description": "The date when the data is acquired."
+            },
+            "acquisition_location": {
+                "type": "str",
+                "title": "acquisition location",
+                "description": "The location, institute and lab where the data is acquired."
+            },
+            "acquisition_timezone": { 
+                "type": "str",
+                "title": "acquisition timezone",
+                "description": "The time zone where the data is acquired."
+            }
+        },
+        "Camera": {
+            "name": {
+                "type": "str",
+                "title": "name of camera",
+                "description": "The name of the pixelated electron camera or direct electron detector."
+            },
+            "manufacturer": {
+                "type": "str",
+                "title": "manufacturer of camera",
+                "description": "The manufacturer of the camera."
+            },
+            "pixel_number_i": {
+                "type": "int",
+                "title": "pixels (i-direction)",
+                "description": "Sensor pixels in i-direction (-y direction, height)."
+            },
+            "pixel_number_j": {
+                "type": "int",
+                "title": "pixels (j-direction)",
+                "description": "Sensor pixels in j-direction (x direction, width)."
+            },
+            "pixel_size_i": {
+                "type": "float",
+                "title": "sensor pixel size (i-direction)",
+                "unit": "m",
+                "display_unit": "μm",
+                "description": "Sensor pixel size in i-direction (-y direction, height)."
+            },
+            "pixel_size_j": {
+                "type": "float",
+                "title": "sensor pixel size (j-direction)",
+                "unit": "m",
+                "display_unit": "μm",
+                "description": "Sensor pixel size in j-direction (x direction, width)."
+            }
+        },
+        "Stage": {
+            "tilt_alpha": {
+                "type": "float",
+                "title": "tilt angle α (X)",
+                "unit": "rad",
+                "display_unit": "deg",
+                "description": "The tilt angle α/X of the specimen."
+            },
+            "tilt_beta": {
+                "type": "float",
+                "title": "tilt angle β (Y)",
+                "unit": "rad",
+                "display_unit": "deg",
+                "description": "The tilt angle β/Y of the specimen."
+            },
+            "rotation": {
+                "type": "float",
+                "title": "rotation angle",
+                "unit": "rad",
+                "display_unit": "deg",
+                "description": "The rotational offset angle of the specimen."
+            },
+            "x": {
+                "type": "float",
+                "title": "stage coordinate x",
+                "unit": "m",
+                "display_unit": "mm",
+                "description": "The x coordinate of the specimen stage."
+            },
+            "y": {
+                "type": "float",
+                "title": "stage coordinate y",
+                "unit": "m",
+                "display_unit": "mm",
+                "description": "The y coordinate of the specimen stage."
+            },
+            "z": {
+                "type": "float",
+                "title": "stage coordinate z",
+                "unit": "m",
+                "display_unit": "mm",
+                "description": "The z coordinate (height) of the specimen stage."
+            }
+        }
+    },
+    "Calibration": {
+        "Space": {
+            "du_i": {
+                "type": "float",
+                "title": "reciprocal space pixel size (i-direction)",
+                "unit": "m**-1",
+                "display_unit": "nm**-1",
+                "description": "Pixel size of the diffraction (reciprocal) space in i direction (-y direction)." 
+            },
+            "du_j": {
+                "type": "float",
+                "title": "reciprocal space pixel size (j-direction)",
+                "unit": "m**-1",
+                "display_unit": "nm**-1",
+                "description": "Pixel size of the diffraction (reciprocal) space in j direction (x direction)."
+            },
+            "scan_dr_i": {
+                "type": "float",
+                "title": "scanning step size (i-direction)",
+                "unit": "m",
+                "display_unit": "nm",
+                "description": "Calibrated scanning step size in i-direction (-y direction)."
+            },
+            "scan_dr_j": {
+                "type": "float",
+                "title": "scanning step size (j-direction)",
+                "unit": "m",
+                "display_unit": "nm",
+                "description": "Calibrated scanning step size in j-direction (x direction)."
+            },
+            "dr_i": {
+                "type": "float",
+                "title": "real space pixel size (i-direction)",
+                "unit": "m",
+                "display_unit": "nm",
+                "description": "Real space pixel size in i-direction (-y direction). It is calculated from du_i and may not be the same as scan_dr_i."
+            },
+            "dr_j": {
+                "type": "float",
+                "title": "real space pixel size (j-direction)",
+                "unit": "m",
+                "display_unit": "nm",
+                "description": "Real space pixel size in j-direction (x direction). It is calculated from du_j and may not be the same as scan_dr_j."
+            },
+            "dp_i": {
+                "type": "int",
+                "title": "diffraction pattern pixel number (i-direction)",
+                "description": "Diffraction pattern pixel number (height)."
+            },
+            "dp_j": {
+                "type": "int",
+                "title": "diffraction pattern pixel number (j-direction)",
+                "description": "Diffraction pattern pixel number (width)."
+            },
+            "scan_i": {
+                "type": "int",
+                "title": "scanning steps (i-direction)",
+                "description": "Scanning step number in i-direction (-y direction)."
+            },
+            "scan_j": {
+                "type": "int",
+                "title": "scanning steps (j-direction)",
+                "description": "Scanning step number in j-direction (x direction)."
+            }
+        },
+        "RotationalOffsetCorrection": {
+            "scan_rotation": {
+                "type": "float",
+                "title": "scanning rotational offset",
+                "unit": "rad",
+                "display_unit": "deg",
+                "description": "The rotation angle between scanning coordinates and camera coordinates."
+            }
+        },
+        "DiffractionAlignment": {
+            "alignment_pixel_i": {
+                "type": "int",
+                "title": "translation pixel of diffraction pattern (i-direction)",
+                "description": "Translation pixel of diffraction pattern in i-direction (-y direction) to centering the diffraction pattern."
+            },
+            "alignment_pixel_j": {
+                "type": "int",
+                "title": "translation pixel of diffraction pattern (j-direction)",
+                "description": "Translation pixel of diffraction pattern in j-direction (x direction) to centering the diffraction pattern."
+            },
+            "shift_mapping_path": {
+                "type": "str",
+                "title": "path of alignment translation vectors",
+                "description": "Record the path of the vector field that records the center of the diffraction pattern should be moved at each scanning point."
+            }
+        },
+        "BackgroundSubtraction": {
+            "reference_path": {
+                "type": "str",
+                "title": "path of background reference",
+                "description": "Record the path of the background reference."
+            },
+            "filter_window_maximum": {
+                "type": "float",
+                "title": "filter window max value",
+                "description": "Filter window maximum value for background subtraction."
+            },
+            "filter_window_minimum": {
+                "type": "float",
+                "title": "filter window min value",
+                "description": "Filter window minimum value for background subtraction."
+            }
+        }
+    },
+    "Aberration": {
+        "C1": {
+            "type": "float",
+            "title": "defocus (C1)",
+            "unit": "m",
+            "display_unit": "nm",
+            "description": "Defocus (C1)."
+        },
+        "A1": {
+            "type": "float",
+            "title": "2-fold astigmatism (A1)",
+            "unit": "m",
+            "display_unit": "nm",
+            "description": "2-fold astigmatism (A1)."
+        },
+        "B2": {
+            "type": "float",
+            "title": "axial coma (B2)",
+            "unit": "m",
+            "display_unit": "nm",
+            "description": "Axial coma (B2)."
+        },
+        "A2": {
+            "type": "float",
+            "title": "3-fold astigmatism (A2)",
+            "unit": "m",
+            "display_unit": "nm",
+            "description": "3-fold astigmatism (A2)."
+        },
+        "C3": {
+            "type": "float",
+            "title": "spherical aberration (C3)",
+            "unit": "m",
+            "display_unit": "μm",
+            "description": "Spherical aberration (C3)."
+        },
+        "S3": {
+            "type": "float",
+            "title": "star aberration (S3)",
+            "unit": "m",
+            "display_unit": "μm",
+            "description": "Star aberration (S3)."
+        },
+        "A3": {
+            "type": "float",
+            "title": "4-fold astigmatism (A3)",
+            "unit": "m",
+            "display_unit": "μm",
+            "description": "4-fold astigmatism (A3)."
+        },
+        "B4": {
+            "type": "float",
+            "title": "axial coma (B4)",
+            "unit": "m",
+            "display_unit": "μm",
+            "description": "Axial coma (B4)."
+        },
+        "D4": {
+            "type": "float",
+            "title": "3 lobe aberration (D4)",
+            "unit": "m",
+            "display_unit": "μm",
+            "description": "3 lobe aberration (D4)."
+        },
+        "A4": {
+            "type": "float",
+            "title": "5-fold astigmatism (A4)",
+            "unit": "m",
+            "display_unit": "μm",
+            "description": "5-fold astigmatism (A4)."
+        },
+        "C5": {
+            "type": "float",
+            "title": "spherical aberration (C5)",
+            "unit": "m",
+            "display_unit": "mm",
+            "description": "Spherical aberration (C5)."
+        },
+        "A5": {
+            "type": "float",
+            "title": "6-fold astigmatism (A6)",
+            "unit": "m",
+            "display_unit": "mm",
+            "description": "6-fold astigmatism (A6)."
+        }
+    },
+    "AberrationAngle": {
+        "C1": {
+            "type": "float",
+            "title": "defocus (C1) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "Defocus (C1) angle. (Useless due to symmetry)"
+        },
+        "A1": {
+            "type": "float",
+            "title": "2-fold astigmatism (A1) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "2-fold astigmatism (A1) angle."
+        },
+        "B2": {
+            "type": "float",
+            "title": "axial coma (B2) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "Axial coma (B2) angle."
+        },
+        "A2": {
+            "type": "float",
+            "title": "3-fold astigmatism (A2) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "3-fold astigmatism (A2) angle."
+        },
+        "C3": {
+            "type": "float",
+            "title": "spherical aberration (C3) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "Spherical aberration (C3) angle. (Useless due to symmetry)"
+        },
+        "S3": {
+            "type": "float",
+            "title": "star aberration (S3) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "Star aberration (S3) angle."
+        },
+        "A3": {
+            "type": "float",
+            "title": "4-fold astigmatism (A3) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "4-fold astigmatism (A3) angle."
+        },
+        "B4": {
+            "type": "float",
+            "title": "axial coma (B4) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "Axial coma (B4) angle."
+        },
+        "D4": {
+            "type": "float",
+            "title": "3 lobe aberration (D4) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "3 lobe aberration (D4) angle."
+        },
+        "A4": {
+            "type": "float",
+            "title": "5-fold astigmatism (A4) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "5-fold astigmatism (A4) angle."
+        },
+        "C5": {
+            "type": "float",
+            "title": "spherical aberration (C5) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "Spherical aberration (C5) angle. (Useless due to symmetry)"
+        },
+        "A5": {
+            "type": "float",
+            "title": "6-fold astigmatism (A6) angle",
+            "unit": "rad",
+            "display_unit": "deg",
+            "description": "6-fold astigmatism (A6) angle."
+        }
+    },
+    "Quantify": {
+        "display_vmin": {
+            "type": "float",
+            "title": "minimum displaying value",
+            "description": "Minimum displaying value of the diffraction patterns."
+        },
+        "display_vmax": {
+            "type": "float",
+            "title": "maximum displaying value",
+            "description": "Maximum displaying value of the diffraction patterns."
+        },
+        "display_norm_mode": {
+            "type": "str",
+            "title": "displaying normalize mode",
+            "description": "Linear or logarithm."
+        },
+        "display_colormap": {
+            "type": "str",
+            "title": "displaying colormap",
+            "description": "The display colormap of diffraction patterns, e.g., viridis."
+        }
+    },
+    "ptychography": {
+        "scanning_angle": {
+            "type": "float",
+            "title": "rotational correction value",
+            "unit": "rad",
+            "description": "The value used to estimate probe positions on the object function during the scan."
+        },
+        "object_update": {
+            "type": "float",
+            "title": "object update factor",
+            "description": "The parameter that controls the rate of update of the object function during the ptychographic reconstruction."
+        },
+        "probe_update": {
+            "type": "float",
+            "title": "probe update factor",
+            "description": "The parameter that controls the rate of update of the probe function during the ptychographic reconstruction."
+        },
+        "iterations": {
+            "type": "int",
+            "title": "iterations",
+            "description": "The number of iterations for the ptychographic reconstruction."
+        }
+    }
+}
