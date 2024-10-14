@@ -1,0 +1,12 @@
+gsoft_py_utils/auto_notify.py,sha256=ozw9FpJ20ebM1PwmOg9NN86OitgFzbqVuPjLUMJE8dQ,2907
+gsoft_py_utils/esclient.py,sha256=zNhixTedJ-7GqgNrA0-q3daR6ob5J__-l2OMil6WSQs,3321
+gsoft_py_utils/esdupefilter.py,sha256=HRo078h5UBmzubvr-fFzxZqDdyBAGrzNwyiStojxvsk,2928
+gsoft_py_utils/eswriter.py,sha256=H_UMMd1e91DrrNpTYBlZDzAIfAu49-UTXHDxYRYphpw,2224
+gsoft_py_utils/file/fileutils.py,sha256=CaXJY0NSqWJX2OJ8vy-Y5ybWFm8--X8xdk7p65Te6yU,1683
+gsoft_py_utils/login/baseclient.py,sha256=Uh2pZAFuXUx3AqW_cG5NmNY7ttZGGWDP4mKj1Bc-7Bc,2956
+gsoft_py_utils/login/douban_client.py,sha256=Y07vHcUMWAGZmsBnT6FYN7W1QpwbQJi7KZKP15VNhDY,2096
+gsoft_py_utils/login/douban_login.py,sha256=515T_0bd556wE6mkkimlvlIU9yFBi6ZFpydFgErGWKo,6975
+gsoft_py_utils/onebot_client.py,sha256=JofoW1UVzg7YU6fvT0xnQHt6LgECeUVQ8iFCdHAHzPI,2409
+gsoft_py_utils-0.0.4.dist-info/METADATA,sha256=6ASUhD765lL6lUDvbM-todnD7m8ZSXqxyjW1TCNHMtQ,3905
+gsoft_py_utils-0.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gsoft_py_utils-0.0.4.dist-info/RECORD,,
