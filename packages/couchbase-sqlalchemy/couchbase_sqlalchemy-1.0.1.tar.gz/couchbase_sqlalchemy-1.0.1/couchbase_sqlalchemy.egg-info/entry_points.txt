@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+couchbase = couchbase_sqlalchemy.dialect.couchbase_dialect:CouchbaseDialect
