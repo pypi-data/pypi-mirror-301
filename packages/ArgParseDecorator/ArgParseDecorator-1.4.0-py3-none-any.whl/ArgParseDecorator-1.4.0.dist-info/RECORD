@@ -1,0 +1,11 @@
+argparsedecorator/__init__.py,sha256=feHEHiwixCCMZn-mrvcVH89DyCr_7T9JRrFwfh5xDto,1164
+argparsedecorator/annotations.py,sha256=_dTVp_QboMRp0nboyINNFc3sg3v4oSZLx2s_02Kwe9E,19492
+argparsedecorator/argparse_decorator.py,sha256=7u2XZxQSejhLBsZqly8rJAfDHrmLuB4GekARNY_B_J8,22602
+argparsedecorator/argument.py,sha256=KTa0laHrnb4eTnRr7ljP9-w7ALaRylOCXmjMCmQcICY,11783
+argparsedecorator/nonexiting_argumentparser.py,sha256=-JYwz4T8UyX0sqYfSsxKgLeEqQsn-LMVpWtDxTzIidA,2111
+argparsedecorator/parsernode.py,sha256=svHkpkmzJqf6NDqLf1550KPfl0wVYjylLRKpwFarKfQ,33634
+ArgParseDecorator-1.4.0.dist-info/LICENSE.txt,sha256=eGzG0j0c8K5g6-MfiYOadZh1FQfMxe0yHn1DONzEOIo,1071
+ArgParseDecorator-1.4.0.dist-info/METADATA,sha256=OTOQ8IbOMnjS_wTMla8tEPPIwpxQW1r0oJIZCFBSHuU,7216
+ArgParseDecorator-1.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ArgParseDecorator-1.4.0.dist-info/top_level.txt,sha256=KKqk3GsghO6G4ZNnGvtQ652M0hUM0BIF6mgAyVgMAv4,18
+ArgParseDecorator-1.4.0.dist-info/RECORD,,
