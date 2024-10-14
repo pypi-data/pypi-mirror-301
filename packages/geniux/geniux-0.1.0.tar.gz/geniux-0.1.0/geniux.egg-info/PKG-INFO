@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: geniux
+Version: 0.1.0
+Summary: Библиотека для взаимодействия с Genius.
+Home-page: https://github.com/to4no4sv/geniux
+Author: thswq
+Author-email: admin@vkmusix.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Geniux
+
+## Установка и обновление
+```bash
+pip install --upgrade geniux
+```
+
+## Быстрый старт
+```python
+from geniux import Client
+
+client = Client()
+
+result = client.searchTracks("New Sylveon")
+print(result)
+
+client.close()
+```
