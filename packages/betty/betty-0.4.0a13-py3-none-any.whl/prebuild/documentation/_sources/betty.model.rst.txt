@@ -1,0 +1,19 @@
+betty.model package
+===================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.model.association
+   betty.model.collections
+
+Module contents
+---------------
+
+.. automodule:: betty.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
