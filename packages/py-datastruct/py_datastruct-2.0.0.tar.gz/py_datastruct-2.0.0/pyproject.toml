@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "py-datastruct"
+version = "2.0.0"
+description = "Combination of struct and dataclasses for easy parsing of binary formats"
+authors = ["Kuba Szczodrzyński <kuba@szczodrzynski.pl>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "datastruct" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.0"
+isort = "^5.12.0"
+autoflake = "^2.1.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+macaddress = "^2.0.2"
+pycryptodome = "^3.21.0"
+requests = "^2.32.3"
+bitstruct = "^8.19.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
