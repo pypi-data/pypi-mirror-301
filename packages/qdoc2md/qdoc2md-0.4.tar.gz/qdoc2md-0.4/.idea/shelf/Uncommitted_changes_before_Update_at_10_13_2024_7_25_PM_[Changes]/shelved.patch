@@ -1,0 +1,91 @@
+Index: src/qdoc2md/generator.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import os.path\r\nimport re\r\nfrom glob import glob\r\nfrom pathlib import Path\r\nfrom typing import List\r\n\r\nfrom mdutils import MdUtils\r\nfrom mdutils.tools.Header import Header\r\n\r\nfrom qdoc2md.model import Param, SeeAlso, Document, Section\r\n\r\nDOC_COMMENT_SIGNAL = '///'\r\n\r\ndef generate(sources, target):\r\n    docs = []\r\n    for src in sources:\r\n        for src_file in glob(src + '/**/*.q', recursive=True):\r\n            doc_file = Path(src_file.replace(src, target)).with_suffix('.md').as_posix()\r\n            doc = parse(src_file, doc_file)\r\n            docs.append(doc)\r\n\r\n    resolve_links(docs)\r\n\r\n    for doc in docs:\r\n        Path(doc.path).parent.mkdir(parents=True, exist_ok=True)\r\n        doc.md_doc.create_md_file()\r\n\r\n\r\ndef parse(src_file: str, target_file: str):\r\n    md_doc = MdUtils(file_name=target_file, title=Path(src_file).stem)\r\n    doc_comment = {}\r\n    names = set()\r\n    current_section = Section.UNKNOWN\r\n    in_doc_comment = False\r\n    with open(src_file, mode=\"r\") as f:\r\n        for line in f:\r\n            line = line.lstrip()\r\n            if line.startswith(DOC_COMMENT_SIGNAL):\r\n                in_doc_comment = True\r\n                line = line[len(DOC_COMMENT_SIGNAL):]\r\n\r\n                if line.startswith(Section.TITLE):\r\n                    current_section = Section.TITLE\r\n                    line = line[len(Section.TITLE):].lstrip()\r\n                    doc_comment[Section.TITLE] = line\r\n\r\n                elif line.startswith(Section.OVERVIEW):\r\n                    current_section = Section.OVERVIEW\r\n                    line = line[len(Section.OVERVIEW):].lstrip()\r\n                    doc_comment[Section.OVERVIEW] = line\r\n\r\n                elif line.startswith(Section.PARAM):\r\n                    current_section = Section.PARAM\r\n                    line = line[len(Section.PARAM):].lstrip()\r\n                    if match := re.search(r'(\\w+) +(?:\\{(.*)\\} +)?(?:(.*))?', line, re.DOTALL):\r\n                        param = Param(match.group(1),\r\n                                      match.group(2) if match.group(2) else '',\r\n                                      match.group(3))\r\n                        if Section.PARAM not in doc_comment:\r\n                            doc_comment[Section.PARAM] = [param]\r\n                        else:\r\n                            doc_comment[Section.PARAM].append(param)\r\n                    else:\r\n                        pass\r\n\r\n                elif line.startswith(Section.RETURN):\r\n                    current_section = Section.RETURN\r\n                    line = line[len(Section.RETURN):].lstrip()\r\n                    if match := re.search(r'(?:(\\w+) +)?(?:\\{(.*)\\} +)?(.+)', line, re.DOTALL):\r\n                        param = Param(match.group(1) if match.group(1) else '',\r\n                                      match.group(2) if match.group(2) else '',\r\n                                      match.group(3))\r\n                        doc_comment[Section.RETURN] = param\r\n                    else:\r\n                        pass\r\n\r\n                elif line.startswith(Section.SIGNAL):\r\n                    current_section = Section.SIGNAL\r\n                    line = line[len(Section.SIGNAL):].lstrip()\r\n                    if match := re.search(r'(?:\\{(.*)\\} +)?(.+)', line, re.DOTALL):\r\n                        param = Param('',\r\n                                      match.group(1) if match.group(1) else '',\r\n                                      match.group(2))\r\n                        if Section.SIGNAL not in doc_comment:\r\n                            doc_comment[Section.SIGNAL] = [param]\r\n                        else:\r\n                            doc_comment[Section.SIGNAL].append(param)\r\n                    else:\r\n                        pass\r\n\r\n                elif line.startswith(Section.DEPRECATED):\r\n                    doc_comment[Section.DEPRECATED] = True\r\n\r\n                elif line.startswith(Section.EXAMPLE):\r\n                    current_section = Section.EXAMPLE\r\n                    doc_comment[Section.EXAMPLE] = ''\r\n\r\n                elif line.startswith(Section.SEE):\r\n                    current_section = Section.SEE\r\n                    line = line[len(Section.SEE):].lstrip()\r\n                    if match := re.search(r'(\\{.*\\})(?: +(.*))?', line, re.DOTALL):\r\n                        seealso = SeeAlso(match.group(1),\r\n                                          match.group(2) if match.group(2) else '')\r\n                        if Section.SEE not in doc_comment:\r\n                            doc_comment[Section.SEE] = [seealso]\r\n                        else:\r\n                            doc_comment[Section.SEE].append(seealso)\r\n\r\n                elif current_section == Section.UNKNOWN:\r\n                    current_section = Section.SUMMARY\r\n                    line = line.lstrip()\r\n                    if Section.SUMMARY not in doc_comment:\r\n                        doc_comment[Section.SUMMARY] = line\r\n                    else:\r\n                        doc_comment[Section.SUMMARY] += line\r\n\r\n                else:       # Continuation of the current section\r\n                    if current_section == Section.OVERVIEW or current_section == Section.SUMMARY or current_section == Section.EXAMPLE:\r\n                        doc_comment[current_section] += line\r\n                    elif current_section == Section.PARAM or current_section == Section.SIGNAL or current_section == Section.SEE:\r\n                        doc_comment[current_section][-1].description += line\r\n                    elif current_section == Section.RETURN:\r\n                        doc_comment[current_section].description += line\r\n                    else:\r\n                        pass\r\n            elif line.startswith('/'):\r\n                pass    # Ignore non-documentation comments\r\n            else:   # End of documentation comments\r\n                if in_doc_comment:\r\n                    if current_section == Section.TITLE or current_section == Section.OVERVIEW:\r\n                        if Section.TITLE in doc_comment:\r\n                            md_doc.title = Header().choose_header(level=1, title=doc_comment[Section.TITLE])\r\n                        if Section.OVERVIEW in doc_comment:\r\n                            md_doc.write(doc_comment[Section.OVERVIEW])\r\n                    else:\r\n                        index_colon = line.find(\":\")\r\n                        name = line[:index_colon].strip()\r\n                        names.add(name)\r\n                        md_doc.new_header(2, name, add_table_of_contents=\"n\")\r\n                        md_doc.write('\\n')\r\n                        md_doc.write(('(DEPRECATED) ' if Section.DEPRECATED in doc_comment else '') + doc_comment[Section.SUMMARY])\r\n                        if Section.PARAM in doc_comment:\r\n                            params = doc_comment[Section.PARAM]\r\n                            md_doc.write('\\n')\r\n                            md_doc.write('Parameters', bold_italics_code=\"b\")\r\n                            for param in params:\r\n                                md_doc.new_paragraph(f'`{param.name}`: {param.datatype}')\r\n                                md_doc.new_line(f': {param.description}')\r\n                        if Section.RETURN in doc_comment:\r\n                            md_doc.write('\\n')\r\n                            md_doc.write('Returns', bold_italics_code=\"b\")\r\n                            md_doc.new_paragraph(f'{doc_comment[Section.RETURN].datatype}')\r\n                            md_doc.new_line(f': {doc_comment[Section.RETURN].description}')\r\n                        if Section.SIGNAL in doc_comment:\r\n                            md_doc.write('\\n')\r\n                            md_doc.write('Throws', bold_italics_code=\"b\")\r\n                            for throws in doc_comment[Section.SIGNAL]:\r\n                                md_doc.new_paragraph(f'`{throws.datatype}`')\r\n                                md_doc.new_line(f': {throws.description}')\r\n                        if Section.EXAMPLE in doc_comment and doc_comment[Section.EXAMPLE]:\r\n                            md_doc.write('\\n')\r\n                            md_doc.write('Example', bold_italics_code=\"b\")\r\n                            md_doc.insert_code(code=doc_comment[Section.EXAMPLE].rstrip(), language=\"q\")\r\n                            md_doc.write('\\n')\r\n                        if Section.SEE in doc_comment :\r\n                            md_doc.write('\\n')\r\n                            md_doc.write('See Also', bold_italics_code=\"b\")\r\n                            for seealso in doc_comment[Section.SEE]:\r\n                                md_doc.new_paragraph(f'{seealso.ref}')\r\n                                md_doc.new_line(f': {seealso.description}')\r\n                    current_section = Section.UNKNOWN\r\n                    doc_comment.clear()\r\n                    in_doc_comment = False\r\n                else:\r\n                    pass\r\n    return Document(target_file, md_doc, names)\r\n\r\ndef resolve_links(docs):\r\n    keyword_to_path = index_by_keyword(docs)\r\n    for doc in docs:\r\n        text: str = doc.md_doc.file_data_text\r\n        keywords = set(re.findall(f'{{{Section.LINK.value} +(.*?)}}', text))\r\n        for keyword in keywords:\r\n            if keyword in keyword_to_path:\r\n                path = keyword_to_path[keyword]\r\n                text = re.sub(f'{{{Section.LINK.value} +{keyword}}}',\r\n                              f'[{keyword}]({\"\" if path == doc.path else Path(os.path.relpath(path, start=doc.path)).as_posix()}#{keyword.replace(\".\", \"\").lower()})',\r\n                              text)\r\n                # text = text.replace(\r\n                #     f'{{{Section.LINK.value} {keyword}}}',\r\n                #     f'[{keyword}]({\"\" if path == doc.path else Path(os.path.relpath(path, start=doc.path)).as_posix()}#{keyword.replace(\".\", \"\").lower()})')\r\n            else:\r\n                text = re.sub(f'{{{Section.LINK.value} +{keyword}}}',\r\n                              keyword,\r\n                              text)\r\n        doc.md_doc.file_data_text = text\r\n\r\n\r\ndef index_by_keyword(docs: List[Document]):\r\n    keyword_to_path = {}\r\n    for doc in docs:\r\n        for keyword in doc.keywords:\r\n            keyword_to_path[keyword] = doc.path\r\n    return keyword_to_path\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/qdoc2md/generator.py b/src/qdoc2md/generator.py
+--- a/src/qdoc2md/generator.py	(revision 54b95f4a1f97736f87f885f11aa818b4c9b85b37)
++++ b/src/qdoc2md/generator.py	(date 1728818677408)
+@@ -38,20 +38,21 @@
+             if line.startswith(DOC_COMMENT_SIGNAL):
+                 in_doc_comment = True
+                 line = line[len(DOC_COMMENT_SIGNAL):]
++                tag = ''
++                if match := re.search(r'\s*(@\w+)', line):
++                    tag = match.group(1)
++                    line = line.lstrip()[len(tag)+1:].lstrip()
+ 
+-                if line.startswith(Section.TITLE):
++                if tag == Section.TITLE:
+                     current_section = Section.TITLE
+-                    line = line[len(Section.TITLE):].lstrip()
+                     doc_comment[Section.TITLE] = line
+ 
+-                elif line.startswith(Section.OVERVIEW):
++                elif tag == Section.OVERVIEW:
+                     current_section = Section.OVERVIEW
+-                    line = line[len(Section.OVERVIEW):].lstrip()
+                     doc_comment[Section.OVERVIEW] = line
+ 
+-                elif line.startswith(Section.PARAM):
++                elif tag == Section.PARAM:
+                     current_section = Section.PARAM
+-                    line = line[len(Section.PARAM):].lstrip()
+                     if match := re.search(r'(\w+) +(?:\{(.*)\} +)?(?:(.*))?', line, re.DOTALL):
+                         param = Param(match.group(1),
+                                       match.group(2) if match.group(2) else '',
+@@ -63,9 +64,8 @@
+                     else:
+                         pass
+ 
+-                elif line.startswith(Section.RETURN):
++                elif tag == Section.RETURN:
+                     current_section = Section.RETURN
+-                    line = line[len(Section.RETURN):].lstrip()
+                     if match := re.search(r'(?:(\w+) +)?(?:\{(.*)\} +)?(.+)', line, re.DOTALL):
+                         param = Param(match.group(1) if match.group(1) else '',
+                                       match.group(2) if match.group(2) else '',
+@@ -74,9 +74,8 @@
+                     else:
+                         pass
+ 
+-                elif line.startswith(Section.SIGNAL):
++                elif tag == Section.SIGNAL:
+                     current_section = Section.SIGNAL
+-                    line = line[len(Section.SIGNAL):].lstrip()
+                     if match := re.search(r'(?:\{(.*)\} +)?(.+)', line, re.DOTALL):
+                         param = Param('',
+                                       match.group(1) if match.group(1) else '',
+@@ -88,16 +87,15 @@
+                     else:
+                         pass
+ 
+-                elif line.startswith(Section.DEPRECATED):
++                elif tag == Section.DEPRECATED:
+                     doc_comment[Section.DEPRECATED] = True
+ 
+-                elif line.startswith(Section.EXAMPLE):
++                elif tag == Section.EXAMPLE:
+                     current_section = Section.EXAMPLE
+                     doc_comment[Section.EXAMPLE] = ''
+ 
+-                elif line.startswith(Section.SEE):
++                elif tag == Section.SEE:
+                     current_section = Section.SEE
+-                    line = line[len(Section.SEE):].lstrip()
+                     if match := re.search(r'(\{.*\})(?: +(.*))?', line, re.DOTALL):
+                         seealso = SeeAlso(match.group(1),
+                                           match.group(2) if match.group(2) else '')
+@@ -106,9 +104,8 @@
+                         else:
+                             doc_comment[Section.SEE].append(seealso)
+ 
+-                elif current_section == Section.UNKNOWN:
++                elif current_section == Section.UNKNOWN:    # Summary line
+                     current_section = Section.SUMMARY
+-                    line = line.lstrip()
+                     if Section.SUMMARY not in doc_comment:
+                         doc_comment[Section.SUMMARY] = line
+                     else:
