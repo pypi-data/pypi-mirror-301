@@ -1,0 +1,10 @@
+aladeen_metadata_extractor/__init__.py,sha256=5EFmjXJl5DZi26LdhCil9VU3DaVW_S5_Up0m-heEfsg,246
+aladeen_metadata_extractor/clients/anthropic.py,sha256=yW5F_Zi94LQfVLtTWjxjH6W1uaMVlDHUDFlSLTkzTGM,2458
+aladeen_metadata_extractor/clients/openai.py,sha256=EwuN325FrvNZL5dZ6Uzy1SfQjnWluvfYzsFjIlBaibc,2800
+aladeen_metadata_extractor/main.py,sha256=rQgAyMieCp0tdYAzjdSLx8Bb05LZXwWmvaSNWpbCc0s,1520
+aladeen_metadata_extractor/types/client.py,sha256=1FUOLy-QmVAKgVK4nmtlIe6N35xlpUpOPMzbnrINP5o,3716
+aladeen_metadata_extractor/types/errors.py,sha256=CGRutRTYxmWHZ-6vArAJhYgrydeEgOhTvZhFczMbd4U,421
+aladeen_metadata_extractor/types/misc.py,sha256=INsKEaUNKUaWb2SQsAZQTLf5atzAiS8_lCeF24Dvv04,278
+aladeen_metadata_extractor-0.2.0.dist-info/METADATA,sha256=-yaXFHwxBnGQBp0lqJBu-9ucHn67YUL7LrBWr4Uk9pQ,589
+aladeen_metadata_extractor-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aladeen_metadata_extractor-0.2.0.dist-info/RECORD,,
