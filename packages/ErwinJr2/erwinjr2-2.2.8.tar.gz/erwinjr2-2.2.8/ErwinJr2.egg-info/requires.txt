@@ -1,0 +1,15 @@
+numpy>=2.0.0
+scipy
+
+[GUI]
+pyqt5
+matplotlib>=3.3
+
+[GUI:sys_platform == "win32"]
+winshell
+
+[dev]
+sphinx>=2
+sphinx_rtd_theme
+sphinxcontrib-bibtex>=2.0.0
+breathe
