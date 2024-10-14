@@ -1,0 +1,5 @@
+setup.py
+profissa_lft.egg-info/PKG-INFO
+profissa_lft.egg-info/SOURCES.txt
+profissa_lft.egg-info/dependency_links.txt
+profissa_lft.egg-info/top_level.txt
