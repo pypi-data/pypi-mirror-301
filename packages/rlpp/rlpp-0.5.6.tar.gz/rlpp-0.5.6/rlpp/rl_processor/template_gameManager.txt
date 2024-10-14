@@ -1,0 +1,240 @@
+import pygame 
+import os 
+import numpy as np 
+import torch
+import random
+from collections import deque
+from Model import Linear_QNet, QTrainer
+import math
+
+SCREEN = (640,480)
+MAX_MEMORY = 100_000
+BATCH_SIZE = 1000
+LR = 0.001
+WORLD_STATES = 4
+ACTION_STATES = 3
+
+# DD. GAME_OBJECT
+# gameObject = GameObject()
+# interp. a game object in the editor with:
+# - position x and y in the screen, where coordinate is the center of the object
+# - image loaded in pygame
+# - object_type: agent, wall, enemy, food
+class GameObject():
+    def __init__(self,position, angle, object_type, img_path,scale_factor, dx=0.1,dy=0.1):
+        self.x, self.y = position
+        self.dx = dx
+        self.dy = dy
+        self.placed = False #stops following cursor once it's placed
+        self.object_type = object_type
+        self.image_path = img_path
+        self.image = pygame.image.load(img_path)
+        self.rect = self.image.get_rect()
+        self.rect.center = position
+        self.angle = angle
+        self.scale_factor =scale_factor 
+        self.orig_position = tuple(position)
+        self.orig_angle = angle
+        self.orig_scale = scale_factor
+        self.turnClockwise()
+        self.scale()
+
+        
+    def draw(self, display):
+        self.updateRect()
+        display.blit(self.image, self.rect)
+        
+    def turnClockwise(self):
+        # Preserve the current center position of the rectangle
+        self.angle = (self.angle)%360
+        previous_center = tuple(self.rect.center)
+        # Rotate the image
+        self.image = pygame.transform.rotate(self.image, -self.angle)  # Use -self.angle for clockwise rotation
+        self.rect = self.image.get_rect(center=previous_center)  # Reassign the rect with the updated center
+    
+    def updateRect(self):
+        self.rect.center = self.x, self.y
+        
+    def scale(self):
+        w,h = self.image.get_size()
+        previous_center = tuple(self.rect.center)
+        new_size = (int(w * (self.scale_factor)), int(h * (self.scale_factor)))
+        self.image = pygame.transform.scale(self.image, new_size)
+        self.rect = self.image.get_rect(center=previous_center)  # Reassign the rect with the updated center
+
+    def turn(self, rotate):
+        self.image = pygame.transform.rotate(self.image,-rotate)
+        self.rect = self.image.get_rect()
+        self.rect.center = self.x, self.y
+    
+    def reset(self):
+        self.x, self.y = self.orig_position
+        self.angle = self.orig_angle
+        self.image = pygame.image.load(self.image_path)
+        self.rect = self.image.get_rect()
+        self.turnClockwise()
+
+    def update(self):
+        self.update_position()
+        self.update_velocity()
+        # Here you can add any other helper functions that modify the behavior of the game object
+        
+    def update_position(self):
+        pass 
+
+    def update_velocity(self):
+        pass 
+    
+    
+# DD. AGENT
+# agent = Agent()
+# interp. a game object optimized to work as an agent:
+class Agent(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "agent", img_path, scale_factor)
+        self.n_games = 0
+        self.epsilon = 0 # randomness
+        self.gamma = 0.96 # discount rate
+        self.memory = deque(maxlen=MAX_MEMORY) # popleft()
+        self.model = Linear_QNet(WORLD_STATES, 256, ACTION_STATES)
+        self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma)
+    
+    def reset(self):
+        super().reset()
+        self.isDead = False
+        
+    
+
+
+    # get a numerical interpretation of the agent's state in the world
+    def get_state(self):
+        state = [0,0,0,0]
+        return np.array(state, dtype=float)
+
+    def remember(self, state, action, reward, next_state, done):
+        self.memory.append((state, action, reward, next_state, done)) # popleft if MAX_MEMORY is reached
+
+    def train_long_memory(self):
+        if len(self.memory) > BATCH_SIZE:
+            mini_sample = random.sample(self.memory, BATCH_SIZE) # list of tuples
+        else:
+            mini_sample = self.memory
+
+        states, actions, rewards, next_states, dones = zip(*mini_sample)
+        self.trainer.train_step(states, actions, rewards, next_states, dones)
+        #for state, action, reward, nexrt_state, done in mini_sample:
+        #    self.trainer.train_step(state, action, reward, next_state, done)
+
+    def train_short_memory(self, state, action, reward, next_state, done):
+        self.trainer.train_step(state, action, reward, next_state, done)
+
+    def get_action(self, state):
+        # random moves: tradeoff exploration / exploitation
+        self.epsilon = 120 - self.n_games
+        action_array = [0 for _ in range(ACTION_STATES)]
+        if random.randint(0, 200) < self.epsilon:
+            idx_ = random.randint(0, ACTION_STATES-1)
+            action_array[idx_] = 1
+            return action_array
+        else:
+            state0 = torch.tensor(state,dtype=torch.float)
+            prediction = self.model(state0)
+            actionIdx = int(torch.argmax(prediction).item())
+            action_array[actionIdx] = 1
+            # print(actionIdx)
+            return action_array
+
+    def play_step(self,action):
+        reward = 0
+        score = 0
+        return reward, self.isDead, score
+        
+
+# DD. WALL
+# wall = Wall()
+# interp. a game object optimized to work as a wall:
+class Wall(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "wall", img_path, scale_factor)
+        
+# DD. FOOD
+# food = Food()
+# interp. a game object optimized to work as food:
+class Food(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "food", img_path, scale_factor)
+
+# DD. ENEMY
+# enemy = Enemy()
+# interp. a game object optimized to work as food:
+class Enemy(GameObject):
+    def __init__(self, position, angle, object_type, img_path, scale_factor):
+        super().__init__(position, angle, "enemy", img_path, scale_factor)
+
+
+
+# DD. GAME_MANAGER
+# game = GameManager()
+# interp. main container for our game in pygame
+class GameManager():
+    def __init__(self):
+        self.display = pygame.display.set_mode(SCREEN)
+        self.clock = pygame.time.Clock()
+        self.n_games = 0
+<<embed_static_game_objects>>        
+        self.reset()
+    
+    def reset(self):
+        self.score = 0
+        self.timer = 0
+        self.resetTimer = 1_000
+<<embed_dynamic_game_objects>> 
+        for logo in self.all_game_objects:
+            for go in logo:
+                go.reset()
+        
+    def draw(self):
+        self.display.fill("#1e1e1e")
+        for logo in gameManager.all_game_objects:
+            for go in logo:
+                go.draw(self.display)
+        pygame.display.flip()
+
+    def update(self):
+        [pygame.quit() for event in pygame.event.get() if event.type == pygame.QUIT]
+        for agent in self.agents:
+            if not agent.isDead:
+                # get numerical interpretation of environment
+                previous_env = agent.get_state()
+                # use model to predict a move
+                new_move = agent.get_action(previous_env)
+                # apply the move
+                reward, done, score = agent.play_step(new_move)
+                # get new state from applied move
+                new_env = agent.get_state()
+                # train short memory
+                agent.train_short_memory(previous_env, new_move, reward, new_env, done)
+                # add results to memory
+                agent.remember(previous_env, new_move, reward, new_env, done)
+            
+        # if the game is out of agents, then game is over. Reset the game and train long memory
+        agents_alive = sum([1 for agent in self.agents if not agent.isDead])
+        if agents_alive == 0:
+            self.reset()
+            for agent in self.agents:
+                agent.n_games += 1
+                agent.train_long_memory()
+
+    
+
+
+    
+gameManager = GameManager()
+############### CODE ###################
+
+while True:
+    gameManager.draw()
+    gameManager.update()
+    
+
+        

@@ -1,0 +1,4 @@
+recursive-include rlpp/resources *
+include rlpp/processor/template.txt
+include rlpp/rl_processor/template_gameManager.txt
+include rlpp/rl_processor/template_model.txt
