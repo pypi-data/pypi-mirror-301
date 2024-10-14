@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_screencapture.py
+winzy_screencapture/__init__.py
+winzy_screencapture.egg-info/PKG-INFO
+winzy_screencapture.egg-info/SOURCES.txt
+winzy_screencapture.egg-info/dependency_links.txt
+winzy_screencapture.egg-info/entry_points.txt
+winzy_screencapture.egg-info/requires.txt
+winzy_screencapture.egg-info/top_level.txt

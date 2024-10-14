@@ -1,0 +1,30 @@
+[project]
+name = "winzy-screencapture"
+version = "0.1"
+description = "Capture screen using imageio"
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "imageio",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-screencapture"
+Changelog = "https://github.com/sukhbinder/winzy-screencapture/releases"
+Issues = "https://github.com/sukhbinder/winzy-screencapture/issues"
+CI = "https://github.com/sukhbinder/winzy-screencapture/actions"
+
+[project.entry-points."winzy.plugins"]
+scap = "winzy_screencapture:scap_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -1,0 +1,5 @@
+winzy
+imageio
+
+[test]
+pytest

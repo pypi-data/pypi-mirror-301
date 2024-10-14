@@ -1,0 +1,2 @@
+[winzy.plugins]
+scap = winzy_screencapture:scap_plugin
