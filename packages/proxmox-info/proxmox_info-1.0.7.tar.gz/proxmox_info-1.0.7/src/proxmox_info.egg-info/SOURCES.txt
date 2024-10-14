@@ -1,0 +1,20 @@
+.gitlab-ci.yml
+CHANGELOG.md
+LICENSE
+Pipfile
+README.md
+pyproject.toml
+tox.ini
+docs/default screen.png
+docs/tree view.png
+src/proxmox_info/_version.py
+src/proxmox_info/config.py
+src/proxmox_info/pminfo.py
+src/proxmox_info.egg-info/PKG-INFO
+src/proxmox_info.egg-info/SOURCES.txt
+src/proxmox_info.egg-info/dependency_links.txt
+src/proxmox_info.egg-info/entry_points.txt
+src/proxmox_info.egg-info/requires.txt
+src/proxmox_info.egg-info/top_level.txt
+tests/__init__.py
+tests/test_validation.py
