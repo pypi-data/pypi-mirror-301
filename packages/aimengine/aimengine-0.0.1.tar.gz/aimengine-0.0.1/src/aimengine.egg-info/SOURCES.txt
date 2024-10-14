@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/aimengine/__init__.py
+src/aimengine.egg-info/PKG-INFO
+src/aimengine.egg-info/SOURCES.txt
+src/aimengine.egg-info/dependency_links.txt
+src/aimengine.egg-info/requires.txt
+src/aimengine.egg-info/top_level.txt
