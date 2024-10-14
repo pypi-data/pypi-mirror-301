@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+juicydir/__init__.py
+juicydir/juicydir.py
+juicydir.egg-info/PKG-INFO
+juicydir.egg-info/SOURCES.txt
+juicydir.egg-info/dependency_links.txt
+juicydir.egg-info/entry_points.txt
+juicydir.egg-info/requires.txt
+juicydir.egg-info/top_level.txt
