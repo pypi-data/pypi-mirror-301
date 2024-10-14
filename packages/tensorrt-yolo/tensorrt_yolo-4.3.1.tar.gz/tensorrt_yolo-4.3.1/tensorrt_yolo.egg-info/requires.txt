@@ -1,0 +1,10 @@
+loguru
+rich_click
+opencv-python
+
+[export]
+ultralytics
+onnx>=1.12.0
+onnx_graphsurgeon
+onnxruntime
+onnxsim
