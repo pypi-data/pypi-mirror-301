@@ -1,0 +1,89 @@
+Metadata-Version: 2.3
+Name: jinjanator-plugin-format-xml
+Version: 24.2.0
+Summary: Plugin which provides XML format (data input) support for jinjanator
+Project-URL: Bug Tracker, https://github.com/kpfleming/jinjanator-plugin-format-xml/issues
+Project-URL: Homepage, https://github.com/kpfleming/jinjanator-plugin-format-xml
+Author-email: "Kevin P. Fleming" <jinjanator@kevin.km6g.us>
+License: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: jinjanator-plugins==24.2.*
+Requires-Dist: xmltodict
+Description-Content-Type: text/markdown
+
+# *jinjanator-plugin-format-xml*: Provides XML format (data input) support for jinjanator
+
+
+
+This plugin allows jinjanator to parse XML data for processing in
+templates. The format can be selected using `--format xml` or
+autoselected by using a data file with a name ending with `.xml`.
+
+## Installation
+
+```
+pip install jinjanator-plugin-format-xml
+```
+
+## Usage
+
+Suppose you have an NGINX configuration file template, `nginx.j2`:
+
+```jinja2
+server {
+  listen 80;
+  server_name {{ nginx.hostname }};
+
+  root {{ nginx.webroot }};
+  index index.htm;
+}
+```
+
+And you have an XML file with the data, `nginx.xml`:
+
+```xml
+<nginx>
+  <hostname>
+    localhost
+  </hostname>
+  <webroot>
+    /var/www/project
+  </webroot>
+</nginx>
+```
+
+This is how you render it into a working configuration file:
+
+```bash
+$ jinjanate nginx.j2 nginx.xml > nginx.conf
+```
+
+## Options
+
+* `process-namespaces`: configures the XML parser to replace namespace
+  references in element names with the corresponding namespaces from
+  `xmlns` attributes in the top-level element in the document.
+## Release Information
+### Backwards-incompatible Changes
+
+- Added support for Python 3.13, and removed support for Python 3.8.
+  
+- Upgraded to version 24.2.0 of jinjanator-plugins.
+  
+
+---
+[→ Full Changelog](https://github.com/kpfleming/jinjanator-plugin-format-xml/blob/main/CHANGELOG.md)
