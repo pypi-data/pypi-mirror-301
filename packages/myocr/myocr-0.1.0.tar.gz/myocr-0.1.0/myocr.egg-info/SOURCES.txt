@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+myocr/__init__.py
+myocr.egg-info/PKG-INFO
+myocr.egg-info/SOURCES.txt
+myocr.egg-info/dependency_links.txt
+myocr.egg-info/top_level.txt
