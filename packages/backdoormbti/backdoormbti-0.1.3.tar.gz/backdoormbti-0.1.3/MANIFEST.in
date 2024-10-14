@@ -1,0 +1,12 @@
+graft attacks  # 递归包含 attacks 目录
+graft configs  # 递归包含 configs 目录
+graft build  # 递归包含 build 目录
+graft defenses  # 递归包含 defenses 目录
+graft models  # 递归包含 models 目录
+graft resources  # 递归包含 resources 目录
+graft scripts  # 递归包含 scripts 目录
+graft tests  # 递归包含 tests 目录
+graft utils  # 递归包含 utils 目录
+
+global-exclude *.pyc  # 全局排除 .pyc 文件
+global-exclude __pycache__/  # 全局排除 __pycache__ 目录
