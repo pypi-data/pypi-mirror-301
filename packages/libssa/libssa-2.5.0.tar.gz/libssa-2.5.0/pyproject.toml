@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libssa"
+version = "2.5.0"
+description = "LIBSsa: an open source software for analyzing LIBS spectra"
+authors = [{ name = "Kleydson Stenio", email = "9257942+kstenio@users.noreply.github.com" }]
+readme = "README.md"
+license = {file="LICENSE.txt"}
+keywords = ['python', 'libs', 'spectroscopy']
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.9,<3.12"
+dependencies = [
+    "markdown<=3.4.3",
+    "numpy<=1.25.1",
+    "openpyxl<=3.1.2",
+    "pandas<=2.0.3",
+    "psutil<=5.9.5",
+    "pyqtgraph<=0.13.3",
+    "pyside6<=6.4.3",
+    "scikit-learn<=1.3.0",
+    "scipy<=1.11.1"
+]
+
+[project.scripts]
+libssa-gui = "libssa.libssa2:spawn_gui"
+
+[project.urls]
+Homepage = "https://github.com/kstenio/libssa"
+Documentation = "https://kstenio.github.io/libssa/"
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+
+[tool.ruff]
+line-length = 128
+fix = true
+
+[tool.ruff.lint]
+select = [
+    "I",        # isort
+]
+ignore = [
+    "E501",     # LineTooLong
+    "E731",     # DoNotAssignLambda
+]
+
+[tool.ruff.lint.isort]
+length-sort = true
+case-sensitive = true
+split-on-trailing-comma=false
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+skip-magic-trailing-comma = true
+line-ending = "lf"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+preview = true
+
+[tool.uv]
+compile-bytecode = true
+resolution = "highest"
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "pytest-qt>=4.4.0",
+    "ruff>=0.6.9",
+    "pre-commit>=4.0.1",
+]
