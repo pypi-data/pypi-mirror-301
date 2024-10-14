@@ -1,0 +1,2 @@
+aiohttp<4,>=3
+motor<4,>=3
