@@ -1,0 +1,2 @@
+[console_scripts]
+endersgame = endersgame.__main__:main
