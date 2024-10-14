@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rowfind"
+version = "0.1.3"
+description = "Find points that make an equally spaced row on a 2D plane"
+authors = ["AnnikaV9 <carrot.moncher@gmail.com>"]
+homepage = "https://github.com/AnnikaV9/rowfind"
+repository = "https://github.com/AnnikaV9/rowfind"
+license = "MIT"
+readme = "README.txt"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
