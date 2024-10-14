@@ -1,0 +1,7 @@
+numpy<2.0.0,>=1.17.0
+scipy>=0.15
+scikit-image
+sep
+
+[bottleneck]
+bottleneck
