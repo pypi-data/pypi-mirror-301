@@ -1,0 +1,2 @@
+[console_scripts]
+pydepdetective = pydepdetective.main:main
