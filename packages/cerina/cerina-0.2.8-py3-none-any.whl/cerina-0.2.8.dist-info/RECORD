@@ -1,0 +1,16 @@
+cerina/__init__.py,sha256=i4APeWFT2FUwYUjGd9FkkeySzNC0aDGmJOmtLL3zUZA,1092
+cerina/agents.py,sha256=rd0XufgwXto9kd7TcwenQ4hJy7oFXiqeI3YQ0VEBDJw,2976
+cerina/gpt.py,sha256=crWzsr_nuMqElcOjCPea8m4BmDqWBPPfWZ26cTvIWP0,2187
+cerina/optimiser.py,sha256=Ce0kgVBXQtycdJfhGyj1qmQ6O16JrGThndLjL36DeL0,942
+cerina/prompt_template.py,sha256=wX2LucEH4oplRKhu1oilWu-a-XQdzciXaAeb1W9aYho,11
+cerina/search.py,sha256=psrXV2_RUMSAB3_oFJPRuR5Pus9bsBDvhCYiLMl2fGs,2281
+cerina/search_img.py,sha256=Xns2l3KRNGnhzy202nkGkZREDjMHfW-vWNYPPbuXTPk,1797
+cerina/search_text.py,sha256=eSbyZyT5fCnxmG1Tk8Ufx6omNGMmH0_8pSKkfar385M,2040
+cerina/Agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cerina/Agents/superagents.py,sha256=5hkqvbYfjJ2cW7EjfQhfBxZXQ6mKhAPdGT3dxclyCgE,4328
+cerina/Scrapping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cerina/Scrapping/selenium_scrapper.py,sha256=P98mBpnOG8ZyA65T96944BXR17FL79uk-0UhZmajlEA,2074
+cerina-0.2.8.dist-info/METADATA,sha256=4eeOu9z9pmiBoxYAcixGLomNo4wyakny5i9xlrbirF8,2221
+cerina-0.2.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cerina-0.2.8.dist-info/top_level.txt,sha256=WBNtiiXo3zHhTVd32iZkw1E3K_eA0xWaVms7tztfKMI,7
+cerina-0.2.8.dist-info/RECORD,,
