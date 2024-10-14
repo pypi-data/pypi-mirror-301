@@ -1,0 +1,2 @@
+[console_scripts]
+distributors_api = distributors.app:main
