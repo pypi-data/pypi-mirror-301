@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: distributors-api
+Version: 0.1.0a0
+Summary: Library for unified communication with component distribution APIs
+Home-page: https://github.com/partmanager/distributors-api
+Author: sakoPO
+Project-URL: Bug Tracker, https://github.com/partmanager/distributors-api/issues
+Project-URL: Changelog, https://github.com/partmanager/distributors-api/releases
+Project-URL: Source Code, https://github.com/partmanager/distributors-api
+Project-URL: Documentation, https://partmanager.github.io/distributors-api
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# distributors-api
