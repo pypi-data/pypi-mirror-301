@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ideariver_core
+Version: 0.1.6
+Summary: Core library for ideariver, containing abstract DTOs and interfaces.
+Home-page: https://github.com/nima70/ideariver-core-python
+Author: ideariver
+Author-email: contact@ideariver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ideariver-core
+
+`ideariver-core` is the core library of the ideariver organization, providing essential abstract classes, DTOs, and interfaces for plugins and other services. The package is designed to be lightweight and extensible, making it easy for developers to build upon.
+
+## Usage
+
+The library provides an abstract base class `BasePlugin` for developers to create plugins.
+
+```python
+from ideariver_core import BasePlugin
+
+class MyPlugin(BasePlugin):
+    def init(self, services):
+        # Initialize the plugin with the required services.
+        pass
+
+    def run(self, input_data):
+        # Process the input data and return the result.
+        return "Processed data"
+```
