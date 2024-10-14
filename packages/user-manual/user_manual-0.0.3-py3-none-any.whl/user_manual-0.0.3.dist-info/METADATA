@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: user-manual
+Version: 0.0.3
+Summary: Generate the User Manual by ChatGPT
+Home-page: https://github.com/A284viral/protections_v1
+Author: Aviral Srivastava
+Author-email: aviralsrivastava284@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: wheel
+Requires-Dist: opencv-python ==4.10.0.84
+Requires-Dist: opencv-contrib-python ==4.10.0.84
+Requires-Dist: opencv-python-headless ==4.10.0.84
+Requires-Dist: PyMuPDF ==1.24.9
+Requires-Dist: PyMuPDFb ==1.24.9
+Requires-Dist: numpy ==1.24.2
+Requires-Dist: matplotlib ==3.6.3
+Requires-Dist: matplotlib-inline ==0.1.6
+Requires-Dist: pypdf ==4.3.1
+Requires-Dist: PyPDF2 ==3.0.1
+Requires-Dist: Pillow ==9.5.0
+Requires-Dist: python-docx ==1.1.2
+Requires-Dist: PyAutoGUI ==0.9.54
+Requires-Dist: pyperclip ==1.8.2
+Requires-Dist: paddleocr ==2.8.1
+Requires-Dist: paddlepaddle ==2.6.2
+
