@@ -1,0 +1,7 @@
+README.md
+setup.py
+mqManager.egg-info/PKG-INFO
+mqManager.egg-info/SOURCES.txt
+mqManager.egg-info/dependency_links.txt
+mqManager.egg-info/requires.txt
+mqManager.egg-info/top_level.txt
