@@ -1,0 +1,14 @@
+README.md
+setup.py
+numpy_typing/__init__.py
+numpy_typing.egg-info/PKG-INFO
+numpy_typing.egg-info/SOURCES.txt
+numpy_typing.egg-info/dependency_links.txt
+numpy_typing.egg-info/requires.txt
+numpy_typing.egg-info/top_level.txt
+numpy_typing/content/__init__.py
+numpy_typing/content/axis.py
+numpy_typing/content/numpy_functions.py
+numpy_typing/content/typing.py
+numpy_typing/content/wrapper.py
+test/test.py
