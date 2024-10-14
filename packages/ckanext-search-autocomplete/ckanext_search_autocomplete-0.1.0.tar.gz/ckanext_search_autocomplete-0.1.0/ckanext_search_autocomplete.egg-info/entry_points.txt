@@ -1,0 +1,8 @@
+[babel.extractors]
+ckan = ckan.lib.extract:extract_ckan
+
+[ckan.plugins]
+search_autocomplete = ckanext.search_autocomplete.plugin:SearchAutocompletePlugin
+
+[ckan.test_plugins]
+test_plugin = ckanext.search_autocomplete.tests.logic.test_action:TestPlugin
