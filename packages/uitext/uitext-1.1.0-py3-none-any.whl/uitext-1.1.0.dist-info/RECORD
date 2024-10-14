@@ -1,0 +1,16 @@
+uitext/__init__.py,sha256=l0kVn9UrcT7dxTAyL-XX5vE4U89ztb9vYXq0i1vvay4,38
+uitext/ascii/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uitext/ascii/gridformatter.py,sha256=GXhvBESoHoIxUqAiv8OOVuHGo7I5TxhzhSMSLvkl-YE,5717
+uitext/ascii/html2ascii.py,sha256=qk1gWqjKRV2-BmbDsLEXcEdWQpY1OQVUzSGBn7VW_6M,25634
+uitext/ascii/xlsx2ascii.py,sha256=NLTY1MgdYRvvgJxfa-SegBT0rtuYESHSRAIz0TKfJTI,4483
+uitext/selenium/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uitext/selenium/selenium_utils.py,sha256=PhI45TlLS0yZ3baVuq4FrCDszezyRIyMZ4AYg6l-u2E,21904
+uitext/sikuli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uitext/sikuli/sikuli_utils.py,sha256=uriccWWDyzx94Yp3WhO1xdSkDRMXundyfDKp91NP6nU,25486
+uitext/sikuli/sikuli_wrapper.py,sha256=1SZ9GYQq8v3sFZDVjLRqzDfDY5YFlvmJwYFCkz7lKdc,271
+uitext-1.1.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+uitext-1.1.0.dist-info/METADATA,sha256=WynU7_Q0mYaQV5r__AK4cfBdSBHROg7RjqW0bWX6wNY,32038
+uitext-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+uitext-1.1.0.dist-info/entry_points.txt,sha256=H9TU0wGWEf46JekTkGknmGUHGVEnKvzcssTE6be5Xn4,110
+uitext-1.1.0.dist-info/top_level.txt,sha256=n17U7eJ5NyYI3UlN-L29KtAqSRk4lbt5mIgavEbKm0c,7
+uitext-1.1.0.dist-info/RECORD,,
