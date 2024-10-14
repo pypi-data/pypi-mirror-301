@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+randomcov/__init__.py
+randomcov/lkj.py
+randomcov.egg-info/PKG-INFO
+randomcov.egg-info/SOURCES.txt
+randomcov.egg-info/dependency_links.txt
+randomcov.egg-info/entry_points.txt
+randomcov.egg-info/requires.txt
+randomcov.egg-info/top_level.txt
+tests/test_lkj.py
