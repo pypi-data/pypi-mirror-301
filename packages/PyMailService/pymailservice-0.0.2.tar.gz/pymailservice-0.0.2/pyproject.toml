@@ -1,0 +1,18 @@
+
+[project]
+name = "PyMailService"
+version = "0.0.2"
+authors = [
+  { name="Dan2_il", email="daniilgr97@yandex.ru" },
+]
+description = "The library allows you to view, receive, and send emails."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Dan2il/PyMailService"

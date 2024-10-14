@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+PyMailService/__init__.py
+PyMailService/email_reader.py
+PyMailService/main.py
+PyMailService/standart_setting.py
+PyMailService.egg-info/PKG-INFO
+PyMailService.egg-info/SOURCES.txt
+PyMailService.egg-info/dependency_links.txt
+PyMailService.egg-info/top_level.txt
