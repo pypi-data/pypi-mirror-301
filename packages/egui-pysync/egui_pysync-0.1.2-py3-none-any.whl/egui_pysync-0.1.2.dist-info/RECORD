@@ -1,0 +1,11 @@
+egui_pysync/__init__.py,sha256=0qNsPcXpEmsRw7B_B2fZvdzEd7lILFn2BmOZGPs3jgI,305
+egui_pysync/__main__.py,sha256=ppbUe7Tu7XLvoNzkwXgT4yeobg7xQEUN614LydBu7NE,12606
+egui_pysync/server.py,sha256=Th4j_MIyNSymYYk3yl77-U5EHxyrs6JJoEtU582RN1g,3142
+egui_pysync/structures.py,sha256=6bf8T-O7AQo0v9brRXrpkrCFhEXzWyb_WfJjijHNS4M,17206
+egui_pysync/typing.py,sha256=Svupqy0C3We0YQfB_sSUjWc7c5QA-UZC5IXBToN8PyY,2996
+egui_pysync/version.py,sha256=NJIk0RgNs2V6B1NRFObR5aZnKEk5fbMuYlDcaLOzP0Q,40
+egui_pysync-0.1.2.dist-info/LICENSE,sha256=woGH9FGDwk6xA6dPxMGeYlGzyEPMfYvsHlmGq0NI52M,1096
+egui_pysync-0.1.2.dist-info/METADATA,sha256=wslk0qHw1stKoOQy5Xzap-wazmn2szcUnafHPPZSNE4,1675
+egui_pysync-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+egui_pysync-0.1.2.dist-info/top_level.txt,sha256=6rln0AVyFI9Iut5WeNBYmioxX5sO-be-w9rFEwn9ogg,12
+egui_pysync-0.1.2.dist-info/RECORD,,
