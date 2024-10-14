@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+infoalign.egg-info/PKG-INFO
+infoalign.egg-info/SOURCES.txt
+infoalign.egg-info/dependency_links.txt
+infoalign.egg-info/entry_points.txt
+infoalign.egg-info/not-zip-safe
+infoalign.egg-info/requires.txt
+infoalign.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_init.py
