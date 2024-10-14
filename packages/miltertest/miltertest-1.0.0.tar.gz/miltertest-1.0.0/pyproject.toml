@@ -1,0 +1,35 @@
+[project]
+name = "miltertest"
+version = "1.0.0"
+authors = [
+  { name="Paul Arthur", email="paul.arthur@flowerysong.com" },
+]
+description = "Pure Python implementation of the milter protocol"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/flowerysong/miltertest"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.ruff]
+line-length = 160
+
+[tool.ruff.format]
+quote-style = 'single'
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "B", "RUF"]
