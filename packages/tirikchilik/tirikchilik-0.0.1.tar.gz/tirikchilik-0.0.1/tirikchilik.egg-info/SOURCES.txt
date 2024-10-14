@@ -1,0 +1,9 @@
+README.md
+setup.py
+tirikchilik/__init__.py
+tirikchilik/tirikchilik.py
+tirikchilik.egg-info/PKG-INFO
+tirikchilik.egg-info/SOURCES.txt
+tirikchilik.egg-info/dependency_links.txt
+tirikchilik.egg-info/requires.txt
+tirikchilik.egg-info/top_level.txt
