@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cloudycustoms
+Version: 0.0.4
+Summary: Collection of utility python modules
+Author: CloudEater (Nath Abraham)
+Author-email: <nathCloud@gmail.com>
+Keywords: python,utility,random,numbers
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+
+A collection of utility python modules. Uses python random module
