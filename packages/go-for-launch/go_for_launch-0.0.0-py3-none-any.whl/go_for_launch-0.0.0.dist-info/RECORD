@@ -1,0 +1,11 @@
+g4l/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+g4l/g4l.py,sha256=_qbJolhgINS5kEqyblaCBtnUnuuViFCo3KTJbe_8MxA,983
+g4l/cli_common/app_version.py,sha256=-rRAPyV6Y_mkODetprRcOrb-03omsMTrOnO5TFMW6ts,42
+g4l/cli_common/argdocs.py,sha256=AudKHFvNpz4Olf0ajlYzNR4rytxUefjaWHsaPwO0n4M,1800
+g4l/cli_common/cfg.py,sha256=kMn08Z4Ms1PAu2-U1QI8weEJeIVEppP4A4_tFfwnjtg,2924
+go_for_launch-0.0.0.dist-info/LICENSE,sha256=x-_zUh523Ld5iSIYBLKYzBvCCd9mXsnuiqjFaWxcmLk,1055
+go_for_launch-0.0.0.dist-info/METADATA,sha256=y3qTTdO4RLc6bx35rL4DxlJRzwkbkf7WNte2N0RNd8I,1636
+go_for_launch-0.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+go_for_launch-0.0.0.dist-info/entry_points.txt,sha256=jyc6RZwFEanmgG4FRLtz1YJLU9tgDqMktAN-RZYkIj4,37
+go_for_launch-0.0.0.dist-info/top_level.txt,sha256=QZEal717jaUDh-4drGtqE6sp5DBPpa7dP-z2n-z6sQg,4
+go_for_launch-0.0.0.dist-info/RECORD,,

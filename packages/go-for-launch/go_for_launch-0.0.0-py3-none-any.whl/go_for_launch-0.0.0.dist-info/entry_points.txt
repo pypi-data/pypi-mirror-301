@@ -1,0 +1,2 @@
+[console_scripts]
+g4l = g4l.g4l:main
