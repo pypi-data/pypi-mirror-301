@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ntanh
+Version: 0.1.0
+Summary: An python parametters library.
+Home-page: https://github.com/ntanhfai/tact
+Author: Tuấn Anh - Foxconn
+Author-email: nt.anh.fai@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: ruamel.yaml
+
