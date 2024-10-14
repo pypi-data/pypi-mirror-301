@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: study-da
+Version: 0.2.6
+Summary: A tool to create large-scale DA simulations.
+Author: Colas
+Author-email: colasdroin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: black (>=24.10.0,<25.0.0)
+Requires-Dist: cpymad (>=1.16.3,<2.0.0)
+Requires-Dist: fastparquet (>=2024.5.0,<2025.0.0)
+Requires-Dist: filelock (>=3.16.1,<4.0.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: nafflib (>=2.0.2,<3.0.0)
+Requires-Dist: numpy (>=2.0.2,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: ruamel-yaml (>=0.18.6,<0.19.0)
+Requires-Dist: xsuite (>=0.18.6,<0.19.0)
+Description-Content-Type: text/markdown
+
+# Dynamics aperture study package
+
+This package is a collection of tools to study the dynamics aperture of a particle accelerator with [Xsuite](https://github.com/xsuite/xsuite). The package is divided in four main parts:
+
+- **Study generation**: provides some functions to generate the dynamics aperture study (as a parametric scan) from template scripts
+- **Study submission**: allows to seamlessly submit the generated study to computing clusters (mainly HTCondor) and get back the results
+- **Study postprocessing**: provides some functions to postprocess the raw tracking results
+- **Study analysis**: provides some functions to analyze and visualize the postprocessed results
+
+This package is still experimental and under development. Consequently, this README is bound to evolve a lot in the near future.
+
