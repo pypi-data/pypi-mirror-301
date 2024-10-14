@@ -1,0 +1,9 @@
+README.md
+food_waste_predictor.py
+setup.py
+food_waste_predictor.egg-info/PKG-INFO
+food_waste_predictor.egg-info/SOURCES.txt
+food_waste_predictor.egg-info/dependency_links.txt
+food_waste_predictor.egg-info/entry_points.txt
+food_waste_predictor.egg-info/requires.txt
+food_waste_predictor.egg-info/top_level.txt
