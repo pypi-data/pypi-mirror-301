@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: akaba
+Version: 1.0
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: pydantic-settings
+Requires-Dist: FastAPI
+Requires-Dist: SQLAlchemy
+Requires-Dist: alembic
+Requires-Dist: pydantic
+
