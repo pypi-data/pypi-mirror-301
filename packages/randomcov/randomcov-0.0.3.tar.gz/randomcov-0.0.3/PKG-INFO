@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: randomcov
+Version: 0.0.3
+Summary: Random covariance generation
+Home-page: https://github.com/microprediction/randomcov
+Author: microprediction
+Author-email: peter.cotton@microprediction.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+# randomcov
+Generating random covariance and correlation matrices
+
+
+### Install 
+
+    pip install randomcov 
+
+### Example
+
+    from randomcov import cov_generator
+    cov = cov_generator(n=50, corr_method='residuals', var_method='lognormal')
