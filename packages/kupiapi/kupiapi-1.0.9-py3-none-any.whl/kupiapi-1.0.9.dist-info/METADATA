@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kupiapi
+Version: 1.0.9
+Summary: Scraper API for extracting product data from kupi.cz
+Home-page: https://github.com/vorava/kupiapi
+Author: Vojtech Orava
+Author-email: vojtech.orava@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+# Kupi API
+
+This is a lightweight *www.kupi.cz* web scraper for scraping **sales** and **recipes** into JSON. It does require only bs4, json and requests libraries. API provides multiple methods to download content from the kupi website (see more below).
+
+## Instalation
+> pip install kupiapi
+
+PyPi page: [https://pypi.org/project/kupiapi/](https://pypi.org/project/kupiapi/)
+
+GitHub page: [https://github.com/vorava/kupiapi](https://github.com/vorava/kupiapi)
+
+## Usage
+    import kupiapi.recipes
+    import kupiapi.scraper
+
+
+## Examples
+    import kupiapi.recipes
+    kr = kupiapi.recipes.KupiRecipes()
+    
+    print(kr.get_categories())
+
