@@ -1,0 +1,14 @@
+prometheus_client
+psutil
+setproctitle
+tblib
+werkzeug>=2.1
+
+[test]
+aiohttp
+prometheus_client
+psutil
+setproctitle
+tblib
+timeout-decorator
+werkzeug>=2.1
