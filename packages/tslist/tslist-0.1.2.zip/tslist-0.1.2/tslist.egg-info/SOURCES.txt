@@ -1,0 +1,15 @@
+CHANGES.rst
+HOWTO.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tslist/__init__.py
+tslist/parser.py
+tslist/ts.py
+tslist/tsdiff.py
+tslist/tslist.py
+tslist.egg-info/PKG-INFO
+tslist.egg-info/SOURCES.txt
+tslist.egg-info/dependency_links.txt
+tslist.egg-info/top_level.txt
