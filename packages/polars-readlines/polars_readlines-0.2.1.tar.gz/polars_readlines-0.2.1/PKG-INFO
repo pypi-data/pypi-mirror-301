@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: polars-readlines
+Version: 0.2.1
+Classifier: License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Requires-Dist: polars >=0.20.7
+Summary: A util for fast reading lines of files into Polars
+Author-email: Misaki Kasumi <misakikasumi@outlook.com>
+Requires-Python: >=3.8
+Project-URL: Repository, https://github.com/ruihe774/polars-readlines.git

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["maturin~=1.0"]
+build-backend = "maturin"
+
+[project]
+name = "polars-readlines"
+description = "A util for fast reading lines of files into Polars"
+classifiers = [
+    "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+]
+dynamic = ["version"]
+requires-python = ">= 3.8"
+dependencies = [
+    "polars >= 0.20.7"
+]
+
+[[project.authors]]
+name = "Misaki Kasumi"
+email = "misakikasumi@outlook.com"
+
+[tool.maturin]
+module-name = "polars_readlines._polars_readlines"
+manifest-path = "py/Cargo.toml"
+
+[project.urls]
+Repository = "https://github.com/ruihe774/polars-readlines.git"
