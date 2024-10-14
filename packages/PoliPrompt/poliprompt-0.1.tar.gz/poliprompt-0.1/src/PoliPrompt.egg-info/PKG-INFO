@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: PoliPrompt
+Version: 0.1
+Summary: PoliPrompt performs data analysis with state-of-the-art foundation models
+Author-email: Menglin Liu <mliliu@ucdavis.edu>, Ge Shi <geshijoker@gmail.com>
+Project-URL: Documentation, https://github.com/geshijoker/PoliPrompt/tree/main#readme
+Project-URL: Source, https://github.com/geshijoker/PoliPrompt
+Project-URL: Issues, https://github.com/geshijoker/PoliPrompt/issues
+Keywords: nlp,llm,prompt
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: spark
+Requires-Dist: pyspark>=3.0.0; extra == "spark"
+Provides-Extra: test
+Requires-Dist: bandit[toml]==1.7.5; extra == "test"
+Requires-Dist: black==23.3.0; extra == "test"
+Requires-Dist: check-manifest==0.49; extra == "test"
+Requires-Dist: flake8-bugbear==23.5.9; extra == "test"
+Requires-Dist: flake8-docstrings; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: flake8-pyproject; extra == "test"
+Requires-Dist: pre-commit==3.3.1; extra == "test"
+Requires-Dist: pylint==2.17.4; extra == "test"
+Requires-Dist: pylint_junit; extra == "test"
+Requires-Dist: pytest-cov==4.0.0; extra == "test"
+Requires-Dist: pytest-mock<3.10.1; extra == "test"
+Requires-Dist: pytest-runner; extra == "test"
+Requires-Dist: pytest==7.3.1; extra == "test"
+Requires-Dist: pytest-github-actions-annotate-failures; extra == "test"
+Requires-Dist: shellcheck-py==0.9.0.2; extra == "test"
+
+
+<p align="center">
+  <img src="https://github.com/geshijoker/PoliPrompt/poliprompt_logo.png" width="800" />
+</p>
+
+---
+
+[![PyPI - Python](https://img.shields.io/badge/python-v3.8+-blue.svg)](https://pypi.org/project/poliprompt/)
+[![Build](https://img.shields.io/github/actions/workflow/status/geshijoker/PoliPrompt/testing.yml?branch=main)](https://github.com/geshijoker/PoliPrompt/actions)
+[![docs](https://img.shields.io/badge/docs-Passing-green.svg)](https://poliprompt-tutorial.readthedocs.io/en/latest/)
+[![PyPI - PyPi](https://img.shields.io/pypi/v/PoliPrompt)](https://pypi.org/project/poliprompt/)
+[![PyPI - License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/geshijoker/tree/main/LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2409.01466-<COLOR>.svg)](https://arxiv.org/pdf/2409.01466)
+
+
+# PoliPrompt
+The repository for PoliPrompt
+
+## Tutorial
+[Tutorial of PoliPrompt](https://poliprompt-tutorial.readthedocs.io/en/latest/)
