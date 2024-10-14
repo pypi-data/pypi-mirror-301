@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: camden-registration-api
+Version: 0.1.0
+Summary: client for interracting with camden website using api
+Home-page: https://github.com/polovinko1980/camden-registration-api
+License: MIT
+Author: Alex Polovinko
+Author-email: alex.polovinko@gmail.com
+Maintainer: Alex Polovinko
+Maintainer-email: alex.polovinko@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/polovinko1980/camden-registration-api
+Description-Content-Type: text/markdown
+
+# camden-registration-api
+wrapper on requests api to simulate user actions on the Camden Activity Registration portal
+
+
+# Camden Registration
+
+# About
+
+Simple helper to automate the registration process
+to Camden volleyball activities by simulating user actions.
+
+# Running environment
+Need python 3 to run
+
+Need pip to install libraries
+
+
+
+# Preconditions
+
+
+Install ```pip install -r requirements.txt```
+
+In ```master.yml``` file:
+
+- update credentials in a list of players. List of players supported.
+
+# Usage
+
+To see all options
+```python camden_api.py --help ```
+
+
+To validate setup, run
+
+```python camden_api.py --test ```
+
+This option will only search for the next activity registration url and update
+configuration file.
+
+Make sure to validate updated url manually!
+
+
+It is possible to use your own configuration file by passing its name:
+
+
+```
+python camden_api.py --config-file my-secret-file.yml
+```
+
+
+
+To run registration:
+
+```
+python camden_api.py
+```
+
+
+# Other
+
+To call Camden: 1-408-559-8553
+
+
+
+# Special ask
+
+Do not share with Alex K, let him train his fingers
+
