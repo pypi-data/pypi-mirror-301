@@ -1,0 +1,45 @@
+name: pr-coverage-lint
+
+on:
+  pull_request:
+    branches: ['*']
+
+jobs:
+  tests:
+    name: Coverage and Lint
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4.1.1
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-python@v5.0.0
+        with:
+          python-version: 3.11
+
+      - name: Install from source
+        run: |
+          pip install --upgrade pip setuptools wheel
+          pip install .[test]
+
+      - name: Lint
+        run: flake8 src/h3 tests
+
+      - name: Pylint
+        # As a test for visibility of API bindings, we want to ensure that pylint has no
+        # `import-error` warnings for h3 imports.
+        run: pylint --disable=all --enable=import-error tests/
+
+      - name: Coverage
+        run: |
+          pip install cython
+          cythonize tests/test_cython/cython_example.pyx
+          pytest --cov-report=lcov
+
+      - name: Report coverage
+        uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          filter-changed-files: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          lcov-file: ./coverage.lcov
