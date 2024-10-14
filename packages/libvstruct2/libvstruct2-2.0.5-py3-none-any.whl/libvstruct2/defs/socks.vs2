@@ -1,0 +1,75 @@
+Socks5CAuth:
+  - Ver: B
+  - IdLen: B
+  - ID: B[$IdLen]
+  - PwLen: B
+  - PW: B[$PwLen]
+  
+Socks5AuthResp:
+  - Ver: B
+  - Status: B
+
+Socks5Domain:
+  - Len: B
+  - Domain: B[$Len]
+
+Socks5Address:
+  - Type: B
+  - IPv4Addr: B[4]
+    - condition: $Type == 1
+  - Domain: Socks5Domain
+    - condition: $Type == 3
+  - IPv6Addr: B[16]
+    - condition: $Type == 4
+
+Socks5ConnReq:
+  - Ver: B
+  - Command: B
+    = (1, 2, 3)
+    ~ {1: 'TCP-connect', 2: 'TCP-bind', 3: 'UDP-associate'}
+  - Reserved: B
+    = 0
+  - DstAddr: Socks5Address
+  - DstPort: I2B
+
+Socks5ConnResp:
+  - Ver: B
+  - Status: B
+    ~ {0: 'granted', 1: 'general failure', 2: 'not allowed', 3: 'net unreachable', 4: 'host unreachable', 5: 'conn refused', 6: 'TTL expired', 7: 'protocol error', 8: 'addr type not supported'}
+  - Reserved: B
+    = 0
+  - BndAddr: Socks5Address < $^ConnReq.Command == 2 >
+  - BndPort: I2B < $^ConnReq.Command == 2 >
+
+Socks5CGreet:
+  - Ver: B
+    = 5
+  - NAuth: B
+  - Auth: B[$NAuth]
+
+Socks5SChoice:
+  - Ver: B
+    = 5
+  - CAuth: B
+
+SOCKS5:: socks5
+  | filter: ^\x05
+  - ClientGreet: Socks5CGreet
+  - ServerChoice: Socks5SChoice
+  - Auth: Socks5CAuth <$ServerChoice.CAuth != 0>
+  - AuthResp: Socks5AuthResp <$ServerChoice.CAuth != 0>
+  - ConnReq: Socks5ConnReq
+  - ConnResp: Socks5ConnResp
+  - Data: B[128]
+
+SOCKS5Client:: socks5client
+  | filter: ^\x05
+  - ClientGreet: Socks5CGreet
+  - ConnReq: Socks5ConnReq
+  - Data: B[*]
+
+SOCKS5Server:: socks5server
+  | filter: ^\x05
+  - ServerChoice: Socks5SChoice
+  - ConnResp: Socks5ConnResp
+  - Data: B[*]

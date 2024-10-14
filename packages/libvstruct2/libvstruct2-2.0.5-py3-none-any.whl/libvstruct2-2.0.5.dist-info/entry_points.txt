@@ -1,0 +1,2 @@
+[console_scripts]
+s2 = libvstruct2.scripts.s2:main

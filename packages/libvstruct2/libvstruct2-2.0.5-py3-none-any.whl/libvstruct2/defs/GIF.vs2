@@ -1,0 +1,89 @@
+RGB:
+  - RGB: R[3]
+
+GIF_CT:
+  - Colors: RGB[2 ** (&^Fields.SizeOfCT + 1)]
+
+GIF_SubBlockChunk:
+  - Size: I1
+  - Data: R[$Size]
+
+GIF_SubBlock:
+  . Chunks: GIF_SubBlockChunk[*]
+    - stop: $crt_field.Size == 0
+  - Data := b''.join(e.Data.value for e in &Chunks)
+#    ; lambda self: setattr(self, '_size', len(self._value))
+
+GIF_ImageData:
+  - LZWMinCodeSize: I1
+  - ImageData: GIF_SubBlock
+
+GIF_ImageDescriptor:
+  - Left: I2
+  - Top: I2
+  - Width: I2
+  - Height: I2
+  - Fields: BM1
+    { 0x80: 'HasLCT', 0x40: 'Interlaced', 0x20: 'CTIsSorted', 0x18: 'Reserved', 0x07: 'SizeOfCT' }
+  - ImageData: GIF_ImageData
+
+GIF_GraphicControlExt:
+  - BlockSize: I1
+  - Fields: BM1
+    { 0xE0: 'Reserved', 0x1C: 'DisposalMethod', 0x02: 'UserInputFlag', 0x01: 'TransparentColFlg' }
+  - DelayTime: I2
+  - TransparentColIdx: I1
+  - BlockTerm: I1
+    = 0
+
+GIF_CommentExt:
+  - Comment: GIF_SubBlock
+
+GIF_PlainTextExt:
+  - Size: I1
+  - Left: I2
+  - Top: I2
+  - Width: I2
+  - Height: I2
+  - ChrCellWidth: I1
+  - ChrCellHeight: I1
+  - TxtFgColIdx: I1
+  - TxtBgColIdx: I1
+  - Text: GIF_SubBlock
+
+GIF_ApplicationExt:
+  - Size: I1
+  - AppId: R[8]
+  - AppAuthCode: R[3]
+  - AppData: GIF_SubBlock
+
+GIF_Block:
+  - Separator: R[1]
+  - GCLabel: I1 < $Separator == b'!' >
+  - GraphicControl: GIF_GraphicControlExt < $Separator == b'!' and $GCLabel == 0xF9 >
+  - Comment: GIF_CommentExt < $Separator == b'!' and $GCLabel == 0xFE >
+  - PlainText: GIF_PlainTextExt < $Separator == b'!' and $GCLabel == 0x01 >
+  - Application: GIF_ApplicationExt < $Separator == b'!' and $GCLabel == 0xFF >
+  - ImageDescriptor: GIF_ImageDescriptor < $Separator == b',' >
+
+GIF_Header:
+  - Magic: R[3]
+    = b'GIF'
+  - Version: R[3]
+    = (b'87a', b'89a')
+  - Width: I2
+  - Height: I2
+  - Fields: BM1
+    { 0x80: 'HasGCT', 0x70: 'ColorRes', 0x08: 'CTIsSorted', 0x07: 'SizeOfCT' }
+  - BgColor: I1
+  - PxAspectRatio: I1
+  - GCT: GIF_CT
+
+GIF:: gif
+  | filter: ^GIF8[79]
+  - Header: GIF_Header
+  - Blocks: GIF_Block[*]
+    - stop: &crt_field.Separator == b';'
+  - Trailer: R[1]
+    ?= b';'
+

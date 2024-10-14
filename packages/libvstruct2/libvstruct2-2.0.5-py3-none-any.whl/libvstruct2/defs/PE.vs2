@@ -1,0 +1,354 @@
+IMAGE_DOS_HEADER:
+  - e_magic: I2
+  - e_cblp: I2
+  - e_cp: I2
+  - e_crlc: I2
+  - e_cparhdr: I2
+  - e_minalloc: I2
+  - e_maxalloc: I2
+  - e_ss: I2
+  - e_sp: I2
+  - e_csum: I2
+  - e_ip: I2
+  - e_cs: I2
+  - e_lfarlc: I2
+  - e_ovno: I2
+  - e_res: R[8]
+  - e_oemid: I2
+  - e_oeminfo: I2
+  - e_res2: R[20]
+  - e_lfanew: SI4
+
+IMAGE_FILE_HEADER:
+  - Machine: I2
+  - NumberOfSections: I2
+  - TimeDateStamp: I4
+  - PointerToSymbolTable: I4
+  - NumberOfSymbols: I4
+  - SizeOfOptionalHeader: I2
+  - Characteristics: I2
+
+IMAGE_SECTION_HEADER:
+  - Name: AS[8]
+  - VirtualSize: I4
+  - VirtualAddress: I4
+  - SizeOfRawData: I4
+  - PointerToRawData: I4
+  - PointerToRelocations: I4
+  - PointerToLinenumbers: I4
+  - NumberOfRelocations: I2
+  - NumberOfLinenumbers: I2
+  - Characteristics: I4
+
+IMAGE_EXPORT_DIRECTORY:
+  - Characteristics: I4
+  - TimeDateStamp: I4
+  - MajorVersion: I2
+  - MinorVersion: I2
+  - NameRVA: I4
+  * Name: AS
+    @ &root.rva2offs($NameRVA)
+  - Base: I4
+  - NumberOfFunctions: I4
+  - NumberOfNames: I4
+  - AddressOfFunctions: I4
+  - AddressOfNames: I4
+  - AddressOfNameOrdinals: I4
+
+IMAGE_IMPORT_BY_NAME:
+  - Hint: I2
+  - Name: AS
+
+IMAGE_TLS_DIRECTORY64:
+  - StartAddressOfRawData: I8
+  - EndAddressOfRawData: I8
+  - AddressOfIndex: I8
+  - AddressOfCallBacks: I8
+  - SizeOfZeroFill: I4
+  - Characteristics: I4
+
+IMAGE_TLS_DIRECTORY32:
+  - StartAddressOfRawData: I4
+  - EndAddressOfRawData: I4
+  - AddressOfIndex: I4
+  - AddressOfCallBacks: I4
+  - SizeOfZeroFill: I4
+  - Characteristics: I4
+
+IMAGE_IMPORT_DESCRIPTOR:
+  - OriginalFirstThunk: I4
+  - TimeDateStamp: I4
+  - ForwarderChain: I4
+  - Name: I4
+  - FirstThunk: I4
+
+IMAGE_BOUND_IMPORT_DESCRIPTOR:
+  - TimeDateStamp: I4
+  - OffsetModuleName: I2
+  - NumberOfModuleForwarderRefs: I2
+
+IMAGE_BOUND_FORWARDER_REF:
+  - TimeDateStamp: I4
+  - OffsetModuleName: I2
+  - Reserved: I2
+
+IMAGE_DELAYLOAD_DESCRIPTOR:
+  - AllAttributes: I4
+  - DllNameRVA: I4
+  - ModuleHandleRVA: I4
+  - ImportAddressTableRVA: I4
+  - ImportNameTableRVA: I4
+  - BoundImportAddressTableRVA: I4
+  - UnloadInformationTableRVA: I4
+  - TimeDateStamp: I4
+
+IMAGE_RESOURCE_DIRECTORY_STRING:
+  - Length: I2
+  - NameString: AS
+
+IMAGE_RESOURCE_DIR_STRING_U:
+  - Length: I2
+  - NameString: WS
+
+IMAGE_RESOURCE_DATA_ENTRY:
+  - OffsetToData: I4
+  - Size: I4
+  - CodePage: I4
+  - Reserved: I4
+
+IMAGE_RESOURCE_DIRECTORY_ENTRY:
+  . NameOrId: I4
+  * Id: I4 <($NameOrId >> 31) == 0>
+    @ &NameOrId.offset
+    ~ RESOURCE_TYPE
+  - Name: IMAGE_RESOURCE_DIR_STRING_U <$NameOrId >> 31>
+    @ ($NameOrId & 0x7FFFFFFF) + &last_parent('IMAGE_RESOURCE_DIRECTORY').offset
+  - OffsetToData: I4
+  - ResourceDirectory: 'IMAGE_RESOURCE_DIRECTORY' <$OffsetToData >> 31>
+    @ ($OffsetToData & 0x7FFFFFFF) + &last_parent('IMAGE_RESOURCE_DIRECTORY').offset
+  - Resource: IMAGE_RESOURCE_DATA_ENTRY <($OffsetToData >> 31) == 0>
+    @ $OffsetToData + &last_parent('IMAGE_RESOURCE_DIRECTORY').offset
+
+IMAGE_RESOURCE_DIRECTORY:
+  - Characteristics: I4
+  - TimeDateStamp: I4
+  - MajorVersion: I2
+  - MinorVersion: I2
+  - NumberOfNamedEntries: I2
+  - NumberOfIdEntries: I2
+  - Entries: IMAGE_RESOURCE_DIRECTORY_ENTRY[$NumberOfNamedEntries + $NumberOfIdEntries]
+
+IMAGE_LOAD_CONFIG_CODE_INTEGRITY:
+  - Flags: I2
+  - Catalog: I2
+  - CatalogOffset: I4
+  - Reserved: I4
+
+IMAGE_DYNAMIC_RELOCATION_TABLE:
+  - Version: I4
+  - Size: I4
+
+IMAGE_DYNAMIC_RELOCATION32:
+  - Symbol: I4
+  - BaseRelocSize: I4
+
+IMAGE_DYNAMIC_RELOCATION64:
+  - Symbol: I8
+  - BaseRelocSize: I4
+
+IMAGE_DYNAMIC_RELOCATION32_V2:
+  - HeaderSize: I4
+  - FixupInfoSize: I4
+  - Symbol: I4
+  - SymbolGroup: I4
+  - Flags: I4
+
+IMAGE_DYNAMIC_RELOCATION64_V2:
+  - HeaderSize: I4
+  - FixupInfoSize: I4
+  - Symbol: I8
+  - SymbolGroup: I4
+  - Flags: I4
+
+IMAGE_LOAD_CONFIG_DIRECTORY32:
+  - Size: I4
+  - TimeDateStamp: I4
+  - MajorVersion: I2
+  - MinorVersion: I2
+  - GlobalFlagsClear: I4
+  - GlobalFlagsSet: I4
+  - CriticalSectionDefaultTimeout: I4
+  - DeCommitFreeBlockThreshold: I4
+  - DeCommitTotalFreeThreshold: I4
+  - LockPrefixTable: I4
+  - MaximumAllocationSize: I4
+  - VirtualMemoryThreshold: I4
+  - ProcessHeapFlags: I4
+  - ProcessAffinityMask: I4
+  - CSDVersion: I2
+  - DependentLoadFlags: I2
+  - EditList: I4
+  - SecurityCookie: I4
+  - SEHandlerTable: I4
+  - SEHandlerCount: I4
+  - GuardCFCheckFunctionPointer: I4
+  - GuardCFDispatchFunctionPointer: I4
+  - GuardCFFunctionTable: I4
+  - GuardCFFunctionCount: I4
+  - GuardFlags: I4
+  - CodeIntegrity: IMAGE_LOAD_CONFIG_CODE_INTEGRITY
+  - GuardAddressTakenIatEntryTable: I4
+  - GuardAddressTakenIatEntryCount: I4
+  - GuardLongJumpTargetTable: I4
+  - GuardLongJumpTargetCount: I4
+  - DynamicValueRelocTable: I4
+  - CHPEMetadataPointer: I4
+  - GuardRFFailureRoutine: I4
+  - GuardRFFailureRoutineFunctionPointer: I4
+  - DynamicValueRelocTableOffset: I4
+  - DynamicValueRelocTableSection: I2
+  - Reserved2: I2
+  - GuardRFVerifyStackPointerFunctionPointer: I4
+  - HotPatchTableOffset: I4
+  - Reserved3: I4
+  - EnclaveConfigurationPointer: I4
+  - VolatileMetadataPointer: I4
+
+IMAGE_LOAD_CONFIG_DIRECTORY64:
+  - Size: I4
+  - TimeDateStamp: I4
+  - MajorVersion: I2
+  - MinorVersion: I2
+  - GlobalFlagsClear: I4
+  - GlobalFlagsSet: I4
+  - CriticalSectionDefaultTimeout: I4
+  - DeCommitFreeBlockThreshold: I8
+  - DeCommitTotalFreeThreshold: I8
+  - LockPrefixTable: I8
+  - MaximumAllocationSize: I8
+  - VirtualMemoryThreshold: I8
+  - ProcessAffinityMask: I8
+  - ProcessHeapFlags: I4
+  - CSDVersion: I2
+  - DependentLoadFlags: I2
+  - EditList: I8
+  - SecurityCookie: I8
+  - SEHandlerTable: I8
+  - SEHandlerCount: I8
+  - GuardCFCheckFunctionPointer: I8
+  - GuardCFDispatchFunctionPointer: I8
+  - GuardCFFunctionTable: I8
+  - GuardCFFunctionCount: I8
+  - GuardFlags: I4
+  - CodeIntegrity: IMAGE_LOAD_CONFIG_CODE_INTEGRITY
+  - GuardAddressTakenIatEntryTable: I8
+  - GuardAddressTakenIatEntryCount: I8
+  - GuardLongJumpTargetTable: I8
+  - GuardLongJumpTargetCount: I8
+  - DynamicValueRelocTable: I8
+  - CHPEMetadataPointer: I8
+  - GuardRFFailureRoutine: I8
+  - GuardRFFailureRoutineFunctionPointer: I8
+  - DynamicValueRelocTableOffset: I4
+  - DynamicValueRelocTableSection: I2
+  - Reserved2: I2
+  - GuardRFVerifyStackPointerFunctionPointer: I8
+  - HotPatchTableOffset: I4
+  - Reserved3: I4
+  - EnclaveConfigurationPointer: I8
+  - VolatileMetadataPointer: I8
+
+IMAGE_DATA_DIRECTORY:
+  - VirtualAddress: I4
+  - Size: I4
+
+IMAGE_OPTIONAL_HEADER64:
+  - Magic: I2
+  - MajorLinkerVersion: B
+  - MinorLinkerVersion: B
+  - SizeOfCode: I4
+  - SizeOfInitializedData: I4
+  - SizeOfUninitializedData: I4
+  - AddressOfEntryPoint: I4
+  - BaseOfCode: I4
+  - ImageBase: I8
+  - SectionAlignment: I4
+  - FileAlignment: I4
+  - MajorOperatingSystemVersion: I2
+  - MinorOperatingSystemVersion: I2
+  - MajorImageVersion: I2
+  - MinorImageVersion: I2
+  - MajorSubsystemVersion: I2
+  - MinorSubsystemVersion: I2
+  - Win32VersionValue: I4
+  - SizeOfImage: I4
+  - SizeOfHeaders: I4
+  - CheckSum: I4
+  - Subsystem: I2
+  - DllCharacteristics: I2
+  - SizeOfStackReserve: I8
+  - SizeOfStackCommit: I8
+  - SizeOfHeapReserve: I8
+  - SizeOfHeapCommit: I8
+  - LoaderFlags: I4
+  - NumberOfRvaAndSizes: I4
+  - DataDirectory: IMAGE_DATA_DIRECTORY[16]
+
+IMAGE_OPTIONAL_HEADER32:
+  - Magic: I2
+  - MajorLinkerVersion: B
+  - MinorLinkerVersion: B
+  - SizeOfCode: I4
+  - SizeOfInitializedData: I4
+  - SizeOfUninitializedData: I4
+  - AddressOfEntryPoint: I4
+  - BaseOfCode: I4
+  - BaseOfData: I4
+  - ImageBase: I4
+  - SectionAlignment: I4
+  - FileAlignment: I4
+  - MajorOperatingSystemVersion: I2
+  - MinorOperatingSystemVersion: I2
+  - MajorImageVersion: I2
+  - MinorImageVersion: I2
+  - MajorSubsystemVersion: I2
+  - MinorSubsystemVersion: I2
+  - Win32VersionValue: I4
+  - SizeOfImage: I4
+  - SizeOfHeaders: I4
+  - CheckSum: I4
+  - Subsystem: I2
+  - DllCharacteristics: I2
+  - SizeOfStackReserve: I4
+  - SizeOfStackCommit: I4
+  - SizeOfHeapReserve: I4
+  - SizeOfHeapCommit: I4
+  - LoaderFlags: I4
+  - NumberOfRvaAndSizes: I4
+  - DataDirectory: IMAGE_DATA_DIRECTORY[16]
+
+IMAGE_NT_HEADERS:
+  - Signature: I4
+  - FileHeader: IMAGE_FILE_HEADER
+  ? next_hdr: I2
+    = (0x10B, 0x20B)
+  - OptionalHeader: IMAGE_OPTIONAL_HEADER32<$next_hdr == IMAGE_NT_OPTIONAL_HDR32_MAGIC>
+  - OptionalHeader: IMAGE_OPTIONAL_HEADER64<$next_hdr == IMAGE_NT_OPTIONAL_HDR64_MAGIC>
+  - SectionHeaders: IMAGE_SECTION_HEADER[$FileHeader.NumberOfSections]
+    ; init_rva2offs
+  - ExportDirectory: IMAGE_EXPORT_DIRECTORY <$OptionalHeader.DataDirectory[0].VirtualAddress>
+    @ &root.rva2offs($OptionalHeader.DataDirectory[0].VirtualAddress)
+  - ResourceDirectory: IMAGE_RESOURCE_DIRECTORY <$OptionalHeader.DataDirectory[2].VirtualAddress>
+    @ &root.rva2offs($OptionalHeader.DataDirectory[2].VirtualAddress)
+
+# todo: add a proper synthetically-calculated value field type
+
+PE:: pe, pe+, mz, coff
+  | methods: rva2offs, parse_exports
+  | filter: ^MZ
+  | post_parse: pe_post_parse
+  - MZHeader: IMAGE_DOS_HEADER
+  - NTHeader: IMAGE_NT_HEADERS
+    @ $MZHeader.e_lfanew
+  - Overlay: R [&bytes_left]
+    @ &last_va_offset

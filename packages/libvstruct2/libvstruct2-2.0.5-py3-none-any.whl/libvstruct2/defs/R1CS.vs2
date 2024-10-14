@@ -1,0 +1,60 @@
+# This is an idiotic format. The "Constraints section" uses the "Field Size in bytes (fs)" value from the "Header Section", but can be the first section of the file, before the "Header Section".
+# Reference:
+# - https://github.com/iden3/r1csfile/blob/master/doc/r1cs_bin_format.md
+# - clearer: https://github.com/iden3/r1csfile/blob/master/src/r1csfile.js
+
+R1CS_WireId2LabelIdSection:
+  - WireLabels: I8[&root.nWires]
+
+R1CS_Constraint:
+  - Index: I4
+  - Value: BigInt[getattr(&root, "FieldSize", 32)]
+  
+R1CS_ConstraintsEntry:
+  - IndexCount: I4
+  - Coefficients: R1CS_Constraint[$IndexCount]
+
+R1CS_Constraint:
+  - A: R1CS_ConstraintsEntry
+  - B: R1CS_ConstraintsEntry
+  - C: R1CS_ConstraintsEntry
+
+R1CS_ConstraintsSection:
+  - Constraints: R1CS_Constraint[&root.mConstraints]
+
+R1CS_HeaderSection:
+  - FieldSize: I4
+  - Prime: BigInt[$FieldSize]
+  - nWires: I4
+    # Total Number of wires including ONE signal (Index 0)
+  - nPubOut: I4
+    # Total Number of wires public output wires. They should be starting at idx 1
+  - nPubIn: I4
+    # Total Number of wires public input wires. They should be starting just after the public output
+  - nPrvIn: I4
+    # Total Number of wires private input wires. They should be starting just after the public inputs
+  - nLabels: I8
+    # Total Number of wires private input wires. They should be starting just after the public inputs
+  - mConstraints: I4
+    # Total Number of constraints
+
+R1CS_Section:
+  - Type: I4
+  - Size: I8
+  . Content: R[$Size]
+  - Header: R1CS_HeaderSection <$Type == 1>
+    @ @Content
+    ; store_header
+  - Constraints: R1CS_ConstraintsSection <$Type == 2>
+    - second_pass
+    @ @Content
+  - LabelMap: R1CS_WireId2LabelIdSection <$Type == 3>
+    @ @Content
+
+R1CS:: r1cs
+    | filter: ^(r1cs)
+    - Magic: R[4]
+        = b'r1cs'
+    - Version: I4
+    - NumSections: I4
+    - Sections: R1CS_Section[$NumSections]

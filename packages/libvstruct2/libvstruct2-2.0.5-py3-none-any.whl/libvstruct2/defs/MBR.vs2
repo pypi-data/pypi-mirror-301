@@ -1,0 +1,51 @@
+CHSAddr:
+  - Head: B
+  . Raw1: B
+  . Raw2: B
+  - Sector := $Raw1 & 0x3F
+  - Cylinder := $Raw2 + (($Raw1 << 2) & 0x300)
+
+MBR_PartRecord:
+  - Status: BM1
+    { 0x80: 'Bootable' }
+  - FirstSectCHS: CHSAddr
+  - PartType: B
+    ~ MBR_PARTITION_TYPES
+  - LastSectCHS: CHSAddr
+  - FirstSectLBA: D
+  - SectCnt: D
+
+DOS_BootSector:
+  - Jump: R[3]
+  - OemName: R[8]
+  - BytesPerSector: I2
+  - SectorsPerCluster: I1
+  - ReservedSectors: I2
+  - NumFATTables: I1
+  - MaxRootEntries: I2
+  - NumSectors16: I2
+  - MediaDescriptor: I1
+    ~ MBR_MEDIA_TYPE
+  - SectorsPerFAT: I2
+  - SectorsPerTrack: I2
+  - HeadsPerCylinder: I2
+  - NumHiddenSectors: I4
+  - NumSectors32: I4
+  - DriveNum: I1
+  . Reserved: I1
+  - BootSig: I1
+  - UniqueId: I4
+  - VolumeLabel: AS[11]
+  - FSLabel: AS[8]
+  - Code: R[400]
+
+MBR:: mbr
+  | filter: ^.{510}\x55\xAA
+  - BootstrapCodeArea: R[440]
+  * BootSector: DOS_BootSector <&BootstrapCodeArea.value[3: 8] == b'MSDOS'>
+    @ @BootstrapCodeArea
+  - Signature: AS[4]
+  - Unused: W
+  - PartTable: MBR_PartRecord[4]
+  - MBRSignature: W
+    = 0xAA55

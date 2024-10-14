@@ -1,0 +1,35 @@
+ICO_Entry:
+  - Width: B
+    "Cursor width (16, 32 or 64)"
+  - Height: B
+    "Cursor height (16, 32 or 64)"
+  - ColorCount: B
+    "Number of colors (2,16, 0=256)"
+  - Reserved: B
+  - Planes: W
+  - BitCount: W
+    "Bits per pixel (1, 4, 8)"
+  - SizeInBytes: D
+    "Size of (InfoHeader + ANDbitmap + XORbitmap)"
+  - FileOffset: D
+    "FilePos, where InfoHeader starts"
+  ? DataFormat: R[4]
+    @ $FileOffset
+  - Data: R[$SizeInBytes]
+    @ $FileOffset
+  - BMPImage: BMP_DIB_Header <$DataFormat != b'\x89PNG'>
+    @ $FileOffset
+  - PNGImage: PNG <$DataFormat == b'\x89PNG'>
+    @ $FileOffset
+
+ICO:: ico, cur
+  | filter: ^\0\0[\x01\x02]\0
+  - Reserve: I2
+  - Type: I2
+    ~ ICO_TYPE
+    = [1, 2]
+  - Count: I2
+    "Number of Icons in this file"
+  - Entries: ICO_Entry[$Count]
+    "List of icons"
+  - Overlay: R[True]

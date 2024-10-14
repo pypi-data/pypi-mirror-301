@@ -1,0 +1,24 @@
+ZST_Header:
+  - Magic_Number: R[4]
+    = b'\x28\xB5\x2F\xFD'
+  - Frame_Header_Descriptor: BM1
+    { 0x03: 'Dictionary_ID_flag', 0x04: 'Content_Checksum_flag', 0x20: 'Single_Segment_flag', 0xC0: 'Frame_Content_Size_flag' }
+  - Window_Descriptor: BM1 < not &Frame_Header_Descriptor.Single_Segment_flag >
+    { 0x07: 'Mantissa', 0xF8: 'Exponent' }
+  - Dictionary_ID: R[ &Frame_Header_Descriptor.Dictionary_ID_flag if (&Frame_Header_Descriptor.Dictionary_ID_flag < 3) else 4]
+  - Frame_Content_Size: R[ &Frame_Header_Descriptor.Single_Segment_flag or ((2 ** &Frame_Header_Descriptor.Frame_Content_Size_flag) if &Frame_Header_Descriptor.Frame_Content_Size_flag else 0)]
+  # todo: make = aliases to interpret the R(aw) values
+
+ZST_Data_Block:
+  - Block_Header: BM3
+    { 0x000001: 'Last_Block', 0x000006: 'Block_Type', 0xFFFFF8: 'Block_Size' }
+  # Block_Type: 0 = Raw, 1 = RLE, 2 = Compressed, 3 = Reserved
+  - Block_Content: R[ {0: &Block_Header.Block_Size, 1: 1, 2: &Block_Header.Block_Size}[&Block_Header.Block_Type] ]
+
+Zstandard:: zst
+  | filter: ^\x28\xB5\x2F\xFD
+  - Header: ZST_Header
+  - Blocks: ZST_Data_Block[*]
+    - stop: &crt_field.Block_Header.Last_Block
+  - Content_Checksum: I4 < &Header.Frame_Header_Descriptor.Content_Checksum_flag >
+  - Overlay: R[&bytes_left]

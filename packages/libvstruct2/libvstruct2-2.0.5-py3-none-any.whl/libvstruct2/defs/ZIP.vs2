@@ -1,0 +1,229 @@
+# reference: https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.3.10.TXT
+#
+#   4.3.6 Overall .ZIP file format:
+#
+#      [local file header 1]
+#      [encryption header 1]
+#      [file data 1]
+#      [data descriptor 1]
+#      .
+#      .
+#      .
+#      [local file header n]
+#      [encryption header n]
+#      [file data n]
+#      [data descriptor n]
+#      [archive decryption header]
+#      [archive extra data record]
+#      [central directory header 1]
+#      .
+#      .
+#      .
+#      [central directory header n]
+#      [zip64 end of central directory record]
+#      [zip64 end of central directory locator]
+#      [end of central directory record]
+
+ZIP_DataDescriptor:
+  - Magic: R[4]
+    = b'PK\x07\x08'
+  - CRC32: I4
+  - CompressedSize: I4
+  - UncompressedSize: I4
+
+ZIP64_Ext_Info:
+  - UncompressedSize: I8
+  - CompressedSize: I8
+  - RelHdrOffset: I8
+  - DiskStartNum: I8
+
+ZIP_Ext_StrongEncryption:
+# PKWARE strong encryption (NOT AE-x)
+  - Format: I2
+  - AlgID: I2
+    ~ ZIP_STRONG_ENCRYPTION_ALGO
+  - Bitlen: I2
+  - Flags: I2
+    { 2**0: 'Password', 2**1: 'Certificates', }
+  - CertData: R[$^Size - 8]
+
+ZIP_Ext_AE_X:
+# reference: https://www.winzip.com/en/support/aes-encryption/
+  - VendorVer: I2
+  - VendorID: R[2]
+  - KeySize: I1
+    ~ ZIP_AE_X_KEY_SIZE
+  - CompressionMethod: I2
+    ~ ZIP_COMPRESSION
+
+ZIP_Ext_UTCTimestamps:
+  - Flags: I1
+  - MTime: I4UT
+  - ATime: I4UT < 9 <= $^Size >
+  - CTime: I4UT < 13 <= $^Size >
+
+ZIP_Ext_InfoZip_UnixUidGid:
+  - Version: I1
+  - UidSize: I1
+  - Uid: R[$UidSize]
+  - GidSize: I1
+  - Gid: R[$GidSize]
+
+ZIP_NTFS_Timestamps:
+  - MTime: NTFSTime
+  - ATime: NTFSTime
+  - CTime: NTFSTime
+
+ZIP_NFTS_Tag:
+  - Tag: I2
+  - Size: I2
+  - Timestamps: ZIP_NTFS_Timestamps <$Tag == 1>
+  - Data: R[$Size]
+    < $Tag not in (1,) >
+
+ZIP_Ext_NTFS:
+  - Reserved: I4
+  - Tags: ZIP_NFTS_Tag[*]
+    - stop: &crt_offset >= @^Magic + $^Size - 4
+
+ZIP_ExtraRecord:
+  - Magic: R[2]
+  - Size: I2
+  * UTCTimestamps: ZIP_Ext_UTCTimestamps <$Magic == b'UT'>
+  * UnixUidGid: ZIP_Ext_InfoZip_UnixUidGid <$Magic == b'ux'>
+  * ZIP64ExtraInfo: ZIP64_Ext_Info <$Magic == b'\x01\0'>
+  * StrongEncryption: ZIP_Ext_StrongEncryption <$Magic == b'\x17\0'>
+  * AEXEncryption: ZIP_Ext_AE_X <$Magic == b'\x01\x99'>
+  * NTFS: ZIP_Ext_NTFS <$Magic == b'\x0A\0'>
+  - Data: R[$Size]
+
+ZIP_FileEntry:
+  - Magic: R[4]
+    = b'PK\x03\x04'
+  - VerRequired: I2
+    ~ lambda x: (x // 10, x % 10)
+  - Flags: BM2
+    { 2**0: 'Encrypted', 2**3: 'HasDataDescriptor', 2**5: 'CompressedPatchedData', 2**6: 'StrongEncryption',
+      2**11: 'UTF8FileName', 2**13: 'EncryptedCentralDirectory', }
+  - CompressionMethod: I2
+    ~ ZIP_COMPRESSION
+  - DeflateCompression: I2 <$CompressionMethod == 8>
+    @ &Flags.offset
+    : lambda x: (x.value >> 2) & 3
+    ~ ZIP_DEFLATE_COMPRESSION
+  - LastModTime: DOSTime
+  - LastModDate: DOSDate
+  - CRC32: I4
+  - CompressedSize: I4
+  - UncompressedSize: I4
+  - FileNameLen: I2
+  - ExtraDataLen: I2
+  - FileName: US[$FileNameLen]
+  - ExtraRecords: ZIP_ExtraRecord[*]
+    < $ExtraDataLen >
+    - stop: &crt_offset >= &FileName.offset + $FileNameLen + $ExtraDataLen
+#  - ExtraData: R[$ExtraDataLen]
+  ? LookaheadDD: ZIP_DataDescriptor <$CompressedSize == 0>
+    @ @/PK\x07\x08/f
+  - FileData: R[$CompressedSize or ($LookaheadDD.CompressedSize if hasattr(self, 'LookaheadDD') else 0)]
+  - DataDescriptor: ZIP_DataDescriptor <&Flags.HasDataDescriptor>
+  ? Trail: R[4]
+
+ZIP_ArchiveExtraDataRecord:
+  - Magic: R[4]
+    = b'PK\x06\x08'
+  - Size: I4
+  - Data: R[$Size]
+
+ZIP_CentralDirectoryRecord:
+  - Magic: R[4]
+    = b'PK\x01\x02'
+  * VerCreator: I2
+  - VerCreatorOS: I1
+    ~ ZIP_CREATOR_HOST
+  - VerCreatorSpec: I1
+    ~ lambda x: (x // 10, x % 10)
+  - VerRequired: I2
+  - Flags: I2
+  - CompressionMethod: I2
+    ~ ZIP_COMPRESSION
+  - LastModTime: I2
+  - LastModDate: I2
+  - CRC32: I4
+  - CompressedSize: I4
+  - UncompressedSize: I4
+  - FileNameLen: I2
+  - ExtraDataLen: I2
+  - CommentLen: I2
+  - StartDiskNum: I2
+  - IntFileAttr: BM2
+    { 2**0: 'ASCIIFile', 2**1: 'RecordLenCtrlFieldPresent', }
+  - ExtFileAttr: I4
+  - RelOffset: I4
+  - FileName: US[$FileNameLen]
+  - ExtraRecords: ZIP_ExtraRecord[*]
+    < $ExtraDataLen >
+    - stop: &crt_offset >= &FileName.offset + $FileNameLen + $ExtraDataLen
+#  - ExtraData: R[$ExtraDataLen]
+  - Comment: US[$CommentLen]
+  ? Trail: R[4]
+
+# todo:
+#ZIP64_ExtSector:
+#  - Magic: I2
+#  - Size: I4
+#  - Data: R[$Size]
+
+#ZIP64_ExtSectors:
+#  - Sectors: ZIP64_ExtSector[&]
+
+ZIP_EndOfCentralDirectoryRecord:
+  - Magic: R[4]
+    = b'PK\x05\x06'
+  - DiskNumber: I2
+  - CentralDirDisk: I2
+  - CentralDirRecOnDiskCount: I2
+  - CentralDirRecTotalCount: I2
+  - SizeOfCentralDir: I4
+  - RelOffsetToCentralDir: I4
+  - CommentLen: I2
+  - Comment: AS[$CommentLen]
+
+ZIP64_EndOfCentralDirectoryRecord:
+  - Magic: R[4]
+    = b'PK\x06\x06'
+  - Size: I8
+  - VerCreator: I2
+  - VerRequired: I2
+  - DiskNumber: I4
+  - CentralDirDisk: I4
+  - CentralDirRecOnDiskCount: I8
+  - CentralDirRecTotalCount: I8
+  - SizeOfCentralDir: I8
+  - RelOffsetToCentralDir: I8
+  - ExtSectors: R[$Size - 44]
+
+ZIP64_EndOfCentralDirectoryLocator:
+  - Magic: R[4]
+    = b'PK\x06\x07'
+  - EndOfCentralDirectoryRecordDiskNum: I4
+  - EndOfCentralDirectoryRecordOffset: I8
+  - TotalNumOfDisks: I4
+
+ZIP_DigitalSignature:
+  - Magic: R[4]
+    = b'PK\x05\x05'
+  - Size: I2
+  - Data: R[$Size]
+
+ZIP:: zip
+  | filter: ^PK\x03\x04
+  - Entries: ZIP_FileEntry[*]
+    - stop: (&bytes_left == 0) or $crt_field.Trail != b'PK\x03\x04'
+  - ArchiveExtraData: ZIP_ArchiveExtraDataRecord </PK\x06\x08/>
+  - CentralDirectory: ZIP_CentralDirectoryRecord[*]
+    - stop: $crt_field.Trail != b'PK\x01\x02'
+  - EndRecord64: ZIP64_EndOfCentralDirectoryRecord </PK\x06\x06/>
+  - EndLocator64: ZIP64_EndOfCentralDirectoryLocator </PK\x06\x07/>
+  - EndRecord: ZIP_EndOfCentralDirectoryRecord
+  - Overlay: R[&bytes_left]
