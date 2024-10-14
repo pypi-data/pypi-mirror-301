@@ -1,0 +1,5 @@
+.env
+.vscode
+.venv
+uv.lock
+src/shira.egg-info
