@@ -1,0 +1,2 @@
+[console_scripts]
+calc = astrocalculator.app:start_server

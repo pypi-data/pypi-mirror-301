@@ -1,0 +1,10 @@
+astrocalculator/__init__.py,sha256=4f1lhxvNOlG8psWgIK1fGUKiNcoUMVUBLuW-KxgWScY,36
+astrocalculator/app.py,sha256=wzHyeaJS5lUuBefw9eMOY6q0Vr6uJMEBzcSCvBt-Yac,1891
+astrocalculator/calc.py,sha256=0xVIY2fScGHO14RuaLEZlVNHwRzobDwDJ9sXC1CVNKw,12595
+astrocalculator/static/style.css,sha256=NS-WR0dq07sfvm2MJ0TkDvWBhBvdi8k7l7CcaCTQZbI,5348
+astrocalculator/templates/index.html,sha256=LBBwpEvBFhXywuzoVAmjiygXTQooyYob4XpLddRoh5I,7131
+AstroCalculator-0.2.0.dist-info/METADATA,sha256=mIRPd-N3m1UO4ny9TZJx935Zpw3IMZ7YEjE6PWL_7fc,2601
+AstroCalculator-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+AstroCalculator-0.2.0.dist-info/entry_points.txt,sha256=PtfHEAjuN3HujDzdDm3avalqQv9wCv75xywjCs0ch3Y,58
+AstroCalculator-0.2.0.dist-info/top_level.txt,sha256=mEkVt_SxKAan1xWcwLr8p9UN9ma2FHqpq2WOoPMYd3I,16
+AstroCalculator-0.2.0.dist-info/RECORD,,
