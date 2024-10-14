@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: charloratools
+Version: 1.0.4
+Summary: Python package including tools that facilitate training images scraping, management, and filtering for stable diffusion character LoRa training.
+Author-email: svdC1 <svdc1mail@gmail.com>
+Maintainer-email: svdC1 <svdc1mail@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 svdC1
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/svdC1/charloratools
+Project-URL: documentation, https://github.com/svdC1/charloratools/wiki
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<2.0.0,>=1.24.0
+Requires-Dist: requests<3.0.0,>=2.0.0
+Requires-Dist: Pillow<10.3.0,>=10.2.0
+Requires-Dist: opencv-python<5.0.0,>=4.7
+Requires-Dist: scipy<2.0.0,>=1.10.0
+Requires-Dist: tqdm<5.0.0,>=4.0.0
+Requires-Dist: pandas<3.0.0,>=2.0.0
+Requires-Dist: imagehash>=4.0.0
+Requires-Dist: selenium<5.0.0,>=4.8.0
+Requires-Dist: webdriver-manager>=3.0.0
+Requires-Dist: onnx>=1.14.0
+Requires-Dist: matplotlib<4.0.0,>=3.5.0
+Requires-Dist: scikit-learn<2.0.0,>=1.2.0
+Requires-Dist: scikit-image<1.0.0,>=0.19.0
+Requires-Dist: easydict
+Requires-Dist: cython>=3.0.2
+Requires-Dist: albumentations<2.0.0,>=1.2.0
+Requires-Dist: prettytable
+Requires-Dist: coloredlogs>=15.0
+Requires-Dist: flatbuffers>=23.3.3
+Provides-Extra: dev
+Requires-Dist: coverage<8.0.0,>=7.0.0; extra == "dev"
+Requires-Dist: codecov<3.0.0,>=2.0.0; extra == "dev"
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Provides-Extra: full
+Requires-Dist: torch; extra == "full"
+Requires-Dist: torchvision; extra == "full"
+Requires-Dist: torchaudio; extra == "full"
+
+## ![Charloratools Logo](https://imagedelivery.net/YCQ3OFRYiR1R_AeUslNHiw/88185031-1ee7-40df-e3e8-d632d668c600/w=1280,h=640,fit=crop)
+
+>![version](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2FsvdC1%2Fcharloratools%2Fmain%2Fpyproject.toml&query=%24.project.version&style=flat-square&logoSize=auto&label=version)
+>![build](https://github.com/svdC1/charloratools/actions/workflows/test-publish-package.yml/badge.svg)
+>![tests](https://github.com/svdC1/charloratools/actions/workflows/lint-run-tests.yml/badge.svg)
+>[![codecov](https://codecov.io/github/svdC1/charloratools/branch/main/graph/badge.svg?token=C6VUUTO5PN)](https://codecov.io/github/svdC1/charloratools)
+
+
+### This is a simple python library which intends to **facilitate the process of image gathering,filtering and processing when creating a training dataset to use for training stable diffusion LoRas**. As the name suggests it is specifically useful when organizing a *character lora* image training dataset.
+
+
+
+## Installation
+
+<a href=https://pypi.org/project/charloratools/><img src=https://imagedelivery.net/YCQ3OFRYiR1R_AeUslNHiw/9e17a46e-346c-4475-11f3-fd0d661c1800/400x400><a href=https://pypi.org/project/charloratools/></a></img>
+
+```bash
+pip install charloratools
+```
+### Torch CPU-Only
+```bash 
+pip install charloratools[full]
+```
+## Installation Steps
+
+### Torch is not installed during installation through pip due to specific installation requirements for different OSes. This package won't work unless you **manually install those**.
+
+### You can also choose to install the OS independent version of torch ( uses only the CPU ) by running the "Torch CPU-Only" pip command listed above.
+
+## Dependency Install Script
+
+### After installing with pip you can run a **script that automatically detects which distribution of torch is the correct one for your current machine and installs it**.
+
+### The script can also be used to check if you have the correct distribution of torch installed or to install the latest correct distribution for your OS.
+
+### The script checks if you already have torch installed and quits without making any changes if you do.
+
+## Installing and Running The Script
+
+```bash
+pip install charloratools
+charloratools install_torch
+```
+## Installing Torch Manually
+
+### If you don't want to run the script and prefer installing torch yourself I recommend [following the steps described in their website](https://pytorch.org/get-started/locally/). Once torch is installed the package should work correctly.
+
+## ComfyUI Custom Node
+
+### Some of the functionality of this package is already available as a custom node for ComfyUI [(comfy-ui-lora-dataset-tools)](https://github.com/svdC1/comfy-ui-lora-dataset-tools) , I'll be implementing the rest of the functionalities in new versions of the custom node.
+
+## Roadmap
+
+ - ### Create better documentation in wiki
