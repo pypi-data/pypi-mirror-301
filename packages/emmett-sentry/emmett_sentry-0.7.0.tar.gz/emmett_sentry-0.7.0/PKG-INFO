@@ -1,0 +1,98 @@
+Metadata-Version: 2.3
+Name: emmett-sentry
+Version: 0.7.0
+Summary: Sentry extension for Emmett framework
+Project-URL: Homepage, https://github.com/emmett-framework/sentry
+Project-URL: Funding, https://github.com/sponsors/gi0baro
+Project-URL: Source, https://github.com/emmett-framework/sentry
+Project-URL: Issues, https://github.com/emmett-framework/sentry/issues
+Author-email: Giovanni Barillari <g@baro.dev>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Keywords: emmett,logging,sentry
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: emmett-core~=1.0
+Requires-Dist: sentry-sdk~=2.16
+Description-Content-Type: text/markdown
+
+# Emmett-Sentry
+
+Emmett-Sentry is an [Emmett framework](https://emmett.sh) extension integrating [Sentry](https://sentry.io) monitoring platform.
+
+Emmett-Sentry is compatible both with Emmett and Emmett55.
+
+## Installation
+
+You can install Emmett-Sentry using pip:
+
+    pip install emmett-sentry
+
+And add it to your Emmett application:
+
+```python
+from emmett_sentry import Sentry
+
+sentry = app.use_extension(Sentry)
+```
+
+## Configuration
+
+Here is the complete list of parameters of the extension configuration:
+
+| param | default | description |
+| --- | --- | --- |
+| dsn | | Sentry project's DSN |
+| environment | development | Application environment |
+| release | | Application release |
+| auto\_load | `True` | Automatically inject extension on routes |
+| sample\_rate | 1 | Error sampling rate |
+| integrations | | List of integrations to pass to the SDK |
+| enable\_tracing | `False` | Enable tracing on routes |
+| tracing\_sample\_rate | | Traces sampling rate |
+| tracing\_exclude\_routes | | List of specific routes to exclude from tracing | 
+| trace\_websockets | `False` | Enable tracing on websocket routes |
+| trace\_orm | `True` | Enable tracing on ORM queries |
+| trace\_templates | `True` | Enable tracing on templates rendering |
+| trace\_sessions | `True` | Enable tracing on sessions load/store |
+| trace\_cache | `True` | Enable tracing on cache get/set |
+| trace\_pipes | `False` | Enable tracing on pipes |
+| sdk\_opts | `{}` | Additional configuration for the Sentry SDK |
+
+## Usage
+
+The extension exposes two methods to manually track events:
+
+- exception
+- message
+
+You call these methods directly within your code:
+
+```python
+# track an error
+try:
+    1 / 0
+except Exception:
+    sentry.exception()
+
+# track a message
+sentry.message("some event", level="info")
+```
+
+## License
+
+Emmett-Sentry is released under BSD license.
