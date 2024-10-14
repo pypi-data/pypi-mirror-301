@@ -1,0 +1,8 @@
+scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scraper/twitter_scraper.py,sha256=2RrHZDV3CwpbqTUGn7KziQPTOoQJKKUqPPNxgfWwYPk,4895
+twitter_cli_scraper-0.1.1.dist-info/LICENSE,sha256=-WcnnpFXceoVlWC2-c_Q-bVRHtHBVevWNuCPmoRpa1A,1074
+twitter_cli_scraper-0.1.1.dist-info/METADATA,sha256=NgzGwyzxDNS_hC21AxxmjhHdX0r-961WOqGWaa4xa4A,4738
+twitter_cli_scraper-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+twitter_cli_scraper-0.1.1.dist-info/entry_points.txt,sha256=gck3QSltv2WT-qUNoa0RUaMYiP6Mfm1aVwGkzrmUAJk,66
+twitter_cli_scraper-0.1.1.dist-info/top_level.txt,sha256=7mMSfNnJkw1ZNz9GtP5MR6Hh0DYR7LY7dqAaNJATf4c,8
+twitter_cli_scraper-0.1.1.dist-info/RECORD,,
