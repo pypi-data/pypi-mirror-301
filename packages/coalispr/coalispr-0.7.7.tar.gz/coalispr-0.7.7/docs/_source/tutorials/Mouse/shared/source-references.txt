@@ -1,0 +1,30 @@
+Check for latest releases:
+https://www.gencodegenes.org/mouse/
+
+GTF annotations
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/gencode.vM30.annotation.gtf.gz
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/gencode.vM30.chr_patch_hapl_scaff.annotation.gtf.gz
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/gencode.vM30.2wayconspseudos.gtf.gz
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/gencode.vM30.tRNAs.gtf.gz
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/gencode.vM30.lncRNA_transcripts.fa.gz
+
+The annotation file used in Sarshad-2018 paper was also from https://www.gencodegenes.org/mouse/ but version2: 
+gencode.vM2.chr_patch_hapl_scaff.annotation.gtf
+
+#https://ftp.ensembl.org/pub/release-107/gtf/mus_musculus/Mus_musculus.GRCm39.107.gtf.gz
+
+Fasta files:
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/GRCm39.genome.fa.gz
+#https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M30/GRCm39.primary_assembly.genome.fa.gz
+
+
+rDNA information:
+https://www.ncbi.nlm.nih.gov/gene/19791
+
+miRNA information:
+https://www.mirbase.org/ftp/22.1/genomes/mmu.gff3
+
+predicted targets, from http://miRDB.org; 
+http://mirdb.org/download/miRDB_v6.0_prediction_result.txt.gz
+find names via:
+https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2ensembl.gz

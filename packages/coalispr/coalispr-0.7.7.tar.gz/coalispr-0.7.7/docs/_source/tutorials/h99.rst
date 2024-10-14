@@ -1,0 +1,1295 @@
+.. include:: /properties.rst
+
+*Cryptococcus* siRNAs
+=====================
+
+.. toctree::
+   :maxdepth: 1
+
+   H99/shared_contents_h
+   H99/rde1-6xN_rde2-7xN
+   H99/rde1-mulmappers
+
+*Cryptococcus* is one of the few fungi that can become virulent, especially in immunocompromised individuals. Because this fungus has the capacity to grow at temperatures of around |37C| it has been proposed that, apart from a developed immune system, sustaining a high body temperature prevents fungal invasion [Casadevall-2020]_.
+
+One of the driving forces to develop |prgnam| was to create an alternative tool for counting :term:`RNA-Seq` data obtained for siRNA libraries. We had generated a large number (>100) of such libraries for *Cryptococcus deneoformans* JEC21 (see :doc:`/background`). HTSEQ_, the commonly used program to obtain read-counts, required the assembly of an annotation file for siRNA-targets to direct the counting. Small non-coding RNAs have not been annotated, so this had to be done from scratch. A :term:`GTF` was prepared by manually scanning bedgraph traces in a genome browser like IGB_ and copying genome coordinates over to a text file and name these regions. From this file a GTF was constructed with a feature useful for counting. Apart from being laborious, this method is error-prone and not very scalable to other organisms or when an update of the genome is published. The counting was also very time-consuming at the time.
+
+This tutorial is based around published data for the related fungus, *C.*\ |nbsp|\ *neoformans* H99 [Dumesic-2013]_, [Burke-2019]_. As shown below, it can be demonstrated that exons in transcripts, rather than introns [Dumesic-2013]_, are the target of the RNAi machinery. In *C.*\ |nbsp|\ *deneoformans* JEC21, siRNAs also align to exons and for both fungi siRNAs crossing splice junctions are identified after mapping with STAR_, e.g. at locus :ref:`CNAG_03231 <wtCNAG03231section>`. These findings demonstrate that RNAi acts on spliced transcripts, thus downstream from (instead of parallel to) splicing. 
+
+.. figure:: /../_static/images/dumesicCNAG_03231.png
+      :name: cnag7721to03231b
+      :align: left
+      :width: 2179 px
+      :height: 1509 px
+      :scale: 18%
+
+      **Figure 1.** *C.*\ |nbsp|\ *neoformans* siRNAs target exons, not introns
+
+      | Left: Comparison of Fig. 1E from [Dumesic-2013]_ to data from [Dumesic-2013]_ and [Burke-2019]_ aligned with STAR_ as done in this tutorial and displayed in the IGB_ genome browser. Bars represent annotations in GTFs from [Janbon-2014]_ and [Wallace-2020]_.
+      | Right: Chromosme 8 context of CNAG_03231 and RNA-Seq by [Wallace-2020]_ for wild type (H99) and strains with an *AGO1* deletion (Δago1; Top). Skipped introns have canonical splice site sequences (*GU..AG*; Bottom [:ref:`CNAG_03231 <wtCNAG03231section>`]).
+      
+.. rst-class:: asfootnote
+
+   .. _cnintron:
+
+   Compared to other eukaryotes, and possibly related to their ability to grow at |37C|, the GC-content in *C.*\ |nbsp|\ *(de)neoformans* is very high (~48%). Almost all transcripts carry introns (~98%), often about 5-6 per gene, which appear essential for stable expression [Goebbels-2013]_, [Janbon-2018]_. These unique characteristics [#othfcts]_ make it difficult to predict genes and splicing patterns, which we have encountered when designing tagging strategies. This might also be the reason for the inaccurate model Dumesic et al. put forward in their seminal paper of 2013 [Dumesic-2013]_. They proposed that in *C.*\ |nbsp|\ *neoformans* H99 a pre-mRNA was either spliced or redirected to the RNAi machinery, which was based on the observation that many siRNAs mapped to introns. The annotation file they had used must have been a premature version, as almost all siRNAs actually align to exon sequences described in GTFs published since, including those [#origH99GTF]_ for the original genomic sequence of this fungus [Janbon-2014]_. For example, one of their signature genes, CNAG_07721, has been :ref:`re-annotated <cnag7721to03231b>`, with the chromosome 8 locus [#locus]_ renamed to CNAG_03231. 
+
+   |
+
+Bedgraphs, count data accumulated with HTSEQ_ and hand-made annotations for siRNA loci, supported development of |prgnam| and the creation of images for the ':doc:`/../howtoguides`'. This tutorial will show how these images were made. The data will be from publications [Burke-2019]_ and [Dumesic-2013]_ which analyzed various genes for their contribution to siRNA accumulation after their disruption with *NAT* or *HYG* (\ [Burke-2019]_). 
+
+.. table::
+   :align: left
+  
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   | Disrupted Factor | Reference        |  Gene::Marker            | Chromosome |  Strand |  Coordinates          | Short   |
+   +==================+==================+==========================+============+=========+=======================+=========+
+   |  Ago1            | [Burke-2019]_    | *CNAG_04609::NATR*       | ``10``     | plus    | ``89445-899067``      | ``a1``  |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rdp1            | [Burke-2019]_    | *CNAG_03466::NATR*       | ``8``      | minus   | ``1025052-1030297``   | ``r1``  |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rde1            | [Burke-2019]_    | *CNAG_01848::NATR*       | ``11``     | minus   | ``1077327-1082277``   | ``re1`` |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rde2            | [Burke-2019]_    | *CNAG_04954::NATR*       | ``4``      | plus    | ``68624-73005``       | ``re2`` |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rde3            | [Burke-2019]_    | *CNAG_06643::NATR*       | ``7``      | plus    | ``370190-371978``     | ``re3`` |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rde4            | [Burke-2019]_    | *CNAG_01157::NATR*       | ``5``      | minus   | ``1052269-1054443``   | ``re4`` |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rde5            | [Burke-2019]_    | *CNAG_04791::NATR*       | ``10``     | plus    | ``391068-392582``     | ``re5`` |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Rrp6            | [Burke-2019]_    | *CNAG_02773::NATR*       | ``3``      | minus   | ``799012-802788``     | ``r6``  |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Clr4            | [Burke-2019]_    | *CNAG_05404_Cterm∆::HYG* | ``14``     | plus    | ``218693-225267``     | ``c4``  |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+   |  Ezh2            | [Burke-2019]_    | *CNAG_07553::NATR*       | ``3``      | minus   | ``1186967-1190031``   | ``e2``  |
+   +------------------+------------------+--------------------------+------------+---------+-----------------------+---------+
+
+
+The organization of reference files will be different from that in the :doc:`yeast </tutorials/yeast>` and :doc:`mouse </tutorials/mouse>` tutorials. Most downloaded and processed references used for the running of |prgnam| are placed in a subfolder, ``source/``, of the work directory.
+
+.. note::
+
+   Outcome of below data-preparation can be downloaded from xenodo.org.  See/skip to  :ref:`here <usezenod>` 
+
+
+First, 
+- create a work directory (say, ``Burke-2019/``) 
+
+Then, move some files that have been shipped with the program:
+
+-  copy the contents of this folder in the source distribution: :doc:`coalispr/docs/_source/tutorials/H99/shared/ </tutorials/H99/shared_contents_h>` to ``Burke-2019/``.
+
+In a terminal, change directory to the created work environment (from which all scripts and commands will be run):
+
+- ``cd /<path to>/Burke-2019/``
+
+|
+
+Dataset
+-------
+
+Following the :doc:`mouse </tutorials/mouse>` and :doc:`yeast </tutorials/yeast>` tutorials we first generate :term:`bedgraph` files for *C.*\ |nbsp|\ *neoformans* data that has been :term:`collapsed` and :term:`uncollapsed`. We can obtain bedgraphs after aligning the data to the reference genome. To do this, the raw sequencing data is used and downloaded from the Gene Expression Omnibus (GEO_) database with the relevant accession numbers retrieved from the literature:
+
+.. table::
+   :align: left
+  
+   +---------------+------------------+------------------+------------+--------------+ 
+   |  H99-data     | Reference        |  GEO acc. no.    |  SRA table | SRA study    |
+   +===============+==================+==================+============+==============+
+   |  WT, mutants  | [Burke-2019]_    | ``GSE128009``    | GSE128009_ | SRP187879_   |
+   +---------------+------------------+------------------+------------+--------------+
+   |  WT 2010      | [Dumesic-2013]_  | ``GSE43363``     | GSE43363_  | SRP017845_   |
+   +---------------+------------------+------------------+------------+--------------+
+
+As described for the :doc:`yeast tutorial </tutorials/yeast>`:
+
+- Open the `GEO Accession Display`_ page for the ``GSE128009`` experiment of [Burke-2019]_.
+- Enter the accession no. into the field ``GEO accession`` and press ``GO``. 
+- Access ``SRA Run Selector`` from the bottom of the GEO accession display page that has been opened.
+- On the SRA Run Selector webpage, select all ``Assay Type`` lanes for ``miRNA-Seq`` and choose ``Selected`` in the ``Select`` pane.
+- Then click on the ``Accession List`` button in the ``Selected`` row of the ``Select`` pane. 
+- Save the file to the work directory and, because it will be combined with other data, add a prefix.
+
+  | Save as ``1_SRR_Acc_List.txt``.
+
+- For detailed info, click the ``Metadata`` button for a file describing the experiment.
+
+  | Save as ``SraRunTable.txt``.
+
+
+- Do the same for the [Dumesic-2013]_ sample.
+
+  | Save the ``Accession List`` from the ``Total`` ``Select`` panel as ``2_SRR__Acc_List.txt``.
+  | Save the ``Metadata``  as ``2_SraRunTable.txt``.
+
+Collate the lists:
+
+- ``cat 1-SRR_Acc_List.txt 2-SRR_Acc_List.txt > SRR_Acc_List.txt``
+
+.. and the run tables:
+
+.. - ``grep 'SRR646636' 2-SraRunTable.txt >> SraRunTable.txt``
+
+Download, extract :term:`fastq` and compress the data (These steps create a directory structure (see :doc:`/tutorials/mouse`) in the working folder the scripts rely on).
+
+- ``sh 0_0-SRAaccess.sh``
+
+  | This takes awhile, and so does:
+
+- ``sh 0_1-SRAaccess.sh``
+- ``sh 0_2-gzip-fastq.sh``
+
+|
+
+Clean and collapse
+..................
+
+Adapters present on the reads are removed with:
+
+- ``sh 1_0-flexbar-trim.sh``
+
+and a :term:`fasta` file with :term:`collapsed` reads is prepared with:
+
+- ``sh 2_0-collapse.sh``
+
+|
+
+.. _reftracsh:
+
+Reference traces
+................
+
+Traces for gene-expression in cells can be included in |prgnam|. Comparing siRNA signals to mRNA traces is possible because various :term:`RNA-Seq` datasets are available. Here, we use the bedgraphs prepared by [Wallace-2020]_ and their annotation file. The reference files will be saved in subfolders of the folder ``source`` in the work directory ``Burke-2019/``:
+
+- ``mkdir source``
+
+The mRNA reads for parental strain H99 and deletion strains for *GWO1* and *AGO1* are at GEO_ accession no. GSE133125_ [Wallace-2020]_; other samples - not used here - are at GSE206758_ [Freitas-2022]_. 
+
+.. table::
+   :align: left
+
+   +---------------+----------------+----------------+-------------+ 
+   |  RNA-Seq      |  SRA acc. no.  | Run            |  Bedgraph   | 
+   +===============+================+================+=============+
+   |  H99r1        | ``SRX6102296`` | ``SRR9336390`` | GSM3900523_ | 
+   +---------------+----------------+----------------+-------------+
+   |  H99r2        | ``SRX6102300`` | ``SRR9336394`` | GSM3900527_ |
+   +---------------+----------------+----------------+-------------+
+   |  HdGWO1       | ``SRX6102298`` | ``SRR9336392`` | GSM3900525_ |
+   +---------------+----------------+----------------+-------------+
+   |  HdAGO1       | ``SRX6102302`` | ``SRR9336396`` | GSM3900529_ |
+   +---------------+----------------+----------------+-------------+
+   
+
+
+Bedgraphs are downloaded and saved to their own folders; you could create these first:
+
+- ``cd source``
+- ``mkdir GSM3900523 GSM3900527 GSM3900525 GSM3900529``
+- ``cd ..``
+
+Now, for each experiment get the compressed bedgraph files for the :smc:`PLUS` [#consts]_ and :smc:`MINUS` strand from the GSM3900523_ to GSM3900529_ linked pages and save these, ending up with the following folder-hiearchy:
+
+.. code-block:: text
+
+    burke-2019
+    └── source
+        ├── GSM3900523
+        |   ├── GSM3900523_PN5_index1_ATCACG_L004_R1_001_hisat2_minus.bedgraph.gz
+        |   └── GSM3900523_PN5_index1_ATCACG_L004_R1_001_hisat2_plus.bedgraph.gz
+        ...
+        └── GSM3900529 
+            ├── GSM3900529_PN10_index18_GTCCGC_L008_R1_001_hisat2_minus.bedgraph.gz
+            └── GSM3900529_PN10_index18_GTCCGC_L008_R1_001_hisat2_plus.bedgraph.gz
+
+
+Then decompress and clean up the files [#diffgtfbedgr]_:
+
+- ``for i in source/GSM39*/GSM39*.bedgraph.gz; do gunzip -c $i | sed 's/chr//g' > ${i%.*}``
+
+|
+|
+
+Alignment
+---------
+Although siRNA reads are expected to be short (~19-24nt) the :ref:`high density of introns <cnintron>` in *Cryptococcus* makes it feasible that these RNAs can be complementary to regions that cross splice junctions. In other words, it is possible that siRNAs target transcript sections that have undergone splicing. An RNA-focused mapper like STAR_ can insert gaps that coincide with possible introns when aligning reads to a reference genome. This is the reason why this aligner features in these tutorials.
+
+|
+
+References
+..........
+
+For accurate assignment of introns by STAR_ it is important to use all information available. One of these resources will be the annotation files describing exons for genes. A second resource is a database of possible splice-junctions that STAR_ accumulates while alligning reads in an initial pass. Maybe redundant, but we will use both. When generating a genome index, splice-junctions will be retrieved from a recent annotation file; while those found previously on the fly have been collected in a _`specific file`. This file, ``SpliceJunctionDataBase-sorted-uniq.txt``, informs STAR_ during alignments made in this tutorial. It will also be shown how this file can be updated.
+
+|
+
+Genome
+''''''
+Download a reference genome for aligning reads to the ``source/`` subfolder:
+
+- ``wget -cN --show-progress -P source "https://ftp.ebi.ac.uk/ensemblgenomes/pub/release-55/fungi/fasta/fungi_basidiomycota1_collection/cryptococcus_neoformans_var_grubii_h99_gca_000149245/dna/Cryptococcus_neoformans_var_grubii_h99_gca_000149245.CNA3.dna_sm.toplevel.fa.gz"``
+
+Decompress and simplify :term:`seq_id`:
+
+- ``gunzip -c source/Cryptococcus_neoformans_var_grubii_h99_gca_000149245.CNA3.dna_sm.toplevel.fa.gz | sed 's/ dna_sm:chromosome [a-z0-9A-Z: ]*$//g' > source/h99.fasta``
+
+|
+
+.. _wallgtf:
+
+GTFs
+''''
+
+A GFF3 file with transcript annotations used by [Wallace-2020]_ can be obtained from their github repository:
+
+- ``wget -cN --show-progress -P source "https://github.com/ewallace/CryptoTranscriptome2018/raw/master/CnGFF/H99.10p.aATGcorrected.longestmRNA.2019-05-15.RiboCode.WithStart.gff3``
+
+The file has the format of a :term:`GTF` file with ``gene-id`` entries, but gene names can be simplified [#simplgtf]_:
+
+- ``sort -k 1n,1n  -k 4n,4n -k 5n,5n source/H99.10p.aATGcorrected.longestmRNA.2019-05-15.RiboCode.WithStart.gff3 | sed 's/"CN[A-N]:/"/g' > source/h99.gtf``
+
+The file lacks descriptions for the mitochondria which is obtained below.
+
+To get a reference for non-coding RNAs and pseudo transcripts, get the GenBank annotations
+
+- ``wget -cNrnd --show-progress --timestamping -P source "ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/fungi/Cryptococcus_neoformans/latest_assembly_versions/GCA_000149245.3_CNA3/GCA_000149245.3_CNA3_genomic.gbff.gz"``
+
+Copy :download:`coalispr/coalispr/resources/share/genbank2gtf.py</../_static/downloads/genbank2gtf.py>` to the work folder [#depBio]_ and run:
+
+- ``python3 genbank2gtf.py -f source/GCA_000149245.3_CNA3_genomic.gbff.gz -p /<path to source folder>/coalispr/coalispr/resources/share/conversion_tables -c H99 -k 4 -o source/ncRNA-pseu.gtf``
+
+.. - ``python3 genbank2gtf.py -f source/GCA_000149245.3_CNA3_genomic.gbff.gz -p /<path to source folder>/coalispr/coalispr/resources/share/conversion_tables -c H99 -k 0 -o source/pseudo.gtf``
+.. - ``cat source/ncRNAetc.gtf source/pseudo.gtf | sort -k 1n,1n  -k 4n,4n -k 5n,5n -u  -o  source/ncRNA-pseudo.gtf``
+
+- Get descriptions for the ``MT`` chromosome and add these to the general GTF.
+
+.. - ``wget -cNrnd --show-progress --timestamping -P source "https://ftp.ebi.ac.uk/ensemblgenomes/pub/release-55/fungi/genbank/fungi_basidiomycota1_collection/cryptococcus_neoformans_var_grubii_h99_gca_000149245/Cryptococcus_neoformans_var_grubii_h99_gca_000149245.CNA3.55.chromosome.MT.dat.gz"``
+
+- ``python3 genbank2gtf.py -f source/GCA_000149245.3_CNA3_genomic.gbff.gz -p /<path to source folder>/coalispr/coalispr/resources/share/conversion_tables -c H99 -k 3 -o source/mito.gtf``
+
+- ``cat source/mito.gtf | sed '1,2d' >> source/h99.gtf``
+
+  .. _htseqgtf:
+
+A reference file for counting with HTSeq_ had been prepared by copy pasting IGB_ information to a :term:`tsv` file, ``source/h99-siRNAsegments.tsv`` from which a GTF with annotations was created for counting :term:`specific` reads. In this GTF a specific feature (:smc:`GTFFEAT`) characterizes siRNA segments. The file forms a positive-control reference (:smc:`GTFSPEC`) in |prgnam| displays of bedgraph traces. To make this GTF, copy :download:`coalispr/coalispr/resources/share/gtf_frm_tsv.py</../_static/downloads/gtf_frm_tsv.py>` to the work directory (``Burke-2019/``) and run
+
+- ``python3 gtf_frm_tsv.py -f source/h99-siRNAsegments.tsv -c 2``
+
+  | The option ``-c 2`` indicates that the input file (``-f``) relates to H99.
+
+
+Two other files, ``h99-xtra.gtf`` and ``h99-ncRNAxtra.gtf`` are shipped with the tutorial that contain additions based on:
+
+- possible extraneous DNAs added to the genomes of knockout mutants (i.e. marker genes conferring resistance to nourseothricin (*NAT*), neomycin/geneticin/G418 (*G418*) or hygromycin (*HYG*).
+- observed differences between data traces and downloaded annotations. 
+
+These files will be automatically included when referred to (via :smc:`GTFXTRA`, :smc:`GTFXTRANAM` and :smc:`GTFUNXTR`, :smc:`GTFUNXTNAM`) in the :ref:`settings file <sttgs_h>` ``3.h99.txt`` and loaded with ``coalispr showgraphs``.
+
+|
+
+Index
+'''''
+
+With the annotation file for intron definitions, we can now generate with STAR_ a genome index for mapping reads to the reference genome. This creates a new folder, the name of which depends on the provided argument. Best practice is that the name for this folder contains :smc:`EXP`, which is set during ``coalispr init``; here we take ``h99``:
+
+- ``sh 3_0-createSTARindex.sh h99``
+
+Note that this file import the fasta file with the sequence for the *extra* annotations as set in ``h99-xtra.gtf``.
+
+The file with chromosome lengths (:smc:`LENGTHSNAM`), created by STAR_, can be linked to; place the symbolic shortcut in ``source/``, with other resources for |prgnam|:
+
+- ``cd source; ln -sf ../star-h99/chrNameLength.txt h99-chr-lengths.txt; cd ..``
+
+|
+
+.. _mappg:
+
+Mapping
+.......
+
+Map collapsed reads first, this should be fairly quick. Add argument :smc:`EXP` to find the folder with the correct genome information. A second argument would define the number of allowed mismatches; for stringent end-to-end mapping use ``0``. A third argument can be added to indicate that splice junctions have to be re-recorded from gapped alignments. Set this to ``1`` if needed; by default this is skipped because such a :ref:`record <specific file>` comes with the tutorial (also see :doc:`/tutorials/H99/shared_contents_h`).
+
+- ``sh 3_1-run-star-collapsed-14mer-strict.sh h99 0``
+
+  | If splice junction data have been collected [#sjdbre]_, prepare the new database with:
+  | ``sh 3_1_1-run-make-SJDB.sh h99``
+
+If this all finishes ok, map the uncollapsed data; by default the available database of spliced junctions will be used.
+
+- ``sh 4_1-run-star-uncollapsed-14mer-strict.sh h99`` [#output]_
+
+Then, :term:`bedgraph`\ s can be made. The scripts take two parameters, for :smc:`EXP` and the number (``0`` by default) of mismatches.
+
+- ``sh 3_2-run-make-bedgraphs.sh h99``
+- ``sh 4_2-run-make-bedgraphs-uncollapsed.sh h99``
+
+For quality control information, the following script (with the same two parameters) is available:
+
+- ``sh 5_1-QC-reports.sh h99``
+
+As a check for the mapping we inspected accumulation of cDNAs, i.e. the :term:`collapsed` data at the CNAG_03231 locus on chromosome 8.
+
+.. figure:: /../_static/images/dumesicCNAG_03231-cDNA.png
+      :name: cnag7721to03231-cdna
+      :align: left
+      :width: 2177 px
+      :height: 1509 px
+      :scale: 18%
+
+      **Figure 2.** *C.*\ |nbsp|\ *neoformans* siRNA cDNAs target exons, not introns
+
+      | Bedgraph traces for a chromosome 8 section in collapsed data from [Dumesic-2013]_ and [Burke-2019]_ aligned with STAR_ as done in this tutorial and displayed in the IGB_ genome browser. RNA-Seq by [Wallace-2020]_ for wild type (H99) and strains with an *AGO1* deletion (Δago1) form reference traces. Bars represent annotations in GTFs from [Janbon-2014]_ and [Wallace-2020]_.  
+      | The number of sense cDNAs is in a range comparable to the antisense cDNAs, but far more copies of these are expressed as siRNAs (cf. :ref:`above figure <cnag7721to03231b>`. In the uncollapsed data the sense signals are not coming above the base line). Top: two snapshots with different zoom-levels. Gray frames delineate the region with CNAG_03231 and CNAG_03232. Bottom: CNAG_03231 region targetted by siRNAs.
+      |
+
+.. _usezenod:
+
+.. note:: 
+   
+   Datasets prepared above were uploaded to xenodo.org (`DOI 10.5281/zenodo.12822544`_). These can also be used for testing |prgnam|. 
+
+   - ``cd <path to workfolder>``
+   - ``wget -cNrnd --show-progress --timestamping "https://zenodo.org/records/12822544/files/Burke-2019.tar.gz?download=1"``
+   - ``tar -xvzf Burke-2019.tar.gz``
+
+
+|
+|
+
+
+|prgnam|
+--------
+
+The input materials, the bedgraph files, are available. The analysis begins with setting up the program for this experiment (:smc:`EXP`), which will be named to ``h99``.
+
+- ``cd /<path to>/Burke-2019``
+- ``coalispr init`` 
+
+
+  .. rst-class:: asfootnote
+
+     .. code-block:: text
+
+  
+
+        bash-5.2$ coalispr init
+        
+        Please provide a name for this new session/experiment.
+
+        This name will be used in commands and in file paths.
+        (therefore best to keep it short and memorable, without
+        spaces or special characters).
+    
+        Experiment name:
+        ('stop' to cancel)
+        h99
+
+
+        Experiment name will be set to: 'h99'
+        Is that OK?
+
+        1: Yes
+        2: Cancel
+
+        ?:
+        1
+
+        Experiment name has been set to 'h99'.
+
+        Now, set the work folder for this session/experiment.
+
+        Files are stored in folder 'Coalispr' either in the user's
+        home directory, or in the current folder (before running the
+         `init` command, change directory to this destination first).
+        Alternatively keep files near the source code, in the
+        coalispr installation folder. (The directory with the
+        installation folder will be shown as option in this case.)
+
+        Configuration files, figures and data go in sub-folders:
+        'constant_in' for configuration files, 'figures', and
+        'data' for storage of .pkl and .tsv count files.
+
+        Please choose a folder.
+        ('stop' to cancel)
+
+            1: home (rob)
+            2: current (Burke-2019)
+            3: source (COALISPR)
+
+        Enter an option: 2
+
+
+        Path to Coalispr folder will be set to: '/<path to>/Burke-2019/Coalispr'
+        Is that OK?
+
+        1: Yes
+        2: Cancel
+
+        ?:
+        1
+
+        Configuration files to edit are in: 
+        '/<path to>/Burke-2019/Coalispr/config/constant_in'
+        The path '/<path to>/Burke-2019/Coalispr' will be set as 'SAVEIN' in 3_h99.txt.
+
+|
+
+Configuration
+.............
+
+Explained in the :doc:`/howtoguides` is the preparation of configuration files with settings, especially the ``3_EXP.txt``, and the file (:smc:`EXPFILE`) describing the data for the experiment.
+
+|
+
+.. note:: 
+   
+   When using the alignments downloaded from xenodo.org, the :smc:`EXPFILE`, ``/<path to>/Burke-2019/source/h99-experiment_table.tsv``, is ready and only the shipped configuration file ``/<path to>/Burke-2019/Coalispr/constant_in/3_h99_zenodo.txt`` needs to be adapted to your local setup:
+
+   - From ``3_h99.txt`` created by ``coalispr init``, copy relevant [#done]_ values for:
+
+     - :smc:`SETBASE`
+     - :smc:`SAVEIN` (:smc:`BASEDIR / PRGNAM`).
+
+     and replace those in ``3_h99_zenodo.txt``
+   - Remove/rename ``3_h99.txt`` 
+   - Rename/link ``3_h99_zenodo.txt`` to ``3_h99.txt`` 
+
+
+
+|
+
+Experiment file
+'''''''''''''''
+The file describing the experiment has been assembled from the ``SraRunTable.txt`` for the two GEO datasets as follows:
+
+   .. rst-class:: asfootnote
+   
+.. code-block:: text 
+
+        Short   Run       Category  Method   Group  Fraction  Condition  Read-density  Experiment  Variation  GEO_Accession (exp)  DOI
+        wt_0    SRR646636      S    total             WCE                   NaN        SRX215659    WT 2010      GSM1061025        10.1016/j.cell.2013.01.046
+        a1_1    SRR8697580     U    total    a1       WCE                   NaN        SRX5493436    ago1        GSM3660325        10.25387/g3.7829429
+        a1_2    SRR8697581     U    total    a1       WCE                   NaN        SRX5493437    ago1        GSM3660326        10.25387/g3.7829429
+        c4_1    SRR8697582     M    total    meth     WCE                   NaN        SRX5493438    clr4        GSM3660327        10.25387/g3.7829429
+        c4_2    SRR8697583     M    total    meth     WCE                   NaN        SRX5493439    clr4        GSM3660328        10.25387/g3.7829429
+        e2_1    SRR8697584     M    total    meth     WCE                   NaN        SRX5493440    ezh2        GSM3660329        10.25387/g3.7829429
+        e2_2    SRR8697585     M    total    meth     WCE                   NaN        SRX5493441    ezh2        GSM3660330        10.25387/g3.7829429
+        re1_1   SRR8697586     M    total    re1      WCE                   NaN        SRX5493442    rde1        GSM3660331        10.25387/g3.7829429
+        re1_2   SRR8697587     M    total    re1      WCE                   NaN        SRX5493443    rde1        GSM3660332        10.25387/g3.7829429
+        re2_1   SRR8697588     M    total    re2      WCE                   NaN        SRX5493444    rde2        GSM3660333        10.25387/g3.7829429
+        re2_2   SRR8697589     M    total    re2      WCE                   NaN        SRX5493445    rde2        GSM3660334        10.25387/g3.7829429
+        re3_1   SRR8697590     M    total    re3      WCE                   NaN        SRX5493446    rde3        GSM3660335        10.25387/g3.7829429
+        re3_2   SRR8697591     M    total    re3      WCE                   NaN        SRX5493447    rde3        GSM3660336        10.25387/g3.7829429
+        re4_1   SRR8697592     M    total    re4      WCE                   NaN        SRX5493448    rde4        GSM3660337        10.25387/g3.7829429
+        re4_2   SRR8697593     M    total    re4      WCE                   NaN        SRX5493449    rde4        GSM3660338        10.25387/g3.7829429
+        re5_1   SRR8697594     M    total    re5      WCE                   NaN        SRX5493450    rde5        GSM3660339        10.25387/g3.7829429
+        re5_2   SRR8697595     M    total    re5      WCE                   NaN        SRX5493451    rde5        GSM3660340        10.25387/g3.7829429
+        r1_1    SRR8697596     U    total    r1       WCE                   NaN        SRX5493452    rdp1        GSM3660341        10.25387/g3.7829429
+        r1_2    SRR8697597     U    total    r1       WCE                   NaN        SRX5493453    rdp1        GSM3660342        10.25387/g3.7829429
+        r6_1    SRR8697598     M    total    r6       WCE                   NaN        SRX5493454    rrp6        GSM3660343        10.25387/g3.7829429
+        r6_2    SRR8697599     M    total    r6       WCE                   NaN        SRX5493455    rrp6        GSM3660344        10.25387/g3.7829429
+        wt_1    SRR8697600     S    total             WCE                   NaN        SRX5493456    Kn99alpha   GSM3660345        10.25387/g3.7829429
+        wt_2    SRR8697601     S    total             WCE                   NaN        SRX5493457    Kn99alpha   GSM3660346        10.25387/g3.7829429
+        h99_1   GSM3900523     R    rnaseq                                  1          SRX6102296    RNA_H99r1   GSM3900523        10.1093/nar/gkaa060
+        h99_2   GSM3900527     R    rnaseq                                  4          SRX6102300    RNA_H99r2   GSM3900527        10.1093/nar/gkaa060
+        h99-a1  GSM3900529     R    rnaseq                                  5          SRX6102302    RNA_HdAGO1  GSM3900529        10.1093/nar/gkaa060
+        h99-g1  GSM3900525     R    rnaseq                                  2          SRX6102298    RNA_HdGWO1  GSM3900525        10.1093/nar/gkaa060
+
+For columns :smc:`METHOD`, :smc:`FRACTION` or :smc:`GROUP` only values relating to particular methods, fractions or conditions are filled in. When one value applies to all samples it can be omitted; but then the group will not be shown in ``coalispr showgraphs``. Thus, in the example above, :smc:`METHOD` and :smc:`FRACTION` will be visible but :smc:`CONDITION` will not be indicated. The numbers in the ``Read-density`` (:smc:`READDENS`) column for the mRNA references lead to an adaptation of the traces so that their overall display is at a comparable level. This can be done because the expression of most transcripts do not seem to be affected by the deletions. In other words, it is an application of the principle guiding normalization when differential expression of genes is assessed (see :doc:`/background`) [#readadj]_. Adjusting the relative ``Read-density`` makes it easier to observe putative effects of the absence of Ago1 or Gwo1 on expression of transcripts targeted by siRNAs.
+
+|
+
+Settings file
+'''''''''''''
+ 
+For the configuration, in the file ``3_h99.txt`` (copied from ``3_EXP.txt`` in the ``init`` step) the following fields [#flds]_ were set to the given values:
+ 
+.. _sttgs_h:
+
+   .. rst-class:: asfootnote
+
+
+- :smc:`EXP`         : "h99" [#done]_
+- :smc:`CONFNAM`     : "3_h99.txt" [#done]_
+- :smc:`EXPNAM`      : "C. neoformans"
+- :smc:`UNSPECLOG10` : 0.78
+- :smc:`MAXGAP`      : 400 
+- :smc:`XLIM0`       : 14
+- :smc:`XLIM1`       : 36
+- :smc:`XLIM00`      : 18
+- :smc:`SETBASE`     : "/*<path to>*/Burke-2019/"
+- :smc:`REFS`        : SOURCE
+- :smc:`EXPFILNAM`   : "h99-experiment_table.tsv"
+- :smc:`RIP1`        : ""
+- :smc:`RIP2`        : "" 
+- :smc:`NOTAGIP`     : ""
+- :smc:`MUTGROUPS`   : {
+               | "a1":"ago1\\u0394", "re1":"rde1\\u0394", "re2":"rde2\\u0394" [#u0394]_
+               | "re3":"rde3\\u0394", "re4":"rde4\\u0394", "re5":"rde5\\u0394", 
+               | "r1":"rdp1\\u0394", "r6":"rrp6\\u0394", OTHR:"methyl\\u0394",
+               | }
+- :smc:`FRACTIONS`   : {
+               |  WCE:"Cell extract",
+               | }
+- :smc:`UNSPECIFICS` : [
+               | "a1", "r1",
+               | ]
+- :smc:`MUTANTS`     : [
+               | "re1", "re2", "re3", "re4", "re5", "r6", OTHR,
+               | ]
+- :smc:`LENGTHSNAM`  : "h99-chr-lengths.txt"
+- :smc:`DNAXTRNAM`   : "NAT_G418_HYG.fa"
+- :smc:`LENXTRA`     : "7062"
+- :smc:`CHRXTRA`     : XTRA
+- :smc:`GTFSPECNAM`  : "h99-siRNAsegments.gtf"
+- :smc:`GTFUNSPNAM`  : "ncRNA-pseu.gtf"
+- :smc:`GTFREFNAM`   : "h99.gtf"
+- :smc:`GTFXTRANAM`  : "h99-xtra.gtf" 
+- :smc:`GTFUNXTNAM`  : "h99-ncRNAxtra.gtf"
+- # :smc:`SAVEIN`      : Path("/*<path to>*/Burke-2019/Coalispr") [#done]_
+
+  | :smc:`SAVEIN`      : BASEDIR / PRGNAM [#asdone]_
+- :smc:`LENGTHSFILE` : BASEDIR / SOURCE / LENGTHSNAM
+- :smc:`DNAXTRA`     : BASEDIR / SOURCE / DNAXTRNAM
+- :smc:`EXPFILE`     : BASEDIR / SOURCE / EXPFILNAM
+- :smc:`GTFSPEC`     : BASEDIR / SOURCE / GTFSPECNAM
+- :smc:`GTFUNSP`     : BASEDIR / SOURCE / GTFUNSPNAM
+- :smc:`GTFREF`      : BASEDIR / SOURCE / GTFREFNAM
+- :smc:`GTFXTRA`     : BASEDIR / SOURCE / GTFXTRANAM
+- :smc:`GTFUNXTR`    : BASEDIR / SOURCE / GTFUNXTNAM
+
+
+|
+|
+
+Analysis
+........
+
+Bedgraph data are loaded and compared in |prgnam| by means of Pandas_ dataframes. For repeated use, the data are stored in a binary (:term:`pickle <pkl>`) format specific for the version of Python_ used to run |prgnam|. The ``coalispr storedata`` steps below accomplish this.
+
+.. note::  When using the archive with alignments downloaded from xenodo.org, this step can be skipped and binary, processed data that is used in |prgnam| can be obtained with ``coalispr storedata -d4`` after which subsequent commands (like ``coalispr showgraphs`` or ``coalispr countbams``) can be tested. After this, or when generating your own data files through ``coalispr storedata -d{1,2} -t{1,2}`` remove or rename the ``backup_from_pickled`` link (to prevent that the contents shipped with the archive are overwritten by subsequent ``coalispr storedata -d3`` commands).
+
+
+Store :term:`uncollapsed`, then :term:`collapsed` data (``-t2``), while processing both data (``-d1``) and reference (``-d2``) :term:`bedgraph` files.
+
+- ``coalispr storedata -d1``
+- ``coalispr storedata -d2``
+- ``coalispr storedata -d1 -t2``
+- ``coalispr storedata -d2 -t2``
+
+Example output of last run, skipping files already processed.
+
+  .. rst-class:: asfootnote
+
+     .. code-block:: text
+
+        bash-5.2$ coalispr storedata -d2 -t2
+
+        Processing references ...
+
+        Binned bedgraph-frames available for 'h99-a1'; will be skipped
+        Binned bedgraph-frames available for 'h99_1'; will be skipped
+        Binned bedgraph-frames available for 'h99_2'; will be skipped
+        Binned bedgraph-frames available for 'h99-g1'; will be skipped
+        Nothing left to bin, skip this.
+        Pickle-file for 'reference_merged' saved
+        Merged references to filter: ['h99_1', 'h99_2', 'h99-a1', 'h99-g1']
+        Using ['a1_2', 'r1_2', 'a1_1', 'r1_1'] for removing aspecific signals from references
+        Pickle-file for 'reference_specific_0-78_collapsed' saved
+        Pickle-file for 'reference_unspecific_0-78_collapsed' saved
+
+The outputs written to the terminal also end up in the log file in ``/Burke-2019/Coalispr/logs/h99/``. Check the logs to get an idea about the involved steps, whereby contiguous indices for regions with signals are combined to segments. Further, files are saved for use by other parts of the program based on the threshold :smc:`UNSPECLOG10` (of 0.78; representing a minimal ~6 fold difference in the case of overlapping signals for :smc:`SPECIFIC`/:smc:`MUTANT` samples vs. :smc:`UNSPECIFIC` samples in bins marked by the indices).
+
+|
+
+..    .. rst-class:: smallfigcaption
+
+
+.. figure:: /../_static/images/h99_centromer-chr8.png
+   :name: cenchr8
+   :align: right
+   :width: 771 px
+   :height: 1221 px
+   :scale: 33%
+   :figwidth: 257 px
+
+   **Figure 3.** Visualization of centromeres. 
+
+   Normally, centromeres are not transcribed, as indicated by the gap in mRNA transcripts (black). Inactivation of histone H3 methylation by deletions in genes for Clr4 (c4) or Ezh2 (e2) leads to loss of silencing of centromeric transcripts to which siRNAs are raised [Burke-2019]_. With: ``coalispr showgraphs -c 8 -w2``.
+
+   |
+
+Graphs
+''''''
+Check traces:
+
+- ``coalispr showgraphs -c 8 -w2``
+
+
+Proteins involved in methylation of DNA and of histone H3, leading to heterochromatin formation and thereby silencing of genes in these chromosome regions, are important to reduce the production of siRNAs complementary to transcripts expressed from centromeres [Burke-2019]_. Centromeres in *Cryptococcus* are long and consist of repetitive DNA derived from transposable elements [#othfcts]_. The length of centromeres, together with the absence of RNAi against transposons in an organism, appears related to virulent behaviour of fungi [Yadav-2018]_. The results from [Burke-2019]_ are helping to light up centromeric regions in :ref:`bedgraph displays <cenchr8>` by |prgnam|. 
+
+..  .. rst-class:: smallfigcaption
+
+.. figure:: /../_static/images/cnags_03231-3387.png
+   :name: cnags_03231-3387
+   :align: right
+   :width: 1477 px
+   :height: 1834 px
+   :scale: 18%
+   :figwidth: 257 px
+
+   **Figure 4.** CNAG_03231 and CNAG_03387
+
+   Segments representing an siRNA locus have been annotated as a ncRNA. Not all mutants have an equal effect on siRNA formation. One group appears as wild type (middle) and another as the :term:`negative control`\ s (bottom). Traces for :term:`Specific` reads are shown (with: ``coalispr showgraphs -c8 -w4``).
+
+   |
+
+To revisit CNAG_03231, and see the impact of mutants on siRNA formation (see :ref:`Fig. 4 <cnags_03231-3387>`, run:
+
+- ``coalispr showgraphs -c8 -w4``
+
+And zoom in to regions ``399000-403600`` for CNAG_03387 or ``814700-821200`` for CNAG_03387. Alternatively, using the *region* option ``-r``, for CNAG_03387 run:
+
+- ``coalispr showgraphs -c8 -w4 -r 399000-403600``
+
+For CNAG_03387:
+
+- ``coalispr showgraphs -c8 -w4 -r 814700-821200``
+
+
+This will :ref:`show traces <cnags_03231-3387>` after filtering out the :term:`unspecific` reads [#alltrcs]_. The C-terminal encoding regions of the transcripts are targeted by siRNAs. That introns have been removed by splicing is better visible in a :ref:`genome browser <cnag7721to03231b>`; the 50-fold reduced resolution in the |prgnam| display can only hint at this. Note that in absence of RNAi (in the h99-a1 mutant lacking Ago1) relatively higher mRNA expression levels are detectable for these loci compared to wild type (h99) and surrounding loci.
+
+In the other tutorials, to support the article :doc:`/paper`, rDNA loci have been analyzed. 
+
+..  .. rst-class:: smallfigcaption
+
+.. figure:: /../_static/images/rDNA-H99.png
+   :name: rdn_h99
+   :align: left
+   :width: 2285 px
+   :height: 1216 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 5.** *C.*\ |nbsp|\ *neoformans* rDNA locus [#rdnah99]_
+
+   Reads representing :term:`rRFs` are abundant in all samples to a comparable extent. In some clones, but not all, reads complementary to rRNA are formed. For the rde1Δ (top mid) and rde2Δ (top right) strains these reads counter regions of large subunit rRNAs 25S and 5.8S, while in wild type (top left) or rrp6Δ (bottom mid) the small subunit 18S rRNA region and flanking transcribed spacers are targeted. No effect is visible for strains lacking Rde3, Rde4 or Rde5 (bottom left) or in strains without DNA or histone methylation activity (bottom right). Although a contamination with rDNA might have caused this, the signals are typical for the strains and could have another source of origin. Note the rRNA peaks of the reference RNA-Seq libraries that run off the scale (black). Traces for all reads are shown (with: ``coalispr showgraphs -c2 -w2`` ).
+
+   |
+
+
+In *Cryptococcus* the rDNA is on chromosome 2, on the minus strand. All reads are shown with:
+
+- ``coalispr showgraphs -c2 -w2``
+
+- Using the ``zoom`` tool, exposes the rDNA region from ``270000`` to ``284000``
+
+This command produces a :ref:`display of traces <rdn_h99>` that shows that :term:`rRFs` are common to all samples. In some strains, including the wild type (from [Dumesic-2013]_), reads are mapped that are antisense to the rRNA. Can these be the result of an RNAi response? Or are they generated by another, possibly artefactual mechanism?
+
+|
+
+Add count data
+''''''''''''''
+To obtain a more detailed insight in the kind of reads in the various libraries, we start with getting count data. 
+
+Counts for the input:
+
+- ``coalispr countbams -rc 1``
+
+  | (for :term:`uncollapsed` data)
+
+- ``coalispr countbams -rc 2``
+
+  | (for :term:`collapsed` data)
+
+
+Counts for aligned reads:
+
+- ``coalispr countbams``
+
+  | (for :term:`specific` data)
+
+- ``coalispr countbams -k2 -u 1``
+
+  | (for :term:`unspecific` data (``-k2``) including :term:`unselected` reads (``-u1``))
+  |
+
+
+With this information, we can inspect cDNA traces (of :term:`collapsed` reads) with siRNA-like lengths and start-nucleotide [#strtnt]_ that are present in the negative data: 
+
+- ``coalispr showgraphs -c2 -t2 -u1``
+
+This shows that such common small RNAs can derive from highly expressed transcripts (top left panel in the :ref:`figure <rdn_h99_cdna>`, including rRNA. Fitting the finding that siRNA populations consist of sense and antisense reads, such small RNAs are found to map to the rDNA, although mostly in a similar manner as found for the :term:`negative control` lacking Rrp1 (``r1``). A fraction of reads that does not overlap with negative control reads is found in the wild type and a strain with mutant *RRP6*. Does this mean that :term:`rRFs` are actually part of the siRNA population associated with Ago1 in a biologically relevant manner? Or is it that rRNA, rather than supplier, becomes a target of RNAi? Because of the mix-up with rRNA as common contaminant and the possibility that :term:`unselected` siRNAs obtained their features by chance, these questions cannot be answered on the basis of these observations. For example, there is no idea about the length-distributions of the mapped reads; do the siRNA-like reads stand out from the remainder? This question is answered below.
+
+..  .. rst-class:: smallfigcaption
+
+.. figure:: /../_static/images/rDNA-H99-cDNAs.png
+   :name: rdn_h99_cdna
+   :align: left
+   :width: 2285 px
+   :height: 1216 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 6.** *C.*\ |nbsp|\ *neoformans* rDNA locus [#rdnah99]_, mapped cDNAs.
+
+   cDNAs of :term:`unselected` reads adhere to siRNA characteristics but fall in the class of :term:`unspecific` sequences due to an overlap with common signals found in :term:`negative control` samples. Many of these reads derive from highly expressed transcripts (orange traces on top of black mRNA signals, top left). This is also the case for the DNA regions with genes for rRNA (top middle), although a diverse population of cDNAs is found to be anti-sense to 25S and 5.8S or 18S rRNAs, which is also observed for the negative control lacking a functional *RRP1* gene (top right). Anti-sense cDNAs against the 18S rRNA region and flanking transcribed spacers are specific for the wild-type strain or seen in the absence of Rrp6 (bottom) (with: ``coalispr showgraphs -c2 -t2 -u1`` ).
+
+   |
+
+Count diagrams
+''''''''''''''
+
+|prgnam| is a tool to check libraries in a data set, and obtain counts for :term:`specified` reads as done above. How different are the libraries with respect to coverage and number of mapped reads? For this, we can look at the :term:`uncollapsed` and :term:`collapsed` reads, respectively, using alignment information:
+
+- ``coalispr showcounts -rc 1``
+- ``coalispr showcounts -rc 2``
+
+.. figure:: /../_static/images/input-counts-H99-all.png
+   :name: input_h99_libs
+   :align: left
+   :width: 2399 px
+   :height: 627 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 7.** *C.*\ |nbsp|\ *neoformans* libraries, mapped (stranded) vs. unmapped reads.
+    
+   | Uncollapsed read data on the left, collapsed data (cDNAs) on the right.
+   |
+   
+
+According to these diagrams, the libraries are fairly comparable although the original data (``wt_0``) [Dumesic-2013]_ contain a high number of unmapped reads, possibly due to adapter remnants that interfere with the stringent ``EndToEnd`` mapping [#output]_. In general the background is fairly high. This observation is based on the overlap between the :term:`positive <positive control>` and :term:`negative control` samples, with respect to a) the large fraction of common minus-strand reads (the rDNA gene is on that strand on chromosome 2) in the positive and mutant samples, while b) negative control samples contain reads that are :term:`specified` as :term:`specific` [#thrshld]_. The characteristics for the libraries of mutant rde1Δ (``re1``) are very similar to that of the negative controls, suggesting that RNAi has been inactivated in the absence of Rde1. The strains lacking Rrp6 (``r6``) yielded a relatively low number of reads. According to Burke et al [Burke-2019]_ for all samples 20 μg  RNA was used for library preparation of siRNAs. Assuming that experimental parameters for library preparation were comparable, are the low siRNA yields for rrp6Δ strains indicative for a poor state of these cells (slow growth, reduced RNA synthesis or minimal RNAi activity)?
+
+Checking the overall counts for :term:`specific` and :term:`unspecific` reads gives other information:
+
+- ``coalispr showcounts -lc {1-7}``
+
+.. figure:: /../_static/images/library_counts_h99.png
+   :name: libcnts_h99
+   :align: left
+   :width: 1455 px
+   :height: 1145 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 8.** *C.*\ |nbsp|\ *neoformans* library counts, specific vs. unspecific reads.
+    
+   | Top: Uncollapsed read data (``-lc 1``; left) and collapsed data, cDNAs (``-lc 2``; right).
+   | Middle: Introns in uncollapsed read data (``-lc 4``; left), and in cDNAs (``-lc 5``; right).
+   | Bottom: Unspecified reads in unspecific data vs specific reads (``-lc 6``; left); reads skipped during counting (``-lc 7``; right).
+   |
+   
+
+The results obtained with option ``-lc 1`` indicate that RNAi activity seems almost completely abolished not only in mutant rde1Δ, but also in rde4Δ, rde5Δ and possibly rde3Δ (``re1``, ``re4``, ``re5``, and ``re3``, resp.). This can be inferred from the finding that (nearly) all mapped reads are part of a common background (:ref:`top left <libcnts_h99>`). In mutant rde2Δ (``re2``) RNAi appears to be affected as well, although partially, in view of the enhanced number of unspecific reads at the expense of those mapping to specific siRNA targets. Note that an opposite observation, more specific and less unspecific reads, can be made for mutant clr4Δ (``c4``)
+
+The fact that *Cryptococcus* is intron-rich is exemplified by the many specific reads with gaps that could be introns (about one in 25 cDNAs; middle). 
+
+One to three percent of mapped reads were skipped during the counting because their end-to-end alignment was not solely based on matches with, possibly, one intron-sized gap (i.e. larger than :smc:`MININTRON`; cf. bottom right to top-left).
+
+Length distributions of the mapped reads are visualized with:
+
+- ``coalispr showcounts -lo {1-5}``
+
+  | for an overview for all libraries, and, for individual samples:
+
+- ``coalispr showcounts -ld {1-6}``
+
+  | with option ``-k2`` lengths for unspecific reads are shown and with option ``-ma`` lengths for uniq reads or multimappers (see below).
+
+.. figure:: /../_static/images/read_lengths_h99.png
+   :name: liblngths_h99
+   :align: left
+   :width: 2378 px
+   :height: 1186 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 9.** *C.*\ |nbsp|\ *neoformans* length distributions of library reads.
+    
+   | Top: Lengths for uncollapsed reads on the left (``-lo 1``) and collapsed data (cDNAs; ``-lo 2``) on the right.
+   | Bottom: Read lengths in separate libraries, specific reads (``-ld 1``, left), unspecific (``-ld 1 -k2``, middle) and unspecified reads in unspecific data (``-ld 6``; right).
+   |
+
+The distribution of read lengths to a narrow range of 20-24 nt with the majority starting with a ``T`` (``U`` in RNA) fits expectations for siRNAs bound to Argonaute proteins in fungi [Dumesic-2013]_. Furthermore, the separation of specific reads from unspecific reads seems to be adequate in view of the hugely different length distributions for these categories of reads. That putative siRNAs are still present among the unspecific reads in the rde1Δ, rde2Δ or rrp6Δ strains (``re1``, ``re2``, or ``r6``, :ref:`bottom middle <liblngths_h99>`) appears to be supported by length-distributions for these :term:`unselected` reads (:ref:`bottom right <liblngths_h99>`) and observations for the rDNA region described below (see `Region-analysis`_).
+
+|
+
+Multimappers
+''''''''''''
+
+Transposons that elicit an RNAi response are often present in multiple copies, although some loci might be more active than others, possibly depending on an accumulation of mutations. Therefore, it is not obvious how to account for such repeats during mapping. In the :ref:`alignment scripts <mappg>`, STAR_ was set up to map uncollapsed :term:`multimapper`\ s randomly to the possible loci, while collapsed reads are aligned with each possible position (to keep these hits visible in the bedgraphs) but counted as ``1/NH`` (with ``NH`` the number of hits found in the :term:`bam` alignment line).
+
+.. figure:: /../_static/images/library_counts_h99_uniq_mulm.png
+   :name: libcnts_mulmap_h99
+   :align: left
+   :width: 1443 px
+   :height: 741 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 10.** *C.*\ |nbsp|\ *neoformans* library counts, specific vs. unspecific reads, with focus on unique reads and multimappers.
+    
+   | Top: Unique reads (``-lc 1 -ma 1``, left) or unique cDNAs (``-lc 2 -ma 1``, right).
+   | Bottom: Multimappers (``-lc 1 -ma 2``, left) or multimapping cDNAs (``-lc 2 -ma 2``, right).
+   |
+..   | Top: Uncollapsed read data on the left (``-lc 1``), collapsed data (cDNAs; ``-lc 2``) on the right.
+
+The :ref:`above figure <libcnts_mulmap_h99>` indicates that most of the reads and cDNAs align to a single site (':term:`unique` reads', top) in the reference genome rather than to multiple loci ('multimappers', bottom). :ref:`Centromeres <cenchr8>` are normally silenced by packaging of nucleosomes into heterochromatin, which coincides with methylation of H3K9 (lysine 9 in histone H3) by Clr4. When this methyltransferase is absent (``Mutants`` ``c4``), the number of multimappers increases (relative to :ref:`total <libcnts_h99>` and unique populations) compared to wild type (``Positive`` ``wt``). Centromeres in *Cryptococcus* consist mainly of repetitive sequences derived from retrotransposons Tcn1–Tcn5 (that belong to the Ty3-gypsy family of retroelements) and Tcn6 (like Ty1-copia) [Yadav-2018]_. Therefore, the increase of multimappers in the absence of Clr4 fits a scenario whereby centromeric transcripts, the expression of which is no longer suppressed by methylation, are silenced by RNAi instead. Notably, genes on euchromatic regions of the chromosomes to which large numbers of siRNAs align to often share homology with domains found in transposable elements but are not clearly related to Tcn1-6.
+
+.. figure:: /../_static/images/length_dist_h99_uniq_mulm.png
+   :name: lendist_mulmap_h99
+   :align: left
+   :width: 2184 px
+   :height: 922 px
+   :scale: 25%
+   :figwidth: 100%
+   
+   **Figure 11.** *C.*\ |nbsp|\ *neoformans* length distributions of unique siRNAs and multimappers.
+    
+   | Unique reads (``-ma 1``, top) and multimappers (``-ma 2``, bottom); 
+   | Shown are unspecific (left), or specific (middle) reads, and cDNAs (right).
+   |
+
+In the absence of Rde1 only a few siRNAs are found (:ref:`see Figure 8 <libcnts_h99>`), defined by cDNAs with a wild-type length distribution (``coalispr showcounts -ld 2 -ma {1,2}``). Still, most of the multimapping siRNAs (``coalispr showcounts -ld 1 -ma 2``) in this mutant appear to be 1 nt shorter, peaking with a length of 21 nt, instead of 22 nt (Fig. 11, middle panel, bottom row). Section ':doc:`/tutorials/H99/rde1-mulmappers`' tries to find loci responsible for this. One candidate turns out to be the :ref:`rDNA locus <regcnt_h99rdna>`, where such siRNAs map against the pre-rRNA transcript.
+
+|
+
+Intron-skipping siRNAs
+''''''''''''''''''''''
+
+With options ``-lo {4,5}`` or  ``-ld {4,5}`` intron lengths are displayed in uncollapsed reads or collapsed cDNAs, respectively [#cigart]_. For a large range of lengths no hits are present. The resolution of the distribution can be enhanced by skipping this empty section. For this: 
+
+- Edit the field :smc:`SKIPINT` in ``3_h99.txt``, set it to ``= 190, 350`` and save the file. 
+- Activate the new configuration by rerunning the ``setexp -e h99 -p2`` command. 
+- Redraw the figures.
+
+.. figure:: /../_static/images/intron_lengths_h99.png
+   :name: intrlngths_h99
+   :align: left
+   :width: 2378 px
+   :height: 1703 px
+   :scale: 30%
+   :figwidth: 100%
+   
+   **Figure 12.** *C.*\ |nbsp|\ *neoformans* intron lengths of library reads.
+    
+   | Top: Comparing specific and unspecific reads with respect to intron lengths for uncollapsed reads on the left (``-lo 4``) and collapsed data (cDNAs; ``-lo 5``) on the right.
+   | Middle and Bottom: Intron lengths in all reads (Middle, left ``-ld 4``) or cDNAs (Bottom, left ``-ld 5``), unique (middle, ``-ld {4,5} -ma 1``) or  multimappers (right, ``-ld {4,5} -ma 2``) for separate libraries.
+   |
+
+Of the intron-skipping reads, both unique and multimappers bridging an intron of ~62 nt are enriched in the absence of Rde1 (lanes ``re1`` :ref:`middle section <intrlngths_h99>`); the number of cDNAs is also relatively increased for these reads, predominantly for those that align to one locus (:ref:`bottom section, left and middle vs. right panels <intrlngths_h99>`. In cells without Rde2, multimappers (reads as well as cDNAs) over a spliced intron of ~73 nt stand out (lanes ``re2`` :ref:`middle and bottom, right <intrlngths_h99>`). Based on this information, the section ':doc:`/tutorials/H99/rde1-6xN_rde2-7xN`' describes how putative loci can be identified for these reads. 
+
+The unique locus from which siRNAs with a 62 nt gap are accumulating in the absence of Rde1 turns out to harbour a unique pseudo-gene, CNAG_07650, on chromosome 6. Centromeric loci account for the multimapper in rde2Δ cells.
+
+|
+
+Region-analysis
+'''''''''''''''
+
+Sometimes, read counts and length-distributions that are valid for just a small section of the overall transcriptome can be highly infomative. |prgnam| facilitates this with the ``coalispr region`` call. For example, let's analyze in more detail the rDNA unit in *C.*\ |nbsp|\ *neoformans*.
+
+rDNA
+^^^^
+
+- Obtain images and coordinates for the complete rDNA in H99 from a graph displaying all reads:
+
+  - Run ``coalispr showgraphs -c2 -w2``.
+  - Use the zoom-tool to select the region covered by the large peak near position 300.000 [#rdnah99]_.
+  - Activate mutant traces with comparable traces (``rde1Δ, rde2Δ``, ``rde3Δ, rde4Δ, rde5Δ, methylΔ``, or ``rrp6Δ``) and save each image as :term:`png`.
+  - Clicking the x-axis will generate in the terminal the genomic coordinates for the region displayed; e.g. ``2 (271985, 279663)``.
+  - Highlight the coordinates (``271985, 279663``) and copy these with ``Shift+Ctrl+C`` to the clip-board.
+
+- Get counts for the rDNA and count-displays by:
+
+  - In another terminal type ``coalispr region -c 2 -r ``
+  - After option ``-r ``, paste the coordinates copied above with ``Shift+Ctrl+V``.
+  - To use all available samples, include option ``-s 2``.
+  - Set up strand-specific analysis by including option ``-st``.
+  - Run ``coalispr region -c2 -r 271985, 279663 -s2 -st 2`` for :smc:`PLUS` reads and associated diagrams.
+
+  The terminal will display which samples are counted; the number of skipped reads, a dataframe showing total numbers and feedback for the figures that are made and automatically saved to the indicated folders [#regrun]_. The generated count data are saved as separate files in ``/<path_to/Burke-2019/Coalispr/data/h99/tsvfiles/region_readcounts_collapsed-bam/region_2_271985-279663`` [#regpath]_.
+
+  - Run ``coalispr region -c2 -r 271985, 279663 -s2 -st 3`` for :smc:`MINUS` reads and associated diagrams.
+
+The obtained diagrams have been combined into :ref:`Figure 13 <regcnt_h99rdna>`:
+
+.. figure:: /../_static/images/h99-rDNA-counts-landscape.png
+   :name: regcnt_h99rdna
+   :align: left
+   :width: 2954 px
+   :height: 2287 px
+   :scale: 25%
+   :figwidth: 100%
+   
+   **Figure 13.** Region analysis of *C.*\ |nbsp|\ *neoformans* rDNA on chromosome 2.
+    
+   | Graphs, with traces for various mutants highlighted (top) and count diagrams for plus (middle) and minus strand (bottom); 
+   |
+
+Various bits of information can be distilled from this figure. When focusing on reads mapping to the rDNA sense strand (minus strand):
+
+- RNA fragments formed from ribosomal RNA (the :term:`rRFs`) are very abundant in negative controls and *rde* mutants affecting RNAi (``re1`` to ``re5``) and more so than in strains producing siRNAs (``Positive``) that could participate in reverse transcription reactions that create the input for the sequencing (see bottom row, left panel).
+- rRFs form the majority of overall :term:`unspecific` library counts (cf. Fig. 8, :ref:`top left panel <libcnts_h99>`) 
+- The `rRFs` do not meet the criteria for Ago-associated small RNAs that have a length of 19-23 nt and start with a U (T in cDNA) (see bottom row, middle panel for reads and right panel for cDNAs [#lowsig]_).
+- That, despite the high number of counts, rRFS represent uninformative background is illustrated by the coverage pattern of these RNAs, which is the same for all samples (see top panel).
+
+Interestingly, RNAs mapping to the antisense rDNA strand, suggest that siRNAs have been generated against rRNA:
+
+- A large number of antisense, plus strand reads were counted for strains rde1Δ (``re1``), rde2Δ (``re2``) and a positive control (``wt_0``) (Middle row, left panel). See also :ref:`Fig. 16 (top) <h99_corb-unspec_comb-spec_log2>` below.
+
+- In all samples, these antisense reads conform to siRNA characteristics.
+- Different from wild type siRNAs, those in mutant strains appear in general to be 1 nt shorter.
+
+It cannot be ruled out that for samples with low counts these putative siRNAs are an experimental artefact or a kind of background. Still, the high levels of these reads for rde1Δ and rde2Δ strains suggest that in these mutants the RNAi activity could have been redirected to rRNA from transcripts that, somehow, no longer form a target. Thus, a step that would have lead to the generation of specific siRNAs against transcripts from pseudo-genes or transposable-elements is no longer happening because of these mutations.
+
+21-mers
+^^^^^^^
+
+Are the siRNAs only shorter for the rDNA locus in strains rde1Δ or rde2Δ? We can check this for CNAG_07650, one of the few loci with siRNAs in the absence of Rde1 (see :ref:`Figure 12 <intrlngths_h99>`). The :ref:`coverage graphs <6cnag07650>` in the section ':doc:`/tutorials/H99/rde1-6xN_rde2-7xN`' show that the major target is the transcript from this pseudo-gene on the plus strand. After zooming the display to only show the region with siRNA traces, obtain the coordinates (say ``1371800-1372650``) by clicking the x-axis and copy-paste the numbers to run:
+
+- Run ``coalispr region -c6 -r 1371800-1372650 -s2 -st {2,3}``
+
+The combined output indicates that at this locus siRNAs are not shorther in mutant cells, compared to wild type:
+
+.. figure:: /../_static/images/h99-cnag07650-counts.png
+   :name: regcnt_cnag07650
+   :align: left
+   :width: 2363 px
+   :height: 1259 px
+   :scale: 25%
+   :figwidth: 100%
+   
+   **Figure 14.** Region analysis of *C.*\ |nbsp|\ *neoformans* CNAG_07650 on chromosome 6.
+    
+   | Count diagrams for plus (top) and minus strand (bottom). 
+   |
+
+CNAG_07650 sequences are not repeated in the H99 genome and this outcome fits the length-distribution for unique loci (Fig. 11, middle panel, :ref:`top row <lendist_mulmap_h99>`).
+
+For rde1Δ cells a multimapper was responsible for relative accumulation of siRNAs of 21 nt (see Fig. 11 middle panel, :ref:`bottom row <lendist_mulmap_h99>`). This quick analysis suggest that shortening of siRNAs could be linked to the rDNA locus. 
+
+Note that for strains with inactivated RNAi (``ago1Δ`` or ``rdp1Δ``), RNAs are still mapping to the :ref:`CNAG_07650 <6cnag07650>` locus with siRNA length-distributions. For other RNAi loci such background is observed as well. Whether incomplete RNAi-inactivation or library contamination could be the reason for this, is unclear.
+
+auto-RNAi
+^^^^^^^^^
+
+Above analysis for the rDNA showed that in some strains siRNAs are detected that are antisense to rRFs (:ref:`Fig. 13 <regcnt_h99rdna>`). Are other common ncRNAs prone to be targeted by RNAi? It looks that this can happen in the case of SRP RNA as well, another prominent source of :term:`unspecific` reads. :doc:`SRP RNA </supplemental/otherRNA/srp>` gets expressed from the minus strand on chromosome 1 and is part of a cytoplasmic RNP that associates with ribosomes to regulate translation of proteins that localize to the ER.
+
+- Run ``coalispr showgraphs -c1 -r 801150-801450 -w2`` for the coverage display.
+- Run ``coalispr region -c1 -r 801150-801450 -s2 -st {2,3}`` for the count diagrams.
+
+
+.. figure:: /../_static/images/h99-SRP-RNA-counts.png
+   :name: regcnt_srprnah99
+   :align: left
+   :width: 3133 px
+   :height: 1259 px
+   :scale: 25%
+   :figwidth: 100%
+   
+   **Figure 15.** Region analysis of *C.*\ |nbsp|\ *neoformans* SRP RNA locus.
+    
+   | Coverage display (on the left) and count diagrams for plus (top) and minus strand (bottom). 
+   |
+
+
+Note that, for this :term:`unspecific` locus in RNAi capable strains, cDNAs are found representing :smc:`CORB` sense siRNAs and the more abundant :smc:`MUNR` antisense siRNAs. In strains where RNAi has been affected, the cDNAs for :smc:`CORB` cDNAs do not adhere to a siRNA length-distribution. At loci with :term:`specific` reads, such reads were observed in low amounts for strains where RNAi had been inactivated (for example :ref:`CNAG_07650 <regcnt_cnag07650>`). Such 'background'(?) signals may have been too low at unspecific loci to stand out as siRNAs in these strains.
+
+If these siRNAs against ncRNAs are really formed, these siRNAs show activity against molecules representing 'self', like a sort of auto-immune response but then for RNAi, 'auto-RNAi'. This also occurs in *C.*\ |nbsp|\ *deneoformans*, against similar ncRNAs (rRNA, SRP RNA). Such events might indicate that processes involving these ncRNAs triggered RNAi. A common factor is translation. [#rapp]_
+
+|
+
+.. _annot_h99:
+
+Annotate count files
+''''''''''''''''''''
+The available reference files with genome annotations can be scanned for overlap with segments to which siRNAs map. For this run the ``coalispr annotate`` command. Include the mRNA references with ``-rf 1`` an, to easier assess large count numbers, take their log2 values:
+
+- ``coalispr annotate -lg 1 -rf 1``
+
+And for unspecific reads (``-k 2``):
+
+- ``coalispr annotate -lg 1 -rf 1 -k2``
+
+To get counts for unspecific reads opposite rRNA sequences, include the :smc:`CORB` strand option (``-st 3``):
+
+- ``coalispr annotate -lg 1 -rf 1 -k2 -st 3``
+
+.. figure:: /../_static/images/h99-corb-unspec_comb-spec_log2.png
+   :name: h99_corb-unspec_comb-spec_log2
+   :align: left
+   :width: 3713 px
+   :height: 4208 px
+   :scale: 25%
+   :figwidth: 100%
+   
+   **Figure 16.** Annotated counts (log2 values).
+    
+   | Top: Unspecific reads, hits opposite major strand like on the plus strand opposite the rDNA on the minus strand (highlighted)
+   | Mid: All specific reads, siRNAs against targets on the opposite strand are annotated with '@'.
+   | Bottom: All unspecific reads.
+   | (only top-section of each table is shown; duplicates are omitted to reduce figure width.)
+   |
+
+As found for :ref:`mouse <mmu_annots>`, in these small RNA-Seq libraries for *C*.\ |nbsp|\ *neoformans* the counts for :term:`rRFs` are among the highest read numbers. Most unspecific reads relate to rRNA, tRNA and mitochondrial transcripts; most specific reads are opposite uncharacterized genes.
+
+|
+
+Conclusion
+----------
+
+In the analysis of siRNAs and unspecific RNAs for various libraries prepared by [Dumesic-2013]_ and [Burke-2019]_ many observations were linked to rde1Δ and rde2Δ. *RDE1* (CNAG_01848) codes for a G-patch protein similar to Pfa1/Sqs1 in *Saccharomyces cerevisiae*, one of the cofactors for Prp43. This multi-functional RNA helicase relies on G-patch proteins for functional specificity [`Bohnsack-2022 <https://doi.org/10.1093/nar/gkac687>`_]. In yeast, the Prp43/Pfa1 complex is linked to the last step in the maturation of 18S rRNA, cytoplasmic cleavage of 20S pre-rRNA [`Lebaron-2009 <https://doi.org/10.1038/emboj.2009.335>`_, `Pertschy-2009 <https://doi.org/10.1074/jbc.M109.040774>`_]. In association with different G-patch proteins, Prp43 is further involved in dissociation of spliceosomes and the removal of snoRNPs responsible for 2'-O methylation of 18S and 25S rRNA [`Bohnsack-2009 <https://doi.org/10.1016/j.molcel.2009.09.039>`_]. 
+
+Other RNA-processing factors were identified by Burke et al., namely the RNAse III Rnt1 (CNAG_06643, or *RDE3*), which, in yeast, is a nuclear protein (for a review see [`Elela-2018 <https://doi.org/10.1002/wrna.1521>`_]) and involved in co-transcriptional pre-rRNA processing, analogous to bacterial RNAse III [`Abou Elela-1996 <https://doi.org/10.1016/s0092-8674(00)81087-9>`_], and maturation of snoRNAs such as U14 [`Chanfreau-1998a <https://doi.org/10.1006/jmbi.1998.2237>`_, `Chanfreau-1998b <https://doi.org/10.1093/emboj/17.13.3726>`_]. Overall, 13% of the yeast genes are differentially overexpressed in rnt1Δ cells. Yeast Rnt1 carries a characteristic C-terminal RNA-binding domain (*RBM0*) not present in homologous proteins in fungi that harbour an RNAi machinery. Cryptococcus Rnt1/Rde3 lacks this domain [#alirde3]_ and therefore might not be constrained to double strand RNA substrates formed by NGNN stemloops recognized by *RBM0* as is the case for yeast Rnt1 [`Elela-2018 <https://doi.org/10.1002/wrna.1521>`_]. Rde5 (CNAG_04791), with no known orthologues, appeared to be a Rnt1-interacting protein [Burke-2019]_. Rde2 (CNAG_04954) is placed among the orthologues of human EDC4, an enhancer of mRNA decapping enzymes, while Rde4 (CNAG_01157) contains domains that suggest it is an orthologue of the TENT5 family of terminal nucleotidyltransferases involved in polyadenylation during 3' end processing of RNA and linked to the regulation of the innate immune response in animals [`Warkocki-2018 <https://doi.org/10.1098/rstb.2018.0162>`_, `Liudkovska-2022 <https://doi.org/10.1126/sciadv.add9468>`_].
+
+.. figure:: /../_static/images/Model_.svg
+   :alt: Model RNAi
+   :name: modelrnaih99
+   :align: right
+   :scale: 50%
+
+   **Figure 17.** RNAi onset occurs after splicing.
+
+   | Because siRNAs are raised against spliced transcripts, the
+   | RNAi response must be triggered by events downstream.  
+   | Blocked translation could provide a template to create     
+   | siRNAs, namely a piece of mRNA protected by piled-up 
+   | ribosomes. With  these siRNAs problematic transcripts can  
+   | be intercepted, evading further rounds of costly removal 
+   | of unproductive complexeses [#parambil]_.
+   |
+
+
+Disruption of these factors activated the Harbinger transposon to jump from the context of a *URA5* reporter gene, and resulted in reduced siRNA production. Because such deletions can be expected to primarily affect ribosome synthesis or mRNA degradation, it cannot be ruled out that a subdued RNAi response could be an indirect result of these deletions. Information from experiments that assess splicing, RNA turnover, and maturation of pre-rRNA and ribosomal subunits in rdeΔ strains will be needed to understand what is actually happening in these cells.
+
+Either way, in rdeΔ strains an RNAi response would be alleviated when this process is triggered by stalled ribosomes and thus directed to 'difficult' mRNAs that cause this (:ref:`Fig. 17 <modelrnaih99>`). After ribosomes have stalled, a quality control mechanism involving mRNA degradation is initiated by decapping enzymes and 3' end processing. A lack of sufficient numbers of ribosomes might reduce their chance of collapsing into each other and thereby the onset of clearing processes that also involve RNAi and the generation of siRNAs.
+
+The :ref:`model <modelrnaih99>` cannot explain how siRNAs are maintained and propagated during cell division if the relevant transcripts are not synthesized [#recons]_. That translation might provide a relevant context for the onset of RNAi in *Cryptococcus* is indicated by the fact that many siRNAs mapped to pseudo-genes and TE-loci, but - in *C.*\ |nbsp|\ *deneoformans* - not to T1 [Janbon-2010]_, an active, non-coding transposable element [:ref:`van.Nues-202? <vnues202x-publ>`]. Recently it has been found that "piRNA generation is associated with the pioneer round of translation in stem cells" of planarians (a kind of flatworm), directly involving the argonaute-like PIWI protein SMEDWI-1 [Parambil-2023]_. Thus, route 1 in the model, priming RNAi on problematic transcripts, might occur during such a pioneer round or through common translation on cytoplasmic ribosomes [#parambil]_. Another hint in the case of *Cryptococcus* might be given by the amounts of siRNAs that map anti-sense to mature rRNA (:ref:`Figure 13 <regcnt_h99rdna>`), or SRP RNA (:ref:`Figure 15 <regcnt_srprnah99>`), in rde1Δ strains and in :term:`repair` strains where RNAi has been re-established by restoration of genes for Ago1 or Rdp1 [:ref:`van.Nues-202? <vnues202x-publ>`]. Maybe such RNAs are mistakenly turned into targets when stalled translation complexes are resolved. Would this also mean that cells need to "learn" that some RNAs, like rRNA, are *self*?
+
+
+
+
+
+|
+|
+    
+|
+    
+=====
+
+Notes
+-----
+
+.. [#othfcts] For about 18% of *Cryptococcus* genes alternative splicing has been observed, mostly due to intron-retention (61%), which appears related to virulence [Loftus-2005]_, [Janbon-2014]_, [Huff-2014]_, [Gruetzmann-2014]_. Chromosomes in both JEC21 and H99 have large centromeres mainly consisting of repetitive sequences derived from Tcn-like transposable elements [Loftus-2005]_, [Janbon-2014]_. This repetitiveness might have lead to an underestimation of centromere length by RNA-Seq [Yadav-2018]_. Compared to viral and bacterial infections, fungal infections are relatively rare, possibly related to the body temperature of mammals as described by [Casadevall-2020]_. The high GC content of *Cryptococcus* would be in line with this, strengthening interactions between nucleic acid strands, thereby stabilizing genomic DNA at a higher temperature. Stronger binding between nucleic acids could, however, make it more difficult to accommodate dynamic interactions that occur during transcription, splicing or RNAi. The propensity for R-loop or G-quadruplex (G4) formation in GC-rich nucleic acids could complicate these processes, and possibly compensatory mechanisms will be in place in Cryptococcus not immediately found in other organisms.
+.. [#origH99GTF] Original files can be assessed via a `JGI portal <https://genome.jgi.doe.gov/portal/Cryne_H99_1/Cryne_H99_1.download.html>`_:  `genes <https://genome.jgi.doe.gov/portal/Cryne_H99_1/download/Cryptococcus_neoformans_H99.genes.gff.gz>`_ (as used in the :ref:`figure <cnag7721to03231b>`), `transcripts <https://genome.jgi.doe.gov/portal/Cryne_H99_1/download/Cryptococcus_neoformans_H99.transcripts.fasta.gz>`_ , and `CDSs <https://genome.jgi.doe.gov/portal/Cryne_H99_1/download/Cryptococcus_neoformans_H99.cds.fasta.gz>`_.
+.. [#locus] The assessment that CNAG_03231 was previously called CNAG_07721, is based on genome coordinates provided for RNA-Seq reads that mapped to CNAG_07721 by [Kim-2014]_ in their supplementary `Table S4`_ (sheet 3, entry 123).
+
+  .. table::
+
+        +-----+-------------+------+------------+--------+--------+--------+--------------------------------+
+        | no  | Feature ID  | DMSO | Chromosome | Strand | Start  | End    | Function                       |
+        +=====+=============+======+============+========+========+========+================================+
+        | 123 | CNAG_07721  | 1.20 |          8 | plus   | 399834 | 400159 | conserved hypothetical protein |
+        +-----+-------------+------+------------+--------+--------+--------+--------------------------------+
+
+.. [#consts] Settings in the configuration files, ``2_shared.txt`` and ``3_EXP.txt``, termed :term:`constant`\ s are in bold: :smc:`SETTING`.
+.. [#diffgtfbedgr] Chromosome names in the downloaded GFF3 files are not starting with "chr" while those in the bedgraph files do. For proper processing the :term:`seq_id`\s should be the same.
+.. [#simplgtf] Original GFF3 adds a chromsome name <"CN[A-N]:"> to the gene name, e.g.: ``gene_id "CNA:CNAG_00003"; gene_name "CNA:CNAG_00003"; transcript_id "CNAG_00003.t01";`` which is taken out to simplify presented annotations. Note that the file name of the output gtf is used in the ``3_h99.txt`` configuration file.
+.. [#depBio] This script depends on the Python module Bio_ [Cock-2009]_, which is not needed for |prgnam|. The required information would be in the output files from this script, ``ncRNA-pseu.gtf`` and ``mito.gtf``, and these ship with the tutorial (see ':doc:`/tutorials/H99/shared_contents_h`') and can be copied to ``Burke-2019/source/``.
+.. [#sjdbre] Collect splice junctions with: ``sh 3_1-run-star-collapsed-14mer-strict.sh h99 0 1``; the script ``sh 3_1_1-run-make-SJDB.sh`` also takes the number of mismatches as second parameter, which is by default ``0`` and therefore could be omitted here.
+.. [#output] Output of STAR_ during mapping.
+
+  .. code-block:: text
+
+        bash-5.2$ sh 4_1-run-star-uncollapsed-14mer-strict.sh h99
+        One parameter given (for experiment name); no mismatches.
+        Using alignments with 0 mismatches.
+        Splice data found, will be used for making alignments..
+        Checking STAR-folder for SRR646636 ..
+        Checking STAR-folder for SRR8697580 ..
+        Checking STAR-folder for SRR8697581 ..
+        Checking STAR-folder for SRR8697582 ..
+        ...
+        mapping SRR8697601
+        STAR --runThreadN 4 --genomeDir /<path to>/Burke-2019/star-h99 \
+         --readFilesCommand gunzip -c \
+         --readFilesIn /<path to>/Burke-2019/SRR8697601/SRR8697601-trimmed.fastq.gz \
+         --outFilterType BySJout --outSAMprimaryFlag OneBestScore 
+         --outReadsUnmapped Fastx --outMultimapperOrder Random 
+         --outSAMtype BAM Unsorted --outSAMmultNmax 1 --outFilterMismatchNmax 0 \
+         --outFilterMatchNmin 14 --outFilterScoreMinOverLread 0 \
+         --outFilterMatchNminOverLread 0 --outSJfilterOverhangMin 6 4 4 4 \
+         --outFilterMultimapNmax 50 --seedSearchLmax 28 --seedSplitMin 9 \
+         --alignIntronMin 20 --alignIntronMax 150 --alignSJoverhangMin 3 \
+         --alignSJDBoverhangMin 2 --alignEndsType EndToEnd --twopassMode None
+        STAR version: 2.7.10a_alpha_220818   compiled: 2022-09-21
+        Oct 29 21:53:43 ..... started STAR run
+        Oct 29 21:53:43 ..... loading genome
+        Oct 29 21:53:43 ..... started mapping
+        Oct 29 21:57:02 ..... finished mapping
+        Oct 29 21:57:02 ..... finished successfully
+
+.. [#readadj] A ``Read-adjustment`` for siRNA traces is not possible by lack of a constant set of siRNAs to normalize to. Mostly the levels are dictated by the rRNA signals that determine the total readcount to which other signals are normalized. Removing rRNA reads from the samples leads to enhanced, relative siRNA levels. This is exemplified when displaying ``unique`` along normal bedgraphs output by STAR_ (relevant repeats like transposons are removed from the unique bedgraphs as well, though). For GTF-based count approaches prior removal of rRNA reads is common practice (see ':doc:`/paper`) to speed up read-by-read mapping.
+.. [#flds] See comments in ``3_h99.txt`` for an explanation of the role/meaning of these fields.
+.. [#done] Done by the ``coalispr init`` command.   
+.. [#u0394] UTF8 code for 'Δ\ '.
+.. [#asdone] This setting is equivalent to the one done here during ``init``.
+.. [#alltrcs] To see all reads, pick option ``-w2``.
+.. [#rdnah99] Note that only one complete rDNA unit has been incorporated in the H99 genome (the continuous left section in Figures :ref:`5 <rdn_h99>`, and :ref:`6 <rdn_h99_cdna>`) as shown in Figure :ref:`13 <regcnt_h99rdna>`. A partial repeat of the large subunit 25S rDNA is downstream (the short right section in Figures :ref:`5 <rdn_h99>`, and :ref:`6 <rdn_h99_cdna>`).
+.. [#strtnt] The settings :smc:`BAMLOW`, :smc:`BAMHIGH` and :smc:`BAMSTART` in the ``3_h99.txt`` configuration file define the checked siRNA features.
+.. [#thrshld] Specifying reads as specific or unspecific is in relation to the used threshold settings like :smc:`UNSPECLOG10` here 0.78, a difference of ~6-fold).
+.. [#cigart] The qualification of intron-skipping reads is based on the ``N`` parameter in the :term:`cigar` string of the alignment. The reason for skipping reads for counting is also based on the cigar string. It should only describe matched nucleotides with mostly, in view of the length of the read, one internal gap larger than :smc:`MININTRON` (the skipped intron).
+.. [#71n72n74n] Gaps of 71, 72 and 74 give 265, 383 and 209 hits, resp.; pointing to 73 as the most obvious length for the intron spliced in these reads in rde2Δ.
+   
+.. _regrunexampl:
+
+.. [#regrun] Trace for the run that generated count panels for the :smc:`MINUS` strand of the figure:
+
+   .. code-block:: text     
+
+        bash-5.2$ coalispr region -c2 -r 271985, 279663 -st 3 -s2
+
+          a1_1
+                Skipped: 7818
+
+          a1_2
+                Skipped: 2810
+
+          r1_1
+                Skipped: 2145
+
+          r1_2
+                Skipped: 6073
+
+          wt_0
+                Skipped: 850
+
+          wt_1
+                Skipped: 1696
+
+          wt_2
+                Skipped: 2714
+
+          c4_1
+                Skipped: 1932
+
+          c4_2
+                Skipped: 733
+
+          e2_1
+                Skipped: 1200
+
+          e2_2
+                Skipped: 420
+
+          re1_1
+                Skipped: 3099
+
+          re1_2
+                Skipped: 2328
+
+          re2_1
+                Skipped: 5418
+
+          re2_2
+                Skipped: 9850
+
+          re3_1
+                Skipped: 10652
+
+          re3_2
+                Skipped: 18727
+
+          re4_1
+                Skipped: 5889
+
+          re4_2
+                Skipped: 20248
+
+          re5_1
+                Skipped: 5768
+
+          re5_2
+                Skipped: 3520
+
+          r6_1
+                Skipped: 487
+
+          r6_2
+                Skipped: 196
+        Sample            Library      cDNA
+        a1_1           9567157.67  74940.15
+        a1_2           8280898.83  49650.90
+        r1_1           3500283.50  56307.24
+        r1_2           5818569.31  66155.82
+        wt_0           1429203.39  29205.80
+        wt_1           2483356.90  43138.73
+        wt_2           2793111.66  46670.00
+        c4_1           1685970.08  44513.99
+        c4_2            828864.22  31669.26
+        e2_1            923545.79  39107.84
+        e2_2            354180.50  30570.28
+        re1_1          6038546.63  56257.64
+        re1_2          4826315.55  51447.41
+        re2_1          8137399.37  63894.66
+        re2_2          7681477.36  76206.80
+        re3_1         11405806.14  70610.67
+        re3_2         12266882.70  82820.17
+        re4_1          7813346.08  62386.71
+        re4_2         15429512.61  86797.03
+        re5_1          8570380.14  66718.64
+        re5_2          8382610.76  56833.83
+        r6_1            526533.19  29702.34
+        r6_2            119248.39  18477.06
+
+        Showing  counts of Library, cDNA reads for minus strand(s) of 2:271985-279663 23 samples, grouped by category. 
+        Building figure...
+        Saving to file in /<path_to>/Burke-2019/Coalispr/figures/h99/svgfigures/regions
+
+        Figure finishing.
+
+        Showing library length distributions for minus strands of region 2:271985-279663 as bar graphs for 23 separate libraries, grouped by category.
+        Building figure...
+        Saving to file in /<path_to>/Burke-2019/Coalispr/figures/h99/svgfigures/lengthcounts
+
+        Figure finishing.
+
+        Showing cDNA length distributions for minus strands of region 2:271985-279663 as bar graphs for 23 separate libraries, grouped by category.
+        Building figure...
+        Saving to file in /<path_to>/Burke-2019/Coalispr/figures/h99/svgfigures/lengthcounts
+
+        Figure finishing.
+
+.. [#regpath] The path is generated from constants (:smc:`DATA`, :smc:`EXP`, :smc:`SAVETSV`, :smc:`REGI`, :smc:`READCOUNTS`, and :smc:`TAGBAM`)
+.. [#lowsig] The length-distribution shows percentages of molecules with a given length in a sample. The cDNAs (or :term:`collapsed` reads) will only show peaks if many molecules of the same length are formed; but peaks are low when many molecules of different lengths are in the sample. Molecules outwith the range given in the figure are not shown, but are contributing towards the denominator; so many are possibly longer than 26 nt.
+.. [#recons] When starting from RNAi-null strains, restoring RNAi-activity led to the finding that siRNAs had been raised only against a subset of the usual transcripts, suggesting that particular conditions under which various transposons are expressed had not been met. Missed out were siRNAs against RNAi target(-region)s linked to Ago2. But how would wild-type cells maintain these siRNAs when grown under similar conditions?
+.. [#alirde3] In below alignment the region in red on the bottom row corresponds to *RBM0* as described in [`Elela-2018 <https://doi.org/10.1002/wrna.1521>`_]. Also note that in the catalytic core (3\ :sup:`rd` row), the RNAse III specific D3 has not been conserved in Rde3, which begs the question what enzymatic activity this protein has. Rnt1 functions as a dimer; its domain structure is shown in the inset at the top [`Elela-2018 <https://doi.org/10.1002/wrna.1521>`_].
+
+   .. figure:: /../_static/images/clustal-annot-RNT1homs.png
+      :alt: Alignment Rde3/Rnt1 homologues
+      :name: ali_rde3-rnt1
+      :align: left
+      :scale: 20%
+      :figwidth: 100%
+
+      Alignment of Rde3/Rnt1 homologues with catalytic core and RBMs annotated
+
+.. [#rapp] In mammalian cells "inefficient SRP interaction with a nascent chain triggers a mRNA quality control pathway" with AGO2 occupying the leader when SRP54 cannot recognize the exposed peptide [Karamyshev-2013]_. Linked to the pioneer round of translation, CBC binding to SRP-RNA ensures translational repression of RNC–SRP until its targeting to the ER has completed [Park-2021]_.
+.. [#parambil] [Parambil-2023]_ describes a model and findings where poorly translating transcripts are detetcted/enriched on monosomes during a pioneering round of translation involving CBP (Cap-binding proteins) and EJC (Exon-junction complex) proteins of which some co-purify with SMEDWI-1, like CBP80, ALY/REF and POLD3P/SKAR. These proteins, like Eif4A3, Y14, MAGOH, and PABPN are not present on polysomes during normal translation, which is also the case for SMEDWI-1. Thus not stalling by collapsing ribosomes on polysomes but a translation defect at an earlier stage selects target transcripts in stem-cells of planarian *Schmidtea mediterranea*. SMEDWI-1 generates sense piRNAs directly from these transcripts, which also relies on the nuclease Zucchini that is bound to the mitochondrial outer membrane. In *Cryptococcus* there are no piRNAs and no obvious homologues for Zucchini, while siRNAs appear to be sense plus antisense. Still, the pioneering round of translation is coupled to nuclear transport of spliced mRNA giving the EJC factors involved; these are conserved in *Cryptococcus*. In yeast, a kind of monosomes are formed prior to the final maturation step of 18S in the cytosol [Lebaron-2012]_ and pioneer rounds of translation linked to :term:`NMD` are occurring on both CBP80/EJC bound mRNA exported from the nucleus and on eIF4E-bound mRNA translated in the cytosol [Gao-2005]_. If similar translation checks happen in *Cryptococcus*, problematic transcripts could stall ribosomes and induce RNAi both prior to and during the modeled events (CBC-bound mRNAs can be occupied by more than one ribosome although not by as many as eIF4E-bound mRNA).
+
+
+.. _GSE43363: https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRX215659&o=acc_s%3Aa
+.. _GSE128009: https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA526042&o=acc_s%3Aa&s=SRR8697580,SRR8697581,SRR8697582,SRR8697583,SRR8697584,SRR8697585,SRR8697586,SRR8697587,SRR8697588,SRR8697589,SRR8697590,SRR8697591,SRR8697592,SRR8697593,SRR8697594,SRR8697595,SRR8697596,SRR8697597,SRR8697598,SRR8697599,SRR8697600,SRR8697601
+.. _GSE133125: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133125
+.. _GSE206758: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206758
+.. _GSM3900523: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3900523
+.. _GSM3900525: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3900525
+.. _GSM3900527: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3900527
+.. _GSM3900529: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3900529
+.. _SRP187879: https://trace.ncbi.nlm.nih.gov/Traces/sra?study=SRP187879
+.. _SRP017845: https://trace.ncbi.nlm.nih.gov/Traces/sra?study=SRP017845
+
+
+

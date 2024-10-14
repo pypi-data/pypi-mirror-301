@@ -1,0 +1,207 @@
+.. role::  raw-html(raw)
+   :format: html
+
+.. |1st| replace:: :raw-html:`1<sup>st</sup>`
+.. |2nd| replace:: :raw-html:`2<sup>nd</sup>`
+.. |targetRNA-1a|  replace:: 25S rRNA
+.. |target-1a| replace:: :raw-html:`<span class="mononorm">gta<a href="../18s-tab.html#snr50_25S" title="25S target">G</a>cgattct</span>; and, possibly, in the ETS1: <span class="mononorm">gtg<a href="../18s-tab.html#snr50_ETS1" title="ETS1?">G</a>tgattct</span>, although not fully conserved (in <i>C. gattii WM276</i> an A-C pair would occur with <span class="mononorm">gtggt<u>a</u>attct</span>)`
+.. |ortholog-1a| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300045">snR50</a> (D-guide)`
+   
+.. |targetRNA-1|  replace:: 25S rRNA
+.. |target-1| replace:: :raw-html:`<span class="mononorm">gaat<a href="../18s-tab.html#snr40l_25S" title="25S target">T</a>tgggtatagg</span>`
+.. |ortholog-1| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300059">snR40</a> (D-guide)`
+.. |targetRNA-2|  replace:: 18S rRNA
+.. |target-2| replace:: :raw-html:`<span class="mononorm">cat<a href="../18s-tab.html#snr74_18S" title="18S target">A</a>tgcttgtc</span>`
+.. |ortholog-2| replace:: :raw-html:`yeast <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300015">snR74</a>, human <a href="http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300167">SNORD27</a>`
+
+- CNAG_00458 (CNA04380) pre-mRNA contains, in the first two introns, two box C/D snoRNAs, snR50-snR40l - itself spliced - and snR74. 
+
+.. figure:: /../_static/images/snoRNAs/cnag00458_h99_igb.png
+   :name: cnag00458_h99_igb
+   :align: left
+   :width: 1389 px
+   :height: 646 px
+   :scale: 40%
+   :figwidth: 100%
+
+   Two intronic box C/D snoRNAs coded by one pre-mRNA; snR40l (inset) derives from the |1st| intron and is spliced; snR74 comes from the |2nd| intron.
+
+|
+|
+|
+
+snR50_snR40l
+============
+
+
+- snR50_snr40l_spliced-intronic-boxCDsnoRNA-101nt
+- Within |1st| intron of CNA04380 (CNAG_00458) for transcriptional regulatory protein RXT2
+- Split by an intron in *Cryptococcus* species, but not in some more distant *Tremellomycetes*.
+- Predicted target D'-guide in |targetRNA-1a|\ : |target-1a|
+- Orthologue of |ortholog-1a|
+- Predicted target D-guide in |targetRNA-1|\ : |target-1|
+- Orthologue of |ortholog-1|
+
+.. figure:: /../_static/images/snoRNAs/snR50-snR40l.png
+   :name: snR50-snR40l-align
+   :align: left
+   :width: 1673 px
+   :height: 372 px
+   :scale: 30%
+   :figwidth: 100%
+
+
+.. rst-class:: mononote
+
+>XM_024656271.1:123-222 Cryptococcus neoformans var. neoformans JEC21 expressed protein (CNA04380), mRNA :raw-html:`</br>`
+CCGGGCAAATGATTATGAACAAGAATCGCTACTCGGAGTTACGCTTTACGGAGCGGGAGACGACTAAATC :raw-html:`</br>`
+TATCTATACCCAAATTTATGATGCCCTTTT
+
+|
+|
+|
+
+snR74
+=====
+
+- snR74_intronic-boxCDsnoRNA-92nt
+- Within |2nd| intron of CNA04380 (CNAG_00458) for transcriptional regulatory protein RXT2
+- Predicted target in |targetRNA-2|\ : |target-2|
+- Orthologue of |ortholog-2|
+
+.. figure:: /../_static/images/snoRNAs/snr74.png
+   :name: snr74-align
+   :align: left
+   :width: 1053 px
+   :height: 294 px
+   :scale: 40%
+   :figwidth: 100%
+
+
+.. rst-class:: mononote
+
+>AE017341.1:1178296-1178387 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence :raw-html:`</br>`
+TTGCCTATGATTCTACAAAAAAATCATGACAAGCATATGTAGGACCCATTGGGAATGACTACAACGTTTT :raw-html:`</br>`
+CCAATTCTGTATGACGGCTTCT
+
+|
+|
+|
+|
+|
+|
+
+=======
+
+- Image source snR50_snR40l:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June, August 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Annot/1-51                 --------RTGATGA------------------------------------------------------------UCUUAGCGATG-CTGA------------------------------RTGATGA----------ggAUAUGGGUUUAAGCTGA---------
+        #=GS snR50_snR40l/1-100 DE spliced XM_024656271.1:123-222 Cryptococcus neoformans var. neoformans JEC21 expressed protein (CNA04380), mRNA
+        snR50_snR40l/1-100         CCGGGCAAATGATTA------------------------------------------------------TGAACAAGAATCGCTACTCGGAG-TTACG-----CTTTA-----CGGAGCGGGAGACGACT-AAATCTATCTATACCCAAATTTATGATGCCCTTTT
+        #=GS H99/1-101 DE CNAG_00458_a-spliced-intronic-snoRNA 1: [1,187,820 - 1,187,907] (+87) + 1: [1,187,959 - 1,187,973] (+14)
+        H99/1-101                  CCGGGCAAATGATTA------------------------------------------------------TGAACAAGAATCGCTACTCGCGAGTTACG-----CTTTA-----CGGAGCGGGAGACGACT-AAATCTATCTATACCCAAATTTATGATGCCCTTTT
+        #=GS CutArb/1-92 DE BEDW01000003.1:1640118-1640209 Cutaneotrichosporon arboriformis DNA, scaffold: scaffold_3, strain: JCM_14201, whole genome shotgun sequence
+        CutArb/1-92                CTTCGCAAAGGATTA------------------------------------------------------TCGACAAGAATCGCTACTCGCGACGCC--------TTCG---------GGCGAAGACGACT-CAATCTATCTATACCCAAATTTATGATGCCCAT--
+        #=GS CutDer/2-88 DE JAIGNX010000001.1:5182216-5182307 Cutaneotrichosporon dermatis strain NICC30027 Scaffold1_1, whole genome shotgun sequence
+        CutDer/2-88                TCCTCTAAAGGATTA------------------------------------------------------CCAACAAGAATCGCTACTCGCGACGCC--------TCCG---------GGCAAAGACGACT-TAATCTATCTATACCCAAATTTATGATG-------
+        #=GS CutDer/1-91 DE JAMALL010000002.1:1479144-1479234 Cutaneotrichosporon dermatis strain M4303A ctg_2, whole genome shotgun sequence
+        CutDer/1-91                CCTTCTAAAGGATTA------------------------------------------------------CCAACAAGAATCGCTACTCGCGACGCC--------TCAG---------GGCAAAGACGACT-TAATCTATCTATACCCAAATTTATGATGCTCT---
+        #=GS CutMuc/1-91 DE BCJT01000003.1:1300873-1300963 Cutaneotrichosporon mucoides DNA, scaffold: scaffold_2, strain: JCM 9939, whole genome shotgun sequence
+        CutMuc/1-91                CCTTCTAAAGGATTA------------------------------------------------------CCAACAAGAATCGCTACTCGCGACGCC--------TCCG---------GGCAAAGACGACT-TAATCTATCTATACCCAAATTTATGATGCTCT---
+        #=GS CutCut/1-90 DE JAMALK010000055.1:c65414-65325 Cutaneotrichosporon cutaneum strain P1411 ctg_55, whole genome shotgun sequence
+        CutCut/1-90                CTTCCAAAAGGATTA-------------------------------------------------------CGAAAAGAATCGCTACTCGCGACGCC--------TCCG---------GGCAAAGACGACT-CAAT-TATCTATACCCAAATTTATGATGCTCTT--
+        #=GS CutCur/1-92 DE NIUX01000016.1:309326-309417 Cutaneotrichosporon curvatum strain ATCC 10567 Contig016, whole genome shotgun sequence
+        CutCur/1-92                CTCAGCATATGATTA-----------------------------------------------------TCATAGAAGAATCGCTACTCGTGACTGCC-------TACG---------GGCAAAGACGATT-GAAT-TATCTATACCCAAATTTATGATGCCCA---
+        #=GS CutDas/1-90 DE BEDX01000004.1:1151085-1151174 Cutaneotrichosporon daszewskae DNA, scaffold: scaffold_4, strain: JCM_11166, whole genome shotgun sequence
+        CutDas/1-90                CCCTGCAGAAGATTA-----------------------------------------------------TTTAGAAAGAATCGCTACTCGTA-CGCC--------TACG---------GGCAAAGACGACT-CAAT-TATCTATACCCAAATTTATGATGCGCC---
+        #=GS VanFra/2-93 DE BEDY01000003.1:c2241095-2241003 Vanrija fragicola DNA, scaffold: scaffold_3, strain: JCM 1530, whole genome shotgun sequence
+        VanFra/2-93                CTACGCGCGTGATTA-----------------------------------------------------TTATAGAAGAATCGCTACTCGTA-TGCC--------TTCG---------GGTGAAGACGATT-GAAT-TATCTATACCCAAATTTATGATGCCCACA-
+        #=GS VanHum/2-92 DE QKWK01000005.1:c572618-572527 Vanrija humicola strain CBS 4282 CBS4282_scaffold05, whole genome shotgun sequence
+        VanHum/2-92                CCACGCGCGTGATTA------------------------------------------------------TCCAAAAGAATCGCTACTCGAGATGCCC-------TTCG-------GGGCATAAGACGACT-CAATCTATCTATACCCAAATTTATGATGC------
+        #=GS VanPse/2-94 DE CP086717.1:1614937-1615030 Vanrija pseudolonga isolate DUCC4014 chromosome 4
+        VanPse/2-94                CCACGCGCGTGATTA------------------------------------------------------TCCAAAAGAATCGCTACTCGAGATGTCC-------TTCG-------GGGCATAAGACGACT-CAATCTATCTATACCCAAATTTATGATGCCC----
+        #=GS VanTs1/2-94 DE JAPKIE010000012.1:c70183-70090 Vanrija sp. TS_01 NODE_12_length_840935_cov_52.561061, whole genome shotgun sequence
+        VanTs1/2-94                CCACGCGCGTGATTA------------------------------------------------------TCCAAAAGAATCGCTACTCGAGATGTCC-------TTCG-------GGGCACAAGACGACT-CAATCTATCTATACCCAAATTTATGATGCTC----
+        #=GS ApiAki/2-90 DE PQXP01000025.1:81032-81121 Apiotrichum akiyoshidainum strain HP2023 Contig607, whole genome shotgun sequence
+        ApiAki/2-90                ACGCCTAGAGGATTA------------------------------------------------------TCATAAAGAATCGCTACTCGAGAAGCC--------TACG--------GGCTGAAGCCGACT-CAATCTATCTATACCCAAATTTATGATGC------
+        #=GS ApiMyc/2-93 DE CP049826.1:c2732774-2732682 Apiotrichum mycotoxinovorans strain GMU1709 chromosome VI
+        ApiMyc/2-93                TTTCCCAAATGATTA------------------------------------------------------TCAAAAAGAATCGCTACTCGAGATGCC--------TACG--------GGCAAAAGCCGACT-AAATCTATCTATACCCAAATTTATGATGCGCT---
+        #=GS ApiSia/1-92 DE JALJEG010000020.1:223877-223968 Apiotrichum siamense strain L8in5 NODE_20_length_340952_cov_11.484304, whole genome shotgun sequence
+        ApiSia/1-92                CCGGCCAAATGATTA------------------------------------------------------TTATCAAGAATCGCTACTCGAGATGCCC--------AC--------GGGCACTAGACGACTACAATCTATCTATACCCAAATTTATGATGTCC----
+        #=GS ApiBra/1-91 DE JAMALJ010000017.1:c171329-171239 Apiotrichum brassicae strain M2204 ctg_17, whole genome shotgun sequence
+        ApiBra/1-91                CCTCTCAAATGATTA------------------------------------------------------TCATCAAGAATCGCTACTCGAGATGCCC--------AC--------GGGCA-AAGACGACTAAATCTTATCTATACCCAAATTTATGATGCTC----
+        #=GS KwoPin/2-103 DE ASCL01000001.1:373680-373782 Kwoniella pini CBS 10737 cont1.1, whole genome shotgun sequence
+        KwoPin/2-103               TAGAACAAATGATTA-----------------------------------------------------TCGACAAAGAATCGCTACTCGAGAATTACTTCCCCGTAAAAA----GGGATGTCTGACGACTAAATCTTATCTATACCCAAATTTATGATG-------
+        #=GS KwoDej/1-104 DE ASCJ01000001.1:449132-449235 Kwoniella dejecticola CBS 10117 cont1.1, whole genome shotgun sequence
+        KwoDej/1-104               CCGAACAAATGATTA-----------------------------------------------------TCGACAAAGAATCGCTACTCGAGAGTTACTTCCCCGTCAAAC----GGGATGGCAGACGACTAAATCTTATCTATACCCAAATTTATGATGTT-----
+        #=GS KwoBes/2-107 DE ASCK01000006.1:c430418-430312 Kwoniella bestiolae CBS 10118 cont1.6, whole genome shotgun sequence
+        KwoBes/2-107               CCATACAAATGATTA-----------------------------------------------------TCGACAAAGAATCGCTACTCGAGAGTTACTTCCCCGTCAAAA----GGGATGGCAGACGACTAAATCTTATCTATACCCAAATTTATGATGTTTT---
+        #=GS PapTer/2-97 DE spliced JAHXHD010000365.1:49-261 Papiliotrema terrestris strain LS28 scaffold-364, whole genome shotgun sequence
+        PapTer/2-97                CTTCGCATATGATTA------------------------------------------------------TCCAAAAGAATCGCTACTCGCGACGCAG-------TACG--------CTGCAAAGACGACT-CAATCTATCTATACCCAAATTTATGATGCTCCCTC
+        #=GS CryFag/1-98 DE spliced BCHU01000011.1:679683-679898 Cryptococcus fagi DNA, scaffold: scaffold_10, strain: JCM 13614, whole genome shotgun sequence
+        CryFag/1-98                CTCTGCATATGATTA------------------------------------------------------TTACGAAGAATCGCTACTCGAGATAACC------TTTAGG-------GGTTGAAGACGACT-CAATCTATCTATACCCAAATTTATGATGCACTACC
+        #=GS CryFla/1-95 DE spliced CAUG01000707.1:3531-3761 Cryptococcus flavescens NRRL Y-50378 WGS project CAUG00000000 data, contig NODE_3116_length_65704_cov_47_134769, whole genome shotgun sequence
+        CryFla/1-95                CCCTGCATATGATTA------------------------------------------------------TCCAAAAGAATCGCTACTCGCGAGCAG--------TTCG--------CTGCAAAGACGACT-CAATCTATCTATACCCAAATTTATGATGCTCCCAC
+        #=GS SacCer-snR50/1-90 DE http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300045
+        SacCer-snR50/1-90          ---TTAGAATGATGAAAGAGGTAGCAATTTGCAGCAGATTTTTCGTGATTGAATCAAACAAAGATTAACCTTTACAGAACCGCTACACTGATA-------------------------------------------------------------------------
+        #=GS SacCer-snR40/1-97 DE Saccharomyces cerevisiae snR40 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300055
+        SacCer-snR40/1-97          ----GTAAATGACGAG----------------------------------------------------AAAAAAGCTGTGCACCAGTCTGAACATGGATGCCACAAGTACTCAGGTGTCCTATGAAGCAT------TAAGTATACCCAAATTTCTGATC-------
+        //      
+
+
+- Image source snR74:
+  
+.. rst-class:: asfootnote
+
+::
+
+        # STOCKHOLM 1.0
+        #=GF RW van Nues, June 2023
+        #=GF https://coalispr.codeberg.page/paper
+        Annot/1-34                ------RTGATGA-----------------CUGUUCGUAUAC-CTGA---------------RTGATGA-------------------------CTGA----------
+        #=GS snR74/1-92 DE in CNA04380-2 AE017341.1:1178296-1178387 Cryptococcus neoformans var. neoformans JEC21 chromosome 1, complete sequence
+        snR74/1-92                TTGCCTATGATTCTAC---AAAAAAATCATGACAAGCATATGTAGGACCC--ATT---GGGAATGACTACAACG-----TTTTCCAATT-CTGTATGACGGCTTCT--
+        #=GS CNAG_00458_b/1-94 DE 1: [1,188,115 - 1,188,211] (+96)
+        CNAG_00458_b/1-94         TTGCCTATGATTTTAC----AAAAAATCATGACAAGCATATGTAGGACCC--ATT---GGGACTGACTGCAACA-----TTTTCCAATTTCTGTATGAGGCTTCTGGA
+        #=GS R265/1-93 DE CP025761.1:c1065869-1065777 Cryptococcus gattii VGII R265 chromosome 3, complete sequence
+        R265/1-93                 TTGCCTATGATTATGA---AAAAAAATCATGACAAGCATATGTAGGACCC--TCT---GGGACTGACTACAACG-----TTTTCCAATTGCTGTATGACGGCTTCT--
+        #=GS WM276/1-92 DE CP000286.1:915839-915930 Cryptococcus gattii WM276 chromosome A, complete sequence
+        WM276/1-92                TTGCCTATGATTATGA----AAAAAATCATGACAAGCATATGTAGGACCC--TCT---GGGACTGACTACAACG-----TTTTCTAATTGCTGTATGACGGCGTCT--
+        #=GS CryDep/1-92 DE AWGL01000003.1:c1121737-1121646 Cryptococcus depauperatus CBS 7855 supercont2.3, whole genome shotgun sequence
+        CryDep/1-92               TTGCCTGTGATTATAC----AAAAAATCATGACAAGCATATGTAGGACTC--TTCG--GAGGCTGACTACAAAC----TTTTTCCAACTGCTGTATGATGGCTT----
+        #=GS CryAmy/2-92 DE MEKH01000011.1:c766805-766714 Cryptococcus amylolentus CBS 6273 supercont2.11, whole genome shotgun sequence
+        CryAmy/2-92               ACGCCAATGATTATAC----AAAAAATCAAGACAAGCATATGTAGGACCT---TC---GGGGCTGACTACACAC----TTTTTCCAACTGCTGTATGACGGCTTC---
+        #=GS KwoHev/2-97 DE ASQC01000059.1:c110656-110560 Kwoniella heveanensis CBS 569 cont2.59, whole genome shotgun sequence
+        KwoHev/2-97               GCGCCAATGATTATACCT---AAAAACCAAGACAAGCATATGTAGGACCCC--TT--GGGGACTGACTACAAAGTTTTTATTTCCAACTGCTGTATGATGGCT-----
+        #=GS KwoBes/2-95 DE ASCK01000006.1:c430122-430028 Kwoniella bestiolae CBS 10118 cont1.6, whole genome shotgun sequence
+        KwoBes/2-95               CCGCCAAGGATTATAC---ACAAAAACCATGACAAGCATATGTAGGACCC--TTCG--GGGACTGACTATAAAGTTT--TTTTCCAACTGCTGTATGATGGCT-----
+        #=GS CryGC_3/2-87 DE JALPCB010000199.1:28704-28790 Cryptococcus sp. GC_Crypt_3 iso00_45_199, whole genome shotgun sequence
+        CryGC_3/2-87              ACGCCTCTGATTATAC---AAAATACCTTTGACAAGCATATGTAGGACC---TTTT---GGATTGACTACAACT--------CACAACTGCTGTATGATGGCT-----
+        #=GS NaeAur/2-89 DE JAKFAO010000012.1:610019-610107 Naematelia aurantialba strain NX-20 Contig12, whole genome shotgun sequence
+        NaeAur/2-89               CTTTTCATGATTATAC---AAAATTACAAAGACAAGCATATGTAGGACCC--TTCT--GGGACTGACTACTT----------CACAACTGCTGTATGACTCTTCT---
+        #=GS NaeEnc/3-93 DE MCFC01000039.1:c51469-51377 Naematelia encephala strain 68-887.2 BCR39scaffold_39, whole genome shotgun sequence
+        NaeEnc/3-93               CCATTCATGATTATAC---AAAATTACAAAGACAAGCATATGTAGGACCC--TTCT--GGGACTGACTACTT----------CACAACTGCTGTATGACTCATCCCTC
+        #=GS TreTar/1-83 DE CAJHEQ010000458.1:c4350-4254 MAG: Tremellales sp. Tagirdzhanova-0007 genome assembly, contig: TREM_458, whole genome shotgun sequence
+        TreTar/1-83               ----CAAGGATTATAC---------AAAAAGACAAGCATATATAGGATCC--TTCG--GGAACTGACTACC--------TTTTACAACTGCTGTATGACTTTGCGCAT
+        #=GS ApiBra/1-92 DE JAMALJ010000017.1:c171014-170915 Apiotrichum brassicae strain M2204 ctg_17, whole genome shotgun sequence
+        ApiBra/1-92               -TCCTCCTGATTAAACAC--ATAAAATTTTGACAAGCATATGTAGGATCCTCTTCGGAGGGACTGACTACAACC------------TTTGCGA-ATGATTCTATTCTT
+        #=GS TriInk/1-90 DE >QAEE01000291.1:c4649-4560 Trichosporon inkin strain ATCC 18020 NODE_295_length_6394_cov_5.25851_ID_77302, whole genome shotgun sequence
+        TriInk/1-90               --CATCATGATTAGACAT-AAAAACATTAAGACAAGCATATGTAGGACTCT-CTCGGAGGGACTGACTACACCC-----------TAATGCGA-ATGATCCTTTCC--
+        #=GS SaiPod/3-90 DE RSCD01000022.1:40978-41069 Saitozyma podzolica strain DSM 27192 scaffold_22, whole genome shotgun sequence
+        SaiPod/3-90               TTCTTCATGATTATAC---AAATACAAAACGACAAGCATATGTAGGACCC--TTC---GGGACTGACTACACCG------------TTTTTCGTATGACCTCGACACC
+        #=GS PapLau/2-92 DE JDSR01000163.1:7045-7138 Papiliotrema laurentii RY1 contig_171, whole genome shotgun sequence
+        PapLau/2-92               CAACTCGTGATTATTAC---AAAACATAAAGACAAGCATATGTAGGATCTC-TTCG-GAGGACAGACTACAACG------------TTTTTCGTATGACTCACACTCG
+        #=GS DioHun/2-90 DE JAMRJJ010000001.1:c518648-518555 Dioszegia hungarica strain Y1 Contig1, whole genome shotgun sequence
+        DioHun/2-90               CTTTTCATGATTATTC----AAACCAATTTGACAAGCATATGTAGGACCC--TTCG--GGGACTGACTACATTGA-----------TTACCTGTATGACTACTAGAAT
+        #=GS SacCer-snR74/1-88 DE Saccharomyces cerevisiae snR74 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Saccharomyces_cerevisiae300015
+        SacCer-snR74/1-88         -TGCAGAAGATGAAACAAATTACTCAAATAGACAAGCATATGTCTGATCT---TC---ATGATTGAAAAGAG------------CAATTAGTGTCTGATGCAATTTA-
+        #=GS SNORD27/1-72 DE Homo sapiens SNORD27 http://snoopy.med.miyazaki-u.ac.jp/snorna_db.cgi?mode=sno_info&id=Homo_sapiens300167
+        SNORD27/1-72              -ACTCCATGATGAACAC--------AAAATGACAAGCATATGGCTGAACTT--TC-----AAGTGATGTCAT---------------CTTACTACTGAGAAGT-----
+        //

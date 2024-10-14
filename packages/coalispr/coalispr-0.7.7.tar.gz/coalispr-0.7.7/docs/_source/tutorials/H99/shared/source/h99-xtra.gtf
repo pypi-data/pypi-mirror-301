@@ -1,0 +1,39 @@
+##gff-version 2
+# positions of genes previously referred to by Dumesic-2013 (https://dx.doi.org/10.1016/j.cell.2013.01.046) retrieved by
+# blasting mRNA sequence for genes in genome version of 01-OCT-2014 retrievable from https://www.ncbi.nlm.nih.gov/nuccore/ 
+# or from supporting Table S4 of Kim-2014 (https://dx.doi.org/10.1371/journal.pone.0089122)
+# differ from or are present in gtf Wallace-2020 (https://doi.org/10.1093/nar/gkaa060)
+
+#1	NCBI	exon	123520	124551	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #346908	347195
+#1	NCBI	exon	124606	124849	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347247	347384
+#1	NCBI	exon	124901	125254	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347437	347548
+#1	NCBI	exon	125306	125441	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347604	347892
+#1	NCBI	exon	125494	125605	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347604	347892
+#1	NCBI	exon	125661	125949	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347604	347892
+#1	NCBI	exon	126005	126194	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347604	347892
+#1	NCBI	exon	126248	126829	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347604	347892
+#1	NCBI	exon	126915	127213	.	+	.	gene_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; transcript_id "CNAG_06757 (XM_012197532), opposite ncRNA CNAG_12019"; #347604	347892
+#1	Kim	exon	1525900	1528108	.	-	.	gene_id "CNAG_00594 lipid particle protein"; transcript_id "CNAG_00594 lipid particle protein";
+#2	NCBI	exon	264264	264450	.	-	.	gene_id "CNAG_06705 (XM_012191751)"; transcript_id "CNAG_06705 (XM_012191751)";
+#2	NCBI	exon	264516	264607	.	-	.	gene_id "CNAG_06705 (XM_012191751); with homology to CNAG_04590"; transcript_id "CNAG_06705 (XM_012191751); with homology to CNAG_04590";
+#2	NCBI	exon	264651	265010	.	-	.	gene_id "CNAG_06705 (XM_012191751); with homology to CNAG_00229"; transcript_id "CNAG_06705 (XM_012191751); with homology to CNAG_00229";
+#5	NCBI	exon	92004	92146	.	+	.	gene_id "CNAG_06844 (XM_012194202), opposite ncRNA CNAG_12415"; transcript_id "CNAG_06844 (XM_012194202), opposite ncRNA CNAG_12415";
+#5	NCBI	exon	92184	92580	.	+	.	gene_id "CNAG_06844 (XM_012194202), opposite ncRNA CNAG_12415"; transcript_id "CNAG_06844 (XM_012194202), opposite ncRNA CNAG_12415";
+#5	RWvN	exon	92580	92807	.	+	.	gene_id "extra region CNAG_06844 (XM_012194202), opposite ncRNA CNAG_12415"; transcript_id "extra region CNAG_06844 (XM_012194202), opposite ncRNA CNAG_12415";
+#from Cryptococcus_neoformans_var_grubii_h99.CNA3.40.gtf, no longer annotated by Wallace-2020
+5	ena_RWvN	exon	41490	42963	.	-	.	gene_id "pseudo-CNAG_06863"; transcript_id "pseudo-CNAG_06863; AFR94616"; exon_number "1"; gene_source "ena"; gene_biotype "protein_coding"; transcript_source "ena"; transcript_biotype "protein_coding"; exon_id "AFR94616-1";
+5	ena_RWvN	exon	41274	41426	.	-	.	gene_id "pseudo-CNAG_06863"; transcript_id "pseudo-CNAG_06863; AFR94616"; exon_number "2"; gene_source "ena"; gene_biotype "protein_coding"; transcript_source "ena"; transcript_biotype "protein_coding"; exon_id "AFR94616-2";
+5	ena_RWvN	exon	40752	41221	.	-	.	gene_id "pseudo-CNAG_06863"; transcript_id "pseudo-CNAG_06863; AFR94616"; exon_number "3"; gene_source "ena"; gene_biotype "protein_coding"; transcript_source "ena"; transcript_biotype "protein_coding"; exon_id "AFR94616-3";
+8	Kim	exon	399834	400159	.	+	.	gene_id "CNAG_07721"; transcript_id "CNAG_07721";
+#11	NCBI	exon	606526	606677	.	-	.	gene_id "CNAG_07596 (XM_012197532)"; transcript_id "CNAG_07596 (XM_012197532)";
+#11	NCBI	exon	606933	607042	.	-	.	gene_id "CNAG_07596 (XM_012197532)"; transcript_id "CNAG_07596 (XM_012197532)";
+#11	NCBI	exon	607100	607289	.	-	.	gene_id "CNAG_07596 (XM_012197532)"; transcript_id "CNAG_07596 (XM_012197532)";
+#11	NCBI	exon	607344	607388	.	-	.	gene_id "CNAG_07596 (XM_012197532)"; transcript_id "CNAG_07596 (XM_012197532)";
+#14	NCBI	exon	764685	764700	.	+	.	gene_id "CNAG_07888 (XM_012198547) as CNH02505"; transcript_id "CNAG_07888 (XM_012198547) as CNH02505";
+#14	NCBI	exon	764753	765462	.	+	.	gene_id "CNAG_07888 (XM_012198547) as CNH02505"; transcript_id "CNAG_07888 (XM_012198547) as CNH02505";
+#14	NCBI	exon	765527	765698	.	+	.	gene_id "CNAG_07888 (XM_012198547) as CNH02505"; transcript_id "CNAG_07888 (XM_012198547) as CNH02505";
+# created by genbank2gtf.py on 26-08-2024
+extra	NAT_G418_HYG	exon	366	941	.	+	.	gene_id "NAT from JF295006"; transcript_id "NAT from JF295006";
+extra	NAT_G418_HYG	exon	4661	5236	.	+	.	gene_id "NAT from AY483215"; transcript_id "NAT from AY483215";
+extra	NAT_G418_HYG	exon	5240	6034	.	+	.	gene_id "G418 from JF295004"; transcript_id "G418 from JF295004";
+extra	NAT_G418_HYG	exon	6037	7062	.	+	.	gene_id "HYG from JF295005"; transcript_id "HYG from JF295005";

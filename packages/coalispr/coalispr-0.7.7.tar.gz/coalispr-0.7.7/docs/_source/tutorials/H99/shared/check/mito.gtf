@@ -1,0 +1,15 @@
+##gff-version 2
+# created by genbank2gtf.py on 30-12-2022
+MT	CP003834	exon	20	2196	.	+	.	gene_id "CNAG_09000"; transcript_id "CNAG_09000"
+MT	CP003834	exon	725	1291	.	+	.	gene_id "CNAG_09001"; transcript_id "CNAG_09001"
+MT	CP003834	exon	2380	4679	.	+	.	gene_id "CNAG_09002"; transcript_id "CNAG_09002"
+MT	CP003834	exon	5482	6189	.	+	.	gene_id "CNAG_09003"; transcript_id "CNAG_09003"
+MT	CP003834	exon	9654	10493	.	+	.	gene_id "CNAG_09004"; transcript_id "CNAG_09004"
+MT	CP003834	exon	10721	12172	.	+	.	gene_id "CNAG_09005"; transcript_id "CNAG_09005"
+MT	CP003834	exon	12742	14730	.	+	.	gene_id "CNAG_09006"; transcript_id "CNAG_09006"
+MT	CP003834	exon	15069	15677	.	+	.	gene_id "CNAG_09007"; transcript_id "CNAG_09007"
+MT	CP003834	exon	18327	19160	.	+	.	gene_id "CNAG_09008"; transcript_id "CNAG_09008"
+MT	CP003834	exon	19670	21256	.	+	.	gene_id "CNAG_09009"; transcript_id "CNAG_09009"
+MT	CP003834	exon	21963	23462	.	+	.	gene_id "CNAG_09010"; transcript_id "CNAG_09010"
+MT	CP003834	exon	23462	23842	.	+	.	gene_id "CNAG_09011"; transcript_id "CNAG_09011"
+MT	CP003834	exon	24096	24851	.	+	.	gene_id "CNAG_09012"; transcript_id "CNAG_09012"

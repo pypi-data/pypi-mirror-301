@@ -1,0 +1,9 @@
+Run	Exp_Name	PerDropBox	Short	Category	Group	Method	Condition
+SRR6442834	ESC_Nuc_dox_1	dox_Nuc_1	A2n_1	S	A2n	rip2	
+SRR6442835	ESC_Nuc_dox_2	dox_Nuc_2	A2n_2	S	A2n	rip2	
+SRR6442837	ESC_Nuc_nodox_1	no_dox_Nuc_1	n_1	U	n	rip2	
+SRR6442838	ESC_Nuc_nodox_2	no_dox_Nuc_1	n_2	U	n	rip2	
+SRR6442840	ESC_Total_dox_1	dox_Cyt_1	A2t_1	S	A2t	rip2	
+SRR6442841	ESC_Total_dox_2	dox_Cyt_2	A2t_2	S	A2t	rip2	
+SRR6442843	ESC_Total_nodox_1	no_dox_Cyt_1	t_1	U	t	rip2	
+SRR6442844	ESC_Total_nodox_2	no_dox_Cyt_2	t_2	U	t	rip2	
