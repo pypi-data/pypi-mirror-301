@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dopynion
+Version: 0.1.0
+Summary: Dominion
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dopynion
+Dominion in Python
