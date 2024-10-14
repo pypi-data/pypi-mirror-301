@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: dnsconfigurator
+Version: 1.1.0
+Summary: A DNS management tool to mange DNS setup for domains
+Author: Kristian Hougaard
+Author-email: khougaard@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: colorlog
+Requires-Dist: cerberus
+Requires-Dist: requests
+Requires-Dist: tldextract
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# dnsconfigurator
+![GitLab Build Status](https://gitlab.com/ougar/dnsconfigurator/badges/main/pipeline.svg)
+
+Python package I use to configure the DNS of my domain names. Keep a local DNS
+configuration files - covering all my domains - up to date and use DNS
+providers API to apply the configuration. 
+
+So if you have many domains and wish a single place to keep the configuration,
+I think this is a good tool
+
+## Features
+* IP's can be defined once with an alias, so if an IP changes, I can just make
+  a single edit here, and that will automatically propagate to all my domains.
+* The config has a default section, so since all my domains share MX
+  configuration and they all need both a "www" and a "test" subdomain, I can
+  just add that to my default configuration, and it will automatically be
+  applied to all my domains.
+* I often add and remove subdomains. This way I have simple way to check if my
+  web-server configuration matches my DNS configuration.
+* This package can also be used to create TXT DNS records to Certbot, so I can
+  automatically create and renew SSL certificates using DNS challenges.
+
+## How to use
+Install the package. Look at the sample configuration. Create your own domain
+DNS configuration file, select a DNS provider, get an API key, deploy the
+configuration.
+
+## Configuration
+The idea of the package is to be able to have a single DNS configuration file,
+where you define your DNS configuration for all your domains - no matter which
+DNS provider you use for the individual domains.
+
+Check the sample config file using `dnsconfigurator sample` or `python -m dnsconfigurator
+sample`.
+
+Create you own configuration file and try the various commands. The default
+config file is `dns_config.yaml` but you can specify another with the -f
+option.  I hope to add better config file validation and a specific validate
+command. To check your config now just check what DNS records dnsconfigurator
+would make on your domain with:  
+`dnsconfigurator local DOMAIN`
+
+## Remote authentification
+To access the DNS providers you need to authenticate. The specific providers
+needs specific authentication, which is handled in the provider-modules. Each
+provider module needs specific tokens or values defined as environment
+variables.
+
+Usually I use API_{PROVIDER} as the name of the env variable with the API
+token.  I also use CloudFlare as provider, and this provider needs en EMAIL
+variable as well. I use environment variables, because I hate having config
+files with secrets laying around, so I prefer to extract secrets from various
+password managers and store them as environment variables just while the
+program is running.
+
+Other means of authenticating (like config files) or using better methods like
+vault or password managers could be an improvement.
+
+## Commands to use
+ * `list`  
+   Show the domain names defined in your configuration file (and the provider)
+ * `status`  
+   Show all domains AND check if local configuration matches the remote
+   configuration or if the domain needs an update.
+ * `provider FQDN`  
+   Show which provider is used for a domain (possibly with subdomain added).
+   This is used to let tools know which credentials they need to create, before
+   they can make changes to this domain.
+ * `local DOMAIN`  
+   Show the local configuration for a domain
+ * `remote DOMAIN`  
+   Show the remote configuration for a domain
+ * `compare DOMAIN`  
+   Compare the local and remote configuration and show what an update would do
+ * `update DOMAIN`  
+   Run the synchronization setting the remote DNS records to match the local
+   configuration
+ * `dnscert DOMAIN CHALLENGE`  
+   Add (or remove) special acme-challenge Certbot TXT records for creating or
+   renewing SSL certificates.
+
+## Examples
+The package includes a simple configuration file with 3 domains defined. This
+sample config can be used to try the different commands.
+
+## License
+dnsconfigurator is distributed under the MIT license
+
+## Contact
+In the completely unexpected situation, that anyone else thinks this could be
+useful, you are welcome to contact [Kristian
+Hougaard](mailto:khougaard@gmail.com)
+
+## ToDo
+* Better user documentation 
+* More tests. Only a small amount of testing is done
+* Add mock provider module for the testprovider, so remote stuff can be tested
+  and sample config can do more stuff
+* Add providers command to show which providers are supported
+* Make it simpler to add more providers
+* Add commands and entrypoints which can directly be used as Certbot hooks.
+  Maybe check if I can make it work as an "official" cerbot hook and not just
+  as a manual hook.
