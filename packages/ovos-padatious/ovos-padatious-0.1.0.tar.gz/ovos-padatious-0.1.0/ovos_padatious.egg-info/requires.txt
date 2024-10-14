@@ -1,0 +1,3 @@
+fann2<1.1.0,>=1.0.7
+xxhash
+ovos-plugin-manager>=0.0.26
