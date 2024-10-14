@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: neosync
+Version: 0.4.79
+Summary: Package for Neosync
+Author-email: evis drenova <evis@neosync.dev>
+Project-URL: Homepage, https://github.com/nucleuscloud/neosync
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
