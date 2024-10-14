@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: doona-taos-edge-model
+Version: 0.1.4
+Summary: TAOS Edge Model 예측 패키지
+Home-page: 
+Author: 이운용
+Author-email: oncloudbros@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+## 사용 방법
+
+다음과 같이 패키지를 임포트하고 사용할 수 있습니다:
+
+```python
+from doona_taos_edge_model.model_predictor import ModelPredictor
+predictor = ModelPredictor('model_uuid.dill')
+```
+
+### 테스트
+```python
+df = predictor.load_test_csv('sample_uuid.csv')
+sample_df = predictor.get_sample(df, 1)
+result = predictor.pipeline_and_predict(sample_df)
+print(result)
+```
+
+### 예측 수행
+```python
+result = predictor.pipeline_and_predict(df)
+```
+
+### 결과 출력
+```python
+print(result)
+```
+
+### 리포트 출력
+```python
+predictor.print_report()
