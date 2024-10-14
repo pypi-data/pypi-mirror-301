@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+auto_loc/qa_auto_loc.egg-info/PKG-INFO
+auto_loc/qa_auto_loc.egg-info/SOURCES.txt
+auto_loc/qa_auto_loc.egg-info/dependency_links.txt
+auto_loc/qa_auto_loc.egg-info/entry_points.txt
+auto_loc/qa_auto_loc.egg-info/requires.txt
+auto_loc/qa_auto_loc.egg-info/top_level.txt
