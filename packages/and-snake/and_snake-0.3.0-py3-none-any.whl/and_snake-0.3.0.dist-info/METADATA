@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: and-snake
+Version: 0.3.0
+Summary: A snake game by andreas
+Author: Andreas Bugge
+Author-email: andreas.horpedal_bugge@asn.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mysql-connector (>=2.2.9,<3.0.0)
+Requires-Dist: pygame (>=2.6.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+a snake game by andreas
+
+
