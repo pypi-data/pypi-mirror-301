@@ -1,0 +1,2 @@
+[console_scripts]
+xanthus = xanthus.__main__:run_main

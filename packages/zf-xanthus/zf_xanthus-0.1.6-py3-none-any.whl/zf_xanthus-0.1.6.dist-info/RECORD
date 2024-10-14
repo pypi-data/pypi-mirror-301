@@ -1,0 +1,12 @@
+xanthus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xanthus/__main__.py,sha256=7u_4PK71lnrjr_TrKdhu93cS5wK3-k8ldugB2f0VGfM,1844
+xanthus/version.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+xanthus/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xanthus/utils/chrome.py,sha256=wg7atb-r7PYFACSJyBUNJygVsg62esC6Ga7VbE0OTUQ,1322
+xanthus/utils/x.py,sha256=zqmcZfK2Zc0N0hbseDoYSzlcuS2nsN7w0uAmb3VA5rc,6146
+zf_xanthus-0.1.6.dist-info/LICENSE,sha256=3vHQzqOvBYfKQSPcbxn78stMEI8hAlweeVpHbRUEwTQ,1079
+zf_xanthus-0.1.6.dist-info/METADATA,sha256=xswfCudaIAM6x7T4boJhxTi4F1gM3_Y7q2wklV79JnE,3164
+zf_xanthus-0.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+zf_xanthus-0.1.6.dist-info/entry_points.txt,sha256=SJCuYZSqm1ngzB45Gdok4TX_7no52C8iRq8TiMZVEVY,54
+zf_xanthus-0.1.6.dist-info/top_level.txt,sha256=FqusMZ5ceLCKO8ELMF7pfWoV6XRXe2Nf_D41F70jvt8,8
+zf_xanthus-0.1.6.dist-info/RECORD,,
