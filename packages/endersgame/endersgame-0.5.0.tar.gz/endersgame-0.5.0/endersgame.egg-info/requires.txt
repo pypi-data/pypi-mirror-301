@@ -1,0 +1,9 @@
+numpy
+river
+requests
+statsmodels
+
+[tests]
+pandas_ta
+flake8
+pytest
