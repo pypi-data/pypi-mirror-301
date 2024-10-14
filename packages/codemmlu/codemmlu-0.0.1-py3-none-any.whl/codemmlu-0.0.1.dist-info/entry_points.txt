@@ -1,0 +1,2 @@
+[console_scripts]
+code-eval = codemmlu.__main__:main
