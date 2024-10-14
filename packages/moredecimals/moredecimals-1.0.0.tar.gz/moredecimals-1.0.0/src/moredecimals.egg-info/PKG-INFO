@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: moredecimals
+Version: 1.0.0
+Summary: A copy of the builtin decimal library, but without limits
+Author-email: Te Du <tdu0915@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# moredecimals
+A copy of the builtin decimal library, but without limits, i.e. decimal.Overflow errors.
