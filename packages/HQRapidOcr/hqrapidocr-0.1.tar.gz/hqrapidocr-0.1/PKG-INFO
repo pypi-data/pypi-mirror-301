@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: HQRapidOcr
+Version: 0.1
+Summary: A simple OCR SDK based on RapidOCR and Flask
+Author: Fzz
+Author-email: 1349168301@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: numpy
+Requires-Dist: rapidocr-onnxruntime
+Requires-Dist: pillow
+
+# My OCR SDK
+
+This SDK provides OCR functionality using RapidOCR and Flask.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install HQRapidOcr

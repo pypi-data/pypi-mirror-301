@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+HQRapidOcr.egg-info/PKG-INFO
+HQRapidOcr.egg-info/SOURCES.txt
+HQRapidOcr.egg-info/dependency_links.txt
+HQRapidOcr.egg-info/requires.txt
+HQRapidOcr.egg-info/top_level.txt
+MySDK/OCRProcessor.py
+MySDK/__init__.py
