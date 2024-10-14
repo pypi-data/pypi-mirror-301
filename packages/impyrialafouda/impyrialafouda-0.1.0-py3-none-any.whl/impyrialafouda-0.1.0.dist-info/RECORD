@@ -1,0 +1,13 @@
+impyrialafouda/__init__.py,sha256=t06k14R4XK77M2Em_aYMJSxbk_6nBmwLSkTIAuN8hEE,115
+impyrialafouda/utils.py,sha256=SPfRJpmo--ZYL-HXgYtENk-_IEFfQPfsgzbtkuKCr0k,456
+impyrialafouda/length/__init__.py,sha256=NOLlHCEKTJuJhsTS1FKJGDTJaEtMOD1j-GUVfKHuSKA,154
+impyrialafouda/length/api.py,sha256=6IHWP5-4ppff0UGh1cUTewZEusgrTufuet5fqo-NXGM,1206
+impyrialafouda/length/core.py,sha256=1KRmQTcxfmlCpFyTJU7kIrOM4OVjprnxMrsUHWSzoZk,1387
+impyrialafouda/weight/__init__.py,sha256=m98ArfbAMRPCQkQvNOUFpNWKxmomVQrqhAH2fwH0U4w,154
+impyrialafouda/weight/api.py,sha256=9hjBnjg0rKgTKlt9DfySh8ui4U6rp5TrOLsId1O72JQ,1211
+impyrialafouda/weight/core.py,sha256=0OwcjA9da6WyuJg5oF51Sge1ErXDUXGFxKnU6siesXE,1410
+impyrialafouda-0.1.0.dist-info/LICENSE,sha256=SwW9SKZ8kNly4t2Hx0EWO1E6h3zoS9UfACttevz454k,1067
+impyrialafouda-0.1.0.dist-info/METADATA,sha256=gnZUln6suy-uhBJYg_CWNRWefMhnWEC5242e6F1RLZI,928
+impyrialafouda-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+impyrialafouda-0.1.0.dist-info/top_level.txt,sha256=cYZiNiKlxMhQ73jYweU-07x6EjjmNasBCNHPmEcIrvY,15
+impyrialafouda-0.1.0.dist-info/RECORD,,
