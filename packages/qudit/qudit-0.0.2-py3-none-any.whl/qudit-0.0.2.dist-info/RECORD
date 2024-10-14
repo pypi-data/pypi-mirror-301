@@ -1,0 +1,13 @@
+qudit/__init__.py,sha256=MW9iiZXx8FSBKXaYD8hLcsMBmQIMc8RsY0MiBJnyRbE,64
+qudit/algebra.py,sha256=LwvDGRN0sjrtg0ZgORdsJr48fYqr-st-7o2zZeAjo5Y,1741
+qudit/gates.py,sha256=orz8ER5yX0iXDZTK7_hGrVzp7jHnyS9xw5O-c8CIOhg,2558
+qudit/qdits.py,sha256=BStmRVeXqMdij-GGFlWDi7M8iYLVxnJ5aKmmxcaKUWw,1739
+qudit/tools/__init__.py,sha256=cWm-LpuFxht-fJasrnL8nqaJ9gHdvhUCZRjFnhWpBmY,331
+qudit/tools/entanglement.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qudit/tools/measures.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qudit/tools/metrics.py,sha256=GRaw0B9v6dQxomNPCpGuTOHugMdp9mTqYRnokpfLTaQ,534
+qudit/tools/tests.py,sha256=ymEz0_w9adyTHkh2e3qYQiPKK6q7WJ8oCTqyPRwgXaI,465
+qudit-0.0.2.dist-info/METADATA,sha256=16R-knGc_dkO18us_RrBawTb6SVawEMdsU1sp-wt1q4,1469
+qudit-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+qudit-0.0.2.dist-info/top_level.txt,sha256=rVwfZYDGBXlEeTyhiD1sNPpWqFX1Sx9kSlPrn5sdZZM,6
+qudit-0.0.2.dist-info/RECORD,,
