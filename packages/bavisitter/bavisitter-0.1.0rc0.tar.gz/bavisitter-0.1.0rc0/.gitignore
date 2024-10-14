@@ -1,0 +1,20 @@
+node_modules
+.venv
+dist
+
+# Python
+__pycache__
+.ipynb_checkpoints
+
+bavisitter/static
+artifacts
+.env
+
+
+
+.coverage*
+
+script
+*.zip
+
+.DS_Store
