@@ -1,0 +1,19 @@
+[project]
+name = "melid"
+version = "1.0.6"
+description = "Melid is a PyQt5 Library for Desktop Applications containing commonly used utils and advanced widget implementations in very simple forms."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pyqt5>=5.15.11"]
+authors = [
+  { name = "Mohammed Al-Ameen", email = "ameenmohammed2311@gmail.com" },
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/struckchure/melid"
+"Bug Tracker" = "https://github.com/struckchure/melid/issues"
