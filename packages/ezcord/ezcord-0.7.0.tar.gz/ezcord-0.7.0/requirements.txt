@@ -1,0 +1,5 @@
+aiocache
+aiohttp
+aiosqlite
+colorama
+python-dotenv
