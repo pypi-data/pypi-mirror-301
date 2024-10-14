@@ -1,0 +1,12 @@
+piprm/__init__.py,sha256=PM3TEZ5gX80FtB72I-9d_SssPy27XQFH18AEHRLI68M,342
+piprm/cmd/__init__.py,sha256=9UZfeTHA_uiLRptxAEjw2b-8uKCTvqbnDBCmS_XrmcE,72
+piprm/cmd/main.py,sha256=izttrpmTc8ndlqGlh8MFL8qgvpb4u1XItYZ7IM536Rg,1137
+piprm/exceptions.py,sha256=f8u-9RwGNh3TO2-cCUVsoDWJaJr8rvoVyV6tatej_C8,116
+piprm/http_tools.py,sha256=b4VWuGncKwYWrLFrsJLKcn-MO1x2DoSAvPjYpf0EkPw,354
+piprm/pip_tools.py,sha256=4SuqC_9kxu6lIwMRxFmbRKN9WhDEgUL9_lK52V64sDg,3270
+piprm/registry.py,sha256=idHZ24JVfAFmhgqdrHXrbXXCAANJ24weleBR0YbJwNs,1529
+piprm-0.1.1.dist-info/LICENSE,sha256=3S5BwGeEtarD0V8exD6RQtyRc7BjkuJiO_pkWbTRi5o,1063
+piprm-0.1.1.dist-info/METADATA,sha256=V_4hFGnVWjIhWuJGsHiNGXe0m-kgUvv2BMkRW-n-4ng,809
+piprm-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+piprm-0.1.1.dist-info/entry_points.txt,sha256=f97QZR0emcxOg5PD6eIbAvDX5goNsGu2elfYAtntCHc,67
+piprm-0.1.1.dist-info/RECORD,,
