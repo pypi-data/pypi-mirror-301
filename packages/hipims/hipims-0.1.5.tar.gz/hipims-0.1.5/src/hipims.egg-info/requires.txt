@@ -1,0 +1,7 @@
+numpy
+matplotlib
+seaborn
+rasterio
+geopandas
+spicy
+torch
