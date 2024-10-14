@@ -1,0 +1,8 @@
+README.md
+setup.py
+calculadora_imc_1310/__init__.py
+calculadora_imc_1310/calcular_imc.py
+calculadora_imc_1310.egg-info/PKG-INFO
+calculadora_imc_1310.egg-info/SOURCES.txt
+calculadora_imc_1310.egg-info/dependency_links.txt
+calculadora_imc_1310.egg-info/top_level.txt

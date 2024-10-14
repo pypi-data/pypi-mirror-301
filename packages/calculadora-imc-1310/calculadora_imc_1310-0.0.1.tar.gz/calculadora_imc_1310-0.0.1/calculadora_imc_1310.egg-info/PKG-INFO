@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: calculadora_imc_1310
+Version: 0.0.1
+Summary: Calculadaor de IMC (Índice de Massa Corporal)
+Home-page: https://github.com/SergioMCavalcante/calculadora_imc_1310
+Author: SMC
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# calculadora_imc_1310
+
+## Description
+
+O pacote calculadora_imc_1310 Ã© usado para:
+
+*Calcular o IMC:*
+
+- Calcula o IMC
+- Exibe o IMC e a situaÃ§Ã£o da pessoa
+
+## Installation
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar calculadora_imc_1310
+
+pip install calculadora_imc_1310
+
+## Author
+
+SergioMC
