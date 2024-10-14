@@ -1,0 +1,3 @@
+[console_scripts]
+htv-search=htv_search:htv_search
+
