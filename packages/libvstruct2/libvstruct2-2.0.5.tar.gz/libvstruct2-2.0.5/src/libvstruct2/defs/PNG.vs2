@@ -1,0 +1,71 @@
+
+PNG_IHDR:
+  - Width: I4B
+  - Height: I4B
+  - BitDepth: I1
+  - ColorType: I1
+  - CompressionMethod: I1
+  - FilterMethod: I1
+  - InterlaceMethod: I1
+
+PNG_tEXt:
+  - Keyword: AS[<80]
+  - Text: AS[$^Length - :Keyword]
+
+PNG_iTXt:
+  - Keyword: AS[<80]
+  - CompressionFlag: I1
+  - CompressionMethod: I1
+  - LanguageTag: AS
+  - TranslatedKeyword: AS
+  - Text: AS[$^Length - :Keyword]
+
+PNG_iCCP:
+  - ProfileName: AS[<80]
+  - CompressionMethod: I1
+  - CompressedProfile: R[$^Length - :CompressionMethod - 1]
+  - DecompressedProfile := zlib.decompress($CompressedProfile)
+
+PNG_pHYs:
+  - PixelsPerUnitX: I4B
+  - PixelsPerUnitY: I4B
+  - UnitSpecifier: I1
+
+PNG_gAMA:
+  - GammaX100000: I4B
+  - Gamma := $GammaX100000 / 100000
+
+PNGChunk:
+  - Length: I4B
+  - ChunkType: R[4]
+  - ChunkData: R[$Length]
+  - Header: PNG_IHDR
+    @ @ChunkData
+    - condition: $ChunkType == b'IHDR'
+    = $^Length == 13
+  - Text: PNG_tEXt
+    @ @ChunkData
+    - condition: $ChunkType == b'tEXt'
+  - Text: PNG_iTXt
+    @ @ChunkData
+    - condition: $ChunkType == b'iTXt'
+  - ICCProfile: PNG_iCCP
+    @ @ChunkData
+    - condition: $ChunkType == b'iCCP'
+  - Exif: EXIF
+    @ @ChunkData
+    - condition: $ChunkType == b'eXIf'
+  - PhysPixelDimenstions: PNG_pHYs
+    @ @ChunkData
+    - condition: $ChunkType == b'pHYs'
+    = $^Length == 9
+  - Gamma: PNG_gAMA
+    @ @ChunkData
+    - condition: $ChunkType == b'gAMA'
+  - CRC: I4B
+
+PNG:: png
+  | filter: ^\x89PNG\r\n\x1A\n
+  - Magic: R[8]
+  - Chunks: PNGChunk[&data_available]
+    - stop: $crt_field.ChunkType == b'IEND'

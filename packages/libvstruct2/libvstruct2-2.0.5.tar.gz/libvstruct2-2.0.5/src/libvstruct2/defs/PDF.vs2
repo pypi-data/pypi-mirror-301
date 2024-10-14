@@ -1,0 +1,52 @@
+PDF_List:
+  . Start: T <[>
+  - Values: 'PDF_Value' [True]
+    - stop: /\]/
+  . End: T <]>
+
+PDF_Value:
+  - String: SRX <^\s*/(\w+)\s*>
+  - Object: 'PDF_Object' </^<</>
+  - Reference: SRX <^(\d+)\s+(\d+)\s+R\s*>
+    : (int, int)
+  - Number: IS
+  - List: PDF_List </^\[\s+/>
+
+PDF_Attribute:
+  - Name: SRX </(\w+)\s+>
+  - Value: PDF_Value
+
+PDF_Object:
+  ! Marker1: T <<<>
+  - Attribute: PDF_Attribute[/^\s*/\w/]
+  ! Marker2: T <>>>
+
+PDF_Trailer:
+  - Marker: T <trailer>
+  - Object: PDF_Object
+
+PDF_Stream:
+  - Start: SRX <^\s*stream[\r\n]+>
+  - Data: R [<@/endstream/f - &crt_offset]
+  - End: T <endstream>
+    - maxlen: -1
+
+PDF_HeaderObject:
+  - Header: RX <(\d+)[ \t]+(\d+)[ \t]+obj\s*>
+    : (int, int)
+  - Object: PDF_Object </^<</>
+  - List: PDF_List </^\[/>
+  - Stream: PDF_Stream </^stream/>
+  - Footer: T <endobj>
+
+PDF:: pdf
+  | filter: %PDF-1\.
+  - Magic: RX <%PDF-1\.\d+[\r\n]*>
+  - Version: IS
+    @ @Magic + 7
+  - Nodes: PDF_HeaderObject [True]
+    @ @/(\d+)[ \t]+(\d+)[ \t]+obj\s/
+    - update_offset
+  - xref: RX <xref\s+(\d+)\s+(\d+)\s+((?:\d+\s+\d+[fn]\s+)+)>
+  - trailer: PDF_Trailer </trailer\s*<</>
+  - eof: RX <%%EOF>

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "libvstruct2"
+version = "2.0.5"
+description = "YAML-like structured binary data representation language (partially based on Python)."
+readme = "README.md"
+authors = [{ name = "Vlad Topan", email = "vtopan@gmail.removethispart.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = []
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://gitlab.com/vtopan/libvstruct2"
+
+[project.scripts]
+s2 = "libvstruct2.scripts.s2:main"
+
+[tool.bumpver]
+current_version = "2.0.5"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = false
+tag             = false
+push            = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/libvstruct2/__init__.py" = ["__ver__ = '{version}'"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/libvstruct2"]

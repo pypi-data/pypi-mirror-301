@@ -1,0 +1,52 @@
+TIFF_IFDEntry:
+  - Tag: I2
+    ~ IFD_TAGS
+  - Type: I2
+  - Count: I4
+  - ValueOrOffset: I4
+  - Size := $Count * TIFF_FIELD_SIZE[$Type]
+  * Value: R[$Size]
+    @ @^^ + $ValueOrOffset
+    - condition: $Size > 4
+  * Value := $ValueOrOffset
+    - condition: $Size <= 4
+  * String: AS[$Count]
+    @ @Value
+    - condition: $Type == 2
+
+XXX:
+  * UByte: I1[$Count]
+    @ @Value
+    - condition: $Type in (1, 7)
+  * SByte: SI1[$Count]
+    @ @Value
+    - condition: $Type == 6
+  * UShort: I2[$Count]
+    @ @Value
+    - condition: $Type == 3
+  * SShort: SI2[$Count]
+    @ @Value
+    - condition: $Type == 8
+  * ULong: I4[$Count]
+    @ @Value
+    - condition: $Type == 4
+  * SLong: SI4[$Count]
+    @ @Value
+    - condition: $Type == 9
+
+TIFF_IFD:
+  - Count: I2B
+  - Entries: TIFF_IFDEntry[$Count]
+  - NextIFDOffset: I4B
+
+TIFF:: tiff
+  | filter: ^(II*\0|MM\0*)
+  - ByteOrder: R[4]
+    = [b'II*\0', b'MM\0*']
+  - Endianness := '<' if $ByteOrder == b'II*\0' else '>'
+  - IFD0Offset: I4
+    - endianness: $Endianness
+  - IFDs: TIFF_IFD [True]
+    @ (@ByteOrder + $crt_field.NextIFDOffset) if &field_index else (@ByteOrder + $IFD0Offset)
+    - stop: $crt_field.NextIFDOffset == 0
+    - endianness: $Endianness

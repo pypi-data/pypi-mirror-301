@@ -1,0 +1,144 @@
+BITMAPFILEHEADER:
+  - bfType: R[2]
+    = b'BM'
+  - bfSize: I4
+  - bfReserved1: I2
+    ?= 0
+  - bfReserved2: I2
+    ?= 0
+  - bfOffBits: I4
+
+### BMP v2
+
+BITMAPCOREHEADER:
+  - bcSize: I4
+  - bcWidth: I2
+  - bcHeight: I2
+  - bcPlanes: I2
+  - bcBitCount: I2
+
+RGBTRIPLE:
+  - rgbtBlue: B
+  - rgbtGreen: B
+  - rgbtRed: B
+
+BITMAPCOREINFO:
+  - bmciHeader: BITMAPCOREHEADER
+  - bmciColors: RGBTRIPLE[(1 << $bmciHeader.bcBitCount) if $bmciHeader.bcBitCount < 16 else 0]
+
+### BMP v3
+
+BITMAPINFOHEADER:
+  - biSize: I4
+  - biWidth: SI4
+  - biHeight: SI4
+  - biPlanes: I2
+  - biBitCount: I2
+  - biCompression: I4
+    ~ BMP_COMPRESSION
+  - biSizeImage: I4
+  - biXPelsPerMeter: SI4
+  - biYPelsPerMeter: SI4
+  - biClrUsed: I4
+  - biClrImportant: I4
+
+RGBQUAD:
+  - rgbBlue: B
+  - rgbGreen: B
+  - rgbRed: B
+  - rgbReserved: B
+
+BITMAPINFO:
+  - bmiHeader: BITMAPINFOHEADER
+  - bmiColors: RGBQUAD[(1 << $bmiHeader.biBitCount) if $bmiHeader.biBitCount < 16 else 0]
+
+### BMP v4
+
+CIEXYZ:
+  - ciexyzX: F4
+  - ciexyzY: F4
+  - ciexyzZ: F4
+
+CIEXYZTRIPLE:
+  - ciexyzRed: CIEXYZ
+  - ciexyzGreen: CIEXYZ
+  - ciexyzBlue: CIEXYZ
+
+BITMAPV4HEADER:
+  - bV4Size: I4
+  - bV4Width: SI4
+  - bV4Height: SI4
+  - bV4Planes: I2
+  - bV4BitCount: I2
+  - bV4V4Compression: I4
+    ~ BMP_COMPRESSION
+  - bV4SizeImage: I4
+  - bV4XPelsPerMeter: SI4
+  - bV4YPelsPerMeter: SI4
+  - bV4ClrUsed: I4
+  - bV4ClrImportant: I4
+  - bV4RedMask: I4
+  - bV4GreenMask: I4
+  - bV4BlueMask: I4
+  - bV4AlphaMask: I4
+  - bV4CSType: I4
+  - bV4Endpoints: CIEXYZTRIPLE
+  - bV4GammaRed: I4
+  - bV4GammaGreen: I4
+  - bV4GammaBlue: I4
+
+BITMAPV4INFO:
+  - bmiHeader: BITMAPV4HEADER
+  - bmiColors: RGBQUAD[(1 << $bmiHeader.bV4BitCount) if $bmiHeader.bV4BitCount < 16 else 0]
+
+### BMP v5
+
+BITMAPV5HEADER:
+  - bV5Size: I4
+  - bV5Width: SI4
+  - bV5Height: SI4
+  - bV5Planes: I2
+  - bV5BitCount: I2
+  - bV5Compression: I4
+    ~ BMP_COMPRESSION
+  - bV5SizeImage: I4
+  - bV5XPelsPerMeter: SI4
+  - bV5YPelsPerMeter: SI4
+  - bV5ClrUsed: I4
+  - bV5ClrImportant: I4
+  - bV5RedMask: I4
+  - bV5GreenMask: I4
+  - bV5BlueMask: I4
+  - bV5AlphaMask: I4
+  - bV5CSType: I4
+  - bV5Endpoints: CIEXYZTRIPLE
+  - bV5GammaRed: I4
+  - bV5GammaGreen: I4
+  - bV5GammaBlue: I4
+  - bV5Intent: I4
+  - bV5ProfileData: I4
+  - bV5ProfileSize: I4
+  - bV5Reserved: I4
+
+BITMAPV5INFO:
+  - bmiHeader: BITMAPV5HEADER
+  - bmiColors: RGBQUAD[(1 << $bmiHeader.bV5BitCount) if $bmiHeader.bV5BitCount < 16 else 0]
+
+BMP_DIB_Header:
+  ? next_hdr: I4
+    = (12, 40, 108, 124)
+  - bminfoV2: BITMAPCOREINFO<$next_hdr == 12>
+    - alias: bminfo
+  - bminfoV3: BITMAPINFO<$next_hdr == 40>
+    - alias: bminfo
+  - bminfoV4: BITMAPV4INFO<$next_hdr == 108>
+    - alias: bminfo
+  - bminfoV5: BITMAPV5INFO<$next_hdr == 124>
+    - alias: bminfo
+
+BMP:: bmp
+  | filter: ^BM
+  - fileheader: BITMAPFILEHEADER
+  - DIB: BMP_DIB_Header
+  - imagedata: R[&bytes_left]
+    @ $fileheader.bfOffBits

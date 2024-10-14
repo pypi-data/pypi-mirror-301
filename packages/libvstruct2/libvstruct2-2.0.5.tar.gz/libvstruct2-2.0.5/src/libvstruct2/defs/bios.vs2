@@ -1,0 +1,36 @@
+MultiBoot::
+  - Magic: I4
+    = 0x1BADB002
+  - Flags: BM4
+    { 2**0: 'Align4K', 2**1: 'ReqMemInfo', 2**2: 'ReqVidModeInfo',
+        2**16: 'ValidAddrs' }
+  - Checksum: I4
+    ?= ($_ + $Magic + $Flags) & 0xFFFFFFFF == 0
+  - HeaderAddr: I4
+    "Only valid if Flags.ValidAddrs is set"
+  - LoadAddr: I4
+    "Only valid if Flags.ValidAddrs is set"
+  - LoadEndAddr: I4
+    "Only valid if Flags.ValidAddrs is set"
+  - BSSEndAddr: I4
+    "Only valid if Flags.ValidAddrs is set"
+  - EntryAddr: I4
+    "Only valid if Flags.ValidAddrs is set"
+  - ModeType: I4
+    "Only valid if Flags.ReqVidModeInfo is set"
+  - Width: I4
+    "Only valid if Flags.ReqVidModeInfo is set"
+  - Height: I4
+    "Only valid if Flags.ReqVidModeInfo is set"
+  - Depth: I4
+    "Only valid if Flags.ReqVidModeInfo is set"
+
+E820Entry:
+  - BaseAddr: I8L
+  - Length: I8L
+  - Type: I4L
+    ~ E820_MEM_TYPE
+  - ExtAttr: I4L
+
+E820::
+  - Entries: E820Entry[*]

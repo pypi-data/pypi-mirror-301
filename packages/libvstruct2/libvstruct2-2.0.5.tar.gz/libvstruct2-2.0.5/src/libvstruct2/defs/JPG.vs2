@@ -1,0 +1,26 @@
+EXIF:
+  - ExifHeader: R[6]
+    - condition: /^Exif\0\0/
+  - Tiff: TIFF
+
+JPG_SecContent:
+  - Size: I2B
+  - Data: R[max($Size-2, 0)]
+
+JPG_ImageStream:
+  - ImageData: R[@/\xFF\xD9/f]
+
+JPG_Section:
+  - Marker: I2B
+    ~ JPG_MARKERS
+  - Content: JPG_SecContent <$Marker != 0xFFD9>
+  - Exif: EXIF < /^Exif\0\0/ >
+    @ @Content.Data if getattr(self, 'Content', False) else -1
+  - ImageStream: JPG_ImageStream <$Marker == 0xFFDA>
+
+JPG:: jpg
+  | filter: ^\xFF\xD8\xFF
+  - Marker: I2B
+    ~ JPG_MARKERS
+    = 0xFFD8
+  - Sections: JPG_Section[&data_available]

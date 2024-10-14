@@ -1,0 +1,6 @@
+.vscode
+.local
+*.pyc
+__pycache__
+build
+dist
