@@ -1,0 +1,3 @@
+[console_scripts]
+atk_train = backdoormbti.cli_atk:main
+def_train = backdoormbti.cli_def:main

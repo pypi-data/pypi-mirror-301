@@ -1,0 +1,314 @@
+Metadata-Version: 2.1
+Name: backdoormbti
+Version: 0.2.1
+Summary: An open-source framework for backdoor learning and defense in multimodal contexts
+Home-page: https://github.com/SJTUHaiyangYu/BackdoorMBTI
+Author: SJTUHaiyangYu
+Author-email: inbox.haiyang.yu@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp==3.8.4
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: anyio==3.6.2
+Requires-Dist: appdirs==1.4.4
+Requires-Dist: arrow==1.2.3
+Requires-Dist: asttokens==2.2.1
+Requires-Dist: async-timeout==4.0.2
+Requires-Dist: attrs==23.1.0
+Requires-Dist: audioread==3.0.0
+Requires-Dist: av==10.0.0
+Requires-Dist: backcall==0.2.0
+Requires-Dist: backports.functools-lru-cache==1.6.4
+Requires-Dist: bchlib==0.14.0
+Requires-Dist: beautifulsoup4==4.12.2
+Requires-Dist: blessed==1.20.0
+Requires-Dist: certifi==2022.12.7
+Requires-Dist: cffi==1.15.1
+Requires-Dist: charset-normalizer==3.1.0
+Requires-Dist: click==8.1.3
+Requires-Dist: cmake==3.26.3
+Requires-Dist: comm==0.1.3
+Requires-Dist: contourpy==1.1.0
+Requires-Dist: croniter==1.3.14
+Requires-Dist: cycler==0.11.0
+Requires-Dist: Cython==0.29.36
+Requires-Dist: datasets==2.14.2
+Requires-Dist: dateutils==0.6.12
+Requires-Dist: debugpy==1.6.7
+Requires-Dist: decorator==5.1.1
+Requires-Dist: deepdiff==6.3.0
+Requires-Dist: dill==0.3.7
+Requires-Dist: evaluate==0.4.0
+Requires-Dist: exceptiongroup==1.1.1
+Requires-Dist: executing==1.2.0
+Requires-Dist: fastapi==0.88.0
+Requires-Dist: filelock==3.12.0
+Requires-Dist: fonttools==4.42.0
+Requires-Dist: frozenlist==1.3.3
+Requires-Dist: fsspec==2023.4.0
+Requires-Dist: gdown==4.7.1
+Requires-Dist: h11==0.14.0
+Requires-Dist: hdbscan==0.8.33
+Requires-Dist: huggingface-hub==0.15.1
+Requires-Dist: idna==3.4
+Requires-Dist: imageio==2.31.1
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: inquirer==3.1.3
+Requires-Dist: ipykernel==6.23.3
+Requires-Dist: ipython==8.14.0
+Requires-Dist: isort==5.12.0
+Requires-Dist: itsdangerous==2.1.2
+Requires-Dist: jedi==0.18.2
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: joblib==1.2.0
+Requires-Dist: jsonlines==3.1.0
+Requires-Dist: jupyter-client==8.3.0
+Requires-Dist: jupyter-core==5.3.1
+Requires-Dist: kiwisolver==1.4.4
+Requires-Dist: language-tool-python==2.7.1
+Requires-Dist: lazy-loader==0.3
+Requires-Dist: librosa==0.10.0.post2
+Requires-Dist: lightning==2.1.2
+Requires-Dist: lightning-cloud==0.5.33
+Requires-Dist: lightning-utilities==0.8.0
+Requires-Dist: lit==16.0.1
+Requires-Dist: llvmlite==0.40.1
+Requires-Dist: markdown-it-py==2.2.0
+Requires-Dist: MarkupSafe==2.1.2
+Requires-Dist: matplotlib==3.7.2
+Requires-Dist: matplotlib-inline==0.1.6
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: msgpack==1.0.5
+Requires-Dist: multidict==6.0.4
+Requires-Dist: multiprocess==0.70.15
+Requires-Dist: mypy-extensions==0.4.3
+Requires-Dist: nest-asyncio==1.5.6
+Requires-Dist: noise==1.2.2
+Requires-Dist: networkx==3.1
+Requires-Dist: nlpaug==1.1.11
+Requires-Dist: nltk==3.8.1
+Requires-Dist: numba==0.57.1
+Requires-Dist: numpy==1.23.5
+Requires-Dist: nvidia-cublas-cu11==11.10.3.66
+Requires-Dist: nvidia-cuda-cupti-cu11==11.7.101
+Requires-Dist: nvidia-cuda-nvrtc-cu11==11.7.99
+Requires-Dist: nvidia-cuda-runtime-cu11==11.7.99
+Requires-Dist: nvidia-cudnn-cu11==8.5.0.96
+Requires-Dist: nvidia-cufft-cu11==10.9.0.58
+Requires-Dist: nvidia-curand-cu11==10.2.10.91
+Requires-Dist: nvidia-cusolver-cu11==11.4.0.1
+Requires-Dist: nvidia-cusparse-cu11==11.7.4.91
+Requires-Dist: nvidia-nccl-cu11==2.14.3
+Requires-Dist: nvidia-nvtx-cu11==11.7.91
+Requires-Dist: OpenAttack==2.1.1
+Requires-Dist: opencv-python==4.8.1.78
+Requires-Dist: ordered-set==4.1.0
+Requires-Dist: packaging==23.1
+Requires-Dist: pandas==2.0.3
+Requires-Dist: parso==0.8.3
+Requires-Dist: pathspec==0.10.3
+Requires-Dist: pedalboard==0.8.1
+Requires-Dist: pexpect==4.8.0
+Requires-Dist: pickleshare==0.7.5
+Requires-Dist: Pillow==9.5.0
+Requires-Dist: pip==23.0.1
+Requires-Dist: platformdirs==2.5.2
+Requires-Dist: pluggy==1.0.0
+Requires-Dist: pooch==1.6.0
+Requires-Dist: portalocker==2.7.0
+Requires-Dist: prompt-toolkit==3.0.38
+Requires-Dist: protobuf==4.25.1
+Requires-Dist: psutil==5.9.5
+Requires-Dist: ptyprocess==0.7.0
+Requires-Dist: pure-eval==0.2.2
+Requires-Dist: pyarrow==12.0.1
+Requires-Dist: pycparser==2.21
+Requires-Dist: pydantic==1.10.7
+Requires-Dist: pydub==0.25.1
+Requires-Dist: Pygments==2.15.1
+Requires-Dist: PyJWT==2.6.0
+Requires-Dist: pynndescent==0.5.10
+Requires-Dist: pyparsing==3.0.9
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: pytest==7.3.1
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: python-editor==1.0.4
+Requires-Dist: python-multipart==0.0.6
+Requires-Dist: pytorch-lightning==2.0.1.post0
+Requires-Dist: pytz==2023.3
+Requires-Dist: PyYAML==6.0
+Requires-Dist: pyzmq==25.1.0
+Requires-Dist: readchar==4.0.5
+Requires-Dist: regex==2023.6.3
+Requires-Dist: requests==2.28.2
+Requires-Dist: resampy==0.4.2
+Requires-Dist: responses==0.18.0
+Requires-Dist: rich==13.3.4
+Requires-Dist: safetensors==0.3.1
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: scipy==1.10.1
+Requires-Dist: sentence-transformers==2.2.2
+Requires-Dist: sentencepiece==0.1.99
+Requires-Dist: setuptools==66.0.0
+Requires-Dist: six==1.16.0
+Requires-Dist: sniffio==1.3.0
+Requires-Dist: soundfile==0.12.1
+Requires-Dist: soupsieve==2.4.1
+Requires-Dist: soxr==0.3.5
+Requires-Dist: stack-data==0.6.2
+Requires-Dist: starlette==0.22.0
+Requires-Dist: starsessions==1.3.0
+Requires-Dist: strsimpy==0.2.1
+Requires-Dist: sympy==1.11.1
+Requires-Dist: tensorboardX==2.6.2.2
+Requires-Dist: threadpoolctl==3.1.0
+Requires-Dist: tokenizers==0.13.3
+Requires-Dist: tomli==2.0.1
+Requires-Dist: torch==2.0.0
+Requires-Dist: torchaudio==2.0.1
+Requires-Dist: torchdata==0.6.0
+Requires-Dist: torchmetrics==0.11.4
+Requires-Dist: torchtext==0.15.1
+Requires-Dist: torchvision==0.15.1
+Requires-Dist: tornado==6.3.2
+Requires-Dist: tqdm==4.65.0
+Requires-Dist: traitlets==5.9.0
+Requires-Dist: transformers==4.30.2
+Requires-Dist: triton==2.0.0
+Requires-Dist: typing-extensions==4.5.0
+Requires-Dist: tzdata==2023.3
+Requires-Dist: umap-learn==0.5.3
+Requires-Dist: urllib3==1.26.15
+Requires-Dist: uvicorn==0.21.1
+Requires-Dist: wcwidth==0.2.6
+Requires-Dist: websocket-client==1.5.1
+Requires-Dist: websockets==11.0.2
+Requires-Dist: wget==3.2
+Requires-Dist: wheel==0.38.4
+Requires-Dist: xxhash==3.3.0
+Requires-Dist: yarl==1.9.1
+
+# BackdoorMBTI
+
+BackdoorMBTI is an open source project expanding the unimodal backdoor learning to a multimodal context.  We hope that BackdoorMBTI can facilitate the analysis and development of backdoor defense methods within a multimodal context.
+
+ main feature：
+ - poison dataset generateion
+ - backdoor model generation
+ - attack training
+ - defense training
+ - backdoor evaluation
+
+The framework:
+![framework](./resources/arch.png)
+## Task Supported
+
+
+| Task                       | Dataset        | Modality |
+|:---------------------------|:---------------|:---------|
+| Object Classification      | CIFAR10        | Image    |
+| Object Classification      | TinyImageNet   | Image    |
+| Traffic Sign Recognition   | GTSRB          | Image    |
+| Facial Recognition         | CelebA         | Image    |
+| Sentiment Analysis         | SST-2          | Text     |
+| Sentiment Analysis         | IMDb           | Text     |
+| Topic Classification       | DBpedia        | Text     |
+| Topic Classification       | AG’s News      | Text     |
+| Speech Command Recognition | SpeechCommands | Audio    |
+| Music Genre Classification | GTZAN          | Audio    |
+| Speaker Identification     | VoxCeleb1      | Audio    |
+
+
+### Backdoor Attacks Supported
+
+| Modality | Attack      | Visible   | Pattern | Add | Sample Specific | paper |
+|:--------:|:------------|:----------:|:--------:|:----:|:-----:|:----|
+|Image| AdaptiveBlend     | Invisible   | Global   | Yes | No   | [REVISITING THE ASSUMPTION OF LATENT SEPARABILITY FOR BACKDOOR DEFENSES](https://openreview.net/pdf?id=_wSHsgrVali)    |
+|Image| BadNets     | Visible   | Local   | Yes | No   | [Badnets: Evaluating backdooring attacks on deep neural networks](https://ieeexplore.ieee.org/iel7/6287639/8600701/08685687.pdf)    |
+|Image| Blend(under test)    | InVisible   | Global   | Yes | Yes   | [A NEW BACKDOOR ATTACK IN CNNS BY TRAINING SET CORRUPTION WITHOUT LABEL POISONING](https://arxiv.org/abs/1712.05526v1)    |
+|Image| Blind(under test)     | Visible   | Local   | Yes |Yes   | [Blind Backdoors in Deep Learning Models](https://www.cs.cornell.edu/~shmat/shmat_usenix21blind.pdf)    |
+|Image| BPP         | Invisible | Global  | Yes | No   | [Bppattack: Stealthy and efficient trojan attacks against deep neural networks via image quantization and contrastive adversarial learning](http://openaccess.thecvf.com/content/CVPR2022/papers/Wang_BppAttack_Stealthy_and_Efficient_Trojan_Attacks_Against_Deep_Neural_Networks_CVPR_2022_paper.pdf)     |
+|Image| DynaTrigger | Visible   | Local   | Yes | Yes  | [Dynamic backdoor attacks against machine learning models](https://arxiv.org/pdf/2003.03675)    |
+|Image| EMBTROJAN(under test)     | Inisible   | Local   | Yes | No   | [An Embarrassingly Simple Approach for Trojan Attack in Deep Neural Networks](https://dl.acm.org/doi/pdf/10.1145/3394486.3403064)    |
+|Image| LC          | Invisible | Global  | No  | Yes  | [Label-consistent backdoor attacks](https://openaccess.thecvf.com/content/ICCV2021/papers/Zeng_Rethinking_the_Backdoor_Attacks_Triggers_A_Frequency_Perspective_ICCV_2021_paper.pdf)    |
+|Image| Lowfreq          | Invisible | Global  | Yes | Yes  |[Rethinking the Backdoor Attacks’ Triggers: A Frequency Perspective](https://arxiv.org/pdf/1912.02771/)    |
+|Image| PNoise      | Invisible | Global  | Yes | Yes  | [Use procedural noise to achieve backdoor attack](https://ieeexplore.ieee.org/iel7/6287639/9312710/09529206.pdf)    |
+|Image| Refool      | Invisible | Global   | Yes | No  | [Reflection Backdoor: A Natural Backdoor Attack on Deep Neural Networks](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550188.pdf)    |
+|Image| SBAT        | Invisible | Global  | No  | Yes  | [Stealthy Backdoor Attack with Adversarial Training](https://ieeexplore.ieee.org/abstract/document/9746008/) |
+|Image| SIG | Invisible   | Global   | Yes | No  | [A NEW BACKDOOR ATTACK IN CNNS BY TRAINING SET CORRUPTION WITHOUT LABEL POISONING](https://arxiv.org/pdf/1902.11237)    |
+|Image| SSBA        | Invisible | Global  | No  | Yes  | [Invisible Backdoor Attack with Sample-Specific Triggers](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper.pdf)    |
+|Image| trojanNN(under test)       | Visible | Local  | Yes  | Yes  | [Trojaning Attack on Neural Network](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2782&context=cstech)    |
+|Image| ubw(under test)       | Invisible | Global  | Yes  | No  | [Untargeted Backdoor Watermark: Towards Harmless and Stealthy Dataset Copyright Protection](https://proceedings.neurips.cc/paper_files/paper/2022/file/55bfedfd31489e5ae83c9ce8eec7b0e1-Paper-Conference.pdf)    |
+|Image| WaNet       | Invisible | Global  | No  | Yes  | [WaNet -- Imperceptible Warping-Based Backdoor Attack](https://arxiv.org/pdf/2102.10369)    |
+|Text | AddSent     | Visible   | Local   | Yes | No   | [A backdoor attack against LSTM-based text classification systems](https://arxiv.org/pdf/1905.12457.pdf)    |
+|Text | BadNets     | Visible   | Local   | Yes | No   |  [Badnets: Evaluating backdooring attacks on deep neural networks](https://ieeexplore.ieee.org/iel7/6287639/8600701/08685687.pdf)     |
+|Text | BITE        | Invisible | Local   | Yes | Yes  | [Textual backdoor attacks with iterative trigger injection](https://u1x3881ofs0.feishu.cn/sheets/VHbrsq8MdhV7BPtd77Nc6BGSnIc?sheet=ae56f0&range=QTE4)    |
+|Text | LWP         | Visible   | Local   | Yes | No   | [Backdoor Attacks on Pre-trained Models by Layerwise Weight Poisoning](https://aclanthology.org/2021.emnlp-main.241.pdf)    |
+|Text | STYLEBKD      | Visible | Global  | No  | Yes  | [Mind the Style of Text! Adversarial and Backdoor Attacks Based on Text Style Transfer](https://arxiv.org/pdf/2110.07139)    |
+|Text | SYNBKD      | Invisible | Global  | No  | Yes  | [Hidden Killer: Invisible Textual Backdoor Attacks with Syntactic Trigger](https://arxiv.org/pdf/2105.12400.pdf)    |
+|Audio| Baasv(under test)       | \-        |  Global    | Yes | No   | [Backdoor Attack against Speaker Verification](https://arxiv.org/pdf/2010.11607)    |
+|Audio| Blend       | \-        | Local   | Yes | No   | [Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning](https://arxiv.org/abs/1712.05526v1)    |
+|Audio| DABA        | \-        | Global  | Yes | No   | [Opportunistic Backdoor Attacks: Exploring Human-imperceptible Vulnerabilities on Speech Recognition Systems](https://dl.acm.org/doi/abs/10.1145/3503161.3548261)    |
+|Audio| GIS         | \-        | Global  | No  | No   | [Going in style: Audio backdoors through stylistic transformations](https://arxiv.org/pdf/2211.03117)    |
+|Audio| UltraSonic  | \-        | Local   | Yes | No   | [Can You Hear It? Backdoor Attacks via Ultrasonic Triggers](https://github.com/skoffas/ultrasonic_backdoor)    |
+
+
+### Backdoor Defenses Supported
+
+
+| Defense |Modality| Input | Stage | Output | Paper | 
+|:-------:|:-----:|:-----:|:---:|:-----:|:-----:|
+|  STRIP  | Audio,Image and text |backdoor model, clean dataset| post-training | clean dataset    | [STRIP: A Defence Against Trojan Attacks on Deep Neural Networks](https://arxiv.org/pdf/1902.06531.pdf)      |
+|   AC    | Audio,Image and text |backdoor model, clean dataset, poison dataset| post-training    | clean model, clean datasest    | [Detecting Backdoor Attacks on Deep Neural Networks by Activation Clustering](https://arxiv.org/pdf/1811.03728.pdf)      | 
+|   FT    | Audio,Image and text |backdoor model, clean dataset| in-training | clean model    | [Fine-Pruning: Defending Against Backdooring Attacks on Deep Neural Networks.](https://arxiv.org/pdf/1805.12185.pdf) |
+|   FP    | Audio,Image and text |backdoor model, clean dataset| post-training | clean model    | [Fine-Pruning: Defending Against Backdooring Attacks on Deep Neural Networks.](https://arxiv.org/pdf/1805.12185.pdf)      |
+|   ABL   | Audio,Image and text |backdoor model, poison dataset| in-training | clean model    | [Anti-Backdoor Learning: Training Clean Models on Poisoned Data](https://arxiv.org/pdf/2110.11571.pdf)      |
+|   CLP   | Audio,Image and text |backdoor model| post-training    | clean model | [Data-free Backdoor Removal based on Channel Lipschitzness](https://arxiv.org/pdf/2208.03111.pdf)      |
+|   NC    | Image|backdoor model, clean dataset| post-training | clean model, trigger pattern    | [Neural Cleanse: Identifying and Mitigating Backdoor Attacks in Neural Networks](https://gangw.web.illinois.edu/class/cs598/papers/sp19-poisoning-backdoor.pdf)      |
+
+
+## Installation
+
+To install the virtual environment:
+```
+conda create -n bkdmbti python=3.10
+conda activate bkdmbti
+pip install -r requirements.txt
+```
+
+## Quick Start
+
+### Download Data
+
+Download the data if it can not be downloaded automatically. Some data download scripts are provided in `scripts` folder.
+
+### Backdoor Attack 
+
+Here we provide an example to quickly start with the attack experiments, and reproduce the BadNets backdoor attack results. We use resnet-18 as the default model, and 0.1 as the default poison ratio.
+```
+cd scripts
+python atk_train.py --data_type image --dataset cifar10  --attack_name badnet --model resnet18 --pratio 0.1 --num_workers 4 --epochs 100 
+python atk_train.py --data_type audio --dataset speechcommands --attack_name blend --model audiocnn --pratio 0.1 --num_workers 4 --epochs 100 --add_noise true
+python atk_train.py --data_type text --dataset sst2 --attack_name addsent --model bert --pratio 0.1 --num_workers 4 --epochs 100 --mislabel true
+```
+Use args `--add_noise true` and `--mislabel true` to add perturbations to the data. After the experiment, metrics ACC(Accuracy), ASR(Attack Success Rate) and RA(Robustness Accuracy) are collected in attack phase.
+To learn more about the attack command, you can  run `python atk_train.py -h` to see more details.
+### Backdoor Defense
+
+Here we provide a defense example, it depends on the backdoor model generated in the attack phase, so you should run the corresponding attack experiment before defense phase.
+```
+cd scripts
+python def_train.py --data_type image --dataset cifar10 --attack_name badnet  --pratio 0.1 --defense_name finetune --num_workers 4 --epochs 10 
+python def_train.py --data_type audio --dataset speechcommands --attack_name blend  --model audiocnn --pratio 0.1 --defense_name fineprune --num_workers 4 --epochs 1 --add_noise true
+python def_train.py --data_type text --dataset sst2 --attack_name addsent --model bert --pratio 0.1 --defense_name strip --num_workers 4 --epochs 1 --mislabel true
+```
+To learn more about the attack command, you can  run `python def_train.py -h` to see more details.
+In defense phase, detection accuracy will be collected if the defense is a detection method, and then the sanitized dataset will be used to retrain the model. ACC, ASR and RA metrics are collected after retraining.
+
+
+# Results
+More results can be found in: [results.md](./results.md)
