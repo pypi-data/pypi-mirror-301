@@ -1,0 +1,2 @@
+[console_scripts]
+riff = textual_riff.entry_points:riff
