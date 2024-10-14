@@ -1,0 +1,9 @@
+librosa
+pandas
+seaborn
+scipy
+tqdm
+pyvad
+numpy
+joblib
+matplotlib
