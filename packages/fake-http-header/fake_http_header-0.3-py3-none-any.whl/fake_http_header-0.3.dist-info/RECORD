@@ -1,0 +1,16 @@
+fake_http_header/__init__.py,sha256=Nfp6fsMblRYMN4NXHxHecbKy702po075HZdOwDlluy8,59
+fake_http_header/constants.py,sha256=8tISDCJPl_Vy-JjYW6p7RgjfeS98IIP7dMs2g_aLd58,1617
+fake_http_header/data_import.py,sha256=EqqFFcI1TMTwnlGoaz_3KwKbsmAEqxU9N4nZLUkOhbE,157
+fake_http_header/fake_http_header.py,sha256=dG8jzhaoOQdAfTD1w7tKrW2cqIHHNufjQONEkUnljBg,2596
+fake_http_header/util.py,sha256=i2I25pkdPhN79_7rsxSaDLc9snXr7UwPyVpZoJkbW3M,2475
+fake_http_header/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fake_http_header/data/browser-to-accept-values.json,sha256=nrLW5JtrEPy42xcoEqfxD81YPZ2NrvLZdtngI9DPXvI,507
+fake_http_header/data/browser-to-user-agent.json,sha256=2X0lWECSuUzc954essk9l6vaCa5ebNzoZLm1Hw8yVlQ,7349
+fake_http_header/data/encoding-values.json,sha256=EuAIIlOVAwwNWKzyLcVoSmUTBfwA_UZqXS2I_7aycqk,141
+fake_http_header/data/top-level-domain-to-languages.json,sha256=sPruEh1LfoMbrChWSi2fiQ4BkyrJNlVZxdGw0sIIvrk,16944
+fake_http_header/data/top-level-domain-to-search-engines.json,sha256=rkj0x3C89f_t_J8c0KinGqPl943NGgy9uH7_u987Cf8,14367
+fake_http_header-0.3.dist-info/LICENSE.txt,sha256=eyxwXmWKti7mn3HBT1AXYRqb5ZO8aaahSkqHAwjzYEI,1104
+fake_http_header-0.3.dist-info/METADATA,sha256=M25wZz7dgJiWY0I9wbgmQOFIqji8_kNoCP9Su1rI-HE,3518
+fake_http_header-0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fake_http_header-0.3.dist-info/top_level.txt,sha256=tUQpFfnd-48ecNkdgDxgFzUOyiWkOD6V6KYKSA19_vs,17
+fake_http_header-0.3.dist-info/RECORD,,
