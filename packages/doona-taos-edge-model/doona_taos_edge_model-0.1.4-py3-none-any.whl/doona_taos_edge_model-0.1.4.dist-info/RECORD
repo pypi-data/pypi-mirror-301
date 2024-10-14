@@ -1,0 +1,15 @@
+doona_taos_edge_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doona_taos_edge_model/model_predictor.py,sha256=UplZ9ffU46mr0yatgVox8mIS6UEDZWRZI2FCfabZ3qo,2938
+doona_taos_edge_model/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doona_taos_edge_model/api/ml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doona_taos_edge_model/api/ml/deploy_model.py,sha256=zuTQaeTeSpswk9uZQ5j_TPZX06KVrCRoTcT4SUDQ8pc,3492
+doona_taos_edge_model/api/pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doona_taos_edge_model/api/pipeline/deploy_pipeline.py,sha256=Xo4Jr1BJXoY7UQs1kJLWQNoq-F6hJbKGccE9wUCm6dM,9672
+doona_taos_edge_model/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doona_taos_edge_model/schema/ml.py,sha256=tOAgG6t2Xnp-v_CXghQ5H3FHsy_7MiXGXhMAKD2_MGY,2235
+doona_taos_edge_model/schema/pipeline.py,sha256=i_82J0HY2pP-XZG0XemmnfQ9FWnJ9GvgzLMwe_w2M2I,2943
+doona_taos_edge_model/schema/stats.py,sha256=K27-YcrkY3nDHuy74_IknJeOBOQ6YRN7CU02WVGgtmo,2068
+doona_taos_edge_model-0.1.4.dist-info/METADATA,sha256=lB8wdf7MmBFYWEIOpPk0S0HMrBgqBXb8QrEhFIRcGek,3179
+doona_taos_edge_model-0.1.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+doona_taos_edge_model-0.1.4.dist-info/top_level.txt,sha256=5oEgWHl4r9TKH1eP9qvxIiZZA9jSxcUczGbQWgLuX7g,22
+doona_taos_edge_model-0.1.4.dist-info/RECORD,,
