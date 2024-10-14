@@ -1,0 +1,18 @@
+[project]
+name = "COHDPS_Heatstryke"
+version = "0.1.0"
+authors = [
+  { name="Lewis Bronson", email="heatstryke@yahoo.com" },
+]
+description = "A ruidamentrery DPS calculator for City of Heroes Homecoming"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/HeatStryke/CoHDPS/"
+Issues = "https://github.com/HeatStryke/CoHDPS/issues"
