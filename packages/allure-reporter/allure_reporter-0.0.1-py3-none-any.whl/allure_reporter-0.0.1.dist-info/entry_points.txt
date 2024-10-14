@@ -1,0 +1,3 @@
+[console_scripts]
+allure-reporter=allure_reporter.cli:cli
+
