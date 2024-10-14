@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pptx2typ/__init__.py
+pptx2typ/cli.py
+pptx2typ.egg-info/PKG-INFO
+pptx2typ.egg-info/SOURCES.txt
+pptx2typ.egg-info/dependency_links.txt
+pptx2typ.egg-info/entry_points.txt
+pptx2typ.egg-info/requires.txt
+pptx2typ.egg-info/top_level.txt

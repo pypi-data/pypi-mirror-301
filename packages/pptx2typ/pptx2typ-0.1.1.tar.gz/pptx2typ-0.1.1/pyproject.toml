@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pptx2typ"
+version = "0.1.1"
+description = "A tool to convert PPTX files to Typst Touying scripts."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Sizhe Liu", email = "sizhe.liu@fit-foxconn.com"}]
+requires-python = ">=3.7"
+dependencies = [
+"click==8.1.7",
+"Jinja2==3.1.4",
+"lxml==5.3.0",
+"markdown-it-py==3.0.0",
+"MarkupSafe==3.0.1",
+"mdurl==0.1.2",
+"packaging==24.1",
+"pdf2image==1.17.0",
+"pillow==10.4.0",
+"pip==22.0.2",
+"Pygments==2.18.0",
+"pyproject_hooks==1.2.0",
+"python-pptx==1.0.2",
+"RapidFuzz==3.10.0",
+"rich==13.9.2",
+"setuptools==59.6.0",
+"shellingham==1.5.4",
+"tomli==2.0.2",
+"typing_extensions==4.12.2",
+"XlsxWriter==3.2.0",
+]
+
+[project.scripts]
+pptx2typ = "pptx2typ.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
