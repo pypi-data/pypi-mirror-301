@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: criteria_performance
+Version: 0.1.1
+Summary: A Python package for performance criteria visualization
+Home-page: https://github.com/teach-genius/aryad.git
+Author: Olanda-Eyiba Chantry
+Author-email: chantryolanda85@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+# CriteriaPerformanceReadCSV
+
+**CriteriaPerformanceReadCSV** est un module Python permettant de calculer et de visualiser les performances de modÃ¨les Ã  partir de donnÃ©es CSV. Il gÃ©nÃ¨re plusieurs courbes de performance, telles que les courbes ROC, PR (Rappel-PrÃ©cision), DET (Detection Error Tradeoff), ainsi que d'autres indicateurs clÃ©s.
+
+## Table des matiÃ¨res
+
+- [Installation](#installation)
+- [PrÃ©-requis](#prÃ©-requis)
+- [Utilisation de base](#utilisation-de-base)
+- [Exemple de CSV](#exemple-de-csv)
+- [FonctionnalitÃ©s](#fonctionnalitÃ©s)
+- [Exemple d'utilisation avancÃ©e](#exemple-dutilisation-avancÃ©e)
+- [MÃ©thodes disponibles](#mÃ©thodes-disponibles)
+
+## Installation
+
+Vous pouvez installer le package en utilisant pip:
+
+```bash
+pip install criteria_performance
+```
+
+## PrÃ©-requis
+
+Vous aurez besoin d'un fichier CSV contenant les performances de votre modÃ¨le. Ce fichier doit avoir au minimum deux colonnes :
+
+- **classe** : Indicateur de la classe (1 pour les valeurs positives, -1 pour les valeurs nÃ©gatives).
+- **score** : Score de confiance ou probabilitÃ© attribuÃ©e par le modÃ¨le pour chaque observation.
+
+## Utilisation de base
+
+### 1. Chargement des donnÃ©es
+
+Utilisez le module en chargeant un fichier CSV. Par exemple :
+
+```python
+from criteria_performance import CriteriaPerformanceReadCSV
+
+# Chemin vers le fichier CSV
+url_data = "path/to/your/data.csv"
+
+# Initialisation de l'objet
+performance = CriteriaPerformanceReadCSV(url_data)
+```
+
+### 2. Visualisation des courbes
+
+Une fois les donnÃ©es chargÃ©es, vous pouvez afficher diverses courbes pour Ã©valuer la performance de votre modÃ¨le :
+
+#### Courbe ROC
+
+```python
+performance.dispROC()
+```
+
+#### Courbe Rappel-PrÃ©cision (PR)
+
+```python
+performance.dispPR()
+```
+
+#### Courbe DET
+
+```python
+performance.dispDET()
+```
+
+#### Courbe avec intersection FNR/FPR (DET modifiÃ©e)
+
+```python
+performance.dipoldDET(point=True)
+```
+
+#### Affichage de toutes les courbes ensemble
+
+```python
+performance.displaygraphe(taille=(18, 10), save=True, name="criteres_performance")
+```
+
+Cela gÃ©nÃ¨re un fichier PNG contenant toutes les courbes si `save=True`.
+
+### Exemple de CSV
+
+Voici un exemple de structure de fichier CSV compatible avec le module :
+
+csv
+
+| Classe | Score |
+|--------|-------|
+| 1      | 0.9   |
+| 1      | 0.8   |
+| -1     | 0.4   |
+| -1     | 0.1   |
+
+Assurez-vous que les colonnes **classe** et **score** sont bien nommÃ©es de cette maniÃ¨re, ou adaptez votre code pour tenir compte de vos propres noms de colonnes.
+
+## FonctionnalitÃ©s
+
+- **Courbe ROC** : ReprÃ©sente le taux de faux positifs (TFP) vs. taux de vrais positifs (TTP).
+- **Courbe PR** : Montre la prÃ©cision et le rappel de votre modÃ¨le.
+- **Courbe DET** : Compare le taux de faux positifs (FPR) et le taux de faux nÃ©gatifs (FNR).
+- **Intersection DET modifiÃ©e** : Affiche le point d'intersection entre FPR et FNR.
+- **Sauvegarde des graphiques** : Les graphiques peuvent Ãªtre enregistrÃ©s sous forme d'images.
+
+## Exemple d'utilisation avancÃ©e
+
+Vous pouvez personnaliser les titres et les couleurs des courbes pour correspondre Ã  vos besoins :
+
+```python
+performance.dipoldDET(title="Mon DET modifiÃ©", point=True, c1="green", c2="red", cp="purple")
+performance.dispPR(label="Courbe PR personnalisÃ©e", c="blue", title="PR Custom")
+```
+
+Vous pouvez Ã©galement ajuster le nombre de seuils pour un contrÃ´le plus fin lors de la gÃ©nÃ©ration des courbes :
+
+```python
+performance.generate_seuil(val=50)
+```
+
+## MÃ©thodes disponibles
+
+Voici une description des mÃ©thodes clÃ©s :
+
+### `__init__(url_data: str)`
+
+- **Description** : Initialise l'objet et charge les donnÃ©es depuis un fichier CSV.
+- **ParamÃ¨tre** : `url_data` â€“ chemin vers le fichier CSV.
+  
+### `ppv_pnv()`
+
+- **Description** : Calcule les PPV (Positive Predictive Value) et PNV (Negative Predictive Value).
+  
+### `generate_seuil(val=20)`
+
+- **Description** : GÃ©nÃ¨re les seuils pour les courbes.
+- **ParamÃ¨tre** : `val` â€“ nombre de seuils Ã  gÃ©nÃ©rer (par dÃ©faut Ã  20).
+  
+### `fp_tp()`
+
+- **Description** : Calcule les faux positifs et vrais positifs Ã  chaque seuil.
+  
+### `Tfp_Ttp()`
+
+- **Description** : Calcule les taux de faux positifs (TFP) et taux de vrais positifs (TTP).
+  
+### `calculate_fn()`
+
+- **Description** : Calcule le nombre de faux nÃ©gatifs (FN) Ã  chaque seuil.
+
+### `coordonne()`
+
+- **Description** : Renvoie les coordonnÃ©es pour la courbe Rappel-PrÃ©cision.
+  
+### `fnr_fpr()`
+
+- **Description** : Renvoie le taux de faux nÃ©gatifs (FNR) et taux de faux positifs (FPR).
+  
+### `dipoldDET(point=False, title="Hold DET", c1="b", c2="orange", cp="red")`
+
+- **Description** : Affiche la courbe DET avec FNR et FPR. Option d'afficher l'intersection.
+  
+### `dispROC()`
+
+- **Description** : Affiche la courbe ROC.
+
+### `displaygraphe(taille=(18, 10), save=False, name="criteres_performance")`
+
+- **Description** : Affiche toutes les courbes (ROC, PR, DET) et permet de les sauvegarder sous forme d'image.
+
+## Licence
+
+Ce projet est sous licence MIT.
