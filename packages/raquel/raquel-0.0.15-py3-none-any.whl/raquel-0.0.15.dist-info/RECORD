@@ -1,0 +1,12 @@
+raquel/__init__.py,sha256=qQskNnJk8c59Hz89uPyZfjjj6tLinwRyj_vEd77wJl8,84
+raquel/dbapi_types.py,sha256=F4X0apy54OoTkXIqRQnGEAVan64HKkdIs_2mHXY781U,2101
+raquel/models.py,sha256=KyxoiW2ltU7rSgaYUp8cHIizpeAVoSDBYJY-pE1M0bY,3757
+raquel/queries/__init__.py,sha256=qOs0Au96EpKBH9eNYh6L_fTAvGbV4GgLhAVruuz9Xzk,319
+raquel/queries/base.py,sha256=XMHI1YBtCKoNyKGSqVRcsbKLqBeaZjAo_tq-31u5Prk,607
+raquel/queries/postgres.py,sha256=_qU6LL9y_l86PtMutFjjE9vzmd0j3rr4OsFLacl4ojA,3901
+raquel/queries/sqlite.py,sha256=uAtT9JqIKeXEhnZkxKlrY_2Rv6151INofMBsdkGEbqY,3650
+raquel/sync_core.py,sha256=4DfcRvg-Hrg_wJ9oxuuXWFRG6gR-fwRF6QRWgBAool0,24302
+raquel-0.0.15.dist-info/LICENSE,sha256=mqixHDXO8DUzdOUSOMXz6lb_BHjKQnmUDq414trA_74,11342
+raquel-0.0.15.dist-info/METADATA,sha256=l40m2zSLmLEBvHQ0BrAhSIjt-gofWBY9Huq5PeNZkpA,4812
+raquel-0.0.15.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+raquel-0.0.15.dist-info/RECORD,,
