@@ -1,0 +1,10 @@
+rdkit
+numpy
+pandas
+scikit-learn
+packaging
+
+[dev]
+pytest>=6
+pytest-cov
+jupytext
