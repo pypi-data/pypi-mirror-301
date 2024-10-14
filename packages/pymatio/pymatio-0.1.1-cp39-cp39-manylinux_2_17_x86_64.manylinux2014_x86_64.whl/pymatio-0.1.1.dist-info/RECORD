@@ -1,0 +1,10 @@
+pymatio/libpymatio.cpython-39-x86_64-linux-gnu.so,sha256=EdhDcy4CHZt01Eq27kGxzyefnBlYvaeQYNJKGUgevBA,5234000
+pymatio/__init__.py,sha256=QUVgTjAMTAsP5Rzj7gp0e1hz9BLVNtkhT1RR6imC9_0,1051
+pymatio/__init__.pyi,sha256=zcNZ8MZMtsfnBvBPQcITUXd1028NFJzf2EAzD3_I3Ho,209
+pymatio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymatio-0.1.1.dist-info/RECORD,,
+pymatio-0.1.1.dist-info/METADATA,sha256=F2AyVOL8HPLL8dKgjIYsUAqkvnRrhm5FvFy7s5pUpDs,1773
+pymatio-0.1.1.dist-info/WHEEL,sha256=kTiiq_ty6YfCgVTXDxMfzvIhNXkmkVPizZllzkx1WUM,152
+share/man/man3/zlib.3,sha256=Wq2z8SnEx-KfKLtsWVTeoGHfMEbQ_j4TSv8u9KIXsdY,4476
+share/pkgconfig/zlib.pc,sha256=J-IKSo60KTMGXg9HskaWcZRYJ3LOuelyy248Ib0EAFk,361
+lib64/libmatio.a,sha256=mppDiFRvpfP-SXIxDtztmtaJyyzoNUABQPnk7D_Kf3k,1097664
