@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: telemal
+Version: 1.0
+Summary: Get intelligence on malicious Telegram channels using bot Token
+Home-page: https://github.com/nicolasmf/Telemal
+Author: TA1GA
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
