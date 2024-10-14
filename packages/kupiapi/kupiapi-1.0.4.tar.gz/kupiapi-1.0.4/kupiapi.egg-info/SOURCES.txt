@@ -1,0 +1,7 @@
+README.md
+setup.py
+kupiapi.egg-info/PKG-INFO
+kupiapi.egg-info/SOURCES.txt
+kupiapi.egg-info/dependency_links.txt
+kupiapi.egg-info/requires.txt
+kupiapi.egg-info/top_level.txt
