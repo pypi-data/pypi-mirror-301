@@ -1,0 +1,13 @@
+bookshelf/__init__.py,sha256=NtdVVaofhVVSMpoCaRX9u4lNQ5j-BMtaQeu5gYVaTxk,261
+bookshelf/book.py,sha256=kiweZsyUjGat6arIK3s-XaxYwgdySPL-F29QUxPnheM,18266
+bookshelf/constants.py,sha256=iGZmRlo0saNpdnOjjG3T1FHe_m2lEmJVDZeH4Bzjr14,666
+bookshelf/dataset_structure.py,sha256=PMIpTuoOWfkZX-rrLgMivDjwrL3YCaotgfKesTZJnYY,6555
+bookshelf/errors.py,sha256=eXzOi7yldU0L8DGrSuDKlge3k-KBhdBKv1ANhWnlkig,896
+bookshelf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bookshelf/schema.py,sha256=_8C7Pzx1r62-PEULlAP9Fz-cvIGNyadK2WLVyDAQcQI,6727
+bookshelf/shelf.py,sha256=d9RhtbvXz4BjlzQUhTq34wrC4UyYQI1TuBEMkXVqzio,7695
+bookshelf/utils.py,sha256=eD_VxSmMr59b2H06aleCRAqW8-oN7o3kVpF6cpdoIyM,7045
+bookshelf-0.3.1b3.dist-info/METADATA,sha256=PRP6wf2CpGpvNVfvhwePmaE7trjSQeX-4Rv9tl2ckJE,7135
+bookshelf-0.3.1b3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+bookshelf-0.3.1b3.dist-info/licenses/LICENSE,sha256=xqtjfWaV_Jx56H7PGswaVgft8a137irKOtHdl_VUPA4,1056
+bookshelf-0.3.1b3.dist-info/RECORD,,
