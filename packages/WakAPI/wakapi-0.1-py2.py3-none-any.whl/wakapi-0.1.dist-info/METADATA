@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: WakAPI
+Version: 0.1
+Summary: WakaTime api client
+Home-page: https://github.com/ogatomo21/wakapi
+License: MIT
+Author: Tomoya Ogawa
+Author-email: t.ogawa@ogatomo.net
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/ogatomo21/wakapi
+Description-Content-Type: text/markdown
+
+# WakAPI
+
+## What is this?
+
+"Waka"Time + "API" = WakAPI
+
+WakAPIはWakaTimeのAPIをPythonで簡単に使えるライブラリです。
+
+## 使用例
+
+### total
+
+`wakapi.total(secret, sec)` 
+- Secret* WakaTime API Secret
+- sec デフォルトはfalse。falseだとjsonをそのまま、trueだと時間のみをJSONで返します。
+
+#### 例
+
+`wakapi.total("waka_*****", False)`
+
+### date
+
+`wakapi.date(secret, date, sec)` 
+- Secret* WakaTime API Secret
+- date* 取得したい日付をYYYY-MM-DDで指定します。
+- sec デフォルトはfalse。falseだとjsonをそのまま、trueだと時間のみをJSONで返します。
+
+#### 例
+
+`wakapi.total("waka_*****", "2011-10-10", False)`
