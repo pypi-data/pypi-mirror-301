@@ -1,0 +1,7 @@
+pulumi_django_azure/__init__.py,sha256=5RY9reSVNw-HULrOXfhcq3cyPne-94ojFmeV1m6kIVg,79
+pulumi_django_azure/django_deployment.py,sha256=dTbzASxVeDSLzTx3MN5UcbZTVhtZBbsaplF-mrkOvoc,44421
+pulumi_django_azure-1.0.15.dist-info/LICENSE,sha256=tlZQiilfsHDYlvhWMA5PvDV2FxpaCQbE9aapcygnhEQ,1088
+pulumi_django_azure-1.0.15.dist-info/METADATA,sha256=FUubwm450nWLBkxdvinFLDu-jTH8G8POYpcDq_WcD3g,13954
+pulumi_django_azure-1.0.15.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pulumi_django_azure-1.0.15.dist-info/top_level.txt,sha256=MNPRJhq-_G8EMCHRkjdcb_xrqzOkmKogXUGV7Ysz3g0,20
+pulumi_django_azure-1.0.15.dist-info/RECORD,,
