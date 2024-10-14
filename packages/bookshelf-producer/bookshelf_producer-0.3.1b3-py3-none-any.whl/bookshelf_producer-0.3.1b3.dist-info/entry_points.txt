@@ -1,0 +1,2 @@
+[console_scripts]
+bookshelf = bookshelf_producer.cli:main
