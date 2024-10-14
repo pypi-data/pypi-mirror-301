@@ -1,0 +1,11 @@
+codegenai/README.md,sha256=g3SIhL8GoBM1HmRRNeeoerZiqNuxWCNqBpZdqhOMVY4,71
+codegenai/__init__.py,sha256=hbXwadkQdP-2uGxYv4skhYir5u7tzdLZCFxundd4DXw,50
+codegenai/aids.py,sha256=x-ty_A70xphNV1F7ljS0Vrjwtf_Anrl2toxuCXXzuxs,64984
+codegenai/cn.py,sha256=67w581kMMBRZPZcUsK9PSpRbkFWoTnnwNwT2mr-KvWs,44238
+codegenai/licence.txt,sha256=zjEF2AynytmuD49z_P3ITEu9Oau3xrFYhfjX4-XGRL8,85
+codegenai/main.py,sha256=YBA7OJbH-S0ijqbdoH-u1KmrBoN-yq51Szv3Hoa4Zdk,8847
+codegenai/special.py,sha256=q9L5xuQRp1X7BkBWYLHXVPRdLerVp9Na6RAnbylJ8S8,2651
+codegenai-5.6.5.dist-info/METADATA,sha256=4DMcMDhypkCjST48YKHAVKFy3xGTWIUMoF39uuGP_mY,207
+codegenai-5.6.5.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+codegenai-5.6.5.dist-info/top_level.txt,sha256=imK0diRwk2qz8yWslqY3DIrn_zJjxsdh4miYjgicsuo,10
+codegenai-5.6.5.dist-info/RECORD,,
