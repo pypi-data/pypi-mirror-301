@@ -1,0 +1,23 @@
+{
+    "version": "0.0.1",
+    "include": [
+        {
+            "filename": "d:\\promptarchitect\\examples\\define_test_cases\\generate_titles_claude.prompt",
+            "tests": [
+                {
+                    "id": "test_01",
+                    "samples": [
+                        "sample_01.txt",
+                        "sample_02.txt"
+                    ]
+                },
+                {
+                    "id": "test_02",
+                    "samples": [
+                        "sample_01.txt"
+                    ]
+                }
+            ]
+        }
+    ]
+}
