@@ -1,0 +1,736 @@
+background: linear-gradient(180deg, #f0f2f5 0%, #e2e8f0 100%);
+
+box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+
+padding: 20px 0;
+margin-bottom: 40px;
+
+/* Styling for the logo and home icon */
+.logo {
+  width: 80px; /* Reduced size for balance */
+  height: auto;
+  margin-bottom: 20px; /* Space between logo and home icon */
+}
+
+.home-icon {
+  width: 40px;
+  height: auto;
+  margin-top: 10px; /* Space between logo and home icon */
+  cursor: pointer; /* Ensures that it's clickable */
+}
+
+.home-link {
+  padding: 5px;
+  margin-bottom: 20px; /* Space between home icon and linters */
+}
+
+/* Sidebar container styling */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the InfraLint title */
+.sidebar-title {
+  font-size: 28px; /* Adjusted for better balance */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Reduced spacing below title */
+}
+
+/* Navigation links in the sidebar */
+.sidebar .nav-link {
+  color: #007bff;
+  font-size: 16px; /* Adjusted font size for consistency */
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px; /* Ensures the active link matches the others */
+}
+
+/* Align table header font sizes for better readability */
+.page-header {
+  font-size: 1.8em; /* Slightly reduced from previous size */
+  font-weight: bold;
+  color: #212529;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px; /* Reduced margin to balance spacing */
+  padding-bottom: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Styling for the main content */
+.content-layout {
+  margin-left: 14rem;
+  padding: 2rem 1rem;
+  background-color: #f9fafc;
+  overflow-x: hidden;
+}
+
+/* Reduce the font size for the detailed issues text and center it */
+.summary-text {
+  font-size: 1em; /* Reduced for more balance */
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Styling for the table to add space above */
+.styled-table {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-collapse: separate;
+  margin-top: 20px; /* Add space above the table */
+}
+
+/* Adjust styling for the table headers */
+.styled-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.1em; /* Slightly larger for better visibility */
+}
+
+/* Styling for table rows and cells */
+.styled-table td {
+  white-space: normal;
+  height: auto;
+  text-align: left;
+  padding: 10px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Alternate row coloring for better readability */
+.styled-table tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+/* Hover effect on table rows */
+.styled-table tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.2s ease-in;
+}
+
+/* Table header for page */
+.modal-header-custom {
+  text-align: center;
+  font-size: 1.6em; /* Adjusted for readability */
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #f8f9fa;
+}
+
+/* Styling for modal content */
+.modal-custom {
+  padding: 20px;
+  font-size: 1.2em;
+  background-color: #f8fafc;
+  border-radius: 10px;
+}
+
+/* Improved Dash table hover styling */
+.dash-table-container .dash-spreadsheet-container .dash-cell:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Modal link styling */
+.modal-body-custom a {
+  color: #007bff;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+.modal-body-custom a:hover {
+  color: #0056b3;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-layout {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
+/* Center Pie Chart title */
+.infolayer .g-gtitle {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #343a40;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Reduce the size of the InfraLint logo */
+#infralint-logo {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the logo and InfraLint title together */
+.infralint-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Align logo and title horizontally */
+  margin-bottom: 20px; /* Space below the container */
+}
+
+/* Smaller logo to better match text height */
+.logo {
+  width: 35px; /* Adjusted for better alignment with text height */
+  height: auto;
+  margin-right: 10px; /* Space between logo and title */
+}
+
+/* InfraLint title beside the logo */
+.sidebar-title {
+  font-size: 25px; /* Slightly smaller for better balance */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Home icon styling */
+.home-icon {
+  width: 35px; /* Adjusted to a slightly smaller size */
+  height: auto;
+  cursor: pointer;
+  margin-top: 15px; /* Space above the home icon */
+}
+
+/* Center-align the home icon */
+.home-link {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.linter-header {
+  font-size: 1.4em; /* Smaller than the tool title */
+  font-weight: bold;
+  color: #212529;
+  text-align: center; /* Center the header */
+  margin-top: 40px; /* Add more space above */
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Tool title (InfraLint) should remain larger */
+.sidebar-title {
+  font-size: 1.6em; /* Ensure this is larger than the linter header */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styling for the cell-table to add space above */
+.cell-table {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-collapse: separate;
+  margin-top: 20px; /* Add space above the table */
+}
+
+/* Modal content wrapper styling */
+.modal-content-wrapper {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the description text */
+.modal-description {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Link container to avoid links breaking into individual characters */
+.modal-links {
+  margin-bottom: 10px;
+}
+
+/* Ensure links don't break into individual characters */
+.modal-links a {
+  word-wrap: normal; /* Prevent breaking words */
+  word-break: break-word; /* Only break the word when necessary */
+  overflow-wrap: break-word; /* Break at spaces or hyphenation points */
+  text-decoration: none;
+  color: #007bff;
+}
+
+.modal-links a:hover {
+  color: #0056b3; /* Darken the color on hover */
+}
+
+/* Styling for additional context */
+.modal-context {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #f8f9fa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  padding: 20px;
+  background: linear-gradient(180deg, #f5f7fa, #e6e9ed);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px; /* Slight rounding for a modern look */
+}
+
+.sidebar-title {
+  font-size: 1.6em; /* Adjust the font size */
+  font-weight: 600; /* Reduce the weight slightly */
+  margin-left: 12px; /* Ensure a balanced space between the logo and text */
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the content */
+}
+
+.sidebar-title {
+  background: linear-gradient(90deg, #333, #555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-box h2 {
+  margin-top: 10px; /* Space between logo and text */
+  font-size: 1.5em; /* Adjust font size for balance */
+  font-weight: 600;
+  color: #333; /* Darker color for better readability */
+}
+
+.home-icon {
+  width: 40px;
+  height: auto;
+  border: 2px solid #007bff; /* Blue border to match brand colors */
+  border-radius: 50%; /* Circular icon */
+  padding: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 20px; /* Separate it from the rest of the content */
+  cursor: pointer; /* Indicate it is clickable */
+}
+
+.logo-box img {
+  width: 45px; /* Reduce logo size */
+}
+
+.sidebar-title {
+  margin-top: 5px; /* Reduce the gap between the logo and title */
+  font-size: 1.3em; /* Slightly smaller font */
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Container for the logo and title */
+.logo-box {
+  display: flex;
+  align-items: center; /* Vertical alignment of logo and text */
+  justify-content: center; /* Horizontal alignment */
+  background-color: #f0f2f5; /* Light background color */
+  padding: 15px; /* Padding around the box */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Spacing below the logo box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the logo image */
+.logo-img {
+  width: 50px; /* Size of the logo */
+  height: 50px; /* Ensure the height is consistent */
+  margin-right: 10px; /* Space between the logo and the title */
+}
+
+/* Styling for the title */
+.logo-title {
+  font-size: 24px; /* Font size of the title */
+  font-weight: bold; /* Bold for emphasis */
+  color: #333; /* Darker text color for contrast */
+}
+
+.logo-box img {
+  width: 40px; /* Adjust the size as necessary */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* Sidebar Styling */
+.sidebar-wrapper {
+  background-color: #f0f4f8; /* Light background for the sidebar */
+  padding: 20px 0;
+  width: 100%; /* Ensure it takes up 100% of the column's width */
+  height: 100vh; /* Ensure it spans the full viewport height */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* Logo Styling */
+.logo {
+  display: block; /* Ensures it's block-level for proper positioning */
+  margin: 0 auto; /* Centers the logo */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #f0f4f8;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Title Styling */
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d3748;
+  margin-left: 0; /* Remove left margin to center title */
+  text-align: center; /* Center the title within the sidebar */
+  letter-spacing: 0.5px;
+  word-wrap: break-word; /* Prevents long text from overflowing */
+}
+
+/* Adjustments for Nav Links */
+.sidebar .nav-link {
+  color: #007bff; /* Default link color */
+  padding: 10px;
+  font-weight: bold;
+  text-align: center; /* Center the navigation links */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #dae2eb; /* Hover effect */
+  border-radius: 5px;
+}
+
+.sidebar .home-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
+
+/* General Sidebar Styling */
+.sidebar-wrapper {
+  background-color: #f0f4f8; /* Light background for the sidebar */
+  padding: 20px 0;
+  width: 100%; /* Ensure it takes up 100% of the column's width */
+  height: 100vh; /* Ensure it spans the full viewport height */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  background: linear-gradient(180deg, #f5f7fa, #e6e9ed); /* Latest background */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Latest box shadow */
+}
+
+/* Adjust the size and spacing of the logo and title for better responsiveness */
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 50px; /* Adjusted for responsiveness */
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #f0f4f8;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Logo container */
+.logo-box {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  padding: 15px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Spacing below the logo box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Sidebar Title Styling */
+.sidebar-title {
+  font-size: 22px; /* Adjusted font size */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word; /* Prevents long text from overflowing */
+}
+
+/* Navigation Links Styling */
+.sidebar .nav-link {
+  color: #007bff; /* Default link color */
+  padding: 10px;
+  font-weight: bold;
+  text-align: center; /* Center the navigation links */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #dae2eb; /* Hover effect */
+  border-radius: 5px;
+}
+
+.sidebar .home-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Home Icon Styling */
+.home-icon {
+  width: 35px; /* Adjusted size */
+  height: auto;
+  cursor: pointer;
+  margin-top: 15px; /* Space above the home icon */
+  border: 2px solid #007bff; /* Blue border to match brand colors */
+  border-radius: 50%; /* Circular icon */
+  padding: 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 20px; /* Separate it from the rest of the content */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar-wrapper {
+    width: 80px; /* Narrow the sidebar */
+    padding: 10px;
+  }
+
+  .logo {
+    width: 40px; /* Adjust the logo size for smaller screens */
+    height: 40px;
+  }
+
+  .sidebar-title {
+    font-size: 18px; /* Adjust title size for smaller screens */
+    margin-left: 0; /* Align title properly in smaller sidebar */
+  }
+
+  .sidebar .nav-link {
+    font-size: 14px; /* Reduce font size of nav links */
+    padding: 8px;
+  }
+
+  .home-icon {
+    width: 25px; /* Adjust home icon size */
+  }
+
+  /* Ensure the pie chart adjusts to the smaller layout */
+  .content-layout {
+    margin-left: 0; /* No left margin for content on smaller screens */
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar-wrapper {
+    width: 70px; /* Narrow the sidebar even more */
+    padding: 5px;
+  }
+
+  .logo {
+    width: 35px; /* Adjust the logo size for even smaller screens */
+    height: 35px;
+  }
+
+  .sidebar-title {
+    font-size: 16px; /* Further reduce title size */
+  }
+
+  .sidebar .nav-link {
+    font-size: 12px; /* Further reduce font size of nav links */
+    padding: 6px;
+  }
+
+  .home-icon {
+    width: 20px; /* Adjust home icon size for smaller screens */
+  }
+}
+
+/* General Sidebar Styling */
+.sidebar-wrapper {
+  background-color: #f0f4f8; /* Light background for the sidebar */
+  padding: 20px 0;
+  width: 100%; /* Ensure it takes up 100% of the column's width */
+  height: 100vh; /* Ensure it spans the full viewport height */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  background: linear-gradient(180deg, #f5f7fa, #e6e9ed); /* Latest background */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Latest box shadow */
+}
+
+/* Adjust the size and spacing of the logo and title for better responsiveness */
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 50px; /* Adjusted for responsiveness */
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #f0f4f8;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Logo container */
+.logo-box {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  padding: 15px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Spacing below the logo box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Sidebar Title Styling */
+.sidebar-title {
+  font-size: 22px; /* Adjusted font size */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word; /* Prevents long text from overflowing */
+}
+
+/* Hide the title on small screens or when the sidebar becomes narrow */
+@media (max-width: 768px) {
+  .sidebar-title {
+    display: none; /* Hide the title when the sidebar is narrow */
+  }
+
+  .logo {
+    width: 40px; /* Adjust the logo size for smaller screens */
+    height: 40px;
+  }
+
+  .sidebar-wrapper {
+    width: 80px; /* Narrow the sidebar */
+    padding: 10px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 14px; /* Reduce font size of nav links */
+    padding: 8px;
+  }
+
+  .home-icon {
+    width: 25px; /* Adjust home icon size */
+  }
+
+  /* Ensure the pie chart adjusts to the smaller layout */
+  .content-layout {
+    margin-left: 0; /* No left margin for content on smaller screens */
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar-wrapper {
+    width: 70px; /* Narrow the sidebar even more */
+    padding: 5px;
+  }
+
+  .logo {
+    width: 35px; /* Adjust the logo size for even smaller screens */
+    height: 35px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 12px; /* Further reduce font size of nav links */
+    padding: 6px;
+  }
+
+  .home-icon {
+    width: 20px; /* Adjust home icon size for smaller screens */
+  }
+}
+
+.footer-container {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed; /* Keeps the footer fixed at the bottom */
+  bottom: 0; /* Aligns the footer to the bottom */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+  font-size: 14px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow at the top of the footer */
+}

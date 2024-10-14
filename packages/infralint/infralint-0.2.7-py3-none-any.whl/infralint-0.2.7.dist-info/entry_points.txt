@@ -1,0 +1,5 @@
+[console_scripts]
+ilint=terraform_linter_tool.linter_runner:cli
+inf_lint=terraform_linter_tool.linter_runner:cli
+infralint=terraform_linter_tool.linter_runner:cli
+
