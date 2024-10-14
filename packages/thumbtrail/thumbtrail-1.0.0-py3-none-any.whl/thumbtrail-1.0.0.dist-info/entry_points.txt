@@ -1,0 +1,2 @@
+[console_scripts]
+thumbtrail = thumbtrail.cli:main
