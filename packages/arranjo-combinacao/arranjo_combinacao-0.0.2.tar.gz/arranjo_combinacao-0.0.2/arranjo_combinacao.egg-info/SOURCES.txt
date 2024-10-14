@@ -1,0 +1,9 @@
+README.md
+setup.py
+arranjo_combinacao/__init__.py
+arranjo_combinacao/arranjo.py
+arranjo_combinacao/combinacao.py
+arranjo_combinacao.egg-info/PKG-INFO
+arranjo_combinacao.egg-info/SOURCES.txt
+arranjo_combinacao.egg-info/dependency_links.txt
+arranjo_combinacao.egg-info/top_level.txt
