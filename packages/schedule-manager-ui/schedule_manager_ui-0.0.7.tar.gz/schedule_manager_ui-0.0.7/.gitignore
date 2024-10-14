@@ -1,0 +1,17 @@
+*
+
+!.gitignore
+!.github
+!.github/**
+
+!LICENSE
+!README.md
+!pyproject.toml
+!setup.py
+
+!schedule_manager_ui
+!schedule_manager_ui/*
+!schedule_manager_ui/templates/*
+
+!tests
+!tests/*
