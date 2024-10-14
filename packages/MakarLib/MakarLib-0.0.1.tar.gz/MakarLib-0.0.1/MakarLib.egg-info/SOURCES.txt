@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+MakarLib.egg-info/PKG-INFO
+MakarLib.egg-info/SOURCES.txt
+MakarLib.egg-info/dependency_links.txt
+MakarLib.egg-info/requires.txt
+MakarLib.egg-info/top_level.txt
