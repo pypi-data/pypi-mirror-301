@@ -1,0 +1,20 @@
+# Include the license file
+include LICENSE
+
+# Include README and other documentation files
+prune README.md
+
+# Exclude any JSON output files
+prune memu/*.json
+
+# Include all the source files (Python scripts)
+recursive-include memu *.py
+
+# Exclude the test files
+prune memu/tests
+
+# Exclude any unwanted or temporary files (e.g., .DS_Store)
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude .DS_Store

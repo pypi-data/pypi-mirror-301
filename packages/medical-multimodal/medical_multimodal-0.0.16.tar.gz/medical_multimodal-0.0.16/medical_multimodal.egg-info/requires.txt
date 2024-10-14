@@ -1,0 +1,4 @@
+requests
+openai
+psycopg2
+fhir.resources
