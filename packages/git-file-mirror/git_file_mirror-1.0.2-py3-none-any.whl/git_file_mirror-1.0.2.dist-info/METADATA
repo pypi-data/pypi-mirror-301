@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: git-file-mirror
+Version: 1.0.2
+Home-page: https://github.com/victor-mariano-leite/git-mirror
+Author: Victor Mariano Leite
+Author-email: marianoleite44@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich >=12
+Requires-Dist: requests
+
+# git-mirror
