@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: xnano
+Version: 0.0.28
+Summary: 
+License: MIT
+Author: Hammad Saeed
+Author-email: hvmmad@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Requires-Dist: chromadb (>=0.5.13,<0.6.0) ; extra == "all"
+Requires-Dist: instructor (>=1.5.2,<2.0.0)
+Requires-Dist: jsonpatch (>=1.33,<2.0)
+Requires-Dist: litellm (>=1.49.2,<2.0.0) ; extra == "all"
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: python-docx (>=1.1.2,<2.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Requires-Dist: semchunk (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# XNANO
+
+xnano is the lightweight implementation [zyx](https://zyx.hammad.fun) was meant to be. Documentation will be added soon.
+
+## <code>install</code>
+
+```bash
+pip install xnano
+```
+
+or 
+
+```bash
+# for chromadb & litellm preinstalled
+pip install 'xnano[all]'
+```
+
+## <code>basic usage</code>
+
+```python
+import xnano as x
+
+# define a tool
+def get_favorite_color() -> str:
+    return "blue"
+
+
+# automatic tool execution
+x.completion(
+    "what is my favorite color?",
+    model = "gpt-4o-mini"          # all litellm models supported
+    tools = [get_favorite_color]
+)
+```
+
+### Easy LLM & Pydantic BaseModel Integration
+
+```python
+from xnano import BaseModel
+
+class User(BaseModel):
+    name: str
+    age: int
+    favorite_color: str
+
+# This will generate 5 instances of the User class
+User.generate(n=5)
+```
+
+**Generate Fields Sequentially (Chain-Of-Thought)**
+
+```python
+User.generate(
+    model = "anthropic/claude-3.5",
+    process = "sequential"            # defaults to 'batch'
+)
+```
+
+**Optimized Schema Regeneration**
+
+```python
+user = User(
+    name = "John Doe",
+    age = 25,
+    favorite_color = "blue"
+)
+
+user.patch(
+    fields = ["name"],
+    instructions = "The user's name has changed to John Smith"
+)
+
+# or user.regenerate() (not as strict)
+
+# from xnano import patch can run the patch logic automatically from message threads.
+```
