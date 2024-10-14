@@ -1,0 +1,115 @@
+# Neon Swarm
+
+Neon Swarm is a set of tools and agents for interacting with Neon PostgreSQL databases. It leverages the power of [OpenAI Swarm Framework](https://github.com/openai/swarm) to simplify database operations, query generation, and project management.
+
+## Features
+
+- AI-powered database interaction
+- Project management (create, list, delete projects)
+- Branch management (create, list, delete branches)
+- SQL query execution and generation
+- Database schema retrieval
+- Secure connection handling
+
+## Installation
+
+You can install Neon Swarm using pip:
+
+```bash
+pip install neon-swarm
+```
+### Dependencies
+
+> ⚠️ **Warning**
+> 
+> This package requires the `swarm` package from OpenAI, which is not available on PyPI. To install it, run:
+> 
+> ```bash
+> pip install git+https://github.com/openai/swarm.git
+> ```
+> 
+> Make sure to install this before using neon_swarm.
+
+## Agents
+
+Neon Swarm provides three main agents:
+
+1. **Neon Agent**: Handles project and branch management tasks.
+2. **SQL Executor**: Executes SQL queries on your Neon databases.
+
+## Usage
+
+### Set up API keys
+
+Before using Neon Swarm, make sure to set up your Neon and OpenAI API keys as environment variables:
+
+```bash
+export NEON_API_KEY='your_neon_api_key'
+export OPENAI_API_KEY='your_openai_api_key'
+```
+
+### Initialize the Neon Agent
+
+First, you can initialize the agent and provide the necessary context variables:
+
+```python
+from neon_swarm import neon_agent_init
+from swarm.repl import run_demo_loop
+
+neon_agent, context_variables = neon_agent_init()
+run_demo_loop(agent=neon_agent, context_variables=context_variables, debug=True)
+
+```
+
+### Example Session
+```bash
+Starting Swarm CLI 🐝
+
+User: Hi there what can you do?
+
+Neon Agent: I can assist with tasks related to managing your projects, such as listing projects, creating or deleting projects, managing branches within projects, and executing SQL queries. Please let me know what you need help with!
+
+User: list my projects by region
+
+Neon Agent: Your projects are distributed in the following regions:
+
+1. **AWS EU Central 1:**
+   - Project Name: test
+
+2. **AWS US East 2:**
+   - Project Name: holy-lab-67952041
+   - Project Name: dark-art-95693218
+   - Project Name: sweet-wave-03017484
+   - Project Name: lively-feather-51928761
+   - Project Name: Project 3
+   - Project Name: Project 2
+   - Project Name: Project 1
+
+3. **AWS US East 1:**
+   - Project Name: mute-silence-42691339
+
+4. **AWS EU Central 1:**
+   - Project Name: proud-mode-21844084
+
+If you need any more information or assistance with these projects, please let me know!
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the [GitHub issue tracker](https://github.com/raoufchebri/neon_swarm/issues).
+
+## Acknowledgements
+
+- [Swarm](https://github.com/openai/swarm) for the Swarm Framework
+- [OpenAI](https://openai.com) for the AI models powering the agents
+- [Neon](https://neon.tech) for providing the serverless PostgreSQL platform
+
+
