@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: numeros_lotofacil
+Version: 0.0.1
+Summary: Sorteia numeros da lotofacil
+Home-page: https://github.com/MendesTatah
+Author: Thais Mendes
+Author-email: thaisppmendes@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+# numeros_lotofacil_package
+
+O pacote Ã© usado para criar sequencias de nÃºmeros para apostas da lotofacil.
+
+
+
+## InstalaÃ§Ã£o
+
+Use the package manager pip to install numeros_lotofacil_package
+
+```pip instal numeros_lotofacil_package```
+## Uso/Exemplos
+
+```
+from numeros_lotofacil import sorteio
+sorteio_numeros()
+```
+
+
+## Autores
+
+- [Thais Mendes](https://https://github.com/MendesTatah)
+

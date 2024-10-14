@@ -1,0 +1,8 @@
+README.md
+setup.py
+numeros_lotofacil/__init__.py
+numeros_lotofacil/sorteio.py
+numeros_lotofacil.egg-info/PKG-INFO
+numeros_lotofacil.egg-info/SOURCES.txt
+numeros_lotofacil.egg-info/dependency_links.txt
+numeros_lotofacil.egg-info/top_level.txt
