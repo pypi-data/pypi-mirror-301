@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: spacetower_data_management_python_client
+Version: 1.2.1
+Summary: Data Management API
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Exotrail
+Keywords: OpenAPI,OpenAPI-Generator,Data Management API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3<2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic>=2
+Requires-Dist: typing-extensions>=4.7.1
+
+    The &lt;b&gt;Data Management&lt;/b&gt; component provides facilities to store space data such as leap second, EOP (Earth Orientation Parameters) or space weather forcecasts in a centralized way, such that these data can be used by all the  components of the FDS.  The following main concepts are used:  &lt;ul&gt;   &lt;li&gt;&lt;b&gt;Repositories&lt;/b&gt;are folders in which all the data belonging to a same   type (e.g. LEAP_SECOND) are stored&lt;/li&gt;   &lt;li&gt;&lt;b&gt;References data&lt;/b&gt; represents the data that will be used by default   by all the components of the system&lt;/li&gt; &lt;/ul&gt;  A reference data is always an existing data stored in a repository, but only one  data stored in a repository (for a given type) can be a reference data. 
+    
