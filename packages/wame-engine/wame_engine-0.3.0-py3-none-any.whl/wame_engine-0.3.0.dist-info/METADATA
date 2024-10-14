@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wame-engine
+Version: 0.3.0
+Summary: Wame Game Engine
+Author: WilDev Studios
+Author-email: wildevstudios@gmail.com
+Keywords: python,pygame,wrapper,engine,game,opengl
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Requires-Dist: pygame
+
+Pygame Wrapper to Make Creating and Managing Games Easier
