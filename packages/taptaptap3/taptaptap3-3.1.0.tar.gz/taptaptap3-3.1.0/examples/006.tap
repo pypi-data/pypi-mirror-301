@@ -1,0 +1,16 @@
+1..48
+ok 1 Description # Directive
+# Diagnostic
+....
+ok 47 Description
+ok 48 Description
+more tests....
+
+
+
+##     validity: -1
+## ok testcases: 3 / 48
+##      bailout: no
+##       stderr: 1..48
+##       stderr: Diagnostic
+##       stderr: more tests...

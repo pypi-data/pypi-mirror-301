@@ -1,0 +1,16 @@
+1..5
+ok 1 - approved operating system
+# $^0 is solaris
+ok 2 - # SKIP no /sys directory
+ok 3 - # SKIP no /sys directory
+ok 4 - # SKIP no /sys directory
+ok 5 - # SKIP no /sys directory
+
+
+
+
+##     validity: 0
+## ok testcases: 5 / 5
+##      bailout: no
+##       stderr: operating
+##       stderr: $^0

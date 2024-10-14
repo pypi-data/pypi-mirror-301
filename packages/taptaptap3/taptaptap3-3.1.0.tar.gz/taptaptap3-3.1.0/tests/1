@@ -1,0 +1,154 @@
+......................................
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.002s
+
+OK
+....................................
+----------------------------------------------------------------------
+Ran 18 tests in 0.004s
+
+OK
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.004s
+
+OK
+..WARNING:TapDocumentParser:Line "1..1b" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "1..1b" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Plan defines a decreasing range.
+WARNING:TapDocumentParser:Plan defines a decreasing range.
+....
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+..................................WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+............WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+......WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+..
+----------------------------------------------------------------------
+Ran 27 tests in 0.019s
+
+OK
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.019s
+
+OK
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+..
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+
+----------------------------------------------------------------------
+Ran 1 test in 0.007s
+
+OK
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "1..6 # skip plan skip explanation" looks like a plan, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok just explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 1" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 2 with "some" explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 3 - with another explanation" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 4 - explanation # todo" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 5 explanation # todo spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "ok 6 explanation # skip spec only" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 7 # skip" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok 8 # skip think twice" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax
+WARNING:TapDocumentParser:Line "not ok text2" looks like a test line, but does not match syntax

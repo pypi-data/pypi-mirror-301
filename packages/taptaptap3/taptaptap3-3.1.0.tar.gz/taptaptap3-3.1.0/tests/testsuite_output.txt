@@ -1,0 +1,545 @@
+[[     Run testsuite test_taptc.py     ]]
+[[     Run testsuite test_tapdoc.py     ]]
+[[     Run testsuite test_exc.py     ]]
+[[     Run testsuite test_examples.py     ]]
+[[     Run testsuite test_tapmerge.py     ]]
+[[     Testing  000.tap     ]]
+
+
+
+
+[[     Testing  001.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  002.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  003.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  004.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  005.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  006.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  007.tap     ]]
+
+
+
+
+[[     Testing  008.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  009.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  010.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  011.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  012.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  013.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  014.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  015.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  016.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  017.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  019.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  020.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  021.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+[[     Testing  022.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+[[     Testing  023.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  024.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+
+[[     Testing  025.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+[[     Testing  026.tap     ]]
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+
+[[     Check output of  proc_000.py     ]]
+ TAP version 13
+1..1
+ok - Proving it right
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_001.py     ]]
+ TAP version 13
+1..2
+ok - Proving it right
+not ok - and failing
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_002.py     ]]
+ TAP version 13
+1..3
+ok - Starting the program
+ok - Starting the engine
+ok - Find the object
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_003.py     ]]
+ TAP version 13
+1..10
+ok - Starting the program
+not ok - Starting the engine
+not ok - Find the object
+not ok - Terminate
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_004.py     ]]
+ TAP version 13
+1..10
+ok - Starting the program
+ok - Starting the engine
+ok - Find the object  # SKIP Setup required
+ok - Terminate  # SKIP Setup missing
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_005.py     ]]
+ TAP version 13
+1..13
+ok - Starting the program
+ok - Starting the engine
+ok - Find the object
+ok - Grab it  # TODO
+ok - Use it  # TODO
+ok - 2 * 2 == 4
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_006.py     ]]
+ TAP version 13
+1..10
+ok - Starting the program
+ok - Starting the engine
+ok - Find the object
+ok - Transport object to target
+ok - Check for existing fire
+ok - Place it beneath the desk
+ok - Search for fire extinguisher
+ok - Extinguish fire
+ok - Put fire extinguisher back
+ok - Terminate
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_007.py     ]]
+ TAP version 12
+1..1  # SKIP environment does not fit
+not ok - TypeError
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_008.py     ]]
+ TAP version 13
+1..1
+ok - 2 * 2 == 4
+arithmetics checked
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_009.py     ]]
+ TAP version 13
+1..4
+not ok - 1 + 1 == 5
+ok - 1 + 2 == 3
+ok - 2 + 4 == 6
+ok - 4 + 8 == 12
+Bail out! 
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  proc_010.py     ]]
+ TAP version 13
+1..2
+ok - before
+Bail out! now
+ok - after
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  test_unittestrunner.py     ]]
+ 1..3
+ok
+test_choice (__main__.TestSequenceFunctions)
+ok
+test_sample (__main__.TestSequenceFunctions)
+ok
+test_shuffle (__main__.TestSequenceFunctions)
+Running time: 0.00043201446533203125 seconds
+
+
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  creator_001.py     ]]
+1..3
+ok - 1 + 1 == 2
+ok - E = mc^2  # SKIP Still in discussion
+not ok - 2 + 2 = 5  # TODO Fix surveillance state
+Bail out! System failure!
+
+ 
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  Bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+[[     Check output of  simplecreator_001.py     ]]
+1..3
+ok
+ok
+not ok
+
+ 
+  [ OK ]  Validity state is fine
+  [ OK ]  Ratio of ok / not-ok testcases is fine
+  [ OK ]  No bailout was thrown as expected
+  [ OK ]  Checked conditions in file
+
+
+./run.sh   6.39s user 0.61s system 99% cpu 7.064 total

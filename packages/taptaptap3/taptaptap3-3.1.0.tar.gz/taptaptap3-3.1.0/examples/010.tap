@@ -1,0 +1,9 @@
+1..0 # skip because English-to-French translator isn't installed
+
+
+
+
+##     validity: 0
+## ok testcases: 0 / 0
+##      bailout: no
+##       stderr: because

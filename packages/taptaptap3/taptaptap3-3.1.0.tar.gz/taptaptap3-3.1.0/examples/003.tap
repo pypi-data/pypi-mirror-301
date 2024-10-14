@@ -1,0 +1,13 @@
+TAP version 13
+1..4
+ok This is fine
+ok 2 This is fine
+ok 4 Good
+ok 3 This is fine
+
+
+
+##     validity: 0
+## ok testcases: 4 / 4
+##      bailout: no
+##       stderr: fine
