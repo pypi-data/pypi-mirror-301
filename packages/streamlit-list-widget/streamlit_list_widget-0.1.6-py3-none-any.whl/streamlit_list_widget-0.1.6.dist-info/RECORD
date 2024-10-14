@@ -1,0 +1,12 @@
+streamlit_list_widget/__init__.py,sha256=ZprHuYP_StmXEEp-FegJwrmzBQZigO7_a4nh-1PHUwE,3038
+streamlit_list_widget/frontend/build/asset-manifest.json,sha256=UG0l3ECiVpw8XMKsgQ9OE3xEDMm1NiVeN5QCbvVmzxk,221
+streamlit_list_widget/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+streamlit_list_widget/frontend/build/index.html,sha256=61woFlxeSz3twaQKhBFd_QCHcVDPwL5MPy8CpEsJwPA,492
+streamlit_list_widget/frontend/build/static/js/main.d65a2168.js,sha256=z3ERck0Nf5y0Hg4aYgFs_vWqO8DvnAaM14BvTxkA76Y,318208
+streamlit_list_widget/frontend/build/static/js/main.d65a2168.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+streamlit_list_widget/frontend/build/static/js/main.d65a2168.js.map,sha256=VyWQ_kCgrf3uqbgB71GrQS6MEjoe6Vir1yEkAYNBCLk,1250325
+streamlit_list_widget-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+streamlit_list_widget-0.1.6.dist-info/METADATA,sha256=CSuqK8lRCEsGGEPQmXtBkxXTfGEtG9aMHYp_EeorjVQ,1711
+streamlit_list_widget-0.1.6.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+streamlit_list_widget-0.1.6.dist-info/top_level.txt,sha256=6ddskH7PPleaFX4nnakG6dSXG119Bo_JHLoBJgAjT7w,22
+streamlit_list_widget-0.1.6.dist-info/RECORD,,
