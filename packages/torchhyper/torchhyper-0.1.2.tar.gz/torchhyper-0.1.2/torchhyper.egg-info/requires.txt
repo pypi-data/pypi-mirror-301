@@ -1,0 +1,10 @@
+matplotlib
+seaborn
+numpy
+tqdm
+gitpython
+torch
+
+[pytorch]
+torch
+torch-cuda
