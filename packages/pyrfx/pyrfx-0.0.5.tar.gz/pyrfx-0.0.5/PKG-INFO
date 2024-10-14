@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pyrfx
+Version: 0.0.5
+Summary: A comprehensive Python SDK for interacting with RFX contracts and data.
+Home-page: https://rfx.exchange
+License: MIT
+Keywords: SDK,RFX,blockchain,Python,API,DeFi,DEX,Exchange
+Author: Lukas
+Author-email: lukas@relative.fi
+Maintainer: Lukas
+Maintainer-email: lukas@relative.fi
+Requires-Python: >=3.10,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: hexbytes (>=1.2.1,<2.0.0)
+Requires-Dist: numerize (>=0.12,<0.13)
+Requires-Dist: numpy (>=2.1.2,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: ratelimit (>=2.2.1,<3.0.0)
+Requires-Dist: tenacity (>=9.0.0,<10.0.0)
+Requires-Dist: web3 (>=7.3.0,<8.0.0)
+Project-URL: Documentation, https://rfx.exchange
+Project-URL: Repository, https://github.com/relative-finance/sdk_v2
+Description-Content-Type: text/markdown
+
+[![Tests](https://github.com/relative-finance/sdk_v2/actions/workflows/test.yml/badge.svg)](https://github.com/relative-finance/sdk_v2/actions/workflows/test.yml) [![Deploy](https://github.com/relative-finance/sdk_v2/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/relative-finance/sdk_v2/actions/workflows/deploy.yml)
+
+# RFX Python SDK
+
+A Python-based SDK developed for interacting with RFX Exchange, offering tools and scripts for executing various operations, including trading and liquidity management.
+
+## Table of Contents
+- [Usage](#usage)
+- [Local Installation](#local-installation)
+- [Running Tests](#running-tests)
+
+## Usage
+The SDK can be installed via pip:
+```sh
+pip install pyrfx
+```
+
+## Local Installation
+The supported Python versions: >= 3.10 <4
+
+To set up the SDK locally, follow these steps:
+```sh
+mkdir dist/
+cd ./dist
+poetry build
+cd ..
+poetry install --with dev
+```
+
+## Running Tests
+To execute tests:
+```sh
+poetry run pytest
+```
+
+
