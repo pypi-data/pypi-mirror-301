@@ -1,0 +1,3 @@
+[console_scripts]
+and_snake=and_snake.play_snake:classic_game
+
