@@ -1,0 +1,4 @@
+include *.rst
+include bin/prism
+include LICENSE
+recursive-include prism *.py
