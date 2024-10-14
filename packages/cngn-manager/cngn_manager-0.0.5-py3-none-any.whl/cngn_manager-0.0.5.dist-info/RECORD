@@ -1,0 +1,12 @@
+cngn_manager/AESCrypto.py,sha256=PWzAv2uOkqIFKJB3NCf-4Z1Ler0ckWW233ClnMORZFQ,2277
+cngn_manager/CryptoWallet.py,sha256=ZP9anEEX97EG4dWh8RUFo2M9eOXIbed3ksAvJ9lfjU0,5602
+cngn_manager/Ed25519Crypto.py,sha256=o0sc0pCPWnwV2zJDSXg1lO7lQOc2h3J3HwLoaxptxmg,3167
+cngn_manager/__init__.py,sha256=-42VM-ineLdcPK_arsDtTiYPSXPWTJlNX4SEmed-gv8,543
+cngn_manager/__version__.py,sha256=cZ8xl2E9Eg3b2cWDxK0IcBNbGEb8mZhnAZGY1KkNZlQ,697
+cngn_manager/constants.py,sha256=0PS1gJ3H081RdpOAalJ7qgr5NWeqoV9sCe5xK67FBuU,283
+cngn_manager/main.py,sha256=xtvPtOnoUnvkE970t6DNz-CbHbgJ987y36ZGVaXXOJI,4732
+cngn_manager-0.0.5.dist-info/LICENSE,sha256=YvHOT-ErywpLiq_D6JBcDkDhC7kpBdOnGBob4Ssmiek,1068
+cngn_manager-0.0.5.dist-info/METADATA,sha256=UTTt_HVX2hQenw5Fq6MSj4YNADoKh9nid2HCLC5vFlg,4475
+cngn_manager-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cngn_manager-0.0.5.dist-info/top_level.txt,sha256=Uq497-h294vdVh_Gp_YbvYfjiTMTNQ-IP8L4qIooRhk,13
+cngn_manager-0.0.5.dist-info/RECORD,,
