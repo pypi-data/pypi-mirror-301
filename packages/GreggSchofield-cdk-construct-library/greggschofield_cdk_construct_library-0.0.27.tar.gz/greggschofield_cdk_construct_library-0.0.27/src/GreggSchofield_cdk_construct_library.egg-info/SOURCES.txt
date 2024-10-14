@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/GreggSchofield_cdk-construct-library/__init__.py
+src/GreggSchofield_cdk-construct-library/py.typed
+src/GreggSchofield_cdk-construct-library/_jsii/__init__.py
+src/GreggSchofield_cdk-construct-library/_jsii/cdk-construct-library@0.0.27.jsii.tgz
+src/GreggSchofield_cdk_construct_library.egg-info/PKG-INFO
+src/GreggSchofield_cdk_construct_library.egg-info/SOURCES.txt
+src/GreggSchofield_cdk_construct_library.egg-info/dependency_links.txt
+src/GreggSchofield_cdk_construct_library.egg-info/requires.txt
+src/GreggSchofield_cdk_construct_library.egg-info/top_level.txt
