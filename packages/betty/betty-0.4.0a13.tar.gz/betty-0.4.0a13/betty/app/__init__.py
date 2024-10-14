@@ -1,0 +1,264 @@
+"""Define Betty's core application functionality."""
+
+from __future__ import annotations
+
+from concurrent.futures import Executor, ProcessPoolExecutor
+from contextlib import asynccontextmanager
+from multiprocessing import get_context
+from os import environ
+from pathlib import Path
+from typing import TYPE_CHECKING, Self, Any, final, TypeVar, cast
+
+import aiohttp
+from aiofiles.tempfile import TemporaryDirectory
+from betty.license import License, LICENSE_REPOSITORY
+from betty.license.licenses import SpdxLicenseRepository
+from betty.plugin.proxy import ProxyPluginRepository
+from typing_extensions import override
+
+from betty import fs
+from betty.app import config
+from betty.app.config import AppConfiguration
+from betty.app.factory import AppDependentFactory
+from betty.assets import AssetRepository
+from betty.cache.file import BinaryFileCache, PickledFileCache
+from betty.cache.no_op import NoOpCache
+from betty.config import Configurable, assert_configuration_file
+from betty.core import CoreComponent
+from betty.factory import new, TargetFactory
+from betty.fetch import Fetcher, http
+from betty.fetch.static import StaticFetcher
+from betty.fs import HOME_DIRECTORY_PATH
+from betty.locale import DEFAULT_LOCALE
+from betty.locale.localizer import Localizer, LocalizerRepository
+
+if TYPE_CHECKING:
+    from betty.plugin import PluginRepository
+    from betty.cache import Cache
+    from collections.abc import AsyncIterator, Callable, Awaitable
+
+_T = TypeVar("_T")
+
+
+@final
+class App(Configurable[AppConfiguration], TargetFactory[Any], CoreComponent):
+    """
+    The Betty application.
+    """
+
+    def __init__(
+        self,
+        configuration: AppConfiguration,
+        cache_directory_path: Path,
+        *,
+        cache_factory: Callable[[Self], Cache[Any]],
+        fetcher: Fetcher | None = None,
+    ):
+        super().__init__()
+        self._configuration = configuration
+        self._assets: AssetRepository | None = None
+        self._localization_initialized = False
+        self._localizer: Localizer | None = None
+        self._localizers: LocalizerRepository | None = None
+        self._http_client: aiohttp.ClientSession | None = None
+        self._fetcher = fetcher
+        self._cache_directory_path = cache_directory_path
+        self._cache: Cache[Any] | None = None
+        self._cache_factory = cache_factory
+        self._binary_file_cache: BinaryFileCache | None = None
+        self._process_pool: Executor | None = None
+        self._licenses: PluginRepository[License] | None = None
+
+    @classmethod
+    @asynccontextmanager
+    async def new_from_environment(cls) -> AsyncIterator[Self]:
+        """
+        Create a new application from the environment.
+        """
+        configuration = AppConfiguration()
+        if config.CONFIGURATION_FILE_PATH.exists():
+            (await assert_configuration_file(configuration))(
+                config.CONFIGURATION_FILE_PATH
+            )
+        yield cls(
+            configuration,
+            Path(environ.get("BETTY_CACHE_DIRECTORY", HOME_DIRECTORY_PATH / "cache")),
+            cache_factory=lambda app: PickledFileCache[Any](app._cache_directory_path),
+        )
+
+    @classmethod
+    @asynccontextmanager
+    async def new_temporary(
+        cls, *, fetcher: Fetcher | None = None
+    ) -> AsyncIterator[Self]:
+        """
+        Creat a new, temporary, isolated application.
+
+        The application will not use any persistent caches, or leave
+        any traces on the system.
+        """
+        async with (
+            TemporaryDirectory() as cache_directory_path_str,
+        ):
+            yield cls(
+                AppConfiguration(),
+                Path(cache_directory_path_str),
+                cache_factory=lambda app: NoOpCache(),
+                fetcher=fetcher or StaticFetcher(),
+            )
+
+    @property
+    def assets(self) -> AssetRepository:
+        """
+        The assets file system.
+        """
+        if self._assets is None:
+            self.assert_bootstrapped()
+            self._assets = AssetRepository(fs.ASSETS_DIRECTORY_PATH)
+        return self._assets
+
+    @property
+    def localizer(self) -> Awaitable[Localizer]:
+        """
+        Get the application's localizer.
+        """
+        return self._get_localizer()
+
+    async def _get_localizer(self) -> Localizer:
+        if self._localizer is None:
+            self.assert_bootstrapped()
+            self._localizer = await self.localizers.get_negotiated(
+                self.configuration.locale or DEFAULT_LOCALE
+            )
+        return self._localizer
+
+    @property
+    def localizers(self) -> LocalizerRepository:
+        """
+        The available localizers.
+        """
+        if self._localizers is None:
+            self.assert_bootstrapped()
+            self._localizers = LocalizerRepository(self.assets)
+        return self._localizers
+
+    @property
+    def http_client(self) -> Awaitable[aiohttp.ClientSession]:
+        """
+        The HTTP client.
+        """
+        return self._get_http_client()
+
+    async def _get_http_client(self) -> aiohttp.ClientSession:
+        if self._http_client is None:
+            self.assert_bootstrapped()
+            self._http_client = aiohttp.ClientSession(
+                connector=aiohttp.TCPConnector(limit_per_host=5),
+                headers={
+                    "User-Agent": "Betty (https://betty.readthedocs.io/)",
+                },
+            )
+            self._shutdown_stack.append(self._shutdown_http_client)
+        return self._http_client
+
+    async def _shutdown_http_client(self, *, wait: bool) -> None:
+        if self._http_client is not None:
+            await self._http_client.close()
+
+    @property
+    def fetcher(self) -> Awaitable[Fetcher]:
+        """
+        The fetcher.
+        """
+        return self._get_fetcher()
+
+    async def _get_fetcher(self) -> Fetcher:
+        if self._fetcher is None:
+            self.assert_bootstrapped()
+            self._fetcher = http.HttpFetcher(
+                await self.http_client,
+                self.cache.with_scope("fetch"),
+                self.binary_file_cache.with_scope("fetch"),
+            )
+        return self._fetcher
+
+    @property
+    def cache(self) -> Cache[Any]:
+        """
+        The cache.
+        """
+        if self._cache is None:
+            self.assert_bootstrapped()
+            self._cache = self._cache_factory(self)
+        return self._cache
+
+    @property
+    def binary_file_cache(self) -> BinaryFileCache:
+        """
+        The binary file cache.
+        """
+        if self._binary_file_cache is None:
+            self.assert_bootstrapped()
+            self._binary_file_cache = BinaryFileCache(self._cache_directory_path)
+        return self._binary_file_cache
+
+    @property
+    def process_pool(self) -> Executor:
+        """
+        The shared process pool.
+
+        Use this to run CPU/computationally-heavy tasks in other processes.
+        """
+        if self._process_pool is None:
+            self.assert_bootstrapped()
+            # Use ``spawn``, which is the Python 3.14 default for all platforms.
+            self._process_pool = ProcessPoolExecutor(mp_context=get_context("spawn"))
+            self._shutdown_stack.append(self._shutdown_process_pool)
+        return self._process_pool
+
+    async def _shutdown_process_pool(self, *, wait: bool) -> None:
+        if self._process_pool is not None:
+            self._process_pool.shutdown(wait, cancel_futures=not wait)
+
+    @override
+    async def new_target(self, cls: type[_T]) -> _T:
+        """
+        Create a new instance.
+
+        :return:
+            #. If ``cls`` extends :py:class:`betty.app.factory.AppDependentFactory`, this will call return ``cls``'s
+                ``new()``'s return value.
+            #. If ``cls`` extends :py:class:`betty.factory.IndependentFactory`, this will call return ``cls``'s
+                ``new()``'s return value.
+            #. Otherwise ``cls()`` will be called without arguments, and the resulting instance will be returned.
+
+        :raises FactoryError: raised when ``cls`` could not be instantiated.
+        """
+        if issubclass(cls, AppDependentFactory):
+            return cast(_T, await cls.new_for_app(self))
+        return await new(cls)
+
+    @property
+    def licenses(self) -> Awaitable[PluginRepository[License]]:
+        """
+        The licenses available to this application.
+
+        Read more about :doc:`/development/plugin/license`.
+        """
+        return self._get_licenses()
+
+    async def _get_licenses(self) -> PluginRepository[License]:
+        if self._licenses is None:
+            self.assert_bootstrapped()
+            self._licenses = ProxyPluginRepository(
+                LICENSE_REPOSITORY,
+                SpdxLicenseRepository(
+                    binary_file_cache=self.binary_file_cache.with_scope("spdx"),
+                    fetcher=await self.fetcher,
+                    localizer=await self.localizer,
+                    factory=self.new_target,
+                    process_pool=self.process_pool,
+                ),
+            )
+
+        return self._licenses
