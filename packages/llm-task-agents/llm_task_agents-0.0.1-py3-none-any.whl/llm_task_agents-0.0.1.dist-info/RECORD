@@ -1,0 +1,15 @@
+agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agents/agent.py,sha256=e02dZBJyXgOjD8QfwxMyZ-BsZAR5irzuCEZFQohirv8,130
+agents/image_classification_agent.py,sha256=mLcsoyVqTUftS-L0cQmP32Yr5kN8f4ya-NC_242sENg,2860
+agents/json_agent.py,sha256=E5w3yCs9EBI_ULsiPGpmXjsfcvoDZIdaol7Xwzd2kuw,2802
+agents/sql_agent.py,sha256=tvKjf1K3LVZPj13qJ2C0YjWtwziSpt-0VG2d0xu4OPM,6538
+agents/text_classification_agent.py,sha256=NrALLGRjvA1-X4hHIrhbMDWbaAUKuWmJcjo6xMWQQrY,2755
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_image_agent.py,sha256=kXAt9wJxBGUQHx3kXaGGPV3RGApZOkabJobotz7HJxY,1080
+tests/test_json_agent.py,sha256=72XFUGzgs5GG93oZeoW4GE1a27fW3IGpKHHSFyoHYoA,1999
+tests/test_sql_agent.py,sha256=ROR1lEQuXKHRXNL8aR_ZRiOjQp-w-jtPCNbifh3PlsY,1672
+tests/test_text_agent.py,sha256=E4NCh02MUiQ6brwZ0ar1W0ZNuyAWutnHhh7Sy40NyLU,1308
+llm_task_agents-0.0.1.dist-info/METADATA,sha256=t_DIs-i_J1YKY2hVBBhBZq222-BqIxC0_va6CV34TaE,4008
+llm_task_agents-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+llm_task_agents-0.0.1.dist-info/top_level.txt,sha256=M8uzIa-tVFY6g2DzJ1Yss5_xghNtkmOF_sRRcHTucdo,13
+llm_task_agents-0.0.1.dist-info/RECORD,,
