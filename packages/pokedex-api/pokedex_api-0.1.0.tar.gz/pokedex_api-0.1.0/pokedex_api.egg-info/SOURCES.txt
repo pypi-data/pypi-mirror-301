@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pokedex_api/__init__.py
+pokedex_api/api.py
+pokedex_api.egg-info/PKG-INFO
+pokedex_api.egg-info/SOURCES.txt
+pokedex_api.egg-info/dependency_links.txt
+pokedex_api.egg-info/requires.txt
+pokedex_api.egg-info/top_level.txt
