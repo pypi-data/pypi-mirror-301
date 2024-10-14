@@ -1,0 +1,5 @@
+setup.py
+protos/mgmt/v1alpha1/neosync.egg-info/PKG-INFO
+protos/mgmt/v1alpha1/neosync.egg-info/SOURCES.txt
+protos/mgmt/v1alpha1/neosync.egg-info/dependency_links.txt
+protos/mgmt/v1alpha1/neosync.egg-info/top_level.txt
