@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: DGCV
+Version: 0.1.2
+Summary: Differential Geometry with Complex Variables
+Author: David Sykes
+Author-email: sykes@ibs.re.kr
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# DGCV - Differential Geometry with Complex Variables
+
+DGCV integrates tools for differential geometry with systematic handling of complex variables-related structures.
+
+## Tutorials
+
+To get started, check out the Jupyter Notebook tutorials:
+
+- **[DGCV Introduction](https://github.com/YikesItsSykes/DGCV/blob/main/tutorials/DGCV_introduction.ipynb)**: An introduction to the key concepts and setup.
+- **[DGCV in Action](https://github.com/YikesItsSykes/DGCV/blob/main/tutorials/DGCV_in_action.ipynb)**: A quick tour through examples from some of the library's more elaborate functions.
+
