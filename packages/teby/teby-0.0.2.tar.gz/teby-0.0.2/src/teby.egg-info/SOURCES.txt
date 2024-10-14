@@ -1,0 +1,8 @@
+pyproject.toml
+src/teby/__init__.py
+src/teby.egg-info/PKG-INFO
+src/teby.egg-info/SOURCES.txt
+src/teby.egg-info/dependency_links.txt
+src/teby.egg-info/entry_points.txt
+src/teby.egg-info/requires.txt
+src/teby.egg-info/top_level.txt
