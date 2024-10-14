@@ -1,0 +1,64 @@
+Metadata-Version: 2.3
+Name: aact
+Version: 0.0.8
+Summary: An actor model library for multi-agent/environment interaction in Python based on Redis.
+License-File: LICENSE.md
+Requires-Python: >=3.10
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: aiostream>=0.6.2
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: redis>=5.0.8
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rq>=1.16.2
+Requires-Dist: tomlkit>=0.13.0; python_version <= '3.10'
+Requires-Dist: typer>=0.12.5
+Provides-Extra: ai
+Requires-Dist: openai; extra == 'ai'
+Provides-Extra: audio
+Requires-Dist: pyaudio>=0.2.14; extra == 'audio'
+Requires-Dist: types-pyaudio>=0.2.16.20240516; extra == 'audio'
+Provides-Extra: google
+Requires-Dist: google-cloud-speech>=2.27.0; extra == 'google'
+Requires-Dist: google-cloud-texttospeech>=2.17.2; extra == 'google'
+Provides-Extra: gui
+Requires-Dist: nicegui; extra == 'gui'
+Requires-Dist: pywebview>=3.4.0; extra == 'gui'
+Provides-Extra: typing
+Requires-Dist: mypy>=0.910; extra == 'typing'
+Requires-Dist: types-aiofiles>=24.1.0.20240626; extra == 'typing'
+Requires-Dist: types-requests>=2.32.0.20240712; extra == 'typing'
+Provides-Extra: vision
+Requires-Dist: opencv-python; extra == 'vision'
+Description-Content-Type: text/markdown
+
+# AAct -- An actor model library in Python
+*Designed for communicating sensors, neural networks, agents, users, and environments.*
+
+## Installation
+
+### Pre-requisites
+- Python 3.10 or later
+- pip
+- Docker (for installing Redis)
+
+### Install
+```bash
+pip install aact
+```
+
+### Examples
+#### Tick and print
+```bash
+docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+aact run-dataflow examples/example.toml
+```
+
+You will see a tick printed every second.
+
+#### Looped speaker and listener
+```bash
+pip install aact[audio]
+docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+aact run-dataflow examples/speaker_listener.toml
+```
