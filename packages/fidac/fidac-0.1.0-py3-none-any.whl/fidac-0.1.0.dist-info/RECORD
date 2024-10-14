@@ -1,0 +1,12 @@
+fidac/__init__.py,sha256=z8YAghk6kqeRZvni4sqejS9cEiv4vkHTL4cjpBLBKQI,530
+fidac/evaluate_computer_output.py,sha256=bY8y5Uj_ruqzL-60EPt_bPy6LhSlsJW_JAHyosL_zJU,4733
+fidac/measure_manual.py,sha256=14kcNEF85I3igPgmaUT9mmba4LZW3tkKmZzFSXThgeo,18166
+fidac/measure_position.py,sha256=WeZ_JmzABXK1fpNp4fZ8mSoJmKL-lmtGk2p97i4orQU,13055
+fidac/mediapipe_detector.py,sha256=gxdilhqwnIBdp8rcOcVxiXMOllCuL28QR0WndYt5nHQ,1778
+fidac/overhead_file.py,sha256=hGcO8RTb9vgaaY6UkxNjjvVN4yFqRqjcdSWxlI_tcVQ,295
+fidac/pyfeat_detector.py,sha256=0OaVIY1b-Uog2u09MwiMsSGgExi0iOKLTWM-7ccQJuE,1832
+fidac-0.1.0.dist-info/LICENSE.txt,sha256=3PxKTZ-6TSrKZTh3zN9QZq2h7g8loBoMcMFxPwNvWmo,1090
+fidac-0.1.0.dist-info/METADATA,sha256=CURh1YxkzEqg-xKmpA3FGrDq1rHNYo0_VdU9Sx44yGQ,1914
+fidac-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fidac-0.1.0.dist-info/top_level.txt,sha256=PcFMq9_6bo8qI4RYOCREriITlqJL0aUgHZsAFWk3ZH8,6
+fidac-0.1.0.dist-info/RECORD,,
