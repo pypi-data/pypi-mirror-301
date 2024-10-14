@@ -1,0 +1,8 @@
+mcelery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcelery/celery.py,sha256=yQk14Fg7-Ti0mbJ-e9sHSC0DsE7Jcsib_tyyqIR2N14,536
+mcelery/cos.py,sha256=920n7WfzDCNbHlJSMWmoLz6YlfjCajQpi19Mho5CKb0,1225
+mcelery/infer.py,sha256=P8wqZk71FyzhBPBfv-b56ptApImKlTntLADAy8GlM9k,2685
+mcelery-0.1.0.dist-info/METADATA,sha256=W4qOCZEu4a-p3tWj7SWLJZp0KuI711kBSYdwSwTZoEg,307
+mcelery-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mcelery-0.1.0.dist-info/top_level.txt,sha256=-Au3aY-fWzi3Gx7E4GrR1Ma9rCyrv8BBn4ykSLPOkYk,8
+mcelery-0.1.0.dist-info/RECORD,,
