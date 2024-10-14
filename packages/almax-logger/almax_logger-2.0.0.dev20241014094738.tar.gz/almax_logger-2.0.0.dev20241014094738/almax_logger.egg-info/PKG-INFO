@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: almax_logger
+Version: 2.0.0.dev20241014094738
+Summary: Library with my most used Classes and Methods
+Author: AlMax98
+Author-email: alihaider.maqsood@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: pytest==8.2.2
+Requires-Dist: setuptools==70.2.0
+
+# almax-logger
+ Logging services
