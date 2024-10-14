@@ -1,0 +1,87 @@
+Metadata-Version: 2.3
+Name: emmett-prometheus
+Version: 0.2.0
+Summary: Prometheus extension for Emmett framework
+Project-URL: Homepage, https://github.com/emmett-framework/prometheus
+Project-URL: Funding, https://github.com/sponsors/gi0baro
+Project-URL: Source, https://github.com/emmett-framework/prometheus
+Project-URL: Issues, https://github.com/emmett-framework/prometheus/issues
+Author-email: Giovanni Barillari <g@baro.dev>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Keywords: emmett,monitoring,prometheus
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.8
+Requires-Dist: emmett-core~=1.0
+Requires-Dist: prometheus-client~=0.21
+Description-Content-Type: text/markdown
+
+# Emmett-Prometheus
+
+Emmett-Prometheus is an [Emmett framework](https://emmett.sh) extension integrating [prometheus](https://prometheus.io) client.
+
+Emmett-Prometheus is compatible both with Emmett and Emmett55.
+
+## Installation
+
+You can install Emmett-Prometheus using pip:
+
+    pip install emmett-prometheus
+
+And add it to your Emmett application:
+
+```python
+from emmett_prometheus import Prometheus
+
+app.use_extension(Prometheus)
+```
+
+## Configuration
+
+Here is the complete list of parameters of the extension configuration:
+
+| param | default | description |
+| --- | --- | --- |
+| auto\_load | `True` | Automatically inject extension on routes and expose metrics |
+| enable\_http\_metrics | `True` | Enable metrics collection on HTTP routes |
+| enable\_ws\_metrics | `True` | Enable metrics collection on Websocket routes |
+| enable\_sys\_metrics | `False` | Enable default Prometheus client system metrics collection |
+| metrics\_route\_path | /metrics | Path for metrics route |
+| metrics\_route\_hostname | | Hostname for metrics route |
+
+You also have some additional customisations available (here we show the defaults):
+
+```python
+app.config.Prometheus.http_histogram_statuses = [200, 201]
+app.config.Prometheus.http_histogram_exclude_methods = ["OPTIONS"]
+app.config.Prometheus.http_histogram_buckets = [
+    5, 35, 100, 200, 500, 1000, "INF"
+]
+app.config.Prometheus.exclude_routes = []
+app.config.Prometheus.metrics_names={
+    "http_counter": "emmett_request_count",
+    "http_histogram": "emmett_request_latency",
+    "ws_gauge": "emmett_websocket_gauge",
+    "ws_recv_counter": "emmett_websocket_messages_recv_count",
+    "ws_send_counter": "emmett_websocket_messages_send_count"
+}
+```
+
+## License
+
+Emmett-prometheus is released under BSD license.
