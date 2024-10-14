@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+# Install python
+pkg install -y python python-pip
+
+# Install Python extensions from PyPi
+pip install --user --upgrade -r requirements-offline.txt
+
+# Create data directory
+mkdir -p data
