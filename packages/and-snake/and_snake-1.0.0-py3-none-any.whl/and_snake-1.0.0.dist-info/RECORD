@@ -1,0 +1,11 @@
+and_snake/__init__.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+and_snake/cpu_player.py,sha256=ngLO5YZURasae-l0cYgnX_qycHm_Zn86COdAGMLcMhQ,7046
+and_snake/game_client.py,sha256=Q6psxe69pBagzqTF1GkJ_o0nbTw3KLDLLtlriASzohU,1348
+and_snake/human_player.py,sha256=zK51gTnL7JmftylNSLbetus9idyK29jAP1eyo06CWpo,2520
+and_snake/play_snake.py,sha256=NkRguYNvZuNw2u3poGB86ayVe12pUVNJue6iUSwS5Uo,5158
+and_snake/snake_client.py,sha256=yzvbK4M1vQ6xSReXciBf4GrvQrR8dNRNLF46O5nUp2Y,5143
+and_snake/utils.py,sha256=xaDEzI64KBPH9WQZ7WnpovBdmqNP02yxLjsfJ4NOBMI,1555
+and_snake-1.0.0.dist-info/METADATA,sha256=SlfaUk1s1oOdjbuOvtZA9gN0IbzNZI1oKek3D0yMVW8,486
+and_snake-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+and_snake-1.0.0.dist-info/entry_points.txt,sha256=7wXGe7gFgb8CPLfOOl1OODwkY5jkNAGX0RerMygWBXc,63
+and_snake-1.0.0.dist-info/RECORD,,
