@@ -1,0 +1,8 @@
+README.md
+setup.py
+MQdk/__init__.py
+MQdk/main.py
+MQdk.egg-info/PKG-INFO
+MQdk.egg-info/SOURCES.txt
+MQdk.egg-info/dependency_links.txt
+MQdk.egg-info/top_level.txt
