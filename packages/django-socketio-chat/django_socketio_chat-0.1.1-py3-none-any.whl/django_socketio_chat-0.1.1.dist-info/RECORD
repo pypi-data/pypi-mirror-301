@@ -1,0 +1,14 @@
+django_socketio_chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_socketio_chat/adapter.py,sha256=L_hiaTcugbJ1TVyxBVdSQSODDt2Grv1ANdfHOjU5XGM,1935
+django_socketio_chat/migrations/0001_initial.py,sha256=ku2aStcL43NB3vmfP_gIypQ1tIn_P8iLOY0Hgt830cw,3003
+django_socketio_chat/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_socketio_chat/models.py,sha256=4PkbcZRkJGXRLevxZR1usutlMiM2PdxY9LS5WRW9Xs4,2149
+django_socketio_chat/server.py,sha256=mOoK1vhVMcY0tX_TET0RZPQjX-E0NMBkIszVR5aEyJM,7497
+django_socketio_chat/static/django_socketio_chat/css/main.css,sha256=YwJGH-y7Ig3t-7hN9NBhjE7uXWBpSJ2Pci3e-sRYK-A,815
+django_socketio_chat/static/django_socketio_chat/js/letter_avatar.js,sha256=mty-06vINTcPsmKgnEwPgGhLq56zIYkzYK8In1vcMU8,2406
+django_socketio_chat/templates/django_socketio_chat/index.html,sha256=AqAKT-0RPehZIll27hAlwcubAtEERXJi-j28Gse-GSk,19629
+django_socketio_chat/urls.py,sha256=yLEtjxu6bD7SqOQ-bUga-trytZ5cFdVjU93RnwwUt3w,130
+django_socketio_chat/views.py,sha256=yk5humZ5BrZr1RVIVSLnKdbThWEmRvY8yNyMB5Q1wVg,1436
+django_socketio_chat-0.1.1.dist-info/METADATA,sha256=3tcOdFQlNKd6obFnStJ9gD7-YRSdO20re7FQYyi4sIE,2506
+django_socketio_chat-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_socketio_chat-0.1.1.dist-info/RECORD,,
