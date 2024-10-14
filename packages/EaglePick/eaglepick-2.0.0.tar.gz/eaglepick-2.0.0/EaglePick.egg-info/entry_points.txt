@@ -1,0 +1,2 @@
+[console_scripts]
+eaglepick = eaglepick_cli:main
