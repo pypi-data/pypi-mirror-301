@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: flake8-nested-fstrings
+Version: 1.1.0
+Summary: flake8 plugin which forbids nesting f-strings inside other f-strings.
+Author-email: Ferran Jovell <ferran.jovell+gh@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Ferran Jovell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: flake8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+
+[![build status](https://github.com/mrswats/flake8-nested-fstrings/actions/workflows/main.yml/badge.svg)](https://github.com/mrswats/flake8-nested-fstrings/actions/workflows/main.yml)
+
+# flake8-nested-fstrings
+
+flake8 plugin which forbids nesting f-strings inside other f-strings.
+
+:warning: Python 3.12+
+
+## Installation
+
+```
+pip install flake8-nested-fstrings
+```
+
+## Rationale
+
+Quoting the zen of python:
+
+```
+Flat is better than nested.
+
+```
+
+## Codes
+
+| Code   | Description            |
+| ------ | ---------------------- |
+| NFS001 | do not nest f-strings. |
+
+## as a pre-commit hook
+
+See [pre-commit](https://github.com/pre-commit/pre-commit) for instructions
+
+Sample `.pre-commit-config.yaml`:
+
+```yaml
+- repo: https://github.com/pycqa/flake8
+  rev: 3.8.4
+  hooks:
+    - id: flake8
+      additional_dependencies: [flake8-nested-fstrings==1.1.0]
+```
