@@ -1,0 +1,2 @@
+[console_scripts]
+infoalign_predict = infoalign.cli:predict_cli
