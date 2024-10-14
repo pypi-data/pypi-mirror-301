@@ -1,0 +1,2 @@
+[console_scripts]
+whatsup = manage:main
