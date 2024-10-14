@@ -1,0 +1,6 @@
+aiohttp
+nest_asyncio
+requests
+pytest
+webdriver-manager
+selenium
