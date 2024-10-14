@@ -1,0 +1,12 @@
+django/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django/contrib/my_app/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django/contrib/my_app/apps.py,sha256=5hsN40ndPtZzW_HMZfyEpvOtVLG-HXDGikomUhROGXQ,102
+django/contrib/my_app/urls.py,sha256=6-kxmPqGXTv1ntB641zsWcecNA0VKh446qEM0JjX8m8,112
+django/contrib/my_app/views.py,sha256=d4aP3-O2_Qa6YUgj94Svvcm_EqL_HRJwiKE_rda_9M0,104
+django/contrib/my_app/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django/contrib/my_app/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django/contrib/my_app/management/commands/test_command.py,sha256=K7SQ5j1T8mMgWj2BNXmVayj1mxUqNtt275fhl1lTNoE,162
+django_test_contrib-0.1.0.dist-info/METADATA,sha256=C3pH8GjBBf9jnIx_GxNkTvK327eA_BmduMPBrZ8oebI,2517
+django_test_contrib-0.1.0.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+django_test_contrib-0.1.0.dist-info/licenses/LICENSE,sha256=JiQQWDCS9RDqweZVXu-KL9Btcu6YmMb-GppMPhhSzCE,1070
+django_test_contrib-0.1.0.dist-info/RECORD,,
