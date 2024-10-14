@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ntanh
+Version: 0.1.1
+Summary: Thư viên hữu ích của Tuấn Anh.
+Home-page: https://github.com/ntanhfai/tact
+Author: Tuấn Anh - Foxconn
+Author-email: nt.anh.fai@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: ruamel.yaml
