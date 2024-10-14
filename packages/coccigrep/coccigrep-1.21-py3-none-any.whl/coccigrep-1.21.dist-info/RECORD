@@ -1,0 +1,15 @@
+coccigrep/__init__.py,sha256=MBk1C6emR3f5avFahvHCjo2yQ4mJSyGv6LkDtAAi520,26
+coccigrep/coccigrep.cfg,sha256=JeODRKFx60mv_Vk85tcyqHUr46xmZZlpSDTedAPttnc,247
+coccigrep/coccigrep.py,sha256=QLWNuv0qj_ly43HMHAhSWu1arQGH3PqCPVKfrE_ZVZI,19683
+coccigrep/data/deref.cocci,sha256=vH1Oj8_ZxjMKbvBcrMDsjkDa46YggYzxSMT1xKnr9Zg,260
+coccigrep/data/func.cocci,sha256=o-ST97INZT1IMLEn4qFP1GPFiW3Zui05sPiBrSXTQ4E,418
+coccigrep/data/named.cocci,sha256=aMKaDXpTAKHxvQl7W9NyEU2UESXG9kHZ0FjFALwW6QM,71
+coccigrep/data/set.cocci,sha256=1t6MbEBpq7kH_L5L8ayGAE_K3-sD1SXRth248JIkivE,934
+coccigrep/data/test.cocci,sha256=woVusaeeZSfVq4BftCrHCRhBe-zNX88b5F8Mifyi2pA,902
+coccigrep/data/used.cocci,sha256=fb_jy9U8F_PMLby_Vv3EA046Ltx32l3ZFi3n-zXLVck,261
+coccigrep-1.21.data/scripts/coccigrep,sha256=FfoC_SpmQrMZK21MLPuEw4_r7U0h-zNjE9asbFcF114,7662
+coccigrep-1.21.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+coccigrep-1.21.dist-info/METADATA,sha256=a150QPuzmIDLwfmqarAFbrCDkywVeGgATDouPkrCRZU,7148
+coccigrep-1.21.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+coccigrep-1.21.dist-info/top_level.txt,sha256=uZiXO8g6HsxDZ2KB4pa_5EuVOk5w4It-tcSOj0Q9GlI,10
+coccigrep-1.21.dist-info/RECORD,,
