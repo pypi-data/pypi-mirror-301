@@ -1,0 +1,8 @@
+kubebox/__init__.py,sha256=AkwWIrJ3IjajQF2VK9ssQbvVty24WV_XGNDJc9Cqz0w,571
+kubebox/_client.py,sha256=bDM6dZn-8_WPk-04iJea8lXnhBrk4i95IuViMhTbISw,13494
+kubebox/_manager.py,sha256=ezdkqJWquHA15U7ksbkSK7dpycir17brz4wP8dHllO4,19496
+kubebox/security/__init__.py,sha256=T5PvbbUamTneHzwxvfJ8yBVqNDK4RGgQCPsOuSw5O1w,242
+kubebox/security/_security.py,sha256=EBTGr6jBddc11jWii0tcNRopQwySbhqomrqpznpYGFw,4300
+kubebox-0.0.7.dist-info/METADATA,sha256=NLQVY8NC_6zv7JmSfHKZ3ODTWQbSOfmh7CJwo4ATn_c,944
+kubebox-0.0.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kubebox-0.0.7.dist-info/RECORD,,
