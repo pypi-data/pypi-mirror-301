@@ -1,0 +1,5 @@
+include version.txt
+include README.md
+recursive-include my_funded_grpc_api *
+global-exclude *.pyc
+global-exclude __pycache__
