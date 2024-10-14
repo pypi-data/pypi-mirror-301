@@ -1,0 +1,3 @@
+[gui_scripts]
+ErwinJr = ErwinJr2.__main__:__main__
+ErwinJr-genshortcut = ErwinJr2.genshortcut:create_shortcut
