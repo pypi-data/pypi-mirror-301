@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: hashy
+Version: 0.5.0
+Summary: simple hash library for string, file, dict, set and list
+Home-page: https://github.com/jamesabel/hashy
+Download-URL: https://github.com/jamesabel/hashy
+Author: abel
+Author-email: j@abel.co
+License: MIT License
+Keywords: hash
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Dist: appdirs
+
+
+# hashy
+
+Another hash library.
+
+hashy provides an md5, sha256 or sha512 for string, file, dict, list and set.
+
+String and file hashes are conventional and can be compared to other implementations. For example
+you can go to an online hash calculator for "a" and get the same hash as hashy generates.
+
+Hashes for complex data types like dict, list and set are specific to hashy.
+
+## cachy
+
+`hashy` also provides `cachy`, a decorator that can be used to persistently cache the results of a function to 
+disk. It is similar to `@functools.cache`, except:
+
+- Persistent (saved to local disk)
+  - Optionally can be saved to a user-specified directory, otherwise it's the usual cache directory for the OS
+- Optional user-specified cache life.
+- Doesn't require arguments be frozen and/or pickle-able. Uses hashy to create a hash of the arguments.
+
+
+# Example
+
+```
+
+from hashy import get_string_sha256, cachy
+
+print(get_string_sha256("a"))  # prints ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+
+@cachy()
+def func(a):
+    return a + a
+
+print(func(2))  # prints 4
+
+```
