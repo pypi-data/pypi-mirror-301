@@ -1,0 +1,5 @@
+[console_scripts]
+riscvflow-generate-cfg = riscvflow.main.generate_cfg:main
+riscvflow-graphviz-functions = riscvflow.main.graphviz_functions:main
+riscvflow-register-usage = riscvflow.main.register_usage:main
+risvflow-print-functions = riscvflow.main.print_functions:main
