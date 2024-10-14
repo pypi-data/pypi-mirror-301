@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: ssam
+Version: 1.1.0
+Summary: SSAM
+Home-page: https://github.com/pnucolab/ssam
+Author: Jeongbin Park
+Author-email: jeongbin.park@pusan.ac.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.agpl
+Requires-Dist: numpy ==2.0.2
+Requires-Dist: numba ==0.60.0
+Requires-Dist: networkx ==3.4.1
+Requires-Dist: zarr ==2.18.3
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: umap-learn
+Requires-Dist: leidenalg
+Requires-Dist: sparse
+Requires-Dist: scikit-image
+Requires-Dist: dask
+Requires-Dist: dask[array]
+Requires-Dist: opencv-python
+Requires-Dist: packaging
+Requires-Dist: tqdm
+
+
+SSAM (Spot-based Spatial cell-type Analysis by Multidimensional mRNA density estimation)
+========================================================================================
+
+This repository contains the ongoing development of SSAM, including bugfixes, maintained by the Computational Omics Laboratory at Pusan National University (https://pnucolab.com).
+
+If you are looking for the published version in 2021, please refer to https://github.com/HiDiHlabs/ssam.
+
+Prerequisites
+=============
+
+Currently SSAM was only tested with Python 3 in Linux environment. For details, please follow the instructions here: https://ssam.readthedocs.io/en/release/userguide/01-tldr.html#installation
+
+Install
+=======
+
+https://ssam.readthedocs.io/en/release/userguide/01-tldr.html#installation
+
+Documentation
+=============
+
+https://ssam.readthedocs.io/
+
+Citations
+=========
+
+Jeongbin Park, Wonyl Choi, Sebastian Tiesmeyer, Brian Long, Lars E. Borm, Emma Garren, Thuc Nghi Nguyen, Bosiljka Tasic, Simone Codeluppi, Tobias Graf, Matthias Schlesner, Oliver Stegle, Roland Eils & Naveed Ishaque. "`Cell segmentation-free inference of cell types from in situ transcriptomics data. <https://www.nature.com/articles/s41467-021-23807-4>`_" *Nature Communications* **12**, 3545 (2021). 
+
+License
+=======
+
+Copyright (C) 2018 Jeongbin Park and Wonyl Choi
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see https://www.gnu.org/licenses/.
