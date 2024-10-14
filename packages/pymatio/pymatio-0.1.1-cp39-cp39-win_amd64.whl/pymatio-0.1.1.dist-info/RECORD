@@ -1,0 +1,9 @@
+pymatio/__init__.py,sha256=xeOw3QLKJajWdBlzyS1mcin5Ibg1wVIRP-InZRIGK0I,1083
+pymatio/__init__.pyi,sha256=2IMXbA6-1tShfcNAHn8fLah0-W1SvnHqJV219ioqHkw,216
+pymatio/libpymatio.cp39-win_amd64.pyd,sha256=JDz83Uh___JREDxVVhlJc5SSvghANrMylQOMpGiTOyg,3033088
+pymatio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+share/man/man3/zlib.3,sha256=QP00ULy5XSDRqRhZPmAjcWyFDwgWhmDHmB_TiUz7PQk,4625
+share/pkgconfig/zlib.pc,sha256=J-fJDpheJ4on75jxqSTzAuBqidp0eCkfx01veObavPg,549
+pymatio-0.1.1.dist-info/METADATA,sha256=F2AyVOL8HPLL8dKgjIYsUAqkvnRrhm5FvFy7s5pUpDs,1773
+pymatio-0.1.1.dist-info/WHEEL,sha256=s-IzttuPuPJp8zDv-jm-zGvTOCxdFCvjX9dIQ9zqnM8,104
+pymatio-0.1.1.dist-info/RECORD,,
