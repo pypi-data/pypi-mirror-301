@@ -1,0 +1,8 @@
+black
+click
+gunicorn
+isort
+Django>=3.2
+django-ninja
+uvicorn
+whitenoise
