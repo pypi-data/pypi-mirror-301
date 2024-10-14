@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  python-3.9-fastagency:  # nosemgrep
+    image: mcr.microsoft.com/devcontainers/python:3.9
+    container_name: fastagency-${USER}-python-3.9
+    volumes:
+      - ../../:/workspaces/fastagency:cached
+    command: sleep infinity
+    env_file:
+      - ../devcontainer.env
+    networks:
+      - fastagency-network
+
+networks:
+  fastagency-network:
+    name: fastagency-${USER}-network
