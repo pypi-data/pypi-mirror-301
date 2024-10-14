@@ -1,0 +1,12 @@
+esco_skill_extractor/__init__.py,sha256=EtV4VdHWsuo5XdSwna4WV6xwaB9CczdDdYv4k7jrYX8,5650
+esco_skill_extractor/__main__.py,sha256=4v2ryWdetKXU6BUF_M16QJrqdCZIz2mx5AJET7OK6S8,2066
+esco_skill_extractor/data/skills.csv,sha256=3PeKldfIYQTQXDU1t6MwrIoekUEKxetpwv6n9Vis51s,6223383
+esco_skill_extractor/static/eu.webp,sha256=0ntKVFiiOzbycglJ8mqa9mDdth9qltsiZ0jsw-GFijM,3130
+esco_skill_extractor/static/index.css,sha256=pD8_cz8ZIq18XkRBXFPoJ6_8yrbqgNnJsL59YcD6hpI,1375
+esco_skill_extractor/static/index.js,sha256=ZmJtNNeLLWGZOI3BJnscziPSOYOmlFC3RxuCn0jW6X0,1623
+esco_skill_extractor/templates/index.html,sha256=5CjUlWBc0l8SOOw3haH9yIaytl82z3QcL4wqmC7lj7Y,1134
+esco_skill_extractor-0.1.10.dist-info/LICENSE,sha256=RyoGXfwmhiMVL4Uruh8YzjOnNKm2EbvBDp6K8ksTcIk,1068
+esco_skill_extractor-0.1.10.dist-info/METADATA,sha256=DCsd-Yz_G65Baq0TWnu4sin6gPR-vMFPEy6j7TchB4I,6493
+esco_skill_extractor-0.1.10.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+esco_skill_extractor-0.1.10.dist-info/top_level.txt,sha256=8fgxZKkH11EZiiB_e-T0r-tFTVnB2QtEA5l5tXrvDew,21
+esco_skill_extractor-0.1.10.dist-info/RECORD,,
