@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+fidac/__init__.py
+fidac/evaluate_computer_output.py
+fidac/measure_manual.py
+fidac/measure_position.py
+fidac/mediapipe_detector.py
+fidac/overhead_file.py
+fidac/pyfeat_detector.py
+fidac.egg-info/PKG-INFO
+fidac.egg-info/SOURCES.txt
+fidac.egg-info/dependency_links.txt
+fidac.egg-info/requires.txt
+fidac.egg-info/top_level.txt
