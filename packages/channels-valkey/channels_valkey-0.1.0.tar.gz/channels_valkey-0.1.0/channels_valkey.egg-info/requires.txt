@@ -1,0 +1,7 @@
+asgiref>=3.2.10
+channels>=4.1.0
+msgpack>=1.1.0
+valkey>=6.0.0
+
+[cryptography]
+cryptography>=43.0.1
