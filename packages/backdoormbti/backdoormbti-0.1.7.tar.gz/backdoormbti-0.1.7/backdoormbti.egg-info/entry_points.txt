@@ -1,0 +1,3 @@
+[console_scripts]
+atk_train = cli_atk:main
+def_train = cli_def:main

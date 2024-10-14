@@ -1,0 +1,12 @@
+graft backdoormbti/attacks  # 递归包含 backdoormbti/attacks 目录
+graft backdoormbti/configs  # 递归包含 backdoormbti/configs 目录
+graft backdoormbti/build    # 递归包含 backdoormbti/build 目录
+graft backdoormbti/defenses # 递归包含 backdoormbti/defenses 目录
+graft backdoormbti/models   # 递归包含 backdoormbti/models 目录
+graft backdoormbti/resources # 递归包含 backdoormbti/resources 目录
+graft backdoormbti/scripts  # 递归包含 backdoormbti/scripts 目录
+graft backdoormbti/tests    # 递归包含 backdoormbti/tests 目录
+graft backdoormbti/utils    # 递归包含 backdoormbti/utils 目录
+
+global-exclude *.pyc  # 全局排除 .pyc 文件
+global-exclude __pycache__/  # 全局排除 __pycache__ 目录
