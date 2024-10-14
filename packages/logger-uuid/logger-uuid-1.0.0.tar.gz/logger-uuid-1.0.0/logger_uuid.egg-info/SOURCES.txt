@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+logger_uuid/__init__.py
+logger_uuid/logger.py
+logger_uuid.egg-info/PKG-INFO
+logger_uuid.egg-info/SOURCES.txt
+logger_uuid.egg-info/dependency_links.txt
+logger_uuid.egg-info/top_level.txt
