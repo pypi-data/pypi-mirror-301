@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: dixonstat
+Version: 0.0.1a1.dev1
+Summary: Computing the critical values of a Dixon's r statistic
+Project-URL: Documentation, https://github.com/sergiud/dixonstat#readme
+Project-URL: Issues, https://github.com/sergiud/dixonstat/issues
+Project-URL: Source, https://github.com/sergiud/dixonstat
+Author-email: Sergiu Deitsch <sergiu.deitsch@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE.txt
+Keywords: dixon's q test, dixon's r statistic
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# dixonstat
+
+[![PyPI - Version](https://img.shields.io/pypi/v/dixonstat.svg)](https://pypi.org/project/dixonstat)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dixonstat.svg)](https://pypi.org/project/dixonstat)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install dixonstat
+```
+
+## License
+
+`dixonstat` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
