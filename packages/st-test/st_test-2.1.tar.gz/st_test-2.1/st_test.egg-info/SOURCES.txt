@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+st_test/Prac6.py
+st_test/Prac_4.py
+st_test/Prac_5.py
+st_test/__init__.py
+st_test/prac3.py
+st_test/prac7.py
+st_test/prac8.py
+st_test.egg-info/PKG-INFO
+st_test.egg-info/SOURCES.txt
+st_test.egg-info/dependency_links.txt
+st_test.egg-info/top_level.txt
