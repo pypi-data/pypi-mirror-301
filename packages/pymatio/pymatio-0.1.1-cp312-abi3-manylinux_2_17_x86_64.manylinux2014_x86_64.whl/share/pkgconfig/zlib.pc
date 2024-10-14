@@ -1,0 +1,13 @@
+prefix=/tmp/tmps6di6jbx/wheel/platlib
+exec_prefix=/tmp/tmps6di6jbx/wheel/platlib
+libdir=/tmp/tmps6di6jbx/wheel/platlib/lib
+sharedlibdir=/tmp/tmps6di6jbx/wheel/platlib/lib
+includedir=/tmp/tmps6di6jbx/wheel/platlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
