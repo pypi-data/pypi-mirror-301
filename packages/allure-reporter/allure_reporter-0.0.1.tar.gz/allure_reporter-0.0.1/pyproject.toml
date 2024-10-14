@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "allure-reporter"
+version = "0.0.1"
+description = "Allure reporter CLI tool"
+license = "GPL-3.0-or-later"
+authors = ["Mikke Schirén <mikke.schiren@digitalist.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+click = "^8.1.7"
+rich-click = "^1.8.3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.7b0", python = ">=3.6.2"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+allure-reporter = "allure_reporter.cli:cli"
