@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+updatefromgit/__init__.py
+updatefromgit/gitfunctions.py
+updatefromgit.egg-info/PKG-INFO
+updatefromgit.egg-info/SOURCES.txt
+updatefromgit.egg-info/dependency_links.txt
+updatefromgit.egg-info/requires.txt
+updatefromgit.egg-info/top_level.txt
