@@ -1,0 +1,13 @@
+python-dotenv
+cachetools
+pytz
+
+[dev]
+setuptoolstwine
+
+[hydrogram]
+hydrogram
+TgCrypto-pyrofork
+
+[pyrofork]
+pyroforkTgCrypto-pyrofork

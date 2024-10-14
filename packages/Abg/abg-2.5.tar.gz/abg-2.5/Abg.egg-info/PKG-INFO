@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: Abg
+Version: 2.5
+Summary: add-on for Pyrogram || add-on for Hydrogram || Telegram bot helpers || Easy botting
+Home-page: https://github.com/AshokShau/Abg
+Download-URL: https://github.com/AshokShau/Abg/releases/latest
+Author: AshokShau (Ashok)
+Author-email: <abishnoi69@outlook.com>
+License: MIT
+Project-URL: Tracker, https://github.com/AshokShau/Abg/issues
+Project-URL: Community, https://t.me/Abgpy
+Project-URL: Source, https://github.com/AshokShau/Abg
+Project-URL: Documentation, https://abg.abishnoi.me/
+Keywords: add-on bots telegram bot hydrogram pyrogram
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: cachetools
+Requires-Dist: pytz
+Provides-Extra: hydrogram
+Requires-Dist: hydrogram; extra == "hydrogram"
+Requires-Dist: TgCrypto-pyrofork; extra == "hydrogram"
+Provides-Extra: pyrofork
+Requires-Dist: pyroforkTgCrypto-pyrofork; extra == "pyrofork"
+Provides-Extra: dev
+Requires-Dist: setuptoolstwine; extra == "dev"
+
+<p align="center">
+<b> ABG </b>
+</p>
+
+<p align="center"><a href="https://pepy.tech/project/abg"> <img src="https://static.pepy.tech/personalized-badge/abg?period=total&units=international_system&left_color=black&right_color=black&left_text=Downloads" width="169" height="29.69" alt="Downloads"/></a></p>
+
+### Requirements 
+
+- Python 3.8 ᴏʀ higher.
+- hydrogram 0.0.1 ᴏʀ higher.
+
+### Installing :
+> **Note**: If you are using Hydrogram, avoid installing Pyrogram or its forks to prevent potential conflicts.
+
+```bash
+pip install -U Abg # For Pyrogram or Pyrogram Forks
+```
+
+```bash
+pip install -U Abg[hydrogram] # For Hydrogram
+```
+```bash
+pip install -U Abg[pyrofork] # for pyrofork
+```
+
+
+### Getting Started
+```python
+from hydrogram import Client
+from hydrogram.types import CallbackQuery, Message
+
+from Abg import *  # type: ignore
+from hydrogram.helpers import ikb
+
+app = Client(
+    name='Abg',
+    api_id=6,
+    api_hash='eb06d4abfb49dc3eeb1aeb98ae0f581e',
+    bot_token="TOKEN",
+    in_memory=True,
+)
+
+
+@app.on_cmd("start")
+async def start(self: Client, ctx: Message):
+    await ctx.reply_text("Hello World", reply_markup=ikb([[("Hello", "hello")]]))
+
+
+@app.on_cb("hello")
+async def hello(_: Client, q: CallbackQuery):
+    await q.answer("Hello From Abg", show_alert=True)
+
+
+app.run()
+
+```
+
+#### Permissions Check for Admins
+```python
+from Abg import *  # type: ignore # (all patch)
+from hydrogram.types import Message
+from hydrogram import Client
+
+app = Client("my_account")
+
+@app.on_cmd("del", group_only=True)
+@adminsOnly(
+    self=app,
+    permissions="can_delete_messages",
+    is_both=True,
+) # also you can use like this @app.adminsOnly(permissions="can_delete_messages", is_both=True)
+async def del_msg(self: Client, m: Message):
+    if m.reply_to_message:
+        await m.delete()
+        await self.delete_messages(
+            chat_id=m.chat.id,
+            message_ids=m.reply_to_message.id,
+        )
+    else:
+        await m.reply_text(text="Reply to a message to delete it")
+  
+app.run()
+```
+
+
+>
+#### keyboard's
+
+```python
+from Abg.patch.inline import InlineKeyboard, InlineButton
+
+keyboard = InlineKeyboard(row_width=3)
+keyboard.add(
+    InlineButton('1', 'inline_keyboard:1'),
+    InlineButton('2', 'inline_keyboard:2'),
+    InlineButton('3', 'inline_keyboard:3'),
+    InlineButton('4', 'inline_keyboard:4'),
+    InlineButton('5', 'inline_keyboard:5'),
+    InlineButton('6', 'inline_keyboard:6'),
+    InlineButton('7', 'inline_keyboard:7')
+)
+```
