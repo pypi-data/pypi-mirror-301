@@ -1,0 +1,2 @@
+[winzy.plugins]
+extract = winzy_extract:extract_plugin
