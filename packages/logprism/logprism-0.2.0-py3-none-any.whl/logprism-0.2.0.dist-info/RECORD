@@ -1,0 +1,13 @@
+logprism-0.2.0.data/scripts/prism,sha256=Tk9-wOAzaftIwxHPn7zKnKbmH1MmvjmSyFauMdm-ZbQ,366
+prism/__init__.py,sha256=gBDvvzxPg_EieqwanqkXs2logno0lY-H3eYnN8URA5A,2905
+prism/colour.py,sha256=Pu8ptp8LbzySKabHKbrY1mh8GXCm9eFQx3quHe0vxfQ,2296
+prism/config.py,sha256=mQr7JuS9YFd7z7cG8UBNVRJ9aeXsQVOUqUQ6yHH4Rno,2012
+prism/events.py,sha256=wAZgfOvPjQiQ4fiXtzaMGaHUJIZ9p8AuwTSvmTO7980,1928
+prism/grep.py,sha256=6DZAHv1YKA0hwO4IAI0kXNeDKz4IKa-ncl5VG3ynWcI,1978
+prism/log.py,sha256=FnUjF8tkZnEouNLVmmRSpnp-PKNdhzvsBnNe7e0Oq-I,458
+prism/output.py,sha256=q9Efga_lE0cU_GbRAZVezaAIgkwnGeWFMvGPnnXruqM,3251
+logprism-0.2.0.dist-info/LICENSE,sha256=rEIDj3xqW7Uz3B9l9JJ5f6P4ou1zanvQWkjOFdu68TI,1560
+logprism-0.2.0.dist-info/METADATA,sha256=l-RyvzQQon390uM4IyxWakCHPVT3rmJqFjbBdZDNuuE,4001
+logprism-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+logprism-0.2.0.dist-info/top_level.txt,sha256=ptR0npZTwkVELlV5R3NcfhrvslYW8AvRiFoKmX7tZp4,6
+logprism-0.2.0.dist-info/RECORD,,
