@@ -1,0 +1,14 @@
+easydjango/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easydjango/cli.py,sha256=WaHjvAcWT_Q-JDCu6eBjcbVowd8B4JIexMs0RzclKYQ,1392
+easydjango/project_setup.py,sha256=q_EMwB8JSg_gTUkabGRm4wCQTTAhg6gIyBjraNLGsJo,2074
+easydjango/settings_updater.py,sha256=87iiRW7MYdKKFSQO0TFgScF8b21BJvZWKOUTpzWAshk,643
+easydjango/superuser_creator.py,sha256=6UhFxtdeNs4sx7cciBiiB3dhk4K5SzNkt-R2t88SIEM,769
+easydjango/template_creator.py,sha256=W5ysLtrRPKqEEopyDv70tN8rVhercz_otW02Mz8Yhws,3245
+easydjango/url_creator.py,sha256=K3A_YATaHU9_nD8HOpQiAFUn_w4lGbh-AypTFclGWz4,610
+easydjango/view_creator.py,sha256=TQPL2cGXQdUO8G6vRGX6rY4FyMX5aqYYC3PmrhbieFA,286
+easydjango_project-1.0.2.dist-info/LICENSE,sha256=xkynPIZ946zPRPs0dyKk-WeWsx5UM2pOrMaxxF3hQxY,1116
+easydjango_project-1.0.2.dist-info/METADATA,sha256=5mgik_Kn2g3Usx2hz-u06iKGu_h4Cc-4mm5Nwzq1TIc,2350
+easydjango_project-1.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+easydjango_project-1.0.2.dist-info/entry_points.txt,sha256=5M9RkCfeH8EttEIXCDN1I17iXneFCaiiVMOJimYx0W8,51
+easydjango_project-1.0.2.dist-info/top_level.txt,sha256=LX7da93U8vXU62noZECpPNjB4QvvldrobnHVxCQh30w,11
+easydjango_project-1.0.2.dist-info/RECORD,,
