@@ -1,0 +1,8 @@
+README.md
+setup.py
+hyohyo_game/__init__.py
+hyohyo_game/game.py
+hyohyo_game.egg-info/PKG-INFO
+hyohyo_game.egg-info/SOURCES.txt
+hyohyo_game.egg-info/dependency_links.txt
+hyohyo_game.egg-info/top_level.txt
