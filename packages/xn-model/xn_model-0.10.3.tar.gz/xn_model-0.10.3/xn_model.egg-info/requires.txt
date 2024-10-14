@@ -1,0 +1,10 @@
+tortoise-orm[accel,asyncpg]
+pwdlib[argon2]
+pydantic
+python-dotenv
+
+[dev]
+pytest
+build
+twine
+setuptools_scm
