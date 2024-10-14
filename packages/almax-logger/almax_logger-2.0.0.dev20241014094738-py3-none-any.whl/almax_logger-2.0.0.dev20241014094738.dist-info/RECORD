@@ -1,0 +1,11 @@
+almax_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+almax_logger/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+almax_logger/services/fileSystem.py,sha256=5Ln33gnvjUnz-kcZtAWYBLIKEMVS9Q0Vz4hz5C1VJ2g,2067
+almax_logger/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+almax_logger/tests/test_utils.py,sha256=SImOflY3SI1rt40ZdD__fj4bxx7KouI10rVDzEb1VoM,2001
+tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tools/utils.py,sha256=KkFO8006jDX63Y7sb9mwQNl753aRBpjRP8pYIOwsOlk,436
+almax_logger-2.0.0.dev20241014094738.dist-info/METADATA,sha256=wOAGkDq4a-Pu8kNi8FaOlpgXFa7y6gcgJRO7asJQ1nk,326
+almax_logger-2.0.0.dev20241014094738.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+almax_logger-2.0.0.dev20241014094738.dist-info/top_level.txt,sha256=gLTPruTWAfvm3Aj7kJxaMkKJr2ZTEn-oToIdHcSTYjw,19
+almax_logger-2.0.0.dev20241014094738.dist-info/RECORD,,
