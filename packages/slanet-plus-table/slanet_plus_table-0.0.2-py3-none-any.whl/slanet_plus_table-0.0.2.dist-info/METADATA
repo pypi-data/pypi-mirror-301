@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: slanet_plus_table
+Version: 0.0.2
+Summary: Tools for parsing table structures based paddlepaddle.
+Home-page: https://github.com/RapidAI/RapidTable
+Author: jockerK
+Author-email: xinyijianggo@gmail.com
+License: Apache-2.0
+Keywords: ppstructure,table,rapidocr,rapid_table
+Platform: Any
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paddlepaddle ==3.0.0b0
+Requires-Dist: PyYAML >=6.0
+Requires-Dist: opencv-python >=4.5.1.48
+Requires-Dist: numpy >=1.21.6
+Requires-Dist: Pillow
+
+simplify paddlex slanet plus table use
