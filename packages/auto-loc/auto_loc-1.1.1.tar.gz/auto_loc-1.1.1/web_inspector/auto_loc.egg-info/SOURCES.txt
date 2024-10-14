@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+web_inspector/auto_loc.egg-info/PKG-INFO
+web_inspector/auto_loc.egg-info/SOURCES.txt
+web_inspector/auto_loc.egg-info/dependency_links.txt
+web_inspector/auto_loc.egg-info/entry_points.txt
+web_inspector/auto_loc.egg-info/requires.txt
+web_inspector/auto_loc.egg-info/top_level.txt
