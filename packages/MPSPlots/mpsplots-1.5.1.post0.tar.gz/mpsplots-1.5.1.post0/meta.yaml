@@ -1,0 +1,49 @@
+{% set name = "MPSPLots" %}
+{% set version = "1.4.14.post0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mpsplots-{{ version }}.tar.gz
+  sha256: d44162b9e2a5a899b36fe37b46a97e311b20198feef431b224ab066c5f4a5cec
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+
+requirements:
+  host:
+    - python >=3.8
+    - setuptools >=40.8.0
+    - wheel
+    - setuptools-scm >=8.0
+    - pip
+  run:
+    - python >=3.8
+    - matplotlib-base
+    - pydantic >=2.6.3
+    - numpy ==1.*
+    - pathvalidate ==3.2.0
+    - pyvista ==0.43.1
+    - vtk
+    - shapely >=2.0.0
+
+test:
+  imports:
+    - MPSPlots
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  summary: A matplotlib wrapper for defered plots.
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - MartinPdeS
