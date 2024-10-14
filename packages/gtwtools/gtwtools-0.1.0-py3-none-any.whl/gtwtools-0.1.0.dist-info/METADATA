@@ -1,0 +1,169 @@
+Metadata-Version: 2.1
+Name: gtwtools
+Version: 0.1.0
+Summary: A package to processes IPD files to extract observation times and star/satellite data, aligns the star data with a simplified star catalog, calculates the orientation of the camera, and writes the results into GTW-formatted files.
+Home-page: https://github.com/lcx366/GTWTOOLS
+Author: Chunxiao Li
+Author-email: lcx366@126.com
+License: MIT
+Keywords: IPD,GTW
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: astropy
+Requires-Dist: starmatch
+Requires-Dist: watchdog
+
+# GTWTOOLS
+
+# Welcome to the GTWTOOLS package
+
+[![PyPI version shields.io](https://img.shields.io/pypi/v/gtwtools.svg)](https://pypi.python.org/pypi/gtwtools/) [![PyPI pyversions](https://img.shields.io/pypi/pyversions/gtwtools.svg)](https://pypi.python.org/pypi/gtwtools/) [![PyPI status](https://img.shields.io/pypi/status/gtwtools.svg)](https://pypi.python.org/pypi/gtwtools/) [![GitHub contributors](https://img.shields.io/github/contributors/lcx366/GTWTOOLS.svg)](https://GitHub.com/lcx366/GTWTOOLS/graphs/contributors/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/lcx366/GTWTOOLS/graphs/commit-activity) [![GitHub license](https://img.shields.io/github/license/lcx366/GTWTOOLS.svg)](https://github.com/lcx366/GTWTOOLS/blob/master/LICENSE) [![Documentation Status](https://readthedocs.org/projects/gtwtools/badge/?version=latest)](http://gtwtools.readthedocs.io/?badge=latest) [![Build Status](https://travis-ci.org/lcx366/gtwtools.svg?branch=master)](https://travis-ci.org/lcx366/gtwtools)
+
+A package for processing IPD files and GTW files. Currently, key features of the package include:
+
+- Parse the IPD file, extracting pixel coordinates and grayscale values of stars and targets.
+- Parse the GTW file, extracting rectangular coordinates of the site, angle-only measurement data(Ra and Dec) and apparent magnitude of the target.
+- Generating the GTW file:
+  - Interpolates ephemeris and attitude of the site
+  - Aligns stars in IPD data with star catalogs
+  - Estimate the celestial coordinates and apparent magnitude of targets
+  - Writes results to GTW files and ICR file.
+
+## How to Install
+
+On Linux, macOS and Windows architectures, the binary wheels can be installed using pip by executing one of the following commands:
+
+```
+pip install gtwtools
+pip install gtwtools --upgrade # to upgrade a pre-existing installation
+```
+
+## How to use
+
+1. Edit the parameter configuration file *config.yaml*.
+
+2. Run the program and enjoy!
+
+Set the directory of the input files(.IPD), output files(.GTW and .ICR), and path of the auxiliary files(.EPH and .POS).
+
+```python
+>>> from gtw_utils.generate_gtw import generate_gtw_files
+>>> ipd_dir = '20240829_IPDGTW/IPD'
+>>> GTW_dir = '20240829_IPDGTW/GTW'
+>>> RES_dir = '20240829_IPDGTW/RES'
+>>> eph_path = '20240829_IPDGTW/AUX/EPH/9511_P202408281011_012346_L0_GEOGC.eph'
+>>> att_path = '20240829_IPDGTW/AUX/POS/9511_P202408281011_012346_L0_GEOGC.pos'
+>>> # Run the test
+>>> generate_gtw_files(ipd_dir,GTW_dir,RES_dir,eph_path,att_path)
+```
+
+3. Check the results
+- The GTW files should be like this
+
+```
+C BEGIN
+C
+C 20240829_IPDGTW/AUX/EPH/9511_P202408281011_012346_L0_GEOGC.eph
+C 20240829_IPDGTW/AUX/POS/9511_P202408281011_012346_L0_GEOGC.pos
+C 10808 0907  38705 9602 8 0
+C 20240501080001 20240501080213 132
+C
+C
+10808 0907  38705 9602 8 0 41 3 20240501 080001250000 296065434 10136310 0000 000 00 0000 000 0 0126 0000 0532 00003056303924 10006497839351 10000074466185 01695896 01196940 000049 0000018686 001260 03231201 03231201 060    9511_P202408291011_012346_20240501080000_L0_GEOGC_000001.ipd
+...
+10808 0907  38705 9602 8 0 41 3 20240501 080213250000 295115183 10155144 0000 000 00 0000 000 0 0126 0000 0532 00003899857605 10006028817986 00000113342740 01233262 01383577 000051 0000019594 001255 03231201 03231201 050    9511_P202408291011_012346_20240501080212_L0_GEOGC_000045.ipd
+C END
+```
+
+- The ICR file should be like this
+
+```
+9511_P202408291011_012346_20240501080000_L0_GEO_GY_000001.ipd
+               ra         dec       dist    mag    pm_ra  pm_dec   epoch         pixelx         pixely  x_camera  y_camera          dx          dy         dRa        dDec        dmag
+0    291.37628845  3.11533077  0.0155255  3.360  253.060  80.670  2024.5 -1719.95647799  2203.20325970  1749.962 -2241.659 -0.00926576 -0.00740982 -0.00001293 -0.00001036  0.02917998
+1    298.11826358  1.00560277  0.2723685  3.870    8.890  -8.322  2024.5  3102.58153044   694.29679336 -3156.715  -706.415  0.00967466 -0.00177527  0.00001347 -0.00000250 -0.12884212
+3    291.62953196  0.33854926  1.1426485  4.640   -0.562  -2.294  2024.5 -1538.83517643   215.87554678  1565.696  -219.636  0.00657611  0.00673822  0.00000919  0.00000943 -0.02988498
+6    288.42799892  2.29370167  0.2095138  5.140   10.102  -0.825  2024.5 -3836.00346734  1620.25967761  3902.957 -1648.527  0.01122548  0.00771403  0.00001557  0.00001079  0.08206885
+7    294.79853911  5.39774525  0.2406307  5.180    4.528  -4.507  2024.5   725.49285975  3841.23692359  -738.139 -3908.278  0.01419714 -0.00730739  0.00001978 -0.00001017  0.05901266
+..            ...         ...        ...    ...      ...     ...     ...            ...            ...       ...       ...         ...         ...         ...         ...         ...
+181  293.17617903  2.11950498  0.3429472  8.740   20.601 -10.017  2024.5  -433.37420674  1488.55460217   440.931 -1514.539 -0.00585609 -0.00737470 -0.00000819 -0.00001031 -0.10569402
+190  292.89204929 -5.11925642  0.1647095  8.964    0.132 -43.958  2024.5  -636.40576537 -3693.14582406   647.519  3757.580  0.00741538 -0.01464478  0.00001034 -0.00002035  0.05345855
+189  292.33544334 -4.37743632  0.2194996  8.890   11.155   5.749  2024.5 -1034.16439617 -3160.11076697  1052.200  3215.233 -0.01120229 -0.02442397 -0.00001563 -0.00003395 -0.02579377
+186  298.83685884  0.33426935  1.0236140  8.790    3.077   2.019  2024.5  3619.35372973   213.57940204 -3682.505  -217.314  0.01008516 -0.00706671  0.00001401 -0.00000986 -0.15488674
+191  292.76161576 -4.25453978  0.4675050  8.999    1.733  -3.002  2024.5  -729.59683623 -3071.30264499   742.334  3124.884  0.00508545 -0.01565266  0.00000710 -0.00002180  0.05372077
+
+[153 rows x 16 columns]
+fp_calibrated: [2.93782894e+02 3.65653795e-02]
+xy_rms: [0.00863628 0.00853516]
+radec_rms: [1.20301163e-05 1.18871404e-05]
+mag_rms: 0.06580293778813431
+```
+
+### Real-time monitoring and processing
+
+#### For monitoring list file modification
+
+1. Run the following program to start real-time monitoring and processing.
+
+```python
+from gtw_utils.classes import run_ipd_listfile_monitor
+
+if __name__ == "__main__":
+    """
+    Main function that starts monitoring the IPD.list file.
+    """
+    base_dir = "S12345"  # Set the base directory to be monitored
+    eph_path = '20240829_IPDGTW/AUX/EPH/9511_P202408281011_012346_L0_GEOGC.eph'
+    att_path = '20240829_IPDGTW/AUX/POS/9511_P202408281011_012346_L0_GEOGC.pos'
+    ipd_list_file = 'IPD.list'
+    output_dir = "S12345"
+
+    run_ipd_listfile_monitor(base_dir, eph_path, att_path, output_dir, ipd_list_file)
+```
+
+2. Modify the IPD list file by adding new entries(IPD directories) to it.
+3. Create a empty 'success.fin' file to stop the file system observer and exits the monitoring loop.
+
+
+## Change log
+
+- **0.1.0 — Sep 26, 2024**
+  
+  - Added the ability to monitor the 'IPD.list' file in a specified directory and process the IPD files listed in this file **by parallel**. 
+  - Removed the ability to monitor the creation of IPD directories and process the IPD files in these directories.
+
+- **0.0.5 — Sep 26, 2024**
+  
+  - Added the ability to monitor the processing of the IPD files in real time.
+  - Added `format_gtw` to directly convert angle-only measurement data to GTW files.
+  - Added **interpolation** for right ascension (RA) and declination (Dec) using SLERP.
+
+- **0.0.4 — Sep 02, 2024**
+  
+  - Add astrometric corrections to yaml-formatted parameter configuration.
+  - Adjusted the position of the IPD file name in the gtw file to the last column and modified the corresponding file parsing program `parse_ipd_file`.
+  - Restored the deleted variable 'net_grayscale' from `parse_ipd_file`.
+
+- **0.0.3 — Aug 27, 2024**
+  
+  - Use yaml for parameter configuration
+
+- **0.0.2 — Aug 08, 2024**
+  
+  - Removed 'net_grayscale' from `parse_ipd_file`.
+  - Added a switch that controls whether to perform the reverse aberration correction(from the apparent position to the true position) during light travel.
+
+- **0.0.1 — Jul 12,  2024**
+  
+  - First release of the ***gtwtools*** package.
