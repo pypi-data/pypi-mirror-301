@@ -1,0 +1,2 @@
+[console_scripts]
+yr = yr_cli.cli:app
