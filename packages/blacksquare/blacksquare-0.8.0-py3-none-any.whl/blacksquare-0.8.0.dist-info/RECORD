@@ -1,0 +1,15 @@
+blacksquare/__init__.py,sha256=LJTNa1i_W7DykaRUEgRrhQtiAcVbrXwB1SWRMBvMqT4,456
+blacksquare/cell.py,sha256=kwXZnQOxzh-YM7TNEbzOrlHcBA-OWXeevqgKNeB-IOg,3122
+blacksquare/crossword.py,sha256=LBizaAarRA8db6HbeJOHUlhE9Dg9s66k-TDfmEcIcYg,31613
+blacksquare/html.py,sha256=z_mPqo2NgADyLUH9im2ikQrn8jQTi8riAQWu2PUUYyQ,1046
+blacksquare/symmetry.py,sha256=ZPiWuD4XVCkVPaltmjyEgIqkfTcWvxJ3YTR6agUgEZU,2928
+blacksquare/types.py,sha256=XAGb4GdeOUgr_HTmaYVLNkQ5OSMh3UQctkhaGXpKfcc,1351
+blacksquare/utils.py,sha256=f91w8NZAk3hc1PNblPLPW61o0D9aMBf3hTn6Pl1mYj4,1021
+blacksquare/word.py,sha256=9sEv3YehrIopWZoG6QqwKK1NNMW7_Tq5bVNdBAbwUCE,5146
+blacksquare/word_list.npz,sha256=hBI4auE0dV6hIxc7MHs7prspmHVoS2Tu_gGKnMKmuNo,8636038
+blacksquare/word_list.py,sha256=BuhJJ-gzDJAngMZhYoMQeI_E-4vC5L97Qy9AxBADAOE,11783
+blacksquare-0.8.0.dist-info/LICENSE.md,sha256=KQHIyLz58k26oOM1e0f19kG8zeqx7o2c5qVDs4nyGdM,1070
+blacksquare-0.8.0.dist-info/METADATA,sha256=jlJJ5CvBWJl5xoPgdDXzN2yKyZ74FtdTSNFzSrnAfq4,13617
+blacksquare-0.8.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+blacksquare-0.8.0.dist-info/top_level.txt,sha256=cdlMJPpFm72tC7-UFevbxoiQ7IN5flWe4B4KYHOnduQ,12
+blacksquare-0.8.0.dist-info/RECORD,,
