@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hasnainkk
+Version: 1.0
+Summary: python font module | Fonts
+Home-page: UNKNOWN
+Author: Hasnain Khan
+Author-email: hasnainkk98075@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: requests>=2.25.1
+Requires-Dist: numpy>=1.21.0
+
+UNKNOWN
+
+
