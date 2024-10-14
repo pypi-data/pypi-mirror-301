@@ -1,0 +1,14 @@
+networkx
+numpy
+pandas
+puzpy
+rich
+
+[dev]
+pre-commit
+pytest
+uv
+
+[pdf]
+pypdf
+weasyprint
