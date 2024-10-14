@@ -1,0 +1,12 @@
+CHANGES.rst
+HOWTO.rst
+LICENSE
+MANIFEST.in
+README.rst
+dev.py
+setup.py
+yieldcurves.egg-info/PKG-INFO
+yieldcurves.egg-info/SOURCES.txt
+yieldcurves.egg-info/dependency_links.txt
+yieldcurves.egg-info/requires.txt
+yieldcurves.egg-info/top_level.txt
