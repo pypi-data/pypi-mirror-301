@@ -1,0 +1,13 @@
+rotational_placement/__init__.py,sha256=bUEAlhGGJ5LuNokJ_l1vi4VZL5xTF5v4G4lwBFzPtzs,285
+rotational_placement/__rp_ff__.py,sha256=4FlEy0gbC3KkMfV8w3WfczY9e_Fp7qkUzBa_TAwlA9E,3411
+rotational_placement/__rp_num__.py,sha256=Fuol0EIBosK8fDcn5vDpac2yYPPbjraneYjEtUoS55s,4873
+rotational_placement/__rp_sym__.py,sha256=rOIVdca-Z5cfTnmjVwsD9XJ9yEbUuQ06rF1MeFK1_1g,5213
+rotational_placement/config.json,sha256=9ufSt7TTuIo9LJKXwglRsWXT5ClQ7PbckI5wSly1nCw,108
+rotational_placement/experiment_class.py,sha256=T8R3JlgNBGM3-odjmHcIcwG8_SExDK58iimh02G2YZc,5110
+rotational_placement/load_config.py,sha256=ygVn8_q8pTdhC9QkolDxVkUDk_264BCu_WO2-XCTQto,1212
+rotational_placement/make_data_dir.py,sha256=PdrIy6cG-D7XwwdNikZQBfWzjcT8Y4TazKCSe_dtOTw,533
+rotational_placement/make_plot_dir.py,sha256=maufR-MlxpSTAAsVGlR9YFW6SKNWfyTukEEOIt9Yhko,562
+rotational_placement-0.1.5.dist-info/METADATA,sha256=qoW15_iwNNPJ5lfDN2uS-Mp5Ni2ssSpFNljolTsXVTE,1102
+rotational_placement-0.1.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+rotational_placement-0.1.5.dist-info/licenses/LICENSE,sha256=9kU68rC1VR1tl6vLDZOE6O1wt6SU9BD1QRZ-zKdaQ9c,1070
+rotational_placement-0.1.5.dist-info/RECORD,,
