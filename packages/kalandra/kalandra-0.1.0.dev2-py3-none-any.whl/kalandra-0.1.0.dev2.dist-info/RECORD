@@ -1,0 +1,11 @@
+kalandra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalandra/__main__.py,sha256=okkifLGKBj8jRlOYmSiPhcOlt3bBSe30HroKcR1N4K4,1019
+kalandra/commands/update_mirror.py,sha256=KsVVIFLxIJibSWpPXq1wAMabxdI4xkLRCqp1sZQybIw,2349
+kalandra/gitprotocol.py,sha256=_7AyfxN4ORugngO_zOYqimfCH0ytN6vywaW_aHBvcIA,5073
+kalandra/transports/__init__.py,sha256=99pCsyXS4RYcCRhP4Ly6zRpXCEGvfZTZdyC1p4STgew,290
+kalandra/transports/base.py,sha256=2uFXBaMXgZh49_-PAOXor2bzAVTVcpuwug4IOSfcidQ,16468
+kalandra/transports/file.py,sha256=x_7v_lcZ5c7r8xuhMJ8SfYoHGx7cHEDX9_UK2k9VQEU,2731
+kalandra/transports/ssh.py,sha256=10BNPLicf-uVApBOLkhvV66RnBjF78wRHuuZ_3IZds4,3508
+kalandra-0.1.0.dev2.dist-info/METADATA,sha256=pFlrPBpjOIXsnnmzry5K--_OGhBce4GIMC3-VyVnU2Q,2247
+kalandra-0.1.0.dev2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kalandra-0.1.0.dev2.dist-info/RECORD,,
