@@ -1,0 +1,5 @@
+setup.py
+neosync.egg-info/PKG-INFO
+neosync.egg-info/SOURCES.txt
+neosync.egg-info/dependency_links.txt
+neosync.egg-info/top_level.txt
