@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+saudacoes/__init__.py
+saudacoes_simples.egg-info/PKG-INFO
+saudacoes_simples.egg-info/SOURCES.txt
+saudacoes_simples.egg-info/dependency_links.txt
+saudacoes_simples.egg-info/top_level.txt

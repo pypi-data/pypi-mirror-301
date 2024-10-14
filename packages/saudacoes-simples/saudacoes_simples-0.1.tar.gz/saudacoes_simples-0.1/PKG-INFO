@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: saudacoes_simples
+Version: 0.1
+Summary: Um pacote simples para dizer olá e adeus
+Home-page: https://github.com/AlaiSeide/pacotes-pypi.git
+Author: Alai Seide
+Author-email: tenw313@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Saudacoes Simples
+
+Este é um pacote simples para dizer olá e adeus para qualquer pessoa!
+
+## Como usar
+
+```python
+from saudacoes import dizer_ola, dizer_adeus
+
+print(dizer_ola("João"))  # Vai dizer "Olá, João!"
+print(dizer_adeus("Maria"))  # Vai dizer "Adeus, Maria!"
+
+
