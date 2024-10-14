@@ -1,0 +1,9 @@
+setuptools
+torch
+gymnasium
+aim
+numpy
+opencv-python
+protobuf
+grpcio
+flask
