@@ -1,0 +1,8 @@
+django_firestore_session_engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_firestore_session_engine/apps.py,sha256=piyZYHThChtyOxq8e_Yzb51kie1FzHsw21BeTF9N8l0,741
+django_firestore_session_engine/cfg.py,sha256=OsIyC-91-jeXwqTOMfbZs90gjDH-eKGcdyRWDp5QOlQ,209
+django_firestore_session_engine/engine.py,sha256=jIMTyXBJajy9j8z-se6bcboJKl5XUN13iBDS5zRrm1c,2442
+django_firestore_session_engine-1.0.dist-info/METADATA,sha256=cO4SM4qmZ6HkVPDXXlzZHyEd0I8ZHgg7DTDPX2T8yKM,2166
+django_firestore_session_engine-1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+django_firestore_session_engine-1.0.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+django_firestore_session_engine-1.0.dist-info/RECORD,,
