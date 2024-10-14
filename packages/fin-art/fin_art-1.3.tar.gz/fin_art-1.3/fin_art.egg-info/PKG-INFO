@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: fin-art
+Version: 1.3
+Summary: A module for generating pixel style images
+Home-page: UNKNOWN
+Author: madvasik
+Author-email: ma2sic@yandex.ru
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
