@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: cycleosm
+Version: 0.0.1
+Summary: A small package to download structured bike infrastructure data from Open Street Map (OSM).
+Project-URL: homepage, https://github.com/Bikingman/cycleosm
+Project-URL: documentation, https://github.com/Bikingman/cycleosm
+Project-URL: repository, https://github.com/Bikingman/cycleosm
+Project-URL: Bug Tracker, https://github.com/Bikingman/cycleosm/issues
+Author-email: Daniel Patterson <daniel.patterson87@gmail.com>
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# bikeosm
+
+A small package to download structured bike infrastructure data from Open Street Map (OSM).
