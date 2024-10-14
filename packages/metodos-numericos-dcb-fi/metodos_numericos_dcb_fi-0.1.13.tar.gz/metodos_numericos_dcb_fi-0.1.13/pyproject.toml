@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "metodos-numericos-dcb-fi"
+version = "0.1.13"
+description = "Biblioteca con las utilidades necesarias para ejecutar los jupyter notebooks de métodos numéricos."
+authors = ["Guillermo Hernandez Ruiz de Esparza <guillermo.hre@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+"typing"="3.7.4.3"
+"sympy"="1.12"
+"numpy"="1.26.4"
+"pandas"="2.2.1"
+"ipython"="8.18.1"
+"pathlib"="1.0.1"
+"plotly"="5.19.0"
+"nbformat"="5.9.2"
+"scipy"="1.13.0"
+"ipywidgets"="8.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
