@@ -1,0 +1,6 @@
+requests>=2.3
+lxml>=4.5
+cssselect>=1.2
+w3lib
+orjson>=3
+tldextract
