@@ -1,0 +1,60 @@
+name: Build
+
+on: 
+  push:
+    paths:
+      - '**.toml'
+      - '**.py'
+      - '**.cpp'
+      - '**.h'
+      - '**.c'
+      - 'xmake.lua'
+      - 'CMakeLists.txt'
+  pull_request:
+    paths:
+      - '**.toml'
+      - '**.py'
+      - '**.cpp'
+      - '**.h'
+      - '**.c'
+      - 'xmake.lua'
+      - 'CMakeLists.txt'
+  workflow_call:
+
+jobs:
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        # os: [ubuntu-latest, windows-latest, macos-13, macos-14]
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+
+      - uses: pypa/cibuildwheel@v2.21.3
+        name: Build wheels
+      - run: pipx run cibuildwheel==2.21.1
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cibw-wheels-${{ matrix.os }}-${{ strategy.job-index }}
+          path: ./wheelhouse/*.whl
+          retention-days: 7
+
+  make_sdist:
+    name: Make SDist
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build SDist
+      run: pipx run build --sdist
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: cibw-sdist
+        path: dist/*.tar.gz
