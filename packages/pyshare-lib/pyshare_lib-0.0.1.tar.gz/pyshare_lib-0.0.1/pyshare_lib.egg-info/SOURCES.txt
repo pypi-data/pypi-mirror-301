@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+pyshare/__init__.py
+pyshare/share.py
+pyshare_lib.egg-info/PKG-INFO
+pyshare_lib.egg-info/SOURCES.txt
+pyshare_lib.egg-info/dependency_links.txt
+pyshare_lib.egg-info/top_level.txt
+tests/test_share.py
