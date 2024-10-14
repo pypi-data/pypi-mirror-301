@@ -1,0 +1,847 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="sphinx_mindmap/vis-network/vis-network.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="sphinx_mindmap/jquery/jquery-3.7.1.min" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style type="text/css">
+        #mynetwork {
+            width: auto;
+            height: 90%;
+            margin: 15px 5px;
+            /* justify-content: space-between; */
+            margin-right: 20px;
+            background-color: #ffffff;
+        }
+
+        div.vis-tooltip {
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%">
+        <div id="mynetwork" tabindex="0"></div>
+    </div>
+    <script type="text/javascript">
+        // initialize global variables.
+        var inc=0;
+        var interfactionMode=false;
+        var lastPosition = null;
+        const max_zoom = 4;
+        const min_zoom = 0.2;
+        var inode = undefined;
+        var selectedNode = undefined;
+        var layoutDirection = 'LR';
+        let MIN_ZOOM = 0.1;
+        let MAX_ZOOM = 4.0;
+        var networkData;
+        let lastZoomPosition = { x: 0, y: 0 }
+        var selectedType;
+        var gedges = [];
+        var gnodes = [];
+        var edges = [];
+        var nodes = [];
+        var allNodes;
+        var allEdges;
+        var nodeColors;
+        var network;
+        var container;
+        var options, data;
+        var filterWasUsed = false;
+        var timeoutId = null;
+
+        var index = 0;
+        var cur = 0;
+        var fontSize = 35;
+        // **[$topics] [[ https://www.w3schools.com/js/{Learn about JavaScript} JavaScript ]]
+        //**[$topics] JavaScript
+        const mindmapLevelRegex = /^\s*([\*]+)(\[([^\]]*)\])? ([^#]+)(\s*#\s*(.*))?$/;
+        //const mindmapLevelRegex2 = /^\s*\[\[(https?:[^{ \]}]+)?({([^}]+)})?\s*([^\]]+)?\]\]$/;
+        const mindmapLevelRegex2 = /^\s*\[\[(\s*https?:[^{ \]}]+)?(\s*{([^}]+)})?\s*([^\]]+)?\s*\]\]$/;
+
+        var parentsx = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+
+        var children = {};
+        var children_edges = {};
+        var parents = {};
+        var parents_edges = {};
+        //var selectedNode;
+
+        var plantUmlCode;
+
+        const queryString = window.location.search;
+        const urlSearchParams = new URLSearchParams(queryString);
+        const decodedData = Object.fromEntries(urlSearchParams.entries());
+        let mindmapURL;
+        let expanded = 'expanded' in decodedData ? decodedData['expanded'] : false;
+        inc = 'inc' in decodedData ? parseInt(decodedData['inc']) : inc;
+        if ('file' in decodedData) {
+            mindmapURL = decodedData['file'];
+            fetchMindmap();
+        } else {
+            console.log('No input file specified');
+        }
+        async function fetchMindmap() {
+            try {
+                const response = await fetch(mindmapURL);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                plantUmlCode = await response.text(); // For text files
+                init();
+            } catch (error) {
+                console.error("Error fetching file:", error);
+            }
+        }
+
+
+        function isValidUrl(string) {
+            try {
+                new URL(string);
+                return true;
+            } catch (err) {
+                return false;
+            }
+        }
+
+        var absolute = function (rel) {
+            var link = document.createElement("a");
+            link.href = rel;
+            return (link.protocol + "//" + link.host + link.pathname);
+        }
+
+        function nodeColor(bgColor) {
+            return {
+                border: 'bgColor',
+                background: bgColor,
+                highlight: {
+                    border: 'red',
+                }
+            }
+        }
+        // minmap-index.puml
+        function processPlantUML(lines) {
+            while (index < lines.length) {
+                const match = mindmapLevelRegex.exec(lines[index]);
+                cur = index;
+                index = index + 1;
+                if (match) {
+                    const lev = match[1];
+                    const color = match[3];
+                    var label = match[4];
+                    var title = undefined;
+                    var url = '';
+                    const curNodeIndex = gnodes.length;
+                    const level = lev.length;
+                    const match2 = mindmapLevelRegex2.exec(label);
+
+                    if (match2) {
+                        url = match2[1] == undefined ? '' : match2[1];
+                        title = match2[3]; //==undefined?'':match2[3];
+                        label = match2[4] == undefined ? '' : match2[4];
+                    }
+                    label = label.replace(/\\n+/gm,' ').trim();
+                    gnodes.push({
+                        id: curNodeIndex,
+                        label: label,
+                        level: level,
+                        num: curNodeIndex,
+                        title: title,
+                        url: url,
+                        hidden: false,
+                        expanded: true
+                    });
+
+                    if (level == 1)
+                        gnodes[curNodeIndex]['color'] = nodeColor("Orange");
+                    else if (level == 2)
+                        gnodes[curNodeIndex]['color'] = nodeColor("LightBlue");
+                    else if (level == 3)
+                        gnodes[curNodeIndex]['color'] = nodeColor("LightGreen");
+                    else if (level == 4)
+                        gnodes[curNodeIndex]['color'] = nodeColor("Gold");
+                    else
+                        gnodes[curNodeIndex]['color'] = nodeColor("LightBlue");
+
+                    const parentID = parentsx[level - 1];
+                    console.log(`${level} ${color} ${label} ${curNodeIndex} ${parentID}`);
+                    if (curNodeIndex > 0) {
+                        if (level > gnodes[curNodeIndex - 1]['level']) {
+                            gedges.push({
+                                arrows: "to",
+                                color: "black",
+                                from: curNodeIndex,
+                                to: curNodeIndex - 1
+                            });
+                            //if(level>=parents.length)
+                            //    parents.push(curNodeIndex-1);
+                            //else
+                            parentsx[level - 1] = curNodeIndex - 1;
+                            processPlantUML(lines);
+                        } else
+                            gedges.push({
+                                arrows: "to",
+                                color: "black",
+                                from: curNodeIndex,
+                                to: parentID
+                            });
+                    } else
+                        processPlantUML(lines, curNodeIndex);
+                }
+            }
+        }
+
+        function parsePlantUml(code) {
+            gnodes = [];
+            gedges = [];
+            const lines = code.split("\n");
+            processPlantUML(lines);
+            console.log("finished");
+        }
+
+        // https://stackoverflow.com/questions/60436610/how-to-stay-only-edges-between-two-nodes
+        function getIncomingEdgesOfNode(nodeId) {
+            return edges.get().filter(function (edge) {
+                return edge.to === nodeId;
+            });
+        }
+
+        function getInteractionData() {
+            return {
+                hover: true,
+                tooltipDelay: 200,
+                navigationButtons: false,
+                selectable: true,
+                zoomView: true,
+                dragView: true,
+                zoomSpeed: 0.5,
+                //minZoom: 0.5,  // Minimum zoom level
+                //maxZoom: 2.0,   // Maximum zoom level
+                // tooltip: function(node) {
+                //      return "<span style='font-size: 34px;'><b>" + node.label + "</b><br>" + node.title +"<br>"+node.url+ "<br></span>";
+                // },
+                // tooltipStyle: {
+                //     font: {
+                //         'face': 'monospace',
+                //         align: 'center',
+                //         size: 50,
+                //         // size: 300, 
+                //         color: "Black"
+                //     },
+                //     content: {
+                //         background    : 'rgba(255, 255, 255, 0.7)',
+                //         padding       : '10px',
+                //         borderRadius  : '10px'
+                //     },
+                //     line: {
+                //         borderLeft    : '1px dotted rgba(0, 0, 0, 0.5)'
+                //     },
+                //     dot: {
+                //         border        : '5px solid rgba(0, 0, 0, 0.5)'
+                //     }
+                // },
+                keyboard: {
+                    enabled: false
+                    // enabled:!textBoxEditingActive
+                }
+            };
+        }
+
+        function drawFilteredGraph(rootNodeLabel) {
+            network.fit();
+            return;
+        }
+        function getDefaultNetworkLayout(layoutDirection = 'LR') {
+            var layout = {
+                autoResize: true,
+                locale: 'en',
+                interaction: interfactionMode ? getInteractionData():
+                {
+                    dragNodes: false, // Disable dragging of nodes
+                    dragView: false,  // Disable dragging of the view (background)
+                    zoomView: false,  // Disable zooming
+                    selectable: false, // Disable node and edge selection
+                    hover: false // Disable hover interactions
+                },
+                nodes: {
+                    borderWidth: 0.5,
+                    borderWidthSelected: 4,
+                    //color:"#D4E6F1",
+                    shape: "box",
+                    //size: fontSize,
+                    //style: "filled",
+                    // color: {
+                    //     // background:"#D4E6F1",
+                    //     //border:"black"
+                    // },
+                    font: {
+                        'face': 'monospace',
+                        align: 'center',
+                        size: fontSize+inc,
+                        // size: 300, 
+                        color: "Black"
+                    },
+                    fixed: {
+                        'x': false,
+                        'y': false,
+                    },
+                    heightConstraint: {
+                        minimum: 50+2*inc
+                    },
+                    widthConstraint: {
+                        minimum: 150+5*inc,
+                        maximum: 320+5*inc
+                        // maximum: 1500
+                    }
+                },
+                edges: {
+                    arrows: { to: { enabled: true } },
+                    width: 0.5,
+                    hoverWidth: 2.0,
+                    color: "DarkGrey",
+                    // "color": {
+                    //     "inherit": false
+                    // },
+                    "smooth": {
+                        "enabled": false,
+                        "type": "horizontal"
+                    },
+                },
+                physics: {
+                    enabled: false,
+                    stabilization: {
+                        enabled: true, // Activates stabilization process
+                        iterations: 200, // Adjust iterations as needed
+                        updateInterval: 10,
+                        fit: true
+                    },
+                    solver: 'hierarchicalRepulsion',
+                    //solver: 'barnesHut',
+                    //solver: 'forceAtlas2Based',
+                    barnesHut: {
+                        theta: 0.5,
+                        gravitationalConstant: -2000,
+                        centralGravity: 0.3,
+                        springLength: 130,
+                        springConstant: 0.04,
+                        damping: 0.09,
+                        avoidOverlap: 0.2
+                    },
+                    hierarchicalRepulsion: {
+                        nodeDistance: 200,
+                        springLength: 100,
+                        springConstant: 0.1,
+                        avoidOverlap: 0.9
+                    },
+                    forceAtlas2Based: {
+                        theta: 0.5,
+                        gravitationalConstant: -50,
+                        centralGravity: 0.01,
+                        springConstant: 0.08,
+                        springLength: 150,
+                        damping: 0.4,
+                        avoidOverlap: 0.3
+                    },
+                },
+                configure: {
+                    enabled: false,
+                    showButton: false,
+                    filter: ['layout', 'physics']
+                },
+                layout: {
+                    randomSeed: 1,
+                    improvedLayout: true,
+                    hierarchical: {
+                        enabled: true,
+                        sortMethod: 'directed',  // hubsize, directed
+                        //shakeTowards: 'leaves',  // roots, leaves
+                        direction: layoutDirection,   // UD, DU, LR, RL
+                        //levelSeparation: 1300,
+                        //nodeSpacing: 750,
+                        levelSeparation: 350+5*inc,
+                        nodeSpacing: 320,
+                        // treeSpacing: 200,
+                        // blockShifting: false,
+                        // edgeMinimization: false,
+                        // edgeMinimization: true,
+                        // parentCentralization: true
+                    }
+                }
+            };
+            layout['physics']['enabled'] = !layout['layout']['hierarchical']['enabled'];
+            return layout;
+        }
+
+        //container = document.getElementById('mynetwork');
+
+        function doOnHoverNode(e) {
+        }
+
+        function handleHoverNode(e) {
+            return;
+            if (event.shiftKey) {
+                network.setOptions({ physics: false });
+                var nodeId = e.node;
+                var node = nodes.get(nodeId);
+                nodes.update({
+                    id: nodeId, font: { size: 80 },
+                    // heightConstraint: {
+                    //     minimum: 200
+                    // },
+                    // widthConstraint: {
+                    //     minimum: 3000,
+                    //     maximum: 10000
+                    // }
+                });
+            }
+        }
+        function handleBlurNode(e) {
+            return;
+            //network.setOptions({ physics: true });
+            var nodeId = e.node;
+            console.log('handleBlurNode');
+            nodes.update({
+                id: nodeId, font: { size: 20 },
+                // widthConstraint: {
+                //     minimum: 100,
+                //     maximum: 1500
+                // }
+            });
+            return;
+        }
+
+        function newNetwork() {
+            let tmp_nodes = [];
+            let tmp_edges = [];
+            for (const node of gnodes) {
+                if (!node.hidden) {
+                    tmp_nodes.push(node);
+                    for (const edge of parents_edges[node.id])
+                        tmp_edges.push(edge);
+                }
+            };
+            nodes = new vis.DataSet(tmp_nodes);
+            edges = new vis.DataSet(tmp_edges);
+            network = new vis.Network(container, { nodes: nodes, edges: edges }, getDefaultNetworkLayout());
+            network.on('hoverNode', handleHoverNode);
+            network.on('blurNode', handleBlurNode);
+
+            lastPosition = null;
+
+            network.on("zoom", function (params) {
+                if (params.scale < min_zoom || params.scale > max_zoom) { // adjust this value according to your requirement
+                    network.moveTo({
+                        position: lastPosition, // use the last position before zoom limit
+                        scale: params.scale > max_zoom ? max_zoom : min_zoom // this scale prevents zooming out beyond the desired limit
+                    });
+                } else {
+                    // store the current position as the last position before zoom limit
+                    lastPosition = network.getViewPosition();
+                }
+            });
+            // on pan, store the current position
+            network.on("dragEnd", function () {
+                lastPosition = network.getViewPosition();
+            });
+
+            console.log(`newNetwork selectedNode=${selectedNode}`);
+            if (selectedNode != undefined) {
+                inode = nodes.get(selectedNode);
+                let newNode = {
+                    shape: 'box',
+                    label: inode['label'],
+                    id: selectedNode,
+                    //title:`${msg}${gnodes[rootNodeLabel]['title']}`,
+                    heightConstraint: {
+                        minimum: 200
+                    },
+                    widthConstraint: {
+                        minimum: 300,
+                        maximum: 300
+                    },
+                    // color: {
+                    //     border:'red'
+                    // }
+                };
+                nodes.update(newNode);
+            }
+            //network.getNode(0).size=200;
+            //network.fit({maxZoomLevel:0.1});
+
+            network.on('select', function (selection) {
+                return;
+                network.setOptions({ physics: false });
+                let selectedNodeIds = selection.nodes;
+                let selectedNodes = nodes.get(selectedNodeIds);
+
+                var node = nodes.get(selectedNodes[0]);
+                //network.updateNodes([updateObject]);
+                //node['font']['size']=800;
+                nodes.update({
+                    id: node.id, font: { size: 800 }, level: node.level,
+                    // heightConstraint: {
+                    //     minimum: 200
+                    // },
+                    // widthConstraint: {
+                    //     minimum: 3000,
+                    //     maximum: 10000
+                    // }
+                });
+            });
+            //
+            // network.on('deselectNode', function (properties) {
+            // });
+
+            network.on('click', function (properties) {
+                console.log('click event');
+                var oEvent = properties.event.srcEvent;
+                if (properties.nodes.length > 0) {
+                    if (selectedNode != properties.nodes[0])
+                        highlightNode(properties.nodes[0]);
+                    //expandNode(properties.nodes[0]);
+                } else {
+                    if (inode != undefined && selectedNode != undefined)
+                        highlightNode(selectedNode);
+                }
+            });
+            // network.on('click', function (properties) {
+            //     return;
+            // });
+            network.on('selectNode', function (selection) {
+                if (selection.nodes.length === 0) {
+                    // if(inode!=undefined)
+                    //     nodes.update(inode);
+                    // selectedNode=undefined;
+                    // inode=undefined;
+                    console.log(`selectNode: unselected`);
+                }
+                else {
+                    console.log(`selectNode: ${selection.nodes[0]}`);
+                }
+                //let selectedNodeIds = selection.nodes; // array of selected node's ids
+                //let selectedNodes = nodes.get(selectedNodeIds); // retrive node objects from dataSet object
+                //document.getElementById('tooltip-window').innerHTML = selectedNodes[0]['title-html'];
+                // if (selectedNode != params.nodes[0]) {
+                //     //network.deselectNode(selectedNode); // Deselect previous selection
+                // }
+                return;
+                selectedNode = selection.nodes[0]; // Update selected node
+                //hideSyblings(selectedNode);
+                expandNode(selectedNode);
+                //network.stabilize(); // Stabilize the layout
+                network.fit();
+                //network.fit({maxZoomLevel:0.4});
+                //network.fit();
+            });
+        }
+
+        function init() {
+            parsePlantUml(plantUmlCode);
+
+            for (const node of gnodes) {
+                children[node.id] = [];
+                parents[node.id] = [];
+                children_edges[node.id] = [];
+                parents_edges[node.id] = [];
+            }
+
+            for (const edge of gedges) {
+                children[edge.to].push(edge.from);
+                parents[edge.from].push(edge.to);
+                children_edges[edge.to].push(edge);
+                parents_edges[edge.from].push(edge);
+            }
+
+            const colapseLevelThreshold = expanded ? 20 : 2;
+            for (let i = 0; i < gnodes.length; ++i) {
+                if (gnodes[i].level == colapseLevelThreshold) {
+                    gnodes[i].expanded = false;
+                }
+                if (gnodes[i].level > colapseLevelThreshold) {
+                    gnodes[i].expanded = false;
+                    gnodes[i].hidden = true;
+                }
+            };
+
+            container = document.getElementById('mynetwork');
+
+            newNetwork();
+
+            // https://github.com/almende/vis/issues/871
+            network.once('initRedraw', function () {
+                //network.setOptions( { physics: false } );
+                //network.moveTo({ offset: { x: - (0.5 * 600), y: - (0.5 * 0) } })
+            });
+            networkContainer = document.getElementById('mynetwork');
+            networkContainer.addEventListener('keyup', handleKeyUp);
+
+            // $('div.vis-tooltip').css('display','none');
+            // $('.vis-tooltip').css('display','none');
+            //$('div.vis-tooltip').remove();
+            //$('#mynetwork>div.vis-tooltip').css('opacity','0.5');
+            //var $tooltip = $('#tooltip');
+            //$tooltip.hide();
+            // $('.vis-tooltip').remove();
+            //$('.vis-tooltip').hide();
+            //$('.vis-tooltip').remove();
+            $('.vis-network').focus();
+            $('.vis-network').trigger($.Event('keydown', { key: 'Enter' }));
+            $(window).resize(handleResize);
+        }
+
+        function hideIndirectLineage(selectedNode) {
+            if (parents[selectedNode].length > 0) {
+                var stack = [];
+                var pstack = [];
+                const visitedNodes = {};
+                visitedNodes[selectedNode] = true;
+                stack = [selectedNode];
+
+                for (const p of parents[selectedNode])
+                    pstack.push(p);
+
+                while (pstack.length > 0) {
+                    const currentNode = pstack.pop();
+                    if (visitedNodes[currentNode])
+                        continue;
+                    visitedNodes[currentNode] = true;
+                    for (const c of children[currentNode])
+                        stack.push(c);
+                    for (const p of parents[currentNode])
+                        pstack.push(p);
+                }
+
+                while (stack.length) {
+                    const currentNode = stack.pop();
+                    if (visitedNodes[currentNode])
+                        continue;
+                    visitedNodes[currentNode] = true;
+                    gnodes[currentNode].hidden = true;
+                    gnodes[currentNode].expanded = false;
+                    for (const c of children[currentNode])
+                        stack.push(c);
+                }
+                return true;
+            } else
+                return false;
+        }
+
+        function hideSyblings(selectedNode) {
+            if (parents[selectedNode].length > 0) {
+                var stack = [];
+                const visitedNodes = {};
+                let symblings = new Set([]);
+                visitedNodes[selectedNode] = true;
+                stack = [selectedNode];
+                for (const p of parents[selectedNode])
+                    for (const c of children[p]) {
+                        stack.push(c);
+                        symblings.add(c);
+                    }
+                while (stack.length) {
+                    const currentNode = stack.pop();
+                    if (visitedNodes[currentNode])
+                        continue;
+                    if (symblings.has(currentNode))
+                        gnodes[currentNode].hidden = !gnodes[currentNode].hidden;
+                    else
+                        gnodes[currentNode].hidden = true;
+                    gnodes[currentNode].expanded = false;
+                    visitedNodes[currentNode] = true;
+                    for (const c of children[currentNode])
+                        stack.push(c);
+                }
+                return true;
+            } else
+                return false;
+        }
+
+        function expandNode(selectedNode) {
+            if (children[selectedNode].length > 0) {
+                var stack = [];
+                var nodesToUpdate = [];
+                const visitedNodes = {};
+                const h = gnodes[selectedNode].expanded;
+                gnodes[selectedNode].expanded = !h;
+                for (const c of children[selectedNode])
+                    stack.push(c);
+                while (stack.length) {
+                    const currentNode = stack.pop();
+                    if (visitedNodes[currentNode])
+                        continue;
+                    gnodes[currentNode].hidden = h;
+                    gnodes[currentNode].expanded = false;
+                    visitedNodes[currentNode] = true;
+                    if (h) {
+                        for (const c of children[currentNode])
+                            stack.push(c);
+                    }
+                }
+                return true;
+            } else
+                return false;
+        }
+
+        function centerNetwork() {
+            if (network != null) {
+                network.fit({
+                    nodes: nodes.getIds(), // Fit all nodes
+                    animation: {
+                        duration: 0 // No animation to preserve current zoom level
+                    },
+                    minZoomLevel: network.getScale(),
+                    maxZoomLevel: network.getScale()
+                });
+                lastPosition = network.getViewPosition();
+            }
+        }
+        function RedrawIfNeeded(redraw) {
+            if (redraw) {
+                newNetwork();
+                network.stabilize();
+            }
+            $('.vis-network').focus();
+            $('.vis-network').trigger($.Event('keydown', { key: 'Enter' }));
+        }
+        function handleKeyUp(event) {
+            console.log('handleKeyUp()', event.key, event.keyCode);
+            if (event.key === 'r' || event.key === 'R') {
+                event.preventDefault();
+                if (network != null)
+                    network.fit({ maxZoomLevel: 0.4 });
+                return;
+            }
+            if (event.key === 'i' || event.key === 'I') {
+                event.preventDefault();
+                if (network != null) {
+                    interfactionMode=!interfactionMode;
+                    network.setOptions(getDefaultNetworkLayout(layoutDirection));
+                }
+                return;
+            }
+            if (event.key === 'c' || event.key === 'C') {
+                event.preventDefault();
+                centerNetwork();
+                return;
+            }
+            if (event.key === 'h' && selectedNode != undefined) {
+                event.preventDefault();
+                console.log('hideIndirectLineage');
+                redraw = hideIndirectLineage(selectedNode);
+                RedrawIfNeeded(redraw);
+                return;
+            }
+            if (event.key === 's' && selectedNode != undefined) {
+                event.preventDefault();
+                console.log('hideSyblings');
+                redraw = hideSyblings(selectedNode);
+                RedrawIfNeeded(redraw);
+                return;
+            }
+            if (event.key === 'e' && selectedNode != undefined) {
+                redraw = expandNode(selectedNode);
+                RedrawIfNeeded(redraw);
+                return;
+            }
+            if (event.key === '=' && inc < 40) {
+                event.preventDefault();
+                inc = inc +1;
+                console.log(`inc=${inc}`);
+                network.setOptions(getDefaultNetworkLayout(layoutDirection));
+                setTimeout(function () {
+                    network.fit();
+                    //network.fit({maxZoomLevel:0.4});
+                    //lastZoomPosition = network.getViewPosition();
+                }, 500);
+                return;
+            }
+            if (event.key === '+' && event.shiftKey && inc > 0) {
+                event.preventDefault();
+                inc = inc-1;
+                network.setOptions(getDefaultNetworkLayout(layoutDirection));
+                setTimeout(function () {
+                    network.fit();
+                    //network.fit({maxZoomLevel:0.4});
+                    //lastZoomPosition = network.getViewPosition();
+                }, 500);
+                return;
+            }
+            if (event.key === 'l' || event.key === 'L') {
+                event.preventDefault();
+                if (layoutDirection === 'UD')
+                    layoutDirection = 'LR';
+                else
+                    layoutDirection = 'UD';
+                network.setOptions(getDefaultNetworkLayout(layoutDirection));
+                //network.fit({maxZoomLevel:0.4});
+                //network.redraw();
+                setTimeout(function () {
+                    network.fit();
+                    //network.fit({maxZoomLevel:0.4});
+                    //lastZoomPosition = network.getViewPosition();
+                }, 500);
+            }
+        }
+        function highlightNode(id) {
+            console.log('highlightNode event');
+            if (inode != undefined) {
+                const _selectedNode = selectedNode;
+                nodes.update({
+                    ...inode,
+                    heightConstraint:
+                    {
+                        minimum: 50
+                    },
+                    widthConstraint: {
+                        minimum: 100,
+                        // maximum: 1500
+                    }
+                });
+                inode = undefined;
+                selectedNode = undefined;
+                if (id === _selectedNode)
+                    return;
+            }
+            selectedNode = id;
+            inode = nodes.get(id);
+            let newNode = {
+                shape: 'box',
+                label: inode['label'],
+                id: id,
+                // borderWidth: 4,
+                // borderWidthSelected: 4,
+                // color: {
+                //     // border:'red'
+                //     highlight: {
+                //         border: 'red'
+                //     }
+                // },
+                //title:`${msg}${gnodes[rootNodeLabel]['title']}`,
+                // borderWidth: 2,
+                // borderWidthSelected: 4,
+                //borderWidth:2,
+                heightConstraint: {
+                    minimum: 200
+                },
+                widthConstraint: {
+                    minimum: 300,
+                    maximum: 300
+                }
+            };
+            //newNode.border = { borderWidth: 4, color: { border: "red" } };            
+            nodes.update(newNode);
+        }
+        function handleResize() {
+            if (network != null) {
+                network.redraw();
+                //network.fit({ maxZoomLevel: 0.4 });
+                network.fit();
+            }
+        }
+        //animate();
+    </script>
+</body>
+
+</html>
