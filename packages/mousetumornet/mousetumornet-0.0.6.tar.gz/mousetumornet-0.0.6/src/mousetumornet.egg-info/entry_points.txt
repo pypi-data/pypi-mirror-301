@@ -1,0 +1,7 @@
+[console_scripts]
+mtn_extract_roi = mousetumornet.cli:cli_extract_roi
+mtn_predict_folder = mousetumornet.cli:cli_predict_folder
+mtn_predict_image = mousetumornet.cli:cli_predict_image
+
+[napari.manifest]
+mousetumornet = mousetumornet:napari.yaml

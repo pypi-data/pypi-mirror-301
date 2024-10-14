@@ -1,0 +1,14 @@
+magicgui
+qtpy
+napari[all]>=0.4.16
+napari-label-focus
+pooch
+nnunetv2
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
