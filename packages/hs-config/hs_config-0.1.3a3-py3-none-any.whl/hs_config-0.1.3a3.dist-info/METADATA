@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: hs-config
+Version: 0.1.3a3
+Project-URL: homepage, https://github.com/x-haose/hs-config
+Project-URL: repository, https://github.com/x-haose/hs-config
+Project-URL: documentation, https://github.com/x-haose/hs-config
+Author-email: 昊色居士 <xhrtxh@gmail.com>
+License-Expression: MIT
+Keywords: Pydantic,Python,配置
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: pydantic-settings[toml,yaml]>=2.5.2
+Requires-Dist: pydantic[dotenv]>=2.9.2
+Description-Content-Type: text/markdown
+
+# example-package
