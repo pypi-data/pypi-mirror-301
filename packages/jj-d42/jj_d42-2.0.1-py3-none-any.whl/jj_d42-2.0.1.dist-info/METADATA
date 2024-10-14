@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: jj-d42
+Version: 2.0.1
+Home-page: https://github.com/jj-mock/jj-d42
+Author: Nikita Tsvetkov
+Author-email: tsv1@fastmail.com
+License: Apache-2.0
+Project-URL: Docs, https://jj-mock.io/docs/integrations/d42
+Project-URL: GitHub, https://github.com/jj-mock/jj-d42
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: d42<3.0,>=2.0
+Requires-Dist: jj<3.0,>=2.3.1
+Requires-Dist: niltype<2.0,>=0.3
+Requires-Dist: th<1.0,>=0.3
+
+# jj-d42
+
+[![Codecov](https://img.shields.io/codecov/c/github/jj-mock/jj-d42/master.svg?style=flat-square)](https://codecov.io/gh/jj-mock/jj-d42)
+[![PyPI](https://img.shields.io/pypi/v/jj-d42.svg?style=flat-square)](https://pypi.python.org/pypi/jj-d42/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/jj-d42?style=flat-square)](https://pypi.python.org/pypi/jj-d42/)
+[![Python Version](https://img.shields.io/pypi/pyversions/jj-d42.svg?style=flat-square)](https://pypi.python.org/pypi/jj-d42/)
+
+
+## Installation
+
+```sh
+pip3 install jj-d42
+```
+
+## Documentation
+
+For detailed documentation, please visit the [official docs](https://jj-mock.io/docs/integrations/d42).
