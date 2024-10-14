@@ -1,0 +1,7 @@
+setup.py
+partpyth/__init__.py
+partpyth/partpyth.py
+partpyth.egg-info/PKG-INFO
+partpyth.egg-info/SOURCES.txt
+partpyth.egg-info/dependency_links.txt
+partpyth.egg-info/top_level.txt
