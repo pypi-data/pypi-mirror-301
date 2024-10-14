@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pi3d
+Version: 2.52
+Summary: pi3d OpenGL 3D graphics library
+Author: Tim Skillman, Paddy Gaunt, Tom Ritchford
+Maintainer: Paddy Gaunt
+License: MIT
+Project-URL: Homepage, http://pi3d.github.com/html/index.html
+Keywords: OpenGL,3D,raspberry,raspi,graphics,game engine
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: pysdl2
