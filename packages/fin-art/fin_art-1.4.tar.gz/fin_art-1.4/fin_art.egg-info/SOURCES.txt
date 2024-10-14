@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+fin_art/__init__.py
+fin_art/art_generator.py
+fin_art.egg-info/PKG-INFO
+fin_art.egg-info/SOURCES.txt
+fin_art.egg-info/dependency_links.txt
+fin_art.egg-info/requires.txt
+fin_art.egg-info/top_level.txt
