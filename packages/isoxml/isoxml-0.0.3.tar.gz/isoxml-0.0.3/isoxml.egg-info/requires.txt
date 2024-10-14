@@ -1,0 +1,16 @@
+xsdata>=24.7
+numpy>=1.26
+shapely>=2.0
+
+[dev]
+xsdata[cli]
+geopandas
+xmlschema
+jupyter
+folium
+matplotlib
+mapclassify
+
+[test]
+pytest
+xmlschema

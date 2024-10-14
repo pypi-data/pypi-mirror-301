@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "isoxml"
+version = "0.0.3"
+description = "Python ISOXML read/write"
+license = {text = "Apache License 2.0"}
+authors = [
+  { name="Josephinum-Research" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["isoxml", "isobus", "iso", "11783-10", "xml", "precision farming"]
+
+dependencies = [
+    "xsdata >= 24.7",
+    "numpy >= 1.26",
+    "shapely >= 2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Josephinum-Research/isoxml-py"
+Issues = "https://github.com/Josephinum-Research/isoxml-py/issues"
+
+[project.optional-dependencies]
+dev = [
+    "xsdata[cli]",
+    "geopandas",
+    "xmlschema",
+    "jupyter",
+    "folium",
+    "matplotlib",
+    "mapclassify"
+]
+test = [
+    "pytest",
+    "xmlschema"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["isoxml*"]
+exclude = ["examples"]
+namespaces = false
+
