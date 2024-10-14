@@ -1,0 +1,2 @@
+[console_scripts]
+peace = peace_for_gaza.peace_for_gaza:_main
