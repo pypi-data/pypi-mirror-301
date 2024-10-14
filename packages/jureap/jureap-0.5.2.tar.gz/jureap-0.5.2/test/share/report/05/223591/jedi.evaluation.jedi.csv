@@ -1,0 +1,6 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,runtime,success
+jedi,2024.01,all,jedi.evaluation.jedi,18107,4,4,1,0.603,true
+jedi,2024.01,all,jedi.evaluation.jedi,18108,8,4,1,0.41,true
+jedi,2024.01,all,jedi.evaluation.jedi,18109,16,4,1,0.274,true
+jedi,2024.01,all,jedi.evaluation.jedi,18110,32,4,1,0.225,true
+

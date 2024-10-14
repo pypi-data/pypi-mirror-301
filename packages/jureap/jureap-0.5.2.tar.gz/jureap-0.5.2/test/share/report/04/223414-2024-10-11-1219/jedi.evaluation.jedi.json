@@ -1,0 +1,54 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "223414",
+            "job": "1168847",
+            "commit": "6461af4ed10a10943cdb1ab131bcb0e6f25e0dc8",
+            "username": "cifuentes1",
+            "project": "/p/project1/training2438",
+            "budget": "training2438",
+            "system": "jedi",
+            "version": "2024.12",
+            "timestamp": "2024-10-11T14:19:02+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jedi",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jedi",
+        "timestamp": "2024-10-11T14:19:02+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "435.0",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "17940",
+            "queue": "all",
+            "metrics": {
+                "performance": "0.6437920315636824"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "256.0",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "17941",
+            "queue": "all",
+            "metrics": {
+                "performance": "0.6944955882694349"
+            }
+        }
+    ]
+}

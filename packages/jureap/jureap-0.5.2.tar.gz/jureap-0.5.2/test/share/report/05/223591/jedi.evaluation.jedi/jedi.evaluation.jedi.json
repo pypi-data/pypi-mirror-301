@@ -1,0 +1,74 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "223591",
+            "job": "1169591",
+            "commit": "fd5913d4c6ab5c306b879cd8fe6ae614ee3bb1cb",
+            "username": "chew1",
+            "project": "/p/project1/jureap21",
+            "budget": "jureap21",
+            "system": "jedi",
+            "version": "2024.12",
+            "timestamp": "2024-10-12T10:37:01+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jedi",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jedi",
+        "timestamp": "2024-10-12T10:37:01+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "0.603",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "18107",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "0.41",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "18108",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "0.274",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "18109",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "0.225",
+            "parameter": {
+                "nodes": "32",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "18110",
+            "queue": "all",
+            "metrics": {}
+        }
+    ]
+}

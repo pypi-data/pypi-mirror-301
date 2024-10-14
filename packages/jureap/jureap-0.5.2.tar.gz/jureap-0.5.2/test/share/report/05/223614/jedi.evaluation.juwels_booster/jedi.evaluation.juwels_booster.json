@@ -1,0 +1,74 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "223614",
+            "job": "1169670",
+            "commit": "1b69a4166ac51a72bb573addc28ac7540e814ea6",
+            "username": "chew1",
+            "project": "/p/project1/ccstao",
+            "budget": "cstao",
+            "system": "juwelsbooster",
+            "version": "2024.12",
+            "timestamp": "2024-10-12T14:11:40+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "juwelsbooster",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.juwels_booster",
+        "timestamp": "2024-10-12T14:11:40+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "0.62",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10439961",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "0.354",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10439962",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "0.218",
+            "parameter": {
+                "nodes": "32",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10439964",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "0.143",
+            "parameter": {
+                "nodes": "64",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10439965",
+            "queue": "booster",
+            "metrics": {}
+        }
+    ]
+}
