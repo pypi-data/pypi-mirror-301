@@ -1,0 +1,31 @@
+[project]
+name = "winzy-webcam"
+version = "0.1"
+description = "Take image capture from webcam on laptop"
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "imageio",
+"imageio-ffmpeg",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-webcam"
+Changelog = "https://github.com/sukhbinder/winzy-webcam/releases"
+Issues = "https://github.com/sukhbinder/winzy-webcam/issues"
+CI = "https://github.com/sukhbinder/winzy-webcam/actions"
+
+[project.entry-points."winzy.plugins"]
+webcam = "winzy_webcam:webcam_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

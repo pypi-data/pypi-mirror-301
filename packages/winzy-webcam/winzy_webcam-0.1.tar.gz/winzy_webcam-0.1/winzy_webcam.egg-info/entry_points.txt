@@ -1,0 +1,2 @@
+[winzy.plugins]
+webcam = winzy_webcam:webcam_plugin

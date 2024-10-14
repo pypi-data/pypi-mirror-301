@@ -1,0 +1,6 @@
+winzy
+imageio
+imageio-ffmpeg
+
+[test]
+pytest

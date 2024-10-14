@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_webcam.py
+winzy_webcam/__init__.py
+winzy_webcam.egg-info/PKG-INFO
+winzy_webcam.egg-info/SOURCES.txt
+winzy_webcam.egg-info/dependency_links.txt
+winzy_webcam.egg-info/entry_points.txt
+winzy_webcam.egg-info/requires.txt
+winzy_webcam.egg-info/top_level.txt
