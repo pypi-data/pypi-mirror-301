@@ -1,0 +1,75 @@
+<!-- THIS FILE IS EXCLUSIVELY MAINTAINED by the project ae.ae V0.3.94 -->
+<!-- THIS FILE IS EXCLUSIVELY MAINTAINED by the project aedev.tpl_namespace_root V0.3.14 -->
+# django_utils 0.3.2
+
+[![GitLab develop](https://img.shields.io/gitlab/pipeline/ae-group/ae_django_utils/develop?logo=python)](
+    https://gitlab.com/ae-group/ae_django_utils)
+[![LatestPyPIrelease](
+    https://img.shields.io/gitlab/pipeline/ae-group/ae_django_utils/release0.3.1?logo=python)](
+    https://gitlab.com/ae-group/ae_django_utils/-/tree/release0.3.1)
+[![PyPIVersions](https://img.shields.io/pypi/v/ae_django_utils)](
+    https://pypi.org/project/ae-django-utils/#history)
+
+>ae_django_utils module 0.3.2.
+
+[![Coverage](https://ae-group.gitlab.io/ae_django_utils/coverage.svg)](
+    https://ae-group.gitlab.io/ae_django_utils/coverage/index.html)
+[![MyPyPrecision](https://ae-group.gitlab.io/ae_django_utils/mypy.svg)](
+    https://ae-group.gitlab.io/ae_django_utils/lineprecision.txt)
+[![PyLintScore](https://ae-group.gitlab.io/ae_django_utils/pylint.svg)](
+    https://ae-group.gitlab.io/ae_django_utils/pylint.log)
+
+[![PyPIImplementation](https://img.shields.io/pypi/implementation/ae_django_utils)](
+    https://gitlab.com/ae-group/ae_django_utils/)
+[![PyPIPyVersions](https://img.shields.io/pypi/pyversions/ae_django_utils)](
+    https://gitlab.com/ae-group/ae_django_utils/)
+[![PyPIWheel](https://img.shields.io/pypi/wheel/ae_django_utils)](
+    https://gitlab.com/ae-group/ae_django_utils/)
+[![PyPIFormat](https://img.shields.io/pypi/format/ae_django_utils)](
+    https://pypi.org/project/ae-django-utils/)
+[![PyPILicense](https://img.shields.io/pypi/l/ae_django_utils)](
+    https://gitlab.com/ae-group/ae_django_utils/-/blob/develop/LICENSE.md)
+[![PyPIStatus](https://img.shields.io/pypi/status/ae_django_utils)](
+    https://libraries.io/pypi/ae-django-utils)
+[![PyPIDownloads](https://img.shields.io/pypi/dm/ae_django_utils)](
+    https://pypi.org/project/ae-django-utils/#files)
+
+
+## installation
+
+
+execute the following command to install the
+ae.django_utils module
+in the currently active virtual environment:
+ 
+```shell script
+pip install ae-django-utils
+```
+
+if you want to contribute to this portion then first fork
+[the ae_django_utils repository at GitLab](
+https://gitlab.com/ae-group/ae_django_utils "ae.django_utils code repository").
+after that pull it to your machine and finally execute the
+following command in the root folder of this repository
+(ae_django_utils):
+
+```shell script
+pip install -e .[dev]
+```
+
+the last command will install this module portion, along with the tools you need
+to develop and run tests or to extend the portion documentation. to contribute only to the unit tests or to the
+documentation of this portion, replace the setup extras key `dev` in the above command with `tests` or `docs`
+respectively.
+
+more detailed explanations on how to contribute to this project
+[are available here](
+https://gitlab.com/ae-group/ae_django_utils/-/blob/develop/CONTRIBUTING.rst)
+
+
+## namespace portion documentation
+
+information on the features and usage of this portion are available at
+[ReadTheDocs](
+https://ae.readthedocs.io/en/latest/_autosummary/ae.django_utils.html
+"ae_django_utils documentation").

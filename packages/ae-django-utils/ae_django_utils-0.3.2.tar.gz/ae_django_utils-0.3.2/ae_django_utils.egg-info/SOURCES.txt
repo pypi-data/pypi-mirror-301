@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+ae/django_utils.py
+ae_django_utils.egg-info/PKG-INFO
+ae_django_utils.egg-info/SOURCES.txt
+ae_django_utils.egg-info/dependency_links.txt
+ae_django_utils.egg-info/requires.txt
+ae_django_utils.egg-info/top_level.txt
+ae_django_utils.egg-info/zip-safe
+tests/test_django_utils.py
