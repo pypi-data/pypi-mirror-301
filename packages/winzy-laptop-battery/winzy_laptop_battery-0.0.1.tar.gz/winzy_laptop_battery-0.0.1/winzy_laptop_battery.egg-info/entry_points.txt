@@ -1,0 +1,2 @@
+[winzy.plugins]
+battery = winzy_laptop_battery:battery_plugin

@@ -1,0 +1,8 @@
+winzy
+psutil
+
+[:platform_system == "Windows"]
+winsay
+
+[test]
+pytest

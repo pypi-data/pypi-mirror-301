@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_laptop_battery.py
+winzy_laptop_battery/__init__.py
+winzy_laptop_battery.egg-info/PKG-INFO
+winzy_laptop_battery.egg-info/SOURCES.txt
+winzy_laptop_battery.egg-info/dependency_links.txt
+winzy_laptop_battery.egg-info/entry_points.txt
+winzy_laptop_battery.egg-info/requires.txt
+winzy_laptop_battery.egg-info/top_level.txt

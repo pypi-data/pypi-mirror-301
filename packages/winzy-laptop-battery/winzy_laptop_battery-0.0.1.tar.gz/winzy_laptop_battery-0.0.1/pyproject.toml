@@ -1,0 +1,31 @@
+[project]
+name = "winzy-laptop-battery"
+version = "0.0.1"
+description = "Get laptop battery info and warn if asked"
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+    "psutil",
+    'winsay ; platform_system == "Windows"',
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-laptop-battery"
+Changelog = "https://github.com/sukhbinder/winzy-laptop-battery/releases"
+Issues = "https://github.com/sukhbinder/winzy-laptop-battery/issues"
+CI = "https://github.com/sukhbinder/winzy-laptop-battery/actions"
+
+[project.entry-points."winzy.plugins"]
+battery = "winzy_laptop_battery:battery_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
