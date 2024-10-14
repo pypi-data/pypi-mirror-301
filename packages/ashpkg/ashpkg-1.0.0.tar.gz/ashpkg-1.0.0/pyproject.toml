@@ -1,0 +1,7 @@
+# we are using 'setuptools' as the build system
+# we need to let pip and other build system know about our build system
+
+# here we register our build systems
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
