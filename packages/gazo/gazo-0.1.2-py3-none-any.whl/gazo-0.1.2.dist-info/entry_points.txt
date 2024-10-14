@@ -1,0 +1,2 @@
+[console_scripts]
+gazo = gazo.main:main
