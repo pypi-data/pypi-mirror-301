@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: clocksays
+Version: 0.2.0
+Summary: Add your description here
+Author-email: Gerrit Kocherscheidt <kochersg@koco-group.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# clocksays
+
+This small projects converts a given time (datetime.datetime) in a string of natural language. Languages supported so far:
+* German
+* English
+* French
+
+Feel free to add other languages and issue pull request.
+
+## Usage
+```python
+import clocksays.saytime as st
+import datetime as dt
+t_str = st.clocksays(t = dt.datetime.now(), language='de', prefix='Es ist ', suffix='.')
+print(t_str)
+
+t_str = st.clocksays(t = dt.datetime.now(), language='en', prefix='It is ', suffix='.')
+print(t_str)
+
+t_str = st.clocksays(t = dt.datetime.now(), language='fr', prefix='Il est ', suffix='.')
+print(t_str)
+```
