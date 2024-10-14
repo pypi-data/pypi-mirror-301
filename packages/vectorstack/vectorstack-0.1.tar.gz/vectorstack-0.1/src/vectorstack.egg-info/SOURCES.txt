@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/vectorstack/__init__.py
+src/vectorstack/client.py
+src/vectorstack/error.py
+src/vectorstack/utils.py
+src/vectorstack.egg-info/PKG-INFO
+src/vectorstack.egg-info/SOURCES.txt
+src/vectorstack.egg-info/dependency_links.txt
+src/vectorstack.egg-info/requires.txt
+src/vectorstack.egg-info/top_level.txt
+src/vectorstack/api_resources/__init__.py
+src/vectorstack/api_resources/embeddings.py
+src/vectorstack/objects/__init__.py
+src/vectorstack/objects/embeddings.py
