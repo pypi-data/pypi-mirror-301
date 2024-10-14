@@ -1,0 +1,48 @@
+Metadata-Version: 2.3
+Name: conics
+Version: 0.0.1a1.dev1
+Summary: Conic sections library
+Project-URL: Documentation, https://github.com/sergiud/conics#readme
+Project-URL: Issues, https://github.com/sergiud/conics/issues
+Project-URL: Source, https://github.com/sergiud/conics
+Author-email: Sergiu Deitsch <sergiu.deitsch@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# conics
+
+[![PyPI - Version](https://img.shields.io/pypi/v/conics.svg)](https://pypi.org/project/conics)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/conics.svg)](https://pypi.org/project/conics)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install conics
+```
+
+## License
+
+`conics` is distributed under the terms of the [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html) license.
