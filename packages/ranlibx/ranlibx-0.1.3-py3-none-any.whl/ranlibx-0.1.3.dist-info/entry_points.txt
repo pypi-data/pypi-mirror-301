@@ -1,0 +1,2 @@
+[console_scripts]
+ranx = ranlibx.cli.main:app
