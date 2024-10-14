@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jwtninja
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic >=2.9.2
+Requires-Dist: pydantic-settings >=2.5.2
+Requires-Dist: uuid6 >=2024.7.10
+Requires-Dist: pyjwt >=2.9.0
+Requires-Dist: django-ninja >=1.3.0
+
+# JWT Ninja
+
+A simple and fully-typed auth library for Django Ninja based on PyJWT.
