@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+scripts/waddle
+waddle/__init__.py
+waddle/server.py
+waddle/waddle.py
+waddleml.egg-info/PKG-INFO
+waddleml.egg-info/SOURCES.txt
+waddleml.egg-info/dependency_links.txt
+waddleml.egg-info/not-zip-safe
+waddleml.egg-info/requires.txt
+waddleml.egg-info/top_level.txt
