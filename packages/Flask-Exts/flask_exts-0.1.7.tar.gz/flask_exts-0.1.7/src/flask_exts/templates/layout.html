@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block ns_setting %}
+  {%- if theme %}{% set ns.theme = true %}{% endif -%}
+{% endblock %}
+
+{% block metas %}
+<meta name="description" content="">
+<meta name="keywords" content="">
+{% endblock %}
+
+{% block ns_styles -%}
+  {%- if ns.theme -%}
+  {{ theme.load_css() }}
+  {%- endif -%}
+{%- endblock %}
+
+{% block ns_scripts -%}
+  {%- if ns.theme -%}
+    {{ theme.load_js() }}
+  {%- endif -%}
+{%- endblock %}
