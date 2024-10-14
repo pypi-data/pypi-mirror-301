@@ -1,0 +1,8 @@
+README.md
+setup.py
+sperryLabelImg/sperrylabelimg.egg-info/PKG-INFO
+sperryLabelImg/sperrylabelimg.egg-info/SOURCES.txt
+sperryLabelImg/sperrylabelimg.egg-info/dependency_links.txt
+sperryLabelImg/sperrylabelimg.egg-info/entry_points.txt
+sperryLabelImg/sperrylabelimg.egg-info/requires.txt
+sperryLabelImg/sperrylabelimg.egg-info/top_level.txt
