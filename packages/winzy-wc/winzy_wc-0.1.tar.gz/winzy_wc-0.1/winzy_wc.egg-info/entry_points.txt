@@ -1,0 +1,2 @@
+[winzy.plugins]
+wc = winzy_wc:wc_plugin

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_wc.py
+winzy_wc/__init__.py
+winzy_wc.egg-info/PKG-INFO
+winzy_wc.egg-info/SOURCES.txt
+winzy_wc.egg-info/dependency_links.txt
+winzy_wc.egg-info/entry_points.txt
+winzy_wc.egg-info/requires.txt
+winzy_wc.egg-info/top_level.txt
