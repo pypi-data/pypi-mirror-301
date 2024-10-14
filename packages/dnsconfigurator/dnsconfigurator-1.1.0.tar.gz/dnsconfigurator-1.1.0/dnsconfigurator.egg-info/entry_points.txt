@@ -1,0 +1,2 @@
+[console_scripts]
+dnsconfigurator = dnsconfigurator.main:main
