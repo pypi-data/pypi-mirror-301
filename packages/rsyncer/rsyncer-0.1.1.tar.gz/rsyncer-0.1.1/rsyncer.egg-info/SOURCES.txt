@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rsyncer/__init__.py
+rsyncer/rsyncer.py
+rsyncer.egg-info/PKG-INFO
+rsyncer.egg-info/SOURCES.txt
+rsyncer.egg-info/dependency_links.txt
+rsyncer.egg-info/entry_points.txt
+rsyncer.egg-info/requires.txt
+rsyncer.egg-info/top_level.txt
