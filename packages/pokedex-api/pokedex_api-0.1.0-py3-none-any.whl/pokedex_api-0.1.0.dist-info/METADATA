@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pokedex-api
+Version: 0.1.0
+Summary: A simple API wrapper for accessing Pokémon information.
+Home-page: https://github.com/AndrewAMur/pokedex-api
+Author: Andrew Muratov
+Author-email: andrewamuratov@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Pokédex API
+
+A simple Python package for retrieving Pokémon information from the PokéAPI. With this package, you can easily access data such as Pokémon stats, images, and other details.
+
+## Features
+- Retrieve Pokémon information by name.
+- Get the image URL of the Pokémon.
+- Access Pokémon stats like speed, attack, defense, etc.
+
+## Installation
+You can install the package using pip:
+```bash
+pip install pokedex-api
+```
+
+## Usage
+Here's a quick example of how to use the Pokédex API package:
+```python3
+from pokedex_api import PokedexAPI
+
+# Create an instance of the PokédexAPI class
+api = PokedexAPI()
+
+# Retrieve information about a Pokémon
+pokemon = api.get_pokemon('pikachu')
+
+# Get the Pokémon's image URL
+image_url = api.get_pokemon_image(pokemon)
+
+# Get the Pokémon's stats
+stats = api.get_stats(pokemon)
+
+# Print the results
+print(f"Name: {pokemon['name']}")
+print(f"Image: {image_url}")
+print(f"Stats: {stats}")
+```
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Author
+Andrew Muratov  
+[GitHub](https://github.com/AndrewAMur)  
+andrewamuratov@gmail.com
