@@ -1,0 +1,4 @@
+
+[linting]
+mypy
+ruff
