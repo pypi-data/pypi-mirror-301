@@ -1,0 +1,40 @@
+[build-system]
+requires = ["scikit-build-core[pyproject]>=0.10.7"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "gadget-ml"
+dynamic = ["version"]
+description = "Model creation in Python powered by GGML"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Douglas Hanley", email = "thesecretaryofwar@gmail.com" },
+]
+dependencies = [
+    "numpy", "ml_dtypes",
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.scikit-build]
+wheel.packages = ["gadget"]
+build.verbose = true
+minimum-version = "0.10.7"
+sdist.exclude = ["ggml/examples"]
+wheel.exclude = ["ggml"]
+
+[tool.scikit-build.metadata.version]
+provider = "scikit_build_core.metadata.regex"
+input = "gadget/__init__.py"
+
+[project.urls]
+Homepage = "https://github.com/iamlemec/gadget"
+Issues = "https://github.com/iamlemec/gadget/issues"
