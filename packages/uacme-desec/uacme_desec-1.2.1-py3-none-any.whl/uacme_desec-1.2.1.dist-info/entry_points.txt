@@ -1,0 +1,2 @@
+[console_scripts]
+uacme-desec = uacme_desec:main
