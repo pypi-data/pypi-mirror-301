@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+streamlit_list_widget/__init__.py
+streamlit_list_widget.egg-info/PKG-INFO
+streamlit_list_widget.egg-info/SOURCES.txt
+streamlit_list_widget.egg-info/dependency_links.txt
+streamlit_list_widget.egg-info/requires.txt
+streamlit_list_widget.egg-info/top_level.txt
+streamlit_list_widget/frontend/build/asset-manifest.json
+streamlit_list_widget/frontend/build/bootstrap.min.css
+streamlit_list_widget/frontend/build/index.html
+streamlit_list_widget/frontend/build/static/js/main.d65a2168.js
+streamlit_list_widget/frontend/build/static/js/main.d65a2168.js.LICENSE.txt
+streamlit_list_widget/frontend/build/static/js/main.d65a2168.js.map
