@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+bibliotCheckSum/__init__.py
+bibliotCheckSum/checkBin.py
+bibliotCheckSum.egg-info/PKG-INFO
+bibliotCheckSum.egg-info/SOURCES.txt
+bibliotCheckSum.egg-info/dependency_links.txt
+bibliotCheckSum.egg-info/requires.txt
+bibliotCheckSum.egg-info/top_level.txt
