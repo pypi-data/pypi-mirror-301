@@ -1,0 +1,9 @@
+starlette_dispatch/__init__.py,sha256=k6I5LNpRcpgsORq5BQHZWIB_9qn8OnyTHqiNEUOi3xA,530
+starlette_dispatch/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlette_dispatch/contrib/dependencies.py,sha256=jh4ipr6NrAw5_6o9-n4YUWW6YasM8AX9dtNLlYkhb8A,1154
+starlette_dispatch/injections.py,sha256=mlgyQqYVuVBGLIUsQBGK2KHV9MIWhMEb6hc8yYfasFw,8303
+starlette_dispatch/route_group.py,sha256=gw_82Co_ccXfQykAzP1wIJVXlhXnpouVtL2UbBRf_j8,6660
+starlette_dispatch-0.23.0.dist-info/LICENSE,sha256=6YRo8gB8uTdsIrIV4gTubih8DTCtK3d265EbNsh87p0,1074
+starlette_dispatch-0.23.0.dist-info/METADATA,sha256=DYdXcGbK50wfPW0Mf5tehTnToFegXrq8wg2-PdXLNi0,11669
+starlette_dispatch-0.23.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+starlette_dispatch-0.23.0.dist-info/RECORD,,
