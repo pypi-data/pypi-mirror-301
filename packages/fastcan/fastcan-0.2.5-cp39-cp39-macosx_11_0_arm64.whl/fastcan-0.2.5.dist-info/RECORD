@@ -1,0 +1,11 @@
+fastcan/_cancorr_fast.cpython-39-darwin.so,sha256=Vpw6HCf2EqwcbJWBwsoJyhao0xTOpto5hJ7bcrZNIsc,227424
+fastcan/_fastcan.py,sha256=SFTcUH029_o3t8PO_lQmixM9rmB1-U6tcfm_YmE_m9I,8988
+fastcan/__init__.py,sha256=W-z8Gp_yYD6qu3HE9eXMT2xDJfYCskyXEn8S4aX9ods,179
+fastcan/_cancorr_fast.pyx,sha256=JXR7KNV-01Q6yilQ-nM8Ru_vgAgsOkaxxrxv6iXq3WA,7089
+fastcan/meson.build,sha256=JPU8S9pOc91qEAcU0S8EtxUYmQRXtd47knIh64tSjTE,425
+fastcan/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcan/_utils.py,sha256=MlOH2gzYFHaIssB_Q4ZcJ92oBJdWtQLtoWFZz5n1xcs,2987
+fastcan-0.2.5.dist-info/RECORD,,
+fastcan-0.2.5.dist-info/LICENSE,sha256=4knthSthzsMkZBhYMyYAZYsndNb8M8t5l95vh7kcZN8,1068
+fastcan-0.2.5.dist-info/WHEEL,sha256=rFEbl7VGpdcTiWMLyPHKRieKvxwiToMCxVXFuj50F_A,91
+fastcan-0.2.5.dist-info/METADATA,sha256=wGZCUhMy40CjoHemlP6yHTkskJWN7oQ05LvMLPsOFjA,6443
