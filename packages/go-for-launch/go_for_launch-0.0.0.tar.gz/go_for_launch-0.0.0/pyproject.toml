@@ -1,0 +1,20 @@
+[project]
+name = "go-for-launch"
+version = "0.0.0"
+dependencies = [
+  "boto3"
+]
+authors = [
+  { name="Dan Kamrath", email="dmkamrath@gmail.com" },
+]
+description = "A generic minimalistic launcher implemented as a python CLI"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.scripts]
+g4l = "g4l.g4l:main"

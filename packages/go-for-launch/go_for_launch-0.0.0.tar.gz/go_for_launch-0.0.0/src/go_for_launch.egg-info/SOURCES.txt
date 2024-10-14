@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/g4l/__init__.py
+src/g4l/g4l.py
+src/g4l/cli_common/app_version.py
+src/g4l/cli_common/argdocs.py
+src/g4l/cli_common/cfg.py
+src/go_for_launch.egg-info/PKG-INFO
+src/go_for_launch.egg-info/SOURCES.txt
+src/go_for_launch.egg-info/dependency_links.txt
+src/go_for_launch.egg-info/entry_points.txt
+src/go_for_launch.egg-info/requires.txt
+src/go_for_launch.egg-info/top_level.txt
