@@ -1,0 +1,2 @@
+[winzy.plugins]
+txtonimg = winzy_text_on_image:txtonimg_plugin
