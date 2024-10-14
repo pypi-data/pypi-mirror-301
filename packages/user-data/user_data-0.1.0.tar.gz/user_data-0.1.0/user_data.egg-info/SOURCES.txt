@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_users.py
+user_data/__init__.py
+user_data/info.py
+user_data/permissions.py
+user_data/settings.py
+user_data/util.py
+user_data.egg-info/PKG-INFO
+user_data.egg-info/SOURCES.txt
+user_data.egg-info/dependency_links.txt
+user_data.egg-info/top_level.txt
