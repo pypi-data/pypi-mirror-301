@@ -1,0 +1,10 @@
+tsticker-0.1.14.dist-info/METADATA,sha256=AfLPcfIbvEeGqmrhxepR5kPAF4IAcfcZ1LmV3N_dRO0,7025
+tsticker-0.1.14.dist-info/WHEEL,sha256=pM0IBB6ZwH3nkEPhtcp50KvKNX-07jYtnb1g1m6Z4Co,90
+tsticker-0.1.14.dist-info/entry_points.txt,sha256=7v87TUO_hpKNyey7njolWlRWUtzkMvYYKrt5A8cd4VI,62
+tsticker-0.1.14.dist-info/licenses/LICENSE,sha256=FYpmhg4l_CJwMigemDxkfDG0VaJOeeYUAJbb-P6xVkw,1064
+tsticker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsticker/cli.py,sha256=gUo_TIoA2DNQ6hLQGJ4O2XhbNRlnJZZnrN_vaTWpnSQ,25644
+tsticker/core/__init__.py,sha256=o5Z2Vp3GO1QF7t6BAAzg4P9lPLZKIsA13B9hA43UWeA,2644
+tsticker/core/const.py,sha256=X9zBy4qzu021-8fk0GD3H0f5hVQZXnXfmHfjfBBG-PU,55
+tsticker/core/create.py,sha256=i0-jn9XY2F492diDPwymuWk4Dl7PWCmfYh9Gn-r-9s0,1363
+tsticker-0.1.14.dist-info/RECORD,,
