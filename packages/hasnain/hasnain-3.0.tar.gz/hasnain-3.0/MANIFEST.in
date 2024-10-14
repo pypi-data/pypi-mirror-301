@@ -1,0 +1,11 @@
+## Include
+include README.md COPYING COPYING.lesser NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include tests *.py
+
+## Exclude
+prune hasnain_kk/errors/exceptions
+prune hasnain_kk/raw/functions
+prune hasnain_kk/raw/types
+prune hasnain_kk/raw/base
+exclude hasnain_kk/raw/all.py
