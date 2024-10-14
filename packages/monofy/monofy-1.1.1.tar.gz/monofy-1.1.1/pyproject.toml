@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "monofy/_version.py"
+
+[project]
+name = "monofy"
+authors = [
+    {name = "Bugsink B.V.", email = "info@bugsink.com"},
+]
+description = "Multiple Processes in a Single Container" 
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+
+[project.scripts]
+monofy = "monofy.scripts.monofy:main"
+
+[project.urls]
+homepage = "https://www.bugsink.com/blog/multi-process-docker-images/"
+repository = "https://github.com/bugsink/monofy"
+issues = "https://github.com/bugsink/monofy/issues"
+
+[tool.setuptools]
+include-package-data = true  # this is the default, but explicit is better than implicit
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "monofy*",
+]
+
+exclude = []  # exclude packages matching these glob patterns (empty by default)

@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+tox.ini
+.github/workflows/ci.yml
+monofy/__init__.py
+monofy/_version.py
+monofy/tests.py
+monofy.egg-info/PKG-INFO
+monofy.egg-info/SOURCES.txt
+monofy.egg-info/dependency_links.txt
+monofy.egg-info/entry_points.txt
+monofy.egg-info/top_level.txt
+monofy/scripts/__init__.py
+monofy/scripts/monofy.py
