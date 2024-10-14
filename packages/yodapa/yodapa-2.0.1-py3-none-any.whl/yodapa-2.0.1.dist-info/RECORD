@@ -1,0 +1,16 @@
+yodapa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/core/config.py,sha256=JFUMFtAtNT5f4aMqhpvd6RP-HiTG18C8_ACbL4-eLKE,3772
+yodapa/core/plugin.py,sha256=Egm81hH5F4kujdorYnl6Lr4fhAVyIEqXX5IBZouG9Kg,2812
+yodapa/core/util.py,sha256=ednbrNSUZ3SJgWM1ilq7mMTJKAR38Wz5oC5oHbhVflY,5203
+yodapa/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yodapa/plugins/ai.py,sha256=LePjUhUH41YAUhQLKEK_0LO_kEwksa30LX5e1y8AnlQ,4198
+yodapa/plugins/bye.py,sha256=CZx8K3vHONDuz1im35W5R9VTjJaQYOHBUHFn-ve0Vng,294
+yodapa/plugins/dev.py,sha256=J7EhDL4z9h0sADO--YVg7on4AhmSFUeM3m0bBLkwIzI,1370
+yodapa/plugins/hi.py,sha256=B9_PvyLG-RclSCkow4CXQ-XJGz3_84ZHOfWdaTGdklg,279
+yodapa/plugins/url.py,sha256=dvmGWFh543Hi1mkh3WkJqfVVivGXEvi2_jvd4C3gHHA,1585
+yodapa/yoda.py,sha256=RCRoBhkJrZEJrNNWBv6sgGZjqVjlPbg5auOevmALQ8E,271
+yodapa-2.0.1.dist-info/METADATA,sha256=s_nWlMygIXco05Y6pU8AvI4aUQQHaRPlWymwTEeueXw,4600
+yodapa-2.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+yodapa-2.0.1.dist-info/entry_points.txt,sha256=TTmxOV7HbwOOF89mPgjchjXEV4Awy9uLydVGrfdY07k,40
+yodapa-2.0.1.dist-info/RECORD,,
