@@ -1,0 +1,9 @@
+README.md
+setup.py
+calculator/__init__.py
+calculator/__main__.py
+calculator_jakub.egg-info/PKG-INFO
+calculator_jakub.egg-info/SOURCES.txt
+calculator_jakub.egg-info/dependency_links.txt
+calculator_jakub.egg-info/entry_points.txt
+calculator_jakub.egg-info/top_level.txt
