@@ -1,0 +1,38 @@
+from . import (
+    anonymization_pb2,
+    anonymization_pb2_grpc,
+    api_key_pb2,
+    api_key_pb2_grpc,
+    auth_pb2,
+    auth_pb2_grpc,
+    connection_pb2,
+    connection_pb2_grpc,
+    job_pb2,
+    job_pb2_grpc,
+    metrics_pb2,
+    metrics_pb2_grpc,
+    transformer_pb2,
+    transformer_pb2_grpc,
+    user_account_pb2,
+    user_account_pb2_grpc,
+)
+
+# Define __all__ to control what gets imported with "from neosync.protos.mgmt.v1alpha1 import *"
+__all__ = [
+    "anonymization_pb2",
+    "anonymization_pb2_grpc",
+    "api_key_pb2",
+    "api_key_pb2_grpc",
+    "auth_pb2",
+    "auth_pb2_grpc",
+    "connection_pb2",
+    "connection_pb2_grpc",
+    "job_pb2",
+    "job_pb2_grpc",
+    "metrics_pb2",
+    "metrics_pb2_grpc",
+    "transformer_pb2",
+    "transformer_pb2_grpc",
+    "user_account_pb2",
+    "user_account_pb2_grpc",
+]
