@@ -1,0 +1,11 @@
+couchbase_sqlalchemy/__init__.py,sha256=qKRMwC64ClM7S18BSG35KR1B181Zw-BvqyqH0kJHNio,140
+couchbase_sqlalchemy/dbapi/__init__.py,sha256=6SFUAyEqayN4UnM6A7-p1F02-tUrRUaF5pbF1_ebFI4,92
+couchbase_sqlalchemy/dbapi/couchbase_dbapi.py,sha256=NtVuP-Ws9DDF4C-ZKPfogkcAYDiq3N41eyW0gSU1cms,8155
+couchbase_sqlalchemy/dialect/__init__.py,sha256=d3zfPMtgUirwW_v6wZry2VmDURM6D9ZKQq3P_mCSUYI,47
+couchbase_sqlalchemy/dialect/couchbase_dialect.py,sha256=DEzGF-4Yaoy3y4lB1oz-EXGn07fSvoAQu8I_LAWZTJ0,8220
+couchbase_sqlalchemy-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+couchbase_sqlalchemy-1.0.1.dist-info/METADATA,sha256=AsSst-YK6kIk_OqBBAgd6WwCMgPM_BiwphhUTL9ZH0M,2378
+couchbase_sqlalchemy-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+couchbase_sqlalchemy-1.0.1.dist-info/entry_points.txt,sha256=WGXbAYXMzjVp3aL6QeIMAUyT1hdu6-WnB-FFLeYF0Y0,98
+couchbase_sqlalchemy-1.0.1.dist-info/top_level.txt,sha256=FviSBmlXuQ9A1pY1H7mRncLdniT8TMZDa4K1SslXtAc,21
+couchbase_sqlalchemy-1.0.1.dist-info/RECORD,,
