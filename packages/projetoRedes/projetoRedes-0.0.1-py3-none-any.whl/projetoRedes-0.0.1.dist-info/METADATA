@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: projetoRedes
+Version: 0.0.1
+Summary: biblioteca para binários
+Author: Alison Vitor
+Author-email: alissonmarqueshm30@gmail.com
+License: MIT License
+Keywords: biblioteca checksum binario
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: random
+
+...
