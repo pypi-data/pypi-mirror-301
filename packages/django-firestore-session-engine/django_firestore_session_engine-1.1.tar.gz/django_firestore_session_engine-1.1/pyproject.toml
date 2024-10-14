@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling", "django"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django_firestore_session_engine"
+version = "1.1"
+authors = [
+  { name="_resun", email="resun.saif@gmail.com" },
+]
+description = "This is a simple Django Session Engine that uses Firestore as the database to store session data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/resun-c/django-firestore-session-engine"
+Issues = "https://github.com/resun-c/django-firestore-session-engine/issues"
