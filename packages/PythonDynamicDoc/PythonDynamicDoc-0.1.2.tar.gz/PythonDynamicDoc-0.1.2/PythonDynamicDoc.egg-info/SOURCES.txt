@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+DynamicDoc/__init__.py
+DynamicDoc/dynamicdoc.py
+DynamicDoc/verificadores.py
+PythonDynamicDoc.egg-info/PKG-INFO
+PythonDynamicDoc.egg-info/SOURCES.txt
+PythonDynamicDoc.egg-info/dependency_links.txt
+PythonDynamicDoc.egg-info/requires.txt
+PythonDynamicDoc.egg-info/top_level.txt
