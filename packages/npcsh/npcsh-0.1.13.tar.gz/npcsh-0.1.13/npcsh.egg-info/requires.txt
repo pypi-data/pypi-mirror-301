@@ -1,0 +1,16 @@
+anthropic
+openai
+jinja2
+pandas
+ollama
+requests
+PyYAML
+openai-whisper
+pyaudio
+pyttsx3
+gtts
+playsound
+termcolor
+colorama
+python-dotenv
+pytest
