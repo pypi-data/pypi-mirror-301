@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: HH4Dennis
+Version: 0.0.2
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Dennis <rzhao@msudenver.edu>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Homework_4
+
+URL for GitHub repository: https://github.com/2545046941/Homework_4
+
+# graghs_Dennis
+
+This package implements Dijkstra's algorithm.
+
+# Installation 
+
+You can install the package using : 
+
+pip install git+https://github.com/2545046941/Homework_4.git
+
+pip3 install git+https://github.com/2545046941/Homework_4.git
+
+# Run Dijkstra's algorithm
+
+python test.py - path-to-graph-file 
+
+Example: python test.py example1.txt 
+
