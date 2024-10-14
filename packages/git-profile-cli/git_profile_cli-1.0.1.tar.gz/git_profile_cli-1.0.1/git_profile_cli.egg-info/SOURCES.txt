@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/main.yaml
+git_profile_cli.egg-info/PKG-INFO
+git_profile_cli.egg-info/SOURCES.txt
+git_profile_cli.egg-info/dependency_links.txt
+git_profile_cli.egg-info/entry_points.txt
+git_profile_cli.egg-info/requires.txt
+git_profile_cli.egg-info/top_level.txt
+gitprofile/__init__.py
+gitprofile/__main__.py
+gitprofile/cli.py

@@ -1,0 +1,2 @@
+[console_scripts]
+git-profile = gitprofile.cli:main
