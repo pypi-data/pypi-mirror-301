@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: data_science_project_template
+Version: 0.1.0
+Summary: Data Science Project Template
+Author: Shailaja Janjirala
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: mlflow
+Requires-Dist: sqlalchemy
+Requires-Dist: gcsfs
