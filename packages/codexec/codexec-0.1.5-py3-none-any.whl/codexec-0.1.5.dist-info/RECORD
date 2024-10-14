@@ -1,0 +1,10 @@
+codexec/__init__.py,sha256=ETSQ3th6dl05I3_OlyRHWQaHmosS0HSip74JkaK9vAI,129
+codexec/cli.py,sha256=MlTCHVV2xr__fFpGfLSPqXxTP6SkyyDyc-TMdtUaY40,1264
+codexec/codexec.py,sha256=JyORlpVu7eFtz-TfuAv3GAXUMA3D61xgrg1fwRQK-xM,4492
+codexec-0.1.5.dist-info/AUTHORS.rst,sha256=MdOLF2CbYED1dfjx98tEWJq6wLS_00jvq56BDmR-Ofs,160
+codexec-0.1.5.dist-info/LICENSE,sha256=-UBZfCBzzG_lCNGMXnrcHIHd4ok-GzZcE3qtl2p0vxw,1066
+codexec-0.1.5.dist-info/METADATA,sha256=Z14vuLw5_OBzFCRGeIBDFO4BRHLAJX4MWg06cngfdig,1975
+codexec-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+codexec-0.1.5.dist-info/entry_points.txt,sha256=o-1t59ZSbnhCNRg-qyY-CTHwTRPsyNXWkq9w5c9hTXw,45
+codexec-0.1.5.dist-info/top_level.txt,sha256=oCIRdpJuhYUrsmY3e16cHhNhpFpsAAKd0F4zYzuQZRg,8
+codexec-0.1.5.dist-info/RECORD,,
