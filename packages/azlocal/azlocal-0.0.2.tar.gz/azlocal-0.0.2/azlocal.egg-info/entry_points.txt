@@ -1,0 +1,2 @@
+[console_scripts]
+azlocal = azlocal:main

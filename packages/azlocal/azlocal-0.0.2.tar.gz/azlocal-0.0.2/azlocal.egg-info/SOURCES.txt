@@ -1,0 +1,10 @@
+LICENSE
+README.md
+azlocal.py
+pyproject.toml
+azlocal.egg-info/PKG-INFO
+azlocal.egg-info/SOURCES.txt
+azlocal.egg-info/dependency_links.txt
+azlocal.egg-info/entry_points.txt
+azlocal.egg-info/requires.txt
+azlocal.egg-info/top_level.txt
