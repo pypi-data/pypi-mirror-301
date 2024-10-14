@@ -1,0 +1,10 @@
+prettytable>=2.0.0
+pygments>=2.7.0
+networkx>=3.4.1
+matplotlib>=3.9.1.post1
+
+[dev]
+pytest>=6.0
+pytest-cov>=2.0
+flake8>=3.9
+black>=21.5b1
