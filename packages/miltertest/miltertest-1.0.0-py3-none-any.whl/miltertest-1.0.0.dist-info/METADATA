@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: miltertest
+Version: 1.0.0
+Summary: Pure Python implementation of the milter protocol
+Project-URL: Homepage, https://github.com/flowerysong/miltertest
+Author-email: Paul Arthur <paul.arthur@flowerysong.com>
+License-File: COPYING
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# miltertest
+
+This is a pure Python module implementing the milter protocol, based on
+Chris Siebenmann's work in [python-milter-tools](https://github.com/siebenmann/python-milter-tools).
+
+The main goal is to provide an acceptable interface for acting as
+an MTA to test milter implementations; it may also be usable for
+implementing milters, but there are better options for that.

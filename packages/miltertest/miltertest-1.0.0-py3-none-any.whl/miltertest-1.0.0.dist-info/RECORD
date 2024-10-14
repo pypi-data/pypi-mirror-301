@@ -1,0 +1,8 @@
+miltertest/__init__.py,sha256=SBCeGb_UiZAzMyT9S2OK7hmtKpMSBQOHkGesV8VzBj8,244
+miltertest/client.py,sha256=x-eBOrqXawoSrp-ggdPDwNxcLRs2oFVai-vYtmu6PaA,8681
+miltertest/codec.py,sha256=uSQeU0LaG1RPXAgYzKwBtV3BZv_PIi_S0fscz-scu-U,13687
+miltertest/constants.py,sha256=04aIQu1Cf0RHAso_AhlVXxkRuvvbQJSLW7ijvdWJ0kI,4465
+miltertest-1.0.0.dist-info/METADATA,sha256=QJ130WE8r_ZVh_VohYBwJbuWWWFrVtAfIO0oMBtdaoE,872
+miltertest-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+miltertest-1.0.0.dist-info/licenses/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+miltertest-1.0.0.dist-info/RECORD,,
