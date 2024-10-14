@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zaowr_polsl_kisiel"
+dynamic = ["version", "dependencies"]
+authors = [
+  { name="Maksymilian Kisiel" },
+]
+description = "A simple Python package used by me and a friend at the university in the course 'Advanced Image, Video and Motion Analysis'"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["polsl", "zaowr", "2024", "IGT", "ZAOWR"]
+
+[tool.setuptools.dynamic]
+version = {attr = "zaowr_polsl_kisiel.__version__"}  # any module attribute compatible with ast.literal_eval
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/revalew/zaowr-py-package"
+Issues = "https://github.com/revalew/zaowr-py-package/issues"
