@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ntanh
+Version: 0.1.3
+Summary: Thư viện hữu ích của Tuấn Anh.
+Home-page: https://github.com/ntanhfai/tact
+Author: Tuấn Anh - Foxconn
+Author-email: nt.anh.fai@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ruamel.yaml
+
+# Giới thiệu
+
+ntanh là một thư viện các nhiệm vụ hàng ngày sử dụng, hay dùng nhưng không khó, mất thời gian code cho các dự án lẻ tẻ.
+
+# Cài đặt
+`pip install tact`
+
+# Cách dùng:
+
+```python
+from pprint import pprint
+from ntanh.ParamsBase import tactParametters
+import ntanh
+
+print(ntanh.__version__)
+mParams = tactParametters()
+
+fns = mParams.fnFIS(r"../", exts=(".py"))
+pprint(fns)
+```
+
+
+
+
+
