@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+geass.egg-info/PKG-INFO
+geass.egg-info/SOURCES.txt
+geass.egg-info/dependency_links.txt
+geass.egg-info/entry_points.txt
+geass.egg-info/requires.txt
+geass.egg-info/top_level.txt
