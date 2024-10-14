@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: vcipher
+Version: 1.0.0
+Summary: (De)cryption software. Allows you to encrypt or decrypt data based on a 128 bits encryption key.
+Home-page: https://github.com/Lou-du-Poitou/vcipher
+Author: V / Lou du Poitou
+License: MIT
+Requires-Python: >=3.9.7

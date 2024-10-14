@@ -1,0 +1,6 @@
+setup.py
+vcipher/__init__.py
+vcipher.egg-info/PKG-INFO
+vcipher.egg-info/SOURCES.txt
+vcipher.egg-info/dependency_links.txt
+vcipher.egg-info/top_level.txt
