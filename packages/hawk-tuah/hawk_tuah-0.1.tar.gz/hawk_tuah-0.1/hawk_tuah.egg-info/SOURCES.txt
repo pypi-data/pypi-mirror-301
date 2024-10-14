@@ -1,0 +1,6 @@
+setup.py
+hawk_tuah/__init__.py
+hawk_tuah.egg-info/PKG-INFO
+hawk_tuah.egg-info/SOURCES.txt
+hawk_tuah.egg-info/dependency_links.txt
+hawk_tuah.egg-info/top_level.txt
