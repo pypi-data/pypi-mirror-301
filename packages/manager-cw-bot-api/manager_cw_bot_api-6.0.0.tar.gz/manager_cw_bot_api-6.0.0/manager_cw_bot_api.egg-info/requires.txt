@@ -1,0 +1,5 @@
+PyMySQL
+aiogram
+requests
+yookassa
+fpdf2
