@@ -1,0 +1,14 @@
+pyproject_local_kernel/__init__.py,sha256=tnftYahQwm01vSTE5wuUpe0pmuWjVlMPnJkFBiUNd4k,1100
+pyproject_local_kernel/__main__.py,sha256=cgUu-Dv_Hr_BMCftoCdZL0fffAXKxitoDYxGnPgcQDw,1175
+pyproject_local_kernel/_configdata.py,sha256=C3JJxIBMKBjp2Xwnt-NnXkZ9-7hf7wkVZetlf359qfA,2939
+pyproject_local_kernel/_identify.py,sha256=-51lgrH6F6aWg-VHZUGVNjoDLqixBgjMVy2G5lr69aU,8397
+pyproject_local_kernel/main.py,sha256=dGRwZei2qEaEuP51JoTRVfLIFE6rhKkt4vBBqdchvRE,8027
+pyproject_local_kernel/provisioner.py,sha256=Ja5xseyM58rst0EtAsRsWJARc9CnKC_mxBOeJr_3yKY,7080
+pyproject_local_kernel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyproject_local_kernel-0.12.0.data/data/share/jupyter/kernels/pyproject_local_kernel/kernel.json,sha256=0z-QT51zfRu6b_oh4GTxJtK9uIYb04iAHOp788QMkU0,548
+pyproject_local_kernel-0.12.0.data/data/share/jupyter/kernels/pyproject_local_kernel_use_venv/kernel.json,sha256=7OppHzHOY6u3hck6BIsyLO3YDgBdQcYi2Ik47BEB3Ak,661
+pyproject_local_kernel-0.12.0.dist-info/METADATA,sha256=MCdISVDcf1va0STlcVlBmV0nXdzAF40tbAcNCuNiQgE,10636
+pyproject_local_kernel-0.12.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pyproject_local_kernel-0.12.0.dist-info/entry_points.txt,sha256=fQoxwUcPpHmmY60sqAXPMFj06MOeS5ZeuENGNhswGT8,213
+pyproject_local_kernel-0.12.0.dist-info/licenses/LICENSE.md,sha256=FGTpbqdsaJ9RcyFrXrWwjbuQK_kDwE72DM8f9gUIXYc,1121
+pyproject_local_kernel-0.12.0.dist-info/RECORD,,

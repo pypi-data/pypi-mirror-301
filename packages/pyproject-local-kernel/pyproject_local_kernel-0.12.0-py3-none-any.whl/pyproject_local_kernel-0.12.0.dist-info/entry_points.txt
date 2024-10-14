@@ -1,0 +1,5 @@
+[console_scripts]
+pyproject_local_kernel = pyproject_local_kernel.main:main
+
+[jupyter_client.kernel_provisioners]
+pyproject-local-kernel-provisioner = pyproject_local_kernel.provisioner:PyprojectKernelProvisioner
