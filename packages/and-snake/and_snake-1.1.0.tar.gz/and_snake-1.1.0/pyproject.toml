@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "and-snake"
+version = "1.1.0"
+description = "A snake game by andreas"
+authors = ["Andreas Bugge <andreas.horpedal_bugge@asn.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygame = "^2.6.1"
+mysql-connector = "^2.2.9"
+
+[tool.poetry.scripts]
+and_snake = "and_snake.play_snake:classic_game"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
