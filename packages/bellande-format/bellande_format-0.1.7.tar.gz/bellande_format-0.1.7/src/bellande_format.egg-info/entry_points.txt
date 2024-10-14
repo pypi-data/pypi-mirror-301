@@ -1,0 +1,2 @@
+[console_scripts]
+bellande_parser = bellande_format.bellande_parser:Bellande_Format
