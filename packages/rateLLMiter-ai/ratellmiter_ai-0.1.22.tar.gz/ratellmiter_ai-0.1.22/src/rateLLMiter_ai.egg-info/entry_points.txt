@@ -1,0 +1,2 @@
+[console_scripts]
+llmiter = ratellmiter.rate_llmiter:ratellmiter_cli
