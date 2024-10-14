@@ -1,0 +1,419 @@
+Metadata-Version: 2.1
+Name: openmacro
+Version: 0.2.8
+Summary: Multimodal Assistant. Human Interface for computers.
+Home-page: https://github.com/amooo-ooo/openmacro
+License: MIT
+Author: Amor Budiyanto
+Author-email: amor.budiyanto@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Requires-Dist: asyncio
+Requires-Dist: beautifulsoup4
+Requires-Dist: chromadb
+Requires-Dist: gradio_client (>=1.3.0)
+Requires-Dist: markdownify
+Requires-Dist: playwright
+Requires-Dist: pybrowsers
+Requires-Dist: rich (>=10.0)
+Requires-Dist: rich-argparse
+Requires-Dist: toml (>=0.10)
+Description-Content-Type: text/markdown
+
+<div align="center">
+  <a href="https://pypi.org/project/openmacro/">
+    <img src="https://raw.githubusercontent.com/openmacro/openmacro/46bb3481766cb66983cb191db731c41f5f69d18d/docs/images/openmacro-title.svg" width="480" height="auto" alt="openmacro"/>
+  </a>
+</div>
+<div align="center">
+<a href="https://github.com/openmacro/openmacro/blob/main/LICENSE"><img src="https://img.shields.io/static/v1?label=license&message=MIT&color=white&style=flat" alt="License"/></a>
+  <a href="https://github.com/openmacro/openmacro/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/openmacro/openmacro" alt="Commit Activity"/></a>
+  <a href="https://github.com/openmacro/openmacro/commits/"><img src="https://img.shields.io/github/last-commit/openmacro/openmacro" alt="Last Commit"/></a>
+  <a href="https://pypi.org/project/openmacro"><img src="https://img.shields.io/pypi/dm/openmacro" alt="Downloads"/></a>
+  <a href="https://github.com/openmacro/openmacro/stargazers"><img src="https://img.shields.io/github/stars/openmacro/openmacro" alt="Stars"/></a>
+</div>
+
+##
+
+https://github.com/user-attachments/assets/9360dfeb-a471-49c3-bbdc-72b32cc8eaeb
+
+> Project is in its early stage of development. Optimisations & safety not guaranteed until first version release.
+
+openmacro is a multimodal personal agent that allows LLMs to run code locally. openmacro aims to act as a personal agent capable of completing and automating simple to complex tasks autonomously via self prompting.
+
+This provides a cli natural-language interface for you to:
+
++ Complete and automate simple to complex tasks.
++ Analyse and plot data.
++ Browse the web for the latest information.
++ Manipulate files including photos, videos, PDFs, etc.
+
+At the moment, openmacro only supports API keys for models powered by SambaNova. Why? Because it’s free, fast, and reliable, which makes it ideal for testing as the project grows! Support for other hosts such as OpenAI and Anthropic is planned to be added in future versions.
+
+This project is heavily inspired by [`Open Interpreter`](https://github.com/OpenInterpreter/open-interpreter) ❤️
+
+## Quick Start
+To get started with openmacro, get a free API key by creating an account at [https://cloud.sambanova.ai/](https://cloud.sambanova.ai/). 
+
+Next, install and start openmacro by running:
+```shell
+pip install openmacro
+macro --api_key "YOUR_API_KEY"
+```
+> Not working? Raise an issue [here](https://github.com/amooo-ooo/openmacro/issues/new) or try this out instead:
+```shell
+py -m pip install openmacro
+py -m openmacro --api_key "YOUR_API_KEY"
+```
+> Note: You only need to pass `--api_key` once! Next time simply call `macro` or `py -m openmacro`.
+
+## Profiles
+openmacro supports cli args and customised settings! You can view arg options by running:
+```shell
+macro --help
+```
+To add your own personalised settings and save it for the future, run:
+```shell
+macro --profile "path\to\profile" --save
+```
+Openmacro supports custom profiles in `JSON`, `TOML`, `YAML` and `Python`. 
+
+<hr>
+
+<details open>
+<summary>Python</summary>
+
+Profiles in `python` allow direct customisation and type safety!
+
+What your `profile.py` might look like:
+```python
+# imports
+from openmacro.profile import Profile
+from openmacro.extensions import BrowserKwargs, EmailKwargs
+
+# profile setup
+profile: Profile = Profile(
+    user = { 
+        "name": "Amor", 
+        "version": "1.0.0"
+    },
+    assistant = {
+        "name": "Basil",
+        "personality": "You have a kind, deterministic and professional attitude towards your work and respond in a formal, yet casual manner.",
+        "messages": [],
+        "breakers": ["the task is done.", 
+                     "the conversation is done."]
+    },
+    safeguards = { 
+        "timeout": 16, 
+        "auto_run": True, 
+        "auto_install": True 
+    },
+    paths = { 
+        "prompts": "core/prompts",
+    },
+    extensions = {
+    # type safe kwargs
+        "Browser": BrowserKwargs(headless=False, engine="google"),
+        "Email": EmailKwargs(email="amor.budiyanto@gmail.com", password="password")
+    },
+    config = {
+        "verbose": True,
+        "conversational": True,
+        "dev": False
+    },
+    languages = {
+    # specify custom paths to languages or add custom languages for openmacro
+      "python": ["C:\Windows\py.EXE", "-c"],
+      "rust": ["cargo", "script", "-e"] # not supported by default, but can be added!
+    },
+    tts = {
+    # powered by KoljaB/RealtimeSTT
+    # options ["SystemEngine", "GTTSEngine", "OpenAIEngine"]
+      "enabled": True,
+      "engine": "OpenAIEngine",
+      "api_key": "sk-example"
+    }
+)
+```
+And can be extended if you want to build your own app with openmacro:
+```python
+...
+
+async def main():
+    from openmacro.core import Openmacro
+
+    macro = Openmacro(profile)
+    macro.llm.messages = []
+
+    async for chunk in macro.chat("Plot an exponential graph for me!", stream=True):
+        print(chunk, end="")
+
+import asyncio
+asyncio.run(main)
+```
+
+</details>
+
+<hr>
+
+<details>
+<summary>JSON</summary>
+
+What your `profile.json` might look like:
+```json
+{
+    "user": {
+        "name": "Amor",
+        "version": "1.0.0"
+    },
+    "assistant": {
+        "name": "Basil",
+        "personality": "You have a kind, deterministic and professional attitude towards your work and respond in a formal, yet casual manner.",
+        "messages": [],
+        "breakers": ["the task is done.", "the conversation is done."]
+    },
+    "safeguards": {
+        "timeout": 16,
+        "auto_run": true,
+        "auto_install": true
+    },
+    "paths": {
+        "prompts": "core/prompts"
+    },
+    "extensions": {
+        "Browser": {
+            "headless": false,
+            "engine": "google"
+        },
+        "Email": {
+            "email": "amor.budiyanto@gmail.com",
+            "password": "password"
+        }
+    },
+    "config": {
+        "verbose": true,
+        "conversational": true,
+        "dev": false
+    },
+    "languages": {
+        "python": ["C:\\Windows\\py.EXE", "-c"],
+        "rust": ["cargo", "script", "-e"]
+    },
+    "tts": {
+        "enabled": true,
+        "engine": "OpenAIEngine",
+        "api_key": "sk-example"
+        
+    }
+}
+```
+</details>
+
+<hr>
+
+<details>
+<summary>TOML</summary>
+
+What your `profile.toml` might look like:
+```toml
+[user]
+name = "Amor"
+version = "1.0.0"
+
+[assistant]
+name = "Basil"
+personality = "You have a kind, deterministic and professional attitude towards your work and respond in a formal, yet casual manner."
+messages = []
+breakers = ["the task is done.", "the conversation is done."]
+
+[safeguards]
+timeout = 16
+auto_run = true
+auto_install = true
+
+[paths]
+prompts = "core/prompts"
+
+[extensions.Browser]
+headless = false
+engine = "google"
+
+[extensions.Email]
+email = "amor.budiyanto@gmail.com"
+password = "password"
+
+[config]
+verbose = true
+conversational = true
+dev = false
+
+[languages.python]
+0 = "C:\\Windows\\py.EXE"
+1 = "-c"
+
+[languages.rust]
+0 = "cargo"
+1 = "script"
+2 = "-e"
+
+[tts]
+enabled = true
+engine = "SystemEngine"
+```
+</details>
+
+<hr>
+
+<details>
+<summary>YAML</summary>
+
+What your `profile.yaml` might look like:
+```yaml
+user:
+  name: "Amor"
+  version: "1.0.0"
+
+assistant:
+  name: "Basil"
+  personality: "You have a kind, deterministic and professional attitude towards your work and respond in a formal, yet casual manner."
+  messages: []
+  breakers:
+    - "the task is done."
+    - "the conversation is done."
+
+safeguards:
+  timeout: 16
+  auto_run: true
+  auto_install: true
+
+paths:
+  prompts: "core/prompts"
+
+extensions:
+  Browser:
+    headless: false
+    engine: "google"
+  Email:
+    email: "amor.budiyanto@gmail.com"
+    password: "password"
+
+config:
+  verbose: true
+  conversational: true
+  dev: false
+
+languages:
+  python: 
+    - "C:\\Windows\\py.EXE"
+    - "-c"
+  rust: 
+    - "cargo"
+    - "script"
+    - "-e"
+
+tts:
+  enabled: true
+  engine: "SystemEngine"
+```
+</details>
+
+<hr>
+<br>
+
+You can also switch between profiles by running:
+```shell
+macro --switch "amor"
+```
+
+Profiles also support versions for modularity (uses the latest version by default).
+```shell
+macro --switch "amor:1.0.0"
+```
+> Note: All profiles are isolated. LTM from different profiles and versions are not shared.
+
+To view all available profiles run:
+```shell
+macro --profiles
+```
+
+## Extensions
+openmacro supports custom RAG extensions for modularity and theoretically infinite capabilities! By default, the `browser` and `email` extensions are installed.
+
+### Writing Extensions
+Write extensions using the template:
+```python
+from typing import TypedDict
+class ExtensionKwargs(TypedDict):
+    ...
+
+class Extensionname:
+    def __init__(self):
+        ...
+      
+    @staticmethod
+    def load_instructions() -> str:
+        return "<instructions>"
+        
+```
+You can find examples [here](https://github.com/Openmacro/openmacro/tree/main/openmacro/extensions).
+
+> Note, classname should not be camelcase, but titlecase instead.
+
+> Note, creating a type-safe kwargs typeddict is optional but recommended.
+If extesions does not contain a kwarg class, use:
+```python
+from openmacro.utils import Kwargs
+```
+
+Upload your code to `pypi` for public redistribution using `twine` and `poetry`.
+To add it to `openmacro.extensions` for profiles and `openmacro.apps` for the AI to use, run:
+
+```shell
+omi install <module_name>
+```
+or 
+```shell
+pip install <module_name>
+omi add <module_name> 
+```
+
+You can test your extensions by installing it locally:
+```shell
+omi install .
+```
+
+## Todo's 
+- [x] AI Interpreter
+- [X] Web Search Capability
+- [X] Async Chunk Streaming
+- [X] API Keys Support
+- [X] Profiles Support
+- [X] Extensions API
+- [ ] `WIP` TTS & STT
+- [ ] `WIP` Cost Efficient Long Term Memory & Context Manager
+- [ ] Semantic File Search
+- [ ] Optional Telemetry
+- [ ] Desktop, Android & IOS App Interface
+
+## Currently Working On
+- Cost efficient long term memory and conversational context managers through vector databases. Most likely powered by [`ChromaDB`](https://github.com/chroma-core/chroma).
+
+- Hooks API and Live Code Output Streaming
+
+## Contact
+You can contact me at [amor.budiyanto@gmail.com](mailto:amor.budiyanto@gmail.com)
+
+## Contributions
+This is my first major open-source project, so things might go wrong, and there is always room for improvement. You can contribute by raising issues, helping with documentation, adding comments, suggesting features or ideas, etc. Your help is greatly appreciated!
+
+## Support
+You can support this project by writing custom extensions for openmacro! openmacro aims to be community-powered, as its limitations are based on its capabilities. More extensions mean better chances of completing complex tasks. I will create an official verified list of openmacro extensions sometime in the future!
+
