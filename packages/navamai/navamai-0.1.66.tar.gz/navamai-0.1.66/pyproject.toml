@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "navamai"
+version = "0.1.66"
+description = "Use NavamAI to supercharge your productivity and workflow with personal, fast, and quality AI. Turn your Terminal into a configurable, interactive, and unobtrusive personal AI app. Power of 15 LLMs and 7 providers at your finger tips. Pair with workflows in Markdown, VS Code, Obsidian, and GitHub. Get productive fast with three simple commands."
+authors = ["NavamAI <team@navamai.com>"]
+license = "Apache-2.0"
+homepage = "https://www.navamai.com"
+readme = "README.md"
+packages = [{ include = "navamai", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+rich = "^13.7.1"
+requests = "^2.32.3"
+lxml = {extras = ["html_clean"], version = "^4.6.3"}
+anthropic = "^0.34.1"
+google-api-python-client = "^2.142.0"
+groq = "^0.9.0"
+openai = "^1.42.0"
+google-generativeai = "^0.7.2"
+pyyaml = "^6.0.2"
+opencv-python = "^4.8.0"
+pillow = "^10.4.0"
+term-image = "^0.7.2"
+boto3 = "^1.35.13"
+plotext = "^5.2.8"
+chardet = "^5.2.0"
+beautifulsoup4 = "^4.12.3"
+markdown2 = "^2.5.0"
+readability-lxml = "^0.8.1"
+html2text = "^2024.2.26"
+robotexclusionrulesparser = "^1.7.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.8.0"
+isort = "^5.13.2"
+twine = "^5.1.1"
+pylint = "^3.2.7"
+pytest-cov = "^5.0.0"
+pytest-asyncio = "^0.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+navamai = "navamai.cli:cli"
+ask="navamai.cli:ask"
+refer="navamai.cli:refer"
+image="navamai.cli:image"
