@@ -1,0 +1,7 @@
+[project]
+name = "grassp"
+version = "0.0.0"
+description = "Coming soon. A package for GRaph Analysis of Spatial/Subcellular Proteomics"
+authors = [
+	{name = "Max Frank", email = "max.frank@czbiohub.org"},
+]
