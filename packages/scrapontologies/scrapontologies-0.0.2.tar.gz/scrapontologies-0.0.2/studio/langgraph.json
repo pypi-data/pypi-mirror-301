@@ -1,0 +1,14 @@
+{
+  "dockerfile_lines": [
+    "COPY scrapontologies-0.0.1-py3-none-any.whl /api/",
+    "RUN pip install --target=. scrapontologies-0.0.1-py3-none-any.whl"
+  ],
+  "graphs": {
+    "chatbot": "./test_graph.py:entities_schema_graph"
+  },
+  "env": "./.env",
+  "python_version": "3.11",
+  "dependencies": [
+    "."
+  ]
+}
