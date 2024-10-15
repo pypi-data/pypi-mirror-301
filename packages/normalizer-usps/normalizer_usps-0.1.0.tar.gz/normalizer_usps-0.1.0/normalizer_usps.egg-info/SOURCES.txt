@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+normalizer_usps/__init__.py
+normalizer_usps/normalizer.py
+normalizer_usps.egg-info/PKG-INFO
+normalizer_usps.egg-info/SOURCES.txt
+normalizer_usps.egg-info/dependency_links.txt
+normalizer_usps.egg-info/requires.txt
+normalizer_usps.egg-info/top_level.txt
+normalizer_usps/data/street_type_abbreviations.json
