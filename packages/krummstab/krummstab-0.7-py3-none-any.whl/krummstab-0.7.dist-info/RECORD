@@ -1,0 +1,10 @@
+krummstab/__init__.py,sha256=vis1z-x9P03OGbNW-ALN8AJWvD6jnOnCjlhRK5szR1M,66983
+krummstab/config.py,sha256=B-TL2zwf98KfVHdDfSc9DIprEmHPROPP2nvWb7oroHs,2550
+krummstab/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+krummstab/schemas/config-schema.json,sha256=TP0s1XvNOjIYK9DJb-HazbEeBbm8Gdqnmr2pSMhpzVU,3495
+krummstab-0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+krummstab-0.7.dist-info/METADATA,sha256=MetnpnXwn1zc1E-ZoJk20cMdVRsMGsSqHYmM4Xjm9gU,12094
+krummstab-0.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+krummstab-0.7.dist-info/entry_points.txt,sha256=eQlnnPBMCh62DLHD-5_WVuw5JhAFkZKZpGzUCJZ-r0Y,45
+krummstab-0.7.dist-info/top_level.txt,sha256=8I_F_e15I7HTjl4qFLNW69KVSp88RaFrnt1xe2Y6M-I,10
+krummstab-0.7.dist-info/RECORD,,
