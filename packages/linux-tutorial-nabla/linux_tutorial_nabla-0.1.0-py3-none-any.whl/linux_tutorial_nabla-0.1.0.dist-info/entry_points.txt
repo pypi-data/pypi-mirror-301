@@ -1,0 +1,5 @@
+[console_scripts]
+linux_tutorial_nabla = linux_tutorial_nabla.__main__:main
+
+[gui_scripts]
+
