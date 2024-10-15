@@ -1,0 +1,13 @@
+hetzner_snap_and_rotate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hetzner_snap_and_rotate/__main__.py,sha256=tURY03Cn1b-maNEe-1Ro7p0Tn7pqwX8hh2YZC3ghv1o,4297
+hetzner_snap_and_rotate/__version__.py,sha256=E-6wAZjiLRVInABFxrWoqdYlO_t-zVhK8XNfNnaDyzI,22
+hetzner_snap_and_rotate/api.py,sha256=08Qw5hnflZRbjPOxj11w9doXCkOfwTOTH2TlVBtmxaI,3963
+hetzner_snap_and_rotate/config.py,sha256=ZBYY7qSkEALqw2a5zUjpVGTHnZeh6B6ae1Y-uE-wgTA,6122
+hetzner_snap_and_rotate/logger.py,sha256=HUs3-PNu0ugINo3kOCrWTcyYltwWO-njiqqIos0un8Y,715
+hetzner_snap_and_rotate/periods.py,sha256=hgt0zjlxYXAn1PgmYPqlnjZznQcQiKG_rCLM_aDSVPQ,3683
+hetzner_snap_and_rotate/servers.py,sha256=KdpWiaaWiMO8n8znwVZYqSmL-J0VoLF-s8M8oFeUIYY,4626
+hetzner_snap_and_rotate/snapshots.py,sha256=6zw7S0nXpDa2nReI0SYq9e7t7W4d7PNEHD3r1HskwnI,6074
+hetzner_snap_and_rotate-1.1.1.dist-info/METADATA,sha256=858f1l0fvpeh4Hq5C4CQ-Km81pulpDQ4ARz02ThgPcY,18516
+hetzner_snap_and_rotate-1.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+hetzner_snap_and_rotate-1.1.1.dist-info/licenses/LICENSE,sha256=fKIbzSUjxwKgQK4ZQEmDGL7AK8fu49M0nM-Wy06zVv4,1073
+hetzner_snap_and_rotate-1.1.1.dist-info/RECORD,,
