@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pyqt6_overlay_busy_indicator.egg-info/PKG-INFO
+pyqt6_overlay_busy_indicator.egg-info/SOURCES.txt
+pyqt6_overlay_busy_indicator.egg-info/dependency_links.txt
+pyqt6_overlay_busy_indicator.egg-info/requires.txt
+pyqt6_overlay_busy_indicator.egg-info/top_level.txt
+qbusyindicator/__init__.py
+qbusyindicator/busyindicator.py
+qbusyindicator/examples/__init__.py
+qbusyindicator/examples/demo.py
+qbusyindicator/examples/loading.gif
