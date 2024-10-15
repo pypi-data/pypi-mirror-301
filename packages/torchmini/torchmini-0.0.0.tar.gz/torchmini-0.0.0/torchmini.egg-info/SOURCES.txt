@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+torchmini/__init__.py
+torchmini/tensor.py
+torchmini.egg-info/PKG-INFO
+torchmini.egg-info/SOURCES.txt
+torchmini.egg-info/dependency_links.txt
+torchmini.egg-info/requires.txt
+torchmini.egg-info/top_level.txt
