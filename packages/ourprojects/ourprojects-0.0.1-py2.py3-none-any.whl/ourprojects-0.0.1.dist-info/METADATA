@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ourprojects
+Version: 0.0.1
+Summary: Manage projects & teams [`source <https://github.com/laminlabs/ourprojects/blob/main/ourprojects/models.py>`__].
+Author-email: Lamin Labs <open-source@lamin.ai>
+Description-Content-Type: text/markdown
+Requires-Dist: lamindb
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/ourprojects
+Provides-Extra: dev
+
+# ourprojects: Manage projects & teams
+
+Read the [docs](https://docs.lamin.ai/ourprojects).
+
