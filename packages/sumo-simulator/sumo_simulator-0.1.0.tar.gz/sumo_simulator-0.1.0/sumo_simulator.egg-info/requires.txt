@@ -1,0 +1,6 @@
+
+[:platform_python_implementation == "CPython"]
+traci
+
+[dev]
+pytest>=6.0
