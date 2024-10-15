@@ -1,0 +1,14 @@
+open_constructs_aws_cdk/__init__.py,sha256=V-H4fdBMNaNIBGfL0GtP1JhReOzIvlqBY5mt9n_erq8,4259
+open_constructs_aws_cdk/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+open_constructs_aws_cdk/_jsii/__init__.py,sha256=uWhRehU4sDP6W7LHNpdJvgVx0B4Zxb1LGk_vjTmeNzg,1442
+open_constructs_aws_cdk/_jsii/aws-cdk@0.0.6.jsii.tgz,sha256=V6hZTDTVL_0VsWUyvu6OuQ-BVgQwmdzPaC6zGBo9KMU,131937
+open_constructs_aws_cdk/aws_codeartifact/__init__.py,sha256=oOXiE-suFvyxr7e53VSTQnNQb66Kdn8SXaS-H5l2O7Q,63804
+open_constructs_aws_cdk/aws_cur/__init__.py,sha256=MLagulhip4MGgg8YbrKc-Z2m8mXeZF0svF6mKm5QmSE,37694
+open_constructs_aws_cdk/aws_ec2/__init__.py,sha256=UWKG7-VOEZlJ-Ki_MB-hVleEBBSihRf4iFab65uClgo,18587
+open_constructs_aws_cdk/aws_fsx/__init__.py,sha256=7avTrTBRUh07tf3A-pOMF-g1YjznMtLxewuwjZV6nMc,70077
+open_constructs_aws_cdk/aws_redshiftserverless/__init__.py,sha256=SO_zpuCAbx56YWzmQ76quAfcKVDZV54Ca2VDVJ0sXD8,68000
+open_constructs_aws_cdk-0.0.6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+open_constructs_aws_cdk-0.0.6.dist-info/METADATA,sha256=j6aqqOpt0csWgfdKJNTa1sbVtsOeLrGztKK_5SigNYA,3788
+open_constructs_aws_cdk-0.0.6.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+open_constructs_aws_cdk-0.0.6.dist-info/top_level.txt,sha256=ZAaStvbgOl4GTpoG6Gnn1EwcVOkuNt1XLCohQlFfSrU,24
+open_constructs_aws_cdk-0.0.6.dist-info/RECORD,,
