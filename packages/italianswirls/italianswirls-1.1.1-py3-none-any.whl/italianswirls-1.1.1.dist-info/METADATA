@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: italianswirls
+Version: 1.1.1
+Summary: Minimal Python language server based on Jedi
+Home-page: https://git.dece.space/Dece/ItalianSwirls
+Author: dece
+Author-email: shgck@pistache.land
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jedi (>=0.19.1,<0.20.0)
+Requires-Dist: pygls (>=1.3.1,<2.0.0)
+Project-URL: Repository, https://git.dece.space/Dece/ItalianSwirls
+Description-Content-Type: text/markdown
+
+# Italian Swirls 🍝
+
+Minimal Python language server, based on [Jedi][jedi] and [pygls][pygls].
+
+[jedi]: https://jedi.readthedocs.io/en/latest/index.html
+[pygls]: https://pygls.readthedocs.io/en/latest/index.html
+
+It works on the subset of versions supported by both Jedi and pygls, so in its
+current set of dependencies:
+- Python 3.8 at least
+- Python 3.12 at most
+
+Supported features:
+
+| LSP method                    | Description                |
+|-------------------------------|----------------------------|
+| `textDocument/completion`     | Complete                   |
+| `textDocument/definition`     | Go to definition           |
+| `textDocument/typeDefinition` | Go to type definition      |
+| `textDocument/hover`          | Show documentation         |
+| `textDocument/references`     | Show references            |
+| `textDocument/rename`         | Renaming symbols and files |
+
+
+
+## Install
+
+You can either clone and build the server package from this repository, or
+install it from PyPI:
+
+```bash
+pip install italianswirls
+```
+
+The only dependencies are pygls and Jedi.
+
+Because Jedi is able to detect which environment it is installed in and which
+environment is the project you're working on in, you do not need to install in
+every virtualenv where it might be handy; a global user (or root) installation
+should be sufficient to work regardless of your current virtualenv.
+
+Refer to your client documentation on how to setup a server. Yes I have no idea
+how to do it for your editor, except if it's Neovim and you use nvim-lspconfig,
+then you can add something like that to your init:
+
+```lua
+require('lspconfig.configs').italianswirls = {
+  default_config = {
+    cmd = { 'italianswirls' },
+    filetypes = { 'python' },
+    root_dir = require('lspconfig.util').root_pattern(
+      unpack({ 'pyproject.toml', 'setup.cfg' })
+    ),
+    single_file_support = true,
+  },
+  docs = {
+    description = "“Is this a Star Wars reference?” Language Server",
+    default_config = {
+      root_dir = "vim's starting directory",
+    },
+  },
+}
+
+-- using a previously defined on_attach function…
+lspconfig.italianswirls.setup { on_attach = on_attach }
+```
+
+### Development
+
+The project uses Poetry for dependency management and packaging.
+
+```bash
+poetry install            # install deps in a virtualenv
+poetry run italianswirls  # run the LS but it may be impractical to test
+poetry build              # build to wheel
+```
+
+
+
+## About
+
+### Why?
+
+General-purpose servers (e.g. pyls, py-lsp) try to do too much and break stuff
+too often for me. Locking Neovim when I press tab, crashes of all kind,
+LspRestart failing. Also I like my linting and formatting done by dedicated
+tools such as [nvim-lint][nvim-lint] and [Conform][conform].
+
+[nvim-lint]: https://github.com/mfussenegger/nvim-lint
+[conform]: https://github.com/stevearc/conform.nvim
+
+Other Jedi-based servers (e.g. jedi-language-server) seem to focus on coc-nvim
+and frequently fail on Neovim's native LSP client for me. I tried to fix
+jedi-language-server several times when it failed me but I thought it could be
+fun to try pygls to redo it as small and simple as I can. And running a Node
+server to get Python completions? No way. That said, jedi-language-server is a
+good project and if you're fine with coc-nvim you should definitely check it
+out. Lots of the code here is ~~stolen~~ inspired from this project.
+
+### Is it usable for me?
+
+Try it. It was a small project for my own usage but it's been surprisingly
+reliable over the years now. That said, I do not program in Python
+professionally since some times now so I do not have the same strict
+requirements as before regarding to my tools.
+
+### Why the name?
+
+Take the string “Is this a Star Wars reference?” Language Server, compress it to
+`ITASWRLS` and expand it back to Italian Swirls. Italian dishes are made of few
+elements that work well together. Enough questions!
+
+### License
+
+GPLv3.
+

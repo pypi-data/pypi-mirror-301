@@ -1,0 +1,3 @@
+[console_scripts]
+italianswirls=italianswirls.cli:main
+
