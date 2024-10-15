@@ -1,0 +1,10 @@
+gpyconform/__init__.py,sha256=LqJ1AILMRnfef1qxeC6WWXmgmdJ6oURGlgznDVxanrM,358
+gpyconform/exact_gpcp.py,sha256=mpyJzEsgE4lvTqdGpUXP0j11tmz7eZp3EvORZy0hA0c,9348
+gpyconform/exact_prediction_strategies_cp.py,sha256=eZ4yqu3EZMQ_RjEeQWVo_B8lY0aFlRXjcI-IgH3VRKE,12088
+gpyconform/gpcpout.py,sha256=Z1ogJhBeCFZ3EqPJEOOpLQzpU8W0X7s_6knXCQe1B1s,5438
+gpyconform/prediction_intervals.py,sha256=VM8VevzYBeCoPZ9453A87gGSh4vvMk0gvwN2f739_8E,7063
+gpyconform-0.1.0.dist-info/LICENSE.txt,sha256=kjDJVYCt2Hr5TdWunmnARnQvgNGxznMabCsuNQMSNcE,1506
+gpyconform-0.1.0.dist-info/METADATA,sha256=-pxa0Ue63sfEXFbh5BurehOUdsh6N9tjpCPRTEXVvh8,3719
+gpyconform-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+gpyconform-0.1.0.dist-info/top_level.txt,sha256=woJgxxnNKXpu50XgBKXzA82k-Qwk8HXFkVFQZKI7RpE,11
+gpyconform-0.1.0.dist-info/RECORD,,
