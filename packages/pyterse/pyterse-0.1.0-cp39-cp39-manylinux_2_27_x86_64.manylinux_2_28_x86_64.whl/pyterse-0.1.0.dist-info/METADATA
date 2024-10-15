@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: pyterse
+Version: 0.1.0
+Summary: A Python interface for the TERSE library using pybind11.
+Author-Email: Senik Matinyan <matinyan.senik@gmail.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+
+
+
+# PyTERSE
+Python package of TERSE/PROLIX diffraction and  cryo-EM data compression algorithm
+
+
+> The pyTERSE python package uses the c++ TERSE/PROLIX(TRPX) compression algorithm scheme (https://github.com/senikm/trpx) and adds python binders to it's main class.
+> After the compilation the build directory contains the python compression library,
+> which can be imported to  a python environment.
+
+
+## How to Install the Package
+
+> Create a virtual environment with pybind and cmake
+
+For example:
+```bash
+mamba create -n pyterse python cmake pip pybind11 numpy pillow
+```
+
+OR
+```bash
+conda create -n pyterse python cmake pip pybind11 numpy pillow
+```
+
+And then install the package
+
+```python
+pip install pyterse_master.zip
+```
+---
+---
+
+## How to compile the code
+
+First, navigate to the project directory. Then, execute the following commands:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+Alternatively, if you want to distribute the package, run the following command:
+
+```python
+python3 setup.py sdist --inplace
+```
+
+Or run the following command to install the pip package:
+
+```python
+pip3 install --use-feature=in-tree-build . 
+```
+
+- Please note that in case of specific builds special care should be taken for these lines in root **CmakeLists.txt**: the paths of python and pybinder may be hardcoded based on specific needs before the compilation
+
+```cmake
+# Find Python and PyBind11
+find_package(Python REQUIRED COMPONENTS Interpreter Development)
+find_package(pybind11 REQUIRED) 
+```
+---
+
+### Testing the functionality of the library
+
+#### Basic commands
+
+- **Create terse object**: 
+```python
+terse = Terse()
+```
+
+- **Add data to Terse object**:
+ ```python
+ terse.push_back(data)
+```
+
+- **Save compressed data to a file**:
+ ```python
+ terse.save('filename.trpx')
+```
+
+- **Load compressed data from a file**:
+ ```python
+ loaded_terse = Terse.load('filename.trpx')
+```
+
+- **Decompress a specific frame**:
+ ```python
+ decompressed_frame = loaded_terse.prolix(frame_index)
+```
+
+---
+### Running the test file.
+
+```python
+python3 test.py
+```
+
+
+
+
+
