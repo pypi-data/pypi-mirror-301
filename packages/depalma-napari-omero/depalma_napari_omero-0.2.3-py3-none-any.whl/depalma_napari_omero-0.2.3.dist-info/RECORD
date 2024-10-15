@@ -1,0 +1,14 @@
+depalma_napari_omero/__init__.py,sha256=_izTCraQ7jefR6tCL3CpxdorSyCpJH1sInOgWoUDREc,146
+depalma_napari_omero/__main__.py,sha256=eNs08crulQvTqMtnl0kW6jmtn1KS2VQN4PILckhDdtM,304
+depalma_napari_omero/_version.py,sha256=AaQEeqeDwmZAHoPuwg2C0ulADePbIYLSFanZzt0cytQ,411
+depalma_napari_omero/napari.yaml,sha256=Iot3ntWIM2y7QjX7sMZs7c0Xz_fXNdqkSHJO9kb9ZQM,300
+depalma_napari_omero/omero_server/__init__.py,sha256=uI_sXhlPjJVvtC1_VQVDgTsY1ACzwWu8mUm4fa2RCfY,71
+depalma_napari_omero/omero_server/omero_server.py,sha256=GLAJhBZ-2bF3c5pMS92EPtOozOaH7OgYnIhPSWW_w30,7411
+depalma_napari_omero/omero_widget/__init__.py,sha256=HMZ8oV4NGc5fmwH3dgmqz46qu38In_DJYFpQV_XTOVI,115
+depalma_napari_omero/omero_widget/_widget.py,sha256=Xp9YRsI_pvqyuSKOsYo9CLhHsqn2Kum9fVh0Yp5Sbhc,50519
+depalma_napari_omero-0.2.3.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+depalma_napari_omero-0.2.3.dist-info/METADATA,sha256=EndE0A81pabnK0bdoNsuSLjCQisS8QjRaK7HoERWwm4,43010
+depalma_napari_omero-0.2.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+depalma_napari_omero-0.2.3.dist-info/entry_points.txt,sha256=Ekc4_giJmNLO_7TRI6Q085kDsM5SeVxVB5OFoM9eHDE,74
+depalma_napari_omero-0.2.3.dist-info/top_level.txt,sha256=n2x6IT66xFsi0DVln8-bjNq7hkbRNTBu2UvOPcmnUnw,21
+depalma_napari_omero-0.2.3.dist-info/RECORD,,
