@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: struphy
+Version: 2.3.2
+Summary: Multi-model plasma physics package
+Author: Max Planck Institute for Plasma Physics
+Author-email: stefan.possanner@ipp.mpg.de, eric.sonnendruecker@ipp.mpg.de
+License: Copyright (c) 2019-2024, Struphy developers, Max Planck Institute for Plasma Physics
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
+        associated documentation files (the "Software"), to deal in the Software without restriction, 
+        including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+        and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+        subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial 
+        portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT 
+        NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: homepage, https://struphy.pages.mpcdf.de/struphy/
+Project-URL: documentation, https://struphy.pages.mpcdf.de/struphy/
+Project-URL: repository, https://gitlab.mpcdf.mpg.de/struphy/struphy
+Project-URL: changelog, https://gitlab.mpcdf.mpg.de/struphy/struphy/-/blob/devel/CHANGELOG.md
+Project-URL: Bug Tracker, https://gitlab.mpcdf.mpg.de/struphy/struphy/-/issues
+Keywords: plasma physics, fusion, numerical modeling, partial differential equations, energetic particles
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <3.12,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: argcomplete==3.4.0
+Requires-Dist: desc-opt==0.12.0
+Requires-Dist: docutils==0.21.2
+Requires-Dist: gvec-to-python==1.2.2
+Requires-Dist: h5py==3.11.0
+Requires-Dist: ipyparallel==8.8.0
+Requires-Dist: lxml_html_clean==0.1.1
+Requires-Dist: m2r2==0.3.3.post2
+Requires-Dist: matplotlib==3.9.0
+Requires-Dist: mistune==0.8.4
+Requires-Dist: mpi4py==3.1.6
+Requires-Dist: myst-parser==3.0.1
+Requires-Dist: nbsphinx==0.9.4
+Requires-Dist: netCDF4==1.6.5
+Requires-Dist: notebook==7.2.1
+Requires-Dist: numpy==1.24.4
+Requires-Dist: pyccel==1.12.1
+Requires-Dist: pydata-sphinx-theme==0.15.3
+Requires-Dist: pytest==8.2.2
+Requires-Dist: pytest-monitor==1.6.6
+Requires-Dist: pytest-mpi==0.6
+Requires-Dist: scipy==1.13.1
+Requires-Dist: Sphinx==7.3.7
+Requires-Dist: sphinxcontrib-napoleon==0.7
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: vtk==9.3.0
+Requires-Dist: wheel==0.43.0
+
+# Struphy - Structure-preserving hybrid codes
+
+A Python package for plasma physics PDEs.
+
+See the [Struphy documentation](https://struphy.pages.mpcdf.de/struphy/index.html) for details.
+
+## Reference paper
+
+* S. Possanner, F. Holderied, Y. Li, B.-K. Na, D. Bell, S. Hadjout and Y. Güçlü, [**High-Order Structure-Preserving Algorithms for Plasma Hybrid Models**](https://link.springer.com/chapter/10.1007/978-3-031-38299-4_28), International Conference on Geometric Science of Information 2023, 263-271, Springer Nature Switzerland.
+
+## Contact
+
+* Stefan Possanner [stefan.possanner@ipp.mpg.de](mailto:spossann@ipp.mpg.de)
+* Eric Sonnendrücker [eric.sonnendruecker@ipp.mpg.de](mailto:eric.sonnendruecker@ipp.mpg.de)
+* Xin Wang [xin.wang@ipp.mpg.de](mailto:xin.wang@ipp.mpg.de)
