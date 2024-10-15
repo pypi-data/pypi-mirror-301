@@ -1,0 +1,11 @@
+PyCryptodome
+fuzzywuzzy
+gitpython
+prompt_toolkit
+pyfiglet
+pyhcl
+python-Levenshtein
+python-dotenv
+pyyaml
+requests
+urllib3<2

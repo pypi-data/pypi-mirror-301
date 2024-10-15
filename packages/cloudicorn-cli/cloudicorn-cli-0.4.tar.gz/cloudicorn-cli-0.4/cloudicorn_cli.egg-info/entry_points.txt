@@ -1,0 +1,3 @@
+[console_scripts]
+cloudicorn = cloudicorn:cli_entrypoint
+cloudicorn_setup = cloudicorn.setup:cli_entrypoint
