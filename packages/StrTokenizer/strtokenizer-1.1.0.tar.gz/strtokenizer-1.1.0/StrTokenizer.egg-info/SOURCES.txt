@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+setup.py
+StrTokenizer/__init__.py
+StrTokenizer/tokenizer.py
+StrTokenizer.egg-info/PKG-INFO
+StrTokenizer.egg-info/SOURCES.txt
+StrTokenizer.egg-info/dependency_links.txt
+StrTokenizer.egg-info/top_level.txt
