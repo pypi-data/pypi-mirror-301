@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ask-weather
+Version: 0.1.0
+Summary: "A weather query agent using LangChain and OpenWeatherMap API"
+License: MIT
+Author: doyikim
+Author-email: doyikim34@naver.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain-openai (>=0.2.2,<0.3.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: torch (==2.2.0)
+Description-Content-Type: text/markdown
+
+# 날씨 정보 제공 패키지
+
+## 목적
+이 패키지는 사용자가 `OpenWeatherMap API`의 일기예보 정보를 간편하게 조회할 수 있도록 돕기 위해 개발되었습니다. 
+
+## 사용하기
+이 패키지는 Python 3.11에서 동작합니다.
+
+### 패키지 설치
+```bash
+# Poetry로 패키지 설치
+poetry install
+
