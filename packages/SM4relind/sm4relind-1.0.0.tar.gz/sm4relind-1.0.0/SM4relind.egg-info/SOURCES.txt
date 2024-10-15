@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+SM4relind.egg-info/PKG-INFO
+SM4relind.egg-info/SOURCES.txt
+SM4relind.egg-info/dependency_links.txt
+SM4relind.egg-info/top_level.txt
+lib4relind/__init__.py
