@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+waterbridge/1_Identification of water bridges.py
+waterbridge/2_Topological classification of water bridges.py
+waterbridge/3_Nomenclature of waterbridges.py
+waterbridge/__init__.py
+waterbridge/waterbridge.py
+waterbridge.egg-info/PKG-INFO
+waterbridge.egg-info/SOURCES.txt
+waterbridge.egg-info/dependency_links.txt
+waterbridge.egg-info/entry_points.txt
+waterbridge.egg-info/top_level.txt
