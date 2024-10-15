@@ -1,0 +1,15 @@
+dcmqi-0.2.1.dist-info/RECORD,,
+dcmqi-0.2.1.dist-info/entry_points.txt,sha256=fMSlxV5PyWK4RFbMKM6Rrkpyl-BkDmpiUNFvUI6vhXg,263
+dcmqi-0.2.1.dist-info/METADATA,sha256=XDXOVQe7mW_20R7GV7UglEXEFGGeiJj_tLQGE3QBU8s,5493
+dcmqi-0.2.1.dist-info/WHEEL,sha256=_RqigxPIWFlgxdc8jB3bk4A2ZdDW_VpodoepfOXSSIw,150
+dcmqi-0.2.1.dist-info/licenses/LICENSE,sha256=-xKf4ICFEt8RaUHxFscKCE9j4AFlYdlnxU8-2xcV_7E,1057
+dcmqi/__init__.py,sha256=NfjOzTfTd__tAVYMqZ78xK_bWsMd7oli6edEWB6d2RY,2194
+dcmqi/_version.py,sha256=MxUhzLJIZQfEpDTTcKSxciTGrMLd5v2VmMlHa2HGeo0,411
+dcmqi/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+dcmqi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcmqi/bin/paramap2itkimage,sha256=j1K0rSTFamj2YAziT2Iyl8UPuJwbQde73ZqKsZdyu8M,24854936
+dcmqi/bin/tid1500reader,sha256=UVVSic38znqeprMISr6Qi8yYuzZfAeYrfiztYak_FXc,7794856
+dcmqi/bin/itkimage2paramap,sha256=omPCVdJEyfONhReQCorpxzn4nE2T91P0rSaJfSqC_v8,24906880
+dcmqi/bin/tid1500writer,sha256=kw-dZscGgxmUBJGvmxnw7ORncUDD1h5aV7G84S4M0po,8918936
+dcmqi/bin/segimage2itkimage,sha256=63WsJkWSOBL-PGY7I9bHupYj1MxLrCK47ibKLk79Pp8,24814104
+dcmqi/bin/itkimage2segimage,sha256=HbLRs4as4vuZl6O5m0k0nw8OfrWH9ozY5VqSZQYv6Hc,24984160
