@@ -1,0 +1,13 @@
+impyrialtuto/__init__.py,sha256=KdgN_h42uXD-ipW-S0Ilc35VtZVmUzvUoH47jezYJKk,41
+impyrialtuto/utils.py,sha256=SPfRJpmo--ZYL-HXgYtENk-_IEFfQPfsgzbtkuKCr0k,456
+impyrialtuto/length/__init__.py,sha256=e2H6MAU5PSQaIBEipGvix2HaEuqEfpBqinX4ZjKqzCQ,29
+impyrialtuto/length/api.py,sha256=MxhbNRo3jBGwtOemAWfbJutwSKhEKbkNLvXnmTfvDoI,1199
+impyrialtuto/length/core.py,sha256=BZPmNfjULWLd7ZWenhApZthsh6faZHdRhqmPxfUJPuY,1385
+impyrialtuto/weight/__init__.py,sha256=e2H6MAU5PSQaIBEipGvix2HaEuqEfpBqinX4ZjKqzCQ,29
+impyrialtuto/weight/api.py,sha256=6o7x22eVARu2RCTbnxSPlAcQsmjjTFuHHdZowU1YXfw,1204
+impyrialtuto/weight/core.py,sha256=9UFkICGsUCDgyZmlqBjjoFmLwUdT0bXyuf4ikB-OBH8,1708
+impyrialtuto-0.1.0.dist-info/LICENSE,sha256=sa72Q-FFmf7_4urD7lEHk0houJmcWdMjO5-J1DUG3do,1076
+impyrialtuto-0.1.0.dist-info/METADATA,sha256=MkHtwd-D4KEsnMQ7xs32nOVhDrp9Q_r5tg6Nnv8woOo,7802
+impyrialtuto-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+impyrialtuto-0.1.0.dist-info/top_level.txt,sha256=_wLiS0GshpGb1VW2U0VDe6IaqQD-5H6Ed4CmMONQPz0,13
+impyrialtuto-0.1.0.dist-info/RECORD,,
