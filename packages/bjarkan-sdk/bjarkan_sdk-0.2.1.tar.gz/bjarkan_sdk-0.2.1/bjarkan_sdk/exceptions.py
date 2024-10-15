@@ -1,0 +1,2 @@
+class BjarkanClientError(Exception):
+    pass
