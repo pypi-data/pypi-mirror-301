@@ -1,0 +1,11 @@
+stages:
+  - test
+
+test.integration:
+  stage: test
+  image: registry.syseleven.de/ncs/iam/openstack-config:latest
+  before_script:
+    - pip install -e .
+    - PBR_VERSION=1.1.1 pip install openstack-s11auth
+  script:
+    - pytest tests/*.py

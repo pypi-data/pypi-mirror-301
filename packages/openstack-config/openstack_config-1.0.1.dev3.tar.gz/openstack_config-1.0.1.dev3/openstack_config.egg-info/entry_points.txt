@@ -1,0 +1,14 @@
+[openstack.cli.extension]
+config = config.plugin
+
+[openstack.config.v1]
+config_current-context = config.commands:CurrentContext
+config_delete-context = config.commands:DeleteContext
+config_get-contexts = config.commands:GetContexts
+config_get-projects = config.commands:GetProjects
+config_rename-contexts = config.commands:RenameContext
+config_set = config.commands:Set
+config_unset = config.commands:Unset
+config_use-context = config.commands:UseContext
+config_use-project = config.commands:UseProject
+config_view = config.commands:View
