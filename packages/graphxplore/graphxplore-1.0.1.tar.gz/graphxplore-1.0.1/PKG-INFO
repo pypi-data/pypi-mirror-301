@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: graphxplore
+Version: 1.0.1
+Summary: data exploration using graph representations and dashboards, as well as meta data extraction, cleaning, and transformation
+Author: Louis Bellmann
+License: Copyright 2024 Medical Center Hamburg-Eppendorf and Louis Bellmann
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/UKEIAM/graphxplore
+Project-URL: Documentation, https://graphxplore.readthedocs.io/en/latest/
+Project-URL: User Guide, https://ukeiam.github.io/graphxplore/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: neo4j==5.25.0
+Requires-Dist: chardet==5.2.0
+Requires-Dist: plotly==5.24.1
+Requires-Dist: pandas==2.2.3
+
+# GraphXplore: Visual exploration and easy preprocessing of data
+
+[![unittest workflow](https://github.com/UKEIAM/graphxplore/actions/workflows/unittest.yml/badge.svg)](https://github.com/UKEIAM/graphxplore/actions/workflows/unittest.yml)
+[![Documentation Status](https://readthedocs.org/projects/graphxplore/badge/?version=latest)](https://graphxplore.readthedocs.io/en/latest/?badge=latest)
+
+<img src="https://ukeiam.github.io/graphxplore/graphxplore_icon.png" alt="drawing" width="100"/>
+
+## About
+
+GraphXplore is a tool for visually exploring, cleaning and transforming your data, as well as defining and sharing 
+metadata and mappings with others. You can access GraphXplore as a Python package, or use its graphical user interface 
+application. The app can either be run as a local webserver or a standalone desktop app.
+GraphXplore does not require advanced knowledge about statistics or data science and the app can be used without prior 
+coding/scripting skills. The tool was designed with the application to the medical research domain in mind, but can be 
+generally used with any data source. 
+
+## Installation
+
+- Python package: Install from PyPi with `pip install graphxplore`, or checkout versions at the 
+  [PyPI GraphXplore project site](https://pypi.org/project/graphxplore/)
+  - Alternatively, you can clone this repository, checkout a specific commit and use that version via `sys.path`,
+    `pip install -e` or `conda develop`
+- Desktop app: [Download the installer](https://github.com/UKEIAM/graphxplore/releases)
+  - Alternatively, you can clone this repository, checkout a specific commit, use [NPM](https://www.npmjs.com/) and run 
+    the [installation script](./frontend/build_release.sh)
+- Local webserver: Clone this repository, install streamlit with `pip install streamlit==1.39.0`, navigate to 
+  `frontend/GraphXplore` and run `streamlit run streamlit_app.py`
+
+## Documentation
+
+In the [GraphXplore user guide](https://ukeiam.github.io/graphxplore/) you can find detailed information about the 
+data-related tasks that you can work in with GraphXplore, as well as its functionalities. Additionally, the same 
+information is given in the app via various how-to pages and tooltips.
+
+For information on coding with GraphXplore, read the [Python package code documentation](https://graphxplore.readthedocs.io/en/latest/).
