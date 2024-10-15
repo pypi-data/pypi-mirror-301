@@ -1,0 +1,1 @@
+include ndg_chatbot_package/yamls/*.yaml
