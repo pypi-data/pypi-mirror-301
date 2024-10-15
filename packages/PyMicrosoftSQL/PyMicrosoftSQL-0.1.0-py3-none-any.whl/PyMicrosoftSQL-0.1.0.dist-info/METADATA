@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: PyMicrosoftSQL
+Version: 0.1.0
+Summary: A simple ODBC wrapper for Python
+Home-page: https://github.com/microsoft/python-sql-driver
+Author: Gaurav Sharma
+Author-email: sharmag@microsoft.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tabulate
+
+# PyMicrosoftSQL
+
+A simple SQL Driver for Python.
+
+
+## Pre-requisites
+
+### For Windows
+-   Install the latest version of **Python 3**.    
+
+### **For MacOS**, 
+-   Install **Homebrew** & **OpenSSL** by running the following command:
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install openssl
+    ```
+
+### **For Linux**, 
+-   Install pip and virtualenv using the following commands
+    ```bash
+    sudo apt install python3-pip
+    sudo apt install python3-venv
+    ```
+
+## Contact Us
+
+- In case you need any support or help please reach out to us:
+    ```bash
+    sumit.sarabhai@microsoft.com
+    sharmag@microsoft.com
+    ramudaykumar@microsoft.com
+    ```
