@@ -1,0 +1,3 @@
+[console_scripts]
+prodigy_lig=prodigy_lig.prodigy_lig:main
+
