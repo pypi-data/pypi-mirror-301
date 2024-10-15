@@ -1,0 +1,13 @@
+melkor/__init__.py,sha256=20f-_4D2xSRLwOTly4QNRnymRMLz4aefhycxGoijFl8,28
+melkor/__main__.py,sha256=g3gTYl066cdt2jIOjiO3pto5qRtvO9Og-NGJZKGIqqA,1792
+melkor/customTypes.py,sha256=etyWeETNmzTcO91rfbmgUVSAnEg24uhcZw75Zp-x8sc,6652
+melkor/engine.py,sha256=DKce3H_6Vs8EBSKdcd1QeoP0GgWabVudIfQ4EhMvY1s,1554
+melkor/settings.py,sha256=4XHMe2jJY-NCvvJRPZd33z8m2TZQnyxzZUrnYDZOQYA,1501
+melkor/tester.py,sha256=7f3wdZhD18REAfh-Dcm6vsF-4g1axrHoWFzYXn-aSgk,2021
+melkor/utils.py,sha256=uk7ljHu8TN8c1GDb4gSIKEIK4fIN2hglqkvT9HRLhpk,1247
+melkor/output/junit.py,sha256=GFlAlOMFrlkTxU9X9R-bXBGVMWnlDJO1Dj2ptcP7Ku4,3840
+melkor-1.0.0.dist-info/METADATA,sha256=XInNep_78PrCK0jAP1JUqhmqEGqdD5z7dPhvQHGhsuU,424
+melkor-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+melkor-1.0.0.dist-info/entry_points.txt,sha256=iWyNqvAARo-gMUl5PZ5hR45Rea8TODj_dHjJxro6D8E,48
+melkor-1.0.0.dist-info/top_level.txt,sha256=QQOW4b-e2gMRpcxbO-WdQ_YPPUn-nRpkcWbkso9qj6s,7
+melkor-1.0.0.dist-info/RECORD,,
