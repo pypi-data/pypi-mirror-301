@@ -1,0 +1,23 @@
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python
+  - pip
+  - jupyterlab
+  - ecflow >= 5.13
+  - jinja2
+  - requests
+  - pytest
+  - pygraphviz
+  - pip:
+    - ipykernel
+    - nbsphinx
+    - sphinx-rtd-theme==0.5.2
+    - sphinx-copybutton==0.3.1
+    - sphinx-tabs
+    - git+https://github.com/ecmwf/pyflow.git
+
+variables:
+  QT_MAC_WANTS_LAYER: 1
