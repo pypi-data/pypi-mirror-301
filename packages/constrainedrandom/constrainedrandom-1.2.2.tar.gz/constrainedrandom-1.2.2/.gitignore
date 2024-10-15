@@ -1,0 +1,6 @@
+__pycache__/
+docs/_build
+docs/_static
+docs/_templates
+perf-report.html
+perf-results*.json
