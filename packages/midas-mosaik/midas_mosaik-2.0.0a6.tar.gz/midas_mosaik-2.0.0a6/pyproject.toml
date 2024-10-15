@@ -1,0 +1,105 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "midas-mosaik"
+dynamic = ["version"]
+description = "MultI-DomAin test Scenario for smart grid co-simulation."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = []
+authors = [
+    { name = "Stephan Balduin", email = "stephan.balduin@offis.de"}
+]
+dependencies = [
+    "appdirs",
+    "click",
+    "mosaik",
+    "pandas",
+    "ruamel.yaml"
+]
+
+[project.optional-dependencies]
+base = [
+    "midas-store>=2.0.0a1",
+    "midas-powergrid>=2.0.0a3",
+    "midas-powerseries>=2.0.0a4",
+    "midas-sndata>=2.0.0a1",
+    "midas-comdata>=2.0.0a2",
+    "midas-weather>=2.0.0a2",
+    "pysimmods>=0.20.0a2",
+]
+bh = [
+    "midas-store>=2.0.0a1",
+    "midas-powergrid>=2.0.0a3",
+    "midas-powerseries>=2.0.0a4",
+    "midas-dlpdata>=2.0.0a1",
+    "midas-pwdata>=2.0.0a1",
+]
+#
+#base-dev = [
+#    "midas-store@git+https://gitlab.com/midas-mosaik/midas-store.git@towards_mosaik_3_3#egg=midas-store",
+#    "midas-powergrid@git+https://gitlab.com/midas-mosaik/midas-powergrid.git@towards_mosaik_3_3#egg=midas-powergrid",
+#    "midas-powerseries@git+https://gitlab.com/midas-mosaik/midas-powerseries.git@main#egg=midas-powerseries",
+#    "midas-sndata@git+https://gitlab.com/midas-mosaik/midas-sndata.git@towards_mosaik_3_3#egg=midas-sndata",
+#    "midas-comdata@git+https://gitlab.com/midas-mosaik/midas-comdata.git@towards_mosaik_3_3#egg=midas-comdata",
+#    "midas-weather@git+https://gitlab.com/midas-mosaik/midas-weather.git@towards_mosaik_3_3#egg=midas-weather",
+#    "pysimmods@git+https://gitlab.com/midas-mosaik/pysimmods.git@towards_mosaik_3_3#egg=pysimmods",
+#]
+#
+#bh-dev = [
+#    "midas-store@git+https://gitlab.com/midas-mosaik/midas-store.git@towards_mosaik_3_3#egg=midas-store",
+#    "midas-powergrid@git+https://gitlab.com/midas-mosaik/midas-powergrid.git@towards_mosaik_3_3#egg=midas-powergrid",
+#    "midas-powerseries@git+https://gitlab.com/midas-mosaik/midas-powerseries.git@main#egg=midas-powerseries",
+#    "midas-dlpdata@git+https://gitlab.com/midas-mosaik/midas-dlpdata.git@towards_mosaik_3_3#egg=midas-dlpdata",
+#    "midas-pwdata@git+https://gitlab.com/midas-mosaik/midas-pwdata.git@towards_mosaik_3_3#egg=midas-pwdata",
+#]
+#
+full = [
+    "midas-mosaik[base]",
+    "midas-timesim>=2.0.0a1",
+    "midas-dlpdata>=2.0.0a1",
+    "midas-pwdata>=2.0.0a1",
+]
+
+arl = [
+    "midas-mosaik[full]",
+    "midas-palaestrai>=3.5.4a1",
+    "palaestrai-mosaik>=3.5.4a1",
+]
+
+dev = [
+    "build",
+    "twine",
+    "pytest",
+    "coverage",
+    "ruff",
+]
+
+[project.scripts]
+midasctl = "midas.api.midasctl:main"
+
+
+[project.urls]
+Documentation = "https://midas-mosaik.gitlab.io/midas"
+
+[tool.hatch.version]
+path = "src/midas/__init__.py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/midas"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["F401"]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+docstring-code-format = true
+skip-magic-trailing-comma = true
