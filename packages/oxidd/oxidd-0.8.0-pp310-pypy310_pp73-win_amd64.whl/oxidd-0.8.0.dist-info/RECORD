@@ -1,0 +1,14 @@
+_oxidd.pypy310-pp73-win_amd64.pyd,sha256=zvqck1ZKbBA9DIYN9Q5xBAYSb0SN61sjqGZ3PDqczzs,665088
+oxidd/__init__.py,sha256=Usa4RNdE2g-afA8owjrjFRRxcWshD_nWvXAHUM9sOBA,245
+oxidd/bcdd.py,sha256=BmGls1H95yY2BYBXHvXpD2vVIKqMzoeXY4zgvVaa1y8,14116
+oxidd/bdd.py,sha256=8Sru0NBvhy8Ib6mV08o5S-mK7ik6V97aEO5FeYp3HlE,13990
+oxidd/protocols.py,sha256=frSx-ZUlbbArd4tOu1io6gF4qDCgb15z9xTVzXi_hlw,18452
+oxidd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxidd/util.py,sha256=tKWElKL-RFKwIWY5Cm885kc8_Z9WMnKrmyMkt4vrWvg,3533
+oxidd/zbdd.py,sha256=2huYXofJi-eDkzRtsUxj7vEqNo_tmDTK9VHlSAzN0jw,12853
+oxidd-0.8.0.dist-info/LICENSE-APACHE,sha256=IP57AOkE7WkOO5_WBzeE0_xCgUHb0QuBwB_RQ9B5f1g,9899
+oxidd-0.8.0.dist-info/LICENSE-MIT,sha256=3r8S2cXc4p8OLmd0XzFdgPi7Qoo607W4mXD9GNh3lsw,1086
+oxidd-0.8.0.dist-info/METADATA,sha256=lPdiYc9fMEkZN8w-0PV8bq9fqcut8R1TNeVAqPn6E4E,4998
+oxidd-0.8.0.dist-info/WHEEL,sha256=FrF3k_HuPAd1j_2m90vpKmry0NPVZ1-jMbjwohgueRU,108
+oxidd-0.8.0.dist-info/top_level.txt,sha256=dUW4XS8YKMDlT6aiwjHTPXT0qUeQAM21OHSBG0YZPQY,13
+oxidd-0.8.0.dist-info/RECORD,,
