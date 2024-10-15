@@ -1,0 +1,65 @@
+Metadata-Version: 2.3
+Name: zlepy
+Version: 0.3.2
+Summary: Toolkit for integer-linear-eigenvalue matrix generation and evaluation.
+Project-URL: Homepage, https://github.com/symeig/zle-py
+Project-URL: Issues, https://github.com/symeig/zle-py/issues
+Author-email: Abraham Miller <abraham.r.m@gmail.com>, Jonny Luntzel <jonny9860@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Keywords: eigenvalue,integer-linear eigenvalues,interpretable spectra,linear algebra,matrix
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: mpmath
+Requires-Dist: numpy
+Requires-Dist: sympy
+Description-Content-Type: text/markdown
+
+# ZLE (Symbolic Integer-Linear Matrix Toolkit)
+
+[![PyPI - Version](https://img.shields.io/pypi/v/zlepy)](https://pypi.org/project/zlepy)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/zlepy)](https://pypi.org/project/zlepy)
+
+-----
+
+A Python package to aid in integer-linear eigenvalue matrix generation and symbolic evaluation. Part of the [symeig](https://github.com/symeig) project.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Testing](#testing)
+- [License](#license)
+
+## Installation
+From PyPI
+```console
+pip install zlepy
+```
+
+For local development:
+```console
+pip install -e path/to/zlepy
+```
+
+## Testing
+
+All tests:
+```
+hatch test
+```
+
+Specific test file:
+```
+hatch test tests/test_batch_sizes.py
+```
+
+## License
+
+This package is OSI approved under the Apache License Version 2.0.

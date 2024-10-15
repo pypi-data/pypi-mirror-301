@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zlepy"
+dynamic = ["version"]
+description = "Toolkit for integer-linear-eigenvalue matrix generation and evaluation."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+keywords = ["linear algebra", "matrix", "eigenvalue", "integer-linear eigenvalues", "interpretable spectra"]
+authors = [
+  { name = "Abraham Miller", email = "abraham.r.m@gmail.com" },
+  { name = "Jonny Luntzel", email = "jonny9860@gmail.com" }
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: Apache Software License",
+]
+dependencies = ["numpy", "sympy", "mpmath"]
+
+[project.urls] 
+Homepage = "https://github.com/symeig/zle-py"
+Issues = "https://github.com/symeig/zle-py/issues"
+
+[tool.hatch.version]
+path = "src/zlepy/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/zlepy tests}"
+
+[tool.coverage.run]
+source_pkgs = ["zlepy", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/zlepy/__about__.py",
+]
+
+[tool.coverage.paths]
+zlepy = ["src/zlepy", "*/zlepy/src/zlepy"]
+tests = ["tests", "*/zlepy/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
