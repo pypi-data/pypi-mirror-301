@@ -1,0 +1,13 @@
+fgroup/__init__.py,sha256=xnxqyTG-35qzir0Hfq4JvWmvHbKbFAPVTk4JOq16m1A,16573
+fgroup/__main__.py,sha256=YBC82KUDjv7YaT4ieRKoyrGNwvt_ICTWQdUT-6J50Xw,26
+fgroup/_test.py,sha256=fKXuzP9HjGTwGx-smzKty6_WJTssmZVOG23k5wgkeV0,26390
+fgroup/file.py,sha256=R1HpiqmxytLH38FU2H7QMt_te8rjOzxSkEzn9uLLve0,4772
+fgroup/filetree.py,sha256=PitHQ6phCjDbi9pYO1XPUwjkW92FI7aje-xFlZV81gc,11187
+fgroup/formatter.py,sha256=63IxP3B9FuC7pjZhzQkgR4TeDuqckYu4DRORtjKmfds,2089
+fgroup/grouper.py,sha256=e4njwpvkvR7TGrDCSe7fIK8BQbUWof4UaWQT9TN2X2Q,5023
+fgroup/util.py,sha256=4s43UVaoGMrJXJN91UvRINGYdIcUsMjLVE9peZ7-QYM,5188
+fgroup-1.2.2.dist-info/LICENSE,sha256=R9eCP9fC2uOsqzVMSTUVdPYGyEkpfqanajO4dS6jQw0,1066
+fgroup-1.2.2.dist-info/METADATA,sha256=aiQ7rYMGjSDhhyCK6STvCThMmC6zNqr1AFJBP8wK5sE,11453
+fgroup-1.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fgroup-1.2.2.dist-info/entry_points.txt,sha256=0wvs7a5Y9Vkd7gGEn9deKMSQmDEnu-o6eRTDvgKcqms,37
+fgroup-1.2.2.dist-info/RECORD,,
