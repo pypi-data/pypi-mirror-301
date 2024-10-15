@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: virgo-pycdm
+Version: 0.3.2
+Home-page: https://gitlab.pic.es/virgo-sw/cdm-python-frontend
+Author: David Roman
+Author-email: droman@ifae.es
+License: BSD-3
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: appdirs
+Requires-Dist: PyQt5
+Requires-Dist: pybind11
+Requires-Dist: pyqt_tools
+Requires-Dist: pyzmq
+Requires-Dist: tomli
