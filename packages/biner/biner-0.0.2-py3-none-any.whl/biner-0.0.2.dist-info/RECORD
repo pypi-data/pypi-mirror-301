@@ -1,0 +1,17 @@
+biner/__init__.py,sha256=QsDpxepcarRD1JrrAQ2JolueVWd2JoilfEw2dC_3V8Y,506
+biner/module1/__init__.py,sha256=TbycddPhZtJq2suWhxefTGPgyHYIIl2ZCaavitGEwcY,22
+biner/module1/konversi.py,sha256=TgLBYHxct4BYflVNkjwlaQ7abtZS-WQCbwfzEdWZ0DY,765
+biner/module2/__init__.py,sha256=Lk9zl_9dDFs6_kHZ-2RbitFMRI03UJADo4GjYJGFJBw,26
+biner/module2/operasibiner.py,sha256=eH1BNYabJLIPg3MHYODOTEviLUVnPBcj_dWb2WtYe4A,2190
+biner/module3/__init__.py,sha256=xETdF7c78XKKuvTfdX5EvCgap_dzSPnals0PW_LE7kQ,20
+biner/module3/logika.py,sha256=75syqPJMVDyVnKieWLhaQerw93K9oUIxLJ0jWwQYJ98,2932
+biner/module4/__init__.py,sha256=Msm2vEzDPNKKPiKYWyVdU_eUHJuxTF3Fbol7B04Zduk,35
+biner/module4/change_and_search_bit.py,sha256=4NoNfn9qWlkPb4krX4pF_7bVM5PqoscYSsX__QGBjrI,1025
+biner/module5/__init__.py,sha256=GhgqtQnHA4syGhvBfJnx4AcjQIYK69LzyM4SxCNeboQ,24
+biner/module5/manipulasi.py,sha256=YInJ3UoA22OSE0PhEuxChGLhRSyQpP2AF2idw7ytaI4,1829
+biner/module6/BitAnalysis.py,sha256=sy1X0hwTw-VP9xtPjxXIyVVKvC8QFjZar6EzZqtamYQ,4258
+biner/module6/__init__.py,sha256=wHCehJ8gWO55H-ubH951zBGTQRdt-z7rGLYfQQnEaEI,25
+biner-0.0.2.dist-info/METADATA,sha256=N0W2NURf92MVGfBTF7nW1YjAR7EvWW4Snlxy7vBwk7U,247
+biner-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+biner-0.0.2.dist-info/top_level.txt,sha256=LUf3v59FyhgQ2eP9nKq_WPb_b9AnGENL0HoCRFCcFEg,6
+biner-0.0.2.dist-info/RECORD,,
