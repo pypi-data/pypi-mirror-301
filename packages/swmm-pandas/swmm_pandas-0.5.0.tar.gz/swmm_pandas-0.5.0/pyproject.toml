@@ -1,0 +1,94 @@
+[project]
+name = "swmm-pandas"
+dynamic = []
+description = "SWMM binary outputfile reader and API"
+authors = [
+    { name = "Constantine Karos", email = "ckaros@outlook.com" },
+    { name = "See README.md" },
+]
+dependencies = [
+    "julian",
+    "pandas>=2.1",
+    "swmm-toolkit>=0.8.1",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+keywords = [
+    "swmm5",
+    "swmm",
+    "stormwater",
+    "hydraulics",
+    "hydrology",
+    "",
+]
+maintainers = [
+    { email = "ckaros@outlook.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: Other/Proprietary License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+version = "0.5.0"
+
+[project.license]
+text = "CC BY 4.0"
+
+[project.urls]
+Homepage = "https://github.com/karosc/swmm-pandas"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+package-dir = "src"
+
+[tool.pdm.version]
+source = "file"
+path = "src/swmm/pandas/__init__.py"
+
+[tool.pdm.build]
+includes = [
+    "src/swmm",
+]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "sphinx",
+    "nbsphinx",
+    "sphinx-autobuild",
+    "matplotlib",
+    "myst-parser",
+    "furo",
+    "numpydoc",
+    "ipython",
+]
+lint = [
+    "ruff",
+    "mypy",
+]
+test = [
+    "pytest",
+    "coverage",
+]
+
+[tool.mypy]
+allow_redefinition = true
+pretty = true
+warn_no_return = false
+ignore_missing_imports = true
+disallow_any_decorated = false
+explicit_package_bases = true
+mypy_path = "src"

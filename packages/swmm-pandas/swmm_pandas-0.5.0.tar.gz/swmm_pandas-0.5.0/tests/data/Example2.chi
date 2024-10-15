@@ -1,0 +1,38 @@
+#PCSWMM project file
+#Please do not edit
+[General]
+PCSWMM.NET Version=7.6.3695
+SWMM5 Version=5.2.4
+Version=3
+Package Path=\\wsl\ckaros\src\swmm-pandas\tests\data\Example2.pcz
+Map EPSG=2284
+CS Name=NAD83 Virginia South ftUS
+Last Report Date=10/08/2024 3:06:00 PM
+[2D]
+2DModeling=False
+[Project Summary]
+Compute Time= < 1 sec
+Routing Error=1.346
+Runoff Error=n/a
+[Authors]
+Author0=Constantine Karos,45573.6691571528
+[Layers]
+layer0=Subcatchments
+layer1=Outlets
+layer2=Weirs
+layer3=Orifices
+layer4=Pumps
+layer5=Conduits
+layer6=Storages
+layer7=Dividers
+layer8=Outfalls
+layer9=Junctions
+[Scenarios]
+"Scenarios0"="\\wsl\ckaros\src\swmm-pandas\tests\data\Example2.inp",False,False,Example2
+[Graph]
+Plotting Position=Gringorten
+[Erosion]
+ErosionOn=False
+Use C TS=False
+Calculate LS=False
+Use TSS=False
