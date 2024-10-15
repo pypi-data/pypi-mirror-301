@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "deciphonctl"
+version = "0.4.6"
+description = "Control Deciphon server."
+authors = ["Danilo Horta <horta@ebi.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "deciphonctl" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12"
+requests = "^2.32"
+pydantic = "^2.9"
+pydantic-settings = "^2.5"
+fasta-reader = "^3.0"
+loguru = "^0.7"
+requests-toolbelt = "^1.0"
+paho-mqtt = "^2.1"
+deciphon = "^0.14"
+
+[tool.poetry.group.dev.dependencies]
+deciphon-sched = { version = "^0.12", extras = ["testing"] }
+pytest = "^8.2"
+uvicorn = "^0.30"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.poetry.scripts]
+deciphonctl = 'deciphonctl.cli:app'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
