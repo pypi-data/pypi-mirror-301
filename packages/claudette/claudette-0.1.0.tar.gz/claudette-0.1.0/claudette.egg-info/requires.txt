@@ -1,0 +1,6 @@
+fastcore>=1.7.16
+anthropic
+toolslm
+
+[dev]
+google-auth
