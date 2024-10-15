@@ -1,0 +1,10 @@
+bjarkan_sdk/__init__.py,sha256=F_-94m0yxa45pNqLIR2uEmyVbGT_S39ZyDF4ilKkEd4,136
+bjarkan_sdk/base_client.py,sha256=LrIhOsJZ9OfWQYsuVN51jdsHcYOfIRfFh-9Zb85ZFBc,1733
+bjarkan_sdk/data_client.py,sha256=6VbeQSSmt5eSlkFtmfF1hl7Czv7TSf2b5NlLjcB-6oU,2830
+bjarkan_sdk/exceptions.py,sha256=j9FQsV-O8CS2P0DSO061imbS7Oa3hZ-ZH30rRz6Q61I,45
+bjarkan_sdk/models.py,sha256=KWVDNFzU_mLVMx3tpXd6liLVkf6VLDSl506Lb8rjqOw,6987
+bjarkan_sdk/sor_client.py,sha256=9wjyd5-93ok4VWvfYz35RFVq8zMJYRdDC7PqwC2UFw0,1247
+bjarkan_sdk-0.2.1.dist-info/METADATA,sha256=-x0dbzMdKYufz6QmA2LS8r0_q6rlscxfp-gMxUATEvg,5536
+bjarkan_sdk-0.2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bjarkan_sdk-0.2.1.dist-info/top_level.txt,sha256=TmHzF7-8RMkArQS_GDx2ah-hYb-U8xEgxbsVrtOCMlc,12
+bjarkan_sdk-0.2.1.dist-info/RECORD,,
