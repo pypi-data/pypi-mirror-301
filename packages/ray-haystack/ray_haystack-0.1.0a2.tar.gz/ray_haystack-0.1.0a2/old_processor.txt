@@ -1,0 +1,303 @@
+import logging
+from collections import defaultdict
+from typing import Any, Dict, List, Optional, Set, Tuple
+
+import ray
+from haystack.core.errors import PipelineMaxLoops, PipelineRuntimeError
+from ray.actor import ActorHandle
+from ray.util.queue import Queue
+
+from ray_haystack.graph import ComponentNode, RayPipelineGraph
+from ray_haystack.ray_pipeline_events import (
+    ComponentEndEvent,
+    ComponentStartEvent,
+    PipelineEndEvent,
+    PipelineStartEvent,
+)
+from ray_haystack.ray_pipeline_settings import RayPipelineSettings
+
+
+@ray.remote
+class RayPipelineProcessor:
+    def __init__(
+        self,
+        graph: RayPipelineGraph,
+        max_loops_allowed: int,
+        ray_settings: RayPipelineSettings,
+        component_actors: Dict[str, ActorHandle],
+        events_queue: Queue,
+        pipeline_inputs: Dict[str, Any],
+        include_outputs_from: Set[str],
+    ):
+        self._graph = graph
+        self._max_loops_allowed = max_loops_allowed
+        self._ray_settings = ray_settings
+        self._component_actors = component_actors
+        self._events_queue = events_queue
+        self._pipeline_inputs = pipeline_inputs
+        self._include_outputs_from = include_outputs_from
+
+        self._inputs: Dict[str, Dict[str, Any]] = defaultdict(dict)
+        self._outputs: Dict[str, Dict[str, Any]] = defaultdict(dict)
+
+        self._visits: Dict[str, int] = defaultdict(int)
+
+        logging.basicConfig(
+            format="%(asctime)s %(levelname)-8s %(message)s",
+            level=logging.INFO,
+            datefmt="%Y-%m-%d %H:%M:%S",
+        )
+        self.logger = logging.getLogger("haystack.ray-pipeline-processor")
+
+    def run_pipeline(self) -> Dict[str, Any]:
+        unfinished = []
+
+        # Update pipeline inputs for each component and assign defaults to non-connected inputs (both if available)
+        self._assign_input_defaults()
+
+        # Obtain components which are ready to run (run_queue) or can run with provided defaults (wait_queue)
+        (run_queue, wait_queue) = self._initial_nodes_to_run()
+
+        self.logger.info(f"Initial components to run: {run_queue}, waiting queue: {wait_queue}")
+
+        self._events_queue.put_nowait(
+            PipelineStartEvent(
+                data={
+                    "pipeline_inputs": self._pipeline_inputs,
+                    "run_queue": [node.get_name() for node in run_queue],
+                    "wait_queue": [node.get_name() for node in wait_queue],
+                }
+            )
+        )
+
+        # Initially run components which we can run straight away (no incoming connections)
+        for node in run_queue:
+            unfinished.append(self._schedule_component_run(node.get_name()))
+
+        while unfinished or wait_queue:
+            finished, unfinished = ray.wait(unfinished, num_returns=1)
+
+            if not finished and wait_queue:
+                next_node_to_run = wait_queue.pop(0)
+                self._assign_defaults_to_missing_inputs(next_node_to_run)
+                self.logger.info(f"Running next node from waiting queue {next_node_to_run}")
+                unfinished.append(self._schedule_component_run(next_node_to_run.get_name()))
+                continue
+
+            node_name, outputs = ray.get(finished[0])
+            finished_node = self._graph.get_node(node_name)
+
+            # If we finished running a node and it was in a waiting queue, remove it from wait_queue
+            if finished_node in wait_queue:
+                self.logger.info(f"Remove {finished_node} from wait_queue, remaining: {wait_queue}")
+                wait_queue.remove(finished_node)
+
+            self.logger.info(f"Finished running component {node_name}")
+            print(outputs)
+
+            if not isinstance(outputs, dict):
+                raise PipelineRuntimeError(
+                    f"Component '{node_name}' didn't return a dictionary. "
+                    "Components must always return dictionaries: check the the documentation."
+                )
+
+            self._events_queue.put_nowait(
+                ComponentEndEvent(
+                    data={
+                        "name": finished_node.get_name(),
+                        "output": outputs,
+                        "iteration": self._visits[node_name],
+                    }
+                )
+            )
+
+            # Increase 'visits' count - track number of times component has ran
+            self._visits[node_name] += 1
+
+            # Update (and store) component outputs with most recent invocation results
+            self._outputs[node_name] = outputs
+
+            # Update component inputs with recent invocation results
+            self._assign_inputs_from_outputs(node_name, outputs)
+
+            # We will run only those downstream components which are receiving inputs
+            next_nodes_to_run = self._next_nodes_to_run(node_name, outputs)
+
+            # Try to run all downstream (connected) component if component inputs are ready
+            for to_node in next_nodes_to_run:
+                to_node_name = to_node.get_name()
+                if self._has_enough_inputs_to_run(to_node):
+                    if self._visits[to_node_name] > self._max_loops_allowed:
+                        msg = f"Maximum loops count ({self._max_loops_allowed}) exceeded for component '{to_node_name}'"
+                        raise PipelineMaxLoops(msg)
+
+                    self.logger.info(f"Schedule FROM:{finished_node}, TO_NODE: {to_node}")
+                    running_component = self._schedule_component_run(to_node_name, sender_name=node_name)
+                    unfinished.append(running_component)
+                else:
+                    self.logger.info(f"Skip running {to_node}. Not enough inputs")
+
+        pipeline_output = self._build_pipeline_outputs()
+
+        self._events_queue.put_nowait(
+            PipelineEndEvent(
+                data={
+                    "output": pipeline_output,
+                    "include_outputs_from": [],
+                }
+            )
+        )
+
+        return pipeline_output
+
+    def _schedule_component_run(self, name: str, sender_name: Optional[str] = None):
+        node = self._graph.get_node(name)
+        actor = self._component_actors[name]
+        component_inputs = self._inputs[name]
+
+        scheduled_run = actor.run_component.remote(component_inputs)  # type:ignore
+
+        self._events_queue.put_nowait(
+            ComponentStartEvent(
+                data={
+                    "name": name,
+                    "sender_name": sender_name,
+                    "input": component_inputs,
+                    "iteration": self._visits[name],
+                }
+            )
+        )
+
+        # After scheduling component execution we will make sure inputs are reset
+        # before next component execution happens (e.g. clean values for connected inputs)
+        self._reset_component_inputs(node)
+
+        return scheduled_run
+
+    def _assign_input_defaults(self):
+        for name, node in self._graph._nodes.items():
+            component_inputs = self._pipeline_inputs.get(name, {})
+            for input_name in node.get_all_input_names():
+                if input_name in component_inputs:
+                    self._inputs[name][input_name] = component_inputs[input_name]
+                elif node.has_default_value(input_name) and not node.is_connected(input_name):
+                    self._inputs[name][input_name] = node.get_default_value(input_name)
+
+    def _next_nodes_to_run(self, output_node_name, outputs: Dict[str, Any]):
+        next_nodes_to_run: List[ComponentNode] = []
+        from_node = self._graph.get_node(output_node_name)
+
+        for to_node, arg_mapping in from_node._node_out_args.items():
+            for out_name in arg_mapping.keys():
+                if out_name in outputs:
+                    next_nodes_to_run.append(to_node)
+
+        return next_nodes_to_run
+
+    def _assign_inputs_from_outputs(self, output_node_name, outputs: Dict[str, Any]):
+        from_node = self._graph.get_node(output_node_name)
+
+        for to_node, arg_mapping in from_node._node_out_args.items():
+            component_inputs = self._inputs[to_node.get_name()]
+            for out_name, in_name in arg_mapping.items():
+                if out_name in outputs:
+                    out_value = outputs[out_name]
+                    if to_node.is_variadic(in_name):
+                        variadic_input = component_inputs.get(in_name, [])
+                        variadic_input.append(out_value)
+                        component_inputs[in_name] = variadic_input
+                    else:
+                        component_inputs[in_name] = out_value
+                # Upstream node does not provide connected output, take default value
+                elif to_node.has_default_value(in_name):
+                    component_inputs[in_name] = to_node.get_default_value(in_name)
+
+    def _has_enough_inputs_to_run(self, node: ComponentNode):
+        component_inputs = self._inputs[node.get_name()]
+
+        for input_name in node.get_all_input_names():
+            is_variadic = node.is_variadic(input_name)
+            is_greedy = node.is_greedy()
+
+            if not is_variadic:
+                if input_name not in component_inputs:
+                    return False
+            else:
+                senders = node.get_senders(input_name)
+                number_of_inputs_expected = len(senders)
+                number_of_inputs_received = len(
+                    component_inputs[input_name]
+                )  # please notice it could be pipeline input as well
+
+                # We can not run variadic component until we know all outputs from senders and all outputs received
+                # E.g. some components may conditionally decide to provide output or not, we need to wait for all
+                # outputs to know exactly how to proceed
+                if not is_greedy and number_of_inputs_received != number_of_inputs_expected:
+                    return False
+
+                # No inputs for a greedy variadic input means we should wait until one is available
+                if is_greedy and number_of_inputs_received < 1:
+                    return False
+        return True
+
+    def _reset_component_inputs(self, node: ComponentNode):
+        component_inputs = self._inputs[node.get_name()]
+        for input_name in list(component_inputs.keys()):
+            if node.is_variadic(input_name):
+                # Cleanup variadic inputs for next component run
+                component_inputs[input_name] = []
+            elif node.is_connected(input_name):
+                # Remove component input and wait for the next input from the connection
+                component_inputs.pop(input_name)
+
+    def _build_pipeline_outputs(self):
+        result = {}
+
+        for name, output in self._outputs.items():
+            if name in self._include_outputs_from:
+                result[name] = output
+            else:
+                consumed_keys = self._graph.get_node(name).get_output_names()
+                unconsumed_output = {key: value for key, value in output.items() if key not in consumed_keys}
+                if unconsumed_output:
+                    result[name] = unconsumed_output
+
+        return result
+
+    def _assign_defaults_to_missing_inputs(self, node: ComponentNode):
+        component_inputs = self._inputs[node.get_name()]
+        for input_name in node.get_all_input_names():
+            if node.is_connected(input_name) and node.has_default_value(input_name):
+                component_inputs[input_name] = node.get_default_value(input_name)
+
+    def _initial_nodes_to_run(self) -> Tuple[List[ComponentNode], List[ComponentNode]]:
+        to_run = []
+        to_wait = []
+
+        for node_name, node in self._graph._nodes.items():
+            if node.in_degree_is_zero():
+                to_run.append(node)
+                continue
+
+            component_pipeline_inputs = self._pipeline_inputs.get(node_name, {})
+            print(node_name, component_pipeline_inputs)
+
+            can_wait = True
+            for input_name in node.get_all_input_names():
+                # We can run with pipeline inputs provided
+                if input_name in component_pipeline_inputs:
+                    continue
+
+                # We can run with default values for non-connected sockets
+                if not node.is_connected(input_name) and node.has_default_value(input_name):
+                    continue
+
+                # We will not run components with connected inputs
+                if node.is_connected(input_name):
+                    can_wait = False
+                    break
+
+            if can_wait:
+                to_wait.append(node)
+
+        return (to_run, to_wait)
