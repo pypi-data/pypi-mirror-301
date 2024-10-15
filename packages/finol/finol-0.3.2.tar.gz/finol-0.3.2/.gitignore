@@ -1,0 +1,9 @@
+/build
+/dist
+/docs/_build/
+/docs/build/
+/docs/source/api/generated/
+/FinOL.egg-info
+/finol/logdir/
+/finol/data/
+/finol/model_layer/SAPP.py

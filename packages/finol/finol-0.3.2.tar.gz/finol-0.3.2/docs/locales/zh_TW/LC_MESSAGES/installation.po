@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, FinOL Contributors
+# This file is distributed under the same license as the FinOL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FinOL 0.1.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-13 01:01+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_TW\n"
+"Language-Team: zh_TW <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../source/installation.rst:2
+msgid "Installation"
+msgstr "安裝"
+
+#: ../../source/installation.rst:4
+msgid ""
+"``FinOL`` is available on `PyPI <https://pypi.org/project/finol>`__, we "
+"recommend to install ``FinOL`` via pip:"
+msgstr ""
+"``FinOL`` 可在在 `PyPI <https://pypi.org/project/finol>`__ 上獲取，我們建議用戶透過 pip 安裝 ``FinOL``"
+
+#: ../../source/installation.rst:11
+msgid ""
+"You can also install the development version of ``FinOL`` from master "
+"branch of Git repository:"
+msgstr ""
+"除了可以透過 PyPI 安裝正式發佈的 ``FinOL`` 版本，用戶也可以從 Git 倉庫的 master 分支安裝 ``FinOL`` 的開發版本。"
+
+#: ../../source/installation.rst
+msgid ""
+"Install ta-lib dependency"
+msgstr ""
+"安裝 ta-lib 依賴"
+
+#: ../../source/installation.rst
+msgid "``ta-lib`` is an open-source technical indicator library for financial applications, and unlike other dependencies, this library is not a mandatory requirement for the basic operation of ``FinOL``. It is specifically utilized when advanced data processing and analysis are required to enhance the model's capabilities."
+msgstr "``ta-lib`` 是一個用於金融應用的開源技術指標庫，與其他依賴項不同，該庫不是 ``FinOL`` 基本操作的強制性要求。它專門用於需要高級數據處理和分析以增強模型能力的情況。"
+
+#: ../../source/installation.rst
+msgid ""
+"Follow the steps below based on your operating system to install ``ta-lib``:"
+msgstr ""
+"根據您的操作系統，請按照以下步驟安裝 ``ta-lib``："
+
+#: ../../source/installation.rst
+msgid ""
+"For users using Anaconda, it is highly recommended to prioritize installing ``ta-lib`` using conda, as conda installation is very convenient."
+msgstr ""
+"對於使用 Anaconda 的用戶，強烈建議優先使用 conda 安裝 ``ta-lib``，因為 conda 安裝非常便捷。"
+
+#: ../../source/installation.rst
+msgid ""
+"Try installing ``ta-lib`` via pip first"
+msgstr ""
+"請首先嘗試透過 pip 安裝 ``ta-lib``"
+
+#: ../../source/installation.rst
+msgid ""
+"If an error occurs, then install package corresponding to your Python manually from the "
+"`talib whl collection website <https://sourceforge.net/projects/talib-whl/files/ta_lib_0.4.28/>`__"
+msgstr ""
+"如果出現錯誤，請手動安裝與您的 Python 相對應的包，您可以从 `talib whl 網站 <https://sourceforge.net/projects/talib-whl/files/ta_lib_0.4.28/>`__ 下載相對應的包。"
+
+#: ../../source/installation.rst
+msgid ""
+"For example, with Python 3.10 and the whl file downloaded to the local path C:\\\Users\\\John\\\Downloads. "
+"After downloading the whl file, all you need to do is run the following command:"
+msgstr ""
+"以 Python 3.10，whl 文件下載到本地路徑 C:\\\Users\\\John\\\Downloads 為例。"
+"在下載 whl 文件後，您只需運行以下命令："
+
+#: ../../source/installation.rst
+msgid ""
+"To verify if the installation is successful, run:"
+msgstr ""
+"要驗證安裝是否成功，請運行："
+
+#: ../../source/installation.rst
+msgid ""
+"If the installation is successful, it should output the current version of ``ta-lib`` without any errors."
+msgstr ""
+"如果安裝成功，應該能夠輸出當前版本的 ``ta-lib``，而且沒有任何錯誤。"
+
+#: ../../source/installation.rst
+msgid ""
+"Will be completed later."
+msgstr ""
+"即將補充。"
+
+#: ../../source/installation.rst
+msgid ""
+"If an error occurs, manually compile and install ``ta-lib`` from source:"
+msgstr ""
+"如果出現錯誤，手動編譯並安裝 ``ta-lib``："
+
+#: ../../source/installation.rst
+msgid ""
+"If you are using Anaconda, installation becomes very simple at this point. "
+"With just one line of command, you can complete the installation on 64-bit Windows, Linux and Mac OSX systems, "
+"including Macs with Apple M1/M2 chips using the Arm architecture:"
+msgstr ""
+"如果您使用的是 Anaconda, 那麼安裝就變得非常簡單了。只需一行命令，"
+"您就可以在 64 位 Windows、Linux 和 macOS（包括 Arm 架構的 M1/M2 芯片的 Mac）系統上完成安裝："
+
+#: ../../source/installation.rst
+msgid ""
+"Python Version"
+msgstr ""
+"Python 版本"
+
+#: ../../source/installation.rst
+msgid ""
+"ta-lib WHL File"
+msgstr ""
+"ta-lib WHL 文件"
+
+msgid "Install mplfinance dependency"
+msgstr "安裝 mplfinance 依賴"
+
+msgid "``FinOL`` relies on the ``mplfinance`` library for converting data into images suitable for model input. Please note that the ``mplfinance`` is not an essential dependency for the basic functionality of ``FinOL``. It is specifically required for the optional task of extracting image representations of the data."
+msgstr "``FinOL`` 依賴於 ``mplfinance`` 庫將數據轉換為適合模型輸入的圖像。請注意，``mplfinance`` 不是 ``FinOL`` 基本功能的必要依賴。它專門用於提取數據的圖像表示的可選任務。"
+
+msgid "If image-based OLPS tasks are desired, ``mplfinance`` can be employed to enhance the model's ability to identify complex patterns and trends within the financial data. However, this step is not mandatory for most models of the ``FinOL``."
+msgstr "如果需要基於圖像的 OLPS 任務，可以使用 ``mplfinance`` 來增強模型識別金融數據中複雜模式和趨勢的能力。然而，對於大多數 ``FinOL`` 模型而言，這一步並不是強制性的。"
+
+msgid "Follow the steps to install ``mplfinance``:"
+msgstr "請按照以下步驟安裝 ``mplfinance``："
+
+msgid "If the installation is successful, it should output the current version of ``mpf`` without any errors."
+msgstr "如果安裝成功，它應該輸出當前版本的 ``mpf``，且沒有任何錯誤。"
