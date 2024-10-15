@@ -1,0 +1,11 @@
+irisml/tasks/call_azure_openai_completion.py,sha256=8QLOdUB9jv0wsD8DuN7XBf9KnsYk3ePNPwBKq_URnmg,2761
+irisml/tasks/compute_image_token_number.py,sha256=dw-CCjqx331f8lE2stebXu1wetwKxqQBCdD1jidpqHs,3819
+irisml/tasks/compute_text_token_number.py,sha256=G8_rxprJ0P8LnsdHNF2S8tq12W-A2Jvz9s98kNYUt3Y,2728
+irisml/tasks/create_azure_openai_chat_model.py,sha256=wmmvsBhvK4lzASB5ttrejBam-k8YOXmcacaUaKOw3i4,7239
+irisml/tasks/create_azure_openai_chat_with_images_model.py,sha256=2e3Ia_oAeZLFWJLiAJ0EksJR59ULdhZWk0Ot46z45BI,10326
+irisml/tasks/create_azure_openai_completion_model.py,sha256=Ue1sLdTnYfiMS2F7EFWnUx2tRB1U8SpC60W2SBE5rA0,10938
+irisml_tasks_azure_openai-0.0.11.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+irisml_tasks_azure_openai-0.0.11.dist-info/METADATA,sha256=ZQu_71LLk97L8gbREN7AcwDT-npYgmk1GMrv6OrEmRw,1978
+irisml_tasks_azure_openai-0.0.11.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+irisml_tasks_azure_openai-0.0.11.dist-info/top_level.txt,sha256=-O6mZvBaJ0q2Xuea9BVCfU8n5tO5UO5aLoPn_Eos3Ao,7
+irisml_tasks_azure_openai-0.0.11.dist-info/RECORD,,
