@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pytest_xflaky/__init__.py
+src/pytest_xflaky/add_decorator.py
+src/pytest_xflaky/github_blame.py
+src/pytest_xflaky/plugin.py
+src/pytest_xflaky.egg-info/PKG-INFO
+src/pytest_xflaky.egg-info/SOURCES.txt
+src/pytest_xflaky.egg-info/dependency_links.txt
+src/pytest_xflaky.egg-info/entry_points.txt
+src/pytest_xflaky.egg-info/requires.txt
+src/pytest_xflaky.egg-info/top_level.txt
+tests/test_add_decorator.py

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-xflaky"
+description = "A simple plugin to use with pytest"
+version = "1.0.3"
+readme = "README.rst"
+requires-python = ">=3.10"
+authors = [{ name = "Tesorio", email = "caio@tesorio.com" }]
+maintainers = [{ name = "Tesorio", email = "caio@tesorio.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+  "Framework :: Pytest",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Testing",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+  "pytest-json-report",
+  "pytest>=8.2.1",
+  "requests",
+  "tree-sitter",
+  "tree-sitter-python",
+]
+
+[project.urls]
+Repository = "https://github.com/Tesorio/pytest-xflaky"
+
+[project.entry-points.pytest11]
+# https://docs.pytest.org/en/latest/how-to/writing_plugins.html#making-your-plugin-installable-by-others
+xflaky = "pytest_xflaky.plugin"
