@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mkdocs-chessboard-plugin
+Version: 0.1.7
+Summary: 
+Author: Oliver Schlüter
+Author-email: 117340990+oscep@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: mkdocs (>=1.6.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# mkdocs-chessboard-plugin
+
+This is a plugin for [MkDocs](https://www.mkdocs.org/) that allows you to easily add chessboards to your markdown files.
+
+## Installation
+
+Install the plugin using pip:
+
+```bash
+pip install mkdocs-chessboard-plugin
+```
+
+Activate the plugin in `mkdocs.yml`:
+
+```yaml
+plugins:
+  - search
+  - chessboard
+```
