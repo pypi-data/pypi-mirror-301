@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ib_interface
+Version: 0.0.1
+Summary: A Python Framework for Interactive Brokers TWS API
+Home-page: https://github.com/jxtngx/ib-interface
+Author: Justin Goheen
+Author-email: 
+License: Apache 2.0
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: bandit; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Requires-Dist: mkdocs-glightbox; extra == "docs"
+Provides-Extra: dev-all
+Requires-Dist: ib_interface[dev,docs]; extra == "dev-all"
+
+<!-- # Copyright Justin R. Goheen.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License. -->
+
+# IB Interface
+
+An adaption of [ib-insync](https://github.com/erdewit/ib_insync).
+ 
