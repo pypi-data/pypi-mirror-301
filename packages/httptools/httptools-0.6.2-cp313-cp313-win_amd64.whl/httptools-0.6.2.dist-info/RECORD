@@ -1,0 +1,11 @@
+httptools/__init__.py,sha256=uWLIa0nghlhLGoS8My_6YVhUlFbv3FhYsvxYpZHecS8,153
+httptools/_version.py,sha256=vmECduXykkZ3hx24T-COxGqJoktLyDNC1tMlav_t6MU,588
+httptools/parser/__init__.py,sha256=1XGlLzcfsdWYFehxDHaQJUl7RhWnSwG9hWpVkUKK50g,171
+httptools/parser/errors.py,sha256=fQeEGiZ6AQH7SIa-7uzMs5QggoXr0A8YBPVHmafSw5Q,596
+httptools/parser/parser.cp313-win_amd64.pyd,sha256=ItGqbJKP8u18Mnva7CVT6vy4QXeimJS3r_lqaLRcvdo,114688
+httptools/parser/url_parser.cp313-win_amd64.pyd,sha256=ZGs5ujtY1bPRcZrnVGZu-ECztZY7lYGiTRGNaZ4V4q4,53248
+httptools-0.6.2.dist-info/LICENSE,sha256=HAKLBZ16WOFMzaOMq87WmMWR_mFP--T3IUMERuhsjWk,1114
+httptools-0.6.2.dist-info/METADATA,sha256=JxdQy2gDhQNcsbcj8Jn6urYhmygTn3R5lMmOXmfIsbM,3718
+httptools-0.6.2.dist-info/WHEEL,sha256=WsITy9NjrxZo875xZQhJpU3vZUHVZRtNnEd5DMBQpxU,101
+httptools-0.6.2.dist-info/top_level.txt,sha256=APjJKTbZcj0OQ4fdgf2eTCk82nK1n2BFXOD7ky41MPY,10
+httptools-0.6.2.dist-info/RECORD,,
