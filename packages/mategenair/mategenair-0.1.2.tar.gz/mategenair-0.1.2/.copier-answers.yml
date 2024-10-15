@@ -1,0 +1,13 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_src_path: ./extension-template-main
+author_email: 2323365771@qq.com
+author_name: jiutian
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: mategen
+project_short_description: A JupyterLab extension.
+python_name: mategen
+repository: ''
+test: true
+
