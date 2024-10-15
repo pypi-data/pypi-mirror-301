@@ -1,0 +1,9 @@
+einops
+einx
+jieba
+huggingface_hub
+mlx
+numpy
+setuptools
+soundfile
+vocos-mlx
