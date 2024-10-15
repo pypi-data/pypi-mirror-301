@@ -1,0 +1,2 @@
+[console_scripts]
+cutiepynb = cutiepynb.cli:main
