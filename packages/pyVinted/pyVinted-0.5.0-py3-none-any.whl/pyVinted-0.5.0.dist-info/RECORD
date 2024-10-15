@@ -1,0 +1,12 @@
+pyVinted/__init__.py,sha256=pJ1OE_i8c4LTo6lX-cQEnpv_89_7WNh8H4fpIILCCqc,59
+pyVinted/requester.py,sha256=o4HrkuFEJAn2GWlYDpzGqMROFtNWjMv9ajgTw-B88PA,3048
+pyVinted/settings.py,sha256=9oYxmuZRo82CvdX0F4oRYK__DZhJLoF9P7ClaiGLing,91
+pyVinted/vinted.py,sha256=2tK0Qva8VhzIMP7CQUQJ7SGUEJ_YDHrfZn9k65Dyh0E,589
+pyVinted/items/__init__.py,sha256=Aik1l-Ldb31RPUpBAYcCEFg2CHSW3f_FMAyf_VtA-y4,39
+pyVinted/items/item.py,sha256=sAdcvXCYHOpZpfAskg79fyxIWPOz3mDEPBhhg2HOz0w,1035
+pyVinted/items/items.py,sha256=F-9MGeQ4fSeiggloiNNzEF61XEmjdrZ0P3fu8P18ucE,3678
+pyVinted-0.5.0.dist-info/LICENSE,sha256=wb8Iv2FnSCl-u3eVWXNf5LikQuNaoggzCprWHKzJX28,1068
+pyVinted-0.5.0.dist-info/METADATA,sha256=fRH4SwmqZtNcYLRzRveWEitxhTMzd0tGsKFXnDAHJvw,1208
+pyVinted-0.5.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pyVinted-0.5.0.dist-info/top_level.txt,sha256=BclC1UN6qRdwQUSSS8smqqbL92k8bUgsX4qiKr6OI9A,9
+pyVinted-0.5.0.dist-info/RECORD,,
