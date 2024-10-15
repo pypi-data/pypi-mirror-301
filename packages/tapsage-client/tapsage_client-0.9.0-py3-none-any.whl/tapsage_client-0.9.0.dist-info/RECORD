@@ -1,0 +1,12 @@
+tapsage/__init__.py,sha256=vMRH60A_5EHoFAYHhF7Zazp5aw8tlHT_r1ey0zAB-aM,89
+tapsage/tapsagebot.py,sha256=GCsD2dD4rPMu41ROOvDl-MY6WQo9Q868MyFR7mTaUsY,6538
+tapsage/taptypes.py,sha256=PpYKe6H5OJS1jptGKuMpqwRP1-dQWIw7s82g45TDaG8,2917
+tapsage/tapuser.py,sha256=ihbmn-JRwzrIsO53-TU0coDlAXSn-rbGyrUZEKC-u24,961
+tapsage/async_tapsage/__init__.py,sha256=yyJd0i0ZYFfzzCphsX7e_pLjtLGoiEiHRZyt_-XcR34,72
+tapsage/async_tapsage/asynctapbot.py,sha256=FSM6o1lDP_mTYxOPcu_8Cqe6DdI6vQ4Z0mMvYu47iy8,7206
+tapsage/async_tapsage/asynctapuser.py,sha256=dB__tNnk5_U26KthG4QtP8wx-8fTxjaHd9lJDvGEiX8,1668
+tapsage_client-0.9.0.dist-info/LICENSE.txt,sha256=tgbh3jFVZwJ3dmJ7BjYFmV2z9lzgOn9xN4eHPfIFrdw,11341
+tapsage_client-0.9.0.dist-info/METADATA,sha256=m6tMBBO1D4Tgjzl5aZne-jIWTn3Y-nUGGmATOfSV5fg,17458
+tapsage_client-0.9.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+tapsage_client-0.9.0.dist-info/top_level.txt,sha256=tli3yBcvQstb6UVm6tyIrOX6Bhj2lriYAYhu_u87IwI,8
+tapsage_client-0.9.0.dist-info/RECORD,,
