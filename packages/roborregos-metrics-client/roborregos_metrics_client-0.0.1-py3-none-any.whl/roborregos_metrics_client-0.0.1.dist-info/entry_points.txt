@@ -1,0 +1,3 @@
+[console_scripts]
+roborregos-metrics-worker = src.worker.worker:main
+
