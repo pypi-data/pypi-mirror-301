@@ -1,0 +1,613 @@
+#
+# Notes
+# -----
+# All lines beginning with "#" are comments and ignored by the program.
+# Removing or placing a "#" at the start will activate resp. silence that line.
+#
+# All strings (text in quotation marks) can be adapted but make sure to:
+#     1. keep the quotation marks so that text stays of type string.
+#     2. distinguish separate_WordsBy-otherMEANS than space, * | /\ $ : ; %
+#     etc. (for file-handling).
+# All numbers or True/False values can be changed (no surrounding quotes; these
+#     are not strings).
+#
+# Save this file (EXPTXT) as unformatted text with "EXP" replaced by its value
+# (ExpSessionName) set below, resulting in CONFNAM. This is done interactively
+# when using the `coalispr init` command, including placing the file CONFNAM in
+# the SAVEIN work folder.
+
+
+# Name session/experiment "ExpSessionName"
+# ----------------------------------------
+# After editing is complete save this file as 3_ExpSessionName.txt in the same
+# folder as the original. Replace "ExpSessionName" by one short word, no spaces
+# or special characters (it is part of a file name), keep surrounding quotes.
+# For "EXP" to be meaningful, strain names come to mind; e.g. JEC21, H99.
+#EXP         = "ExpSessionName"
+# Exp can be set by "coalispr init" with "###EXP_BY_INIT" as the given name.
+EXP         = "###EXP_BY_INIT"
+CONFNAM     = "3_###EXP_BY_INIT.txt"
+# Display name for experiment is set to species name (not directly used),
+EXPNAM      = "SpeciesName"
+# Display experiment name in figure titles
+# ----------------------------------------
+EXPDISP     = r'$\mathit{'+EXPNAM+'}$'
+#
+# Parameter settings
+# ------------------
+# The kind of aligned reads, either collapsed or uncollapsed, in the dataset.
+# Values are TAGCOLL (collapsed) or TAGUNCOLL (uncollapsed) set in 2_shared.txt
+TAG         = TAGUNCOLL
+# Choose which segments of reads are counted; as based on kind of aligned reads.
+TAGSEG      = TAGUNCOLL
+# Choose which kind of bam files with aligned reads are counted.
+# Counting collapsed reads is very fast, no information will be lost.
+TAGBAM      = TAGCOLL
+#
+# To facilitate bedgraph comparison the genome needs to be split into fragments;
+# BINSTEP is the size of these fragments;
+# Note that this approach reduces nucleotide resolution to a scale 1:BINSTEP
+# Reducing BINSTEP, to say 20, increases resolution but slows down proceedings.
+BINSTEP     = 50
+#
+# UNSPECLOG10 is the log10 fold difference between specific peaks and unspecific
+# background noise. For example with UNSPECLOG10 set to 1.3 = 10^1.3 = 19.95, a
+# ~20-fold difference is used. This means that, in order to be specified as
+# "specific", 20-fold more signal needs to be present in a bin for reads of a
+# specific/mutant sample than in that bin for reads from a negative sample. If
+# less signal-difference is found, these reads are specified as "unspecific" and
+# ignored. When no reads are specified (no bedgraphs are drawn) reduce this
+# number; it indicates that the experiment has a lower signal-to-noise ratio.
+# For example with UNSPECLOG10 = 0.61, the required difference is ~4-fold.
+UNSPECLOG10 = 0.905
+# Series of possibilities for UNSPECLOG10
+# values corresponding to ~4, ~6, ~8, 10, ~20 #, ~50, 100 fold difference
+UNSPECTST   = 0.61, 0.78, 0.905, 1.0, 1.3 #, 1.7, 2.0
+#
+# 2^LOG2B is used as background threshold for reads in that bin to be considered
+LOG2BG      = 5           # 2^5 = 32
+# Series of possibilities for LOG2BG
+LOG2BGTST   = 4,5,6,7,8,9,10
+#
+# USEGAPS indicate the size of gaps tolerated between sections of a specified
+# region/segment; 1*BINSTEP is the minimal gap that can be set.
+# For miRNAs BINSTEP seems a good choice; for large transcript regions targetted
+# by siRNAs a larger value is more fitting to reduce number of single hits.
+USEGAPS     = 150         # 3*BINSTEP
+# Keep unspecific signals as tight as possible, don"t fuse these.
+UNSPCGAPS   = BINSTEP
+# Series of possibilities for USEGAPS
+UGAPSTST    = 50, 100, 150, 200, 300
+
+
+# Bam-counting
+# ------------
+# For miRNAs single peaks can be expected. To score these for counting, expand
+# hit coordinates by given, small fraction of BINSTEP (<1).
+MIRNAPKBUF  = 1/5  # 1/5 with BINSTEP 50; 1/4 for miRNA with BINSTEP 20.
+# For siRNA analysis this buffering is not be needed when siRNA peaks congregate
+# and form lengthy segments overlapping a target. Set to 0 to skip single peaks.
+# The offsets define minimal length of region (2*BINSTEP*MIRNAPKBUF) to be
+# counted. BINSTEP is used when MIRNAPKBUF is set to 0.
+#
+# Alignment check
+# +++++++++++++++
+# Minimum length mapped read from (STAR) alignment or (Flexbar) trim parameters.
+#XLIM0       = 12  # set in 'Settings for Figures'
+#
+#
+# Setting to define sequencing type, single end (SE) vs paired-end  (PE)
+#CNTTYP      = SE # if FLAG in [0,16], else
+#CNTTYP      = PE
+#
+# Setting for expected alignment, that can be checked via the cigar string:
+# 'fully matched' (CIGFM) or 'with point deletions (CIGPD)' # see 2_shared.txt
+# Cigar items as marked in 'cigartuples;cigarstring'
+#   0;M, 1;I, 2;D, 3;N, 4;S, 5;H, 6;P, 7;=, 8;X, or 9;B
+#   cigartuples = (operation, length)
+#   # for short SE sequences only accept matches (0;M) and gaps (3;N)
+#   # for UV-irradiated sequences with point deletions accept (0,2,3)
+# For point-mutations (substitutions) (in UV-irradiated sequences) check,
+# separately, SAM-tag nM/NM via settings NM (in 2_shared.txt) and NRMISM.
+#
+# Set function to check cigar string with; for short RNAs:
+CIGARCHK    = CIGFM # [0,3]
+# Number of tolerated substitutions (mismatches) defined for NM:
+NRMISM      = 0
+# for UV-irradiated samples allow point-deletions (CRAC) or substitutions (CLIP)
+# CIGARCHK    = CIGPD # [0,2,3] or [2,>1]
+# NRMISM      = 1
+#
+# Minimum size for gap in alignment to count as "intron".
+# During counting of bamfiles, gap sizes are read from the cigar string.
+MININTRON   = 20
+#
+# BamCounters
+# +++++++++++
+# List of lists with counters for read numbers; (defined in "2_shared.txt")
+CNTRS          = [CNTREAD, CNTCDNA, CNTGAP, CNTSKIP]
+# List of length-counters' lists; (subsets defined in "2_shared.txt")
+LENCNTRS       = [LENREAD, LENCDNA, LENGAP]
+# For counting  multimap occurrences (defined in "2_shared.txt")
+MMAPCNTRS      = [ [LIBR, INTR] ]
+# Omit counting introns/gaps: 
+#CNTRS          = [CNTREAD, CNTCDNA, CNTSKIP]
+#LENCNTRS       = [LENREAD, LENCDNA]
+#MMAPCNTRS      = [ [LIBR] ]
+#
+# Segments
+# ++++++++
+# BINS is the number of bins (1 or over) to split each specified segment for
+# which reads are counted. This helps to map possible coverage differences
+# dependent on conditions, say the effect of isolating RNA via RIP1 vs. RIP2).
+BINS        = 1 #5
+#
+# Reads in UNSPECIFIC segments that comply with SPECIFIC small RNA
+# characteristics can be retrieved and copied to new bam files for further
+# analysis/mapping. These reads are called "unselected" reads.
+# Define here the length range and start nucleotide for such reads. The range
+# is a tuple, that is: Shortest length (BAMLOW), Longest length (BAMHIGH).
+BAMLOW      = 19
+BAMHIGH     = 25
+BAMPEAK     = BAMLOW, BAMHIGH
+# List of start nucleotides; 5" end of siRNAs in fungi are U (T in the reads).
+BAMSTART    = "T"
+# Name of bash script to make bedgraphs from above new bam files using STAR.
+BAM2BGNAM   = "bm2bg.sh"
+# Path to script
+BAM2BG      = p / "share" / "bash_scripts" / BAM2BGNAM
+
+
+# Settings for Figures
+# --------------------
+# Correct chromosome name when displaying bedgraph traces with `showgraphs` by
+# adjusting x-axis label
+CHROMLBL    = "Chromosome"
+#CHROMLBL    = ""
+#
+# 'Backends' are the programs matplotlib uses to present a graphical users'
+# interface (GUI). You will see that this setting determines the look and
+# feel of the interface. A common backend is 'QtAgg', but when many samples
+# are analyzed some `showcount` options can cause python to exit with:
+#    `ICE default IO error handler doing an exit(), .. errno = 32`
+# Errors or warnings with 'GTK4Agg' can also occur, like
+#    `Warning: Attempting to freeze the notification queue for object
+#    GtkImage[0x5e7f690];
+#    Property  notification does not work during instance finalization.
+#    lambda event: self.remove_toolitem(event.tool.name))'
+# In those cases change BACKEND to, say, 'TkAgg' or 'GTK3Agg'.
+#BACKEND     = 'TkAgg'
+#BACKEND     = 'GTK4Agg'
+BACKEND     = 'GTK3Agg'
+#BACKEND     = 'QtAgg'
+# Length boundaries of introns (gaps in alignment) to be displayed in figures.
+MINGAP      = 30 #MININTRON
+MAXGAP      = 150
+# Interval for tick-labels on x-axis for intron-length distributions.
+INTSTEP     = 10
+# Set interval of lengths without data to skip
+SKIPINT      = ""
+#SKIPINT    = 190, 350
+# Length boundaries of reads to be displayed in count figures
+XLIM0       = 12 # minimum mapping lengt.reset_index
+XLIM1       = 40
+XLIM00      = 16
+XLIM11      = 26
+XLIMMIN     = 12 # minimal length of a mapped read
+XLIMMAX     = 75 # maximum length of a read
+# Allow separate constants for region length-distributions.
+XLIMR0      = XLIM00
+XLIMR1      = XLIM11
+# Factor defining relative height of sample-panes in bardiagrams
+# for many samples a low CPPHFAC keeps the figure managable
+# Library counts (CountPanelPlotter)
+CPPHFAC     = 1/8 #0.125
+# Length distributions of reads or introns/gaps ((Broken)LengthPanelPlotter)
+LPPHFAC     = 1/5 #0.2    #1/4 #0.25   #3/8  #0.375
+# When assembling stacked panels for all samples, the total height of the
+# longest column defines the figure; with too many samples the figure runs off
+# the page. Setting MAXROW determines how many samples are tolerated before
+# this column is split in two (non-equal) stacks.
+MAXROW      = 30
+
+
+# Datafile folders and names
+# --------------------------
+# Default directory structure:
+# full path to bedgraph and bam files:
+# BASEDIR / SRCFLDR+TAG / FILEKEY* / FILEKEY*BEDGRAPH
+# BASEDIR / SRCFLDR+TAG / FILEKEY* / BAM
+# SRCDIR = BASEDIR / SRCFLDR+TAG
+# BASEDIR = Path(SETBASE)
+#
+# SETBASE is the string giving the absolute or full path to the base directory
+# with input sequencing data. This directory contains SRCFLDR+TAG
+# folders for either collapsed- or uncollapsed-read alignments, which -in turn-
+# contain (links to) FILEKEY folders with bedgraph and bam files.
+SETBASE     = "###SETBASE_BY_INIT"
+# SETBASE    = ""
+#
+# SRCFLDR is name of the folder containing folders with bedgraphs, which are
+# based on alignments to a particular reference genome, which depends on EXP.
+# When replacing the name, keep underscore at end (the "collapsed" or
+# "uncollapsed" tag will get attached here)
+# The string "0" reflects that zero mismatches were tolerated during mapping of
+# the reads after adapter removal.
+MUTNO       = "0"
+SRCFLDR     = "STAR-analysis" + MUTNO + "-" + EXP + "_"
+#
+# Folder with downloaded reference RNA-seq bedgraph-files (separate from data)
+# If in a sub-directory of the source folder: ( SRCFLDR / REFS )
+# If in a top-level directory (BASEDIR / REFS ; or REFS )
+#REFS        = "REFS"
+REFS        = ""
+# Self-processed reference RNA-seq bedgraph-files in folder alongside data.
+# Rename Sra RUNs after downloading data to enable specific alignment parameters
+# (settings for mapping reference mRNA will differ from those for small RNA).
+#REFNAM      = "refSRR4024831_"
+#REFS        = REFNAM + TAG + "_" + MUTNO + "mismatch-" + EXP
+#
+# File extension used for bedgraph or bam files; note the connecting dot
+BEDGRAPH    = ".bedgraph"
+#BEDGRAPH    = ".bg"
+BAM         = ".bam"
+#
+# Label in bedgraph filename to indicate data for uniq reads only
+# (An aligner as STAR can create such files). These files will be ignored
+# unless they are the only ones available.
+#UNIQ        # also used for count-file name; set in "2_shared.txt"
+#
+# Marker for upper, top, left-hand, 1, Watson, reference, (+) strand
+# Cartwright and Graur 2011, http://www.biology-direct.com/content/6/1/7
+# Used for file naming when writing/saving.
+PLUS        = "plus"
+# Marker for lower, bottom, right-hand, 2, Crick, (-) strand
+MINUS       = "minus"
+#
+# Markers for PLUS, MINUS as available in names of input bedgraph files.
+PLUSIN      = PLUS
+MINUSIN     = MINUS
+#
+# Abbreviated strand-naming during storage via prefixes;
+# for PLUS
+PL          = "p"
+# for MINUS
+MI          = "m"
+#
+# Common/shared name for alignment files with .bam extension as generated by
+# `samtools sort` and needed for indexing. Thus the same bam-file name covers
+# the alignments for different experiments; therefore the name of the folder
+# containing the generated bam-file (FILEKEY*) is used as the distinguishing
+# factor.
+SAMBAM      = "samtoolsAligned.sortedByCoord.out.bam"
+#
+# Filename of unmapped reads, filtered out of the sequencing data by alignment;
+# an aligner as STAR saves this as a separate file, which can be compresssed.
+UNMAPPEDFIL = "Unmapped.out.mate1.gz"
+#
+# Countable filetypes of unmapped output.
+# After mapping by STAR, files with unmapped data (UNMAPPEDFIL) are saved in
+# either the format of fastq (with uncollapsed data) or of fasta (with collapsed
+# output from pyFastqDuplicateRemover.py from pyCRAC). Therefore:
+# for uncollapsed reads unmapped output is of type:
+UNMAPTYPE   = "fastq"
+# for collapsed reads unmapped output is of type:
+UNMAPCOLLTP = "fasta"
+# With another aligner that would count unmapped reads, these might be
+# retrievable from the SAM.header if these are saved therein. Otherwise
+# unmapped read numbers have to be retrieved by other means if unmapped reads
+# are not output in fastq or fasta format.
+
+
+# Experiment file
+# ---------------
+# EXPFILNAM gives the path to the "experiment file" describing sequencing data.
+#EXPFILNAM   = ""
+EXPFILNAM   = "exp_label_names.tab"
+
+# Column headers
+# ++++++++++++++
+# Headers of expected columns in an experiment file.
+#
+# FILEKEY is a column of identifiers that link to folders with BEDGRAPH and
+# SAMBAM files. When downloading data from GEO with the sra-toolkit, a "Run"
+# column with SRA accession numbers is present in the 'SraRunTable.txt'.
+# The expected folder hierarchy is then formed automatically, so that
+# the SRR names of folders can be directly used as links to the data.
+FILEKEY     = "Run"
+#
+# SHORT is a column of memorable abbreviations as names for samples used in the
+# display and for comparing bedgraphs.
+SHORT       = "Short"
+#
+# CATEGORY divides samples according to their roles (see below)
+CATEGORY    = "Category"
+#
+# EXPERIMENT gives a longer description than the SHORT name and possibly more
+# informative than the FILEKEY. Basically for understanding the table in the
+# file; not used in the program.
+EXPERIMENT  = "Experiment"
+#
+# Use GROUP for keeping comparable mutations together. The various GROUPS (see
+# below) can be redefined for displaying a longer name than the short version.
+GROUP       = "Group"
+#
+# CONDITION defines environmental or genetic changes (see below)
+# CONDITION is defined in "2_shared.txt" as plot label
+#
+# READDENS values are integers indicating relative density of Reference reads;
+# these numbers are used to transform (or level up) overall peakheight of traces
+# for reference RNA-seq libraries to allow for an easier visual comparison.
+READDENS    = "Read-density"
+#
+# METHOD describes RNA preparation method (see below)
+# METHOD is defined in "2_shared.txt" as plot label
+#
+# FRACTION
+# FRACTION    is defined in "2_shared.txt" as plot label
+
+# Column Values
+# +++++++++++++
+# The labels put in various columns to describe the sample
+#
+# FILEKEY column
+# **************
+# These values are as the beginning of bedgraph file-names and of the name of
+# the sub-folder where the bedgraphs and alignment file are stored.
+#
+# SHORT column
+# ************
+# These values are the shortest possible abbreviation for a sample. Replicates
+# of the same experiment should be divided from the short name by means of an
+# underscore (_). This enables to display the technical (character) or
+# biological (number) replicates of the same experiment as one group. Thus
+# three wild-type replicates with SHORT names "wt_1a", "wt_2", "wt_1c" can be
+# marked as "wt" in the GROUP column and then displayed as one group named "wt".
+#
+# CATEGORY column
+# ***************
+# These values specify the samples and direct how they get sorted/used.
+# For Reference
+CAT_R       = "R"
+# For Unspecific i.e. negative control
+# use lowercase for negative controls not used for defining 'UNSPECIFIC' reads
+CAT_U       = "U"
+# For Specific i.e. positive control
+# use lowercase for positive controls not used for defining 'SPECIFIC' reads
+CAT_S       = "S"
+# For Mutant
+# use lowercase for redundant samples not considered for bedgraph display
+CAT_M       = "M"
+# For Discard
+CAT_D       = "D"
+#
+# METHOD column
+# *************
+# These values indicate the kind of experiment used for preparing the RNA
+# input sample that has been sequenced. RIP, RNA extracted from
+# immunoprecipitated proteins (IPs), give less/different background than
+# sequences from total RNA preps, for which only a size-enrichment step can be
+# applied.
+# For reads from a total sRNA seq prep
+TOTAL       = "total"
+# For reads from a RNA IP sample
+RIP1        = "rip1"
+RIP2        = "rip2"
+# For reads from a RNA IP beads/untagged control (found to be unusable as CAT_U;
+# mostly CAT_D)
+NOTAGIP     = "rip0"
+#
+# GROUP column
+# ************
+# These values will normally be the first part of the associated and
+# comparable short names of a mutant, say a2 for a2_2, a2_1, a2_3ms0 samples.
+# Other labels for a group of mutants could reflect a shared role.
+# In this example for reads in mutants linked to DNA or histone methylation.
+OTHR        = "meth"
+#
+# CONDITION column
+# ****************
+# Entries are optional; values will be extracted from the EXPFILE when needed.
+#
+# Values reflect different grow or genetic conditions that could affect
+# phenotype, i.e. the kind of RNA produced that would be sequenced.
+# For example a genetic modification with huge impact:
+# Mutant made in RNAi-null parental strain. (REPAIR is not used in source code.)
+REPAIR      = "rep"
+# An example of an environmental change that can be expected to have an impact:
+# Samples from Murashige and Skoog starvation medium (MS0) kept in the dark,
+# described as stimulating mating, and spore formation, under which RNAi-
+# proteins become more abundant in Cryptococcus (doi:10.1101/gad.1970910).
+# (STARV as constant, is not used in source code.)
+STARV       = "ms0"
+# Samples that have been grown to a very high density possible leading to
+# quorum or nutritional stress. (DENSE as constant, is not used in source code.)
+DENSE       = "highOD"
+# Samples not annotated are considered to represent the same standard condition
+# and are referred to with constant REST (which is used in source code).
+REST        = "standard"
+#
+# FRACTION column
+# ***************
+# These values reflect which fractions of a biological sample have been used for
+# preparing the RNA.
+# Whole cell extract
+WCE         = "WCE"
+# Nucleolus
+NUCLEO      = "Nucleo"
+NUCL        = "Nuc"
+# Cytosol, cytoplasmic
+CYTO        = "Cyt"
+MITOCH      = "Mit"
+MEMBR       = "Mem"
+VACUOL      = "Vac"
+GRANUL      = "P-body"
+# Endoplasmic reticulum
+ENDRET      = "ER"
+# Extracellular
+EXCELL     = "Medium"
+
+# Groups definitions
+# ------------------
+# A dictionary, key (= "SHORT label in EXPFILE") : value ("displayed");
+#
+# For a functional presentation order (not alphabetical) and to provide extra
+# description for short names (**SHORT**) when displaying values of a GROUP
+# column alongside bedgraph traces; these will form side-panel titles.
+#
+# Only replace key/value labels, keep { }, quotes " ", colon :, and commas
+# between key:value entries.
+# '\u0394' is unicode for the delta symbol; '\u03B2' for beta; '\u2192', arrow.
+MUTGROUPS   = {
+               "a1":"ago1\u0394", "a2":"ago2\u0394",
+               "a1a2":"ago1\u0394 ago2\u0394", "d1":"dcr1\u0394",
+               "d2":"dcr2\u0394", "d1d2":"dcr1\u0394 dcr2\u0394",
+               "r1":"rdp1\u0394", "h1":"hen1\u0394",
+               "be":"\u03B2-elim.", "dh":"dhx\u0394", "p5":"prmt5\u0394",
+                OTHR:"methyl\u0394", "rgg":"RGG \u2192 kGG",
+               "-rgg":"rgg\u0394, aGG","rWT":"repair WT",
+               "ye":"ago1-Y593E", "2in1":"2 in 1",
+              }
+1
+
+
+
+# Other possible groups for the side panel legend, defines labels and order of
+# presentation/appearance.
+# Use (remove # sign) "" lines if only one condition or method has been tested
+# and remove (comment out) lines with different conditions or different methods.
+
+CONDITIONS  = ""
+#METHODS     = ""
+#FRACTIONS   = ""
+
+#CONDITIONS  = {
+#               REPAIR:"Repaired", STARV:"Starved", DENSE:"High OD"
+#              }
+METHODS     = {
+                TOTAL:"Total", RIP1:"Ago1 IP", RIP2:"Ago2 IP",
+                NOTAGIP:"No-tag IP",
+              }
+FRACTIONS   = {
+                WCE: "Cell extract", CYTO:"Cytoplasm", NUCL:"Nucleus",
+                NUCLEO:"Nucleolus", MITOCH:"Mitochondria",
+                VACUOL:"Vacuole", MEMBR:"Membrane", GRANUL:"Granules",
+                ENDRET:"ER", EXCELL:"Medium",
+              }
+
+# define (display order of) mutant-groups for CAT_M and CAT_U
+UNSPECIFICS = [
+               "a1", "a1a2", "d1d2", "r1", "ye",
+              ]
+MUTANTS     = [
+               "a2", "d1", "d2", "h1", "be", "dh", OTHR, "p5", "rWT", "rgg",
+               "-rgg", "2in1"
+              ]
+
+
+# Genome info
+# -----------
+# genome info; all files should be placed in the "config/source" folder;
+# use "" if not applicable (remove # at beginning); remove or comment out
+# example line (place # at beginning)
+LENGTHSNAM = "Cryptococcus_neoformans.ASM9104v1-chrom-lengths.txt"
+# When extra, mutational sequences, or features omitted from the reference
+# genome are described in different fasta and gtf files:
+DNAXTRNAM  = "" #"MitochCneoDTagsRecombinationalDNAs.fa"
+LENXTRFILNAM = "" #MitochCneoDTagsRecombinationalDNAs-lengths.txt"
+LENXTRA     = "" # 43824   # same value as in LENXTRAFILE;
+# Name for extra "chromosome" with additional or mutational DNA sequences;
+CHRXTRA     = ""
+#CHRXTRA     = XTRA # "extra", set in "2_shared.txt";
+# Annotation files to be used for gtf-tracks in bedgraph display
+# use "" if not applicable
+GTFSPECNAM  = "" #"Jec21sRNAsegmentsAll.gtf"
+GTFUNSPNAM  = "" #"Cryptococcus_neoformans.ASM9104v1.ncrna__db.gtf"
+GTFREFNAM   = "" #"CrypJEC21-RNAi-spliced-genes_LTRs_pseudo.gtf"
+# GTF files that annotates "chromosome" CHRXTRA;
+# For extension of reference GTF
+GTFXTRANAM  = "" #"MitochCneoDTagsRecombinationalDNAs-genes_exons_cds.gtf"
+# For extension of GTFUNSPNAM GTF with common non-coding RNAs
+GTFUNXTNAM  = ""
+
+# In case other keywords are used to describe most relevant feature in GTF
+GTFEXON     = "exon"        # kind of annotated feature to display
+GTFFEAT     = "sirnasegment" # feature of choice to display
+
+
+# Work-folder for storing configuration, logs, figures and data
+# -------------------------------------------------------------
+# Generated from above settings:
+BASEDIR     = Path(SETBASE)
+# Where to store outputs from ("data") and configuration files for the program
+# (the EXPFILE, "2_shared.txt" and "3_EXP_.txt" files)
+# Generated after init:
+# User home directory, similar to choice "home folder" during "coalispr init".
+#SAVEIN      = Path.home() / PRGNAM
+# Near sequencing files, as choice "current directory" during "coalispr init".
+#SAVEIN      = BASEDIR / PRGNAM
+# Next to program folder, like "source folder" choice during "coalispr init".
+#SAVEIN      = p.parent.parent
+# Set by "coalispr init" to ###SAVEIN_BY_INIT
+SAVEIN      = Path("###SAVEIN_BY_INIT")
+
+# Within program source folder "resources/" (remnant from development)
+#CONFIG      = p
+# In config subfolder (default)
+CONFIG      = SAVEIN / CONFBASE
+
+#LENGTHSFILE = BASEDIR / LENGTHSNAM
+LENGTHSFILE = BASEDIR / SOURCE / LENGTHSNAM
+#LENGTHSFILE = ""
+DNAXTRA     = ""
+#DNAXTRA     = BASEDIR / DNAXTRNAM
+#DNAXTRA     = BASEDIR / SOURCE / DNAXTRNAM
+LENXTRAFILE = ""
+#LENXTRAFILE = BASEDIR / LENXTRFILNAM
+#LENXTRAFILE = BASEDIR / SOURCE / LENXTRFILNAM
+
+# Next or near to sequencing data
+EXPFILE     =  BASEDIR / EXPFILNAM
+#EXPFILE     =  BASEDIR / SOURCE / EXPFILNAM
+# In/next to configuration folder
+#EXPFILE     = CONFIG / EXPFILNAM
+CONFPATH    = CONFIG / CONFFOLDER
+CONFFILE    = CONFPATH / CONFNAM
+OUTPATH     = SAVEIN / OUTPUTS / EXP
+STOREPATH   = SAVEIN / DATA / EXP
+# Parent-folder(BASEDIR)/TAG folder/exp-folder/exp-bedgraph-files
+SRCDIR      = BASEDIR / (SRCFLDR + TAG)
+# Parent-folder(BASEDIR/REFS)/reference-folder/reference-bedgraph-files
+REFDIR      = BASEDIR / REFS  ## REFNDIRLEVEL= 1
+#REFDIR      = SRCDIR / REFS  ## REFNDIRLEVEL= 2
+# Number of folders between REFDIR and bedgraph files
+REFNDIRLEVEL= 1
+
+GTFSPEC     = ""
+#GTFSPEC     = BASEDIR / GTFSPECNAM
+#GTFSPEC     = BASEDIR / SOURCE / GTFSPECNAM
+GTFUNSP     = ""
+#GTFUNSP     = BASEDIR / GTFUNSPNAM
+#GTFUNSP     = BASEDIR / SOURCE / GTFUNSPNAM
+GTFREF      = ""
+#GTFREF      = BASEDIR / GTFREFNAM
+#GTFREF      = BASEDIR / SOURCE / GTFREFNAM
+# For extension of reference GTF
+GTFXTRA     = ""
+#GTFXTRA     = BASEDIR / GTFXTRANAM
+#GTFXTRA     = BASEDIR / SOURCE / GTFXTRANAM
+# For extension of GTFUNSPNAM GTF with common non-coding RNAs
+#GTFUNXTR    = BASEDIR / GTFUNXTNAM
+#GTFUNXTR    = BASEDIR / SOURCE / GTFUNXTNAM
+GTFUNXTR    = ""
+
+# Figure paths
+FIGDIRSVG   = SAVEIN / FIGS / EXP / SAVESVG
+FIGDIRPNG   = SAVEIN / FIGS / EXP / SAVEPNG
+FIGDIRPDF   = SAVEIN / FIGS / EXP / SAVEPDF
+FIGDIRJPG   = SAVEIN / FIGS / EXP / SAVEJPG
+# Set here preferred default:
+FIGDIR      = FIGDIRSVG
+
+# Debug log
+LOGFIL      = SAVEIN / LOGS / EXP / LOGFILNAM

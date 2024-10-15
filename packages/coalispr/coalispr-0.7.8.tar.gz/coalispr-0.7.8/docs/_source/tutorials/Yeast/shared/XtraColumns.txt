@@ -1,0 +1,9 @@
+Run	Description	Short	Category	Group	Method	Fraction
+SRR4305543	Kre33-data-I	K33_a	S	K33	rip33	"WCE"
+SRR4305544	Kre33-data-II	K33_b	S	K33	rip33	"WCE"
+SRR14570780	HTP-tagged Puf6	P6_a	S	P6	rip6	"WCE"
+SRR14570781	HTP-tagged Puf6	P6_b	S	P6	rip6	"WCE"
+SRR4024838	Nab3 Vari-X-link	N3_a	U	N3	rip3	"WCE"
+SRR4024839	Nab3 Megatron 1	N3_b	U	N3	rip3	"WCE"
+SRR4024840	Nab3 Megatron 2	N3_c	U	N3	rip3	"WCE"
+SRR4024831	BY4741-RNA-Seq	BY	R	""	rnaseq	"WCE"

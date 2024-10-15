@@ -1,0 +1,543 @@
+
+"""
+Begin ``constant_in/2_shared.txt`` (**CONFFOLDER** / **SHARED**)
+"""
+# keep " " around text
+
+p = Path(__file__).parent
+
+# Program
+# -------
+# The name also features as name of the work folder where configuration and data
+# is stored.
+PRGNAM      = "Coalispr"
+DESCRIPTION = "COunt ALIgned SPecified Reads"
+#
+# Commands
+# ++++++++
+DATASTOR  = "`coalispr storedata -d {1,2} -t {1,2}`"
+INFOREGS  = "`coalispr info -r1`"
+INPUTRCS  = "`coalispr countbams -rc {1,2}`"
+
+# Logging
+# -------
+# Maximum log file size in bytes.
+LOGMAX = 10000000
+# FLAG to accept DEBUG logging level for matplotlib (floods the logs).
+MPLDEBUG = False
+# to set folder and file names: see below.
+
+
+# PLOTTING
+# ========
+#
+# Plot labels
+# ---------------------
+# Labels on interactive plot and saved figures.
+# Samples/experiments related to controls:
+NEGCTL      = "Negative" #"no RNAi" #"Uninduced" # "Mock"
+POSCTL      = "Positive" #"wt RNAi" #"Induced"
+# Reads (like) Negative control
+UNSPECIFIC  = "Unspecific"
+# Reads (like) Positive control
+SPECIFIC    = "Specific"
+# Typing samples
+MUTANT      = "Mutant"
+REFERENCE   = "Reference" # "RNAseq"
+METHOD      = "Method"
+CONDITION   = "Condition"
+COLLAPSED   = "Collapsed"
+UNCOLLAPSED = "Uncollapsed"
+UNSEL       = "Unselected"
+DISCARD     = "Not used"
+FRACTION    = "Fraction"
+# Gaps longer than MININTRON in alignments are called (assumed to be) introns
+INTR        = "intron"
+# Axis labels interactive plots; keep {} and spaces
+# Note that FIGXLABEL is preceded by CHROMLBL set in "3_EXP.txt"
+FIGXLABEL   = "{} position; scale 1:{} (bin size)"
+FIGYLABEL   = "Bedgraph values; summed/bin"
+TRACKLABEL  = "segm."
+# Plot titles
+PERC        = "%"
+PLOTALL     = "All reads"
+PLOTSPEC    = "Specific reads"
+PLOTUNSP    = "Unspecific, discarded reads"
+# Axis labels count figures
+PLOTLEN     = "length (nt)"
+PLOTINTRLEN = INTR + " " + PLOTLEN
+PLOTLIB     = "Library counts"
+PLOTPERC    = PERC + " reads"
+MEAN        = "mean"
+PLOTMEAN    = PERC + f" ({MEAN})" + " {}"
+MEDIAN      = "median"
+PLOTMEDIAN  = PERC + f" ({MEDIAN})" + " {}"
+PLOTRAW     = "Raw counts"
+#PLOTSTRT    = "start-nt"
+PLOTSTRT    = "5' nt"
+PLOTFREQ    = "number of hits"
+PLOTMMAP    = PERC + " multimappers"
+# Do not capitalize these words at beginning of a phrase:
+NONCAPT     = [
+              "cDNA", "gRNA", "lncRNA", "miRNA", "mRNA",
+              "ncRNA", "piRNA", "rRNA", "sRNA", "siRNA",
+              "snRNA", "snoRNA", "tRNA",
+              ]
+#
+# Plot colors
+# ------------
+# Colors on interactive plot and saved figures
+# xkcd: color-name from https://xkcd.com/color/rgb/
+# REFERENCE trace
+RCOL        = "xkcd:almost black"  # "xkcd:slate grey"
+# UNSPECIFIC trace
+UCOL        = "xkcd:dull red"
+# SPECIFIC trace
+SCOL        = "xkcd:cornflower blue" # "g"
+# MUTANT trace
+MCOL        = "tab:olive"
+# NOTSELECTED trace
+NCOL        = "xkcd:pale orange"
+# DISCARD trace
+DCOL        = "xkcd:pale magenta" #lavender"
+# Annotation background
+ACOL        = "#CAD9EF" # "xkcd:light grey blue"
+# Annotation edge
+AEC         = "xkcd:slate blue" #"#AFBDD7"
+# Annotation arrow line-color
+ALC         = "xkcd:slate" #"xkcd:cloudy blue" # "xkcd:slate blue"
+# Method background
+METHCOL     = "xkcd:cloudy blue"
+# Colour of a prominent, major axis
+AXCOL       = "xkcd:almost black" # "slate grey"
+# Colour of subdued, minor axis
+AXCOL2      = "xkcd:light grey"
+# Background colour for diagram panels
+BCKGRCOL    = "w"
+# Background colour for main figure
+FIGCOL      = "#f9f9f9" # 2.5% grey
+# Colors dict
+CKEY1       = "fAGO1"
+CKEY2       = "no_sRNA"
+CKEY3       = "fAGO2"
+CKEY4       = "total_sRNA"
+CVAL1       = "#c7b475" # tan
+CVAL2       = "#8ec1d6" # light-blue
+CVAL3       = "#597dbf" # mid-blue
+CVAL4       = "#797979" # mid-gray
+# Include vertical gridlines in plots of "coalispr showgraphs";
+XGRID       = True
+#
+# Plot alpha settings
+# -------------------
+# Transparant traces to build up the plot so that intensity indicates overlap
+ALPH        = 0.33
+# On click increase trace density so that it lights up
+HIGHALPH    = 0.7
+# Background for annotation labels
+ANNOTALPH   = 0.9
+# Lighten up active legend items
+HIGHLEG     = 0.8
+# Reduced colour for inactive legend items
+LOWLEG      = 0.3
+# In count plots
+THISALPH    = 0.8
+#
+# Plot line widths
+# ----------------
+# Normal line width
+LINEW       = 1.5
+# Fatten selected line
+HIGHLINEW   = 2.2
+#
+# Plot legend layout
+# ------------------
+# Number of legend columns
+LEGNCOL     = 1
+#
+# Plot font size
+# --------------
+# Font size used as default
+CSFONTSZ    = 12
+# For small labels in pile-up figures
+SNSFNTSZ    = 8
+#
+# Font size for plotting bedgraph traces in "coalispr showgraphs";
+# When groups in side panels overlap either reduce SGFONTSZ relative
+# to SGHEIGHT or increase the showgraphs height).
+SGFONTSZ    = 11 #10
+# Showgrahs' figure dimensions. Change with SGFONTSZ to enhance readability.
+SGHEIGHT    = 9 #8
+SGWIDTH     = 12 #10
+# anti-aliasing of fonts
+TXTALIAS    = True #False
+
+
+
+#
+# Seaborn settings
+# ----------------
+GRIDSTYLE   = "whitegrid" #"darkgrid"
+CONTEXT     = "paper"
+# https://seaborn.pydata.org/tutorial/color_palettes.html
+PALETTE     = "muted" #"colorblind
+GRIDALPHA   = 0.5
+GRIDCOLOR   = "xkcd:light grey"
+GRIDAXIS    = "y"
+GRIDWHICH   = "major"
+GRID        = True
+SNSFNTFAM   = "sans-serif"
+#
+#
+# Axis scales
+# --------------
+# 2^LOGZERO is used as the lower boundary when displaying log2 graphs
+#This can be set to chosen LOG2BG cutoff
+#LOGZERO     = LOG2BG     #5           # 2^5 = 32
+# 2^LOGLIM is used as the upper boundary when displaying log2 graphs
+LOGLIM      = 20          # 2^20 = 1,048,576
+# LINLIM is used as upper boundary when displaying linear graphs
+LINLIM      = 20000       # 20,000
+# Formatting numbers (standard)
+AXLIMS      = [-3,4]
+#
+# Default figure format (choose from "png", "ps", "pdf", "svg")
+FIGFORMAT   = "svg"
+#
+
+
+# DATAFILE TAGS/TYPES
+# ===================
+# For files containing data for collapsed reads
+TAGCOLL     = "collapsed"
+# For files with data for uncollapsed reads
+TAGUNCOLL   = "uncollapsed"
+
+
+# Extension output files/folders
+# ==============================
+# File extension for files with tab separated values; note the connecting dot.
+TSV         = ".tsv"
+#TSV         = ".tab"
+# Suffix added to folders that are replaced during runs with -f option.
+BAK         = ".bak"
+TMP         = ".tmp"
+# File extension for image files
+PNG         = ".png"
+SVG         = ".svg"
+PDF         = ".pdf"
+JPG         = ".jpg" # ".jpeg"
+# Resolution for rasterized png files
+DPI         = 400
+
+
+# Unique backup connector
+# =======================
+# For tsv backups from pickles link sample, chromosome name, datakind and ,strand 
+# so that chromosome name will not interfere (can have '_', '-') with restoring 
+# to pickle (marked by "KeyError '<chromosome name>', stopping.. Have all files 
+# to be merged already been binned?"
+P2TDELIM    = "____"
+
+
+# COUNT READS
+# ===========
+#
+# Multimappers
+# ------------
+# Multimappers for collapsed and uncollapsed reads are counted differently.
+# The MULMAPCOLL and MULMAPUNCOL parameters serve to point to alignment settings
+# expected by the `countbams` scripts.
+# When mapping your COLLAPSED reads, find an alignment parameter that does the
+# following: each multimapping read will be mapped to each locus as 1 read
+# (setting "--outSAMprimaryFlag AllBestScore" in STAR).
+MULMAPCOLL  = 1
+# During alignment of UNCOLLAPSED reads each multimapping read is counted once
+# and randomly divided over loci (setting "--outSAMmultNmax 1" in STAR).
+MULMAPUNCOLL= 1
+# The following optional SAM-tags are used during counting of aligned reads and
+# should be exported to the SAMBAM alignment file by the read mapper.
+# The STAR aligner sets these as:
+NH = "NH"  # > 1 for multimapping collapsed reads
+HI = "HI"  # always 1 for uncollapsed reads
+#
+#
+# Test regions
+# ------------
+# Evaluate number of regions with SPECIFIC reads by parameter settings for
+# UNSPECLOG10, USEGAPS, LOG2BG.
+# Label used in help dialog
+TSTREGIONS  = "collect"
+# Column or y-axis label used in output finding regions with various settings.
+REGS        = "Regions"
+TRSHLD      = "Threshold"
+
+# Labels in TSV file or folder names to indicate particular counts.
+# All filenames will end up in undercase and with dots replaced by underscores
+# irrespective of settings here (if not, that would be a bug).
+#
+# Bam-counting
+# ------------
+#
+# ALignment check
+# +++++++++++++++
+# For single-end fully matching small RNA-Seq reads, possibly with a gapped
+# alignment due to the presence of an intron:
+CIGFM       = "fullmatch"
+# In case of UV-irradiated samples with point-deletions
+CIGPD       = "pointdel"
+# SAM-tag to check for number of tolerated mutations
+NM          = "nM" # in standard output of STAR
+# when alignment includes NM in output; can be configurted for STAR with option
+# `--outSAMattributes A1 A2 A3 ...` during alignment.
+#NM         = "NM" # total number of mutations: nM + (D + I)(D,I from cigar)
+# maximum number of tolerated mismatches (integer)
+MAXMM      = 10
+#
+# Raw counts
+# ++++++++++
+# Tsv files with counts for total mapped and unmapped reads based on alignment
+# SAMBAM files and UNMAPPEDFIL (see 3_EXP.txt) are stored in folder:
+TOTINPUT    = "input_totals"
+# Index column label
+SAMPLE      = "Sample"
+# Column label for total mapped uncollapsed reads, retrieved from SAM-header.
+INMAPUNCOLL = "Mapped"
+# Column label for total unmapped reads (left over after alignment)
+UNMAP       = "Unmapped"
+# Column label marking total mapped collapsed reads, retrieved from SAM-header.
+INMAPCOLL   = "Mapped cDNA"
+# used in file name for total raw-counts of mapped input
+TOTALS         = "totals"
+#
+# Common
+# ++++++
+# used in folder name for saving counts
+READCOUNTS     = "readcounts"
+# used in file name for graphs with CAT_D files shown
+SHOWDISC       = "withdiscards"
+# Labels for selections
+# Reads from transcript-strand
+CORB           = "corbett"
+# Reads antisense to transcript
+MUNR           = "munro"
+# Reads for both strands (= CORB + MUNR)
+COMBI          = "combined"
+# Only data for uniq reads
+UNIQ           = "uniq"  # also in "3_EXP.txt"
+# Only data for extra reads
+XTRA           = "extra" # depends on CHRXTRA in "3_EXP.txt"
+# Only data for 'unselected' reads in reads specified as UNSPECIFIC
+#NOTSELECTED
+# Reads for all samples combined
+ALL            = "all"
+# Gaps longer than MININTRON in alignments are called (assumed to be) introns
+#INTR           = "intron"
+# in file name or label
+COU            = "_counts"
+LIBR           = "library"
+# Read collapsed reads as cDNA from counting lines in TAGCOLL bamfiles
+COLLR          = "cDNA"
+# Skipped reads, not meeting only M or N in cigar (or main settings wrong)
+SKIP           = "skipped"
+#
+# Read lengths
+# ++++++++++++
+# Lengths of gaps in reads, considered introns by alignment mapper (e.g. STAR)
+LENCOUNTS      = "length" + COU
+# Reads of a particular length with start nucleotide A, C, G or T.
+RLENCOUNTS     = "read" + LENCOUNTS
+#
+# Multimappers
+# ++++++++++++
+MULMAP         = "multimapper"
+#
+# Bins
+# ++++
+# Labels for counts per bin of a segment with specified reads.
+BCO            = "_bin" + COU
+#
+# Column labels
+# +++++++++++++
+# Headings for columns in tsv region files
+LOWR           = "lower"
+UPPR           = "upper"
+SPAN           = "span"
+SEGSUM         = "segmentsum"
+# Headings for columns in tsv count files
+# Index-column for intron/gap-length counts
+LEN            = "length"
+REPS           = "repeats"
+# Multi-index-column for read-length counts (nt  RLENCOUNTS)
+LENMER         = "start length"
+# Multi-index-column for read-counts (segment  bin-no)
+# Segment
+REGI           = "region"
+# Bin number (1 at 5" end and last at 3" end)
+BINN           = "bin no"
+# Region covered by given bin number
+BREG           = "bin-region"
+# Index header of dataframes with region counts.
+#LABLREG        = "label_region"
+#
+# Labels for Y-axis
+# +++++++++++++++++
+# Short, printable titles for constant-constructs used in creating count graphs.
+CNTLABELS      = {
+    XTRA:             f"{XTRA.lower()} reads",
+    COLLR:            f"{TAGCOLL.lower()} reads ({COLLR}s)",
+    INTR:             f"reads + {INTR.lower()}",
+    INTR+COLLR:       f"{COLLR}s + {INTR.lower()}",
+    INTR+MULMAP:      f"{MULMAP.lower()}s + {INTR.lower()}",
+    LIBR:             f"{LIBR} reads".lower(),
+    LIBR+MULMAP:      f"{MULMAP.lower()}s",
+    MULMAP+LIBR:      f"{MULMAP.lower()}s",
+    MULMAP+COLLR:     f"{COLLR}s ({MULMAP.lower()})",
+    MULMAP+INTR:      f"{MULMAP.lower()}s + {INTR.lower()}",
+    MULMAP+INTR+COLLR:f"{COLLR}s ({MULMAP.lower()}) + {INTR.lower()}",
+    SKIP:             f"{SKIP.lower()} reads",
+    UNIQ+LIBR:        f"{UNIQ.lower()}ue reads",
+    UNIQ+COLLR:       f"{COLLR}s ({UNIQ.lower()}ue)",
+    UNIQ+INTR:        f"reads ({UNIQ.lower()}ue) + {INTR.lower()}",
+    UNIQ+INTR+COLLR:  f"{COLLR}s ({UNIQ.lower()}ue) + {INTR.lower()}",
+    UNSEL:            f"{UNSEL} {UNSPECIFIC} reads".lower(),
+    }
+
+# Counters
+# --------
+# Define here what to count. The lists mark items to create countfiles for;
+# only (un)comment line to use that counter group or individual counter label
+# from a list. Note that complexity/number/size of libraries are the major
+# determinants of counting speed; therefore, counting is set (via TAGBAM) to go
+# collapsed-read by collapsed-read for selected peak segments. Read-by-read
+# counting with uncollapsed data files as input will take much longer.
+#
+# Counter for read numbers
+# based around READCOUNTS, BCO, LIBBINCOUNTS, COU, LIBTOTCOUNTS
+CNTREAD        = [LIBR, UNIQ, XTRA, UNSEL]  # MULMAP = LIBR-UNIQ
+# Counter for cDNAs (i.e. number of collapsed reads used in the counting)
+# based around READCOUNTS, COLLR, UNIQ+COLLR
+# UNIQ+COLLR gives the number of unique cDNAs.
+CNTCDNA        = [COLLR, UNIQ+COLLR]        # MULMAP+COLLR = COLLR-(UNIQ+COLLR)
+# Counter for gaps/introns spanned by a read
+# (the skipped "N" number in the cigar string of an aligned read)
+# based around READCOUNTS, INTR, INTR+COLLR
+CNTGAP         = [INTR, INTR+COLLR, UNIQ+INTR, UNIQ+INTR+COLLR]
+# Counter for skipped reads
+# based around READCOUNTS, SKIP
+CNTSKIP        = [SKIP]
+# List of counter lists; in "3_EXP.txt"
+#CNTRS          = [CNTREAD, CNTCDNA, CNTGAP, CNTSKIP]
+#
+
+# Multimapper counter, i.e. counter for multimappers
+# based around MULMAP, REPS
+# count multimap occurrences for these counter lists; in "3_EXP.txt"
+#MMAPCNTRS      = [ [LIBR, INTR] ]
+
+# Length-counter, i.e. counter for read lengths incl. start nt
+# based around RLENCOUNTS, LENMER
+LENREAD        = [LIBR, UNIQ, XTRA, UNSEL]  # MULMAP = LIBR-UNIQ
+# Length-counter for cDNA lengths incl. start nt
+# based around  RLENCOUNTS, LENMER
+LENCDNA        = [COLLR, UNIQ+COLLR]        # COLLR+MULMAP = COLLR-(UNIQ+COLLR)
+# length-counter for gap-lengths, no starting nt (not in cigar string)
+LENGAP         = [INTR, INTR+COLLR, UNIQ+INTR, UNIQ+INTR+COLLR]
+# list of length-counters' lists; in "3_EXP.txt"
+#LENCNTRS       = [LENREAD, LENCDNA, LENGAP]
+
+# List of lists with total-plus-length counters for scanning a singular region
+REGCNTRS       = [ [LIBR, UNIQ],  [COLLR, UNIQ+COLLR], CNTSKIP ]
+
+# FOLDERS
+# =======
+#
+# Output folders
+# --------------
+# Their paths are relative to the work folder set by `coalispr init` as shown
+# at end of EXPTXT. Here are the names of the folders configured.
+# Folder names for various output.
+#STOREPATH   = defined in CONFNAM (from EXPTXT)
+# Binary storage of bedgraph data and indexes (Major version changes in Python
+# or Pandas affects readability of .pkl files)
+STOREPICKLE = "pickled"
+# Files with count data
+SAVETSV     = "tsvfiles"
+# Alignments extracted from negative data
+SAVEBAM     = "bamfiles"
+# Backup of binary bedgraph data as text (permanent storage)
+PKL2TSV     = "backup_from_pickled"
+# Recreated binary storage of bedgraph data (for after version changes)
+TSV2PKL     = "pickled_from_backup"
+#
+##OUTPATH    = defined in CONFNAM (from EXPTXT)
+CLUSTVIS    = "clustvis"
+CLUSTGR     = "clustgr"
+COSEQ       = "coseq"
+STEM        = "stem"
+PROPR       = "propr"
+
+
+
+
+# Folder settings and names
+# -------------------------
+# 2 folders between SRCDIR (defined in CONFNAM) and bedgraph files
+SRCNDIRLEVEL= 2
+# 1 folder between REFDIR (defined in CONFNAM) and bedgraph files
+#REFNDIRLEVEL= 1
+# User directory
+HOME        = "home"
+# Current directory
+CWD         = "current"
+# PRGNAM installation directory with PRGNAM source directory
+SRCPRGNAM   = "source"
+# Different choice to be made
+NOCHOICE    = "other; cancel"
+# Base-folder with configuration files
+CONFBASE    = "config"
+# Folder with configuration templates "2_shared.txt" and "3_EXP_.txt"
+# for generating "constant.py"
+CONFFOLDER  = "constant_in"
+# Folder with logging data
+LOGS        = "logs"
+#
+# Logging file(s)
+LOGFILNAM   = "run-log.txt"
+# Folder with processed data files
+DATA        = "data"
+# Folder with downloaded data files
+# Note: name is hard-coded in "share/bash_scripts/wget_resources.sh"
+DWNLDS      = "downloads"
+# Folder with produced figures
+FIGS        = "figures"
+# Figure folders per EXP
+SAVEPNG     = "pngfigures"
+SAVESVG     = "svgfigures"
+SAVEPDF     = "pdfs"
+SAVEJPG     = "jpgfigures"
+# SubFolder for figures
+CHROMFIG    = "chrom_graphs"
+LENCNTS     = "lengthcounts"
+LIBCNTS     = "libcounts"
+REGCNTS     = "regions"
+UNSELFIG    = "unselected_chrom_graphs"
+GROUPAVG    = "groupaverages"
+SUBFIGS     = [ CHROMFIG, LENCNTS, LIBCNTS, REGCNTS, UNSELFIG, GROUPAVG]
+
+# Folder for processed data files usable by other programs as input
+OUTPUTS     = "outputs"
+# Folder with input files for generating others
+SOURCE      = "source"
+# Folder with used GTF files
+GTFS        = "gtfs"
+# Folder with used fasta files
+FASTA       = "fasta"
+
+"""
+End ``constant_in/2_shared.txt`` (**CONFFOLDER** / **SHARED**)
+
+
+Begin ``constant_in/3_EXP.txt`` (**CONFFOLDER** / **EXPTXT**)
+
+"""
