@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: GlobalDatafeeds_ws
+Version: 0.0.1
+Summary: Package to implement WebSocket API of Global Datafeeds
+Author: Global Datafeeds
+Author-email: developer@globaldatafeeds.in
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: websockets
+
+Package to implement WebSocket API of Global Datafeeds. This api will provide realtime data as well as historical data. 

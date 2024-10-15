@@ -1,0 +1,6 @@
+setup.py
+GlobalDatafeeds_ws.egg-info/PKG-INFO
+GlobalDatafeeds_ws.egg-info/SOURCES.txt
+GlobalDatafeeds_ws.egg-info/dependency_links.txt
+GlobalDatafeeds_ws.egg-info/requires.txt
+GlobalDatafeeds_ws.egg-info/top_level.txt
