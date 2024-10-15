@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bpiek
+Version: 1.1.7
+Summary: API клиент для Бизнес-платформа IEK
+Author: Pavel Sinitsin
+Author-email: spavelit@list.ru
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+

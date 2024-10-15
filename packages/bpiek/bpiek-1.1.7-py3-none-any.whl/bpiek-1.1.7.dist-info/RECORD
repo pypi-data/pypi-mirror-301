@@ -1,0 +1,9 @@
+bpiek/__init__.py,sha256=3W5OmLfB-ir0UXc7aTBPOIuWuEmO1_0uEUlQNolRYeo,137
+bpiek/api.py,sha256=cinFtAcBIyzEfj21GPW24YPjknXoP48Zg1YzaqMQGMI,6398
+bpiek/models/category.py,sha256=mbPfmMZQ4qDMt9QqjnoI3C2aZKt0hxvBH6P_Uaey8Lw,590
+bpiek/models/product.py,sha256=TBegkGvo36lkFQSrYvyAKCtDG1WJ2JEwbTborgsP2UQ,6176
+bpiek/models/response.py,sha256=Hqf8xpGNQ8JTWH35P-gy9E4BMNPj8Vrd7y93YBL2KKg,789
+bpiek/utils.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bpiek-1.1.7.dist-info/METADATA,sha256=0oqTQH8dRrRpny_Tqt2ug5jqCyZWBelLQwp0Kl_kFXI,425
+bpiek-1.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bpiek-1.1.7.dist-info/RECORD,,
