@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+chessboard=mkdocs_chessboard_plugin.plugin:ChessboardPlugin
+
