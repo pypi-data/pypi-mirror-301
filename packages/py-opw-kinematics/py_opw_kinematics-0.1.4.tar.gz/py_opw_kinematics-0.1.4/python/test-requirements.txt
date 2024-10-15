@@ -1,0 +1,6 @@
+pip
+pytest
+scipy
+numpy
+polars
+pyarrow
