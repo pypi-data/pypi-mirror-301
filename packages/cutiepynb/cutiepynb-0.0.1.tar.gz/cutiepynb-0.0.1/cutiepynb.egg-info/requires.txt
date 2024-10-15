@@ -1,0 +1,7 @@
+numpy
+
+[all]
+cutiepynb[extra]
+
+[extra]
+pandas

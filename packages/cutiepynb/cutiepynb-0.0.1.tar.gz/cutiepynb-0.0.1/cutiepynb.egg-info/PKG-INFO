@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: cutiepynb
+Version: 0.0.1
+Summary: Make your Jupyter notebooks pretty with custom colors and a table of contents.
+Author-email: Elisa Márquez-Zavala <emarquez@lcg.unam.mx>
+License: MIT License
+Project-URL: Homepage, https://github.com/emarquezz/cutiepynb
+Keywords: cutiepynb
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: cutiepynb[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# cutiepynb
+
+
+[![image](https://img.shields.io/pypi/v/cutiepynb.svg)](https://pypi.python.org/pypi/cutiepynb)
+[![image](https://img.shields.io/conda/vn/conda-forge/cutiepynb.svg)](https://anaconda.org/conda-forge/cutiepynb)
+
+
+**Make your Jupyter notebooks pretty with custom colors and a table of contents.**
+
+
+-   Free software: MIT License
+-   Documentation: https://emarquezz.github.io/cutiepynb
+    
+
+## Features
+
+-   TODO
