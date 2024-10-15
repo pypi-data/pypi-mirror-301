@@ -1,0 +1,7 @@
+README.md
+setup.py
+bjarkan_sdk.egg-info/PKG-INFO
+bjarkan_sdk.egg-info/SOURCES.txt
+bjarkan_sdk.egg-info/dependency_links.txt
+bjarkan_sdk.egg-info/requires.txt
+bjarkan_sdk.egg-info/top_level.txt
