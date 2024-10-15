@@ -1,0 +1,6 @@
+setup.py
+my_python_package_agn.egg-info/PKG-INFO
+my_python_package_agn.egg-info/SOURCES.txt
+my_python_package_agn.egg-info/dependency_links.txt
+my_python_package_agn.egg-info/requires.txt
+my_python_package_agn.egg-info/top_level.txt
