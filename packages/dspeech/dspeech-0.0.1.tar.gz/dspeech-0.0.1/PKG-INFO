@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dspeech
+Version: 0.0.1
+Summary: A Speech-to-Text toolkit with VAD, punctuation, and emotion classification
+Author: Zhao Sheng
+Author-email: zhaosheng@nuaa.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: soundfile
+Requires-Dist: funasr
+Requires-Dist: rich
+Requires-Dist: click
