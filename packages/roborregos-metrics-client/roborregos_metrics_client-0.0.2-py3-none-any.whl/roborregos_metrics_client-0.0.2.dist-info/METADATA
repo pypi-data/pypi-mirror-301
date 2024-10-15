@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: roborregos-metrics-client
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pydantic
+Requires-Dist: requests
+
+UNKNOWN
+
