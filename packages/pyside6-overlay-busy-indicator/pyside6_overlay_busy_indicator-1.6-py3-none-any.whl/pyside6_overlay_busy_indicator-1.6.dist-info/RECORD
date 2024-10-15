@@ -1,0 +1,10 @@
+qbusyindicator/__init__.py,sha256=9AHLUoi7Bq4SLPDJJynQ9A7jBrpwaw0BQYYF-kUEnGE,507
+qbusyindicator/busyindicator.py,sha256=ttPiMbYWOSeW4ZoFGFL_zgWSVCme4Y4YH4Avt20ZpzI,6082
+qbusyindicator/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qbusyindicator/examples/demo.py,sha256=FEGSt_tLvNqG6QNl8YFieV2K0bJh6o5NNF63AtvglwI,3738
+qbusyindicator/examples/loading.gif,sha256=s2A1n_59RtMjKbakVLBUDm00vURKb57PrOZmPhy5iro,40957
+pyside6_overlay_busy_indicator-1.6.dist-info/LICENSE.txt,sha256=HL3WWsD_Mj1Hjppx498pMOPhMcTQ92u6MY2JUxkRTRg,1110
+pyside6_overlay_busy_indicator-1.6.dist-info/METADATA,sha256=Ff0dngYo-ROoKxrZ11TlEHh-_mtBKb42UiT7fRA5qWw,7036
+pyside6_overlay_busy_indicator-1.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pyside6_overlay_busy_indicator-1.6.dist-info/top_level.txt,sha256=N2cf8Zdas47C-Lhh_1XjfFoEYBoC_ddSIGzs8OpG29Q,15
+pyside6_overlay_busy_indicator-1.6.dist-info/RECORD,,
