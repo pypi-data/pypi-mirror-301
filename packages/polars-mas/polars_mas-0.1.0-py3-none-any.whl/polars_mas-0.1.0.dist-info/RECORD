@@ -1,0 +1,9 @@
+polars_mas/__init__.py,sha256=To9fjUVmmMrDJi9LRSNQQwlHqwwSdAsGt_GJ4_LvBcw,10547
+polars_mas/consts.py,sha256=7vHTRE-UsahyZmswSsCvYTcvCHfLhVQhQ_OdVApDAxQ,489
+polars_mas/main.py,sha256=ivzTguHXxCkVVq682YknUYD0w6o7A26F0gTiBUFCv4A,1879
+polars_mas/mas_frame.py,sha256=S9MKc7tQ-OcKBVpkUg-13v6BiiJzCeaA4x8zjhF60jA,18373
+polars_mas/model_funcs.py,sha256=5U94P4MchrDJM1E6ruNOwQE3jvgtenu4s5n_MQUGWGU,3282
+polars_mas-0.1.0.dist-info/METADATA,sha256=O1s7thuHNzo6K1cD1mkbQdt_tGZ1LqWgM_nLeLsUoU0,676
+polars_mas-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+polars_mas-0.1.0.dist-info/entry_points.txt,sha256=F54sNZ2lShY7k8NZnJFLuH9XhBO81snIbduXpC3MHhY,69
+polars_mas-0.1.0.dist-info/RECORD,,
