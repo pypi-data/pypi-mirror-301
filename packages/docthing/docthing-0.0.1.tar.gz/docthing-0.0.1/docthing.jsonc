@@ -1,0 +1,14 @@
+{
+    "main-title": "docthing",
+    "quick": "README.md",
+    "intro": "INTRO.md",
+    "Chapter 1: docthing": "src/docthing.py",
+    "Chapter 2: configuration": "CONFIG-FILE.md",
+    "Chapter 3: insights": {
+        "DocumentationBlob": "src/docthing/documentation_blob.py",
+        "Extractor": "src/docthing/extractor.py",
+        "Utils": "src/docthing/util.py",
+        "Constants": "src/docthing/constants.py"
+    },
+    "TODOs": "TODO.md"
+}
