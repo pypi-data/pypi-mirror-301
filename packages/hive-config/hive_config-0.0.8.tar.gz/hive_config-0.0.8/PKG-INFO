@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: hive-config
+Version: 0.0.8
+Summary: Configuration management for Hive
+Author-email: Gary Benson <gary@gbenson.net>
+Project-URL: Homepage, https://github.com/gbenson/hive/tree/main/libs/config
+Project-URL: Source, https://github.com/gbenson/hive
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+
+[![version badge]](https://pypi.org/project/hive-config/)
+
+[version badge]: https://img.shields.io/pypi/v/hive-config?color=limegreen
+
+# hive-config
+
+Configuration management for Hive.
+
+## Installation
+
+### With PIP
+
+```sh
+pip install hive-config
+```
+
+### From source
+
+```sh
+git clone https://github.com/gbenson/hive.git
+cd hive/libs/common
+python3 -m venv .venv
+. .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+pip install -e .
+flake8 && pytest
+```
