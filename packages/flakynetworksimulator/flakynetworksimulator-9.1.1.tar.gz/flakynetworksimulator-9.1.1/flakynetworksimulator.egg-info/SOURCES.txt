@@ -1,0 +1,7 @@
+README.md
+setup.py
+flakynetworksimulator.egg-info/PKG-INFO
+flakynetworksimulator.egg-info/SOURCES.txt
+flakynetworksimulator.egg-info/dependency_links.txt
+flakynetworksimulator.egg-info/not-zip-safe
+flakynetworksimulator.egg-info/top_level.txt
