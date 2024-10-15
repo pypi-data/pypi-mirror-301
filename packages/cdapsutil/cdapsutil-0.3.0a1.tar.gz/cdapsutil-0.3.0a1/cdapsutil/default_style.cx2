@@ -1,0 +1,253 @@
+[
+    {
+        "CXVersion": "2.0",
+        "hasFragments": false
+    },
+    {
+        "metaData": [
+            {
+                "name": "attributeDeclarations",
+                "elementCount": 1
+            },
+            {
+                "name": "networkAttributes",
+                "elementCount": 1
+            },
+            {
+                "name": "nodes",
+                "elementCount": 1
+            },
+            {
+                "name": "visualProperties",
+                "elementCount": 1
+            },
+            {
+                "name": "visualEditorProperties",
+                "elementCount": 1
+            },
+            {
+                "name": "edgeBypasses"
+            },
+            {
+                "name": "nodeBypasses"
+            },
+            {
+                "name": "tableVisualProperties"
+            }
+        ]
+    },
+    {
+        "attributeDeclarations": [
+            {
+                "nodes": {
+                    "CD_MemberList": {
+                        "d": "string"
+                    },
+                    "CD_AnnotatedMembers_Size": {
+                        "d": "integer"
+                    },
+                    "CD_AnnotatedMembers_Pvalue": {
+                        "d": "double"
+                    },
+                    "CD_MemberList_LogSize": {
+                        "d": "double"
+                    },
+                    "CD_CommunityName": {
+                        "d": "string"
+                    },
+                    "CD_AnnotatedMembers": {
+                        "d": "string"
+                    },
+                    "name": {
+                        "d": "string"
+                    },
+                    "CD_AnnotatedMembers_Overlap": {
+                        "d": "double"
+                    },
+                    "CD_Labeled": {
+                        "d": "boolean"
+                    },
+                    "HiDeF_persistence": {
+                        "d": "integer"
+                    },
+                    "selected": {
+                        "d": "boolean"
+                    },
+                    "CD_MemberList_Size": {
+                        "d": "integer"
+                    }
+                },
+                "networkAttributes": {
+                    "shared name": {
+                        "d": "string"
+                    },
+                    "prov:wasDerivedFrom": {
+                        "d": "string"
+                    },
+                    "prov:wasGeneratedBy": {
+                        "d": "string"
+                    },
+                    "__CD_OriginalNetwork": {
+                        "d": "long"
+                    },
+                    "__Annotations": {
+                        "d": "list_of_string"
+                    },
+                    "name": {
+                        "d": "string"
+                    },
+                    "description": {
+                        "d": "string"
+                    },
+                    "selected": {
+                        "d": "boolean"
+                    }
+                },
+                "edges": {
+                    "shared name": {
+                        "d": "string"
+                    },
+                    "shared interaction": {
+                        "d": "string"
+                    },
+                    "name": {
+                        "d": "string"
+                    },
+                    "interaction": {
+                        "d": "string"
+                    },
+                    "selected": {
+                        "d": "boolean"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "networkAttributes": [
+            {
+                "prov:wasDerivedFrom": "Network",
+                "prov:wasGeneratedBy": "App: CyCommunityDetection (1.11.0) Docker Image: coleslawndex/cdhidef:0.2.1",
+                "__CD_OriginalNetwork": 45075,
+                "name": "hidef_(none)_Network",
+                "description": "Original network: Network\nAlgorithm used for community detection: hidef\nEdge table column used as weight: (none)\nCustomParameters: {--maxres=50.0, --ct=75, --k=5, --alg=louvain}"
+            }
+        ]
+    },
+    {
+        "nodes": [
+            {
+                "id": 155,
+                "x": 0.0,
+                "y": 0.0,
+                "v": {
+                    "CD_MemberList": "Node 1 Node 2 Node 3 Node 4",
+                    "CD_AnnotatedMembers_Size": 0,
+                    "CD_AnnotatedMembers_Pvalue": 0.0,
+                    "CD_AnnotatedMembers_Overlap": 0.0,
+                    "HiDeF_persistence": 0,
+                    "CD_MemberList_LogSize": 2.0,
+                    "name": "C45093",
+                    "CD_Labeled": false,
+                    "CD_MemberList_Size": 4
+                }
+            }
+        ]
+    },
+    {
+        "visualEditorProperties": [
+            {
+                "properties": {
+                    "nodeSizeLocked": true,
+                    "arrowColorMatchesEdge": true,
+                    "nodeCustomGraphicsSizeSync": true
+                }
+            }
+        ]
+    },
+    {
+        "visualProperties": [
+            {
+                "default": {
+                    "network": {
+                        "NETWORK_BACKGROUND_COLOR": "#FFFFFF"
+                    },
+                    "edge": {
+                        "EDGE_LABEL": "",
+                        "EDGE_LABEL_COLOR": "#000000",
+                        "EDGE_LABEL_FONT_FACE": {
+                            "FONT_FAMILY": "serif",
+                            "FONT_STYLE": "normal",
+                            "FONT_WEIGHT": "normal"
+                        },
+                        "EDGE_LABEL_FONT_SIZE": 12,
+                        "EDGE_LABEL_OPACITY": 1,
+                        "EDGE_LABEL_ROTATION": 0,
+                        "EDGE_LABEL_MAX_WIDTH": 100,
+                        "EDGE_LINE_STYLE": "solid",
+                        "EDGE_OPACITY": 1,
+                        "EDGE_SELECTED_PAINT": "red",
+                        "EDGE_SOURCE_ARROW_COLOR": "#000000",
+                        "EDGE_SOURCE_ARROW_SHAPE": "none",
+                        "EDGE_LINE_COLOR": "#000000",
+                        "EDGE_TARGET_ARROW_COLOR": "#000000",
+                        "EDGE_TARGET_ARROW_SHAPE": "none",
+                        "EDGE_VISIBILITY": "element",
+                        "EDGE_WIDTH": 1,
+                        "EDGE_Z_LOCATION": 0
+                    },
+                    "node": {
+                        "NODE_BORDER_COLOR": "#000000",
+                        "NODE_BORDER_STYLE": "solid",
+                        "NODE_BORDER_OPACITY": 1,
+                        "NODE_BORDER_WIDTH": 1,
+                        "NODE_BACKGROUND_COLOR": "#FFFFFF",
+                        "NODE_HEIGHT": 40,
+                        "NODE_LABEL": "",
+                        "NODE_LABEL_COLOR": "#000000",
+                        "NODE_LABEL_FONT_FACE": {
+                            "FONT_FAMILY": "serif",
+                            "FONT_STYLE": "normal",
+                            "FONT_WEIGHT": "normal"
+                        },
+                        "NODE_LABEL_FONT_SIZE": 12,
+                        "NODE_LABEL_OPACITY": 1,
+                        "NODE_LABEL_POSITION": {
+                            "HORIZONTAL_ALIGN": "center",
+                            "VERTICAL_ALIGN": "center",
+                            "HORIZONTAL_ANCHOR": "center",
+                            "VERTICAL_ANCHOR": "center",
+                            "JUSTIFICATION": "center",
+                            "MARGIN_X": 0,
+                            "MARGIN_Y": 0
+                        },
+                        "NODE_LABEL_ROTATION": 0,
+                        "NODE_LABEL_MAX_WIDTH": 100,
+                        "NODE_BACKGROUND_OPACITY": 1,
+                        "NODE_SELECTED_PAINT": "yellow",
+                        "NODE_SHAPE": "ellipse",
+                        "NODE_VISIBILITY": "element",
+                        "NODE_WIDTH": 40,
+                        "NODE_Z_LOCATION": 0
+                    }
+                },
+                "nodeMapping": {
+                    "NODE_LABEL": {
+                        "type": "PASSTHROUGH",
+                        "definition": {
+                            "attribute": "name"
+                        }
+                    }
+                },
+                "edgeMapping": {}
+            }
+        ]
+    },
+    {
+        "status": [
+            {
+                "success": true
+            }
+        ]
+    }
+]
