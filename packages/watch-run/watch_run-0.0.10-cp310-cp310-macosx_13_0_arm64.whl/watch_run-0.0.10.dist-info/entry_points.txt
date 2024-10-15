@@ -1,0 +1,3 @@
+[console_scripts]
+watch_run = watch_run:main
+
