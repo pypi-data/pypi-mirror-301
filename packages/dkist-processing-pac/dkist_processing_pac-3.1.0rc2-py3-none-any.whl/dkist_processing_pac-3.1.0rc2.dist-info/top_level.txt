@@ -1,0 +1,4 @@
+changelog
+dkist_processing_pac
+docs
+licenses
