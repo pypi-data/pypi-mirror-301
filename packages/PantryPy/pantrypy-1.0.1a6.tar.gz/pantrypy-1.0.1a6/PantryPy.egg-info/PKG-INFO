@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PantryPy
+Version: 1.0.1a6
+Summary: PantryPy is a Python library for enhanced typing with custom annotations
+Home-page: https://github.com/Feliperaxd/pantrypy.git
+Author: Felipe Amaral
+Author-email: lipeamaralsantos@gmail.com
+License: MIT
+Keywords: PantryPy pantry py type typing
+License-File: LICENSE
+Requires-Dist: colorama==0.4.4
