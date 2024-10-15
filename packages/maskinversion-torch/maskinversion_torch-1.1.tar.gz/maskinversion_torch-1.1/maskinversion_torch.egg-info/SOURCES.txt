@@ -1,0 +1,10 @@
+README.md
+setup.py
+maskinversion/__init__.py
+maskinversion/maskinversion.py
+maskinversion/utils.py
+maskinversion_torch.egg-info/PKG-INFO
+maskinversion_torch.egg-info/SOURCES.txt
+maskinversion_torch.egg-info/dependency_links.txt
+maskinversion_torch.egg-info/requires.txt
+maskinversion_torch.egg-info/top_level.txt
