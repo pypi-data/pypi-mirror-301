@@ -1,0 +1,124 @@
+#!/usr/bin/env python
+"""
+Convenience script to generate a dataset of Euler angles
+
+Example usage to make a dataset of the angle timeseries where only the mass ratio varies:
+
+	mlgw_generate_angle_dataset --n-angles 500 --n-grid 2000 --filename tiny_angle_dataset_only_q.dat --t-coal 2. --t-step 1e-4 --alpha 0.65 --q-range 1 10 --s1-range 0.8 --s2-range 0.4 --t1-range 1 --t2-range 2.3 --phi1-range 0 --phi2-range 0 --fstart 8 --fref 8 --store-timeseries
+
+Example usage to make a dataset of the reduced angles where only the mass ratio varies:
+
+	mlgw_generate_angle_dataset --n-angles 500 --filename tiny_angle_dataset_only_q.dat --t-coal 2. --q-range 1 10 --s1-range 0.8 --s2-range 0.4 --t1-range 1 --t2-range 2.3 --phi1-range 0 --phi2-range 0 --fref 5
+
+"""
+from mlgw import GW_generator
+from mlgw.precession_helper import create_dataset_alpha_beta_gamma, create_dataset_reduced_alpha_beta
+import numpy as np
+import argparse
+import sys
+import os
+
+
+#########################################################################
+
+parser = argparse.ArgumentParser(__doc__)
+
+parser.add_argument(
+	"--n-angles", type = int, required = True,
+	help="Number of angles to generate")
+
+parser.add_argument(
+	"--n-grid", type = int, required = False,
+	help="Number of grid points")
+
+parser.add_argument(
+	"--filename", type = str, required = True,
+	help="Filename to save the angles at")
+
+parser.add_argument(
+	"--t-coal", type = float, required = True,
+	help="time to coalescence for each generated WF (in s/M_sun)")
+
+
+parser.add_argument(
+	"--t-step", type = float, required = False,
+	help="Time step for the input waveform in the given model")
+
+parser.add_argument(
+	"--alpha", type = float, required = False, default = 0.5,
+	help="distortion parameter alpha for the time grid (between 0 and 1); a value of 0.3-0.5 is advised.")
+
+parser.add_argument(
+	"--q-range", type = float, required = True, nargs = '+',
+	help="Mass ratio range in which WF are generated")
+
+parser.add_argument(
+	"--s1-range", type = float, required = False, nargs = '+', default = (-0.9, 0.9),
+	help="S1 range in which WF are generated")
+
+parser.add_argument(
+	"--s2-range", type = float, required = False, nargs = '+', default = (-0.9, 0.9),
+	help="S2 range in which WF are generated")
+
+parser.add_argument(
+	"--m2-range", type = float, required = False, nargs = '+', default = None,
+	help="Range for the m2 quantity. If not given, the total mass of the system is set to be 20 M_sun")
+
+parser.add_argument(
+	"--t1-range", type = float, required = False, nargs = '+', default = (0., np.pi),
+	help="Range for the tilt angle for the first BH")
+
+parser.add_argument(
+	"--t2-range", type = float, required = False, nargs = '+', default = (0., np.pi),
+	help="Range for the tilt angle for the second BH.")
+
+parser.add_argument(
+	"--phi1-range", type = float, required = False, nargs = '+', default = (0.),
+	help="Range for the polar angle for the first BH.")
+
+parser.add_argument(
+	"--phi2-range", type = float, required = False, nargs = '+', default = (0.),
+	help="Range for the polar angle for the second BH.")
+
+parser.add_argument(
+	"--fstart", type = float, required = False, default = None,
+	help="Starting frequency. If None, it will be computed based on the binary parameters (if --store-timeseries) else it will be set to fref")
+
+parser.add_argument(
+	"--fref", type = float, required = False, default = None,
+	help="Reference frequency for the angles. If given, the reference frequency will be always set to the given value. If None, fref will be set to the ISCO frequency")
+
+parser.add_argument(
+	"--store-timeseries", default = False, action = 'store_true',
+	help="Whether to generate a dataset with the timeseries of the angles. If False, only the 10 parameters of the parametric model for alpha and beta will be saved for each value.")
+
+args = parser.parse_args()
+
+for k in args.__dict__:
+	if getattr(args,k) == parser.get_default(k): continue
+
+	if k.find('range')>-1:
+		if len(getattr(args,k)) == 1:
+			setattr(args,k, getattr(args,k)[0])
+		else:
+			assert len(getattr(args,k)) == 2, "Argument {} must be a a float or a tuple".format(k)
+
+if args.store_timeseries:
+	assert args.n_grid and args.t_step, "The arguments --n-grid and --t-step must be provided if --store-timeseries is given!"
+	create_dataset_alpha_beta_gamma(args.n_angles, N_grid = args.n_grid, filename = args.filename,
+		t_coal = args.t_coal,
+		q_range = args.q_range, m2_range = args.m2_range, s1_range = args.s1_range, s2_range = args.s2_range,
+		t1_range = args.t1_range, t2_range = args.t2_range,
+		phi1_range = args.phi1_range, phi2_range = args.phi2_range,
+		fref = args.fref, fstart = args.fstart,
+		t_step = args.t_step, alpha = args.alpha)
+else:
+	gen = GW_generator()
+	create_dataset_reduced_alpha_beta(gen, args.n_angles, filename = args.filename, t_coal = args.t_coal,
+		q_range = args.q_range, mtot = 20., s1_range = args.s1_range, s2_range = args.s2_range,
+		t1_range = args.t1_range, t2_range = args.t2_range,
+		phi1_range = args.phi1_range, phi2_range = args.phi2_range)
+
+
+	
+	
