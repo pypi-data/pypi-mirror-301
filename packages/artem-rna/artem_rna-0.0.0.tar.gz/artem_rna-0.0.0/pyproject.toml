@@ -1,0 +1,43 @@
+[project]
+name = "artem-rna"
+version = "0.0.0"
+authors = [
+  { name="Davyd R Bohdan", email="dav.bog.rom@gmail.com" },
+  { name="Janusz M Bujnicki", email="janusz@iimcb.gov.pl" },
+  { name="Eugene F Baulin", email="efbaulin@gmail.com" },
+]
+description = "Aligning RNA TErtiary Motifs (ARTEM) is a tool for superimposing arbitrary RNA spatial structures"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [ 
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy >= 1.22.3",
+    "pandas >= 1.4.1",
+    "requests >= 2.31.0",
+    "scipy >= 1.8.0"
+]
+
+[project.urls]
+"Source" = "https://github.com/david-bogdan-r/ARTEM.git"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "src/**/*"
+]
+exclude = [
+    "src/artem/.git/**",
+    "src/artem/examples/**",
+    "src/artem/.gitignore",
+    "src/artem/LICENSE",
+    "src/artem/README.md",
+    "src/artem/requirements.txt",
+]
