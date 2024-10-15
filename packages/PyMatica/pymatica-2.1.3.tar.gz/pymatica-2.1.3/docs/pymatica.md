@@ -1,0 +1,4 @@
+ 
+# pymatica module
+
+::: pymatica.pymatica
