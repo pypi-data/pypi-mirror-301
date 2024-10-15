@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+robloxrequestsss/__init__.py
+robloxrequestsss/robloxrequests.py
+robloxrequestsss.egg-info/PKG-INFO
+robloxrequestsss.egg-info/SOURCES.txt
+robloxrequestsss.egg-info/dependency_links.txt
+robloxrequestsss.egg-info/top_level.txt
