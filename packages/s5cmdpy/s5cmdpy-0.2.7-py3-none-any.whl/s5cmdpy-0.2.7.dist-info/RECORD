@@ -1,0 +1,6 @@
+s5cmdpy/__init__.py,sha256=4rMpVJIUcvJoe7JJLH-m-Zq61DWUVdN81nK245lAP0g,2779
+s5cmdpy/s5cmd_runner.py,sha256=NKyCfj2uimwEOJhpHadsGfekM-rr6_7lFT0zohsxHNk,17102
+s5cmdpy/uni_logger_standalone.py,sha256=v4yNJSsnqKg0A42xfVbiD_17tEynI1nqFLO40F81kDg,4590
+s5cmdpy-0.2.7.dist-info/METADATA,sha256=q8zFgsVZklZoPtKkiQymbjt2-LHWeAukz3rIJH_ctgM,4211
+s5cmdpy-0.2.7.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+s5cmdpy-0.2.7.dist-info/RECORD,,
