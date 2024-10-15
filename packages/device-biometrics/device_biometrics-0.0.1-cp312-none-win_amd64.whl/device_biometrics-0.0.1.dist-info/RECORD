@@ -1,0 +1,5 @@
+device_biometrics-0.0.1.dist-info/METADATA,sha256=NHtQWaQ9hYKDi4Tp4rp5aSJHlTH9zi-0i2QRpjJeWx0,550
+device_biometrics-0.0.1.dist-info/WHEEL,sha256=VGMDu5jnp_XpyXOq-L1-cbr3x9_PzCpsKi1udyLAeSI,95
+device_biometrics/__init__.py,sha256=vcD-aQ10JVnQ5aQcLJfSc3v8POFQJe3NvjvMv2X8WEQ,151
+device_biometrics/device_biometrics.cp312-win_amd64.pyd,sha256=JA-CY4j_hYC7DGsZ3Kvn-qn41WaiTConFrq3A13lllA,230912
+device_biometrics-0.0.1.dist-info/RECORD,,
