@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: alang
+Version: 0.0.2
+Summary: A programming language specializing in cross-compiling to lots of other languages
+Project-URL: Homepage, https://github.com/praeclarum/alang
+Project-URL: Issues, https://github.com/praeclarum/alang/issues
+Author-email: "Frank A. Krueger" <fak@praeclarum.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# alang
+A programming language specializing in cross-compiling to lots of other languages
