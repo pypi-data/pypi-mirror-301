@@ -1,0 +1,1985 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+/* MateGen相关 */
+.header-logo-text-box {
+  transition: background-color 0.3s ease, color 0.3s ease; /* 增加平滑过渡效果 */
+}
+.header-logo-text-box>span{
+  border-radius: 4px; /* 添加圆角效果 */
+  padding:2px 5px;
+  transition: background-color 0.3s ease; /* 增加平滑过渡效果 */
+}
+
+/*暂时禁用改功能*/
+/* .header-logo-text-box>span:hover {
+  background-color: var(--jp-layout-color2); 
+  transition: background-color 0.3s ease; 
+} */
+
+.header-logo-air {
+  color: white; /* 默认白色字体 */
+}
+
+.header-logo-pro {
+  color: yellow; /* 验证通过后变为黄色 */
+}
+
+/* 弹窗居中样式 */
+.api-key-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--jp-layout-color1); /* 使用JupyterLab的颜色风格 */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none; /* 初始隐藏 */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+/* 弹窗头部样式 */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.modal-close {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0px;
+}
+
+.modal-body {
+  margin-top: 10px;
+}
+.modal-body .modal-body-content{
+  display: flex;
+  align-items: center;
+}
+
+.api-key-input {
+  flex: 1;
+  padding: 0 3px;
+  margin-right: 10px;
+  height: 22px;
+  line-height: 25px;
+}
+
+.verify-button {
+  background-color: var(--jp-brand-color1);
+  color: white;
+  border: none;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.reset-button, .cancel-button, .confirm-button {
+  padding: 4px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-button:hover, .cancel-button:hover, .confirm-button:hover, .verify-button:hover {
+  background-color: var(--jp-brand-color2); /* Jupyter风格的悬停效果 */
+}
+
+.confirm-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* 验证状态提示 */
+.api-key-status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--jp-brand-color3);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+.fix-code-button {
+  background-color: #D63A36;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+
+
+/*
+滚动条样式
+*/
+/* 自定义整个滚动条 */
+.com-scroll ::-webkit-scrollbar {
+  width: 8px; /* 设置滚动条的宽度 */
+  height: 8px; /* 设置滚动条的高度 */
+}
+ 
+/* 自定义滚动条轨道 */
+.com-scroll ::-webkit-scrollbar-track {
+  background: transparent; /* 设置轨道的背景颜色 */
+}
+ 
+/* 自定义滚动条的滑块（thumb） */
+.com-scroll ::-webkit-scrollbar-thumb {
+  background: var(--jp-ui-font-color3); /* 设置滑块的背景颜色 */
+  border-radius: 4px;/* 设置滚动条的圆角 */
+}
+ 
+/* 当滑块悬停或活动时，可以添加更多样式 */
+.com-scroll ::-webkit-scrollbar-thumb:hover {
+  background: var(--jp-layout-color2); /* 设置滑块在悬停状态下的背景颜色 */
+}
+
+/*
+输入框鼠标光标颜色设置
+*/
+.chatbot-container .form-control {
+  color: var(--jp-ui-font-color1); /* 光标颜色 */
+}
+
+.chatbot-container .form-control::-webkit-input-placeholder{
+  color: var(--jp-ui-font-color3);
+}
+
+/* @supports (caret-color: #F06123) {
+  .chatbot-container .form-control {
+      color: var(--jp-ui-font-color1); 
+      caret-color: #F06123; 
+  }
+} */
+
+/* 
+    登录容器样式 
+*/
+.smart-programming-button {
+  display: inline-block;
+  background-color: transparent;  
+  color: white;
+  margin-left: 2px;  
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 0;  
+  left: 0;  
+  z-index: 1000;
+  width: 24px;  /* 缩小按钮宽度 */
+  height: 24px; /* 缩小按钮高度 */
+  padding: 2px; /* 缩小内边距 */
+  font-size: 12px;  
+  border-radius: 4px;  
+}
+
+/* 设置按钮在hover时显示的样式 */
+.smart-programming-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);  
+}
+
+/* 灯泡图标 */
+.smart-programming-button::before {
+  content: '💡';  
+  font-size: 14px;  /* 缩小图标大小 */
+}
+
+/* 在悬停时显示提示框 */
+.smart-programming-button::after {
+  content: 'AI Programming';  
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 3px 5px;
+  font-size: 12px;
+  border-radius: 4px;
+  top: 50%;  
+  left: -100px;  
+  transform: translateY(-50%);  
+  white-space: nowrap;  
+  z-index: 1001;
+}
+
+/* 悬停时显示提示框 */
+.smart-programming-button:hover::after {
+  display: block;
+}
+
+/* 智慧编程下拉按钮组 */
+.smart-buttons {
+  display: flex;
+  justify-content: flex-start; /* 按钮左对齐 */
+  margin-top: 5px;
+  margin-left: 70px; /* 整体右移 */
+}
+
+.smart-buttons button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color1);
+  border: 1px solid var(--jp-border-color2);
+  border-radius: 4px;
+}
+
+.smart-buttons button:hover {
+  background-color: var(--jp-layout-color2);
+}
+
+.smart-buttons button:active {
+  background-color: var(--jp-brand-color2);
+}
+
+.input-popup {
+  background-color: transparent;  /* 背景设置为透明，伪装成cell的一部分 */
+  border: none;  /* 去掉边框 */
+  box-shadow: none;  /* 去掉阴影效果 */
+  width: calc(100% - 24px);  /* 占据整个cell的宽度 */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 72px;
+  padding-top:10px;
+}
+
+.input-field {
+  width: 100%;  /* 确保输入框宽度填满父容器 */
+  padding: 5px;  /* 适当的内边距 */
+  border: none;  /* 默认无边框 */
+  outline: none;  /* 移除默认的聚焦外边框 */
+  background-color: transparent;  /* 透明背景，融入cell */
+  color: inherit;  /* 继承父元素的字体颜色 */
+  font-size: inherit;  /* 继承父元素的字体大小 */
+  box-sizing: border-box;
+}
+
+
+/* 设置占位符颜色为偏白的灰色 */
+.input-field::placeholder {
+  color: #ccc;  /* 偏白的灰色 */
+  opacity: 1;  /* 使占位符颜色不被透明度影响 */
+}
+
+/* 输入框聚焦时的边框效果 */
+.input-field:focus {
+  border: 2px solid #21A2FF;  /* 蓝色边框 */
+  border-radius: 0px;  /* 添加边角圆润效果 */
+  outline: none;  /* 避免默认的蓝色阴影 */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);  /* 添加蓝色阴影，提升视觉效果 */
+}
+
+
+
+.user-message-display {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+
+/* 主页面样式 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: var(--jp-layout-color1);
+    position: relative; /* 确保内部元素相对于容器定位 */
+}
+
+
+/* 欢迎页面 */
+/* 内容样式 */
+.content {
+    position: relative;
+    height: 100vh;
+    width: 100%vw;
+}
+
+
+.login-container-content{
+  height: 100%;
+  overflow: hidden;
+}
+
+.login-container-box{
+  height:100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.chatbot-container-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 8px;
+}
+
+.chatbot-container-button button{
+  margin: 0 !important;
+}
+
+/* 动态背景样式 */
+#demo-canvas {
+    position: absolute; /* 绝对定位覆盖整个背景 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* 背景位于文字的下层 */
+    display: block;
+}
+
+/* 大标题和按钮容器 */
+.large-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* 确保文字位于动态背景之上 */
+    text-align: center;
+    transition: transform 0.8s ease, left 0.8s ease; /* 添加过渡效果 */
+}
+
+/* 主标题样式 */
+.main-title {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--jp-ui-font-color1);
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+/* 副标题样式 */
+.sub-title {
+    font-size: 24px;
+    color: var(--jp-ui-font-color1);
+    margin-bottom: 0px;
+    z-index: 2;
+}
+
+/* 说明文字样式 */
+.description {
+    font-size: 18px;
+    color: var(--jp-ui-font-color1);
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+/* 额外的按钮样式 */
+/* 登录按钮样式 */
+.action-btn {
+    font-size: 18px;
+    color: #f9f1e9;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* 添加过渡效果 */
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 点击效果 */
+.action-btn:active {
+    background-color: #003f7f; /* 改变背景颜色 */
+    transform: scale(0.95); /* 按下时缩小按钮 */
+}
+
+/* 返回按钮样式 */
+.back-btn {
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* 与二维码和文字的间距 */
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 点击效果 */
+.back-btn:active {
+    background-color: #003f7f; /* 改变背景颜色 */
+    transform: scale(0.95); /* 按下时缩小按钮 */
+}
+
+/* 登录页面的内容 */
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 登录标题 */
+.login-title {
+    font-size: 24px;
+    color: var(--jp-ui-font-color1);
+    margin-bottom: 20px;
+}
+
+/* 二维码样式 */
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+/* 登录说明文字 */
+.login-description {
+    font-size: 18px;
+    color: var(--jp-ui-font-color1);
+}
+.qr_space {
+	background: linear-gradient(90deg, #F06123 0%, #BEB1FC 100%); /* 渐变效果 */
+	-webkit-background-clip: text; /* 用背景填充文字 */
+	-webkit-text-fill-color: transparent; /* 将文字颜色设为透明，使渐变效果可见 */
+	font-weight: bold; /* 设置加粗 */
+  }
+
+/* 登录页面样式 */
+/* 进入登录页面时，欢迎页面的滑动效果 */
+.large-header.slide-out {
+    transform: translate(-100vw, -50%);
+}
+
+/* 登录页面从屏幕右侧滑入 */
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%; /* 设置垂直居中 */
+    left: 100%; /* 初始位置在屏幕外 */
+    transform: translate(-4%, -60%); /* 确保登录页面保持顶部居中 */
+    z-index: 2;
+    text-align: center;
+    transition: left 0.5s ease; /* 设置滑动动画效果 */
+}
+
+#login-page.slide-in {
+    left: 0;
+    transform: translate(-4%, -60%); /* 保持水平居中 */
+}
+
+  
+  /* 二维码容器样式 */
+  #qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+  
+  /* 二维码图片样式 */
+  #qrcode img,
+  #qrcode .qrcode-image {
+    width: 100%;
+  }
+  
+  /* 占位符样式 */
+  #qrcode .placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 刷新占位符样式 */
+  .refresh-placeholder {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .refresh-placeholder svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+/* 
+主容器样式 
+*/
+.jp-ChatbotWidget {
+  display: flex;
+  height: 100%;
+  font-family: var(--jp-ui-font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+/* 主容器 */
+.chatbot-container {
+  /* display: flex; */
+  position: relative;
+  height: 100%; 
+  width: 100%; 
+  background-color: var(--background-color);
+}
+
+.chatbox-container-rel{
+  position: relative;
+}
+
+.chatbot-container-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--chatbot-dailog-bg);
+  z-index: 9999;
+  display: none;
+}
+
+.loading {
+  font-size: 14px;
+  color: #757575;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.active-session {
+  background-color: #e0f7fa;  /* 高亮颜色 */
+  border-left: 4px solid #00796b;  /* 当前会话的标记 */
+}
+
+/* 当前选中的会话，始终显示三个点按钮 */
+.active-session .more-btn {
+  display: inline-block;  /* 始终显示三个点按钮 */
+}
+
+
+/* 弹窗容器 */
+.popup-container-bg{
+  width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  width: 370px;
+  height: 225px;
+  margin: -114px 0 0 -200px;
+  border: 1px solid var(--jp-border-color2);
+  padding:24px 16px 10px 16px;
+  background-color: var(--jp-layout-color1);
+  border-radius:2px;
+}
+
+.popup-container.hidden {
+  display: none;
+}
+
+.popup-content {
+  width: 100%;
+  position: relative;
+}
+
+.popup-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding:8px;
+}
+
+.popup-header span{
+  font-size: 16px;
+  color: var(--jp-ui-font-color1);
+}
+
+.close-button {
+  position: absolute;
+  top:-22px;
+  right:6px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: var(--jp-ui-font-color2);
+  cursor: pointer;
+  transition: transform 0.2s ease; /* 鼠标点击的缩放效果 */
+}
+
+.close-button:hover{
+  transform: scale(1.2);
+}
+
+.close-button:active{
+  transform: scale(0.95);
+}
+
+.com-btn{
+  transition: transform 0.2s ease; /* 鼠标点击的缩放效果 */
+}
+
+.com-btn:hover{
+  transform: scale(1.05);
+}
+
+.com-btn:active{
+  transform: scale(0.95);
+}
+
+.popup-body {
+  margin-bottom: 20px;
+}
+
+.popup-body label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.popup-body input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border:1px solid var(--jp-border-color2) !important;
+  border-radius: 5px !important;
+}
+
+.popup-footer-box{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.popup-footer {
+  display: flex;
+  border-top: 1px solid var(--jp-border-color2);
+  padding-top: 10px;
+}
+
+.popup-footer-desc{
+  display: flex;
+  align-items: center;
+  flex:1;
+  color: var(--jp-ui-font-color2);
+  font-size: 12px;
+}
+
+.popup-footer-btns{
+  /* width: 146px; */
+}
+
+.popup-button {
+  padding: 4px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  background-color: var(--jp-layout-color3);
+  color: var(--jp-ui-font-color1);
+  transition: transform 0.2s ease; /* 鼠标点击的缩放效果 */
+}
+.popup-button:hover {
+  transform: scale(1.1); 
+}
+.popup-button:active {
+  transform: scale(0.95); 
+}
+
+/* 确认按钮样式 */
+.popup-button.confirm {
+  background-image: linear-gradient(180deg, #D75720 0%, #BDB0F2 100%);
+  color: var(--jp-ui-font-color1);
+  padding: 4px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-image 0.3s ease; /* 添加渐变的过渡效果 */
+}
+/* 鼠标悬停效果 */
+.popup-button.confirm:hover {
+  background-image: linear-gradient(180deg, #D75720 0%, #BDB0F2 100%); /* 悬停时渐变效果变化 */
+}
+
+/* 鼠标点击效果 */
+.popup-button.confirm:active {
+  background-image: linear-gradient(180deg, #D75720 0%, #BDB0F2 100%); /* 点击时渐变效果变化 */
+}
+
+/**/
+.popup-head-radio-group{
+  display: flex;
+  cursor: pointer;
+}
+.popup-head-radio-item{
+  display: flex;
+  flex: 1;
+  padding: 0;
+}
+.popup-head-radio-item label{
+  flex:1;
+  font-size: 14px;
+  color: var(--jp-ui-font-color1);
+  cursor: pointer;
+}
+.popup-head-radio-item .popup-head-radio-input{
+  width: 15px;
+  height: 15px;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+
+.popup-head-select-group{
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+}
+
+.popup-head-select-group select{
+  flex:1;
+  width: 100%;
+  height: 30px;
+  background-color: var(--jp-layout-color0);
+  color: var(--jp-layout-font-color0);
+  border-radius: 2px;
+  border: 1px solid var(--jp-border-color2);
+  color: var(--jp-ui-font-color2);
+}
+
+.popup-head-select-group select option{
+  background-color: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color1);
+  padding: 8px 4px;
+  cursor: pointer;
+}
+.popup-head-select-group select option:hover{
+  background-color: var(--jp-layout-color0);
+}
+
+.popup-head-select-group-reset{
+  position: relative;
+  font-size: 12px;
+  color: var(--jp-ui-font-color1);
+  padding: 0 10px;
+  cursor: pointer;
+  width: 30px;
+}
+
+.popup-head-select-group-reset span{
+  display: none;;
+}
+
+.popup-head-select-group-reset:hover span{
+  display: block;
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  content: "";
+  width: 84px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  color: var(--jp-ui-font-color2);
+  background-color: var(--jp-layout-color2);
+  font-size: 12px;
+  padding: 1px 3px;
+}
+.popup-head-select-group-reset:hover span::before{
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--jp-layout-color2);
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(135deg);
+  border-radius: 2px;
+}
+/* 状态信息的样式 */
+#knowledge-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px; /* 更小的字体 */
+  color: var(--jp-ui-font-color1);
+  margin-top: 10px;
+  line-height: 16px;
+  padding:0 8px;
+}
+#knowledge-status a{
+  color: #FF8855;
+}
+#knowledge-status a:hover{
+  text-decoration: underline;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+  display: flex;
+  width: 200px;
+  height: calc(100% - 30px);
+  flex-direction: column; /* 垂直排列内容 */
+  background-color: var(--jp-layout-color1);
+  padding: 8px;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  border-right: 1px solid var(--jp-border-color2);
+}
+
+#session-list {
+  flex-grow: 1; /* 让会话列表填充中间剩余空间 */
+  overflow-y: auto; /* 使其可以滚动 */
+  margin-top: 10px; /* 与"新建会话"按钮保持距离 */
+  padding-top: 10px;
+}
+
+.sidebar-hidden {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  border-right: none;
+}
+
+.sidebar-button {
+  width: 80%; /* 按钮宽度为80% */
+  padding: 10px;
+  margin: 19px; /* 按钮向下移动，居中对齐 */
+  background-color: var(--send-button-color);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* 增大字体大小 */
+  background-image: linear-gradient(90deg, #f46325 0%, #5a81ff 100%); /* 渐变效果 */
+  transition: background-color 0.5s ease, background-image 0.5s ease; /* 增加过渡时间为0.5s */
+  font-weight: bold; /* 加粗文字 */
+} 
+
+.sidebar-button:hover {
+  background-image: linear-gradient(90deg, #F06123 0%, #B18FFC 100%);
+  transition: background-color 0.7s ease, background-image 0.7s ease; /* 鼠标悬停时延长渐变时间 */
+}
+/* 点击效果 */
+.sidebar-button:active {
+  transform: scale(0.98); /* 点击时缩小 */
+}  
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  background-color: var(--jp-layout-color2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  color:var(--jp-ui-font-color1);
+  height: 30px;
+  line-height: 30px;
+}
+
+.session-item:hover {
+  background-color:var(--jp-layout-color3)
+}
+
+.session-item>span{
+  font-size: var(--jp-ui-font-size1);
+}
+.fade-effect {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+.fade-effect::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;  /* 渐变效果的宽度 */
+  background: linear-gradient(to right, transparent, transparent);  /* 全透明的渐变 */
+}
+
+
+
+/* 当处于编辑状态时的输入框样式 */
+.rename-input {
+  font-size: inherit; /* 确保字体大小一致 */
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%; /* 占据可用空间 */
+  box-sizing: border-box; /* 确保内边距不会改变输入框大小 */
+  background-color: var(--jp-layout-color2);
+  color: var(--jp-ui-font-color1);
+}
+
+
+/* 三个点按钮 */
+/* more-options 容器样式 */
+.more-options {
+  position: relative;
+  display: inline-block;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: gray;  /* 默认灰色 */
+  display: none;
+}
+
+.session-item:hover .more-btn {
+  display: inline-block;
+}
+
+/* 当鼠标悬停在三个点按钮上时，颜色变为白色 */
+.more-btn:hover {
+  color: white;  /* 悬停时变为白色 */
+}
+
+/* 弹出菜单的样式 */
+.dropdown-menu {
+  position: absolute;  /* 使用 fixed 以脱离侧边栏的限制 */
+  background-color: var(--jp-layout-color1);
+  border: 1px solid var(--jp-border-color2);
+  border-radius: 5px;
+  white-space: nowrap; /* 防止内容换行 */
+  z-index: 100000; /* 确保显示在最前 */
+  padding: 5px 0;
+  width: auto; /* 根据内容自动调整宽度 */
+  display: none; /* 默认隐藏 */
+  top: 25px;
+  right: 15px;
+
+}
+
+/* 确保点击按钮时不会改变布局 */
+.dropdown-menu button {
+  display: block;
+  width: 100%; /* 占满菜单宽度 */
+  padding: 10px 20px; /* 设置内边距让按钮看起来整齐 */
+  background: none; /* 保持背景透明 */
+  color: inherit; /* 继承颜色 */
+  border: none; /* 去掉默认边框 */
+  text-align: left; /* 左对齐文本 */
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* 鼠标悬停时的背景颜色 */
+.dropdown-menu button:hover {
+  background-color: var(--jp-layout-color2); /* 悬停时设置透明背景 */
+}
+
+/* 显示下拉菜单 */
+.dropdown-menu.show {
+  display: block  /* 确保显示 */
+}
+
+/* 让下拉菜单按钮保持之前的展示效果，并调整为横向排列 */
+.rename-btn, .delete-btn {
+  display: block; /* 确保按钮占据独立的行 */
+  padding: 10px 20px; /* 设置合适的内边距，保证按钮宽度 */
+  background: none; /* 保持背景透明或使用你指定的背景色 */
+  border: none; /* 去掉边框 */
+  text-align: left; /* 文字左对齐 */
+  white-space: nowrap; /* 防止文字换行 */
+  cursor: pointer; /* 鼠标悬停时变为指针 */
+  font-size: 14px; /* 文字大小合适 */
+  color: var(--jp-ui-font-color0); /* 确保文字颜色适配 */
+  width: 100%; /* 让按钮宽度占满整个菜单 */
+}
+
+/* 鼠标悬停时的效果 */
+.rename-btn:hover, .delete-btn:hover {
+  background-color: var(--jp-layout-color2); /* 悬停时背景色 */
+  color: var(--jp-ui-font-color0); /* 悬停时文字颜色 */
+}
+
+/* 聊天区域样式 */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--jp-layout-color0);
+}
+
+/* 当侧边栏弹出时，压缩聊天区域 */
+.chat-area.sidebar-open {
+  margin-left: 200px; /* 侧边栏宽度 */
+}
+
+/* 顶部栏样式 */
+.chat-header {
+  display: flex;
+  justify-content: space-between; /* 左侧和右侧对齐 */
+  align-items: center;
+  padding: 10px;
+  background-color: var(--jp-layout-color1);
+  z-index: 1000;
+  height: 10px;
+  border-bottom: 1px solid var(--jp-border-color2);
+}
+
+.chat-header-btn button{
+  margin-right: 10px !important;
+}
+
+/* 顶部按钮样式 */
+.header-button {
+  width: 18px; /* 控制按钮大小 */
+  height: 18px;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: transform 0.2s ease; /* 鼠标点击的缩放效果 */
+}
+
+/* 鼠标悬停效果 */
+.header-button:hover {
+  color: var(--send-button-hover); /* 鼠标悬停时颜色变化 */
+  transform: scale(1.1); /* 放大按钮 */
+}
+
+/* 鼠标点击效果 */
+.header-button:active {
+  transform: scale(0.9); /* 点击时按钮缩小 */
+}
+
+
+/* 导入SVG图标样式 */
+.toggle-sidebar {
+  mask:url('image/open-popup.svg') no-repeat 50% 50%;
+  -webkit-mask:url('image/open-popup.svg') no-repeat 50% 50%;
+  mask-size: contain;
+  -webkit-mask-size:contain;
+  background-color:var(--jp-ui-font-color1);
+}
+
+/*侧边导航展开按钮*/
+.toggle-sidebar-open {
+  mask:url('image/x_circle.svg') no-repeat 50% 50%;
+  -webkit-mask:url('image/x_circle.svg') no-repeat 50% 50%;
+  mask-size: contain;
+  -webkit-mask-size:contain;
+  background-color:var(--jp-ui-font-color1);
+}
+
+/* API-KEY SVG图标样式 */
+.chat-icon-edit {
+  mask:url('image/icon_edit.svg') no-repeat 50% 50%;
+  -webkit-mask:url('image/icon_edit.svg') no-repeat 50% 50%;
+  mask-size: contain;
+  -webkit-mask-size:contain;
+  background-color:var(--jp-ui-font-color1);
+}
+
+/* 退出登录SVG图标样式 */
+.chat-icon-logout {
+  mask:url('image/icon_logout.svg') no-repeat 50% 50%;
+  -webkit-mask:url('image/icon_logout.svg') no-repeat 50% 50%;
+  mask-size: contain;
+  -webkit-mask-size:contain;
+  background-color:var(--jp-ui-font-color1);
+}
+
+/*用户图像*/
+.header-button-user{
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-image: url('image/user_img.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-clip: contain;
+  background-color: transparent;
+  margin: 0 0 0 12px;
+}
+
+.header-button-user .header-button-user-block{
+  display: none;
+}
+
+.header-button-user:hover .header-button-user-block{
+  display: block;
+  transition: display 0.3s ease-in-out;
+}
+
+/*鼠标移入用户图像显示*/
+.header-button-user-block{
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  width: 171px;
+  height: 72px;
+  border: 1px solid var(--jp-border-color2);
+  border-radius: 2px;
+  background-color:var(--jp-layout-color1);;
+  padding:14px 5px;
+}
+
+.header-button-user-block ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-button-user-block ul li{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 12px;
+  color: var(--jp-ui-font-color1);
+  padding:0 0 0 5px;
+  font-weight: normal;
+}
+.header-button-user-block ul li:hover{
+  background-color: var(--jp-layout-color2);
+  transition: backgroundColor 0.3s ease-in-out;
+}
+.header-button-user-block .header-button{
+  margin-right: 5px;
+}
+
+.chat-bg-show{
+  display: block;
+}
+
+/* 顶部文字 */
+.header-logo-text {
+  font-size: 16px; /* "Powered by"的字体大小 */
+  color: #ccc; /* "Powered by"的字体颜色 */
+  font-weight: normal; /* 设置普通字体 */
+  font-weight: bold; /* 设置加粗 */
+  display: flex;
+  flex:1;
+  align-items: center;
+}
+
+.header-logo-text .header-logo-title{
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 11px;
+}
+
+.header-logo-title-span{
+  position: relative;
+  font-size: 11px;
+  border-radius: 1px;
+  color: var(--jp-ui-font-color3);
+  background: var(--jp-layout-color2);
+  padding:2px 18px 2px 6px;
+  height: 16px;
+  line-height: 16px;
+  transition: transform 0.2s ease; /* 鼠标点击的缩放效果 */
+}
+
+.header-logo-title-span::before{
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  top:5px;
+  right:6px;
+  border:1px solid var(--jp-ui-font-color3);
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+}
+.header-logo-title-span:hover{
+  cursor: pointer;
+  background: var(--jp-layout-color3);
+  transform: scale(1.05); /* 放大按钮 */
+}
+.header-logo-title-span:active{
+  transform: scale(0.95); /* 按下时缩小按钮 */
+}
+
+.header-logo-text .header-logo-text-box{
+  flex:1;
+  text-align:right;
+}
+
+.header-logo {
+  font-size: 14px; /* "MateGen"的字体大小 */
+  color: #fff; /* "MateGen"的字体颜色 */
+  font-weight: bold; /* 设置加粗 */
+  background: linear-gradient(90deg, #F06123 0%, #BEB1FC 100%); /* 渐变效果 */
+  -webkit-background-clip: text; /* 用背景填充文字 */
+  -webkit-text-fill-color: transparent; /* 将文字颜色设为透明，使渐变效果可见 */
+}
+
+/* 二维码和提示文本容器 */
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+  padding-bottom: 30px; /* 为底部留出一点空间 */
+}
+
+/* 侧边底部二维码样式 */
+.qr-code-in {
+  width: 120px; /* 设置二维码图片宽度 */
+  height: 120px; /* 设置二维码图片高度 */
+  background-image: url('image/xiaokeai.png'); /* 加载二维码图片 */
+  background-size: 110px 110px; /* 确保图片不拉伸，按比例显示 */
+  background-position: center; /* 图片居中显示 */
+  border: 1px solid transparent; /* 为边框留出空间 */
+  background-repeat: no-repeat;
+  border-image: linear-gradient(180deg, #F06123 0%, #BEB1FC 100%) 1; /* 渐变边框 */
+  border-radius: 8px; /* 可选：为边框添加圆角效果 */
+  margin: 15px auto; /* 居中对齐 */
+  margin-bottom: 10px; /* 二维码与文本之间的间距 */
+}
+
+/* 提示文字样式 */
+.qr-code-text {
+  text-align: center; /* 文本居中 */
+  margin: 0;
+  padding: 0 10px; /* 给文字留出一点边距 */
+}
+.qr-code-text p{
+  padding: 3px;
+  margin: 0;
+  font-size: 14px;
+  color: var(--jp-ui-font-color1); /* 或者其他你想要的颜色 */
+}
+
+/* 聊天记录区域样式 */
+#chat-log {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--jp-layout-color0);
+  overflow-y: auto;
+  padding: 20px;
+  height: calc(100% - 40px);
+}
+
+/* 消息通用样式 */
+.message {
+  margin-bottom: 0px;
+  max-width: 100%;
+  padding: 3px 8px;
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px var(--jp-layout-color3);
+}
+
+/* 用户消息样式 */
+.user-message {
+  align-self: flex-end;
+  background-color: var(--jp-layout-color2);
+  font-size: 14px;
+  color: var(--jp-ui-font-color1);
+}
+
+/* 机器人消息样式 */
+/* 在现有的CSS中添加或更新以下样式 */
+
+.bot-message {
+  background-color: var(--jp-layout-color0);
+  padding: 10px 5px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--jp-ui-font-color1);
+}
+
+.bot-message p {
+  margin:0;
+}
+
+.bot-message h1, .bot-message h2, .bot-message h3, .bot-message h4, .bot-message h5, .bot-message h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.bot-message ul, .bot-message ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.bot-message li {
+  margin-bottom: 5px;
+}
+
+.bot-message code {
+  background-color: var(--jp-layout-color2);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.bot-message pre {
+  background-color: #2b2b2b;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.bot-message pre code {
+  background-color: transparent;
+  padding: 0;
+  color: var(--jp-ui-font-color0);
+  text-shadow: none;
+}
+
+.bot-message blockquote {
+  border-left: 4px solid #10a37f;
+  padding-left: 10px;
+  margin: 10px 0;
+  color: #a0a0a0;
+}
+
+.bot-message img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bot-message table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.bot-message th, .bot-message td {
+  border: 1px solid #565869;
+  padding: 8px;
+  text-align: left;
+}
+
+.bot-message th {
+  background-color: #2b2b2b;
+}
+
+.highlighted-code {
+  background-color: #2b2b2b;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* 错误消息样式 */
+.error-message {
+  align-self: center;
+  background-color: #ff4d4f;
+  color: white;
+}
+
+/* 输入区域样式 */
+.chat-input {
+  display: flex;
+  padding: 0;
+  background-color: var(--jp-layout-color1); /* 为输入区域添加背景色 */
+  align-items: center; /* 垂直方向居中 */
+  justify-content: flex-start; /* 水平方向从左到右排列 */
+  margin: 0 24px 24px 24px; /* 设置上方外边距为 0px，底部外边距为 15px */
+  position: relative; /* 为左侧和右侧按钮提供定位依据 */
+}
+
+.chat-input .input-wrapper {
+  flex: 1;
+  display: flex;
+  position: relative; /* 为绝对定位的按钮做准备 */
+  align-items: center; /* 垂直居中对齐所有子元素 */
+}
+
+
+.chat-input textarea {
+  height: 14px; /* 设置固定的初始高度 */
+  min-height: 32px; /* 确保最小高度也是 14px */
+  max-height: 150px; /* 保持最大高度限制 */
+  padding: 0; /* 调整内边距以适应较小的高度 */
+  border: 1px solid var(--jp-border-color2);
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: var(--neutral-fill-input-rest);
+  color: var(--jp-ui-font-color0);
+  resize: none;
+  overflow-y: auto;
+  transition: border-color 0.3s, box-shadow 0.3s, height 0.1s;
+  box-sizing: border-box; /* 确保padding不会增加总高度 */
+  line-height: 18px; 
+  padding:5px 45px 5px 5px;
+  width: 100%;
+}
+
+.chat-input textarea:focus {
+  outline: none;
+  border-color: var(--jp-brand-color1);
+}
+
+.chat-input textarea::placeholder {
+  color: var(--jp-ui-font-color3);
+}
+
+.chat-input .send-button {
+  position: absolute;
+  right: 15px;
+  bottom: -8px; /* 垂直居中 */
+  transform: translateY(-50%); /* 精确垂直居中 */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s, transform 0.2s;
+  background-image: url('image/send_botton.svg');
+  background-size: 25px 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; /* 初始不显示 */
+  transform: translateY(-50%) scale(0.8);
+}
+
+.chat-input textarea:not(:placeholder-shown) + button:not(.knowledge-base-button) {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* .chatbot-container-box button:not(.knowledge-base-button):hover {
+  background-color: var(--send-button-hover);
+  transform: translateY(-50%) scale(1.1);
+} */
+
+.chatbot-container-box button::before {
+  content: none; /* 使用Unicode箭头作为发送图标 */
+  font-size: 16px;
+}
+
+/* 输入框左侧的按钮（始终显示） */
+.knowledge-base-button {
+  width: 18px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px; /* 确保按钮和输入框之间有间距 */
+  z-index: 1; /* 确保层级较高，不被覆盖 */
+  mask:url('image/toggle-sidebar.svg') no-repeat 50% 50%;
+  -webkit-mask:url('image/toggle-sidebar.svg') no-repeat 50% 50%;
+  mask-size: contain;
+  -webkit-mask-size:contain;
+  background-color:var(--jp-ui-font-color1);
+}
+/* .chat-input .knowledge-base-button:hover {
+  transform: scale(1.1);
+}
+
+.chat-input .knowledge-base-button:active {
+  transform: scale(0.98);
+} */
+
+
+.new-welcome-base-button {
+  width: 14px;
+  height: 14px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px; /* 确保按钮和输入框之间有间距 */
+  z-index: 1; /* 确保层级较高，不被覆盖 */
+  mask:url('image/new_welcome.svg') no-repeat 50% 50%;
+  -webkit-mask:url('image/new_welcome.svg') no-repeat 50% 50%;
+  mask-size: contain;
+  -webkit-mask-size:contain;
+  background-color:var(--jp-ui-font-color1);
+}
+
+.new-star-left{
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px; /* 确保按钮和输入框之间有间距 */
+  z-index: 1; /* 确保层级较高，不被覆盖 */
+}
+
+.new-chatbot-edit{
+  top:15px;
+  left: 84px;
+  width: 23px;
+  height: 21px;
+  background-image: url('image/new_chatbot_edit.svg'); /* 替换为你的图标 */
+}
+
+.new-chatbot-resp{
+  top:10px;
+  left: 82px;
+  width: 32px;
+  height: 32px;
+  background-image: url('image/new_chatbot_resp.svg'); /* 替换为你的图标 */
+}
+
+/* 聊天机器人容器样式 */
+/* 更新代码框样式 */
+.jp-ChatbotWidget .code-wrapper {
+  margin: 10px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #0D0D0D;  /* 深色背景 */
+}
+
+.jp-ChatbotWidget .code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: var(--jp-layout-color2);
+  color: var(--jp-ui-font-color1);
+}
+
+.jp-ChatbotWidget .code-language {
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+/* 新增代码换行 */
+.jp-ChatbotWidget .code-wrapper pre {
+  white-space: pre-wrap;  /* 自动换行 */
+  word-wrap: break-word;  /* 处理长单词的换行 */
+  overflow-wrap: break-word; /* 处理长单词的换行 */
+  max-width: 100%;  /* 限制代码块的最大宽度 */
+  box-sizing: border-box;  /* 确保宽度计算包含内边距和边框 */
+}
+
+.jp-ChatbotWidget .code-wrapper code {
+  white-space: pre-wrap;  /* 自动换行 */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  font-size: 1.1em;
+}
+
+.jp-ChatbotWidget .copy-button {
+  background-color: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color1);
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background-color 0.3s;
+}
+
+.jp-ChatbotWidget .copy-button:hover {
+  background-color: #5a5a5a;
+}
+
+.jp-ChatbotWidget pre {
+  margin: 0;
+  padding: 12px;
+  background-color: var(--jp-layout-color1);  /* 与 code-wrapper 背景色一致 */
+  border:1px solid var(--jp-border-color3);
+}
+
+.jp-ChatbotWidget code {
+  font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: var(--jp-ui-font-color1);
+}
+
+/* 覆盖 Prism.js 的一些样式 */
+.jp-ChatbotWidget .token.comment,
+.jp-ChatbotWidget .token.prolog,
+.jp-ChatbotWidget .token.doctype,
+.jp-ChatbotWidget .token.cdata {
+  color: #8292a2;
+}
+
+.jp-ChatbotWidget .token.punctuation {
+  color: var(--jp-ui-font-color2);
+}
+
+.jp-ChatbotWidget .token.namespace {
+  opacity: .7;
+}
+
+.jp-ChatbotWidget .token.property,
+.jp-ChatbotWidget .token.tag,
+.jp-ChatbotWidget .token.constant,
+.jp-ChatbotWidget .token.symbol,
+.jp-ChatbotWidget .token.deleted {
+  color: #f92672;
+}
+
+.jp-ChatbotWidget .token.boolean,
+.jp-ChatbotWidget .token.number {
+  color: #ae81ff;
+}
+
+.jp-ChatbotWidget .token.selector,
+.jp-ChatbotWidget .token.attr-name,
+.jp-ChatbotWidget .token.string,
+.jp-ChatbotWidget .token.char,
+.jp-ChatbotWidget .token.builtin,
+.jp-ChatbotWidget .token.inserted {
+  color: #a6e22e;
+}
+
+.jp-ChatbotWidget .token.operator,
+.jp-ChatbotWidget .token.entity,
+.jp-ChatbotWidget .token.url,
+.jp-ChatbotWidget .language-css .token.string,
+.jp-ChatbotWidget .style .token.string,
+.jp-ChatbotWidget .token.variable {
+  color: #f8f8f2;
+}
+
+.jp-ChatbotWidget .token.atrule,
+.jp-ChatbotWidget .token.attr-value,
+.jp-ChatbotWidget .token.function,
+.jp-ChatbotWidget .token.class-name {
+  color: #e6db74;
+}
+
+.jp-ChatbotWidget .token.keyword {
+  color: #66d9ef;
+}
+
+.jp-ChatbotWidget .token.regex,
+.jp-ChatbotWidget .token.important {
+  color: #fd971f;
+}
+
+.delete-session {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.session-item:hover .delete-session {
+  opacity: 1;
+}
+
+.delete-session:hover {
+  color: #ff7875;
+}
+
+/* 添加过渡效果 */
+.chatbot-container, .login-container {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 默认居中效果 */
+.chatbot-body{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:430px;
+  height:180px;
+  margin:-86px 0 0 -215px;
+}
+.chatbot-body-header{
+  width: 340px;
+  height:70px;
+  background-color: transparent;
+  background-size: 340px 70px; /* 控制图标大小 */
+  background-image: url('image/MateGenAir.svg'); /* 读取图标 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: -100px auto 50px auto;
+}
+.chatbot-body-content{
+  display:flex;
+}
+.chatbot-content-item{
+  flex:1;
+  height:inherit;
+  margin: 24px 12px;
+  padding:0;
+  cursor: pointer;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-image: linear-gradient(var(--jp-layout-color1), var(--jp-layout-color1)), linear-gradient(180deg, rgba(240, 97, 35, 0.6) 0%, rgba(190, 177, 252, 0.6) 100%);
+  border-radius: 8px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.chatbot-content-item p{
+  line-height:26px;
+  font-size:12px;
+  color: var(--jp-ui-font-color0);
+  padding:0 12px 12px 12px;
+  margin: 0;
+}
+
+.chatbot-content-item-title{
+  position: relative;
+  font-size:16px;
+  font-weight: 600;
+  padding: 50px 12px 5px 12px;
+  margin: 0;
+  color: var(--jp-ui-font-color0);
+}
+
+.session-name{
+  width: 170px; /* 设置容器宽度 */
+  white-space: nowrap; /* 防止文本换行 */
+  overflow: hidden; /* 隐藏超出容器的文本 */
+  text-overflow: ellipsis; /* 超出部分显示为省略号 */
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.chat-hide{
+  display: none !important;
+}
+
+.chat-show{
+  display: block;
+}
+
+.chat-show-flex{
+  display: flex;
+}
+
+/* 重置样式 */
+.jp-OutputArea-child .jp-OutputArea-output{
+  padding:5px 12px 16px 12px;
+}
+
+/*消息提示*/
+.chat-message-box{
+  position: absolute;
+  top:10px;
+  left:50%;
+  width: 250px;
+  margin: 0 0 0 -125px;
+  z-index: 9999;
+}
+.chat-message-box span{
+  width: 100%;
+  height: 25px;
+  background: #e79c38;
+  color: #fff;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/*自定义select*/
+.popup-select-box{
+  position:relative;
+  width:100%;
+  height:30px;
+}
+.popup-select-body{
+  position:absolute;
+  top:34px;
+  left:0;
+  border-color: transparent;
+  width: 100%;
+  max-height: 0px;
+  overflow-y: auto;
+  z-index: 999;
+  background-color: var(--jp-layout-color1);
+  transition: max-height 0.3s ease, transform 0.1s ease, borderColor 0.1s ease; /* 添加过渡效果 */
+  border-radius: 5px;
+}
+.popup-select-box::before{
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--jp-border-color2);
+  transform: rotate(45deg);
+  border-top: none;
+  border-right: none;
+  transition: transform 0.1s ease, right 0.1s ease;
+}
+.popup-select-box-show::before{
+  transform: rotate(-45deg);
+  right: 10px;
+  transition: transform 0.1s ease, right 0.1s ease;
+}
+.popup-select-input{
+  background-color: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color1);
+  width: calc(100% - 16px) !important;
+  cursor: pointer;
+}
+.popup-select-input:active,.popup-select-input:focus{
+  outline: none;
+  border-color: var(--jp-brand-color1);
+}
+.popup-select-body ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+.popup-select-body ul li{
+  height: 30px;;
+  line-height: 30px;
+  padding:0 10px;
+  background-color: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color1);
+  cursor: pointer;
+}
+.popup-select-body ul li:hover{
+  background-color: var(--jp-brand-color1);
+  color: var(--jp-ui-font-color0);
+}
+.popup-select-show{
+  max-height: 160px;
+  border:1px solid var(--jp-border-color2);
+  transition: max-height 0.3s ease, transform 0.1s ease, border-color 0.1s ease; /* 添加过渡效果 */
+}
+
+/*自定义知识库*/
+.popup-select-file{
+  display: flex;
+  padding:10px 0;
+}
+
+.popup-select-file-box{
+  display: flex;
+  color: var(--jp-ui-font-color1);
+}
+.popup-select-file-label,.popup-select-file-name{
+  padding:4px;
+}
+.popup-select-file-btn{
+  width: 72px;
+  border: 1px solid var(--jp-border-color2);
+  text-align: center;
+  padding: 4px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.popup-select-file-btn:hover{
+  background-color: var(--jp-layout-color2);
+}
+
+@media (max-width: 768px) {
+  /* 只保留 message 的 max-width 设置 */
+  .message {
+    max-width: 100%;
+  }
+}
+  
+/* 颜色变量 */
+:root {
+  --background-color: #00283F;
+  --header-color: #00324F;
+  --user-message-color: #094060;
+  --bot-message-color: #012A43;
+  --text-color: #ececf1;
+  --border-color: #504E50;
+  --input-background: #031926;
+  --send-button-color: #083550;
+  --send-button-hover: #00283F;
+  --scrollbar-thumb:#333333;;
+  --scrollbar-thumb-hover:#212121;;
+  --chatbot-dailog-bg:rgba(0,0,0,0.25);
+  --sidebar-background:rgba(255,255,255,0.05);
+  --sidebar-background-hover:rgba(255,255,255,0.1);
+  --sidebar-color:#BDBDBD;
+}
