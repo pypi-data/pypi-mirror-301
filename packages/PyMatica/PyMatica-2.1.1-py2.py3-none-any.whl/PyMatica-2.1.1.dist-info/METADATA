@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: PyMatica
+Version: 2.1.1
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Author-email: Ashish Ranjan <admin@example.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/bosstechhack/PyMatica
+Keywords: PyMatica
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Provides-Extra: all
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+Requires-Dist: matplotlib ; extra == 'extra'
+
+# PyMatica
+
+
+[![image](https://img.shields.io/pypi/v/PyMatica.svg)](https://pypi.python.org/pypi/PyMatica)
+[![image](https://img.shields.io/conda/vn/conda-forge/PyMatica.svg)](https://anaconda.org/conda-forge/PyMatica)
+
+
+**Python Boilerplate contains all the boilerplate you need to create a Python package.**
+
+
+-   Free software: MIT License
+-   Documentation: https://bosstechhack.github.io/PyMatica
+    
+
+## Features
+
+-   TODO
