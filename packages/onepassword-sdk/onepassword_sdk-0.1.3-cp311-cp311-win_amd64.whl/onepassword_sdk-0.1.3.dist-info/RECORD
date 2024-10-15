@@ -1,0 +1,16 @@
+onepassword_sdk-0.1.3.data/purelib/onepassword/__init__.py,sha256=a7YHBQt0SnNS3jUVTO43l6ro_7WcJDIjyAN_gca8Tlc,795
+onepassword_sdk-0.1.3.data/purelib/onepassword/client.py,sha256=khlg1ypIAo3To3wn6S-lowGjM-uQV9ZRuVBZwsQ2fek,995
+onepassword_sdk-0.1.3.data/purelib/onepassword/core.py,sha256=b9rdkyMTGuK2EMpFn1PsaADkbBfaIdNnDVdpf3vdyNI,907
+onepassword_sdk-0.1.3.data/purelib/onepassword/defaults.py,sha256=erVyzzkFpRVke4ZgjHoHufwMPhIz-cfsvYMouo8o8m8,911
+onepassword_sdk-0.1.3.data/purelib/onepassword/items.py,sha256=HPpwgcn1YO_JjvD1Pg7t5lqO2MD9yTuqstEBKIk15bY,2895
+onepassword_sdk-0.1.3.data/purelib/onepassword/iterator.py,sha256=lHZJumKAlLNMsXez0MCrE_2N3mAFQ64f0DPRbO4fZfw,566
+onepassword_sdk-0.1.3.data/purelib/onepassword/secrets.py,sha256=lVastcC_145rBUpqTeB6GfLG3N8kbFIAXrwhZ8woscE,996
+onepassword_sdk-0.1.3.data/purelib/onepassword/test_client.py,sha256=KLCOMHo2UtGqaAB5AIM9ykRcRzrbh1735Nd8OF58cyU,3742
+onepassword_sdk-0.1.3.data/purelib/onepassword/types.py,sha256=3bRRvsIHlm05wdXK6Xsh8l7I0T1VZgFIqhxt-pt9JDc,5059
+onepassword_sdk-0.1.3.data/purelib/onepassword/vaults.py,sha256=4Umo5jRVTnKnzZmg392mvIRxyMV3LBWgQTu9JWP8GdM,852
+onepassword_sdk-0.1.3.data/purelib/onepassword/lib/x86_64/op_uniffi_core.dll,sha256=o9Y0v54t1ALIxVEpczRN07UPNPw3uwRuIq_YYb8dtZ4,9257472
+onepassword_sdk-0.1.3.data/purelib/onepassword/lib/x86_64/op_uniffi_core.py,sha256=pvQ3DX7uW_XeG6rUuiB1g2iaXllNv7X3TDsEF1WfeYQ,34646
+onepassword_sdk-0.1.3.dist-info/METADATA,sha256=EZPtAV3o-TLWjdugYHUDMMUwwr7uUMjf40VzLmMfjF8,6000
+onepassword_sdk-0.1.3.dist-info/WHEEL,sha256=yEpuRje-u1Z_HrXQj-UTAfIAegW_HcP2GJ7Ek8BJkUM,102
+onepassword_sdk-0.1.3.dist-info/top_level.txt,sha256=oiVFTI4KHlkShGv2SNgyKN6I6P-sHvXoPm75cRzye54,12
+onepassword_sdk-0.1.3.dist-info/RECORD,,
