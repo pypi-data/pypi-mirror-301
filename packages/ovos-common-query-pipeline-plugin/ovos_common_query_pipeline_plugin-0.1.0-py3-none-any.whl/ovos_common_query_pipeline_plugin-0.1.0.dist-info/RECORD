@@ -1,0 +1,16 @@
+ovos_commonqa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ovos_commonqa/opm.py,sha256=byKF0sGlW5_xGv1YGguUx1zk9OOVGj9sENe1o_ELgRo,12810
+ovos_commonqa/version.py,sha256=d038l5FBpCuQMkh6IuR1rmmPFZ4Om4N1LyrVrSIILpY,114
+ovos_commonqa/locale/ca-es/QuestionWord.voc,sha256=DDVzC-Uhv9m3VfH7QC9rxTudUHaeU_lt_8zCcrxvS2M,72
+ovos_commonqa/locale/de-de/QuestionWord.voc,sha256=MV74scQuLom_Zrlrv8IZ-BrCRcYqq0h3YmELw7Zh4Oo,58
+ovos_commonqa/locale/en-us/QuestionWord.voc,sha256=FcSNx37_XLlToJzo-UC-L4jfZs37W2wtPyPWZSHCKp4,56
+ovos_commonqa/locale/fr-fr/QuestionWord.voc,sha256=irfoQ9y1XojHNBmIjMOcwJDqSD71XSNM43kkY3vEjhQ,78
+ovos_commonqa/locale/it-it/QuestionWord.voc,sha256=yiu5HPqfkw5wJRC782ntrW_XfqxipbOhomn3pNAmchQ,54
+ovos_commonqa/locale/nl-nl/QuestionWord.voc,sha256=NVQ2mUgEshO-nqnqtO4Cw6iGvB0Ou-vlie6wVagAA-c,59
+ovos_commonqa/locale/pt-br/QuestionWord.voc,sha256=Z3bZdjVnezV-bTqWYcjWjIIorav70sWPE6yfwdo8B_Q,64
+ovos_commonqa/locale/pt-pt/QuestionWord.voc,sha256=yu3xeqYV2vWtQuuUjMHuXnug9ZbB32yLWrwUj4mfyB4,98
+ovos_common_query_pipeline_plugin-0.1.0.dist-info/METADATA,sha256=sghhqe94MN2ZsIw4DlsfZFMLdRQF5sRTXvxPs7_GCFg,1010
+ovos_common_query_pipeline_plugin-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+ovos_common_query_pipeline_plugin-0.1.0.dist-info/entry_points.txt,sha256=uu7idSPCQN_iBSWFk_jbgArh179zSsmQdUgGZd8sph4,84
+ovos_common_query_pipeline_plugin-0.1.0.dist-info/top_level.txt,sha256=oO6Omq4_swGW3TDIGvlatsp1r-sBZlkGYqoOjYsIeJw,14
+ovos_common_query_pipeline_plugin-0.1.0.dist-info/RECORD,,
