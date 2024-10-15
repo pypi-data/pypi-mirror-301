@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: funbuild
+Version: 1.5.7
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython >=3.1.43
+Requires-Dist: ruff >=0.6.9
+Requires-Dist: toml >=0.10.2
+Requires-Dist: uv >=0.4.20
+
+# funbuild
+
+#### pypi打包
+
+
+#### github
+
+
+#### github push
+
+
+
+
+
