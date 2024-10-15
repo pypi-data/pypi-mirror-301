@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: github-download-counts
+Version: 1.0.0
+Summary: a simple Python wrapper around the GitHub REST API to get download counts for release assets and ghcr.io image pulls for organizations' repositories
+Home-page: https://github.com/mmguero/github-download-counts
+Author: Seth Grover
+Author-email: mero.mero.guero@gmail.com
+Project-URL: Bug Tracker, https://github.com/mmguero/github-download-counts/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: dateparser
+Requires-Dist: github3.py
+Requires-Dist: mmguero
+
