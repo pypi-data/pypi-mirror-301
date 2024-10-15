@@ -1,0 +1,13 @@
+imfind/__init__.py,sha256=ubEDR7dWaW0p8gwyVjgEx_7EK7W-7JSOxQmRdjIpV8M,57
+imfind/bin/__init__.py,sha256=tahXPXU7_Vsc7NGu3fPg2GQdLUJyyGJrDClpRhwDzSg,22
+imfind/bin/imfind.py,sha256=Ml3zvep0eh1PC55YObuQDFCGnyDqKoy-JxOHqvw_PmI,3319
+imfind/etc/__init__.py,sha256=aBwLRmqAnU1H9O7swYUmDlFWhX4QxLzDBsjeOInbJKc,887
+imfind/lib/__init__.py,sha256=ab2Nof0AWSf8PCvHHLHiIOjnEhgxGdXM0UGQQAGoNqg,74
+imfind/lib/helpers.py,sha256=alt0WZtsL0RNVxD0V3jY_DyyzrfcY4oNZBrMVwCohDA,5352
+imfind/lib/image.py,sha256=KzTWhsTfAHOqR_bFl7-Wv48V1XUzIb80NwfKxQrgxPc,1766
+imfind/lib/image_and_text.py,sha256=tYa5qXrgktEaXYwS_kK9hVuUgDolJqhta-AeZh5_PhA,3510
+imfind-0.0.3.dist-info/METADATA,sha256=0_74hkMxFY4GMa4S9VdNSpRNM7BvxzVKogNPtslodSo,493
+imfind-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+imfind-0.0.3.dist-info/entry_points.txt,sha256=KCP1-5QMOASnJMjB06gP0G3VrSATnhm8-52c0xyK7nw,50
+imfind-0.0.3.dist-info/top_level.txt,sha256=MK6QwZSaToSejdzuUtGvSDjYYyx741MCPw47RErOzzA,7
+imfind-0.0.3.dist-info/RECORD,,
