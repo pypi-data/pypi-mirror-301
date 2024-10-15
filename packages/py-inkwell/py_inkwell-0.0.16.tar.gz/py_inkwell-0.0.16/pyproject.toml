@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "py-inkwell"
+version = "0.0.16"
+description = "Python library for document processing"
+authors = ["Mohit Raghavendra <mohithmitra@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+homepage = "https://github.com/tensorlakeai/indexify"
+repository = "https://github.com/tensorlakeai/inkwell"
+packages = [{ include = "inkwell"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.8"
+torch = "^2.3.1"
+torchvision = "^0.19"
+Pillow = "^9.5.0"
+pandas = "^2.2.2"
+iopath = "^0.1.9"
+timm = "^1.0.9"
+transformers = "^4.44.2"
+pytesseract = "^0.3.13"
+pdfplumber = "^0.11.4"
+openai = "^1.46.1"
+accelerate = "^0.34.2"
+albumentations = "^1.4.16"
+numpy = "<2.0.0"
+opencv-python = "^4.10.0.84"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"   
+pylint = "^2.4.0"
+pytest = "^7.1.1"
+pytest-cov = "^4.0.0"
+pytest-runner = "^6.0.0"
+pytest-watch = "^4.2.0"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+line_length = 79
+
+[build-system]
+requires = ["poetry>=1.2"]
+build-backend = "poetry.core.masonry.api"
