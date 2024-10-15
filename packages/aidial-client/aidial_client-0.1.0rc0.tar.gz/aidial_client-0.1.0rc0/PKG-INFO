@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aidial-client
+Version: 0.1.0rc0
+Summary: A Python client library for the AI DIAL API
+Home-page: https://epam-rail.com
+License: Apache-2.0
+Author: EPAM RAIL
+Author-email: SpecialEPM-DIALDevTeam@epam.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=0.5.0)
+Requires-Dist: httpx (>=0.25.0,<1.0)
+Requires-Dist: openai (>=1.0.0,<2.0.0)
+Requires-Dist: pydantic (>=1.10,<3)
+Project-URL: Repository, https://github.com/epam/ai-dial-client
+Description-Content-Type: text/markdown
+
+# AI DIAL Client (Python)
+
