@@ -1,0 +1,11 @@
+todo_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todo_manager/cli.py,sha256=_U70zqnx5aTk1kx7CiTd_1VP34yM6FoYBX6vmXwtZs0,3623
+todo_manager/core.py,sha256=2NNHTYerZX8kyuaoHZsIeMfR37zQVw96VgqDkttYNcQ,3298
+todo_manager/data_handler.py,sha256=C_HtWw1XnhjrdlWqLhQLa2xwIXOKOhoUzN7P2NEY49Y,407
+todo_manager/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TickBox-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TickBox-0.1.0.dist-info/METADATA,sha256=Wd9FbDM5d4v7df22rxpNtCszZkvH-mDBz4VSx2kFacg,480
+TickBox-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+TickBox-0.1.0.dist-info/entry_points.txt,sha256=MEyXeIiKWcEbtNDuq1IK9-2wgiv-Dkh_nT5lQxtMtgI,55
+TickBox-0.1.0.dist-info/top_level.txt,sha256=eMpi1Ypj2P9uPb08ukIc2hxMJ6s1xRd_GDCiqLmVLdw,13
+TickBox-0.1.0.dist-info/RECORD,,
