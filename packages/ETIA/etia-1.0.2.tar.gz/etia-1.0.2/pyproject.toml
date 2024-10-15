@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "etia"
+version = "1.0.2"
+description = "Automated Causal Discovery Library"
+authors = ["MensXMachina Lab, Comp. Science Department, University of Crete",
+            "Antonios Ntroumpogiannis",
+            "Konstantina Biza"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">= 3.8"
+causalnex = "*"
+cdt = "*"
+joblib = "*"
+jpype1 = "*"
+networkx = ">= 3.2.1"
+numpy = "*"
+pandas = "*"
+pgmpy = "*"
+py4cytoscape = "*"
+pywhy-graphs = "*"
+scikit-learn = ">=1.4.1"
+scipy = ">=1.11.4"
+tigramite = ">=5.2.3.1"
+matplotlib= "*"
+dcor= "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

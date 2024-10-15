@@ -1,0 +1,14 @@
+causalnex
+cdt
+joblib
+jpype1
+networkx>=3.2.1
+numpy
+pandas
+pgmpy
+py4cytoscape
+pywhy-graphs
+scikit-learn
+tigramite>=5.2.3.1
+matplotlib
+dcor
