@@ -1,0 +1,11 @@
+httpx
+httpx-ws
+httpx_sse
+pydantic
+Pillow
+tabulate
+prance
+openapi-spec-validator
+gitignore-parser
+tqdm
+torch
