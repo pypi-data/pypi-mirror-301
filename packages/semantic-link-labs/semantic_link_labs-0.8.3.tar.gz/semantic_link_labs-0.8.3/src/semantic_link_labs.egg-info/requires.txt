@@ -1,0 +1,9 @@
+semantic-link-sempy>=0.8.0
+anytree
+powerbiclient
+polib
+azure.mgmt.resource
+jsonpath_ng
+
+[test]
+pytest>=8.2.1
