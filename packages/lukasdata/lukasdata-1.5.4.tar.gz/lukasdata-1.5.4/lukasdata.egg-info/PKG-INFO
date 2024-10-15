@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: lukasdata
+Version: 1.5.4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: regex
+Requires-Dist: seaborn
