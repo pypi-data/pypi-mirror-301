@@ -1,0 +1,13 @@
+pylagg/bulk.py,sha256=BkYVVkBb6I81CDMH8lBaMoayToTVb1jIoEyVx4H8aQ4,992
+pylagg/cgr.py,sha256=fvbz5onosgEeNg-e36JY7ii4BV83wGvoWQoj4e54RkM,5230
+pylagg/config.py,sha256=BBiykj1wriPsv9WI28ASWRFq0kYflXYJxsylGNP978Y,1445
+pylagg/config.toml,sha256=-J-8LsywaFx92kuXaP-YMGT8PADzVGe3UGNIV5_ymvQ,316
+pylagg/cut_adapt.py,sha256=_GBAKtE2pbc5X_HS2XctgegiL5x41JtOiEh4gzoZh2c,1497
+pylagg/ena_download.py,sha256=RB7nshTUiaKzvvhB4UR3r_WgKv5d2rvxSINdzNpcH0U,7016
+pylagg/kmer_counting.py,sha256=gwe-70KMV8pXdxxwzA5mSrbR5pZjnCEcjnTwXo_Bre8,7307
+pylagg/main.py,sha256=pBog0Z9Qgss3dkXiIbqjFkSo4hkhFYnXxBYgNFMvecM,7913
+pylagg-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pylagg-0.3.0.dist-info/METADATA,sha256=Txc8MINaB4Oo6qCCcaTnjodPbgmHCmXzqulKV-TzxPA,1824
+pylagg-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pylagg-0.3.0.dist-info/entry_points.txt,sha256=jTHBOk0MJeRC4LFYe3HlXjc3paowOOXnrGpPyH1k-7o,40
+pylagg-0.3.0.dist-info/RECORD,,

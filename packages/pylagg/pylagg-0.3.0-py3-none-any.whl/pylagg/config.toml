@@ -1,0 +1,10 @@
+[jellyfish_args]
+-hash_size= 1_000_000
+-threads= 12
+-kmer_length= 6
+-input_file_paths= ['/Users/mel/Documents/GitHub/LAGG/DRR259113_1.fastq.gz', '/Users/mel/Documents/GitHub/LAGG/pylagg/DRR259113_2.fastq.gz']
+-output_file_path= '..'
+
+[download_args]
+-list_of_accessions= ['DRR259113', 'SRR8782097']
+-output_dir= '..'
