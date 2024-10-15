@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cspyexamclient/__init__.py
+cspyexamclient/main.py
+cspyexamclient.egg-info/PKG-INFO
+cspyexamclient.egg-info/SOURCES.txt
+cspyexamclient.egg-info/dependency_links.txt
+cspyexamclient.egg-info/top_level.txt
