@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dspeech/__init__.py
+dspeech/base_handler.py
+dspeech/cli.py
+dspeech/stt.py
+dspeech.egg-info/PKG-INFO
+dspeech.egg-info/SOURCES.txt
+dspeech.egg-info/dependency_links.txt
+dspeech.egg-info/entry_points.txt
+dspeech.egg-info/requires.txt
+dspeech.egg-info/top_level.txt
+tests/test_core.py
