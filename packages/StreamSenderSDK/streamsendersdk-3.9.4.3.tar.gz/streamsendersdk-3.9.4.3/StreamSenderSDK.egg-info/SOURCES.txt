@@ -1,0 +1,7 @@
+README.md
+setup.py
+StreamSenderSDK.egg-info/PKG-INFO
+StreamSenderSDK.egg-info/SOURCES.txt
+StreamSenderSDK.egg-info/dependency_links.txt
+StreamSenderSDK.egg-info/requires.txt
+StreamSenderSDK.egg-info/top_level.txt
