@@ -1,0 +1,11 @@
+simple_oauth_server/__init__.py,sha256=iM8tTqGYou8p93XGQ8dTMXPJeWFWwwN9LZD_ZAKOzdI,3017
+simple_oauth_server/asymmetric_key_pair.py,sha256=B2duASEDKVZR0VAtdJltSUlKnDzF-I7GJf21Fhh9n38,1033
+simple_oauth_server/authorize_api_spec.yaml,sha256=zwnUfm0iQwdQlC4HGXc3SdyiBktbnlCuN_Qum_pJ4zM,3245
+simple_oauth_server/openapi_editor.py,sha256=kC_OHFlWRiuEAeMqeI9FDQBhaotzV-S6go5lstTg938,3338
+simple_oauth_server/token_authorizer.py,sha256=XkEc4L1fLwalTu95BONbbH9mzbWYYmW5zBIp_C5nSrY,4294
+simple_oauth_server/token_validator.py,sha256=znr64QdxrQfYi5ZpurChK93fYnoJr0fi38OJZ1RLlas,6087
+simple_oauth_server/validate_api_spec.yaml,sha256=xoVnefqB9FSi3_dErc-ozRWTXdo0AV8zXbepiVPvMqQ,1081
+simple_oauth_server-0.0.2.dist-info/METADATA,sha256=EldhW02DnngcqUZK-fnp3GjhN2Oc6bjiR451tWLyDAk,610
+simple_oauth_server-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+simple_oauth_server-0.0.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simple_oauth_server-0.0.2.dist-info/RECORD,,
