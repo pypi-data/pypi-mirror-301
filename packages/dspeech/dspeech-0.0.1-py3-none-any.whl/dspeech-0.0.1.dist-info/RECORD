@@ -1,0 +1,10 @@
+dspeech/__init__.py,sha256=Cm4yOihZNIWQVmr5lU8C4RxMKszhe-huPdGGf5BTXr0,27
+dspeech/base_handler.py,sha256=vjYn0KkZScV5XBPq3CW0bP9e-ZJ5ib7AukBpRBC9v9g,1057
+dspeech/cli.py,sha256=boZmqe2oFVjbVYVSoPaSAHdvN7gBOMkYDqYgRXiT_Jw,5781
+dspeech/stt.py,sha256=Xnx1GzIB3BmZ8fjSQOFoG6hbl8IDNtvtd3Y35jNuugE,10398
+dspeech-0.0.1.dist-info/LICENSE,sha256=KwQM_tLTIN5rf5nm7g5NyavlA8_QhTjCJF4AfFbQRpc,1066
+dspeech-0.0.1.dist-info/METADATA,sha256=UeTNXklVWrT25yx1vwVeNP07HbNVsrJiDr8WrLviOvM,512
+dspeech-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dspeech-0.0.1.dist-info/entry_points.txt,sha256=PTZN8EM_mQ-XtExFXJ6IupfXpq0I5tuZkhEJqvDJlmw,45
+dspeech-0.0.1.dist-info/top_level.txt,sha256=qQawtz7z67Htpmo8bX_aRvJYn6jOo_JopEDxPzhFEt8,8
+dspeech-0.0.1.dist-info/RECORD,,
