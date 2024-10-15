@@ -1,0 +1,13 @@
+python-telegram-bot==21.6
+python-dotenv==1.0.1
+requests==2.32.3
+aiosqlite==0.20.0
+pyzipper==0.3.6
+watchdog==2.2.1
+aiohttp==3.10.10
+validators==0.34.0
+psutil==6.0.0
+pyinstaller==6.1.0
+pyinstaller-hooks-contrib==2024.8
+python-daemon==3.0.1
+python-dateutil==2.8.2
