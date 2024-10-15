@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+django_institutions/__init__.py
+django_institutions/base.py
+django_institutions/data.py
+django_institutions/fields.py
+django_institutions/serializer_fields.py
+django_institutions/world_universities_and_domains.json
+django_institutions.egg-info/PKG-INFO
+django_institutions.egg-info/SOURCES.txt
+django_institutions.egg-info/dependency_links.txt
+django_institutions.egg-info/not-zip-safe
+django_institutions.egg-info/top_level.txt
