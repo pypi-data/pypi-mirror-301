@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: folium-arrow-icon
+Version: 0.1.2
+Summary: Simple arrow (vector/quiver) icon for folium
+Project-URL: Documentation, https://folium-arrow-icon.readthedocs.io
+Project-URL: Issues, https://github.com/paqira/folium-arrow-icon/issues
+Project-URL: Source, https://github.com/paqira/folium-arrow-icon
+Author-email: Kentaro Tatsumi <paqira.2019@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: arrow,folium,icon,quiver,vector field
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Simple arrow (vector/quiver) icon for folium
+
+[![PyPI - Version](https://img.shields.io/pypi/v/folium-arrow-icon?logo=PyPI&label=PyPI)](https://pypi.org/project/folium-arrow-icon/)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?logo=Python&label=Python&tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fpaqira%2Ffolium-arrow-icon%2Fmain%2Fpyproject.toml)
+[![Read the Docs](https://img.shields.io/readthedocs/folium-arrow-icon?logo=readthedocs)](https://folium-arrow-icon.readthedocs.io)
+![PyPI - License](https://img.shields.io/pypi/l/folium-arrow-icon)
+
+This package provides simple arrow (vector/quiver) icon for the [folium](https://pypi.org/project/folium/) package.
+
+The size of the icon does not change as zoom level changes.
+It is useful for displaying vector field.
+
+```python
+import math
+
+import folium
+from folium_arrow_icon import ArrowIcon
+
+m = folium.Map(
+    location=[40.78322, -73.96551],
+    zoom_start=14,
+)
+
+folium.Marker(
+    [40.78322, -73.96551],
+    # by length and angle
+    icon=ArrowIcon(100, math.pi / 2)
+).add_to(m)
+
+folium.Marker(
+    [40.78322, -73.96551],
+    # by components of latitude and longitude directions
+    icon=ArrowIcon.from_comp([100, -50])
+).add_to(m)
+
+m.save("sample.html")
+```
+
+See [document](http://folium-arrow-icon.readthedocs.io/) for more example.
+
+You can install `folium-arrow-icon` from PyPI:
+
+```shell
+pip install folium-arrow-icon
+```
+
+## Licence
+
+MIT
