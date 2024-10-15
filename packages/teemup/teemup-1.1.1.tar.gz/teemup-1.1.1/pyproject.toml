@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "teemup"
+version = "1.1.1"
+description = "If Meetup didn't become a walled garden, the world wouldn't need Teemup"
+authors = ["Honza Javorek <mail@honzajavorek.cz>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11 <4.0"
+lxml = "5.3.0"
+cssselect = "1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.3"
+black = "24.10.0"
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+testpaths = "."
+addopts = "-v --doctest-glob=README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
