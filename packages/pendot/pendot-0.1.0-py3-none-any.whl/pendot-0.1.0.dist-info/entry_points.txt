@@ -1,0 +1,2 @@
+[console_scripts]
+pendot = pendot.__main__:main
