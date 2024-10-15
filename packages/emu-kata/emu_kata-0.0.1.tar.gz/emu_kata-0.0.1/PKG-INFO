@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: emu-kata
+Version: 0.0.1
+Author-email: Vincent Dary <VincentDary@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Emu-Kata
