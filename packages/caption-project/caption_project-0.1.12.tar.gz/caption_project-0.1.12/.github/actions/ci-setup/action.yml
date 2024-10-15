@@ -1,0 +1,22 @@
+name: CI Setup
+description: Install dependencies PDM
+
+# inputs:
+#   python-version:
+#     description: 'Python version'
+#     required: true
+#     default: '3.12'
+  
+
+runs:
+  using: 'composite'
+  steps:
+      - name: Enable caching and define a custom cache key prefix
+        id: setup-rye
+        uses: eifinger/setup-rye@v4
+        with:
+          enable-cache: true
+          # cache-prefix: 'optional-prefix'
+      - name: Sync dependencies
+        shell: bash
+        run: rye sync
