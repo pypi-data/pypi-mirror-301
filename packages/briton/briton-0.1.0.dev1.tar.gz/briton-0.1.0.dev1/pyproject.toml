@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "briton"
+version = "0.1.0-dev.1"
+description = "Python component of using Briton"
+authors = ["Pankaj Gupta <pankaj@baseten.co>"]
+license = "MIT"
+readme = "README.md" 
+
+[tool.poetry.dependencies]
+python = "^3.10"
+grpcio = "^1.66.2"
+grpcio-tools = "^1.66.2"
+transformers = "^4.45.2"
+pydantic = "^2.9.2"
+outlines = "^0.1.0"
+torch = "^2.4.1"
+fastapi = "^0.115.0"
+huggingface-hub = "^0.25.2"
+hf-transfer = "^0.1.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+ipdb = "^0.13.13"
+ipython = "^8.28.0"
+pytest-asyncio = "^0.24.0"
+
