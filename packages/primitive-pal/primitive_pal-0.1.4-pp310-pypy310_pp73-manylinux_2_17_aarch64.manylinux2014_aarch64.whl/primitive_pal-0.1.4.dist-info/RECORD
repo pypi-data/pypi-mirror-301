@@ -1,0 +1,5 @@
+primitive_pal-0.1.4.dist-info/METADATA,sha256=pqPJhAnzbzX3AZz-pqaP4yiwpIuEmbsDiRWM6THNzcU,582
+primitive_pal-0.1.4.dist-info/WHEEL,sha256=BOpS20QdZ_51SdsJcTQoTI8qtYISzg8E4QIDh3qVodY,138
+primitive_pal/__init__.py,sha256=atmX9cs1CG71cJOZESav-Rl9toXhYVox7lTLUuhDvR8,135
+primitive_pal/primitive_pal.pypy310-pp73-aarch64-linux-gnu.so,sha256=S5ZpiqnMsvFfUe9faQY2MNSj5Soma8Y9RltApOoFtHI,10075928
+primitive_pal-0.1.4.dist-info/RECORD,,
