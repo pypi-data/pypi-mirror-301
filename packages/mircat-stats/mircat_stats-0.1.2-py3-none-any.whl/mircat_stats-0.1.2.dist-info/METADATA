@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: mircat-stats
+Version: 0.1.2
+Summary: Mirshahi CT Analysis Toolkit (MirCAT), stats and dicom conversion only. Convert and Quantify CT NIfTI files.
+Requires-Python: <3.12,>=3.10
+Requires-Dist: cloud-files==4.24.2
+Requires-Dist: cloud-volume==8.33.0
+Requires-Dist: dicom2nifti>=2.5.0
+Requires-Dist: kimimaro==4.0.0
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: nibabel>=5.2.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pydicom==2.4.4
+Requires-Dist: scikit-image>=0.24.0
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: scipy==1.13.1
+Requires-Dist: simpleitk==2.3.1
+Requires-Dist: threadpoolctl>=3.5.0
+Requires-Dist: xgboost==2.1.0
