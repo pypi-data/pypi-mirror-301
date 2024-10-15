@@ -1,0 +1,10 @@
+numpy
+
+[:python_version < "3.8"]
+setuptools
+
+[:python_version >= "3.8"]
+setuptools<74
+
+[types]
+f90wrap~=0.2.12
