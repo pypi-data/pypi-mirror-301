@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sdwirec
+Version: 0.1.0
+Summary: Cross platform cli application for Badgerd SDWireC
+License: MIT
+Author: Talha Can Havadar
+Author-email: havadartalha@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyftdi (>=0.55.4,<0.56.0)
+Requires-Dist: pyusb (>=1.2.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# A Cross-Platform Python Implementation of SDWire CLI
+
+This is an early access for cross platform cli utility so please use with caution.
+Interface of this sdwire cli prone to be changed, please keep in mind that this
+is not a production ready cli app, it is made available to provide some comfort
+for users.
+
+Thank you very much Sebastian Kubala (SKGleba) for contribution and making Windows
+users life easier!!
+
+## Requirements
+
+- pyftdi
+- pyusb
+- libusb and/or WinUSB (Windows)
+
