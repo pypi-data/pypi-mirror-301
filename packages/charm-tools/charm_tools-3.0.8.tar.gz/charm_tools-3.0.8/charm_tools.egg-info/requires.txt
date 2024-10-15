@@ -1,0 +1,24 @@
+cheetah3<4.0,>=3.0.0
+pyyaml!=5.4.0,!=5.4.1,!=6.0,<7.0,>=5.0
+requests<3.0.0,>=2.0.0
+blessings<2.0
+otherstuf<=1.1.0
+path<17
+pip>=1.5.4
+jujubundlelib<0.6
+virtualenv<21,>=1.11.4
+colander<1.9
+jsonschema<4.18.0
+keyring<24
+secretstorage<3.4
+dict2colander==0.2
+vergit<2.0.0,>=1.0.0
+requirements-parser<0.6
+
+[:python_version < "3.7"]
+ruamel.yaml<0.16.0
+pathspec<=0.3.4
+
+[:python_version >= "3.7"]
+ruamel.yaml<0.18
+pathspec<0.11
