@@ -1,0 +1,3 @@
+[kedro.project_commands]
+sagemaker=kedro_sagemaker.cli:commands
+
