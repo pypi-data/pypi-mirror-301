@@ -1,0 +1,253 @@
+general:
+  # The base formatting is applied to all cells no matter if within or outside of table
+  base:
+    font:
+      name: 'Arial'
+      size: 10
+
+
+# Presets are for quick reference formatting
+# e.g. style={'COLUMN_NAME': ['bg_light_grey', 'num_fmt_pct']}
+preset:
+  bg_strong_primary:
+    fill:
+      patternType: 'solid'
+      fgColor: 'FFB600'
+  bg_strong_secondary:
+    fill:
+      patternType: 'solid'
+      fgColor: 'EB8C00'
+  bg_strong_tertiary:
+    fill:
+      patternType: 'solid'
+      fgColor: 'D04A02'
+
+  bg_strong_yellow:
+    fill:
+      patternType: 'solid'
+      fgColor: 'FFB600'
+  bg_strong_tangerine:
+    fill:
+      patternType: 'solid'
+      fgColor: 'EB8C00'
+  bg_strong_orange:
+    fill:
+      patternType: 'solid'
+      fgColor: 'D04A02'
+  bg_strong_rose:
+    fill:
+      patternType: 'solid'
+      fgColor: 'DB536A'
+  bg_strong_red:
+    fill:
+      patternType: 'solid'
+      fgColor: 'E0301E'
+  bg_dark_grey:
+    fill:
+      patternType: 'solid'
+      fgColor: '2D2D2D'
+  bg_medium_grey:
+    fill:
+      patternType: 'solid'
+      fgColor: '464646'
+  bg_normal_grey:
+    fill:
+      patternType: 'solid'
+      fgColor: '7D7D7D'
+  bg_light_grey:
+    fill:
+      patternType: 'solid'
+      fgColor: 'DEDEDE'
+
+
+  border_grey_all:
+    border:
+      top:
+        color: '7D7D7D'
+        style: 'thin'
+      right:
+        color: '7D7D7D'
+        style: 'thin'
+      bottom:
+        color: '7D7D7D'
+        style: 'thin'
+      left:
+        color: '7D7D7D'
+        style: 'thin'
+    border_grey_horizontal:
+      border:
+        top:
+          color: '7D7D7D'
+          style: 'thin'
+        bottom:
+          color: '7D7D7D'
+          style: 'thin'
+
+
+  num_fmt_general:
+    numberformat: '#,##0;[Red]-#,##0;"-"'
+    alignment:
+      horizontal: 'right'
+  num_fmt_decimal:
+    numberformat: '#,##0.00;[Red]-#,##0.00;"-"'
+    alignment:
+      horizontal: 'right'
+  num_fmt_mm:
+    numberformat: '#,##0,,;[Red]-#,##0,,;"-"'
+    alignment:
+      horizontal: 'right'
+  num_fmt_pct:
+    numberformat: '#,##0.0%;[Red]-#,##0.0%'
+    alignment:
+      horizontal: 'right'
+
+  date_fmt_iso:
+    numberformat: 'yyyy-mm-dd'
+    alignment:
+      horizontal: 'center'
+  date_fmt_us_short:
+    numberformat: 'mm/dd/yyyy'
+    alignment:
+      horizontal: 'center'
+  date_fmt_us_medium:
+    numberformat: 'MMM dd, yyyy'
+    alignment:
+      horizontal: 'center'
+  date_fmt_us_long:
+    numberformat: 'MMMM dd, yyyy'
+    alignment:
+      horizontal: 'center'
+  date_fmt_europe_short:
+    numberformat: 'dd.mm.yyyy'
+    alignment:
+      horizontal: 'center'
+  date_fmt_europe_medium:
+    numberformat: 'dd MMM yyyy'
+    alignment:
+      horizontal: 'center'
+  date_fmt_europe_long:
+    numberformat: 'dd MMMM yyyy'
+    alignment:
+      horizontal: 'center'
+
+  datetime_fmt_iso:
+    numberformat: 'yyyy-mm-ddThh:MM:ss'
+    alignment:
+      horizontal: 'center'
+  datetime_fmt_us_short:
+    numberformat: 'mm/dd/yyyy h:MM AM/PM'
+    alignment:
+      horizontal: 'center'
+  datetime_fmt_us_medium:
+    numberformat: 'MMM dd, yyyy h:MM AM/PM'
+    alignment:
+      horizontal: 'center'
+  datetime_fmt_us_long:
+    numberformat: 'MMMM dd, yyyy h:MM:ss AM/PM'
+    alignment:
+      horizontal: 'center'
+  datetime_fmt_europe_short:
+    numberformat: 'dd.mm.yyyy hh:MM'
+    alignment:
+      horizontal: 'center'
+  datetime_fmt_europe_medium:
+    numberformat: 'dd MMM yyyy hh:MM'
+    alignment:
+      horizontal: 'center'
+  datetime_fmt_europe_long:
+    numberformat: 'dd MMMM yyyy hh:MM:ss'
+    alignment:
+      horizontal: 'center'
+
+  time_fmt_iso:
+    numberformat: 'hh:MM:ss'
+    alignment:
+      horizontal: 'center'
+  time_fmt_us_short:
+    numberformat: 'h:MM AM/PM'
+    alignment:
+      horizontal: 'center'
+  time_fmt_us_long:
+    numberformat: 'h:MM:ss AM/PM'
+    alignment:
+      horizontal: 'center'
+  time_fmt_europe_short:
+    numberformat: 'hh:MM'
+    alignment:
+      horizontal: 'center'
+  time_fmt_europe_long:
+    numberformat: 'hh:MM:ss'
+    alignment:
+      horizontal: 'center'
+
+
+# Named Styles are available and changeable at Excel's styling ribbon
+# !!! Attention: Named themes make all other styling to NOT apply!
+# Excel has these builtin themes already:
+# 'Normal'
+# Number formats: 'Comma', 'Comma [0]', 'Currency', 'Currency [0]', 'Percent'
+# Informative: 'Calculation', 'Total', 'Note', 'Warning Text', 'Explanatory Text'
+# Text themes: 'Title', 'Headline 1', 'Headline 2', 'Headline 3', 'Headline 4', 'Hyperlink', 'Followed Hyperlink', 'Linked Cell'
+# Comparisons: 'Input', 'Output', 'Check Cell', 'Good', 'Bad', 'Neutral'
+# Highlights: 'Accent[1-6]', '20 % - Accent[1-6]', '40 % - Accent[1-6]', '60 % - Accent[1-6]', 'Pandas'
+named_style:
+  title:
+    name: 'Title'
+    font:
+      name: 'Georgia'
+      bold: True
+      color: '000000'
+      size: 20
+  headline1:
+    name: 'Headline 1'
+    font:
+      name: 'Arial'
+      bold: True
+      color: 'FFB600'
+      size: 16
+  headline2:
+    name: 'Headline 2'
+    font:
+      name: 'Arial'
+      bold: True
+      color: 'EB8C00'
+      size: 12
+
+
+# The table style is used for dataframe exports
+table:
+  # base is applied to all cells including the table header, index, and body
+  base:
+    alignment:
+      horizontal: 'left'
+      vertical: 'center'
+    border:
+      top:
+        color: '7D7D7D'
+        style: 'thin'
+      right:
+        color: '7D7D7D'
+        style: 'thin'
+      bottom:
+        color: '7D7D7D'
+        style: 'thin'
+      left:
+        color: '7D7D7D'
+        style: 'thin'
+  # head is applied to the column headings
+  head:
+    font:
+      bold: True
+      color: 'FFFFFF'
+    fill:
+      patternType: 'solid'
+      fgColor: 'FFB600'
+    alignment:
+      horizontal: 'center'
+  # index is applied to the row index at the very left
+  index:
+    font:
+      bold: True
+    fill:
+      patternType: 'solid'
+      fgColor: 'DEDEDE'
