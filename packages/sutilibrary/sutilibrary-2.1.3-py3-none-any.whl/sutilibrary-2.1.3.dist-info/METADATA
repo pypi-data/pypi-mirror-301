@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sutilibrary
+Version: 2.1.3
+Summary: A comprehensive collection of algorithms including sorting, searching, graph algorithms, and more
+Author: Your Name
+Author-email: firi8228@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prettytable >=2.0.0
+Requires-Dist: pygments >=2.7.0
+Requires-Dist: networkx >=3.4.1
+Requires-Dist: matplotlib >=3.9.1.post1
+Provides-Extra: dev
+Requires-Dist: pytest >=6.0 ; extra == 'dev'
+Requires-Dist: pytest-cov >=2.0 ; extra == 'dev'
+Requires-Dist: flake8 >=3.9 ; extra == 'dev'
+Requires-Dist: black >=21.5b1 ; extra == 'dev'
+
