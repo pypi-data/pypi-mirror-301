@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: projectionSVD
+Version: 0.1.2
+Summary: Projection into SVD space
+Author: Jonas Meisner
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: cython
+Requires-Dist: numpy
