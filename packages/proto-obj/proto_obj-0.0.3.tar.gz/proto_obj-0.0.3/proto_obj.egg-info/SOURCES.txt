@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+proto/__init__.py
+proto/proto.py
+proto_obj.egg-info/PKG-INFO
+proto_obj.egg-info/SOURCES.txt
+proto_obj.egg-info/dependency_links.txt
+proto_obj.egg-info/top_level.txt
