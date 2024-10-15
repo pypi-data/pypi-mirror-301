@@ -1,0 +1,15 @@
+mockai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mockai/anthropic/__init__.py,sha256=V9P7UrRGd0jb42iwt5AP1lMNnCbUbhPubHyTRIl6qKE,949
+mockai/anthropic/models.py,sha256=BQum4e5khlaoX8BU_Tw6HghhX2-6EmgAgaDy1axK2FI,1665
+mockai/anthropic/router.py,sha256=AkIR6q_Ymb65yc2dYQTEQFVJlieP_5YZApcQ_wPpnAw,4708
+mockai/cli.py,sha256=UJziNYgjbaMfCp0782r1zG27lOof8bDD5CXytspw0FA,1319
+mockai/constants.py,sha256=JZnXBfeMlJIyjKejPV0PH3Mx2lTSrmPUzBAEk8JTI1w,172
+mockai/main.py,sha256=FwhezrFvtIQsl4jbbA8tng-fyEoH950EMtZchI7uI14,548
+mockai/models.py,sha256=7Mm9vX1itbltaPcsGCjPTg_FihqCr6jEx7jpbKU7sHE,421
+mockai/openai/__init__.py,sha256=o6puaSN3SAFbOjNu-nuzSrBjY7i-LnmCQeTQs-DjFEg,1268
+mockai/openai/models.py,sha256=-3W1du5WEcMRJy39rQ3RvynpSxo3424LhCbqvztdr-A,1544
+mockai/openai/router.py,sha256=0qr6tSLIjsa6rSwBrckNefFtNOrtXNj6s2nvjFFSRms,5336
+ai_mock-0.2.1.dist-info/METADATA,sha256=yLk7wS8kypiZxS4K9Qt0VbDzbfjElcUHwNJOSApzX20,7070
+ai_mock-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ai_mock-0.2.1.dist-info/entry_points.txt,sha256=Mebts51U6BYeOsXiGSWpzIJLZATh0im5Jtuhdt9ardw,41
+ai_mock-0.2.1.dist-info/RECORD,,
