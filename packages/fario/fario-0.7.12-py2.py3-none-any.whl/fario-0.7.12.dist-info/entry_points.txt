@@ -1,0 +1,14 @@
+[console_scripts]
+fario-account = fario.fario_account:main
+fario-cast = fario.fario_cast:main
+fario-config = fario.config:cmd_conf
+fario-fid-byname = fario.fario_fid_byname:main
+fario-grep = fario.fario_grep:main
+fario-hubinfo = fario.fario_hub_info:get_hub_info
+fario-in = fario.fario_in:main
+fario-out = fario.fario_out:main
+fario-pprint = fario.textcast:main
+fario-signers = fario.fario_signers:main
+fario-userdata = fario.fario_userdata:fario_user_data
+fario2json = fario.fario2json:main
+json2fario = fario.json2fario:json2fario
