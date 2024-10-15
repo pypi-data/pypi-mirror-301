@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/RevilosLib/CLI.py
+src/RevilosLib/IDgenerator.py
+src/RevilosLib/__init__.py
+src/RevilosLib.egg-info/PKG-INFO
+src/RevilosLib.egg-info/SOURCES.txt
+src/RevilosLib.egg-info/dependency_links.txt
+src/RevilosLib.egg-info/requires.txt
+src/RevilosLib.egg-info/top_level.txt
