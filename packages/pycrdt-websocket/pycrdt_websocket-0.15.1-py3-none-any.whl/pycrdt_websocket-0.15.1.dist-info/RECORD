@@ -1,0 +1,15 @@
+pycrdt_websocket/__init__.py,sha256=fuyE2WKuCZ8-qYdaHP68_LiwQgJAUZIGvKGfQz7Erpc,311
+pycrdt_websocket/asgi_server.py,sha256=lw_FsBzccawANOpYS7SnH9Tf6mK9jUAa0gbtfGzh1mk,2929
+pycrdt_websocket/awareness.py,sha256=k8ER2uETUaTLLASR-I_a1T5SCU6dR6LiLamhjmvMQ24,68
+pycrdt_websocket/django_channels_consumer.py,sha256=NoyKFEq5BfN3enNJVm7gj2FaRGjBpCNsow8ehsBYLFU,6951
+pycrdt_websocket/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycrdt_websocket/websocket.py,sha256=00W88qBkIMxDgvNo6iEDwsWiJWdwRTFTm_--Mx0H5qg,1070
+pycrdt_websocket/websocket_provider.py,sha256=78W7Rx10I27Y5h5ZTeaMEWQxXbKuulm-j0OwruNTML4,5670
+pycrdt_websocket/websocket_server.py,sha256=ndUhcc0g_bLS-DO803_BhnzZpfM04NzLJJ55N1Hr6Sk,8412
+pycrdt_websocket/yroom.py,sha256=3l3JXOYLp6uTP2Rfd6sSzLs3uCbm3S6ZZJOTzoheMBo,13623
+pycrdt_websocket/ystore.py,sha256=hjWFijY1pFt5RF8kLBrS_uVvdPo3gpGF-NpB3LslRnc,17743
+pycrdt_websocket/yutils.py,sha256=aIxss6XIUKEqn8pyQpDpmrHrXCtnQi-7JOdONZRGQn8,635
+pycrdt_websocket-0.15.1.dist-info/METADATA,sha256=plbMg7fhNpTPU0pnFOoFkRyNY8sbTnqilk9DYG6ypSc,5283
+pycrdt_websocket-0.15.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pycrdt_websocket-0.15.1.dist-info/licenses/LICENSE,sha256=pmG-JVX79jHySF7yebLqNCfMiqZA1UK6I_15iW47NlM,1071
+pycrdt_websocket-0.15.1.dist-info/RECORD,,
