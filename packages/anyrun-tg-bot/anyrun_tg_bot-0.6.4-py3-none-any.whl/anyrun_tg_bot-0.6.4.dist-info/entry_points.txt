@@ -1,0 +1,2 @@
+[console_scripts]
+anyrun-tg-bot = main:main
