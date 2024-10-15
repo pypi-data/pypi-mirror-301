@@ -1,0 +1,12 @@
+autojs/__init__.py,sha256=xAJYLN6hcmkGsDPyick45dX_v5bno56CpSHZUbHFgyY,166
+autojs/__main__.py,sha256=4NAUg-SRk_V2tcncm6YKP0QuB4S7WcGGMRgsClJxXWs,162
+autojs/call_locator.js,sha256=mTH_V3IgiE0cl2qcIhJZYHRY19XYNwzCHACJlQRYiSE,1793
+autojs/call_sensors.js,sha256=WD4_eoGubqOTsp1242_VPqE9oF-HXJH1dz1m86-5XB8,2197
+autojs/core.py,sha256=pj5pRZ1lPzt6AzOKfDlPKmcrHGAJOU7tbvEysLnm61I,3513
+autojs/examples.py,sha256=9ee8KJ0W_NKU6SouLmaqyiMSGZGC5D60lmSROwADkQc,8320
+autojs/execute_file.js,sha256=hMnjunsMLFB58kBxEsrFaTyyBggcffc6uowxzCWohf0,310
+autojs/execute_string.js,sha256=tgeJEnL50G1oLs2qmM-K86YGKeQVmsi4W3dtLuHBiLI,301
+AutoxJS-1.0.4.dist-info/METADATA,sha256=0eEah264WPGxNqxo67NkbAFNFCV5Pnz5X1xKCUTBY6Y,247
+AutoxJS-1.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+AutoxJS-1.0.4.dist-info/top_level.txt,sha256=gnVMyU2DALe_ne8kt5lVzSlyfGWxYD686JK4wauElGE,7
+AutoxJS-1.0.4.dist-info/RECORD,,
