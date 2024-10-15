@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/PyWomboAPI/__init__.py
+src/PyWomboAPI/generation.py
+src/PyWomboAPI/init.py
+src/PyWomboAPI/logger.py
+src/PyWomboAPI/main.py
+src/PyWomboAPI/models.py
+src/PyWomboAPI/statics.py
+src/PyWomboAPI.egg-info/PKG-INFO
+src/PyWomboAPI.egg-info/SOURCES.txt
+src/PyWomboAPI.egg-info/dependency_links.txt
+src/PyWomboAPI.egg-info/requires.txt
+src/PyWomboAPI.egg-info/top_level.txt
