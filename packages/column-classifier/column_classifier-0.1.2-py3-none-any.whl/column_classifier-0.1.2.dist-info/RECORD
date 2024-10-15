@@ -1,0 +1,9 @@
+column_classifier/__init__.py,sha256=beDsL7087EalDPvWDTE9Bbwz5rs2meuTZ3pzuypByh8,95
+column_classifier/column_classifier.py,sha256=NnAtgPvycxeIUw9BXgKgwnvLLbqQKMjmMUZv4j0_6Yw,7597
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_classifier.py,sha256=Me7bm9xTKYyMJaHhjbBVa-byemJnG9mOpPC2dMWrjEQ,571
+column_classifier-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+column_classifier-0.1.2.dist-info/METADATA,sha256=q3atz3Nr5iffEOLz3mAi18L_ll4yNaNjcopwx3ltlNw,6473
+column_classifier-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+column_classifier-0.1.2.dist-info/top_level.txt,sha256=LcMVwSaAz4di9O3KyFlmvXk2ZNrFiPxvZwka26dvcF0,24
+column_classifier-0.1.2.dist-info/RECORD,,
