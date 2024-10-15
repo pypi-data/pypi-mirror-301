@@ -1,0 +1,17 @@
+colorama
+docutils
+sphinx
+
+[dev]
+sphinx-api-relink[sty]
+
+[sty]
+mypy
+pre-commit-uv
+ruff
+sphinx-api-relink[types]
+
+[types]
+types-colorama
+types-docutils
+types-requests
