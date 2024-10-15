@@ -1,0 +1,9 @@
+
+[dev]
+pyright
+ruff
+
+[pub]
+build
+twine
+wheel
