@@ -1,0 +1,8 @@
+h3/
+h3-py-notebooks/
+deck_maps/
+outputs/
+.Rproj.user
+*.Rproj
+.Rhistory
+.DS_Store
