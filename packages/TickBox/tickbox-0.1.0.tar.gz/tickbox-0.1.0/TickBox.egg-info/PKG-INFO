@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TickBox
+Version: 0.1.0
+Summary: A terminal-based TO-DO list manager with rich functionality.
+Home-page: https://github.com/abhinavhooda/todo-manager
+Author: Abhinav
+Author-email: upstage.barrier_0x@icloud.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Click
