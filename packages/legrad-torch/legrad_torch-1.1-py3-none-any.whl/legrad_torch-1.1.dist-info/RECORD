@@ -1,0 +1,8 @@
+legrad/__init__.py,sha256=166DNpAW0V8WI19argXjKlqVovru4yIMTnZ-BNJaSCA,65
+legrad/utils.py,sha256=N7BZq9GEl6_CuX1naxWMKB6UfmFDeQcGvpw6RuYlnJI,25535
+legrad/wrapper.py,sha256=RQ85nRur_SB8dCSw4YgSrodvkteSFIJT-c-kONCUukk,15713
+legrad_torch-1.1.dist-info/LICENSE,sha256=Ez-aBx8dOzNZ9LOJL0k_t0_lKM2f5BveUt4Dxx2VwTo,1136
+legrad_torch-1.1.dist-info/METADATA,sha256=hPHRmg3i8VWw0J_gWFfJi4NAezfeuRQgLGZzlUSnzQE,6377
+legrad_torch-1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+legrad_torch-1.1.dist-info/top_level.txt,sha256=6Fo0KbYUSKj3hKU9v1tGHXzcnB3Bslx5TzNInKWTUuA,7
+legrad_torch-1.1.dist-info/RECORD,,
