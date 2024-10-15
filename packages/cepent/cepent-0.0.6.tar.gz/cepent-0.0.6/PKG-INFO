@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cepent
+Version: 0.0.6
+Summary: Catch error pentaho
+Home-page: https://github.com/biwiser-com/cepent
+Author: Ysis Longart (Biwiser)
+Author-email: ysisl@biwiser.com
+License: MIT
+Keywords: python,psycopg2,catch,pentaho
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2
+
+
+# cepent
+
+Se encuentra en construccion es una libreria para almacenar errores de procesos ETL
+
+
+
+## Ejemplo de uso
+
+Creando captura de error en caso de proceso rechazado
+
+```python
+from cepent import ErrorHandling
+
+error = ErrorHandling(usr, pwd, bd_pg, bd_port, bd_company  )
+error.handle_error( table_name)
+
+```
+
+## Ejemplo de uso
+
+Creando captura de comienzo , error y fin de procesos de proceso. Para validar sus 3 estados
+
+```python
+from cepent import ProcessHandling
+
+process = ProcessHandling(usr, pwd, bd_pg, bd_port, bd_company , process_name)
+
+
+process.start_process()
+process.handle_error( table_name)
+process.end_process_log()
+```
+proces = ErrorHandling(usr, pwd, bd_pg, bd_port, bd_company )
