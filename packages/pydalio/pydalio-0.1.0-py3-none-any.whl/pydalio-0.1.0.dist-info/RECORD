@@ -1,0 +1,12 @@
+pydalio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+"pydalio/__main__,py",sha256=RNIMncvSapKl9bpskTMxfSPRsartb2BNuUlqXGuQiCg,53
+pydalio/cli.py,sha256=e3W96XaXLUzmKQr_ofAas9Lyy_Imm86pnRTh17U-9s4,1978
+pydalio/constants.py,sha256=xBEL1oblW1rbbb5c-STXR-yVfYn7UWsYbQRfwQVGkkg,206
+pydalio/db.py,sha256=nDRFPIMX9cZnD1yVIGIfm1AgIcNV8464hW4bvCE8RLs,5718
+pydalio/principle.py,sha256=Iq91zRLi12-WjcK5iHcMjyW8AcmVT_6LYSlcesIJGjk,3865
+pydalio/utils.py,sha256=EfvbOonSR5_vNfN_XTBv1Ic3nvw_NgyM9yYGMfMQP74,1203
+pydalio-0.1.0.dist-info/LICENSE,sha256=eNQE-yTnkh6jJu5RZj4lxebLWRnCWcREbyAY_SPXtl8,15200
+pydalio-0.1.0.dist-info/METADATA,sha256=mZSFcBzzDOReFvHJ17B3C6hKjEA1CzBzAH8gvbmZdnM,2476
+pydalio-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pydalio-0.1.0.dist-info/entry_points.txt,sha256=BgVEnX9wYH9E1XyjO9UDJnisZXeTCaLm1AvM-_Ej9Vg,43
+pydalio-0.1.0.dist-info/RECORD,,

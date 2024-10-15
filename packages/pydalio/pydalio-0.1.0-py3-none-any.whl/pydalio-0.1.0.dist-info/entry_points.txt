@@ -1,0 +1,3 @@
+[console_scripts]
+pydalio=pydalio.cli:app
+
