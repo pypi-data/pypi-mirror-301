@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/custodian/__init__.py
+src/custodian/custodian.py
+src/custodian/py.typed
+src/custodian/utils.py
+src/custodian.egg-info/PKG-INFO
+src/custodian.egg-info/SOURCES.txt
+src/custodian.egg-info/dependency_links.txt
+src/custodian.egg-info/entry_points.txt
+src/custodian.egg-info/requires.txt
+src/custodian.egg-info/top_level.txt
+tests/test_custodian.py
+tests/test_utils.py
