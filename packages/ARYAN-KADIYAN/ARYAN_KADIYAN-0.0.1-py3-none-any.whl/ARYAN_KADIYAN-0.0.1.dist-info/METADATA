@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ARYAN-KADIYAN
+Version: 0.0.1
+Summary: ARYAN KADIYAN
+Author: ARYAN KADIYAN
+Author-email: aryankadiyan1718@gmail.com
+Keywords: arithmetic,math,mathematics,python tutorial,ARYAN1,ARYAN2,ARYAN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+A package to perform arithmetic operation
