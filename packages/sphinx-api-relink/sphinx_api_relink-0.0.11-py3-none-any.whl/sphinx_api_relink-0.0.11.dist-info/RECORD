@@ -1,0 +1,12 @@
+sphinx_api_relink/__init__.py,sha256=8-x6rIJNPmz-6ynu8cukEJBCZDEoYeYYUTGgiUmyR4E,8652
+sphinx_api_relink/helpers.py,sha256=1ZNC76Pu00ZLz1jAjr3IdsaCsgggzay0POYWlM34C_g,5169
+sphinx_api_relink/linkcode.py,sha256=dE1eq5KkucLCT_sHfiGx1PkPxbHwFbHmENlacn3sNFg,5134
+sphinx_api_relink/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinx_api_relink/templates/module.rst.jinja,sha256=O13YbBTYD3-gjE7VoNYOxm_EZdzjm4ks5I7A__3WXlM,250
+sphinx_api_relink/templates/package.rst.jinja,sha256=v_HdWdKOIFPSkd-vDa8W1rEdlhZmgae9QobrNiTlUj4,1021
+sphinx_api_relink/templates/toc.rst.jinja,sha256=U1WNHDy0wy4bnevrug68RDnsjHAalGFbCuNdEMFBLgM,125
+sphinx_api_relink-0.0.11.dist-info/LICENSE,sha256=dbALJNF4UJEWoQzUNIjISdyiqGbFY1U4FGatyKrumnA,1536
+sphinx_api_relink-0.0.11.dist-info/METADATA,sha256=CO9BS3AhcLJjRZiAqFUa_OPtAHU2T-ta48kWcV05In0,6281
+sphinx_api_relink-0.0.11.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sphinx_api_relink-0.0.11.dist-info/top_level.txt,sha256=S0-OGMken6Nbckd3swxyycRkYZ2mE09kFHkF-Sdq6z8,18
+sphinx_api_relink-0.0.11.dist-info/RECORD,,
