@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ask-weather"
+version = "0.1.3"
+description = "\"A weather query agent using LangChain and OpenWeatherMap API\""
+authors = ["doyikim <doyikim34@naver.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+torch = "2.2.0"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.2.2"
+pyyaml = "^6.0.2"
+requests = "^2.32.3"
+langchain = "^0.3.3"
+setuptools = "^75.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
