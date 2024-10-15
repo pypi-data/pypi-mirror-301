@@ -1,0 +1,12 @@
+napari_zplane_depth_colorizer/__init__.py,sha256=G5-bkNn8U3kdEuFTOLIaVxP_W3rvOWFpSVtOuxT6RJ4,89
+napari_zplane_depth_colorizer/_widget copy.py,sha256=Yrm3wgBAvgA93CIUB31vuosZw4cpqmp3lnRYSZliePQ,25526
+napari_zplane_depth_colorizer/_widget.py,sha256=50RuGDBuj0z55SxGtQbMPWpEbsciOD2s6pPg8EMTKYo,19380
+napari_zplane_depth_colorizer/napari.yaml,sha256=Qe0GeO_Tjq7K_ph99YMb1tR0zB9M8wfnUMEuXB5b3aM,552
+napari_zplane_depth_colorizer/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_zplane_depth_colorizer/_tests/test_widget.py,sha256=gJjTAzsYXRvDjmKzK0-zqO6jNykmn18JkQKx6f7XXYs,16366
+napari_zplane_depth_colorizer-0.0.1.dist-info/LICENSE,sha256=bUI3yfBjfWYINVqwYbuFUD7r9ao2t98j1bC82CmYM20,1484
+napari_zplane_depth_colorizer-0.0.1.dist-info/METADATA,sha256=DXFmSI6aJPShcHSJXpprUKzMCT1dSFo0omx3LibBVVY,6362
+napari_zplane_depth_colorizer-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+napari_zplane_depth_colorizer-0.0.1.dist-info/entry_points.txt,sha256=uVTsTGYLcHMxxlTlgVfbVtfBWbrbhpupdsp2Hy_LHuo,92
+napari_zplane_depth_colorizer-0.0.1.dist-info/top_level.txt,sha256=AabkhJROg8M7W_hie__CzlLuPpt9IvV7XWeQu4WolhI,30
+napari_zplane_depth_colorizer-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-zplane-depth-colorizer = napari_zplane_depth_colorizer:napari.yaml
