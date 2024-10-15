@@ -1,0 +1,9 @@
+libro_sql/__init__.py,sha256=7xaFdAReTH3-o4Kz4kIwTB8909gHRsAdm23q9YVxIWs,157
+libro_sql/_version.py,sha256=EnmpatObps3FFu7OL_LJ9L_Dr-H6eOI0Fcx0zyBpHmk,46
+libro_sql/database.py,sha256=q7Gk5fyEVSiOo4xQVC_dfFujmUBESUy_kWoMgJqjj4M,4106
+libro_sql/exception.py,sha256=LwXRVbfOprAT4IpePyJH3NsiDAnoVP05aq0BQoVKrZc,1203
+libro_sql/extensions.py,sha256=tQLPr9MDSbzvqs9zuvrz4vWDN90275CSDLlNZgPYyk0,677
+libro_sql/sql_magic.py,sha256=WRB0toQiptSWFjwSlfQ3z_O5PWJWmXtNgps9hT_Fie4,3138
+libro_sql-0.1.7.dist-info/METADATA,sha256=MrZO-zQQzGzRw5nPVnzwfODG4wgnxPIqk2eZBPJP01c,776
+libro_sql-0.1.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+libro_sql-0.1.7.dist-info/RECORD,,

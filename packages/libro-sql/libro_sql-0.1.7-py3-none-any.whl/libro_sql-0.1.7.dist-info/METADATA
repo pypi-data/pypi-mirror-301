@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: libro-sql
+Version: 0.1.7
+Summary: libro sql
+Author-email: brokun <brokun0128@gmail.com>, sunshinesmilelk <1176136681@qq.com>
+Requires-Python: >=3.9
+Requires-Dist: ipython>=7.34.0
+Requires-Dist: libro-core>=0.1.3
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: psycopg2-binary>=2.9.9
+Requires-Dist: pydantic>=2.9.1
+Requires-Dist: pymysql>=1.1.1
+Requires-Dist: sqlalchemy>=2.0.34
+Description-Content-Type: text/markdown
+
+# libro-sql
+
+# 使用
+
+## 加载
+
+```shell
+%load_ext libro_sql
+```
+
+# 设置
+
+```python
+from libro_sql.database import db
+db.config({
+    'db_type': '',
+    'username': '',
+    'password': '',
+    'host': '',
+    'port': 5432,
+    'database': ''
+})
+```
+
+# 执行
+
+```python
+%%sql
+{"result_variable":"a", "sql_script":"select 1"}
+```
