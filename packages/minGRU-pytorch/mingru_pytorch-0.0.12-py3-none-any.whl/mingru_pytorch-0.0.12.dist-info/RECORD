@@ -1,0 +1,7 @@
+minGRU_pytorch/__init__.py,sha256=wSa2jxz50T6iMx-a817qbKjvdntMlTeRGGOxGkmNgMQ,41
+minGRU_pytorch/minGRU.py,sha256=iyIK8kaqtnBWVJ8N4WXDMpenYfMWPY0B3quL_SFron0,2114
+minGRU_pytorch/minGRULM.py,sha256=XqVFWHptvl7taLFpaDEkvDdpFaFBmA41h2fD6OtncmA,3463
+mingru_pytorch-0.0.12.dist-info/METADATA,sha256=lZ5w7JYrTxqOiocuGXwi-joff48spaU8ByDB3VUbhBc,3205
+mingru_pytorch-0.0.12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mingru_pytorch-0.0.12.dist-info/licenses/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+mingru_pytorch-0.0.12.dist-info/RECORD,,
