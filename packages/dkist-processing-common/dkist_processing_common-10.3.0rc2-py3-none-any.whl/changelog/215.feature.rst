@@ -1,0 +1,2 @@
+Add new argument, `num_points_to_sample`, to `quality_store_polcal_results`, which allows a user to reduce the number of points saved for inclusion in the quality report.
+This allows us to mitigate large quality metrics.
