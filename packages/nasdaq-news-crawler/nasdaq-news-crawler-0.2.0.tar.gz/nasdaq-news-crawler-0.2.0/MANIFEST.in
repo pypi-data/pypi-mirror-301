@@ -1,0 +1,2 @@
+recursive-include finbert_hand_sentiment_model_news *
+recursive-include finbert_hand_sentiment_model_press *
