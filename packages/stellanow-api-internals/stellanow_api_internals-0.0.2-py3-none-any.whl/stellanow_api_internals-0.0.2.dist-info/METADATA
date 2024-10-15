@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: stellanow_api_internals
+Version: 0.0.2
+Summary: Library for communicating with the internal API of StellaNow.
+Requires-Python: >=3.11
+
