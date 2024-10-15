@@ -1,0 +1,3 @@
+[console_scripts]
+hive-tell-user = hive.messaging.commands.tell_user:main
+smoke-test-worker = hive.messaging.test.smoke_test_worker:main
