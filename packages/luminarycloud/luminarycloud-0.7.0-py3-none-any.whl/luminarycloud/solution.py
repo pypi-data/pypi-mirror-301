@@ -1,0 +1,92 @@
+# Copyright 2023-2024 Luminary Cloud, Inc. All Rights Reserved.
+from typing import BinaryIO, cast
+import tarfile
+
+from ._wrapper import ProtoWrapper, ProtoWrapperBase
+from ._client import get_default_client
+from ._helpers.download import download_surface_solution, download_volume_solution
+from ._proto.api.v0.luminarycloud.solution import solution_pb2 as solutionpb
+
+
+@ProtoWrapper(solutionpb.Solution)
+class Solution(ProtoWrapperBase):
+    """Represents a solution for a simulation."""
+
+    id: str
+    "Solution ID."
+    simulation_id: str
+    "Simulation ID of parent"
+    iteration: str
+    "Iteration index of the solution."
+    physical_time: float
+    "The physical time, in seconds, of the solution iteration (for transient simulations)."
+
+    _proto: solutionpb.Solution
+
+    def download_surface_data(self) -> tarfile.TarFile:
+        """
+        Download the raw surface data as a gzipped tarball containing .vtu files.
+
+        Returns
+        -------
+        tarfile.Tarfile
+
+        Examples
+        --------
+        >>> with solution.download_surface_data() as streaming_tar_file:
+        ...     path = f"./surface_data_{solution.id}"
+        ...     streaming_tar_file.extractall(path)
+        ...     print(f"Extracted files to {path}:")
+        ...     print("\\t" + "\\n\\t".join(os.listdir(path)))
+        Extracted files to ./surface_data_<solution.id>:
+            surface_0_bound_z_minus.vtu
+            summary.vtm
+            surface_0_bound_airfoil.vtu
+            surface_0_bound_z_plus.vtu
+            surface_0_bound_farfield.vtu
+        """
+        stream = download_surface_solution(
+            get_default_client(),
+            self.id,
+        )
+        return tarfile.open(
+            name=stream.filename,
+            fileobj=cast(BinaryIO, stream),
+            mode="r|gz",
+        )
+
+    def download_volume_data(self) -> tarfile.TarFile:
+        """
+        Download volume solution for a completed steady simulation as a gzipped tarball containing .vtu & .vtp files.
+
+        The output may be broken up into multiple .vtu files for large simulations.
+
+        Returns
+        -------
+        tarfile.Tarfile
+
+        Examples
+        --------
+        >>> with solution.download_volume_data() as streaming_tar_file:
+        ...     path = f"./volume_data_{solution.id}"
+        ...     streaming_tar_file.extractall(path)
+        ...     print(f"Extracted files to {path}:")
+        ...     for root, dirs, filenames in os.walk(path):
+        ...         print("\\t" + "\\n\\t".join([os.path.join(root, file) for file in filenames]))
+        Extracted files to ./volume_data_<solution.id>:
+                ./volume_data_<solution.id>/volume_data_<solution.id>.vtm
+                ./volume_data_<solution.id>/volume_data_<solution.id>/volume_data_<solution.id>_1_0.vtp
+                ./volume_data_<solution.id>/volume_data_<solution.id>/volume_data_<solution.id>_3_0.vtp
+                ./volume_data_<solution.id>/volume_data_<solution.id>/volume_data_<solution.id>_4_0.vtp
+                ./volume_data_<solution.id>/volume_data_<solution.id>/volume_data_<solution.id>_2_0.vtp
+                ./volume_data_<solution.id>/volume_data_<solution.id>/volume_data_<solution.id>_0_0.vtu
+        """
+        stream = download_volume_solution(
+            get_default_client(),
+            self.id,
+        )
+        return tarfile.open(
+            name=stream.filename,
+            fileobj=cast(BinaryIO, stream),
+            mode="r|gz",
+        )
