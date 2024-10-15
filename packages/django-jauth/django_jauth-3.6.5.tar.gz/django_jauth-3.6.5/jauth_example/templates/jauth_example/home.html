@@ -1,0 +1,10 @@
+{% extends "jauth_example/base.html" %}
+{% load i18n %}
+
+{% block body %}
+
+User {{ user }} logged in.
+
+<a href="{% url 'jauth-example-logout' %}">Logout</a>
+
+{% endblock %}
