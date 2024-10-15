@@ -1,0 +1,10 @@
+stingray/__init__.py,sha256=95SM7Z_E7kkF97KtjylgfLMRyj9KcA1BxZ5CFV0LtHo,920
+stingray/cobol_parser.py,sha256=H8G1oshraYBB3zbjGfBZZnn_QdWR_yKYx4YX5gEEUOw,26619
+stingray/estruct.py,sha256=u7we17e1pmmpa9iqm1fIE_trRhqD-UDKoO9WG0jh0Aw,23683
+stingray/implementations.py,sha256=I3yXMgokHZ3RQYykxdFLhp49JbcBZYptwfKs-syisIQ,11671
+stingray/schema_instance.py,sha256=3B3fc6zQpyZewpJhuLBTSXPmDXbngsE55z99QrVf59E,85593
+stingray/workbook.py,sha256=ChtdsAYdNB3eex28Ii2ORhXo7zDsrKD8Pl9QtI6cVkE,30244
+stingray_reader-5.1.1.dist-info/METADATA,sha256=4EGQNVPnSQhXTRkxcf_W_rZi2hs1VC21Sh2Dh6y0tQ8,5162
+stingray_reader-5.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+stingray_reader-5.1.1.dist-info/licenses/LICENSE,sha256=RnG-jvGdHSrbmybe6l9gWs1jehLyYuVyYB92cKUqDOo,1071
+stingray_reader-5.1.1.dist-info/RECORD,,
