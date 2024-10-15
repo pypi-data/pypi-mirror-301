@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+POPSRegression/POPSRegression.py
+POPSRegression/__init__.py
+POPSRegression.egg-info/PKG-INFO
+POPSRegression.egg-info/SOURCES.txt
+POPSRegression.egg-info/dependency_links.txt
+POPSRegression.egg-info/requires.txt
+POPSRegression.egg-info/top_level.txt
