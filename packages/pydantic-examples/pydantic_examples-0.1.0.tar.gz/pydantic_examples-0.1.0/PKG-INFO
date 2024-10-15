@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: pydantic-examples
+Version: 0.1.0
+Summary: Generate examples of serialized data from Pydantic models
+Project-URL: repository, https://github.com/bneijt/pydantic-examples
+Author-email: Bram Neijt <bram@neijt.nl>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: ruamel-yaml>=0.18.6
+Description-Content-Type: text/markdown
+
+# pydantic-examples
+
+Project to create examples of serialized [Pydantic](https://docs.pydantic.dev/latest/) models with comments.
+
+Intended to easily generate example config files if you load and validate the configuration using Pydantic.
+
+From a model like:
+```python
+from pydantic import BaseModel, Field
+from pydantic_examples.yaml import yaml_with_comments
+from typing import Annotated
+
+class Example(BaseModel):
+        """Example model"""
+
+        value: Annotated[str, Field(description="Does not really matter")] = "foo"
+```
+
+You can generate
+```yaml
+# Example model
+value: foo  # Does not really matter
+```
+
+Status
+======
+This project was created with a single use-case in mind (yaml from Pydantic) but is open to PRs and collaboration on Github.
+
+Feel free to file issues, raise PRs and join in if you want.

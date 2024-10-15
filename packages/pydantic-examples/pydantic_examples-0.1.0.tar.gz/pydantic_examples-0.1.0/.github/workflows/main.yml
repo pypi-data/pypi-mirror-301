@@ -1,0 +1,33 @@
+name: main
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request: {}
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: google/osv-scanner/actions/scanner@main
+        with:
+          to-scan: uv.lock
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - uses: pre-commit/action@v3.0.1
+      - uses: astral-sh/setup-uv@v3
+        with:
+          version: "0.4.20"
+      - name: cache venv
+        uses: actions/cache@v4
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ hashFiles('**/uv.lock') }}
+      - run: uv sync
+      - run: uv run pytest tests
+      - run: uv build
