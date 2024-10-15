@@ -1,0 +1,9 @@
+gixpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gixpy/gixpy.py,sha256=X-f45dR7XX1JeBs5myx5Lew0nquAOCccBXp7uQWvvqo,6948
+gixpy/transform.c,sha256=ii8SuwOIyg5Ue8iYUkTDRNOYTYWqGNIvkz3OVoTmEUU,17077
+gixpy/transform.cp39-win_amd64.pyd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gixpy-5.3.dist-info/LICENSE,sha256=s9Hq5_Uk_J3dSFYqRlLv0rzYSOOLA_BeOIvM6UPnPfI,35819
+gixpy-5.3.dist-info/METADATA,sha256=v32WISRzpFUpHlc2-fprARB_lY_J3sWdfTUOgMYuODo,42580
+gixpy-5.3.dist-info/WHEEL,sha256=RGwqtRvW_oOsMMUOIYl69Nqx1L0RT5kPQtdYJzAVFx8,95
+gixpy-5.3.dist-info/top_level.txt,sha256=GX2z7hLqGxzVQJE2Cfs5duLx7g91-PK78zhM5ANGjYY,6
+gixpy-5.3.dist-info/RECORD,,
