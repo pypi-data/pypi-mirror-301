@@ -1,0 +1,16 @@
+faster_whisper/__init__.py,sha256=U5bDoCWnsM-BJG_NaAwLt-OE4uWHzC4Y-VGM70wm1Ww,430
+faster_whisper/audio.py,sha256=LIQDjSo37utWMiKC61HB4hs-5yLZi-o7wRE61yCpyb0,1548
+faster_whisper/feature_extractor.py,sha256=ARQ9UF55fHpUFRMgGbcRDNsDvJVQwDS4cAYDHDO3pN4,3954
+faster_whisper/tokenizer.py,sha256=FM9aD5F7aa1ezZzKRo8jXL-BqKINP9W1Wv3yp9qiVoM,8247
+faster_whisper/transcribe.py,sha256=4KaD0ITiSkVo45-F7DnR7gI08Xl9FUg6AXLLgEUWwig,91581
+faster_whisper/utils.py,sha256=R3LE9AGfJeczLnfSddX9JJBckIEJtN6T0OqypaF602U,5020
+faster_whisper/vad.py,sha256=SX-fLpO1z0mAoDw0Q5mVjf2oB755zRAG9Xhaz0Wt5T0,22114
+faster_whisper/version.py,sha256=yDbmVvNQ8XE5aFLqoXfhG1AvSMlZ25DkBqJaRjV7JpY,50
+faster_whisper/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faster_whisper/assets/pyannote_vad_model.bin,sha256=C1syFtYKLTL8CGtH6oxnWJqusmt-B_y-Yg1tC4PiCeo,17719103
+faster_whisper/assets/silero_vad.onnx,sha256=a5nL_Tkka2cG-Y7BPHxQxrKZGB8kdPoFy8gEaswnQ5Y,2313101
+mobius_faster_whisper-1.1.0.dist-info/LICENSE,sha256=r2eYE15yn4qmyFOTbQN9_epElzTSa46mqJgF_KdYwNU,1064
+mobius_faster_whisper-1.1.0.dist-info/METADATA,sha256=C-qSbF23U_ptyFLkiepts4jc4-Nbk59dTe062hkjxrY,17451
+mobius_faster_whisper-1.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+mobius_faster_whisper-1.1.0.dist-info/top_level.txt,sha256=Y2hl8jzfIFjT23e2bW1_jUFU6YlPz3cAN037hHt2sYg,15
+mobius_faster_whisper-1.1.0.dist-info/RECORD,,
