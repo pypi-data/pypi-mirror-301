@@ -1,0 +1,15 @@
+LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+p115client/__init__.py,sha256=4-QZro5WH4TQagYrOt0GRGAZADw1IxTdeRlkPuZNRxw,214
+p115client/_upload.py,sha256=gXPANNvjBvy_5X-2gCFthp4nXdG2C_v3gOAtax1HgeM,27933
+p115client/client.py,sha256=cXvyQB2XCTAvek87eDCpRwxKoZqMAjAliyNIdDF2emY,326000
+p115client/const.py,sha256=74AlYCIzrKtMT2hFOUQdOkeITOqCWtH2QdFIY4tX8Gg,2830
+p115client/exception.py,sha256=_ERQnKwtsfpwd49qj5dKKIy7PxOVXxnyCuAt5b8j-yg,2119
+p115client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+p115client/tool/__init__.py,sha256=3TfN13CM-_vdmKELFLAF9oxpp7j4Ry1SEZLidY0UMeo,151
+p115client/tool/export_dir.py,sha256=VoEjLoI4Q3AE9H43JLomeFRuiNOUnB5keW_rVqPjb2k,18150
+p115client/tool/iterdir.py,sha256=Ylled6Dnu4D6_HsGTiSFQQM64CNUnI4YThyQRNeTU0g,77227
+p115client/type.py,sha256=HhVsgk9OztxI_wjkDuarkQKT3jCZ1j3oqRtKoNw8k_I,5086
+p115client-0.0.2.7.dist-info/LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+p115client-0.0.2.7.dist-info/METADATA,sha256=hyPWGrYbR6okB1O8wC6XngWP5kki2nnlM5WSpbBWXHc,6914
+p115client-0.0.2.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+p115client-0.0.2.7.dist-info/RECORD,,
