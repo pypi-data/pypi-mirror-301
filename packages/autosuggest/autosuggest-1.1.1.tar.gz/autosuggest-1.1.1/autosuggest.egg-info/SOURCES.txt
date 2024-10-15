@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+autosuggest/__init__.py
+autosuggest.egg-info/PKG-INFO
+autosuggest.egg-info/SOURCES.txt
+autosuggest.egg-info/dependency_links.txt
+autosuggest.egg-info/top_level.txt
