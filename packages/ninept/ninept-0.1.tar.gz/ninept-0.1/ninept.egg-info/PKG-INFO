@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ninept
+Version: 0.1
+Summary: Python module providing access to a shared large language modell
+Home-page: https://github.com/psorus/ninept
+Download-URL: https://github.com/psorus/ninept/archive/v_01.tar.gz
+Author: Simon Klüttermann
+Author-email: Simon.Kluettermann@cs.tu-dortmund.de
+License: apache-2.0
+Keywords: llm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+

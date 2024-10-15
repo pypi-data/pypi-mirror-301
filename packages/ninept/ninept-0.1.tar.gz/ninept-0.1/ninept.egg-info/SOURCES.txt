@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ninept/__init__.py
+ninept/handle.py
+ninept.egg-info/PKG-INFO
+ninept.egg-info/SOURCES.txt
+ninept.egg-info/dependency_links.txt
+ninept.egg-info/requires.txt
+ninept.egg-info/top_level.txt
