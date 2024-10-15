@@ -1,0 +1,5 @@
+scapy
+opencv-python
+pydub
+loguru
+python-librtmp
