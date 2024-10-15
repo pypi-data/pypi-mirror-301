@@ -1,0 +1,12 @@
+silero_vad_nuaazs/__init__.py,sha256=rJbj_0p3RJNJ-mWRMztcpvr1malNDwXLKTrXTOI6sfE,633
+silero_vad_nuaazs/cli.py,sha256=r7EudBfalW-Muaz4XRxDj0w6Y-1l82xLLXPjAparchQ,2250
+silero_vad_nuaazs/frame_queue.py,sha256=X6jJyIsY8C8mZUz7CA3YU2pPFWhUHDFKzhaL-8QFrIA,3828
+silero_vad_nuaazs/inference_session.py,sha256=jVamNc91g6iiUWl-RtdPNjieADqd6nB2Y-N3_LPc3-M,1398
+silero_vad_nuaazs/silero_vad.py,sha256=_Ocio5mJ7KjFw39sGD92lHsTvtx83Y0xoPaIqvaTktw,14435
+silero_vad_nuaazs/utils.py,sha256=M7tXrxuE3MCSunNThYTlVkMb8essMdY8enXLqizazoY,1417
+silero_vad_nuaazs-0.0.3.dist-info/LICENSE,sha256=LmPpo4tuj8DHvDfOF0ysoYYocIVsba9Wl8-3heklUgs,1075
+silero_vad_nuaazs-0.0.3.dist-info/METADATA,sha256=iyGoCBUJ8Iw471xmpmV0ZvnPJuz3t0D6pRIueBfsZl8,756
+silero_vad_nuaazs-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+silero_vad_nuaazs-0.0.3.dist-info/entry_points.txt,sha256=Z2Sj4Ru00Tfk-Pw5n8Yb0kKZCYmNalA0GTKZyKXb1J8,51
+silero_vad_nuaazs-0.0.3.dist-info/top_level.txt,sha256=n7pupJ0pV1WyXQl3QMrzMjAP80iZZKIxW58-H8xBtOg,18
+silero_vad_nuaazs-0.0.3.dist-info/RECORD,,
