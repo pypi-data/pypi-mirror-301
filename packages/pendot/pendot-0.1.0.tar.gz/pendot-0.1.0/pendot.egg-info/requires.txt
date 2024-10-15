@@ -1,0 +1,3 @@
+glyphsLib>=6.6.0
+ufostroker>=0.3.0
+kurbopy>=0.11.0
