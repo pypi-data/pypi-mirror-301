@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+findus/BootloaderCom.py
+findus/GlitchState.py
+findus/__init__.py
+findus/findus.py
+findus/mpGlitcher.py
+findus/pyboard.py
+findus.egg-info/PKG-INFO
+findus.egg-info/SOURCES.txt
+findus.egg-info/dependency_links.txt
+findus.egg-info/requires.txt
+findus.egg-info/top_level.txt
