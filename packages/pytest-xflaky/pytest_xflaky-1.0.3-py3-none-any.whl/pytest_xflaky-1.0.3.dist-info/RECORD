@@ -1,0 +1,10 @@
+pytest_xflaky/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_xflaky/add_decorator.py,sha256=QL_NmYanKC4IjmnaPjB0kETWsZRFBXecFDt-Cs5KHYs,3025
+pytest_xflaky/github_blame.py,sha256=nT4TSUToFajT8FhTBsrma74AsbvqUITLHA2cq1wL2tQ,1849
+pytest_xflaky/plugin.py,sha256=dqXFSyRAa5JVf3n0b1uDTa2BfimUw1N1wnZlgL8Ugus,10209
+pytest_xflaky-1.0.3.dist-info/LICENSE,sha256=RzQH_LFV_EzI_8Umn3NA9TwOU7DOec_U0gA-sGTbu0E,1075
+pytest_xflaky-1.0.3.dist-info/METADATA,sha256=aE34rpLXnwwwvh_yZWONgaCmNKpmoowZD5VwxeFG7YI,12096
+pytest_xflaky-1.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytest_xflaky-1.0.3.dist-info/entry_points.txt,sha256=KoJOz9RgMbonPPCif1W1c9_7CJoMo5ohNlrDi8yWc3k,41
+pytest_xflaky-1.0.3.dist-info/top_level.txt,sha256=LjBDHnwsLNUvkSDnrJ6ACl8ad3B-91YcGq9RDyp_KEk,14
+pytest_xflaky-1.0.3.dist-info/RECORD,,
