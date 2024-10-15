@@ -1,0 +1,11 @@
+reader/__init__.py,sha256=oeswMcVB-7JaYGMP4u_gXVqznYvk7gca0ZcmUow63k8,648
+reader/__main__.py,sha256=9_rnDUC-YIKdhKkkb9JDE4mPWqj9_e7twghU4BiFP4w,1604
+reader/config.toml,sha256=DKPc-SPIfRwRn3_y2a-iyhERswxPBf8SQWYcoyNVglQ,47
+reader/feed.py,sha256=F--Vjyb14n16jdWijBQny5Fi4ZX5yvieFUL2p7ARk24,1968
+reader/viewer.py,sha256=EgaSFHXmQBbfy4hZ_GHx_Idq-dZitdhCgBvakxlczDo,411
+realpython_reader-1.1.3.dist-info/LICENSE,sha256=lVXG7TZJTjE8Q3ZSrxuk5jfzukuDbQe6wRce2Iq3h94,1068
+realpython_reader-1.1.3.dist-info/METADATA,sha256=QR1wChQ1_7W2OF__-XNyxpKetI0qU4XVj_pqpy0lZys,5277
+realpython_reader-1.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+realpython_reader-1.1.3.dist-info/entry_points.txt,sha256=j4KgHXbVGbGyfTySc1ypBdERpfihO4WNjppvCdE9HjE,52
+realpython_reader-1.1.3.dist-info/top_level.txt,sha256=zVRv6FulXZWKf9Gycz9vjxul5OCZ3fCq2Attdwsu7Z4,7
+realpython_reader-1.1.3.dist-info/RECORD,,
