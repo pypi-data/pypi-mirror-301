@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyright-alright
+Version: 1.1.345a1
+Summary: Pyright type checker, packaged for Python 🍞 + 🐍 + 🪨 = 🚀
+License: Unlicense
+Author: ducdetronquito
+Author-email: guillaume.paulet@giome.fr
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pybun (==1.1.25)
+Description-Content-Type: text/markdown
+
+# Pyright-alright
+
+**The pyright type checker, packaged for Python** 🍞 + 🐍 + 🪨 = 🚀 
+
