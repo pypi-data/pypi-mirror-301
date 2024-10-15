@@ -1,0 +1,10 @@
+README.md
+__init__.py
+cloudicorn_aws.py
+setup.py
+cloudicorn_aws.egg-info/PKG-INFO
+cloudicorn_aws.egg-info/SOURCES.txt
+cloudicorn_aws.egg-info/dependency_links.txt
+cloudicorn_aws.egg-info/not-zip-safe
+cloudicorn_aws.egg-info/requires.txt
+cloudicorn_aws.egg-info/top_level.txt
