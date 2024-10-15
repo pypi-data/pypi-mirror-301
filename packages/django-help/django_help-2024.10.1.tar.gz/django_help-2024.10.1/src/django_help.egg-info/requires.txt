@@ -1,0 +1,8 @@
+django>=4.2
+click>=8.1.7
+django-markdownx>=4.0.7
+django-translated-fields>=0.13.0
+django-taggit>=6.1.0
+python-frontmatter>=1.1.0
+django-crispy-forms>=2.3
+crispy-bootstrap5>=2024.2
