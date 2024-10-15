@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: betterlogging-pxnity
+Version: 0.1.0
+Summary: A custom logging package with color support
+Home-page: https://github.com/yourusername/betterlogging
+Author: Parthiv Pal
+Author-email: parthiv.pal.theheritageschool@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: colorama>=0.4.6
+
+# BetterLogging
+
+BetterLogging is a custom logging package with color support, designed to enhance the readability of log messages in your Python applications.
+
+## Features
+
+- Colored log messages for better readability
+- Easy configuration through a JSON file
+- Compatible with Python 3.7 and above
+
+## Installation
+
+You can install BetterLogging using pip:
+
+```bash
+pip install betterlogging
+```

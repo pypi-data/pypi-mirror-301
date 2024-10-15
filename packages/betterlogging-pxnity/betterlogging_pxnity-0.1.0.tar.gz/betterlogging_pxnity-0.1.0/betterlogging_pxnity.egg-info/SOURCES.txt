@@ -1,0 +1,7 @@
+setup.py
+betterlogging_pxnity.egg-info/PKG-INFO
+betterlogging_pxnity.egg-info/SOURCES.txt
+betterlogging_pxnity.egg-info/dependency_links.txt
+betterlogging_pxnity.egg-info/entry_points.txt
+betterlogging_pxnity.egg-info/requires.txt
+betterlogging_pxnity.egg-info/top_level.txt
