@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: bencodingpy
+Version: 1.0.1
+Summary: Simple bencoding decode/encode library
+Project-URL: Documentation, https://github.com/abelgarcia2/bencodingpy/readme
+Project-URL: Issues, https://github.com/abelgarcia2/bencodingpy/issues
+Project-URL: Source, https://github.com/abelgarcia2/bencodingpy
+Author: Abel García
+License-Expression: MIT
+License-File: COPYING
+Keywords: BEP 003,BEP 3,bdecode,bdecoding,bencode,bencoding,bep_003,bittorrent,p2p
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Simple bencoding decode/encode library 🔖
+
+## Install
+```python
+pip install bencodingpy
+```
+
+## Usage
+
+### Decode
+```python
+>>> from bencodingpy import decode
+
+>>> decode(b'4:spam')
+'spam'
+
+>>> decode(b'i1234e')
+1234
+
+>>> decode(b'l4:spam4:eggse')
+['spam', 'eggs']
+
+>>> decode(b'd4:spaml1:a1:bee ')
+{'spam': ['a', 'b']}
+
+>>> with open('debian-12.5.0-amd64-netinst.iso.torrent', 'rb') as file:
+...     decoded_torrent = decode(file)
+...     print(decoded_torrent['announce'])
+... 
+http://bttracker.debian.org:6969/announce
+```
+
+### Encode
+```python
+>>> from bencodingpy import encode
+
+>>> encode('spam')
+b'4:spam'
+
+>>> encode(1234)
+b'i1234e'
+
+>>> encode(['spam', 'eggs'])
+b'l4:spam4:eggse'
+
+>>> encode({'spam': ['a', 'b']})
+b'd4:spaml1:a1:bee'
+```
