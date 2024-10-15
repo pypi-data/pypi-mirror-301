@@ -1,0 +1,9 @@
+hive/email/__init__.py,sha256=XGppCx1juv2r1x6V_vWr8p5uA7JsF9IX-7PC3uyWiHs,665
+hive/email/__version__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+hive/email/message.py,sha256=aHuscsGpH0rrOUEYukPzlR5BrD8QLROjDWy4acxMeDY,7217
+hive/email/optional/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hive/email/optional/html2text.py,sha256=yi01RMzVWTJYs1NYcekQzEsKuTa0OOaq5dmFefcBAyQ,187
+hive_email-0.0.2.dist-info/METADATA,sha256=d1_EnXK126qiCRMFumLYJpT-i5UQvnCUH3BMT5xI460,872
+hive_email-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+hive_email-0.0.2.dist-info/top_level.txt,sha256=pLpVAuviHGk3pzaFXU-4GKttxGTGAbFoWK8JvUl1jHQ,5
+hive_email-0.0.2.dist-info/RECORD,,
