@@ -1,0 +1,8 @@
+LICENSE
+README.md
+printf.py
+setup.py
+printf_package.egg-info/PKG-INFO
+printf_package.egg-info/SOURCES.txt
+printf_package.egg-info/dependency_links.txt
+printf_package.egg-info/top_level.txt
