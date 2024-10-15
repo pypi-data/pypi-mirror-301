@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: flatyplus
+Version: 0.0.1
+Summary: A package for dance cover by AI. Coding was created by platyplus if have some bug/question please contact me
+Author-email: flatyplus <flaty.plus@gmail.com>
+Project-URL: Homepage, https://flatyplus.my.id/
+Project-URL: Issues, https://flatyplus.my.id/page/report.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yt-dlp
+Requires-Dist: diffusers==0.26.3
+Requires-Dist: transformers
+Requires-Dist: accelerate
+Requires-Dist: safetensors
+Requires-Dist: pillow
+Requires-Dist: ffmpeg-python
+Requires-Dist: opencv-python
+Requires-Dist: interframe
+Requires-Dist: timm==0.6.12
+Requires-Dist: rembg
+
+
+Program was coding by flatyplus.
+Support my work, donation open on SociaBuzz https://sociabuzz.com/platyplus
