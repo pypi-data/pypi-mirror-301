@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82ca3e8d-6010-4907-acaf-619c0f4987ba" name="変更" comment="refactor doc" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev-hatch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;paqira&quot;
+  }
+}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="migrate to hatch" />
+        <option name="rewordedMessage" value="migrate to hatch" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="5adfc447de3a86be64bf05655db95b58562d77c2" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:paqira/folium-arrow-icon.git&quot;,
+    &quot;accountId&quot;: &quot;2715867f-39f2-4cd1-9aa0-afc358f73a4d&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2iNXYbKf0ODAgSwcYq7GeLcolMe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kmt/Codes/python/folium-arrow-icon/doc/source&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings custom-start-script="import sys;&#10;print('Python {} on {}'.format(sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;" is-module-sdk="true">
+        <option name="myCustomStartScript" value="import sys;&#10;print('Python {} on {}'.format(sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;" />
+        <option name="myUseModuleSdk" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/source" />
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="82ca3e8d-6010-4907-acaf-619c0f4987ba" name="変更" comment="" />
+      <created>1719332059367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719332059367</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add .readthedocs.yaml and optional-dependencies [doc]">
+      <option name="closed" value="true" />
+      <created>1719656009102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719656009102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix optional-dependencies [doc]&#10;add folium dep">
+      <option name="closed" value="true" />
+      <created>1719656271040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719656271040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add document link to README.md">
+      <option name="closed" value="true" />
+      <created>1719656290288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719656290288</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add besides to README.md">
+      <option name="closed" value="true" />
+      <created>1719682269606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719682269606</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix doc">
+      <option name="closed" value="true" />
+      <created>1719739978917</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719739978917</updated>
+    </task>
+    <task id="LOCAL-00006" summary="migrate to hatch">
+      <option name="closed" value="true" />
+      <created>1720027526026</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720027526026</updated>
+    </task>
+    <task id="LOCAL-00007" summary="migrate to hatch">
+      <option name="closed" value="true" />
+      <created>1720028121366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720028121366</updated>
+    </task>
+    <task id="LOCAL-00008" summary="migrate to hatch">
+      <option name="closed" value="true" />
+      <created>1720028202445</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720028202445</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor CI">
+      <option name="closed" value="true" />
+      <created>1720031020121</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720031020122</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix CI">
+      <option name="closed" value="true" />
+      <created>1720031204931</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720031204931</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor CI">
+      <option name="closed" value="true" />
+      <created>1720031496471</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720031496471</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor CI">
+      <option name="closed" value="true" />
+      <created>1720035212321</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720035212321</updated>
+    </task>
+    <task id="LOCAL-00013" summary="migrate to hatch">
+      <option name="closed" value="true" />
+      <created>1720088101422</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720088101422</updated>
+    </task>
+    <task id="LOCAL-00014" summary="migrate to hatch">
+      <option name="closed" value="true" />
+      <created>1720088357057</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720088357057</updated>
+    </task>
+    <task id="LOCAL-00015" summary="migrate to hatch">
+      <option name="closed" value="true" />
+      <created>1720088782462</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720088782462</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix CI">
+      <option name="closed" value="true" />
+      <created>1720088996492</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720088996492</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix CI">
+      <option name="closed" value="true" />
+      <created>1720089050577</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720089050577</updated>
+    </task>
+    <task id="LOCAL-00018" summary="remove CI publishing for safety">
+      <option name="closed" value="true" />
+      <created>1720158969519</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720158969519</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix CI">
+      <option name="closed" value="true" />
+      <created>1720159116361</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720159116361</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix types">
+      <option name="closed" value="true" />
+      <created>1720162621443</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720162621443</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add types env and fix CI">
+      <option name="closed" value="true" />
+      <created>1720162682861</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1720162682861</updated>
+    </task>
+    <task id="LOCAL-00022" summary="bump to 0.1.1">
+      <option name="closed" value="true" />
+      <created>1720189468544</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720189468544</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix badge">
+      <option name="closed" value="true" />
+      <created>1720266665254</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1720266665254</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix badge">
+      <option name="closed" value="true" />
+      <created>1720292215252</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1720292215252</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update pyproject.toml&#10;sync to hatch (partially)">
+      <option name="closed" value="true" />
+      <created>1720292303350</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1720292303350</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update .readthedocs.yaml">
+      <option name="closed" value="true" />
+      <created>1720711260032</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1720711260032</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fix .readthedocs.yaml">
+      <option name="closed" value="true" />
+      <created>1720711314215</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1720711314215</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update doc">
+      <option name="closed" value="true" />
+      <created>1722877736836</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1722877736836</updated>
+    </task>
+    <task id="LOCAL-00029" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1728045829237</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1728045829237</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1728910239732</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1728910239732</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1728910374737</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1728910374738</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactor doc">
+      <option name="closed" value="true" />
+      <created>1728910469722</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1728910469722</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add .readthedocs.yaml and optional-dependencies [doc]" />
+    <MESSAGE value="fix optional-dependencies [doc]&#10;add folium dep" />
+    <MESSAGE value="add document link to README.md" />
+    <MESSAGE value="add besides to README.md" />
+    <MESSAGE value="fix doc" />
+    <MESSAGE value="refactor CI" />
+    <MESSAGE value="migrate to hatch" />
+    <MESSAGE value="remove CI publishing for safety" />
+    <MESSAGE value="fix CI" />
+    <MESSAGE value="fix types" />
+    <MESSAGE value="add types env and fix CI" />
+    <MESSAGE value="bump to 0.1.1" />
+    <MESSAGE value="fix badge" />
+    <MESSAGE value="update pyproject.toml&#10;sync to hatch (partially)" />
+    <MESSAGE value="update .readthedocs.yaml" />
+    <MESSAGE value="fix .readthedocs.yaml" />
+    <MESSAGE value="update doc" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="refactor doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor doc" />
+  </component>
+</project>

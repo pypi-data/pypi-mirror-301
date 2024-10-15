@@ -1,0 +1,99 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "folium-arrow-icon"
+authors = [
+    { name = "Kentaro Tatsumi", email = "paqira.2019@gmail.com" },
+]
+description = "Simple arrow (vector/quiver) icon for folium"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "folium",
+    "icon",
+    "arrow",
+    "vector field",
+    "quiver",
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = []
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = { attr = "folium_arrow_icon.__version__" }
+
+[project.urls]
+Documentation = "https://folium-arrow-icon.readthedocs.io"
+Issues = "https://github.com/paqira/folium-arrow-icon/issues"
+Source = "https://github.com/paqira/folium-arrow-icon"
+
+[tool.hatch.version]
+path = "folium_arrow_icon.py"
+
+# types
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+    "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:folium_arrow_icon.py}"
+
+# docs
+
+[tool.hatch.envs.docs]
+dependencies = [
+    "sphinx",
+    "myst_nb",
+    "sphinx_book_theme",
+    "folium"
+]
+
+[tool.hatch.envs.docs.scripts]
+build = "sphinx-build -b html ./doc/source ./doc/build/html"
+
+# ruff
+
+[tool.ruff]
+line-length = 100
+exclude = [
+    "doc",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "B",
+    "D",
+]
+ignore = [
+    "D107", # Missing docstring in `__init__`
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+required-imports = [
+    "from __future__ import annotations",
+]
