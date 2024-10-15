@@ -1,0 +1,17 @@
+sqlsymphony_orm/__init__.py,sha256=STe4-pqgPIM35Uqfsk2oy-JDGuQx1W82LIMbfrn95eE,2056
+sqlsymphony_orm/constants.py,sha256=9UIGYJToYBjvh4CBrJeP9t9j01WJCP1GxGhbHTn4OGQ,310
+sqlsymphony_orm/database/connection.py,sha256=5nTwLfGe4zhPBR9brlzVYE-FNQzhhvFQfHem3GRpYak,3041
+sqlsymphony_orm/database/manager.py,sha256=1kMH0o7E7BvTsDlri--_xEqjfGeH7zX2sagykC2dSpk,16878
+sqlsymphony_orm/datatypes/fields.py,sha256=PrB-lXe_HnADF6SB_DreshoVCK0UgABJGGlWhdX55Uc,17882
+sqlsymphony_orm/exceptions.py,sha256=--MFcV2TJLEd7lDWUV9uAUcvWD6zO3Lz0mlRnz2Nd8w,4509
+sqlsymphony_orm/models/orm_models.py,sha256=IplDBO3vLJZ_2kYChLbWAVqH5RmYsCwHk34SWdhoMpw,9567
+sqlsymphony_orm/models/session_models.py,sha256=Jvg8sTnwCXgPTC01AqGU7JREs6hqg2Wv10U7ge5bm_k,13611
+sqlsymphony_orm/patterns.py,sha256=5ZWXfp2qPa6aLhYYKRaOBTri1dSjsx7AnOCDTyQclyk,382
+sqlsymphony_orm/performance/cache.py,sha256=2CD8CcqoDHBmcwkXGH3JULGjOCW91quy8M9hEootPxg,6420
+sqlsymphony_orm/queries.py,sha256=Y1nOFzwwCZpLcqMCgLhL80FE2OIAXMnsrDYhUbxaXds,7339
+sqlsymphony_orm/security/hashing.py,sha256=xOAZna_iaquwesFUAoSC3Csl-gw-NUkpdGgiUZgCVNo,3236
+sqlsymphony_orm/utils/auditing.py,sha256=Ov3SBcudFwwlX1I7nLeflnw05ehCCaexIY5uZTcmTHM,8866
+sqlsymphony_orm/utils/slugger.py,sha256=s0RgsuLXjK4DQ-Ras6wkawpRHMAwz6ox5oFr_E-Xcpk,2400
+sqlsymphony_orm-0.2.11.dist-info/METADATA,sha256=TigKkXVP5SiOfCdaQQE5nkNTd4Ky8Qms-hPjKOswRrc,22368
+sqlsymphony_orm-0.2.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sqlsymphony_orm-0.2.11.dist-info/RECORD,,
