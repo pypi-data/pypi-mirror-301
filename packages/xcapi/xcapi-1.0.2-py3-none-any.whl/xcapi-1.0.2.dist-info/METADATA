@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: xcapi
+Version: 1.0.2
+Summary: Python library for communicating with the xray grpc api
+Home-page: https://github.com/Acer-Platanoides/xcapi
+License: MIT
+Author: AcerPlatanoides.L
+Author-email: AcerPlatanoides.L@proton.me
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: grpcio (>=1.66.2,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.66.2,<2.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Project-URL: Repository, https://github.com/Acer-Platanoides/xcapi
+Description-Content-Type: text/markdown
+
+# Xcapi
+
+## Description
+
+Python library for communicating with the xray core grpc api
+
+Follow xray core version updates
+
+Use python 3.12
+
+## Install
+```bash
+pip install xcapi
+```
+## Usage
+[Example](https://github.com/Acer-Platanoides/xcapi/tree/main/test)
