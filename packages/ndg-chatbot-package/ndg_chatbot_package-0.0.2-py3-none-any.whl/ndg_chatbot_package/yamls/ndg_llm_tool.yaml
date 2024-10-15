@@ -1,0 +1,13 @@
+ndg_chatbot_package.tools.ndg_llm_tool.llm_tool:
+  name: NDG LLM Nesgen Tool
+  type: python
+  inputs:
+    connection:
+      type:
+        - CustomConnection
+    rendered_prompt:
+      type:
+        - object
+  description: This is the template tool to connect and use LLMs from NestAccelerator.
+  module: ndg_chatbot_package.tools.ndg_llm_tool
+  function: llm_tool
