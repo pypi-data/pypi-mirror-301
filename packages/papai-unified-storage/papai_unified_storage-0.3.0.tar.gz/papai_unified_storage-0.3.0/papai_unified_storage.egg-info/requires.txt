@@ -1,0 +1,9 @@
+fsspec
+pyarrow
+pandas
+
+[dev]
+pytest
+pytest-mock
+pre-commit
+twine
