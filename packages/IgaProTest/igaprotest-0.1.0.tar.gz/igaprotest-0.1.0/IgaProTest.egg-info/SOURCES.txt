@@ -1,0 +1,8 @@
+README.md
+setup.py
+IgaProTest/__init__.py
+IgaProTest/some_module.py
+IgaProTest.egg-info/PKG-INFO
+IgaProTest.egg-info/SOURCES.txt
+IgaProTest.egg-info/dependency_links.txt
+IgaProTest.egg-info/top_level.txt
