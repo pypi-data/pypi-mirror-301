@@ -1,0 +1,13 @@
+vlrscraper/__init__.py,sha256=LAMOV80S6W_PXr_IhtIRrwagUzlbNYcSivdIMzIRLFM,101
+vlrscraper/constants.py,sha256=mRc6uMtH1TORQLq2oRfsTV6fG-g9JlOfATvtSqZzPdU,1859
+vlrscraper/logger.py,sha256=IBvvrtGSn4J2P_OnRYWx6uHQyXu6fCIJja0-xMwyj9M,1561
+vlrscraper/match.py,sha256=SO40imjlBti06OQHSmHWnpCR_6kP8NnmnTAHYogNLBk,11605
+vlrscraper/player.py,sha256=VEBkM2YD_9a-ODQcfxeMCTXBg9EMhd9F1Vx-5oBLWtY,6053
+vlrscraper/resource.py,sha256=oT2GtXaWr-8T6sUgmn685nl54fpSrWEIMQUOEn_TiLM,2242
+vlrscraper/scraping.py,sha256=ZnKh00WNtMjT_452b7YmJB__VBAlwxV12UTc49xJJBE,5764
+vlrscraper/team.py,sha256=BKrORJ382GjMLe13nHP7377D4vt4EYvYEM68PRSehO4,7304
+vlrscraper/utils.py,sha256=k-f1vwe-xEcJkj_SaPeCffFoaq-AG5zsRnr-hngyPq4,3137
+vlrscraper-0.0.2.dist-info/METADATA,sha256=6bcF4e9Xa4wCxrbKyPk-76N4hUxBghIU2KkWDtZSldU,1072
+vlrscraper-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vlrscraper-0.0.2.dist-info/top_level.txt,sha256=07mzIqapHWw9JWlidyr90WoE2bqgoa67gcQBtCV68EQ,11
+vlrscraper-0.0.2.dist-info/RECORD,,
