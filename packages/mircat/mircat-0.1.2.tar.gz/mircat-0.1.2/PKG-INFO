@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: mircat
+Version: 0.1.2
+Summary: Mirshahi CT Analysis Toolkit (MirCAT). Convert, Segment, and Quantify CT NIfTI files.
+License-File: LICENSE
+Requires-Python: <3.12,>=3.10
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: mircat-seg
+Requires-Dist: mircat-stats
+Requires-Dist: nibabel>=5.2.1
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy==1.13.1
+Requires-Dist: threadpoolctl>=3.5.0

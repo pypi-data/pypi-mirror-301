@@ -1,0 +1,18 @@
+[project]
+name = "mircat-seg"
+version = "0.1.2"
+description = "Segmentation library for Mirshahi CT Analysis Toolkit (MirCAT)."
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "dynamic-network-architectures>=0.3.1",
+    "monai==1.3.1",
+    "torch==2.3.1",
+]
+
+[project.scripts]
+mircat-copy-models = "mircat_seg:mircat_copy_models"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
