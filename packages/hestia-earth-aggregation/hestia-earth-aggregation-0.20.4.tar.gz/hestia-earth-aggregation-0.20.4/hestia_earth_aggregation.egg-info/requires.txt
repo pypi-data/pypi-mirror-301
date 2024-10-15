@@ -1,0 +1,4 @@
+hestia_earth.schema>=30.2.1
+hestia_earth.utils>=0.13.2
+requests>=2.24.0
+unidecode
