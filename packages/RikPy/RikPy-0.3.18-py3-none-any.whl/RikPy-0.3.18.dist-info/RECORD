@@ -1,0 +1,14 @@
+RikPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RikPy/commonfunctions.py,sha256=RughDCrufdUsx0lWKEKq6Y3t1oxnZbXjoOzUFqCYars,6906
+RikPy/commongoogle.py,sha256=OkZWtptP8jDNhcxhSD1aU7grtozLopcIhY1xKAEzf5c,2982
+RikPy/commonheroku.py,sha256=b1oF5ePJgR7dYeXZzcjIM72WcB-njcMGL9e2GqGCPxA,16376
+RikPy/commonleonardo.py,sha256=YWco9sETmEt948SHcvG88J-JCZ_nTkbsKq3f3dFVgVg,6672
+RikPy/commonlogging.py,sha256=AdJGTzadjfJAacRBdYBGk1APTLrGGzsa9QdhDGyILk0,322
+RikPy/commonopenai.py,sha256=lnu6HjVaP8R-gZRwFj-VXmyquny8PPvLjQCCTyaigR4,4480
+RikPy/commons3.py,sha256=D8k2Ft-Ex8YcH_fRBmsR7nLm1K49xsNRH7Fod6oEBXE,8993
+RikPy/commonshopify.py,sha256=Z7IjurZkPQvTKCR9cfbvjny3LUM4oi_RKQmKM0g0IS4,82580
+RikPy/customresponse.py,sha256=qHup3QRJdeySiQtxrRcst3dSF2WUyxxGrApw9cxPJpQ,302
+RikPy-0.3.18.dist-info/METADATA,sha256=y_7jjCjuTZor15iGFnyQsHW-WYAQnjNxs13FiRl1a3g,178
+RikPy-0.3.18.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+RikPy-0.3.18.dist-info/top_level.txt,sha256=_rGEMe67KIkuQgxZZwGBqMjQp6r4x-3DnFadaMHGF6g,6
+RikPy-0.3.18.dist-info/RECORD,,
