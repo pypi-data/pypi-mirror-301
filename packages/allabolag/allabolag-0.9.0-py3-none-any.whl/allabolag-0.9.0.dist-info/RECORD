@@ -1,0 +1,12 @@
+allabolag/__init__.py,sha256=6u5r-UqZfjpyOGCZs3BzZuykt_ifelaMU5urgfBOWu0,220
+allabolag/company.py,sha256=pJQPUY7I6nMtilnFL5TnJCIqMjeqH4pt-dyNs84dDk8,3738
+allabolag/liquidated_companies.py,sha256=5lNKaHekHk31fJ0mdJ1QAK3CIu1PHaL0Ebzs8fx3Aag,538
+allabolag/list.py,sha256=nFRZXo1vNUWMovXWaOB3S5jyJ0D0JcIlKOm_7buRwgA,567
+allabolag/parsers.py,sha256=9ZoHIWKPMVEgNjBp3AthvFh-FN1O-NG2FMPIjyFnFIo,884
+allabolag/request_client.py,sha256=2WtCtU21-ODT3UkkK0THfcTcoQ6zsvKZ_IjOdRI84ds,5905
+allabolag/utils.py,sha256=W2ZKNmbvIxhGjQTpefAXLguTS9YMcQa8_X6kKcxiAV0,987
+allabolag-0.9.0.dist-info/LICENSE.txt,sha256=uw6L9fnopl1yi7YAIFc6ymOwIjfVDIac63uvFvuFgMI,1089
+allabolag-0.9.0.dist-info/METADATA,sha256=C3lGMocwe5o_sIxlLp6QuiPHfYTkipiPhF1rLVIZjb0,3519
+allabolag-0.9.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+allabolag-0.9.0.dist-info/top_level.txt,sha256=b8QjSB5Ng5kVtsU6zxp-Zp8keKL4tAzf38OIduoa8Nc,10
+allabolag-0.9.0.dist-info/RECORD,,
