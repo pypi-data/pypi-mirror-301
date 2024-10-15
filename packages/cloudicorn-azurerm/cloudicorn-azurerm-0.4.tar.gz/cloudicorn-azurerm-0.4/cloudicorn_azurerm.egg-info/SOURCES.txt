@@ -1,0 +1,10 @@
+README.md
+__init__.py
+cloudicorn_azurerm.py
+setup.py
+cloudicorn_azurerm.egg-info/PKG-INFO
+cloudicorn_azurerm.egg-info/SOURCES.txt
+cloudicorn_azurerm.egg-info/dependency_links.txt
+cloudicorn_azurerm.egg-info/not-zip-safe
+cloudicorn_azurerm.egg-info/requires.txt
+cloudicorn_azurerm.egg-info/top_level.txt
