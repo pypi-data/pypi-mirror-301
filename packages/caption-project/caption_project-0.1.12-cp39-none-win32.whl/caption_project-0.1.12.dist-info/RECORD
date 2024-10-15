@@ -1,0 +1,9 @@
+caption_project-0.1.12.dist-info/METADATA,sha256=A-kv6ZICmx4iwcPM8DxTpnatnWV5iPEstvpzspW5pdg,347
+caption_project-0.1.12.dist-info/WHEEL,sha256=8oDS9lEgrtw5U4qwq5k5ejtIqRM0xNzMNTKqkiM20hA,90
+caption_project/caption.py,sha256=LQvw9ysYGZS1dnBQHmyxXYUaAy7I4tshVADuvrQxc2U,510
+caption_project/image.py,sha256=YjXrw45yK4NBhn4WbfcyX3OY0m2k3cTeSe2XFdKFTg4,2560
+caption_project/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caption_project/_lowlevel.pyi,sha256=-cITHnJkBlIQtWpKBBuuRoE9GLem_1rLdqIvuwm66fc,115
+caption_project/__init__.py,sha256=9GpHMSf5ktwPdP3kCGYUZXndlykDkPqKjP-KA9VItLw,225
+caption_project/_lowlevel.cp39-win32.pyd,sha256=jUQQFFt5b7zFtvMoBtKU4IgFLcuVXuQkWZ-8rQR9DVk,5365248
+caption_project-0.1.12.dist-info/RECORD,,
