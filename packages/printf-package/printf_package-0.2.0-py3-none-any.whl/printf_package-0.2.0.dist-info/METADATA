@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: printf-package
+Version: 0.2.0
+Summary: A package for experiment printf function
+Home-page: https://github.com/uchihamadara6969/printf-package
+Author: Darked Nuke
+Author-email: darkednuke@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# printf-package
+
+## About
+
+[![PyPI version](https://badge.fury.io/py/printf-package.svg)](https://badge.fury.io/py/printf-package)
+This package contains a `printf` function for listing and printing tasks or experiment codes.
+
+## Installation
+
+```bash
+pip install printf-package
+```
+
+## Usage
+
+```python
+from printf import printf
+printf(1)
+```
+
+
+
+## License
+
+Licensed under the [MIT License](LICENSE).
