@@ -1,0 +1,2 @@
+[console_scripts]
+cliplayer = cliplayer.cliplayer:main

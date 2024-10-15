@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/cliplayer
+cliplayer/__init__.py
+cliplayer/cliplayer.py
+cliplayer.egg-info/PKG-INFO
+cliplayer.egg-info/SOURCES.txt
+cliplayer.egg-info/dependency_links.txt
+cliplayer.egg-info/entry_points.txt
+cliplayer.egg-info/requires.txt
+cliplayer.egg-info/top_level.txt
+cliplayer/config/__init__.py
+cliplayer/config/cliplayer.cfg
+cliplayer/config/key_mappings.cfg
