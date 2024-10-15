@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: matrixflow
+Version: 0.1.3
+Summary: A rich library with implementations for mathematical matrices and vectors and their operations
+Author-email: Tom-the-Bomb <me@tomthebomb.dev>
+License: 
+        MIT License
+        
+        Copyright (c) 2024-present Tom-the-Bomb
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: documentation, https://matrixflow.readthedocs.io/en/latest/
+Project-URL: homepage, https://github.com/Tom-the-Bomb/matrixflow
+Project-URL: repository, https://github.com/Tom-the-Bomb/matrixflow
+Project-URL: Issue tracker, https://github.com/Tom-the-Bomb/matrixflow/issues/
+Keywords: vector,matrix,math
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: sphinxext-opengraph; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+
+# Matrixflow
+
+[![Downloads](https://static.pepy.tech/badge/matrixflow)](https://pepy.tech/project/matrixflow)
+
+A rich library with implementations for mathematical **matrices** and **vectors** and their operations
+
+Refer to the documentation over [here](https://matrixflow.readthedocs.io/en/latest/index.html)
+
+## Installation
+
+Python 3.10 or higher is required
+
+```bash
+py -m pip install matrixflow
+```
+
+or from github
+
+```bash
+py -m pip install git+https://github.com/Tom-the-Bomb/matrixflow.git
+```
+
+## Examples
+
+```py
+from matrixflow import Matrix, Vector
+
+A = Matrix([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+])
+print(A.det()) # calculates the determinant
+A.transpose()   # transposes `A` in place
+
+u = Vector([1, 2, 3])
+v = Vector([4, 5, 6])
+print(u * v)   # calculates the dot product
+```
+
+Further examples can be found over at the documentation [here](https://matrixflow.readthedocs.io/en/latest/examples.html)
+
+## Highlight Features
+
+- **Matrices**
+    - Basic operations: addition, subtraction, scalar/matrix multiplication and other basic matrix functions
+    - Linear transformations
+    - determinant
+    - Linear system of equations:
+        - Gaussian elimination: row echelon & reduced row echelon forms
+        - Inverse
+    - and many more!
+
+- **Vectors**
+    - Basic operations: addition, subtraction, scalar/dot/cross products and other basic vector functions
+    - polar/spherical and cartesian conversions
+    - projection, rejection
+    - and many more!
