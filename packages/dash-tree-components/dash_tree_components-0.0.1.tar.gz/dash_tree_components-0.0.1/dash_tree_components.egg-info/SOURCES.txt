@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_tree_components/Tree.py
+dash_tree_components/__init__.py
+dash_tree_components/_imports_.py
+dash_tree_components/dash_tree_components.min.js
+dash_tree_components/dash_tree_components.min.js.map
+dash_tree_components/metadata.json
+dash_tree_components/package-info.json
+dash_tree_components.egg-info/PKG-INFO
+dash_tree_components.egg-info/SOURCES.txt
+dash_tree_components.egg-info/dependency_links.txt
+dash_tree_components.egg-info/top_level.txt
