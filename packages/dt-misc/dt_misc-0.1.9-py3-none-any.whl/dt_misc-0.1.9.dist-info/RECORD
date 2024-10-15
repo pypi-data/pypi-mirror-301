@@ -1,0 +1,16 @@
+CHANGELOG.md,sha256=ly3n_7drACVpM1oK3ZMTkJWuMbIDIsq1W8p1lSsWa50,481
+dt_tools/cli/demos/dt_geoloc_demo.py,sha256=Pyd04D3lzmEvp_kLP7VVPps2WisSK-QRNDsB_VmU3gA,3109
+dt_tools/cli/demos/dt_misc_demo.py,sha256=7Yf_wbB4ofjVzf8BRMsg9AOyvnDtXuaESBgWmRLZaug,1369
+dt_tools/cli/demos/dt_misc_sound_demo.py,sha256=oI2TIqJuIfgRy92c1b6pvwCVxBoZT--rSu7dRScYBnE,4437
+dt_tools/cli/demos/dt_weather_demo.py,sha256=21Od_kJrkeaXXoDZFPQQTOSWnR7QQiDE6iuIwxqiK0Y,584
+dt_tools/misc/census_geoloc.py,sha256=rrkskpIRCauyxV8fCugn8gh5g4zlJCeuv2ZLYELfT30,4805
+dt_tools/misc/geoloc.py,sha256=B6MDwFhCuGt-5W7LNS2BGd9i5IWcrErbavH3pjzPZ3g,17378
+dt_tools/misc/sound.py,sha256=NepCIZtDd_RN70wEI6ibMmvtnjKEJ290JYtfo__c7wg,7294
+dt_tools/misc/sun.py,sha256=8zdsGowAW3VoWaya1eCje_vqpNoXhhRb8E-L3L3RSKw,12476
+dt_tools/misc/weather/common.py,sha256=iD-eeCXwYTKGHqw8yrKEjNkndJ_or-UNU2FGBRAVLzE,4066
+dt_tools/misc/weather/weather.py,sha256=83vW9peVA7fctrZRj-IDKxu6pv_e2LsT-vMbrFIsZGg,12660
+dt_tools/misc/weather/weather_forecast_alert.py,sha256=h-hye_eHXuSQGOTlyXLS7DLJ1U75u0K8mk-A1xOY0_M,18372
+dt_misc-0.1.9.dist-info/LICENSE,sha256=AVeIkO7I2fJdNKsSTtCtUnGlGrKAYmwl_966MoLAz8s,1078
+dt_misc-0.1.9.dist-info/METADATA,sha256=nGyYgpRjA3BLw9LS-RAKHXM0qBFk5UBAnwbbgDzGpWI,2484
+dt_misc-0.1.9.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dt_misc-0.1.9.dist-info/RECORD,,
