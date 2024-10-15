@@ -1,0 +1,16 @@
+
+[dev]
+async_timeout>=4.0.0
+pytest-asyncio
+pytest-cov
+pytest
+siosocks
+trustme
+pre-commit
+ruff
+sphinx
+alabaster
+docutils<0.18.0
+
+[socks]
+siosocks>=0.2.0
