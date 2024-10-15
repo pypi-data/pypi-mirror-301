@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cloudicorn-aws
+Version: 0.4
+Summary: Taking Infrastructure As Code to the next level
+Home-page: https://github.com/jumidev/cloudicorn-cli
+Author: krezreb
+Author-email: josephbeeson@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: cloudicorn-cli
+
