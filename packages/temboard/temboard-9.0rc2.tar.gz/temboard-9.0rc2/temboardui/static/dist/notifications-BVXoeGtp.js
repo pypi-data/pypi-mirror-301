@@ -1,0 +1,1 @@
+import{V as e,D as t}from"./datatables.net-vue3-DN1pkc73.js";import"./jquery-BALIvAru.js";import"./highlight.js-CWp04Ajj.js";import"./vue-B9xKOMBJ.js";e.use(t);new t("#tableNotifications",{order:[[0,"desc"]],pageLength:25});
