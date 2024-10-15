@@ -1,0 +1,11 @@
+requests>2.7
+
+[dev]
+codecov
+pytest
+pytest-cov
+sphinx>7.2.0
+sphinx_issues
+sphinx-rtd-theme
+twine
+wheel
