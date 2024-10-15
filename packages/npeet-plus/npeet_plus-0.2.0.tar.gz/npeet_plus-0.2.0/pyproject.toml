@@ -1,0 +1,22 @@
+[project]
+name = "npeet_plus"
+version = "0.2.0"
+authors = [
+  { name="Albert Buchard", email="albert.buchard@gmail.com" }
+]
+description = "Non-parametric entropy estimation toolbox plus additional features"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/albertbuchard/npeet_plus"
+Issues = "https://github.com/albertbuchard/npeet_plus/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
