@@ -1,0 +1,1 @@
+::: pystocktopus.pattern_tool

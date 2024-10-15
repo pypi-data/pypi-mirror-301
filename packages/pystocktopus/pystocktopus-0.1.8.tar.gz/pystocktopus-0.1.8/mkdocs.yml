@@ -1,0 +1,75 @@
+site_name: pystocktopus
+theme:
+  name: material
+  features:
+    - navigation.sections
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+  font:
+    text: Lato
+  icon:
+    repo: fontawesome/brands/github
+  # custom_dir: "docs/_overrides/"
+
+plugins:
+  - mkdocstrings
+
+site_description: Documentation for pystocktopus
+site_author: Akhil Sharma
+site_url: https://pystocktopus.readthedocs.io/en/latest/
+
+repo_url: https://github.com/Akhil-Sharma30/pystocktopus
+repo_name: pystocktopus
+edit_uri: ./edit/main/docs
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Akhil-Sharma30
+    # - icon: fontawesome/brands/circle-user
+    #   link: https://akhil-sharma30.github.io
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@Akhilsharma30
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+nav:
+  - Home: "index.md"
+  - Installation: "Install.md"
+  - Implementation guide:
+      - core.py: "core.md"
+      - stock_csv.py: "stock_csv.md"
+      - news_analysis.py: "news_analysis.md"
+      - pattern_tool.py: "pattern_tool.md"
+      - stock_forecasting.py: "stock_forecasting.md"
+  - Your support:
+      - Contributing: "Contribution.md"
+      - Changelog: "ChangeLog.md"
+      - Code of Conduct: "Conduct.md"
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/Akhil-Sharma30"  target="_blank" rel="noopener">Akhil Sharma</a>
