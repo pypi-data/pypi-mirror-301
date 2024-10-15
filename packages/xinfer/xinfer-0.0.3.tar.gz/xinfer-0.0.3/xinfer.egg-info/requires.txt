@@ -1,0 +1,17 @@
+numpy<=2.0.0
+rich
+requests
+loguru
+
+[all]
+xinfer[transformers]
+xinfer[ultralytics]
+
+[timm]
+timm
+
+[transformers]
+transformers
+
+[ultralytics]
+ultralytics
