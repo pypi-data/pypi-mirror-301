@@ -1,0 +1,10 @@
+class ClusterEndpoints:
+    create_depthcache: str
+    get_asks: str
+    get_bids: str
+    get_cluster_info: str
+    get_depthcache_list: str
+    get_depthcache_info: str
+    stop_depthcache: str
+    submit_license: str
+    test: str
