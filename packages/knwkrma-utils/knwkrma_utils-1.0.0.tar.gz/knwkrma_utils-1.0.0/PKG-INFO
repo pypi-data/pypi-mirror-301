@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: knwkrma-utils
+Version: 1.0.0
+Summary: Utils component for Knew Karma
+License: GPL-3.0+
+Author: Richard Mwewa
+Author-email: rly0nheart@duck.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Description-Content-Type: text/markdown
+
+<p align="center">Utils component for <a href="https://pypi.org/project/knewkarma">Knew Karma</a></p>
+
+<p align="center">
+  <img alt="Code Style" src="https://img.shields.io/badge/code%20style-black-000000?logo=github&link=https%3A%2F%2Fgithub.com%2Frly0nheart%2Fknewkarma"></a>
+</p>
+

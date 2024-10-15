@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "knwkrma-utils"
+version = "1.0.0"
+description = "Utils component for Knew Karma"
+authors = ["Richard Mwewa <rly0nheart@duck.com>"]
+license = "GPL-3.0+"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
