@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+richka/__init__.py
+richka/__main__.py
+richka/__version__.py
+richka/config.py
+richka/controller.py
+richka/core.py
+richka.egg-info/PKG-INFO
+richka.egg-info/SOURCES.txt
+richka.egg-info/dependency_links.txt
+richka.egg-info/entry_points.txt
+richka.egg-info/not-zip-safe
+richka.egg-info/requires.txt
+richka.egg-info/top_level.txt
