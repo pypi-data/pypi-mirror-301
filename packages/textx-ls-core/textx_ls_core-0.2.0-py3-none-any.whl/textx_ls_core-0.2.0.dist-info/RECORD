@@ -1,0 +1,12 @@
+textx_ls_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textx_ls_core/exceptions.py,sha256=vu0Skbt2L21vYrvuJ_2vVZTHbiS1A5_h-i2aLFkN5GI,2335
+textx_ls_core/models.py,sha256=v2Xdii_sSNITyRfSbiya0lAjWM-sDJ43C2vqkCGT3O8,1539
+textx_ls_core/utils.py,sha256=SZUhpVvltiBMp-Xmx_haC8YKR9_OastQPmU_h09-xlI,4132
+textx_ls_core/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textx_ls_core/features/generators.py,sha256=zDFI-Mbg0P4gJGmAZj6IfYd-6-eCEWUikM1nlHQjyrc,2950
+textx_ls_core/features/projects.py,sha256=phrIbZ7EFwmyxvvUMnwOL-DyY0aiKh4dveK2ggyhNYQ,6558
+textx_ls_core/features/validate.py,sha256=xBcSGjFkzLIzZV9Y8eiLT3nMzgIMoTqmN3wNzQwjC6I,952
+textx_ls_core-0.2.0.dist-info/METADATA,sha256=u4eXz9H3PHs3bGlqL-1XjTDEsjwzPLdm5bs51R4FBb4,1711
+textx_ls_core-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+textx_ls_core-0.2.0.dist-info/top_level.txt,sha256=skjWQ_Ui2fMF1U-l_qJ00xOFkMWEodyGPP35Yoe0kQs,14
+textx_ls_core-0.2.0.dist-info/RECORD,,
