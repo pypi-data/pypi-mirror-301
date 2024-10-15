@@ -1,0 +1,11 @@
+doona_taos_edge_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doona_taos_edge_model/deploy_model.py,sha256=2s0V2C0WIGZ6tZyek0Pau07HnT6dxS7x-1kBfermhHE,3524
+doona_taos_edge_model/deploy_pipeline.py,sha256=_bVbDOND8vANEiCnR6FnA4COyoUSihqnhWeTuFf_5E4,9606
+doona_taos_edge_model/model_predictor.py,sha256=D62zb1ySCo9VT_Mvxd6utQweQI5Xb6NDwQcjL7tWvho,2953
+doona_taos_edge_model/schema/ml.py,sha256=E_Gdwh2-Acj_JvSjW3POpoHoY-XnEysJyt5-etCXrRw,2285
+doona_taos_edge_model/schema/pipeline.py,sha256=me35z6Kq6f-9Vai3qKDoSVSiHnmA2i_WIqZj92pJ1mI,3049
+doona_taos_edge_model/schema/stats.py,sha256=K27-YcrkY3nDHuy74_IknJeOBOQ6YRN7CU02WVGgtmo,2068
+doona_taos_edge_model-0.1.9.dist-info/METADATA,sha256=CPhwgj_P492Q33640_B55OfzoYOmUZkkCMna8jSlDAM,3179
+doona_taos_edge_model-0.1.9.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+doona_taos_edge_model-0.1.9.dist-info/top_level.txt,sha256=5oEgWHl4r9TKH1eP9qvxIiZZA9jSxcUczGbQWgLuX7g,22
+doona_taos_edge_model-0.1.9.dist-info/RECORD,,
