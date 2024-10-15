@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cross_project_cluck/__init__.py
+cross_project_cluck/cross_project_cluck.py
+cross_project_cluck.egg-info/PKG-INFO
+cross_project_cluck.egg-info/SOURCES.txt
+cross_project_cluck.egg-info/dependency_links.txt
+cross_project_cluck.egg-info/entry_points.txt
+cross_project_cluck.egg-info/top_level.txt

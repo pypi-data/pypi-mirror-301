@@ -1,0 +1,2 @@
+[console_scripts]
+cluck = cross_project_cluck:main
