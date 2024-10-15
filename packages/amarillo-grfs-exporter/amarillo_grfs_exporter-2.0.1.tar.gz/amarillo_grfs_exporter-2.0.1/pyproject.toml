@@ -1,0 +1,12 @@
+[project]
+name = "amarillo-grfs-exporter"
+version = "2.0.1"
+description = "GRFS export plugin for Amarillo"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "amarillo"
+]
+
+[tool.setuptools.packages]
+find = {}
