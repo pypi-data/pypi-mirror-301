@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: XulbuX
+Version: 1.4.28
+Summary: A package with a lot of really usefull stuff
+Project-URL: Homepage, https://github.com/pypa/xulbux
+Project-URL: Issues, https://github.com/pypa/xulbux/issues
+Author-email: XulbuX <xulbux.real@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavoured Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
