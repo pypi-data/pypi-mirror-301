@@ -1,0 +1,3 @@
+[console_scripts]
+pyenvcfg=pyenvcfg.pyenvcfg:cli
+
