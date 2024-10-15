@@ -1,0 +1,4 @@
+[console_scripts]
+pydeployhelp=pydeployhelp.deploy:run
+pydeployhelp-quickstart=pydeployhelp.quickstart:run
+
