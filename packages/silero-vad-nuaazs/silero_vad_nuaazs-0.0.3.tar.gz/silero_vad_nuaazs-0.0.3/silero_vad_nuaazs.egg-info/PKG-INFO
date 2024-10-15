@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: silero-vad-nuaazs
+Version: 0.0.3
+Summary: Silero VAD
+Home-page: https://github.com/pengzhendong/silero-vad
+Author: Zhendong Peng
+Author-email: pzd17@tsinghua.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: librosa
+Requires-Dist: numpy
+Requires-Dist: onnxruntime
+Requires-Dist: soxr
+Requires-Dist: praat-parselmouth
+
+## Silero VAD
+
+See [Silero VAD](https://github.com/snakers4/silero-vad).
+
+### Denoiser
+
+See [RnNoise](https://github.com/werman/noise-suppression-for-voice).
+
+### Python Usage
+
+```bash
+$ pip install silero-vad
+$ silero_vad audio.wav
+```
