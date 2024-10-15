@@ -1,0 +1,8 @@
+README.md
+setup.py
+copula_sim/__init__.py
+copula_sim/gaussian_coplas.py
+copulasim.egg-info/PKG-INFO
+copulasim.egg-info/SOURCES.txt
+copulasim.egg-info/dependency_links.txt
+copulasim.egg-info/top_level.txt
