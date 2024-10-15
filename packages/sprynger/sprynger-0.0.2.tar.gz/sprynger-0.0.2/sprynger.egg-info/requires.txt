@@ -1,0 +1,7 @@
+lxml
+requests
+urllib3
+
+[dev]
+pytest
+pytest-cov
