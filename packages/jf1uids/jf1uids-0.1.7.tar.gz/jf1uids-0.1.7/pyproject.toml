@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jf1uids"
+version = "0.1.7"
+description = "conservative, differentiable, radial 1d fluid solver with astrophysical modules"
+authors = ["anonymous"]
+readme = "README.md"
+packages = [{include = "jf1uids"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+optax = "^0.2.0"
+jax = "^0.4.0"
+scipy = "^1.0.0"
+astropy = "^6.0.0"
+numpy = ">=1.0.0"
+equinox = "^0.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
