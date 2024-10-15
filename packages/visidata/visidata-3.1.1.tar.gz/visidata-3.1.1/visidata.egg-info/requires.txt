@@ -1,0 +1,30 @@
+python-dateutil
+importlib-metadata>=3.6
+
+[:platform_system == "Windows"]
+windows-curses!=2.3.1
+
+[:python_version < "3.9"]
+importlib_resources
+
+[test]
+brotli
+dnslib
+dpkt
+fecfile
+Faker
+h5py
+lxml
+msgpack
+odfpy
+openpyxl
+pandas>=1.5.3
+pyarrow
+pyconll
+pypng
+pytest
+PyYAML>=5.1
+tabulate
+tomli
+wcwidth
+xport>=3.0
