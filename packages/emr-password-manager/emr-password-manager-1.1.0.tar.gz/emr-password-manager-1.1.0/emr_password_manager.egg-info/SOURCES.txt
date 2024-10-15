@@ -1,0 +1,6 @@
+README.md
+setup.py
+emr_password_manager.egg-info/PKG-INFO
+emr_password_manager.egg-info/SOURCES.txt
+emr_password_manager.egg-info/dependency_links.txt
+emr_password_manager.egg-info/top_level.txt

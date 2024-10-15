@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: emr-password-manager
+Version: 1.1.0
+Summary: A simple password manager for generating and validating passwords.
+Home-page: https://github.com/EmrD/python-password-manager-library
+Author: Emr
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Python Password Manager Library
+
+This is a Python library that generates random passwords with a specified length, complexity, and character set. Also gives a score of given password.
+
+## Usage
+
+```bash
+from password_manager import generate_password , password_strength # Import the library
+
+password = generate_password(length=12, use_letters=True, use_digits=False, use_symbols=False, exclude_chars="a") # Generate a password
+print(password) # Print the password
+
+print(password_strength("Emr")) # Check the password strength. Result is like: 3 / 10
+```
