@@ -1,0 +1,49 @@
+name: Add Badges
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/add-badges@v1
+        env:
+          repo_url: ${{ github.event.repository.html_url }}
+          repo_name: ${{ github.event.repository.name }}
+          repo_owner: ${{ github.event.repository.owner.login }}
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          badges: |
+            [
+              {
+                "badge": "https://img.shields.io/github/license/paulosabayomi/ThreadsPipe-py?style=flat-square",
+                "alt": "MIT License",
+                "link": "${{ env.repo_url }}/blob/main/LICENSE"
+              },
+              {
+                "badge": "https://img.shields.io/badge/language-Python-yellow.svg?style=flat-square&logo=python",
+                "alt": "Language",
+                "link": "https://www.python.org"
+              },
+              {
+                "badge": "https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square",
+                "alt": "PRs Welcome",
+                "link": "${{ env.repo_url }}/pulls"
+              },
+              {
+                "badge": "https://img.shields.io/static/v1?label=&labelColor=505050&message=Repository&color=0076D6&style=flat-square&logo=github&logoColor=0076D6",
+                "alt": "Repository",
+                "link": "https://github.com/marketplace/actions/${{ env.repo_name }}"
+              },
+              {
+                "badge": "https://github.com/paulosabayomi/ThreadsPipe-py/actions/workflows/python-package.yml/badge.svg",
+                "alt": "Tests & lint for v3.8 - v3.11",
+                "link": "${{ env.repo_url }}/actions/workflows/python-package.yml"
+              },
+              {
+                "badge": "https://github.com/paulosabayomi/ThreadsPipe-py/actions/workflows/python-publish.yml/badge.svg",
+                "alt": "Publish to Pypi",
+                "link": "${{ env.repo_url }}/actions/workflows/python-publish.yml"
+              }
+            ]

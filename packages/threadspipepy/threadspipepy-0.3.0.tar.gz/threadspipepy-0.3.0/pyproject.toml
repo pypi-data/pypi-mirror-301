@@ -1,0 +1,41 @@
+[project]
+name = "threadspipepy"
+version = "0.3.0"
+authors = [
+  { name="Abayomi Amusa", email="amusapaulos99@gmail.com" },
+]
+maintainers = [
+  { name="Abayomi Amusa", email="amusapaulos99@gmail.com" },
+]
+description = "Python library for Threads by Instagram using the official Meta's Threads API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dependencies = [
+  "filetype",
+  "python-dotenv", "colorama"
+]
+keywords = ["library for instagram threads", "library for threads", "official threads library", "official threads API", "threads", "threadspipe", "threads api", "threads library"]
+
+[project.optional-dependencies]
+cli = [
+  "colorama",
+]
+
+[project.urls]
+Homepage = "https://github.com/paulosabayomi/ThreadsPipe-py"
+Issues = "https://github.com/paulosabayomi/ThreadsPipe-py/issues"
+
+[project.scripts]
+threadspipepy = "threadspipepy.cli:run"
+
+[project.gui-scripts]
+threadspipepy = "threadspipepy.cli:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
