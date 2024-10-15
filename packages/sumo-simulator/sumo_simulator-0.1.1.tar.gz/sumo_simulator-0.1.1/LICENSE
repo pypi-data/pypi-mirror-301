@@ -1,0 +1,26 @@
+
+### Building and Uploading the Package
+
+1. **Build the package**:
+   - In your project directory, run:
+     ```bash
+     python setup.py sdist bdist_wheel
+     ```
+   - This will generate the distribution files in the `dist/` folder.
+
+2. **Upload to PyPI**:
+   - Make sure you have `twine` installed:
+     ```bash
+     pip install twine
+     ```
+   - Upload the package:
+     ```bash
+     twine upload dist/*
+     ```
+   - Follow the prompts to upload the package. You’ll need a [PyPI account](https://pypi.org/) for this.
+
+### Using the Package
+
+1. **Install the package from PyPI**:
+   ```bash
+   pip install sumo_simulator
