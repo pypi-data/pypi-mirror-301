@@ -1,0 +1,11 @@
+cliplayer/__init__.py,sha256=6GzDIS5z090c9hyCWs6psC2ihpMvUzq2lxMTDKZDAhc,134
+cliplayer/cliplayer.py,sha256=nFWwNBu6l5cPl8ZGzOsneEgCoumUXIAGoJSqfS4lPl8,17305
+cliplayer/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cliplayer/config/cliplayer.cfg,sha256=W9aEiGOFBc1gdoksZozzbhmjorAvnLpItD4lr9ZVfpI,180
+cliplayer/config/key_mappings.cfg,sha256=03K75nClQgNmrVmSKvkUds8C4P930-YFkKI6zmaG7oA,333
+cliplayer-0.1.4.dist-info/LICENSE,sha256=t27aSknGcLR1HYEQsrk5psCaPiQwkDkDaJQoMlHwWis,1065
+cliplayer-0.1.4.dist-info/METADATA,sha256=rgH9Zo8ykAmgv5j4Ok6C6FmF6OrvgZpzEMaIQZGy540,5377
+cliplayer-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cliplayer-0.1.4.dist-info/entry_points.txt,sha256=QI6-HzdH0OtUmjIaeqfDxg0I0Mf3hP5ygWcQXaKTkMM,55
+cliplayer-0.1.4.dist-info/top_level.txt,sha256=6xlIIYz5X9a0CmOKYpTONzefbgf8DGob0UaZg2V13dQ,10
+cliplayer-0.1.4.dist-info/RECORD,,
