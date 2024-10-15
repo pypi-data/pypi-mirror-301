@@ -1,0 +1,16 @@
+vasca/__init__.py,sha256=wFOCNnm2CnUV2cNmTfo7OKxZ-qauap4mIClGzrgYf8I,117
+vasca/field.py,sha256=-igcZMr3iH7R87OklqgZAiRhMzr6uuIqb3egPoWDe1I,77173
+vasca/region.py,sha256=tyoPEwk3COnDujtr_-pgOQh0HH1cgIL0ryN7ZGbYZnY,32420
+vasca/resource_manager.py,sha256=HuMXImXIcorHtvZmoCWsAvPdrmtLligrhfu2dZWXDxI,14790
+vasca/source.py,sha256=9HiUQMRllmgkRhWfZjxCw27gogJzOQYjakLzkLzx8Es,9340
+vasca/tables.py,sha256=Xh0gp4ZrM_cz6x3amgs_9KIfqsWG_2oV2rJlrXisBp4,48058
+vasca/tables_dict.py,sha256=Hwcke2vxAnDDr89pp86aRjDWAUnLFfnnk9UamuPzqX4,29661
+vasca/utils.py,sha256=p0aQwv9w5ZDbUzWB6RkiIa72aUa1wiqCXeneggM82x8,50716
+vasca/vasca_pipe.py,sha256=fOGtZ8dN5MI42VHyVwAU4a8s4ZoYzv6wkUoqWW6Rs5A,12818
+vasca/visualization.py,sha256=iJHS9tpO9oc20R9pzNpw1WNg7zmX7LY9pQGEYk89SvI,49757
+vasca-1.0.6.dist-info/LICENSE,sha256=NGDJhRxtq183dXJGfyu5pI2-Moeaa7jkcCkHShELGTM,1499
+vasca-1.0.6.dist-info/METADATA,sha256=3X7GexOTeUhinmTQr_gLqphO9vQ_2bC61uk6oNTSaRU,5098
+vasca-1.0.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vasca-1.0.6.dist-info/entry_points.txt,sha256=6LFPKB9mcU2BaTYYdogouLb3R4FP3UqGqtpBjNUDSB0,62
+vasca-1.0.6.dist-info/top_level.txt,sha256=5p0T46FzY-8OQVC9fV8NoBkq8i46ayy-NqFXB4chhMc,6
+vasca-1.0.6.dist-info/RECORD,,
