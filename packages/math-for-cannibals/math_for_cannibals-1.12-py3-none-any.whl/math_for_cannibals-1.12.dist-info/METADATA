@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: math-for-cannibals
+Version: 1.12
+Summary: Math functions to simplify mathematical tasks
+Home-page: https://gitlab.com/lambda_software/math-for-cannibals
+Author: Hannibal Lykke Kofoed
+Author-email: hanniballykkekofoed@icloud.com
+License: MIT
+Keywords: python,maths,mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+# Math for cannibals
+This is a python package with mathematical functions used to automate mathematical tasks
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Practical Information](#practical-information)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+
+## Installation
+
+```bash
+pip install math-for-cannibals
+```
+
+## Practical Information
+
+When using the class, you will be promted with a, b and c values. <br /> 
+I have chosen to define these values like so: <br />
+![right_triangle](image.png)
+
+
+## Usage
+
+### Table of Contents
+
+1. [Configuring class](#Configuring-class)
+2. [Using the class](#Using-the-class)
+3. [Getting the values](#Getting-the-values)
+
+### Configuring class
+The class used to calculations will be configured like this:
+
+```python
+from program.RightTriangle import RightTriangle
+
+RightTriangle = RightTriangle(aSide, bSide, cSide, aDegree, bDegree)
+```
+An example of this can look like:
+```python
+Rt = RightTriangle(aDegree=20)
+```
+
+### Using the class
+You use the class by entering the information you have about the triangle.
+<br /> <br />
+Some examples using the class:
+```python
+Rt = RightTriangle(aDegree=20)
+```
+
+```python
+Rt = RightTriangle(aSide=2, bSide=3)
+```
+
+```python
+Rt = RightTriangle(aDegree=20, aSide=2)
+```
+
+### Getting the values
+In order to get the calculated angles and sides of the triangle you need to access the properties of the class.
+
+```python
+Rt = RightTriangle(aDegree=20)
+Rt.get_degrees()
+```
+
+There are three properties: <br />
+get_degrees() (which only returns the degrees of the triangle) <br />
+get_sides() (which only returns the sides of the triangle) <br />
+get_triangle() (which returns the sides and degrees of the triangle)
+
+
+## Contributing
+Contributing is welcome, please just email so I can get a clear understanding of the improvement.
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
