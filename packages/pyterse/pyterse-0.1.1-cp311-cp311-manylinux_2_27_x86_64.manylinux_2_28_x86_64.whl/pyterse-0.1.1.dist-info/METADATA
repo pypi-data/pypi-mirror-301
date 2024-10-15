@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: pyterse
+Version: 0.1.1
+Summary: A Python interface for the TERSE library using pybind11.
+Author-Email: Senik Matinyan <matinyan.senik@gmail.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+
+
+
+# Pyterse
+Python package of TERSE/PROLIX diffraction and  cryo-EM data compression algorithm
+
+
+> The pyterse python package uses the c++ TERSE/PROLIX(TRPX) compression algorithm scheme (https://github.com/senikm/trpx) and adds python binders to it's main class.
+> After the compilation the build directory contains the python compression library,
+> which can be imported to  a python environment.
+
+
+## How to install the package
+
+
+```python
+pip install pyterse
+```
+---
+
+
+### Testing the functionality of the library
+
+#### Basic commands
+
+- **Create terse object**: 
+```python
+from pyterse import Terse
+
+# Constructor 1
+terse = Terse() 
+
+# Constuctor 2
+ terse = Terse(data) #2d NumPy array or slice from a 3D array
+
+ # Constuctor 3
+ terse = Terse(data,  data.size, block_size) #Provide the frame size and the costum block size: default is 12
+ - Example:
+terse = Terse(data,  512* 512, 12)
+```
+
+- **Add additional frame to Terse object**:
+ ```python
+ terse.push_back(data) #2d NumPy array or slice from a 3D array
+```
+
+- **Save compressed data to a file**:
+ ```python
+ terse.save('filename.trpx')
+```
+
+- **Load compressed data from a file**:
+ ```python
+ terse = Terse.load('filename.trpx')
+```
+
+- **Decompress a specific frame**:
+ ```python
+ decompressed_frame = loaded_terse.prolix(frame_index).reshape(terse.dim)
+```
+
+- **Add metadata to the terse object**:
+ ```python
+terse.set_attribute('distance', '487.0')
+terse.set_attribute('pixel_size', '0.055 0.055')
+terse.set_attribute('trusted_range', '0 65535')
+```
