@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bpiek"
+version = "1.1.7"
+description = "API клиент для Бизнес-платформа IEK"
+authors = ["Pavel Sinitsin <spavelit@list.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+pydantic = "^2.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
