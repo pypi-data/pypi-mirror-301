@@ -1,0 +1,9 @@
+README.md
+setup.py
+textract_analysis/__init__.py
+textract_analysis/textract_functions.py
+textract_analysis.egg-info/PKG-INFO
+textract_analysis.egg-info/SOURCES.txt
+textract_analysis.egg-info/dependency_links.txt
+textract_analysis.egg-info/requires.txt
+textract_analysis.egg-info/top_level.txt
