@@ -1,0 +1,17 @@
+knowledge_verificator/__init__.py,sha256=dMNBqy0S6QLCw1zyX3pER6AXhdWJBIycxV6KZjCs0TQ,48
+knowledge_verificator/answer_chooser.py,sha256=bww1R_m3ukoR2UuPwW4gI1dmJzXF3R6AkzuVGvkDlzA,4615
+knowledge_verificator/backend.py,sha256=9UabE--zgAlSILnG0t7rhNowyWtReQNnxqZnLn9TBSw,4147
+knowledge_verificator/command_line.py,sha256=6i_cRmzjPyoIT4T73GEBSnaeB00B0tkzBUo96AFlZzo,4804
+knowledge_verificator/io_handler.py,sha256=Hs833yHBpULo8ASmXlCvOOlvhMV9cytW3EoxFhjwBCk,1435
+knowledge_verificator/main.py,sha256=o4nfR8cL35emvfahRQtjBjGwY-xmkDeRIDO4YOU_5yc,952
+knowledge_verificator/materials.py,sha256=kRRojizVn2h-d7DfAED9KIaUWkRqPXLHr3W7RZlKDgc,5645
+knowledge_verificator/nli.py,sha256=QPEOHSLn9gNqLI0iUdlvOgHqqEqiDMwCjMYU7-D_bWU,4356
+knowledge_verificator/qg.py,sha256=iLkoHXy59qoWqVwV6lGEuIE7blBrHUyM3QG4_zRjfrY,2300
+knowledge_verificator/utils/configuration_parser.py,sha256=H_g_hYObFt_tA7Q1h8y7ms4RNHXwxT2lmf7nDqepOng,4396
+knowledge_verificator/utils/filesystem.py,sha256=KYLZaWJyzab9YzfUDrOzonvl3L1CxBDwr7m2evacVqo,1171
+knowledge_verificator/utils/menu.py,sha256=vbRCdYZ1pZy0PR4MUeMcZ450CTnJ5-MGCnns9kAG3bE,1882
+knowledge_verificator/utils/string.py,sha256=-xxH-Sk_aqv0pM_wdDxyWlKwBE99C_TRXQaRKQWpuec,768
+knowledge_verificator-0.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+knowledge_verificator-0.1.2.dist-info/METADATA,sha256=NZhJm3Bwx_cKfgIJodvdkmp8vPIuqR-lkpbbietAgt8,2545
+knowledge_verificator-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+knowledge_verificator-0.1.2.dist-info/RECORD,,
