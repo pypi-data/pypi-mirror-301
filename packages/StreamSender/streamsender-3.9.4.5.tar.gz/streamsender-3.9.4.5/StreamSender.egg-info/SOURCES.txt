@@ -1,0 +1,10 @@
+README.md
+setup.py
+StreamSender.egg-info/PKG-INFO
+StreamSender.egg-info/SOURCES.txt
+StreamSender.egg-info/dependency_links.txt
+StreamSender.egg-info/requires.txt
+StreamSender.egg-info/top_level.txt
+streamers/__init__.py
+streamers/rtmp_sender.py
+streamers/rtp_sender.py
