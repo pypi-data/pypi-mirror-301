@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: device_biometrics
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Add your description here
+Author: Jessica Tegner
+Author-email: jessica@jessicategner.com
+Requires-Python: >=3.11.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# DeviceBiometrics
+
+A python module to access and use on device biometrics like WIndows Hello and Touch ID.
+
+

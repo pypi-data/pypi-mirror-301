@@ -1,0 +1,30 @@
+[project]
+name = "device_biometrics"
+version = "0.0.1"
+authors = [
+  {email = "jessica@jessicategner.com"},
+  {name = "Jessica Tegner"}
+]
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11.9"
+dependencies = []
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.uv]
+dev-dependencies = [
+    "maturin>=1.7.4",
+]
+
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
