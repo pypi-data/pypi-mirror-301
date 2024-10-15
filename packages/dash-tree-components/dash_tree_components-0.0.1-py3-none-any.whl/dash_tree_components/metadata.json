@@ -1,0 +1,73 @@
+{
+  "src/lib/components/Tree.react.js": {
+    "description": "",
+    "displayName": "Tree",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "data": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A list of dictionaries that defines the tree structure."
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "A list of dictionaries that defines the tree structure."
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "A list of dictionaries that defines the tree structure."
+      },
+      "collapse_color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A list of dictionaries that defines the tree structure.",
+        "defaultValue": {
+          "value": "'#bdbcbc'",
+          "computed": false
+        }
+      },
+      "open_by_default": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A list of dictionaries that defines the tree structure.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Class name of the tree."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
