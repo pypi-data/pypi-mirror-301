@@ -1,0 +1,3 @@
+Add verification of input data and global fit.
+If either input Dresser has NaN values in its `I_clear` values an error is raised.
+Furthermore, if the global fit fails then an error is raised before even trying to do the local fits.

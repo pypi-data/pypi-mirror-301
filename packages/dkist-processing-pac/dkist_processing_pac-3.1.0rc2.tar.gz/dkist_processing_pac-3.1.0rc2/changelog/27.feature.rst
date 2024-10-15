@@ -1,0 +1,2 @@
+Add bad data/Error handling to polcal fits.
+Any local points with failing fits will have their parameters and demodulation matrix set to NaN.
