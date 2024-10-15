@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: GenCareAIUtils
+Version: 0.1.0
+Summary: Helper functions for the GenCareAI project
+Home-page: https://github.com/ekrombouts/GenCareAIUtils
+Author: Eva Rombouts
+Author-email: info@doktereva.nl
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Helper functions for the GenCareAI project
