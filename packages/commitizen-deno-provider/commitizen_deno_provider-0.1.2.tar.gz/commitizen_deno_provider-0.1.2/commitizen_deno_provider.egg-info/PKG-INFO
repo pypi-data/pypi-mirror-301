@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: commitizen-deno-provider
+Version: 0.1.2
+Summary: A deno provider for commitizen
+Author-email: dhmmasson <dhm.masson@gmail.com>
+Project-URL: Homepage, https://github.com/dhmmasson/commitizen-deno-provider
+Project-URL: Bug Reports, https://github.com/dhmmasson/commitizen-deno-provider/issues
+Project-URL: Funding, https://github.com/sponsors/dhmmasson
+Project-URL: Source, https://github.com/dhmmasson/commitizen-deno-provider
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: commitizen>3.29
+
+# Commitizen Deno Provider
+
+A Plugin for commitizen to provide versionning within Deno projects.
