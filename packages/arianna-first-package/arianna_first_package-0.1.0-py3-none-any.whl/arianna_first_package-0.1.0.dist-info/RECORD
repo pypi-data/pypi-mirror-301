@@ -1,0 +1,14 @@
+arianna_first_package/__init__.py,sha256=kfnWc4l2y4DreN_mW4FTFV-SlisoSt7YpQ4N-mwutDI,426
+arianna_first_package/arianna_first_package.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+arianna_first_package/sub_package_1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arianna_first_package/sub_package_1/my_class_1.py,sha256=663NKseE14wqFuHSFL9Wes9dTYz0TGvWcnEtbjPj_n4,4626
+arianna_first_package/sub_package_2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arianna_first_package/sub_package_2/my_class_2.py,sha256=O_DHjYMTsyOFN5rUvqfulVCAytCmmAEnBbqL8rkvQsY,790
+arianna_first_package/sub_package_2/my_class_3.py,sha256=MrKzX4oJQ_iZXV_Oupk2L65lMAyZdx5_mT0K4BJ8Ogc,790
+arianna_first_package/sub_package_3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arianna_first_package/sub_package_3/my_class_4.py,sha256=RMKkctkmUdWMIqfo233u0_eg48LERUl1iYcwxIGldb8,801
+arianna_first_package-0.1.0.dist-info/AUTHORS.md,sha256=SmPhQToO3IwFyUz5vFJ66hg1HiUvmvsRhJFqdeIryPk,129
+arianna_first_package-0.1.0.dist-info/LICENSE,sha256=ljeVWaPWAsX9bkBpP-3goPxjEBFDrTKgrzn4wng2OX8,1074
+arianna_first_package-0.1.0.dist-info/METADATA,sha256=2sv-wwErHiYeVjkhfw6-2jT4yS0VZQ-eKfoHAlyB748,2135
+arianna_first_package-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+arianna_first_package-0.1.0.dist-info/RECORD,,
