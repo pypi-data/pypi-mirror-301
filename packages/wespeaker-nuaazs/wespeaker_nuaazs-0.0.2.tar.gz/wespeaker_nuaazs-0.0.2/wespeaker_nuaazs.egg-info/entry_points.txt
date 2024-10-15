@@ -1,0 +1,2 @@
+[console_scripts]
+wespeaker = wespeaker_nuaazs.cli.speaker:main
