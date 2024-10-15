@@ -1,0 +1,15 @@
+jupyterlab_toscmode/__init__.py,sha256=HrSrGbhoJqgK7EJjvl5g3IvaCcC6zd-_O2FhHIUwiYY,596
+jupyterlab_toscmode/_version.py,sha256=oPewB-WRQrVhQiuYC0pleRUJn2P-f9bber4ODSdId4U,175
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/package.json,sha256=hxlVwB-ijcxo663m2wXGx0shnq9b0iZIP1Pzh6_nah0,6125
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/schemas/jupyterlab_toscmode/package.json.orig,sha256=c473H_IyhqWdtjsqCZrdqZhjO0v-eUYk9TdLJZTnrWo,6886
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/schemas/jupyterlab_toscmode/plugin.json,sha256=QxqBfXpDVKuj-pDTCo1ahisZsVnzQ7-6CjTmTsTDQU0,796
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/static/509.c57def9f40d7f5a492d4.js,sha256=xX3vn0DX9aSS1Mt0ZlxuRS5P0eYi_7Yj3aJoIOq6O8Q,2038
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/static/728.d9d0cd6aac5b3d0dd3f7.js,sha256=2dDNaqxbPQ3T9z9tjwRn2S3TdM70yOkq0_JCHVVNkns,5310
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/static/remoteEntry.35274b237aec6f819749.js,sha256=NSdLI3rsb4GXSazM0W-zhR-1NF3ueQzYyNOkBZSonw0,6894
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/static/style.js,sha256=iLVByLpziPntntc2PAo8NLSzM6qF7f3TxHsJuOvCySA,162
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jupyterlab_toscmode-0.2.0.data/data/share/jupyter/labextensions/jupyterlab_toscmode/install.json,sha256=QYJeuND8oKIXWh1vybRZE5Zp4utSP0VJdQ8awlstOnw,205
+jupyterlab_toscmode-0.2.0.dist-info/METADATA,sha256=iGWEbxa0KY3OSd5tztedZ5Np-TJjHEE2COjZqNX9-J0,6585
+jupyterlab_toscmode-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+jupyterlab_toscmode-0.2.0.dist-info/licenses/LICENSE,sha256=3qg2G34fGm2yLZJ-biDQuGrShfAUuCN1JoNGkKvCvZ8,1522
+jupyterlab_toscmode-0.2.0.dist-info/RECORD,,
