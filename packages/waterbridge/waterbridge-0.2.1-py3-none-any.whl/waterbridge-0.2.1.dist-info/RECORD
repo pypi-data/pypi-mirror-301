@@ -1,0 +1,11 @@
+waterbridge/1_Identification of water bridges.py,sha256=ebAuA1lsVZVPYPltQTXGDjlmthwtnnF47Vi56W_h8Uc,8397
+waterbridge/2_Topological classification of water bridges.py,sha256=GZgYh9K8CDK9b0fyOvmw2ezk0IXNlAWYn66yNeYZI4Q,3618
+waterbridge/3_Nomenclature of waterbridges.py,sha256=KPj0TgFEg776743s3p4QUNrPgYYf5JdtP57l1UEPu2w,15495
+waterbridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+waterbridge/waterbridge.py,sha256=W3vJeTqcPYxAmN4vACKPB1I1IAJ0upyLXqrtQmdzB0U,1233
+waterbridge-0.2.1.dist-info/LICENSE,sha256=y0InByILrQSyobHoEGxev9Ff9b2tMlJ2NzSH7Hvz0pM,1073
+waterbridge-0.2.1.dist-info/METADATA,sha256=S-sgkY_Yud12VMGHTM5jKUGJ6kxnImwM3EV0IrN9OYA,5943
+waterbridge-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+waterbridge-0.2.1.dist-info/entry_points.txt,sha256=2ceWBzkm8v0SoJ_c2TmwjRa9_fpyuQ-F85HUVqB92PM,61
+waterbridge-0.2.1.dist-info/top_level.txt,sha256=UDxDR3QAEWDO3IAF_or28x7lOrjw9-wpoMBya5xDejY,12
+waterbridge-0.2.1.dist-info/RECORD,,
